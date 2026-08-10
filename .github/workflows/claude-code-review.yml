@@ -22,7 +22,12 @@ jobs:
       pull-requests: write
       issues: write
       id-token: write
-    uses: Morrison-Lab/gha/.github/workflows/claude-code-review.yml@v1
+      # Lets the reviewer read CI status (github_ci MCP server); without
+      # this the callee's claude-review job can't get the `actions: read` it
+      # requests, and the run fails at startup with "startup_failure" before
+      # any job is created (#43).
+      actions: read
+    uses: Morrison-Lab/gha/.github/workflows/claude-code-review.yml@v2
     secrets: inherit
     with:
       # Wires the workflow_dispatch input through so claude.yml can re-dispatch
@@ -30,7 +35,7 @@ jobs:
       pr-number: ${{ inputs.pr_number }}
       prompt-addendum: |
         This is a Quarto book (prose, not an R package). Focus the review on
-        the changed .qmd chapters: clear scientific-writing prose, correct
+        the changed .qmd chapters: clear scientific writing prose, correct
         Quarto/Markdown syntax, working cross-references and citations, and the
         SERG lab manual's .qmd conventions (backticked `pkg::fn()`, Markdown
         links rather than raw HTML, US English spelling).
