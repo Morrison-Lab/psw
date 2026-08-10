@@ -149,10 +149,11 @@ rather than to defer to it.
 > $$
 > The three terms are,
 > in order:
-> a constant that does not involve the parameters,
-> a term that depends on $\sigma^2$ but not on $\mu$,
-> and the sum of squared deviations of the data from $\mu$,
-> divided by $-2\sigma^2$.
+>
+> - a constant that does not involve the parameters;
+> - a term that depends on $\sigma^2$ but not on $\mu$;
+> - the sum of squared deviations of the data from $\mu$,
+>   divided by $-2\sigma^2$.
 
 The second version gives the reader the formula and where it came from,
 so they can check the algebra themselves.
