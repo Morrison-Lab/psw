@@ -261,7 +261,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-08-10 03:56:09 (UTC)</p>
+  <p class="date">Last modified: 2026-08-10 05:31:03 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -315,8 +315,53 @@
 <h3 id="common-knowledge">Common knowledge</h3>
 <p>Not every statement requires citation. Well-established facts that are common knowledge within your field (e.g., “DNA is a double helix” in molecular biology) can be stated without citation. However, when in doubt, provide a citation—over-citing is preferable to under-citing.</p>
 </section>
-<section id="what-makes-a-citation-relevant" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> What makes a citation relevant</h2>
+<section id="do-not-substitute-flippancy-for-support" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Do not substitute flippancy for support</h2>
+</section>
+<section class="slide level2">
+
+<p>Some phrases assert that a claim needs no support instead of supplying any:</p>
+<ul>
+<li>“it is obvious that”</li>
+<li>“clearly, it follows that”</li>
+<li>“it should be familiar to you that”</li>
+<li>“the familiar formula”</li>
+<li>“of course”</li>
+<li>“as everyone knows”</li>
+</ul>
+<p>The problem is the appeal, not the individual words. “Clearly” is fine as an adverb of manner (“the methods section clearly describes the sampling frame”), and “of course” is fine when it flags an assumption you have already established. Each becomes a problem only when it stands in for an argument you have not made.</p>
+<p>These phrases do no work for the reader. A reader who already knows the result gains nothing from being told that it is familiar, and a reader who does not is told that the gap is their own fault, without being given any way to close it. They also cost the writer something. Working a step out is how you find out whether it holds; calling it obvious settles the question by assertion, and leaves any error in the step where it is. So if you cannot supply a derivation or a citation for a step, treat that as a reason to work the step out, not as a reason to call it obvious.</p>
+<p>Replace such phrases with one of the following:</p>
+<ul>
+<li><strong>A direct derivation.</strong> Show the intermediate steps, or state which identity or algebraic manipulation takes you from one line to the next.</li>
+<li><strong>A specific citation.</strong> Name the source that establishes the result, and give a chapter, section, page, or equation number whenever the source is long enough that a bare citation would leave the reader searching.</li>
+<li><strong>A cross-reference.</strong> When you established the result earlier in the same document, point to it by number (see <a href="../chapters/defining-terms.html">Defining terms clearly</a> for the Quarto cross-reference syntax).</li>
+</ul>
+<p>Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood is a sum of three terms” makes the same claim about the log-likelihood as “the log-likelihood is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.</p>
+<div id="exm-flippant-derivation" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (Replacing an appeal to familiarity)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Substituting the normal density into the likelihood gives the familiar three-term formula.</p>
+<p>✅ For an independent sample <span class="math inline">\(x_1, \ldots, x_n\)</span> from a normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, substituting the normal density into the likelihood and taking logarithms gives <span class="math display">\[
+\ell(\mu, \sigma^2) =
+-\frac{n}{2}\log(2\pi)
+- \frac{n}{2}\log\left(\sigma^2\right)
+- \frac{1}{2\sigma^2}\sum_{i=1}^{n}\left(x_i - \mu\right)^2.
+\]</span> The three terms are, in order:</p>
+<ul>
+<li>a constant that does not involve the parameters;</li>
+<li>a term that depends on <span class="math inline">\(\sigma^2\)</span> but not on <span class="math inline">\(\mu\)</span>;</li>
+<li>the sum of squared deviations of the data from <span class="math inline">\(\mu\)</span>, divided by <span class="math inline">\(-2\sigma^2\)</span>.</li>
+</ul>
+</blockquote>
+<p>The second version gives the reader the formula and where it came from, so they can check the algebra themselves. The first version asks them to take the writer’s word for it, and offers no help to anyone who has not seen the result before.</p>
+</div>
+<h3 id="trivial-and-trivially">“Trivial” and “trivially”</h3>
+<p>“Trivial” and “trivially” usually work the same way: they announce that a step is too small to write down, which relieves the writer of writing it down. Treat them as a prompt to check the step, and to write it out if it takes only a line.</p>
+<p>The word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case. For example, a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries.</p>
+</section>
+<section id="what-makes-a-citation-relevant" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> What makes a citation relevant</h2>
 </section>
 <section class="slide level2">
 
@@ -335,8 +380,8 @@
 <li>When citing for general background versus specific claims, make the distinction clear</li>
 </ul>
 </section>
-<section id="what-makes-a-source-trustworthy" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> What makes a source trustworthy</h2>
+<section id="what-makes-a-source-trustworthy" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> What makes a source trustworthy</h2>
 </section>
 <section class="slide level2">
 
@@ -373,8 +418,8 @@
 <li>Retracted papers</li>
 </ul>
 </section>
-<section id="copy-paste-with-caution" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Copy-paste with caution</h2>
+<section id="copy-paste-with-caution" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Copy-paste with caution</h2>
 </section>
 <section class="slide level2">
 
@@ -387,8 +432,8 @@
 </ul>
 <p>A related case is repetition <em>within</em> your own document. When a passage you are tempted to copy already appears elsewhere, cross-reference it instead of repeating it: this keeps a single source of truth and improves concision.</p>
 </section>
-<section id="best-practices" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Best practices</h2>
+<section id="best-practices" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Best practices</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -403,23 +448,23 @@
 <li><strong>Cite diverse sources</strong>: When possible, include work from different research groups and perspectives</li>
 </ol>
 </section>
-<section id="common-citation-errors-to-avoid" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Common citation errors to avoid</h2>
+<section id="common-citation-errors-to-avoid" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Common citation errors to avoid</h2>
 </section>
 <section class="slide level2">
 
 <ul>
 <li><strong>Citation needed</strong>: Making claims without any supporting citation or evidence</li>
-<li><strong>Vague attribution</strong>: Using phrases like “studies have shown” without citing specific studies<br>
-</li>
+<li><strong>Vague attribution</strong>: Using phrases like “studies have shown” without citing specific studies</li>
+<li><strong>Appeal to obviousness</strong>: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation</li>
 <li><strong>Circular citation</strong>: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)</li>
 <li><strong>Citation padding</strong>: Adding citations that don’t actually support your claims just to appear well-referenced</li>
 <li><strong>Selective citation</strong>: Only citing work that supports your position while ignoring contradictory evidence</li>
 <li><strong>Ghost authorship</strong>: Failing to cite work that directly influenced your ideas</li>
 </ul>
 </section>
-<section id="examples" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Examples</h2>
+<section id="examples" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Examples</h2>
 </section>
 <section class="slide level2">
 
@@ -449,12 +494,12 @@
 </blockquote>
 <p><strong>Improvement</strong>: The citation is to a current survey of programming language usage.</p>
 </section>
-<section id="conclusion" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Conclusion</h2>
+<section id="conclusion" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Conclusion</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
-<p>Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If the answer isn’t obvious from your text, add a citation or present direct evidence.</p>
+<p>Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.</p>
 
 
 <script>

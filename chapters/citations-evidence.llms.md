@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-08-10 03:56:09 (UTC)
+Last modified: 2026-08-10 05:31:03 (UTC)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -55,7 +55,50 @@ Claims about appropriate methods or best practices should be supported by:
 
 Not every statement requires citation. Well-established facts that are common knowledge within your field (e.g., “DNA is a double helix” in molecular biology) can be stated without citation. However, when in doubt, provide a citation—over-citing is preferable to under-citing.
 
-## 3 What makes a citation relevant
+## 3 Do not substitute flippancy for support
+
+Some phrases assert that a claim needs no support instead of supplying any:
+
+- “it is obvious that”
+- “clearly, it follows that”
+- “it should be familiar to you that”
+- “the familiar formula”
+- “of course”
+- “as everyone knows”
+
+The problem is the appeal, not the individual words. “Clearly” is fine as an adverb of manner (“the methods section clearly describes the sampling frame”), and “of course” is fine when it flags an assumption you have already established. Each becomes a problem only when it stands in for an argument you have not made.
+
+These phrases do no work for the reader. A reader who already knows the result gains nothing from being told that it is familiar, and a reader who does not is told that the gap is their own fault, without being given any way to close it. They also cost the writer something. Working a step out is how you find out whether it holds; calling it obvious settles the question by assertion, and leaves any error in the step where it is. So if you cannot supply a derivation or a citation for a step, treat that as a reason to work the step out, not as a reason to call it obvious.
+
+Replace such phrases with one of the following:
+
+- **A direct derivation.** Show the intermediate steps, or state which identity or algebraic manipulation takes you from one line to the next.
+- **A specific citation.** Name the source that establishes the result, and give a chapter, section, page, or equation number whenever the source is long enough that a bare citation would leave the reader searching.
+- **A cross-reference.** When you established the result earlier in the same document, point to it by number (see [Defining terms clearly](../chapters/defining-terms.llms.md) for the Quarto cross-reference syntax).
+
+Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood is a sum of three terms” makes the same claim about the log-likelihood as “the log-likelihood is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.
+
+> **NOTE:**
+>
+> **Example 1 (Replacing an appeal to familiarity)**  
+>
+> > ❌ Substituting the normal density into the likelihood gives the familiar three-term formula.
+> >
+> > ✅ For an independent sample \\x_1, \ldots, x_n\\ from a normal distribution with mean \\\mu\\ and variance \\\sigma^2\\, substituting the normal density into the likelihood and taking logarithms gives \\ \ell(\mu, \sigma^2) = -\frac{n}{2}\log(2\pi) - \frac{n}{2}\log\left(\sigma^2\right) - \frac{1}{2\sigma^2}\sum\_{i=1}^{n}\left(x_i - \mu\right)^2. \\ The three terms are, in order:
+> >
+> > - a constant that does not involve the parameters;
+> > - a term that depends on \\\sigma^2\\ but not on \\\mu\\;
+> > - the sum of squared deviations of the data from \\\mu\\, divided by \\-2\sigma^2\\.
+>
+> The second version gives the reader the formula and where it came from, so they can check the algebra themselves. The first version asks them to take the writer’s word for it, and offers no help to anyone who has not seen the result before.
+
+### 3.1 “Trivial” and “trivially”
+
+“Trivial” and “trivially” usually work the same way: they announce that a step is too small to write down, which relieves the writer of writing it down. Treat them as a prompt to check the step, and to write it out if it takes only a line.
+
+The word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case. For example, a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries.
+
+## 4 What makes a citation relevant
 
 A relevant citation is one that actually supports the specific claim you are making. Common problems with citation relevance include:
 
@@ -71,23 +114,23 @@ To ensure relevance:
 - Cite the most direct source available
 - When citing for general background versus specific claims, make the distinction clear
 
-## 4 What makes a source trustworthy
+## 5 What makes a source trustworthy
 
 Not all sources are equally reliable. Consider these factors when evaluating trustworthiness:
 
-### 4.1 Peer review
+### 5.1 Peer review
 
 Peer-reviewed publications in reputable journals have undergone expert scrutiny. This doesn’t guarantee correctness, but it provides a baseline level of quality control.
 
-### 4.2 Reputation of authors and institutions
+### 5.2 Reputation of authors and institutions
 
 Work from recognized experts and well-regarded institutions tends to be more reliable, though this should not be the sole criterion.
 
-### 4.3 Replication and consensus
+### 5.3 Replication and consensus
 
 Findings that have been replicated by independent groups or that represent scientific consensus are more trustworthy than isolated claims.
 
-### 4.4 Transparency and reproducibility
+### 5.4 Transparency and reproducibility
 
 Studies that:
 
@@ -98,7 +141,7 @@ Studies that:
 
 are more trustworthy than those lacking these features.
 
-### 4.5 Preprints and non-peer-reviewed sources
+### 5.5 Preprints and non-peer-reviewed sources
 
 Preprints can be valuable for accessing cutting-edge research, but they have not undergone peer review. When citing preprints:
 
@@ -106,7 +149,7 @@ Preprints can be valuable for accessing cutting-edge research, but they have not
 - Check whether a peer-reviewed version has since been published
 - Exercise extra scrutiny of the methods and conclusions
 
-### 4.6 Sources to generally avoid
+### 5.6 Sources to generally avoid
 
 Some sources typically lack the rigor needed for scientific writing:
 
@@ -116,7 +159,7 @@ Some sources typically lack the rigor needed for scientific writing:
 - Predatory or pay-to-publish journals without genuine peer review
 - Retracted papers
 
-## 5 Copy-paste with caution
+## 6 Copy-paste with caution
 
 Copying exact wording — whether from another writer or from your own earlier work, and even with a citation — can cause problems: plagiarism, if the wording is not clearly marked as a quotation, and a shift in voice that makes the text harder to read.
 
@@ -128,7 +171,7 @@ A few rules of thumb:
 
 A related case is repetition *within* your own document. When a passage you are tempted to copy already appears elsewhere, cross-reference it instead of repeating it: this keeps a single source of truth and improves concision.
 
-## 6 Best practices
+## 7 Best practices
 
 To effectively support your claims:
 
@@ -140,50 +183,51 @@ To effectively support your claims:
 6.  **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7.  **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
-## 7 Common citation errors to avoid
+## 8 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
-- **Vague attribution**: Using phrases like “studies have shown” without citing specific studies\
+- **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
+- **Appeal to obviousness**: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation
 - **Circular citation**: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)
 - **Citation padding**: Adding citations that don’t actually support your claims just to appear well-referenced
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 8 Examples
+## 9 Examples
 
-### 8.1 Poor (unsupported claim)
+### 9.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 8.2 Better (citation provided)
+### 9.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 8.3 Best (citation with context)
+### 9.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 8.4 Poor (irrelevant citation)
+### 9.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 8.5 Better (relevant citation)
+### 9.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 9 Conclusion
+## 10 Conclusion
 
-Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If the answer isn’t obvious from your text, add a citation or present direct evidence.
+Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
 Back to top
 
