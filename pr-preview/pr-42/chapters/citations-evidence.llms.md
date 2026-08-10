@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-08-09 23:57:39 (UTC)
+Last modified: 2026-08-10 02:23:15 (UTC)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -68,7 +68,7 @@ Some phrases assert that a claim needs no support instead of supplying any:
 
 The problem is the appeal, not the individual words: “clearly” is fine as an adverb of manner (“the methods section clearly describes the sampling frame”), and becomes a problem only when it stands in for an argument.
 
-These phrases do no work for the reader. A reader who already knows the result gains nothing from being told that it is familiar, and a reader who does not is told that the gap is their own fault, without being given any way to close it. The phrasing also conceals a common failure mode: writers reach for “obviously” most often at the steps they have checked least carefully. If you cannot supply a derivation or a citation for a step, that is a reason to work the step out, not a reason to call it obvious.
+These phrases do no work for the reader. A reader who already knows the result gains nothing from being told that it is familiar, and a reader who does not is told that the gap is their own fault, without being given any way to close it. They also cost the writer something. Working a step out is how you find out whether it holds; calling it obvious settles the question by assertion, and leaves any error in the step where it is. So if you cannot supply a derivation or a citation for a step, treat that as a reason to work the step out, not as a reason to call it obvious.
 
 Replace such phrases with one of the following:
 
@@ -76,7 +76,7 @@ Replace such phrases with one of the following:
 - **A specific citation.** Name the source that establishes the result, and give a chapter, section, page, or equation number whenever the source is long enough that a bare citation would leave the reader searching.
 - **A cross-reference.** When you established the result earlier in the same document, point to it by number (see [Defining terms clearly](../chapters/defining-terms.llms.md) for the Quarto cross-reference syntax).
 
-Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood is a sum of three terms” asserts exactly as much as “the log-likelihood is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.
+Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood is a sum of three terms” makes the same claim about the log-likelihood as “the log-likelihood is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.
 
 > **NOTE:**
 >
