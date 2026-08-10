@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-08-10 04:08:46 (UTC)
+Last modified: 2026-08-10 04:15:35 (UTC)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -84,7 +84,11 @@ Deleting the phrase and keeping the claim is also usually an improvement: “the
 >
 > > ❌ Substituting the normal density into the likelihood gives the familiar three-term formula.
 > >
-> > ✅ For an independent sample \\x_1, \ldots, x_n\\ from a normal distribution with mean \\\mu\\ and variance \\\sigma^2\\, substituting the normal density into the likelihood and taking logarithms gives \\ \ell(\mu, \sigma^2) = -\frac{n}{2}\log(2\pi) - \frac{n}{2}\log\left(\sigma^2\right) - \frac{1}{2\sigma^2}\sum\_{i=1}^{n}\left(x_i - \mu\right)^2. \\ The three terms are, in order: a constant that does not involve the parameters, a term that depends on \\\sigma^2\\ but not on \\\mu\\, and the sum of squared deviations of the data from \\\mu\\, divided by \\-2\sigma^2\\.
+> > ✅ For an independent sample \\x_1, \ldots, x_n\\ from a normal distribution with mean \\\mu\\ and variance \\\sigma^2\\, substituting the normal density into the likelihood and taking logarithms gives \\ \ell(\mu, \sigma^2) = -\frac{n}{2}\log(2\pi) - \frac{n}{2}\log\left(\sigma^2\right) - \frac{1}{2\sigma^2}\sum\_{i=1}^{n}\left(x_i - \mu\right)^2. \\ The three terms are, in order:
+> >
+> > - a constant that does not involve the parameters;
+> > - a term that depends on \\\sigma^2\\ but not on \\\mu\\;
+> > - the sum of squared deviations of the data from \\\mu\\, divided by \\-2\sigma^2\\.
 >
 > The second version gives the reader the formula and where it came from, so they can check the algebra themselves. The first version asks them to take the writer’s word for it, and offers no help to anyone who has not seen the result before.
 
