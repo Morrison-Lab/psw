@@ -1,30 +1,41 @@
-IyBUaGluIGNhbGxlciBmb3IgdGhlIGNlbnRyYWwgTW9ycmlzb24tTGFiL2doYSByZXVzYWJsZSBD
-bGF1ZGUgY29kZS1yZXZpZXcKIyB3b3JrZmxvdy4gUmVxdWlyZXMgdGhlIENMQVVERV9DT0RFX09B
-VVRIX1RPS0VOIHJlcG9zaXRvcnkgc2VjcmV0IChwYXNzZWQgdmlhCiMgYHNlY3JldHM6IGluaGVy
-aXRgKS4gVGhlIHdvcmtmbG93X2Rpc3BhdGNoIHBhdGggbGV0cyBjbGF1ZGUueW1sIHJlLWRpc3Bh
-dGNoIGEKIyByZXZpZXcgYWZ0ZXIgYW4gQGNsYXVkZSBydW4gcHVzaGVzIGNvbW1pdHMg4oCUIGtl
-ZXAgdGhpcyBmaWxlIG5hbWVkCiMgY2xhdWRlLWNvZGUtcmV2aWV3LnltbCBzbyB0aGUgZGlzcGF0
-Y2ggcmVzb2x2ZXMuCm5hbWU6IENsYXVkZSBDb2RlIFJldmlldwoKb246CiAgcHVsbF9yZXF1ZXN0
-OgogICAgdHlwZXM6IFtvcGVuZWQsIHN5bmNocm9uaXplLCByZWFkeV9mb3JfcmV2aWV3LCByZW9w
-ZW5lZF0KICB3b3JrZmxvd19kaXNwYXRjaDoKICAgIGlucHV0czoKICAgICAgcHJfbnVtYmVyOgog
-ICAgICAgIGRlc2NyaXB0aW9uOiAnUHVsbCByZXF1ZXN0IG51bWJlciB0byByZXZpZXcnCiAgICAg
-ICAgcmVxdWlyZWQ6IHRydWUKICAgICAgICB0eXBlOiBzdHJpbmcKCmpvYnM6CiAgcmV2aWV3Ogog
-ICAgcGVybWlzc2lvbnM6CiAgICAgIGNvbnRlbnRzOiByZWFkCiAgICAgIHB1bGwtcmVxdWVzdHM6
-IHdyaXRlCiAgICAgIGlzc3Vlczogd3JpdGUKICAgICAgaWQtdG9rZW46IHdyaXRlCiAgICAgICMg
-TGV0cyB0aGUgcmV2aWV3ZXIgcmVhZCBDSSBzdGF0dXMgKGdpdGh1Yl9jaSBNQ1Agc2VydmVyKTsg
-d2l0aG91dAogICAgICAjIHRoaXMgdGhlIGNhbGxlZSdzIGNsYXVkZS1yZXZpZXcgam9iIGNhbid0
-IGdldCB0aGUgYGFjdGlvbnM6IHJlYWRgIGl0CiAgICAgICMgcmVxdWVzdHMsIGFuZCB0aGUgcnVu
-IGZhaWxzIGF0IHN0YXJ0dXAgd2l0aCAic3RhcnR1cF9mYWlsdXJlIiBiZWZvcmUKICAgICAgIyBh
-bnkgam9iIGlzIGNyZWF0ZWQgKCM0MykuCiAgICAgIGFjdGlvbnM6IHJlYWQKICAgIHVzZXM6IE1v
-cnJpc29uLUxhYi9naGEvLmdpdGh1Yi93b3JrZmxvd3MvY2xhdWRlLWNvZGUtcmV2aWV3LnltbEB2
-MgogICAgc2VjcmV0czogaW5oZXJpdAogICAgd2l0aDoKICAgICAgIyBXaXJlcyB0aGUgd29ya2Zs
-b3dfZGlzcGF0Y2ggaW5wdXQgdGhyb3VnaCBzbyBjbGF1ZGUueW1sIGNhbiByZS1kaXNwYXRjaAog
-ICAgICAjIGEgcmV2aWV3IG9uIENsYXVkZSdzIGNvbW1pdHM7IGVtcHR5IChhbmQgaWdub3JlZCkg
-Zm9yIHB1bGxfcmVxdWVzdCBydW5zLgogICAgICBwci1udW1iZXI6ICR7eyBpbnB1dHMucHJfbnVt
-YmVyIH19CiAgICAgIHByb21wdC1hZGRlbmR1bTogfAogICAgICAgIFRoaXMgaXMgYSBRdWFydG8g
-Ym9vayAocHJvc2UsIG5vdCBhbiBSIHBhY2thZ2UpLiBGb2N1cyB0aGUgcmV2aWV3IG9uCiAgICAg
-ICAgdGhlIGNoYW5nZWQgLnFtZCBjaGFwdGVyczogY2xlYXIgc2NpZW50aWZpYyB3cml0aW5nIHBy
-b3NlLCBjb3JyZWN0CiAgICAgICAgUXVhcnRvL01hcmtkb3duIHN5bnRheCwgd29ya2luZyBjcm9z
-cy1yZWZlcmVuY2VzIGFuZCBjaXRhdGlvbnMsIGFuZCB0aGUKICAgICAgICBTRVJHIGxhYiBtYW51
-YWwncyAucW1kIGNvbnZlbnRpb25zIChiYWNrdGlja2VkIGBwa2c6OmZuKClgLCBNYXJrZG93bgog
-ICAgICAgIGxpbmtzIHJhdGhlciB0aGFuIHJhdyBIVE1MLCBVUyBFbmdsaXNoIHNwZWxsaW5nKS4K
+# Thin caller for the central Morrison-Lab/gha reusable Claude code-review
+# workflow. Requires the CLAUDE_CODE_OAUTH_TOKEN repository secret (passed via
+# `secrets: inherit`). The workflow_dispatch path lets claude.yml re-dispatch a
+# review after an @claude run pushes commits — keep this file named
+# claude-code-review.yml so the dispatch resolves.
+name: Claude Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Pull request number to review'
+        required: true
+        type: string
+
+jobs:
+  review:
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
+      # Lets the reviewer read CI status (github_ci MCP server); without
+      # this the callee's claude-review job can't get the `actions: read` it
+      # requests, and the run fails at startup with "startup_failure" before
+      # any job is created (#43).
+      actions: read
+    uses: Morrison-Lab/gha/.github/workflows/claude-code-review.yml@v2
+    secrets: inherit
+    with:
+      # Wires the workflow_dispatch input through so claude.yml can re-dispatch
+      # a review on Claude's commits; empty (and ignored) for pull_request runs.
+      pr-number: ${{ inputs.pr_number }}
+      prompt-addendum: |
+        This is a Quarto book (prose, not an R package). Focus the review on
+        the changed .qmd chapters: clear scientific writing prose, correct
+        Quarto/Markdown syntax, working cross-references and citations, and the
+        SERG lab manual's .qmd conventions (backticked `pkg::fn()`, Markdown
+        links rather than raw HTML, US English spelling).
