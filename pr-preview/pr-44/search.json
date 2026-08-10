@@ -1,0 +1,282 @@
+[
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "References\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "chapters/word-choice.html",
+    "href": "chapters/word-choice.html",
+    "title": "Word choice",
+    "section": "",
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\nI recommend trying to replace Latin-derived words and phrases with Old English-derived equivalents (“Anglish” words) where possible; it generally makes writing simpler and easier to read. Latin words  create artificial barriers to understanding. Many Latin-derived words commonly used in scientific writing are composed from roots and affixes which are not commonly used in their basic forms; hence, readers cannot determine the meanings of these words by decomposing them. Instead, they need to memorize the meanings of these words directly. In contrast, the components of composite Anglish words are typically also used individually, so the meanings of the composites can be derived directly. Table 1 lists some common Latinate words and phrases and Anglish alternatives.\nSee also https://bark-fa.github.io/Anglish-Translator/\nI am aware that this book, and even this chapter, contains many Latin word choices where there are Anglish alternatives. It is a work in progress, and also, I am not advocating 100% Anglish purity. Use whichever words and phrases you think your readers are most likely to understand easily. Preferring Anglish is merely a useful heuristic to help achieve our ultimate goal of producing clear, easy-to-read writing.\nJust to be clear, although I prefer Anglish words, I have no particular preference for Anglish people or culture; it is only a practical consideration, based on the realities of English as the current default language of science and the relatively-recent hybridization of the English language."
+  },
+  {
+    "objectID": "chapters/word-choice.html#avoid-vague-and-metaphorical-language",
+    "href": "chapters/word-choice.html#avoid-vague-and-metaphorical-language",
+    "title": "Word choice",
+    "section": "1 Avoid vague and metaphorical language",
+    "text": "1 Avoid vague and metaphorical language\nScientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise term for the thing you are describing. Table 2 lists some common vague phrases and more precise alternatives.\n\n\n\nTable 2: Vague or metaphorical phrases and more precise alternatives\n\n\n\n\n\nVague or metaphorical\nMore precise\n\n\n\n\ninfection pressure\nincidence rate\n\n\ndisease burden\nincidence rate, or prevalence proportion\n\n\nthe signal was strong\nthe effect size was large\n\n\na huge effect\na risk ratio of 4.2\n\n\n\n\n\n\nThe precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid."
+  },
+  {
+    "objectID": "chapters/word-choice.html#minimize-unnecessary-jargon",
+    "href": "chapters/word-choice.html#minimize-unnecessary-jargon",
+    "title": "Word choice",
+    "section": "2 Minimize unnecessary jargon",
+    "text": "2 Minimize unnecessary jargon\nJargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.\nPrefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms.\n\n\n\n\n\n\n\nExample 1 (Replacing unnecessary jargon)  \n\n❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.\n✅ We wrote a custom program to combine data from several sources.\n\nThe plain version is shorter, and it states what was actually done.\n\n\n\n\nFor each technical word, ask whether it carries meaning that a plainer word would lose. If it does not, replace it with the plainer word. If it does carry necessary meaning but a reader outside your subfield would not understand it, define it clearly at first use."
+  },
+  {
+    "objectID": "chapters/paper-organization/multiple-outcomes.html",
+    "href": "chapters/paper-organization/multiple-outcomes.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nWhen analyzing multiple outcomes separately, group your results section by outcome rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.\n\nWhy group by outcome\nGrouping by outcome helps readers:\n\nFollow the story of each outcome from descriptive statistics through final results\nCompare findings across outcomes more easily\nUnderstand the complete picture for each outcome before moving to the next\nNavigate directly to outcomes of interest\n\n\n\nHow to organize by outcome\nFor each outcome, present:\n\nDescriptive statistics\nMain analysis results\nSensitivity analyses\nSubgroup analyses (if applicable)\n\nStructure:\nResults\n├── Outcome 1: Mortality\n│   ├── Descriptive statistics\n│   ├── Main analysis\n│   ├── Sensitivity analyses\n│   └── Subgroup analyses\n├── Outcome 2: Hospital readmission\n│   ├── Descriptive statistics\n│   ├── Main analysis\n│   ├── Sensitivity analyses\n│   └── Subgroup analyses\n└── Outcome 3: Quality of life\n    ├── Descriptive statistics\n    ├── Main analysis\n    ├── Sensitivity analyses\n    └── Subgroup analyses\n\n\nWhat to avoid\nDon’t group by analysis type when outcomes are analyzed separately:\nResults (POOR ORGANIZATION)\n├── Descriptive statistics\n│   ├── Mortality\n│   ├── Hospital readmission\n│   └── Quality of life\n├── Main analyses\n│   ├── Mortality\n│   ├── Hospital readmission\n│   └── Quality of life\n└── Sensitivity analyses\n    ├── Mortality\n    ├── Hospital readmission\n    └── Quality of life\nThis forces readers to jump back and forth between sections to understand the complete story for any single outcome.\n\n\nException: Shared descriptive statistics\nIf your descriptive statistics apply to all outcomes (e.g., baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "chapters/defining-terms.html",
+    "href": "chapters/defining-terms.html",
+    "title": "Defining terms clearly",
+    "section": "",
+    "text": "Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:"
+  },
+  {
+    "objectID": "chapters/defining-terms.html#guidelines-for-defining-terms",
+    "href": "chapters/defining-terms.html#guidelines-for-defining-terms",
+    "title": "Defining terms clearly",
+    "section": "1 Guidelines for defining terms",
+    "text": "1 Guidelines for defining terms\nFollow these principles when introducing new terms:\n\nProvide explicit definitions: State clearly what a term means, rather than assuming readers will understand from context.\nBe concise: Definitions should be brief and focused, using only the words necessary to convey the meaning.\nDefine terms at first use: Place the definition immediately before or after the term’s first appearance.\nProvide examples: Every definition should include at least one concrete example that illustrates how the term is used."
+  },
+  {
+    "objectID": "chapters/defining-terms.html#examples-of-term-definitions",
+    "href": "chapters/defining-terms.html#examples-of-term-definitions",
+    "title": "Defining terms clearly",
+    "section": "2 Examples of term definitions",
+    "text": "2 Examples of term definitions\nHere are examples of well-defined terms:\n\n\n\n\n\n\n\nExample 2 (Statistical term: Confidence interval)  \n\n\n\n\n\n\n\nDefinition 3 (Confidence interval) A confidence interval is a range of values, derived from sample statistics, that is likely to contain the true population parameter.\n\n\n\n\nIf we calculate a 95% confidence interval for mean height as [165 cm, 175 cm], we are 95% confident that the true population mean height falls within this range.\n\n\n\n\n\n\n\n\n\n\n\nExample 3 (Writing term: Active voice)  \n\n\n\n\n\n\n\nDefinition 4 (Active voice) Active voice is a sentence structure where the subject performs the action expressed by the verb.\n\n\n\n\n“The researcher conducted the experiment” is in active voice, while “The experiment was conducted by the researcher” is in passive voice."
+  },
+  {
+    "objectID": "chapters/defining-terms.html#why-examples-matter",
+    "href": "chapters/defining-terms.html#why-examples-matter",
+    "title": "Defining terms clearly",
+    "section": "3 Why examples matter",
+    "text": "3 Why examples matter\nExamples serve several crucial purposes:\n\nConcrete understanding: Examples transform abstract concepts into tangible instances that readers can visualize and understand.\nVerification: Readers can work through examples themselves to verify they understand the definition or theorem.\nApplication: Examples show how to apply definitions and theorems to solve real problems.\nMemory: Concrete examples are easier to remember than abstract definitions alone."
+  },
+  {
+    "objectID": "chapters/defining-terms.html#common-pitfalls-to-avoid",
+    "href": "chapters/defining-terms.html#common-pitfalls-to-avoid",
+    "title": "Defining terms clearly",
+    "section": "4 Common pitfalls to avoid",
+    "text": "4 Common pitfalls to avoid\n\nCircular definitions: Do not define a term using the term itself.\nIncorrect: “Conciseness is the quality of being concise.”\nCorrect: “Conciseness is the quality of expressing ideas using only the words necessary to communicate meaning clearly.”\nVague definitions: Avoid definitions that rely on imprecise language.\nIncorrect: “A variable is something that can change.”\nCorrect: “A variable is a symbol representing a value that can take on different values.”\nMissing examples: Never leave a definition without at least one example.\nExamples without context: Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate."
+  },
+  {
+    "objectID": "chapters/defining-terms.html#mathematical-statements-require-examples",
+    "href": "chapters/defining-terms.html#mathematical-statements-require-examples",
+    "title": "Defining terms clearly",
+    "section": "5 Mathematical statements require examples",
+    "text": "5 Mathematical statements require examples\nMathematical theorems, lemmas, corollaries, and postulates should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.\n\n5.1 Using theorem environments in Quarto\nWhen writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.\nQuarto provides built-in theorem environments including:\n\n#thm- for theorems\n#lem- for lemmas\n#cor- for corollaries\n#prp- for propositions\n#cnj- for conjectures\n#def- for definitions\n#exm- for examples\n#exr- for exercises\n\nSee the Quarto documentation on theorems and proofs for complete details.\nExample syntax:\n::: {#thm-pythagorean}\n\n## Pythagorean theorem\n\nIn a right triangle,\nthe square of the hypotenuse equals the sum of squares of the other two sides:\n$a^2 + b^2 = c^2$.\n\n:::\nThis produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using @thm-pythagorean.\n\n\n5.2 Example: Pythagorean theorem\n\n\n\n\n\n\n\nTheorem 1 (Pythagorean theorem) In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: \\(a^2 + b^2 = c^2\\).\n\n\n\n\n\n\n\n\n\n\n\nExample 4 (Pythagorean theorem example) For a triangle with sides 3, 4, and 5: \\(3^2 + 4^2 = 9 + 16 = 25 = 5^2\\).\n\n\n\n\n\n\n\n\n\n\n\nDefinition 5 (Postulate (axiom)) A postulate (or axiom) is a statement accepted as true without proof, serving as a starting point for further reasoning.\n\n\n\n\n\n\n\n\n\n\n\nExample 5 (Euclid’s parallel postulate) Through a point not on a line, exactly one line can be drawn parallel to the given line.\nIf we have line \\(L\\) and point \\(P\\) not on \\(L\\), only one line through \\(P\\) will never intersect \\(L\\)."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html",
+    "href": "chapters/citations-evidence.html",
+    "title": "Citations and evidence",
+    "section": "",
+    "text": "Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#why-claims-need-support",
+    "href": "chapters/citations-evidence.html#why-claims-need-support",
+    "title": "Citations and evidence",
+    "section": "1 Why claims need support",
+    "text": "1 Why claims need support\nScientific writing aims to convey truthful, verifiable information. Unsupported claims undermine this goal in several ways:\n\nCredibility: Readers cannot assess the reliability of assertions without knowing their basis\nVerification: Claims without support cannot be independently verified or challenged\nReproducibility: Other researchers need sources to understand the foundation of your work\nIntellectual honesty: Proper attribution gives credit where it is due and distinguishes your original contributions from existing knowledge\nLearning pathway: Citations provide readers a roadmap to learn more about a topic\n\nWhen you make a claim, you are asking readers to accept it as true. They deserve to know why they should trust that claim."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#what-constitutes-adequate-support",
+    "href": "chapters/citations-evidence.html#what-constitutes-adequate-support",
+    "title": "Citations and evidence",
+    "section": "2 What constitutes adequate support",
+    "text": "2 What constitutes adequate support\nDifferent types of claims require different types of support:\n\n2.1 Empirical claims\nClaims about observable phenomena or data should be supported by:\n\nDirect presentation of the data (tables, figures, statistical analyses)\nCitations to published studies that collected the relevant data\nDescription of experimental methods that generated the evidence\nLinks to publicly accessible datasets\n\n\n\n2.2 Theoretical claims\nClaims about concepts, models, or interpretations should be supported by:\n\nCitations to papers that developed or validated the theory\nLogical arguments with clearly stated premises\nMathematical derivations or proofs\nReferences to review articles that synthesize relevant theoretical work\n\n\n\n2.3 Methodological claims\nClaims about appropriate methods or best practices should be supported by:\n\nCitations to methodological papers or textbooks\nEmpirical evidence of method performance\nExpert consensus statements\nValidation studies\n\n\n\n2.4 Common knowledge\nNot every statement requires citation. Well-established facts that are common knowledge within your field (e.g., “DNA is a double helix” in molecular biology) can be stated without citation. However, when in doubt, provide a citation—over-citing is preferable to under-citing."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#what-makes-a-citation-relevant",
+    "href": "chapters/citations-evidence.html#what-makes-a-citation-relevant",
+    "title": "Citations and evidence",
+    "section": "3 What makes a citation relevant",
+    "text": "3 What makes a citation relevant\nA relevant citation is one that actually supports the specific claim you are making. Common problems with citation relevance include:\n\nCiting review papers indiscriminately: While review papers are valuable for general background, cite the original research when making specific claims about particular findings\nCiting papers that don’t address the claim: Ensure the cited work actually discusses the point you’re making\nOver-generalizing from narrow studies: Don’t cite a study with limited scope to support a broad general claim\nUsing outdated sources: When current knowledge has superseded older findings, cite more recent work\n\nTo ensure relevance:\n\nRead the papers you cite (at least the relevant sections)\nVerify that the cited work actually supports your specific claim\nCite the most direct source available\nWhen citing for general background versus specific claims, make the distinction clear"
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#what-makes-a-source-trustworthy",
+    "href": "chapters/citations-evidence.html#what-makes-a-source-trustworthy",
+    "title": "Citations and evidence",
+    "section": "4 What makes a source trustworthy",
+    "text": "4 What makes a source trustworthy\nNot all sources are equally reliable. Consider these factors when evaluating trustworthiness:\n\n4.1 Peer review\nPeer-reviewed publications in reputable journals have undergone expert scrutiny. This doesn’t guarantee correctness, but it provides a baseline level of quality control.\n\n\n4.2 Reputation of authors and institutions\nWork from recognized experts and well-regarded institutions tends to be more reliable, though this should not be the sole criterion.\n\n\n4.3 Replication and consensus\nFindings that have been replicated by independent groups or that represent scientific consensus are more trustworthy than isolated claims.\n\n\n4.4 Transparency and reproducibility\nStudies that:\n\nClearly describe their methods\nShare their data and code\nDisclose potential conflicts of interest\nHave been successfully reproduced by others\n\nare more trustworthy than those lacking these features.\n\n\n4.5 Preprints and non-peer-reviewed sources\nPreprints can be valuable for accessing cutting-edge research, but they have not undergone peer review. When citing preprints:\n\nNote that they are preprints\nCheck whether a peer-reviewed version has since been published\nExercise extra scrutiny of the methods and conclusions\n\n\n\n4.6 Sources to generally avoid\nSome sources typically lack the rigor needed for scientific writing:\n\nWikipedia and general encyclopedias (though they can be useful starting points for finding primary sources)\nPopular press articles about scientific findings (cite the original research instead)\nBlogs and social media posts (unless discussing public discourse or documenting specific claims made in those venues)\nPredatory or pay-to-publish journals without genuine peer review\nRetracted papers"
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#copy-paste-with-caution",
+    "href": "chapters/citations-evidence.html#copy-paste-with-caution",
+    "title": "Citations and evidence",
+    "section": "5 Copy-paste with caution",
+    "text": "5 Copy-paste with caution\nCopying exact wording — whether from another writer or from your own earlier work, and even with a citation — can cause problems: plagiarism, if the wording is not clearly marked as a quotation, and a shift in voice that makes the text harder to read.\nA few rules of thumb:\n\nDo not copy-paste prose from anyone who is not a coauthor of the document you are currently writing. If you must reproduce someone else’s exact words, mark them as a direct quotation and cite the source.\nPrefer paraphrasing over quoting. Restating an idea in your own words, with a citation, usually reads better than a block quotation, and it shows that you understand the idea.\nDo not recycle your own published text without thought. Reusing passages from your earlier papers (self-plagiarism) can violate journal policies; cite the earlier work instead of repeating it.\n\nA related case is repetition within your own document. When a passage you are tempted to copy already appears elsewhere, cross-reference it instead of repeating it: this keeps a single source of truth and improves concision."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#best-practices",
+    "href": "chapters/citations-evidence.html#best-practices",
+    "title": "Citations and evidence",
+    "section": "6 Best practices",
+    "text": "6 Best practices\nTo effectively support your claims:\n\nCite as you write: Add citations immediately when making claims, rather than planning to “add references later”\nUse citation management tools: Software like Zotero, Mendeley, or BibTeX helps organize and format references correctly\nCheck your citations: Before submitting, verify that every citation supports its associated claim\nProvide context: Help readers understand why a source is relevant (e.g., “Smith et al. (2020) demonstrated that…” rather than just “(Smith et al., 2020)”)\nBalance primary and review sources: Use primary sources for specific findings, reviews for general background\nStay current: Supplement foundational older references with recent work showing the current state of knowledge\nCite diverse sources: When possible, include work from different research groups and perspectives"
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#common-citation-errors-to-avoid",
+    "href": "chapters/citations-evidence.html#common-citation-errors-to-avoid",
+    "title": "Citations and evidence",
+    "section": "7 Common citation errors to avoid",
+    "text": "7 Common citation errors to avoid\n\nCitation needed: Making claims without any supporting citation or evidence\nVague attribution: Using phrases like “studies have shown” without citing specific studies\n\nCircular citation: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)\nCitation padding: Adding citations that don’t actually support your claims just to appear well-referenced\nSelective citation: Only citing work that supports your position while ignoring contradictory evidence\nGhost authorship: Failing to cite work that directly influenced your ideas"
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#examples",
+    "href": "chapters/citations-evidence.html#examples",
+    "title": "Citations and evidence",
+    "section": "8 Examples",
+    "text": "8 Examples\n\n8.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support.\n\n\n8.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim.\n\n\n8.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained.\n\n\n8.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.\n\n\n8.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#conclusion",
+    "href": "chapters/citations-evidence.html#conclusion",
+    "title": "Citations and evidence",
+    "section": "9 Conclusion",
+    "text": "9 Conclusion\nSupporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If the answer isn’t obvious from your text, add a citation or present direct evidence."
+  },
+  {
+    "objectID": "chapters/avoid-ai-tells.html",
+    "href": "chapters/avoid-ai-tells.html",
+    "title": "Avoiding AI tells",
+    "section": "",
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\nAI writing assistants have a recognizable house style. When you let one draft your prose, it leaves fingerprints: words, sentence shapes, and formatting habits that recur across unrelated documents. Readers who have seen enough machine-generated text learn to spot these patterns, and once they do, the writing reads as generic and unconsidered, even when the underlying content is sound.\nThis chapter catalogs the most common tells so you can remove them. It is written mainly for AI assistants drafting scientific prose, but it is just as useful for humans editing AI-assisted drafts.\nOne caveat first: no single word or pattern below is wrong on its own. Each has legitimate uses. The signal is clustering and mechanical repetition, the same constructions appearing again and again regardless of what the sentence needs. Edit for the cluster, not the isolated instance, and do not flatten your prose into a voiceless register trying to avoid every word on a list."
+  },
+  {
+    "objectID": "chapters/avoid-ai-tells.html#overused-vocabulary",
+    "href": "chapters/avoid-ai-tells.html#overused-vocabulary",
+    "title": "Avoiding AI tells",
+    "section": "1 Overused vocabulary",
+    "text": "1 Overused vocabulary\nSome words appear far more often in machine-generated text than in careful human writing. Many are also Latin-derived words with plainer alternatives, so the advice here overlaps with the Word choice chapter. Table 1 lists frequent offenders and plainer replacements.\n\n\n\nTable 1: Words overused by AI assistants and plainer alternatives\n\n\n\n\n\nOverused\nPlainer alternative\n\n\n\n\ndelve into\nexamine, study\n\n\nleverage\nuse\n\n\nutilize\nuse\n\n\nshowcase\nshow\n\n\nrobust\nreliable, well-tested\n\n\nseamless\nsmooth\n\n\npivotal, crucial\nimportant, key\n\n\ntestament to\nshows, demonstrates\n\n\n\n\n\n\nWhole phrases recur too. “In today’s fast-paced world”, “it is important to note that”, and “plays a vital role in” add length without content; delete them and start with the actual point."
+  },
+  {
+    "objectID": "chapters/avoid-ai-tells.html#rhetorical-reflexes",
+    "href": "chapters/avoid-ai-tells.html#rhetorical-reflexes",
+    "title": "Avoiding AI tells",
+    "section": "2 Rhetorical reflexes",
+    "text": "2 Rhetorical reflexes\nAI assistants reach for a few sentence shapes by reflex, whether or not the content calls for them.\nThe strongest tell is the not just X, but Y antithesis. It promises a profound contrast and usually delivers a hollow one.\n\n\n\n\n\n\n\nExample 1 (The “not just X, but Y” reflex)  \n\n❌ This method is not just fast — it is transformative.\n✅ This method runs in half the time of the previous approach.\n\nThe plain version makes a concrete, verifiable claim. The antithesis frame makes none.\n\n\n\n\nOther reflexes to watch for:\n\nMechanical lists of three. Three parallel items appear whether or not three is the right count. Use the number of items the point actually needs.\nSignpost filler. Phrases like “it is worth noting that” and “importantly” announce a point instead of making it. Cut them and state the point directly.\nHedging stacks. “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest hedge; drop the rest.\nHollow summaries. A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point."
+  },
+  {
+    "objectID": "chapters/avoid-ai-tells.html#formatting-habits",
+    "href": "chapters/avoid-ai-tells.html#formatting-habits",
+    "title": "Avoiding AI tells",
+    "section": "3 Formatting habits",
+    "text": "3 Formatting habits\nSome tells are typographic rather than verbal.\n\nThe em-dash as a default connector. AI text reaches for the em-dash to join almost any two clauses. Vary your punctuation: a period, a comma, or a semicolon is often the better fit.\nBold-leading bullets everywhere. A **Term:** explanation bullet is fine once, but applying the pattern to every list turns it into a tic. Use it when the label earns emphasis, plain bullets otherwise.\nEmoji section headers. Emoji in headings signal a blog post, not a scientific document. Leave them out.\nUniform paragraph rhythm. Paragraphs of near-identical length, each three or four sentences, read as machine-paced. Let paragraph length follow the ideas."
+  },
+  {
+    "objectID": "chapters/avoid-ai-tells.html#tone",
+    "href": "chapters/avoid-ai-tells.html#tone",
+    "title": "Avoiding AI tells",
+    "section": "4 Tone",
+    "text": "4 Tone\nThe last group of tells is about register.\n\nPromotional language. Words like “powerful”, “game-changing”, and “cutting-edge” sell rather than inform. Describe what the thing does and let the reader judge.\nReflexive both-sides framing. Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Hedge when the evidence is genuinely mixed, not by habit.\nVague universals. “Studies show” and “experts agree”, with no specific source or number, are tells precisely because they dodge the evidence. Name the study and give the number, as the Citations and evidence chapter recommends.\n\nA short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice: the goal is clear, honest prose, not prose that has been sanded smooth."
+  },
+  {
+    "objectID": "chapters/conciseness.html",
+    "href": "chapters/conciseness.html",
+    "title": "Conciseness",
+    "section": "",
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\nConcise writing conveys ideas efficiently, using only the words necessary to communicate meaning clearly. Every word should serve a purpose. Eliminate redundancy and verbosity. When you can express an idea in fewer words without losing meaning, do so."
+  },
+  {
+    "objectID": "chapters/conciseness.html#common-ways-to-improve-conciseness",
+    "href": "chapters/conciseness.html#common-ways-to-improve-conciseness",
+    "title": "Conciseness",
+    "section": "1 Common ways to improve conciseness",
+    "text": "1 Common ways to improve conciseness\n\nRemove redundant phrases\n\n“in order to” → “to”\n“due to the fact that” → “because”\n“at this point in time” → “now”\n“a large number of” → “many”\n\nUse active voice instead of passive where appropriate\n\n“The experiment was conducted by the researchers” → “The researchers conducted the experiment”\n\nEliminate unnecessary qualifiers\n\n“very”, “really”, “quite” often add little meaning\n\nReplace wordy phrases with single words\n\n“make a decision” → “decide”\n“give consideration to” → “consider”\n“is able to” → “can”\n\n\nRemember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity."
+  },
+  {
+    "objectID": "chapters/conciseness.html#limit-complex-sentence-structures",
+    "href": "chapters/conciseness.html#limit-complex-sentence-structures",
+    "title": "Conciseness",
+    "section": "2 Limit complex sentence structures",
+    "text": "2 Limit complex sentence structures\nA sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (and, but, or) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.\nWhen a sentence becomes hard to follow, split it into shorter sentences, each carrying one main idea.\n\n\n\n\n\n\n\nExample 1 (Splitting an over-nested sentence)  \n\n❌ Because the assay, which we had validated the previous year using samples that were collected before the outbreak began, produced results that, although noisy, were consistent with prior reports, we proceeded with the analysis.\n✅ We had validated the assay the previous year, using samples collected before the outbreak began. Its results were noisy but consistent with prior reports, so we proceeded with the analysis.\n\nThe revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on."
+  },
+  {
+    "objectID": "chapters/conciseness.html#examples-of-concise-writing",
+    "href": "chapters/conciseness.html#examples-of-concise-writing",
+    "title": "Conciseness",
+    "section": "3 Examples of concise writing",
+    "text": "3 Examples of concise writing\nMany effective writers throughout history have exemplified the principle of conciseness.\nJulius Caesar’s Commentarii and phrases like “Veni, vidi, vici” demonstrate the power of brevity (Wikipedia contributors 2026b).\nErnest Hemingway was known for his spare, direct prose style. His short sentences and simple words conveyed complex ideas and emotions without unnecessary embellishment (Wikipedia contributors 2026a)."
+  },
+  {
+    "objectID": "chapters/grammar.html",
+    "href": "chapters/grammar.html",
+    "title": "Grammar",
+    "section": "",
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\nClear grammar removes friction between your ideas and your reader. This chapter collects a few grammatical habits that consistently make scientific writing easier to read."
+  },
+  {
+    "objectID": "chapters/grammar.html#relative-pronouns",
+    "href": "chapters/grammar.html#relative-pronouns",
+    "title": "Grammar",
+    "section": "1 Relative pronouns",
+    "text": "1 Relative pronouns\nRelative pronouns introduce a clause that describes a preceding noun. The relative pronouns are:\n\nthat\nwhich\nwho\nwhom\nwhose\n\nTwo habits make these clauses easier to read: choosing between that and which correctly, and keeping the relative pronoun rather than dropping it.\n\n1.1 Restrictive vs. non-restrictive clauses: that vs. which\nUse that for a restrictive clause — one that identifies which thing you mean, and that cannot be removed without changing the meaning of the sentence. Use which, set off by commas, for a non-restrictive clause — one that adds information the reader does not need in order to know which thing you mean.\n\n\n\n\n\n\n\nExample 1 (Restrictive clause (that))  \n\nThe dataset that we collected in 2023 contains 4,000 records.\n\nThe clause “that we collected in 2023” tells the reader which dataset we mean. Removing it changes the meaning, so the clause is restrictive and takes that with no comma.\n\n\n\n\n\n\n\n\n\n\n\nExample 2 (Non-restrictive clause (which))  \n\nOur 2023 dataset, which contains 4,000 records, is publicly available.\n\nThe clause “which contains 4,000 records” adds a detail, but the reader already knows which dataset we mean. The clause is non-restrictive, so it takes which and is set off by commas.\n\n\n\n\nA quick test: if you can drop the clause without changing which thing you are describing, use which and commas; otherwise, use that.\n\n\n1.2 Do not omit relative pronouns\nEnglish lets you drop a relative pronoun in some sentences, but keeping it makes the structure of the sentence explicit and easier to parse on the first read. Prefer to keep that, which, or who, even when the grammar would let you drop it.\n\n\n\n\n\n\n\nExample 3 (Restoring an omitted relative pronoun)  \n\n❌ This body of work laid the methodological groundwork I now apply to enteric fever.\n✅ This body of work laid the methodological groundwork that I now apply to enteric fever.\n\nThe word “that” signals immediately that a describing clause is beginning, so the reader does not briefly misread “the methodological groundwork I” as a single phrase and then have to backtrack."
+  },
+  {
+    "objectID": "chapters/grammar.html#demonstrative-pronouns",
+    "href": "chapters/grammar.html#demonstrative-pronouns",
+    "title": "Grammar",
+    "section": "2 Demonstrative pronouns",
+    "text": "2 Demonstrative pronouns\nThere are four demonstrative words:\n\nthis\nthat\nthese\nthose\n\nThey can serve two roles. As adjectives, they modify a noun: “this result”, “those samples”. As standalone pronouns, they replace a noun: “This shows…”, “That means…”.\nWhen a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit.\n\n\n\n\n\n\n\nExample 4 (Naming the referent)  \n\n❌ The model overfit the training data. This poses a problem for deployment.\n✅ The model overfit the training data. This overfitting poses a problem for deployment.\n\nAdding the noun “overfitting” states exactly what “this” refers to, instead of leaving the reader to infer it."
+  },
+  {
+    "objectID": "chapters/paper-organization.html",
+    "href": "chapters/paper-organization.html",
+    "title": "Paper organization",
+    "section": "",
+    "text": "Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions."
+  },
+  {
+    "objectID": "chapters/paper-organization.html#standard-paper-structure",
+    "href": "chapters/paper-organization.html#standard-paper-structure",
+    "title": "Paper organization",
+    "section": "1 Standard paper structure",
+    "text": "1 Standard paper structure\nMost scientific papers follow the IMRaD structure:\n\nIntroduction: Present the research question and background\nMethods: Describe how the study was conducted\nResults: Present the findings\nDiscussion: Interpret the findings and their implications\n\nSome papers combine Results and Discussion into a single section."
+  },
+  {
+    "objectID": "chapters/paper-organization.html#organizing-the-results-section",
+    "href": "chapters/paper-organization.html#organizing-the-results-section",
+    "title": "Paper organization",
+    "section": "2 Organizing the Results section",
+    "text": "2 Organizing the Results section\nThe Results section presents your findings clearly and logically. How you organize this section depends on your research design and the complexity of your analyses.\n\n2.1 Single outcome studies\nWhen analyzing a single primary outcome, organize results by:\n\nDescriptive statistics first\nMain analysis results\nSensitivity analyses or subgroup analyses\n\n\n\n2.2 Multiple outcomes analyzed separately\nWhen analyzing multiple outcomes separately, group your results section by outcome rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.\n\nWhy group by outcome\nGrouping by outcome helps readers:\n\nFollow the story of each outcome from descriptive statistics through final results\nCompare findings across outcomes more easily\nUnderstand the complete picture for each outcome before moving to the next\nNavigate directly to outcomes of interest\n\n\n\nHow to organize by outcome\nFor each outcome, present:\n\nDescriptive statistics\nMain analysis results\nSensitivity analyses\nSubgroup analyses (if applicable)\n\nStructure:\nResults\n├── Outcome 1: Mortality\n│   ├── Descriptive statistics\n│   ├── Main analysis\n│   ├── Sensitivity analyses\n│   └── Subgroup analyses\n├── Outcome 2: Hospital readmission\n│   ├── Descriptive statistics\n│   ├── Main analysis\n│   ├── Sensitivity analyses\n│   └── Subgroup analyses\n└── Outcome 3: Quality of life\n    ├── Descriptive statistics\n    ├── Main analysis\n    ├── Sensitivity analyses\n    └── Subgroup analyses\n\n\nWhat to avoid\nDon’t group by analysis type when outcomes are analyzed separately:\nResults (POOR ORGANIZATION)\n├── Descriptive statistics\n│   ├── Mortality\n│   ├── Hospital readmission\n│   └── Quality of life\n├── Main analyses\n│   ├── Mortality\n│   ├── Hospital readmission\n│   └── Quality of life\n└── Sensitivity analyses\n    ├── Mortality\n    ├── Hospital readmission\n    └── Quality of life\nThis forces readers to jump back and forth between sections to understand the complete story for any single outcome.\n\n\nException: Shared descriptive statistics\nIf your descriptive statistics apply to all outcomes (e.g., baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes."
+  },
+  {
+    "objectID": "chapters/paper-organization.html#figures-and-tables",
+    "href": "chapters/paper-organization.html#figures-and-tables",
+    "title": "Paper organization",
+    "section": "3 Figures and tables",
+    "text": "3 Figures and tables\nPlace figures and tables near the relevant text that describes them. Number them sequentially and reference them in the text before they appear.\nEach figure and table should have a clear, informative caption that allows readers to understand it without reading the main text."
+  },
+  {
+    "objectID": "chapters/paper-organization.html#subsection-headings",
+    "href": "chapters/paper-organization.html#subsection-headings",
+    "title": "Paper organization",
+    "section": "4 Subsection headings",
+    "text": "4 Subsection headings\nUse descriptive subsection headings to guide readers through your results. Headings should clearly indicate the content of each section.\nPoor heading: “Analysis 1”\nBetter heading: “Association between treatment and mortality”\nBest heading: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)"
+  },
+  {
+    "objectID": "chapters/summary.html",
+    "href": "chapters/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\n\n\nIn summary, this website has no content whatsoever.\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Principles of Scientific Writing",
+    "section": "",
+    "text": "Preface\nThis website will present my perspective on scientific writing, in particular focusing on writing about statistical data analysis, but also scientific writing generally (and informative prose generally). I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  }
+]
