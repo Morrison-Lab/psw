@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-08-10 03:56:50 (UTC)
+Last modified: 2026-08-10 04:08:46 (UTC)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -66,7 +66,7 @@ Some phrases assert that a claim needs no support instead of supplying any:
 - “of course”
 - “as everyone knows”
 
-The problem is the appeal, not the individual words: “clearly” is fine as an adverb of manner (“the methods section clearly describes the sampling frame”), and becomes a problem only when it stands in for an argument.
+The problem is the appeal, not the individual words. “Clearly” is fine as an adverb of manner (“the methods section clearly describes the sampling frame”), and “of course” is fine when it flags an assumption you have already established. Each becomes a problem only when it stands in for an argument you have not made.
 
 These phrases do no work for the reader. A reader who already knows the result gains nothing from being told that it is familiar, and a reader who does not is told that the gap is their own fault, without being given any way to close it. They also cost the writer something. Working a step out is how you find out whether it holds; calling it obvious settles the question by assertion, and leaves any error in the step where it is. So if you cannot supply a derivation or a citation for a step, treat that as a reason to work the step out, not as a reason to call it obvious.
 
@@ -92,7 +92,7 @@ Deleting the phrase and keeping the claim is also usually an improvement: “the
 
 “Trivial” and “trivially” usually work the same way: they announce that a step is too small to write down, which relieves the writer of writing it down. Treat them as a prompt to check the step, and to write it out if it takes only a line.
 
-The word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case — for example, how a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries.
+The word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case. For example, a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries.
 
 ## 4 What makes a citation relevant
 
@@ -183,7 +183,7 @@ To effectively support your claims:
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
-- **Appeal to obviousness**: Using “obviously”, “clearly”, or “as is well known” in place of a derivation or a citation
+- **Appeal to obviousness**: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation
 - **Circular citation**: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)
 - **Citation padding**: Adding citations that don’t actually support your claims just to appear well-referenced
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
