@@ -84,10 +84,13 @@ instead of supplying any:
 - "of course"
 - "as everyone knows"
 
-The problem is the appeal, not the individual words:
-"clearly" is fine as an adverb of manner
+The problem is the appeal, not the individual words.
+"Clearly" is fine as an adverb of manner
 ("the methods section clearly describes the sampling frame"),
-and becomes a problem only when it stands in for an argument.
+and "of course" is fine when it flags an assumption
+you have already established.
+Each becomes a problem only when it stands in
+for an argument you have not made.
 
 These phrases do no work for the reader.
 A reader who already knows the result gains nothing
@@ -168,9 +171,9 @@ and to write it out if it takes only a line.
 
 The word has one defensible use,
 which is describing how a general expression reduces to a simpler one
-in a special case —
-for example,
-how a weighted average reduces to an ordinary average
+in a special case.
+For example,
+a weighted average reduces to an ordinary average
 when all of the weights are equal.
 Even in that use,
 "minimal case" or "degenerate case"
@@ -292,7 +295,7 @@ To effectively support your claims:
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like "studies have shown" without citing specific studies
-- **Appeal to obviousness**: Using "obviously", "clearly", or "as is well known" in place of a derivation or a citation
+- **Appeal to obviousness**: Using "obviously", "clearly", or "as everyone knows" in place of a derivation or a citation
 - **Circular citation**: Citing a paper that doesn't contain the claimed information but cites another paper that does (cite the original source)
 - **Citation padding**: Adding citations that don't actually support your claims just to appear well-referenced
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
