@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-08-10 02:23:15 (UTC)
+Last modified: 2026-08-10 03:56:50 (UTC)
 
 When analyzing multiple outcomes separately, **group your results section by outcome** rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.
 
