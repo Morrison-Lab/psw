@@ -1,10 +1,14 @@
 {
   "extraKnownMarketplaces": {
-    "d-morrison": {
-      "source": { "source": "github", "repo": "d-morrison/ai-config" }
+    "Morrison-Lab": {
+      "source": { "source": "github", "repo": "Morrison-Lab/ai-config" }
+    },
+    "posit-dev-skills": {
+      "source": { "source": "github", "repo": "posit-dev/skills" }
     }
   },
   "enabledPlugins": {
-    "ai-config@d-morrison": true
+    "ai-config@Morrison-Lab": true,
+    "quarto@posit-dev-skills": true
   }
 }
