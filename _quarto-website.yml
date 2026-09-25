@@ -7,12 +7,14 @@ project:
     - "!README.md"
     - "!appendix-document-metadata.qmd"
     # The include partials under chapters/defining-terms/, chapters/grammar/,
-    # and chapters/notation/
+    # chapters/notation/, chapters/conciseness/ and chapters/paper-organization/
     # are pulled into their parent chapter via `{{< include >}}` shortcodes; they
     # are not standalone pages, so don't render them directly.
     - "!chapters/defining-terms/"
     - "!chapters/grammar/"
     - "!chapters/notation/"
+    - "!chapters/conciseness/"
+    - "!chapters/paper-organization/"
 
 website:
   title: "Principles of Scientific Writing"
