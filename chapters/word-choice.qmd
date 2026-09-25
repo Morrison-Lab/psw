@@ -123,6 +123,9 @@ When you do need a technical term,
 define it clearly at first use,
 then keep using the same term
 rather than switching between synonyms.
+When the field itself uses several names for the concept,
+list them where you define it
+(see [Name the synonyms](defining-terms.qmd#guidelines-for-defining-terms)).
 
 :::{#exm-jargon}
 

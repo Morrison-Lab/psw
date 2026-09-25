@@ -69,6 +69,18 @@ Follow these principles when introducing new terms:
   that belongs in a div,
   including a term defined in passing.
 
+- **Name the synonyms:**
+  When a field uses several words for one concept,
+  such as *learning*, *training* and *fitting* a model,
+  list them in the definition block,
+  or in a callout beside it,
+  and say which one the document uses.
+  Name near-synonyms there too,
+  and state how they differ.
+  A reader who meets the other words in another source
+  can then connect them to the concept already learned
+  (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
+
 ## Examples of term definitions
 
 Here are examples of well-defined terms:
