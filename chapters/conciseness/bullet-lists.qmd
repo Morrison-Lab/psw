@@ -1,0 +1,36 @@
+## Put lists in bullet points
+
+A list of three or more phrases,
+written inline and separated by commas,
+makes the reader count commas to find where each item ends.
+Write it as a bullet list instead,
+introduced by a sentence ending in a colon.
+Use a numbered list when the items are steps done in order.
+
+This rule matters most on slides,
+where a reader scans a list rather than reading it as a sentence.
+
+- Keep the items grammatically parallel,
+  so each one completes the introducing sentence the same way.
+- Leave a blank line before the list;
+  without it, Markdown reads the list as part of the paragraph above.
+- A short series of single words,
+  such as "R, Julia, or Python",
+  can stay inline.
+
+::: {#exm-bullet-lists}
+
+## Turning an inline list into bullet points
+
+> ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
+>
+> ✅ Machine learning combines three components:
+>
+> - data to learn from;
+> - statistics, to say what a finite sample of data supports;
+> - optimization, to find the model that fits the data best.
+
+The revised version puts each component on its own line,
+so the reader sees at a glance that there are three.
+
+:::
