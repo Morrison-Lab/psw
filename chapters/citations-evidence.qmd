@@ -292,6 +292,32 @@ To effectively support your claims:
 6. **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7. **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
+## Quote the original
+
+Quote and cite the source that said it,
+not a later source that quotes it.
+Check the wording and the page against the original.
+
+> ❌ Mitchell (1997), as quoted in Goodfellow et al. (2016), defines ...
+>
+> ✅ "A computer program is said to learn ..." [@mitchell1997]
+
+## Put the content first
+
+Headings and sentences should name the topic, not its author:
+"A formal definition of machine learning",
+not "Mitchell's definition".
+Follow a quotation with its citation alone,
+without commentary on who said it or where it was repeated.
+
+## Adapting another course's material
+
+When teaching material draws on another course,
+write your own version of the content
+rather than summarizing how that course presents it.
+Credit the source in a note at the start or end of the adapted section;
+in Quarto, a `::: notes` div keeps the credit out of the slides.
+
 ## Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence

@@ -62,7 +62,7 @@ underscore, highlight | show
 foster, bolster | encourage, strengthen
 intricate, meticulous | detailed, careful
 comprehensive | complete, or say what it covers
-groundbreaking, game-changer | new, or say what changed
+groundbreaking | new, or say what changed
 unlock, harness, empower | enable, use, allow
 myriad, plethora | many, or give the count
 
@@ -78,10 +78,21 @@ add length without content;
 delete them and start with the actual point.
 Two more families recur, and each member should give way to the literal claim:
 
-- **Stock metaphors:** "journey", "pave the way", "shed light on",
-  "at the heart of", "sits at the intersection of", "cornerstone", "deep dive".
-- **Stock framings:** "at its core", "in essence", "boils down to",
-  "when it comes to", "in the realm of", "the key takeaway".
+- **Stock metaphors:**
+  - "journey"
+  - "pave the way"
+  - "shed light on"
+  - "at the heart of"
+  - "sits at the intersection of"
+  - "cornerstone"
+  - "deep dive"
+- **Stock framings:**
+  - "at its core"
+  - "in essence"
+  - "boils down to"
+  - "when it comes to"
+  - "in the realm of"
+  - "the key takeaway"
 
 ## Rhetorical reflexes
 
@@ -133,13 +144,15 @@ that stage a point instead of stating it.
 > ✅ A machine learning problem is stated only when its
 > experience $E$, task $T$ and performance measure $P$ are named.
 
-The first version packs six tells into three sentences.
-It raises an objection only to knock it down,
-refers to the definition as "It" and "Its",
-treats the definition as a person that "forces" the reader,
-addresses the reader as "you",
-withholds the point until after a colon,
-and ends on an aphorism.
+The first version packs six tells into two sentences:
+
+- an objection raised only to be knocked down;
+- "It" and "Its" in place of "the definition";
+- a definition that "forces" the reader, as if it were a person;
+- "you" addressing the reader;
+- a point withheld until after a colon;
+- a closing aphorism.
+
 The second version states the claim once.
 
 :::
@@ -193,19 +206,16 @@ Watch for these shapes:
   "Great question" and "I hope this helps"
   belong in a chat window, not a document.
 
-Four more habits blur the referent or delay the claim:
+Four more habits blur the referent or delay the claim.
+Other chapters cover each:
 
-- **A demonstrative standing in for a noun.** "This shows" or "getting there"
-  leaves the reader to reconstruct the referent;
-  name it, as [Demonstrative pronouns](grammar.qmd#demonstrative-pronouns) explains.
-- **"Thing".** Say which object, quantity or idea is meant.
-- **A leading dependent clause.** "When $n$ grows, the fit improves"
-  holds a condition before the reader knows what it conditions;
-  write "The fit improves when $n$ grows".
-  See [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures).
-- **Informal idioms.** "Kicks in", "the whole point" and "getting there"
-  replace a literal claim with a figure of speech;
-  see [Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language).
+- a demonstrative standing in for its referent
+  ([Demonstrative pronouns](grammar.qmd#demonstrative-pronouns));
+- the word "thing" ([Say which thing](word-choice.qmd#say-which-thing));
+- a dependent clause opening a sentence
+  ([Lead with the subject](conciseness.qmd#lead-with-the-subject));
+- informal idioms
+  ([Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language)).
 
 ## Formatting habits
 

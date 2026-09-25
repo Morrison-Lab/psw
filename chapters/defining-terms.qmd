@@ -60,6 +60,15 @@ Follow these principles when introducing new terms:
   Every definition should include at least one concrete example
   that illustrates how the term is used.
 
+- **Give each term its own definition block:**
+  In a Quarto document, put every definition in its own `#def-` div
+  (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)),
+  one term per div,
+  with commentary after the div rather than inside it.
+  A bolded term in running prose is usually an inline definition
+  that belongs in a div,
+  including a term defined in passing.
+
 ## Examples of term definitions
 
 Here are examples of well-defined terms:
