@@ -65,6 +65,17 @@ comprehensive | complete, or say what it covers
 groundbreaking | new, or say what changed
 unlock, harness, empower | enable, use, allow
 myriad, plethora | many, or give the count
+seamless, seamlessly | smoothly, or say what does not break
+holistic, multifaceted, nuanced | say which parts or distinctions
+paramount | most important
+embark, elevate | start, improve
+streamline | simplify, speed up
+synergy | say what the combination does
+actionable | say what action it supports
+beacon | example, model
+game-changer, gamechanger, state-of-the-art, cutting-edge | say what changed and by how much
+ever-evolving | changing
+treasure trove | collection, source
 
 Words overused by AI assistants and plainer alternatives
 
@@ -85,7 +96,7 @@ Two more families recur, and each member should give way to the literal claim:
   - "at the heart of"
   - "sits at the intersection of"
   - "cornerstone"
-  - "deep dive"
+  - "deep dive", "dive into"
 - **Stock framings:**
   - "at its core"
   - "in essence"
@@ -93,6 +104,7 @@ Two more families recur, and each member should give way to the literal claim:
   - "when it comes to"
   - "in the realm of"
   - "the key takeaway"
+  - "more than just"
 
 ## Rhetorical reflexes
 
