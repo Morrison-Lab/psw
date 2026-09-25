@@ -12,9 +12,8 @@ where a reader scans a list rather than reading it as a sentence.
   so each one completes the introducing sentence the same way.
 - Leave a blank line before the list;
   without it, Markdown reads the list as part of the paragraph above.
-- A short series of single words,
-  such as "R, Julia, or Python",
-  can stay inline.
+- Keep a short series of single words inline,
+  such as "R, Julia, or Python".
 
 ::: {#exm-bullet-lists}
 
