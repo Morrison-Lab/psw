@@ -7,6 +7,9 @@ Use a numbered list when the items are steps done in order.
 
 Bullet lists matter most on slides,
 where a reader scans a list rather than reading it as a sentence.
+The rule is one case of a broader preference for more structure:
+when content has a shape, such as items, steps or a definition,
+show that shape in the markup.
 
 - Keep the items grammatically parallel,
   so each one completes the introducing sentence the same way.
