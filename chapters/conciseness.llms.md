@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-26 05:55:30 (UTC)
+Last modified: 2026-09-26 17:55:08 (UTC)
 
 > **NOTE:**
 >
@@ -54,7 +54,46 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 4 Examples of concise writing
+## 4 Put lists in bullet points
+
+A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
+
+Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
+
+A few mechanics to keep in mind when writing one:
+
+- Keep the items grammatically parallel, so each one completes the introducing sentence the same way.
+- Leave a blank line before the list; without it, Markdown reads the list as part of the paragraph above.
+- Keep a short series of single words inline, such as “R, Julia, or Python”.
+
+> **NOTE:**
+>
+> **Example 2 (Turning an inline list into bullet points)**  
+>
+> > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
+> >
+> > ✅ Machine learning combines three components:
+> >
+> > - data to learn from;
+> > - statistics to say what a finite sample of data supports;
+> > - optimization to find the model that fits the data best.
+>
+> The revised version puts each component on its own line, so the reader sees at a glance that there are three.
+
+> **NOTE:**
+>
+> **Example 3 (Turning inline steps into a numbered list)**  
+>
+> > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
+> >
+> > ✅ k-means starts with \\k\\ group centers and repeats two steps until the assignments stop changing:
+> >
+> > 1.  assign each point to its nearest center;
+> > 2.  move each center to the mean of its points.
+>
+> The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
+
+## 5 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
