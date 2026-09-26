@@ -11,6 +11,8 @@ The rule is one case of a broader preference for more structure:
 when content has a shape, such as items, steps, a definition or an example,
 show that shape in the markup.
 
+A few mechanics to keep in mind when writing one:
+
 - Keep the items grammatically parallel,
   so each one completes the introducing sentence the same way.
 - Leave a blank line before the list;
