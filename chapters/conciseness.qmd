@@ -80,6 +80,10 @@ so the reader can absorb each idea before moving on.
 
 :::
 
+## Put lists in bullet points
+
+{{< include conciseness/bullet-lists.qmd >}}
+
 ## Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
