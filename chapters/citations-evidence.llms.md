@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-10 21:55:51 (UTC)
+Last modified: 2026-09-26 05:55:30 (UTC)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -183,7 +183,23 @@ To effectively support your claims:
 6.  **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7.  **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
-## 8 Common citation errors to avoid
+## 8 Quote the original
+
+Quote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.
+
+> ❌ Mitchell (1997), as quoted in Goodfellow et al. (2016), defines …
+>
+> ✅ “A computer program is said to learn …” ([Mitchell 1997](#ref-mitchell1997))
+
+## 9 Put the content first
+
+Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
+
+## 10 Adapting another course’s material
+
+When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section; in Quarto, a `::: notes` div keeps the credit out of the slides.
+
+## 11 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -193,39 +209,39 @@ To effectively support your claims:
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 9 Examples
+## 12 Examples
 
-### 9.1 Poor (unsupported claim)
+### 12.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 9.2 Better (citation provided)
+### 12.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 9.3 Best (citation with context)
+### 12.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 9.4 Poor (irrelevant citation)
+### 12.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 9.5 Better (relevant citation)
+### 12.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 10 Conclusion
+## 13 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
@@ -236,6 +252,8 @@ Back to top
 Hawkins, Douglas M. 2004. “The Problem of Overfitting.” *Journal of Chemical Information and Computer Sciences* 44 (1): 1–12. <https://doi.org/10.1021/ci0342472>.
 
 Knuth, Donald E. 1984. “Literate Programming.” *Comput. J.* (USA) 27 (2): 97–111. <https://doi.org/10.1093/comjnl/27.2.97>.
+
+Mitchell, Tom M. 1997. *Machine Learning*. McGraw-Hill.
 
 Stack Overflow. 2024. *Stack Overflow Developer Survey 2024*. <https://survey.stackoverflow.co/2024/>.
 

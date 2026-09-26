@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-10 21:55:51 (UTC)
+Last modified: 2026-09-26 05:55:30 (UTC)
 
 > **NOTE:**
 >
@@ -71,7 +71,7 @@ There are four demonstrative words:
 
 They can serve two roles. As adjectives, they modify a noun: “**this** result”, “**those** samples”. As standalone pronouns, they replace a noun: “**This** shows…”, “**That** means…”.
 
-When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit.
+When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is.
 
 > **NOTE:**
 >

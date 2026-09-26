@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-10 21:55:51 (UTC)
+Last modified: 2026-09-26 05:55:30 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -31,6 +31,10 @@ Follow these principles when introducing new terms:
 - **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
 
 - **Provide examples:** Every definition should include at least one concrete example that illustrates how the term is used.
+
+- **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.
+
+- **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
 
 ## 2 Examples of term definitions
 

@@ -18,14 +18,21 @@
     "href": "chapters/word-choice.html#avoid-vague-and-metaphorical-language",
     "title": "Word choice",
     "section": "1 Avoid vague and metaphorical language",
-    "text": "1 Avoid vague and metaphorical language\nScientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise term for the thing you are describing. Table 2 lists some common vague phrases and more precise alternatives.\n\n\n\nTable 2: Vague or metaphorical phrases and more precise alternatives\n\n\n\n\n\nVague or metaphorical\nMore precise\n\n\n\n\ninfection pressure\nincidence rate\n\n\ndisease burden\nincidence rate, or prevalence proportion\n\n\nthe signal was strong\nthe effect size was large\n\n\na huge effect\na risk ratio of 4.2\n\n\n\n\n\n\nThe precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid."
+    "text": "1 Avoid vague and metaphorical language\nScientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise term for the thing you are describing. Table 2 lists some common vague phrases and more precise alternatives.\n\n\n\nTable 2: Vague or metaphorical phrases and more precise alternatives\n\n\n\n\n\nVague or metaphorical\nMore precise\n\n\n\n\ninfection pressure\nincidence rate\n\n\ndisease burden\nincidence rate, or prevalence proportion\n\n\nthe signal was strong\nthe effect size was large\n\n\na huge effect\na risk ratio of 4.2\n\n\n\n\n\n\nThe precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.\nInformal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim."
+  },
+  {
+    "objectID": "chapters/word-choice.html#say-which-thing",
+    "href": "chapters/word-choice.html#say-which-thing",
+    "title": "Word choice",
+    "section": "2 Say which thing",
+    "text": "2 Say which thing\nThe word thing almost never survives a second look. Name the object, quantity, step or idea it stands for.\n\n❌ The main thing to check is the residuals.\n✅ Check the residuals first."
   },
   {
     "objectID": "chapters/word-choice.html#minimize-unnecessary-jargon",
     "href": "chapters/word-choice.html#minimize-unnecessary-jargon",
     "title": "Word choice",
-    "section": "2 Minimize unnecessary jargon",
-    "text": "2 Minimize unnecessary jargon\nJargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.\nPrefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms.\n\n\n\n\n\n\n\nExample 1 (Replacing unnecessary jargon)  \n\n❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.\n✅ We wrote a custom program to combine data from several sources.\n\nThe plain version is shorter, and it states what was actually done.\n\n\n\n\nFor each technical word, ask whether it carries meaning that a plainer word would lose. If it does not, replace it with the plainer word. If it does carry necessary meaning but a reader outside your subfield would not understand it, define it clearly at first use."
+    "section": "3 Minimize unnecessary jargon",
+    "text": "3 Minimize unnecessary jargon\nJargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.\nPrefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see Name the synonyms).\n\n\n\n\n\n\n\nExample 1 (Replacing unnecessary jargon)  \n\n❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.\n✅ We wrote a custom program to combine data from several sources.\n\nThe plain version is shorter, and it states what was actually done.\n\n\n\n\nFor each technical word, ask whether it carries meaning that a plainer word would lose. If it does not, replace it with the plainer word. If it does carry necessary meaning but a reader outside your subfield would not understand it, define it clearly at first use."
   },
   {
     "objectID": "chapters/word-choice-slides.html#avoid-vague-and-metaphorical-language",
@@ -35,11 +42,18 @@
     "text": "1 Avoid vague and metaphorical language"
   },
   {
+    "objectID": "chapters/word-choice-slides.html#say-which-thing",
+    "href": "chapters/word-choice-slides.html#say-which-thing",
+    "title": "Word choice",
+    "section": "2 Say which thing",
+    "text": "2 Say which thing"
+  },
+  {
     "objectID": "chapters/word-choice-slides.html#minimize-unnecessary-jargon",
     "href": "chapters/word-choice-slides.html#minimize-unnecessary-jargon",
     "title": "Word choice",
-    "section": "2 Minimize unnecessary jargon",
-    "text": "2 Minimize unnecessary jargon"
+    "section": "3 Minimize unnecessary jargon",
+    "text": "3 Minimize unnecessary jargon"
   },
   {
     "objectID": "chapters/paper-organization/multiple-outcomes.html",
@@ -88,7 +102,7 @@
     "href": "chapters/grammar.html#demonstrative-pronouns",
     "title": "Grammar",
     "section": "2 Demonstrative pronouns",
-    "text": "2 Demonstrative pronouns\nThere are four demonstrative words:\n\nthis\nthat\nthese\nthose\n\nThey can serve two roles. As adjectives, they modify a noun: “this result”, “those samples”. As standalone pronouns, they replace a noun: “This shows…”, “That means…”.\nWhen a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit.\n\n\n\n\n\n\n\nExample 4 (Naming the referent)  \n\n❌ The model overfit the training data. This poses a problem for deployment.\n✅ The model overfit the training data. This overfitting poses a problem for deployment.\n\nAdding the noun “overfitting” states exactly what “this” refers to, instead of leaving the reader to infer it."
+    "text": "2 Demonstrative pronouns\nThere are four demonstrative words:\n\nthis\nthat\nthese\nthose\n\nThey can serve two roles. As adjectives, they modify a noun: “this result”, “those samples”. As standalone pronouns, they replace a noun: “This shows…”, “That means…”.\nWhen a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs here and there point the same way: “getting there” leaves the reader to guess where “there” is.\n\n\n\n\n\n\n\nExample 4 (Naming the referent)  \n\n❌ The model overfit the training data. This poses a problem for deployment.\n✅ The model overfit the training data. This overfitting poses a problem for deployment.\n\nAdding the noun “overfitting” states exactly what “this” refers to, instead of leaving the reader to infer it."
   },
   {
     "objectID": "chapters/grammar-slides.html#relative-pronouns",
@@ -119,18 +133,25 @@
     "text": "1 Common ways to improve conciseness\n\nRemove redundant phrases\n\n“in order to” → “to”\n“due to the fact that” → “because”\n“at this point in time” → “now”\n“a large number of” → “many”\n\nUse active voice instead of passive where appropriate\n\n“The experiment was conducted by the researchers” → “The researchers conducted the experiment”\n\nEliminate unnecessary qualifiers\n\n“very”, “really”, “quite” often add little meaning\n\nReplace wordy phrases with single words\n\n“make a decision” → “decide”\n“give consideration to” → “consider”\n“is able to” → “can”\n\n\nRemember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity."
   },
   {
+    "objectID": "chapters/conciseness.html#lead-with-the-subject",
+    "href": "chapters/conciseness.html#lead-with-the-subject",
+    "title": "Conciseness",
+    "section": "2 Lead with the subject",
+    "text": "2 Lead with the subject\nStart a sentence with its subject, not a dependent clause. A leading clause makes the reader hold a condition before knowing what it conditions.\n\n❌ When the sample size grows, the estimate becomes more precise.\n✅ The estimate becomes more precise as the sample size grows."
+  },
+  {
     "objectID": "chapters/conciseness.html#limit-complex-sentence-structures",
     "href": "chapters/conciseness.html#limit-complex-sentence-structures",
     "title": "Conciseness",
-    "section": "2 Limit complex sentence structures",
-    "text": "2 Limit complex sentence structures\nA sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (and, but, or) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.\nWhen a sentence becomes hard to follow, split it into shorter sentences, each carrying one main idea.\n\n\n\n\n\n\n\nExample 1 (Splitting an over-nested sentence)  \n\n❌ Because the assay, which we had validated the previous year using samples that were collected before the outbreak began, produced results that, although noisy, were consistent with prior reports, we proceeded with the analysis.\n✅ We had validated the assay the previous year, using samples collected before the outbreak began. Its results were noisy but consistent with prior reports, so we proceeded with the analysis.\n\nThe revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on."
+    "section": "3 Limit complex sentence structures",
+    "text": "3 Limit complex sentence structures\nA sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (and, but, or) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.\nWhen a sentence becomes hard to follow, split it into shorter sentences, each carrying one main idea.\n\n\n\n\n\n\n\nExample 1 (Splitting an over-nested sentence)  \n\n❌ Because the assay, which we had validated the previous year using samples that were collected before the outbreak began, produced results that, although noisy, were consistent with prior reports, we proceeded with the analysis.\n✅ We had validated the assay the previous year, using samples collected before the outbreak began. Its results were noisy but consistent with prior reports, so we proceeded with the analysis.\n\nThe revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on."
   },
   {
     "objectID": "chapters/conciseness.html#examples-of-concise-writing",
     "href": "chapters/conciseness.html#examples-of-concise-writing",
     "title": "Conciseness",
-    "section": "3 Examples of concise writing",
-    "text": "3 Examples of concise writing\nMany effective writers throughout history have exemplified the principle of conciseness.\nJulius Caesar’s Commentarii and phrases like “Veni, vidi, vici” demonstrate the power of brevity (Wikipedia contributors 2026b).\nErnest Hemingway was known for his spare, direct prose style. His short sentences and simple words conveyed complex ideas and emotions without unnecessary embellishment (Wikipedia contributors 2026a)."
+    "section": "4 Examples of concise writing",
+    "text": "4 Examples of concise writing\nMany effective writers throughout history have exemplified the principle of conciseness.\nJulius Caesar’s Commentarii and phrases like “Veni, vidi, vici” demonstrate the power of brevity (Wikipedia contributors 2026b).\nErnest Hemingway was known for his spare, direct prose style. His short sentences and simple words conveyed complex ideas and emotions without unnecessary embellishment (Wikipedia contributors 2026a)."
   },
   {
     "objectID": "chapters/conciseness-slides.html#common-ways-to-improve-conciseness",
@@ -140,18 +161,25 @@
     "text": "1 Common ways to improve conciseness"
   },
   {
+    "objectID": "chapters/conciseness-slides.html#lead-with-the-subject",
+    "href": "chapters/conciseness-slides.html#lead-with-the-subject",
+    "title": "Conciseness",
+    "section": "2 Lead with the subject",
+    "text": "2 Lead with the subject"
+  },
+  {
     "objectID": "chapters/conciseness-slides.html#limit-complex-sentence-structures",
     "href": "chapters/conciseness-slides.html#limit-complex-sentence-structures",
     "title": "Conciseness",
-    "section": "2 Limit complex sentence structures",
-    "text": "2 Limit complex sentence structures"
+    "section": "3 Limit complex sentence structures",
+    "text": "3 Limit complex sentence structures"
   },
   {
     "objectID": "chapters/conciseness-slides.html#examples-of-concise-writing",
     "href": "chapters/conciseness-slides.html#examples-of-concise-writing",
     "title": "Conciseness",
-    "section": "3 Examples of concise writing",
-    "text": "3 Examples of concise writing"
+    "section": "4 Examples of concise writing",
+    "text": "4 Examples of concise writing"
   },
   {
     "objectID": "chapters/conciseness-slides.html#references",
@@ -172,7 +200,7 @@
     "href": "chapters/avoid-ai-tells.html#overused-vocabulary",
     "title": "Avoiding AI tells",
     "section": "1 Overused vocabulary",
-    "text": "1 Overused vocabulary\nSome words appear far more often in machine-generated text than in careful human writing. Many are also Latin-derived words with plainer alternatives, so the advice here overlaps with the Word choice chapter. Table 1 lists frequent offenders and plainer replacements.\n\n\n\nTable 1: Words overused by AI assistants and plainer alternatives\n\n\n\n\n\nOverused\nPlainer alternative\n\n\n\n\ndelve into\nexamine, study\n\n\nleverage\nuse\n\n\nutilize\nuse\n\n\nshowcase\nshow\n\n\nrobust\nreliable, well-tested\n\n\nseamless\nsmooth\n\n\npivotal, crucial\nimportant, key\n\n\ntestament to\nshows, demonstrates\n\n\n\n\n\n\nWhole phrases recur too. “In today’s fast-paced world”, “it is important to note that”, and “plays a vital role in” add length without content; delete them and start with the actual point."
+    "text": "1 Overused vocabulary\nSome words appear far more often in machine-generated text than in careful human writing. Many are also Latin-derived words with plainer alternatives, so the advice here overlaps with the Word choice chapter. Table 1 lists frequent offenders and plainer replacements.\n\n\n\nTable 1: Words overused by AI assistants and plainer alternatives\n\n\n\n\n\n\n\n\n\nOverused\nPlainer alternative\n\n\n\n\ndelve into\nexamine, study\n\n\nleverage\nuse\n\n\nutilize\nuse\n\n\nshowcase\nshow\n\n\nrobust\nreliable, well-tested\n\n\nseamless\nsmooth\n\n\npivotal, crucial\nimportant, key\n\n\ntestament to\nshows, demonstrates\n\n\ntapestry, landscape, realm\nfield, area, or name the thing\n\n\nnavigate\nhandle, work through\n\n\nunderscore, highlight\nshow\n\n\nfoster, bolster\nencourage, strengthen\n\n\nintricate, meticulous\ndetailed, careful\n\n\ncomprehensive\ncomplete, or say what it covers\n\n\ngroundbreaking\nnew, or say what changed\n\n\nunlock, harness, empower\nenable, use, allow\n\n\nmyriad, plethora\nmany, or give the count\n\n\nseamless, seamlessly\nsmoothly, or say what does not break\n\n\nholistic, multifaceted, nuanced\nsay which parts or distinctions\n\n\nparamount\nmost important\n\n\nembark, elevate\nstart, improve\n\n\nstreamline\nsimplify, speed up\n\n\nsynergy\nsay what the combination does\n\n\nactionable\nsay what action it supports\n\n\nbeacon\nexample, model\n\n\ngame-changer, gamechanger, state-of-the-art, cutting-edge\nsay what changed and by how much\n\n\never-evolving\nchanging\n\n\ntreasure trove\ncollection, source\n\n\n\n\n\n\nWhole phrases recur too. “In today’s fast-paced world”, “it is important to note that”, and “plays a vital role in” add length without content; delete them and start with the actual point. Two more families recur, and each member should give way to the literal claim:\n\nStock metaphors:\n\n“journey”\n“pave the way”\n“shed light on”\n“at the heart of”\n“sits at the intersection of”\n“cornerstone”\n“deep dive”, “dive into”\n\nStock framings:\n\n“at its core”\n“in essence”\n“boils down to”\n“when it comes to”\n“in the realm of”\n“the key takeaway”\n“more than just”"
   },
   {
     "objectID": "chapters/avoid-ai-tells.html#rhetorical-reflexes",
@@ -182,18 +210,25 @@
     "text": "2 Rhetorical reflexes\nAI assistants reach for a few sentence shapes by reflex, whether or not the content calls for them.\nThe strongest tell is the not just X, but Y antithesis. It promises a profound contrast and usually delivers a hollow one.\n\n\n\n\n\n\n\nExample 1 (The “not just X, but Y” reflex)  \n\n❌ This method is not just fast — it is transformative.\n✅ This method runs in half the time of the previous approach.\n\nThe plain version makes a concrete, verifiable claim. The antithesis frame makes none.\n\n\n\n\nOther reflexes to watch for:\n\nMechanical lists of three. Three parallel items appear whether or not three is the right count. Use the number of items the point actually needs.\nSignpost filler. Phrases like “it is worth noting that” and “importantly” announce a point instead of making it. Cut them and state the point directly.\nHedging stacks. “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest hedge; drop the rest.\nHollow summaries. A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point."
   },
   {
+    "objectID": "chapters/avoid-ai-tells.html#clichéd-sentence-shapes",
+    "href": "chapters/avoid-ai-tells.html#clichéd-sentence-shapes",
+    "title": "Avoiding AI tells",
+    "section": "3 Clichéd sentence shapes",
+    "text": "3 Clichéd sentence shapes\nBeyond the antithesis, AI drafts lean on a set of sentence shapes that stage a point instead of stating it.\n\n\n\n\n\n\n\nExample 2 (A staged point)  \n\n❌ It can read like a definition that says nothing. Its use is in what it forces you to name: a project that cannot say what its \\(E\\), \\(T\\) and \\(P\\) are has not yet stated a machine learning problem.\n✅ A machine learning problem is stated only when its experience \\(E\\), task \\(T\\) and performance measure \\(P\\) are named.\n\nThe first version packs six tells into two sentences:\n\nan objection raised only to be knocked down;\n“It” and “Its” in place of “the definition”;\na definition that “forces” the reader, as if it were a person;\n“you” addressing the reader;\na point withheld until after a colon;\na closing aphorism.\n\nThe second version states the claim once.\n\n\n\n\nWatch for these shapes:\n\nThe straw objection. A doubt raised only to be answered (“It may seem trivial. In fact, …”). This is the antithesis spread over two sentences.\nThe personified abstraction. A definition, method or result that “forces”, “invites”, “demands” or “asks” something of the reader. Name who does what.\nThe colon reveal. A setup, then a colon, then the point. Lead with the point.\nThe answered rhetorical question. “The result? A faster fit.” or “Why does this matter? Because …”. State the result.\nThe throat-clearing lead-in. “Here’s the thing:”, “Here’s why:”, “The key is”, “Put simply,”. Delete the lead-in.\nThe reframe. “X isn’t about Y; it’s about Z”, “The question isn’t X, it’s Y”, and “not because X, but because Y”. Say what X is about.\nFragment emphasis. “Simple. Fast. Reliable.” Write a sentence with a subject and a verb.\nThe editorializing tail. A trailing participial clause that comments on the sentence: “, highlighting the importance of …”, “, ensuring that …”, “, making it ideal for …”. End the sentence at its claim.\nThe inflated copula. “Serves as”, “stands as” and “acts as” where “is” says the same.\nThe range frame. “From X to Y” listing two extremes instead of naming the scope.\nThe audience frame. “Whether you’re a student or a researcher, …”. Drop it.\nThe restatement. “In other words, …” repeating the previous sentence. Keep the clearer of the two.\nThe closing aphorism. A one-line verdict at the end of a paragraph: “And that’s the point.”, “Simple as that.”, “… has not yet stated a problem.” End on the last piece of content.\nSincerity intensifiers. “Genuinely”, “truly”, “actually”, “really” and “crucially” used to sound earnest. Cut them.\nChained connectors. “Furthermore”, “Moreover” and “Additionally” opening consecutive sentences. Most can go; the order already signals addition.\nAssistant chatter. “Let’s dive in”, “Let’s unpack this”, “Great question” and “I hope this helps” belong in a chat window, not a document.\n\nFour more habits blur the referent or delay the claim. Other chapters cover each:\n\na demonstrative standing in for its referent (Demonstrative pronouns);\nthe word “thing” (Say which thing);\na dependent clause opening a sentence (Lead with the subject);\ninformal idioms (Avoid vague and metaphorical language)."
+  },
+  {
     "objectID": "chapters/avoid-ai-tells.html#formatting-habits",
     "href": "chapters/avoid-ai-tells.html#formatting-habits",
     "title": "Avoiding AI tells",
-    "section": "3 Formatting habits",
-    "text": "3 Formatting habits\nSome tells are typographic rather than verbal.\n\nThe em-dash as a default connector. AI text reaches for the em-dash to join almost any two clauses. Vary your punctuation: a period, a comma, or a semicolon is often the better fit.\nBold-leading bullets everywhere. A **Term:** explanation bullet is fine once, but applying the pattern to every list turns it into a tic. Use it when the label earns emphasis, plain bullets otherwise.\nEmoji section headers. Emoji in headings signal a blog post, not a scientific document. Leave them out.\nUniform paragraph rhythm. Paragraphs of near-identical length, each three or four sentences, read as machine-paced. Let paragraph length follow the ideas."
+    "section": "4 Formatting habits",
+    "text": "4 Formatting habits\nSome tells are typographic rather than verbal.\n\nThe em-dash as a default connector. AI text reaches for the em-dash to join almost any two clauses. Vary your punctuation: a period, a comma, or a semicolon is often the better fit.\nBold-leading bullets everywhere. A **Term:** explanation bullet is fine once, but applying the pattern to every list turns it into a tic. Use it when the label earns emphasis, plain bullets otherwise.\nEmoji section headers. Emoji in headings signal a blog post, not a scientific document. Leave them out.\nUniform paragraph rhythm. Paragraphs of near-identical length, each three or four sentences, read as machine-paced. Let paragraph length follow the ideas."
   },
   {
     "objectID": "chapters/avoid-ai-tells.html#tone",
     "href": "chapters/avoid-ai-tells.html#tone",
     "title": "Avoiding AI tells",
-    "section": "4 Tone",
-    "text": "4 Tone\nThe last group of tells is about register.\n\nPromotional language. Words like “powerful”, “game-changing”, and “cutting-edge” sell rather than inform. Describe what the thing does and let the reader judge.\nReflexive both-sides framing. Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Hedge when the evidence is genuinely mixed, not by habit.\nVague universals. “Studies show” and “experts agree”, with no specific source or number, are tells precisely because they dodge the evidence. Name the study and give the number, as the Citations and evidence chapter recommends.\n\nA short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice: the goal is clear, honest prose, not prose that has been sanded smooth."
+    "section": "5 Tone",
+    "text": "5 Tone\nThe last group of tells is about register.\n\nPromotional language. Words like “powerful”, “game-changing”, and “cutting-edge” sell rather than inform. Describe what the thing does and let the reader judge.\nReflexive both-sides framing. Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Hedge when the evidence is genuinely mixed, not by habit.\nVague universals. “Studies show” and “experts agree”, with no specific source or number, are tells precisely because they dodge the evidence. Name the study and give the number, as the Citations and evidence chapter recommends.\n\nA short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice: the goal is clear, honest prose, not prose that has been sanded smooth."
   },
   {
     "objectID": "chapters/avoid-ai-tells-slides.html#overused-vocabulary",
@@ -210,18 +245,25 @@
     "text": "2 Rhetorical reflexes"
   },
   {
+    "objectID": "chapters/avoid-ai-tells-slides.html#clichéd-sentence-shapes",
+    "href": "chapters/avoid-ai-tells-slides.html#clichéd-sentence-shapes",
+    "title": "Avoiding AI tells",
+    "section": "3 Clichéd sentence shapes",
+    "text": "3 Clichéd sentence shapes"
+  },
+  {
     "objectID": "chapters/avoid-ai-tells-slides.html#formatting-habits",
     "href": "chapters/avoid-ai-tells-slides.html#formatting-habits",
     "title": "Avoiding AI tells",
-    "section": "3 Formatting habits",
-    "text": "3 Formatting habits"
+    "section": "4 Formatting habits",
+    "text": "4 Formatting habits"
   },
   {
     "objectID": "chapters/avoid-ai-tells-slides.html#tone",
     "href": "chapters/avoid-ai-tells-slides.html#tone",
     "title": "Avoiding AI tells",
-    "section": "4 Tone",
-    "text": "4 Tone"
+    "section": "5 Tone",
+    "text": "5 Tone"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#why-claims-need-support",
@@ -273,32 +315,53 @@
     "text": "7 Best practices"
   },
   {
+    "objectID": "chapters/citations-evidence-slides.html#quote-the-original",
+    "href": "chapters/citations-evidence-slides.html#quote-the-original",
+    "title": "Citations and evidence",
+    "section": "8 Quote the original",
+    "text": "8 Quote the original"
+  },
+  {
+    "objectID": "chapters/citations-evidence-slides.html#put-the-content-first",
+    "href": "chapters/citations-evidence-slides.html#put-the-content-first",
+    "title": "Citations and evidence",
+    "section": "9 Put the content first",
+    "text": "9 Put the content first"
+  },
+  {
+    "objectID": "chapters/citations-evidence-slides.html#adapting-another-courses-material",
+    "href": "chapters/citations-evidence-slides.html#adapting-another-courses-material",
+    "title": "Citations and evidence",
+    "section": "10 Adapting another course’s material",
+    "text": "10 Adapting another course’s material"
+  },
+  {
     "objectID": "chapters/citations-evidence-slides.html#common-citation-errors-to-avoid",
     "href": "chapters/citations-evidence-slides.html#common-citation-errors-to-avoid",
     "title": "Citations and evidence",
-    "section": "8 Common citation errors to avoid",
-    "text": "8 Common citation errors to avoid"
+    "section": "11 Common citation errors to avoid",
+    "text": "11 Common citation errors to avoid"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#examples",
     "href": "chapters/citations-evidence-slides.html#examples",
     "title": "Citations and evidence",
-    "section": "9 Examples",
-    "text": "9 Examples"
+    "section": "12 Examples",
+    "text": "12 Examples"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#conclusion",
     "href": "chapters/citations-evidence-slides.html#conclusion",
     "title": "Citations and evidence",
-    "section": "10 Conclusion",
-    "text": "10 Conclusion"
+    "section": "13 Conclusion",
+    "text": "13 Conclusion"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#references",
     "href": "chapters/citations-evidence-slides.html#references",
     "title": "Citations and evidence",
     "section": "",
-    "text": "Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.\n\n\n\n\n\n\n\n\nHawkins, Douglas M. 2004. “The Problem of Overfitting.” Journal of Chemical Information and Computer Sciences 44 (1): 1–12. https://doi.org/10.1021/ci0342472.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nStack Overflow. 2024. Stack Overflow Developer Survey 2024. https://survey.stackoverflow.co/2024/.\n\n\nVapnik, Vladimir N. 1998. Statistical Learning Theory. Wiley. https://www.wiley.com/en-us/Statistical+Learning+Theory-p-9780471030034."
+    "text": "Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.\n\n\n\n\n\n\n\n\nHawkins, Douglas M. 2004. “The Problem of Overfitting.” Journal of Chemical Information and Computer Sciences 44 (1): 1–12. https://doi.org/10.1021/ci0342472.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nMitchell, Tom M. 1997. Machine Learning. McGraw-Hill.\n\n\nStack Overflow. 2024. Stack Overflow Developer Survey 2024. https://survey.stackoverflow.co/2024/.\n\n\nVapnik, Vladimir N. 1998. Statistical Learning Theory. Wiley. https://www.wiley.com/en-us/Statistical+Learning+Theory-p-9780471030034."
   },
   {
     "objectID": "chapters/citations-evidence.html",
@@ -357,25 +420,46 @@
     "text": "7 Best practices\nTo effectively support your claims:\n\nCite as you write: Add citations immediately when making claims, rather than planning to “add references later”\nUse citation management tools: Software like Zotero, Mendeley, or BibTeX helps organize and format references correctly\nCheck your citations: Before submitting, verify that every citation supports its associated claim\nProvide context: Help readers understand why a source is relevant (e.g., “Smith et al. (2020) demonstrated that…” rather than just “(Smith et al., 2020)”)\nBalance primary and review sources: Use primary sources for specific findings, reviews for general background\nStay current: Supplement foundational older references with recent work showing the current state of knowledge\nCite diverse sources: When possible, include work from different research groups and perspectives"
   },
   {
+    "objectID": "chapters/citations-evidence.html#quote-the-original",
+    "href": "chapters/citations-evidence.html#quote-the-original",
+    "title": "Citations and evidence",
+    "section": "8 Quote the original",
+    "text": "8 Quote the original\nQuote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.\n\n❌ Mitchell (1997), as quoted in Goodfellow et al. (2016), defines …\n✅ “A computer program is said to learn …” (Mitchell 1997)"
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#put-the-content-first",
+    "href": "chapters/citations-evidence.html#put-the-content-first",
+    "title": "Citations and evidence",
+    "section": "9 Put the content first",
+    "text": "9 Put the content first\nHeadings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated."
+  },
+  {
+    "objectID": "chapters/citations-evidence.html#adapting-another-courses-material",
+    "href": "chapters/citations-evidence.html#adapting-another-courses-material",
+    "title": "Citations and evidence",
+    "section": "10 Adapting another course’s material",
+    "text": "10 Adapting another course’s material\nWhen teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section; in Quarto, a ::: notes div keeps the credit out of the slides."
+  },
+  {
     "objectID": "chapters/citations-evidence.html#common-citation-errors-to-avoid",
     "href": "chapters/citations-evidence.html#common-citation-errors-to-avoid",
     "title": "Citations and evidence",
-    "section": "8 Common citation errors to avoid",
-    "text": "8 Common citation errors to avoid\n\nCitation needed: Making claims without any supporting citation or evidence\nVague attribution: Using phrases like “studies have shown” without citing specific studies\nAppeal to obviousness: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation\nCircular citation: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)\nCitation padding: Adding citations that don’t actually support your claims just to appear well-referenced\nSelective citation: Only citing work that supports your position while ignoring contradictory evidence\nGhost authorship: Failing to cite work that directly influenced your ideas"
+    "section": "11 Common citation errors to avoid",
+    "text": "11 Common citation errors to avoid\n\nCitation needed: Making claims without any supporting citation or evidence\nVague attribution: Using phrases like “studies have shown” without citing specific studies\nAppeal to obviousness: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation\nCircular citation: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)\nCitation padding: Adding citations that don’t actually support your claims just to appear well-referenced\nSelective citation: Only citing work that supports your position while ignoring contradictory evidence\nGhost authorship: Failing to cite work that directly influenced your ideas"
   },
   {
     "objectID": "chapters/citations-evidence.html#examples",
     "href": "chapters/citations-evidence.html#examples",
     "title": "Citations and evidence",
-    "section": "9 Examples",
-    "text": "9 Examples\n\n9.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support.\n\n\n9.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim.\n\n\n9.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained.\n\n\n9.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.\n\n\n9.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
+    "section": "12 Examples",
+    "text": "12 Examples\n\n12.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support.\n\n\n12.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim.\n\n\n12.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained.\n\n\n12.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.\n\n\n12.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
   },
   {
     "objectID": "chapters/citations-evidence.html#conclusion",
     "href": "chapters/citations-evidence.html#conclusion",
     "title": "Citations and evidence",
-    "section": "10 Conclusion",
-    "text": "10 Conclusion\nSupporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence."
+    "section": "13 Conclusion",
+    "text": "13 Conclusion\nSupporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence."
   },
   {
     "objectID": "chapters/defining-terms-slides.html#guidelines-for-defining-terms",
@@ -424,7 +508,7 @@
     "href": "chapters/defining-terms.html#guidelines-for-defining-terms",
     "title": "Defining terms clearly",
     "section": "1 Guidelines for defining terms",
-    "text": "1 Guidelines for defining terms\nFollow these principles when introducing new terms:\n\nProvide explicit definitions: State clearly what a term means, rather than assuming readers will understand from context.\nBe concise: Definitions should be brief and focused, using only the words necessary to convey the meaning.\nDefine terms at first use: Place the definition immediately before or after the term’s first appearance.\nProvide examples: Every definition should include at least one concrete example that illustrates how the term is used."
+    "text": "1 Guidelines for defining terms\nFollow these principles when introducing new terms:\n\nProvide explicit definitions: State clearly what a term means, rather than assuming readers will understand from context.\nBe concise: Definitions should be brief and focused, using only the words necessary to convey the meaning.\nDefine terms at first use: Place the definition immediately before or after the term’s first appearance.\nProvide examples: Every definition should include at least one concrete example that illustrates how the term is used.\nGive each term its own definition block: In a Quarto document, put every definition in its own #def- div (see Using theorem environments in Quarto), one term per div, with commentary after the div rather than inside it. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.\nName the synonyms: When a field uses several words for one concept, such as learning, training and fitting a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see Minimize unnecessary jargon)."
   },
   {
     "objectID": "chapters/defining-terms.html#examples-of-term-definitions",

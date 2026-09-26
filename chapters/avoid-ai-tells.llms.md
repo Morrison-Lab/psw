@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-10 21:55:51 (UTC)
+Last modified: 2026-09-26 05:55:30 (UTC)
 
 > **NOTE:**
 >
@@ -20,20 +20,57 @@ One caveat first: no single word or pattern below is wrong on its own. Each has 
 
 Some words appear far more often in machine-generated text than in careful human writing. Many are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-ai-vocabulary) lists frequent offenders and plainer replacements.
 
-| Overused         | Plainer alternative   |
-|------------------|-----------------------|
-| delve into       | examine, study        |
-| leverage         | use                   |
-| utilize          | use                   |
-| showcase         | show                  |
-| robust           | reliable, well-tested |
-| seamless         | smooth                |
-| pivotal, crucial | important, key        |
-| testament to     | shows, demonstrates   |
+| Overused | Plainer alternative |
+|----|----|
+| delve into | examine, study |
+| leverage | use |
+| utilize | use |
+| showcase | show |
+| robust | reliable, well-tested |
+| seamless | smooth |
+| pivotal, crucial | important, key |
+| testament to | shows, demonstrates |
+| tapestry, landscape, realm | field, area, or name the thing |
+| navigate | handle, work through |
+| underscore, highlight | show |
+| foster, bolster | encourage, strengthen |
+| intricate, meticulous | detailed, careful |
+| comprehensive | complete, or say what it covers |
+| groundbreaking | new, or say what changed |
+| unlock, harness, empower | enable, use, allow |
+| myriad, plethora | many, or give the count |
+| seamless, seamlessly | smoothly, or say what does not break |
+| holistic, multifaceted, nuanced | say which parts or distinctions |
+| paramount | most important |
+| embark, elevate | start, improve |
+| streamline | simplify, speed up |
+| synergy | say what the combination does |
+| actionable | say what action it supports |
+| beacon | example, model |
+| game-changer, gamechanger, state-of-the-art, cutting-edge | say what changed and by how much |
+| ever-evolving | changing |
+| treasure trove | collection, source |
 
 Table 1: Words overused by AI assistants and plainer alternatives
 
-Whole phrases recur too. “In today’s fast-paced world”, “it is important to note that”, and “plays a vital role in” add length without content; delete them and start with the actual point.
+Whole phrases recur too. “In today’s fast-paced world”, “it is important to note that”, and “plays a vital role in” add length without content; delete them and start with the actual point. Two more families recur, and each member should give way to the literal claim:
+
+- **Stock metaphors:**
+  - “journey”
+  - “pave the way”
+  - “shed light on”
+  - “at the heart of”
+  - “sits at the intersection of”
+  - “cornerstone”
+  - “deep dive”, “dive into”
+- **Stock framings:**
+  - “at its core”
+  - “in essence”
+  - “boils down to”
+  - “when it comes to”
+  - “in the realm of”
+  - “the key takeaway”
+  - “more than just”
 
 ## 2 Rhetorical reflexes
 
@@ -58,7 +95,56 @@ Other reflexes to watch for:
 - **Hedging stacks.** “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest hedge; drop the rest.
 - **Hollow summaries.** A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point.
 
-## 3 Formatting habits
+## 3 Clichéd sentence shapes
+
+Beyond the antithesis, AI drafts lean on a set of sentence shapes that stage a point instead of stating it.
+
+> **NOTE:**
+>
+> **Example 2 (A staged point)**  
+>
+> > ❌ It can read like a definition that says nothing. Its use is in what it forces you to name: a project that cannot say what its \\E\\, \\T\\ and \\P\\ are has not yet stated a machine learning problem.
+> >
+> > ✅ A machine learning problem is stated only when its experience \\E\\, task \\T\\ and performance measure \\P\\ are named.
+>
+> The first version packs six tells into two sentences:
+>
+> - an objection raised only to be knocked down;
+> - “It” and “Its” in place of “the definition”;
+> - a definition that “forces” the reader, as if it were a person;
+> - “you” addressing the reader;
+> - a point withheld until after a colon;
+> - a closing aphorism.
+>
+> The second version states the claim once.
+
+Watch for these shapes:
+
+- **The straw objection.** A doubt raised only to be answered (“It may seem trivial. In fact, …”). This is the antithesis spread over two sentences.
+- **The personified abstraction.** A definition, method or result that “forces”, “invites”, “demands” or “asks” something of the reader. Name who does what.
+- **The colon reveal.** A setup, then a colon, then the point. Lead with the point.
+- **The answered rhetorical question.** “The result? A faster fit.” or “Why does this matter? Because …”. State the result.
+- **The throat-clearing lead-in.** “Here’s the thing:”, “Here’s why:”, “The key is”, “Put simply,”. Delete the lead-in.
+- **The reframe.** “X isn’t about Y; it’s about Z”, “The question isn’t X, it’s Y”, and “not because X, but because Y”. Say what X is about.
+- **Fragment emphasis.** “Simple. Fast. Reliable.” Write a sentence with a subject and a verb.
+- **The editorializing tail.** A trailing participial clause that comments on the sentence: “, highlighting the importance of …”, “, ensuring that …”, “, making it ideal for …”. End the sentence at its claim.
+- **The inflated copula.** “Serves as”, “stands as” and “acts as” where “is” says the same.
+- **The range frame.** “From X to Y” listing two extremes instead of naming the scope.
+- **The audience frame.** “Whether you’re a student or a researcher, …”. Drop it.
+- **The restatement.** “In other words, …” repeating the previous sentence. Keep the clearer of the two.
+- **The closing aphorism.** A one-line verdict at the end of a paragraph: “And that’s the point.”, “Simple as that.”, “… has not yet stated a problem.” End on the last piece of content.
+- **Sincerity intensifiers.** “Genuinely”, “truly”, “actually”, “really” and “crucially” used to sound earnest. Cut them.
+- **Chained connectors.** “Furthermore”, “Moreover” and “Additionally” opening consecutive sentences. Most can go; the order already signals addition.
+- **Assistant chatter.** “Let’s dive in”, “Let’s unpack this”, “Great question” and “I hope this helps” belong in a chat window, not a document.
+
+Four more habits blur the referent or delay the claim. Other chapters cover each:
+
+- a demonstrative standing in for its referent ([Demonstrative pronouns](../chapters/grammar.llms.md#demonstrative-pronouns));
+- the word “thing” ([Say which thing](../chapters/word-choice.llms.md#say-which-thing));
+- a dependent clause opening a sentence ([Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject));
+- informal idioms ([Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language)).
+
+## 4 Formatting habits
 
 Some tells are typographic rather than verbal.
 
@@ -67,7 +153,7 @@ Some tells are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three or four sentences, read as machine-paced. Let paragraph length follow the ideas.
 
-## 4 Tone
+## 5 Tone
 
 The last group of tells is about register.
 

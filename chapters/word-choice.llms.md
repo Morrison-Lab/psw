@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-10 21:55:51 (UTC)
+Last modified: 2026-09-26 05:55:30 (UTC)
 
 > **NOTE:**
 >
@@ -40,11 +40,21 @@ Table 2: Vague or metaphorical phrases and more precise alternatives
 
 The precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.
 
-## 2 Minimize unnecessary jargon
+Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim.
+
+## 2 Say which thing
+
+The word *thing* almost never survives a second look. Name the object, quantity, step or idea it stands for.
+
+> ❌ The main thing to check is the residuals.
+>
+> ✅ Check the residuals first.
+
+## 3 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
-Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms.
+Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see [Name the synonyms](../chapters/defining-terms.llms.md#guidelines-for-defining-terms)).
 
 > **NOTE:**
 >

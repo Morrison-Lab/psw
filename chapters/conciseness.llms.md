@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-09-10 21:55:51 (UTC)
+Last modified: 2026-09-26 05:55:30 (UTC)
 
 > **NOTE:**
 >
@@ -30,7 +30,15 @@ Concise writing conveys ideas efficiently, using only the words necessary to com
 
 Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity.
 
-## 2 Limit complex sentence structures
+## 2 Lead with the subject
+
+Start a sentence with its subject, not a dependent clause. A leading clause makes the reader hold a condition before knowing what it conditions.
+
+> ❌ When the sample size grows, the estimate becomes more precise.
+>
+> ✅ The estimate becomes more precise as the sample size grows.
+
+## 3 Limit complex sentence structures
 
 A sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (*and*, *but*, *or*) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.
 
@@ -46,7 +54,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 3 Examples of concise writing
+## 4 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
