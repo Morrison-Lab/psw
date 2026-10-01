@@ -14,13 +14,15 @@ format:
 
 Lecture notes, slides, and problem sets teach rather than report.
 The general rules for scientific writing in the other chapters still apply,
-and the last section lists the ones most often missed.
+and the last section lists those that apply most directly here.
 This chapter adds the rules that apply to teaching materials in particular.
 
 ## Build the lecture from exercises and solutions
 
 Active learning, in which students work tasks themselves during class,
 improves exam performance over lecture alone [@freeman2014active].
+The exercise-first structure below is this guide's own convention
+for putting that result into practice.
 Pose each task as an exercise, give students time to try it, and then show the solution.
 
 - Pose every data manipulation or analysis as an exercise,
@@ -107,7 +109,7 @@ so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
 Define a quantity in the form that needs the fewest symbols,
 and state the textbook form as a theorem that follows.
 For example, define variance as the mean squared deviation $\operatorname{E}\left[\operatorname{devn}(X)^2\right]$,
-where $\operatorname{devn}(X) = X - \operatorname{E}[X]$ (the notation of the rme notes),
+where $\operatorname{devn}(X) = X - \operatorname{E}[X]$,
 and then prove that it equals $\operatorname{E}[X^2] - (\operatorname{E}[X])^2$.
 
 Parsimony outranks convention when choosing a primary definition.
@@ -143,7 +145,8 @@ instead of keeping a second wording that can drift.
   so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose,
   because the PDF format renders no figure for it,
-  so the reference has no target there.
+  so the reference has no target there
+  (observed when rendering lecture notes to PDF).
 
 ## Structure slides for the reader
 
@@ -159,7 +162,8 @@ instead of keeping a second wording that can drift.
   or over the same topic as the heading just before it.
 - Keep body text off section and title slides.
   Reveal.js centers those slides vertically and does not scroll them,
-  so long text is clipped at the top and bottom of the screen.
+  so long text is clipped at the top and bottom of the screen
+  (observed in lecture slides rendered with Quarto).
   Put a slide break after the heading and move the text onto content slides.
 
 ## Credit other courses without summarizing them
@@ -184,5 +188,4 @@ These rules from the other chapters apply to teaching materials as to any other 
 - [name the referent](grammar.qmd#demonstrative-pronouns) instead of a bare demonstrative;
 - [say which thing](word-choice.qmd#say-which-thing);
 - [state the literal claim](word-choice.qmd#avoid-vague-and-metaphorical-language) instead of an idiom;
-- [avoid AI clichés](avoid-ai-tells.qmd);
-- [define terms clearly](defining-terms.qmd) and [support claims](citations-evidence.qmd).
+- [avoid AI clichés](avoid-ai-tells.qmd).
