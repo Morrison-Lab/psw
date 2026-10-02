@@ -242,7 +242,8 @@ Check the EQUATOR page for the current version before citing one.
   a title phrase, then sentences that explain panels,
   symbols, error bars ("Error bars indicate 95% CIs"),
   and abbreviations.
-- Label axes with units.
+- Label axes with units,
+  and use the same fonts across figures.
 - Size each figure for the page.
   The plot should fill the available width,
   meaning the text width or the journal's stated figure width,
@@ -253,11 +254,17 @@ Check the EQUATOR page for the current version before citing one.
   and an aspect ratio that fits the content,
   rather than exporting at a default size
   and letting the document shrink it.
+  In a Quarto document,
+  set these with the chunk options `fig-width` and `fig-height`.
   For a ggplot in R,
   the [ggview](https://github.com/idmn/ggview) package
   previews the plot at its exact final width and height
   (`canvas()`) and saves it at that size (`save_ggplot()`),
   so you can fix the layout before rendering the document.
+  The preview opens in the IDE's viewer pane,
+  so remove `canvas()` before rendering;
+  otherwise the figure goes to the viewer
+  and is missing from the rendered page.
   Wide diagrams such as Sankey plots often fail this way:
   the plot ends up tiny in a field of white space.
   Check each figure on the rendered page.
