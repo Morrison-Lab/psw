@@ -149,3 +149,27 @@ Headings should clearly indicate the content of each section.
 
 **Best heading**: "Treatment reduced mortality by 30%"
 (when appropriate and not overstating findings)
+
+## Links to videos and other media
+
+Put each link to a video, podcast, demo or other external material
+in a short note right after the text it supports.
+Do not collect the links in a list at the end of the document.
+
+A reader who has just finished a section is ready to use material about it.
+The same reader at the end of the document must guess which link goes with which section,
+and may never reach the list.
+
+For each link:
+
+- Write one line, such as "Video: Weinberger derives the descent direction (from 3:09)."
+- Name the speaker and say what the material shows, in simple, literal words.
+- Link the exact start time when the material covers more than the topic.
+- Cite the source.
+- If the material covers several sections, put it after the first section it supports.
+- Do not put a link between a question and its answer.
+
+Link public sites freely.
+Readers, and the tools they use, already know what is public,
+so leaving a public link out gains nothing.
+Do not link private repositories, such as ones that hold graded homework or exams.
