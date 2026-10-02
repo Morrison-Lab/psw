@@ -218,6 +218,9 @@ Check the EQUATOR page for the current version before citing one.
 - Make the table fit the page width.
   Split a wide table or move it to the supplement.
 - Keep the caption, the table, and its footnotes on one page.
+  A caption never sits on a different page from its table,
+  and never splits across a page break
+  unless the caption alone is longer than a page.
 
 ## Figures
 
@@ -241,7 +244,9 @@ Check the EQUATOR page for the current version before citing one.
 - Label the panels of a multi-panel figure A, B, C,
   and refer to them in the legend.
 - Add alt text when the journal supports it.
-- Keep the caption on the same page as its figure.
+- Keep the caption on the same page as its figure,
+  and never split it across a page break
+  unless the caption alone is longer than a page.
 
 ## Statistics and numbers
 
@@ -293,6 +298,9 @@ Check the EQUATOR page for the current version before citing one.
   "eTable 1", "eFigure 1", and "eMethods" in JAMA style,
   or "Table S1" and "Figure S1" elsewhere.
   The numbering and caption rules for the main text apply here too.
+- Format supplement captions in the caption style, not a heading style,
+  so that they keep the caption formatting
+  and stay out of the document outline.
 - Cite each supplement item from the main text, in order.
 - Put these in the supplement:
   extended methods, full model output, sensitivity analyses,
@@ -384,6 +392,9 @@ either in the text or in the submission forms:
   In Word output, set "Keep with next" on the caption style
   in the reference document,
   and put each float on its own page.
+- When two floats would share a page
+  and one of them would split or lose its caption,
+  insert a page break between them rather than letting either split.
 - Use double spacing, line numbers, and page numbers
   if the journal asks for them.
 - Check that every cross-reference resolves.
@@ -391,13 +402,18 @@ either in the text or in the submission forms:
 ## Submission checklist
 
 A document that renders without errors is not ready to submit.
+The first item is a hard gate:
+no one should call a manuscript ready,
+or merge a change to it,
+until someone has looked at every page of the current render.
 Before calling a manuscript ready:
 
 1. Export the render to PDF and look at every page,
    in both the main text and the supplement.
 2. Every table and figure has a number and a caption,
    and the text cites each one in order.
-3. No caption is separated from its table or figure,
+3. No caption is on a different page from its table or figure,
+   or split across a page break,
    no table runs off the page,
    and no figure is cropped or blurry.
 4. The tables and figures come after the references,
