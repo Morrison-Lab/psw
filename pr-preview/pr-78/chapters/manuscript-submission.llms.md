@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 09:29:56 (UTC)
+Last modified: 2026-10-02 09:33:16 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -153,8 +153,8 @@ Table 1: Common reporting guidelines by study design
 
 - Number every figure in citation order, and give every figure a caption.
 - Put the legend below the figure: a title phrase, then sentences that explain panels, symbols, error bars (“Error bars indicate 95% CIs”), and abbreviations.
-- Label axes with units.
-- Size each figure for the page. The plot should fill the available width, meaning the text width or the journal’s stated figure width, with no large blank margins or empty space inside the image. All of its text should meet the journal’s stated minimum size, and in any case be about 8 points or larger at the printed size. Set the figure’s width and height to that width and an aspect ratio that fits the content, rather than exporting at a default size and letting the document shrink it. For a ggplot in R, the [ggview](https://github.com/idmn/ggview) package previews the plot at its exact final width and height (`canvas()`) and saves it at that size (`save_ggplot()`), so you can fix the layout before rendering the document. Wide diagrams such as Sankey plots often fail this way: the plot ends up tiny in a field of white space. Check each figure on the rendered page. Figure text far smaller than the caption beneath it is almost certainly below 8 points.
+- Label axes with units, and use the same fonts across figures.
+- Size each figure for the page. The plot should fill the available width, meaning the text width or the journal’s stated figure width, with no large blank margins or empty space inside the image. All of its text should meet the journal’s stated minimum size, and in any case be about 8 points or larger at the printed size. Set the figure’s width and height to that width and an aspect ratio that fits the content, rather than exporting at a default size and letting the document shrink it. In a Quarto document, set these with the chunk options `fig-width` and `fig-height`. For a ggplot in R, the [ggview](https://github.com/idmn/ggview) package previews the plot at its exact final width and height (`canvas()`) and saves it at that size (`save_ggplot()`), so you can fix the layout before rendering the document. The preview opens in the IDE’s viewer pane, so remove `canvas()` before rendering; otherwise the figure goes to the viewer and is missing from the rendered page. Wide diagrams such as Sankey plots often fail this way: the plot ends up tiny in a field of white space. Check each figure on the rendered page. Figure text far smaller than the caption beneath it is almost certainly below 8 points.
 - Use colorblind-safe palettes. Pair color with shape or line type, so that color is never the only way to tell groups apart.
 - Show the data where possible. Points with intervals usually say more than bars of means. When you do use bars, start the axis at zero.
 - Save plots in a vector format (PDF, EPS, or SVG). Save raster images at 300 dpi or more, or 600 to 1200 dpi for line art.
