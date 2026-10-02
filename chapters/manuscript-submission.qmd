@@ -254,6 +254,11 @@ Check the EQUATOR page for the current version before citing one.
   and an aspect ratio that fits the content,
   rather than exporting at a default size
   and letting the document shrink it.
+  For a ggplot in R,
+  the [ggview](https://github.com/idmn/ggview) package
+  previews the plot at its exact final width and height
+  (`canvas()`) and saves it at that size (`save_ggplot()`),
+  so you can fix the layout before rendering the document.
   Wide diagrams such as Sankey plots often fail this way:
   the plot ends up tiny in a field of white space.
   Check each figure on the rendered page:
