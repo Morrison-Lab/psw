@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 07:09:34 (UTC)
+Last modified: 2026-10-02 07:23:19 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -129,7 +129,7 @@ Table 1: Common reporting guidelines by study design
 - Give denominators, as in “45 (12.3%)”, or put the group size in the column header.
 - In a randomized trial, Table 1 has no *P* values for baseline differences. For observational comparisons, standardized mean differences are more informative than *P* values.
 - Make the table fit the page width. Split a wide table or move it to the supplement.
-- Keep the caption, the table, and its footnotes on one page.
+- Keep the caption, the table, and its footnotes on one page. A caption never sits on a different page from its table, and never splits across a page break unless the caption alone is longer than a page.
 
 ## 7 Figures
 
@@ -141,7 +141,7 @@ Table 1: Common reporting guidelines by study design
 - Save plots in a vector format (PDF, EPS, or SVG). Save raster images at 300 dpi or more, or 600 to 1200 dpi for line art.
 - Label the panels of a multi-panel figure A, B, C, and refer to them in the legend.
 - Add alt text when the journal supports it.
-- Keep the caption on the same page as its figure.
+- Keep the caption on the same page as its figure, and never split it across a page break unless the caption alone is longer than a page.
 
 ## 8 Statistics and numbers
 
@@ -160,6 +160,7 @@ Table 1: Common reporting guidelines by study design
 
 - Prepare the supplement as a separate document, or as a clearly separated part after a page break. Give it its own title page with the paper’s title and authors, and a table of contents.
 - Number its items in the journal’s scheme: “eTable 1”, “eFigure 1”, and “eMethods” in JAMA style, or “Table S1” and “Figure S1” elsewhere. The numbering and caption rules for the main text apply here too.
+- Format supplement captions in the caption style, not a heading style, so that they keep the caption formatting and stay out of the document outline.
 - Cite each supplement item from the main text, in order.
 - Put these in the supplement: extended methods, full model output, sensitivity analyses, additional tables, code and software versions, data-processing details, and any pipeline or audit notes, such as data-quality checks, step-by-step exclusions, and reconciliation with earlier reports.
 - Hold the supplement to the same standard as the main text.
@@ -208,16 +209,17 @@ Most journals require each of these, either in the text or in the submission for
 - Put a page break (`{{< pagebreak >}}`) before each table and figure at the end of the document, and another before the supplement.
 - Put table captions above (`tbl-cap-location: top`) and figure captions below (`fig-cap-location: bottom`).
 - Keep each caption with its object. In PDF output, stop floats from drifting, for example with `fig-pos: "H"` or one float per page. In Word output, set “Keep with next” on the caption style in the reference document, and put each float on its own page.
+- When two floats would share a page and one of them would split or lose its caption, insert a page break between them rather than letting either split.
 - Use double spacing, line numbers, and page numbers if the journal asks for them.
 - Check that every cross-reference resolves.
 
 ## 15 Submission checklist
 
-A document that renders without errors is not ready to submit. Before calling a manuscript ready:
+A document that renders without errors is not ready to submit. The first item is a hard gate: no one should call a manuscript ready, or merge a change to it, until someone has looked at every page of the current render. Before calling a manuscript ready:
 
 1.  Export the render to PDF and look at every page, in both the main text and the supplement.
 2.  Every table and figure has a number and a caption, and the text cites each one in order.
-3.  No caption is separated from its table or figure, no table runs off the page, and no figure is cropped or blurry.
+3.  No caption is on a different page from its table or figure, or split across a page break, no table runs off the page, and no figure is cropped or blurry.
 4.  The tables and figures come after the references, and a page break comes before the supplement.
 5.  The output has no broken cross-references (`??`, `@fig-`, `Table ?`), raw Markdown, code output, warnings, or stray “NA” cells.
 6.  The numbers in the abstract match the Results, tables, and figures.
