@@ -47,9 +47,13 @@ organize results by:
 
 ## Figures and tables
 
-Place figures and tables near the relevant text that describes them.
-Number them sequentially
-and reference them in the text before they appear.
+Number figures and tables sequentially,
+and cite each one in the text before it appears.
+In a web page or a report,
+place them near the text that describes them.
+In a manuscript for journal submission,
+place them after the references instead;
+see [Preparing a manuscript for submission](manuscript-submission.qmd).
 
 Each figure and table should have a clear,
 informative caption that allows readers to understand it
