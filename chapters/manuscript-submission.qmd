@@ -263,11 +263,13 @@ Check the EQUATOR page for the current version before citing one.
   previews the plot at its exact final width and height
   (`canvas()`) and saves it at that size (`save_ggplot()`),
   so you can fix the layout before rendering the document.
-  Remove `canvas()` before rendering.
-  A plot that still carries it goes to the IDE's viewer pane
+  Remove `canvas()` from any plot that the document prints.
+  A printed plot that still carries it goes to the IDE's viewer pane
   instead of the document,
   so the render either stops with an error
   or leaves the figure out.
+  A plot saved with `save_ggplot()` can keep its `canvas()`,
+  since that is where the saved size comes from.
   Check each figure on the rendered page.
   Figure text far smaller than the caption beneath it
   is almost certainly below 8 points.
