@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 07:23:19 (UTC)
+Last modified: 2026-10-02 07:27:31 (UTC)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -98,7 +98,7 @@ If your descriptive statistics apply to all outcomes (e.g., baseline characteris
 
 ## 3 Figures and tables
 
-Number figures and tables sequentially, and cite each one in the text before it appears. In a web page or a report, place them near the text that describes them. In a manuscript for journal submission, place them after the references instead; see [Preparing a manuscript for submission](../chapters/manuscript-submission.llms.md).
+Place figures and tables near the relevant text that describes them. Number them sequentially and reference them in the text before they appear.
 
 Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.
 

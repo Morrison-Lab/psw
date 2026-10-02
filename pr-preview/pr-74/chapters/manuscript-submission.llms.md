@@ -4,11 +4,11 @@ Code
 
 Published
 
-Last modified: 2026-10-02 07:23:19 (UTC)
+Last modified: 2026-10-02 07:27:31 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
-The target journal’s *Instructions for Authors* override everything here: word limits, abstract headings, reference style, where figures go, and file formats. Read them first. When no journal has been chosen yet, use the defaults below. They follow the [ICMJE Recommendations](https://www.icmje.org/recommendations/) and the [AMA Manual of Style](https://www.amamanualofstyle.com/), which most clinical and health-services journals use.
+The target journal’s *Instructions for Authors* override everything here: word limits, abstract headings, reference style, where figures go, and file formats. Read them first. When no journal has been chosen yet, use the defaults below. They follow the [ICMJE Recommendations](https://www.icmje.org/recommendations/) and the *AMA Manual of Style*, which most clinical and health-services journals use.
 
 ## 1 Document order
 
@@ -17,13 +17,19 @@ Assemble the main document in this order:
 1.  Title page.
 2.  Structured abstract, then keywords and, if the journal uses them, Key Points.
 3.  Main text in IMRaD order: Introduction, Methods, Results, Discussion (with a limitations paragraph), and Conclusions. See [Paper organization](../chapters/paper-organization.llms.md).
-4.  Back matter: acknowledgments, author contributions, funding, conflict of interest disclosures, data and code availability, and the ethics statement.
+4.  Back matter:
+    - acknowledgments;
+    - author contributions;
+    - funding;
+    - conflict of interest disclosures;
+    - data and code availability; and
+    - the ethics statement.
 5.  References.
-6.  Tables, each starting on its own page, numbered in citation order.
-7.  Figures, each on its own page with its caption on the same page.
-8.  A page break, then the supplement, or a separate supplement file if the journal requires one.
+6.  Tables, numbered in citation order.
+7.  Figures, numbered in citation order.
+8.  The supplement, or a separate supplement file if the journal requires one.
 
-Tables and figures go at the end of the main text, not inline. Some journals want figures uploaded as separate files, with the figure legends listed after the references. When that is the instruction, follow it, and keep the end-of-document copies only for review drafts.
+Tables and figures go at the end of the main text, not inline. For page breaks and caption placement, follow the “Manuscript layout for journal submission” section of [Paper organization](../chapters/paper-organization.llms.md). Some journals want figures uploaded as separate files, with the figure legends listed after the references. When that is the instruction, follow it, and keep the end-of-document copies only for review drafts.
 
 ## 2 Title page
 
@@ -71,7 +77,14 @@ Give enough detail that another analyst could reproduce the analysis:
 - the exposure or intervention, including its timing;
 - primary and secondary outcomes, with units and how each was measured;
 - covariates, and why they were included;
-- the statistical analysis: the estimand, the model, its assumptions and how they were checked, missing data, clustering, multiple comparisons, sensitivity analyses, and software with versions;
+- the statistical analysis:
+  - the estimand;
+  - the model, its assumptions, and how they were checked;
+  - handling of missing data;
+  - clustering or other correlation;
+  - multiple comparisons;
+  - sensitivity analyses; and
+  - software, with versions;
 - ethics approval or exemption, and consent or its waiver; and
 - the reporting guideline that the paper follows.
 
@@ -90,7 +103,12 @@ A standard Discussion runs through:
 1.  the principal findings, in one paragraph, without repeating the numbers;
 2.  comparison with prior work, with citations;
 3.  interpretation and possible mechanisms, labeled as interpretation;
-4.  limitations: confounding, selection, measurement, generalizability, and power, as they apply, each with its likely direction and what was done about it; and
+4.  limitations, each with its likely direction and what was done about it, covering whichever of these apply:
+    - confounding;
+    - selection;
+    - measurement;
+    - generalizability; and
+    - power; and
 5.  implications for practice, policy, or research.
 
 ### 4.5 Conclusions
@@ -99,7 +117,7 @@ Write two to four sentences that the data support, with no new results.
 
 ## 5 Reporting guidelines
 
-Find the guideline for the study design on the [EQUATOR Network](https://www.equator-network.org/), follow it while writing, and submit the completed checklist if the journal asks for it. Check the EQUATOR page for the current version before citing one.
+Find the guideline for the study design on the [EQUATOR Network](https://www.equator-network.org/), follow it while writing, and submit the completed checklist if the journal asks for it. [Table 1](#tbl-reporting-guidelines) lists the common ones. Check the EQUATOR page for the current version before citing one.
 
 | Design | Guideline |
 |----|----|
@@ -129,7 +147,7 @@ Table 1: Common reporting guidelines by study design
 - Give denominators, as in “45 (12.3%)”, or put the group size in the column header.
 - In a randomized trial, Table 1 has no *P* values for baseline differences. For observational comparisons, standardized mean differences are more informative than *P* values.
 - Make the table fit the page width. Split a wide table or move it to the supplement.
-- Keep the caption, the table, and its footnotes on one page. A caption never sits on a different page from its table, and never splits across a page break unless the caption alone is longer than a page.
+- Keep the table’s footnotes with the table.
 
 ## 7 Figures
 
@@ -141,7 +159,6 @@ Table 1: Common reporting guidelines by study design
 - Save plots in a vector format (PDF, EPS, or SVG). Save raster images at 300 dpi or more, or 600 to 1200 dpi for line art.
 - Label the panels of a multi-panel figure A, B, C, and refer to them in the legend.
 - Add alt text when the journal supports it.
-- Keep the caption on the same page as its figure, and never split it across a page break unless the caption alone is longer than a page.
 
 ## 8 Statistics and numbers
 
@@ -160,9 +177,15 @@ Table 1: Common reporting guidelines by study design
 
 - Prepare the supplement as a separate document, or as a clearly separated part after a page break. Give it its own title page with the paper’s title and authors, and a table of contents.
 - Number its items in the journal’s scheme: “eTable 1”, “eFigure 1”, and “eMethods” in JAMA style, or “Table S1” and “Figure S1” elsewhere. The numbering and caption rules for the main text apply here too.
-- Format supplement captions in the caption style, not a heading style, so that they keep the caption formatting and stay out of the document outline.
 - Cite each supplement item from the main text, in order.
-- Put these in the supplement: extended methods, full model output, sensitivity analyses, additional tables, code and software versions, data-processing details, and any pipeline or audit notes, such as data-quality checks, step-by-step exclusions, and reconciliation with earlier reports.
+- Put these in the supplement:
+  - extended methods;
+  - full model output;
+  - sensitivity analyses;
+  - additional tables;
+  - code and software versions;
+  - data-processing details; and
+  - pipeline or audit notes, such as data-quality checks, step-by-step exclusions, and reconciliation with earlier reports.
 - Hold the supplement to the same standard as the main text.
 
 ## 10 Abbreviations
@@ -187,7 +210,13 @@ Table 1: Common reporting guidelines by study design
 - Use the past tense for what was done and found (Methods and Results) and the present tense for established knowledge and for what the findings mean.
 - Match causal language to the design. Write “was associated with” for associations, and use causal verbs only when the design and its stated assumptions justify them.
 - Avoid stock phrases and AI tells, such as “novel”, “groundbreaking”, “delve”, “crucial”, and “not just X but Y” constructions. See [Avoiding AI tells](../chapters/avoid-ai-tells.llms.md).
-- Keep pipeline, audit, and process notes out of the main text. Scripts, file names, variable names, merge requests, code versions, reviewer conversations, references to earlier drafts, and to-do notes belong in the supplement or nowhere.
+- Keep pipeline, audit, and process notes out of the main text. These belong in the supplement or nowhere:
+  - scripts and file names;
+  - variable names;
+  - merge requests and code versions;
+  - reviewer conversations;
+  - references to earlier drafts; and
+  - to-do notes.
 - Use one term per concept throughout the paper.
 - Define every group, period, and outcome before you use it.
 
@@ -206,10 +235,8 @@ Most journals require each of these, either in the text or in the submission for
 ## 14 Rendering and layout in Quarto
 
 - Render from source every time, and never edit the output file by hand.
-- Put a page break (`{{< pagebreak >}}`) before each table and figure at the end of the document, and another before the supplement.
+- Place page breaks and captions as described in the “Manuscript layout for journal submission” section of [Paper organization](../chapters/paper-organization.llms.md).
 - Put table captions above (`tbl-cap-location: top`) and figure captions below (`fig-cap-location: bottom`).
-- Keep each caption with its object. In PDF output, stop floats from drifting, for example with `fig-pos: "H"` or one float per page. In Word output, set “Keep with next” on the caption style in the reference document, and put each float on its own page.
-- When two floats would share a page and one of them would split or lose its caption, insert a page break between them rather than letting either split.
 - Use double spacing, line numbers, and page numbers if the journal asks for them.
 - Check that every cross-reference resolves.
 
