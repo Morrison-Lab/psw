@@ -248,8 +248,7 @@ Check the EQUATOR page for the current version before citing one.
   meaning the text width or the journal's stated figure width,
   with no large blank margins or empty space inside the image.
   All of its text should meet the journal's stated minimum size,
-  and in any case be about 8 points or larger at the printed size,
-  close to the size of the caption.
+  and in any case be about 8 points or larger at the printed size.
   Set the figure's width and height to that width
   and an aspect ratio that fits the content,
   rather than exporting at a default size
@@ -261,8 +260,9 @@ Check the EQUATOR page for the current version before citing one.
   so you can fix the layout before rendering the document.
   Wide diagrams such as Sankey plots often fail this way:
   the plot ends up tiny in a field of white space.
-  Check each figure on the rendered page:
-  its smallest text should look no smaller than its caption.
+  Check each figure on the rendered page.
+  Figure text far smaller than the caption beneath it
+  is almost certainly below 8 points.
 - Use colorblind-safe palettes.
   Pair color with shape or line type,
   so that color is never the only way to tell groups apart.
