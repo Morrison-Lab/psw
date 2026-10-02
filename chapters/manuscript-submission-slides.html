@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-02 09:57:32 (UTC)</p>
+  <p class="date">Last modified: 2026-10-02 10:17:46 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -309,7 +309,7 @@
 <ul>
 <li>Use a <strong>structured</strong> abstract with the journal’s headings. A generic set is Background, Objective, Methods, Results, and Conclusions. Clinical journals often split Methods into Design, Setting, and Participants; Exposures; and Main Outcomes and Measures.</li>
 <li>Most limits fall between 250 and 350 words.</li>
-<li>The Results give the sample size and the main effect estimates with their confidence intervals, not only <em>P</em> values. Report the primary outcome first.</li>
+<li>The Results give the sample size and the main effect estimates with their confidence intervals, not only <em>P</em> values. Phrase each effect estimate as an estimate (“we estimated that …”), per <a href="#/statistics-and-numbers">Statistics and numbers</a>. Report the primary outcome first.</li>
 <li>The Conclusions follow from the results and match the design. Use causal language only when the identification strategy supports it, and name that strategy.</li>
 <li>Leave out citations, undefined abbreviations, and references to tables or figures.</li>
 <li>Give 3 to 6 keywords, preferably <a href="https://meshb.nlm.nih.gov/">MeSH</a> terms.</li>
@@ -491,11 +491,12 @@ Table&nbsp;1: Common reporting guidelines by study design
 
 <ul>
 <li>Give each estimate with its 95% confidence interval, in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.</li>
+<li>Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact reads as a known value rather than as an estimate from the data.</li>
 <li>Report exact <em>P</em> values to 2 or 3 decimal places (“<em>P</em> = .03”), and “<em>P</em> &lt; .001” below that. AMA style uses a capital italic <em>P</em> and no leading zero. Never write “<em>P</em> = 0.000” or “NS”.</li>
 <li>Lead with estimates and intervals, not significance. Avoid “trend toward significance” and “marginally significant”. Use “significant” only in its statistical sense.</li>
 <li>When an interval is wide, say that the estimate <strong>had more uncertainty</strong>, rather than calling it “less precise” or “imprecise”. An interval that crosses the null is compatible with both benefit and harm, so say that too, rather than reporting “no effect”.</li>
 <li>Summarize roughly symmetric data with the mean (SD), skewed data with the median (IQR), and categorical data with counts and percentages.</li>
-<li>Report no more decimal places than the data support. Give percentages to one decimal place, or whole numbers when n &lt; 100, and ratios to two decimal places. Use the same precision for the same quantity everywhere.</li>
+<li>Report no more decimal places than the data support. Give percentages to one decimal place, or whole numbers when n &lt; 100, and ratios to two decimal places. Use the same precision for the same quantity everywhere, and give a point estimate and both bounds of its interval the same number of decimal places: “1.26 (95% CI, 0.68 to 1.84)”, not “1.26 (95% CI, 0.675 to 1.84)”.</li>
 <li>Spell out a number that begins a sentence, or rewrite the sentence. Use digits for measurements and statistics.</li>
 <li>Follow the journal’s conventions for units and thousands separators, with a space between a number and its unit (“5 mg”).</li>
 <li>Name the estimand and the estimator for every effect, for example “the average treatment effect on the treated, estimated with the Callaway and Sant’Anna difference-in-differences estimator”.</li>
@@ -616,7 +617,7 @@ Table&nbsp;1: Common reporting guidelines by study design
 <li>The output has no broken cross-references (<code>??</code>, <code>@fig-</code>, <code>Table ?</code>), raw Markdown, code output, warnings, or stray “NA” cells.</li>
 <li>The numbers in the abstract match the Results, tables, and figures.</li>
 <li>Every abbreviation is defined at first use in the abstract, the text, and each table and figure.</li>
-<li>Every estimate has a 95% CI, and <em>P</em> values and decimals follow <a href="#/statistics-and-numbers">Statistics and numbers</a>.</li>
+<li>Every estimate has a 95% CI, is phrased as an estimate, and shares its decimal places with its CI, and <em>P</em> values and decimals follow <a href="#/statistics-and-numbers">Statistics and numbers</a>.</li>
 <li>The main text has no pipeline or audit notes, file names, or to-do notes.</li>
 <li>The reporting-guideline checklist is complete, with page numbers.</li>
 <li>Every reference resolves, appears in order, and supports its sentence.</li>

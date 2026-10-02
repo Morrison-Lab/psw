@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 09:57:32 (UTC)
+Last modified: 2026-10-02 10:17:46 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -56,7 +56,7 @@ Contributors who do not meet all four go in the acknowledgments, with their perm
 
 - Use a **structured** abstract with the journal’s headings. A generic set is Background, Objective, Methods, Results, and Conclusions. Clinical journals often split Methods into Design, Setting, and Participants; Exposures; and Main Outcomes and Measures.
 - Most limits fall between 250 and 350 words.
-- The Results give the sample size and the main effect estimates with their confidence intervals, not only *P* values. Report the primary outcome first.
+- The Results give the sample size and the main effect estimates with their confidence intervals, not only *P* values. Phrase each effect estimate as an estimate (“we estimated that …”), per [Statistics and numbers](#statistics-and-numbers). Report the primary outcome first.
 - The Conclusions follow from the results and match the design. Use causal language only when the identification strategy supports it, and name that strategy.
 - Leave out citations, undefined abbreviations, and references to tables or figures.
 - Give 3 to 6 keywords, preferably [MeSH](https://meshb.nlm.nih.gov/) terms.
@@ -164,11 +164,12 @@ Table 1: Common reporting guidelines by study design
 ## 8 Statistics and numbers
 
 - Give each estimate with its 95% confidence interval, in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.
+- Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact reads as a known value rather than as an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places (“*P* = .03”), and “*P* \< .001” below that. AMA style uses a capital italic *P* and no leading zero. Never write “*P* = 0.000” or “NS”.
 - Lead with estimates and intervals, not significance. Avoid “trend toward significance” and “marginally significant”. Use “significant” only in its statistical sense.
 - When an interval is wide, say that the estimate **had more uncertainty**, rather than calling it “less precise” or “imprecise”. An interval that crosses the null is compatible with both benefit and harm, so say that too, rather than reporting “no effect”.
 - Summarize roughly symmetric data with the mean (SD), skewed data with the median (IQR), and categorical data with counts and percentages.
-- Report no more decimal places than the data support. Give percentages to one decimal place, or whole numbers when n \< 100, and ratios to two decimal places. Use the same precision for the same quantity everywhere.
+- Report no more decimal places than the data support. Give percentages to one decimal place, or whole numbers when n \< 100, and ratios to two decimal places. Use the same precision for the same quantity everywhere, and give a point estimate and both bounds of its interval the same number of decimal places: “1.26 (95% CI, 0.68 to 1.84)”, not “1.26 (95% CI, 0.675 to 1.84)”.
 - Spell out a number that begins a sentence, or rewrite the sentence. Use digits for measurements and statistics.
 - Follow the journal’s conventions for units and thousands separators, with a space between a number and its unit (“5 mg”).
 - Name the estimand and the estimator for every effect, for example “the average treatment effect on the treated, estimated with the Callaway and Sant’Anna difference-in-differences estimator”.
@@ -252,7 +253,7 @@ A document that renders without errors is not ready to submit. The first item is
 5.  The output has no broken cross-references (`??`, `@fig-`, `Table ?`), raw Markdown, code output, warnings, or stray “NA” cells.
 6.  The numbers in the abstract match the Results, tables, and figures.
 7.  Every abbreviation is defined at first use in the abstract, the text, and each table and figure.
-8.  Every estimate has a 95% CI, and *P* values and decimals follow [Statistics and numbers](#statistics-and-numbers).
+8.  Every estimate has a 95% CI, is phrased as an estimate, and shares its decimal places with its CI, and *P* values and decimals follow [Statistics and numbers](#statistics-and-numbers).
 9.  The main text has no pipeline or audit notes, file names, or to-do notes.
 10. The reporting-guideline checklist is complete, with page numbers.
 11. Every reference resolves, appears in order, and supports its sentence.
