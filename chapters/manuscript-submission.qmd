@@ -105,6 +105,9 @@ use the [CRediT taxonomy](https://credit.niso.org/).
 - The Results give the sample size
   and the main effect estimates with their confidence intervals,
   not only *P* values.
+  Phrase each effect estimate as an estimate
+  ("we estimated that ..."),
+  per [Statistics and numbers](#statistics-and-numbers).
   Report the primary outcome first.
 - The Conclusions follow from the results and match the design.
   Use causal language only when the identification strategy supports it,
@@ -243,7 +246,39 @@ Check the EQUATOR page for the current version before citing one.
   symbols, error bars ("Error bars indicate 95% CIs"),
   and abbreviations.
 - Label axes with units,
-  and use font sizes that are readable at the final print size.
+  and use the same fonts across figures.
+- Size each figure for the page.
+  The plot should fill the available width,
+  meaning the text width or the journal's stated figure width,
+  with no large blank margins or empty space inside the image.
+  All of its text should meet the journal's stated minimum size,
+  and in any case be about 8 points or larger at the printed size.
+  Set the figure's width and height to that width
+  and an aspect ratio that fits the content,
+  rather than exporting at a default size
+  and letting the document shrink it.
+  In a Quarto document,
+  set these with the chunk options `fig-width` and `fig-height`.
+  Wide diagrams such as Sankey plots often fail the size rule:
+  the plot ends up tiny in a field of white space.
+  For a ggplot in R,
+  the [ggview](https://github.com/idmn/ggview) package
+  previews the plot at its exact final width and height
+  (`canvas()`) and saves it at that size (`save_ggplot()`),
+  so you can fix the layout before rendering the document.
+  The preview needs the RStudio IDE;
+  in another editor, save the plot with `save_ggplot()`
+  and open the saved file instead.
+  Remove `canvas()` from any plot that the document prints.
+  A printed plot that still carries it goes to the IDE's viewer pane
+  instead of the document,
+  so the render either stops with an error
+  or leaves the figure out.
+  A plot saved with `save_ggplot()` can keep its `canvas()`,
+  since that is where the saved size comes from.
+  Check each figure on the rendered page.
+  Figure text far smaller than the caption beneath it
+  is almost certainly below 8 points.
 - Use colorblind-safe palettes.
   Pair color with shape or line type,
   so that color is never the only way to tell groups apart.
@@ -263,6 +298,14 @@ Check the EQUATOR page for the current version before citing one.
   in one consistent format,
   such as "0.82 (95% CI, 0.71 to 0.95)".
   Use "to" rather than a dash when a bound is negative.
+- Describe an estimate as an estimate, in the abstract too.
+  Write "Under the stated difference-in-differences assumptions,
+  we estimated that the intervention reduced time in notes
+  by 1.26 minutes (95% CI, 0.68 to 1.84)",
+  not "Under the stated difference-in-differences assumptions,
+  the intervention reduced time in notes by 1.26 minutes".
+  A point estimate stated as a bare fact
+  reads as a known value rather than as an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places
   ("*P* = .03"), and "*P* < .001" below that.
   AMA style uses a capital italic *P* and no leading zero.
@@ -283,7 +326,10 @@ Check the EQUATOR page for the current version before citing one.
   Give percentages to one decimal place,
   or whole numbers when n < 100,
   and ratios to two decimal places.
-  Use the same precision for the same quantity everywhere.
+  Use the same precision for the same quantity everywhere,
+  and give a point estimate and both bounds of its interval
+  the same number of decimal places:
+  "1.26 (95% CI, 0.68 to 1.84)", not "1.26 (95% CI, 0.675 to 1.84)".
 - Spell out a number that begins a sentence,
   or rewrite the sentence.
   Use digits for measurements and statistics.
@@ -419,7 +465,9 @@ Before calling a manuscript ready:
 3. No caption is on a different page from its table or figure,
    or split across a page break,
    no table runs off the page,
-   and no figure is cropped or blurry.
+   no figure is cropped or blurry,
+   and every figure fills the available width without large blank margins,
+   with its smallest text about 8 points or larger.
 4. The tables and figures come after the references,
    and a page break comes before the supplement.
 5. The output has no broken cross-references
@@ -431,6 +479,8 @@ Before calling a manuscript ready:
 7. Every abbreviation is defined at first use
    in the abstract, the text, and each table and figure.
 8. Every estimate has a 95% CI,
+   is phrased as an estimate,
+   and shares its decimal places with its CI,
    and *P* values and decimals follow
    [Statistics and numbers](#statistics-and-numbers).
 9. The main text has no pipeline or audit notes,
