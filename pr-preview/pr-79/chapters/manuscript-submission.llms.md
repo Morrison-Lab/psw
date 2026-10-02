@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 09:32:20 (UTC)
+Last modified: 2026-10-02 17:10:14 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -56,7 +56,7 @@ Contributors who do not meet all four go in the acknowledgments, with their perm
 
 - Use a **structured** abstract with the journal’s headings. A generic set is Background, Objective, Methods, Results, and Conclusions. Clinical journals often split Methods into Design, Setting, and Participants; Exposures; and Main Outcomes and Measures.
 - Most limits fall between 250 and 350 words.
-- The Results give the sample size and the main effect estimates with their confidence intervals, not only *P* values. Report the primary outcome first.
+- The Results give the sample size and the main effect estimates with their confidence intervals, not only *P* values. Phrase each effect estimate as an estimate (“we estimated that …”), per [Statistics and numbers](#statistics-and-numbers). Report the primary outcome first.
 - The Conclusions follow from the results and match the design. Use causal language only when the identification strategy supports it, and name that strategy.
 - Leave out citations, undefined abbreviations, and references to tables or figures.
 - Give 3 to 6 keywords, preferably [MeSH](https://meshb.nlm.nih.gov/) terms.
@@ -153,7 +153,8 @@ Table 1: Common reporting guidelines by study design
 
 - Number every figure in citation order, and give every figure a caption.
 - Put the legend below the figure: a title phrase, then sentences that explain panels, symbols, error bars (“Error bars indicate 95% CIs”), and abbreviations.
-- Label axes with units, and use font sizes that are readable at the final print size.
+- Label axes with units, and use the same fonts across figures.
+- Size each figure for the page. The plot should fill the available width, meaning the text width or the journal’s stated figure width, with no large blank margins or empty space inside the image. All of its text should meet the journal’s stated minimum size, and in any case be about 8 points or larger at the printed size. Set the figure’s width and height to that width and an aspect ratio that fits the content, rather than exporting at a default size and letting the document shrink it. In a Quarto document, set these with the chunk options `fig-width` and `fig-height`. Wide diagrams such as Sankey plots often fail the size rule: the plot ends up tiny in a field of white space. For a ggplot in R, the [ggview](https://github.com/idmn/ggview) package previews the plot at its exact final width and height (`canvas()`) and saves it at that size (`save_ggplot()`), so you can fix the layout before rendering the document. The preview needs the RStudio IDE; in another editor, save the plot with `save_ggplot()` and open the saved file instead. Remove `canvas()` from any plot that the document prints. A printed plot that still carries it goes to the IDE’s viewer pane instead of the document, so the render either stops with an error or leaves the figure out. A plot saved with `save_ggplot()` can keep its `canvas()`, since that is where the saved size comes from. Check each figure on the rendered page. Figure text far smaller than the caption beneath it is almost certainly below 8 points.
 - Use colorblind-safe palettes. Pair color with shape or line type, so that color is never the only way to tell groups apart.
 - Show the data where possible. Points with intervals usually say more than bars of means. When you do use bars, start the axis at zero.
 - Save plots in a vector format (PDF, EPS, or SVG). Save raster images at 300 dpi or more, or 600 to 1200 dpi for line art.
@@ -163,11 +164,12 @@ Table 1: Common reporting guidelines by study design
 ## 8 Statistics and numbers
 
 - Give each estimate with its 95% confidence interval, in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.
+- Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact reads as a known value rather than as an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places (“*P* = .03”), and “*P* \< .001” below that. AMA style uses a capital italic *P* and no leading zero. Never write “*P* = 0.000” or “NS”.
 - Lead with estimates and intervals, not significance. Avoid “trend toward significance” and “marginally significant”. Use “significant” only in its statistical sense.
 - When an interval is wide, say that the estimate **had more uncertainty**, rather than calling it “less precise” or “imprecise”. An interval that crosses the null is compatible with both benefit and harm, so say that too, rather than reporting “no effect”.
 - Summarize roughly symmetric data with the mean (SD), skewed data with the median (IQR), and categorical data with counts and percentages.
-- Report no more decimal places than the data support. Give percentages to one decimal place, or whole numbers when n \< 100, and ratios to two decimal places. Use the same precision for the same quantity everywhere.
+- Report no more decimal places than the data support. Give percentages to one decimal place, or whole numbers when n \< 100, and ratios to two decimal places. Use the same precision for the same quantity everywhere, and give a point estimate and both bounds of its interval the same number of decimal places: “1.26 (95% CI, 0.68 to 1.84)”, not “1.26 (95% CI, 0.675 to 1.84)”.
 - Spell out a number that begins a sentence, or rewrite the sentence. Use digits for measurements and statistics.
 - Follow the journal’s conventions for units and thousands separators, with a space between a number and its unit (“5 mg”).
 - Name the estimand and the estimator for every effect, for example “the average treatment effect on the treated, estimated with the Callaway and Sant’Anna difference-in-differences estimator”.
@@ -246,12 +248,12 @@ A document that renders without errors is not ready to submit. The first item is
 
 1.  Export the render to PDF and look at every page, in both the main text and the supplement.
 2.  Every table and figure has a number and a caption, and the text cites each one in order.
-3.  No caption is on a different page from its table or figure, or split across a page break, no table runs off the page, and no figure is cropped or blurry.
+3.  No caption is on a different page from its table or figure, or split across a page break, no table runs off the page, no figure is cropped or blurry, and every figure fills the available width without large blank margins, with its smallest text about 8 points or larger.
 4.  The tables and figures come after the references, and a page break comes before the supplement.
 5.  The output has no broken cross-references (`??`, `@fig-`, `Table ?`), raw Markdown, code output, warnings, or stray “NA” cells.
 6.  The numbers in the abstract match the Results, tables, and figures.
 7.  Every abbreviation is defined at first use in the abstract, the text, and each table and figure.
-8.  Every estimate has a 95% CI, and *P* values and decimals follow [Statistics and numbers](#statistics-and-numbers).
+8.  Every estimate has a 95% CI, is phrased as an estimate, and shares its decimal places with its CI, and *P* values and decimals follow [Statistics and numbers](#statistics-and-numbers).
 9.  The main text has no pipeline or audit notes, file names, or to-do notes.
 10. The reporting-guideline checklist is complete, with page numbers.
 11. Every reference resolves, appears in order, and supports its sentence.
