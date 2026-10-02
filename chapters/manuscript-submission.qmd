@@ -263,6 +263,9 @@ Check the EQUATOR page for the current version before citing one.
   previews the plot at its exact final width and height
   (`canvas()`) and saves it at that size (`save_ggplot()`),
   so you can fix the layout before rendering the document.
+  The preview needs the RStudio IDE;
+  in another editor, save the plot with `save_ggplot()`
+  and open the saved file instead.
   Remove `canvas()` from any plot that the document prints.
   A printed plot that still carries it goes to the IDE's viewer pane
   instead of the document,
