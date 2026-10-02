@@ -242,8 +242,18 @@ Check the EQUATOR page for the current version before citing one.
   a title phrase, then sentences that explain panels,
   symbols, error bars ("Error bars indicate 95% CIs"),
   and abbreviations.
-- Label axes with units,
-  and use font sizes that are readable at the final print size.
+- Label axes with units.
+- Size each figure for the page.
+  The plot should fill the available text width,
+  with no large blank margins or empty space inside the image,
+  and all of its text should be 8 to 10 points at the printed size.
+  Set the figure's width and height to the text width
+  and an aspect ratio that fits the content,
+  rather than exporting at a default size
+  and letting the document shrink it.
+  Wide diagrams such as Sankey plots often fail this way:
+  the plot ends up tiny in a field of white space.
+  Check each figure on the rendered page.
 - Use colorblind-safe palettes.
   Pair color with shape or line type,
   so that color is never the only way to tell groups apart.
@@ -419,7 +429,8 @@ Before calling a manuscript ready:
 3. No caption is on a different page from its table or figure,
    or split across a page break,
    no table runs off the page,
-   and no figure is cropped or blurry.
+   no figure is cropped or blurry,
+   and every figure fills the text width with readable text.
 4. The tables and figures come after the references,
    and a page break comes before the supplement.
 5. The output has no broken cross-references
