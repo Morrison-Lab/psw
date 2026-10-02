@@ -22,7 +22,8 @@ output, CI workflows).
 - `_extensions/` — vendored Quarto extensions (callouty-theorem, custom-callout,
   div-anchors, equation-anchors, slidebreak)
 - `references.bib` — BibTeX bibliography
-- `styles.css`, `styles-reveal.scss`, `qwt-reveal-toggle.html` — styling
+- `offwhite.scss`, `theme-picker.html` — the website's Light / Off-white / Parchment / Dark theme dropdown (saved under `mln-theme`, shared with the slides and the other sites on this origin)
+- `styles.css`, `styles-reveal.scss`, `qwt-reveal-toggle.html` — styling, including the slides' matching dropdown
 - `.github/workflows/`, `.github/scripts/` — CI workflows and helper scripts
 - `_site/`, `_freeze/`, `.quarto/` — build artifacts (do not edit by hand)
 
