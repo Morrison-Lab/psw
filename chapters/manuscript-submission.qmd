@@ -105,6 +105,8 @@ use the [CRediT taxonomy](https://credit.niso.org/).
 - The Results give the sample size
   and the main effect estimates with their confidence intervals,
   not only *P* values.
+  Phrase each effect estimate as an estimate
+  ("we estimated that ...").
   Report the primary outcome first.
 - The Conclusions follow from the results and match the design.
   Use causal language only when the identification strategy supports it,
@@ -263,6 +265,13 @@ Check the EQUATOR page for the current version before citing one.
   in one consistent format,
   such as "0.82 (95% CI, 0.71 to 0.95)".
   Use "to" rather than a dash when a bound is negative.
+- Describe an estimate as an estimate, in the abstract too.
+  Write "Under the stated difference-in-differences assumptions,
+  we estimated that the intervention reduced time in notes
+  by 1.26 minutes (95% CI, 0.68 to 1.84)",
+  not "the intervention reduced time in notes by 1.26 minutes".
+  A point estimate stated as a bare fact
+  reads as a known value rather than as an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places
   ("*P* = .03"), and "*P* < .001" below that.
   AMA style uses a capital italic *P* and no leading zero.
@@ -283,7 +292,10 @@ Check the EQUATOR page for the current version before citing one.
   Give percentages to one decimal place,
   or whole numbers when n < 100,
   and ratios to two decimal places.
-  Use the same precision for the same quantity everywhere.
+  Use the same precision for the same quantity everywhere,
+  and give a point estimate and both bounds of its interval
+  the same number of decimal places:
+  "1.26 (95% CI, 0.68 to 1.84)", not "1.26 (95% CI, 0.675 to 1.84)".
 - Spell out a number that begins a sentence,
   or rewrite the sentence.
   Use digits for measurements and statistics.
