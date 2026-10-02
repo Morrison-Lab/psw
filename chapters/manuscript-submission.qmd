@@ -51,8 +51,8 @@ Assemble the main document in this order:
 
 Tables and figures go at the end of the main text, not inline.
 For page breaks and caption placement,
-follow the "Manuscript layout for journal submission" section of
-[Paper organization](paper-organization.qmd).
+follow [Manuscript layout for journal submission](paper-organization.qmd#sec-submission-layout)
+in Paper organization.
 Some journals want figures uploaded as separate files,
 with the figure legends listed after the references.
 When that is the instruction, follow it,
@@ -395,8 +395,8 @@ either in the text or in the submission forms:
 - Render from source every time,
   and never edit the output file by hand.
 - Place page breaks and captions as described in
-  the "Manuscript layout for journal submission" section of
-  [Paper organization](paper-organization.qmd).
+  [Manuscript layout for journal submission](paper-organization.qmd#sec-submission-layout)
+  in Paper organization.
 - Put table captions above (`tbl-cap-location: top`)
   and figure captions below (`fig-cap-location: bottom`).
 - Use double spacing, line numbers, and page numbers
