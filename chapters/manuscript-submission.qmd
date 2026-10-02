@@ -22,7 +22,7 @@ When no journal has been chosen yet,
 use the defaults below.
 They follow the
 [ICMJE Recommendations](https://www.icmje.org/recommendations/)
-and the [AMA Manual of Style](https://www.amamanualofstyle.com/),
+and the *AMA Manual of Style*,
 which most clinical and health-services journals use.
 
 ## Document order
@@ -37,9 +37,12 @@ Assemble the main document in this order:
    (with a limitations paragraph), and Conclusions.
    See [Paper organization](paper-organization.qmd).
 4. Back matter:
-   acknowledgments, author contributions, funding,
-   conflict of interest disclosures, data and code availability,
-   and the ethics statement.
+   - acknowledgments;
+   - author contributions;
+   - funding;
+   - conflict of interest disclosures;
+   - data and code availability; and
+   - the ethics statement.
 5. References.
 6. Tables, numbered in citation order.
 7. Figures, numbered in citation order.
@@ -132,10 +135,13 @@ Give enough detail that another analyst could reproduce the analysis:
 - primary and secondary outcomes, with units and how each was measured;
 - covariates, and why they were included;
 - the statistical analysis:
-  the estimand, the model,
-  its assumptions and how they were checked,
-  missing data, clustering, multiple comparisons,
-  sensitivity analyses, and software with versions;
+  - the estimand;
+  - the model, its assumptions, and how they were checked;
+  - handling of missing data;
+  - clustering or other correlation;
+  - multiple comparisons;
+  - sensitivity analyses; and
+  - software, with versions;
 - ethics approval or exemption, and consent or its waiver; and
 - the reporting guideline that the paper follows.
 
@@ -159,9 +165,14 @@ A standard Discussion runs through:
    without repeating the numbers;
 2. comparison with prior work, with citations;
 3. interpretation and possible mechanisms, labeled as interpretation;
-4. limitations: confounding, selection, measurement,
-   generalizability, and power, as they apply,
-   each with its likely direction and what was done about it; and
+4. limitations, each with its likely direction
+   and what was done about it,
+   covering whichever of these apply:
+   - confounding;
+   - selection;
+   - measurement;
+   - generalizability; and
+   - power; and
 5. implications for practice, policy, or research.
 
 ### Conclusions
@@ -175,6 +186,7 @@ Find the guideline for the study design on the
 [EQUATOR Network](https://www.equator-network.org/),
 follow it while writing,
 and submit the completed checklist if the journal asks for it.
+@tbl-reporting-guidelines lists the common ones.
 Check the EQUATOR page for the current version before citing one.
 
 | Design | Guideline |
@@ -297,12 +309,15 @@ Check the EQUATOR page for the current version before citing one.
   The numbering and caption rules for the main text apply here too.
 - Cite each supplement item from the main text, in order.
 - Put these in the supplement:
-  extended methods, full model output, sensitivity analyses,
-  additional tables, code and software versions,
-  data-processing details,
-  and any pipeline or audit notes,
-  such as data-quality checks, step-by-step exclusions,
-  and reconciliation with earlier reports.
+  - extended methods;
+  - full model output;
+  - sensitivity analyses;
+  - additional tables;
+  - code and software versions;
+  - data-processing details; and
+  - pipeline or audit notes,
+    such as data-quality checks, step-by-step exclusions,
+    and reconciliation with earlier reports.
 - Hold the supplement to the same standard as the main text.
 
 ## Abbreviations
@@ -350,9 +365,13 @@ Check the EQUATOR page for the current version before citing one.
   and "not just X but Y" constructions.
   See [Avoiding AI tells](avoid-ai-tells.qmd).
 - Keep pipeline, audit, and process notes out of the main text.
-  Scripts, file names, variable names, merge requests, code versions,
-  reviewer conversations, references to earlier drafts,
-  and to-do notes belong in the supplement or nowhere.
+  These belong in the supplement or nowhere:
+  - scripts and file names;
+  - variable names;
+  - merge requests and code versions;
+  - reviewer conversations;
+  - references to earlier drafts; and
+  - to-do notes.
 - Use one term per concept throughout the paper.
 - Define every group, period, and outcome before you use it.
 
