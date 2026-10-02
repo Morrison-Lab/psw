@@ -146,3 +146,18 @@ If it does not, replace it with the plainer word.
 If it does carry necessary meaning
 but a reader outside your subfield would not understand it,
 define it clearly at first use.
+
+## Write for readers of every background
+
+Many readers are not native speakers of the language you write in.
+Some readers read literally, and some find unpredictable structure hard to follow.
+Plain, literal wording helps all of them.
+Specialized language excludes readers who did not learn it,
+so using it is an equity problem, not only a matter of taste.
+
+- Use literal words. Avoid clichés, idioms and slang.
+  For example, write "Which approach does this course prefer?"
+  instead of "Which way does this course lean?".
+- Put one idea in each sentence.
+- Give each section a predictable structure.
+- State steps explicitly, in order.
