@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 08:36:57 (UTC)
+Last modified: 2026-10-02 09:57:32 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -153,7 +153,8 @@ Table 1: Common reporting guidelines by study design
 
 - Number every figure in citation order, and give every figure a caption.
 - Put the legend below the figure: a title phrase, then sentences that explain panels, symbols, error bars (“Error bars indicate 95% CIs”), and abbreviations.
-- Label axes with units, and use font sizes that are readable at the final print size.
+- Label axes with units, and use the same fonts across figures.
+- Size each figure for the page. The plot should fill the available width, meaning the text width or the journal’s stated figure width, with no large blank margins or empty space inside the image. All of its text should meet the journal’s stated minimum size, and in any case be about 8 points or larger at the printed size. Set the figure’s width and height to that width and an aspect ratio that fits the content, rather than exporting at a default size and letting the document shrink it. In a Quarto document, set these with the chunk options `fig-width` and `fig-height`. Wide diagrams such as Sankey plots often fail the size rule: the plot ends up tiny in a field of white space. For a ggplot in R, the [ggview](https://github.com/idmn/ggview) package previews the plot at its exact final width and height (`canvas()`) and saves it at that size (`save_ggplot()`), so you can fix the layout before rendering the document. The preview needs the RStudio IDE; in another editor, save the plot with `save_ggplot()` and open the saved file instead. Remove `canvas()` from any plot that the document prints. A printed plot that still carries it goes to the IDE’s viewer pane instead of the document, so the render either stops with an error or leaves the figure out. A plot saved with `save_ggplot()` can keep its `canvas()`, since that is where the saved size comes from. Check each figure on the rendered page. Figure text far smaller than the caption beneath it is almost certainly below 8 points.
 - Use colorblind-safe palettes. Pair color with shape or line type, so that color is never the only way to tell groups apart.
 - Show the data where possible. Points with intervals usually say more than bars of means. When you do use bars, start the axis at zero.
 - Save plots in a vector format (PDF, EPS, or SVG). Save raster images at 300 dpi or more, or 600 to 1200 dpi for line art.
@@ -246,7 +247,7 @@ A document that renders without errors is not ready to submit. The first item is
 
 1.  Export the render to PDF and look at every page, in both the main text and the supplement.
 2.  Every table and figure has a number and a caption, and the text cites each one in order.
-3.  No caption is on a different page from its table or figure, or split across a page break, no table runs off the page, and no figure is cropped or blurry.
+3.  No caption is on a different page from its table or figure, or split across a page break, no table runs off the page, no figure is cropped or blurry, and every figure fills the available width without large blank margins, with its smallest text about 8 points or larger.
 4.  The tables and figures come after the references, and a page break comes before the supplement.
 5.  The output has no broken cross-references (`??`, `@fig-`, `Table ?`), raw Markdown, code output, warnings, or stray “NA” cells.
 6.  The numbers in the abstract match the Results, tables, and figures.
