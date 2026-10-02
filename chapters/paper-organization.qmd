@@ -47,13 +47,88 @@ organize results by:
 
 ## Figures and tables
 
-Place figures and tables near the relevant text that describes them.
-Number them sequentially
+In a reading copy
+(a website, a preprint, or a draft circulated to coauthors),
+place figures and tables near the relevant text that describes them.
+A manuscript submitted to a journal often follows a different layout;
+see @sec-submission-layout.
+Either way,
+number figures and tables sequentially
 and reference them in the text before they appear.
 
 Each figure and table should have a clear,
 informative caption that allows readers to understand it
 without reading the main text.
+
+### Captions are captions, not headings
+
+Give every figure and table a numbered caption,
+including those in the supplementary material.
+A table without a caption is incomplete,
+even when its contents are correct.
+
+Format each caption as a caption,
+using your writing tool's caption mechanism,
+not as a section heading.
+
+**Poor**: a heading that reads
+"Supplementary Figure S43: Distribution of follow-up time",
+placed above the figure
+
+**Better**: a caption attached to the figure,
+numbered automatically,
+that reads "Supplementary Figure S43: Distribution of follow-up time"
+
+A heading posing as a caption appears in the table of contents,
+takes heading styling,
+and is not attached to its figure.
+Its number is typed by hand,
+so it falls out of step with the real numbering
+when figures are added, removed, or reordered.
+
+### Manuscript layout for journal submission {#sec-submission-layout}
+
+Many journals ask for figures and tables
+to follow the main text of a submitted manuscript
+rather than appear inline.
+Unless the journal's instructions say otherwise,
+lay out a submission manuscript as follows:
+
+- **Put all main-text figures and tables at the end of the main manuscript**,
+  after the main text and the references,
+  and before the supplementary material.
+  The main text still cites each one by number.
+- **Insert a page break before the supplementary material header**,
+  so the supplement starts on a new page.
+- **Keep each caption on the same page as its figure or table.**
+  Do not let a caption split across a page break
+  unless it cannot be avoided.
+  Insert page breaks between figures and tables instead,
+  so that each one starts on a page where it fits with its caption.
+
+In Quarto,
+the `{{{< pagebreak >}}}` shortcode inserts a page break
+in PDF and Word output,
+and a `::: {#refs}` div places the references
+before the figures and tables
+instead of at the end of the document.
+
+### Check the rendered layout
+
+Captions, page breaks, and figure placement
+are properties of the rendered document's layout.
+Problems with them are easy to miss when reading the source,
+and none of them changes a number in the results.
+Before calling a rendered manuscript reviewed,
+page through the PDF or Word output
+and check its layout,
+not only its text and numbers:
+
+- Does every figure and table have a numbered caption?
+- Does each caption sit on the same page as its figure or table?
+- Do the main-text figures and tables come after the references
+  and before the supplement?
+- Does the supplementary material start on a new page?
 
 ## Subsection headings
 
