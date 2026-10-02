@@ -41,12 +41,15 @@ Assemble the main document in this order:
    conflict of interest disclosures, data and code availability,
    and the ethics statement.
 5. References.
-6. Tables, each starting on its own page, numbered in citation order.
-7. Figures, each on its own page with its caption on the same page.
-8. A page break, then the supplement,
+6. Tables, numbered in citation order.
+7. Figures, numbered in citation order.
+8. The supplement,
    or a separate supplement file if the journal requires one.
 
 Tables and figures go at the end of the main text, not inline.
+For page breaks and caption placement,
+follow the "Manuscript layout for journal submission" section of
+[Paper organization](paper-organization.qmd).
 Some journals want figures uploaded as separate files,
 with the figure legends listed after the references.
 When that is the instruction, follow it,
@@ -217,10 +220,7 @@ Check the EQUATOR page for the current version before citing one.
   standardized mean differences are more informative than *P* values.
 - Make the table fit the page width.
   Split a wide table or move it to the supplement.
-- Keep the caption, the table, and its footnotes on one page.
-  A caption never sits on a different page from its table,
-  and never splits across a page break
-  unless the caption alone is longer than a page.
+- Keep the table's footnotes with the table.
 
 ## Figures
 
@@ -244,9 +244,6 @@ Check the EQUATOR page for the current version before citing one.
 - Label the panels of a multi-panel figure A, B, C,
   and refer to them in the legend.
 - Add alt text when the journal supports it.
-- Keep the caption on the same page as its figure,
-  and never split it across a page break
-  unless the caption alone is longer than a page.
 
 ## Statistics and numbers
 
@@ -298,9 +295,6 @@ Check the EQUATOR page for the current version before citing one.
   "eTable 1", "eFigure 1", and "eMethods" in JAMA style,
   or "Table S1" and "Figure S1" elsewhere.
   The numbering and caption rules for the main text apply here too.
-- Format supplement captions in the caption style, not a heading style,
-  so that they keep the caption formatting
-  and stay out of the document outline.
 - Cite each supplement item from the main text, in order.
 - Put these in the supplement:
   extended methods, full model output, sensitivity analyses,
@@ -381,20 +375,11 @@ either in the text or in the submission forms:
 
 - Render from source every time,
   and never edit the output file by hand.
-- Put a page break (`{{{< pagebreak >}}}`) before each table and figure
-  at the end of the document,
-  and another before the supplement.
+- Place page breaks and captions as described in
+  the "Manuscript layout for journal submission" section of
+  [Paper organization](paper-organization.qmd).
 - Put table captions above (`tbl-cap-location: top`)
   and figure captions below (`fig-cap-location: bottom`).
-- Keep each caption with its object.
-  In PDF output, stop floats from drifting,
-  for example with `fig-pos: "H"` or one float per page.
-  In Word output, set "Keep with next" on the caption style
-  in the reference document,
-  and put each float on its own page.
-- When two floats would share a page
-  and one of them would split or lose its caption,
-  insert a page break between them rather than letting either split.
 - Use double spacing, line numbers, and page numbers
   if the journal asks for them.
 - Check that every cross-reference resolves.
