@@ -106,7 +106,8 @@ use the [CRediT taxonomy](https://credit.niso.org/).
   and the main effect estimates with their confidence intervals,
   not only *P* values.
   Phrase each effect estimate as an estimate
-  ("we estimated that ...").
+  ("we estimated that ..."),
+  per [Statistics and numbers](#statistics-and-numbers).
   Report the primary outcome first.
 - The Conclusions follow from the results and match the design.
   Use causal language only when the identification strategy supports it,
@@ -269,7 +270,8 @@ Check the EQUATOR page for the current version before citing one.
   Write "Under the stated difference-in-differences assumptions,
   we estimated that the intervention reduced time in notes
   by 1.26 minutes (95% CI, 0.68 to 1.84)",
-  not "the intervention reduced time in notes by 1.26 minutes".
+  not "Under the stated difference-in-differences assumptions,
+  the intervention reduced time in notes by 1.26 minutes".
   A point estimate stated as a bare fact
   reads as a known value rather than as an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places
@@ -443,6 +445,8 @@ Before calling a manuscript ready:
 7. Every abbreviation is defined at first use
    in the abstract, the text, and each table and figure.
 8. Every estimate has a 95% CI,
+   is phrased as an estimate,
+   and shares its decimal places with its CI,
    and *P* values and decimals follow
    [Statistics and numbers](#statistics-and-numbers).
 9. The main text has no pipeline or audit notes,
