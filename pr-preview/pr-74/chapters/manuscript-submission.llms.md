@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 07:27:31 (UTC)
+Last modified: 2026-10-02 07:37:29 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -29,7 +29,7 @@ Assemble the main document in this order:
 7.  Figures, numbered in citation order.
 8.  The supplement, or a separate supplement file if the journal requires one.
 
-Tables and figures go at the end of the main text, not inline. For page breaks and caption placement, follow the “Manuscript layout for journal submission” section of [Paper organization](../chapters/paper-organization.llms.md). Some journals want figures uploaded as separate files, with the figure legends listed after the references. When that is the instruction, follow it, and keep the end-of-document copies only for review drafts.
+Tables and figures go at the end of the main text, not inline. For page breaks and caption placement, follow [Manuscript layout for journal submission](../chapters/paper-organization.llms.md#sec-submission-layout) in Paper organization. Some journals want figures uploaded as separate files, with the figure legends listed after the references. When that is the instruction, follow it, and keep the end-of-document copies only for review drafts.
 
 ## 2 Title page
 
@@ -235,7 +235,7 @@ Most journals require each of these, either in the text or in the submission for
 ## 14 Rendering and layout in Quarto
 
 - Render from source every time, and never edit the output file by hand.
-- Place page breaks and captions as described in the “Manuscript layout for journal submission” section of [Paper organization](../chapters/paper-organization.llms.md).
+- Place page breaks and captions as described in [Manuscript layout for journal submission](../chapters/paper-organization.llms.md#sec-submission-layout) in Paper organization.
 - Put table captions above (`tbl-cap-location: top`) and figure captions below (`fig-cap-location: bottom`).
 - Use double spacing, line numbers, and page numbers if the journal asks for them.
 - Check that every cross-reference resolves.
