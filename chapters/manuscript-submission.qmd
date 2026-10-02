@@ -256,17 +256,18 @@ Check the EQUATOR page for the current version before citing one.
   and letting the document shrink it.
   In a Quarto document,
   set these with the chunk options `fig-width` and `fig-height`.
+  Wide diagrams such as Sankey plots often fail the size rule:
+  the plot ends up tiny in a field of white space.
   For a ggplot in R,
   the [ggview](https://github.com/idmn/ggview) package
   previews the plot at its exact final width and height
   (`canvas()`) and saves it at that size (`save_ggplot()`),
   so you can fix the layout before rendering the document.
-  The preview opens in the IDE's viewer pane,
-  so remove `canvas()` before rendering;
-  otherwise the figure goes to the viewer
-  and is missing from the rendered page.
-  Wide diagrams such as Sankey plots often fail this way:
-  the plot ends up tiny in a field of white space.
+  Remove `canvas()` before rendering.
+  A plot that still carries it goes to the IDE's viewer pane
+  instead of the document,
+  so the render either stops with an error
+  or leaves the figure out.
   Check each figure on the rendered page.
   Figure text far smaller than the caption beneath it
   is almost certainly below 8 points.
