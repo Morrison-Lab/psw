@@ -79,6 +79,22 @@ Follow these principles when introducing new terms:
   write $R^2 := 1 - \text{RSS} / \text{TSS}$,
   not the two sums that RSS and TSS stand for.
 
+- **Define a statistical model by its distribution, and derive its other forms:**
+  Define a regression model by the distribution of the outcome
+  conditional on the covariates,
+  centered on a named mean function.
+  For example, define simple linear regression as
+  $Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)$, independently,
+  with $\mu_i := \mu(x_i)$ and $\mu(x) := \beta_0 + \beta_x x$.
+  Then define the deviation $\varepsilon_i := Y_i - \mu(x_i)$,
+  and state $Y_i = \mu_i + \varepsilon_i$
+  with $\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)$
+  as a result proved from those definitions.
+  Writing the model as "$Y_i = \beta_0 + \beta_x x_i + \varepsilon_i$
+  with Gaussian errors" makes the definition rest on a quantity
+  that has not been defined yet,
+  and hides that the model is a statement about the outcome's distribution.
+
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
   the rest of the document relies on,
