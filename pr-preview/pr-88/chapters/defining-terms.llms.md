@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-04 18:01:16 (UTC)
+Last modified: 2026-10-04 18:06:07 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -30,13 +30,13 @@ Follow these principles when introducing new terms:
 
 - **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
 
-- **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition (see [Order: general definition, then examples](#order-general-definition-then-examples)).
+- **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
 
 - **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
 
 - **Provide examples:** Every definition should include at least one concrete example that illustrates how the term is used.
 
-- **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (`#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#exm-`, `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.
+- **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.
 
 - **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
 
