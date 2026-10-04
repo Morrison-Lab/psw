@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-04 18:06:07 (UTC)
+Last modified: 2026-10-04 18:46:14 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -27,6 +27,8 @@ Follow these principles when introducing new terms:
 - **Provide explicit definitions:** State clearly what a term means, rather than assuming readers will understand from context.
 
 - **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
+
+- **State technical definitions in both prose and math:** Give a quantitative term a one-sentence prose definition and the formula it stands for, in the same definition block; together the sentence and the formula are the defining statement. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta})\\, not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write \\R^2 := 1 - \text{RSS} / \text{TSS}\\, not the two sums that RSS and TSS stand for.
 
 - **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
 
