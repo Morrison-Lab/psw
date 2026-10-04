@@ -10,10 +10,9 @@ has to redo the missing work on scratch paper,
 or take the step on trust.
 Either way, an error hidden inside a combined step
 is harder for the reader, or a reviewer, to catch.
-This section applies the advice in
-[Replacing an appeal to familiarity](citations-evidence.qmd#replacing-an-appeal-to-familiarity),
-which asks you to show intermediate steps,
-to the layout of a displayed derivation.
+The advice on ["Trivial" and "trivially"](citations-evidence.qmd#trivial-and-trivially)
+says to write out a step that takes only a line;
+this section applies that advice to the layout of a displayed derivation.
 
 ::: {#exm-one-operation-per-step}
 
