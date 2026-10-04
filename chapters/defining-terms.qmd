@@ -25,19 +25,24 @@ technical meaning within a particular field or context.
 
 :::
 
-::: {#exm-population}
-
-## Population
-
 ::: {#def-population}
 
 ## Population
 
 In statistics,
-the term "population" refers to the complete set of all items or individuals of interest,
-not just a geographic population of people.
+a *population* is the complete set of all items or individuals of interest.
 
 :::
+
+::: {#rem-population}
+
+## Population is not only geographic
+
+In everyday use, "population" usually means the people living in a place.
+The statistical sense in @def-population is broader:
+a population can be all the patients with a condition,
+all the batches a factory produces,
+or any other set of items of interest.
 
 :::
 
@@ -52,6 +57,25 @@ Follow these principles when introducing new terms:
 - **Be concise:**
   Definitions should be brief and focused,
   using only the words necessary to convey the meaning.
+  A definition block holds the defining statement and nothing else:
+  no examples, special cases, motivation or caveats.
+
+- **Define in the most general form the document needs:**
+  State the concept at the level of generality
+  the rest of the document relies on,
+  not just for the first case the reader meets.
+  For example, define the residual sum of squares
+  as the sum of squared residuals of any fitted model,
+  not as a formula for a straight line.
+  A definition tied to one special case
+  has to be restated, or silently stretched,
+  the first time the document needs the general case.
+
+- **Follow the definition with examples, from general to specific:**
+  Put each special case in its own example block right after the definition,
+  ordered from the most general to the most specific,
+  each linking back to the definition
+  (see [Order: general definition, then examples](#order-general-definition-then-examples)).
   
 - **Define terms at first use:**
   Place the definition immediately before or after the term's first appearance.
@@ -64,7 +88,12 @@ Follow these principles when introducing new terms:
   In a Quarto document, put every definition in its own `#def-` div
   (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)),
   one term per div,
-  with commentary after the div rather than inside it.
+  with commentary after the div rather than inside it,
+  in a remark block (`#rem-`) when it is about the concept.
+  Never nest one theorem-type block
+  (`#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#exm-`, `#rem-`)
+  inside another;
+  give each its own div, in order.
   A bolded term in running prose is usually an inline definition
   that belongs in a div,
   including a term defined in passing.
@@ -85,10 +114,6 @@ Follow these principles when introducing new terms:
 
 Here are examples of well-defined terms:
 
-::: {#exm-confidence-interval}
-
-## Statistical term: Confidence interval
-
 ::: {#def-confidence-interval}
 
 ## Confidence interval
@@ -99,14 +124,15 @@ that is likely to contain the true population parameter.
 
 :::
 
-If we calculate a 95% confidence interval for mean height as [165 cm, 175 cm],
+::: {#exm-confidence-interval}
+
+## A confidence interval for mean height
+
+If we calculate a 95% confidence interval (@def-confidence-interval)
+for mean height as [165 cm, 175 cm],
 we are 95% confident that the true population mean height falls within this range.
 
 :::
-
-::: {#exm-active-voice}
-
-## Writing term: Active voice
 
 ::: {#def-active-voice}
 
@@ -116,10 +142,61 @@ we are 95% confident that the true population mean height falls within this rang
 
 :::
 
-"The researcher conducted the experiment" is in active voice,
+::: {#exm-active-voice}
+
+## Active and passive voice
+
+"The researcher conducted the experiment" is in active voice (@def-active-voice),
 while "The experiment was conducted by the researcher" is in passive voice.
 
 :::
+
+## Order: general definition, then examples
+
+When a concept has special cases,
+write the general definition first and compactly,
+then one example block per special case,
+ordered from the most general to the most specific.
+Put any commentary in a remark block after them.
+For example, a statistics text that defines the residual sum of squares
+would give these blocks, in this order:
+
+::: {#def-rss}
+
+## Residual sum of squares
+
+The *residual sum of squares* of a model fitted to data
+is the sum of its squared residuals:
+$\text{RSS} = \sum_{i=1}^n r_i^2$.
+
+:::
+
+::: {#exm-rss-line}
+
+## Residual sum of squares of a straight line
+
+For a straight line with intercept $\beta_0$ and slope $\beta_x$,
+the fitted value of observation $i$ is $\beta_0 + \beta_x x_i$,
+so the residual sum of squares (@def-rss) is a function of the two coefficients:
+$\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2$.
+
+:::
+
+::: {#exm-rss-three-points}
+
+## Residual sum of squares of a line through three points
+
+For the points $(0, 1)$, $(1, 2)$, $(2, 2)$
+and the line with $\beta_0 = 1$ and $\beta_x = 0.5$ (@exm-rss-line),
+the residuals are $0$, $0.5$ and $0$,
+so $\text{RSS}(1, 0.5) = 0.25$.
+
+:::
+
+The definition stays one sentence and one equation,
+so it still applies when the document later fits a model that is not a line.
+The line is a special case, so it is an example,
+and the numerical case is a special case of the line, so it comes last.
 
 ## Why examples matter
 
