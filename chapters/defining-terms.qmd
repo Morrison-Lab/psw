@@ -60,6 +60,20 @@ Follow these principles when introducing new terms:
   A definition block holds the defining statement and nothing else:
   no examples, special cases, motivation or caveats.
 
+- **State technical definitions in both prose and math:**
+  Give a quantitative term a one-sentence prose definition
+  and the formula it stands for, in the same definition block.
+  The prose tells the reader what the quantity means;
+  the formula makes it exact and lets later derivations cite it.
+  For example, define the ordinary least squares estimate
+  as "the parameter value that minimizes the residual sum of squares"
+  *and* as $\hat{\theta} := \arg\min_{\theta} \text{RSS}(\theta)$,
+  not with only one of the two.
+  Build the formula from terms already defined,
+  rather than expanding them again:
+  write $R^2 := 1 - \text{RSS} / \text{TSS}$,
+  not the two sums that RSS and TSS stand for.
+
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
   the rest of the document relies on,
