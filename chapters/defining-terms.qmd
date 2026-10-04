@@ -75,6 +75,7 @@ Follow these principles when introducing new terms:
   Put each special case in its own example block right after the definition,
   ordered from the most general to the most specific,
   each linking back to the definition
+  or to the example it specializes
   (see [Order: general definition, then examples](#order-general-definition-then-examples)).
   
 - **Define terms at first use:**
@@ -91,7 +92,9 @@ Follow these principles when introducing new terms:
   with commentary after the div rather than inside it,
   in a remark block (`#rem-`) when it is about the concept.
   Never nest one theorem-type block
-  (`#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#exm-`, `#rem-`)
+  (any of the prefixes listed in
+  [Using theorem environments in Quarto](#using-theorem-environments-in-quarto),
+  such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`)
   inside another;
   give each its own div, in order.
   A bolded term in running prose is usually an inline definition
