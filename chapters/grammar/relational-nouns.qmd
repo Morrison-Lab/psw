@@ -31,7 +31,7 @@ Each version tries to say what usually causes garden-path sentences.
 
 Versions 1 and 2 never say what the clause causes,
 so the reader has to look back to find what "cause" refers to.
-Version 3 names the effect, "garden-path parsing",
+Version 3 names the object, "garden-path parsing",
 but its fronted phrase delays the subject
 (see [Lead with the subject](conciseness.qmd#lead-with-the-subject)),
 and "garden-path parsing" introduces a second term
