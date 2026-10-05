@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 06:56:16 (UTC)
+Last modified: 2026-10-05 07:17:11 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -198,7 +198,7 @@ Follow these principles:
 - **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
 - **One operation per line.** Inside each solution, write every displayed line with a single operation and its justification (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
 - **One result per theorem.** Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the exercise it rests on.
-- **Start from the side that simplifies.** When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later.
+- **Start from the side that simplifies.** When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Solving a definition for one of its terms is another route that avoids the extra term.
 
 > **NOTE:**
 >
@@ -230,9 +230,9 @@ Follow these principles:
 >
 > > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
 > >
-> > ✅ \\ \begin{aligned} \mu_i + \varepsilon_i &= \mu_i + (Y_i - \mu_i) && \text{(definition of } \varepsilon_i\text{)}\\ &= Y_i && \text{(cancel } \mu_i\text{)} \end{aligned} \\
+> > ✅ \\ \begin{aligned} \mu_i + \varepsilon_i &= \mu_i + (Y_i - \mu_i) && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + Y_i - \mu_i && \text{(remove the parentheses)}\\ &= Y_i + \mu_i - \mu_i && \text{(reorder the terms)}\\ &= Y_i + (\mu_i - \mu_i) && \text{(group the last two terms)}\\ &= Y_i + 0 && \text{(} a - a = 0\text{)}\\ &= Y_i && \text{(} a + 0 = a\text{)} \end{aligned} \\
 >
-> The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from \\\mu_i + \varepsilon_i\\, which a definition expands, and every line after that only simplifies.
+> The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from \\\mu_i + \varepsilon_i\\, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it writes out each step that “cancel” would hide.
 
 > **NOTE:**
 >

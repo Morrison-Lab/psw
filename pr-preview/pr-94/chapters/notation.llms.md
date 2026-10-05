@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 06:56:16 (UTC)
+Last modified: 2026-10-05 07:17:11 (UTC)
 
 > **NOTE:**
 >
@@ -70,6 +70,8 @@ Common ways to combine steps without noticing:
 - substituting a result and then simplifying it;
 - multiplying constants and factoring them out of a sum;
 - expanding a product and collecting like terms;
+- “cancelling” a term, which removes parentheses, reorders the terms, groups the two that cancel, replaces \\a - a\\ with \\0\\, and drops the \\+ 0\\;
+- “cancelling” a factor, which rewrites a division as multiplication by a reciprocal, removes the parentheses, reorders the factors, groups the two that cancel, replaces \\a \cdot \frac{1}{a}\\ with \\1\\, and drops the \\1 \cdot\\;
 - writing “setting this to zero and dividing by \\-2n\\ gives”, which hides two operations in a sentence.
 
 ### 2.1 Using a fact the reader has not seen
