@@ -71,6 +71,7 @@ Common ways to combine steps without noticing:
   and drops the $+ 0$;
 - "cancelling" a factor,
   which rewrites a division as multiplication by a reciprocal,
+  removes the parentheses,
   reorders the factors,
   groups the two that cancel,
   replaces $a \cdot \frac{1}{a}$ with $1$,
