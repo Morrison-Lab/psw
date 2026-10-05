@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:19:31 (UTC)
+Last modified: 2026-10-05 09:33:17 (UTC)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -94,7 +94,7 @@ This forces readers to jump back and forth between sections to understand the co
 
 #### Exception: Shared descriptive statistics
 
-If your descriptive statistics apply to all outcomes (e.g., baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
+If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
 
 ## 3 Figures and tables
 

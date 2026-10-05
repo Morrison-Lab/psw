@@ -4,17 +4,17 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:19:31 (UTC)
+Last modified: 2026-10-05 09:33:17 (UTC)
 
 > **NOTE:**
 >
 > This chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.
 
-Lecture notes, slides, and problem sets teach rather than report. The general rules for scientific writing in the other chapters still apply, and the last section lists those that apply most directly here. This chapter adds the rules that apply to teaching materials in particular.
+Lecture notes, slides, and problem sets teach rather than report. The general rules for scientific writing in the other chapters still apply. This chapter adds the rules that apply to teaching materials in particular.
 
 ## 1 Build the lecture from exercises and solutions
 
-Active learning, in which students work tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). The exercise-first structure below is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
+Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
 
 - Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.
 - Pose every calculation, derivation, or proof as an exercise, and put the worked steps in the solution.
@@ -54,7 +54,7 @@ Active learning, in which students work tasks themselves during class, improves 
 
 - Replace a bolded keyword in running prose with a `#def-` div. A bolded keyword usually marks an inline definition.
 - Define one term per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
-- Never nest one theorem-type div inside another. This covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.
+- Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.
 
 An alternative name for the same concept stays in the div of the term it names, in italics. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
@@ -95,7 +95,7 @@ When several courses or repositories have already written the same definition, t
 
 ## 9 Credit other courses without summarizing them
 
-- Write your own version of another course’s material, and credit the source in a `::: notes` div, which keeps the credit off the slides. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details.
+- Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
