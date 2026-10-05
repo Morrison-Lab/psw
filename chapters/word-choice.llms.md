@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 17:47:49 (UTC)
+Last modified: 2026-10-05 17:53:18 (UTC)
 
 > **NOTE:**
 >
@@ -41,6 +41,8 @@ Table 2: Vague or metaphorical phrases and more precise alternatives
 The precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples.
+
+Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) says when those words are a problem and what to write instead.
 
 ## 2 Follow an abstract statement with an example
 
