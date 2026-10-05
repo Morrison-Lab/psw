@@ -13,15 +13,14 @@ format:
 {{< include _copilot-disclaimer.qmd >}}
 
 Lecture notes, slides, and problem sets teach rather than report.
-The general rules for scientific writing in the other chapters still apply,
-and the last section lists those that apply most directly here.
+The general rules for scientific writing in the other chapters still apply.
 This chapter adds the rules that apply to teaching materials in particular.
 
 ## Build the lecture from exercises and solutions
 
 Active learning, in which students work through tasks themselves during class,
 improves exam performance over lecture alone [@freeman2014active].
-The exercise-first structure below is this guide's own convention
+The exercise-first structure is this guide's own convention
 for putting that result into practice.
 Pose each task as an exercise, give students time to try it, and then show the solution.
 
@@ -82,7 +81,7 @@ For teaching materials, three further rules keep definitions findable.
   ("Regression and classification"), has no identifier of its own,
   so nothing can link to it.
 - Never nest one theorem-type div inside another.
-  This covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
+  The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
   A special case, such as a linear evaluation function,
   gets its own div after the general case, and the two link to each other.
 
