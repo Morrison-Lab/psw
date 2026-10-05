@@ -317,3 +317,6 @@ when readers can see concrete instances.
 
 {{< include defining-terms/pythagorean-theorem-example.qmd >}}
 
+## Presenting a derivation: exercise, solution, theorem, proof
+
+{{< include defining-terms/derivation-format.qmd >}}

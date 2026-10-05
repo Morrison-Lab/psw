@@ -3,8 +3,8 @@ In $\mu_i = \mu(x_i)$,
 $\mu$ is a function,
 and $\mu(x_i)$ is a number:
 the value of $\mu$ at $x_i$.
-Writing the function with its placeholder argument, $\mu(x)$,
-already denotes a value,
+Written with its placeholder argument,
+$\mu(x)$ already denotes a value,
 so "the value of $\mu(x)$ at $x_i$" reads as a value of a value.
 Either drop the placeholder and write "the value of $\mu$ at $x_i$",
 or keep the placeholder and name the substitution:
