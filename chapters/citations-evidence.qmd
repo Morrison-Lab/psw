@@ -66,7 +66,7 @@ Claims about appropriate methods or best practices should be supported by:
 
 Not every statement requires citation.
 Well-established facts that are common knowledge within your field
-(e.g., "DNA is a double helix" in molecular biology)
+(for example, "DNA is a double helix" in molecular biology)
 can be stated without citation.
 However,
 when in doubt,
@@ -287,7 +287,7 @@ To effectively support your claims:
 1. **Cite as you write**: Add citations immediately when making claims, rather than planning to "add references later"
 2. **Use citation management tools**: Software like Zotero, Mendeley, or BibTeX helps organize and format references correctly
 3. **Check your citations**: Before submitting, verify that every citation supports its associated claim
-4. **Provide context**: Help readers understand why a source is relevant (e.g., "Smith et al. (2020) demonstrated that..." rather than just "(Smith et al., 2020)")
+4. **Provide context**: Help readers understand why a source is relevant (for example, "Smith et al. (2020) demonstrated that..." rather than just "(Smith et al., 2020)")
 5. **Balance primary and review sources**: Use primary sources for specific findings, reviews for general background
 6. **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7. **Cite diverse sources**: When possible, include work from different research groups and perspectives
