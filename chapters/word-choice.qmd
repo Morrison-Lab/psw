@@ -101,6 +101,7 @@ state the claim.
 explains why idioms exclude some readers,
 and gives more examples.
 
+A different problem shows up as single words too.
 Words such as "obviously", "clearly" and "trivially"
 can assert that a claim needs no support
 instead of supplying any.
