@@ -44,8 +44,11 @@ Follow these principles:
   Simplifying an expression needs only definitions and algebra,
   while adding and subtracting a term asks the reader
   to accept a step whose purpose shows only later.
-  Solving a definition for one of its terms
-  is another route that avoids the extra term.
+  Another route is to solve a definition for the term you want:
+  add $\mu_i$ to both sides of $\varepsilon_i = Y_i - \mu_i$,
+  then simplify the right-hand side to $Y_i$, one operation per line.
+  Adding a term to both sides of an equation
+  is an ordinary step, not the pattern to avoid.
 
 ::: {#def-sample-mean}
 
@@ -144,7 +147,9 @@ The ✅ version starts from $\mu_i + \varepsilon_i$,
 which a definition expands,
 and every line after that rewrites or simplifies what is already there.
 The ✅ version is longer
-because it writes out each step that "cancel" would hide.
+because it gives a line to each step
+that a single "cancel" justification would hide
+(see [One operation per step](notation.qmd#one-operation-per-step)).
 
 :::
 
