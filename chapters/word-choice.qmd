@@ -101,6 +101,31 @@ state the claim.
 explains why idioms exclude some readers,
 and gives more examples.
 
+## Follow an abstract statement with an example
+
+An abstract or general statement is fine,
+as long as a concrete example follows it.
+A vague statement is not:
+one that names no specific case leaves the reader to invent one,
+and they may invent the wrong one.
+
+For example, consider this bullet from a list of what machine learning needs:
+
+> statistics to say what a finite sample of data supports
+
+The bullet is general, which is fine.
+What it lacks is an instance that shows the reader what "supports" means.
+Adding one turns it into something a reader can check:
+
+> statistics to say what a finite sample of data supports:
+> if most of the spam in a pile of training emails mentions money,
+> statistics tells us whether that pattern should hold for next month's emails
+> or is a quirk of this particular pile
+
+When you write a general claim,
+ask what one specific case of it looks like,
+and put that case right after the claim.
+
 ## Say which thing
 
 The word *thing* almost never survives a second look.
