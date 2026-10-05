@@ -1,21 +1,21 @@
 A *garden-path sentence* leads the reader into one reading
-and then forces them back to the start
+and then forces them to go back and reread
 when the rest of the sentence does not fit
 ([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)).
 The sentence may be grammatical,
 but the reader parses it twice.
 
-Two habits cause most garden paths in technical writing:
-
-- dropping a relative pronoun,
-  so that a noun and the subject of the next clause run together
-  (see [Do not omit relative pronouns](#do-not-omit-relative-pronouns));
-- stacking a noun, a clause and a verb
-  so that the reader cannot tell which noun the verb belongs to.
+A common cause in technical writing is a clause that describes a noun
+but has lost its opening *that* or *that were*.
+Without that marker,
+the reader takes the noun and the start of the clause as one phrase
+and has to reattach the words that follow.
+[Do not omit relative pronouns](#do-not-omit-relative-pronouns)
+gives the general rule.
 
 When you reread a sentence and stumble,
-restore the missing pronoun,
-or reorder the sentence so that each verb follows its subject directly.
+find the point where your first reading went wrong,
+and rewrite the sentence so that the first reading is the right one.
 
 ::: {#exm-garden-path}
 
@@ -23,13 +23,14 @@ or reorder the sentence so that each verb follows its subject directly.
 
 > ❌ Report only SHAs a command you ran printed in full.
 >
-> ✅ Report only SHAs that were printed in full by a command you ran.
+> ✅ Report only SHAs that appeared in full in the output of a command you ran.
 
 In the first version,
-"SHAs a command you ran" reads at first as a single noun phrase,
-and "printed" then arrives with no clear subject.
-The rewrite adds "that were",
-so the reader knows a describing clause has begun,
-and puts the verb "printed" next to the noun it describes.
+the reader takes "SHAs a command you ran" as one phrase,
+then reaches "printed"
+and has to work out that "a command you ran printed in full"
+is a clause describing the SHAs.
+The rewrite marks the clause with "that"
+and keeps each verb next to its own subject.
 
 :::
