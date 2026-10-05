@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 10:12:30 (UTC)
+Last modified: 2026-10-05 10:35:04 (UTC)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -141,5 +141,20 @@ Use descriptive subsection headings to guide readers through your results. Headi
 **Better heading**: “Association between treatment and mortality”
 
 **Best heading**: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)
+
+## 5 Links to videos and other media
+
+Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
+
+A reader who has just finished a section is ready to use material about it. The same reader at the end of the document must guess which link goes with which section, and may never reach the list.
+
+For each link:
+
+- Write one line, such as “Video: Weinberger derives the descent direction (from 3:09).”
+- Name the speaker and say what the material shows, in simple, literal words.
+- Link the exact start time when the material covers more than the topic.
+- Cite the source.
+
+Link public sites freely. Anyone can open them, so a link costs the reader nothing. Do not link private repositories, such as ones that hold graded homework or exams.
 
 Back to top
