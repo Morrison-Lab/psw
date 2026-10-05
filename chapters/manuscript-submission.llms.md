@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 19:21:40 (UTC)
+Last modified: 2026-10-05 21:53:36 (UTC)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -173,7 +173,7 @@ Table 1: Common reporting guidelines by study design
 - Spell out a number that begins a sentence, or rewrite the sentence. Use digits for measurements and statistics.
 - Follow the journal’s conventions for units and thousands separators, with a space between a number and its unit (“5 mg”).
 - Name the estimand and the estimator for every effect, for example “the average treatment effect on the treated, estimated with the Callaway and Sant’Anna difference-in-differences estimator”.
-- Make the numbers in the abstract, text, tables, and figures agree. Generate them from code, such as inline R in Quarto, rather than retyping them.
+- Make the numbers in the abstract, text, tables, and figures agree. Generate every number that comes from the analysis with code, such as an inline R expression in Quarto, rather than typing it into the prose. A typed number goes stale when the data or the analysis changes, and nothing warns you that it no longer matches the tables.
 
 ## 9 Supplement
 
