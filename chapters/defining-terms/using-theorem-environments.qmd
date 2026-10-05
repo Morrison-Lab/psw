@@ -14,6 +14,8 @@ Quarto provides built-in theorem environments including:
 - `#def-` for definitions
 - `#exm-` for examples
 - `#exr-` for exercises
+- `#sol-` for solutions, named after their exercise (`#exr-foo` and `#sol-foo`)
+- `#rem-` for remarks
 
 See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) for complete details.
 

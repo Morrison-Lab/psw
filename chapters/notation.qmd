@@ -20,3 +20,7 @@ that make quantitative writing easier to read.
 ## Avoiding double inequalities
 
 {{< include notation/double-inequalities.qmd >}}
+
+## One operation per step
+
+{{< include notation/one-operation-per-step.qmd >}}
