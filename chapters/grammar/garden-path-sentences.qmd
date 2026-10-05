@@ -5,7 +5,8 @@ when the rest of the sentence does not fit
 The sentence may be grammatical,
 but the reader parses it twice.
 
-A common cause in technical writing is a clause that describes a noun
+A common cause of garden-path sentences in technical writing
+is a clause that describes a noun
 but has lost its opening *that* or *that were*.
 Without the pronoun,
 the reader takes the noun and the start of the clause as one phrase

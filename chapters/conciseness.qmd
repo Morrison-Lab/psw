@@ -43,13 +43,22 @@ but about removing words that do not contribute to meaning or clarity.
 
 ## Lead with the subject
 
-Start a sentence with its subject, not a dependent clause.
+Start a sentence with its subject, not a dependent clause or a fronted phrase.
 A leading clause makes the reader hold a condition
 before knowing what it conditions.
 
 > ❌ When the sample size grows, the estimate becomes more precise.
 >
 > ✅ The estimate becomes more precise as the sample size grows.
+
+A fronted phrase delays the subject in the same way.
+Move a phrase such as "in technical writing" or "in this study"
+after the noun it limits,
+unless it sets a scope that the whole paragraph depends on.
+
+> ❌ In technical writing, a common cause of garden-path sentences is a missing *that*.
+>
+> ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
 ## Limit complex sentence structures
 
