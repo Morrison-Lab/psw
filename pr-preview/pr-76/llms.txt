@@ -7,6 +7,8 @@
 - [References](https://d-morrison.github.io/psw/references.llms.md)
 - [Word choice](https://d-morrison.github.io/psw/chapters/word-choice.llms.md)
 - [Paper organization](https://d-morrison.github.io/psw/chapters/paper-organization.llms.md)
+- [Preparing a manuscript for submission](https://d-morrison.github.io/psw/chapters/manuscript-submission.llms.md)
+- [Writing for every reader](https://d-morrison.github.io/psw/chapters/inclusive-writing.llms.md)
 - [Defining terms clearly](https://d-morrison.github.io/psw/chapters/defining-terms.llms.md)
 - [Citations and evidence](https://d-morrison.github.io/psw/chapters/citations-evidence.llms.md)
 - [Avoiding AI tells](https://d-morrison.github.io/psw/chapters/avoid-ai-tells.llms.md)
