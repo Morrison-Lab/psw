@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-02 17:01:49 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 05:52:32 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -294,6 +294,53 @@
 </blockquote>
 </div>
 <p>Finally, a chain that compares three <em>different</em> quantities — for example <span class="math inline">\(\hat{\theta}_1 &lt; \hat{\theta}_2 &lt; \hat{\theta}_3\)</span> — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements (<span class="math inline">\(\hat{\theta}_1 &lt; \hat{\theta}_2\)</span> and <span class="math inline">\(\hat{\theta}_2 &lt; \hat{\theta}_3\)</span>) unless the ordering of all three is the point you are making.</p>
+</section>
+<section id="one-operation-per-step" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> One operation per step</h2>
+</section>
+<section class="slide level2">
+
+<p>Write a derivation so that each displayed line does exactly one thing to the line before it: apply one rule, substitute one result, or simplify one piece. Give each line its own justification.</p>
+<p>Combining steps saves the writer a line and costs every reader a calculation. A reader who cannot see how one line follows from the last has to redo the missing work on scratch paper, or take the step on trust. Either way, an error hidden inside a combined step is harder for the reader, or a reviewer, to catch. The advice on <a href="../chapters/citations-evidence.html#trivial-and-trivially">“Trivial” and “trivially”</a> says to write out a step that takes only a line; this section applies that advice to the layout of a displayed derivation.</p>
+<div id="exm-one-operation-per-step" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Splitting a combined step)</strong></span> Suppose a derivation has reached <span class="math inline">\(-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)\)</span>.</p>
+<blockquote>
+<p>❌ <span class="math display">\[
+\begin{aligned}
+-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+&amp;= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+\end{aligned}
+\]</span></p>
+<p>✅ <span class="math display">\[
+\begin{aligned}
+-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+&amp;= -2 \left(\sum_{i=1}^n y_i - \sum_{i=1}^n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+&amp;&amp; \text{(split the sum)}\\
+&amp;= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+&amp;&amp; \text{(sum of a constant)}\\
+&amp;= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+&amp;&amp; \text{(constant factor out of the sum)}\\
+&amp;= -2 \left(n \bar{y} - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+&amp;&amp; \text{(}\sum_{i} y_i = n \bar{y}\text{)}\\
+&amp;= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+&amp;&amp; \text{(}\sum_{i} x_i = n \bar{x}\text{)}
+\end{aligned}
+\]</span></p>
+</blockquote>
+<p>The ❌ version does five operations in one line: it splits the sum, sums a constant, factors a constant out of a sum, substitutes <span class="math inline">\(n \bar{y}\)</span>, and substitutes <span class="math inline">\(n \bar{x}\)</span>. The ✅ version gives each of the five its own line.</p>
+</div>
+<p>Common ways to combine steps without noticing:</p>
+<ul>
+<li>applying the rule for the derivative of a sum and the chain rule in the same line;</li>
+<li>substituting a result and then simplifying it;</li>
+<li>multiplying constants and factoring them out of a sum;</li>
+<li>expanding a product and collecting like terms;</li>
+<li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
+</ul>
+<h3 id="using-a-fact-the-reader-has-not-seen">Using a fact the reader has not seen</h3>
+<p>When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.</p>
+<h3 id="long-derivations">Long derivations</h3>
+<p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. For example, when you apply the chain rule, derive the inner derivative in a separate block before you substitute it. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
 
 
 <script>
