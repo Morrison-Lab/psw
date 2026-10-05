@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 19:12:02 (UTC)
+Last modified: 2026-10-05 19:16:46 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -55,6 +55,12 @@ Follow these principles when introducing new terms:
   not the two sums that RSS and TSS stand for.
 
 - **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
+
+- **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density function (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with \\k\\ degrees of freedom by its pdf
+
+  \\f(x) := \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2}\\\Gamma(k/2)}, \quad x \in (0, \infty),\\
+
+  and state as a theorem that, for a positive integer \\k\\, the sum of the squares of \\k\\ independent standard normal random variables has this distribution. The density is defined for every real \\k \> 0\\; the theorem covers only integer \\k\\. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density that later calculations need.
 
 - **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
 
