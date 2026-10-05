@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 06:35:35 (UTC)
+Last modified: 2026-10-05 06:56:16 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -197,6 +197,8 @@ Follow these principles:
 - **The theorem states the result; the proof cites the exercises.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the exercises it rests on, not a second copy of their working.
 - **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
 - **One operation per line.** Inside each solution, write every displayed line with a single operation and its justification (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
+- **One result per theorem.** Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the exercise it rests on.
+- **Start from the side that simplifies.** When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later.
 
 > **NOTE:**
 >
@@ -221,5 +223,27 @@ Follow these principles:
 > **NOTE:**
 >
 > *Proof*. [Exercise 1](#exr-sum-deviations) derives this result.
+
+> **NOTE:**
+>
+> **Example 7 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+>
+> > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
+> >
+> > ✅ \\ \begin{aligned} \mu_i + \varepsilon_i &= \mu_i + (Y_i - \mu_i) && \text{(definition of } \varepsilon_i\text{)}\\ &= Y_i && \text{(cancel } \mu_i\text{)} \end{aligned} \\
+>
+> The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from \\\mu_i + \varepsilon_i\\, which a definition expands, and every line after that only simplifies.
+
+> **NOTE:**
+>
+> **Example 8 (Splitting a theorem that states two results)**  
+>
+> > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
+> >
+> > ✅ **Theorem 1.** Each outcome is its mean plus its deviation: \\Y_i = \mu_i + \varepsilon_i.\\
+> >
+> > **Theorem 2.** Given the covariates, each deviation is Gaussian with mean 0: \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
+>
+> The first result is algebra from the definition of \\\varepsilon_i\\; the second needs the model’s distribution. In separate blocks, each gets the proof it needs, and a later step that uses only the first can cite only the first.
 
 Back to top
