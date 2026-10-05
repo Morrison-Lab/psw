@@ -340,8 +340,11 @@ Check the EQUATOR page for the current version before citing one.
   estimated with the Callaway and Sant'Anna
   difference-in-differences estimator".
 - Make the numbers in the abstract, text, tables, and figures agree.
-  Generate them from code, such as inline R in Quarto,
-  rather than retyping them.
+  Generate every number that comes from the analysis
+  with code, such as an inline R expression in Quarto,
+  rather than typing it into the prose.
+  A typed number goes stale when the data or the analysis changes,
+  and nothing warns you that it no longer matches the tables.
 
 ## Supplement
 
