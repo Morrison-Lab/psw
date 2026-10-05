@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:46:11 (UTC)
+Last modified: 2026-10-05 10:12:30 (UTC)
 
 > **NOTE:**
 >
@@ -109,5 +109,29 @@ Use the notation to match:
 - Write \\\mu\\, or “the mean function”, for the function itself.
 - Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
 - Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
+
+## 4 Writing out notational shorthands
+
+A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
+
+The full form costs the writer a few characters and saves every reader a guess. A reader who sees \\\sum_x\\ has to work out which values of \\x\\ the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as \\\sum\_{x \in \mathbb{Z}}\\ shows the wrong set at a glance, while \\\sum_x\\ hides the same mistake.
+
+Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands) catalogs common shorthands and their full forms.
+
+> **NOTE:**
+>
+> **Example 5 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+>
+> > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
+> >
+> > ✅ \\\text{E}\[X\] = \sum\_{x \in \mathcal{R}(X)} x \Pr(X = x)\\
+>
+> For the likelihood of \\n\\ independent observations \\x_1, \ldots, x_n\\:
+>
+> > ❌ \\L(\theta) = \prod_i f(x_i; \theta)\\
+> >
+> > ✅ \\L(\theta) = \prod\_{i = 1}^{n} f(x_i; \theta)\\
+>
+> Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
 
 Back to top
