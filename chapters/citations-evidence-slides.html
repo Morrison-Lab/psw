@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 18:41:41 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 18:48:57 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -500,8 +500,37 @@
 </ul>
 <p>A related case is repetition <em>within</em> your own document. When a passage you are tempted to copy already appears elsewhere, cross-reference it instead of repeating it: this keeps a single source of truth and improves concision.</p>
 </section>
-<section id="best-practices" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Best practices</h2>
+<section id="link-liberally" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Link liberally</h2>
+</section>
+<section class="slide level2">
+
+<p>A link lets a reader check a claim or learn more without searching for the source themselves. When in doubt, add the link; leave one out only for a specific reason. Link these things whenever they appear:</p>
+<ul>
+<li>a term to the place where it is defined, in the same document or another one;</li>
+<li>a result to the theorem, equation or section that establishes it;</li>
+<li>a cited source to its <a href="https://www.doi.org/">DOI</a> or official URL;</li>
+<li>software, packages and datasets to their documentation or home page;</li>
+<li>a related section elsewhere in the document, instead of repeating its content.</li>
+</ul>
+<p>In <a href="https://quarto.org/docs/authoring/cross-references.html">Quarto</a>, use a cross-reference such as <code>@def-confidence-interval</code> for a definition or result in the same document, so the link updates when numbering changes (see <a href="../chapters/defining-terms.html">Defining terms clearly</a>). For a target on another page, use an ordinary link to that page’s anchor.</p>
+<p>Leave a link out only for a reason such as one of the following:</p>
+<ul>
+<li>the target is private, such as a repository of graded homework;</li>
+<li>the same target is already linked earlier in the same paragraph;</li>
+<li>the target is unstable, and a stable alternative such as a DOI exists.</li>
+</ul>
+<div id="exm-link-liberally" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Adding links a reader would use)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ We fit the model with the lme4 package and report a 95% confidence interval for each fixed effect.</p>
+<p>✅ We fit the model with the <a href="https://cran.r-project.org/package=lme4">lme4</a> package and report a 95% <a href="../chapters/defining-terms.html#def-confidence-interval">confidence interval</a> for each fixed effect.</p>
+</blockquote>
+<p>A reader who does not know lme4, or wants the exact meaning of “confidence interval” in this guide, can now follow the link instead of searching.</p>
+</div>
+</section>
+<section id="best-practices" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Best practices</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -516,8 +545,8 @@
 <li><strong>Cite diverse sources</strong>: When possible, include work from different research groups and perspectives</li>
 </ol>
 </section>
-<section id="quote-the-original" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Quote the original</h2>
+<section id="quote-the-original" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Quote the original</h2>
 </section>
 <section class="slide level2">
 
@@ -527,15 +556,15 @@
 <p>✅ “A computer program is said to learn …” <span class="citation" data-cites="mitchell1997">(<a href="#/references" role="doc-biblioref" onclick="">Mitchell 1997</a>)</span></p>
 </blockquote>
 </section>
-<section id="put-the-content-first" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Put the content first</h2>
+<section id="put-the-content-first" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Put the content first</h2>
 </section>
 <section class="slide level2">
 
 <p>Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.</p>
 </section>
-<section id="adapting-another-courses-material" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Adapting another course’s material</h2>
+<section id="adapting-another-courses-material" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Adapting another course’s material</h2>
 </section>
 <section class="slide level2">
 
@@ -551,8 +580,8 @@
 <span id="cb2-4"><a aria-label="4"></a>This section is adapted from @zhou2024, used under the MIT License.</span>
 <span id="cb2-5"><a aria-label="5"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="common-citation-errors-to-avoid" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Common citation errors to avoid</h2>
+<section id="common-citation-errors-to-avoid" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Common citation errors to avoid</h2>
 </section>
 <section class="slide level2">
 
@@ -566,8 +595,8 @@
 <li><strong>Ghost authorship</strong>: Failing to cite work that directly influenced your ideas</li>
 </ul>
 </section>
-<section id="examples" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Examples</h2>
+<section id="examples" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Examples</h2>
 </section>
 <section class="slide level2">
 
@@ -597,8 +626,8 @@
 </blockquote>
 <p><strong>Improvement</strong>: The citation is to a current survey of programming language usage.</p>
 </section>
-<section id="conclusion" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Conclusion</h2>
+<section id="conclusion" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Conclusion</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
