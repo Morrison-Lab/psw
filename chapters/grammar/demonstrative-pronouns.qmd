@@ -21,12 +21,10 @@ so the reference is explicit.
 The adverbs *here* and *there* point the same way:
 "getting there" leaves the reader to guess where "there" is.
 
-A demonstrative at the end of a sentence is the hardest case,
-because nothing after it can name the referent:
-"the second model avoids **this**" or "we did not expect **that**".
-Avoid ending a sentence with a bare *this* or *that*;
-end it with the noun instead:
-"the second model avoids **this bias**".
+A demonstrative at the end of a sentence
+has no room after it for a naming noun,
+so a bare sentence-final *this* or *that* always leaves its referent unnamed.
+End the sentence with the noun instead.
 
 ::: {#exm-demonstrative-pronoun}
 
@@ -35,9 +33,15 @@ end it with the noun instead:
 > ❌ The model overfit the training data. **This** poses a problem for deployment.
 >
 > ✅ The model overfit the training data. **This overfitting** poses a problem for deployment.
+>
+> ❌ The first model's estimates were biased upward. The second model avoids **this**.
+>
+> ✅ The first model's estimates were biased upward. The second model avoids **this bias**.
 
-Adding the noun "overfitting"
-states exactly what "this" refers to,
+Adding the nouns "overfitting" and "bias"
+states exactly what each "this" refers to,
 instead of leaving the reader to infer it.
+The second pair ends its sentence with the demonstrative,
+so the fix has to add the noun after it, at the very end.
 
 :::

@@ -1,5 +1,8 @@
-Quantity words cause the same problem as demonstratives
+Words that say how many, or how much, of something
+cause the same problem as demonstratives
 when they stand alone in place of a noun.
+Grammars call these words *quantifiers*,
+and call a quantifier that stands alone an *indefinite pronoun*.
 The common ones are:
 
 - *both*
@@ -12,24 +15,27 @@ The common ones are:
 - *few*
 - *none*
 
-Grammars call these words *indefinite pronouns* when they stand alone
-and *quantifiers* or *determiners* when they modify a noun.
-The test does not need a complete list of them, though.
-Whenever a word that says *how many* stands where a noun should be,
-the reader has to search backward to find out how many of *what*.
-Follow the word with the noun it counts:
-"**both models**", "**all three estimators**", "**none of the intervals**".
+*Every* belongs to the same family,
+but it cannot stand alone ("every" needs a noun, as in "every model"),
+so it never causes this problem.
+
+You do not need a complete list of quantifiers to apply the advice.
+Whenever a quantifier stands where a noun should be,
+the reader has to search backward to find out what it quantifies.
+Follow the quantifier with the noun:
+"**both models**", "**all three estimators**", "**each interval**".
+An "of" phrase that names the noun works too:
+"**none of the intervals**".
 
 ::: {#exm-quantifier-pronoun}
 
-## Naming what a quantity word counts
+## Naming what a quantifier refers to
 
-> ❌ We fit a linear model and a spline model. **Both** return the same fit.
+> ❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both** return the same fit.
 >
-> ✅ We fit a linear model and a spline model. **Both models** return the same fit.
+> ✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both models** return the same fit.
 
-Adding "models" tells the reader
-that "both" counts the two fitted models,
-rather than, say, two datasets mentioned earlier.
+In the first version, "both" could mean the two models or the two surveys.
+Adding "models" settles which pair the sentence is about.
 
 :::
