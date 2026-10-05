@@ -60,6 +60,36 @@ Each figure and table should have a clear,
 informative caption that allows readers to understand it
 without reading the main text.
 
+### Label variables in plain words
+
+A figure or table is read by people, not by the code that made it.
+Replace every variable name from the data with a label a reader understands:
+
+- turn underscores and other code punctuation into spaces;
+- use ordinary capitalization;
+- spell out abbreviations and acronyms where space allows;
+- give the unit of every measured quantity, in parentheses;
+- relabel category levels the same way, including legend entries.
+
+Use the same label for a variable in every figure, table and paragraph,
+so a reader can match them up.
+
+::: {#exm-figure-labels}
+
+## Relabeling axes and a legend
+
+> ❌ x-axis `age_yrs`, y-axis `sbp`, legend `trt_grp`: `ctrl`, `tx`
+>
+> ✅ x-axis "Age (years)", y-axis "Systolic blood pressure (mm Hg)",
+> legend "Treatment group": "Control", "Treatment"
+
+In R with `ggplot2`,
+set the axis and legend titles with `labs()`,
+and recode the category levels before plotting,
+for example with `forcats::fct_recode()`.
+
+:::
+
 ### Captions are captions, not headings
 
 Give every figure and table a numbered caption,
