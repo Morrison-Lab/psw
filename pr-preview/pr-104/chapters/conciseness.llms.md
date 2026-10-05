@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 17:31:42 (UTC)
+Last modified: 2026-10-05 17:40:18 (UTC)
 
 > **NOTE:**
 >
@@ -96,7 +96,35 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-## 6 Put lists in bullet points
+## 6 Write about the subject, not about the text
+
+Some sentences describe the document instead of its subject. They do one of these things:
+
+- announce that a point is coming;
+- rank a point;
+- comment on how a point changes what follows.
+
+Each one makes the reader read a sentence before reaching the content it promises. State the content directly. [Rhetorical reflexes](../chapters/avoid-ai-tells.llms.md#rhetorical-reflexes) lists related signpost phrases, such as “it is worth noting that”.
+
+> **NOTE:**
+>
+> **Example 4 (Replacing a sentence about the text)**  
+>
+> > ❌ One trap worth naming: the sample excludes people who moved.
+> >
+> > ✅ The sample excludes people who moved.
+> >
+> > ❌ The most important point is that the survey was voluntary.
+> >
+> > ✅ The survey was voluntary.
+> >
+> > ❌ One documented detail changes how the rest of this section reads: the survey was voluntary.
+> >
+> > ✅ The survey was voluntary, so the estimates apply only to people who chose to respond.
+>
+> In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
+
+## 7 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -110,7 +138,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 4 (Turning an inline list into bullet points)**  
+> **Example 5 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -124,7 +152,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 5 (Turning inline steps into a numbered list)**  
+> **Example 6 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -135,7 +163,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 7 Examples of concise writing
+## 8 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
