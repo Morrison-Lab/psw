@@ -24,3 +24,7 @@ that make quantitative writing easier to read.
 ## One operation per step
 
 {{< include notation/one-operation-per-step.qmd >}}
+
+## Functions and their values
+
+{{< include notation/functions-and-values.qmd >}}

@@ -28,7 +28,8 @@ See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/au
 
 In a right triangle,
 the square of the hypotenuse equals the sum of squares of the other two sides:
-$a^2 + b^2 = c^2$.
+
+$$a^2 + b^2 = c^2.$$
 
 :::
 ```
