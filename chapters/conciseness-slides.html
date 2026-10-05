@@ -263,7 +263,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 17:40:43 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 17:44:06 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -339,8 +339,25 @@
 <p>The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.</p>
 </div>
 </section>
-<section id="avoid-double-negatives" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Avoid double negatives</h2>
+<section id="do-not-rule-out-readings-no-reader-would-make" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Do not rule out readings no reader would make</h2>
+</section>
+<section class="slide level2">
+
+<p>A definition says what a term means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.</p>
+<div id="exm-gratuitous-disclaimer" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Dropping a needless disclaimer)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ In this manuscript, TTE means target trial emulation. It does not mean effect of treatment on the treated.</p>
+<p>✅ In this manuscript, TTE means target trial emulation.</p>
+</blockquote>
+<p>In causal inference, the average effect of treatment on the treated is usually abbreviated ATT, so a reader is unlikely to read “TTE” that way. The second sentence introduces a meaning that the reader would not otherwise have considered.</p>
+</div>
+<p>Keep a disclaimer when the confusion is real. For example, if “CI” could mean confidence interval or cumulative incidence in the same paper, say which one you mean each time.</p>
+<p>The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.</p>
+</section>
+<section id="avoid-double-negatives" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Avoid double negatives</h2>
 </section>
 <section class="slide level2">
 
@@ -353,7 +370,7 @@
 <p>The reader has to cancel the two negatives to recover the claim, and the result is often vaguer than the writer intended. State the claim directly. If you mean something weaker than the direct claim, say what the weaker claim is.</p>
 <p>A single negative is fine. “We did not reject the null hypothesis” denies one thing, and it is the standard wording for a test result.</p>
 <div id="exm-double-negative" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (Stating a claim directly)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 3 (Stating a claim directly)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The association was not inconsistent with a dose-response relationship.</p>
 <p>✅ The association was consistent with a dose-response relationship.</p>
@@ -362,8 +379,8 @@
 <p>Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.</p>
 </div>
 </section>
-<section id="write-about-the-subject-not-about-the-text" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Write about the subject, not about the text</h2>
+<section id="write-about-the-subject-not-about-the-text" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Write about the subject, not about the text</h2>
 </section>
 <section class="slide level2">
 
@@ -375,7 +392,7 @@
 </ul>
 <p>Each one makes the reader read a sentence before reaching the content it promises. State the content directly. <a href="../chapters/avoid-ai-tells.html#rhetorical-reflexes">Rhetorical reflexes</a> lists related signpost phrases, such as “it is worth noting that”.</p>
 <div id="exm-self-referential" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Replacing a sentence about the text)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Replacing a sentence about the text)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ One trap worth naming: the sample excludes people who moved.</p>
 <p>✅ The sample excludes people who moved.</p>
@@ -387,8 +404,8 @@
 <p>In the third pair, the rewrite states what the detail changes instead of saying that it changes something.</p>
 </div>
 </section>
-<section id="put-lists-in-bullet-points" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Put lists in bullet points</h2>
+<section id="put-lists-in-bullet-points" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Put lists in bullet points</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -401,7 +418,7 @@
 <li>Keep a short series of single words inline, such as “R, Julia, or Python”.</li>
 </ul>
 <div id="exm-bullet-lists" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Turning an inline list into bullet points)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Turning an inline list into bullet points)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.</p>
 <p>✅ Machine learning combines three components:</p>
@@ -414,7 +431,7 @@
 <p>The revised version puts each component on its own line, so the reader sees at a glance that there are three.</p>
 </div>
 <div id="exm-numbered-lists" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Turning inline steps into a numbered list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Turning inline steps into a numbered list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ k-means starts with <span class="math inline">\(k\)</span> group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.</p>
 <p>✅ k-means starts with <span class="math inline">\(k\)</span> group centers and repeats two steps until the assignments stop changing:</p>
@@ -426,8 +443,8 @@
 <p>The numbers show the order of the steps, and the loop condition moves into the introducing sentence.</p>
 </div>
 </section>
-<section id="examples-of-concise-writing" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Examples of concise writing</h2>
+<section id="examples-of-concise-writing" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Examples of concise writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
