@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.18">
 
-  <title>Principles of Scientific Writing – Writing for every reader</title>
+  <title>Principles of Scientific Writing – Writing for teaching</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -33,6 +33,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -258,7 +324,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Writing for every reader</h1>
+  <h1 class="title">Writing for teaching</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -280,235 +346,141 @@
 </div>
 </div>
 </div>
-<p>Write simple, direct prose that every reader can follow. Some of your readers learned English as a second language. Some are neurodiverse. For example, some autistic readers take jokes and similes literally <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Use Literal Language)</span>. Some readers have a memory impairment, so a long sentence with nested clauses is hard for them to follow <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Avoid Double Negatives or Nested Clauses)</span>. Plain wording helps these readers most, and it helps every other reader too.</p>
-<p>This is an equity issue. Idioms, slang, clichés, unnecessary jargon and other specialized language exclude readers who do not share the writer’s background. Those readers must first work out what the words mean, and only then can they think about the ideas. The plain language guidelines put it this way: “The first rule of plain language is: <strong>write for your audience</strong>” <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Audience)</span>. Your audience includes all of these readers.</p>
-<p>The rules in this chapter come mostly from three sources:</p>
+<p>Lecture notes, slides, and problem sets teach rather than report. The general rules for scientific writing in the other chapters still apply. This chapter adds the rules that apply to teaching materials in particular.</p>
+</section>
+<section id="build-the-lecture-from-exercises-and-solutions" class="slide level2" data-number="1">
+<h2><span class="header-section-number">1</span> Build the lecture from exercises and solutions</h2>
+</section>
+<section class="slide level2">
+
+<p>Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone <span class="citation" data-cites="freeman2014active">(<a href="#/references" role="doc-biblioref" onclick="">Freeman et al. 2014</a>)</span>. The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.</p>
 <ul>
-<li>the W3C guidance on making content usable for people with cognitive and learning disabilities <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>)</span>;</li>
-<li>the US government’s plain language guidelines <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>)</span>;</li>
-<li>the GitHub Docs style guide, which is written for a global audience and for translation <span class="citation" data-cites="github_docs_style github_docs_translation">(<a href="#/references" role="doc-biblioref" onclick="">GitHub 2026a</a>, <a href="#/references" role="doc-biblioref" onclick="">2026b</a>)</span>.</li>
+<li>Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.</li>
+<li>Pose every calculation, derivation, or proof as an exercise, and put the worked steps in the solution.</li>
+<li>Ask the question that a definition or theorem answers before stating it. The solution answers informally, in plain words, and the formal <code>#def-</code> or <code>#thm-</code> div follows the solution div.</li>
+<li>Give each bottom-level prompt its own <code>#exr-</code> div and its own <code>#sol-</code> div, in order, rather than one exercise with parts (a) through (e). Later exercises can use earlier results through cross-references.</li>
+<li>On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.</li>
+<li>Give each solution the slug of its exercise, with <code>sol-</code> in place of <code>exr-</code>.</li>
+<li>Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.</li>
 </ul>
-<p>Each rule below comes with an example. Several rules extend sections in other chapters, and they link to those sections instead of repeating them.</p>
-</section>
-<section id="use-literal-language" class="slide level2" data-number="1">
-<h2><span class="header-section-number">1</span> Use literal language</h2>
-</section>
-<section class="slide level2">
-
-<p>Say exactly what you mean. Do not use idioms, clichés, slang, jokes or sarcasm. An idiom is a phrase whose meaning is different from the meanings of its words, such as “blow up” for “become very large”. A reader who has not met the phrase before has to guess what it means. A reader who takes words literally may guess wrong. The W3C guidance says: “Use literal and concrete language” and “Do not use metaphors and similes unless you include an explanation” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Use Literal Language)</span>. GitHub Docs says: “Avoid turns of phrase, idioms, and slang that are specific to a particular region or country” <span class="citation" data-cites="github_docs_style">(<a href="#/references" role="doc-biblioref" onclick="">GitHub 2026a</a>)</span>.</p>
+<div id="exm-exercise-before-definition" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (Asking before defining)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Which way does this course lean?</p>
-<p>✅ Does this course put prediction or inference first?</p>
+<p>❌ <strong>Generalization</strong> is the ability of a model to perform well on new data.</p>
 </blockquote>
-<p>The word “lean” in the first version is an idiom. The second version asks the literal question.</p>
-<p><a href="#/tbl-idioms-literal" class="quarto-xref">Table&nbsp;1</a> lists more examples from statistics and machine learning.</p>
-<div id="tbl-idioms-literal" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-tbl">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-idioms-literal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Idioms, clichés and slang, with literal alternatives
-</figcaption>
-<div aria-describedby="tbl-idioms-literal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top">
-<colgroup>
-<col style="width: 59%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Idiom, cliché or slang</th>
-<th>Literal wording</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>the estimates blow up</td>
-<td>the estimates become very large</td>
-</tr>
-<tr class="even">
-<td>the model is a black box</td>
-<td>we cannot read the model’s decision rule from its parameters</td>
-</tr>
-<tr class="odd">
-<td>flexibility buys lower bias</td>
-<td>more flexible models tend to have lower bias</td>
-</tr>
-<tr class="even">
-<td>a ton of data</td>
-<td>a large data set</td>
-</tr>
-<tr class="odd">
-<td>the method falls flat on small samples</td>
-<td>the method has high error on small samples</td>
-</tr>
-<tr class="even">
-<td>at the end of the day, we want low test error</td>
-<td>our goal is low test error</td>
-</tr>
-</tbody>
-</table>
+<blockquote>
+<p>✅</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a aria-label="1"></a>::: {#exr-generalization}</span>
+<span id="cb1-2"><a aria-label="2"></a>What does it mean for a model to generalize?</span>
+<span id="cb1-3"><a aria-label="3"></a>:::</span>
+<span id="cb1-4"><a aria-label="4"></a></span>
+<span id="cb1-5"><a aria-label="5"></a>::: {#sol-generalization}</span>
+<span id="cb1-6"><a aria-label="6"></a>A model generalizes when it predicts well on data it was not fit to.</span>
+<span id="cb1-7"><a aria-label="7"></a>:::</span>
+<span id="cb1-8"><a aria-label="8"></a></span>
+<span id="cb1-9"><a aria-label="9"></a>::: {#def-generalization}</span>
+<span id="cb1-10"><a aria-label="10"></a>(the formal definition)</span>
+<span id="cb1-11"><a aria-label="11"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<p>The revised version lets students attempt the idea before they see the formal definition.</p>
 </div>
-</figure>
-</div>
-<p>Idioms are a kind of metaphor, so <a href="../chapters/word-choice.html#avoid-vague-and-metaphorical-language">Avoid vague and metaphorical language</a> applies to them too, and gives more examples.</p>
 </section>
-<section id="use-common-words-and-define-technical-ones" class="slide level2" data-number="2">
-<h2><span class="header-section-number">2</span> Use common words, and define technical ones</h2>
+<section id="give-each-defined-term-its-own-div" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> Give each defined term its own div</h2>
 </section>
 <section class="slide level2">
 
-<p>Use the most common word that is still correct. The W3C guidance says to “Use common and clear words in all content” and to “Remove or explain uncommon acronyms, abbreviations, and jargon” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Use Clear Words)</span>.</p>
-<blockquote>
-<p>❌ We utilize a heuristic to ascertain the optimal number of clusters.</p>
-<p>✅ We use the “elbow” method to choose the number of clusters: we plot the within-cluster sum of squares against the number of clusters, and pick the point where the curve stops falling steeply.</p>
-</blockquote>
-<p>The second version uses common words, and it says what the method does instead of calling it a “heuristic”.</p>
-<p>Some technical terms are necessary. <a href="../chapters/word-choice.html#minimize-unnecessary-jargon">Minimize unnecessary jargon</a> explains when to keep a technical term and how to define it.</p>
+<p><a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Defining terms clearly</a> covers what a good definition contains. For teaching materials, three further rules keep definitions findable.</p>
+<ul>
+<li>Replace a bolded keyword in running prose with a <code>#def-</code> div. A bolded keyword usually marks an inline definition.</li>
+<li>Define one term per <code>#def-</code> div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.</li>
+<li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.</li>
+</ul>
+<p>An alternative name for the same concept stays in the div of the term it names, in italics. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>
-<section id="say-when-a-common-word-has-a-technical-meaning" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> Say when a common word has a technical meaning</h2>
-</section>
-<section class="slide level2">
-
-<p>Many statistical terms are everyday words with a different technical meaning. Examples include <em>bias</em>, <em>significant</em>, <em>confidence</em>, <em>normal</em>, <em>regression</em>, <em>error</em> and <em>likelihood</em>. A reader who knows only the everyday meaning will read the sentence as a different claim. The W3C guidance says: “Do not invent new words or give words new meanings” and “Do not expect people to learn new meanings for words just to use your content” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Use Clear Words)</span>. A technical course needs these terms. So say that the technical meaning differs, and give the technical meaning in plain words.</p>
-<blockquote>
-<p>❌ The model is biased.</p>
-<p>✅ The model is biased: at a given input, its average prediction over many training sets differs from the true mean outcome at that input. (Here <em>bias</em> has its statistical meaning; it does not mean the model is unfair.)</p>
-</blockquote>
-<p>Once you define the term, use the same word for the same idea every time. The plain language guidelines say that using a different term “may cause the reader to wonder if you’re referring to the same group” <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Use the same terms consistently)</span>.</p>
-<blockquote>
-<p>❌ We split the data into a training set and a test set. We then compute the error on the held-out data.</p>
-<p>✅ We split the data into a training set and a test set. We then compute the error on the test set.</p>
-</blockquote>
-</section>
-<section id="spell-out-abbreviations" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Spell out abbreviations</h2>
+<section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> State the notation and its alternatives</h2>
 </section>
 <section class="slide level2">
 
-<p>Write out an abbreviation the first time you use it, or replace it with a short name. The plain language guidelines say abbreviations “constantly require the reader to look back to earlier pages” <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Minimize abbreviations)</span>. Do not use the Latin abbreviations <em>e.g.</em> and <em>i.e.</em>: “Few people know what they mean, and they often confuse the two” <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Use examples)</span>. Write “for example” or “that is”.</p>
-<blockquote>
-<p>❌ Tree ensembles, e.g.&nbsp;RF and GBM, usually reduce the MSE of a single CART.</p>
-<p>✅ Ensembles of trees, for example random forests and boosted trees, usually have lower mean squared error than a single regression tree.</p>
-</blockquote>
+<p>When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will meet elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write <span class="math inline">\(\mathbb{N}_0\)</span> or <span class="math inline">\(\mathbb{N}^+\)</span> to make the choice explicit.</p>
 </section>
-<section id="write-positive-statements" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Write positive statements</h2>
+<section id="lead-with-the-simplest-correct-form-of-a-definition" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Lead with the simplest correct form of a definition</h2>
 </section>
 <section class="slide level2">
 
-<p>State what is true, not what is not false. A double negative makes the reader turn “no” into “yes” before they can use the sentence. The W3C guidance says not to “use a double negative to express a positive” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Avoid Double Negatives or Nested Clauses)</span>, and the plain language guidelines give the same advice <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Use positive language)</span>.</p>
-<blockquote>
-<p>❌ We do not reject the null hypothesis unless the p-value is not above 0.05.</p>
-<p>✅ We reject the null hypothesis when the p-value is 0.05 or less.</p>
-</blockquote>
+<p>Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define variance as the mean squared deviation <span class="math inline">\(\operatorname{E}\left[\operatorname{devn}(X)^2\right]\)</span>, where <span class="math inline">\(\operatorname{devn}(X) = X - \operatorname{E}[X]\)</span>, and then prove that it equals <span class="math inline">\(\operatorname{E}[X^2] - (\operatorname{E}[X])^2\)</span>.</p>
+<p>Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.</p>
 </section>
-<section id="rewrite-noun-strings-and-hidden-verbs" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Rewrite noun strings and hidden verbs</h2>
+<section id="reuse-one-written-version-of-each-result" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Reuse one written version of each result</h2>
 </section>
 <section class="slide level2">
 
-<p>A noun string is a row of nouns that act as adjectives, such as “test set error rate estimate”. The reader has to work out which noun modifies which. A hidden verb (also called a <em>nominalization</em>) is a verb turned into a noun, such as “perform an estimation of” in place of “estimate”. GitHub Docs advises against both. It says noun strings “can lead to incorrect translations”, and nominalizations make sentences “longer, harder to understand, and harder to translate” <span class="citation" data-cites="github_docs_style">(<a href="#/references" role="doc-biblioref" onclick="">GitHub 2026a</a>)</span>. The plain language guidelines say to open up a noun string by “using more prepositions and articles” <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Avoid noun strings)</span>.</p>
-<blockquote>
-<p>❌ We report the test set error rate estimate variance.</p>
-<p>✅ We report the variance of the estimated error rate on the test set.</p>
-</blockquote>
-<blockquote>
-<p>❌ We performed an evaluation of the model’s prediction accuracy.</p>
-<p>✅ We evaluated how accurately the model predicts.</p>
-</blockquote>
+<p>When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.</p>
 </section>
-<section id="put-one-idea-in-each-sentence" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Put one idea in each sentence</h2>
+<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Use real data and compute every number</h2>
 </section>
 <section class="slide level2">
 
-<p>Long sentences with nested clauses make the reader hold several unfinished ideas at once. That is hard for readers with a memory impairment <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Keep Text Succinct)</span>, and for readers who are translating as they go. The W3C guidance says: “Use short sentences. Have only one point per sentence” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Keep Text Succinct)</span>. It also says that “Sentences that have more than one point usually have more than one linking word such as ‘and’ or ‘but’”.</p>
-<blockquote>
-<p>❌ Because the lasso penalty, which is the sum of the absolute values of the coefficients, is not smooth at zero, some coefficients, especially when <span class="math inline">\(\lambda\)</span> is large, are set exactly to zero.</p>
-<p>✅ The lasso penalty is the sum of the absolute values of the coefficients. The absolute value function is not smooth at zero. Because of this, the lasso sets some coefficients exactly to zero. Usually, more coefficients are zero when <span class="math inline">\(\lambda\)</span> is larger.</p>
-</blockquote>
-<p><a href="../chapters/conciseness.html#limit-complex-sentence-structures">Limit complex sentence structures</a> and <a href="../chapters/conciseness.html#lead-with-the-subject">Lead with the subject</a> give more examples.</p>
+<ul>
+<li>Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.</li>
+<li>Show a dataset before analyzing it, with a printed look at its first rows and its structure.</li>
+<li>Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.</li>
+</ul>
 </section>
-<section id="state-every-step-and-every-point" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> State every step and every point</h2>
-</section>
-<section class="slide level2">
-
-<p>Write every step of an argument or a procedure. Do not leave a step for the reader to fill in, and do not hint at a point you could state. The W3C guidance says readers may need “definitions or explanations for implied or ambiguous information” such as jokes, sarcasm and metaphors <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Explain Implied Content)</span>.</p>
-<blockquote>
-<p>❌ Of course, nobody would use accuracy here.</p>
-<p>✅ Do not judge this classifier by accuracy alone. Only 1% of the emails are spam, so a classifier that labels every email “not spam” has 99% accuracy but finds no spam.</p>
-</blockquote>
-<p>The first version implies a reason and never states it. A reader who does not already know the reason learns nothing. Words like “obviously” and “clearly” hide a step in the same way; <a href="../chapters/citations-evidence.html#do-not-substitute-flippancy-for-support">Do not substitute flippancy for support</a> explains what to write instead.</p>
-</section>
-<section id="say-what-numbers-and-symbols-mean" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Say what numbers and symbols mean</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
-<p>Do not leave a number or a formula for the reader to interpret. Some readers find numbers hard to process <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Provide Alternatives for Numerical Concepts)</span>. Text-to-speech tools can also read numbers and symbols wrongly <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Use Clear, Unambiguous Formatting and Punctuation)</span>. The CDC Clear Communication Index scores a document on whether it explains what its numbers mean <span class="citation" data-cites="cdc_ccindex">(<a href="#/references" role="doc-biblioref" onclick="">Centers for Disease Control and Prevention 2026</a>)</span>.</p>
-<p>For a number, say what it means in words:</p>
-<blockquote>
-<p>❌ The AUC is 0.83.</p>
-<p>✅ The AUC is 0.83. That is, if we pick one spam email and one non-spam email at random, the model gives the spam email the higher score 83% of the time.</p>
-</blockquote>
-<p>For a formula, say each symbol’s meaning in words at first use, and then say what the formula does in a sentence:</p>
-<blockquote>
-<p>❌ <span class="math inline">\(\hat\beta = (X^\top X)^{-1} X^\top y\)</span>.</p>
-<p>✅ Let <span class="math inline">\(X\)</span> be the <span class="math inline">\(n \times p\)</span> matrix of inputs, with linearly independent columns, and let <span class="math inline">\(y\)</span> be the vector of <span class="math inline">\(n\)</span> outcomes. Let <span class="math inline">\(X^\top\)</span> be the transpose of <span class="math inline">\(X\)</span>. The least squares estimate of the coefficients is <span class="math inline">\(\hat\beta = (X^\top X)^{-1} X^\top y\)</span>. In words, <span class="math inline">\(\hat\beta\)</span> is the coefficient vector that makes the sum of squared prediction errors on the training data as small as possible.</p>
-</blockquote>
-<p>The <a href="../chapters/notation.html">Mathematical notation</a> chapter has more rules for notation.</p>
+<ul>
+<li>Wrap each figure, including an interactive one, in a <code>#fig-</code> div with a caption.</li>
+<li>Give every plot alt text. For Observable Plot, set <code>ariaLabel</code>.</li>
+<li>Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set <code>echo: false</code> on a cell you want students to read.</li>
+<li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
+</ul>
 </section>
-<section id="use-examples-that-every-reader-knows" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Use examples that every reader knows</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
-<p>Choose examples that do not need a particular culture, country, sport or hobby to understand. GitHub Docs says to “Use examples that are generic and can be understood by most people” and to “Avoid examples that are controversial or culturally specific to a group” <span class="citation" data-cites="github_docs_translation">(<a href="#/references" role="doc-biblioref" onclick="">GitHub 2026b</a>)</span>.</p>
-<blockquote>
-<p>❌ Predict a quarterback’s passer rating from his completion percentage.</p>
-<p>✅ Predict whether an email is spam from the words it contains.</p>
-</blockquote>
-<p>The first example needs knowledge of American football before the reader can think about the statistics. It also assumes the player is a man. GitHub Docs also says to “Avoid gender-specific words” <span class="citation" data-cites="github_docs_translation">(<a href="#/references" role="doc-biblioref" onclick="">GitHub 2026b</a>)</span>. Use “they” for a person whose gender you do not know:</p>
-<blockquote>
-<p>❌ Each student submits his code by Friday.</p>
-<p>✅ Each student submits their code by Friday.</p>
-</blockquote>
+<ul>
+<li>Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.</li>
+<li>Put a list of three or more phrases in a bullet list, as <a href="../chapters/conciseness.html#put-lists-in-bullet-points">Put lists in bullet points</a> describes.</li>
+<li>Put each named example in an <code>#exm-</code> div.</li>
+<li>Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.</li>
+<li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
+</ul>
 </section>
-<section id="keep-a-predictable-structure" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Keep a predictable structure</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
-<p>Readers find text easier to follow when each part has one purpose, and when parts of the same kind always look the same. The W3C guidance says to “Keep paragraphs short. Have only one topic in each paragraph”, to “Try to have the aim of the paragraph or chunk at the beginning”, and to “Use bulleted or numbered lists” and “short descriptive headings” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Keep Text Succinct)</span>. It also recommends a short summary at the start of a long document <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>, Provide Summary of Long Documents and Media)</span>. In course materials, the same advice applies across pages: the Cornell Center for Teaching Innovation suggests “a predictable weekly structure and consistent layout” <span class="citation" data-cites="cornell_udl">(<a href="#/references" role="doc-biblioref" onclick="">Cornell University Center for Teaching Innovation 2026</a>)</span>.</p>
-<blockquote>
-<p>❌ A paragraph that starts with the history of the method, moves on to its assumptions, and states its main use in the last sentence.</p>
-<p>✅ A paragraph that starts with “Use cross-validation to choose a tuning parameter”, and then explains how.</p>
-</blockquote>
-<p><a href="../chapters/conciseness.html#put-lists-in-bullet-points">Put lists in bullet points</a> and the <a href="../chapters/paper-organization.html">Paper organization</a> chapter cover lists and headings in more detail.</p>
+<ul>
+<li>Write your own version of another course’s material, and credit the source in a collapsed <code>.callout-note</code> titled “Source”, not in running prose. <a href="../chapters/citations-evidence.html#adapting-another-courses-material">Adapting another course’s material</a> gives the details, including when a <code>::: notes</code> div is a safe alternative.</li>
+<li>Quote the primary source directly, and check the wording and page against the original. <a href="../chapters/citations-evidence.html#quote-the-original">Quote the original</a> explains why.</li>
+<li>Title a section by its topic, not by its author or course. <a href="../chapters/citations-evidence.html#put-the-content-first">Put the content first</a> explains why.</li>
+<li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
+</ul>
 </section>
-<section id="present-ideas-in-more-than-one-form" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Present ideas in more than one form</h2>
-</section>
-<section class="slide level2">
-
-<p>Readers differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” <span class="citation" data-cites="cornell_udl">(<a href="#/references" role="doc-biblioref" onclick="">Cornell University Center for Teaching Innovation 2026</a>)</span>. For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.</p>
-<blockquote>
-<p>❌ A slide that gives only the formula for <span class="math inline">\(k\)</span>-fold cross-validation.</p>
-<p>✅ A slide that gives the formula, a figure of the data split into <span class="math inline">\(k\)</span> folds, and one sentence saying what the formula averages.</p>
-</blockquote>
-<p>Each figure also needs a caption and alt text, so that a reader who cannot see it gets the same information.</p>
-</section>
-<section id="test-your-writing-with-a-reader" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Test your writing with a reader</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
-<p>You cannot judge your own writing from the reader’s side, because you already know what you meant. The W3C guidance ends with “Test with real users!” <span class="citation" data-cites="w3c_coga">(<a href="#/references" role="doc-biblioref" onclick="">W3C Cognitive and Learning Disabilities Accessibility Task Force 2021</a>)</span>. The plain language guidelines describe <em>paraphrase testing</em>: ask a reader to explain the text in their own words, and compare their version with what you meant <span class="citation" data-cites="plainlanguage_gov">(<a href="#/references" role="doc-biblioref" onclick="">Plain Language Action and Information Network 2026</a>, Paraphrase testing)</span>.</p>
-<blockquote>
-<p>❌ Reread your lecture notes yourself, and decide they are clear.</p>
-<p>✅ Ask a student to explain a paragraph back to you. Where their version differs from what you meant, rewrite that paragraph.</p>
-</blockquote>
+<p>These rules from the other chapters apply to teaching materials as to any other writing:</p>
+<ul>
+<li><a href="../chapters/conciseness.html#lead-with-the-subject">start a sentence with its subject</a>;</li>
+<li><a href="../chapters/grammar.html#demonstrative-pronouns">name the referent</a> instead of a bare demonstrative;</li>
+<li><a href="../chapters/word-choice.html#say-which-thing">say which thing</a>;</li>
+<li><a href="../chapters/word-choice.html#avoid-vague-and-metaphorical-language">state the literal claim</a> instead of an idiom;</li>
+<li><a href="../chapters/avoid-ai-tells.html">avoid AI clichés</a>.</li>
+</ul>
 
 
 <script>
@@ -702,23 +674,8 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-cdc_ccindex" class="csl-entry" role="listitem">
-Centers for Disease Control and Prevention. 2026. <em><span>CDC</span> Clear Communication Index</em>. <a href="https://www.cdc.gov/ccindex/index.html">https://www.cdc.gov/ccindex/index.html</a>.
-</div>
-<div id="ref-cornell_udl" class="csl-entry" role="listitem">
-Cornell University Center for Teaching Innovation. 2026. <em>Universal Design for Learning</em>. <a href="https://teaching.cornell.edu/teaching-resources/building-inclusive-classrooms/universal-design-learning">https://teaching.cornell.edu/teaching-resources/building-inclusive-classrooms/universal-design-learning</a>.
-</div>
-<div id="ref-github_docs_style" class="csl-entry" role="listitem">
-GitHub. 2026a. <em>Style Guide</em>. GitHub Docs. <a href="https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide">https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide</a>.
-</div>
-<div id="ref-github_docs_translation" class="csl-entry" role="listitem">
-GitHub. 2026b. <em>Writing Content to Be Translated</em>. GitHub Docs. <a href="https://docs.github.com/en/contributing/writing-for-github-docs/writing-content-to-be-translated">https://docs.github.com/en/contributing/writing-for-github-docs/writing-content-to-be-translated</a>.
-</div>
-<div id="ref-plainlanguage_gov" class="csl-entry" role="listitem">
-Plain Language Action and Information Network. 2026. <em>Federal Plain Language Guidelines</em>. <a href="https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines">https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines</a>.
-</div>
-<div id="ref-w3c_coga" class="csl-entry" role="listitem">
-W3C Cognitive and Learning Disabilities Accessibility Task Force. 2021. <em>Making Content Usable for People with Cognitive and Learning Disabilities</em>. W3C Working Group Note, 29 April 2021. <a href="https://www.w3.org/TR/coga-usable/">https://www.w3.org/TR/coga-usable/</a>.
+<div id="ref-freeman2014active" class="csl-entry" role="listitem">
+Freeman, Scott, Sarah L. Eddy, Miles McDonough, et al. 2014. <span>“Active Learning Increases Student Performance in Science, Engineering, and Mathematics.”</span> <em>Proceedings of the National Academy of Sciences</em> 111 (23): 8410–15. <a href="https://doi.org/10.1073/pnas.1319030111">https://doi.org/10.1073/pnas.1319030111</a>.
 </div>
 </div>
 </section>
