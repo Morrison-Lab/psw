@@ -41,6 +41,38 @@ do so.
 Remember: concise writing is not about making every sentence as short as possible,
 but about removing words that do not contribute to meaning or clarity.
 
+## Do not rule out readings no reader would make
+
+A definition says what a term means.
+It does not need to list the things the term does not mean,
+unless a reader is likely to confuse the two.
+A disclaimer against a reading nobody would make
+costs the reader a sentence
+and can plant the confusion it was meant to prevent.
+The same applies to explanations:
+explain what your intended readers do not already know,
+and leave out what they do.
+
+::: {#exm-gratuitous-disclaimer}
+
+## Dropping a needless disclaimer
+
+> ❌ In this manuscript, TTE means target trial emulation.
+> It does not mean effect of treatment on the treated.
+>
+> ✅ In this manuscript, TTE means target trial emulation.
+
+Effect of treatment on the treated is usually abbreviated ATT,
+so a reader is unlikely to read "TTE" that way.
+The second sentence introduces a meaning
+that the reader would not otherwise have considered.
+
+:::
+
+Keep a disclaimer when the confusion is real:
+for example, when two methods in your own paper share an abbreviation,
+or when a field uses the same term for two quantities.
+
 ## Lead with the subject
 
 Start a sentence with its subject, not a dependent clause.
