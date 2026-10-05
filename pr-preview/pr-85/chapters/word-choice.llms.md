@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:22:36 (UTC)
+Last modified: 2026-10-05 09:46:03 (UTC)
 
 > **NOTE:**
 >
@@ -42,7 +42,21 @@ The precise alternative is not always shorter, but it tells the reader exactly w
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples.
 
-## 2 Say which thing
+## 2 Follow an abstract statement with an example
+
+An abstract or general statement is fine, as long as a concrete example follows it. A vague statement is not: one that names no specific case leaves the reader to invent one, and they may invent the wrong one.
+
+For example, consider this bullet from a list of what machine learning needs:
+
+> statistics to say what a finite sample of data supports
+
+The bullet is general, which is fine. What it lacks is an instance that shows the reader what “supports” means. Adding one turns it into something a reader can check:
+
+> statistics to say what a finite sample of data supports: if most of the spam in a pile of training emails mentions money, statistics tells us whether that pattern should hold for next month’s emails or is a quirk of this particular pile
+
+When you write a general claim, ask what one specific case of it looks like, and put that case right after the claim.
+
+## 3 Say which thing
 
 The word *thing* almost never survives a second look. Name the object, quantity, step or idea it stands for.
 
@@ -50,7 +64,7 @@ The word *thing* almost never survives a second look. Name the object, quantity,
 >
 > ✅ Check the residuals first.
 
-## 3 Minimize unnecessary jargon
+## 4 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
