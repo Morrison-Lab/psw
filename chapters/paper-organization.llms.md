@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 18:48:57 (UTC)
+Last modified: 2026-10-05 19:03:56 (UTC)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -98,11 +98,33 @@ If your descriptive statistics apply to all outcomes (for example, baseline char
 
 ## 3 Figures and tables
 
-In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout ([Section 3.2](#sec-submission-layout)). Either way, number figures and tables sequentially and reference them in the text before they appear.
+In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout ([Section 3.3](#sec-submission-layout)). Either way, number figures and tables sequentially and reference them in the text before they appear.
 
 Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.
 
-### 3.1 Captions are captions, not headings
+### 3.1 Label variables in plain words
+
+A figure or table is read by people, not by the code that made it. Replace every variable name from the data with a label a reader understands:
+
+- turn underscores and other code punctuation into spaces;
+- use ordinary capitalization;
+- spell out abbreviations and acronyms where space allows;
+- give the unit of every measured quantity, in parentheses;
+- relabel category levels the same way, including legend entries.
+
+Use the same label for a variable in every figure, table and paragraph, so a reader can match them up.
+
+> **NOTE:**
+>
+> **Example 1 (Relabeling axes and a legend)**  
+>
+> > ❌ x-axis `age_yrs`, y-axis `sbp`, legend `trt_grp`: `ctrl`, `tx`
+> >
+> > ✅ x-axis “Age (years)”, y-axis “Systolic blood pressure (mm Hg)”, legend “Treatment group”: “Control”, “Treatment”
+>
+> In R with `ggplot2`, set the axis and legend titles with `labs()`, and recode the category levels before plotting, for example with `forcats::fct_recode()`.
+
+### 3.2 Captions are captions, not headings
 
 Give every figure and table a numbered caption, including those in the supplementary material. A table without a caption is incomplete, even when its contents are correct.
 
@@ -114,7 +136,7 @@ Attach each caption to its figure or table with your writing tool’s caption fe
 
 A heading posing as a caption usually appears in the table of contents, takes on heading styling, and is not attached to its figure. Its number is typed by hand, so it falls out of step with the real numbering when figures are added, removed, or reordered.
 
-### 3.2 Manuscript layout for journal submission
+### 3.3 Manuscript layout for journal submission
 
 Many journals ask for figures and tables to follow the main text of a submitted manuscript rather than appear inline. Unless the journal’s instructions say otherwise, lay out a submission manuscript as follows:
 
@@ -124,7 +146,7 @@ Many journals ask for figures and tables to follow the main text of a submitted 
 
 In Quarto, the `{{< pagebreak >}}` shortcode inserts a page break in PDF and Word output, and a `::: {#refs}` div places the references where you put the div instead of at the end of the document. Write the figures and tables after that div.
 
-### 3.3 Check the rendered layout
+### 3.4 Check the rendered layout
 
 Captions, page breaks, and figure placement are properties of the rendered document’s layout. Problems with them are easy to miss when reading the source, and a check of the text and numbers alone will not catch them. Before calling a rendered manuscript reviewed, page through the PDF or Word output and check its layout, not only its text and numbers:
 

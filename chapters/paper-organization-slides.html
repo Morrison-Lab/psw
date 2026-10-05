@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 18:48:57 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 19:03:56 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -336,8 +336,26 @@
 </section>
 <section class="slide level2">
 
-<p>In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout (<a href="#/sec-submission-layout" class="quarto-xref">Section&nbsp;3.2</a>). Either way, number figures and tables sequentially and reference them in the text before they appear.</p>
+<p>In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout (<a href="#/sec-submission-layout" class="quarto-xref">Section&nbsp;3.3</a>). Either way, number figures and tables sequentially and reference them in the text before they appear.</p>
 <p>Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.</p>
+<h3 id="label-variables-in-plain-words">Label variables in plain words</h3>
+<p>A figure or table is read by people, not by the code that made it. Replace every variable name from the data with a label a reader understands:</p>
+<ul>
+<li>turn underscores and other code punctuation into spaces;</li>
+<li>use ordinary capitalization;</li>
+<li>spell out abbreviations and acronyms where space allows;</li>
+<li>give the unit of every measured quantity, in parentheses;</li>
+<li>relabel category levels the same way, including legend entries.</li>
+</ul>
+<p>Use the same label for a variable in every figure, table and paragraph, so a reader can match them up.</p>
+<div id="exm-figure-labels" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (Relabeling axes and a legend)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ x-axis <code>age_yrs</code>, y-axis <code>sbp</code>, legend <code>trt_grp</code>: <code>ctrl</code>, <code>tx</code></p>
+<p>✅ x-axis “Age (years)”, y-axis “Systolic blood pressure (mm Hg)”, legend “Treatment group”: “Control”, “Treatment”</p>
+</blockquote>
+<p>In R with <code>ggplot2</code>, set the axis and legend titles with <code>labs()</code>, and recode the category levels before plotting, for example with <code>forcats::fct_recode()</code>.</p>
+</div>
 <h3 id="captions-are-captions-not-headings">Captions are captions, not headings</h3>
 <p>Give every figure and table a numbered caption, including those in the supplementary material. A table without a caption is incomplete, even when its contents are correct.</p>
 <p>Attach each caption to its figure or table with your writing tool’s caption feature (in Quarto, the last line of a <code>#fig-</code> or <code>#tbl-</code> div), not as a section heading.</p>
