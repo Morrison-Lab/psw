@@ -157,6 +157,13 @@ Give enough detail that another analyst could reproduce the analysis:
 - Report the numbers and save interpretation for the Discussion.
 - Give the key estimates in the text and point to the table for the rest.
   Do not restate every cell.
+- Compute every number in the text from the analysis.
+  In a Quarto or R Markdown manuscript,
+  write each estimate, count or *p*-value as an inline code expression,
+  such as `` `r n_participants` ``,
+  not as a number typed into the prose.
+  A typed number goes stale when the data or the analysis changes,
+  and nothing warns you that it no longer matches the tables.
 - Cite every table and figure in the text,
   in numerical order, at its first relevant mention.
 
