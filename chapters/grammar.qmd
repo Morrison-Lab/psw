@@ -27,3 +27,7 @@ that consistently make scientific writing easier to read.
 ## Quantifiers used as pronouns
 
 {{< include grammar/quantifier-pronouns.qmd >}}
+
+## Avoid garden-path sentences
+
+{{< include grammar/garden-path-sentences.qmd >}}
