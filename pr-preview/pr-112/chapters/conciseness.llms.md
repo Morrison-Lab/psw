@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 18:36:17 (UTC)
+Last modified: 2026-10-05 18:42:21 (UTC)
 
 > **NOTE:**
 >
@@ -32,11 +32,17 @@ Remember: concise writing is not about making every sentence as short as possibl
 
 ## 2 Lead with the subject
 
-Start a sentence with its subject, not a dependent clause. A leading clause makes the reader hold a condition before knowing what it conditions.
+Start a sentence with its subject, not a dependent clause or a fronted phrase. A leading clause makes the reader hold a condition before knowing what it conditions.
 
 > ❌ When the sample size grows, the estimate becomes more precise.
 >
 > ✅ The estimate becomes more precise as the sample size grows.
+
+A fronted phrase delays the subject in the same way. Move a phrase such as “in technical writing” or “in this study” after the noun it limits, unless it sets a scope that the whole paragraph depends on.
+
+> ❌ In technical writing, a common cause of garden-path sentences is a missing *that*.
+>
+> ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
 ## 3 Limit complex sentence structures
 
