@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 09:07:36 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 09:12:29 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -335,12 +335,43 @@
 <li>substituting a result and then simplifying it;</li>
 <li>multiplying constants and factoring them out of a sum;</li>
 <li>expanding a product and collecting like terms;</li>
+<li>canceling <span class="math inline">\(a\)</span> in <span class="math inline">\(a + (b - a)\)</span> removes the parentheses (<span class="math inline">\(a + b - a\)</span>), reorders the terms (<span class="math inline">\(b + a - a\)</span>), groups the two that cancel (<span class="math inline">\(b + (a - a)\)</span>), replaces <span class="math inline">\(a - a\)</span> with <span class="math inline">\(0\)</span> (<span class="math inline">\(b + 0\)</span>), and drops the <span class="math inline">\(+ 0\)</span>;</li>
+<li>canceling <span class="math inline">\(n\)</span> in <span class="math inline">\(n \cdot \frac{b}{n}\)</span> rewrites the division as multiplication by a reciprocal (<span class="math inline">\(n \cdot (b \cdot \frac{1}{n})\)</span>), removes the parentheses (<span class="math inline">\(n \cdot b \cdot \frac{1}{n}\)</span>), reorders the factors (<span class="math inline">\(b \cdot n \cdot \frac{1}{n}\)</span>), groups the two that cancel (<span class="math inline">\(b \cdot (n \cdot \frac{1}{n})\)</span>), replaces <span class="math inline">\(n \cdot \frac{1}{n}\)</span> with <span class="math inline">\(1\)</span> (<span class="math inline">\(b \cdot 1\)</span>), and drops the <span class="math inline">\(\cdot 1\)</span>;</li>
 <li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
 </ul>
 <h3 id="using-a-fact-the-reader-has-not-seen">Using a fact the reader has not seen</h3>
 <p>When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.</p>
 <h3 id="long-derivations">Long derivations</h3>
 <p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. For example, when you apply the chain rule, derive the inner derivative in a separate block before you substitute it. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
+</section>
+<section id="functions-and-their-values" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Functions and their values</h2>
+</section>
+<section class="slide level2">
+
+<p>A function and its value at a point are different objects. In <span class="math inline">\(\mu_i = \mu(x_i)\)</span>, <span class="math inline">\(\mu\)</span> is a function, and <span class="math inline">\(\mu(x_i)\)</span> is a number: the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>. Written with its placeholder argument, <span class="math inline">\(\mu(x)\)</span> already denotes a value, so “the value of <span class="math inline">\(\mu(x)\)</span> at <span class="math inline">\(x_i\)</span>” reads as a value of a value. Either drop the placeholder and write “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, or keep the placeholder and name the substitution: “<span class="math inline">\(\mu(x)\)</span> evaluated at <span class="math inline">\(x_i\)</span>”.</p>
+<div id="exm-function-evaluated-at" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (Saying where a function is evaluated)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Each outcome is centered on the value of a mean function <span class="math inline">\(\mu(x)\)</span> at its own covariate values.</p>
+<p>✅ Each outcome is centered on a mean function <span class="math inline">\(\mu(x)\)</span> evaluated at that outcome’s covariate values.</p>
+</blockquote>
+<blockquote>
+<p>❌ the value of the density <span class="math inline">\(f(x)\)</span> at 0</p>
+<p>✅ the value of <span class="math inline">\(f\)</span> at 0, or <span class="math inline">\(f(0)\)</span></p>
+</blockquote>
+<blockquote>
+<p>❌ the likelihood <span class="math inline">\(L(\theta)\)</span> at <span class="math inline">\(\hat{\theta}\)</span></p>
+<p>✅ <span class="math inline">\(L(\theta)\)</span> evaluated at <span class="math inline">\(\hat{\theta}\)</span>, or <span class="math inline">\(L(\hat{\theta})\)</span></p>
+</blockquote>
+<p>In each ❌ version, “the value of” or “at” sits next to a placeholder argument, so the reader has to decide whether <span class="math inline">\(\mu(x)\)</span>, <span class="math inline">\(f(x)\)</span> or <span class="math inline">\(L(\theta)\)</span> means the function or one of its values. The first ❌ version also has an ambiguous “its”: the nearest candidate is the mean function, not the outcome.</p>
+</div>
+<p>Use the notation to match:</p>
+<ul>
+<li>Write <span class="math inline">\(\mu\)</span>, or “the mean function”, for the function itself.</li>
+<li>Write <span class="math inline">\(\mu(x)\)</span> with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function <span class="math inline">\(\mu(x)\)</span>” or <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>, and say “evaluated at” when you substitute a point into it.</li>
+<li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
+</ul>
 
 
 <script>

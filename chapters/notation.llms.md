@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:07:36 (UTC)
+Last modified: 2026-10-05 09:12:29 (UTC)
 
 > **NOTE:**
 >
@@ -70,6 +70,8 @@ Common ways to combine steps without noticing:
 - substituting a result and then simplifying it;
 - multiplying constants and factoring them out of a sum;
 - expanding a product and collecting like terms;
+- canceling \\a\\ in \\a + (b - a)\\ removes the parentheses (\\a + b - a\\), reorders the terms (\\b + a - a\\), groups the two that cancel (\\b + (a - a)\\), replaces \\a - a\\ with \\0\\ (\\b + 0\\), and drops the \\+ 0\\;
+- canceling \\n\\ in \\n \cdot \frac{b}{n}\\ rewrites the division as multiplication by a reciprocal (\\n \cdot (b \cdot \frac{1}{n})\\), removes the parentheses (\\n \cdot b \cdot \frac{1}{n}\\), reorders the factors (\\b \cdot n \cdot \frac{1}{n}\\), groups the two that cancel (\\b \cdot (n \cdot \frac{1}{n})\\), replaces \\n \cdot \frac{1}{n}\\ with \\1\\ (\\b \cdot 1\\), and drops the \\\cdot 1\\;
 - writing “setting this to zero and dividing by \\-2n\\ gives”, which hides two operations in a sentence.
 
 ### 2.1 Using a fact the reader has not seen
@@ -79,5 +81,33 @@ When a step relies on a fact the document has not yet shown, such as deviations 
 ### 2.2 Long derivations
 
 Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. For example, when you apply the chain rule, derive the inner derivative in a separate block before you substitute it. Naming a part of an expression that recurs in every line, such as writing \\d_i\\ for \\(y_i - \bar{y}) - \beta_x (x_i - \bar{x})\\, can also keep each line short.
+
+## 3 Functions and their values
+
+A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Written with its placeholder argument, \\\mu(x)\\ already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
+
+> **NOTE:**
+>
+> **Example 4 (Saying where a function is evaluated)**  
+>
+> > ❌ Each outcome is centered on the value of a mean function \\\mu(x)\\ at its own covariate values.
+> >
+> > ✅ Each outcome is centered on a mean function \\\mu(x)\\ evaluated at that outcome’s covariate values.
+>
+> > ❌ the value of the density \\f(x)\\ at 0
+> >
+> > ✅ the value of \\f\\ at 0, or \\f(0)\\
+>
+> > ❌ the likelihood \\L(\theta)\\ at \\\hat{\theta}\\
+> >
+> > ✅ \\L(\theta)\\ evaluated at \\\hat{\theta}\\, or \\L(\hat{\theta})\\
+>
+> In each ❌ version, “the value of” or “at” sits next to a placeholder argument, so the reader has to decide whether \\\mu(x)\\, \\f(x)\\ or \\L(\theta)\\ means the function or one of its values. The first ❌ version also has an ambiguous “its”: the nearest candidate is the mean function, not the outcome.
+
+Use the notation to match:
+
+- Write \\\mu\\, or “the mean function”, for the function itself.
+- Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
+- Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
 
 Back to top

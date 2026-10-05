@@ -310,7 +310,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 09:07:36 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 09:12:29 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -334,7 +334,11 @@
 <ul>
 <li><p><strong>Provide explicit definitions:</strong> State clearly what a term means, rather than assuming readers will understand from context.</p></li>
 <li><p><strong>Be concise:</strong> Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.</p></li>
-<li><p><strong>State technical definitions in both prose and math:</strong> Give a quantitative term a one-sentence prose definition and the formula it stands for, in the same definition block; together the sentence and the formula are the defining statement. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector <span class="math inline">\(\vec{\theta}\)</span> as “the value of <span class="math inline">\(\vec{\theta}\)</span> that minimizes the <a href="#/def-rss">residual sum of squares</a>” <em>and</em> as <span class="math inline">\(\hat{\vec{\theta}} := \arg\min_{\vec{\theta}} \text{RSS}(\vec{\theta})\)</span>, not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write <span class="math inline">\(R^2 := 1 - \text{RSS} / \text{TSS}\)</span>, not the two sums that RSS and TSS stand for.</p></li>
+<li><p><strong>State technical definitions and results in both prose and a display equation:</strong> Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector <span class="math inline">\(\vec{\theta}\)</span> as “the value of <span class="math inline">\(\vec{\theta}\)</span> that minimizes the <a href="#/def-rss">residual sum of squares</a>” <em>and</em> as</p>
+<p><span class="math display">\[\hat{\vec{\theta}} := \arg\min_{\vec{\theta}} \text{RSS}(\vec{\theta}),\]</span></p>
+<p>not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write</p>
+<p><span class="math display">\[R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},\]</span></p>
+<p>not the two sums that RSS and TSS stand for.</p></li>
 <li><p><strong>Define a statistical model by its distribution, and derive its other forms:</strong> Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as <span class="math inline">\(Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\)</span>, independently, with <span class="math inline">\(\mu_i := \mu(x_i)\)</span> and <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>. Then define the deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu(x_i)\)</span>, and state <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span> with <span class="math inline">\(\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\)</span> as a result proved from those definitions. Writing the model as “<span class="math inline">\(Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\)</span> with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.</p></li>
 <li><p><strong>Define in the most general form the document needs:</strong> State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.</p></li>
 <li><p><strong>Follow the definition with examples, from general to specific:</strong> Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see <a href="#/order-general-definition-then-examples">Order: general definition, then examples</a>).</p></li>
@@ -351,7 +355,8 @@
 
 <p>Here are examples of well-defined terms:</p>
 <div id="def-confidence-interval" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 3 (Confidence interval)</strong></span> A <em>confidence interval</em> is a range of values, derived from sample statistics, that is likely to contain the true population parameter.</p>
+<p><span class="theorem-title"><strong>Definition 3 (Confidence interval)</strong></span> A <em>confidence interval</em> with confidence level <span class="math inline">\(1 - \alpha\)</span> for a parameter <span class="math inline">\(\theta\)</span> is an interval <span class="math inline">\([L, U]\)</span> computed from a sample that contains <span class="math inline">\(\theta\)</span> with probability <span class="math inline">\(1 - \alpha\)</span> over repeated samples:</p>
+<p><span class="math display">\[\Pr(\theta \in [L, U]) = 1 - \alpha.\]</span></p>
 </div>
 <div id="exm-confidence-interval" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (A confidence interval for mean height)</strong></span> If we calculate a 95% confidence interval (<a href="#/def-confidence-interval" class="quarto-xref">Definition&nbsp;3</a>) for mean height as [165 cm, 175 cm], we are 95% confident that the true population mean height falls within this range.</p>
@@ -370,7 +375,8 @@
 
 <p>When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:</p>
 <div id="def-rss" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 5 (Residual sum of squares)</strong></span> The <em>residual sum of squares</em> of a model fitted to data is the sum of its squared residuals: <span class="math inline">\(\text{RSS} = \sum_{i=1}^n r_i^2\)</span>.</p>
+<p><span class="theorem-title"><strong>Definition 5 (Residual sum of squares)</strong></span> The <em>residual sum of squares</em> of a model fitted to data is the sum of its squared residuals:</p>
+<p><span class="math display">\[\text{RSS} = \sum_{i=1}^n r_i^2.\]</span></p>
 </div>
 <div id="exm-rss-line" class="theorem example">
 <p><span class="theorem-title"><strong>Example 3 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the fitted value of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a function of the two coefficients: <span class="math inline">\(\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2\)</span>.</p>
@@ -438,13 +444,15 @@
 <span id="cb1-4"><a aria-label="4"></a></span>
 <span id="cb1-5"><a aria-label="5"></a>In a right triangle,</span>
 <span id="cb1-6"><a aria-label="6"></a>the square of the hypotenuse equals the sum of squares of the other two sides:</span>
-<span id="cb1-7"><a aria-label="7"></a>$a^2 + b^2 = c^2$.</span>
-<span id="cb1-8"><a aria-label="8"></a></span>
-<span id="cb1-9"><a aria-label="9"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-7"><a aria-label="7"></a></span>
+<span id="cb1-8"><a aria-label="8"></a>$$a^2 + b^2 = c^2.$$</span>
+<span id="cb1-9"><a aria-label="9"></a></span>
+<span id="cb1-10"><a aria-label="10"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using <code>@thm-pythagorean</code>.</p>
 <h3 id="example-pythagorean-theorem">Example: Pythagorean theorem</h3>
 <div id="thm-pythagoras" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 1 (Pythagorean theorem)</strong></span> In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
+<p><span class="theorem-title"><strong>Theorem 1 (Pythagorean theorem)</strong></span> In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides:</p>
+<p><span class="math display">\[a^2 + b^2 = c^2.\]</span></p>
 </div>
 <div id="exm-pythagoras" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5: <span class="math inline">\(3^2 + 4^2 = 9 + 16 = 25 = 5^2\)</span>.</p>
@@ -455,6 +463,97 @@
 <div id="exm-parallel-postulate" class="theorem example">
 <p><span class="theorem-title"><strong>Example 6 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
 <p>If we have line <span class="math inline">\(L\)</span> and point <span class="math inline">\(P\)</span> not on <span class="math inline">\(L\)</span>, only one line through <span class="math inline">\(P\)</span> will never intersect <span class="math inline">\(L\)</span>.</p>
+</div>
+</section>
+<section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
+</section>
+<section class="slide level2">
+
+<p>In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader meets the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.</p>
+<p>Follow these principles:</p>
+<ul>
+<li><strong>One exercise per step.</strong> Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.</li>
+<li><strong>The solution follows its exercise.</strong> Put each solution directly after its exercise, and give it an id named after the exercise (<code>#exr-foo</code> and <code>#sol-foo</code>), so a reader who wants to check one step can find its working.</li>
+<li><strong>The theorem states the result; the proof cites the exercises.</strong> The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the exercises it rests on, not a second copy of their working.</li>
+<li><strong>Define notation first.</strong> Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.</li>
+<li><strong>One operation per line.</strong> Inside each solution, write every displayed line with a single operation and its justification (see <a href="../chapters/notation.html#one-operation-per-step">One operation per step</a>).</li>
+<li><strong>One result per theorem.</strong> Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the exercise it rests on.</li>
+<li><strong>Start from the side that simplifies.</strong> When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Another route is to solve a definition for the term you want: add <span class="math inline">\(\mu_i\)</span> to both sides of <span class="math inline">\(\varepsilon_i = Y_i - \mu_i\)</span>, then simplify the right-hand side to <span class="math inline">\(Y_i\)</span>, one operation per line. Adding a term to both sides of an equation is an ordinary step, not the pattern to avoid.</li>
+</ul>
+<div id="def-sample-mean" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 7 (Sample mean)</strong></span> The <em>sample mean</em> of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> is their average:</p>
+<p><span class="math display">\[\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.\]</span></p>
+</div>
+<div id="exr-sum-deviations" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 1 (Deviations from the mean)</strong></span> Show that <span class="math inline">\(\sum_{i=1}^n (x_i - \bar{x}) = 0\)</span>, where <span class="math inline">\(\bar{x}\)</span> is the sample mean (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;7</a>).</p>
+</div>
+<div id="sol-sum-deviations" class="proof solution">
+<p><span class="proof-title"><em>Solution 1</em>. </span><span class="math display">\[
+\begin{aligned}
+\sum_{i=1}^n (x_i - \bar{x})
+&amp;= \sum_{i=1}^n x_i - \sum_{i=1}^n \bar{x}
+&amp;&amp; \text{(split the sum)}\\
+&amp;= \sum_{i=1}^n x_i - n \bar{x}
+&amp;&amp; \text{(sum of a constant)}\\
+&amp;= n \bar{x} - n \bar{x}
+&amp;&amp; \text{(}\sum_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\
+&amp;= 0
+&amp;&amp; \text{(subtract)}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="thm-sum-deviations" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2 (Deviations from the mean sum to zero)</strong></span> The deviations of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> from their sample mean <span class="math inline">\(\bar{x}\)</span> (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;7</a>) sum to zero:</p>
+<p><span class="math display">\[\sum_{i=1}^n (x_i - \bar{x}) = 0.\]</span></p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><a href="#/exr-sum-deviations" class="quarto-xref">Exercise&nbsp;1</a> derives this result.</p>
+</div>
+<div id="exm-derivation-direction" class="theorem example">
+<p><span class="theorem-title"><strong>Example 7 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
+<blockquote>
+<p>❌ <span class="math display">\[
+\begin{aligned}
+Y_i
+&amp;= Y_i - \mu_i + \mu_i
+&amp;&amp; \text{(add and subtract } \mu_i\text{)}\\
+&amp;= \varepsilon_i + \mu_i
+&amp;&amp; \text{(definition of } \varepsilon_i\text{)}\\
+&amp;= \mu_i + \varepsilon_i
+&amp;&amp; \text{(reorder the terms)}
+\end{aligned}
+\]</span></p>
+<p>✅ <span class="math display">\[
+\begin{aligned}
+\mu_i + \varepsilon_i
+&amp;= \mu_i + (Y_i - \mu_i)
+&amp;&amp; \text{(definition of } \varepsilon_i\text{)}\\
+&amp;= \mu_i + Y_i - \mu_i
+&amp;&amp; \text{(remove the parentheses)}\\
+&amp;= Y_i + \mu_i - \mu_i
+&amp;&amp; \text{(reorder the terms)}\\
+&amp;= Y_i + (\mu_i - \mu_i)
+&amp;&amp; \text{(group the last two terms)}\\
+&amp;= Y_i + 0
+&amp;&amp; \text{(} a - a = 0\text{)}\\
+&amp;= Y_i
+&amp;&amp; \text{(} a + 0 = a\text{)}
+\end{aligned}
+\]</span></p>
+</blockquote>
+<p>The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from <span class="math inline">\(\mu_i + \varepsilon_i\)</span>, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it gives a line to each step that a single “cancel” justification would hide (see <a href="../chapters/notation.html#one-operation-per-step">One operation per step</a>).</p>
+</div>
+<div id="exm-one-result-per-theorem" class="theorem example">
+<p><span class="theorem-title"><strong>Example 8 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ <strong>Theorem.</strong> Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: <span class="math display">\[Y_i = \mu_i + \varepsilon_i,
+\qquad
+\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\]</span></p>
+<p>✅ <strong>Theorem 1.</strong> Each outcome is its mean plus its deviation: <span class="math display">\[Y_i = \mu_i + \varepsilon_i.\]</span></p>
+<p><strong>Theorem 2.</strong> Given the covariates, each deviation is Gaussian with mean 0: <span class="math display">\[\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\]</span></p>
+</blockquote>
+<p>The first result is algebra from the definition of <span class="math inline">\(\varepsilon_i\)</span>; the second needs the model’s distribution. In separate blocks, each gets the proof it needs, and a later step that uses only the first can cite only the first.</p>
 </div>
 
 
