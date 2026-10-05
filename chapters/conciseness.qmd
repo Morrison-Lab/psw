@@ -116,6 +116,39 @@ Choose the one you mean.
 
 :::
 
+## Write about the subject, not about the text
+
+Some sentences describe the document instead of its subject:
+they announce that a point is coming,
+rank it,
+or comment on how it changes what follows.
+Each one makes the reader read a sentence
+before reaching the content it promises.
+State the content directly.
+
+::: {#exm-self-referential}
+
+## Replacing a sentence about the text
+
+> ❌ One trap worth naming: the sample excludes people who moved.
+>
+> ✅ The sample excludes people who moved.
+>
+> ❌ One documented detail changes how the rest of this section reads:
+> the survey was voluntary.
+>
+> ✅ The survey was voluntary,
+> so the estimates below apply only to people who chose to respond.
+
+In the second pair,
+the rewrite states what the detail changes
+instead of saying that it changes something.
+
+:::
+
+[Rhetorical reflexes](avoid-ai-tells.qmd#rhetorical-reflexes)
+lists related signpost phrases, such as "it is worth noting that".
+
 ## Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
