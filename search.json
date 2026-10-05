@@ -105,6 +105,13 @@
     "text": "4 Subsection headings\nUse descriptive subsection headings to guide readers through your results. Headings should clearly indicate the content of each section.\nPoor heading: “Analysis 1”\nBetter heading: “Association between treatment and mortality”\nBest heading: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)"
   },
   {
+    "objectID": "chapters/paper-organization.html#links-to-videos-and-other-media",
+    "href": "chapters/paper-organization.html#links-to-videos-and-other-media",
+    "title": "Paper organization",
+    "section": "5 Links to videos and other media",
+    "text": "5 Links to videos and other media\nPut each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.\nA reader who has just finished a section is ready to use material about it. The same reader at the end of the document must guess which link goes with which section, and may never reach the list.\nFor each link:\n\nWrite one line, such as “Video: Weinberger derives the descent direction (from 3:09).”\nName the speaker and say what the material shows, in simple, literal words.\nLink the exact start time when the material covers more than the topic.\nCite the source.\n\nLink public sites freely. Anyone can open them, so a link costs the reader nothing. Do not link private repositories, such as ones that hold graded homework or exams."
+  },
+  {
     "objectID": "chapters/paper-organization-slides.html#standard-paper-structure",
     "href": "chapters/paper-organization-slides.html#standard-paper-structure",
     "title": "Paper organization",
@@ -131,6 +138,13 @@
     "title": "Paper organization",
     "section": "4 Subsection headings",
     "text": "4 Subsection headings"
+  },
+  {
+    "objectID": "chapters/paper-organization-slides.html#links-to-videos-and-other-media",
+    "href": "chapters/paper-organization-slides.html#links-to-videos-and-other-media",
+    "title": "Paper organization",
+    "section": "5 Links to videos and other media",
+    "text": "5 Links to videos and other media"
   },
   {
     "objectID": "chapters/manuscript-submission.html",
