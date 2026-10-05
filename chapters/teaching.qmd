@@ -19,7 +19,7 @@ This chapter adds the rules that apply to teaching materials in particular.
 
 ## Build the lecture from exercises and solutions
 
-Active learning, in which students work tasks themselves during class,
+Active learning, in which students work through tasks themselves during class,
 improves exam performance over lecture alone [@freeman2014active].
 The exercise-first structure below is this guide's own convention
 for putting that result into practice.
@@ -169,9 +169,11 @@ instead of keeping a second wording that can drift.
 ## Credit other courses without summarizing them
 
 - Write your own version of another course's material,
-  and credit the source in a `::: notes` div, which keeps the credit off the slides.
+  and credit the source in a collapsed `.callout-note` titled "Source",
+  not in running prose.
   [Adapting another course's material](citations-evidence.qmd#adapting-another-courses-material)
-  gives the details.
+  gives the details,
+  including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly,
   and check the wording and page against the original.
   [Quote the original](citations-evidence.qmd#quote-the-original) explains why.
