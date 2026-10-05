@@ -315,8 +315,38 @@ without commentary on who said it or where it was repeated.
 When teaching material draws on another course,
 write your own version of the content
 rather than summarizing how that course presents it.
-Credit the source in a note at the start or end of the adapted section;
-in Quarto, a `::: notes` div keeps the credit out of the slides.
+Credit the source in a note at the start or end of the adapted section.
+
+Put that note in a div, never in running prose.
+An attribution is not part of the argument,
+and a reader skimming the section should be able to tell it apart
+from the content it credits.
+In Quarto, use a callout or another div type:
+
+- a collapsed `.callout-note` titled "Source",
+  which keeps the credit visible but out of the way on the page;
+- or a `::: notes` div,
+  which renders as an aside on the page
+  and keeps the credit out of the slides.
+
+The same applies to license notices
+and to statements of how the adaptation differs from the source.
+
+❌ A plain paragraph between the heading and the first definition:
+
+```markdown
+This section is adapted from @zhou2024, used under the MIT License.
+```
+
+✅ The same credit in a collapsed callout:
+
+```markdown
+::: {.callout-note collapse="true"}
+#### Source
+
+This section is adapted from @zhou2024, used under the MIT License.
+:::
+```
 
 ## Common citation errors to avoid
 
