@@ -155,6 +155,10 @@ Headings should clearly indicate the content of each section.
 Put each link to a video, podcast, demo or other external material
 in a short note right after the text it supports.
 Do not collect the links in a list at the end of the document.
+If the material covers several sections,
+put the note after the first section it supports.
+If the text is a question with an answer,
+put the note after the answer, not between them.
 
 A reader who has just finished a section is ready to use material about it.
 The same reader at the end of the document must guess which link goes with which section,
@@ -166,8 +170,6 @@ For each link:
 - Name the speaker and say what the material shows, in simple, literal words.
 - Link the exact start time when the material covers more than the topic.
 - Cite the source.
-- If the material covers several sections, put it after the first section it supports.
-- Do not put a link between a question and its answer.
 
 Link public sites freely.
 Readers, and the tools they use, already know what is public,
