@@ -125,9 +125,15 @@ Follow these principles when introducing new terms:
 - **Define terms at first use:**
   Place the definition immediately before or after the term's first appearance.
   
-- **Provide examples:**
+- **Provide examples and counterexamples:**
   Every definition should include at least one concrete example
-  that illustrates how the term is used.
+  that illustrates how the term is used,
+  and at least one counterexample:
+  a case that looks as if it fits the definition but does not.
+  The example shows what the term covers;
+  the counterexample shows where its boundary is,
+  which is often where readers misapply it.
+  Put each in its own example block after the definition.
 
 - **Give each term its own definition block:**
   In a Quarto document, put every definition in its own `#def-` div
@@ -182,6 +188,19 @@ $$\Pr(\theta \in [L, U]) = 1 - \alpha.$$
 If we calculate a 95% confidence interval (@def-confidence-interval)
 for mean height as [165 cm, 175 cm],
 we are 95% confident that the true population mean height falls within this range.
+
+:::
+
+::: {#exm-not-confidence-interval}
+
+## A range that is not a confidence interval for the mean
+
+The interval from the 2.5th to the 97.5th percentile of the observed heights,
+[150 cm, 190 cm],
+is not a 95% confidence interval (@def-confidence-interval) for mean height.
+It describes where individual heights fall,
+not where the population mean is likely to be,
+and it does not shrink as the sample grows.
 
 :::
 
