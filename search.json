@@ -21,18 +21,25 @@
     "text": "1 Avoid vague and metaphorical language\nScientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise term for the thing you are describing. Table 2 lists some common vague phrases and more precise alternatives.\n\n\n\nTable 2: Vague or metaphorical phrases and more precise alternatives\n\n\n\n\n\nVague or metaphorical\nMore precise\n\n\n\n\ninfection pressure\nincidence rate\n\n\ndisease burden\nincidence rate, or prevalence proportion\n\n\nthe signal was strong\nthe effect size was large\n\n\na huge effect\na risk ratio of 4.2\n\n\n\n\n\n\nThe precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.\nInformal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. Use literal language explains why idioms exclude some readers, and gives more examples."
   },
   {
+    "objectID": "chapters/word-choice.html#follow-an-abstract-statement-with-an-example",
+    "href": "chapters/word-choice.html#follow-an-abstract-statement-with-an-example",
+    "title": "Word choice",
+    "section": "2 Follow an abstract statement with an example",
+    "text": "2 Follow an abstract statement with an example\nAn abstract or general statement is fine, as long as a concrete example follows it. A vague statement is not: one that names no specific case leaves the reader to invent one, and they may invent the wrong one.\nFor example, consider this bullet from a list of what machine learning needs:\n\nstatistics to say what a finite sample of data supports\n\nThe bullet is general, which is fine. What it lacks is an instance that shows the reader what “supports” means. Adding one turns it into something a reader can check:\n\nstatistics to say what a finite sample of data supports: if most of the spam in a pile of training emails mentions money, statistics tells us whether that pattern should hold for next month’s emails or is a quirk of this particular pile\n\nWhen you write a general claim, ask what one specific case of it looks like, and put that case right after the claim."
+  },
+  {
     "objectID": "chapters/word-choice.html#say-which-thing",
     "href": "chapters/word-choice.html#say-which-thing",
     "title": "Word choice",
-    "section": "2 Say which thing",
-    "text": "2 Say which thing\nThe word thing almost never survives a second look. Name the object, quantity, step or idea it stands for.\n\n❌ The main thing to check is the residuals.\n✅ Check the residuals first."
+    "section": "3 Say which thing",
+    "text": "3 Say which thing\nThe word thing almost never survives a second look. Name the object, quantity, step or idea it stands for.\n\n❌ The main thing to check is the residuals.\n✅ Check the residuals first."
   },
   {
     "objectID": "chapters/word-choice.html#minimize-unnecessary-jargon",
     "href": "chapters/word-choice.html#minimize-unnecessary-jargon",
     "title": "Word choice",
-    "section": "3 Minimize unnecessary jargon",
-    "text": "3 Minimize unnecessary jargon\nJargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.\nPrefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see Name the synonyms).\n\n\n\n\n\n\n\nExample 1 (Replacing unnecessary jargon)  \n\n❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.\n✅ We wrote a custom program to combine data from several sources.\n\nThe plain version is shorter, and it states what was actually done.\n\n\n\n\nFor each technical word, ask whether it carries meaning that a plainer word would lose. If it does not, replace it with the plainer word. If it does carry necessary meaning but a reader outside your subfield would not understand it, define it clearly at first use."
+    "section": "4 Minimize unnecessary jargon",
+    "text": "4 Minimize unnecessary jargon\nJargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.\nPrefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see Name the synonyms).\n\n\n\n\n\n\n\nExample 1 (Replacing unnecessary jargon)  \n\n❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.\n✅ We wrote a custom program to combine data from several sources.\n\nThe plain version is shorter, and it states what was actually done.\n\n\n\n\nFor each technical word, ask whether it carries meaning that a plainer word would lose. If it does not, replace it with the plainer word. If it does carry necessary meaning but a reader outside your subfield would not understand it, define it clearly at first use."
   },
   {
     "objectID": "chapters/word-choice-slides.html#avoid-vague-and-metaphorical-language",
@@ -42,18 +49,25 @@
     "text": "1 Avoid vague and metaphorical language"
   },
   {
+    "objectID": "chapters/word-choice-slides.html#follow-an-abstract-statement-with-an-example",
+    "href": "chapters/word-choice-slides.html#follow-an-abstract-statement-with-an-example",
+    "title": "Word choice",
+    "section": "2 Follow an abstract statement with an example",
+    "text": "2 Follow an abstract statement with an example"
+  },
+  {
     "objectID": "chapters/word-choice-slides.html#say-which-thing",
     "href": "chapters/word-choice-slides.html#say-which-thing",
     "title": "Word choice",
-    "section": "2 Say which thing",
-    "text": "2 Say which thing"
+    "section": "3 Say which thing",
+    "text": "3 Say which thing"
   },
   {
     "objectID": "chapters/word-choice-slides.html#minimize-unnecessary-jargon",
     "href": "chapters/word-choice-slides.html#minimize-unnecessary-jargon",
     "title": "Word choice",
-    "section": "3 Minimize unnecessary jargon",
-    "text": "3 Minimize unnecessary jargon"
+    "section": "4 Minimize unnecessary jargon",
+    "text": "4 Minimize unnecessary jargon"
   },
   {
     "objectID": "chapters/paper-organization.html",
