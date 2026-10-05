@@ -80,6 +80,31 @@ so the reader can absorb each idea before moving on.
 
 :::
 
+## Avoid double negatives
+
+A double negative states a claim by denying its opposite:
+"not uncommon", "not inconsistent with", "cannot be ruled out that it does not".
+The reader has to cancel the two negatives to recover the claim,
+and the result is often vaguer than the writer intended.
+State the claim directly,
+and if you mean something weaker than the direct claim,
+say how much weaker.
+
+::: {#exm-double-negative}
+
+## Stating a claim directly
+
+> ❌ The association was not inconsistent with a dose-response relationship.
+>
+> ✅ The association was consistent with a dose-response relationship.
+>
+> ✅ The data neither support nor contradict a dose-response relationship.
+
+"Not inconsistent with" sits somewhere between the two direct versions.
+Choose the one you mean.
+
+:::
+
 ## Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
