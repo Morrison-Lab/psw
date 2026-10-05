@@ -22,4 +22,7 @@ exclude = [
   "https://localhost.*",
   "http://127.0.0.1.*",
   "https://127.0.0.1.*",
+  # Morrison-Lab/ai-config is private, so every page in it answers 503 to the
+  # checker's unauthenticated request; the agent instruction files link it (#82).
+  "^https://github\\.com/Morrison-Lab/ai-config([/#?].*)?$",
 ]
