@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 17:16:43 (UTC)
+Last modified: 2026-10-05 09:09:07 (UTC)
 
 > **NOTE:**
 >
@@ -73,6 +73,8 @@ They can serve two roles. As adjectives, they modify a noun: “**this** result�
 
 When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is.
 
+A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final *this* or *that* always leaves its referent unnamed. End the sentence with the noun instead.
+
 > **NOTE:**
 >
 > **Example 4 (Naming the referent)**  
@@ -80,7 +82,39 @@ When a demonstrative stands alone as a pronoun, the reader has to search backwar
 > > ❌ The model overfit the training data. **This** poses a problem for deployment.
 > >
 > > ✅ The model overfit the training data. **This overfitting** poses a problem for deployment.
+> >
+> > ❌ The first model’s estimates were biased upward. The second model avoids **this**.
+> >
+> > ✅ The first model’s estimates were biased upward. The second model avoids **this bias**.
 >
-> Adding the noun “overfitting” states exactly what “this” refers to, instead of leaving the reader to infer it.
+> Adding the nouns “overfitting” and “bias” states exactly what each “this” refers to, instead of leaving the reader to infer it. The second pair ends its sentence with the demonstrative, so the fix has to add the noun after it, at the very end.
+
+## 3 Quantifiers used as pronouns
+
+Words that say how many, or how much, of something cause the same problem as demonstratives when they stand alone in place of a noun. Grammars call these words *quantifiers*, and call a quantifier that stands alone an *indefinite pronoun*. The common ones are:
+
+- *both*
+- *all* (and counted forms such as *all three*)
+- *each*
+- *any*
+- *some*
+- *most*
+- *many*
+- *few*
+- *none*
+
+*Every* belongs to the same family, but it cannot stand alone (“every” needs a noun, as in “every model”), so it never causes this problem.
+
+You do not need a complete list of quantifiers to apply the advice. Whenever a quantifier stands where a noun should be, the reader has to search backward to find out what it quantifies. Follow the quantifier with the noun: “**both models**”, “**all three estimators**”, “**each interval**”. An “of” phrase that names the noun works too: “**none of the intervals**”.
+
+> **NOTE:**
+>
+> **Example 5 (Naming what a quantifier refers to)**  
+>
+> > ❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both** return the same fit.
+> >
+> > ✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both models** return the same fit.
+>
+> In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.
 
 Back to top

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-02 17:16:43 (UTC)
+Last modified: 2026-10-05 09:09:07 (UTC)
 
 > **NOTE:**
 >
@@ -40,7 +40,7 @@ Table 2: Vague or metaphorical phrases and more precise alternatives
 
 The precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.
 
-Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim.
+Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples.
 
 ## 2 Say which thing
 
