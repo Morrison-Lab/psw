@@ -291,7 +291,7 @@ Link these things whenever they appear:
 - a term to the place where it is defined,
   in the same document or another one;
 - a result to the theorem, equation or section that establishes it;
-- a cited source to its DOI or official URL;
+- a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document,
   instead of repeating its content.
