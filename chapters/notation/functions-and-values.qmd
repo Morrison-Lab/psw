@@ -1,0 +1,49 @@
+A function and its value at a point are different objects.
+In $\mu_i = \mu(x_i)$,
+$\mu$ is a function,
+and $\mu(x_i)$ is a number:
+the value of $\mu$ at $x_i$.
+Written with its placeholder argument,
+$\mu(x)$ already denotes a value,
+so "the value of $\mu(x)$ at $x_i$" reads as a value of a value.
+Either drop the placeholder and write "the value of $\mu$ at $x_i$",
+or keep the placeholder and name the substitution:
+"$\mu(x)$ evaluated at $x_i$".
+
+::: {#exm-function-evaluated-at}
+
+## Saying where a function is evaluated
+
+> ❌ Each outcome is centered on the value of a mean function $\mu(x)$
+> at its own covariate values.
+>
+> ✅ Each outcome is centered on a mean function $\mu(x)$
+> evaluated at that outcome's covariate values.
+
+> ❌ the value of the density $f(x)$ at 0
+>
+> ✅ the value of $f$ at 0, or $f(0)$
+
+> ❌ the likelihood $L(\theta)$ at $\hat{\theta}$
+>
+> ✅ $L(\theta)$ evaluated at $\hat{\theta}$, or $L(\hat{\theta})$
+
+In each ❌ version,
+"the value of" or "at" sits next to a placeholder argument,
+so the reader has to decide whether $\mu(x)$, $f(x)$ or $L(\theta)$
+means the function or one of its values.
+The first ❌ version also has an ambiguous "its":
+the nearest candidate is the mean function, not the outcome.
+
+:::
+
+Use the notation to match:
+
+- Write $\mu$, or "the mean function", for the function itself.
+- Write $\mu(x)$ with a placeholder argument
+  where you introduce or define the function,
+  to show what its argument is,
+  as in "a mean function $\mu(x)$"
+  or $\mu(x) := \beta_0 + \beta_x x$,
+  and say "evaluated at" when you substitute a point into it.
+- Write $\mu(x_i)$, or "the value of $\mu$ at $x_i$", for a value.
