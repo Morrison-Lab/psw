@@ -310,7 +310,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 19:03:56 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 19:13:31 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -318,8 +318,20 @@
 <div id="def-term" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 1 (Term)</strong></span> A <em>term</em> is a word or phrase with a specific, technical meaning within a particular field or context.</p>
 </div>
+<div id="exm-term" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (“Significant” used as a term)</strong></span> In “the difference was statistically significant at the 5% level”, “significant” is a term (<a href="#/def-term" class="quarto-xref">Definition&nbsp;1</a>): it means that a hypothesis test rejected its null hypothesis at that level.</p>
+</div>
+<div id="exm-not-term" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (“Significant” used as an ordinary word)</strong></span> In “staffing is a significant problem for the clinic”, “significant” is not a term (<a href="#/def-term" class="quarto-xref">Definition&nbsp;1</a>). It carries its everyday meaning, “large” or “important”, and no hypothesis test is involved.</p>
+</div>
 <div id="def-population" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 2 (Population)</strong></span> In statistics, a <em>population</em> is the complete set of all items or individuals of interest.</p>
+</div>
+<div id="exm-population" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (A population of patients)</strong></span> For a study of blood-sugar control, the population (<a href="#/def-population" class="quarto-xref">Definition&nbsp;2</a>) might be all adults in California with type 2 diabetes in 2024.</p>
+</div>
+<div id="exm-not-population" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (A sample is not the population)</strong></span> The 500 patients who enrolled in that study are not the population (<a href="#/def-population" class="quarto-xref">Definition&nbsp;2</a>). They are a sample drawn from the population, and the study’s estimates describe the population only as far as the sample represents it.</p>
 </div>
 <div id="rem-population" class="proof remark">
 <p><span class="proof-title"><em>Remark 1</em> (Population is not only geographic). </span>In everyday use, “population” usually means the people living in a place. The statistical sense in <a href="#/def-population" class="quarto-xref">Definition&nbsp;2</a> is broader: a population can be all the patients with a condition, all the batches a factory produces, or any other set of items of interest.</p>
@@ -343,7 +355,7 @@
 <li><p><strong>Define in the most general form the document needs:</strong> State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.</p></li>
 <li><p><strong>Follow the definition with examples, from general to specific:</strong> Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see <a href="#/order-general-definition-then-examples">Order: general definition, then examples</a>).</p></li>
 <li><p><strong>Define terms at first use:</strong> Place the definition immediately before or after the term’s first appearance.</p></li>
-<li><p><strong>Provide examples:</strong> Every definition should include at least one concrete example that illustrates how the term is used.</p></li>
+<li><p><strong>Provide examples and counterexamples:</strong> Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.</p></li>
 <li><p><strong>Give each term its own definition block:</strong> In a Quarto document, put every definition in its own <code>#def-</code> div (see <a href="#/using-theorem-environments-in-quarto">Using theorem environments in Quarto</a>), one term per div, with commentary after the div rather than inside it, in a remark block (<code>#rem-</code>) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in <a href="#/using-theorem-environments-in-quarto">Using theorem environments in Quarto</a>, such as <code>#def-</code>, <code>#exm-</code>, <code>#exr-</code>, <code>#sol-</code> or <code>#rem-</code>) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.</p></li>
 <li><p><strong>Name the synonyms:</strong> When a field uses several words for one concept, such as <em>learning</em>, <em>training</em> and <em>fitting</em> a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see <a href="../chapters/word-choice.html#minimize-unnecessary-jargon">Minimize unnecessary jargon</a>).</p></li>
 </ul>
@@ -359,13 +371,19 @@
 <p><span class="math display">\[\Pr(\theta \in [L, U]) = 1 - \alpha.\]</span></p>
 </div>
 <div id="exm-confidence-interval" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1 (A confidence interval for mean height)</strong></span> If we calculate a 95% confidence interval (<a href="#/def-confidence-interval" class="quarto-xref">Definition&nbsp;3</a>) for mean height as [165 cm, 175 cm], we are 95% confident that the true population mean height falls within this range.</p>
+<p><span class="theorem-title"><strong>Example 5 (A confidence interval for mean height)</strong></span> If we calculate a 95% confidence interval (<a href="#/def-confidence-interval" class="quarto-xref">Definition&nbsp;3</a>) for mean height as [165 cm, 175 cm], we are 95% confident that the true population mean height falls within this range.</p>
+</div>
+<div id="exm-not-confidence-interval" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (A range that is not a confidence interval for the mean)</strong></span> The interval from the 2.5th to the 97.5th percentile of the observed heights, [150 cm, 190 cm], is not a 95% confidence interval (<a href="#/def-confidence-interval" class="quarto-xref">Definition&nbsp;3</a>) for mean height. The percentile interval describes where individual heights fall, not where the population mean is likely to be, and it does not shrink as the sample grows.</p>
 </div>
 <div id="def-active-voice" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 4 (Active voice)</strong></span> <em>Active voice</em> is a sentence structure where the subject performs the action expressed by the verb.</p>
 </div>
 <div id="exm-active-voice" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (Active and passive voice)</strong></span> “The researcher conducted the experiment” is in active voice (<a href="#/def-active-voice" class="quarto-xref">Definition&nbsp;4</a>), while “The experiment was conducted by the researcher” is in passive voice.</p>
+<p><span class="theorem-title"><strong>Example 7 (A sentence in active voice)</strong></span> “The researcher conducted the experiment” is in active voice (<a href="#/def-active-voice" class="quarto-xref">Definition&nbsp;4</a>): the subject, “the researcher”, performs the action, “conducted”.</p>
+</div>
+<div id="exm-passive-voice" class="theorem example">
+<p><span class="theorem-title"><strong>Example 8 (A sentence that is not in active voice)</strong></span> “The experiment was conducted by the researcher” is not in active voice (<a href="#/def-active-voice" class="quarto-xref">Definition&nbsp;4</a>). Its subject, “the experiment”, receives the action instead of performing it, so the sentence is in passive voice.</p>
 </div>
 </section>
 <section id="order-general-definition-then-examples" class="slide level2" data-number="3">
@@ -379,12 +397,15 @@
 <p><span class="math display">\[\text{RSS} = \sum_{i=1}^n r_i^2.\]</span></p>
 </div>
 <div id="exm-rss-line" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the fitted value of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a function of the two coefficients: <span class="math inline">\(\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 9 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the fitted value of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a function of the two coefficients: <span class="math inline">\(\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2\)</span>.</p>
 </div>
 <div id="exm-rss-three-points" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Residual sum of squares of a line through three points)</strong></span> For the points <span class="math inline">\((0, 1)\)</span>, <span class="math inline">\((1, 2)\)</span>, <span class="math inline">\((2, 2)\)</span> and the line with <span class="math inline">\(\beta_0 = 1\)</span> and <span class="math inline">\(\beta_x = 0.5\)</span> (<a href="#/exm-rss-line" class="quarto-xref">Example&nbsp;3</a>), the residuals are <span class="math inline">\(0\)</span>, <span class="math inline">\(0.5\)</span> and <span class="math inline">\(0\)</span>, so <span class="math inline">\(\text{RSS}(1, 0.5) = 0.25\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 10 (Residual sum of squares of a line through three points)</strong></span> For the points <span class="math inline">\((0, 1)\)</span>, <span class="math inline">\((1, 2)\)</span>, <span class="math inline">\((2, 2)\)</span> and the line with <span class="math inline">\(\beta_0 = 1\)</span> and <span class="math inline">\(\beta_x = 0.5\)</span> (<a href="#/exm-rss-line" class="quarto-xref">Example&nbsp;9</a>), the residuals are <span class="math inline">\(0\)</span>, <span class="math inline">\(0.5\)</span> and <span class="math inline">\(0\)</span>, so <span class="math inline">\(\text{RSS}(1, 0.5) = 0.25\)</span>.</p>
 </div>
-<p>The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it comes last.</p>
+<div id="exm-not-rss" class="theorem example">
+<p><span class="theorem-title"><strong>Example 11 (A sum of squares that is not a residual sum of squares)</strong></span> For the same three points, the sum of squared deviations of <span class="math inline">\(y_i\)</span> from their mean, <span class="math inline">\(5/3\)</span>, is <span class="math inline">\(2/3\)</span>. That quantity is the total sum of squares, not the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) of the line in <a href="#/exm-rss-three-points" class="quarto-xref">Example&nbsp;10</a>, because it measures spread around the mean rather than around the line’s fitted values.</p>
+</div>
+<p>The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.</p>
 </section>
 <section id="why-examples-matter" class="slide level2" data-number="4">
 <h2><span class="header-section-number">4</span> Why examples matter</h2>
@@ -397,6 +418,7 @@
 <li><p><strong>Verification:</strong> Readers can work through examples themselves to verify they understand the definition or theorem.</p></li>
 <li><p><strong>Application:</strong> Examples show how to apply definitions and theorems to solve real problems.</p></li>
 <li><p><strong>Memory:</strong> Concrete examples are easier to remember than abstract definitions alone.</p></li>
+<li><p><strong>Boundaries:</strong> Counterexamples show where a definition stops applying, which is where readers most often misapply it.</p></li>
 </ul>
 </section>
 <section id="common-pitfalls-to-avoid" class="slide level2" data-number="5">
@@ -455,13 +477,13 @@
 <p><span class="math display">\[a^2 + b^2 = c^2.\]</span></p>
 </div>
 <div id="exm-pythagoras" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5: <span class="math inline">\(3^2 + 4^2 = 9 + 16 = 25 = 5^2\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 12 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5: <span class="math inline">\(3^2 + 4^2 = 9 + 16 = 25 = 5^2\)</span>.</p>
 </div>
 <div id="def-postulate" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 6 (Postulate (axiom))</strong></span> A <em>postulate</em> (or axiom) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
 </div>
 <div id="exm-parallel-postulate" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
+<p><span class="theorem-title"><strong>Example 13 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
 <p>If we have line <span class="math inline">\(L\)</span> and point <span class="math inline">\(P\)</span> not on <span class="math inline">\(L\)</span>, only one line through <span class="math inline">\(P\)</span> will never intersect <span class="math inline">\(L\)</span>.</p>
 </div>
 </section>
@@ -511,7 +533,7 @@
 <p><span class="proof-title"><em>Proof</em>. </span><a href="#/exr-sum-deviations" class="quarto-xref">Exercise&nbsp;1</a> derives this result.</p>
 </div>
 <div id="exm-derivation-direction" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 14 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -545,7 +567,7 @@ Y_i
 <p>The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from <span class="math inline">\(\mu_i + \varepsilon_i\)</span>, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it gives a line to each step that a single “cancel” justification would hide (see <a href="../chapters/notation.html#one-operation-per-step">One operation per step</a>).</p>
 </div>
 <div id="exm-one-result-per-theorem" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 15 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Theorem.</strong> Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: <span class="math display">\[Y_i = \mu_i + \varepsilon_i,
 \qquad
