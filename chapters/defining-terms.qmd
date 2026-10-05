@@ -60,10 +60,14 @@ Follow these principles when introducing new terms:
   A definition block holds the defining statement and nothing else:
   no examples, special cases, motivation or caveats.
 
-- **State technical definitions in both prose and math:**
-  Give a quantitative term a one-sentence prose definition
-  and the formula it stands for, in the same definition block;
-  together the sentence and the formula are the defining statement.
+- **State technical definitions and results in both prose and a display equation:**
+  Give a quantitative term, or a theorem or corollary,
+  a one-sentence prose statement
+  and the formula it stands for as a display equation,
+  in the same definition or theorem block;
+  together the sentence and the formula are the statement.
+  A formula left inline in the sentence is easy to miss
+  and hard for later derivations to point to.
   The prose tells the reader what the quantity means;
   the formula makes it exact and lets later derivations cite it.
   For example, define the ordinary least squares estimate
@@ -71,12 +75,17 @@ Follow these principles when introducing new terms:
   as "the value of $\vec{\theta}$ that minimizes
   the [residual sum of squares](#def-rss)"
   *and* as
-  $\hat{\vec{\theta}} := \arg\min_{\vec{\theta}} \text{RSS}(\vec{\theta})$,
+
+  $$\hat{\vec{\theta}} := \arg\min_{\vec{\theta}} \text{RSS}(\vec{\theta}),$$
+
   not with only one of the two.
   Build the formula from terms already defined,
   rather than expanding them again:
   once the residual and total sums of squares are defined,
-  write $R^2 := 1 - \text{RSS} / \text{TSS}$,
+  write
+
+  $$R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},$$
+
   not the two sums that RSS and TSS stand for.
 
 - **Define a statistical model by its distribution, and derive its other forms:**
@@ -156,9 +165,13 @@ Here are examples of well-defined terms:
 
 ## Confidence interval
 
-A *confidence interval* is a range of values,
-derived from sample statistics,
-that is likely to contain the true population parameter.
+A *confidence interval* with confidence level $1 - \alpha$
+for a parameter $\theta$
+is an interval $[L, U]$ computed from a sample
+that contains $\theta$ with probability $1 - \alpha$
+over repeated samples:
+
+$$\Pr(\theta \in [L, U]) = 1 - \alpha.$$
 
 :::
 
@@ -205,7 +218,8 @@ would give these blocks, in this order:
 
 The *residual sum of squares* of a model fitted to data
 is the sum of its squared residuals:
-$\text{RSS} = \sum_{i=1}^n r_i^2$.
+
+$$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 
 :::
 
