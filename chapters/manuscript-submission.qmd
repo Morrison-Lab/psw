@@ -157,13 +157,6 @@ Give enough detail that another analyst could reproduce the analysis:
 - Report the numbers and save interpretation for the Discussion.
 - Give the key estimates in the text and point to the table for the rest.
   Do not restate every cell.
-- Compute every number in the text from the analysis.
-  In a Quarto or R Markdown manuscript,
-  write each estimate, count or *p*-value as an inline code expression,
-  such as `` `r n_participants` ``,
-  not as a number typed into the prose.
-  A typed number goes stale when the data or the analysis changes,
-  and nothing warns you that it no longer matches the tables.
 - Cite every table and figure in the text,
   in numerical order, at its first relevant mention.
 
@@ -347,8 +340,11 @@ Check the EQUATOR page for the current version before citing one.
   estimated with the Callaway and Sant'Anna
   difference-in-differences estimator".
 - Make the numbers in the abstract, text, tables, and figures agree.
-  Generate them from code, such as inline R in Quarto,
-  rather than retyping them.
+  Generate every number that comes from the analysis
+  with code, such as an inline R expression in Quarto,
+  rather than typing it into the prose.
+  A typed number goes stale when the data or the analysis changes,
+  and nothing warns you that it no longer matches the tables.
 
 ## Supplement
 
