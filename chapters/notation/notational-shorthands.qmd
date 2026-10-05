@@ -21,7 +21,7 @@ Give the limits of every sum, product, and integral,
 and state the set that any other index runs over.
 Board work during a lecture is often less complete,
 but it should still aim for the full form.
-The [notation page of the *Mathematics for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands)
+The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands)
 catalogues common shorthands and their full forms.
 
 ::: {#exm-notational-shorthand}
