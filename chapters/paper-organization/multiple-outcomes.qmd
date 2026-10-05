@@ -69,5 +69,5 @@ to understand the complete story for any single outcome.
 #### Exception: Shared descriptive statistics
 
 If your descriptive statistics apply to all outcomes
-(e.g., baseline characteristics in a clinical trial),
+(for example, baseline characteristics in a clinical trial),
 present them once at the beginning before discussing individual outcomes.
