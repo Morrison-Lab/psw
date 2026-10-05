@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:07:53 (UTC)
+Last modified: 2026-10-05 09:15:04 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -28,7 +28,15 @@ Follow these principles when introducing new terms:
 
 - **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
 
-- **State technical definitions in both prose and math:** Give a quantitative term a one-sentence prose definition and the formula it stands for, in the same definition block; together the sentence and the formula are the defining statement. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta})\\, not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write \\R^2 := 1 - \text{RSS} / \text{TSS}\\, not the two sums that RSS and TSS stand for.
+- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
+
+  \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta}),\\
+
+  not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write
+
+  \\R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},\\
+
+  not the two sums that RSS and TSS stand for.
 
 - **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
 
@@ -50,7 +58,9 @@ Here are examples of well-defined terms:
 
 > **NOTE:**
 >
-> **Definition 3 (Confidence interval)** A *confidence interval* is a range of values, derived from sample statistics, that is likely to contain the true population parameter.
+> **Definition 3 (Confidence interval)** A *confidence interval* with confidence level \\1 - \alpha\\ for a parameter \\\theta\\ is an interval \\\[L, U\]\\ computed from a sample that contains \\\theta\\ with probability \\1 - \alpha\\ over repeated samples:
+>
+> \\\Pr(\theta \in \[L, U\]) = 1 - \alpha.\\
 
 > **NOTE:**
 >
@@ -70,7 +80,9 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Definition 5 (Residual sum of squares)** The *residual sum of squares* of a model fitted to data is the sum of its squared residuals: \\\text{RSS} = \sum\_{i=1}^n r_i^2\\.
+> **Definition 5 (Residual sum of squares)** The *residual sum of squares* of a model fitted to data is the sum of its squared residuals:
+>
+> \\\text{RSS} = \sum\_{i=1}^n r_i^2.\\
 
 > **NOTE:**
 >
@@ -144,7 +156,8 @@ See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/au
 
 In a right triangle,
 the square of the hypotenuse equals the sum of squares of the other two sides:
-$a^2 + b^2 = c^2$.
+
+$$a^2 + b^2 = c^2.$$
 
 :::
 ```
@@ -155,7 +168,9 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Theorem 1 (Pythagorean theorem)** In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: \\a^2 + b^2 = c^2\\.
+> **Theorem 1 (Pythagorean theorem)** In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides:
+>
+> \\a^2 + b^2 = c^2.\\
 
 > **NOTE:**
 >
@@ -170,5 +185,65 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 > **Example 6 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
 >
 > If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
+
+## 7 Presenting a derivation: exercise, solution, theorem, proof
+
+In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader meets the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
+
+Follow these principles:
+
+- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.
+- **The solution follows its exercise.** Put each solution directly after its exercise, and give it an id named after the exercise (`#exr-foo` and `#sol-foo`), so a reader who wants to check one step can find its working.
+- **The theorem states the result; the proof cites the exercises.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the exercises it rests on, not a second copy of their working.
+- **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
+- **One operation per line.** Inside each solution, write every displayed line with a single operation and its justification (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
+- **One result per theorem.** Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the exercise it rests on.
+- **Start from the side that simplifies.** When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Another route is to solve a definition for the term you want: add \\\mu_i\\ to both sides of \\\varepsilon_i = Y_i - \mu_i\\, then simplify the right-hand side to \\Y_i\\, one operation per line. Adding a term to both sides of an equation is an ordinary step, not the pattern to avoid.
+
+> **NOTE:**
+>
+> **Definition 7 (Sample mean)** The *sample mean* of numbers \\x_1, \ldots, x_n\\ is their average:
+>
+> \\\bar{x} := \frac{1}{n} \sum\_{i=1}^n x_i.\\
+
+> **NOTE:**
+>
+> **Exercise 1 (Deviations from the mean)** Show that \\\sum\_{i=1}^n (x_i - \bar{x}) = 0\\, where \\\bar{x}\\ is the sample mean ([Definition 7](#def-sample-mean)).
+
+> **NOTE:**
+>
+> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(split the sum)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
+
+> **NOTE:**
+>
+> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 7](#def-sample-mean)) sum to zero:
+>
+> \\\sum\_{i=1}^n (x_i - \bar{x}) = 0.\\
+
+> **NOTE:**
+>
+> *Proof*. [Exercise 1](#exr-sum-deviations) derives this result.
+
+> **NOTE:**
+>
+> **Example 7 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+>
+> > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
+> >
+> > ✅ \\ \begin{aligned} \mu_i + \varepsilon_i &= \mu_i + (Y_i - \mu_i) && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + Y_i - \mu_i && \text{(remove the parentheses)}\\ &= Y_i + \mu_i - \mu_i && \text{(reorder the terms)}\\ &= Y_i + (\mu_i - \mu_i) && \text{(group the last two terms)}\\ &= Y_i + 0 && \text{(} a - a = 0\text{)}\\ &= Y_i && \text{(} a + 0 = a\text{)} \end{aligned} \\
+>
+> The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from \\\mu_i + \varepsilon_i\\, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it gives a line to each step that a single “cancel” justification would hide (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
+
+> **NOTE:**
+>
+> **Example 8 (Splitting a theorem that states two results)**  
+>
+> > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
+> >
+> > ✅ **Theorem 1.** Each outcome is its mean plus its deviation: \\Y_i = \mu_i + \varepsilon_i.\\
+> >
+> > **Theorem 2.** Given the covariates, each deviation is Gaussian with mean 0: \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
+>
+> The first result is algebra from the definition of \\\varepsilon_i\\; the second needs the model’s distribution. In separate blocks, each gets the proof it needs, and a later step that uses only the first can cite only the first.
 
 Back to top
