@@ -101,6 +101,13 @@ state the claim.
 explains why idioms exclude some readers,
 and gives more examples.
 
+Words such as "obviously", "clearly" and "trivially"
+can assert that a claim needs no support
+instead of supplying any.
+[Do not substitute flippancy for support](citations-evidence.qmd#do-not-substitute-flippancy-for-support)
+says when those words are a problem
+and what to write instead.
+
 ## Follow an abstract statement with an example
 
 An abstract or general statement is fine,
