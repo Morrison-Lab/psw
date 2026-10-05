@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 06:19:37 (UTC)
+Last modified: 2026-10-05 06:28:37 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -28,7 +28,15 @@ Follow these principles when introducing new terms:
 
 - **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
 
-- **State technical definitions in both prose and math:** Give a quantitative term a one-sentence prose definition and the formula it stands for, in the same definition block; together the sentence and the formula are the defining statement. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta})\\, not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write \\R^2 := 1 - \text{RSS} / \text{TSS}\\, not the two sums that RSS and TSS stand for.
+- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
+
+  \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta}),\\
+
+  not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write
+
+  \\R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},\\
+
+  not the two sums that RSS and TSS stand for.
 
 - **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
 
@@ -50,7 +58,9 @@ Here are examples of well-defined terms:
 
 > **NOTE:**
 >
-> **Definition 3 (Confidence interval)** A *confidence interval* is a range of values, derived from sample statistics, that is likely to contain the true population parameter.
+> **Definition 3 (Confidence interval)** A *confidence interval* with confidence level \\1 - \alpha\\ for a parameter \\\theta\\ is an interval \\\[L, U\]\\ computed from a sample that contains \\\theta\\ with probability \\1 - \alpha\\ over repeated samples:
+>
+> \\\Pr(\theta \in \[L, U\]) = 1 - \alpha.\\
 
 > **NOTE:**
 >
@@ -70,7 +80,9 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Definition 5 (Residual sum of squares)** The *residual sum of squares* of a model fitted to data is the sum of its squared residuals: \\\text{RSS} = \sum\_{i=1}^n r_i^2\\.
+> **Definition 5 (Residual sum of squares)** The *residual sum of squares* of a model fitted to data is the sum of its squared residuals:
+>
+> \\\text{RSS} = \sum\_{i=1}^n r_i^2.\\
 
 > **NOTE:**
 >
@@ -144,7 +156,8 @@ See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/au
 
 In a right triangle,
 the square of the hypotenuse equals the sum of squares of the other two sides:
-$a^2 + b^2 = c^2$.
+
+$$a^2 + b^2 = c^2.$$
 
 :::
 ```
@@ -155,7 +168,9 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Theorem 1 (Pythagorean theorem)** In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: \\a^2 + b^2 = c^2\\.
+> **Theorem 1 (Pythagorean theorem)** In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides:
+>
+> \\a^2 + b^2 = c^2.\\
 
 > **NOTE:**
 >
