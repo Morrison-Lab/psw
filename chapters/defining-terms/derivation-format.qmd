@@ -44,6 +44,8 @@ Follow these principles:
   Simplifying an expression needs only definitions and algebra,
   while adding and subtracting a term asks the reader
   to accept a step whose purpose shows only later.
+  Solving a definition for one of its terms
+  is another route that avoids the extra term.
 
 ::: {#def-sample-mean}
 
@@ -124,15 +126,25 @@ and a derivation needs $Y_i = \mu_i + \varepsilon_i$.
 > \mu_i + \varepsilon_i
 > &= \mu_i + (Y_i - \mu_i)
 > && \text{(definition of } \varepsilon_i\text{)}\\
+> &= \mu_i + Y_i - \mu_i
+> && \text{(remove the parentheses)}\\
+> &= Y_i + \mu_i - \mu_i
+> && \text{(reorder the terms)}\\
+> &= Y_i + (\mu_i - \mu_i)
+> && \text{(group the last two terms)}\\
+> &= Y_i + 0
+> && \text{(} a - a = 0\text{)}\\
 > &= Y_i
-> && \text{(cancel } \mu_i\text{)}
+> && \text{(} a + 0 = a\text{)}
 > \end{aligned}
 > $$
 
 The ❌ version's first line adds a term the reader has no reason to expect.
 The ✅ version starts from $\mu_i + \varepsilon_i$,
 which a definition expands,
-and every line after that only simplifies.
+and every line after that rewrites or simplifies what is already there.
+The ✅ version is longer
+because it writes out each step that "cancel" would hide.
 
 :::
 
