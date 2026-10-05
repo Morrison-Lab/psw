@@ -23,3 +23,7 @@ that consistently make scientific writing easier to read.
 ## Demonstrative pronouns
 
 {{< include grammar/demonstrative-pronouns.qmd >}}
+
+## Quantity words used as pronouns
+
+{{< include grammar/quantifier-pronouns.qmd >}}

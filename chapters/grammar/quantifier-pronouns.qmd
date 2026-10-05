@@ -1,0 +1,35 @@
+Quantity words cause the same problem as demonstratives
+when they stand alone in place of a noun.
+The common ones are:
+
+- *both*
+- *all* (and counted forms such as *all three*)
+- *each*
+- *any*
+- *some*
+- *most*
+- *many*
+- *few*
+- *none*
+
+Grammars call these words *indefinite pronouns* when they stand alone
+and *quantifiers* or *determiners* when they modify a noun.
+The test does not need a complete list of them, though.
+Whenever a word that says *how many* stands where a noun should be,
+the reader has to search backward to find out how many of *what*.
+Follow the word with the noun it counts:
+"**both models**", "**all three estimators**", "**none of the intervals**".
+
+::: {#exm-quantifier-pronoun}
+
+## Naming what a quantity word counts
+
+> ❌ We fit a linear model and a spline model. **Both** return the same fit.
+>
+> ✅ We fit a linear model and a spline model. **Both models** return the same fit.
+
+Adding "models" tells the reader
+that "both" counts the two fitted models,
+rather than, say, two datasets mentioned earlier.
+
+:::
