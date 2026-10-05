@@ -80,6 +80,43 @@ so the reader can absorb each idea before moving on.
 
 :::
 
+## Do not rule out readings no reader would make
+
+A definition says what a term means.
+It does not need to list the things the term does not mean,
+unless a reader is likely to confuse the two.
+A disclaimer against a reading nobody would make
+costs the reader a sentence
+and can plant the confusion it was meant to prevent.
+
+::: {#exm-gratuitous-disclaimer}
+
+## Dropping a needless disclaimer
+
+> ❌ In this manuscript, TTE means target trial emulation.
+> It does not mean effect of treatment on the treated.
+>
+> ✅ In this manuscript, TTE means target trial emulation.
+
+In causal inference,
+the average effect of treatment on the treated is usually abbreviated ATT,
+so a reader is unlikely to read "TTE" that way.
+The second sentence introduces a meaning
+that the reader would not otherwise have considered.
+
+:::
+
+Keep a disclaimer when the confusion is real.
+For example, if "CI" could mean confidence interval or cumulative incidence
+in the same paper,
+say which one you mean each time.
+
+The same test applies to explanations:
+explain what your intended readers do not already know,
+and leave out what they do.
+A methods section for statisticians does not need to define a p-value;
+a report for clinicians might.
+
 ## Avoid double negatives
 
 A double negative states a claim by denying its opposite,
