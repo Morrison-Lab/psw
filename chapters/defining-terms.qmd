@@ -104,6 +104,25 @@ Follow these principles when introducing new terms:
   that has not been defined yet,
   and hides that the model is a statement about the outcome's distribution.
 
+- **Define a probability distribution by its pdf or pmf:**
+  Define a named distribution directly,
+  by its probability density function (pdf) or probability mass function (pmf)
+  and its support.
+  State any relationship to other distributions as a theorem
+  proved from those definitions.
+  For example, define the chi-square distribution with $k$ degrees of freedom
+  by its pdf
+
+  $$f(x) := \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2}\,\Gamma(k/2)}, \quad x \in (0, \infty),$$
+
+  and state as a theorem that
+  the sum of the squares of $k$ independent standard normal random variables
+  has this distribution.
+  Defining the chi-square distribution as that sum
+  turns a result into a definition,
+  and leaves the reader without the density
+  that later calculations need.
+
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
   the rest of the document relies on,
