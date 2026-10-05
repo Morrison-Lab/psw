@@ -57,6 +57,8 @@ website:
             href: chapters/grammar.qmd
           - text: "Conciseness"
             href: chapters/conciseness.qmd
+          - text: "Writing for teaching"
+            href: chapters/teaching.qmd
           - text: "Summary"
             href: chapters/summary.qmd
       - text: "References"
