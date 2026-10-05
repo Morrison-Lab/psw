@@ -1,6 +1,6 @@
 Some nouns name a relation,
 so they are incomplete without the thing they relate to.
-Examples include:
+Relational nouns include:
 
 - *cause* (of what?)
 - *effect* (of what, on what?)
@@ -30,8 +30,8 @@ Each version tries to say what usually causes garden-path sentences.
 >    but has lost its opening *that* or *that were*.
 
 Versions 1 and 2 never say what the clause causes,
-so the reader has to look back for it.
-Version 3 names it,
+so the reader has to look back to find what "cause" refers to.
+Version 3 names the effect, "garden-path parsing",
 but its fronted phrase delays the subject
 (see [Lead with the subject](conciseness.qmd#lead-with-the-subject)),
 and "garden-path parsing" introduces a second term

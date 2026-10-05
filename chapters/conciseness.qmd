@@ -43,7 +43,7 @@ but about removing words that do not contribute to meaning or clarity.
 
 ## Lead with the subject
 
-Start a sentence with its subject, not a dependent clause.
+Start a sentence with its subject, not a dependent clause or a fronted phrase.
 A leading clause makes the reader hold a condition
 before knowing what it conditions.
 
