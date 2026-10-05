@@ -917,18 +917,25 @@
     "text": "3 Limit complex sentence structures"
   },
   {
+    "objectID": "chapters/conciseness-slides.html#avoid-double-negatives",
+    "href": "chapters/conciseness-slides.html#avoid-double-negatives",
+    "title": "Conciseness",
+    "section": "4 Avoid double negatives",
+    "text": "4 Avoid double negatives"
+  },
+  {
     "objectID": "chapters/conciseness-slides.html#put-lists-in-bullet-points",
     "href": "chapters/conciseness-slides.html#put-lists-in-bullet-points",
     "title": "Conciseness",
-    "section": "4 Put lists in bullet points",
-    "text": "4 Put lists in bullet points"
+    "section": "5 Put lists in bullet points",
+    "text": "5 Put lists in bullet points"
   },
   {
     "objectID": "chapters/conciseness-slides.html#examples-of-concise-writing",
     "href": "chapters/conciseness-slides.html#examples-of-concise-writing",
     "title": "Conciseness",
-    "section": "5 Examples of concise writing",
-    "text": "5 Examples of concise writing"
+    "section": "6 Examples of concise writing",
+    "text": "6 Examples of concise writing"
   },
   {
     "objectID": "chapters/conciseness-slides.html#references",
@@ -966,18 +973,25 @@
     "text": "3 Limit complex sentence structures\nA sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (and, but, or) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.\nWhen a sentence becomes hard to follow, split it into shorter sentences, each carrying one main idea.\n\n\n\n\n\n\n\nExample 1 (Splitting an over-nested sentence)  \n\n❌ Because the assay, which we had validated the previous year using samples that were collected before the outbreak began, produced results that, although noisy, were consistent with prior reports, we proceeded with the analysis.\n✅ We had validated the assay the previous year, using samples collected before the outbreak began. Its results were noisy but consistent with prior reports, so we proceeded with the analysis.\n\nThe revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on."
   },
   {
+    "objectID": "chapters/conciseness.html#avoid-double-negatives",
+    "href": "chapters/conciseness.html#avoid-double-negatives",
+    "title": "Conciseness",
+    "section": "4 Avoid double negatives",
+    "text": "4 Avoid double negatives\nA double negative states a claim by denying its opposite, as in these phrases:\n\n“not uncommon”\n“not unlikely”\n“not inconsistent with”\n\nThe reader has to cancel the two negatives to recover the claim, and the result is often vaguer than the writer intended. State the claim directly. If you mean something weaker than the direct claim, say what the weaker claim is.\nA single negative is fine. “We did not reject the null hypothesis” denies one thing, and it is the standard wording for a test result.\n\n\n\n\n\n\n\nExample 2 (Stating a claim directly)  \n\n❌ The association was not inconsistent with a dose-response relationship.\n✅ The association was consistent with a dose-response relationship.\n✅ The data do not rule out a dose-response relationship, but they do not support one either.\n\nWriters usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean."
+  },
+  {
     "objectID": "chapters/conciseness.html#put-lists-in-bullet-points",
     "href": "chapters/conciseness.html#put-lists-in-bullet-points",
     "title": "Conciseness",
-    "section": "4 Put lists in bullet points",
-    "text": "4 Put lists in bullet points\nA list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.\nBullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.\nA few mechanics to keep in mind when writing one:\n\nKeep the items grammatically parallel, so each one completes the introducing sentence the same way.\nLeave a blank line before the list; without it, Markdown reads the list as part of the paragraph above.\nKeep a short series of single words inline, such as “R, Julia, or Python”.\n\n\n\n\n\n\n\n\nExample 2 (Turning an inline list into bullet points)  \n\n❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.\n✅ Machine learning combines three components:\n\ndata to learn from;\nstatistics to say what a finite sample of data supports;\noptimization to find the model that fits the data best.\n\n\nThe revised version puts each component on its own line, so the reader sees at a glance that there are three.\n\n\n\n\n\n\n\n\n\n\n\nExample 3 (Turning inline steps into a numbered list)  \n\n❌ k-means starts with \\(k\\) group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.\n✅ k-means starts with \\(k\\) group centers and repeats two steps until the assignments stop changing:\n\nassign each point to its nearest center;\nmove each center to the mean of its points.\n\n\nThe numbers show the order of the steps, and the loop condition moves into the introducing sentence."
+    "section": "5 Put lists in bullet points",
+    "text": "5 Put lists in bullet points\nA list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.\nBullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.\nA few mechanics to keep in mind when writing one:\n\nKeep the items grammatically parallel, so each one completes the introducing sentence the same way.\nLeave a blank line before the list; without it, Markdown reads the list as part of the paragraph above.\nKeep a short series of single words inline, such as “R, Julia, or Python”.\n\n\n\n\n\n\n\n\nExample 3 (Turning an inline list into bullet points)  \n\n❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.\n✅ Machine learning combines three components:\n\ndata to learn from;\nstatistics to say what a finite sample of data supports;\noptimization to find the model that fits the data best.\n\n\nThe revised version puts each component on its own line, so the reader sees at a glance that there are three.\n\n\n\n\n\n\n\n\n\n\n\nExample 4 (Turning inline steps into a numbered list)  \n\n❌ k-means starts with \\(k\\) group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.\n✅ k-means starts with \\(k\\) group centers and repeats two steps until the assignments stop changing:\n\nassign each point to its nearest center;\nmove each center to the mean of its points.\n\n\nThe numbers show the order of the steps, and the loop condition moves into the introducing sentence."
   },
   {
     "objectID": "chapters/conciseness.html#examples-of-concise-writing",
     "href": "chapters/conciseness.html#examples-of-concise-writing",
     "title": "Conciseness",
-    "section": "5 Examples of concise writing",
-    "text": "5 Examples of concise writing\nMany effective writers throughout history have exemplified the principle of conciseness.\nJulius Caesar’s Commentarii and phrases like “Veni, vidi, vici” demonstrate the power of brevity (Wikipedia contributors 2026b).\nErnest Hemingway was known for his spare, direct prose style. His short sentences and simple words conveyed complex ideas and emotions without unnecessary embellishment (Wikipedia contributors 2026a)."
+    "section": "6 Examples of concise writing",
+    "text": "6 Examples of concise writing\nMany effective writers throughout history have exemplified the principle of conciseness.\nJulius Caesar’s Commentarii and phrases like “Veni, vidi, vici” demonstrate the power of brevity (Wikipedia contributors 2026b).\nErnest Hemingway was known for his spare, direct prose style. His short sentences and simple words conveyed complex ideas and emotions without unnecessary embellishment (Wikipedia contributors 2026a)."
   },
   {
     "objectID": "chapters/grammar-slides.html#relative-pronouns",
