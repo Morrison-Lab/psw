@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 07:39:39 (UTC)
+Last modified: 2026-10-05 08:55:37 (UTC)
 
 > **NOTE:**
 >
@@ -86,7 +86,7 @@ A notational shorthand drops part of an expression that the writer expects the r
 
 The full form costs the writer a few characters and saves every reader a guess. A reader who sees \\\sum_x\\ has to work out which values of \\x\\ the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as \\\sum\_{x \in \mathbb{Z}}\\ shows the wrong set at a glance, while \\\sum_x\\ hides the same mistake.
 
-Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands) catalogues common shorthands and their full forms.
+Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands) catalogs common shorthands and their full forms.
 
 > **NOTE:**
 >
