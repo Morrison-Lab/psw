@@ -119,6 +119,13 @@
     "text": "4 Avoid garden-path sentences\nA garden-path sentence leads the reader into one reading and then forces them to go back and reread when the rest of the sentence does not fit (Wikipedia: Garden-path sentence). The sentence may be grammatical, but the reader parses it twice.\nA common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening that or that were. Without the pronoun, the reader takes the noun and the start of the clause as one phrase and has to reattach the words that follow. Do not omit relative pronouns gives the general rule.\nWhen you reread a sentence and stumble, find the point where your first reading went wrong, and rewrite the sentence so that the first reading is the right one.\n\n\n\n\n\n\n\nExample 6 (Rewriting a garden-path sentence)  \n\n❌ Report only SHAs a command you ran printed in full.\n✅ Report only SHAs that appeared in full in the output of a command that you ran.\n\nIn the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject."
   },
   {
+    "objectID": "chapters/grammar.html#name-the-object-of-a-relational-noun",
+    "href": "chapters/grammar.html#name-the-object-of-a-relational-noun",
+    "title": "Grammar",
+    "section": "5 Name the object of a relational noun",
+    "text": "5 Name the object of a relational noun\nSome nouns name a relation, so they are incomplete without the thing they relate to. Relational nouns include:\n\ncause (of what?)\neffect (of what, on what?)\nreason (for what?)\nresult (of what?)\nexample (of what?)\n\nWhen one of these nouns appears without its “of” or “for” phrase, the reader has to recover the missing object from context, just as with a pronoun that has no clear referent. Write the object next to the noun.\n\n\n\n\n\n\n\nExample 7 (Comparing four versions of one sentence) Each version tries to say what usually causes garden-path sentences.\n\n\nA common cause in technical writing is a clause that describes a noun but has lost its opening that or that were.\nIn technical writing, a common cause is a clause that describes a noun but has lost its opening that or that were.\nIn technical writing, a common cause of garden-path parsing is a clause that describes a noun but has lost its opening that or that were.\nA common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening that or that were.\n\n\nVersions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see Lead with the subject), and “garden-path parsing” introduces a second term for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject."
+  },
+  {
     "objectID": "chapters/conciseness.html",
     "href": "chapters/conciseness.html",
     "title": "Conciseness",
@@ -137,7 +144,7 @@
     "href": "chapters/conciseness.html#lead-with-the-subject",
     "title": "Conciseness",
     "section": "2 Lead with the subject",
-    "text": "2 Lead with the subject\nStart a sentence with its subject, not a dependent clause. A leading clause makes the reader hold a condition before knowing what it conditions.\n\n❌ When the sample size grows, the estimate becomes more precise.\n✅ The estimate becomes more precise as the sample size grows."
+    "text": "2 Lead with the subject\nStart a sentence with its subject, not a dependent clause or a fronted phrase. A leading clause makes the reader hold a condition before knowing what it conditions.\n\n❌ When the sample size grows, the estimate becomes more precise.\n✅ The estimate becomes more precise as the sample size grows.\n\nA fronted phrase delays the subject in the same way. Move a phrase such as “in technical writing” or “in this study” after the noun it limits, unless it sets a scope that the whole paragraph depends on.\n\n❌ In technical writing, a common cause of garden-path sentences is a missing that.\n✅ A common cause of garden-path sentences in technical writing is a missing that."
   },
   {
     "objectID": "chapters/conciseness.html#limit-complex-sentence-structures",

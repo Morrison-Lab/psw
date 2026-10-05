@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 18:36:06 (UTC)
+Last modified: 2026-10-05 18:42:14 (UTC)
 
 > **NOTE:**
 >
@@ -134,5 +134,28 @@ When you reread a sentence and stumble, find the point where your first reading 
 > > ✅ Report only SHAs that appeared in full in the output of a command that you ran.
 >
 > In the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject.
+
+## 5 Name the object of a relational noun
+
+Some nouns name a relation, so they are incomplete without the thing they relate to. Relational nouns include:
+
+- *cause* (of what?)
+- *effect* (of what, on what?)
+- *reason* (for what?)
+- *result* (of what?)
+- *example* (of what?)
+
+When one of these nouns appears without its “of” or “for” phrase, the reader has to recover the missing object from context, just as with a pronoun that has no clear referent. Write the object next to the noun.
+
+> **NOTE:**
+>
+> **Example 7 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
+>
+> > 1.  A common cause in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
+> > 2.  In technical writing, a common cause is a clause that describes a noun but has lost its opening *that* or *that were*.
+> > 3.  In technical writing, a common cause of garden-path parsing is a clause that describes a noun but has lost its opening *that* or *that were*.
+> > 4.  A common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
+>
+> Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second term for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
 
 Back to top
