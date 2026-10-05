@@ -296,13 +296,14 @@ Link these things whenever they appear:
 - a related section elsewhere in the document,
   instead of repeating its content.
 
-In Quarto, use a cross-reference such as `@def-confidence-interval`
+In [Quarto](https://quarto.org/docs/authoring/cross-references.html),
+use a cross-reference such as `@def-confidence-interval`
 for a definition or result in the same document,
 so the link updates when numbering changes
 (see [Defining terms clearly](defining-terms.qmd)).
 For a target on another page, use an ordinary link to that page's anchor.
 
-Good reasons to leave a link out include these:
+Leave a link out only for a reason such as one of the following:
 
 - the target is private, such as a repository of graded homework;
 - the same target is already linked earlier in the same paragraph;
