@@ -45,8 +45,12 @@ website:
             href: chapters/citations-evidence.qmd
           - text: "Paper organization"
             href: chapters/paper-organization.qmd
+          - text: "Preparing a manuscript for submission"
+            href: chapters/manuscript-submission.qmd
           - text: "Word choice"
             href: chapters/word-choice.qmd
+          - text: "Writing for every reader"
+            href: chapters/inclusive-writing.qmd
           - text: "Avoiding AI tells"
             href: chapters/avoid-ai-tells.qmd
           - text: "Grammar"
@@ -161,8 +165,10 @@ format:
       - sun123zxy/callouty-theorem
       - coatless-quarto/custom-callout
     theme:
-      light: cosmo
+      light: [cosmo, offwhite.scss]
       dark: darkly
+    # Replaces Quarto's two-way toggle with a Light / Off-white / Parchment / Dark dropdown.
+    include-in-header: theme-picker.html
     css: styles.css
     toc: true
     anchor-sections: true

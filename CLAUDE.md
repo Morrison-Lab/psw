@@ -22,7 +22,8 @@ output, CI workflows).
 - `_extensions/` — vendored Quarto extensions (callouty-theorem, custom-callout,
   div-anchors, equation-anchors, slidebreak)
 - `references.bib` — BibTeX bibliography
-- `styles.css`, `styles-reveal.scss`, `qwt-reveal-toggle.html` — styling
+- `offwhite.scss`, `theme-picker.html` — the website's Light / Off-white / Parchment / Dark theme dropdown (saved under `mln-theme`, shared with the slides and the other sites on this origin)
+- `styles.css`, `styles-reveal.scss`, `qwt-reveal-toggle.html` — styling, including the slides' matching dropdown
 - `.github/workflows/`, `.github/scripts/` — CI workflows and helper scripts
 - `_site/`, `_freeze/`, `.quarto/` — build artifacts (do not edit by hand)
 
@@ -74,3 +75,16 @@ callouts (config + color palette live in `_quarto-website.yml`).
 - Reformatting unrelated files.
 - Inventing URLs or citations — only use sources present in `references.bib` or
   explicitly provided.
+
+<!-- ai-config:begin (managed by Morrison-Lab/ai-config scripts/wire-repo-config.py) -->
+## Cross-project agent rules (ai-config)
+
+This repository follows the maintainer's cross-project agent rules in
+[Morrison-Lab/ai-config](https://github.com/Morrison-Lab/ai-config).
+If your harness has not already loaded them (Claude Code loads them through
+the ai-config plugin), read
+[AGENTS.md](https://github.com/Morrison-Lab/ai-config/blob/main/AGENTS.md)
+before starting work, and follow it alongside this file.
+This file's own instructions add to those rules, and win only where they are
+more specific.
+<!-- ai-config:end -->

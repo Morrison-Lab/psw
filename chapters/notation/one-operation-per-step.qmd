@@ -1,0 +1,101 @@
+Write a derivation so that each displayed line
+does exactly one thing to the line before it:
+apply one rule, substitute one result, or simplify one piece.
+Give each line its own justification.
+
+Combining steps saves the writer a line
+and costs every reader a calculation.
+A reader who cannot see how one line follows from the last
+has to redo the missing work on scratch paper,
+or take the step on trust.
+Either way, an error hidden inside a combined step
+is harder for the reader, or a reviewer, to catch.
+The advice on ["Trivial" and "trivially"](citations-evidence.qmd#trivial-and-trivially)
+says to write out a step that takes only a line;
+this section applies that advice to the layout of a displayed derivation.
+
+::: {#exm-one-operation-per-step}
+
+## Splitting a combined step
+
+Suppose a derivation has reached
+$-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
+
+> ❌
+> $$
+> \begin{aligned}
+> -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+> &= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+> \end{aligned}
+> $$
+>
+> ✅
+> $$
+> \begin{aligned}
+> -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+> &= -2 \left(\sum_{i=1}^n y_i - \sum_{i=1}^n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+> && \text{(split the sum)}\\
+> &= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+> && \text{(sum of a constant)}\\
+> &= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+> && \text{(constant factor out of the sum)}\\
+> &= -2 \left(n \bar{y} - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+> && \text{(}\sum_{i} y_i = n \bar{y}\text{)}\\
+> &= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+> && \text{(}\sum_{i} x_i = n \bar{x}\text{)}
+> \end{aligned}
+> $$
+
+The ❌ version does five operations in one line:
+it splits the sum,
+sums a constant,
+factors a constant out of a sum,
+substitutes $n \bar{y}$,
+and substitutes $n \bar{x}$.
+The ✅ version gives each of the five its own line.
+
+:::
+
+Common ways to combine steps without noticing:
+
+- applying the rule for the derivative of a sum
+  and the chain rule in the same line;
+- substituting a result and then simplifying it;
+- multiplying constants and factoring them out of a sum;
+- expanding a product and collecting like terms;
+- canceling $a$ in $a + (b - a)$
+  removes the parentheses ($a + b - a$),
+  reorders the terms ($b + a - a$),
+  groups the two that cancel ($b + (a - a)$),
+  replaces $a - a$ with $0$ ($b + 0$),
+  and drops the $+ 0$;
+- canceling $n$ in $n \cdot \frac{b}{n}$
+  rewrites the division as multiplication by a reciprocal ($n \cdot (b \cdot \frac{1}{n})$),
+  removes the parentheses ($n \cdot b \cdot \frac{1}{n}$),
+  reorders the factors ($b \cdot n \cdot \frac{1}{n}$),
+  groups the two that cancel ($b \cdot (n \cdot \frac{1}{n})$),
+  replaces $n \cdot \frac{1}{n}$ with $1$ ($b \cdot 1$),
+  and drops the $\cdot 1$;
+- writing "setting this to zero and dividing by $-2n$ gives",
+  which hides two operations in a sentence.
+
+### Using a fact the reader has not seen
+
+When a step relies on a fact the document has not yet shown,
+such as deviations from a mean summing to zero,
+prove that fact first, in its own short derivation or exercise,
+and cite that proof at the step that uses the fact.
+Don't leave the fact as an unexplained justification.
+
+### Long derivations
+
+Splitting every step makes derivations longer.
+Keep them readable by breaking them into stages:
+derive an intermediate result in its own block,
+then plug that result back into the main derivation.
+For example, when you apply the chain rule,
+derive the inner derivative in a separate block
+before you substitute it.
+Naming a part of an expression that recurs in every line,
+such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$,
+can also keep each line short.

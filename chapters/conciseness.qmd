@@ -80,6 +80,42 @@ so the reader can absorb each idea before moving on.
 
 :::
 
+## Avoid double negatives
+
+A double negative states a claim by denying its opposite,
+as in these phrases:
+
+- "not uncommon"
+- "not unlikely"
+- "not inconsistent with"
+
+The reader has to cancel the two negatives to recover the claim,
+and the result is often vaguer than the writer intended.
+State the claim directly.
+If you mean something weaker than the direct claim,
+say what the weaker claim is.
+
+A single negative is fine.
+"We did not reject the null hypothesis" denies one thing,
+and it is the standard wording for a test result.
+
+::: {#exm-double-negative}
+
+## Stating a claim directly
+
+> ❌ The association was not inconsistent with a dose-response relationship.
+>
+> ✅ The association was consistent with a dose-response relationship.
+>
+> ✅ The data do not rule out a dose-response relationship, but they do not support one either.
+
+Writers usually choose "not inconsistent with" to hedge "consistent with".
+The first rewrite drops the hedge;
+the second says what the hedge was for.
+Choose the one you mean.
+
+:::
+
 ## Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
