@@ -5,33 +5,44 @@ as in $\sum_x f(x)$.
 In permanent writing (notes, papers, and published slides),
 write the full form instead:
 $\sum_{x \in \mathcal{R}(X)} f(x)$,
-where $\mathcal{R}(X)$ is the range of $X$.
+where $\mathcal{R}(X)$ is the set of values that $X$ can take.
 
 The full form costs the writer a few characters
 and saves every reader a guess.
 A reader who sees $\sum_x$ has to work out which values of $x$ the sum runs over,
 and readers who work out different answers
 will disagree about what the expression means.
-Shorthand also hides mistakes:
-a sum over the wrong set looks the same as a sum over the right one
-when neither set is written down.
+The full form also exposes mistakes.
+If a count variable takes only non-negative values,
+a sum written as $\sum_{x \in \mathbb{Z}}$ shows the wrong set at a glance,
+while $\sum_x$ hides the same mistake.
 
 Give the limits of every sum, product, and integral,
 and state the set that any other index runs over.
-Board work during a lecture is inevitably less complete than permanent writing,
+Board work during a lecture is often less complete,
 but it should still aim for the full form.
+The [notation page in the mds course notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands)
+catalogues common shorthands and their full forms.
 
 ::: {#exm-notational-shorthand}
 
-## Writing out the limits of a sum
+## Writing out the limits of a sum and the range of an index
+
+For a discrete random variable $X$:
 
 > ❌ $\text{E}[X] = \sum_x x \Pr(X = x)$
 >
 > ✅ $\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)$
 
-The full form tells the reader
-that the sum runs over the values $X$ can take,
-rather than over some other set
-that the reader would have to guess.
+For the likelihood of $n$ independent observations $x_1, \ldots, x_n$:
+
+> ❌ $L(\theta) = \prod_i f(x_i; \theta)$
+>
+> ✅ $L(\theta) = \prod_{i = 1}^{n} f(x_i; \theta)$
+
+Each full form tells the reader
+the set the operator runs over:
+the values $X$ can take,
+and the indices of the $n$ observations.
 
 :::
