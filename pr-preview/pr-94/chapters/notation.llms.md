@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 06:28:37 (UTC)
+Last modified: 2026-10-05 06:35:35 (UTC)
 
 > **NOTE:**
 >
@@ -82,7 +82,7 @@ Splitting every step makes derivations longer. Keep them readable by breaking th
 
 ## 3 Functions and their values
 
-A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Writing the function with its placeholder argument, \\\mu(x)\\, already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
+A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Written with its placeholder argument, \\\mu(x)\\ already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
 
 > **NOTE:**
 >

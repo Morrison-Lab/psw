@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 06:28:37 (UTC)
+Last modified: 2026-10-05 06:35:35 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -185,5 +185,41 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 > **Example 6 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
 >
 > If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
+
+## 7 Presenting a derivation: exercise, solution, theorem, proof
+
+In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader meets the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
+
+Follow these principles:
+
+- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.
+- **The solution follows its exercise.** Put each solution directly after its exercise, and give it an id named after the exercise (`#exr-foo` and `#sol-foo`), so a reader who wants to check one step can find its working.
+- **The theorem states the result; the proof cites the exercises.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the exercises it rests on, not a second copy of their working.
+- **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
+- **One operation per line.** Inside each solution, write every displayed line with a single operation and its justification (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
+
+> **NOTE:**
+>
+> **Definition 7 (Sample mean)** The *sample mean* of numbers \\x_1, \ldots, x_n\\ is their average:
+>
+> \\\bar{x} := \frac{1}{n} \sum\_{i=1}^n x_i.\\
+
+> **NOTE:**
+>
+> **Exercise 1 (Deviations from the mean)** Show that \\\sum\_{i=1}^n (x_i - \bar{x}) = 0\\, where \\\bar{x}\\ is the sample mean ([Definition 7](#def-sample-mean)).
+
+> **NOTE:**
+>
+> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(split the sum)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
+
+> **NOTE:**
+>
+> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 7](#def-sample-mean)) sum to zero:
+>
+> \\\sum\_{i=1}^n (x_i - \bar{x}) = 0.\\
+
+> **NOTE:**
+>
+> *Proof*. [Exercise 1](#exr-sum-deviations) derives this result.
 
 Back to top
