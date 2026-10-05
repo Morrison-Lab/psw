@@ -71,7 +71,7 @@ all adults in California with type 2 diabetes in 2024.
 
 The 500 patients who enrolled in that study are not the population
 (@def-population).
-They are a sample drawn from it,
+They are a sample drawn from the population,
 and the study's estimates describe the population only as far as
 the sample represents it.
 
