@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 17:40:21 (UTC)
+Last modified: 2026-10-05 17:44:19 (UTC)
 
 > **NOTE:**
 >
@@ -54,7 +54,25 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 4 Avoid double negatives
+## 4 Do not rule out readings no reader would make
+
+A definition says what a term means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
+
+> **NOTE:**
+>
+> **Example 2 (Dropping a needless disclaimer)**  
+>
+> > ❌ In this manuscript, TTE means target trial emulation. It does not mean effect of treatment on the treated.
+> >
+> > ✅ In this manuscript, TTE means target trial emulation.
+>
+> In causal inference, the average effect of treatment on the treated is usually abbreviated ATT, so a reader is unlikely to read “TTE” that way. The second sentence introduces a meaning that the reader would not otherwise have considered.
+
+Keep a disclaimer when the confusion is real. For example, if “CI” could mean confidence interval or cumulative incidence in the same paper, say which one you mean each time.
+
+The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
+
+## 5 Avoid double negatives
 
 A double negative states a claim by denying its opposite, as in these phrases:
 
@@ -68,7 +86,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 
 > **NOTE:**
 >
-> **Example 2 (Stating a claim directly)**  
+> **Example 3 (Stating a claim directly)**  
 >
 > > ❌ The association was not inconsistent with a dose-response relationship.
 > >
@@ -78,7 +96,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-## 5 Write about the subject, not about the text
+## 6 Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject. They do one of these things:
 
@@ -90,7 +108,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 
 > **NOTE:**
 >
-> **Example 3 (Replacing a sentence about the text)**  
+> **Example 4 (Replacing a sentence about the text)**  
 >
 > > ❌ One trap worth naming: the sample excludes people who moved.
 > >
@@ -106,7 +124,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 6 Put lists in bullet points
+## 7 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -120,7 +138,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 4 (Turning an inline list into bullet points)**  
+> **Example 5 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -134,7 +152,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 5 (Turning inline steps into a numbered list)**  
+> **Example 6 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -145,7 +163,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 7 Examples of concise writing
+## 8 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
