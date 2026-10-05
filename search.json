@@ -1092,6 +1092,13 @@
     "text": "3 Functions and their values"
   },
   {
+    "objectID": "chapters/notation-slides.html#writing-out-notational-shorthands",
+    "href": "chapters/notation-slides.html#writing-out-notational-shorthands",
+    "title": "Mathematical notation",
+    "section": "4 Writing out notational shorthands",
+    "text": "4 Writing out notational shorthands"
+  },
+  {
     "objectID": "chapters/notation.html",
     "href": "chapters/notation.html",
     "title": "Mathematical notation",
@@ -1118,6 +1125,13 @@
     "title": "Mathematical notation",
     "section": "3 Functions and their values",
     "text": "3 Functions and their values\nA function and its value at a point are different objects. In \\(\\mu_i = \\mu(x_i)\\), \\(\\mu\\) is a function, and \\(\\mu(x_i)\\) is a number: the value of \\(\\mu\\) at \\(x_i\\). Written with its placeholder argument, \\(\\mu(x)\\) already denotes a value, so “the value of \\(\\mu(x)\\) at \\(x_i\\)” reads as a value of a value. Either drop the placeholder and write “the value of \\(\\mu\\) at \\(x_i\\)”, or keep the placeholder and name the substitution: “\\(\\mu(x)\\) evaluated at \\(x_i\\)”.\n\n\n\n\n\n\n\nExample 4 (Saying where a function is evaluated)  \n\n❌ Each outcome is centered on the value of a mean function \\(\\mu(x)\\) at its own covariate values.\n✅ Each outcome is centered on a mean function \\(\\mu(x)\\) evaluated at that outcome’s covariate values.\n\n\n❌ the value of the density \\(f(x)\\) at 0\n✅ the value of \\(f\\) at 0, or \\(f(0)\\)\n\n\n❌ the likelihood \\(L(\\theta)\\) at \\(\\hat{\\theta}\\)\n✅ \\(L(\\theta)\\) evaluated at \\(\\hat{\\theta}\\), or \\(L(\\hat{\\theta})\\)\n\nIn each ❌ version, “the value of” or “at” sits next to a placeholder argument, so the reader has to decide whether \\(\\mu(x)\\), \\(f(x)\\) or \\(L(\\theta)\\) means the function or one of its values. The first ❌ version also has an ambiguous “its”: the nearest candidate is the mean function, not the outcome.\n\n\n\n\nUse the notation to match:\n\nWrite \\(\\mu\\), or “the mean function”, for the function itself.\nWrite \\(\\mu(x)\\) with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\(\\mu(x)\\)” or \\(\\mu(x) := \\beta_0 + \\beta_x x\\), and say “evaluated at” when you substitute a point into it.\nWrite \\(\\mu(x_i)\\), or “the value of \\(\\mu\\) at \\(x_i\\)”, for a value."
+  },
+  {
+    "objectID": "chapters/notation.html#writing-out-notational-shorthands",
+    "href": "chapters/notation.html#writing-out-notational-shorthands",
+    "title": "Mathematical notation",
+    "section": "4 Writing out notational shorthands",
+    "text": "4 Writing out notational shorthands\nA notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\(\\sum_x f(x)\\). In permanent writing (notes, papers, and published slides), write the full form instead: \\(\\sum_{x \\in \\mathcal{R}(X)} f(x)\\), where \\(\\mathcal{R}(X)\\) is the set of values that \\(X\\) can take.\nThe full form costs the writer a few characters and saves every reader a guess. A reader who sees \\(\\sum_x\\) has to work out which values of \\(x\\) the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as \\(\\sum_{x \\in \\mathbb{Z}}\\) shows the wrong set at a glance, while \\(\\sum_x\\) hides the same mistake.\nGive the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The notation page of the Math for Data Science notes catalogs common shorthands and their full forms.\n\n\n\n\n\n\n\nExample 5 (Writing out the limits of a sum and the range of an index) For a discrete random variable \\(X\\):\n\n❌ \\(\\text{E}[X] = \\sum_x x \\Pr(X = x)\\)\n✅ \\(\\text{E}[X] = \\sum_{x \\in \\mathcal{R}(X)} x \\Pr(X = x)\\)\n\nFor the likelihood of \\(n\\) independent observations \\(x_1, \\ldots, x_n\\):\n\n❌ \\(L(\\theta) = \\prod_i f(x_i; \\theta)\\)\n✅ \\(L(\\theta) = \\prod_{i = 1}^{n} f(x_i; \\theta)\\)\n\nEach full form tells the reader the set the operator runs over: the values \\(X\\) can take, and the indices of the \\(n\\) observations."
   },
   {
     "objectID": "chapters/summary.html",

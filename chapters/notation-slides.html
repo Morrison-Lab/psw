@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 10:08:24 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 10:12:22 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -372,6 +372,28 @@
 <li>Write <span class="math inline">\(\mu(x)\)</span> with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function <span class="math inline">\(\mu(x)\)</span>” or <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>, and say “evaluated at” when you substitute a point into it.</li>
 <li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
 </ul>
+</section>
+<section id="writing-out-notational-shorthands" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Writing out notational shorthands</h2>
+</section>
+<section class="slide level2">
+
+<p>A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in <span class="math inline">\(\sum_x f(x)\)</span>. In permanent writing (notes, papers, and published slides), write the full form instead: <span class="math inline">\(\sum_{x \in \mathcal{R}(X)} f(x)\)</span>, where <span class="math inline">\(\mathcal{R}(X)\)</span> is the set of values that <span class="math inline">\(X\)</span> can take.</p>
+<p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
+<p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
+<div id="exm-notational-shorthand" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<blockquote>
+<p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
+<p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
+</blockquote>
+<p>For the likelihood of <span class="math inline">\(n\)</span> independent observations <span class="math inline">\(x_1, \ldots, x_n\)</span>:</p>
+<blockquote>
+<p>❌ <span class="math inline">\(L(\theta) = \prod_i f(x_i; \theta)\)</span></p>
+<p>✅ <span class="math inline">\(L(\theta) = \prod_{i = 1}^{n} f(x_i; \theta)\)</span></p>
+</blockquote>
+<p>Each full form tells the reader the set the operator runs over: the values <span class="math inline">\(X\)</span> can take, and the indices of the <span class="math inline">\(n\)</span> observations.</p>
+</div>
 
 
 <script>
