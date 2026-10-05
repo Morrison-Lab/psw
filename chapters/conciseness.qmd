@@ -51,6 +51,15 @@ before knowing what it conditions.
 >
 > ✅ The estimate becomes more precise as the sample size grows.
 
+A fronted phrase delays the subject in the same way.
+Move a phrase such as "in technical writing" or "in this study"
+after the noun it limits,
+unless it sets a scope that the whole paragraph depends on.
+
+> ❌ In technical writing, a common cause of garden-path sentences is a missing *that*.
+>
+> ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
+
 ## Limit complex sentence structures
 
 A sentence with several nested dependent clauses
