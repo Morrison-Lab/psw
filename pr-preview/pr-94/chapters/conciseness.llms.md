@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:03:33 (UTC)
+Last modified: 2026-10-05 09:08:19 (UTC)
 
 > **NOTE:**
 >
@@ -54,7 +54,31 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 4 Put lists in bullet points
+## 4 Avoid double negatives
+
+A double negative states a claim by denying its opposite, as in these phrases:
+
+- “not uncommon”
+- “not unlikely”
+- “not inconsistent with”
+
+The reader has to cancel the two negatives to recover the claim, and the result is often vaguer than the writer intended. State the claim directly. If you mean something weaker than the direct claim, say what the weaker claim is.
+
+A single negative is fine. “We did not reject the null hypothesis” denies one thing, and it is the standard wording for a test result.
+
+> **NOTE:**
+>
+> **Example 2 (Stating a claim directly)**  
+>
+> > ❌ The association was not inconsistent with a dose-response relationship.
+> >
+> > ✅ The association was consistent with a dose-response relationship.
+> >
+> > ✅ The data do not rule out a dose-response relationship, but they do not support one either.
+>
+> Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
+
+## 5 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -68,7 +92,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 2 (Turning an inline list into bullet points)**  
+> **Example 3 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -82,7 +106,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 3 (Turning inline steps into a numbered list)**  
+> **Example 4 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -93,7 +117,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 5 Examples of concise writing
+## 6 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
