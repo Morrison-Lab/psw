@@ -24,3 +24,7 @@ that make quantitative writing easier to read.
 ## One operation per step
 
 {{< include notation/one-operation-per-step.qmd >}}
+
+## Writing out notational shorthands
+
+{{< include notation/notational-shorthands.qmd >}}
