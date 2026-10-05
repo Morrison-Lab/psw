@@ -25,12 +25,55 @@ technical meaning within a particular field or context.
 
 :::
 
+::: {#exm-term}
+
+## "Significant" used as a term
+
+In "the difference was statistically significant at the 5% level",
+"significant" is a term (@def-term):
+it means that a hypothesis test rejected its null hypothesis at that level.
+
+:::
+
+::: {#exm-not-term}
+
+## "Significant" used as an ordinary word
+
+In "staffing is a significant problem for the clinic",
+"significant" is not a term (@def-term).
+It carries its everyday meaning, "large" or "important",
+and no hypothesis test is involved.
+
+:::
+
 ::: {#def-population}
 
 ## Population
 
 In statistics,
 a *population* is the complete set of all items or individuals of interest.
+
+:::
+
+::: {#exm-population}
+
+## A population of patients
+
+For a study of blood-sugar control,
+the population (@def-population) might be
+all adults in California with type 2 diabetes in 2024.
+
+:::
+
+::: {#exm-not-population}
+
+## A sample is not the population
+
+The 500 patients who enrolled in that study are not the population
+(@def-population).
+They are a sample drawn from it,
+and the study's estimates describe the population only as far as
+the sample represents it.
 
 :::
 
@@ -198,7 +241,7 @@ we are 95% confident that the true population mean height falls within this rang
 The interval from the 2.5th to the 97.5th percentile of the observed heights,
 [150 cm, 190 cm],
 is not a 95% confidence interval (@def-confidence-interval) for mean height.
-It describes where individual heights fall,
+The percentile interval describes where individual heights fall,
 not where the population mean is likely to be,
 and it does not shrink as the sample grows.
 
@@ -214,10 +257,21 @@ and it does not shrink as the sample grows.
 
 ::: {#exm-active-voice}
 
-## Active and passive voice
+## A sentence in active voice
 
-"The researcher conducted the experiment" is in active voice (@def-active-voice),
-while "The experiment was conducted by the researcher" is in passive voice.
+"The researcher conducted the experiment" is in active voice (@def-active-voice):
+the subject, "the researcher", performs the action, "conducted".
+
+:::
+
+::: {#exm-passive-voice}
+
+## A sentence that is not in active voice
+
+"The experiment was conducted by the researcher" is not in active voice
+(@def-active-voice).
+Its subject, "the experiment", receives the action instead of performing it,
+so the sentence is in passive voice.
 
 :::
 
@@ -264,10 +318,26 @@ so $\text{RSS}(1, 0.5) = 0.25$.
 
 :::
 
+::: {#exm-not-rss}
+
+## A sum of squares that is not a residual sum of squares
+
+For the same three points,
+the sum of squared deviations of $y_i$ from their mean, $5/3$,
+is $2/3$.
+That quantity is the total sum of squares,
+not the residual sum of squares (@def-rss) of the line in @exm-rss-three-points,
+because it measures spread around the mean
+rather than around the line's fitted values.
+
+:::
+
 The definition stays one sentence and one equation,
 so it still applies when the document later fits a model that is not a line.
 The line is a special case, so it is an example,
-and the numerical case is a special case of the line, so it comes last.
+and the numerical case is a special case of the line, so it follows the line.
+The counterexample comes after the examples,
+once the reader knows what the definition covers.
 
 ## Why examples matter
 
@@ -288,6 +358,10 @@ Examples serve several crucial purposes:
 - **Memory:**
   Concrete examples are easier to remember
   than abstract definitions alone.
+
+- **Boundaries:**
+  Counterexamples show where a definition stops applying,
+  which is where readers most often misapply it.
 
 ## Common pitfalls to avoid
 
