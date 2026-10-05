@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 07:15:27 (UTC)</p>
+  <p class="date">Last modified: 2026-10-05 08:53:46 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -319,13 +319,44 @@
 </ul>
 <p>They can serve two roles. As adjectives, they modify a noun: “<strong>this</strong> result”, “<strong>those</strong> samples”. As standalone pronouns, they replace a noun: “<strong>This</strong> shows…”, “<strong>That</strong> means…”.</p>
 <p>When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs <em>here</em> and <em>there</em> point the same way: “getting there” leaves the reader to guess where “there” is.</p>
+<p>A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final <em>this</em> or <em>that</em> always leaves its referent unnamed. End the sentence with the noun instead.</p>
 <div id="exm-demonstrative-pronoun" class="theorem example">
 <p><span class="theorem-title"><strong>Example 4 (Naming the referent)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The model overfit the training data. <strong>This</strong> poses a problem for deployment.</p>
 <p>✅ The model overfit the training data. <strong>This overfitting</strong> poses a problem for deployment.</p>
+<p>❌ The first model’s estimates were biased upward. The second model avoids <strong>this</strong>.</p>
+<p>✅ The first model’s estimates were biased upward. The second model avoids <strong>this bias</strong>.</p>
 </blockquote>
-<p>Adding the noun “overfitting” states exactly what “this” refers to, instead of leaving the reader to infer it.</p>
+<p>Adding the nouns “overfitting” and “bias” states exactly what each “this” refers to, instead of leaving the reader to infer it. The second pair ends its sentence with the demonstrative, so the fix has to add the noun after it, at the very end.</p>
+</div>
+</section>
+<section id="quantifiers-used-as-pronouns" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Quantifiers used as pronouns</h2>
+</section>
+<section class="slide level2">
+
+<p>Words that say how many, or how much, of something cause the same problem as demonstratives when they stand alone in place of a noun. Grammars call these words <em>quantifiers</em>, and call a quantifier that stands alone an <em>indefinite pronoun</em>. The common ones are:</p>
+<ul>
+<li><em>both</em></li>
+<li><em>all</em> (and counted forms such as <em>all three</em>)</li>
+<li><em>each</em></li>
+<li><em>any</em></li>
+<li><em>some</em></li>
+<li><em>most</em></li>
+<li><em>many</em></li>
+<li><em>few</em></li>
+<li><em>none</em></li>
+</ul>
+<p><em>Every</em> belongs to the same family, but it cannot stand alone (“every” needs a noun, as in “every model”), so it never causes this problem.</p>
+<p>You do not need a complete list of quantifiers to apply the advice. Whenever a quantifier stands where a noun should be, the reader has to search backward to find out what it quantifies. Follow the quantifier with the noun: “<strong>both models</strong>”, “<strong>all three estimators</strong>”, “<strong>each interval</strong>”. An “of” phrase that names the noun works too: “<strong>none of the intervals</strong>”.</p>
+<div id="exm-quantifier-pronoun" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Naming what a quantifier refers to)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. <strong>Both</strong> return the same fit.</p>
+<p>✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. <strong>Both models</strong> return the same fit.</p>
+</blockquote>
+<p>In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.</p>
 </div>
 
 
