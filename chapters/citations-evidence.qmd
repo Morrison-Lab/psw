@@ -280,6 +280,52 @@ When a passage you are tempted to copy already appears elsewhere,
 cross-reference it instead of repeating it:
 this keeps a single source of truth and improves concision.
 
+## Link liberally
+
+A link lets a reader check a claim or learn more
+without searching for the source themselves.
+When in doubt, add the link;
+leave one out only for a specific reason.
+Link these things whenever they appear:
+
+- a term to the place where it is defined,
+  in the same document or another one;
+- a result to the theorem, equation or section that establishes it;
+- a cited source to its [DOI](https://www.doi.org/) or official URL;
+- software, packages and datasets to their documentation or home page;
+- a related section elsewhere in the document,
+  instead of repeating its content.
+
+In [Quarto](https://quarto.org/docs/authoring/cross-references.html),
+use a cross-reference such as `@def-confidence-interval`
+for a definition or result in the same document,
+so the link updates when numbering changes
+(see [Defining terms clearly](defining-terms.qmd)).
+For a target on another page, use an ordinary link to that page's anchor.
+
+Leave a link out only for a reason such as one of the following:
+
+- the target is private, such as a repository of graded homework;
+- the same target is already linked earlier in the same paragraph;
+- the target is unstable, and a stable alternative such as a DOI exists.
+
+::: {#exm-link-liberally}
+
+## Adding links a reader would use
+
+> ❌ We fit the model with the lme4 package
+> and report a 95% confidence interval for each fixed effect.
+>
+> ✅ We fit the model with the [lme4](https://cran.r-project.org/package=lme4) package
+> and report a 95% [confidence interval](defining-terms.qmd#def-confidence-interval)
+> for each fixed effect.
+
+A reader who does not know lme4,
+or wants the exact meaning of "confidence interval" in this guide,
+can now follow the link instead of searching.
+
+:::
+
 ## Best practices
 
 To effectively support your claims:
