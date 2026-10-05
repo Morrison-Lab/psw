@@ -31,3 +31,7 @@ that consistently make scientific writing easier to read.
 ## Avoid garden-path sentences
 
 {{< include grammar/garden-path-sentences.qmd >}}
+
+## Name the object of a relational noun
+
+{{< include grammar/relational-nouns.qmd >}}
