@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 17:53:18 (UTC)
+Last modified: 2026-10-05 18:34:36 (UTC)
 
 > **NOTE:**
 >
@@ -121,7 +121,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 
 A *garden-path sentence* leads the reader into one reading and then forces them to go back and reread when the rest of the sentence does not fit ([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)). The sentence may be grammatical, but the reader parses it twice.
 
-A common cause in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*. Without the pronoun, the reader takes the noun and the start of the clause as one phrase and has to reattach the words that follow. [Do not omit relative pronouns](#do-not-omit-relative-pronouns) gives the general rule.
+A common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*. Without the pronoun, the reader takes the noun and the start of the clause as one phrase and has to reattach the words that follow. [Do not omit relative pronouns](#do-not-omit-relative-pronouns) gives the general rule.
 
 When you reread a sentence and stumble, find the point where your first reading went wrong, and rewrite the sentence so that the first reading is the right one.
 
