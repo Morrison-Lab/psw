@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 09:16:03 (UTC)
+Last modified: 2026-10-05 09:23:30 (UTC)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -94,7 +94,7 @@ This forces readers to jump back and forth between sections to understand the co
 
 #### Exception: Shared descriptive statistics
 
-If your descriptive statistics apply to all outcomes (e.g., baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
+If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
 
 ## 3 Figures and tables
 
@@ -144,7 +144,7 @@ Use descriptive subsection headings to guide readers through your results. Headi
 
 ## 5 Links to videos and other media
 
-Put each link to a video, podcast, demo or other external material in a short note right after the text it supports. Do not collect the links in a list at the end of the document.
+Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
 
 A reader who has just finished a section is ready to use material about it. The same reader at the end of the document must guess which link goes with which section, and may never reach the list.
 
@@ -154,9 +154,7 @@ For each link:
 - Name the speaker and say what the material shows, in simple, literal words.
 - Link the exact start time when the material covers more than the topic.
 - Cite the source.
-- If the material covers several sections, put it after the first section it supports.
-- Do not put a link between a question and its answer.
 
-Link public sites freely. Readers, and the tools they use, already know what is public, so leaving a public link out gains nothing. Do not link private repositories, such as ones that hold graded homework or exams.
+Link public sites freely. Anyone can open them, so a link costs the reader nothing. Do not link private repositories, such as ones that hold graded homework or exams.
 
 Back to top
