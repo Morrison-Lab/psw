@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 17:44:06 (UTC)
+Last modified: 2026-10-05 17:47:49 (UTC)
 
 > **NOTE:**
 >
@@ -116,5 +116,23 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 > > ✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both models** return the same fit.
 >
 > In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.
+
+## 4 Avoid garden-path sentences
+
+A *garden-path sentence* leads the reader into one reading and then forces them to go back and reread when the rest of the sentence does not fit ([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)). The sentence may be grammatical, but the reader parses it twice.
+
+A common cause in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*. Without the pronoun, the reader takes the noun and the start of the clause as one phrase and has to reattach the words that follow. [Do not omit relative pronouns](#do-not-omit-relative-pronouns) gives the general rule.
+
+When you reread a sentence and stumble, find the point where your first reading went wrong, and rewrite the sentence so that the first reading is the right one.
+
+> **NOTE:**
+>
+> **Example 6 (Rewriting a garden-path sentence)**  
+>
+> > ❌ Report only SHAs a command you ran printed in full.
+> >
+> > ✅ Report only SHAs that appeared in full in the output of a command that you ran.
+>
+> In the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject.
 
 Back to top
