@@ -1,0 +1,35 @@
+A *garden-path sentence* leads the reader into one reading
+and then forces them back to the start
+when the rest of the sentence does not fit
+([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)).
+The sentence may be grammatical,
+but the reader parses it twice.
+
+Two habits cause most garden paths in technical writing:
+
+- dropping a relative pronoun,
+  so that a noun and the subject of the next clause run together
+  (see [Do not omit relative pronouns](#do-not-omit-relative-pronouns));
+- stacking a noun, a clause and a verb
+  so that the reader cannot tell which noun the verb belongs to.
+
+When you reread a sentence and stumble,
+restore the missing pronoun,
+or reorder the sentence so that each verb follows its subject directly.
+
+::: {#exm-garden-path}
+
+## Rewriting a garden-path sentence
+
+> ❌ Report only SHAs a command you ran printed in full.
+>
+> ✅ Report only SHAs that were printed in full by a command you ran.
+
+In the first version,
+"SHAs a command you ran" reads at first as a single noun phrase,
+and "printed" then arrives with no clear subject.
+The rewrite adds "that were",
+so the reader knows a describing clause has begun,
+and puts the verb "printed" next to the noun it describes.
+
+:::
