@@ -153,11 +153,11 @@ Headings should clearly indicate the content of each section.
 ## Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material
-in a short note right after the text it supports.
+in a short note right after the text the material supports.
 Do not collect the links in a list at the end of the document.
 If the material covers several sections,
-put the note after the first section it supports.
-If the text is a question with an answer,
+put the note after the first section the material supports.
+If the text the note supports is a question followed by its answer,
 put the note after the answer, not between them.
 
 A reader who has just finished a section is ready to use material about it.
@@ -172,6 +172,6 @@ For each link:
 - Cite the source.
 
 Link public sites freely.
-Readers, and the tools they use, already know what is public,
-so leaving a public link out gains nothing.
+Anyone can open them,
+so a link costs the reader nothing.
 Do not link private repositories, such as ones that hold graded homework or exams.
