@@ -97,6 +97,9 @@ Informal idioms are metaphors too.
 "Kicks in", "the whole point" and "getting there"
 stand in for a literal claim;
 state the claim.
+[Use literal language](inclusive-writing.qmd#use-literal-language)
+explains why idioms exclude some readers,
+and gives more examples.
 
 ## Say which thing
 
