@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-05 21:53:36 (UTC)
+Last modified: 2026-10-06 23:46:06 (UTC)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -73,6 +73,16 @@ Follow these principles when introducing new terms:
 - **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.
 
 - **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
+
+- **Distinguish estimands from estimators:** An *estimand* is the quantity a study is after, defined on the population or the data-generating distribution; an *estimator* is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, \\\theta\\ and \\\hat\theta\\). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction \\\hat Y\\ of the true class \\Y\\, and counts \\\text{TP}\\, \\\text{FP}\\, \\\text{FN}\\ and \\\text{TN}\\ from a test set of size \\n\\:
+
+  | Name | Estimand | Estimator |
+  |----|----|----|
+  | Accuracy | \\\Pr(\hat Y = Y)\\ | \\(\text{TP} + \text{TN}) / n\\ |
+  | Precision | \\\Pr(Y = 1 \mid \hat Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FP})\\ |
+  | Recall | \\\Pr(\hat Y = 1 \mid Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FN})\\ |
+
+  The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
 
 ## 2 Examples of term definitions
 

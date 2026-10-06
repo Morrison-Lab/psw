@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <title>Principles of Scientific Writing – Defining terms clearly</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -310,7 +310,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-05 21:53:36 (UTC)</p>
+  <p class="date">Last modified: 2026-10-06 23:46:06 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -361,6 +361,39 @@
 <li><p><strong>Provide examples and counterexamples:</strong> Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.</p></li>
 <li><p><strong>Give each term its own definition block:</strong> In a Quarto document, put every definition in its own <code>#def-</code> div (see <a href="#/using-theorem-environments-in-quarto">Using theorem environments in Quarto</a>), one term per div, with commentary after the div rather than inside it, in a remark block (<code>#rem-</code>) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in <a href="#/using-theorem-environments-in-quarto">Using theorem environments in Quarto</a>, such as <code>#def-</code>, <code>#exm-</code>, <code>#exr-</code>, <code>#sol-</code> or <code>#rem-</code>) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.</p></li>
 <li><p><strong>Name the synonyms:</strong> When a field uses several words for one concept, such as <em>learning</em>, <em>training</em> and <em>fitting</em> a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see <a href="../chapters/word-choice.html#minimize-unnecessary-jargon">Minimize unnecessary jargon</a>).</p></li>
+<li><p><strong>Distinguish estimands from estimators:</strong> An <em>estimand</em> is the quantity a study is after, defined on the population or the data-generating distribution; an <em>estimator</em> is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\hat\theta\)</span>). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction <span class="math inline">\(\hat Y\)</span> of the true class <span class="math inline">\(Y\)</span>, and counts <span class="math inline">\(\text{TP}\)</span>, <span class="math inline">\(\text{FP}\)</span>, <span class="math inline">\(\text{FN}\)</span> and <span class="math inline">\(\text{TN}\)</span> from a test set of size <span class="math inline">\(n\)</span>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Estimand</th>
+<th>Estimator</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accuracy</td>
+<td><span class="math inline">\(\Pr(\hat Y = Y)\)</span></td>
+<td><span class="math inline">\((\text{TP} + \text{TN}) / n\)</span></td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td><span class="math inline">\(\Pr(Y = 1 \mid \hat Y = 1)\)</span></td>
+<td><span class="math inline">\(\text{TP} / (\text{TP} + \text{FP})\)</span></td>
+</tr>
+<tr class="odd">
+<td>Recall</td>
+<td><span class="math inline">\(\Pr(\hat Y = 1 \mid Y = 1)\)</span></td>
+<td><span class="math inline">\(\text{TP} / (\text{TP} + \text{FN})\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The precision of a classifier is a property of the classifier and the population it is used on; <span class="math inline">\(\text{TP} / (\text{TP} + \text{FP})\)</span> is one test set’s estimate of it.</p></li>
 </ul>
 </section>
 <section id="examples-of-term-definitions" class="slide level2" data-number="2">
