@@ -227,6 +227,32 @@ Follow these principles when introducing new terms:
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
 
+- **Distinguish estimands from estimators:**
+  An *estimand* is the quantity a study is after,
+  defined on the population or the data-generating distribution;
+  an *estimator* is the rule that computes an estimate of it from a sample.
+  Define a quantity first as its estimand,
+  then give the estimator that targets it,
+  and keep the two in separate notation (for example, $\theta$ and $\hat\theta$).
+  A definition that gives only the sample formula
+  hides what the formula estimates,
+  and invites the reader to treat one sample's value as the quantity itself.
+  When several related quantities are defined together,
+  give a table with one row per quantity and a column each for its name,
+  its estimand and its estimator.
+  For a binary classifier with prediction $\hat Y$ of the true class $Y$,
+  and counts $\text{TP}$, $\text{FP}$, $\text{FN}$ and $\text{TN}$ from a test set of size $n$:
+
+  | Name | Estimand | Estimator |
+  | --- | --- | --- |
+  | Accuracy | $\Pr(\hat Y = Y)$ | $(\text{TP} + \text{TN}) / n$ |
+  | Precision | $\Pr(Y = 1 \mid \hat Y = 1)$ | $\text{TP} / (\text{TP} + \text{FP})$ |
+  | Recall | $\Pr(\hat Y = 1 \mid Y = 1)$ | $\text{TP} / (\text{TP} + \text{FN})$ |
+
+  The precision of a classifier is a property of the classifier
+  and the population it is used on;
+  $\text{TP} / (\text{TP} + \text{FP})$ is one test set's estimate of it.
+
 ## Examples of term definitions
 
 Here are examples of well-defined terms:
