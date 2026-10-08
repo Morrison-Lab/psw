@@ -139,6 +139,12 @@ instead of keeping a second wording that can drift.
 - Give every definition, method and result at least one applied example
   that computes it on real data,
   so the reader sees what the idea does before or beside the algebra.
+- Follow every abstract div directly with a concrete `#exm-` div.
+  The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div.
+  The example of a related result does not exempt a definition:
+  a theorem that uses a definition gets its own example,
+  and so does the definition.
+  The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
 - Give every topic at least one figure that shows the idea,
   such as the data with a fitted curve, a distribution, or a diagram of the procedure.
   A page of definitions with no figure and no data is incomplete.
