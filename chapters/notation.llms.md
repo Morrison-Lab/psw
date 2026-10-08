@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 20:44:46 (UTC)
+Last modified: 2026-10-08 22:39:27 (UTC)
 
 > **NOTE:**
 >
@@ -112,7 +112,7 @@ Use the notation to match:
 
 ## 4 Matching names and notation
 
-A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “inner product” expects to see the notation for an inner product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
+A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
 
 Keep the pairing the same everywhere the quantity appears. Notes, assignments, solutions and slides in one course should use one name and one notation for each quantity. When two fields call one idea by different names, choose one name, list the other names where you define the idea, and use only the chosen name afterward (see [Name the synonyms](../chapters/defining-terms.llms.md#guidelines-for-defining-terms)).
 
@@ -120,11 +120,11 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 >
 > **Example 5 (Matching a name to its notation)**  
 >
-> > ❌ Compute the inner product \\\tilde{a}' \tilde{b}\\.
+> > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
-> > ✅ Compute the inner product \\\langle \tilde{a}, \tilde{b} \rangle\\.
+> > ✅ Compute the dot product \\\tilde{a} \cdot \tilde{b}\\.
 >
-> The ❌ version names an inner product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the inner product \\\langle \tilde{a}, \tilde{b} \rangle\\ equals the matrix product \\\tilde{a}' \tilde{b}\\”.
+> The ❌ version names a dot product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the dot product \\\tilde{a} \cdot \tilde{b}\\ equals the matrix product \\\tilde{a}' \tilde{b}\\”. [Writing dot products](#writing-dot-products) says when to use each form.
 >
 > In a course that writes regression in statistical notation:
 >
@@ -163,7 +163,29 @@ The same rule covers these quantities:
 
 A quantity that has a macro keeps the same symbol in every document.
 
-## 6 Writing out notational shorthands
+## 6 Writing dot products
+
+When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
+
+> **NOTE:**
+>
+> **Example 7 (Writing a dot product)**  
+>
+> > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
+> >
+> > ✅ The model is \\f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\\.
+>
+> Both versions give the same number. The ✅ version shows it as one product of two vectors. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the ✅ version with the dot-product macro, for example `$\dprod{\vx}{\vbeta}$`.
+
+Keep the transpose where the product is not a dot product of two vectors:
+
+- a product of matrices, such as \\X'X\\
+- an outer product, such as \\\tilde{x}\tilde{x}'\\
+- a quadratic form, such as \\\tilde{x}' A \tilde{x}\\
+
+Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
+
+## 7 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -173,7 +195,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 7 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 8 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
