@@ -5,7 +5,7 @@ and with a macro in another ends up with two notations for one quantity.
 Changing a convention then means editing every document by hand.
 
 Before you write any symbol,
-search the shared macro file for the concept it names.
+search the group's shared macro file for the concept it names.
 If a macro names the concept, use it.
 If none does, add one to the shared file before you use the symbol,
 so the next document finds it.
@@ -14,9 +14,12 @@ so the next document finds it.
 
 ## Using a shared macro
 
-> ❌ Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.
+This example compares the source you type,
+so both versions appear as code.
+
+> ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 >
-> ✅ Let `\coef{1}` be the slope and write the sum as `\sumin`.
+> ✅ Source: `Let $\coef{1}$ be the slope and write the sum as $\sumin$.`
 
 The ❌ version writes the slope and the sum in raw LaTeX.
 The ✅ version names each concept once, in the shared file.
@@ -25,6 +28,13 @@ every document that uses the macro changes with it.
 
 :::
 
-The same rule covers transposes, hats on estimates,
-expectations, variances, probabilities, and vectors.
+The same rule covers these quantities:
+
+- transposes
+- hats on estimates
+- expectations
+- variances
+- probabilities
+- vectors
+
 A quantity that has a macro keeps the same symbol in every document.
