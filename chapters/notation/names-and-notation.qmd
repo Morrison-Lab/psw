@@ -34,11 +34,11 @@ In a course that writes regression in statistical notation:
 
 > ❌ Consider the model $h(x) = w x + b$.
 >
-> ✅ Consider the mean function $\mu(x) = \beta_0 + \beta_1 x$.
+> ✅ Consider the mean function $\mu(x) = \beta_0 + \beta_x x$.
 
 The ❌ version names the same quantity as the rest of the course
 with a different word and different symbols.
-A student then has to learn that $h$, $w$ and $b$ are $\mu$, $\beta_1$ and $\beta_0$.
+A student then has to learn that $h$, $w$ and $b$ are $\mu$, $\beta_x$ and $\beta_0$.
 
 :::
 
