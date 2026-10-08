@@ -1,8 +1,8 @@
 A name and its notation must describe the same object.
 When you name a quantity in words and also show it in symbols,
 use the symbols that go with that name.
-A reader who sees the name "inner product"
-expects to see the notation for an inner product.
+A reader who sees the name "dot product"
+expects to see the notation for a dot product.
 If the symbols look like a different operation,
 the reader has to work out whether the name or the symbols is wrong.
 
@@ -19,16 +19,17 @@ and use only the chosen name afterward
 
 ## Matching a name to its notation
 
-> ❌ Compute the inner product $\tilde{a}' \tilde{b}$.
+> ❌ Compute the dot product $\tilde{a}' \tilde{b}$.
 >
-> ✅ Compute the inner product $\langle \tilde{a}, \tilde{b} \rangle$.
+> ✅ Compute the dot product $\tilde{a} \cdot \tilde{b}$.
 
-The ❌ version names an inner product but writes a matrix product with a transpose.
+The ❌ version names a dot product but writes a matrix product with a transpose.
 The two are equal for column vectors,
 but the reader sees two names for one quantity.
 If you want to show that they are equal,
 say so in a sentence, as in
-"the inner product $\langle \tilde{a}, \tilde{b} \rangle$ equals the matrix product $\tilde{a}' \tilde{b}$".
+"the dot product $\tilde{a} \cdot \tilde{b}$ equals the matrix product $\tilde{a}' \tilde{b}$".
+[Writing dot products](#writing-dot-products) says when to use each form.
 
 In a course that writes regression in statistical notation:
 
