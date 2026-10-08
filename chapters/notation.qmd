@@ -29,6 +29,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/functions-and-values.qmd >}}
 
+## Matching names and notation
+
+{{< include notation/names-and-notation.qmd >}}
+
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
