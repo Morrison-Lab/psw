@@ -160,7 +160,7 @@ instead of keeping a second wording that can drift.
   Put an example in an `#exm-` div and short commentary in a `#rem-` div,
   because a `::: notes` div is plain text without a box on the web page.
 - Put a long paragraph of commentary in a remark that is also speaker notes:
-  `::: {#rem-name .notes}`.
+  `::: {#rem-name .remark .notes}`.
   Reveal.js shows it only in speaker view, so the audience does not have to read it,
   and the web page shows it as a boxed remark.
   Readers who did not attend the lecture use the web page,
