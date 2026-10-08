@@ -33,6 +33,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/names-and-notation.qmd >}}
 
+## Using shared macros
+
+{{< include notation/shared-macros.qmd >}}
+
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
