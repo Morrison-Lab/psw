@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 05:04:00 (UTC)
+Last modified: 2026-10-08 08:34:17 (UTC)
 
 > **NOTE:**
 >
@@ -78,14 +78,26 @@ When several courses or repositories have already written the same definition, t
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
 - Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.
 
-## 7 Make figures accessible
+## 7 Show each idea applied and in a figure
+
+- Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
+- Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.
+- Prerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.
+- Make each figure follow the accessibility rules below.
+
+## 8 Write labs for both languages and any computer
+
+- Give labs and code exercises in both R and Python, side by side.
+- Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
+
+## 9 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 8 Structure slides for the reader
+## 10 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -95,14 +107,14 @@ When several courses or repositories have already written the same definition, t
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 9 Credit other courses without summarizing them
+## 11 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 10 Rules that apply to all writing
+## 12 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 

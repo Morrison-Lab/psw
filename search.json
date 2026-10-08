@@ -1267,32 +1267,46 @@
     "text": "6 Use real data and compute every number"
   },
   {
+    "objectID": "chapters/teaching-slides.html#show-each-idea-applied-and-in-a-figure",
+    "href": "chapters/teaching-slides.html#show-each-idea-applied-and-in-a-figure",
+    "title": "Writing for teaching",
+    "section": "7 Show each idea applied and in a figure",
+    "text": "7 Show each idea applied and in a figure"
+  },
+  {
+    "objectID": "chapters/teaching-slides.html#write-labs-for-both-languages-and-any-computer",
+    "href": "chapters/teaching-slides.html#write-labs-for-both-languages-and-any-computer",
+    "title": "Writing for teaching",
+    "section": "8 Write labs for both languages and any computer",
+    "text": "8 Write labs for both languages and any computer"
+  },
+  {
     "objectID": "chapters/teaching-slides.html#make-figures-accessible",
     "href": "chapters/teaching-slides.html#make-figures-accessible",
     "title": "Writing for teaching",
-    "section": "7 Make figures accessible",
-    "text": "7 Make figures accessible"
+    "section": "9 Make figures accessible",
+    "text": "9 Make figures accessible"
   },
   {
     "objectID": "chapters/teaching-slides.html#structure-slides-for-the-reader",
     "href": "chapters/teaching-slides.html#structure-slides-for-the-reader",
     "title": "Writing for teaching",
-    "section": "8 Structure slides for the reader",
-    "text": "8 Structure slides for the reader"
+    "section": "10 Structure slides for the reader",
+    "text": "10 Structure slides for the reader"
   },
   {
     "objectID": "chapters/teaching-slides.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching-slides.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "9 Credit other courses without summarizing them",
-    "text": "9 Credit other courses without summarizing them"
+    "section": "11 Credit other courses without summarizing them",
+    "text": "11 Credit other courses without summarizing them"
   },
   {
     "objectID": "chapters/teaching-slides.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching-slides.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "10 Rules that apply to all writing",
-    "text": "10 Rules that apply to all writing"
+    "section": "12 Rules that apply to all writing",
+    "text": "12 Rules that apply to all writing"
   },
   {
     "objectID": "chapters/teaching-slides.html#references",
@@ -1351,32 +1365,46 @@
     "text": "6 Use real data and compute every number\n\nWhere an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.\nShow a dataset before analyzing it, with a printed look at its first rows and its structure.\nNever type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes."
   },
   {
+    "objectID": "chapters/teaching.html#show-each-idea-applied-and-in-a-figure",
+    "href": "chapters/teaching.html#show-each-idea-applied-and-in-a-figure",
+    "title": "Writing for teaching",
+    "section": "7 Show each idea applied and in a figure",
+    "text": "7 Show each idea applied and in a figure\n\nGive every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.\nGive every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.\nPrerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.\nMake each figure follow the accessibility rules below."
+  },
+  {
+    "objectID": "chapters/teaching.html#write-labs-for-both-languages-and-any-computer",
+    "href": "chapters/teaching.html#write-labs-for-both-languages-and-any-computer",
+    "title": "Writing for teaching",
+    "section": "8 Write labs for both languages and any computer",
+    "text": "8 Write labs for both languages and any computer\n\nGive labs and code exercises in both R and Python, side by side.\nDo not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine."
+  },
+  {
     "objectID": "chapters/teaching.html#make-figures-accessible",
     "href": "chapters/teaching.html#make-figures-accessible",
     "title": "Writing for teaching",
-    "section": "7 Make figures accessible",
-    "text": "7 Make figures accessible\n\nWrap each figure, including an interactive one, in a #fig- div with a caption.\nGive every plot alt text. For Observable Plot, set ariaLabel.\nShow the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set echo: false on a cell you want students to read.\nDo not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF)."
+    "section": "9 Make figures accessible",
+    "text": "9 Make figures accessible\n\nWrap each figure, including an interactive one, in a #fig- div with a caption.\nGive every plot alt text. For Observable Plot, set ariaLabel.\nShow the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set echo: false on a cell you want students to read.\nDo not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF)."
   },
   {
     "objectID": "chapters/teaching.html#structure-slides-for-the-reader",
     "href": "chapters/teaching.html#structure-slides-for-the-reader",
     "title": "Writing for teaching",
-    "section": "8 Structure slides for the reader",
-    "text": "8 Structure slides for the reader\n\nCheck the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.\nPut a list of three or more phrases in a bullet list, as Put lists in bullet points describes.\nPut each named example in an #exm- div.\nPut on a slide only what you want the audience to look at. Put an example in an #exm- div and short commentary in a #rem- div, because a ::: notes div is plain text without a box on the web page.\nPut a long paragraph of commentary in a remark that is also speaker notes: ::: {#rem-name .remark .notes}. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short #rem- div only when the slide needs a takeaway to look at.\nAdd structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.\nKeep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides."
+    "section": "10 Structure slides for the reader",
+    "text": "10 Structure slides for the reader\n\nCheck the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.\nPut a list of three or more phrases in a bullet list, as Put lists in bullet points describes.\nPut each named example in an #exm- div.\nPut on a slide only what you want the audience to look at. Put an example in an #exm- div and short commentary in a #rem- div, because a ::: notes div is plain text without a box on the web page.\nPut a long paragraph of commentary in a remark that is also speaker notes: ::: {#rem-name .remark .notes}. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short #rem- div only when the slide needs a takeaway to look at.\nAdd structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.\nKeep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides."
   },
   {
     "objectID": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "9 Credit other courses without summarizing them",
-    "text": "9 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
+    "section": "11 Credit other courses without summarizing them",
+    "text": "11 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
   },
   {
     "objectID": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "10 Rules that apply to all writing",
-    "text": "10 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid AI clichés."
+    "section": "12 Rules that apply to all writing",
+    "text": "12 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid AI clichés."
   },
   {
     "objectID": "index.html",
