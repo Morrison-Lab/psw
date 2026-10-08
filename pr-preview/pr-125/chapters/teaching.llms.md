@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 06:51:30 (UTC)
+Last modified: 2026-10-08 08:16:04 (UTC)
 
 > **NOTE:**
 >
@@ -84,6 +84,8 @@ When several courses or repositories have already written the same definition, t
 - Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.
 - Prerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.
 - Make each figure follow the accessibility rules below.
+- Give labs and code exercises in both R and Python, side by side.
+- Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
 ## 8 Make figures accessible
 
