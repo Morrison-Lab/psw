@@ -154,7 +154,11 @@ instead of keeping a second wording that can drift.
 
 ## Write labs for both languages and any computer
 
+These rules apply to all teaching materials,
+in every course and every teaching repository, not only to one course.
+
 - Give labs and code exercises in both R and Python, side by side.
+- Tell students where to get the data.
 - Do not assume that students own a laptop.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
