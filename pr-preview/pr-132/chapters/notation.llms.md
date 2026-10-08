@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 18:38:43 (UTC)
+Last modified: 2026-10-08 22:12:32 (UTC)
 
 > **NOTE:**
 >
@@ -110,7 +110,60 @@ Use the notation to match:
 - Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
 - Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
 
-## 4 Writing out notational shorthands
+## 4 Matching names and notation
+
+A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “inner product” expects to see the notation for an inner product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
+
+Keep the pairing the same everywhere the quantity appears. Notes, assignments, solutions and slides in one course should use one name and one notation for each quantity. When two fields call one idea by different names, choose one name, list the other names where you define the idea, and use only the chosen name afterward (see [Name the synonyms](../chapters/defining-terms.llms.md#guidelines-for-defining-terms)).
+
+> **NOTE:**
+>
+> **Example 5 (Matching a name to its notation)**  
+>
+> > ❌ Compute the inner product \\\tilde{a}' \tilde{b}\\.
+> >
+> > ✅ Compute the inner product \\\langle \tilde{a}, \tilde{b} \rangle\\.
+>
+> The ❌ version names an inner product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the inner product \\\langle \tilde{a}, \tilde{b} \rangle\\ equals the matrix product \\\tilde{a}' \tilde{b}\\”.
+>
+> In a course that writes regression in statistical notation:
+>
+> > ❌ Consider the model \\h(x) = w x + b\\.
+> >
+> > ✅ Consider the mean function \\\mu(x) = \beta_0 + \beta_x x\\.
+>
+> The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that \\h\\, \\w\\ and \\b\\ are \\\mu\\, \\\beta_x\\ and \\\beta_0\\.
+
+Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
+
+## 5 Using shared macros
+
+Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
+
+Before you write any symbol, search the group’s shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.
+
+> **NOTE:**
+>
+> **Example 6 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+>
+> > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
+> >
+> > ✅ Source: `Let $\coef{1}$ be the slope and write the sum as $\sumin$.`
+>
+> The ❌ version writes the slope and the sum in raw LaTeX. The ✅ version names each concept once, in the shared file. When the group changes how it prints a coefficient or a sum, every document that uses the macro changes with it.
+
+The same rule covers these quantities:
+
+- transposes
+- hats on estimates
+- expectations
+- variances
+- probabilities
+- vectors
+
+A quantity that has a macro keeps the same symbol in every document.
+
+## 6 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -120,7 +173,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 5 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 7 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >

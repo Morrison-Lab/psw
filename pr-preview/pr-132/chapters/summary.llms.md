@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 18:38:43 (UTC)
+Last modified: 2026-10-08 22:12:32 (UTC)
 
 > **NOTE:**
 >
@@ -19,6 +19,8 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): \\x \in (a, b)\\ rather than \\a \< x \< b\\.
 - [Do one operation per step](../chapters/notation.llms.md#one-operation-per-step) in a derivation, and justify each step.
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
+- [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
+- [Write each symbol through a shared macro](../chapters/notation.llms.md#using-shared-macros).
 - [Write out notational shorthands](../chapters/notation.llms.md#writing-out-notational-shorthands), such as the limits of a sum.
 
 ## 2 Claims and evidence
