@@ -37,6 +37,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/shared-macros.qmd >}}
 
+## Writing dot products
+
+{{< include notation/dot-products.qmd >}}
+
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}

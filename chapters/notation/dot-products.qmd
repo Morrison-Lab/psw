@@ -1,0 +1,32 @@
+When two vectors multiply to give a number,
+write the product as a dot product, $\tilde{x} \cdot \tilde{\beta}$.
+Do not write it as a transpose product, $\tilde{x}' \tilde{\beta}$,
+or with inner-product brackets, $\langle \tilde{x}, \tilde{\beta} \rangle$.
+The dot shows one operation on two vectors.
+A transpose product asks the reader to picture a row vector times a column vector
+and to work out that the result is a single number.
+
+::: {#exm-dot-product}
+
+## Writing a dot product
+
+> ❌ The model is $f(\tilde{x}) = \tilde{x}' \tilde{\beta}$.
+>
+> ✅ The model is $f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}$.
+
+Both versions give the same number.
+The ✅ version shows it as one product of two vectors.
+In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
+write the ✅ version with the dot-product macro,
+for example `$\dprod{\vx}{\vbeta}$`.
+
+:::
+
+Keep the transpose where the product is not a dot product of two vectors:
+
+- a product of matrices, such as $X'X$
+- an outer product, such as $\tilde{x}\tilde{x}'$
+- a quadratic form, such as $\tilde{x}' A \tilde{x}$
+
+Keep the inner-product brackets where the text means any inner product,
+such as a definition of an inner product space.
