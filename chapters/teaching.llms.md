@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 08:43:12 (UTC)
+Last modified: 2026-10-08 08:59:02 (UTC)
 
 > **NOTE:**
 >
@@ -88,7 +88,10 @@ When several courses or repositories have already written the same definition, t
 
 ## 8 Write labs for both languages and any computer
 
+These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
+
 - Give labs and code exercises in both R and Python, side by side.
+- Tell students where to get the data.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
 ## 9 Make figures accessible
