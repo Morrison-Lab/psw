@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-08 20:29:29 (UTC)</p>
+  <p class="date">Last modified: 2026-10-08 20:44:46 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -396,8 +396,34 @@
 </div>
 <p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
 </section>
-<section id="writing-out-notational-shorthands" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Writing out notational shorthands</h2>
+<section id="using-shared-macros" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Using shared macros</h2>
+</section>
+<section class="slide level2">
+
+<p>Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.</p>
+<p>Before you write any symbol, search the group’s shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.</p>
+<div id="exm-use-shared-macro" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Using a shared macro)</strong></span> This example compares the source you type, so both versions appear as code.</p>
+<blockquote>
+<p>❌ Source: <code>Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.</code></p>
+<p>✅ Source: <code>Let $\coef{1}$ be the slope and write the sum as $\sumin$.</code></p>
+</blockquote>
+<p>The ❌ version writes the slope and the sum in raw LaTeX. The ✅ version names each concept once, in the shared file. When the group changes how it prints a coefficient or a sum, every document that uses the macro changes with it.</p>
+</div>
+<p>The same rule covers these quantities:</p>
+<ul>
+<li>transposes</li>
+<li>hats on estimates</li>
+<li>expectations</li>
+<li>variances</li>
+<li>probabilities</li>
+<li>vectors</li>
+</ul>
+<p>A quantity that has a macro keeps the same symbol in every document.</p>
+</section>
+<section id="writing-out-notational-shorthands" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Writing out notational shorthands</h2>
 </section>
 <section class="slide level2">
 
@@ -405,7 +431,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 7 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>

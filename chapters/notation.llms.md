@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 20:29:29 (UTC)
+Last modified: 2026-10-08 20:44:46 (UTC)
 
 > **NOTE:**
 >
@@ -136,7 +136,34 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-## 5 Writing out notational shorthands
+## 5 Using shared macros
+
+Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
+
+Before you write any symbol, search the group’s shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.
+
+> **NOTE:**
+>
+> **Example 6 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+>
+> > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
+> >
+> > ✅ Source: `Let $\coef{1}$ be the slope and write the sum as $\sumin$.`
+>
+> The ❌ version writes the slope and the sum in raw LaTeX. The ✅ version names each concept once, in the shared file. When the group changes how it prints a coefficient or a sum, every document that uses the macro changes with it.
+
+The same rule covers these quantities:
+
+- transposes
+- hats on estimates
+- expectations
+- variances
+- probabilities
+- vectors
+
+A quantity that has a macro keeps the same symbol in every document.
+
+## 6 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -146,7 +173,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 6 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 7 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
