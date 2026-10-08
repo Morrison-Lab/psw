@@ -159,7 +159,9 @@ instead of keeping a second wording that can drift.
 - Put commentary on a definition or result in a `#rem-` div, not in a `::: notes` div.
   A notes div is plain text without a box on the web page and is hidden on the slides,
   so a reader of either format cannot see where the commentary begins and ends.
-- Keep text blocks on slides short, because an audience should not have to read a long paragraph.
+- Put on a slide only what you want the audience to look at.
+  An audience should not have to read a long paragraph,
+  so text that supports the speaker rather than the viewer belongs in speaker notes.
   Write a one- or two-sentence `#rem-` div for the slide,
   and put the rest of a long paragraph in a `::: notes` div directly after it.
   Reveal.js shows that div only in speaker view, and the web page shows it below the box.
