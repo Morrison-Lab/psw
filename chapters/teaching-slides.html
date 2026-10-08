@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-06 23:46:06 (UTC)</p>
+  <p class="date">Last modified: 2026-10-08 05:04:00 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -452,6 +452,8 @@
 <li>Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.</li>
 <li>Put a list of three or more phrases in a bullet list, as <a href="../chapters/conciseness.html#put-lists-in-bullet-points">Put lists in bullet points</a> describes.</li>
 <li>Put each named example in an <code>#exm-</code> div.</li>
+<li>Put on a slide only what you want the audience to look at. Put an example in an <code>#exm-</code> div and short commentary in a <code>#rem-</code> div, because a <code>::: notes</code> div is plain text without a box on the web page.</li>
+<li>Put a long paragraph of commentary in a remark that is also speaker notes: <code>::: {#rem-name .remark .notes}</code>. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short <code>#rem-</code> div only when the slide needs a takeaway to look at.</li>
 <li>Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.</li>
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
