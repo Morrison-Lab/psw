@@ -153,6 +153,9 @@ instead of keeping a second wording that can drift.
 - Place each figure directly after the sentence that first refers to it.
   Do not refer to a figure, table, or result that appears later in the document,
   because the reader meets the reference before the thing it points to.
+  This rule is for teaching materials, which are reading copies.
+  A journal submission may collect its figures at the end,
+  as [Figures and tables](paper-organization.qmd#figures-and-tables) describes.
 - Make each figure follow the accessibility rules below.
 
 ## Write labs for both languages and any computer
