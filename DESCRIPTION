@@ -3,8 +3,9 @@ Title: Principles of Scientific Writing
 Version: 0.0.1
 Authors@R:
     person("Douglas", "Morrison", , "demorrison@ucdavis.edu", role = c("aut", "cre"))
-Description: A website presenting principles of scientific writing, with a
-    focus on writing about statistical data analysis.
+Description: A website presenting principles of writing in science,
+    technology, engineering, and mathematics, with a focus on writing about
+    statistical data analysis.
 License: CC BY-NC-ND 4.0
 Encoding: UTF-8
 Language: en-US

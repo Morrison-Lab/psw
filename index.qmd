@@ -19,7 +19,7 @@ Most of its rules also apply to informative prose in general.
 I intend to give it to academic mentees as a style guide reference,
 and also use it as a notebook for myself.
 
-The [Introduction](chapters/intro.qmd) describes what the book covers,
-who it is for, and how its chapters are organized.
+The [Introduction](chapters/intro.qmd) describes the book's scope
+and how its chapters are organized.
 The [Summary](chapters/summary.qmd) lists the book's main rules
 as a checklist for revising a draft.
