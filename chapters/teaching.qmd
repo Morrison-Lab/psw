@@ -134,6 +134,25 @@ instead of keeping a second wording that can drift.
   and each number in the prose comes from inline code.
   A number typed into prose goes stale when the data or the code changes.
 
+## Show each idea applied and in a figure
+
+- Give every definition, method and result at least one applied example
+  that computes it on real data,
+  so the reader sees what the idea does before or beside the algebra.
+- Give every topic at least one figure that shows the idea,
+  such as the data with a fitted curve, a distribution, or a diagram of the procedure.
+  A page of definitions with no figure and no data is incomplete.
+- Prerequisite notes follow the same rule as course lectures.
+  A prerequisite page that is only definitions and algebra needs an applied example and a figure.
+- Make each figure follow the accessibility rules below.
+
+## Write labs for both languages and any computer
+
+- Give labs and code exercises in both R and Python, side by side.
+- Do not assume that students own a laptop.
+  Assume only that they can use some computer,
+  so setup steps must work on a shared or hosted machine.
+
 ## Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
