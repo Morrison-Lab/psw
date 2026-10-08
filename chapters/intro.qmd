@@ -21,7 +21,7 @@ Most of its rules apply to any writing that explains technical ideas.
 ## What the book covers
 
 Most chapters give rules for every kind of technical writing,
-such as a paper, a set of lecture notes, or a report to a collaborator.
+such as a paper or a set of lecture notes.
 Three chapters cover one kind of document:
 
 - [Paper organization](paper-organization.qmd)
@@ -50,7 +50,7 @@ without knowing what the paper is about.
 
 The chapters fall into four groups:
 
-- Content:
+- Terms, notation, and evidence:
   - [Defining terms clearly](defining-terms.qmd)
   - [Mathematical notation](notation.qmd)
   - [Citations and evidence](citations-evidence.qmd)

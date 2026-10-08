@@ -17,7 +17,7 @@ Use the checklist when you revise a draft:
 read the draft once for each group of rules,
 and fix each passage that breaks a rule.
 Each rule is stated in a few words here.
-Follow its link for the reasons, the exceptions, and examples.
+Follow its link for the reasons and the exceptions.
 
 ## Terms and notation
 
