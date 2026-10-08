@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 22:39:27 (UTC)
+Last modified: 2026-10-08 22:39:48 (UTC)
 
 > **NOTE:**
 >
@@ -163,13 +163,27 @@ The same rule covers these quantities:
 
 A quantity that has a macro keeps the same symbol in every document.
 
+Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`.
+
+> **NOTE:**
+>
+> **Example 7 (Naming a macro for its meaning)**  
+>
+> > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
+> >
+> > ✅ Source: `The error at layer $\ell$ is $\backerr^{(\ell)}$, and the step size is $\learnrate$.`
+>
+> Both versions print the same symbols. In the ✅ version, a reader of the source sees what each symbol stands for, and a group that changes the symbol for the step size changes one line in the shared file.
+
+A passage about the notation itself, such as a table that lists each symbol and what it means, may write the letters directly.
+
 ## 6 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 7 (Writing a dot product)**  
+> **Example 8 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -195,7 +209,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 8 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 9 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
