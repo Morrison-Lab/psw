@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 20:02:21 (UTC)
+Last modified: 2026-10-08 20:06:47 (UTC)
 
 > **NOTE:**
 >
@@ -130,9 +130,9 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 >
 > > ❌ Consider the model \\h(x) = w x + b\\.
 > >
-> > ✅ Consider the mean function \\\mu(x) = \beta_0 + \beta_1 x\\.
+> > ✅ Consider the mean function \\\mu(x) = \beta_0 + \beta_x x\\.
 >
-> The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that \\h\\, \\w\\ and \\b\\ are \\\mu\\, \\\beta_1\\ and \\\beta_0\\.
+> The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that \\h\\, \\w\\ and \\b\\ are \\\mu\\, \\\beta_x\\ and \\\beta_0\\.
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
