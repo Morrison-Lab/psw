@@ -145,6 +145,10 @@ instead of keeping a second wording that can drift.
 - Prerequisite notes follow the same rule as course lectures.
   A prerequisite page that is only definitions and algebra needs an applied example and a figure.
 - Make each figure follow the accessibility rules below.
+- Give labs and code exercises in both R and Python, side by side.
+- Do not assume that students own a laptop.
+  Assume only that they can use some computer,
+  so setup steps must work on a shared or hosted machine.
 
 ## Make figures accessible
 
