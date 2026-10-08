@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 20:33:31 (UTC)
+Last modified: 2026-10-08 20:40:02 (UTC)
 
 > **NOTE:**
 >
@@ -140,19 +140,28 @@ Before you release a document that reuses a quantity from another one, search bo
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
-Before you write any symbol, search the shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.
+Before you write any symbol, search the group’s shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.
 
 > **NOTE:**
 >
-> **Example 6 (Using a shared macro)**  
+> **Example 6 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
-> > ❌ Let \\\beta_1\\ be the slope and write the sum as \\\sum\_{i=1}^n\\.
+> > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
-> > ✅ Let `\coef{1}` be the slope and write the sum as `\sumin`.
+> > ✅ Source: `Let $\coef{1}$ be the slope and write the sum as $\sumin$.`
 >
 > The ❌ version writes the slope and the sum in raw LaTeX. The ✅ version names each concept once, in the shared file. When the group changes how it prints a coefficient or a sum, every document that uses the macro changes with it.
 
-The same rule covers transposes, hats on estimates, expectations, variances, probabilities, and vectors. A quantity that has a macro keeps the same symbol in every document.
+The same rule covers these quantities:
+
+- transposes
+- hats on estimates
+- expectations
+- variances
+- probabilities
+- vectors
+
+A quantity that has a macro keeps the same symbol in every document.
 
 ## 6 Writing out notational shorthands
 
