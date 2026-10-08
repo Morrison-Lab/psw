@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-08 09:16:48 (UTC)</p>
+  <p class="date">Last modified: 2026-10-08 20:29:29 (UTC)</p>
 </section>
 <section class="slide level2">
 
@@ -373,8 +373,31 @@
 <li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
 </ul>
 </section>
-<section id="writing-out-notational-shorthands" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Writing out notational shorthands</h2>
+<section id="matching-names-and-notation" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Matching names and notation</h2>
+</section>
+<section class="slide level2">
+
+<p>A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “inner product” expects to see the notation for an inner product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.</p>
+<p>Keep the pairing the same everywhere the quantity appears. Notes, assignments, solutions and slides in one course should use one name and one notation for each quantity. When two fields call one idea by different names, choose one name, list the other names where you define the idea, and use only the chosen name afterward (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Name the synonyms</a>).</p>
+<div id="exm-name-matches-notation" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Matching a name to its notation)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Compute the inner product <span class="math inline">\(\tilde{a}' \tilde{b}\)</span>.</p>
+<p>✅ Compute the inner product <span class="math inline">\(\langle \tilde{a}, \tilde{b} \rangle\)</span>.</p>
+</blockquote>
+<p>The ❌ version names an inner product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the inner product <span class="math inline">\(\langle \tilde{a}, \tilde{b} \rangle\)</span> equals the matrix product <span class="math inline">\(\tilde{a}' \tilde{b}\)</span>”.</p>
+<p>In a course that writes regression in statistical notation:</p>
+<blockquote>
+<p>❌ Consider the model <span class="math inline">\(h(x) = w x + b\)</span>.</p>
+<p>✅ Consider the mean function <span class="math inline">\(\mu(x) = \beta_0 + \beta_x x\)</span>.</p>
+</blockquote>
+<p>The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that <span class="math inline">\(h\)</span>, <span class="math inline">\(w\)</span> and <span class="math inline">\(b\)</span> are <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\beta_0\)</span>.</p>
+</div>
+<p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
+</section>
+<section id="writing-out-notational-shorthands" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Writing out notational shorthands</h2>
 </section>
 <section class="slide level2">
 
@@ -382,7 +405,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 6 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
