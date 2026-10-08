@@ -156,6 +156,16 @@ instead of keeping a second wording that can drift.
 - Put a list of three or more phrases in a bullet list,
   as [Put lists in bullet points](conciseness.qmd#put-lists-in-bullet-points) describes.
 - Put each named example in an `#exm-` div.
+- Put commentary on a definition or result in a `#rem-` div, not in a `::: notes` div.
+  A notes div is plain text without a box on the web page and is hidden on the slides,
+  so a reader of either format cannot see where the commentary begins and ends.
+- Keep text blocks on slides short, because an audience should not have to read a long paragraph.
+  Write a one- or two-sentence `#rem-` div for the slide,
+  and put the rest of a long paragraph in a `::: notes` div directly after it.
+  Reveal.js shows that div only in speaker view, and the web page shows it below the box.
+  The notes add detail and never repeat the box,
+  so the web page does not say anything twice.
+  To keep a whole remark off the slides, give it both classes: `::: {#rem-name .remark .notes}`.
 - Add structure only where content has a shape.
   Do not put a heading over a single item,
   or over the same topic as the heading just before it.
