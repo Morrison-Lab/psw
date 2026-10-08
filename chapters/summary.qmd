@@ -31,6 +31,9 @@ Follow its link for the reasons and the exceptions.
 - [Do one operation per step](notation.qmd#one-operation-per-step)
   in a derivation, and justify each step.
 - [Distinguish a function from its value](notation.qmd#functions-and-their-values).
+- [Use the notation that matches a quantity's name](notation.qmd#matching-names-and-notation),
+  and keep the pairing the same everywhere.
+- [Write each symbol through a shared macro](notation.qmd#using-shared-macros).
 - [Write out notational shorthands](notation.qmd#writing-out-notational-shorthands),
   such as the limits of a sum.
 
