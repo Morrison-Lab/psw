@@ -150,6 +150,9 @@ instead of keeping a second wording that can drift.
   A page of definitions with no figure and no data is incomplete.
 - Prerequisite notes follow the same rule as course lectures.
   A prerequisite page that is only definitions and algebra needs an applied example and a figure.
+- Place each figure directly after the sentence that first refers to it.
+  Do not refer to a figure, table, or result that appears later in the document,
+  because the reader meets the reference before the thing it points to.
 - Make each figure follow the accessibility rules below.
 
 ## Write labs for both languages and any computer
