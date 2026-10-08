@@ -6,7 +6,7 @@ conventions apply to GitHub Copilot.
 ## Project context
 
 `psw` ("Principles of Scientific Writing") is a [Quarto](https://quarto.org/)
-website — a style guide for scientific writing, with a focus on writing about
+website — a style guide for writing in STEM, with a focus on writing about
 statistical data analysis. It is built from the
 [`qwt`](https://github.com/d-morrison/qwt) Quarto website template, so it shares
 that template's structure (profiles, theorem-callout extensions, multi-format

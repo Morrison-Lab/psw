@@ -1,6 +1,5 @@
 ---
 title: "Introduction"
-draft: true
 format:
   html: default
   revealjs:
@@ -12,3 +11,105 @@ format:
 ---
 
 {{< include _copilot-disclaimer.qmd >}}
+
+This book is a style guide for writing in science, technology,
+engineering, and mathematics (STEM).
+Its examples come mostly from statistics and data analysis,
+because that is the field I work in,
+but its rules apply to any writing that explains technical ideas.
+
+## What the book covers
+
+The rules apply to every kind of technical document,
+including:
+
+- research papers, theses, and grant proposals;
+- lecture notes, slides, and problem sets;
+- reports and analysis write-ups for collaborators;
+- software documentation, README files, and code comments; and
+- issues, pull requests, and other messages to coauthors.
+
+Most chapters give rules that hold for all of these documents.
+Two chapters cover one kind of document each:
+[Preparing a manuscript for submission](manuscript-submission.qmd)
+covers journal papers,
+and [Writing for teaching](teaching.qmd)
+covers course materials.
+
+## Who the book is for
+
+I wrote this book for three groups of readers:
+
+- students and mentees who are learning to write about their research;
+- coauthors who want to know what I will ask them to change in a draft; and
+- AI writing assistants that draft or edit prose for me
+  or for people in my lab.
+
+The third group is why many rules are stated as checks
+that a reader can apply to a single sentence.
+For example,
+[Demonstrative pronouns](grammar.qmd#demonstrative-pronouns)
+asks whether each "this" or "that" is followed by the noun it refers to.
+A person or a program can answer that question
+without knowing what the paper is about.
+
+## How the book is organized
+
+The chapters move from single words and terms,
+to sentences,
+to whole documents:
+
+- [Defining terms clearly](defining-terms.qmd):
+  how to state a definition and pair it with examples.
+- [Mathematical notation](notation.qmd):
+  how to write formulas that read as part of the prose.
+- [Citations and evidence](citations-evidence.qmd):
+  how to support each claim with a source or with data.
+- [Paper organization](paper-organization.qmd):
+  how to order the sections, figures, and tables of a paper.
+- [Preparing a manuscript for submission](manuscript-submission.qmd):
+  what journals expect of a manuscript.
+- [Word choice](word-choice.qmd):
+  plain words over Latin-derived ones, and concrete words over vague ones.
+- [Writing for every reader](inclusive-writing.qmd):
+  how to write for readers who are learning English or are neurodiverse.
+- [Avoiding AI tells](avoid-ai-tells.qmd):
+  the words and sentence shapes that mark machine-drafted prose.
+- [Grammar](grammar.qmd):
+  pronouns and sentence structures that make readers backtrack.
+- [Conciseness](conciseness.qmd):
+  how to say the same thing in fewer words.
+- [Writing for teaching](teaching.qmd):
+  the extra rules for course materials.
+
+The [Summary](summary.qmd) lists the main rule of each section
+as a checklist for revising a draft.
+
+## How to read the book
+
+You do not need to read the chapters in order.
+Most sections state one rule,
+give the reason for the rule,
+and show the rule applied.
+Many compare a weaker version of a passage
+with a stronger one.
+For example,
+the [Word choice](word-choice.qmd) chapter
+recommends "before" over "prior to":
+
+> **Poor:** Prior to fitting the model, we removed outliers.
+>
+> **Better:** Before fitting the model, we removed outliers.
+
+Definitions, examples, and exercises appear in numbered, colored boxes,
+so that other sections and other documents can link to them.
+
+Use the book as a reference while you write,
+and use the [Summary](summary.qmd) checklist when you revise.
+
+## Contributing
+
+The book is a work in progress.
+If a rule is unclear, wrong, or missing,
+open an issue on the book's
+[GitHub repository](https://github.com/Morrison-Lab/psw/issues).

@@ -19,7 +19,7 @@ project:
 website:
   title: "Principles of Scientific Writing"
   site-url: https://d-morrison.github.io/psw/
-  description: "A style guide for scientific writing, focused on writing about statistical data analysis."
+  description: "A style guide for writing in science, technology, engineering, and mathematics, focused on writing about statistical data analysis."
   # https://quarto.org/docs/websites/website-llms.html — use `llms-txt:`, not `llms:` (schema error)
   llms-txt: true
   page-footer:

@@ -12,4 +12,102 @@ format:
 
 {{< include _copilot-disclaimer.qmd >}}
 
-In summary, this website has no content whatsoever.
+This chapter lists the main rules of the book as a checklist.
+Use the checklist when you revise a draft:
+read the draft once for each group of rules,
+and fix each passage that breaks a rule.
+Each rule links to the section that explains it
+and shows it applied.
+
+## Terms and notation
+
+- [Define every technical term](defining-terms.qmd#guidelines-for-defining-terms)
+  explicitly, next to its first use.
+- [Follow each definition with examples](defining-terms.qmd#why-examples-matter),
+  and with counterexamples that show where it stops applying.
+- [Give each mathematical statement an example](defining-terms.qmd#mathematical-statements-require-examples)
+  that applies it.
+- [Present a derivation](defining-terms.qmd#presenting-a-derivation-exercise-solution-theorem-proof)
+  as an exercise and solution, then the theorem and its proof.
+- [Write an interval instead of a double inequality](notation.qmd#avoiding-double-inequalities):
+  $x \in (a, b)$, not $a < x < b$.
+- [Do one operation per step](notation.qmd#one-operation-per-step)
+  in a derivation, and justify each step.
+- [Distinguish a function from its value](notation.qmd#functions-and-their-values).
+- [Write out notational shorthands](notation.qmd#writing-out-notational-shorthands),
+  such as the limits of a sum.
+
+## Claims and evidence
+
+- [Support every claim](citations-evidence.qmd#why-claims-need-support)
+  with a citation or with data.
+- [Do not substitute flippancy for support](citations-evidence.qmd#do-not-substitute-flippancy-for-support),
+  such as calling a step "trivial".
+- [Cite a relevant source](citations-evidence.qmd#what-makes-a-citation-relevant)
+  that is [trustworthy](citations-evidence.qmd#what-makes-a-source-trustworthy).
+- [Quote the original](citations-evidence.qmd#quote-the-original)
+  rather than a source that quotes it.
+- [Link liberally](citations-evidence.qmd#link-liberally)
+  to the sources and tools you mention.
+- [Credit another course's material](citations-evidence.qmd#adapting-another-courses-material)
+  where readers can see the credit.
+
+## Documents
+
+- [Follow the standard structure](paper-organization.qmd#standard-paper-structure)
+  of a research paper.
+- [Organize the Results section](paper-organization.qmd#organizing-the-results-section)
+  to fit the design of the study.
+- [Label variables in plain words](paper-organization.qmd#label-variables-in-plain-words)
+  in figures and tables.
+- [Use descriptive subsection headings](paper-organization.qmd#subsection-headings).
+- [Put each link to a video next to the text it supports](paper-organization.qmd#links-to-videos-and-other-media).
+- [Follow the journal's conventions](manuscript-submission.qmd)
+  for a manuscript,
+  and check the [submission checklist](manuscript-submission.qmd#submission-checklist)
+  before you submit.
+
+## Words
+
+- [Prefer plain words](word-choice.qmd)
+  over Latin-derived ones.
+- [Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language).
+- [Follow an abstract statement with an example](word-choice.qmd#follow-an-abstract-statement-with-an-example).
+- [Say which thing](word-choice.qmd#say-which-thing)
+  you mean.
+- [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon).
+- [Remove the words and sentence shapes](avoid-ai-tells.qmd)
+  that mark machine-drafted prose.
+
+## Writing for every reader
+
+- [Use literal language](inclusive-writing.qmd#use-literal-language).
+- [Use common words, and define technical ones](inclusive-writing.qmd#use-common-words-and-define-technical-ones).
+- [Spell out abbreviations](inclusive-writing.qmd#spell-out-abbreviations).
+- [Put one idea in each sentence](inclusive-writing.qmd#put-one-idea-in-each-sentence).
+- [State every step and every point](inclusive-writing.qmd#state-every-step-and-every-point).
+- [Say what numbers and symbols mean](inclusive-writing.qmd#say-what-numbers-and-symbols-mean).
+- [Keep a predictable structure](inclusive-writing.qmd#keep-a-predictable-structure).
+- [Test your writing with a reader](inclusive-writing.qmd#test-your-writing-with-a-reader).
+
+## Sentences
+
+- [Keep relative pronouns](grammar.qmd#relative-pronouns)
+  such as "that" and "which".
+- [Follow "this" or "that" with the noun it refers to](grammar.qmd#demonstrative-pronouns).
+- [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences).
+- [Name the object of a relational noun](grammar.qmd#name-the-object-of-a-relational-noun).
+- [Lead with the subject](conciseness.qmd#lead-with-the-subject).
+- [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures).
+- [Avoid double negatives](conciseness.qmd#avoid-double-negatives).
+- [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
+- [Put lists of three or more items in bullet points](conciseness.qmd#put-lists-in-bullet-points).
+
+## Teaching materials
+
+- [Build the lecture from exercises and solutions](teaching.qmd#build-the-lecture-from-exercises-and-solutions).
+- [Ask the question before giving the definition](teaching.qmd#exm-exercise-before-definition).
+- [Give each defined term its own div](teaching.qmd#give-each-defined-term-its-own-div).
+- [Use real data and compute every number](teaching.qmd#use-real-data-and-compute-every-number).
+- [Make figures accessible](teaching.qmd#make-figures-accessible).
+- [Structure slides for the reader](teaching.qmd#structure-slides-for-the-reader).
