@@ -1,6 +1,6 @@
 # Principles of Scientific Writing
 
-> A style guide for scientific writing, focused on writing about statistical data analysis.
+> A style guide for writing in science, technology, engineering, and mathematics, focused on writing about statistical data analysis.
 
 ## Pages
 
@@ -8,6 +8,7 @@
 - [Word choice](https://d-morrison.github.io/psw/chapters/word-choice.llms.md)
 - [Summary](https://d-morrison.github.io/psw/chapters/summary.llms.md)
 - [Mathematical notation](https://d-morrison.github.io/psw/chapters/notation.llms.md)
+- [Introduction](https://d-morrison.github.io/psw/chapters/intro.llms.md)
 - [Grammar](https://d-morrison.github.io/psw/chapters/grammar.llms.md)
 - [Conciseness](https://d-morrison.github.io/psw/chapters/conciseness.llms.md)
 - [Avoiding AI tells](https://d-morrison.github.io/psw/chapters/avoid-ai-tells.llms.md)

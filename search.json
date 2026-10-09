@@ -74,7 +74,105 @@
     "href": "chapters/summary.html",
     "title": "Summary",
     "section": "",
-    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\n\n\nIn summary, this website has no content whatsoever.\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\nThis chapter lists the book’s main rules as a checklist. Use the checklist when you revise a draft: read the draft once for each group of rules, and fix each passage that breaks a rule. Each rule is stated in a few words here. Follow its link for the reasons and the exceptions."
+  },
+  {
+    "objectID": "chapters/summary.html#terms-and-notation",
+    "href": "chapters/summary.html#terms-and-notation",
+    "title": "Summary",
+    "section": "1 Terms and notation",
+    "text": "1 Terms and notation\n\nDefine every technical term explicitly, next to its first use, and follow the definition with examples and counterexamples.\nGive each mathematical statement an example that applies it.\nPrefer interval notation to a double inequality: \\(x \\in (a, b)\\) rather than \\(a &lt; x &lt; b\\).\nDo one operation per step in a derivation, and justify each step.\nDistinguish a function from its value.\nUse the notation that matches a quantity’s name, and keep the pairing the same everywhere.\nWrite each symbol through a shared macro.\nWrite out notational shorthands, such as the limits of a sum."
+  },
+  {
+    "objectID": "chapters/summary.html#claims-and-evidence",
+    "href": "chapters/summary.html#claims-and-evidence",
+    "title": "Summary",
+    "section": "2 Claims and evidence",
+    "text": "2 Claims and evidence\n\nSupport every claim with a citation or with data.\nDo not substitute flippancy for support, such as calling a step “trivial”.\nCite a relevant source that is trustworthy.\nCopy exact wording with caution, even from your own earlier work.\nLink liberally to the sources and tools that you mention.\nQuote the original rather than a source that quotes it.\nPut the content first: name the topic, not its author, in headings and sentences."
+  },
+  {
+    "objectID": "chapters/summary.html#papers",
+    "href": "chapters/summary.html#papers",
+    "title": "Summary",
+    "section": "3 Papers",
+    "text": "3 Papers\n\nFollow the standard structure of a research paper.\nOrganize the Results section to fit the design of the study.\nLabel variables in plain words in figures and tables.\nUse descriptive subsection headings.\nPut each link to a video next to the text that it supports.\nFollow the journal’s conventions for a manuscript, and check the submission checklist before you submit."
+  },
+  {
+    "objectID": "chapters/summary.html#words",
+    "href": "chapters/summary.html#words",
+    "title": "Summary",
+    "section": "4 Words",
+    "text": "4 Words\n\nPrefer plain words to Latin-derived ones where a plain word says the same thing.\nAvoid vague and metaphorical language.\nFollow an abstract statement with an example.\nReplace the word “thing” with the object, quantity, step, or idea that it stands for.\nMinimize unnecessary jargon.\nEdit out clusters of the words and sentence shapes that mark machine-drafted prose."
+  },
+  {
+    "objectID": "chapters/summary.html#writing-for-every-reader",
+    "href": "chapters/summary.html#writing-for-every-reader",
+    "title": "Summary",
+    "section": "5 Writing for every reader",
+    "text": "5 Writing for every reader\n\nUse literal language.\nUse common words, and define technical ones.\nSay when a common word has a technical meaning, such as “significant” or “bias”.\nSpell out abbreviations.\nWrite positive statements, and avoid double negatives.\nRewrite noun strings and hidden verbs.\nPut one idea in each sentence.\nState every step and every point.\nSay what numbers and symbols mean.\nUse examples that every reader knows.\nKeep a predictable structure.\nPresent ideas in more than one form.\nTest your writing with a reader."
+  },
+  {
+    "objectID": "chapters/summary.html#sentences",
+    "href": "chapters/summary.html#sentences",
+    "title": "Summary",
+    "section": "6 Sentences",
+    "text": "6 Sentences\n\nKeep relative pronouns such as “that” and “which”.\nFollow “this” or “that” with the noun that it refers to.\nFollow a quantifier such as “both” or “each” with its noun.\nAvoid garden-path sentences.\nName the object of a relational noun.\nLead with the subject.\nLimit complex sentence structures.\nDo not rule out readings that no reader would make.\nWrite about the subject, not about the text.\nPut a list of three or more phrases in bullet points."
+  },
+  {
+    "objectID": "chapters/summary.html#teaching-materials",
+    "href": "chapters/summary.html#teaching-materials",
+    "title": "Summary",
+    "section": "7 Teaching materials",
+    "text": "7 Teaching materials\n\nBuild the lecture from exercises and solutions.\nAsk the question before giving the definition.\nPresent a derivation as an exercise and solution, then the theorem and its proof.\nGive each defined term its own div.\nState the notation and its alternatives.\nLead with the simplest correct form of a definition.\nReuse one written version of each result.\nUse real data and compute every number.\nShow each idea applied and in a figure.\nWrite labs for both R and Python that run on any computer.\nMake figures accessible.\nStructure slides for the reader.\nCredit another course’s material in a collapsed “Source” callout, not in running prose."
+  },
+  {
+    "objectID": "chapters/summary-slides.html#terms-and-notation",
+    "href": "chapters/summary-slides.html#terms-and-notation",
+    "title": "Summary",
+    "section": "1 Terms and notation",
+    "text": "1 Terms and notation"
+  },
+  {
+    "objectID": "chapters/summary-slides.html#claims-and-evidence",
+    "href": "chapters/summary-slides.html#claims-and-evidence",
+    "title": "Summary",
+    "section": "2 Claims and evidence",
+    "text": "2 Claims and evidence"
+  },
+  {
+    "objectID": "chapters/summary-slides.html#papers",
+    "href": "chapters/summary-slides.html#papers",
+    "title": "Summary",
+    "section": "3 Papers",
+    "text": "3 Papers"
+  },
+  {
+    "objectID": "chapters/summary-slides.html#words",
+    "href": "chapters/summary-slides.html#words",
+    "title": "Summary",
+    "section": "4 Words",
+    "text": "4 Words"
+  },
+  {
+    "objectID": "chapters/summary-slides.html#writing-for-every-reader",
+    "href": "chapters/summary-slides.html#writing-for-every-reader",
+    "title": "Summary",
+    "section": "5 Writing for every reader",
+    "text": "5 Writing for every reader"
+  },
+  {
+    "objectID": "chapters/summary-slides.html#sentences",
+    "href": "chapters/summary-slides.html#sentences",
+    "title": "Summary",
+    "section": "6 Sentences",
+    "text": "6 Sentences"
+  },
+  {
+    "objectID": "chapters/summary-slides.html#teaching-materials",
+    "href": "chapters/summary-slides.html#teaching-materials",
+    "title": "Summary",
+    "section": "7 Teaching materials",
+    "text": "7 Teaching materials"
   },
   {
     "objectID": "chapters/notation.html",
@@ -180,6 +278,83 @@
     "title": "Mathematical notation",
     "section": "7 Writing out notational shorthands",
     "text": "7 Writing out notational shorthands"
+  },
+  {
+    "objectID": "chapters/intro.html",
+    "href": "chapters/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "NoteAI-Assisted Authorship\n\n\n\nThis chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.\nThis book is a style guide for writing in science, technology, engineering, and mathematics (STEM). Most of its examples come from statistics and data analysis, because statistics and data analysis are the fields that I work in. Most of its rules apply to any writing that explains technical ideas."
+  },
+  {
+    "objectID": "chapters/intro.html#what-the-book-covers",
+    "href": "chapters/intro.html#what-the-book-covers",
+    "title": "Introduction",
+    "section": "1 What the book covers",
+    "text": "1 What the book covers\nMost chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Three chapters cover one kind of document:\n\nPaper organization and Preparing a manuscript for submission cover research papers.\nWriting for teaching covers lecture notes, slides, and problem sets."
+  },
+  {
+    "objectID": "chapters/intro.html#who-the-book-is-for",
+    "href": "chapters/intro.html#who-the-book-is-for",
+    "title": "Introduction",
+    "section": "2 Who the book is for",
+    "text": "2 Who the book is for\nI wrote this book for students and mentees who are learning to write about their research. I also wrote it for the AI writing assistants that draft and edit prose for me.\nMany rules are stated as checks that a reader can apply to a single sentence, so a student and an AI assistant can apply them the same way. For example, the section on demonstrative pronouns asks whether each “this” or “that” is followed by the noun that it refers to. A person or a program can answer that question without knowing what the paper is about."
+  },
+  {
+    "objectID": "chapters/intro.html#how-the-book-is-organized",
+    "href": "chapters/intro.html#how-the-book-is-organized",
+    "title": "Introduction",
+    "section": "3 How the book is organized",
+    "text": "3 How the book is organized\nThe chapters fall into four groups:\n\nTerms, notation, and evidence:\n\nDefining terms clearly\nMathematical notation\nCitations and evidence\n\nPapers:\n\nPaper organization\nPreparing a manuscript for submission\n\nWords and sentences:\n\nWord choice\nWriting for every reader\nAvoiding AI tells\nGrammar\nConciseness\n\nTeaching:\n\nWriting for teaching\n\n\nThe Summary lists the book’s main rules as a checklist for revising a draft."
+  },
+  {
+    "objectID": "chapters/intro.html#how-to-read-the-book",
+    "href": "chapters/intro.html#how-to-read-the-book",
+    "title": "Introduction",
+    "section": "4 How to read the book",
+    "text": "4 How to read the book\nYou do not need to read the chapters in order. Most sections state one rule and the reason for it, and then show the rule applied to an example. Many sections compare a weaker version of a passage with a stronger one. For example, the Word choice chapter recommends “before” over “prior to”:\n\n❌ Prior to fitting the model, we removed outliers.\n✅ We removed outliers before fitting the model.\n\nDefinitions, examples, and exercises appear in numbered, colored boxes, so that other sections and other documents can link to them.\nUse the book as a reference while you write, and use the Summary checklist when you revise."
+  },
+  {
+    "objectID": "chapters/intro.html#contributing",
+    "href": "chapters/intro.html#contributing",
+    "title": "Introduction",
+    "section": "5 Contributing",
+    "text": "5 Contributing\nThe book is a work in progress. If a rule is unclear, wrong, or missing, open an issue on the book’s GitHub repository."
+  },
+  {
+    "objectID": "chapters/intro-slides.html#what-the-book-covers",
+    "href": "chapters/intro-slides.html#what-the-book-covers",
+    "title": "Introduction",
+    "section": "1 What the book covers",
+    "text": "1 What the book covers"
+  },
+  {
+    "objectID": "chapters/intro-slides.html#who-the-book-is-for",
+    "href": "chapters/intro-slides.html#who-the-book-is-for",
+    "title": "Introduction",
+    "section": "2 Who the book is for",
+    "text": "2 Who the book is for"
+  },
+  {
+    "objectID": "chapters/intro-slides.html#how-the-book-is-organized",
+    "href": "chapters/intro-slides.html#how-the-book-is-organized",
+    "title": "Introduction",
+    "section": "3 How the book is organized",
+    "text": "3 How the book is organized"
+  },
+  {
+    "objectID": "chapters/intro-slides.html#how-to-read-the-book",
+    "href": "chapters/intro-slides.html#how-to-read-the-book",
+    "title": "Introduction",
+    "section": "4 How to read the book",
+    "text": "4 How to read the book"
+  },
+  {
+    "objectID": "chapters/intro-slides.html#contributing",
+    "href": "chapters/intro-slides.html#contributing",
+    "title": "Introduction",
+    "section": "5 Contributing",
+    "text": "5 Contributing"
   },
   {
     "objectID": "chapters/grammar.html",
@@ -1453,6 +1628,6 @@
     "href": "index.html",
     "title": "Principles of Scientific Writing",
     "section": "",
-    "text": "Preface\nThis website will present my perspective on scientific writing, in particular focusing on writing about statistical data analysis, but also scientific writing generally (and informative prose generally). I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Preface\nThis website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]
