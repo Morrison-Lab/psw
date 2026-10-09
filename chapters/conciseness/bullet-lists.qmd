@@ -49,15 +49,15 @@ so the reader sees at a glance that there are three.
 
 ## Turning a run of resource sentences into bullet points
 
-> ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Hutchinson teaches [the multivariate case](https://facultyweb.cs.wwu.edu/~hutchib2/video_lectures/data371/#linear_regression_pt2) (11 min).
+> ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 >
 > ✅ Videos:
 >
 > - Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo).
-> - Hutchinson teaches [the multivariate case](https://facultyweb.cs.wwu.edu/~hutchib2/video_lectures/data371/#linear_regression_pt2) (11 min).
+> - Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 
 This example comes from the DATA 571 notes on
-[multivariate linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
+[linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
 Each bullet holds one video,
 so the reader can pick one without parsing the paragraph.
 
