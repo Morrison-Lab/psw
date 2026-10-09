@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 11:48:07 (PDT)
+Last modified: 2026-10-09 11:53:40 (PDT)
 
 > **NOTE:**
 >
@@ -289,7 +289,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 >
 > The macro `\vprederr` prints the vector of prediction errors. The document defines it once, where the model is introduced, as `\vprederr = \design\vcoef - \vy`. The ✅ version has one fewer level of brackets, and it names the quantity the gradient depends on.
 
-Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\left` with `\right`, say how a bracket is drawn, not what it groups. The shared macros `\paren{}`, `\sb{}`, `\set{}` and `\abs{}` size themselves to their contents, so write them instead of a hand-sized pair. Arrows such as `\leftarrow` are not delimiters.
+Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\left` with `\right`, say how a bracket is drawn, not what it groups. The shared macros `\paren{}`, `\sb{}`, `\cb{}`, `\set{}` and `\abs{}` size themselves to their contents, so write them instead of a hand-sized pair. Arrows such as `\leftarrow` are not delimiters.
 
 > **NOTE:**
 >
