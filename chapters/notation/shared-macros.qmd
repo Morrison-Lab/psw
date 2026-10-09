@@ -74,6 +74,8 @@ so `\hat` names no concept either.
 Write the macro that names the role instead,
 such as `\est{}` for an estimate,
 and keep `\hat` for passages that discuss the notation itself.
+New math follows this now;
+existing hats are converted in separate sweeps.
 
 ::: {#exm-semantic-decorator}
 
