@@ -85,6 +85,7 @@ Follow its link for the reasons and the exceptions.
 - [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon).
 - [Edit out clusters of the words and sentence shapes](avoid-ai-tells.qmd)
   that mark machine-drafted prose.
+- [Say what something is before what it is not](avoid-ai-tells.qmd#say-what-it-is-before-what-it-is-not).
 
 ## Writing for every reader
 

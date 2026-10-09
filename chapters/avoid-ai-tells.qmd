@@ -138,6 +138,46 @@ Other reflexes to watch for:
 - **Hollow summaries.** A closing paragraph that opens with "in conclusion" and
   only restates what you just said adds nothing. End on a real point.
 
+## Say what it is before what it is not
+
+When a sentence needs both a positive claim and a denial,
+state the positive claim first.
+The reader learns what the subject is before being told what to rule out,
+and the denial then attaches to a claim already made.
+Opening with the denial makes the reader carry an unsupported denial
+until the second clause arrives.
+
+:::{#exm-positive-first}
+
+## Positive claim, then denial
+
+> ❌ The padding is not a convention, it is an identity.
+>
+> ✅ The padding is an identity, not a convention.
+
+The first version says "not a convention" before the reader knows what the padding is,
+then repeats the subject and verb to supply the claim.
+The second version states the claim once and ends on the contrast.
+
+The order matters even when the sentence stays grammatical:
+
+> ❌ The padding is not a convention but an identity.
+>
+> ✅ The padding is an identity, not a convention.
+
+Both are correct sentences; the second puts the claim first.
+The first pair is from the
+[linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
+
+:::
+
+Often the denial can be cut.
+Keep it only when the reader might plausibly believe the rejected reading,
+as with a convention versus an identity.
+A denial that rejects a view nobody holds is the reframe
+(see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature:
+cut it and keep the claim.
+
 ## Clichéd sentence shapes
 
 Beyond the antithesis,
