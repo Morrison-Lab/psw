@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 22:20:34 (PDT)
+Last modified: 2026-10-08 22:24:07 (PDT)
 
 > **NOTE:**
 >
@@ -134,6 +134,8 @@ Each one makes the reader read a sentence before reaching the content it promise
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
+A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.
+
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
 A few mechanics to keep in mind when writing one:
@@ -158,7 +160,20 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 6 (Turning inline steps into a numbered list)**  
+> **Example 6 (Turning a run of resource sentences into bullet points)**  
+>
+> > ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
+> >
+> > ✅ Videos:
+> >
+> > - Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo).
+> > - Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
+>
+> This example is adapted from video notes in the DATA 571 chapter on [linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html). Each bullet holds one video, so the reader can pick one without parsing the paragraph.
+
+> **NOTE:**
+>
+> **Example 7 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >

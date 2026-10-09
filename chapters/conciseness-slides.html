@@ -263,7 +263,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-08 22:20:34 (PDT)</p>
+  <p class="date">Last modified: 2026-10-08 22:24:07 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -415,6 +415,7 @@
 <section class="slide level2 scrollable">
 
 <p>A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.</p>
+<p>A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.</p>
 <p>Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.</p>
 <p>A few mechanics to keep in mind when writing one:</p>
 <ul>
@@ -435,8 +436,20 @@
 </blockquote>
 <p>The revised version puts each component on its own line, so the reader sees at a glance that there are three.</p>
 </div>
+<div id="exm-resource-lists" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Turning a run of resource sentences into bullet points)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Hastie and Tibshirani <a href="https://www.youtube.com/watch?v=o9hoLdylWKo">extend least squares to several predictors</a>. Starmer explains <a href="https://www.youtube.com/watch?v=zITIFTsivN8">multiple regression</a>.</p>
+<p>✅ Videos:</p>
+<ul>
+<li>Hastie and Tibshirani <a href="https://www.youtube.com/watch?v=o9hoLdylWKo">extend least squares to several predictors</a>.</li>
+<li>Starmer explains <a href="https://www.youtube.com/watch?v=zITIFTsivN8">multiple regression</a>.</li>
+</ul>
+</blockquote>
+<p>This example is adapted from video notes in the DATA 571 chapter on <a href="https://morrison-lab.github.io/lds/chapters/linear-regression.html">linear regression</a>. Each bullet holds one video, so the reader can pick one without parsing the paragraph.</p>
+</div>
 <div id="exm-numbered-lists" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Turning inline steps into a numbered list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Turning inline steps into a numbered list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ k-means starts with <span class="math inline">\(k\)</span> group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.</p>
 <p>✅ k-means starts with <span class="math inline">\(k\)</span> group centers and repeats two steps until the assignments stop changing:</p>
