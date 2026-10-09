@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 01:54:54 (PDT)
+Last modified: 2026-10-09 05:36:02 (PDT)
 
 > **NOTE:**
 >
@@ -257,7 +257,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 >
 > Both versions print the same hat. If the group later marks estimates some other way, only the definition of `\est` changes.
 
-Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\mathbf` say how a letter is drawn, not what it stands for, so a raw `\mathbb{R}` or `\mathscr{A}` leaves the reader of the source guessing at the concept and leaves the group editing every use to change the symbol. Write the macro that names the concept. A set whose symbol is fixed by convention and always means the same set, such as the real numbers, gets one shared macro, `\bbR`, so every document draws it the same way. That differs from `\vdelta`, whose letter stands for a different quantity in each document. A document that reaches for a font command directly has found a concept with no macro yet: add the macro to the shared file, then use it. As with Greek letters, a passage that discusses the notation itself may write the font command directly.
+Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\mathbf` say how a letter is drawn, not what it stands for, so a raw `\mathbb{R}` or `\mathscr{A}` leaves the reader of the source guessing at the concept and leaves the group editing every use to change the symbol. Write the macro that names the concept. Name the macro for the set, such as `\reals` for the real numbers, not for the font, as `\bbR` would be. A document that reaches for a font command directly has found a concept with no macro yet: add the macro to the shared file, then use it. As with Greek letters, a passage that discusses the notation itself may write the font command directly.
 
 > **NOTE:**
 >
@@ -265,9 +265,9 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 >
 > > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
 > >
-> > ✅ Source: `The function maps $\bbR$ to $\bbR$.`
+> > ✅ Source: `The function maps $\reals$ to $\reals$.`
 >
-> Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\bbR` changes.
+> Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\reals` changes.
 
 Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:
 

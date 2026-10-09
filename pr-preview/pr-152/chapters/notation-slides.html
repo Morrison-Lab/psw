@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-09 01:54:54 (PDT)</p>
+  <p class="date">Last modified: 2026-10-09 05:36:02 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -524,14 +524,14 @@
 </blockquote>
 <p>Both versions print the same hat. If the group later marks estimates some other way, only the definition of <code>\est</code> changes.</p>
 </div>
-<p>Font commands follow the same rule. <code>\mathscr</code>, <code>\mathcal</code>, <code>\mathbb</code> and <code>\mathbf</code> say how a letter is drawn, not what it stands for, so a raw <code>\mathbb{R}</code> or <code>\mathscr{A}</code> leaves the reader of the source guessing at the concept and leaves the group editing every use to change the symbol. Write the macro that names the concept. A set whose symbol is fixed by convention and always means the same set, such as the real numbers, gets one shared macro, <code>\bbR</code>, so every document draws it the same way. That differs from <code>\vdelta</code>, whose letter stands for a different quantity in each document. A document that reaches for a font command directly has found a concept with no macro yet: add the macro to the shared file, then use it. As with Greek letters, a passage that discusses the notation itself may write the font command directly.</p>
+<p>Font commands follow the same rule. <code>\mathscr</code>, <code>\mathcal</code>, <code>\mathbb</code> and <code>\mathbf</code> say how a letter is drawn, not what it stands for, so a raw <code>\mathbb{R}</code> or <code>\mathscr{A}</code> leaves the reader of the source guessing at the concept and leaves the group editing every use to change the symbol. Write the macro that names the concept. Name the macro for the set, such as <code>\reals</code> for the real numbers, not for the font, as <code>\bbR</code> would be. A document that reaches for a font command directly has found a concept with no macro yet: add the macro to the shared file, then use it. As with Greek letters, a passage that discusses the notation itself may write the font command directly.</p>
 <div id="exm-semantic-font" class="theorem example">
 <p><span class="theorem-title"><strong>Example 12 (Naming a set for its meaning)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The function maps $\mathbb{R}$ to $\mathbb{R}$.</code></p>
-<p>✅ Source: <code>The function maps $\bbR$ to $\bbR$.</code></p>
+<p>✅ Source: <code>The function maps $\reals$ to $\reals$.</code></p>
 </blockquote>
-<p>Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of <code>\bbR</code> changes.</p>
+<p>Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of <code>\reals</code> changes.</p>
 </div>
 <p>Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:</p>
 <ul>
