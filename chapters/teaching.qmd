@@ -72,7 +72,7 @@ before they see the formal definition.
 
 [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms)
 covers what a good definition contains.
-For teaching materials, three further rules keep definitions findable.
+For teaching materials, four further rules keep definitions findable.
 
 - Replace a bolded keyword in running prose with a `#def-` div.
   A bolded keyword usually marks an inline definition.
@@ -84,6 +84,10 @@ For teaching materials, three further rules keep definitions findable.
   The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
   A special case, such as a linear evaluation function,
   gets its own div after the general case, and the two link to each other.
+- Keep only the definition in a `#def-` div.
+  Put the properties of the defined object, such as the symmetry and idempotence of a matrix,
+  in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known.
+  Each abstract div then gets its own example, as the rule below requires.
 
 An alternative name for the same concept stays in the div of the term it names,
 in italics.
