@@ -58,6 +58,8 @@ The ✅ version gives each of the five its own line.
 
 Common ways to combine steps without noticing:
 
+- substituting a definition and then applying a rule to it
+  (see [Applying a definition is a step](#applying-a-definition-is-a-step));
 - applying the rule for the derivative of a sum
   and the chain rule in the same line;
 - substituting a result and then simplifying it;
@@ -79,6 +81,52 @@ Common ways to combine steps without noticing:
 - writing "setting this to zero and dividing by $-2n$ gives",
   which hides two operations in a sentence.
 
+### Applying a definition is a step
+
+Replacing a named quantity with its definition
+is one of the most important steps in a derivation.
+It is where the general rules meet the specific problem,
+so never skip it or merge it into the next step.
+Give it its own line, justified as "definition of ...".
+The same holds for a result from an earlier part of the same problem:
+substitute it on its own line, and cite the part.
+
+::: {#exm-apply-definition-step}
+
+## Applying the definition of a vector before differentiating it
+
+Suppose the prediction error vector is defined as
+$\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$,
+and a derivation needs its derivative with respect to $\tilde{\beta}$.
+
+> ❌
+> $$
+> \begin{aligned}
+> \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+> &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+>  - \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+> && \text{(derivative of a difference)}
+> \end{aligned}
+> $$
+>
+> ✅
+> $$
+> \begin{aligned}
+> \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+> &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta} - \tilde{y})
+> && \text{(definition of } \tilde{e} \text{)}\\
+> &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+>  - \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+> && \text{(derivative of a difference)}
+> \end{aligned}
+> $$
+
+The ❌ version applies the definition of $\tilde{e}$ and the rule for a difference in one line,
+and its justification names only the rule.
+The ✅ version shows the definition on its own line.
+
+:::
+
 ### Using a fact the reader has not seen
 
 When a step relies on a fact the document has not yet shown,
@@ -93,9 +141,59 @@ Splitting every step makes derivations longer.
 Keep them readable by breaking them into stages:
 derive an intermediate result in its own block,
 then plug that result back into the main derivation.
-For example, when you apply the chain rule,
-derive the inner derivative in a separate block
-before you substitute it.
 Naming a part of an expression that recurs in every line,
 such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$,
 can also keep each line short.
+
+#### Show why you need a result before you derive it
+
+Derive an intermediate result only after the main derivation
+has shown that it needs that result.
+For example, to differentiate a composite function:
+
+1. Start the main derivation, and apply the chain rule.
+   The result is a product of an inner and an outer derivative, not yet known.
+2. Pause the main derivation, and derive the inner derivative in its own block.
+3. Derive the outer derivative in its own block.
+4. Return to the main derivation, and substitute both results.
+
+A reader who meets the inner derivative first
+does not yet know what it is for.
+
+#### Color where a result is used
+
+Give each intermediate result a text color,
+and use the same color wherever that result appears:
+
+- in the line where a later step needs it, as a placeholder;
+- in the line of its own derivation where it is found;
+- in each line where it is substituted back in.
+
+State the color key in words at the start of the derivation,
+so the derivation is still readable without color,
+for example in grayscale print or for readers who do not see color differences.
+Use `\textcolor{name}{...}`, which renders in HTML (MathJax) and in PDF.
+
+::: {#exm-color-plug-in}
+
+## Coloring the two factors of a chain rule
+
+Writing the mean squared error as $\frac{1}{n} \tilde{e} \cdot \tilde{e}$,
+with $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$,
+the chain rule gives
+
+$$
+\frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta})
+= \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)}
+  \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}.
+$$
+
+Separate blocks then find
+$\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}$
+and
+$\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}$,
+and the main derivation resumes with
+$\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}$.
+The colors show at a glance which block each factor came from.
+
+:::
