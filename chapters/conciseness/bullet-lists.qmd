@@ -5,6 +5,15 @@ Write it as a bullet list instead,
 introduced by a sentence ending in a colon.
 Use a numbered list when the items are steps done in order.
 
+A run of parallel sentences is a list too,
+even with only two items.
+The common case is a set of resources,
+such as videos or readings,
+where each sentence names one resource and links to it.
+Put each sentence in its own bullet,
+so the reader sees how many resources there are
+and where each one starts.
+
 Bullet lists matter most on slides,
 where a reader scans a list rather than reading it as a sentence.
 The rule is one case of a broader preference for more structure:
@@ -33,6 +42,24 @@ A few mechanics to keep in mind when writing one:
 
 The revised version puts each component on its own line,
 so the reader sees at a glance that there are three.
+
+:::
+
+::: {#exm-resource-lists}
+
+## Turning a run of resource sentences into bullet points
+
+> ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
+>
+> ✅ Videos:
+>
+> - Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo).
+> - Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
+
+This example is adapted from video notes in the DATA 571 chapter on
+[linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
+Each bullet holds one video,
+so the reader can pick one without parsing the paragraph.
 
 :::
 

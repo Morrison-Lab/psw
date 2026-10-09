@@ -44,7 +44,8 @@ callouts (config + color palette live in `_quarto-website.yml`).
 ## Style conventions
 
 - **Lists of 3+ items**: use bullet lists, not comma-separated prose; leave a
-  blank line before a markdown bullet list.
+  blank line before a markdown bullet list. A run of parallel sentences, such
+  as one sentence per linked video or reading, is a bullet list even with two.
 - **Quarto chunks**: prefer `#|` YAML-style chunk options, not inline
   `r, opt = val` arguments.
 - **R style**: respect `.lintr.R`; run `lintr::lint_dir()` before declaring R
