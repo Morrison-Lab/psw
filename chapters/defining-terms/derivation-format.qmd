@@ -64,7 +64,12 @@ $$\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.$$
 
 ## Deviations from the mean
 
-Show that $\sum_{i=1}^n (x_i - \bar{x}) = 0$,
+Show that
+
+$$
+\sum_{i=1}^n (x_i - \bar{x}) = 0,
+$$
+
 where $\bar{x}$ is the sample mean (@def-sample-mean).
 
 :::
