@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 01:07:20 (PDT)
+Last modified: 2026-10-09 01:27:28 (PDT)
 
 > **NOTE:**
 >
@@ -92,6 +92,9 @@ When several courses or repositories have already written the same definition, t
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
 - Give labs and code exercises in both R and Python, side by side.
+- Write the R code with [tidymodels](https://www.tidymodels.org/), or show tidymodels and base R side by side. Do not give base R alone. [ISLR-tidymodels-labs](https://github.com/Morrison-Lab/ISLR-tidymodels-labs) shows the style.
+- When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, in the book’s order. For the ISL labs, fit Python models with `statsmodels`’ `sm.OLS`, as [ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs) does. If an exercise departs from the book, say why in the lab.
+- Never throw away an exercise you replace. Either keep both exercises, or keep the replaced one as an outtake: leave its file in place and stop including it.
 - Tell students where to get the data.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
@@ -102,8 +105,8 @@ This rule applies to all R code in teaching materials, in every course and every
 - Even when you fit a model with a base R function such as `lm()` or `glm()`, show its results with modern packages, not with base R output.
 - Show coefficient tables with [parameters](https://easystats.github.io/parameters/) (`parameters() |> print_md()`) or [gtsummary](https://cran.r-project.org/package=gtsummary) (`tbl_regression()`), not with `summary()` or `coef(summary())` printouts.
 - Draw figures with [ggplot2](https://ggplot2.tidyverse.org/), not with base graphics such as `plot()`, `lines()` and `abline()`.
-- Draw model plots with packages built on ggplot2: [sjPlot](https://strengejacke.github.io/sjPlot/) or [ggeffects](https://strengejacke.github.io/ggeffects/) for predictions, and [ggfortify](https://cran.r-project.org/package=ggfortify)’s `autoplot()` for diagnostic plots.
-- Show model fit statistics with [performance](https://easystats.github.io/performance/) or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
+- Draw model plots with packages built on ggplot2: [sjPlot](https://strengejacke.github.io/sjPlot/) or [ggeffects](https://strengejacke.github.io/ggeffects/) for predictions, and [performance](https://easystats.github.io/performance/)’s `check_model()` for diagnostic plots.
+- Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
 ## 10 Make figures accessible
