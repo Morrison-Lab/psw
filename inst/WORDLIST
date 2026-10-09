@@ -6,6 +6,7 @@ COREQ
 CRediT
 CSL
 DOI
+easystats
 eFigure
 EHR
 eMethods
@@ -16,7 +17,10 @@ FP
 funder's
 GBM
 generalizability
+ggeffects
+ggfortify
 ggview
+gtsummary
 Hastie
 Hg
 ICMJE
@@ -41,6 +45,7 @@ SAMPL
 Sankey
 Sant'Anna
 shortcode
+sjPlot
 SRQR
 STARD
 Starmer
