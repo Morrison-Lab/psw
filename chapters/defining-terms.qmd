@@ -20,7 +20,7 @@ or infer it from context alone. For example:
 
 ## Term
 
-A *term* is a word or phrase with a specific,
+A **term** is a word or phrase with a specific,
 technical meaning within a particular field or context.
 
 :::
@@ -51,7 +51,7 @@ and no hypothesis test is involved.
 ## Population
 
 In statistics,
-a *population* is the complete set of all items or individuals of interest.
+a **population** is the complete set of all items or individuals of interest.
 
 :::
 
@@ -221,6 +221,10 @@ Follow these principles when introducing new terms:
   list them in the definition block,
   or in a callout beside it,
   and say which one the document uses.
+  Treat an alternative name for the same concept
+  exactly as the primary name:
+  put it in the div title, such as "Residual sum of squares (sum of squared residuals)",
+  and bold it where it first appears in the definition.
   Name near-synonyms there too,
   and state how they differ.
   A reader who meets the other words in another source
@@ -261,7 +265,7 @@ Here are examples of well-defined terms:
 
 ## Confidence interval
 
-A *confidence interval* with confidence level $1 - \alpha$
+A **confidence interval** with confidence level $1 - \alpha$
 for a parameter $\theta$
 is an interval $[L, U]$ computed from a sample
 that contains $\theta$ with probability $1 - \alpha$
@@ -298,7 +302,7 @@ and it does not shrink as the sample grows.
 
 ## Active voice
 
-*Active voice* is a sentence structure where the subject performs the action expressed by the verb.
+**Active voice** is a sentence structure where the subject performs the action expressed by the verb.
 
 :::
 
@@ -336,7 +340,7 @@ would give these blocks, in this order:
 
 ## Residual sum of squares
 
-The *residual sum of squares* of a model fitted to data
+The **residual sum of squares** of a model fitted to data
 is the sum of its squared residuals:
 
 $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
