@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 18:54:45 (PDT)
+Last modified: 2026-10-08 19:04:55 (PDT)
 
 > **NOTE:**
 >
@@ -177,13 +177,25 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 A passage about the notation itself, such as a table that lists each symbol and what it means, may write the letters directly.
 
+The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a fitted value or a Fourier transform, so `\hat` names no concept either. Write the macro that names the role instead, such as `\est{}` for an estimate, and keep `\hat` for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.
+
+> **NOTE:**
+>
+> **Example 8 (Naming a decorator for its meaning)**  
+>
+> > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
+> >
+> > ✅ Source: `The estimate $\est{\mean}$ is close to $\mean$.`
+>
+> Both versions print the same hat. If the group later marks estimates some other way, only the definition of `\est` changes.
+
 ## 6 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 8 (Writing a dot product)**  
+> **Example 9 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -209,7 +221,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 9 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 10 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
