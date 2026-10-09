@@ -148,3 +148,26 @@ The ✅ version has one fewer level of brackets,
 and it names the quantity the gradient depends on.
 
 :::
+
+Delimiters follow the same rule.
+Manual sizing commands, such as `\big` and `\left` with `\right`,
+say how a bracket is drawn, not what it groups.
+The shared macros `\paren{}`, `\sb{}`, `\set{}` and `\abs{}`
+size themselves to their contents,
+so write them instead of a hand-sized pair.
+Arrows such as `\leftarrow` are not delimiters.
+
+::: {#exm-semantic-delimiter}
+
+## Letting the macro size the bracket
+
+> ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
+>
+> ✅ Source: `The mean is $\E{\paren{X - \mu}^2}$.`
+
+Both versions print the same expression.
+In the ✅ version, the macro sizes the bracket,
+and a group that changes how brackets are drawn
+edits one definition in the shared file.
+
+:::
