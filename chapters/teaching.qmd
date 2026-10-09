@@ -192,6 +192,27 @@ in every course and every teaching repository, not only to one course.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
 
+## Present R results with modern packages
+
+This rule applies to all R code in teaching materials,
+in every course and every teaching repository.
+
+- Even when you fit a model with a base R function such as `lm()` or `glm()`,
+  show its results with modern packages, not with base R output.
+- Show coefficient tables with
+  [parameters](https://easystats.github.io/parameters/) (`parameters() |> print_md()`)
+  or [gtsummary](https://cran.r-project.org/package=gtsummary) (`tbl_regression()`),
+  not with `summary()` or `coef(summary())` printouts.
+- Draw figures with [ggplot2](https://ggplot2.tidyverse.org/),
+  not with base graphics such as `plot()`, `lines()` and `abline()`.
+- Draw model plots with packages built on ggplot2:
+  [sjPlot](https://strengejacke.github.io/sjPlot/) or
+  [ggeffects](https://strengejacke.github.io/ggeffects/) for predictions,
+  and [performance](https://easystats.github.io/performance/)'s `check_model()` for diagnostic plots.
+- Show model fit statistics with performance's `model_performance()`
+  or [broom](https://cran.r-project.org/package=broom)'s `glance()`.
+- Ezra's [rme](https://github.com/d-morrison/rme) notes show the style.
+
 ## Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
