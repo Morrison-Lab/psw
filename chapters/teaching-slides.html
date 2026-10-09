@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-09 12:00:07 (PDT)</p>
+  <p class="date">Last modified: 2026-10-09 13:01:06 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -490,6 +490,7 @@
 <li>Stack data frames with <code>bind_rows()</code>, not with <code>rbind()</code>.</li>
 <li>Build data frames with <a href="https://tibble.tidyverse.org/">tibble</a>’s <code>tibble()</code>, not with <code>data.frame()</code>.</li>
 <li>Chain steps with the native pipe <code>|&gt;</code>.</li>
+<li>Do not nest function calls. Write <code>tibble(x, y) |&gt; pander()</code>, not <code>pander(tibble(x, y))</code>, and <code>sizes |&gt; lapply(f) |&gt; bind_rows()</code>, not <code>bind_rows(lapply(sizes, f))</code>. Give a call that would sit inside an argument, such as <code>data = filter(df, train)</code> in a model call, a name on its own line first.</li>
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>

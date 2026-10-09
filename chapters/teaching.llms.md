@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 12:00:07 (PDT)
+Last modified: 2026-10-09 13:01:06 (PDT)
 
 > **NOTE:**
 >
@@ -121,6 +121,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Stack data frames with `bind_rows()`, not with `rbind()`.
 - Build data frames with [tibble](https://tibble.tidyverse.org/)’s `tibble()`, not with `data.frame()`.
 - Chain steps with the native pipe `|>`.
+- Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
 ## 11 Make figures accessible
