@@ -66,3 +66,25 @@ changes one line in the shared file.
 A passage about the notation itself,
 such as a table that lists each symbol and what it means,
 may write the letters directly.
+
+The same reasoning applies to decorators.
+A hat, a tilde or a bar says how a symbol is drawn, not what it means.
+A hat can mark an estimate, a fitted value or a Fourier transform,
+so `\hat` names no concept either.
+Write the macro that names the role instead,
+such as `\est{}` for an estimate,
+and keep `\hat` for passages that discuss the notation itself.
+
+::: {#exm-semantic-decorator}
+
+## Naming a decorator for its meaning
+
+> ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
+>
+> ✅ Source: `The estimate $\est{\mean}$ is close to $\mean$.`
+
+Both versions print the same hat.
+If the group later marks estimates some other way,
+only the definition of `\est` changes.
+
+:::
