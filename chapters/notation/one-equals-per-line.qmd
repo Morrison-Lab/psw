@@ -1,0 +1,61 @@
+Put at most one equals sign on each line of math.
+When a result takes two or more equalities,
+write them as an aligned display,
+with one equality per row,
+each row starting with `&=`.
+
+A chain such as $a = b = c$ on one line
+asks the reader to find where each step starts and ends,
+and to check every step at once.
+An aligned display puts each step on its own row,
+so the reader can check one row at a time,
+and the left-hand side, written once,
+stays visible above the rows that rewrite it.
+The rows also leave room for a justification at the end of each step,
+as [One operation per step](notation.qmd#one-operation-per-step) asks.
+
+::: {#exm-one-equals-per-line}
+
+## Splitting a chain into rows
+
+> ❌
+> $$
+> \hat{B} = \arg\min_B \|Y - X B\|_F^2 = \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2
+> $$
+>
+> ✅
+> $$
+> \begin{aligned}
+> \hat{B}
+> &= \arg\min_B \|Y - X B\|_F^2 \\
+> &= \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2
+> \end{aligned}
+> $$
+
+The ❌ version makes the reader find the second equals sign
+in a long line before they can compare the two expressions.
+The ✅ version sets the two expressions one above the other,
+starting at the same place.
+
+:::
+
+The rule applies wherever an equals sign appears:
+
+- **Inside an aligned display.**
+  A row such as `&= b = c` is still a chain;
+  split it into two rows.
+- **In running text.**
+  An inline chain such as ❌ $\bar{x} = \frac{6}{3} = 2$
+  becomes an aligned display,
+  or two statements in the sentence.
+- **For a statement that several quantities are equal.**
+  Write ✅ $H_0\colon \beta_j = 0$ for every $j \in \{1, \ldots, p\}$
+  rather than ❌ $H_0\colon \beta_1 = \beta_2 = \cdots = \beta_p = 0$,
+  so that each claim is a single equality.
+
+Separate equations set side by side,
+such as $x = 1, \quad y = 2$,
+each have one equals sign,
+so they are not chains.
+They still read more easily as separate rows,
+or as separate statements in the text.

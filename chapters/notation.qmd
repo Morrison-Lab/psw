@@ -25,6 +25,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/one-operation-per-step.qmd >}}
 
+## One equals sign per line
+
+{{< include notation/one-equals-per-line.qmd >}}
+
 ## Functions and their values
 
 {{< include notation/functions-and-values.qmd >}}

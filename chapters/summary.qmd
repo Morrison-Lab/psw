@@ -34,6 +34,8 @@ Follow its link for the reasons and the exceptions.
   never skip it.
 - [Show why you need a result before you derive it](notation.qmd#show-why-you-need-a-result-before-you-derive-it),
   and [color each result where it is used](notation.qmd#color-where-a-result-is-used).
+- [Put one equals sign on each line](notation.qmd#one-equals-sign-per-line):
+  split a chain such as $a = b = c$ into the rows of an aligned display.
 - [Distinguish a function from its value](notation.qmd#functions-and-their-values).
 - [Use the notation that matches a quantity's name](notation.qmd#matching-names-and-notation),
   and keep the pairing the same everywhere.
