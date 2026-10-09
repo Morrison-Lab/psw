@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-09 13:01:06 (PDT)</p>
+  <p class="date">Last modified: 2026-10-09 13:05:53 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -390,11 +390,12 @@
 </section>
 <section class="slide level2">
 
-<p><a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Defining terms clearly</a> covers what a good definition contains. For teaching materials, three further rules keep definitions findable.</p>
+<p><a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Defining terms clearly</a> covers what a good definition contains. For teaching materials, four further rules keep definitions findable.</p>
 <ul>
 <li>Replace a bolded keyword in running prose with a <code>#def-</code> div. A bolded keyword usually marks an inline definition.</li>
 <li>Define one term per <code>#def-</code> div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.</li>
 <li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.</li>
+<li>Keep only the definition in a <code>#def-</code> div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate <code>#thm-</code>, <code>#lem-</code> or <code>#prp-</code> div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.</li>
 </ul>
 <p>An alternative name for the same concept stays in the div of the term it names, in italics. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>

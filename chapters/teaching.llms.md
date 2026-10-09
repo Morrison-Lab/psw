@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 13:01:06 (PDT)
+Last modified: 2026-10-09 13:05:53 (PDT)
 
 > **NOTE:**
 >
@@ -50,11 +50,12 @@ Active learning, in which students work through tasks themselves during class, i
 
 ## 2 Give each defined term its own div
 
-[Defining terms clearly](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) covers what a good definition contains. For teaching materials, three further rules keep definitions findable.
+[Defining terms clearly](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) covers what a good definition contains. For teaching materials, four further rules keep definitions findable.
 
 - Replace a bolded keyword in running prose with a `#def-` div. A bolded keyword usually marks an inline definition.
 - Define one term per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
 - Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.
+- Keep only the definition in a `#def-` div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.
 
 An alternative name for the same concept stays in the div of the term it names, in italics. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
