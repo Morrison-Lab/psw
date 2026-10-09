@@ -310,7 +310,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-09 10:13:16 (PDT)</p>
+  <p class="date">Last modified: 2026-10-09 10:37:21 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -433,7 +433,10 @@
 <p><span class="math display">\[\text{RSS} = \sum_{i=1}^n r_i^2.\]</span></p>
 </div>
 <div id="exm-rss-line" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the fitted value of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a function of the two coefficients: <span class="math inline">\(\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 9 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the fitted value of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a function of the two coefficients:</p>
+<p><span class="math display">\[
+\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2.
+\]</span></p>
 </div>
 <div id="exm-rss-three-points" class="theorem example">
 <p><span class="theorem-title"><strong>Example 10 (Residual sum of squares of a line through three points)</strong></span> For the points <span class="math inline">\((0, 1)\)</span>, <span class="math inline">\((1, 2)\)</span>, <span class="math inline">\((2, 2)\)</span> and the line with <span class="math inline">\(\beta_0 = 1\)</span> and <span class="math inline">\(\beta_x = 0.5\)</span> (<a href="#/exm-rss-line" class="quarto-xref">Example&nbsp;9</a>), the residuals are <span class="math inline">\(0\)</span>, <span class="math inline">\(0.5\)</span> and <span class="math inline">\(0\)</span>, so <span class="math inline">\(\text{RSS}(1, 0.5) = 0.25\)</span>.</p>
@@ -513,7 +516,14 @@
 <p><span class="math display">\[a^2 + b^2 = c^2.\]</span></p>
 </div>
 <div id="exm-pythagoras" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5: <span class="math inline">\(3^2 + 4^2 = 9 + 16 = 25 = 5^2\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 12 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  3^2 + 4^2 &amp;= 9 + 16 \\
+  &amp;= 25 \\
+  &amp;= 5^2.
+\end{aligned}
+\]</span></p>
 </div>
 <div id="def-postulate" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 6 (Postulate (axiom))</strong></span> A <em>postulate</em> (or axiom) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
@@ -544,7 +554,11 @@
 <p><span class="math display">\[\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.\]</span></p>
 </div>
 <div id="exr-sum-deviations" class="theorem exercise">
-<p><span class="theorem-title"><strong>Exercise 1 (Deviations from the mean)</strong></span> Show that <span class="math inline">\(\sum_{i=1}^n (x_i - \bar{x}) = 0\)</span>, where <span class="math inline">\(\bar{x}\)</span> is the sample mean (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;7</a>).</p>
+<p><span class="theorem-title"><strong>Exercise 1 (Deviations from the mean)</strong></span> Show that</p>
+<p><span class="math display">\[
+\sum_{i=1}^n (x_i - \bar{x}) = 0,
+\]</span></p>
+<p>where <span class="math inline">\(\bar{x}\)</span> is the sample mean (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;7</a>).</p>
 </div>
 <div id="sol-sum-deviations" class="proof solution">
 <p><span class="proof-title"><em>Solution 1</em>. </span><span class="math display">\[

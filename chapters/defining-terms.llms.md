@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 10:13:16 (PDT)
+Last modified: 2026-10-09 10:37:21 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -126,7 +126,9 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Example 9 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the fitted value of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a function of the two coefficients: \\\text{RSS}(\beta_0, \beta_x) = \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2\\.
+> **Example 9 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the fitted value of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a function of the two coefficients:
+>
+> \\ \text{RSS}(\beta_0, \beta_x) = \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2. \\
 
 > **NOTE:**
 >
@@ -220,7 +222,9 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 12 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5: \\3^2 + 4^2 = 9 + 16 = 25 = 5^2\\.
+> **Example 12 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
+>
+> \\ \begin{aligned} 3^2 + 4^2 &= 9 + 16 \\ &= 25 \\ &= 5^2. \end{aligned} \\
 
 > **NOTE:**
 >
@@ -254,7 +258,11 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Exercise 1 (Deviations from the mean)** Show that \\\sum\_{i=1}^n (x_i - \bar{x}) = 0\\, where \\\bar{x}\\ is the sample mean ([Definition 7](#def-sample-mean)).
+> **Exercise 1 (Deviations from the mean)** Show that
+>
+> \\ \sum\_{i=1}^n (x_i - \bar{x}) = 0, \\
+>
+> where \\\bar{x}\\ is the sample mean ([Definition 7](#def-sample-mean)).
 
 > **NOTE:**
 >
