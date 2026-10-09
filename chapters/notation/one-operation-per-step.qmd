@@ -141,9 +141,59 @@ Splitting every step makes derivations longer.
 Keep them readable by breaking them into stages:
 derive an intermediate result in its own block,
 then plug that result back into the main derivation.
-For example, when you apply the chain rule,
-derive the inner derivative in a separate block
-before you substitute it.
 Naming a part of an expression that recurs in every line,
 such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$,
 can also keep each line short.
+
+#### Show why you need a result before you derive it
+
+Derive an intermediate result only after the main derivation
+has shown that it needs that result.
+For example, to differentiate a composite function:
+
+1. Start the main derivation, and apply the chain rule.
+   The result is a product of an inner and an outer derivative, not yet known.
+2. Pause the main derivation, and derive the inner derivative in its own block.
+3. Derive the outer derivative in its own block.
+4. Return to the main derivation, and substitute both results.
+
+A reader who meets the inner derivative first
+does not yet know what it is for.
+
+#### Color where a result is used
+
+Give each intermediate result a text color,
+and use the same color wherever that result appears:
+
+- in the line where a later step needs it, as a placeholder;
+- in the line of its own derivation where it is found;
+- in each line where it is substituted back in.
+
+State the color key in words at the start of the derivation,
+so the derivation is still readable without color,
+for example in grayscale print or for readers who do not see color differences.
+Use `\textcolor{name}{...}`, which renders in HTML (MathJax) and in PDF.
+
+::: {#exm-color-plug-in}
+
+## Coloring the two factors of a chain rule
+
+Writing the mean squared error as $\frac{1}{n} \tilde{e} \cdot \tilde{e}$,
+with $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$,
+the chain rule gives
+
+$$
+\frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta})
+= \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)}
+  \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}.
+$$
+
+Separate blocks then find
+$\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}$
+and
+$\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}$,
+and the main derivation resumes with
+$\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}$.
+The colors show at a glance which block each factor came from.
+
+:::
