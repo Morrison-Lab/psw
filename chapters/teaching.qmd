@@ -185,9 +185,8 @@ in every course and every teaching repository.
 - Draw model plots with packages built on ggplot2:
   [sjPlot](https://strengejacke.github.io/sjPlot/) or
   [ggeffects](https://strengejacke.github.io/ggeffects/) for predictions,
-  and [ggfortify](https://cran.r-project.org/package=ggfortify)'s `autoplot()` for diagnostic plots.
-- Show model fit statistics with
-  [performance](https://easystats.github.io/performance/)
+  and [performance](https://easystats.github.io/performance/)'s `check_model()` for diagnostic plots.
+- Show model fit statistics with performance's `model_performance()`
   or [broom](https://cran.r-project.org/package=broom)'s `glance()`.
 - Ezra's [rme](https://github.com/d-morrison/rme) notes show the style.
 
