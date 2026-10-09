@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mathematical notation – Principles of Scientific Writing</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3f418c0a1af92b3d03a8c930c3125fbd.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-3f418c0a1af92b3d03a8c930c3125fbd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3f418c0a1af92b3d03a8c930c3125fbd.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-176991ab188c2dce71ccfeb3a8e3acd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-41cfc110e5592a79981a5cb60f49db30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-176991ab188c2dce71ccfeb3a8e3acd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+// Theme dropdown: Light, Off-white, Parchment, Dark. Quarto's own toggle
+// handles light/dark and remembers it; the two tinted palettes are a
+// data-palette attribute on <html>. The choice is kept under "mln-theme".
+// Off-white is the default for a first visit.
+(function () {
+  var KEY = "mln-theme";
+  var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
+  function stored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function isDark() { return document.body.classList.contains("quarto-dark"); }
+  function apply(choice, remember) {
+    if (choice === "offwhite" || choice === "parchment") {
+      document.documentElement.setAttribute("data-palette", choice);
+    } else {
+      document.documentElement.removeAttribute("data-palette");
+    }
+    if ((choice === "dark") !== isDark() && window.quartoToggleColorScheme) {
+      window.quartoToggleColorScheme();
+    }
+    if (remember) { try { localStorage.setItem(KEY, choice); } catch (e) {} }
+    mark(choice);
+  }
+  function mark(choice) {
+    document.querySelectorAll(".theme-picker [data-theme-choice]").forEach(function (b) {
+      var on = b.getAttribute("data-theme-choice") === choice;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-checked", on ? "true" : "false");
+    });
+  }
+  // Set the palette before first paint to avoid a flash.
+  var early = stored();
+  if (early !== "light" && early !== "dark" && early !== "parchment") early = "offwhite";
+  if (early === "offwhite" || early === "parchment") {
+    document.documentElement.setAttribute("data-palette", early);
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var toggles = document.querySelectorAll(".quarto-color-scheme-toggle");
+    if (!toggles.length) return;
+    var tools = toggles[0];
+    var wrap = document.createElement("div");
+    wrap.className = "theme-picker dropdown";
+    wrap.innerHTML =
+      '<button type="button" class="nav-link dropdown-toggle px-1 border-0 bg-transparent" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Colour theme"><i class="bi bi-palette"></i></button>' +
+      '<ul class="dropdown-menu dropdown-menu-end" role="menu">' +
+      OPTIONS.map(function (o) {
+        return '<li role="none"><button type="button" class="dropdown-item" role="menuitemradio" aria-checked="false" data-theme-choice="' + o[0] + '">' + o[1] + "</button></li>";
+      }).join("") + "</ul>";
+    tools.parentNode.insertBefore(wrap, tools);
+    toggles.forEach(function (t) { t.style.display = "none"; });
+    wrap.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-theme-choice]");
+      if (b) apply(b.getAttribute("data-theme-choice"), true);
+    });
+    var choice = stored();
+    if (OPTIONS.every(function (o) { return o[0] !== choice; })) {
+      choice = isDark() ? "dark" : "offwhite";
+    }
+    apply(choice, false);
+  });
+})();
+</script>
+<style>
+div.callout-lem.callout {
+  border-left-color: #1565C0;
+}
+div.callout-lem.callout-style-default .callout-header {
+  background-color: rgba(21, 101, 192, 0.13);
+}
+div.callout-lem .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-lem.callout-style-default .callout-icon::before, div.callout-lem.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%231565C0" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-remark.callout {
+  border-left-color: #AD1457;
+}
+div.callout-remark.callout-style-default .callout-header {
+  background-color: rgba(173, 20, 87, 0.13);
+}
+div.callout-remark .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-remark.callout-style-default .callout-icon::before, div.callout-remark.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23AD1457" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-proof.callout {
+  border-left-color: #37474F;
+}
+div.callout-proof.callout-style-default .callout-header {
+  background-color: rgba(55, 71, 79, 0.13);
+}
+div.callout-proof .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-proof.callout-style-default .callout-icon::before, div.callout-proof.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2337474F" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-solution.callout {
+  border-left-color: #4E342E;
+}
+div.callout-solution.callout-style-default .callout-header {
+  background-color: rgba(78, 52, 46, 0.13);
+}
+div.callout-solution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-solution.callout-style-default .callout-icon::before, div.callout-solution.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%234E342E" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-cnj.callout {
+  border-left-color: #558B2F;
+}
+div.callout-cnj.callout-style-default .callout-header {
+  background-color: rgba(85, 139, 47, 0.13);
+}
+div.callout-cnj .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-cnj.callout-style-default .callout-icon::before, div.callout-cnj.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23558B2F" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-exr.callout {
+  border-left-color: #FFA500;
+}
+div.callout-exr.callout-style-default .callout-header {
+  background-color: rgba(255, 165, 0, 0.13);
+}
+div.callout-exr .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-exr.callout-style-default .callout-icon::before, div.callout-exr.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23FFA500" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-prp.callout {
+  border-left-color: #827717;
+}
+div.callout-prp.callout-style-default .callout-header {
+  background-color: rgba(130, 119, 23, 0.13);
+}
+div.callout-prp .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prp.callout-style-default .callout-icon::before, div.callout-prp.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23827717" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-exm.callout {
+  border-left-color: #6A1B9A;
+}
+div.callout-exm.callout-style-default .callout-header {
+  background-color: rgba(106, 27, 154, 0.13);
+}
+div.callout-exm .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-exm.callout-style-default .callout-icon::before, div.callout-exm.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%236A1B9A" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-cor.callout {
+  border-left-color: #00838F;
+}
+div.callout-cor.callout-style-default .callout-header {
+  background-color: rgba(0, 131, 143, 0.13);
+}
+div.callout-cor .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-cor.callout-style-default .callout-icon::before, div.callout-cor.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2300838F" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-def.callout {
+  border-left-color: #1B5E20;
+}
+div.callout-def.callout-style-default .callout-header {
+  background-color: rgba(27, 94, 32, 0.13);
+}
+div.callout-def .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-def.callout-style-default .callout-icon::before, div.callout-def.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%231B5E20" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Principles of Scientific Writing</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chapters</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
+        <li>
+    <a class="dropdown-item" href="../chapters/intro.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/defining-terms.html">
+ <span class="dropdown-text">Defining terms clearly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/notation.html">
+ <span class="dropdown-text">Mathematical notation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/citations-evidence.html">
+ <span class="dropdown-text">Citations and evidence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/paper-organization.html">
+ <span class="dropdown-text">Paper organization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/manuscript-submission.html">
+ <span class="dropdown-text">Preparing a manuscript for submission</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/word-choice.html">
+ <span class="dropdown-text">Word choice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/inclusive-writing.html">
+ <span class="dropdown-text">Writing for every reader</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/avoid-ai-tells.html">
+ <span class="dropdown-text">Avoiding AI tells</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/grammar.html">
+ <span class="dropdown-text">Grammar</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/conciseness.html">
+ <span class="dropdown-text">Conciseness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/teaching.html">
+ <span class="dropdown-text">Writing for teaching</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/summary.html">
+ <span class="dropdown-text">Summary</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../references.html"> 
+<span class="menu-text">References</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/d-morrison/psw"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#avoiding-double-inequalities" id="toc-avoiding-double-inequalities" class="nav-link active" data-scroll-target="#avoiding-double-inequalities"><span class="header-section-number">1</span> Avoiding double inequalities</a>
+  <ul class="collapse">
+  <li><a href="#when-the-middle-term-is-not-a-single-symbol" id="toc-when-the-middle-term-is-not-a-single-symbol" class="nav-link" data-scroll-target="#when-the-middle-term-is-not-a-single-symbol"><span class="header-section-number">1.1</span> When the middle term is not a single symbol</a></li>
+  </ul></li>
+  <li><a href="#one-operation-per-step" id="toc-one-operation-per-step" class="nav-link" data-scroll-target="#one-operation-per-step"><span class="header-section-number">2</span> One operation per step</a>
+  <ul class="collapse">
+  <li><a href="#applying-a-definition-is-a-step" id="toc-applying-a-definition-is-a-step" class="nav-link" data-scroll-target="#applying-a-definition-is-a-step"><span class="header-section-number">2.1</span> Applying a definition is a step</a></li>
+  <li><a href="#using-a-fact-the-reader-has-not-seen" id="toc-using-a-fact-the-reader-has-not-seen" class="nav-link" data-scroll-target="#using-a-fact-the-reader-has-not-seen"><span class="header-section-number">2.2</span> Using a fact the reader has not seen</a></li>
+  <li><a href="#long-derivations" id="toc-long-derivations" class="nav-link" data-scroll-target="#long-derivations"><span class="header-section-number">2.3</span> Long derivations</a></li>
+  </ul></li>
+  <li><a href="#one-equals-sign-per-line" id="toc-one-equals-sign-per-line" class="nav-link" data-scroll-target="#one-equals-sign-per-line"><span class="header-section-number">3</span> One equals sign per line</a></li>
+  <li><a href="#functions-and-their-values" id="toc-functions-and-their-values" class="nav-link" data-scroll-target="#functions-and-their-values"><span class="header-section-number">4</span> Functions and their values</a></li>
+  <li><a href="#matching-names-and-notation" id="toc-matching-names-and-notation" class="nav-link" data-scroll-target="#matching-names-and-notation"><span class="header-section-number">5</span> Matching names and notation</a></li>
+  <li><a href="#using-shared-macros" id="toc-using-shared-macros" class="nav-link" data-scroll-target="#using-shared-macros"><span class="header-section-number">6</span> Using shared macros</a></li>
+  <li><a href="#writing-dot-products" id="toc-writing-dot-products" class="nav-link" data-scroll-target="#writing-dot-products"><span class="header-section-number">7</span> Writing dot products</a></li>
+  <li><a href="#writing-out-notational-shorthands" id="toc-writing-out-notational-shorthands" class="nav-link" data-scroll-target="#writing-out-notational-shorthands"><span class="header-section-number">8</span> Writing out notational shorthands</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/d-morrison/psw/edit/main/chapters/notation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/d-morrison/psw/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/d-morrison/psw/blob/main/chapters/notation.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="notation-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="notation-handout.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="notation.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Mathematical notation</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Last modified: 2026-10-09 01:51:47 (PDT)</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>AI-Assisted Authorship
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.</p>
+</div>
+</div>
+<p>Notation is part of your prose, and readers parse it the same way they parse a sentence. This chapter collects notational habits that make quantitative writing easier to read.</p>
+<section id="avoiding-double-inequalities" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="avoiding-double-inequalities"><span class="header-section-number">1</span> Avoiding double inequalities</h2>
+<p>A <em>double inequality</em> (or <em>chained inequality</em>) places one quantity between two others, as in <span class="math inline">\(a &lt; x &lt; b\)</span>. Prefer interval notation instead: <span class="math inline">\(x \in (a, b)\)</span>.</p>
+<p>Interval notation is easier to read for three reasons:</p>
+<ul>
+<li>It states one relation instead of two, so the reader parses a single claim rather than combining a pair of them.</li>
+<li>It names the set you actually mean, so the same expression can be reused as a domain, a constraint, or the argument of a quantifier.</li>
+<li>It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than <span class="math inline">\(\le\)</span> and <span class="math inline">\(&lt;\)</span>.</li>
+</ul>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-double-inequality" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (Rewriting a double inequality)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Suppose <span class="math inline">\(0 \le p \le 1\)</span> and <span class="math inline">\(0 &lt; \sigma &lt; \infty\)</span>.</p>
+<p>✅ Suppose <span class="math inline">\(p \in [0, 1]\)</span> and <span class="math inline">\(\sigma \in (0, \infty)\)</span>.</p>
+</blockquote>
+<p>The rewrite makes the two constraints look alike, so the reader can compare them directly instead of checking four inequality symbols.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The same guidance applies to prose: write “for <span class="math inline">\(x \in (0, 1)\)</span>” rather than “for <span class="math inline">\(x\)</span> between 0 and 1, exclusive”.</p>
+<section id="when-the-middle-term-is-not-a-single-symbol" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="when-the-middle-term-is-not-a-single-symbol"><span class="header-section-number">1.1</span> When the middle term is not a single symbol</h3>
+<p>Interval notation works best when the quantity being constrained is a single expression. When the middle term is complicated, naming it first keeps the constraint short.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-naming-the-middle-term" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Naming the middle term)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ <span class="math inline">\(0 &lt; \frac{\hat{\theta} - \theta}{\text{se}(\hat{\theta})} &lt; 1.96\)</span></p>
+<p>✅ Let <span class="math inline">\(z = \dfrac{\hat{\theta} - \theta}{\text{se}(\hat{\theta})}\)</span>; then <span class="math inline">\(z \in (0, 1.96)\)</span>.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<p>Finally, a chain that compares three <em>different</em> quantities — for example <span class="math inline">\(\hat{\theta}_1 &lt; \hat{\theta}_2 &lt; \hat{\theta}_3\)</span> — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements (<span class="math inline">\(\hat{\theta}_1 &lt; \hat{\theta}_2\)</span> and <span class="math inline">\(\hat{\theta}_2 &lt; \hat{\theta}_3\)</span>) unless the ordering of all three is the point you are making.</p>
+</section>
+</section>
+<section id="one-operation-per-step" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="one-operation-per-step"><span class="header-section-number">2</span> One operation per step</h2>
+<p>Write a derivation so that each displayed line does exactly one thing to the line before it: apply one rule, substitute one result, or simplify one piece. Give each line its own justification.</p>
+<p>Combining steps saves the writer a line and costs every reader a calculation. A reader who cannot see how one line follows from the last has to redo the missing work on scratch paper, or take the step on trust. Either way, an error hidden inside a combined step is harder for the reader, or a reviewer, to catch. The advice on <a href="../chapters/citations-evidence.html#trivial-and-trivially">“Trivial” and “trivially”</a> says to write out a step that takes only a line; this section applies that advice to the layout of a displayed derivation.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-one-operation-per-step" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Splitting a combined step)</strong></span> Suppose a derivation has reached <span class="math inline">\(-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)\)</span>.</p>
+<blockquote class="blockquote">
+<p>❌ <span class="math display">\[
+\begin{aligned}
+-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+&amp;= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+\end{aligned}
+\]</span></p>
+<p>✅ <span class="math display">\[
+\begin{aligned}
+-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+&amp;= -2 \left(\sum_{i=1}^n y_i - \sum_{i=1}^n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+&amp;&amp; \text{(split the sum)}\\
+&amp;= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+&amp;&amp; \text{(sum of a constant)}\\
+&amp;= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+&amp;&amp; \text{(constant factor out of the sum)}\\
+&amp;= -2 \left(n \bar{y} - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+&amp;&amp; \text{(}\sum_{i} y_i = n \bar{y}\text{)}\\
+&amp;= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+&amp;&amp; \text{(}\sum_{i} x_i = n \bar{x}\text{)}
+\end{aligned}
+\]</span></p>
+</blockquote>
+<p>The ❌ version does five operations in one line: it splits the sum, sums a constant, factors a constant out of a sum, substitutes <span class="math inline">\(n \bar{y}\)</span>, and substitutes <span class="math inline">\(n \bar{x}\)</span>. The ✅ version gives each of the five its own line.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Common ways to combine steps without noticing:</p>
+<ul>
+<li>substituting a definition and then applying a rule to it (see <a href="#applying-a-definition-is-a-step">Applying a definition is a step</a>);</li>
+<li>applying the rule for the derivative of a sum and the chain rule in the same line;</li>
+<li>substituting a result and then simplifying it;</li>
+<li>multiplying constants and factoring them out of a sum;</li>
+<li>expanding a product and collecting like terms;</li>
+<li>canceling <span class="math inline">\(a\)</span> in <span class="math inline">\(a + (b - a)\)</span> removes the parentheses (<span class="math inline">\(a + b - a\)</span>), reorders the terms (<span class="math inline">\(b + a - a\)</span>), groups the two that cancel (<span class="math inline">\(b + (a - a)\)</span>), replaces <span class="math inline">\(a - a\)</span> with <span class="math inline">\(0\)</span> (<span class="math inline">\(b + 0\)</span>), and drops the <span class="math inline">\(+ 0\)</span>;</li>
+<li>canceling <span class="math inline">\(n\)</span> in <span class="math inline">\(n \cdot \frac{b}{n}\)</span> rewrites the division as multiplication by a reciprocal (<span class="math inline">\(n \cdot (b \cdot \frac{1}{n})\)</span>), removes the parentheses (<span class="math inline">\(n \cdot b \cdot \frac{1}{n}\)</span>), reorders the factors (<span class="math inline">\(b \cdot n \cdot \frac{1}{n}\)</span>), groups the two that cancel (<span class="math inline">\(b \cdot (n \cdot \frac{1}{n})\)</span>), replaces <span class="math inline">\(n \cdot \frac{1}{n}\)</span> with <span class="math inline">\(1\)</span> (<span class="math inline">\(b \cdot 1\)</span>), and drops the <span class="math inline">\(\cdot 1\)</span>;</li>
+<li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
+</ul>
+<section id="applying-a-definition-is-a-step" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="applying-a-definition-is-a-step"><span class="header-section-number">2.1</span> Applying a definition is a step</h3>
+<p>Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules meet the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-apply-definition-step" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (Applying the definition of a vector before differentiating it)</strong></span> Suppose the prediction error vector is defined as <span class="math inline">\(\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\)</span>, and a derivation needs its derivative with respect to <span class="math inline">\(\tilde{\beta}\)</span>.</p>
+<blockquote class="blockquote">
+<p>❌ <span class="math display">\[
+\begin{aligned}
+\frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+&amp;= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+- \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+&amp;&amp; \text{(derivative of a difference)}
+\end{aligned}
+\]</span></p>
+<p>✅ <span class="math display">\[
+\begin{aligned}
+\frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+&amp;= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta} - \tilde{y})
+&amp;&amp; \text{(definition of } \tilde{e} \text{)}\\
+&amp;= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+- \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+&amp;&amp; \text{(derivative of a difference)}
+\end{aligned}
+\]</span></p>
+</blockquote>
+<p>The ❌ version applies the definition of <span class="math inline">\(\tilde{e}\)</span> and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="using-a-fact-the-reader-has-not-seen" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="using-a-fact-the-reader-has-not-seen"><span class="header-section-number">2.2</span> Using a fact the reader has not seen</h3>
+<p>When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.</p>
+</section>
+<section id="long-derivations" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="long-derivations"><span class="header-section-number">2.3</span> Long derivations</h3>
+<p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
+<section id="show-why-you-need-a-result-before-you-derive-it" class="level4">
+<h4 class="anchored" data-anchor-id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h4>
+<p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite function:</p>
+<ol type="1">
+<li>Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.</li>
+<li>Pause the main derivation, and derive the inner derivative in its own block.</li>
+<li>Derive the outer derivative in its own block.</li>
+<li>Return to the main derivation, and substitute both results.</li>
+</ol>
+<p>A reader who meets the inner derivative first does not yet know what it is for.</p>
+</section>
+<section id="color-where-a-result-is-used" class="level4">
+<h4 class="anchored" data-anchor-id="color-where-a-result-is-used">Color where a result is used</h4>
+<p>Give each intermediate result a text color, and use the same color wherever that result appears:</p>
+<ul>
+<li>in the line where a later step needs it, as a placeholder;</li>
+<li>in the line of its own derivation where it is found;</li>
+<li>in each line where it is substituted back in.</li>
+</ul>
+<p>State the color key in words at the start of the derivation, so the derivation is still readable without color, for example in grayscale print or for readers who do not see color differences. Use <code>\textcolor{name}{...}</code>, which renders in HTML (MathJax) and in PDF.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-color-plug-in" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Coloring the two factors of a chain rule)</strong></span> Writing the mean squared error as <span class="math inline">\(\frac{1}{n} \tilde{e} \cdot \tilde{e}\)</span>, with <span class="math inline">\(\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\)</span>, the chain rule gives</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta})
+= \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)}
+  \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}.
+\]</span></p>
+<p>Separate blocks then find <span class="math inline">\(\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}\)</span> and <span class="math inline">\(\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}\)</span>, and the main derivation resumes with <span class="math inline">\(\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}\)</span>. The colors show at a glance which block each factor came from.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="one-equals-sign-per-line" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="one-equals-sign-per-line"><span class="header-section-number">3</span> One equals sign per line</h2>
+<p>Put at most one equals sign on each line of math. When a result takes two or more equalities, write them as an aligned display, with one equality per row, each row starting with <code>&amp;=</code>.</p>
+<p>A chain such as <span class="math inline">\(a = b = c\)</span> on one line asks the reader to find where each step starts and ends, and to check every step at once. An aligned display puts each step on its own row, so the reader can check one row at a time, and the left-hand side, written once, stays visible above the rows that rewrite it. The rows also leave room for a justification at the end of each step, as <a href="../chapters/notation.html#one-operation-per-step">One operation per step</a> asks.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-one-equals-per-line" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Splitting a chain into rows)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ <span class="math display">\[
+\hat{B} = \arg\min_B \|Y - X B\|_F^2 = \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2
+\]</span></p>
+<p>✅ <span class="math display">\[
+\begin{aligned}
+\hat{B}
+&amp;= \arg\min_B \|Y - X B\|_F^2 \\
+&amp;= \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2
+\end{aligned}
+\]</span></p>
+</blockquote>
+<p>The ❌ version makes the reader find the second equals sign in a long line before they can compare the two expressions. The ✅ version sets the two expressions one above the other, starting at the same place.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The rule applies wherever an equals sign appears:</p>
+<ul>
+<li><strong>Inside an aligned display.</strong> A row such as <code>&amp;= b = c</code> is still a chain; split it into two rows.</li>
+<li><strong>In running text.</strong> An inline chain such as ❌ <span class="math inline">\(\bar{x} = \frac{6}{3} = 2\)</span> becomes an aligned display, or two statements in the sentence.</li>
+<li><strong>For a statement that several quantities are equal.</strong> Write ✅ <span class="math inline">\(H_0\colon \beta_j = 0\)</span> for every <span class="math inline">\(j \in \{1, \ldots, p\}\)</span> rather than ❌ <span class="math inline">\(H_0\colon \beta_1 = \beta_2 = \cdots = \beta_p = 0\)</span>, so that each claim is a single equality.</li>
+</ul>
+<p>Separate equations set side by side, such as <span class="math inline">\(x = 1, \quad y = 2\)</span>, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.</p>
+</section>
+<section id="functions-and-their-values" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="functions-and-their-values"><span class="header-section-number">4</span> Functions and their values</h2>
+<p>A function and its value at a point are different objects. In <span class="math inline">\(\mu_i = \mu(x_i)\)</span>, <span class="math inline">\(\mu\)</span> is a function, and <span class="math inline">\(\mu(x_i)\)</span> is a number: the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>. Written with its placeholder argument, <span class="math inline">\(\mu(x)\)</span> already denotes a value, so “the value of <span class="math inline">\(\mu(x)\)</span> at <span class="math inline">\(x_i\)</span>” reads as a value of a value. Either drop the placeholder and write “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, or keep the placeholder and name the substitution: “<span class="math inline">\(\mu(x)\)</span> evaluated at <span class="math inline">\(x_i\)</span>”.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-function-evaluated-at" class="theorem example">
+<p><span class="theorem-title"><strong>Example 7 (Saying where a function is evaluated)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Each outcome is centered on the value of a mean function <span class="math inline">\(\mu(x)\)</span> at its own covariate values.</p>
+<p>✅ Each outcome is centered on a mean function <span class="math inline">\(\mu(x)\)</span> evaluated at that outcome’s covariate values.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>❌ the value of the density <span class="math inline">\(f(x)\)</span> at 0</p>
+<p>✅ the value of <span class="math inline">\(f\)</span> at 0, or <span class="math inline">\(f(0)\)</span></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>❌ the likelihood <span class="math inline">\(L(\theta)\)</span> at <span class="math inline">\(\hat{\theta}\)</span></p>
+<p>✅ <span class="math inline">\(L(\theta)\)</span> evaluated at <span class="math inline">\(\hat{\theta}\)</span>, or <span class="math inline">\(L(\hat{\theta})\)</span></p>
+</blockquote>
+<p>In each ❌ version, “the value of” or “at” sits next to a placeholder argument, so the reader has to decide whether <span class="math inline">\(\mu(x)\)</span>, <span class="math inline">\(f(x)\)</span> or <span class="math inline">\(L(\theta)\)</span> means the function or one of its values. The first ❌ version also has an ambiguous “its”: the nearest candidate is the mean function, not the outcome.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Use the notation to match:</p>
+<ul>
+<li>Write <span class="math inline">\(\mu\)</span>, or “the mean function”, for the function itself.</li>
+<li>Write <span class="math inline">\(\mu(x)\)</span> with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function <span class="math inline">\(\mu(x)\)</span>” or <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>, and say “evaluated at” when you substitute a point into it.</li>
+<li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
+</ul>
+</section>
+<section id="matching-names-and-notation" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="matching-names-and-notation"><span class="header-section-number">5</span> Matching names and notation</h2>
+<p>A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.</p>
+<p>Keep the pairing the same everywhere the quantity appears. Notes, assignments, solutions and slides in one course should use one name and one notation for each quantity. When two fields call one idea by different names, choose one name, list the other names where you define the idea, and use only the chosen name afterward (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Name the synonyms</a>).</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-name-matches-notation" class="theorem example">
+<p><span class="theorem-title"><strong>Example 8 (Matching a name to its notation)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Compute the dot product <span class="math inline">\(\tilde{a}' \tilde{b}\)</span>.</p>
+<p>✅ Compute the dot product <span class="math inline">\(\tilde{a} \cdot \tilde{b}\)</span>.</p>
+</blockquote>
+<p>The ❌ version names a dot product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the dot product <span class="math inline">\(\tilde{a} \cdot \tilde{b}\)</span> equals the matrix product <span class="math inline">\(\tilde{a}' \tilde{b}\)</span>”. <a href="#writing-dot-products">Writing dot products</a> says when to use each form.</p>
+<p>In a course that writes regression in statistical notation:</p>
+<blockquote class="blockquote">
+<p>❌ Consider the model <span class="math inline">\(h(x) = w x + b\)</span>.</p>
+<p>✅ Consider the mean function <span class="math inline">\(\mu(x) = \beta_0 + \beta_x x\)</span>.</p>
+</blockquote>
+<p>The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that <span class="math inline">\(h\)</span>, <span class="math inline">\(w\)</span> and <span class="math inline">\(b\)</span> are <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\beta_0\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
+</section>
+<section id="using-shared-macros" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="using-shared-macros"><span class="header-section-number">6</span> Using shared macros</h2>
+<p>Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.</p>
+<p>Before you write any symbol, search the group’s shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-use-shared-macro" class="theorem example">
+<p><span class="theorem-title"><strong>Example 9 (Using a shared macro)</strong></span> This example compares the source you type, so both versions appear as code.</p>
+<blockquote class="blockquote">
+<p>❌ Source: <code>Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.</code></p>
+<p>✅ Source: <code>Let $\coef{1}$ be the slope and write the sum as $\sumin$.</code></p>
+</blockquote>
+<p>The ❌ version writes the slope and the sum in raw LaTeX. The ✅ version names each concept once, in the shared file. When the group changes how it prints a coefficient or a sum, every document that uses the macro changes with it.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The same rule covers these quantities:</p>
+<ul>
+<li>transposes</li>
+<li>hats on estimates</li>
+<li>expectations</li>
+<li>variances</li>
+<li>probabilities</li>
+<li>vectors</li>
+</ul>
+<p>A quantity that has a macro keeps the same symbol in every document.</p>
+<p>Name a macro for what the symbol means, not for the letter it prints. A macro such as <code>\vdelta</code> or <code>\hbeta</code> only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as <code>\delta</code> or inside a letter-named macro such as <code>\vdelta</code>.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-semantic-macro-name" class="theorem example">
+<p><span class="theorem-title"><strong>Example 10 (Naming a macro for its meaning)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Source: <code>The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.</code></p>
+<p>✅ Source: <code>The error at layer $\ell$ is $\backerr^{(\ell)}$, and the step size is $\learnrate$.</code></p>
+</blockquote>
+<p>Both versions print the same symbols. In the ✅ version, a reader of the source sees what each symbol stands for, and a group that changes the symbol for the step size changes one line in the shared file.</p>
+</div>
+</div>
+</div>
+</div>
+<p>A passage about the notation itself, such as a table that lists each symbol and what it means, may write the letters directly.</p>
+<p>The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a fitted value or a Fourier transform, so <code>\hat</code> names no concept either. Write the macro that names the role instead, such as <code>\est{}</code> for an estimate, and keep <code>\hat</code> for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-semantic-decorator" class="theorem example">
+<p><span class="theorem-title"><strong>Example 11 (Naming a decorator for its meaning)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Source: <code>The estimate $\hat{\mean}$ is close to $\mean$.</code></p>
+<p>✅ Source: <code>The estimate $\est{\mean}$ is close to $\mean$.</code></p>
+</blockquote>
+<p>Both versions print the same hat. If the group later marks estimates some other way, only the definition of <code>\est</code> changes.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:</p>
+<ul>
+<li><code>\outvar</code> for the outcome variable, instead of a bare <code>y</code>;</li>
+<li><code>\eoutvar</code> for a predicted outcome;</li>
+<li><code>\predvar</code> for a predictor, instead of a bare <code>x</code>;</li>
+<li><code>\resid</code> for a residual, the observed minus the predicted outcome;</li>
+<li><code>\prederr</code> for a prediction error, the predicted minus the observed outcome.</li>
+</ul>
+<p>For an observation used to fit the model, the residual is the negative of the prediction error. Write <code>\resid</code> for the observed minus the predicted outcome and <code>\prederr</code> for the predicted minus the observed outcome, never one for the other. For an estimate of a parameter, <code>\erf{\eparam}</code> is the estimation error, the estimate minus the true value; it prints <span class="math inline">\(\varepsilon\)</span>, the symbol the shared macros use for an error. These macros need a version of the shared macros that includes them, so update a repository’s copy before using them there. The outcome, predictor and residual macros also have random-variable and vector forms, such as <code>\Outvar</code>, <code>\voutvar</code> and <code>\vresid</code>.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-semantic-latin-letter" class="theorem example">
+<p><span class="theorem-title"><strong>Example 12 (Naming a variable for its role)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Source: <code>The residual is $e_i = y_i - \hat{y}_i$.</code></p>
+<p>✅ Source: <code>The residual is $\resid_i = \outvar_i - \eoutvar_i$.</code></p>
+</blockquote>
+<p>The ✅ version prints the residual as <span class="math inline">\(r\)</span>, the symbol the shared macros use for it; the other letters are the same in both. In the ✅ version, a reader of the source can tell which letter is the outcome and which is the residual.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Once a quantity has a name and a macro, write the macro instead of the expression that defines it. Each equation then stays short, and a reader sees which quantity it is about.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-named-quantity" class="theorem example">
+<p><span class="theorem-title"><strong>Example 13 (Writing a named quantity by its name)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ Source: <code>The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.</code></p>
+<p>✅ Source: <code>The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \vprederr$.</code></p>
+</blockquote>
+<p>The macro <code>\vprederr</code> prints the vector of prediction errors. The document defines it once, where the model is introduced, as <code>\vprederr = \design\vcoef - \vy</code>. The ✅ version has one fewer level of brackets, and it names the quantity the gradient depends on.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="writing-dot-products" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="writing-dot-products"><span class="header-section-number">7</span> Writing dot products</h2>
+<p>When two vectors multiply to give a number, write the product as a dot product, <span class="math inline">\(\tilde{x} \cdot \tilde{\beta}\)</span>. Do not write it as a transpose product, <span class="math inline">\(\tilde{x}' \tilde{\beta}\)</span>, or with inner-product brackets, <span class="math inline">\(\langle \tilde{x}, \tilde{\beta} \rangle\)</span>. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-dot-product" class="theorem example">
+<p><span class="theorem-title"><strong>Example 14 (Writing a dot product)</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>❌ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x}' \tilde{\beta}\)</span>.</p>
+<p>✅ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\)</span>.</p>
+</blockquote>
+<p>Both versions give the same number. The ✅ version shows it as one product of two vectors. In a group that uses shared macros (see <a href="#using-shared-macros">Using shared macros</a>), write the ✅ version with the dot-product macro, for example <code>$\dprod{\vx}{\vbeta}$</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Keep the transpose where the product is not a dot product of two vectors:</p>
+<ul>
+<li>a product of matrices, such as <span class="math inline">\(X'X\)</span></li>
+<li>an outer product, such as <span class="math inline">\(\tilde{x}\tilde{x}'\)</span></li>
+<li>a quadratic form, such as <span class="math inline">\(\tilde{x}' A \tilde{x}\)</span></li>
+</ul>
+<p>Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.</p>
+</section>
+<section id="writing-out-notational-shorthands" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="writing-out-notational-shorthands"><span class="header-section-number">8</span> Writing out notational shorthands</h2>
+<p>A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in <span class="math inline">\(\sum_x f(x)\)</span>. In permanent writing (notes, papers, and published slides), write the full form instead: <span class="math inline">\(\sum_{x \in \mathcal{R}(X)} f(x)\)</span>, where <span class="math inline">\(\mathcal{R}(X)\)</span> is the set of values that <span class="math inline">\(X\)</span> can take.</p>
+<p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
+<p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
+<div class="callout callout-style-simple callout-exm no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="exm-notational-shorthand" class="theorem example">
+<p><span class="theorem-title"><strong>Example 15 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<blockquote class="blockquote">
+<p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
+<p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
+</blockquote>
+<p>For the likelihood of <span class="math inline">\(n\)</span> independent observations <span class="math inline">\(x_1, \ldots, x_n\)</span>:</p>
+<blockquote class="blockquote">
+<p>❌ <span class="math inline">\(L(\theta) = \prod_i f(x_i; \theta)\)</span></p>
+<p>✅ <span class="math inline">\(L(\theta) = \prod_{i = 1}^{n} f(x_i; \theta)\)</span></p>
+</blockquote>
+<p>Each full form tells the reader the set the operator runs over: the values <span class="math inline">\(X\)</span> can take, and the indices of the <span class="math inline">\(n\)</span> observations.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- -->
+
+<script>
+const theoremLikeClasses = new Set([
+  "thm",
+  "theorem",
+  "lem",
+  "lemma",
+  "cor",
+  "corollary",
+  "prp",
+  "proposition",
+  "cnj",
+  "conjecture",
+  "def",
+  "definition",
+  "exm",
+  "example",
+  "exr",
+  "exercise",
+  "proof",
+  "remark",
+  "solution"
+]);
+const inlineAnchorSeparator = "\u00A0";
+const maxAnchorRetryAttempts = 5;
+const anchorRetryDelayMs = 50;
+
+const isTheoremLikeDiv = (div) =>
+  Array.from(div.classList).some((className) => theoremLikeClasses.has(className));
+
+const addTheoremLikeDivAnchors = () => {
+  for (const theoremDiv of window.document.querySelectorAll("div[id]")) {
+    if (!isTheoremLikeDiv(theoremDiv)) {
+      continue;
+    }
+
+    if (!theoremDiv.classList.contains("anchored")) {
+      theoremDiv.classList.add("anchored");
+    }
+
+    if (!theoremDiv.dataset.anchorId) {
+      theoremDiv.dataset.anchorId = theoremDiv.id;
+    }
+  }
+};
+
+const ensureSectionHeadingAnchorAttributes = () => {
+  for (const sectionHeading of window.document.querySelectorAll(
+    "section[id] > h1, section[id] > h2, section[id] > h3, section[id] > h4, section[id] > h5, section[id] > h6"
+  )) {
+    if (!sectionHeading.classList.contains("anchored")) {
+      sectionHeading.classList.add("anchored");
+    }
+
+    if (!sectionHeading.dataset.anchorId) {
+      sectionHeading.dataset.anchorId = sectionHeading.parentElement.id;
+    }
+  }
+};
+
+const normalizeInternalAnchorLinkIcons = () => {
+  for (const link of window.document.querySelectorAll(
+    "a.anchorjs-link, a.quarto-xref"
+  )) {
+    if (link.classList.contains("quarto-xref")) {
+      link.classList.add("no-external");
+      link.classList.remove("external");
+      continue;
+    }
+
+    const href = link.getAttribute("href") || "";
+    if (!href.startsWith("#")) {
+      continue;
+    }
+
+    link.classList.add("no-external");
+    link.classList.remove("external");
+  }
+};
+
+const moveTheoremDivAnchorsInline = () => {
+  let hasPendingAnchors = false;
+
+  for (const theoremDiv of window.document.querySelectorAll("div[id]")) {
+    if (!isTheoremLikeDiv(theoremDiv)) {
+      continue;
+    }
+
+    const theoremTitle = theoremDiv.querySelector(".theorem-title");
+    if (!theoremTitle) {
+      continue;
+    }
+
+    const anchorLink = Array.from(
+      theoremDiv.querySelectorAll("a.anchorjs-link")
+    ).find((link) => {
+      const href = link.getAttribute("href") || "";
+      return href === `#${theoremDiv.id}` || href.endsWith(`#${theoremDiv.id}`);
+    });
+
+    if (anchorLink && anchorLink.parentElement === theoremTitle) {
+      continue;
+    }
+
+    if (!anchorLink) {
+      hasPendingAnchors = true;
+      continue;
+    }
+
+    anchorLink.classList.remove("external");
+    theoremTitle.append(inlineAnchorSeparator);
+    theoremTitle.append(anchorLink);
+  }
+
+  return hasPendingAnchors;
+};
+
+const moveTheoremDivAnchorsInlineWithRetry = (
+  attemptsRemaining = maxAnchorRetryAttempts
+) => {
+  const hasPendingAnchors = moveTheoremDivAnchorsInline();
+  if (hasPendingAnchors && attemptsRemaining > 0) {
+    window.setTimeout(() => {
+      moveTheoremDivAnchorsInlineWithRetry(attemptsRemaining - 1);
+    }, anchorRetryDelayMs);
+  }
+};
+
+if (window.document.readyState === "loading") {
+  window.document.addEventListener("DOMContentLoaded", () => {
+    addTheoremLikeDivAnchors();
+    ensureSectionHeadingAnchorAttributes();
+    normalizeInternalAnchorLinkIcons();
+    moveTheoremDivAnchorsInlineWithRetry();
+  });
+} else {
+  addTheoremLikeDivAnchors();
+  ensureSectionHeadingAnchorAttributes();
+  normalizeInternalAnchorLinkIcons();
+  moveTheoremDivAnchorsInlineWithRetry();
+}
+
+window.addEventListener("load", () => {
+  normalizeInternalAnchorLinkIcons();
+  moveTheoremDivAnchorsInlineWithRetry();
+});
+</script>
+
+<script>
+const defaultAnchorIconFallback = "#";
+
+function getDefaultAnchorTemplate() {
+  const defaultAnchor = document.querySelector("a.anchorjs-link[data-anchorjs-icon]");
+  if (!defaultAnchor) {
+    return null;
+  }
+
+  return {
+    icon: defaultAnchor.getAttribute("data-anchorjs-icon"),
+    style: defaultAnchor.getAttribute("style")
+  };
+}
+
+function alignEquationAnchorWithDefault(anchor, template) {
+  if (!anchor) {
+    return;
+  }
+
+  anchor.classList.remove("external");
+
+  if (template && template.icon) {
+    anchor.setAttribute("data-anchorjs-icon", template.icon);
+    anchor.textContent = "";
+  } else if (!anchor.textContent) {
+    anchor.textContent = defaultAnchorIconFallback;
+  }
+
+  if (template && template.style) {
+    anchor.setAttribute("style", template.style);
+  } else {
+    anchor.removeAttribute("style");
+  }
+}
+
+function alignEquationAnchorsWithDefault() {
+  const template = getDefaultAnchorTemplate();
+  document.querySelectorAll("a.equation-anchor").forEach(function (anchor) {
+    alignEquationAnchorWithDefault(anchor, template);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const equations = document.querySelectorAll("span[id^='eq-']");
+  equations.forEach(function (equation) {
+    if (equation.querySelector(".equation-anchor")) {
+      return;
+    }
+
+    if (!equation.querySelector(".math.display")) {
+      return;
+    }
+
+    const id = equation.getAttribute("id");
+    if (!id) {
+      return;
+    }
+
+    equation.classList.add("equation-anchor-target");
+
+    const anchor = document.createElement("a");
+    anchor.className = "equation-anchor anchorjs-link";
+    anchor.href = "#" + id;
+    anchor.setAttribute("aria-label", "Permalink to this equation");
+    equation.appendChild(anchor);
+  });
+
+  alignEquationAnchorsWithDefault();
+});
+
+window.addEventListener("load", alignEquationAnchorsWithDefault);
+</script>
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/d-morrison\.github\.io\/psw\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Mathematical notation"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html: default</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  revealjs:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: notation-slides.html</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: notation-handout.pdf</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  docx:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: notation.docx</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>{{&lt; include _copilot-disclaimer.qmd &gt;}}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Notation is part of your prose,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>and readers parse it the same way they parse a sentence.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>This chapter collects notational habits</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>that make quantitative writing easier to read.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Avoiding double inequalities</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/double-inequalities.qmd &gt;}}</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## One operation per step</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/one-operation-per-step.qmd &gt;}}</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## One equals sign per line</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/one-equals-per-line.qmd &gt;}}</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Functions and their values</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/functions-and-values.qmd &gt;}}</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Matching names and notation</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/names-and-notation.qmd &gt;}}</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Using shared macros</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/shared-macros.qmd &gt;}}</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Writing dot products</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/dot-products.qmd &gt;}}</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Writing out notational shorthands</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>{{&lt; include notation/notational-shorthands.qmd &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/d-morrison/psw/edit/main/chapters/notation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/d-morrison/psw/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/d-morrison/psw/blob/main/chapters/notation.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
