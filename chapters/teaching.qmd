@@ -213,6 +213,28 @@ in every course and every teaching repository.
   or [broom](https://cran.r-project.org/package=broom)'s `glance()`.
 - Ezra's [rme](https://github.com/d-morrison/rme) notes show the style.
 
+## Manipulate data with dplyr, not base R
+
+This rule applies to all R code in teaching materials,
+in every course and every teaching repository.
+
+- Select columns with
+  [dplyr](https://dplyr.tidyverse.org/)'s `select()`,
+  not with `df[, c("a", "b")]` or `df[c("a", "b")]`.
+- Filter rows with `filter()`, not with `df[df$x > 0, ]` or `subset()`.
+- Add or change columns with `mutate()`, not with `df$new <- ...`.
+- Drop rows with missing values with
+  [tidyr](https://tidyr.tidyverse.org/)'s `drop_na()`,
+  not with `df[complete.cases(df), ]`.
+- Stack data frames with `bind_rows()`, not with `rbind()`.
+- Build data frames with
+  [tibble](https://tibble.tidyverse.org/)'s `tibble()`,
+  not with `data.frame()`.
+- Chain steps with the native pipe `|>`.
+- Reading one value out of a data frame for inline code is fine,
+  as is indexing a matrix or a vector.
+  The rule is about selecting, filtering and building data frames.
+
 ## Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.

@@ -6,6 +6,7 @@ COREQ
 CRediT
 CSL
 DOI
+dplyr
 easystats
 eFigure
 EHR
@@ -51,8 +52,10 @@ SRQR
 STARD
 Starmer
 STEM
+tibble
 Tibshirani
 tidymodels
+tidyr
 TN
 TP
 Weinberger
