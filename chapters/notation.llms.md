@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 11:38:54 (PDT)
+Last modified: 2026-10-09 12:00:07 (PDT)
 
 > **NOTE:**
 >
@@ -289,13 +289,25 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 >
 > The macro `\vprederr` prints the vector of prediction errors. The document defines it once, where the model is introduced, as `\vprederr = \design\vcoef - \vy`. The ✅ version has one fewer level of brackets, and it names the quantity the gradient depends on.
 
+Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\left` with `\right`, say how a bracket is drawn, not what it groups. The shared macros `\paren{}`, `\sb{}`, `\cb{}`, `\set{}` and `\abs{}` size themselves to their contents, so write them instead of a hand-sized pair. Arrows such as `\leftarrow` are not delimiters.
+
+> **NOTE:**
+>
+> **Example 14 (Letting the macro size the bracket)**  
+>
+> > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
+> >
+> > ✅ Source: `The mean is $\E{\paren{X - \mu}^2}$.`
+>
+> Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
+
 ## 7 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 14 (Writing a dot product)**  
+> **Example 15 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -321,7 +333,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 15 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 16 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >

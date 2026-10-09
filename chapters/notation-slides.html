@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-09 11:38:54 (PDT)</p>
+  <p class="date">Last modified: 2026-10-09 12:00:07 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -550,6 +550,15 @@
 </blockquote>
 <p>The macro <code>\vprederr</code> prints the vector of prediction errors. The document defines it once, where the model is introduced, as <code>\vprederr = \design\vcoef - \vy</code>. The ✅ version has one fewer level of brackets, and it names the quantity the gradient depends on.</p>
 </div>
+<p>Delimiters follow the same rule. Manual sizing commands, such as <code>\big</code> and <code>\left</code> with <code>\right</code>, say how a bracket is drawn, not what it groups. The shared macros <code>\paren{}</code>, <code>\sb{}</code>, <code>\cb{}</code>, <code>\set{}</code> and <code>\abs{}</code> size themselves to their contents, so write them instead of a hand-sized pair. Arrows such as <code>\leftarrow</code> are not delimiters.</p>
+<div id="exm-semantic-delimiter" class="theorem example">
+<p><span class="theorem-title"><strong>Example 14 (Letting the macro size the bracket)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Source: <code>The mean is $\E{\left( X - \mu \right)^2}$.</code></p>
+<p>✅ Source: <code>The mean is $\E{\paren{X - \mu}^2}$.</code></p>
+</blockquote>
+<p>Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.</p>
+</div>
 </section>
 <section id="writing-dot-products" class="slide level2" data-number="7">
 <h2><span class="header-section-number">7</span> Writing dot products</h2>
@@ -558,7 +567,7 @@
 
 <p>When two vectors multiply to give a number, write the product as a dot product, <span class="math inline">\(\tilde{x} \cdot \tilde{\beta}\)</span>. Do not write it as a transpose product, <span class="math inline">\(\tilde{x}' \tilde{\beta}\)</span>, or with inner-product brackets, <span class="math inline">\(\langle \tilde{x}, \tilde{\beta} \rangle\)</span>. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.</p>
 <div id="exm-dot-product" class="theorem example">
-<p><span class="theorem-title"><strong>Example 14 (Writing a dot product)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 15 (Writing a dot product)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x}' \tilde{\beta}\)</span>.</p>
 <p>✅ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\)</span>.</p>
@@ -582,7 +591,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 15 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 16 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
