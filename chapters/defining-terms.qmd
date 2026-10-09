@@ -218,12 +218,11 @@ Follow these principles when introducing new terms:
 - **Name the synonyms:**
   When a field uses several words for one concept,
   such as *learning*, *training* and *fitting* a model,
-  list them in the definition block
-  and say which one the document uses.
-  Treat an alternative name for the same concept
-  exactly as the primary name:
-  put it in the div title, as in "Postulate (axiom)",
-  and bold it where it first appears in the definition.
+  every word that names the concept is an alternative name,
+  and each is treated exactly as the primary name:
+  put all of them in the div title, as in "Postulate (axiom)",
+  and bold each where it first appears in the definition.
+  Say which one the document uses.
   Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
   A reader who meets the other words in another source

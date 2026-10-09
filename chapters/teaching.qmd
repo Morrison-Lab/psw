@@ -85,7 +85,7 @@ For teaching materials, three further rules keep definitions findable.
   A special case, such as a linear evaluation function,
   gets its own div after the general case, and the two link to each other.
 
-An alternative name for the same concept stays in the div of the term it names
+Every alternative name for the same concept stays in the div of the term it names
 and is treated like the primary name:
 it appears in the div title and is bold where it first appears in the definition.
 Name synonyms and near-synonyms where the term is defined,
