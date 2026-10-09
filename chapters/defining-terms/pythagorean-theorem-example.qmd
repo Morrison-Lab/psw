@@ -22,7 +22,7 @@ $3^2 + 4^2 = 9 + 16 = 25 = 5^2$.
 
 ## Postulate (axiom)
 
-A *postulate* (or axiom) is a statement accepted as true without proof,
+A **postulate** (or **axiom**) is a statement accepted as true without proof,
 serving as a starting point for further reasoning.
 
 :::

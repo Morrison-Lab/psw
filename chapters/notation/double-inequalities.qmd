@@ -1,6 +1,13 @@
-A *double inequality* (or *chained inequality*)
+::: {#def-double-inequality}
+
+## Double inequality (chained inequality)
+
+A **double inequality** (or **chained inequality**)
 places one quantity between two others,
 as in $a < x < b$.
+
+:::
+
 Prefer interval notation instead:
 $x \in (a, b)$.
 
