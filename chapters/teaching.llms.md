@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 22:40:32 (PDT)
+Last modified: 2026-10-09 01:07:47 (PDT)
 
 > **NOTE:**
 >
@@ -92,6 +92,9 @@ When several courses or repositories have already written the same definition, t
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
 - Give labs and code exercises in both R and Python, side by side.
+- Write the R code with [tidymodels](https://www.tidymodels.org/), or show tidymodels and base R side by side. Do not give base R alone. [ISLR-tidymodels-labs](https://github.com/Morrison-Lab/ISLR-tidymodels-labs) shows the style.
+- When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, in the book’s order. For the ISL labs, fit Python models with `statsmodels`’ `sm.OLS`, as [ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs) does. If an exercise departs from the book, say why in the lab.
+- Never throw away an exercise you replace. Either keep both exercises, or keep the replaced one as an outtake: leave its file in place and stop including it.
 - Tell students where to get the data.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
