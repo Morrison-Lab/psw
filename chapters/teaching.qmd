@@ -169,7 +169,10 @@ in every course and every teaching repository, not only to one course.
   Do not give base R alone.
   [ISLR-tidymodels-labs](https://github.com/Morrison-Lab/ISLR-tidymodels-labs)
   shows the style.
-- When a lab follows a textbook's lab, use the book's exercises and data, in the book's order.
+- When a lab follows a textbook's lab, use the book's exercises, data and fitting functions,
+  in the book's order.
+  For the ISL labs, fit Python models with `statsmodels`' `sm.OLS`, as
+  [ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs) does.
   If an exercise departs from the book, say why in the lab.
 - Never throw away an exercise you replace.
   Either keep both exercises,
