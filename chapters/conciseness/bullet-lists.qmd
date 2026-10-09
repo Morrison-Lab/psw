@@ -56,7 +56,7 @@ so the reader sees at a glance that there are three.
 > - Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo).
 > - Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 
-This example comes from the DATA 571 notes on
+This example is adapted from video notes in the DATA 571 chapter on
 [linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
 Each bullet holds one video,
 so the reader can pick one without parsing the paragraph.
