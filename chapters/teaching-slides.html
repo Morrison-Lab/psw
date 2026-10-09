@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-09 10:37:21 (PDT)</p>
+  <p class="date">Last modified: 2026-10-09 11:38:54 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -476,8 +476,25 @@
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Make figures accessible</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Manipulate data with dplyr, not base R</h2>
+</section>
+<section class="slide level2">
+
+<p>This rule applies to all R code in teaching materials, in every course and every teaching repository.</p>
+<ul>
+<li>Select columns with <a href="https://dplyr.tidyverse.org/">dplyr</a>’s <code>select()</code>, not with <code>df[, c("a", "b")]</code> or <code>df[c("a", "b")]</code>.</li>
+<li>Filter rows with <code>filter()</code>, not with <code>df[df$x &gt; 0, ]</code> or <code>subset()</code>.</li>
+<li>Add or change columns with <code>mutate()</code>, not with <code>df$new &lt;- ...</code>.</li>
+<li>Drop rows with missing values with <a href="https://tidyr.tidyverse.org/">tidyr</a>’s <code>drop_na()</code>, not with <code>df[complete.cases(df), ]</code>.</li>
+<li>Stack data frames with <code>bind_rows()</code>, not with <code>rbind()</code>.</li>
+<li>Build data frames with <a href="https://tibble.tidyverse.org/">tibble</a>’s <code>tibble()</code>, not with <code>data.frame()</code>.</li>
+<li>Chain steps with the native pipe <code>|&gt;</code>.</li>
+<li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
+</ul>
+</section>
+<section id="make-figures-accessible" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -488,8 +505,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -503,8 +520,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -515,8 +532,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 

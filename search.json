@@ -1519,32 +1519,39 @@
     "text": "9 Present R results with modern packages"
   },
   {
+    "objectID": "chapters/teaching-slides.html#manipulate-data-with-dplyr-not-base-r",
+    "href": "chapters/teaching-slides.html#manipulate-data-with-dplyr-not-base-r",
+    "title": "Writing for teaching",
+    "section": "10 Manipulate data with dplyr, not base R",
+    "text": "10 Manipulate data with dplyr, not base R"
+  },
+  {
     "objectID": "chapters/teaching-slides.html#make-figures-accessible",
     "href": "chapters/teaching-slides.html#make-figures-accessible",
     "title": "Writing for teaching",
-    "section": "10 Make figures accessible",
-    "text": "10 Make figures accessible"
+    "section": "11 Make figures accessible",
+    "text": "11 Make figures accessible"
   },
   {
     "objectID": "chapters/teaching-slides.html#structure-slides-for-the-reader",
     "href": "chapters/teaching-slides.html#structure-slides-for-the-reader",
     "title": "Writing for teaching",
-    "section": "11 Structure slides for the reader",
-    "text": "11 Structure slides for the reader"
+    "section": "12 Structure slides for the reader",
+    "text": "12 Structure slides for the reader"
   },
   {
     "objectID": "chapters/teaching-slides.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching-slides.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "12 Credit other courses without summarizing them",
-    "text": "12 Credit other courses without summarizing them"
+    "section": "13 Credit other courses without summarizing them",
+    "text": "13 Credit other courses without summarizing them"
   },
   {
     "objectID": "chapters/teaching-slides.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching-slides.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "13 Rules that apply to all writing",
-    "text": "13 Rules that apply to all writing"
+    "section": "14 Rules that apply to all writing",
+    "text": "14 Rules that apply to all writing"
   },
   {
     "objectID": "chapters/teaching-slides.html#references",
@@ -1624,32 +1631,39 @@
     "text": "9 Present R results with modern packages\nThis rule applies to all R code in teaching materials, in every course and every teaching repository.\n\nEven when you fit a model with a base R function such as lm() or glm(), show its results with modern packages, not with base R output.\nShow coefficient tables with parameters (parameters() |&gt; print_md()) or gtsummary (tbl_regression()), not with summary() or coef(summary()) printouts.\nDraw figures with ggplot2, not with base graphics such as plot(), lines() and abline().\nDraw model plots with packages built on ggplot2: sjPlot or ggeffects for predictions, and performance’s check_model() for diagnostic plots.\nShow model fit statistics with performance’s model_performance() or broom’s glance().\nEzra’s rme notes show the style."
   },
   {
+    "objectID": "chapters/teaching.html#manipulate-data-with-dplyr-not-base-r",
+    "href": "chapters/teaching.html#manipulate-data-with-dplyr-not-base-r",
+    "title": "Writing for teaching",
+    "section": "10 Manipulate data with dplyr, not base R",
+    "text": "10 Manipulate data with dplyr, not base R\nThis rule applies to all R code in teaching materials, in every course and every teaching repository.\n\nSelect columns with dplyr’s select(), not with df[, c(\"a\", \"b\")] or df[c(\"a\", \"b\")].\nFilter rows with filter(), not with df[df$x &gt; 0, ] or subset().\nAdd or change columns with mutate(), not with df$new &lt;- ....\nDrop rows with missing values with tidyr’s drop_na(), not with df[complete.cases(df), ].\nStack data frames with bind_rows(), not with rbind().\nBuild data frames with tibble’s tibble(), not with data.frame().\nChain steps with the native pipe |&gt;.\nReading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames."
+  },
+  {
     "objectID": "chapters/teaching.html#make-figures-accessible",
     "href": "chapters/teaching.html#make-figures-accessible",
     "title": "Writing for teaching",
-    "section": "10 Make figures accessible",
-    "text": "10 Make figures accessible\n\nWrap each figure, including an interactive one, in a #fig- div with a caption.\nGive every plot alt text. For Observable Plot, set ariaLabel.\nShow the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set echo: false on a cell you want students to read.\nDo not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF)."
+    "section": "11 Make figures accessible",
+    "text": "11 Make figures accessible\n\nWrap each figure, including an interactive one, in a #fig- div with a caption.\nGive every plot alt text. For Observable Plot, set ariaLabel.\nShow the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set echo: false on a cell you want students to read.\nDo not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF)."
   },
   {
     "objectID": "chapters/teaching.html#structure-slides-for-the-reader",
     "href": "chapters/teaching.html#structure-slides-for-the-reader",
     "title": "Writing for teaching",
-    "section": "11 Structure slides for the reader",
-    "text": "11 Structure slides for the reader\n\nCheck the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.\nPut a list of three or more phrases in a bullet list, as Put lists in bullet points describes.\nPut each named example in an #exm- div.\nPut on a slide only what you want the audience to look at. Put an example in an #exm- div and short commentary in a #rem- div, because a ::: notes div is plain text without a box on the web page.\nPut a long paragraph of commentary in a remark that is also speaker notes: ::: {#rem-name .remark .notes}. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short #rem- div only when the slide needs a takeaway to look at.\nAdd structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.\nKeep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides."
+    "section": "12 Structure slides for the reader",
+    "text": "12 Structure slides for the reader\n\nCheck the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.\nPut a list of three or more phrases in a bullet list, as Put lists in bullet points describes.\nPut each named example in an #exm- div.\nPut on a slide only what you want the audience to look at. Put an example in an #exm- div and short commentary in a #rem- div, because a ::: notes div is plain text without a box on the web page.\nPut a long paragraph of commentary in a remark that is also speaker notes: ::: {#rem-name .remark .notes}. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short #rem- div only when the slide needs a takeaway to look at.\nAdd structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.\nKeep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides."
   },
   {
     "objectID": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "12 Credit other courses without summarizing them",
-    "text": "12 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
+    "section": "13 Credit other courses without summarizing them",
+    "text": "13 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
   },
   {
     "objectID": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "13 Rules that apply to all writing",
-    "text": "13 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid AI clichés."
+    "section": "14 Rules that apply to all writing",
+    "text": "14 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid AI clichés."
   },
   {
     "objectID": "index.html",

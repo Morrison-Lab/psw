@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 10:37:21 (PDT)
+Last modified: 2026-10-09 11:38:54 (PDT)
 
 > **NOTE:**
 >
@@ -110,14 +110,27 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-## 10 Make figures accessible
+## 10 Manipulate data with dplyr, not base R
+
+This rule applies to all R code in teaching materials, in every course and every teaching repository.
+
+- Select columns with [dplyr](https://dplyr.tidyverse.org/)’s `select()`, not with `df[, c("a", "b")]` or `df[c("a", "b")]`.
+- Filter rows with `filter()`, not with `df[df$x > 0, ]` or `subset()`.
+- Add or change columns with `mutate()`, not with `df$new <- ...`.
+- Drop rows with missing values with [tidyr](https://tidyr.tidyverse.org/)’s `drop_na()`, not with `df[complete.cases(df), ]`.
+- Stack data frames with `bind_rows()`, not with `rbind()`.
+- Build data frames with [tibble](https://tibble.tidyverse.org/)’s `tibble()`, not with `data.frame()`.
+- Chain steps with the native pipe `|>`.
+- Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
+
+## 11 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 11 Structure slides for the reader
+## 12 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -127,14 +140,14 @@ This rule applies to all R code in teaching materials, in every course and every
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 12 Credit other courses without summarizing them
+## 13 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 13 Rules that apply to all writing
+## 14 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
