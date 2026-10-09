@@ -71,7 +71,7 @@ as a checklist for revising a draft.
 
 ## How to read the book
 
-You do not need to read the chapters in order.
+You can read the chapters in any order.
 Most sections state one rule and the reason for it,
 and then show the rule applied to an example.
 Many sections compare a weaker version of a passage with a stronger one.

@@ -130,7 +130,7 @@ Follow its link for the reasons and the exceptions.
 - [Reuse one written version of each result](teaching.qmd#reuse-one-written-version-of-each-result).
 - [Use real data and compute every number](teaching.qmd#use-real-data-and-compute-every-number).
 - [Show each idea applied and in a figure](teaching.qmd#show-each-idea-applied-and-in-a-figure).
-- [Write labs for both R and Python](teaching.qmd#write-labs-for-both-languages-and-any-computer)
+- [Write labs in both R and Python](teaching.qmd#write-labs-for-both-languages-and-any-computer)
   that run on any computer.
 - [Make figures accessible](teaching.qmd#make-figures-accessible).
 - [Structure slides for the reader](teaching.qmd#structure-slides-for-the-reader).
