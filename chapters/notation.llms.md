@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 22:24:07 (PDT)
+Last modified: 2026-10-08 22:40:32 (PDT)
 
 > **NOTE:**
 >
@@ -126,13 +126,37 @@ State the color key in words at the start of the derivation, so the derivation i
 >
 > Separate blocks then find \\\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}\\ and \\\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}\\, and the main derivation resumes with \\\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}\\. The colors show at a glance which block each factor came from.
 
-## 3 Functions and their values
+## 3 One equals sign per line
+
+Put at most one equals sign on each line of math. When a result takes two or more equalities, write them as an aligned display, with one equality per row, each row starting with `&=`.
+
+A chain such as \\a = b = c\\ on one line asks the reader to find where each step starts and ends, and to check every step at once. An aligned display puts each step on its own row, so the reader can check one row at a time, and the left-hand side, written once, stays visible above the rows that rewrite it. The rows also leave room for a justification at the end of each step, as [One operation per step](../chapters/notation.llms.md#one-operation-per-step) asks.
+
+> **NOTE:**
+>
+> **Example 6 (Splitting a chain into rows)**  
+>
+> > ❌ \\ \hat{B} = \arg\min_B \\Y - X B\\\_F^2 = \arg\min_B \sum\_{k=1}^C \\Y\_{\*,k} - X B\_{\*,k}\\^2 \\
+> >
+> > ✅ \\ \begin{aligned} \hat{B} &= \arg\min_B \\Y - X B\\\_F^2 \\ &= \arg\min_B \sum\_{k=1}^C \\Y\_{\*,k} - X B\_{\*,k}\\^2 \end{aligned} \\
+>
+> The ❌ version makes the reader find the second equals sign in a long line before they can compare the two expressions. The ✅ version sets the two expressions one above the other, starting at the same place.
+
+The rule applies wherever an equals sign appears:
+
+- **Inside an aligned display.** A row such as `&= b = c` is still a chain; split it into two rows.
+- **In running text.** An inline chain such as ❌ \\\bar{x} = \frac{6}{3} = 2\\ becomes an aligned display, or two statements in the sentence.
+- **For a statement that several quantities are equal.** Write ✅ \\H_0\colon \beta_j = 0\\ for every \\j \in \\1, \ldots, p\\\\ rather than ❌ \\H_0\colon \beta_1 = \beta_2 = \cdots = \beta_p = 0\\, so that each claim is a single equality.
+
+Separate equations set side by side, such as \\x = 1, \quad y = 2\\, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.
+
+## 4 Functions and their values
 
 A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Written with its placeholder argument, \\\mu(x)\\ already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
 
 > **NOTE:**
 >
-> **Example 6 (Saying where a function is evaluated)**  
+> **Example 7 (Saying where a function is evaluated)**  
 >
 > > ❌ Each outcome is centered on the value of a mean function \\\mu(x)\\ at its own covariate values.
 > >
@@ -154,7 +178,7 @@ Use the notation to match:
 - Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
 - Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
 
-## 4 Matching names and notation
+## 5 Matching names and notation
 
 A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
 
@@ -162,7 +186,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 7 (Matching a name to its notation)**  
+> **Example 8 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
@@ -180,7 +204,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-## 5 Using shared macros
+## 6 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
@@ -188,7 +212,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 8 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 9 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -211,7 +235,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 9 (Naming a macro for its meaning)**  
+> **Example 10 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -225,7 +249,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 10 (Naming a decorator for its meaning)**  
+> **Example 11 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -245,7 +269,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 11 (Naming a variable for its role)**  
+> **Example 12 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -257,7 +281,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 12 (Writing a named quantity by its name)**  
+> **Example 13 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -265,13 +289,13 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 >
 > The macro `\vprederr` prints the vector of prediction errors. The document defines it once, where the model is introduced, as `\vprederr = \design\vcoef - \vy`. The ✅ version has one fewer level of brackets, and it names the quantity the gradient depends on.
 
-## 6 Writing dot products
+## 7 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 13 (Writing a dot product)**  
+> **Example 14 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -287,7 +311,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 7 Writing out notational shorthands
+## 8 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -297,7 +321,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 14 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 15 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 22:24:07 (PDT)
+Last modified: 2026-10-08 22:40:32 (PDT)
 
 > **NOTE:**
 >
@@ -20,6 +20,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Do one operation per step](../chapters/notation.llms.md#one-operation-per-step) in a derivation, and justify each step.
 - [Give applying a definition its own step](../chapters/notation.llms.md#applying-a-definition-is-a-step); never skip it.
 - [Show why you need a result before you derive it](../chapters/notation.llms.md#show-why-you-need-a-result-before-you-derive-it), and [color each result where it is used](../chapters/notation.llms.md#color-where-a-result-is-used).
+- [Put one equals sign on each line](../chapters/notation.llms.md#one-equals-sign-per-line): split a chain such as \\a = b = c\\ into the rows of an aligned display.
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
 - [Write each symbol through a shared macro](../chapters/notation.llms.md#using-shared-macros).
