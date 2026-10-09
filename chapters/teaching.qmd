@@ -179,6 +179,15 @@ in every course and every teaching repository, not only to one course.
   or keep the replaced one as an outtake:
   leave its file in place and stop including it.
 - Tell students where to get the data.
+- Point students only to places they can open.
+  Students read a course's published site, not its repository,
+  which is often private.
+  So never send them to a file in the repository,
+  to a `github.com` link into a private repository,
+  or to "the copy in this repository".
+  Link a data file from the published site,
+  from a public repository or package,
+  or from the data's original public source.
 - Do not assume that students own a laptop.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
