@@ -218,14 +218,13 @@ Follow these principles when introducing new terms:
 - **Name the synonyms:**
   When a field uses several words for one concept,
   such as *learning*, *training* and *fitting* a model,
-  list them in the definition block,
-  or in a callout beside it,
+  list them in the definition block
   and say which one the document uses.
   Treat an alternative name for the same concept
   exactly as the primary name:
-  put it in the div title, such as "Residual sum of squares (sum of squared residuals)",
+  put it in the div title, as in "Postulate (axiom)",
   and bold it where it first appears in the definition.
-  Name near-synonyms there too,
+  Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
   A reader who meets the other words in another source
   can then connect them to the concept already learned
