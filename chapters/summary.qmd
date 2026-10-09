@@ -136,3 +136,5 @@ Follow its link for the reasons and the exceptions.
 - [Structure slides for the reader](teaching.qmd#structure-slides-for-the-reader).
 - [Credit another course's material](citations-evidence.qmd#adapting-another-courses-material)
   in a collapsed "Source" callout, not in running prose.
+- [Skip the credit for material from your own repositories](citations-evidence.qmd#material-from-your-own-repositories),
+  but keep what those repositories credit.

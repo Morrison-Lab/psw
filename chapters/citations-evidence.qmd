@@ -393,6 +393,28 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
+### Material from your own repositories
+
+Material moved between repositories you maintain needs no credit to those repositories.
+When lecture notes move from one course repository to another,
+leave the sister-repository credit out of the new work.
+
+Carry over what the source repository itself credits:
+
+- A book or paper the material follows.
+- A person outside your group whose lecture or notes it adapted.
+  For example, the lds course credits Kameron Decker Harris,
+  Brian Hutchinson and Logan Sizemore,
+  so any repository that reuses those lectures credits them too.
+
+The exception has two limits:
+
+- It does not forbid a credit.
+  Leave the sister-repository credit out of new work,
+  but do not strip an existing credit unless the maintainer asks.
+- It does not touch a link to a sister site that sends the reader to further reading.
+  That link is a cross-reference, not an attribution.
+
 ## Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
