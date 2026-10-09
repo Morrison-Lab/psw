@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 21:52:00 (PDT)
+Last modified: 2026-10-08 22:06:13 (PDT)
 
 > **NOTE:**
 >
@@ -95,7 +95,36 @@ When a step relies on a fact the document has not yet shown, such as deviations 
 
 ### 2.3 Long derivations
 
-Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. For example, when you apply the chain rule, derive the inner derivative in a separate block before you substitute it. Naming a part of an expression that recurs in every line, such as writing \\d_i\\ for \\(y_i - \bar{y}) - \beta_x (x_i - \bar{x})\\, can also keep each line short.
+Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing \\d_i\\ for \\(y_i - \bar{y}) - \beta_x (x_i - \bar{x})\\, can also keep each line short.
+
+#### Show why you need a result before you derive it
+
+Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite function:
+
+1.  Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.
+2.  Pause the main derivation, and derive the inner derivative in its own block.
+3.  Derive the outer derivative in its own block.
+4.  Return to the main derivation, and substitute both results.
+
+A reader who meets the inner derivative first does not yet know what it is for.
+
+#### Color where a result is used
+
+Give each intermediate result a text color, and use the same color wherever that result appears:
+
+- in the line where a later step needs it, as a placeholder;
+- in the line of its own derivation where it is found;
+- in each line where it is substituted back in.
+
+State the color key in words at the start of the derivation, so the derivation is still readable without color, for example in grayscale print or for readers who do not see color differences. Use `\textcolor{name}{...}`, which renders in HTML (MathJax) and in PDF.
+
+> **NOTE:**
+>
+> **Example 5 (Coloring the two factors of a chain rule)** Writing the mean squared error as \\\frac{1}{n} \tilde{e} \cdot \tilde{e}\\, with \\\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\\, the chain rule gives
+>
+> \\ \frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta}) = \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)} \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}. \\
+>
+> Separate blocks then find \\\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}\\ and \\\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}\\, and the main derivation resumes with \\\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}\\. The colors show at a glance which block each factor came from.
 
 ## 3 Functions and their values
 
@@ -103,7 +132,7 @@ A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)
 
 > **NOTE:**
 >
-> **Example 5 (Saying where a function is evaluated)**  
+> **Example 6 (Saying where a function is evaluated)**  
 >
 > > ❌ Each outcome is centered on the value of a mean function \\\mu(x)\\ at its own covariate values.
 > >
@@ -133,7 +162,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 6 (Matching a name to its notation)**  
+> **Example 7 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
@@ -159,7 +188,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 7 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 8 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -182,7 +211,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 8 (Naming a macro for its meaning)**  
+> **Example 9 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -196,7 +225,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 9 (Naming a decorator for its meaning)**  
+> **Example 10 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -216,7 +245,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 10 (Naming a variable for its role)**  
+> **Example 11 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -228,7 +257,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 11 (Writing a named quantity by its name)**  
+> **Example 12 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -242,7 +271,7 @@ When two vectors multiply to give a number, write the product as a dot product, 
 
 > **NOTE:**
 >
-> **Example 12 (Writing a dot product)**  
+> **Example 13 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -268,7 +297,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 13 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 14 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
