@@ -58,6 +58,8 @@ The ✅ version gives each of the five its own line.
 
 Common ways to combine steps without noticing:
 
+- substituting a definition and then applying a rule to it
+  (see [Applying a definition is a step](#applying-a-definition-is-a-step));
 - applying the rule for the derivative of a sum
   and the chain rule in the same line;
 - substituting a result and then simplifying it;
@@ -78,6 +80,52 @@ Common ways to combine steps without noticing:
   and drops the $\cdot 1$;
 - writing "setting this to zero and dividing by $-2n$ gives",
   which hides two operations in a sentence.
+
+### Applying a definition is a step
+
+Replacing a named quantity with its definition
+is one of the most important steps in a derivation.
+It is where the general rules meet the specific problem,
+so never skip it or merge it into the next step.
+Give it its own line, justified as "definition of ...".
+The same holds for a result from an earlier part of the same problem:
+substitute it on its own line, and cite the part.
+
+::: {#exm-apply-definition-step}
+
+## Applying the definition of a vector before differentiating it
+
+Suppose the prediction error vector is defined as
+$\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$,
+and a derivation needs its derivative with respect to $\tilde{\beta}$.
+
+> ❌
+> $$
+> \begin{aligned}
+> \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+> &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+>  - \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+> && \text{(derivative of a difference)}
+> \end{aligned}
+> $$
+>
+> ✅
+> $$
+> \begin{aligned}
+> \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+> &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta} - \tilde{y})
+> && \text{(definition of } \tilde{e} \text{)}\\
+> &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+>  - \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+> && \text{(derivative of a difference)}
+> \end{aligned}
+> $$
+
+The ❌ version applies the definition of $\tilde{e}$ and the rule for a difference in one line,
+and its justification names only the rule.
+The ✅ version shows the definition on its own line.
+
+:::
 
 ### Using a fact the reader has not seen
 
