@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 01:07:47 (PDT)
+Last modified: 2026-10-09 10:05:43 (PDT)
 
 > **NOTE:**
 >
@@ -96,6 +96,7 @@ These rules apply to all teaching materials, in every course and every teaching 
 - When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, in the book’s order. For the ISL labs, fit Python models with `statsmodels`’ `sm.OLS`, as [ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs) does. If an exercise departs from the book, say why in the lab.
 - Never throw away an exercise you replace. Either keep both exercises, or keep the replaced one as an outtake: leave its file in place and stop including it.
 - Tell students where to get the data.
+- Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
 ## 9 Make figures accessible
