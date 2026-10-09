@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 21:22:09 (PDT)
+Last modified: 2026-10-08 22:20:34 (PDT)
 
 > **NOTE:**
 >
@@ -66,6 +66,7 @@ Combining steps saves the writer a line and costs every reader a calculation. A 
 
 Common ways to combine steps without noticing:
 
+- substituting a definition and then applying a rule to it (see [Applying a definition is a step](#applying-a-definition-is-a-step));
 - applying the rule for the derivative of a sum and the chain rule in the same line;
 - substituting a result and then simplifying it;
 - multiplying constants and factoring them out of a sum;
@@ -74,13 +75,56 @@ Common ways to combine steps without noticing:
 - canceling \\n\\ in \\n \cdot \frac{b}{n}\\ rewrites the division as multiplication by a reciprocal (\\n \cdot (b \cdot \frac{1}{n})\\), removes the parentheses (\\n \cdot b \cdot \frac{1}{n}\\), reorders the factors (\\b \cdot n \cdot \frac{1}{n}\\), groups the two that cancel (\\b \cdot (n \cdot \frac{1}{n})\\), replaces \\n \cdot \frac{1}{n}\\ with \\1\\ (\\b \cdot 1\\), and drops the \\\cdot 1\\;
 - writing “setting this to zero and dividing by \\-2n\\ gives”, which hides two operations in a sentence.
 
-### 2.1 Using a fact the reader has not seen
+### 2.1 Applying a definition is a step
+
+Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules meet the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
+
+> **NOTE:**
+>
+> **Example 4 (Applying the definition of a vector before differentiating it)** Suppose the prediction error vector is defined as \\\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\\, and a derivation needs its derivative with respect to \\\tilde{\beta}\\.
+>
+> > ❌ \\ \begin{aligned} \frac{\partial}{\partial \tilde{\beta}} \tilde{e} &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta}) - \frac{\partial}{\partial \tilde{\beta}} \tilde{y} && \text{(derivative of a difference)} \end{aligned} \\
+> >
+> > ✅ \\ \begin{aligned} \frac{\partial}{\partial \tilde{\beta}} \tilde{e} &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta} - \tilde{y}) && \text{(definition of } \tilde{e} \text{)}\\ &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta}) - \frac{\partial}{\partial \tilde{\beta}} \tilde{y} && \text{(derivative of a difference)} \end{aligned} \\
+>
+> The ❌ version applies the definition of \\\tilde{e}\\ and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.
+
+### 2.2 Using a fact the reader has not seen
 
 When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.
 
-### 2.2 Long derivations
+### 2.3 Long derivations
 
-Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. For example, when you apply the chain rule, derive the inner derivative in a separate block before you substitute it. Naming a part of an expression that recurs in every line, such as writing \\d_i\\ for \\(y_i - \bar{y}) - \beta_x (x_i - \bar{x})\\, can also keep each line short.
+Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing \\d_i\\ for \\(y_i - \bar{y}) - \beta_x (x_i - \bar{x})\\, can also keep each line short.
+
+#### Show why you need a result before you derive it
+
+Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite function:
+
+1.  Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.
+2.  Pause the main derivation, and derive the inner derivative in its own block.
+3.  Derive the outer derivative in its own block.
+4.  Return to the main derivation, and substitute both results.
+
+A reader who meets the inner derivative first does not yet know what it is for.
+
+#### Color where a result is used
+
+Give each intermediate result a text color, and use the same color wherever that result appears:
+
+- in the line where a later step needs it, as a placeholder;
+- in the line of its own derivation where it is found;
+- in each line where it is substituted back in.
+
+State the color key in words at the start of the derivation, so the derivation is still readable without color, for example in grayscale print or for readers who do not see color differences. Use `\textcolor{name}{...}`, which renders in HTML (MathJax) and in PDF.
+
+> **NOTE:**
+>
+> **Example 5 (Coloring the two factors of a chain rule)** Writing the mean squared error as \\\frac{1}{n} \tilde{e} \cdot \tilde{e}\\, with \\\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\\, the chain rule gives
+>
+> \\ \frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta}) = \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)} \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}. \\
+>
+> Separate blocks then find \\\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}\\ and \\\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}\\, and the main derivation resumes with \\\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}\\. The colors show at a glance which block each factor came from.
 
 ## 3 Functions and their values
 
@@ -88,7 +132,7 @@ A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)
 
 > **NOTE:**
 >
-> **Example 4 (Saying where a function is evaluated)**  
+> **Example 6 (Saying where a function is evaluated)**  
 >
 > > ❌ Each outcome is centered on the value of a mean function \\\mu(x)\\ at its own covariate values.
 > >
@@ -118,7 +162,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 5 (Matching a name to its notation)**  
+> **Example 7 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
@@ -144,7 +188,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 6 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 8 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -167,7 +211,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 7 (Naming a macro for its meaning)**  
+> **Example 9 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -181,7 +225,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 8 (Naming a decorator for its meaning)**  
+> **Example 10 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -201,7 +245,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 9 (Naming a variable for its role)**  
+> **Example 11 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -213,7 +257,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 10 (Writing a named quantity by its name)**  
+> **Example 12 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -227,7 +271,7 @@ When two vectors multiply to give a number, write the product as a dot product, 
 
 > **NOTE:**
 >
-> **Example 11 (Writing a dot product)**  
+> **Example 13 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -253,7 +297,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 12 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 14 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
