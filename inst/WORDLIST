@@ -22,6 +22,8 @@ Hg
 ICMJE
 iDs
 IMRaD
+ISLP
+ISLR
 JAMA
 lme4
 mentees
@@ -46,9 +48,7 @@ STARD
 Starmer
 STEM
 Tibshirani
+tidymodels
 TN
 TP
 Weinberger
-ISLP
-ISLR
-tidymodels
