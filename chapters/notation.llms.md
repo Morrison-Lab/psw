@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-08 19:04:55 (PDT)
+Last modified: 2026-10-08 21:22:09 (PDT)
 
 > **NOTE:**
 >
@@ -189,13 +189,45 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 >
 > Both versions print the same hat. If the group later marks estimates some other way, only the definition of `\est` changes.
 
+Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:
+
+- `\outvar` for the outcome variable, instead of a bare `y`;
+- `\eoutvar` for a predicted outcome;
+- `\predvar` for a predictor, instead of a bare `x`;
+- `\resid` for a residual, the observed minus the predicted outcome;
+- `\prederr` for a prediction error, the predicted minus the observed outcome.
+
+For an observation used to fit the model, the residual is the negative of the prediction error. Write `\resid` for the observed minus the predicted outcome and `\prederr` for the predicted minus the observed outcome, never one for the other. For an estimate of a parameter, `\erf{\eparam}` is the estimation error, the estimate minus the true value; it prints \\\varepsilon\\, the symbol the shared macros use for an error. These macros need a version of the shared macros that includes them, so update a repository’s copy before using them there. The outcome, predictor and residual macros also have random-variable and vector forms, such as `\Outvar`, `\voutvar` and `\vresid`.
+
+> **NOTE:**
+>
+> **Example 9 (Naming a variable for its role)**  
+>
+> > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
+> >
+> > ✅ Source: `The residual is $\resid_i = \outvar_i - \eoutvar_i$.`
+>
+> The ✅ version prints the residual as \\r\\, the symbol the shared macros use for it; the other letters are the same in both. In the ✅ version, a reader of the source can tell which letter is the outcome and which is the residual.
+
+Once a quantity has a name and a macro, write the macro instead of the expression that defines it. Each equation then stays short, and a reader sees which quantity it is about.
+
+> **NOTE:**
+>
+> **Example 10 (Writing a named quantity by its name)**  
+>
+> > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
+> >
+> > ✅ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \vprederr$.`
+>
+> The macro `\vprederr` prints the vector of prediction errors. The document defines it once, where the model is introduced, as `\vprederr = \design\vcoef - \vy`. The ✅ version has one fewer level of brackets, and it names the quantity the gradient depends on.
+
 ## 6 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 9 (Writing a dot product)**  
+> **Example 11 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -221,7 +253,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 10 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 12 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
