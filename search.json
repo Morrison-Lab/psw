@@ -1680,10 +1680,24 @@
     "text": "15 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid AI clichés."
   },
   {
+    "objectID": "index-slides.html#acknowledgments",
+    "href": "index-slides.html#acknowledgments",
+    "title": "Principles of Scientific Writing",
+    "section": "0.1 Acknowledgments",
+    "text": "0.1 Acknowledgments"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Principles of Scientific Writing",
     "section": "",
-    "text": "Preface\nThis website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "This website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\nThe site is built from the qwt Quarto website template, whose structure comes from the UCD-SERG lab manual, which is in turn adapted from the Benjamin-Chung Lab Manual."
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Principles of Scientific Writing",
+    "section": "",
+    "text": "The site is built from the qwt Quarto website template, whose structure comes from the UCD-SERG lab manual, which is in turn adapted from the Benjamin-Chung Lab Manual."
   }
 ]
