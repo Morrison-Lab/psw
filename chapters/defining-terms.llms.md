@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-10 00:01:24 (PDT)
+Last modified: 2026-10-10 12:03:39 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -67,6 +67,8 @@ Follow these principles when introducing new terms:
 - **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
 
 - **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
+
+- **Do not presuppose what the reader has not met:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it.
 
 - **Provide examples and counterexamples:** Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.
 
