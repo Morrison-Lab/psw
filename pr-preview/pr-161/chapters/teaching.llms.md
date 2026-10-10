@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-09 21:49:22 (PDT)
+Last modified: 2026-10-09 22:08:11 (PDT)
 
 > **NOTE:**
 >
@@ -127,9 +127,10 @@ This rule applies to all R code in teaching materials, in every course and every
 
 ## 11 Comment every code chunk to say what and why
 
-This rule applies to all code in teaching materials, in every course and every teaching repository, in every language.
+This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
 - Put comments in each code chunk that explain both what the code is doing and why it does it.
+- Leave out a comment that would give away the solution in an exercise prompt. Add the comments to the solution’s code instead.
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
