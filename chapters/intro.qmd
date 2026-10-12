@@ -89,6 +89,28 @@ so that other sections and other documents can link to them.
 Use the book as a reference while you write,
 and use the [Summary](summary.qmd) checklist when you revise.
 
+## Further reading {#sec-further-reading}
+
+These shorter guides cover some of the same ground:
+
+- Novelist Cormac McCarthy's tips on how to write a great science paper [@savage2019]
+- Elements of style [@natphys2007elements] - a *Nature Physics* editorial on scientific writing
+- The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences [@luby2022pathway]
+- [Secret, actionable writing tips](https://x.com/acagamic/status/1680381737816424450) -
+  a thread on X
+
+For who counts as an author, see the ICMJE criteria in
+[Preparing a manuscript for submission](manuscript-submission.qmd).
+
+::: {.callout-note collapse="true" title="Source"}
+This list began in the
+[Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html)
+of the UCD-SERG lab manual,
+which adapted it from the
+[Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
+by Jade Benjamin-Chung.
+:::
+
 ## Contributing
 
 The book is a work in progress.

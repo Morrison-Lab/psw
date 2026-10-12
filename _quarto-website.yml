@@ -59,6 +59,8 @@ website:
             href: chapters/conciseness.qmd
           - text: "Writing for teaching"
             href: chapters/teaching.qmd
+          - text: "Slides, posters, and figures"
+            href: chapters/slides-posters-figures.qmd
           - text: "Summary"
             href: chapters/summary.qmd
       - text: "References"
