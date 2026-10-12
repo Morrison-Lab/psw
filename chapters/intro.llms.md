@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:42:52 (PDT)
+Last modified: 2026-10-12 00:36:15 (PDT)
 
 > **NOTE:**
 >
@@ -59,8 +59,31 @@ Definitions, examples, and exercises appear in numbered, colored boxes, so that 
 
 Use the book as a reference while you write, and use the [Summary](../chapters/summary.llms.md) checklist when you revise.
 
-## 5 Contributing
+## 5 Further reading
+
+These shorter guides cover some of the same ground:
+
+- Novelist Cormac McCarthy’s tips on how to write a great science paper ([Savage and Yeh 2019](#ref-savage2019))
+- Elements of style ([Nature Physics 2007](#ref-natphys2007elements)) - a *Nature Physics* editorial on scientific writing
+- The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences ([Luby and Southern 2022](#ref-luby2022pathway))
+- [Secret, actionable writing tips](https://x.com/acagamic/status/1680381737816424450) - a thread on X
+
+For who counts as an author, see the ICMJE criteria in [Preparing a manuscript for submission](../chapters/manuscript-submission.llms.md).
+
+> **NOTE:**
+>
+> This list began in the [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual, which adapted it from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung.
+
+## 6 Contributing
 
 The book is a work in progress. If a rule is unclear, wrong, or missing, open an issue on the book’s [GitHub repository](https://github.com/Morrison-Lab/psw/issues).
 
 Back to top
+
+## References
+
+Luby, Stephen, and Dorothy L. Southern. 2022. *The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences*. Springer International Publishing. <https://doi.org/10.1007/978-3-030-98175-4>.
+
+Nature Physics. 2007. “Elements of Style.” *Nature Physics* 3: 581. <https://doi.org/10.1038/nphys724>.
+
+Savage, Van, and Pamela Yeh. 2019. “Novelist Cormac McCarthy’s Tips on How to Write a Great Science Paper.” *Nature* 574 (7778): 441–42. <https://doi.org/10.1038/d41586-019-02918-5>.
