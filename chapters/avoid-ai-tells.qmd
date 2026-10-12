@@ -76,6 +76,7 @@ beacon | example, model
 game-changer, gamechanger, state-of-the-art, cutting-edge | say what changed and by how much
 ever-evolving | changing
 treasure trove | collection, source
+ship(s) with | come(s) with, accompany, are included with
 
 Words overused by AI assistants and plainer alternatives
 
@@ -185,6 +186,14 @@ Watch for these shapes:
 - **The throat-clearing lead-in.** "Here's the thing:", "Here's why:",
   "The key is", "Put simply,".
   Delete the lead-in.
+- **The announced claim.** "It is what makes ... valid", "That is what ...",
+  "This is what ...", and "What the standing grant removes is the need to ask".
+  The sentence points at its own claim before making it.
+  Make the claim directly:
+  "It is what makes sums over countably infinite partitions valid"
+  becomes "It makes sums over countably infinite partitions valid",
+  and "What the standing grant removes is the need to ask"
+  becomes "The standing grant removes the need to ask".
 - **The reframe.** "X isn't about Y; it's about Z",
   "The question isn't X, it's Y",
   and "not because X, but because Y".
