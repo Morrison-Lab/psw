@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-10 12:11:39 (PDT)
+Last modified: 2026-10-11 20:38:16 (PDT)
 
 > **NOTE:**
 >
@@ -257,6 +257,18 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 >
 > Both versions print the same hat. If the group later marks estimates some other way, only the definition of `\est` changes.
 
+Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\mathbf` say how a letter is drawn, not what it stands for, so a raw `\mathbb{R}` or `\mathscr{A}` leaves the reader of the source guessing at the concept and leaves the group editing every use to change the symbol. Write the macro that names the concept. Name the macro for the set, such as `\reals` for the real numbers, not for the font, as `\bbR` would be. A document that reaches for a font command directly has found a concept with no macro yet: add the macro to the shared file, then use it. As with Greek letters, a passage that discusses the notation itself may write the font command directly.
+
+> **NOTE:**
+>
+> **Example 12 (Naming a set for its meaning)**  
+>
+> > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
+> >
+> > ✅ Source: `The function maps $\reals$ to $\reals$.`
+>
+> Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\reals` changes.
+
 Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:
 
 - `\outvar` for the outcome variable, instead of a bare `y`;
@@ -269,7 +281,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 12 (Naming a variable for its role)**  
+> **Example 13 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -281,7 +293,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 13 (Writing a named quantity by its name)**  
+> **Example 14 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -293,7 +305,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 > **NOTE:**
 >
-> **Example 14 (Letting the macro size the bracket)**  
+> **Example 15 (Letting the macro size the bracket)**  
 >
 > > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
 > >
@@ -307,7 +319,7 @@ When two vectors multiply to give a number, write the product as a dot product, 
 
 > **NOTE:**
 >
-> **Example 15 (Writing a dot product)**  
+> **Example 16 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -333,7 +345,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 16 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 17 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
