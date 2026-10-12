@@ -4,19 +4,57 @@ Code
 
 Published
 
-Last modified: 2026-10-12 14:46:54 (PDT)
+Last modified: 2026-10-12 15:27:23 (PDT)
 
 > **NOTE:**
 >
 > This chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.
 
-A cliché is a word, phrase, sentence shape, or formatting habit that a writer uses by reflex rather than choosing it for the sentence at hand. Clichés recur across unrelated documents, so they make writing read as generic and unconsidered, even when the underlying content is sound.
+> **NOTE:**
+>
+> **Definition 1 (Cliché)** A **cliché** is a word, phrase, sentence shape, or formatting habit that a writer uses by reflex rather than choosing it for the sentence at hand.
 
-AI writing assistants often produce these patterns in clusters, and many readers have learned to treat them as signs that a draft was generated, often called “AI tells”, and start to doubt that the author checked it. Human drafts use the same patterns, so this chapter is for any writer, including anyone editing a draft that an assistant helped write. It catalogs the most common clichés so you can remove them.
+[Clichés](#def-cliche) recur across unrelated documents, so they make writing read as generic and unconsidered, even when the underlying content is sound.
 
-One caveat first: no single word or pattern below is wrong on its own. Each has legitimate uses. The signal is clustering and mechanical repetition, the same constructions appearing again and again regardless of what the sentence needs. Edit for the cluster, not the isolated instance, and do not flatten your prose into a voiceless register trying to avoid every word on a list.
+AI writing assistants often produce these patterns in clusters, and many readers have learned to treat the patterns as signs that a draft was generated and to doubt that its author checked it.
 
-## 1 Overused vocabulary
+> **NOTE:**
+>
+> **Definition 2 (AI tell)** An **AI tell** is a [cliché](#def-cliche) that readers associate with text written by an AI assistant.
+
+Human drafts use the same patterns, so this chapter is for any writer, including anyone editing a draft that an assistant helped write. It catalogs the most common clichés so you can remove them.
+
+## 1 Terms used in this chapter
+
+> **NOTE:**
+>
+> **Definition 3 (Register)** A writer’s **register** is the level of formality and kind of language they choose for a particular audience and setting, such as conversational, technical, or promotional.
+
+> **NOTE:**
+>
+> **Definition 4 (Antithesis)** An **antithesis** is a construction that sets two contrasting ideas side by side in parallel form, such as “not X, but Y” or “X, not Y”.
+
+> **NOTE:**
+>
+> **Definition 5 (Hedge)** A **hedge** is a word or phrase that softens a claim or marks uncertainty about it, such as “may”, “suggests”, or “possibly”.
+
+> **NOTE:**
+>
+> **Definition 6 (Copula)** A **copula** is a verb, usually a form of “to be”, that links a subject to a description of it, as “is” does in “the estimate is biased”.
+
+> **NOTE:**
+>
+> **Definition 7 (Participial clause)** A **participial clause** is a clause built on a verb form ending in “-ing” or “-ed” that has no subject of its own, such as “ensuring that the data are clean” at the end of a sentence.
+
+> **NOTE:**
+>
+> **Definition 8 (Aphorism)** An **aphorism** is a short, quotable sentence that states a general truth or verdict.
+
+## 2 A caveat
+
+No single word or pattern below is wrong on its own. Each has legitimate uses. The signal is clustering and mechanical repetition, the same constructions appearing again and again regardless of what the sentence needs. Edit for the cluster, not the isolated instance, and do not flatten your prose into a voiceless [register](#def-register) trying to avoid every word on a list.
+
+## 3 Overused vocabulary
 
 Some words turn up in stock prose, and in machine-generated text especially, more often than the sentence needs them. Many are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-overused-vocabulary) lists frequent offenders and plainer replacements.
 
@@ -73,11 +111,11 @@ Whole phrases recur too. “In today’s fast-paced world”, “it is important
   - “the key takeaway”
   - “more than just”
 
-## 2 Rhetorical reflexes
+## 4 Rhetorical reflexes
 
 Writers reach for a few sentence shapes by reflex, whether or not the content calls for them.
 
-The most recognizable is the *not just X, but Y* antithesis. It promises a profound contrast and usually delivers a hollow one.
+The most recognizable is the *not just X, but Y* [antithesis](#def-antithesis). It promises a profound contrast and usually delivers a hollow one.
 
 > **NOTE:**
 >
@@ -87,16 +125,16 @@ The most recognizable is the *not just X, but Y* antithesis. It promises a profo
 > >
 > > ✅ This method runs in half the time of the previous approach.
 >
-> The plain version makes a concrete, verifiable claim. The antithesis frame makes none.
+> The plain version makes a concrete, verifiable claim. The [antithesis](#def-antithesis) frame makes none.
 
 Other reflexes to watch for:
 
 - **Mechanical lists of three.** Three parallel items appear whether or not three is the right count. Use the number of items the point actually needs.
 - **Signpost filler.** Phrases like “it is worth noting that” and “importantly” announce a point instead of making it. Cut them and state the point directly.
-- **Hedging stacks.** “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest hedge; drop the rest.
+- **Hedging stacks.** “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest [hedge](#def-hedge); drop the rest.
 - **Hollow summaries.** A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point.
 
-## 3 Say what it is before what it is not
+## 5 Say what it is before what it is not
 
 When a sentence needs both a positive claim and a denial, state the positive claim first. The reader learns what the subject is before being told what to rule out, and the denial then attaches to a claim already made. Opening with the denial makes the reader carry an unsupported denial until the second clause arrives.
 
@@ -120,9 +158,9 @@ When a sentence needs both a positive claim and a denial, state the positive cla
 
 Often the denial can be cut. Keep it only when the reader might plausibly believe the rejected reading, as with a convention versus an identity. A denial that rejects a view nobody holds is the reframe (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature: cut it and keep the claim.
 
-## 4 Clichéd sentence shapes
+## 6 Clichéd sentence shapes
 
-Beyond the antithesis, clichéd drafts lean on a set of sentence shapes that stage a point instead of stating it.
+Beyond the [antithesis](#def-antithesis), clichéd drafts lean on a set of sentence shapes that stage a point instead of stating it.
 
 > **NOTE:**
 >
@@ -139,13 +177,13 @@ Beyond the antithesis, clichéd drafts lean on a set of sentence shapes that sta
 > - a definition that “forces” the reader, as if it were a person;
 > - “you” addressing the reader;
 > - a point withheld until after a colon;
-> - a closing aphorism.
+> - a closing [aphorism](#def-aphorism).
 >
 > The second version states the claim once.
 
 Watch for these shapes:
 
-- **The straw objection.** A doubt raised only to be answered (“It may seem trivial. In fact, …”). This is the antithesis spread over two sentences.
+- **The straw objection.** A doubt raised only to be answered (“It may seem trivial. In fact, …”). This is the [antithesis](#def-antithesis) spread over two sentences.
 - **The personified abstraction.** A definition, method or result that “forces”, “invites”, “demands” or “asks” something of the reader. Name who does what.
 - **The colon reveal.** A setup, then a colon, then the point. Lead with the point.
 - **The answered rhetorical question.** “The result? A faster fit.” or “Why does this matter? Because …”. State the result.
@@ -153,12 +191,12 @@ Watch for these shapes:
 - **The announced claim.** “It is what makes … valid”, “That is what …”, “This is what …”, and “What the standing grant removes is the need to ask”. The sentence points at its own claim before making it. Make the claim directly: “It is what makes sums over countably infinite partitions valid” becomes “It makes sums over countably infinite partitions valid”, and “What the standing grant removes is the need to ask” becomes “The standing grant removes the need to ask”.
 - **The reframe.** “X isn’t about Y; it’s about Z”, “The question isn’t X, it’s Y”, and “not because X, but because Y”. Say what X is about.
 - **Fragment emphasis.** “Simple. Fast. Reliable.” Write a sentence with a subject and a verb.
-- **The editorializing tail.** A trailing participial clause that comments on the sentence: “, highlighting the importance of …”, “, ensuring that …”, “, making it ideal for …”. End the sentence at its claim.
-- **The inflated copula.** “Serves as”, “stands as” and “acts as” where “is” says the same.
+- **The editorializing tail.** A trailing [participial clause](#def-participial-clause) that comments on the sentence: “, highlighting the importance of …”, “, ensuring that …”, “, making it ideal for …”. End the sentence at its claim.
+- **The inflated [copula](#def-copula).** “Serves as”, “stands as” and “acts as” where “is” says the same.
 - **The range frame.** “From X to Y” listing two extremes instead of naming the scope.
 - **The audience frame.** “Whether you’re a student or a researcher, …”. Drop it.
 - **The restatement.** “In other words, …” repeating the previous sentence. Keep the clearer of the two.
-- **The closing aphorism.** A one-line verdict at the end of a paragraph: “And that’s the point.”, “Simple as that.”, “… has not yet stated a problem.” End on the last piece of content.
+- **The closing [aphorism](#def-aphorism).** A one-line verdict at the end of a paragraph: “And that’s the point.”, “Simple as that.”, “… has not yet stated a problem.” End on the last piece of content.
 - **Sincerity intensifiers.** “Genuinely”, “truly”, “actually”, “really” and “crucially” used to sound earnest. Cut them.
 - **Chained connectors.** “Furthermore”, “Moreover” and “Additionally” opening consecutive sentences. Most can go; the order already signals addition.
 - **Assistant chatter.** “Let’s dive in”, “Let’s unpack this”, “Great question” and “I hope this helps” belong in a chat window, not a document.
@@ -170,7 +208,7 @@ Four more habits blur the referent or delay the claim. Other chapters cover each
 - a dependent clause opening a sentence ([Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject));
 - informal idioms ([Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language)).
 
-## 5 Formatting habits
+## 7 Formatting habits
 
 Some clichés are typographic rather than verbal.
 
@@ -179,12 +217,12 @@ Some clichés are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three or four sentences, read as monotonous. Let paragraph length follow the ideas.
 
-## 6 Tone
+## 8 Tone
 
-The last group of clichés is about register.
+The last group of clichés is about [register](#def-register).
 
 - **Promotional language.** Words like “powerful”, “game-changing”, and “cutting-edge” sell rather than inform. Describe what the thing does and let the reader judge.
-- **Reflexive both-sides framing.** Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Hedge when the evidence is genuinely mixed, not by habit.
+- **Reflexive both-sides framing.** Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Use a [hedge](#def-hedge) when the evidence is genuinely mixed, not by habit.
 - **Vague universals.** “Studies show” and “experts agree”, with no specific source or number, are clichés precisely because they dodge the evidence. Name the study and give the number, as the [Citations and evidence](../chapters/citations-evidence.llms.md) chapter recommends.
 
 A short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice.
