@@ -389,7 +389,7 @@ The last group of clichés is about [register](#def-register).
   the reader judge.
 - **Reflexive both-sides framing.** Tacking "however, it is important to
   consider the other side" onto every claim signals caution without adding
-  content. [Hedge](#def-hedge) when the evidence is genuinely mixed,
+  content. Use a [hedge](#def-hedge) when the evidence is genuinely mixed,
   not by habit.
 - **Vague universals.** "Studies show" and "experts agree", with no specific
   source or number, are clichés precisely because they dodge the evidence. Name
