@@ -21,8 +21,8 @@ Clichés recur across unrelated documents,
 so they make writing read as generic and unconsidered,
 even when the underlying content is sound.
 
-AI writing assistants produce these patterns in dense clusters.
-Readers who have seen enough machine-generated text now treat them
+AI writing assistants often produce these patterns in clusters,
+and many readers have learned to treat them
 as signs that a draft was generated,
 often called "AI tells",
 and start to doubt that the author checked it.
@@ -43,13 +43,14 @@ trying to avoid every word on a list.
 
 ## Overused vocabulary
 
-Some words appear far more often in machine-generated text
-than in careful human writing.
+Some words turn up in stock prose,
+and in machine-generated text especially,
+more often than the sentence needs them.
 Many are also Latin-derived words with plainer alternatives,
 so the advice here overlaps with the [Word choice](word-choice.qmd) chapter.
-@tbl-ai-vocabulary lists frequent offenders and plainer replacements.
+@tbl-overused-vocabulary lists frequent offenders and plainer replacements.
 
-:::{#tbl-ai-vocabulary}
+:::{#tbl-overused-vocabulary}
 
 Overused | Plainer alternative
 -------- | -------------------
@@ -83,7 +84,7 @@ ever-evolving | changing
 treasure trove | collection, source
 ship(s) with | come(s) with, accompany, are included with
 
-Words overused by AI assistants and plainer alternatives
+Overused words and plainer alternatives
 
 :::
 
@@ -114,7 +115,7 @@ Two more families recur, and each member should give way to the literal claim:
 
 ## Rhetorical reflexes
 
-Writers, and AI assistants most of all, reach for a few sentence shapes by reflex,
+Writers reach for a few sentence shapes by reflex,
 whether or not the content calls for them.
 
 The most recognizable is the *not just X, but Y* antithesis.
@@ -287,7 +288,7 @@ Other chapters cover each:
 
 Some clichés are typographic rather than verbal.
 
-- **The em-dash as a default connector.** Clichéd prose reaches for the em-dash to
+- **The em-dash as a default connector.** Some writers, and many AI drafts, use the em-dash to
   join almost any two clauses. Vary your punctuation: a period, a comma, or a
   semicolon is often the better fit.
 - **Bold-leading bullets everywhere.** A `**Term:** explanation` bullet is fine
@@ -296,7 +297,7 @@ Some clichés are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a
   scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three
-  or four sentences, read as machine-paced. Let paragraph length follow the
+  or four sentences, read as monotonous. Let paragraph length follow the
   ideas.
 
 ## Tone
@@ -317,6 +318,4 @@ The last group of clichés is about register.
 A short scan for these patterns before you submit a draft
 catches most of them.
 Cut the filler and the reflexes,
-but keep your own voice:
-the goal is clear, honest prose,
-not prose that has been sanded smooth.
+but keep your own voice.
