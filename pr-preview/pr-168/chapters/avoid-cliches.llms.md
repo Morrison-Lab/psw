@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 15:27:23 (PDT)
+Last modified: 2026-10-12 16:12:27 (PDT)
 
 > **NOTE:**
 >
@@ -25,6 +25,8 @@ AI writing assistants often produce these patterns in clusters, and many readers
 Human drafts use the same patterns, so this chapter is for any writer, including anyone editing a draft that an assistant helped write. It catalogs the most common clichés so you can remove them.
 
 ## 1 Terms used in this chapter
+
+The rest of this chapter uses these terms.
 
 > **NOTE:**
 >
@@ -56,7 +58,7 @@ No single word or pattern below is wrong on its own. Each has legitimate uses. T
 
 ## 3 Overused vocabulary
 
-Some words turn up in stock prose, and in machine-generated text especially, more often than the sentence needs them. Many are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-overused-vocabulary) lists frequent offenders and plainer replacements.
+Some words turn up more often than the sentence needs them, in stock prose and especially in machine-generated text. Many of them are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-overused-vocabulary) lists frequent offenders and plainer replacements.
 
 | Overused | Plainer alternative |
 |----|----|
