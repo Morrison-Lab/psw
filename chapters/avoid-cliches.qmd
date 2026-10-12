@@ -65,7 +65,7 @@ such as conversational, technical, or promotional.
 
 An **antithesis** is a construction that sets two contrasting ideas
 side by side in parallel form,
-such as "not X, but Y".
+such as "not X, but Y" or "X, not Y".
 
 :::
 
@@ -389,7 +389,8 @@ The last group of clichés is about [register](#def-register).
   the reader judge.
 - **Reflexive both-sides framing.** Tacking "however, it is important to
   consider the other side" onto every claim signals caution without adding
-  content. Hedge when the evidence is genuinely mixed, not by habit.
+  content. [Hedge](#def-hedge) when the evidence is genuinely mixed,
+  not by habit.
 - **Vague universals.** "Studies show" and "experts agree", with no specific
   source or number, are clichés precisely because they dodge the evidence. Name
   the study and give the number, as the [Citations and evidence](citations-evidence.qmd)

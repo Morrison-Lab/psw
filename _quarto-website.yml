@@ -49,10 +49,10 @@ website:
             href: chapters/manuscript-submission.qmd
           - text: "Word choice"
             href: chapters/word-choice.qmd
-          - text: "Writing for every reader"
-            href: chapters/inclusive-writing.qmd
           - text: "Avoiding clichés"
             href: chapters/avoid-cliches.qmd
+          - text: "Writing for every reader"
+            href: chapters/inclusive-writing.qmd
           - text: "Grammar"
             href: chapters/grammar.qmd
           - text: "Conciseness"

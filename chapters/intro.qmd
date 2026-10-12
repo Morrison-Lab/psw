@@ -59,8 +59,8 @@ The chapters fall into four groups:
   - [Preparing a manuscript for submission](manuscript-submission.qmd)
 - Words and sentences:
   - [Word choice](word-choice.qmd)
-  - [Writing for every reader](inclusive-writing.qmd)
   - [Avoiding clichés](avoid-cliches.qmd)
+  - [Writing for every reader](inclusive-writing.qmd)
   - [Grammar](grammar.qmd)
   - [Conciseness](conciseness.qmd)
 - Teaching:
