@@ -14,31 +14,110 @@ format:
 
 {{< include _copilot-disclaimer.qmd >}}
 
-A cliché is a word, phrase, sentence shape, or formatting habit
+::: {#def-cliche}
+
+## Cliché
+
+A **cliché** is a word, phrase, sentence shape, or formatting habit
 that a writer uses by reflex
 rather than choosing it for the sentence at hand.
-Clichés recur across unrelated documents,
+
+:::
+
+[Clichés](#def-cliche) recur across unrelated documents,
 so they make writing read as generic and unconsidered,
 even when the underlying content is sound.
 
 AI writing assistants often produce these patterns in clusters,
-and many readers have learned to treat them
-as signs that a draft was generated,
-often called "AI tells",
-and start to doubt that the author checked it.
+and many readers have learned to treat the patterns
+as signs that a draft was generated
+and to doubt that its author checked it.
+
+::: {#def-ai-tell}
+
+## AI tell
+
+An **AI tell** is a [cliché](#def-cliche)
+that readers associate with text written by an AI assistant.
+
+:::
+
 Human drafts use the same patterns,
 so this chapter is for any writer,
 including anyone editing a draft that an assistant helped write.
 It catalogs the most common clichés so you can remove them.
 
-One caveat first:
-no single word or pattern below is wrong on its own.
+## Terms used in this chapter
+
+::: {#def-register}
+
+## Register
+
+A writer's **register** is the level of formality and kind of language
+they choose for a particular audience and setting,
+such as conversational, technical, or promotional.
+
+:::
+
+::: {#def-antithesis}
+
+## Antithesis
+
+An **antithesis** is a construction that sets two contrasting ideas
+side by side in parallel form,
+such as "not X, but Y".
+
+:::
+
+::: {#def-hedge}
+
+## Hedge
+
+A **hedge** is a word or phrase that softens a claim
+or marks uncertainty about it,
+such as "may", "suggests", or "possibly".
+
+:::
+
+::: {#def-copula}
+
+## Copula
+
+A **copula** is a verb, usually a form of "to be",
+that links a subject to a description of it,
+as "is" does in "the estimate is biased".
+
+:::
+
+::: {#def-participial-clause}
+
+## Participial clause
+
+A **participial clause** is a clause built on a verb form
+ending in "-ing" or "-ed" that has no subject of its own,
+such as "ensuring that the data are clean"
+at the end of a sentence.
+
+:::
+
+::: {#def-aphorism}
+
+## Aphorism
+
+An **aphorism** is a short, quotable sentence
+that states a general truth or verdict.
+
+:::
+
+## A caveat
+
+No single word or pattern below is wrong on its own.
 Each has legitimate uses.
 The signal is clustering and mechanical repetition,
 the same constructions appearing again and again
 regardless of what the sentence needs.
 Edit for the cluster, not the isolated instance,
-and do not flatten your prose into a voiceless register
+and do not flatten your prose into a voiceless [register](#def-register)
 trying to avoid every word on a list.
 
 ## Overused vocabulary
@@ -118,7 +197,7 @@ Two more families recur, and each member should give way to the literal claim:
 Writers reach for a few sentence shapes by reflex,
 whether or not the content calls for them.
 
-The most recognizable is the *not just X, but Y* antithesis.
+The most recognizable is the *not just X, but Y* [antithesis](#def-antithesis).
 It promises a profound contrast and usually delivers a hollow one.
 
 :::{#exm-antithesis}
@@ -130,7 +209,7 @@ It promises a profound contrast and usually delivers a hollow one.
 > ✅ This method runs in half the time of the previous approach.
 
 The plain version makes a concrete, verifiable claim.
-The antithesis frame makes none.
+The [antithesis](#def-antithesis) frame makes none.
 
 :::
 
@@ -141,7 +220,7 @@ Other reflexes to watch for:
 - **Signpost filler.** Phrases like "it is worth noting that" and "importantly"
   announce a point instead of making it. Cut them and state the point directly.
 - **Hedging stacks.** "May potentially suggest" and "could possibly indicate"
-  pile up qualifiers. Keep one honest hedge; drop the rest.
+  pile up qualifiers. Keep one honest [hedge](#def-hedge); drop the rest.
 - **Hollow summaries.** A closing paragraph that opens with "in conclusion" and
   only restates what you just said adds nothing. End on a real point.
 
@@ -187,7 +266,7 @@ cut it and keep the claim.
 
 ## Clichéd sentence shapes
 
-Beyond the antithesis,
+Beyond the [antithesis](#def-antithesis),
 clichéd drafts lean on a set of sentence shapes
 that stage a point instead of stating it.
 
@@ -210,7 +289,7 @@ The first version packs six clichés into two sentences:
 - a definition that "forces" the reader, as if it were a person;
 - "you" addressing the reader;
 - a point withheld until after a colon;
-- a closing aphorism.
+- a closing [aphorism](#def-aphorism).
 
 The second version states the claim once.
 
@@ -220,7 +299,7 @@ Watch for these shapes:
 
 - **The straw objection.** A doubt raised only to be answered
   ("It may seem trivial. In fact, ...").
-  This is the antithesis spread over two sentences.
+  This is the [antithesis](#def-antithesis) spread over two sentences.
 - **The personified abstraction.** A definition, method or result that
   "forces", "invites", "demands" or "asks" something of the reader.
   Name who does what.
@@ -246,12 +325,13 @@ Watch for these shapes:
   Say what X is about.
 - **Fragment emphasis.** "Simple. Fast. Reliable."
   Write a sentence with a subject and a verb.
-- **The editorializing tail.** A trailing participial clause that
-  comments on the sentence:
+- **The editorializing tail.** A trailing
+  [participial clause](#def-participial-clause)
+  that comments on the sentence:
   ", highlighting the importance of ...", ", ensuring that ...",
   ", making it ideal for ...".
   End the sentence at its claim.
-- **The inflated copula.** "Serves as", "stands as" and "acts as"
+- **The inflated [copula](#def-copula).** "Serves as", "stands as" and "acts as"
   where "is" says the same.
 - **The range frame.** "From X to Y" listing two extremes
   instead of naming the scope.
@@ -259,7 +339,7 @@ Watch for these shapes:
   Drop it.
 - **The restatement.** "In other words, ..." repeating the previous sentence.
   Keep the clearer of the two.
-- **The closing aphorism.** A one-line verdict at the end of a paragraph:
+- **The closing [aphorism](#def-aphorism).** A one-line verdict at the end of a paragraph:
   "And that's the point.", "Simple as that.",
   "... has not yet stated a problem."
   End on the last piece of content.
@@ -302,7 +382,7 @@ Some clichés are typographic rather than verbal.
 
 ## Tone
 
-The last group of clichés is about register.
+The last group of clichés is about [register](#def-register).
 
 - **Promotional language.** Words like "powerful", "game-changing", and
   "cutting-edge" sell rather than inform. Describe what the thing does and let
