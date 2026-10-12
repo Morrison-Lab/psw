@@ -49,6 +49,8 @@ It catalogs the most common clichés so you can remove them.
 
 ## Terms used in this chapter
 
+The rest of this chapter uses these terms.
+
 ::: {#def-register}
 
 ## Register
@@ -122,9 +124,8 @@ trying to avoid every word on a list.
 
 ## Overused vocabulary
 
-Some words turn up in stock prose,
-and in machine-generated text especially,
-more often than the sentence needs them.
+Stock prose, and machine-generated text especially,
+uses some words more often than the sentence needs them.
 Many are also Latin-derived words with plainer alternatives,
 so the advice here overlaps with the [Word choice](word-choice.qmd) chapter.
 @tbl-overused-vocabulary lists frequent offenders and plainer replacements.
