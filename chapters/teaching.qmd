@@ -89,8 +89,9 @@ For teaching materials, four further rules keep definitions findable.
   in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known.
   Each abstract div then gets its own example, as the rule below requires.
 
-An alternative name for the same concept stays in the div of the term it names,
-in italics.
+Every alternative name for the same concept stays in the div of the term it names
+and is treated like the primary name:
+it appears in the div title and is bold where it first appears in the definition.
 Name synonyms and near-synonyms where the term is defined,
 and say which one the notes use.
 A student who meets one name here and another in a textbook

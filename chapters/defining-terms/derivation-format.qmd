@@ -54,7 +54,7 @@ Follow these principles:
 
 ## Sample mean
 
-The *sample mean* of numbers $x_1, \ldots, x_n$ is their average:
+The **sample mean** of numbers $x_1, \ldots, x_n$ is their average:
 
 $$\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.$$
 
