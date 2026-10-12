@@ -124,9 +124,9 @@ trying to avoid every word on a list.
 
 ## Overused vocabulary
 
-Stock prose, and machine-generated text especially,
-uses some words more often than the sentence needs them.
-Many are also Latin-derived words with plainer alternatives,
+Some words turn up more often than the sentence needs them,
+in stock prose and especially in machine-generated text.
+Many of them are also Latin-derived words with plainer alternatives,
 so the advice here overlaps with the [Word choice](word-choice.qmd) chapter.
 @tbl-overused-vocabulary lists frequent offenders and plainer replacements.
 
