@@ -288,8 +288,8 @@ Other chapters cover each:
 
 Some clichés are typographic rather than verbal.
 
-- **The em-dash as a default connector.** Some writers, and many AI drafts, use the em-dash to
-  join almost any two clauses. Vary your punctuation: a period, a comma, or a
+- **The em-dash as a default connector.** Some writers, and many AI drafts,
+  use the em-dash to join almost any two clauses. Vary your punctuation: a period, a comma, or a
   semicolon is often the better fit.
 - **Bold-leading bullets everywhere.** A `**Term:** explanation` bullet is fine
   once, but applying the pattern to every list turns it into a tic. Use it when
