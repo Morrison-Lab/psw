@@ -4,13 +4,13 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:38:16 (PDT)
+Last modified: 2026-10-11 20:42:52 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
 > **NOTE:**
 >
-> **Definition 1 (Term)** A *term* is a word or phrase with a specific, technical meaning within a particular field or context.
+> **Definition 1 (Term)** A **term** is a word or phrase with a specific, technical meaning within a particular field or context.
 
 > **NOTE:**
 >
@@ -22,7 +22,7 @@ Clear definitions are essential to effective scientific writing. Every specializ
 
 > **NOTE:**
 >
-> **Definition 2 (Population)** In statistics, a *population* is the complete set of all items or individuals of interest.
+> **Definition 2 (Population)** In statistics, a **population** is the complete set of all items or individuals of interest.
 
 > **NOTE:**
 >
@@ -74,7 +74,7 @@ Follow these principles when introducing new terms:
 
 - **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.
 
-- **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
+- **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title, as in “Postulate (axiom)”, and bold each where it first appears in the definition. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
 
 - **Distinguish estimands from estimators:** An *estimand* is the quantity a study is after, defined on the population or the data-generating distribution; an *estimator* is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, \\\theta\\ and \\\hat\theta\\). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction \\\hat Y\\ of the true class \\Y\\, and counts \\\text{TP}\\, \\\text{FP}\\, \\\text{FN}\\ and \\\text{TN}\\ from a test set of size \\n\\:
 
@@ -92,7 +92,7 @@ Here are examples of well-defined terms:
 
 > **NOTE:**
 >
-> **Definition 3 (Confidence interval)** A *confidence interval* with confidence level \\1 - \alpha\\ for a parameter \\\theta\\ is an interval \\\[L, U\]\\ computed from a sample that contains \\\theta\\ with probability \\1 - \alpha\\ over repeated samples:
+> **Definition 3 (Confidence interval)** A **confidence interval** with confidence level \\1 - \alpha\\ for a parameter \\\theta\\ is an interval \\\[L, U\]\\ computed from a sample that contains \\\theta\\ with probability \\1 - \alpha\\ over repeated samples:
 >
 > \\\Pr(\theta \in \[L, U\]) = 1 - \alpha.\\
 
@@ -106,7 +106,7 @@ Here are examples of well-defined terms:
 
 > **NOTE:**
 >
-> **Definition 4 (Active voice)** *Active voice* is a sentence structure where the subject performs the action expressed by the verb.
+> **Definition 4 (Active voice)** **Active voice** is a sentence structure where the subject performs the action expressed by the verb.
 
 > **NOTE:**
 >
@@ -122,7 +122,7 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Definition 5 (Residual sum of squares)** The *residual sum of squares* of a model fitted to data is the sum of its squared residuals:
+> **Definition 5 (Residual sum of squares)** The **residual sum of squares** of a model fitted to data is the sum of its squared residuals:
 >
 > \\\text{RSS} = \sum\_{i=1}^n r_i^2.\\
 
@@ -230,7 +230,7 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Definition 6 (Postulate (axiom))** A *postulate* (or axiom) is a statement accepted as true without proof, serving as a starting point for further reasoning.
+> **Definition 6 (Postulate (axiom))** A **postulate** (or **axiom**) is a statement accepted as true without proof, serving as a starting point for further reasoning.
 
 > **NOTE:**
 >
@@ -254,7 +254,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Definition 7 (Sample mean)** The *sample mean* of numbers \\x_1, \ldots, x_n\\ is their average:
+> **Definition 7 (Sample mean)** The **sample mean** of numbers \\x_1, \ldots, x_n\\ is their average:
 >
 > \\\bar{x} := \frac{1}{n} \sum\_{i=1}^n x_i.\\
 

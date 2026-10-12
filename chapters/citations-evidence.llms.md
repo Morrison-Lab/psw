@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:38:16 (PDT)
+Last modified: 2026-10-11 20:42:52 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -246,6 +246,20 @@ This section is adapted from @zhou2024, used under the MIT License.
 This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
+
+### 11.1 Material from your own repositories
+
+Material moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
+
+Carry over what the source repository itself credits:
+
+- A book or paper the material follows.
+- A person outside your group whose lecture or notes it adapted. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
+
+The exception has two limits:
+
+- It does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.
+- It does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution.
 
 ## 12 Common citation errors to avoid
 

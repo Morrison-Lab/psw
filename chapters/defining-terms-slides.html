@@ -310,13 +310,13 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-11 20:38:16 (PDT)</p>
+  <p class="date">Last modified: 2026-10-11 20:42:52 (PDT)</p>
 </section>
 <section class="slide level2">
 
 <p>Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:</p>
 <div id="def-term" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 1 (Term)</strong></span> A <em>term</em> is a word or phrase with a specific, technical meaning within a particular field or context.</p>
+<p><span class="theorem-title"><strong>Definition 1 (Term)</strong></span> A <strong>term</strong> is a word or phrase with a specific, technical meaning within a particular field or context.</p>
 </div>
 <div id="exm-term" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (“Significant” used as a term)</strong></span> In “the difference was statistically significant at the 5% level”, “significant” is a term (<a href="#/def-term" class="quarto-xref">Definition&nbsp;1</a>): it means that a hypothesis test rejected its null hypothesis at that level.</p>
@@ -325,7 +325,7 @@
 <p><span class="theorem-title"><strong>Example 2 (“Significant” used as an ordinary word)</strong></span> In “staffing is a significant problem for the clinic”, “significant” is not a term (<a href="#/def-term" class="quarto-xref">Definition&nbsp;1</a>). It carries its everyday meaning, “large” or “important”, and no hypothesis test is involved.</p>
 </div>
 <div id="def-population" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2 (Population)</strong></span> In statistics, a <em>population</em> is the complete set of all items or individuals of interest.</p>
+<p><span class="theorem-title"><strong>Definition 2 (Population)</strong></span> In statistics, a <strong>population</strong> is the complete set of all items or individuals of interest.</p>
 </div>
 <div id="exm-population" class="theorem example">
 <p><span class="theorem-title"><strong>Example 3 (A population of patients)</strong></span> For a study of blood-sugar control, the population (<a href="#/def-population" class="quarto-xref">Definition&nbsp;2</a>) might be all adults in California with type 2 diabetes in 2024.</p>
@@ -361,7 +361,7 @@
 <li><p><strong>Do not presuppose what the reader has not met:</strong> A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as <code>[the synthetic data](#exm-synthetic-data)</code>, so that a reader who has forgotten or skipped the referent can find it.</p></li>
 <li><p><strong>Provide examples and counterexamples:</strong> Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.</p></li>
 <li><p><strong>Give each term its own definition block:</strong> In a Quarto document, put every definition in its own <code>#def-</code> div (see <a href="#/using-theorem-environments-in-quarto">Using theorem environments in Quarto</a>), one term per div, with commentary after the div rather than inside it, in a remark block (<code>#rem-</code>) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in <a href="#/using-theorem-environments-in-quarto">Using theorem environments in Quarto</a>, such as <code>#def-</code>, <code>#exm-</code>, <code>#exr-</code>, <code>#sol-</code> or <code>#rem-</code>) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.</p></li>
-<li><p><strong>Name the synonyms:</strong> When a field uses several words for one concept, such as <em>learning</em>, <em>training</em> and <em>fitting</em> a model, list them in the definition block, or in a callout beside it, and say which one the document uses. Name near-synonyms there too, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see <a href="../chapters/word-choice.html#minimize-unnecessary-jargon">Minimize unnecessary jargon</a>).</p></li>
+<li><p><strong>Name the synonyms:</strong> When a field uses several words for one concept, such as <em>learning</em>, <em>training</em> and <em>fitting</em> a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title, as in “Postulate (axiom)”, and bold each where it first appears in the definition. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see <a href="../chapters/word-choice.html#minimize-unnecessary-jargon">Minimize unnecessary jargon</a>).</p></li>
 <li><p><strong>Distinguish estimands from estimators:</strong> An <em>estimand</em> is the quantity a study is after, defined on the population or the data-generating distribution; an <em>estimator</em> is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\hat\theta\)</span>). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction <span class="math inline">\(\hat Y\)</span> of the true class <span class="math inline">\(Y\)</span>, and counts <span class="math inline">\(\text{TP}\)</span>, <span class="math inline">\(\text{FP}\)</span>, <span class="math inline">\(\text{FN}\)</span> and <span class="math inline">\(\text{TN}\)</span> from a test set of size <span class="math inline">\(n\)</span>:</p>
 <table class="caption-top">
 <colgroup>
@@ -404,7 +404,7 @@
 
 <p>Here are examples of well-defined terms:</p>
 <div id="def-confidence-interval" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 3 (Confidence interval)</strong></span> A <em>confidence interval</em> with confidence level <span class="math inline">\(1 - \alpha\)</span> for a parameter <span class="math inline">\(\theta\)</span> is an interval <span class="math inline">\([L, U]\)</span> computed from a sample that contains <span class="math inline">\(\theta\)</span> with probability <span class="math inline">\(1 - \alpha\)</span> over repeated samples:</p>
+<p><span class="theorem-title"><strong>Definition 3 (Confidence interval)</strong></span> A <strong>confidence interval</strong> with confidence level <span class="math inline">\(1 - \alpha\)</span> for a parameter <span class="math inline">\(\theta\)</span> is an interval <span class="math inline">\([L, U]\)</span> computed from a sample that contains <span class="math inline">\(\theta\)</span> with probability <span class="math inline">\(1 - \alpha\)</span> over repeated samples:</p>
 <p><span class="math display">\[\Pr(\theta \in [L, U]) = 1 - \alpha.\]</span></p>
 </div>
 <div id="exm-confidence-interval" class="theorem example">
@@ -414,7 +414,7 @@
 <p><span class="theorem-title"><strong>Example 6 (A range that is not a confidence interval for the mean)</strong></span> The interval from the 2.5th to the 97.5th percentile of the observed heights, [150 cm, 190 cm], is not a 95% confidence interval (<a href="#/def-confidence-interval" class="quarto-xref">Definition&nbsp;3</a>) for mean height. The percentile interval describes where individual heights fall, not where the population mean is likely to be, and it does not shrink as the sample grows.</p>
 </div>
 <div id="def-active-voice" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 4 (Active voice)</strong></span> <em>Active voice</em> is a sentence structure where the subject performs the action expressed by the verb.</p>
+<p><span class="theorem-title"><strong>Definition 4 (Active voice)</strong></span> <strong>Active voice</strong> is a sentence structure where the subject performs the action expressed by the verb.</p>
 </div>
 <div id="exm-active-voice" class="theorem example">
 <p><span class="theorem-title"><strong>Example 7 (A sentence in active voice)</strong></span> “The researcher conducted the experiment” is in active voice (<a href="#/def-active-voice" class="quarto-xref">Definition&nbsp;4</a>): the subject, “the researcher”, performs the action, “conducted”.</p>
@@ -430,7 +430,7 @@
 
 <p>When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:</p>
 <div id="def-rss" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 5 (Residual sum of squares)</strong></span> The <em>residual sum of squares</em> of a model fitted to data is the sum of its squared residuals:</p>
+<p><span class="theorem-title"><strong>Definition 5 (Residual sum of squares)</strong></span> The <strong>residual sum of squares</strong> of a model fitted to data is the sum of its squared residuals:</p>
 <p><span class="math display">\[\text{RSS} = \sum_{i=1}^n r_i^2.\]</span></p>
 </div>
 <div id="exm-rss-line" class="theorem example">
@@ -527,7 +527,7 @@
 \]</span></p>
 </div>
 <div id="def-postulate" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 6 (Postulate (axiom))</strong></span> A <em>postulate</em> (or axiom) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
+<p><span class="theorem-title"><strong>Definition 6 (Postulate (axiom))</strong></span> A <strong>postulate</strong> (or <strong>axiom</strong>) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
 </div>
 <div id="exm-parallel-postulate" class="theorem example">
 <p><span class="theorem-title"><strong>Example 13 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
@@ -551,7 +551,7 @@
 <li><strong>Start from the side that simplifies.</strong> When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Another route is to solve a definition for the term you want: add <span class="math inline">\(\mu_i\)</span> to both sides of <span class="math inline">\(\varepsilon_i = Y_i - \mu_i\)</span>, then simplify the right-hand side to <span class="math inline">\(Y_i\)</span>, one operation per line. Adding a term to both sides of an equation is an ordinary step, not the pattern to avoid.</li>
 </ul>
 <div id="def-sample-mean" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 7 (Sample mean)</strong></span> The <em>sample mean</em> of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> is their average:</p>
+<p><span class="theorem-title"><strong>Definition 7 (Sample mean)</strong></span> The <strong>sample mean</strong> of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> is their average:</p>
 <p><span class="math display">\[\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.\]</span></p>
 </div>
 <div id="exr-sum-deviations" class="theorem exercise">

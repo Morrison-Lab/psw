@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:38:16 (PDT)
+Last modified: 2026-10-11 20:42:52 (PDT)
 
 > **NOTE:**
 >
@@ -53,6 +53,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Replace the word “thing”](../chapters/word-choice.llms.md#say-which-thing) with the object, quantity, step, or idea that it stands for.
 - [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon).
 - [Edit out clusters of the words and sentence shapes](../chapters/avoid-ai-tells.llms.md) that mark machine-drafted prose.
+- [Say what something is before what it is not](../chapters/avoid-ai-tells.llms.md#say-what-it-is-before-what-it-is-not).
 
 ## 5 Writing for every reader
 
@@ -94,9 +95,10 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Reuse one written version of each result](../chapters/teaching.llms.md#reuse-one-written-version-of-each-result).
 - [Use real data and compute every number](../chapters/teaching.llms.md#use-real-data-and-compute-every-number).
 - [Show each idea applied and in a figure](../chapters/teaching.llms.md#show-each-idea-applied-and-in-a-figure).
-- [Write labs for both R and Python](../chapters/teaching.llms.md#write-labs-for-both-languages-and-any-computer) that run on any computer.
+- [Write labs in both R and Python](../chapters/teaching.llms.md#write-labs-for-both-languages-and-any-computer) that run on any computer.
 - [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible).
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
+- [Skip the credit for material from your own repositories](../chapters/citations-evidence.llms.md#material-from-your-own-repositories), but keep what those repositories credit.
 
 Back to top

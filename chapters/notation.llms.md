@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:38:16 (PDT)
+Last modified: 2026-10-11 20:42:52 (PDT)
 
 > **NOTE:**
 >
@@ -14,7 +14,11 @@ Notation is part of your prose, and readers parse it the same way they parse a s
 
 ## 1 Avoiding double inequalities
 
-A *double inequality* (or *chained inequality*) places one quantity between two others, as in \\a \< x \< b\\. Prefer interval notation instead: \\x \in (a, b)\\.
+> **NOTE:**
+>
+> **Definition 1 (Double inequality (chained inequality))** A **double inequality** (or **chained inequality**) places one quantity between two others, as in \\a \< x \< b\\.
+
+Prefer interval notation instead: \\x \in (a, b)\\.
 
 Interval notation is easier to read for three reasons:
 

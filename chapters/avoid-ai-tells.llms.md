@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:38:16 (PDT)
+Last modified: 2026-10-11 20:42:52 (PDT)
 
 > **NOTE:**
 >
@@ -50,6 +50,7 @@ Some words appear far more often in machine-generated text than in careful human
 | game-changer, gamechanger, state-of-the-art, cutting-edge | say what changed and by how much |
 | ever-evolving | changing |
 | treasure trove | collection, source |
+| ship(s) with | come(s) with, accompany, are included with |
 
 Table 1: Words overused by AI assistants and plainer alternatives
 
@@ -95,13 +96,37 @@ Other reflexes to watch for:
 - **Hedging stacks.** “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest hedge; drop the rest.
 - **Hollow summaries.** A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point.
 
-## 3 Clichéd sentence shapes
+## 3 Say what it is before what it is not
+
+When a sentence needs both a positive claim and a denial, state the positive claim first. The reader learns what the subject is before being told what to rule out, and the denial then attaches to a claim already made. Opening with the denial makes the reader carry an unsupported denial until the second clause arrives.
+
+> **NOTE:**
+>
+> **Example 2 (Positive claim, then denial)**  
+>
+> > ❌ The padding is not a convention, it is an identity.
+> >
+> > ✅ The padding is an identity, not a convention.
+>
+> The first version says “not a convention” before the reader knows what the padding is, then repeats the subject and verb to supply the claim. The second version states the claim once and ends on the contrast.
+>
+> The order matters even when the sentence stays grammatical:
+>
+> > ❌ The padding is not a convention but an identity.
+> >
+> > ✅ The padding is an identity, not a convention.
+>
+> Both are correct sentences; the second puts the claim first. The first pair is from the [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
+
+Often the denial can be cut. Keep it only when the reader might plausibly believe the rejected reading, as with a convention versus an identity. A denial that rejects a view nobody holds is the reframe (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature: cut it and keep the claim.
+
+## 4 Clichéd sentence shapes
 
 Beyond the antithesis, AI drafts lean on a set of sentence shapes that stage a point instead of stating it.
 
 > **NOTE:**
 >
-> **Example 2 (A staged point)**  
+> **Example 3 (A staged point)**  
 >
 > > ❌ It can read like a definition that says nothing. Its use is in what it forces you to name: a project that cannot say what its \\E\\, \\T\\ and \\P\\ are has not yet stated a machine learning problem.
 > >
@@ -125,6 +150,7 @@ Watch for these shapes:
 - **The colon reveal.** A setup, then a colon, then the point. Lead with the point.
 - **The answered rhetorical question.** “The result? A faster fit.” or “Why does this matter? Because …”. State the result.
 - **The throat-clearing lead-in.** “Here’s the thing:”, “Here’s why:”, “The key is”, “Put simply,”. Delete the lead-in.
+- **The announced claim.** “It is what makes … valid”, “That is what …”, “This is what …”, and “What the standing grant removes is the need to ask”. The sentence points at its own claim before making it. Make the claim directly: “It is what makes sums over countably infinite partitions valid” becomes “It makes sums over countably infinite partitions valid”, and “What the standing grant removes is the need to ask” becomes “The standing grant removes the need to ask”.
 - **The reframe.** “X isn’t about Y; it’s about Z”, “The question isn’t X, it’s Y”, and “not because X, but because Y”. Say what X is about.
 - **Fragment emphasis.** “Simple. Fast. Reliable.” Write a sentence with a subject and a verb.
 - **The editorializing tail.** A trailing participial clause that comments on the sentence: “, highlighting the importance of …”, “, ensuring that …”, “, making it ideal for …”. End the sentence at its claim.
@@ -144,7 +170,7 @@ Four more habits blur the referent or delay the claim. Other chapters cover each
 - a dependent clause opening a sentence ([Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject));
 - informal idioms ([Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language)).
 
-## 4 Formatting habits
+## 5 Formatting habits
 
 Some tells are typographic rather than verbal.
 
@@ -153,7 +179,7 @@ Some tells are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three or four sentences, read as machine-paced. Let paragraph length follow the ideas.
 
-## 5 Tone
+## 6 Tone
 
 The last group of tells is about register.
 

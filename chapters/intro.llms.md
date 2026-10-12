@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-11 20:38:16 (PDT)
+Last modified: 2026-10-11 20:42:52 (PDT)
 
 > **NOTE:**
 >
@@ -49,7 +49,7 @@ The [Summary](../chapters/summary.llms.md) lists the book’s main rules as a ch
 
 ## 4 How to read the book
 
-You do not need to read the chapters in order. Most sections state one rule and the reason for it, and then show the rule applied to an example. Many sections compare a weaker version of a passage with a stronger one. For example, the [Word choice](../chapters/word-choice.llms.md) chapter recommends “before” over “prior to”:
+You can read the chapters in any order. Most sections state one rule and the reason for it, and then show the rule applied to an example. Many sections compare a weaker version of a passage with a stronger one. For example, the [Word choice](../chapters/word-choice.llms.md) chapter recommends “before” over “prior to”:
 
 > ❌ Prior to fitting the model, we removed outliers.
 >
