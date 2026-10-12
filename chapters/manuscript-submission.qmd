@@ -412,7 +412,7 @@ Check the EQUATOR page for the current version before citing one.
 - Avoid stock phrases and AI tells,
   such as "novel", "groundbreaking", "delve", "crucial",
   and "not just X but Y" constructions.
-  See [Avoiding AI tells](avoid-ai-tells.qmd).
+  See [Avoiding clichés](avoid-cliches.qmd).
 - Keep pipeline, audit, and process notes out of the main text.
   These belong in the supplement or nowhere:
   - scripts and file names;

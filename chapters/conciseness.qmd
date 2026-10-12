@@ -174,7 +174,7 @@ They do one of these things:
 Each one makes the reader read a sentence
 before reaching the content it promises.
 State the content directly.
-[Rhetorical reflexes](avoid-ai-tells.qmd#rhetorical-reflexes)
+[Rhetorical reflexes](avoid-cliches.qmd#rhetorical-reflexes)
 lists related signpost phrases, such as "it is worth noting that".
 
 ::: {#exm-self-referential}

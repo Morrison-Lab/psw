@@ -1,30 +1,35 @@
 ---
-title: "Avoiding AI tells"
+title: "Avoiding clichés"
+aliases:
+  - avoid-ai-tells.html
 format:
   html: default
   revealjs:
-    output-file: avoid-ai-tells-slides.html
+    output-file: avoid-cliches-slides.html
   pdf:
-    output-file: avoid-ai-tells-handout.pdf
+    output-file: avoid-cliches-handout.pdf
   docx:
-    output-file: avoid-ai-tells.docx
+    output-file: avoid-cliches.docx
 ---
 
 {{< include _copilot-disclaimer.qmd >}}
 
-AI writing assistants have a recognizable house style.
-When you let one draft your prose,
-it leaves fingerprints:
-words, sentence shapes, and formatting habits
-that recur across unrelated documents.
-Readers who have seen enough machine-generated text learn to spot these patterns,
-and once they do,
-the writing reads as generic and unconsidered,
+A cliché is a word, phrase, sentence shape, or formatting habit
+that a writer uses by reflex
+rather than choosing it for the sentence at hand.
+Clichés recur across unrelated documents,
+so they make writing read as generic and unconsidered,
 even when the underlying content is sound.
 
-This chapter catalogs the most common tells so you can remove them.
-It is written mainly for AI assistants drafting scientific prose,
-but it is just as useful for humans editing AI-assisted drafts.
+AI writing assistants produce these patterns in dense clusters.
+Readers who have seen enough machine-generated text now treat them
+as signs that a draft was generated,
+often called "AI tells",
+and start to doubt that the author checked it.
+Human drafts use the same patterns,
+so this chapter is for any writer,
+including anyone editing a draft that an assistant helped write.
+It catalogs the most common clichés so you can remove them.
 
 One caveat first:
 no single word or pattern below is wrong on its own.
@@ -109,10 +114,10 @@ Two more families recur, and each member should give way to the literal claim:
 
 ## Rhetorical reflexes
 
-AI assistants reach for a few sentence shapes by reflex,
+Writers, and AI assistants most of all, reach for a few sentence shapes by reflex,
 whether or not the content calls for them.
 
-The strongest tell is the *not just X, but Y* antithesis.
+The most recognizable is the *not just X, but Y* antithesis.
 It promises a profound contrast and usually delivers a hollow one.
 
 :::{#exm-antithesis}
@@ -182,7 +187,7 @@ cut it and keep the claim.
 ## Clichéd sentence shapes
 
 Beyond the antithesis,
-AI drafts lean on a set of sentence shapes
+clichéd drafts lean on a set of sentence shapes
 that stage a point instead of stating it.
 
 :::{#exm-staged-point}
@@ -197,7 +202,7 @@ that stage a point instead of stating it.
 > ✅ A machine learning problem is stated only when its
 > experience $E$, task $T$ and performance measure $P$ are named.
 
-The first version packs six tells into two sentences:
+The first version packs six clichés into two sentences:
 
 - an objection raised only to be knocked down;
 - "It" and "Its" in place of "the definition";
@@ -280,9 +285,9 @@ Other chapters cover each:
 
 ## Formatting habits
 
-Some tells are typographic rather than verbal.
+Some clichés are typographic rather than verbal.
 
-- **The em-dash as a default connector.** AI text reaches for the em-dash to
+- **The em-dash as a default connector.** Clichéd prose reaches for the em-dash to
   join almost any two clauses. Vary your punctuation: a period, a comma, or a
   semicolon is often the better fit.
 - **Bold-leading bullets everywhere.** A `**Term:** explanation` bullet is fine
@@ -296,7 +301,7 @@ Some tells are typographic rather than verbal.
 
 ## Tone
 
-The last group of tells is about register.
+The last group of clichés is about register.
 
 - **Promotional language.** Words like "powerful", "game-changing", and
   "cutting-edge" sell rather than inform. Describe what the thing does and let
@@ -305,7 +310,7 @@ The last group of tells is about register.
   consider the other side" onto every claim signals caution without adding
   content. Hedge when the evidence is genuinely mixed, not by habit.
 - **Vague universals.** "Studies show" and "experts agree", with no specific
-  source or number, are tells precisely because they dodge the evidence. Name
+  source or number, are clichés precisely because they dodge the evidence. Name
   the study and give the number, as the [Citations and evidence](citations-evidence.qmd)
   chapter recommends.
 

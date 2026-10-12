@@ -83,9 +83,9 @@ Follow its link for the reasons and the exceptions.
 - [Replace the word "thing"](word-choice.qmd#say-which-thing)
   with the object, quantity, step, or idea that it stands for.
 - [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon).
-- [Edit out clusters of the words and sentence shapes](avoid-ai-tells.qmd)
-  that mark machine-drafted prose.
-- [Say what something is before what it is not](avoid-ai-tells.qmd#say-what-it-is-before-what-it-is-not).
+- [Edit out clusters of clichéd words and sentence shapes](avoid-cliches.qmd),
+  which make prose read as generic or machine-drafted.
+- [Say what something is before what it is not](avoid-cliches.qmd#say-what-it-is-before-what-it-is-not).
 
 ## Writing for every reader
 

@@ -60,7 +60,7 @@ The chapters fall into four groups:
 - Words and sentences:
   - [Word choice](word-choice.qmd)
   - [Writing for every reader](inclusive-writing.qmd)
-  - [Avoiding AI tells](avoid-ai-tells.qmd)
+  - [Avoiding clichés](avoid-cliches.qmd)
   - [Grammar](grammar.qmd)
   - [Conciseness](conciseness.qmd)
 - Teaching:
