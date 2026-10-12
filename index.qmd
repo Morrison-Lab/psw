@@ -23,3 +23,10 @@ The [Introduction](chapters/intro.qmd) describes the book's scope and readers,
 and how to use its chapters.
 The [Summary](chapters/summary.qmd) lists the book's main rules
 as a checklist for revising a draft.
+
+## Acknowledgments
+
+The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) Quarto website template,
+whose structure comes from the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/),
+which is in turn adapted from the
+[Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/index.html).

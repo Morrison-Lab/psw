@@ -72,7 +72,7 @@ before they see the formal definition.
 
 [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms)
 covers what a good definition contains.
-For teaching materials, three further rules keep definitions findable.
+For teaching materials, four further rules keep definitions findable.
 
 - Replace a bolded keyword in running prose with a `#def-` div.
   A bolded keyword usually marks an inline definition.
@@ -84,6 +84,10 @@ For teaching materials, three further rules keep definitions findable.
   The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
   A special case, such as a linear evaluation function,
   gets its own div after the general case, and the two link to each other.
+- Keep only the definition in a `#def-` div.
+  Put the properties of the defined object, such as the symmetry and idempotence of a matrix,
+  in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known.
+  Each abstract div then gets its own example, as the rule below requires.
 
 An alternative name for the same concept stays in the div of the term it names,
 in italics.
@@ -179,9 +183,82 @@ in every course and every teaching repository, not only to one course.
   or keep the replaced one as an outtake:
   leave its file in place and stop including it.
 - Tell students where to get the data.
+- Point students only to places they can open.
+  Students read a course's published site, not its repository,
+  which is often private.
+  So never send them to a file in the repository,
+  to a `github.com` link into a private repository,
+  or to "the copy in this repository".
+  Link a data file from the published site,
+  from a public repository or package,
+  or from the data's original public source.
 - Do not assume that students own a laptop.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
+
+## Present R results with modern packages
+
+This rule applies to all R code in teaching materials,
+in every course and every teaching repository.
+
+- Even when you fit a model with a base R function such as `lm()` or `glm()`,
+  show its results with modern packages, not with base R output.
+- Show coefficient tables with
+  [parameters](https://easystats.github.io/parameters/) (`parameters() |> print_md()`)
+  or [gtsummary](https://cran.r-project.org/package=gtsummary) (`tbl_regression()`),
+  not with `summary()` or `coef(summary())` printouts.
+- Draw figures with [ggplot2](https://ggplot2.tidyverse.org/),
+  not with base graphics such as `plot()`, `lines()` and `abline()`.
+- Draw model plots with packages built on ggplot2:
+  [sjPlot](https://strengejacke.github.io/sjPlot/) or
+  [ggeffects](https://strengejacke.github.io/ggeffects/) for predictions,
+  and [performance](https://easystats.github.io/performance/)'s `check_model()` for diagnostic plots.
+- Show model fit statistics with performance's `model_performance()`
+  or [broom](https://cran.r-project.org/package=broom)'s `glance()`.
+- Ezra's [rme](https://github.com/d-morrison/rme) notes show the style.
+
+## Manipulate data with dplyr, not base R
+
+This rule applies to all R code in teaching materials,
+in every course and every teaching repository.
+
+- Select columns with
+  [dplyr](https://dplyr.tidyverse.org/)'s `select()`,
+  not with `df[, c("a", "b")]` or `df[c("a", "b")]`.
+- Filter rows with `filter()`, not with `df[df$x > 0, ]` or `subset()`.
+- Add or change columns with `mutate()`, not with `df$new <- ...`.
+- Drop rows with missing values with
+  [tidyr](https://tidyr.tidyverse.org/)'s `drop_na()`,
+  not with `df[complete.cases(df), ]`.
+- Stack data frames with `bind_rows()`, not with `rbind()`.
+- Build data frames with
+  [tibble](https://tibble.tidyverse.org/)'s `tibble()`,
+  not with `data.frame()`.
+- Chain steps with the native pipe `|>`.
+- Do not nest function calls.
+  Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`,
+  and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`.
+  Give a call that would sit inside an argument,
+  such as `data = filter(df, train)` in a model call, a name on its own line first.
+- Reading one value out of a data frame for inline code is fine,
+  as is indexing a matrix or a vector.
+  The rule is about selecting, filtering and building data frames.
+
+## Comment every code chunk to say what and why
+
+This rule applies to all reader-facing code in teaching materials,
+in every course and every teaching repository, in every language.
+
+- Put comments in each code chunk that explain both
+  what the code is doing and why it does it.
+- Leave out a comment that would give away the solution in an exercise prompt.
+  Add the comments to the solution's code instead.
+- A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`,
+  gives the *what* without the *why*.
+  Say what the step accomplishes and why the analysis needs it,
+  for example `# center age so the intercept is the mean outcome at the average age`.
+- Comment each step that a student could not reconstruct from its name,
+  such as a transformation, a modeling choice, a tuning value or a random seed.
 
 ## Make figures accessible
 
