@@ -326,4 +326,4 @@ These rules from the other chapters apply to teaching materials as to any other 
 - [name the referent](grammar.qmd#demonstrative-pronouns) instead of a bare demonstrative;
 - [say which thing](word-choice.qmd#say-which-thing);
 - [state the literal claim](word-choice.qmd#avoid-vague-and-metaphorical-language) instead of an idiom;
-- [avoid AI clichés](avoid-ai-tells.qmd).
+- [avoid clichés](avoid-cliches.qmd).

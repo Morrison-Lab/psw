@@ -409,10 +409,10 @@ Check the EQUATOR page for the current version before citing one.
   Write "was associated with" for associations,
   and use causal verbs only when the design and its stated assumptions
   justify them.
-- Avoid stock phrases and AI tells,
+- Avoid stock phrases and [AI tells](avoid-cliches.qmd#def-ai-tell),
   such as "novel", "groundbreaking", "delve", "crucial",
   and "not just X but Y" constructions.
-  See [Avoiding AI tells](avoid-ai-tells.qmd).
+  See [Avoiding clichés](avoid-cliches.qmd).
 - Keep pipeline, audit, and process notes out of the main text.
   These belong in the supplement or nowhere:
   - scripts and file names;
@@ -497,7 +497,7 @@ Before calling a manuscript ready:
 13. The required statements are present.
 14. The word, table, figure, and reference counts are within the
     journal's limits.
-15. The prose has been checked for AI tells,
+15. The prose has been checked for [AI tells](avoid-cliches.qmd#def-ai-tell),
     and the claims and numbers have been fact-checked.
 16. The cover letter is drafted.
     It states the question, the main finding, why this journal,

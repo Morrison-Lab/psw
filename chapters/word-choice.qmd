@@ -44,6 +44,11 @@ Commonly used Latin words and phrases and Anglish alternatives
 
 See also <https://bark-fa.github.io/Anglish-Translator/>
 
+[Overused vocabulary](avoid-cliches.qmd#overused-vocabulary)
+lists more words, many of them Latin-derived,
+that writers reach for by reflex,
+with plainer alternatives.
+
 I am aware that this book, 
 and even this chapter,
 contains many Latin word choices where there are Anglish alternatives.
@@ -100,6 +105,10 @@ state the claim.
 [Use literal language](inclusive-writing.qmd#use-literal-language)
 explains why idioms exclude some readers,
 and gives more examples.
+Stock metaphors such as "pave the way" and "shed light on"
+are [clichés](avoid-cliches.qmd#def-cliche),
+and [Overused vocabulary](avoid-cliches.qmd#overused-vocabulary)
+lists more of them.
 
 Some single words cause a different problem.
 Words such as "obviously", "clearly" and "trivially"
