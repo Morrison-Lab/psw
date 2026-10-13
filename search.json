@@ -840,39 +840,46 @@
     "text": "9 Quote the original\nQuote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.\n\n❌ Mitchell (1997), as quoted in Goodfellow et al. (2016), defines …\n✅ “A computer program is said to learn …” (Mitchell 1997)"
   },
   {
+    "objectID": "chapters/citations-evidence.html#cite-the-original-for-named-results",
+    "href": "chapters/citations-evidence.html#cite-the-original-for-named-results",
+    "title": "Citations and evidence",
+    "section": "10 Cite the original for named results",
+    "text": "10 Cite the original for named results\nWhen you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.\nPut the historical note in a short remark after the statement and its proof, not inside the definition or theorem itself, so that each theorem div still holds one result.\nApply the rule to:\n\nnamed theorems, inequalities, and algorithms;\ndefinitions that a specific paper introduced;\nresults whose usual name is not the whole story, such as Chebyshev’s inequality, which Bienaymé derived earlier.\n\nDo not apply it to:\n\nroutine lemmas;\ntextbook exercises;\nresults with no identifiable first source.\n\nWhen the credit is disputed or the first source is unclear, say so in one sentence and cite a history of the result instead of naming a source you have not checked.\nCheck every detail of the original against an official source, such as:\n\nthe publisher;\nthe journal’s archive;\na library such as Numdam.\n\nNever cite an unauthorized copy, and never fill in a title, volume, or page number from memory.\n\n\n\n\n\n\n\nExample 3 (Crediting Chebyshev’s inequality)  \n\n❌ Chebyshev’s inequality says that …\n✅ Chebyshev’s inequality says that … Bienaymé derived the bound (Bienaymé 1853), and Tchébychef proved a more general form (Tchébychef 1867). A modern treatment is in Blitzstein and Hwang (2019)."
+  },
+  {
     "objectID": "chapters/citations-evidence.html#put-the-content-first",
     "href": "chapters/citations-evidence.html#put-the-content-first",
     "title": "Citations and evidence",
-    "section": "10 Put the content first",
-    "text": "10 Put the content first\nHeadings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated."
+    "section": "11 Put the content first",
+    "text": "11 Put the content first\nHeadings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated."
   },
   {
     "objectID": "chapters/citations-evidence.html#adapting-another-courses-material",
     "href": "chapters/citations-evidence.html#adapting-another-courses-material",
     "title": "Citations and evidence",
-    "section": "11 Adapting another course’s material",
-    "text": "11 Adapting another course’s material\nWhen teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.\nPut that note in a div, never in running prose. An attribution is not part of the argument, and a reader skimming the section should be able to tell it apart from the content it credits. In Quarto, use a collapsed .callout-note titled “Source”, which frames the credit and keeps it out of the way on the page. A ::: notes div keeps the credit out of the slides, but on an HTML page it renders as a plain unstyled &lt;div&gt;, which looks like running prose; use it only on a site whose stylesheet sets .notes apart.\nThe same applies to license notices and to statements of how the adaptation differs from the source.\n❌ A plain paragraph between the heading and the first definition:\nThis section is adapted from @zhou2024, used under the MIT License.\n✅ The same credit in a collapsed callout:\n::: {.callout-note collapse=\"true\"}\n#### Source\n\nThis section is adapted from @zhou2024, used under the MIT License.\n:::\n\n11.1 Material from your own repositories\nMaterial moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.\nCarry over what the source repository itself credits:\n\nA book or paper the material follows.\nA person outside your group whose lecture or notes it adapted. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.\n\nThe exception has two limits:\n\nIt does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.\nIt does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution."
+    "section": "12 Adapting another course’s material",
+    "text": "12 Adapting another course’s material\nWhen teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.\nPut that note in a div, never in running prose. An attribution is not part of the argument, and a reader skimming the section should be able to tell it apart from the content it credits. In Quarto, use a collapsed .callout-note titled “Source”, which frames the credit and keeps it out of the way on the page. A ::: notes div keeps the credit out of the slides, but on an HTML page it renders as a plain unstyled &lt;div&gt;, which looks like running prose; use it only on a site whose stylesheet sets .notes apart.\nThe same applies to license notices and to statements of how the adaptation differs from the source.\n❌ A plain paragraph between the heading and the first definition:\nThis section is adapted from @zhou2024, used under the MIT License.\n✅ The same credit in a collapsed callout:\n::: {.callout-note collapse=\"true\"}\n#### Source\n\nThis section is adapted from @zhou2024, used under the MIT License.\n:::\n\n12.1 Material from your own repositories\nMaterial moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.\nCarry over what the source repository itself credits:\n\nA book or paper the material follows.\nA person outside your group whose lecture or notes it adapted. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.\n\nThe exception has two limits:\n\nIt does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.\nIt does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution."
   },
   {
     "objectID": "chapters/citations-evidence.html#common-citation-errors-to-avoid",
     "href": "chapters/citations-evidence.html#common-citation-errors-to-avoid",
     "title": "Citations and evidence",
-    "section": "12 Common citation errors to avoid",
-    "text": "12 Common citation errors to avoid\n\nCitation needed: Making claims without any supporting citation or evidence\nVague attribution: Using phrases like “studies have shown” without citing specific studies\nAppeal to obviousness: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation\nCircular citation: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)\nCitation padding: Adding citations that don’t actually support your claims just to appear well-referenced\nSelective citation: Only citing work that supports your position while ignoring contradictory evidence\nGhost authorship: Failing to cite work that directly influenced your ideas"
+    "section": "13 Common citation errors to avoid",
+    "text": "13 Common citation errors to avoid\n\nCitation needed: Making claims without any supporting citation or evidence\nVague attribution: Using phrases like “studies have shown” without citing specific studies\nAppeal to obviousness: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation\nCircular citation: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)\nCitation padding: Adding citations that don’t actually support your claims just to appear well-referenced\nSelective citation: Only citing work that supports your position while ignoring contradictory evidence\nGhost authorship: Failing to cite work that directly influenced your ideas"
   },
   {
     "objectID": "chapters/citations-evidence.html#examples",
     "href": "chapters/citations-evidence.html#examples",
     "title": "Citations and evidence",
-    "section": "13 Examples",
-    "text": "13 Examples\n\n13.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support.\n\n\n13.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim.\n\n\n13.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained.\n\n\n13.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.\n\n\n13.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
+    "section": "14 Examples",
+    "text": "14 Examples\n\n14.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support.\n\n\n14.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim.\n\n\n14.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained.\n\n\n14.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.\n\n\n14.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
   },
   {
     "objectID": "chapters/citations-evidence.html#conclusion",
     "href": "chapters/citations-evidence.html#conclusion",
     "title": "Citations and evidence",
-    "section": "14 Conclusion",
-    "text": "14 Conclusion\nSupporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence."
+    "section": "15 Conclusion",
+    "text": "15 Conclusion\nSupporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence."
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#why-claims-need-support",
@@ -938,46 +945,53 @@
     "text": "9 Quote the original"
   },
   {
+    "objectID": "chapters/citations-evidence-slides.html#cite-the-original-for-named-results",
+    "href": "chapters/citations-evidence-slides.html#cite-the-original-for-named-results",
+    "title": "Citations and evidence",
+    "section": "10 Cite the original for named results",
+    "text": "10 Cite the original for named results"
+  },
+  {
     "objectID": "chapters/citations-evidence-slides.html#put-the-content-first",
     "href": "chapters/citations-evidence-slides.html#put-the-content-first",
     "title": "Citations and evidence",
-    "section": "10 Put the content first",
-    "text": "10 Put the content first"
+    "section": "11 Put the content first",
+    "text": "11 Put the content first"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#adapting-another-courses-material",
     "href": "chapters/citations-evidence-slides.html#adapting-another-courses-material",
     "title": "Citations and evidence",
-    "section": "11 Adapting another course’s material",
-    "text": "11 Adapting another course’s material"
+    "section": "12 Adapting another course’s material",
+    "text": "12 Adapting another course’s material"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#common-citation-errors-to-avoid",
     "href": "chapters/citations-evidence-slides.html#common-citation-errors-to-avoid",
     "title": "Citations and evidence",
-    "section": "12 Common citation errors to avoid",
-    "text": "12 Common citation errors to avoid"
+    "section": "13 Common citation errors to avoid",
+    "text": "13 Common citation errors to avoid"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#examples",
     "href": "chapters/citations-evidence-slides.html#examples",
     "title": "Citations and evidence",
-    "section": "13 Examples",
-    "text": "13 Examples"
+    "section": "14 Examples",
+    "text": "14 Examples"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#conclusion",
     "href": "chapters/citations-evidence-slides.html#conclusion",
     "title": "Citations and evidence",
-    "section": "14 Conclusion",
-    "text": "14 Conclusion"
+    "section": "15 Conclusion",
+    "text": "15 Conclusion"
   },
   {
     "objectID": "chapters/citations-evidence-slides.html#references",
     "href": "chapters/citations-evidence-slides.html#references",
     "title": "Citations and evidence",
     "section": "",
-    "text": "Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.\n\n\n\n\n\n\n\n\nHawkins, Douglas M. 2004. “The Problem of Overfitting.” Journal of Chemical Information and Computer Sciences 44 (1): 1–12. https://doi.org/10.1021/ci0342472.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nMitchell, Tom M. 1997. Machine Learning. McGraw-Hill.\n\n\nStack Overflow. 2024. Stack Overflow Developer Survey 2024. https://survey.stackoverflow.co/2024/.\n\n\nVapnik, Vladimir N. 1998. Statistical Learning Theory. Wiley. https://www.wiley.com/en-us/Statistical+Learning+Theory-p-9780471030034."
+    "text": "Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.\n\n\n\n\n\n\n\n\nBienaymé, Irénée-Jules. 1853. “Considérations à l’appui de La Découverte de Laplace Sur La Loi de Probabilité Dans La Méthode Des Moindres Carrés.” Comptes Rendus de l’Académie Des Sciences 37: 309–24. https://www.numdam.org/item/JMPA_1867_2_12__158_0/.\n\n\nBlitzstein, Joseph K., and Jessica Hwang. 2019. Introduction to Probability. 2nd ed. Chapman; Hall/CRC. https://doi.org/10.1201/9780429428357.\n\n\nHawkins, Douglas M. 2004. “The Problem of Overfitting.” Journal of Chemical Information and Computer Sciences 44 (1): 1–12. https://doi.org/10.1021/ci0342472.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nMitchell, Tom M. 1997. Machine Learning. McGraw-Hill.\n\n\nStack Overflow. 2024. Stack Overflow Developer Survey 2024. https://survey.stackoverflow.co/2024/.\n\n\nTchébychef, P. L. 1867. “Des Valeurs Moyennes.” Journal de Mathématiques Pures Et Appliquées, 2nd series, vol. 12: 177–84. https://www.numdam.org/item/JMPA_1867_2_12__177_0/.\n\n\nVapnik, Vladimir N. 1998. Statistical Learning Theory. Wiley. https://www.wiley.com/en-us/Statistical+Learning+Theory-p-9780471030034."
   },
   {
     "objectID": "chapters/avoid-cliches-slides.html#terms-used-in-this-chapter",
