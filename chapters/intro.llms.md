@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 22:10:26 (PDT)
+Last modified: 2026-10-12 22:48:38 (PDT)
 
 > **NOTE:**
 >
@@ -38,8 +38,8 @@ The chapters fall into four groups:
   - [Preparing a manuscript for submission](../chapters/manuscript-submission.llms.md)
 - Words and sentences:
   - [Word choice](../chapters/word-choice.llms.md)
+  - [Avoiding clichés](../chapters/avoid-cliches.llms.md)
   - [Writing for every reader](../chapters/inclusive-writing.llms.md)
-  - [Avoiding AI tells](../chapters/avoid-ai-tells.llms.md)
   - [Grammar](../chapters/grammar.llms.md)
   - [Conciseness](../chapters/conciseness.llms.md)
 - Teaching:

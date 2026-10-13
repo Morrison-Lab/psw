@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 22:10:26 (PDT)
+Last modified: 2026-10-12 22:48:38 (PDT)
 
 > **NOTE:**
 >
@@ -110,7 +110,7 @@ Some sentences describe the document instead of its subject. They do one of thes
 - rank a point;
 - comment on how a point changes what follows.
 
-Each one makes the reader read a sentence before reaching the content it promises. State the content directly. [Rhetorical reflexes](../chapters/avoid-ai-tells.llms.md#rhetorical-reflexes) lists related signpost phrases, such as “it is worth noting that”.
+Each one makes the reader read a sentence before reaching the content it promises. State the content directly. [Rhetorical reflexes](../chapters/avoid-cliches.llms.md#rhetorical-reflexes) lists related signpost phrases, such as “it is worth noting that”.
 
 > **NOTE:**
 >

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 22:10:26 (PDT)
+Last modified: 2026-10-12 22:48:38 (PDT)
 
 > **NOTE:**
 >
@@ -166,7 +166,7 @@ These rules from the other chapters apply to teaching materials as to any other 
 - [name the referent](../chapters/grammar.llms.md#demonstrative-pronouns) instead of a bare demonstrative;
 - [say which thing](../chapters/word-choice.llms.md#say-which-thing);
 - [state the literal claim](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language) instead of an idiom;
-- [avoid AI clichés](../chapters/avoid-ai-tells.llms.md).
+- [avoid clichés](../chapters/avoid-cliches.llms.md).
 
 Back to top
 

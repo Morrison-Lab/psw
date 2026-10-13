@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 22:10:26 (PDT)
+Last modified: 2026-10-12 22:48:38 (PDT)
 
 > **NOTE:**
 >
@@ -52,8 +52,8 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Follow an abstract statement with an example](../chapters/word-choice.llms.md#follow-an-abstract-statement-with-an-example).
 - [Replace the word “thing”](../chapters/word-choice.llms.md#say-which-thing) with the object, quantity, step, or idea that it stands for.
 - [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon).
-- [Edit out clusters of the words and sentence shapes](../chapters/avoid-ai-tells.llms.md) that mark machine-drafted prose.
-- [Say what something is before what it is not](../chapters/avoid-ai-tells.llms.md#say-what-it-is-before-what-it-is-not).
+- [Edit out clusters of clichéd words and sentence shapes](../chapters/avoid-cliches.llms.md), which make prose read as generic or machine-drafted.
+- [Say what something is before what it is not](../chapters/avoid-cliches.llms.md#say-what-it-is-before-what-it-is-not).
 
 ## 5 Writing for every reader
 

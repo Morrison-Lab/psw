@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 22:10:26 (PDT)
+Last modified: 2026-10-12 22:48:38 (PDT)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -211,7 +211,7 @@ Table 1: Common reporting guidelines by study design
 - Follow the rest of this guide: plain words, short sentences, and the active voice.
 - Use the past tense for what was done and found (Methods and Results) and the present tense for established knowledge and for what the findings mean.
 - Match causal language to the design. Write “was associated with” for associations, and use causal verbs only when the design and its stated assumptions justify them.
-- Avoid stock phrases and AI tells, such as “novel”, “groundbreaking”, “delve”, “crucial”, and “not just X but Y” constructions. See [Avoiding AI tells](../chapters/avoid-ai-tells.llms.md).
+- Avoid stock phrases and [AI tells](../chapters/avoid-cliches.llms.md#def-ai-tell), such as “novel”, “groundbreaking”, “delve”, “crucial”, and “not just X but Y” constructions. See [Avoiding clichés](../chapters/avoid-cliches.llms.md).
 - Keep pipeline, audit, and process notes out of the main text. These belong in the supplement or nowhere:
   - scripts and file names;
   - variable names;
@@ -260,7 +260,7 @@ A document that renders without errors is not ready to submit. The first item is
 12. The title page is complete: authors, affiliations, corresponding author, and word counts.
 13. The required statements are present.
 14. The word, table, figure, and reference counts are within the journal’s limits.
-15. The prose has been checked for AI tells, and the claims and numbers have been fact-checked.
+15. The prose has been checked for [AI tells](../chapters/avoid-cliches.llms.md#def-ai-tell), and the claims and numbers have been fact-checked.
 16. The cover letter is drafted. It states the question, the main finding, why this journal, that the work is not under consideration elsewhere, and any suggested or excluded reviewers.
 
 Back to top
