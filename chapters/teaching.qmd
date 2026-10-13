@@ -261,6 +261,24 @@ in every course and every teaching repository, in every language.
 - Comment each step that a student could not reconstruct from its name,
   such as a transformation, a modeling choice, a tuning value or a random seed.
 
+## Introduce every function in a programming primer
+
+This rule applies to all teaching materials that run code,
+in every course and every teaching repository.
+
+- Give the course a programming primer that introduces each package function the course's chapters call.
+  A student meets the function there first, in a short note, a worked example and an exercise,
+  and then sees it used in the chapters.
+- Keep the primer complete by computing the list of functions, not by remembering it.
+  Scan the code chunks of the chapters for the functions they call,
+  and compare the list with the functions the primer mentions.
+  Run the scan when a chapter adds a function, and again before a term starts.
+- Add the missing functions in separate pull requests, one per package.
+  A pull request that adds a function to a chapter adds it to the primer too,
+  or links the primer entry that already introduces it.
+- Functions that a chapter defines for itself are not package functions.
+  A chapter introduces those where it defines them.
+
 ## Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
