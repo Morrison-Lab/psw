@@ -152,6 +152,19 @@ Name the object, quantity, step or idea it stands for.
 >
 > ✅ Check the residuals first.
 
+The plural and the filler phrases built on it
+("a number of things", "other things", "things like that")
+are the same problem.
+Each one tells the reader that something exists
+without saying what.
+
+> ❌ Several things can inflate the standard errors.
+>
+> ✅ Correlated predictors and clustered observations can inflate the standard errors.
+
+If you cannot name the object, quantity, step or idea,
+the sentence is not yet ready to write.
+
 ## Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field.
