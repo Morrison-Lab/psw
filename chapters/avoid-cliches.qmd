@@ -320,6 +320,15 @@ Watch for these shapes:
   becomes "It makes sums over countably infinite partitions valid",
   and "What the standing grant removes is the need to ask"
   becomes "The standing grant removes the need to ask".
+  The same holds for a subject followed by "is what" and a verb,
+  and for a tail of ", which is why" or ", which is what":
+  "The risk is what says how a model does on neighbourhoods outside the sample"
+  becomes "The risk measures how well a model predicts neighbourhoods outside the sample",
+  "Solving the equation is what this course calls learning"
+  becomes "This course calls solving the equation learning",
+  and "No label was used, which is why the task is unsupervised"
+  becomes "No label was used, so the task is unsupervised".
+  Keep "That is why" only where a real reason follows that the reader would not guess.
 - **The reframe.** "X isn't about Y; it's about Z",
   "The question isn't X, it's Y",
   and "not because X, but because Y".
