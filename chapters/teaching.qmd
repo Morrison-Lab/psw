@@ -139,6 +139,21 @@ instead of keeping a second wording that can drift.
   and each number in the prose comes from inline code.
   A number typed into prose goes stale when the data or the code changes.
 
+## Store structured data in structured formats
+
+This rule applies to all teaching materials, in every course and every teaching repository.
+
+- Keep a list or table of like items, such as courses, readings, channels or glossary terms,
+  in a CSV, YAML or JSON file with one record per item.
+  The page reads the file and builds the table or list with a short function,
+  instead of holding a hand-written Markdown table.
+- A data file can be counted, filtered, sorted and reused by another page,
+  and a new row is a one-line change that a reviewer reads as data.
+- List the file under the page's `resources:` when the site publishes it.
+- Convert an existing hand-written table in its own pull request,
+  and render the page before and after to confirm that the output text is identical.
+- A short list that no other page reads can stay as prose.
+
 ## Show each idea applied and in a figure
 
 - Give every definition, method and result at least one applied example

@@ -11,6 +11,7 @@ COREQ
 Cormac
 CRediT
 CSL
+CSV
 DOI
 dplyr
 easystats
@@ -38,6 +39,7 @@ ISLP
 ISLR
 iwanthue
 JAMA
+JSON
 Kameron
 lds
 lme4
@@ -79,3 +81,4 @@ Tufte
 Tufte's
 UCD
 Weinberger
+YAML
