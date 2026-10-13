@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 22:48:38 (PDT)
+Last modified: 2026-10-13 00:05:34 (PDT)
 
 > **NOTE:**
 >
@@ -67,6 +67,14 @@ The word *thing* almost never survives a second look. Name the object, quantity,
 > ❌ The main thing to check is the residuals.
 >
 > ✅ Check the residuals first.
+
+The plural and the filler phrases built on it (“a number of things”, “other things”, “things like that”) are the same problem. Each one tells the reader that something exists without saying what.
+
+> ❌ Several things can inflate the standard errors.
+>
+> ✅ Correlated predictors and clustered observations can inflate the standard errors.
+
+If you cannot name the object, quantity, step or idea, the sentence is not yet ready to write.
 
 ## 4 Minimize unnecessary jargon
 
