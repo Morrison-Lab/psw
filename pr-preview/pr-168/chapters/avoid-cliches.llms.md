@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-12 16:12:27 (PDT)
+Last modified: 2026-10-12 22:31:45 (PDT)
 
 > **NOTE:**
 >
@@ -54,11 +54,11 @@ The rest of this chapter uses these terms.
 
 ## 2 A caveat
 
-No single word or pattern below is wrong on its own. Each has legitimate uses. The signal is clustering and mechanical repetition, the same constructions appearing again and again regardless of what the sentence needs. Edit for the cluster, not the isolated instance, and do not flatten your prose into a voiceless [register](#def-register) trying to avoid every word on a list.
+No single word or pattern below is wrong on its own. Each has legitimate uses. The signal is clustering and mechanical repetition, the same constructions appearing again and again regardless of what each sentence needs. Edit for the cluster, not the isolated instance, and do not flatten your prose into a voiceless [register](#def-register) trying to avoid every word on a list.
 
 ## 3 Overused vocabulary
 
-Some words turn up more often than the sentence needs them, in stock prose and especially in machine-generated text. Many of them are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-overused-vocabulary) lists frequent offenders and plainer replacements.
+Some words turn up more often than needed, in stock prose and especially in machine-generated text. Many of them are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-overused-vocabulary) lists frequent offenders and plainer replacements.
 
 | Overused | Plainer alternative |
 |----|----|
