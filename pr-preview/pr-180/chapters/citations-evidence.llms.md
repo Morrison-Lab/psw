@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-13 15:04:48 (PDT)
+Last modified: 2026-10-13 15:17:05 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -231,9 +231,21 @@ Apply the rule to:
 - definitions that a specific paper introduced;
 - results whose usual name is not the whole story, such as Chebyshev’s inequality, which Bienaymé derived earlier.
 
-Do not apply it to routine lemmas, to textbook exercises, or to results with no identifiable first source. When the credit is disputed or the first source is unclear, say so in one sentence and cite a history of the result instead of naming a source you have not checked.
+Do not apply it to:
 
-Check every detail of the original against an official source: the publisher, the journal’s archive, or a library such as [Numdam](https://www.numdam.org/). Never cite an unauthorized copy, and never fill in a title, volume, or page number from memory.
+- routine lemmas;
+- textbook exercises;
+- results with no identifiable first source.
+
+When the credit is disputed or the first source is unclear, say so in one sentence and cite a history of the result instead of naming a source you have not checked.
+
+Check every detail of the original against an official source, such as:
+
+- the publisher;
+- the journal’s archive;
+- a library such as [Numdam](https://www.numdam.org/).
+
+Never cite an unauthorized copy, and never fill in a title, volume, or page number from memory.
 
 > **NOTE:**
 >
