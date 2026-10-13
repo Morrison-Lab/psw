@@ -370,19 +370,26 @@ Apply the rule to:
   such as Chebyshev's inequality,
   which Bienaymé derived earlier.
 
-Do not apply it to routine lemmas,
-to textbook exercises,
-or to results with no identifiable first source.
+Do not apply it to:
+
+- routine lemmas;
+- textbook exercises;
+- results with no identifiable first source.
+
 When the credit is disputed or the first source is unclear,
 say so in one sentence and cite a history of the result
 instead of naming a source you have not checked.
 
-Check every detail of the original against an official source:
-the publisher, the journal's archive, or a library such as [Numdam](https://www.numdam.org/).
+Check every detail of the original against an official source, such as:
+
+- the publisher;
+- the journal's archive;
+- a library such as [Numdam](https://www.numdam.org/).
+
 Never cite an unauthorized copy,
 and never fill in a title, volume, or page number from memory.
 
-:::{#exm-cite-original}
+::::{#exm-cite-original}
 
 ## Crediting Chebyshev's inequality
 
@@ -392,7 +399,7 @@ and never fill in a title, volume, or page number from memory.
 > Bienaymé derived the bound [@bienayme1853], and Tchébychef proved a more general form [@tchebichef1867].
 > A modern treatment is in @blitzstein2019introduction.
 
-:::
+::::
 
 ## Put the content first
 
