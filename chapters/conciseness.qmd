@@ -201,6 +201,56 @@ instead of saying that it changes something.
 
 :::
 
+## Let a self-describing link stand alone
+
+A URL often shows the name of what it points to and where that thing lives.
+When it does,
+do not also spell out that name or host around the link.
+The reader would read the same facts twice.
+
+::: {#exm-self-describing-link}
+
+## Dropping prose that repeats a URL
+
+> ❌ For an example, see my public notes site Morrison-Lab/sds on GitHub
+> (<https://github.com/Morrison-Lab/sds>).
+>
+> ✅ For an example, see <https://github.com/Morrison-Lab/sds>.
+
+The URL already says that the site is on GitHub
+and that the repository is `Morrison-Lab/sds`.
+
+:::
+
+Keep a descriptive label when the URL does not show what it points to,
+such as a DOI or a shortened link.
+
+## Keep the writer out of the way
+
+Mention yourself only where a sentence needs an actor,
+such as a request, an offer, or a decision you made.
+Elsewhere,
+make the subject of the sentence the thing the reader cares about.
+Extra references to the writer turn attention from the content to the person.
+
+::: {#exm-writer-out-of-the-way}
+
+## Moving the focus from the writer to the subject
+
+> ❌ I tested this in a small private project, and I found that CI works well.
+>
+> ✅ CI works well in a small private test project.
+>
+> ❌ My build and review tools run on cloud services.
+>
+> ✅ The build and review tools run on cloud services.
+
+A request still needs its actor:
+"Could the space be increased, or would you allow me to register my own runner?"
+keeps "me" because the request is about the writer's runner.
+
+:::
+
 ## Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
