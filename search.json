@@ -1652,32 +1652,39 @@
     "text": "11 Comment every code chunk to say what and why"
   },
   {
+    "objectID": "chapters/teaching-slides.html#introduce-every-function-in-a-programming-primer",
+    "href": "chapters/teaching-slides.html#introduce-every-function-in-a-programming-primer",
+    "title": "Writing for teaching",
+    "section": "12 Introduce every function in a programming primer",
+    "text": "12 Introduce every function in a programming primer"
+  },
+  {
     "objectID": "chapters/teaching-slides.html#make-figures-accessible",
     "href": "chapters/teaching-slides.html#make-figures-accessible",
     "title": "Writing for teaching",
-    "section": "12 Make figures accessible",
-    "text": "12 Make figures accessible"
+    "section": "13 Make figures accessible",
+    "text": "13 Make figures accessible"
   },
   {
     "objectID": "chapters/teaching-slides.html#structure-slides-for-the-reader",
     "href": "chapters/teaching-slides.html#structure-slides-for-the-reader",
     "title": "Writing for teaching",
-    "section": "13 Structure slides for the reader",
-    "text": "13 Structure slides for the reader"
+    "section": "14 Structure slides for the reader",
+    "text": "14 Structure slides for the reader"
   },
   {
     "objectID": "chapters/teaching-slides.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching-slides.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "14 Credit other courses without summarizing them",
-    "text": "14 Credit other courses without summarizing them"
+    "section": "15 Credit other courses without summarizing them",
+    "text": "15 Credit other courses without summarizing them"
   },
   {
     "objectID": "chapters/teaching-slides.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching-slides.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "15 Rules that apply to all writing",
-    "text": "15 Rules that apply to all writing"
+    "section": "16 Rules that apply to all writing",
+    "text": "16 Rules that apply to all writing"
   },
   {
     "objectID": "chapters/teaching-slides.html#references",
@@ -1771,32 +1778,39 @@
     "text": "11 Comment every code chunk to say what and why\nThis rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.\n\nPut comments in each code chunk that explain both what the code is doing and why it does it.\nLeave out a comment that would give away the solution in an exercise prompt. Add the comments to the solution’s code instead.\nA comment that only restates the code, such as # add 1 to x above x &lt;- x + 1, gives the what without the why. Say what the step accomplishes and why the analysis needs it, for example # center age so the intercept is the mean outcome at the average age.\nComment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed."
   },
   {
+    "objectID": "chapters/teaching.html#introduce-every-function-in-a-programming-primer",
+    "href": "chapters/teaching.html#introduce-every-function-in-a-programming-primer",
+    "title": "Writing for teaching",
+    "section": "12 Introduce every function in a programming primer",
+    "text": "12 Introduce every function in a programming primer\nThis rule applies to all teaching materials that run code, in every course and every teaching repository.\n\nGive the course a programming primer that introduces each package function the course’s chapters call. A student meets the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.\nKeep the primer complete by computing the list of functions, not by remembering it. Scan the code chunks of the chapters for the functions they call, and compare the list with the functions the primer mentions. Run the scan when a chapter adds a function, and again before a term starts.\nAdd the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.\nFunctions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them."
+  },
+  {
     "objectID": "chapters/teaching.html#make-figures-accessible",
     "href": "chapters/teaching.html#make-figures-accessible",
     "title": "Writing for teaching",
-    "section": "12 Make figures accessible",
-    "text": "12 Make figures accessible\n\nWrap each figure, including an interactive one, in a #fig- div with a caption.\nGive every plot alt text. For Observable Plot, set ariaLabel.\nShow the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set echo: false on a cell you want students to read.\nDo not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF)."
+    "section": "13 Make figures accessible",
+    "text": "13 Make figures accessible\n\nWrap each figure, including an interactive one, in a #fig- div with a caption.\nGive every plot alt text. For Observable Plot, set ariaLabel.\nShow the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set echo: false on a cell you want students to read.\nDo not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF)."
   },
   {
     "objectID": "chapters/teaching.html#structure-slides-for-the-reader",
     "href": "chapters/teaching.html#structure-slides-for-the-reader",
     "title": "Writing for teaching",
-    "section": "13 Structure slides for the reader",
-    "text": "13 Structure slides for the reader\n\nCheck the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.\nPut a list of three or more phrases in a bullet list, as Put lists in bullet points describes.\nPut each named example in an #exm- div.\nPut on a slide only what you want the audience to look at. Put an example in an #exm- div and short commentary in a #rem- div, because a ::: notes div is plain text without a box on the web page.\nPut a long paragraph of commentary in a remark that is also speaker notes: ::: {#rem-name .remark .notes}. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short #rem- div only when the slide needs a takeaway to look at.\nAdd structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.\nKeep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides."
+    "section": "14 Structure slides for the reader",
+    "text": "14 Structure slides for the reader\n\nCheck the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.\nPut a list of three or more phrases in a bullet list, as Put lists in bullet points describes.\nPut each named example in an #exm- div.\nPut on a slide only what you want the audience to look at. Put an example in an #exm- div and short commentary in a #rem- div, because a ::: notes div is plain text without a box on the web page.\nPut a long paragraph of commentary in a remark that is also speaker notes: ::: {#rem-name .remark .notes}. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short #rem- div only when the slide needs a takeaway to look at.\nAdd structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.\nKeep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides."
   },
   {
     "objectID": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "14 Credit other courses without summarizing them",
-    "text": "14 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
+    "section": "15 Credit other courses without summarizing them",
+    "text": "15 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
   },
   {
     "objectID": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "15 Rules that apply to all writing",
-    "text": "15 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid clichés."
+    "section": "16 Rules that apply to all writing",
+    "text": "16 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid clichés."
   },
   {
     "objectID": "index-slides.html#acknowledgments",

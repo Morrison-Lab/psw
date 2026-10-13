@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-13 10:56:24 (PDT)
+Last modified: 2026-10-13 13:17:16 (PDT)
 
 > **NOTE:**
 >
@@ -134,14 +134,23 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-## 12 Make figures accessible
+## 12 Introduce every function in a programming primer
+
+This rule applies to all teaching materials that run code, in every course and every teaching repository.
+
+- Give the course a programming primer that introduces each package function the course’s chapters call. A student meets the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.
+- Keep the primer complete by computing the list of functions, not by remembering it. Scan the code chunks of the chapters for the functions they call, and compare the list with the functions the primer mentions. Run the scan when a chapter adds a function, and again before a term starts.
+- Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
+- Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
+
+## 13 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 13 Structure slides for the reader
+## 14 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -151,14 +160,14 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 14 Credit other courses without summarizing them
+## 15 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 15 Rules that apply to all writing
+## 16 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
