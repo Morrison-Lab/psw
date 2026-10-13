@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-13 00:05:34 (PDT)
+Last modified: 2026-10-13 10:56:24 (PDT)
 
 > **NOTE:**
 >
@@ -190,7 +190,7 @@ Watch for these shapes:
 - **The colon reveal.** A setup, then a colon, then the point. Lead with the point.
 - **The answered rhetorical question.** “The result? A faster fit.” or “Why does this matter? Because …”. State the result.
 - **The throat-clearing lead-in.** “Here’s the thing:”, “Here’s why:”, “The key is”, “Put simply,”. Delete the lead-in.
-- **The announced claim.** “It is what makes … valid”, “That is what …”, “This is what …”, and “What the standing grant removes is the need to ask”. The sentence points at its own claim before making it. Make the claim directly: “It is what makes sums over countably infinite partitions valid” becomes “It makes sums over countably infinite partitions valid”, and “What the standing grant removes is the need to ask” becomes “The standing grant removes the need to ask”.
+- **The announced claim.** “It is what makes … valid”, “That is what …”, “This is what …”, and “What the standing grant removes is the need to ask”. The sentence points at its own claim before making it. Make the claim directly: “It is what makes sums over countably infinite partitions valid” becomes “It makes sums over countably infinite partitions valid”, and “What the standing grant removes is the need to ask” becomes “The standing grant removes the need to ask”. The same holds for a subject followed by “is what” and a verb, and for a tail of “, which is why” or “, which is what”: “The risk is what says how a model does on neighborhoods outside the sample” becomes “The risk measures how well a model predicts neighborhoods outside the sample”, “Solving the equation is what this course calls learning” becomes “This course calls solving the equation learning”, “No label was used, which is why the task is unsupervised” becomes “No label was used, so the task is unsupervised”, and “The step is cheap, which is what makes it affordable” becomes “The step is cheap, so it is affordable”. Keep a “, which is why” tail only where a real reason follows that the reader would not guess.
 - **The reframe.** “X isn’t about Y; it’s about Z”, “The question isn’t X, it’s Y”, and “not because X, but because Y”. Say what X is about.
 - **Fragment emphasis.** “Simple. Fast. Reliable.” Write a sentence with a subject and a verb.
 - **The editorializing tail.** A trailing [participial clause](#def-participial-clause) that comments on the sentence: “, highlighting the importance of …”, “, ensuring that …”, “, making it ideal for …”. End the sentence at its claim.
