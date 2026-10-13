@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-13 15:24:15 (PDT)
+Last modified: 2026-10-13 16:31:13 (PDT)
 
 > **NOTE:**
 >
@@ -34,11 +34,16 @@ Remember: concise writing is not about making every sentence as short as possibl
 
 Use the [active voice](../chapters/defining-terms.llms.md#def-active-voice) unless you have a specific reason to use the passive. An active sentence names who did what, and it is usually shorter. A passive sentence can hide the actor, and the reader then has to guess who made the choice.
 
-Write in the first person plural by default, so the actor is “we”. In notes, lectures and papers, “we” can mean the author and the reader working through the argument together, or the authors reporting what they did.
+Choose the actor by who did the work:
+
+- Use “I” for what the author did, such as a choice the author made or a step in the author’s analysis. With several authors, use “we”.
+- Use “we” when the author and the reader work through an argument together, as in “we now compute the gradient”.
 
 > ❌ The minimum was found exactly, and the model was chosen by eye.
 >
-> ✅ We found the minimum exactly, and we chose the model by eye.
+> ✅ We found the minimum exactly, and we chose the model by eye. (The author and reader work through the example together.)
+>
+> ✅ I chose the model by eye, because the study had five points. (A single author reports a choice.)
 
 Passive voice is the right choice in a few cases:
 

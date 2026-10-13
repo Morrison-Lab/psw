@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-13 15:24:15 (PDT)
+Last modified: 2026-10-13 16:31:13 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -219,11 +219,47 @@ Quote and cite the source that said it, not a later source that quotes it. Check
 >
 > ✅ “A computer program is said to learn …” ([Mitchell 1997](#ref-mitchell1997))
 
-## 10 Put the content first
+## 10 Cite the original for named results
+
+When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
+
+Put the historical note in a short remark after the statement and its proof, not inside the definition or theorem itself, so that each theorem div still holds one result.
+
+Apply the rule to:
+
+- named theorems, inequalities, and algorithms;
+- definitions that a specific paper introduced;
+- results whose usual name is not the whole story, such as Chebyshev’s inequality, which Bienaymé derived earlier.
+
+Do not apply it to:
+
+- routine lemmas;
+- textbook exercises;
+- results with no identifiable first source.
+
+When the credit is disputed or the first source is unclear, say so in one sentence and cite a history of the result instead of naming a source you have not checked.
+
+Check every detail of the original against an official source, such as:
+
+- the publisher;
+- the journal’s archive;
+- a library such as [Numdam](https://www.numdam.org/).
+
+Never cite an unauthorized copy, and never fill in a title, volume, or page number from memory.
+
+> **NOTE:**
+>
+> **Example 3 (Crediting Chebyshev’s inequality)**  
+>
+> > ❌ Chebyshev’s inequality says that …
+> >
+> > ✅ Chebyshev’s inequality says that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
+
+## 11 Put the content first
 
 Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
 
-## 11 Adapting another course’s material
+## 12 Adapting another course’s material
 
 When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.
 
@@ -247,7 +283,7 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### 11.1 Material from your own repositories
+### 12.1 Material from your own repositories
 
 Material moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
 
@@ -261,7 +297,7 @@ The exception has two limits:
 - It does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.
 - It does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution.
 
-## 12 Common citation errors to avoid
+## 13 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -271,45 +307,49 @@ The exception has two limits:
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 13 Examples
+## 14 Examples
 
-### 13.1 Poor (unsupported claim)
+### 14.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 13.2 Better (citation provided)
+### 14.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 13.3 Best (citation with context)
+### 14.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 13.4 Poor (irrelevant citation)
+### 14.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 13.5 Better (relevant citation)
+### 14.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 14 Conclusion
+## 15 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
 Back to top
 
 ## References
+
+Bienaymé, Irénée-Jules. 1853. “Considérations à l’appui de La Découverte de Laplace Sur La Loi de Probabilité Dans La Méthode Des Moindres Carrés.” *Comptes Rendus de l’Académie Des Sciences* 37: 309–24. <https://www.numdam.org/item/JMPA_1867_2_12__158_0/>.
+
+Blitzstein, Joseph K., and Jessica Hwang. 2019. *Introduction to Probability*. 2nd ed. Chapman; Hall/CRC. <https://doi.org/10.1201/9780429428357>.
 
 Hawkins, Douglas M. 2004. “The Problem of Overfitting.” *Journal of Chemical Information and Computer Sciences* 44 (1): 1–12. <https://doi.org/10.1021/ci0342472>.
 
@@ -318,5 +358,7 @@ Knuth, Donald E. 1984. “Literate Programming.” *Comput. J.* (USA) 27 (2): 97
 Mitchell, Tom M. 1997. *Machine Learning*. McGraw-Hill.
 
 Stack Overflow. 2024. *Stack Overflow Developer Survey 2024*. <https://survey.stackoverflow.co/2024/>.
+
+Tchébychef, P. L. 1867. “Des Valeurs Moyennes.” *Journal de Mathématiques Pures Et Appliquées*, 2nd series, vol. 12: 177–84. <https://www.numdam.org/item/JMPA_1867_2_12__177_0/>.
 
 Vapnik, Vladimir N. 1998. *Statistical Learning Theory*. Wiley. <https://www.wiley.com/en-us/Statistical+Learning+Theory-p-9780471030034>.
