@@ -348,6 +348,52 @@ Check the wording and the page against the original.
 >
 > ✅ "A computer program is said to learn ..." [@mitchell1997]
 
+## Cite the original for named results
+
+When you present a result that carries a person's name,
+or whose first appearance is well documented,
+cite the publication where it first appeared
+alongside a modern textbook that teaches it.
+The original shows readers where the result comes from
+and credits its authors.
+The textbook is where a student will actually learn it.
+
+Put the historical note in a short remark after the statement and its proof,
+not inside the definition or theorem itself,
+so that each theorem div still holds one result.
+
+Apply the rule to:
+
+- named theorems, inequalities, and algorithms;
+- definitions that a specific paper introduced;
+- results whose usual name is not the whole story,
+  such as Chebyshev's inequality,
+  which Bienaymé stated earlier.
+
+Do not apply it to routine lemmas,
+to textbook exercises,
+or to results with no identifiable first source.
+When the credit is disputed or the first source is unclear,
+say so in one sentence and cite a history of the result
+instead of naming a source you have not checked.
+
+Check every detail of the original against an official source:
+the publisher, the journal's archive, or a library such as [Numdam](https://www.numdam.org/).
+Never cite an unauthorized copy,
+and never fill in a title, volume, or page number from memory.
+
+:::{#exm-cite-original}
+
+## Crediting Chebyshev's inequality
+
+> ❌ Chebyshev's inequality says that ...
+>
+> ✅ Chebyshev's inequality says that ...
+> The bound was stated by @bienayme1853 and proved by @tchebichef1867.
+> A modern treatment is in @blitzstein2019introduction.
+
+:::
+
 ## Put the content first
 
 Headings and sentences should name the topic, not its author:
