@@ -117,14 +117,14 @@ No single word or pattern below is wrong on its own.
 Each has legitimate uses.
 The signal is clustering and mechanical repetition,
 the same constructions appearing again and again
-regardless of what the sentence needs.
+regardless of what each sentence needs.
 Edit for the cluster, not the isolated instance,
 and do not flatten your prose into a voiceless [register](#def-register)
 trying to avoid every word on a list.
 
 ## Overused vocabulary
 
-Some words turn up more often than the sentence needs them,
+Some words turn up more often than needed,
 in stock prose and especially in machine-generated text.
 Many of them are also Latin-derived words with plainer alternatives,
 so the advice here overlaps with the [Word choice](word-choice.qmd) chapter.
