@@ -105,11 +105,13 @@ Show both when the shape of the surface matters.
 - Give a 3D plot alt text that states what the surface looks like, such as "a bowl with its lowest point at ...".
 
 ::: {.callout-note collapse="true" title="Source"}
-Adapted from the
+The sections on slide decks, presentation resources and scientific figures
+are adapted from the
 [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html)
 and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters
 of the UCD-SERG lab manual.
 Several of the resource links began in the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
+The section on three-dimensional graphs is original to this guide.
 :::
