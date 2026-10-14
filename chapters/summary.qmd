@@ -69,6 +69,8 @@ Follow its link for the reasons and the exceptions.
 - [Label variables in plain words](paper-organization.qmd#label-variables-in-plain-words)
   in figures and tables.
 - [Use descriptive subsection headings](paper-organization.qmd#subsection-headings).
+- [Avoid forward references](paper-organization.qmd#avoid-forward-references):
+  move the content ahead of the sentence that uses it.
 - [Put each link to a video next to the text that it supports](paper-organization.qmd#links-to-videos-and-other-media).
 - Follow the [journal's conventions for a manuscript](manuscript-submission.qmd),
   and check the [submission checklist](manuscript-submission.qmd#submission-checklist)
