@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:41:09 (PDT)
+Last modified: 2026-10-14 01:48:37 (PDT)
 
 > **NOTE:**
 >
@@ -160,7 +160,7 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 
 ## 6 Appositive fronting
 
-An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which is then often replaced by a pronoun: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.”
+An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which then follows as the subject: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.” Often the subject becomes a pronoun, as in “A disease complex with a multifactorial etiology, it is a leading cause of mortality in calves”, which needs an antecedent for “it” in the sentence before.
 
 Fronting is a stylistic choice, with costs and benefits.
 
