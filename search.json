@@ -504,67 +504,74 @@
     "text": "4 Spell out abbreviations\nWrite out an abbreviation the first time you use it, or replace it with a short name. The plain language guidelines say abbreviations “constantly require the reader to look back to earlier pages” (Plain Language Action and Information Network 2026, Minimize abbreviations). Do not use the Latin abbreviations e.g. and i.e.: “Few people know what they mean, and they often confuse the two” (Plain Language Action and Information Network 2026, Use examples). Write “for example” or “that is”.\n\n❌ Tree ensembles, e.g. RF and GBM, usually reduce the MSE of a single CART.\n✅ Ensembles of trees, for example random forests and boosted trees, usually have lower mean squared error than a single regression tree."
   },
   {
+    "objectID": "chapters/inclusive-writing.html#introduce-shorthand-before-using-it",
+    "href": "chapters/inclusive-writing.html#introduce-shorthand-before-using-it",
+    "title": "Writing for every reader",
+    "section": "5 Introduce shorthand before using it",
+    "text": "5 Introduce shorthand before using it\nIntroduce every shorthand before its first use. This covers abbreviations and also shortened phrases, such as “objective” for “objective function”. Give the full term first and mark the short form, for example “an objective function, or objective for short”. Then use the short form consistently.\n\n❌ The objective as a function of the parameters is a paraboloid. An objective function is the quantity we minimize.\n✅ An objective function, or objective for short, is the quantity we minimize. The objective as a function of the parameters is a paraboloid."
+  },
+  {
     "objectID": "chapters/inclusive-writing.html#write-positive-statements",
     "href": "chapters/inclusive-writing.html#write-positive-statements",
     "title": "Writing for every reader",
-    "section": "5 Write positive statements",
-    "text": "5 Write positive statements\nState what is true, not what is not false. A double negative makes the reader turn “no” into “yes” before they can use the sentence. The W3C guidance says not to “use a double negative to express a positive” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Avoid Double Negatives or Nested Clauses), and the plain language guidelines give the same advice (Plain Language Action and Information Network 2026, Use positive language).\n\n❌ We do not reject the null hypothesis unless the p-value is not above 0.05.\n✅ We reject the null hypothesis when the p-value is 0.05 or less."
+    "section": "6 Write positive statements",
+    "text": "6 Write positive statements\nState what is true, not what is not false. A double negative makes the reader turn “no” into “yes” before they can use the sentence. The W3C guidance says not to “use a double negative to express a positive” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Avoid Double Negatives or Nested Clauses), and the plain language guidelines give the same advice (Plain Language Action and Information Network 2026, Use positive language).\n\n❌ We do not reject the null hypothesis unless the p-value is not above 0.05.\n✅ We reject the null hypothesis when the p-value is 0.05 or less."
   },
   {
     "objectID": "chapters/inclusive-writing.html#rewrite-noun-strings-and-hidden-verbs",
     "href": "chapters/inclusive-writing.html#rewrite-noun-strings-and-hidden-verbs",
     "title": "Writing for every reader",
-    "section": "6 Rewrite noun strings and hidden verbs",
-    "text": "6 Rewrite noun strings and hidden verbs\nA noun string is a row of nouns that act as adjectives, such as “test set error rate estimate”. The reader has to work out which noun modifies which. A hidden verb (also called a nominalization) is a verb turned into a noun, such as “perform an estimation of” in place of “estimate”. GitHub Docs advises against both. It says noun strings “can lead to incorrect translations”, and nominalizations make sentences “longer, harder to understand, and harder to translate” (GitHub 2026a). The plain language guidelines say to open up a noun string by “using more prepositions and articles” (Plain Language Action and Information Network 2026, Avoid noun strings).\n\n❌ We report the test set error rate estimate variance.\n✅ We report the variance of the estimated error rate on the test set.\n\n\n❌ We performed an evaluation of the model’s prediction accuracy.\n✅ We evaluated how accurately the model predicts."
+    "section": "7 Rewrite noun strings and hidden verbs",
+    "text": "7 Rewrite noun strings and hidden verbs\nA noun string is a row of nouns that act as adjectives, such as “test set error rate estimate”. The reader has to work out which noun modifies which. A hidden verb (also called a nominalization) is a verb turned into a noun, such as “perform an estimation of” in place of “estimate”. GitHub Docs advises against both. It says noun strings “can lead to incorrect translations”, and nominalizations make sentences “longer, harder to understand, and harder to translate” (GitHub 2026a). The plain language guidelines say to open up a noun string by “using more prepositions and articles” (Plain Language Action and Information Network 2026, Avoid noun strings).\n\n❌ We report the test set error rate estimate variance.\n✅ We report the variance of the estimated error rate on the test set.\n\n\n❌ We performed an evaluation of the model’s prediction accuracy.\n✅ We evaluated how accurately the model predicts."
   },
   {
     "objectID": "chapters/inclusive-writing.html#put-one-idea-in-each-sentence",
     "href": "chapters/inclusive-writing.html#put-one-idea-in-each-sentence",
     "title": "Writing for every reader",
-    "section": "7 Put one idea in each sentence",
-    "text": "7 Put one idea in each sentence\nLong sentences with nested clauses make the reader hold several unfinished ideas at once. That is hard for readers with a memory impairment (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Keep Text Succinct), and for readers who are translating as they go. The W3C guidance says: “Use short sentences. Have only one point per sentence” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Keep Text Succinct). It also says that “Sentences that have more than one point usually have more than one linking word such as ‘and’ or ‘but’”.\n\n❌ Because the lasso penalty, which is the sum of the absolute values of the coefficients, is not smooth at zero, some coefficients, especially when \\(\\lambda\\) is large, are set exactly to zero.\n✅ The lasso penalty is the sum of the absolute values of the coefficients. The absolute value function is not smooth at zero. Because of this, the lasso sets some coefficients exactly to zero. Usually, more coefficients are zero when \\(\\lambda\\) is larger.\n\nLimit complex sentence structures and Lead with the subject give more examples."
+    "section": "8 Put one idea in each sentence",
+    "text": "8 Put one idea in each sentence\nLong sentences with nested clauses make the reader hold several unfinished ideas at once. That is hard for readers with a memory impairment (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Keep Text Succinct), and for readers who are translating as they go. The W3C guidance says: “Use short sentences. Have only one point per sentence” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Keep Text Succinct). It also says that “Sentences that have more than one point usually have more than one linking word such as ‘and’ or ‘but’”.\n\n❌ Because the lasso penalty, which is the sum of the absolute values of the coefficients, is not smooth at zero, some coefficients, especially when \\(\\lambda\\) is large, are set exactly to zero.\n✅ The lasso penalty is the sum of the absolute values of the coefficients. The absolute value function is not smooth at zero. Because of this, the lasso sets some coefficients exactly to zero. Usually, more coefficients are zero when \\(\\lambda\\) is larger.\n\nLimit complex sentence structures and Lead with the subject give more examples."
   },
   {
     "objectID": "chapters/inclusive-writing.html#state-every-step-and-every-point",
     "href": "chapters/inclusive-writing.html#state-every-step-and-every-point",
     "title": "Writing for every reader",
-    "section": "8 State every step and every point",
-    "text": "8 State every step and every point\nWrite every step of an argument or a procedure. Do not leave a step for the reader to fill in, and do not hint at a point you could state. The W3C guidance says readers may need “definitions or explanations for implied or ambiguous information” such as jokes, sarcasm and metaphors (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Explain Implied Content).\n\n❌ Of course, nobody would use accuracy here.\n✅ Do not judge this classifier by accuracy alone. Only 1% of the emails are spam, so a classifier that labels every email “not spam” has 99% accuracy but finds no spam.\n\nThe first version implies a reason and never states it. A reader who does not already know the reason learns nothing. Words like “obviously” and “clearly” hide a step in the same way; Do not substitute flippancy for support explains what to write instead."
+    "section": "9 State every step and every point",
+    "text": "9 State every step and every point\nWrite every step of an argument or a procedure. Do not leave a step for the reader to fill in, and do not hint at a point you could state. The W3C guidance says readers may need “definitions or explanations for implied or ambiguous information” such as jokes, sarcasm and metaphors (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Explain Implied Content).\n\n❌ Of course, nobody would use accuracy here.\n✅ Do not judge this classifier by accuracy alone. Only 1% of the emails are spam, so a classifier that labels every email “not spam” has 99% accuracy but finds no spam.\n\nThe first version implies a reason and never states it. A reader who does not already know the reason learns nothing. Words like “obviously” and “clearly” hide a step in the same way; Do not substitute flippancy for support explains what to write instead."
   },
   {
     "objectID": "chapters/inclusive-writing.html#say-what-numbers-and-symbols-mean",
     "href": "chapters/inclusive-writing.html#say-what-numbers-and-symbols-mean",
     "title": "Writing for every reader",
-    "section": "9 Say what numbers and symbols mean",
-    "text": "9 Say what numbers and symbols mean\nDo not leave a number or a formula for the reader to interpret. Some readers find numbers hard to process (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Provide Alternatives for Numerical Concepts). Text-to-speech tools can also read numbers and symbols wrongly (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Use Clear, Unambiguous Formatting and Punctuation). The CDC Clear Communication Index scores a document on whether it explains what its numbers mean (Centers for Disease Control and Prevention 2026).\nFor a number, say what it means in words:\n\n❌ The AUC is 0.83.\n✅ The AUC is 0.83. That is, if we pick one spam email and one non-spam email at random, the model gives the spam email the higher score 83% of the time.\n\nFor a formula, say each symbol’s meaning in words at first use, and then say what the formula does in a sentence:\n\n❌ \\(\\hat\\beta = (X^\\top X)^{-1} X^\\top y\\).\n✅ Let \\(X\\) be the \\(n \\times p\\) matrix of inputs, with linearly independent columns, and let \\(y\\) be the vector of \\(n\\) outcomes. Let \\(X^\\top\\) be the transpose of \\(X\\). The least squares estimate of the coefficients is \\(\\hat\\beta = (X^\\top X)^{-1} X^\\top y\\). In words, \\(\\hat\\beta\\) is the coefficient vector that makes the sum of squared prediction errors on the training data as small as possible.\n\nThe Mathematical notation chapter has more rules for notation."
+    "section": "10 Say what numbers and symbols mean",
+    "text": "10 Say what numbers and symbols mean\nDo not leave a number or a formula for the reader to interpret. Some readers find numbers hard to process (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Provide Alternatives for Numerical Concepts). Text-to-speech tools can also read numbers and symbols wrongly (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Use Clear, Unambiguous Formatting and Punctuation). The CDC Clear Communication Index scores a document on whether it explains what its numbers mean (Centers for Disease Control and Prevention 2026).\nFor a number, say what it means in words:\n\n❌ The AUC is 0.83.\n✅ The AUC is 0.83. That is, if we pick one spam email and one non-spam email at random, the model gives the spam email the higher score 83% of the time.\n\nFor a formula, say each symbol’s meaning in words at first use, and then say what the formula does in a sentence:\n\n❌ \\(\\hat\\beta = (X^\\top X)^{-1} X^\\top y\\).\n✅ Let \\(X\\) be the \\(n \\times p\\) matrix of inputs, with linearly independent columns, and let \\(y\\) be the vector of \\(n\\) outcomes. Let \\(X^\\top\\) be the transpose of \\(X\\). The least squares estimate of the coefficients is \\(\\hat\\beta = (X^\\top X)^{-1} X^\\top y\\). In words, \\(\\hat\\beta\\) is the coefficient vector that makes the sum of squared prediction errors on the training data as small as possible.\n\nThe Mathematical notation chapter has more rules for notation."
   },
   {
     "objectID": "chapters/inclusive-writing.html#use-examples-that-every-reader-knows",
     "href": "chapters/inclusive-writing.html#use-examples-that-every-reader-knows",
     "title": "Writing for every reader",
-    "section": "10 Use examples that every reader knows",
-    "text": "10 Use examples that every reader knows\nChoose examples that do not need a particular culture, country, sport or hobby to understand. GitHub Docs says to “Use examples that are generic and can be understood by most people” and to “Avoid examples that are controversial or culturally specific to a group” (GitHub 2026b).\n\n❌ Predict a quarterback’s passer rating from his completion percentage.\n✅ Predict whether an email is spam from the words it contains.\n\nThe first example needs knowledge of American football before the reader can think about the statistics. It also assumes the player is a man. GitHub Docs also says to “Avoid gender-specific words” (GitHub 2026b). Use “they” for a person whose gender you do not know:\n\n❌ Each student submits his code by Friday.\n✅ Each student submits their code by Friday."
+    "section": "11 Use examples that every reader knows",
+    "text": "11 Use examples that every reader knows\nChoose examples that do not need a particular culture, country, sport or hobby to understand. GitHub Docs says to “Use examples that are generic and can be understood by most people” and to “Avoid examples that are controversial or culturally specific to a group” (GitHub 2026b).\n\n❌ Predict a quarterback’s passer rating from his completion percentage.\n✅ Predict whether an email is spam from the words it contains.\n\nThe first example needs knowledge of American football before the reader can think about the statistics. It also assumes the player is a man. GitHub Docs also says to “Avoid gender-specific words” (GitHub 2026b). Use “they” for a person whose gender you do not know:\n\n❌ Each student submits his code by Friday.\n✅ Each student submits their code by Friday."
   },
   {
     "objectID": "chapters/inclusive-writing.html#keep-a-predictable-structure",
     "href": "chapters/inclusive-writing.html#keep-a-predictable-structure",
     "title": "Writing for every reader",
-    "section": "11 Keep a predictable structure",
-    "text": "11 Keep a predictable structure\nReaders find text easier to follow when each part has one purpose, and when parts of the same kind always look the same. The W3C guidance says to “Keep paragraphs short. Have only one topic in each paragraph”, to “Try to have the aim of the paragraph or chunk at the beginning”, and to “Use bulleted or numbered lists” and “short descriptive headings” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Keep Text Succinct). It also recommends a short summary at the start of a long document (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Provide Summary of Long Documents and Media). In course materials, the same advice applies across pages: the Cornell Center for Teaching Innovation suggests “a predictable weekly structure and consistent layout” (Cornell University Center for Teaching Innovation 2026).\n\n❌ A paragraph that starts with the history of the method, moves on to its assumptions, and states its main use in the last sentence.\n✅ A paragraph that starts with “Use cross-validation to choose a tuning parameter”, and then explains how.\n\nPut lists in bullet points and the Paper organization chapter cover lists and headings in more detail."
+    "section": "12 Keep a predictable structure",
+    "text": "12 Keep a predictable structure\nReaders find text easier to follow when each part has one purpose, and when parts of the same kind always look the same. The W3C guidance says to “Keep paragraphs short. Have only one topic in each paragraph”, to “Try to have the aim of the paragraph or chunk at the beginning”, and to “Use bulleted or numbered lists” and “short descriptive headings” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Keep Text Succinct). It also recommends a short summary at the start of a long document (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021, Provide Summary of Long Documents and Media). In course materials, the same advice applies across pages: the Cornell Center for Teaching Innovation suggests “a predictable weekly structure and consistent layout” (Cornell University Center for Teaching Innovation 2026).\n\n❌ A paragraph that starts with the history of the method, moves on to its assumptions, and states its main use in the last sentence.\n✅ A paragraph that starts with “Use cross-validation to choose a tuning parameter”, and then explains how.\n\nPut lists in bullet points and the Paper organization chapter cover lists and headings in more detail."
   },
   {
     "objectID": "chapters/inclusive-writing.html#present-ideas-in-more-than-one-form",
     "href": "chapters/inclusive-writing.html#present-ideas-in-more-than-one-form",
     "title": "Writing for every reader",
-    "section": "12 Present ideas in more than one form",
-    "text": "12 Present ideas in more than one form\nReaders differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” (Cornell University Center for Teaching Innovation 2026). For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.\n\n❌ A slide that gives only the formula for \\(k\\)-fold cross-validation.\n✅ A slide that gives the formula, a figure of the data split into \\(k\\) folds, and one sentence saying what the formula averages.\n\nEach figure also needs a caption and alt text, so that a reader who cannot see it gets the same information."
+    "section": "13 Present ideas in more than one form",
+    "text": "13 Present ideas in more than one form\nReaders differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” (Cornell University Center for Teaching Innovation 2026). For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.\n\n❌ A slide that gives only the formula for \\(k\\)-fold cross-validation.\n✅ A slide that gives the formula, a figure of the data split into \\(k\\) folds, and one sentence saying what the formula averages.\n\nEach figure also needs a caption and alt text, so that a reader who cannot see it gets the same information."
   },
   {
     "objectID": "chapters/inclusive-writing.html#test-your-writing-with-a-reader",
     "href": "chapters/inclusive-writing.html#test-your-writing-with-a-reader",
     "title": "Writing for every reader",
-    "section": "13 Test your writing with a reader",
-    "text": "13 Test your writing with a reader\nYou cannot judge your own writing from the reader’s side, because you already know what you meant. The W3C guidance ends with “Test with real users!” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021). The plain language guidelines describe paraphrase testing: ask a reader to explain the text in their own words, and compare their version with what you meant (Plain Language Action and Information Network 2026, Paraphrase testing).\n\n❌ Reread your lecture notes yourself, and decide they are clear.\n✅ Ask a student to explain a paragraph back to you. Where their version differs from what you meant, rewrite that paragraph."
+    "section": "14 Test your writing with a reader",
+    "text": "14 Test your writing with a reader\nYou cannot judge your own writing from the reader’s side, because you already know what you meant. The W3C guidance ends with “Test with real users!” (W3C Cognitive and Learning Disabilities Accessibility Task Force 2021). The plain language guidelines describe paraphrase testing: ask a reader to explain the text in their own words, and compare their version with what you meant (Plain Language Action and Information Network 2026, Paraphrase testing).\n\n❌ Reread your lecture notes yourself, and decide they are clear.\n✅ Ask a student to explain a paragraph back to you. Where their version differs from what you meant, rewrite that paragraph."
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#use-literal-language",
@@ -595,67 +602,74 @@
     "text": "4 Spell out abbreviations"
   },
   {
+    "objectID": "chapters/inclusive-writing-slides.html#introduce-shorthand-before-using-it",
+    "href": "chapters/inclusive-writing-slides.html#introduce-shorthand-before-using-it",
+    "title": "Writing for every reader",
+    "section": "5 Introduce shorthand before using it",
+    "text": "5 Introduce shorthand before using it"
+  },
+  {
     "objectID": "chapters/inclusive-writing-slides.html#write-positive-statements",
     "href": "chapters/inclusive-writing-slides.html#write-positive-statements",
     "title": "Writing for every reader",
-    "section": "5 Write positive statements",
-    "text": "5 Write positive statements"
+    "section": "6 Write positive statements",
+    "text": "6 Write positive statements"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#rewrite-noun-strings-and-hidden-verbs",
     "href": "chapters/inclusive-writing-slides.html#rewrite-noun-strings-and-hidden-verbs",
     "title": "Writing for every reader",
-    "section": "6 Rewrite noun strings and hidden verbs",
-    "text": "6 Rewrite noun strings and hidden verbs"
+    "section": "7 Rewrite noun strings and hidden verbs",
+    "text": "7 Rewrite noun strings and hidden verbs"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#put-one-idea-in-each-sentence",
     "href": "chapters/inclusive-writing-slides.html#put-one-idea-in-each-sentence",
     "title": "Writing for every reader",
-    "section": "7 Put one idea in each sentence",
-    "text": "7 Put one idea in each sentence"
+    "section": "8 Put one idea in each sentence",
+    "text": "8 Put one idea in each sentence"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#state-every-step-and-every-point",
     "href": "chapters/inclusive-writing-slides.html#state-every-step-and-every-point",
     "title": "Writing for every reader",
-    "section": "8 State every step and every point",
-    "text": "8 State every step and every point"
+    "section": "9 State every step and every point",
+    "text": "9 State every step and every point"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#say-what-numbers-and-symbols-mean",
     "href": "chapters/inclusive-writing-slides.html#say-what-numbers-and-symbols-mean",
     "title": "Writing for every reader",
-    "section": "9 Say what numbers and symbols mean",
-    "text": "9 Say what numbers and symbols mean"
+    "section": "10 Say what numbers and symbols mean",
+    "text": "10 Say what numbers and symbols mean"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#use-examples-that-every-reader-knows",
     "href": "chapters/inclusive-writing-slides.html#use-examples-that-every-reader-knows",
     "title": "Writing for every reader",
-    "section": "10 Use examples that every reader knows",
-    "text": "10 Use examples that every reader knows"
+    "section": "11 Use examples that every reader knows",
+    "text": "11 Use examples that every reader knows"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#keep-a-predictable-structure",
     "href": "chapters/inclusive-writing-slides.html#keep-a-predictable-structure",
     "title": "Writing for every reader",
-    "section": "11 Keep a predictable structure",
-    "text": "11 Keep a predictable structure"
+    "section": "12 Keep a predictable structure",
+    "text": "12 Keep a predictable structure"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#present-ideas-in-more-than-one-form",
     "href": "chapters/inclusive-writing-slides.html#present-ideas-in-more-than-one-form",
     "title": "Writing for every reader",
-    "section": "12 Present ideas in more than one form",
-    "text": "12 Present ideas in more than one form"
+    "section": "13 Present ideas in more than one form",
+    "text": "13 Present ideas in more than one form"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#test-your-writing-with-a-reader",
     "href": "chapters/inclusive-writing-slides.html#test-your-writing-with-a-reader",
     "title": "Writing for every reader",
-    "section": "13 Test your writing with a reader",
-    "text": "13 Test your writing with a reader"
+    "section": "14 Test your writing with a reader",
+    "text": "14 Test your writing with a reader"
   },
   {
     "objectID": "chapters/inclusive-writing-slides.html#references",
