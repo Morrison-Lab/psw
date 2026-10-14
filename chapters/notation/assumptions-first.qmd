@@ -6,10 +6,12 @@ A first-time reader may not realize the line was incomplete,
 and may conclude that the step is wrong or unjustified.
 
 This covers every kind of condition:
-a restriction on a variable ("for $x \neq 2$"),
-a hypothesis of a theorem,
-a case split,
-and a fact that a step relies on.
+
+- a restriction on a variable ("for $x \neq 2$");
+- a hypothesis of a theorem;
+- a case split;
+- a fact that a step relies on.
+
 Introduce the variable and its constraint together,
 as in "let $x \neq 2$",
 then write the steps that need the constraint.
