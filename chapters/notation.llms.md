@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:49:34 (PDT)
+Last modified: 2026-10-14 02:26:37 (PDT)
 
 > **NOTE:**
 >
@@ -181,6 +181,10 @@ Use the notation to match:
 - Write \\\mu\\, or “the mean function”, for the function itself.
 - Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
 - Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
+
+In machine learning notes, the prediction function is \\h\\, and its value at the \\i\\-th observed input is the **fitted value**. Define it once as \\\hat{y}\_i = h(x_i)\\, then print \\\hat{y}\_i\\, not \\h(x_i)\\, wherever the fitted value appears in a loss, a residual or a risk sum. Keep \\h(x)\\ where \\h\\ itself is the subject, as in “the linear function \\h(x) = \beta_0 + \beta_x x\\”, and where the output is not a prediction of \\y_i\\, such as the decision score of a support vector machine or a vector of class probabilities.
+
+In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
 
 ## 5 Matching names and notation
 
