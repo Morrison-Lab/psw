@@ -43,6 +43,13 @@ Follow its link for the reasons and the exceptions.
 - [Write out notational shorthands](notation.qmd#writing-out-notational-shorthands),
   such as the limits of a sum.
 
+- [Put words between formulas, and start a sentence with a word](mathematical-writing.qmd#keep-formulas-inside-sentences),
+  not a symbol.
+- [Introduce a theorem with a complete sentence](mathematical-writing.qmd#introduce-a-theorem-with-a-sentence),
+  and state it so that it stands alone.
+- [Spell out a number used as an adjective](mathematical-writing.qmd#write-numbers-according-to-how-they-are-used),
+  and write the numeral for a number used as a name.
+
 ## Claims and evidence
 
 - [Support every claim](citations-evidence.qmd#why-claims-need-support)

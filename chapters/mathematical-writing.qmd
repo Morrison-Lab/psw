@@ -1,0 +1,172 @@
+---
+title: "Writing mathematics in sentences"
+format:
+  html: default
+  revealjs:
+    output-file: mathematical-writing-slides.html
+  pdf:
+    output-file: mathematical-writing-handout.pdf
+  docx:
+    output-file: mathematical-writing.docx
+---
+
+{{< include _copilot-disclaimer.qmd >}}
+
+A mathematical paper is made of sentences, and the formulas are part of the sentences.
+This chapter collects rules for fitting formulas into prose.
+It draws on the lecture notes of a Stanford course on mathematical writing
+[@knuth1987mathematical].
+This chapter selects the rules that bear most on formulas.
+Several of the course's other rules appear in other chapters,
+and @tbl-knuth-elsewhere points to them.
+The notes also cover spelling, punctuation and refereeing, which this book does not.
+
+## Keep formulas inside sentences
+
+Readers meet a formula as part of a sentence,
+so the words around it decide whether the formula can be read.
+
+### Separate formulas with words
+
+Put words between two formulas.
+Without them, the reader cannot tell where one formula ends and the next begins.
+
+::: {#exm-separate-formulas}
+
+## Separating two formulas
+
+> ❌ Consider $S_q$, $q < p$.
+>
+> ✅ Consider $S_q$, where $q < p$.
+
+In the ❌ version the comma between the two formulas reads as part of the first one.
+The ✅ version names the relation between them.
+
+:::
+
+### Do not start a sentence with a symbol
+
+A sentence that starts with a symbol is hard to see as a new sentence,
+because the formula runs on from the period before it.
+Start with a word, such as the name of the object.
+
+::: {#exm-symbol-first}
+
+## Starting a sentence with a word
+
+> ❌ $x^n - a$ has $n$ distinct zeros.
+>
+> ✅ The polynomial $x^n - a$ has $n$ distinct zeros.
+
+:::
+
+### Write logical symbols as words
+
+In prose, write "implies", "for every" and "there exists",
+not $\Rightarrow$, $\forall$ and $\exists$.
+The same goes for the symbols for "therefore" and "such that".
+Keep the symbols in a work on logic.
+
+### Test the sentence with the formulas removed
+
+Many readers skim past the formulas on a first reading.
+Replace each formula by a placeholder such as "blah".
+If the sentence no longer reads smoothly,
+rewrite it.
+
+### Tie formulas together with commentary
+
+A list of formulas with no words between them is the style of a homework paper.
+Say what each step does and why the next one follows.
+A sentence such as "Since $C$ is nonempty, it contains some vector $c$" tells the reader
+where the argument is going, and the bare formula does not.
+
+## Introduce a theorem with a sentence
+
+The line before a theorem, lemma or algorithm should be a complete sentence,
+or end with a colon.
+Do not let a heading such as "Theorem" finish a sentence that began above it.
+
+::: {#exm-introduce-theorem}
+
+## Introducing a theorem
+
+> ❌ We now have the following
+> **Theorem.** $H(x)$ is continuous.
+>
+> ✅ We can now prove the following result.
+> **Theorem.** The function $H(x)$ defined in equation (5) is continuous.
+
+The ❌ version breaks a sentence across the theorem and starts the theorem with a symbol.
+The ✅ version uses a complete sentence, and the theorem names its object.
+
+:::
+
+Write the statement of a theorem so that it stands alone.
+A reader who jumps to the theorem should not need the assumptions in the paragraph before it,
+so repeat them in the statement.
+
+## Display and number the formulas that matter
+
+Put each important formula on a line by itself.
+Number the important ones, even if you do not refer to them,
+because a reader may want to refer to them later.
+Quarto's [equation cross-references](https://quarto.org/docs/authoring/cross-references.html#equations)
+number a display and let you link to it.
+
+## Write numbers according to how they are used
+
+Spell out a small number when it is an adjective:
+"the method needs two passes".
+Write the numeral when the number is a name or a value:
+"Method 2 needs 17 passes", "the count increased by 2".
+Capitalize the name of a numbered result, as in "Theorem 1" and "Lemma 2".
+
+## Keep subscripts under control
+
+Do not name the elements of a set unless you need to.
+If you write "Let $X = \{x_1, \dots, x_n\}$",
+you will need $x_{i_1}, \dots, x_{i_m}$ as soon as you take a subset of $X$.
+A subscript on a subscript is hard to read.
+Write "an element $x$ of $X$" instead,
+and refer to $x$ and $y$ for two elements.
+Use $x_1$ and $x_2$ only when you need two specified elements.
+
+## Choose the voice and the person
+
+Use "we" to mean the author and the reader together,
+as in "we can now prove".
+Write "we", not the passive "the following result can now be proved".
+Avoid "I" unless the author's persona is relevant.
+
+Write "assume that $A$ is a group", not "assume $A$ is a group".
+The word "that" helps the reader parse the sentence.
+Do not write "we have that $x = y$"; write "we have $x = y$".
+
+## Choose the proof that fits the claim
+
+Do not use proof by contradiction where a direct proof will do.
+The course's worked example proves a lemma both ways.
+The direct proof is shorter,
+and it does not assume that the entries are integers or restate their ordering.
+
+## Rules that other chapters cover
+
+@tbl-knuth-elsewhere lists the course's other rules and where this book discusses them.
+
+:::{#tbl-knuth-elsewhere}
+
+Rule | Where it appears
+---- | ----------------
+Define every variable when you introduce it | [Defining terms](defining-terms.qmd#guidelines-for-defining-terms)
+Use one notation for one thing, and one thing for each notation | [Mathematical notation](notation.qmd#matching-names-and-notation)
+Motivate a result before you derive it | [Show why you need a result before you derive it](notation.qmd#show-why-you-need-a-result-before-you-derive-it)
+Avoid strings of nouns used as adjectives | [Rewrite noun strings and hidden verbs](inclusive-writing.qmd#rewrite-noun-strings-and-hidden-verbs)
+Avoid unnecessary jargon | [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)
+Write sentences that can be read from left to right without ambiguity | [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences)
+Use "that" instead of "which" in a restrictive clause | [Relative pronouns](grammar.qmd#relative-pronouns)
+Do not praise your own work | [Tone](avoid-cliches.qmd#tone)
+
+Rules from the course that other chapters of this book cover
+
+:::

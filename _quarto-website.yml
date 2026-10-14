@@ -41,6 +41,8 @@ website:
             href: chapters/defining-terms.qmd
           - text: "Mathematical notation"
             href: chapters/notation.qmd
+          - text: "Writing mathematics in sentences"
+            href: chapters/mathematical-writing.qmd
           - text: "Citations and evidence"
             href: chapters/citations-evidence.qmd
           - text: "Paper organization"
