@@ -126,9 +126,9 @@ or a cost function that the text defines as a term.
 >
 > ✅ Continuity gives us the intermediate value theorem.
 
-> ❌ A flexible model buys lower bias but costs higher variance.
+> ❌ The penalty costs us a little flexibility at the ends of the curve.
 >
-> ✅ A flexible model has lower bias but higher variance.
+> ✅ The penalty reduces the curve's flexibility a little at its ends.
 
 Some single words cause a different problem.
 Words such as "obviously", "clearly" and "trivially"
