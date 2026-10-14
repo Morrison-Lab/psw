@@ -35,9 +35,9 @@ Without them, the reader cannot tell where one formula ends and the next begins.
 
 ## Separating two formulas
 
-> ❌ Consider $S_q$, $q < p$.
+> ❌ Define $f_k$, $k \ge 2$.
 >
-> ✅ Consider $S_q$, where $q < p$.
+> ✅ Define $f_k$, where $k \ge 2$.
 
 In the ❌ version the comma between the two formulas reads as part of the first one.
 The ✅ version names the relation between them.
@@ -54,9 +54,9 @@ Start with a word, such as the name of the object.
 
 ## Starting a sentence with a word
 
-> ❌ $x^n - a$ has $n$ distinct zeros.
+> ❌ $t^2 - 5$ has two real roots.
 >
-> ✅ The polynomial $x^n - a$ has $n$ distinct zeros.
+> ✅ The polynomial $t^2 - 5$ has two real roots.
 
 :::
 
@@ -91,11 +91,11 @@ Do not let a heading such as "Theorem" finish a sentence that began above it.
 
 ## Introducing a theorem
 
-> ❌ We now have the following
-> **Theorem.** $H(x)$ is continuous.
+> ❌ This gives the following
+> **Theorem.** $G(x)$ is increasing.
 >
 > ✅ We can now prove the following result.
-> **Theorem.** The function $H(x)$ defined in equation (5) is continuous.
+> **Theorem.** The function $G(x)$ defined in equation (3) is increasing.
 
 The ❌ version breaks a sentence across the theorem and starts the theorem with a symbol.
 The ✅ version uses a complete sentence, and the theorem names its object.
@@ -117,9 +117,9 @@ number a display and let you link to it.
 ## Write numbers according to how they are used
 
 Spell out a small number when it is an adjective:
-"the method needs two passes".
+"the proof uses three lemmas".
 Write the numeral when the number is a name or a value:
-"Method 2 needs 17 passes", "the count increased by 2".
+"Lemma 3 is used 12 times", "the total rose by 4".
 Capitalize the name of a numbered result, as in "Theorem 1" and "Lemma 2".
 
 ## Keep subscripts under control
@@ -139,9 +139,9 @@ as in "we can now prove".
 Write "we", not the passive "the following result can now be proved".
 Avoid "I" unless the author's persona is relevant.
 
-Write "assume that $A$ is a group", not "assume $A$ is a group".
+Write "assume that $G$ is finite", not "assume $G$ is finite".
 The word "that" helps the reader parse the sentence.
-Do not write "we have that $x = y$"; write "we have $x = y$".
+Do not write "we have that $y = z$"; write "we have $y = z$".
 
 ## Choose the proof that fits the claim
 
