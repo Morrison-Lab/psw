@@ -189,6 +189,20 @@ Follow these principles when introducing new terms:
 - **Define terms at first use:**
   Place the definition immediately before or after the term's first appearance.
 
+- **Give every key term a formal definition in a `#def-` div:**
+  A term that the document relies on needs its own definition div,
+  even if an exercise, a solution, an example or a sentence of prose
+  has already explained it.
+  An explanation inside an exercise or solution cannot be linked to as a definition,
+  and a student who skips the exercise never sees it.
+  Find the gaps by listing the terms the document uses,
+  such as the bolded phrases and the terms in section titles,
+  and checking that each one has a `#def-` div, or a link to the page that has.
+  For example, if "loss function" first appears in an exercise
+  that asks students to compute one,
+  add a `#def-loss-function` div before the exercise,
+  and link the exercise's mentions to it.
+
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
