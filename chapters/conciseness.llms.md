@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-13 16:39:58 (PDT)
+Last modified: 2026-10-13 17:50:10 (PDT)
 
 > **NOTE:**
 >
@@ -19,7 +19,7 @@ Concise writing conveys ideas efficiently, using only the words necessary to com
   - “due to the fact that” → “because”
   - “at this point in time” → “now”
   - “a large number of” → “many”
-- Use active voice instead of passive where appropriate
+- Use the active voice (see [Write in the active voice](#write-in-the-active-voice))
   - “The experiment was conducted by the researchers” → “The researchers conducted the experiment”
 - Eliminate unnecessary qualifiers
   - “very”, “really”, “quite” often add little meaning
@@ -30,7 +30,30 @@ Concise writing conveys ideas efficiently, using only the words necessary to com
 
 Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity.
 
-## 2 Lead with the subject
+## 2 Write in the active voice
+
+Use the [active voice](../chapters/defining-terms.llms.md#def-active-voice) unless you have a specific reason to use the passive. An active sentence names who did what, and it is usually shorter. A passive sentence can hide the actor, and the reader then has to guess who made the choice.
+
+Choose the actor by who did the work:
+
+- Use “I” for what the author did, such as a choice the author made or a step in the author’s analysis. With several authors, use “we”.
+- Use “we” when the author and the reader work through an argument together, as in “we now compute the gradient”.
+
+> ❌ The minimum was found exactly, and the model was chosen by eye.
+>
+> ✅ We found the minimum exactly, and we chose the model by eye. (The author and reader work through the example together.)
+>
+> ✅ I chose the model by eye, because the study had five points. (A single author reports a choice.)
+
+Passive voice is the right choice in a few cases:
+
+- The actor is unknown or does not matter, as in “The samples were contaminated.”
+- The receiver of the action is the topic of the paragraph, and the sentence is easier to follow with it as the subject.
+- The actor would be a vague “someone” or “one”, and no real person or group acts.
+
+When none of these applies, rewrite the sentence with an active verb.
+
+## 3 Lead with the subject
 
 Start a sentence with its subject, not a dependent clause or a fronted phrase. A leading clause makes the reader hold a condition before knowing what it conditions.
 
@@ -44,7 +67,7 @@ A fronted phrase delays the subject in the same way. Move a phrase such as “in
 >
 > ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
-## 3 Limit complex sentence structures
+## 4 Limit complex sentence structures
 
 A sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (*and*, *but*, *or*) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.
 
@@ -60,7 +83,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 4 Do not rule out readings no reader would make
+## 5 Do not rule out readings no reader would make
 
 A definition says what a term means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
 
@@ -78,7 +101,7 @@ Keep a disclaimer when the confusion is real. For example, if “CI” could mea
 
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
-## 5 Avoid double negatives
+## 6 Avoid double negatives
 
 A double negative states a claim by denying its opposite, as in these phrases:
 
@@ -102,7 +125,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-## 6 Write about the subject, not about the text
+## 7 Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject. They do one of these things:
 
@@ -130,7 +153,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 7 Put lists in bullet points
+## 8 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -184,7 +207,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 8 Examples of concise writing
+## 9 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
