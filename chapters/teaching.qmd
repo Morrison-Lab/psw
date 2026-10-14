@@ -260,6 +260,28 @@ in every course and every teaching repository.
   as is indexing a matrix or a vector.
   The rule is about selecting, filtering and building data frames.
 
+## Include code from files instead of copying it
+
+This rule applies to code that appears in more than one place in teaching materials.
+
+- When the same code appears in several pages, or in a page and a script,
+  keep one source file and include it where it is shown.
+  A copy in each place drifts when one copy is fixed and the others are not
+  (see [Reuse one written version of each result](#reuse-one-written-version-of-each-result)).
+- Code that the page runs should be an executed chunk, as above.
+  For code that is displayed but not executed on the page,
+  such as a standalone script or a configuration file,
+  Quarto's [include-code-files](https://github.com/quarto-ext/include-code-files) extension
+  fills a code block from a file.
+  Add `filters: [include-code-files]` to the front matter,
+  then write a code block with an `include` attribute,
+  such as `` ```{.python include="script.py"} ``.
+- The extension also takes `start-line` and `end-line`, to show part of a file.
+  Prefer a range that names the lines you want over a copy of those lines.
+- The extension is a new dependency of the site:
+  install it with `quarto add quarto-ext/include-code-files`,
+  and commit the `_extensions` directory it creates.
+
 ## Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials,
