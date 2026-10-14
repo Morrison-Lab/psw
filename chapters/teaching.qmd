@@ -178,6 +178,58 @@ This rule applies to all teaching materials, in every course and every teaching 
   as [Figures and tables](paper-organization.qmd#figures-and-tables) describes.
 - Make each figure follow the accessibility rules below.
 
+## Follow every example with an exercise and solution
+
+Reading a worked example is passive.
+A reader who has just seen one method applied
+learns more by applying it to a new case than by reading a second example.
+So each example gets a practice exercise, with its solution, right after it.
+
+- After every `#exm-` div, add an `#exr-` div that asks the reader
+  to do the same thing for a different case,
+  followed by its `#sol-` div.
+  The exercise changes the data, the function or the question,
+  so the solution is not a copy of the example.
+- The full sequence for a new idea is therefore:
+  the exercise that poses the question and its solution,
+  the definition or theorem,
+  an example,
+  and a practice exercise with its solution.
+- More generally, give readers an opportunity to think at every stage:
+  a question they can answer before the next paragraph, a calculation to try,
+  a prediction to make before the code runs.
+- A counterexample (see [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms))
+  can stand in for the practice exercise
+  when the exercise would be "decide whether this case fits the definition".
+- Give the practice exercise its own slug and follow the numbering and slide-break rules above.
+
+::: {#exm-practice-after-example}
+
+## An example followed by a practice exercise
+
+> ✅
+>
+> ```markdown
+> ::: {#exm-sample-mean}
+> (the sample mean of one variable in a real dataset, computed by a code chunk)
+> :::
+>
+> ::: {#exr-sample-mean-new-variable}
+> Compute the sample mean of a different variable in the same dataset.
+> :::
+>
+> ::: {#sol-sample-mean-new-variable}
+> (the code chunk and its output)
+> :::
+> ```
+
+The example shows the method once.
+The exercise asks the reader to repeat it on a new variable
+before moving on, and the solution's numbers still come from running code
+(see [Use real data and compute every number](#use-real-data-and-compute-every-number)).
+
+:::
+
 ## Write labs for both languages and any computer
 
 These rules apply to all teaching materials,
