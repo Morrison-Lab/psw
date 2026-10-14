@@ -244,7 +244,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-14 02:10:10 (PDT)</p>
+  <p class="date">Last modified: 2026-10-14 02:20:59 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -459,7 +459,8 @@
 <li>Write <span class="math inline">\(\mu(x)\)</span> with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function <span class="math inline">\(\mu(x)\)</span>” or <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>, and say “evaluated at” when you substitute a point into it.</li>
 <li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
 </ul>
-<p>In machine learning notes, the prediction function is <span class="math inline">\(h\)</span>, and its value at the <span class="math inline">\(i\)</span>-th observed input is the <strong>fitted value</strong>. Define it once as <span class="math inline">\(\hat{y}_i = h(x_i)\)</span>, then write <span class="math inline">\(\hat{y}_i\)</span>, not <span class="math inline">\(h(x_i)\)</span>, wherever the fitted value appears in a loss, a residual or a risk sum: <span class="math inline">\(L(y_i, \hat{y}_i)\)</span> and <span class="math inline">\(y_i - \hat{y}_i\)</span>, not <span class="math inline">\(L(y_i, h(x_i))\)</span> and <span class="math inline">\(y_i - h(x_i)\)</span>. Keep <span class="math inline">\(h(x)\)</span> where <span class="math inline">\(h\)</span> itself is the subject, as in “the linear function <span class="math inline">\(h(x) = \beta_0 + \beta_x x\)</span>”, and where the output is not a prediction of <span class="math inline">\(y_i\)</span>, such as an SVM decision score or a vector of class probabilities. In the lab’s macros, <code>\hy</code> prints <span class="math inline">\(\hat{y}\)</span>.</p>
+<p>In machine learning notes, the prediction function is <span class="math inline">\(h\)</span>, and its value at the <span class="math inline">\(i\)</span>-th observed input is the <strong>fitted value</strong>. Define it once as <span class="math inline">\(\hat{y}_i = h(x_i)\)</span>, then print <span class="math inline">\(\hat{y}_i\)</span>, not <span class="math inline">\(h(x_i)\)</span>, wherever the fitted value appears in a loss, a residual or a risk sum. Keep <span class="math inline">\(h(x)\)</span> where <span class="math inline">\(h\)</span> itself is the subject, as in “the linear function <span class="math inline">\(h(x) = \beta_0 + \beta_x x\)</span>”, and where the output is not a prediction of <span class="math inline">\(y_i\)</span>, such as the decision score of a support vector machine or a vector of class probabilities.</p>
+<p>In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, <code>\eoutvar</code> (see <a href="#/using-shared-macros">Using shared macros</a>), and a document without them may write <code>\hat{y}</code>.</p>
 </section>
 <section id="matching-names-and-notation" class="slide level2" data-number="5">
 <h2><span class="header-section-number">5</span> Matching names and notation</h2>
