@@ -27,7 +27,7 @@ do so.
   - "at this point in time" → "now"
   - "a large number of" → "many"
   
-- Use active voice instead of passive where appropriate
+- Use the active voice (see [Write in the active voice](#write-in-the-active-voice))
   - "The experiment was conducted by the researchers" → "The researchers conducted the experiment"
   
 - Eliminate unnecessary qualifiers
@@ -40,6 +40,34 @@ do so.
 
 Remember: concise writing is not about making every sentence as short as possible,
 but about removing words that do not contribute to meaning or clarity.
+
+## Write in the active voice
+
+Use the [active voice](defining-terms.qmd#def-active-voice) unless you have a specific reason to use the passive.
+An active sentence names who did what, and it is usually shorter.
+A passive sentence can hide the actor, and the reader then has to guess who made the choice.
+
+Choose the actor by who did the work:
+
+- Use "I" for what the author did, such as a choice the author made or a step in the author's analysis.
+  With several authors, use "we".
+- Use "we" when the author and the reader work through an argument together, as in "we now compute the gradient".
+
+> ❌ The minimum was found exactly, and the model was chosen by eye.
+>
+> ✅ We found the minimum exactly, and we chose the model by eye.
+> (The author and reader work through the example together.)
+>
+> ✅ I chose the model by eye, because the study had five points.
+> (A single author reports a choice.)
+
+Passive voice is the right choice in a few cases:
+
+- The actor is unknown or does not matter, as in "The samples were contaminated."
+- The receiver of the action is the topic of the paragraph, and the sentence is easier to follow with it as the subject.
+- The actor would be a vague "someone" or "one", and no real person or group acts.
+
+When none of these applies, rewrite the sentence with an active verb.
 
 ## Lead with the subject
 
