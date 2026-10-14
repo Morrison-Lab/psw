@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 08:02:01 (PDT)
+Last modified: 2026-10-14 13:15:37 (PDT)
 
 > **NOTE:**
 >
@@ -43,6 +43,20 @@ Table 2: Vague or metaphorical phrases and more precise alternatives
 The precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are [clichés](../chapters/avoid-cliches.llms.md#def-cliche), and [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more of them.
+
+Money words are idioms too when no money is involved. “Costs us”, “buys us” and “at the price of” borrow from commerce to describe a trade-off, and the reader must translate them back. Say what is lost or gained. Keep a literal use: a computational cost, a monetary cost, or a cost function that the text defines as a term.
+
+> ❌ Nesting the cross-validation loop costs another factor of \\K\\ in computing time.
+>
+> ✅ Nesting the cross-validation loop multiplies the computing time by \\K\\.
+
+> ❌ Continuity buys us the intermediate value theorem.
+>
+> ✅ Continuity gives us the intermediate value theorem.
+
+> ❌ The penalty costs us a little flexibility at the ends of the curve.
+>
+> ✅ The penalty reduces the curve’s flexibility a little at its ends.
 
 Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) says when those words are a problem and what to write instead.
 
