@@ -78,7 +78,7 @@ rewrite it.
 
 A list of formulas with no words between them is the style of a homework paper.
 Say what each step does and why the next one follows.
-A sentence such as "Since $C$ is nonempty, it contains some vector $c$" tells the reader
+A sentence such as "Because the set $S$ has an element, we can pick one and call it $s$" tells the reader
 where the argument is going, and the bare formula does not.
 
 ## Introduce a theorem with a sentence
@@ -94,7 +94,7 @@ Do not let a heading such as "Theorem" finish a sentence that began above it.
 > ❌ This gives the following
 > **Theorem.** $G(x)$ is increasing.
 >
-> ✅ We can now prove the following result.
+> ✅ Next we prove a result about monotonicity.
 > **Theorem.** The function $G(x)$ defined in equation (3) is increasing.
 
 The ❌ version breaks a sentence across the theorem and starts the theorem with a symbol.
@@ -136,7 +136,7 @@ Use $x_1$ and $x_2$ only when you need two specified elements.
 
 Use "we" to mean the author and the reader together,
 as in "we can now prove".
-Write "we", not the passive "the following result can now be proved".
+Write "we prove", not the passive "it can be proved".
 Avoid "I" unless the author's persona is relevant.
 
 Write "assume that $G$ is finite", not "assume $G$ is finite".
