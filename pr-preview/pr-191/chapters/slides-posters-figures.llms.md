@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:31:37 (PDT)
+Last modified: 2026-10-14 01:45:19 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -27,7 +27,7 @@ When preparing slides for a lab meeting, conference, qualifying exam, or thesis 
 
 ## 3 Scientific figures
 
-Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
+Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive plotly figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
 A clear figure lets a reader check a result without help from the text. Before you share a figure:
 
