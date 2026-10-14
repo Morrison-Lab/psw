@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-14 03:04:15 (PDT)</p>
+  <p class="date">Last modified: 2026-10-14 03:09:08 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -509,8 +509,21 @@
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Comment every code chunk to say what and why</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Include code from files instead of copying it</h2>
+</section>
+<section class="slide level2">
+
+<p>This rule applies to code that appears in more than one place in teaching materials.</p>
+<ul>
+<li>When the same code appears in several pages, or in a page and a script, keep one source file and include it where it is shown. A copy in each place drifts when one copy is fixed and the others are not (see <a href="#/reuse-one-written-version-of-each-result">Reuse one written version of each result</a>).</li>
+<li>Code that the page runs should be an executed chunk, as above. For code that is displayed but not executed on the page, such as a standalone script or a configuration file, Quarto’s <a href="https://github.com/quarto-ext/include-code-files">include-code-files</a> extension fills a code block from a file. Add <code>filters: [include-code-files]</code> to the front matter, then write a code block with an <code>include</code> attribute, such as <code>```{.python include="script.py"}</code>.</li>
+<li>The extension also takes <code>start-line</code> and <code>end-line</code>, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.</li>
+<li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
+</ul>
+</section>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -522,8 +535,8 @@
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -535,8 +548,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -547,8 +560,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -562,8 +575,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -574,8 +587,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
