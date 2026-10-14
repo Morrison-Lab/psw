@@ -110,6 +110,26 @@ are [clichés](avoid-cliches.qmd#def-cliche),
 and [Overused vocabulary](avoid-cliches.qmd#overused-vocabulary)
 lists more of them.
 
+Money words are idioms too when no money is involved.
+"Costs us", "buys us" and "at the price of" borrow from commerce
+to describe a trade-off, and the reader must translate them back.
+Say what is lost or gained.
+Keep a literal use:
+a computational cost, a monetary cost,
+or a cost function that the text defines as a term.
+
+> ❌ Nesting the cross-validation loop costs another factor of $K$ in computing time.
+>
+> ✅ Nesting the cross-validation loop multiplies the computing time by $K$.
+
+> ❌ Continuity buys us the intermediate value theorem.
+>
+> ✅ Continuity gives us the intermediate value theorem.
+
+> ❌ A flexible model buys lower bias but costs higher variance.
+>
+> ✅ A flexible model has lower bias but higher variance.
+
 Some single words cause a different problem.
 Words such as "obviously", "clearly" and "trivially"
 can assert that a claim needs no support
