@@ -54,6 +54,40 @@ follow these guidelines:
 - [Towards an "#evenbetterposter"](https://mitcommlab.mit.edu/be/2023/09/27/toward-an-evenbetterposter-improving-the-betterposter-template/) -
   the MIT Biological Engineering Communication Lab's improvements to that template
 
+## Show the result in a figure {#sec-show-in-a-figure}
+
+A figure often shows a pattern, an outlier or a comparison
+faster and more reliably than a sentence or a table can describe it.
+So when a result can be drawn, draw it,
+and use the text to point the reader to what the figure shows.
+
+- Show the data before summarizing them.
+  Summary statistics can hide structure that a plot of the data reveals.
+- Put the key result of each section in a figure,
+  and write the section's text around that figure.
+- Make the figure show the comparison the text claims,
+  with the groups, fitted curve or interval on the same axes.
+- Say in the text what to look at in the figure
+  (see [Figures and tables](paper-organization.qmd#figures-and-tables)).
+- Use a table instead when readers need exact values to look up or compute with.
+
+::: {#exm-anscombe}
+
+## Four datasets with the same summaries
+
+@anscombe1973 constructed four small datasets of $(x, y)$ pairs
+([Wikipedia: Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)).
+All four have the same mean of $x$ (9), the same mean of $y$ (7.5),
+the same correlation (0.82 to two decimal places)
+and the same least-squares line, with slope 0.5.
+A table of these summaries cannot tell the datasets apart.
+A scatterplot of each can: one is roughly linear with scatter,
+one follows a smooth curve,
+one is an exact line with a single outlier,
+and one has all but one of its points at the same $x$.
+
+:::
+
 ## Scientific figures {#sec-scientific-figures}
 
 A clear figure lets a reader check a result without help from the text.
