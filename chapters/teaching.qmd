@@ -141,7 +141,6 @@ instead of keeping a second wording that can drift.
   while a reader who has not must hold an abstract description in mind until the data appears.
   If the data are too large to show, show a sample or a summary figure.
   Link later mentions of the dataset back to this first display.
-
 - Never type or paste output.
   The page shows what the code printed when the page was rendered,
   and each number in the prose comes from inline code.
