@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:29:55 (PDT)
+Last modified: 2026-10-14 01:44:13 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -74,6 +74,17 @@ Follow these principles when introducing new terms:
 
 - **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing. Give closely related terms separate divs too: only full synonyms share one (see *Name the synonyms* below). For example, the left and right distributive laws are two properties, each with its own identifier, example and exercise, so define them in two divs. A reader who needs one of them can then link to exactly that one.
 
+  > **NOTE:**
+  > **Example 5 (Splitting two related definitions)**  
+  >
+  > > ❌ **Definition (distributive laws).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ and *on the right* if \\(a + b)c = ac + bc\\.
+  > >
+  > > ✅ **Definition (left distributivity).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ for all \\a\\, \\b\\ and \\c\\.
+  > >
+  > > ✅ **Definition (right distributivity).** Multiplication *distributes over addition on the right* if \\(a + b)c = ac + bc\\ for all \\a\\, \\b\\ and \\c\\.
+  >
+  > The first block cannot be linked to as “left distributivity” without also pointing at the other law, and one example cannot illustrate both. For numbers, right distributivity follows from left distributivity because multiplication commutes, so one example checks both. Matrix multiplication does not commute, so establishing one law does not establish the other, and each needs its own example.
+
 - **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title, as in “Postulate (axiom)”, and bold each where it first appears in the definition. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
 
 - **Distinguish estimands from estimators:** An *estimand* is the quantity a study is after, defined on the population or the data-generating distribution; an *estimator* is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, \\\theta\\ and \\\hat\theta\\). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. Keep that order across the whole document, not only within one definition: the estimand’s definition, with its exercise and example, comes before the estimator’s, and the estimator’s definition links back to it. For example, define the risk of a model, its expected loss on new data, before the empirical risk, its average loss on the training data; define the population mean before the sample mean, and a parameter before its maximum likelihood estimate. Reading the estimator first leaves the reader with a formula and no answer to the question of what it is for. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction \\\hat Y\\ of the true class \\Y\\, and counts \\\text{TP}\\, \\\text{FP}\\, \\\text{FN}\\ and \\\text{TN}\\ from a test set of size \\n\\:
@@ -85,18 +96,6 @@ Follow these principles when introducing new terms:
   | Recall | \\\Pr(\hat Y = 1 \mid Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FN})\\ |
 
   The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
-
-> **NOTE:**
->
-> **Example 5 (Splitting two related definitions)**  
->
-> > ❌ **Definition (distributive laws).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ and *on the right* if \\(a + b)c = ac + bc\\.
-> >
-> > ✅ **Definition (left distributivity).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ for all \\a\\, \\b\\ and \\c\\.
-> >
-> > **Definition (right distributivity).** Multiplication *distributes over addition on the right* if \\(a + b)c = ac + bc\\ for all \\a\\, \\b\\ and \\c\\.
->
-> The first block cannot be linked to as “left distributivity” without also pointing at the other law, and one example cannot illustrate both. For numbers the two laws agree, because multiplication commutes; for matrices the two forms differ, and each needs its own example.
 
 ## 2 Examples of term definitions
 
