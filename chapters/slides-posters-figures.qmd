@@ -56,6 +56,12 @@ follow these guidelines:
 
 ## Scientific figures {#sec-scientific-figures}
 
+Include a figure wherever one helps a reader see a definition, an example, or a result.
+Draw a graph for a relationship between quantities, a diagram for a structure or a process,
+and a plot of the data for a fitted model or an estimate.
+Add figures to new work as you write it, and add them to existing chapters that lack them.
+Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
+
 A clear figure lets a reader check a result without help from the text.
 Before you share a figure:
 
