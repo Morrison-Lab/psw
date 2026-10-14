@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 02:26:37 (PDT)
+Last modified: 2026-10-14 03:04:15 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -45,9 +45,19 @@ For more:
 - Ten Simple Rules for Better Figures ([Rougier et al. 2014](#ref-rougier2014))
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text
 
+## 4 Three-dimensional graphs
+
+A function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
+
+- Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
+- Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
+- Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.
+- An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
+- Give a 3D plot alt text that states what the surface looks like, such as “a bowl with its lowest point at …”.
+
 > **NOTE:**
 >
-> Adapted from the [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual. Several of the resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung.
+> The sections on slide decks, presentation resources and scientific figures are adapted from the [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual. Several of the resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The section on three-dimensional graphs is original to this guide.
 
 Back to top
 
