@@ -60,6 +60,6 @@ such as the decision score of a support vector machine
 or a vector of class probabilities.
 
 In the source, a document that uses the shared macros
-writes the fitted value with the role macro `\fitted`,
-as the section on shared macros asks of decorators,
+writes the fitted value with the macro for a predicted outcome, `\eoutvar`
+(see [Using shared macros](#using-shared-macros)),
 and a document without them may write `\hat{y}`.
