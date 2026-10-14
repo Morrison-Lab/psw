@@ -15,6 +15,19 @@ and understand your findings.
 The structure of your paper should guide readers logically
 from your research question through your methods to your results and conclusions.
 
+## Write to clarify your thinking
+
+Write down a question or an idea as soon as you have it,
+before you search for an answer.
+Writing it down helps you in these ways:
+
+- You see what you need to know.
+- You state the problem more precisely.
+- You often answer the question yourself while writing it.
+
+The computer scientist Leslie Lamport argues that a person
+who thinks without writing only thinks that they are thinking [@lamport2019think].
+
 ## Standard paper structure
 
 Most scientific papers follow the IMRaD structure:
