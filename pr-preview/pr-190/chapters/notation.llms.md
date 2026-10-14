@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:31:08 (PDT)
+Last modified: 2026-10-14 01:45:05 (PDT)
 
 > **NOTE:**
 >
@@ -367,7 +367,14 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
-This covers every kind of condition: a restriction on a variable (“for \\x \neq 2\\”), a hypothesis of a theorem, a case split, and a fact that a step relies on. Introduce the variable and its constraint together, as in “let \\x \neq 2\\”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
+This covers every kind of condition:
+
+- a restriction on a variable (“for \\x \neq 2\\”);
+- a hypothesis of a theorem;
+- a case split;
+- a fact that a step relies on.
+
+Introduce the variable and its constraint together, as in “let \\x \neq 2\\”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
 
 > **NOTE:**
 >
