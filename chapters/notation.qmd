@@ -48,3 +48,7 @@ that make quantitative writing easier to read.
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
+
+## Stating assumptions before using them
+
+{{< include notation/assumptions-first.qmd >}}
