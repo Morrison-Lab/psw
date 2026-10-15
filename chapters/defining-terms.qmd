@@ -234,6 +234,10 @@ Follow these principles when introducing new terms:
   and each is treated exactly as the primary name:
   put all of them in the div title, as in "Postulate (axiom)",
   and bold each where it first appears in the definition.
+  This covers the names other sources use, such as a textbook's,
+  which belong in the title and in bold too,
+  as in "Risk (expected loss, population risk, true risk,
+  generalization error, expected prediction error)".
   Say which one the document uses.
   Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
