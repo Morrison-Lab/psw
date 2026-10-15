@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 00:56:17 (PDT)
+Last modified: 2026-10-15 12:42:12 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -34,6 +34,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Label the x-axis and y-axis clearly.
 - Use panel labels when a figure has several subplots.
 - Include enough tick marks and tick labels.
+- Put the ticks in the original measurement scale of each variable, however the model is parametrized and the axis is spaced. If a fit uses scaled or standardized values, place the ticks at round original values and label them with those, so a horsepower axis reads 50, 100, 150 and 200, not 0 to 1. Report numbers such as an error in the response’s units too.
 - Print tick labels as plain or comma-separated numbers, such as 0.001 or 10,000, not in scientific notation. A logarithmic axis is fine. Only the label format matters, so write 1, 10, 100 and 1,000, not 1e+00 through 1e+03. When the numbers are huge or tiny, rescale the units and say so in the axis title, such as “dollars (millions)”.
 - Use font sizes that are easy to read without dominating the plot.
 - Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
