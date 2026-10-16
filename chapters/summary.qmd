@@ -71,6 +71,8 @@ Follow its link for the reasons and the exceptions.
 
 ## Papers
 
+- [Write to clarify your thinking](paper-organization.qmd#write-to-clarify-your-thinking):
+  write each question or idea down as it comes.
 - [Follow the standard structure](paper-organization.qmd#standard-paper-structure)
   of a research paper.
 - [Organize the Results section](paper-organization.qmd#organizing-the-results-section)
