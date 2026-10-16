@@ -189,6 +189,14 @@ Follow these principles when introducing new terms:
 - **Define terms at first use:**
   Place the definition immediately before or after the term's first appearance.
 
+- **Link every technical term to its formal definition at its first use in each div:**
+  Inside a definition, theorem, example or other div,
+  link a technical term the first time it appears in that div.
+  Outside divs, link it the first time it appears in each prose passage.
+  A link in an earlier div does not carry over,
+  because readers jump into the middle of a page.
+  Link once per div or passage, not at every mention.
+
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
