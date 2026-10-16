@@ -172,35 +172,35 @@
     "href": "chapters/software-text.html",
     "title": "Writing for code review and software",
     "section": "",
-    "text": "Software projects depend on short documents:\nThe readers of these documents are busy and often unfamiliar with the change. The rules in the other chapters apply to these documents too. This chapter lists the general rules that matter most for them and adds a few that belong to software."
+    "text": "Software projects depend on short documents:\nReaders of these documents often arrive without context on the change, so the rules in the other chapters apply to them too. This chapter lists the general rules that matter most here and adds a few that belong to software."
   },
   {
     "objectID": "chapters/software-text.html#apply-the-general-rules",
     "href": "chapters/software-text.html#apply-the-general-rules",
     "title": "Writing for code review and software",
     "section": "1 Apply the general rules",
-    "text": "1 Apply the general rules\n\nWrite in the active voice and name the actor before the action.\nLimit complex sentence structures: write one main idea per sentence and at most one subordinate clause.\nCut filler and prefer plain words (Word choice).\nScan for clichés before you post non-trivial prose. Skip the scan for code, terse status lines, and short replies.\nPut lists in bullet points."
+    "text": "1 Apply the general rules\n\nWrite in the active voice and name the actor before the action.\nLimit complex sentence structures: write one main idea per sentence and avoid piling several subordinate clauses into one.\nCut filler and prefer plain words (Word choice).\nScan for clichés before you post non-trivial prose. Skip the scan for code, terse status lines, and short replies, which are too short to contain a cluster of tells.\nPut lists in bullet points."
   },
   {
     "objectID": "chapters/software-text.html#say-what-changed-and-why",
     "href": "chapters/software-text.html#say-what-changed-and-why",
     "title": "Writing for code review and software",
     "section": "2 Say what changed and why",
-    "text": "2 Say what changed and why\n\nOpen a pull request description with the behavior a reader would see before and after the change.\nExplain the reason for the change in the commit message, not only the content of the diff.\nState what you checked and what you did not.\nLink the issue, the data, or the document that motivates the change."
+    "text": "2 Say what changed and why\n\nOpen a pull request description with the behavior a reader would see before and after the change.\nExplain the reason for the change in the commit message, not only the content of the diff.\nState what you checked and what you did not.\nLink the issue, the data, or the document that motivates the change.\n\n\n❌ Update plotting code.\n✅ Label the y-axis in original units, so the figure no longer shows log-odds."
   },
   {
     "objectID": "chapters/software-text.html#comment-code-sparingly",
     "href": "chapters/software-text.html#comment-code-sparingly",
     "title": "Writing for code review and software",
     "section": "3 Comment code sparingly",
-    "text": "3 Comment code sparingly\n\nWrite a comment that says why the code does what it does, and let the code say what it does.\nKeep each comment to one phrase where one phrase suffices.\nUpdate or delete a comment when the code changes."
+    "text": "3 Comment code sparingly\n\nWrite a comment that says why the code does what it does, and let the code say what it does.\nKeep each comment as short as it can be while still giving the reason.\nUpdate or delete a comment when the code changes."
   },
   {
     "objectID": "chapters/software-text.html#write-release-notes-for-the-user",
     "href": "chapters/software-text.html#write-release-notes-for-the-user",
     "title": "Writing for code review and software",
     "section": "4 Write release notes for the user",
-    "text": "4 Write release notes for the user\n\nDescribe each change by its effect on the user, not by the file that changed.\nPut breaking changes first.\n\n\n\n\n\n\n\nNoteSource\n\n\n\n\n\nThe scope of this chapter, plain prose for all user-facing text, comes from the Writing chapter of the UCD-SERG lab manual."
+    "text": "4 Write release notes for the user\n\nDescribe each change by its effect on the user, not by the file that changed.\nPut breaking changes first, because the user must act on them."
   },
   {
     "objectID": "chapters/paper-organization.html",
@@ -970,7 +970,7 @@
     "href": "chapters/slides-posters-figures.html#sec-3d-graphs",
     "title": "Slides, posters, and figures",
     "section": "4 Three-dimensional graphs",
-    "text": "4 Three-dimensional graphs\nA function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.\n\nUse a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.\nDo not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.\nChoose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.\nAn interactive plot that readers can rotate, such as one made with plotly, helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see Make figures accessible).\nGive a 3D plot alt text that states what the surface looks like, such as “a bowl with its lowest point at …”.\n\n\n\n\n\n\n\nNoteSource\n\n\n\n\n\nThe sections on slide decks, presentation resources and scientific figures are adapted from the Professional Development and Resources chapters of the UCD-SERG lab manual. Several of the resource links began in the Benjamin-Chung Lab Manual by Jade Benjamin-Chung. The guidance on leading with figures, drawing diagrams, directing attention, and showing software is adapted from the Writing chapter of the UCD-SERG lab manual. The section on three-dimensional graphs is original to this guide."
+    "text": "4 Three-dimensional graphs\nA function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.\n\nUse a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.\nDo not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.\nChoose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.\nAn interactive plot that readers can rotate, such as one made with plotly, helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see Make figures accessible).\nGive a 3D plot alt text that states what the surface looks like, such as “a bowl with its lowest point at …”.\n\n\n\n\n\n\n\nNoteSource\n\n\n\n\n\nThe sections on slide decks, presentation resources and scientific figures are adapted from the Professional Development and Resources chapters of the UCD-SERG lab manual. Several of the resource links began in the Benjamin-Chung Lab Manual by Jade Benjamin-Chung. The section on three-dimensional graphs is original to this guide."
   },
   {
     "objectID": "chapters/summary.html",
