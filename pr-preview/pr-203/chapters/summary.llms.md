@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:52:38 (PDT)
+Last modified: 2026-10-16 05:04:50 (PDT)
 
 > **NOTE:**
 >
@@ -61,6 +61,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Organize the Results section](../chapters/paper-organization.llms.md#organizing-the-results-section) to fit the design of the study.
 - [Label variables in plain words](../chapters/paper-organization.llms.md#label-variables-in-plain-words) in figures and tables.
 - [Use descriptive subsection headings](../chapters/paper-organization.llms.md#subsection-headings).
+- [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references): move the content ahead of the sentence that uses it.
 - [Put each link to a video next to the text that it supports](../chapters/paper-organization.llms.md#links-to-videos-and-other-media).
 - Follow the [journal’s conventions for a manuscript](../chapters/manuscript-submission.llms.md), and check the [submission checklist](../chapters/manuscript-submission.llms.md#submission-checklist) before you submit.
 

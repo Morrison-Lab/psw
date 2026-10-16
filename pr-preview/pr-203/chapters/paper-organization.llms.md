@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:52:38 (PDT)
+Last modified: 2026-10-16 05:04:50 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -174,7 +174,40 @@ Use descriptive subsection headings to guide readers through your results. Headi
 
 **Best heading**: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)
 
-## 6 Links to videos and other media
+## 6 Avoid forward references
+
+A forward reference points the reader to content they have not reached yet. Common forms are:
+
+- “as discussed below”
+- “see the next section”
+- “we will return to this later”
+
+The reader must hold an unresolved pointer while reading the sentence that depends on it.
+
+Fix a forward reference by moving the content ahead of the pointer. Then change “below” to “above”, or delete the pointer.
+
+If moving the content would break the order of the argument, keep the pointer, and make it a working link. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.
+
+> **NOTE:**
+>
+> **Example 2 (Removing a forward reference)**  
+>
+> > ❌ The adjusted estimates, discussed in the next section, differ from the crude estimates. The adjustment, described below, uses age and sex.
+> >
+> > ✅ The adjustment uses age and sex. The adjusted estimates differ from the crude estimates.
+>
+> In the ❌ version, both pointers send the reader to content that comes later, so the reader sees “adjusted” before the paper says what was adjusted. In the ✅ version, the sentence that defines the adjustment comes first, so neither pointer is needed.
+
+Two cases are not forward references to fix:
+
+- An overview near the start that previews the structure, such as “Section 2 describes the data, and Section 3 gives the results”. The reader is not meant to resolve the preview immediately.
+- A sentence that names a figure or table placed beside it, such as “Table 2 shows the estimates”. The reader meets the table at once.
+
+A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.
+
+When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.
+
+## 7 Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
 
