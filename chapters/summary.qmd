@@ -37,11 +37,20 @@ Follow its link for the reasons and the exceptions.
 - [Put one equals sign on each line](notation.qmd#one-equals-sign-per-line):
   split a chain such as $a = b = c$ into the rows of an aligned display.
 - [Distinguish a function from its value](notation.qmd#functions-and-their-values).
+- [Distinguish a random variable from its value](notation.qmd#random-variables-and-their-values):
+  $Y_i$ before the data, $y_i$ after.
 - [Use the notation that matches a quantity's name](notation.qmd#matching-names-and-notation),
   and keep the pairing the same everywhere.
 - [Write each symbol through a shared macro](notation.qmd#using-shared-macros).
 - [Write out notational shorthands](notation.qmd#writing-out-notational-shorthands),
   such as the limits of a sum.
+
+- [Put words between formulas, and start a sentence with a word](mathematical-writing.qmd#keep-formulas-inside-sentences),
+  not a symbol.
+- [Introduce a theorem with a complete sentence](mathematical-writing.qmd#introduce-a-theorem-with-a-sentence),
+  and state it so that it stands alone.
+- [Spell out a number used as an adjective](mathematical-writing.qmd#write-numbers-according-to-how-they-are-used),
+  and write the numeral for a number used as a name.
 
 ## Claims and evidence
 
@@ -114,6 +123,8 @@ Follow its link for the reasons and the exceptions.
 - [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences).
 - [Name the object of a relational noun](grammar.qmd#name-the-object-of-a-relational-noun).
 - [Lead with the subject](conciseness.qmd#lead-with-the-subject).
+- [Make every word tell](conciseness.qmd#make-every-word-tell):
+  cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures).
 - [Do not rule out readings that no reader would make](conciseness.qmd#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).

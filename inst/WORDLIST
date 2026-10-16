@@ -1,6 +1,8 @@
+API
 Attenborough
 betterposter
 Bienaymé
+Bioconductor
 Callaway
 Chebyshev
 cliché
@@ -9,7 +11,9 @@ ColorBrewer
 CONSORT
 COREQ
 Cormac
+CRAN
 CRediT
+Crossref
 CSL
 CSV
 DAG
@@ -28,6 +32,7 @@ funder's
 GBM
 generalizability
 ggeffects
+ggplot2
 ggview
 gtsummary
 Hastie
@@ -45,8 +50,10 @@ Kameron
 Lamport
 lds
 lme4
+MAE
 mentees
 MeSH
+MSE
 neurodiverse
 nominalization
 nominalizations
@@ -55,13 +62,18 @@ ORCID
 overfit
 pdf
 plotly
+pMAE
 pmf
+pMSE
 preprint
 preprints
 PRISMA
+pRMSE
 qmd
 qwt
+README
 READMEs
+RMSE
 SAMPL
 Sankey
 Sant'Anna
@@ -71,6 +83,9 @@ shortcode
 sidenotes
 Sizemore
 sjPlot
+sMAE
+sMSE
+sRMSE
 SRQR
 STARD
 Starmer
