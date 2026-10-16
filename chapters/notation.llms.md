@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 01:58:21 (PDT)
+Last modified: 2026-10-16 02:37:52 (PDT)
 
 > **NOTE:**
 >
@@ -239,7 +239,7 @@ The same rule covers these quantities:
 
 A quantity that has a macro keeps the same symbol in every document.
 
-Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`.
+Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`. The only exception is a one-off symbol that fits no semantic category, and the rule for Latin letters below says when that applies.
 
 > **NOTE:**
 >
@@ -277,7 +277,9 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 >
 > Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\reals` changes.
 
-Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:
+Latin letters follow the same rule, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.
+
+Latin letters with a fixed role show the rule. In a regression or prediction model, use these macros:
 
 - `\outvar` for the outcome variable, instead of a bare `y`;
 - `\eoutvar` for a predicted outcome;
