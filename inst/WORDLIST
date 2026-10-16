@@ -1,6 +1,8 @@
+API
 Attenborough
 betterposter
 Bienaymé
+Bioconductor
 Callaway
 Chebyshev
 cliché
@@ -9,7 +11,9 @@ ColorBrewer
 CONSORT
 COREQ
 Cormac
+CRAN
 CRediT
+Crossref
 CSL
 CSV
 DAG
@@ -28,6 +32,7 @@ funder's
 GBM
 generalizability
 ggeffects
+ggplot2
 ggview
 gtsummary
 Hastie
