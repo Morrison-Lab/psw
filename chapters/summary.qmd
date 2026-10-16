@@ -122,7 +122,8 @@ Follow its link for the reasons and the exceptions.
 ## Thinking
 
 - [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
-- [Send a written question that states the goal, what you did, what happened, and what you tried](writing-to-think.qmd#send-a-written-question).
+- [Send a written question that states the goal, what you did, what you expected and what happened, and what you tried](writing-to-think.qmd#send-a-written-question).
+- [Draft the aims, methods, and expected results before you run the analysis](writing-to-think.qmd#keep-writing-as-the-work-grows).
 
 ## Teaching materials
 

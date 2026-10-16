@@ -10,7 +10,7 @@ format:
     output-file: writing-to-think.docx
 ---
 
-Writing is a way to find out what you think, as well as a way to report it.
+Writing helps you find out what you think, as well as report what you already know.
 This chapter adapts the UCD-SERG Lab Manual's section on the topic [@ucdserglabmanual].
 
 ## Write the question down first
@@ -40,8 +40,8 @@ A good written question has four parts:
 - what you expected and what happened instead;
 - what you have already tried.
 
-Writing these parts often settles the question before you send it.
-If it does not, the reader gets what they need to answer it.
+Writing out these four parts often settles the question before you send it.
+When the question stays open, the reader has what they need to answer it.
 
 ## Keep writing as the work grows
 

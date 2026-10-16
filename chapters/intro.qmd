@@ -48,7 +48,7 @@ without knowing what the paper is about.
 
 ## How the book is organized
 
-The chapters fall into four groups:
+The chapters fall into five groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](defining-terms.qmd)
