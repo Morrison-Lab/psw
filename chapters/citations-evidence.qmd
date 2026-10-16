@@ -245,7 +245,7 @@ When citing preprints:
 
 Some sources typically lack the rigor needed for scientific writing:
 
-- Wikipedia and general encyclopedias (though they can be useful starting points for finding primary sources)
+- Wikipedia and general encyclopedias as the only source for a claim (cite them beside the primary source, as [Cite Wikipedia, beside the primary source](#cite-wikipedia-beside-the-primary-source) explains)
 - Popular press articles about scientific findings (cite the original research instead)
 - Blogs and social media posts (unless discussing public discourse or documenting specific claims made in those venues)
 - Predatory or pay-to-publish journals without genuine peer review
@@ -293,7 +293,7 @@ Link these things whenever they appear:
 - a result to the theorem, equation or section that establishes it;
 - a definition, theorem or named method to its
   [Wikipedia](https://www.wikipedia.org/) article, when one exists
-  (see [Link to Wikipedia, but do not cite it](#link-to-wikipedia-but-do-not-cite-it));
+  (see [Cite Wikipedia, beside the primary source](#cite-wikipedia-beside-the-primary-source));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document,
@@ -329,24 +329,24 @@ can now follow the link instead of searching.
 
 :::
 
-## Link to Wikipedia, but do not cite it {#link-to-wikipedia-but-do-not-cite-it}
+## Cite Wikipedia, beside the primary source {#cite-wikipedia-beside-the-primary-source}
 
 Wikipedia is free to every reader,
 and its articles on definitions, theorems and methods are usually reliable enough
 to orient a newcomer.
-So link each definition, theorem or named method to its Wikipedia article whenever one exists:
-the link gives readers a second, free explanation
+So cite the Wikipedia article for each definition, theorem or named method whenever one exists,
+and offer it as further reading:
+the citation gives readers a second, free presentation
 without leaving them to search for it.
 
-Link, however, does not mean cite.
-The link tells the reader where to read more;
-the evidence for a claim still comes from the primary source,
-as [Sources to generally avoid](#sources-to-generally-avoid) explains.
-When you do both, put the Wikipedia link beside the definition
-and the citation beside the claim.
+The Wikipedia citation adds to the traditional reference and never replaces it.
+Put it right after the content it covers, as `([Wikipedia: Title](url))`,
+and keep the primary source's citation beside the claim it supports.
+Where a page ends a section with further reading,
+list the same Wikipedia article there too, next to the textbook chapters.
 
 - Link the article for the specific concept, not a broader article that mentions it.
-- Read the article's definition before linking it,
+- Read the article's definition before citing it,
   because notation and conventions vary,
   and a reader who follows the link should find the same concept you defined.
   If the article's convention differs from yours, say how.
@@ -356,7 +356,7 @@ and the citation beside the claim.
 
 ::: {#exm-link-wikipedia}
 
-## Linking a definition to Wikipedia
+## Citing a definition's Wikipedia article
 
 > ❌ A *Poisson random variable* counts events in a fixed interval.
 >
@@ -364,7 +364,7 @@ and the citation beside the claim.
 > ([Wikipedia: Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)).
 
 A reader who wants another presentation of the Poisson distribution now has one,
-and the definition itself still comes from your own text.
+and the definition itself still comes from your own text and its traditional reference.
 
 :::
 
