@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 16:19:34 (PDT)
+Last modified: 2026-10-16 16:35:08 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -61,6 +61,8 @@ Follow these principles when introducing new terms:
   \\f(x) := \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2}\\\Gamma(k/2)}, \quad x \in (0, \infty),\\
 
   and state as a theorem that, for a positive integer \\k\\, the sum of the squares of \\k\\ independent standard normal random variables has this distribution. The density is defined for every real \\k \> 0\\; the theorem covers only integer \\k\\. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density that later calculations need.
+
+- **Define a term directly, not as a modification of another term:** State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.
 
 - **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
 
