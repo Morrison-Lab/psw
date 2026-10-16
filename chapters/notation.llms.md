@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 02:37:52 (PDT)
+Last modified: 2026-10-16 02:42:44 (PDT)
 
 > **NOTE:**
 >
@@ -325,7 +325,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 ## 7 Making expressions concise
 
-Make each expression as concise as possible. The less clutter an expression has, the easier it is to read.
+Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
 
 Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.
 
