@@ -35,8 +35,8 @@ A written question lets the reader answer without a meeting to recover the conte
 
 A good written question has four parts:
 
-- the goal you are working toward;
-- what you did, with the code, data, or equation you used;
+- the goal that you are working toward;
+- what you did, with the code, data, or equation that you used;
 - what you expected and what happened instead;
 - what you have already tried.
 

@@ -143,5 +143,5 @@ Follow its link for the reasons and the exceptions.
 ## Thinking
 
 - [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
-- [Send a written question, with the context needed to answer it](writing-to-think.qmd#send-a-written-question).
+- [Send a written question that gives the reader the context to answer it](writing-to-think.qmd#send-a-written-question).
 - [Draft the plan before you run the analysis](writing-to-think.qmd#keep-writing-as-the-work-grows).
