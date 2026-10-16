@@ -20,7 +20,7 @@ and write the macro everywhere the chunk appears.
 > ✅ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \prederr_i^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \prederr_i \predvar_i$.`
 
 Both versions print the same quantities.
-The ❌ version writes the difference $\eoutvar_i - \outvar_i$ out twice.
+The ❌ version writes the difference `\eoutvar_i - \outvar_i` out twice.
 The ✅ version names it once, as the prediction error,
 and each formula shows at a glance what it is built from.
 
