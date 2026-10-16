@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:45:33 (PDT)
+Last modified: 2026-10-16 04:53:15 (PDT)
 
 > **NOTE:**
 >
@@ -29,6 +29,8 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Put one equals sign on each line](../chapters/notation.llms.md#one-equals-sign-per-line): split a chain such as \\a = b = c\\ into the rows of an aligned display.
 
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
+
+- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after.
 
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
 
