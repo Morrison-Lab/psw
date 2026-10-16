@@ -35,3 +35,7 @@ that consistently make scientific writing easier to read.
 ## Name the object of a relational noun
 
 {{< include grammar/relational-nouns.qmd >}}
+
+## Appositive fronting
+
+{{< include grammar/appositive-fronting.qmd >}}
