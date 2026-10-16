@@ -50,6 +50,17 @@ This chapter lists the general rules that matter most here and adds a few that b
 - Keep each comment as short as it can be while still giving the reason.
 - Update or delete a comment when the code changes.
 
+## Check CRAN before you name an R package
+
+Before you propose a name for an R package, check that nobody already uses it.
+Search these places, and report the result with the name:
+
+- the package page on [CRAN](https://cran.r-project.org/) (`https://cran.r-project.org/web/packages/<name>/index.html` returns 404 when the name is free);
+- the CRAN archive (`https://cran.r-project.org/src/contrib/Archive/<name>/`), because a removed package still holds its name;
+- [Bioconductor](https://www.bioconductor.org/).
+
+A name that CRAN has used blocks a later submission and confuses users.
+
 ## Write release notes for the user
 
 - Describe each change by its effect on the user, not by the file that changed.

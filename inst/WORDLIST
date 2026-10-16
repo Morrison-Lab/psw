@@ -1,6 +1,7 @@
 Attenborough
 betterposter
 Bienaymé
+Bioconductor
 Callaway
 Chebyshev
 cliché
@@ -9,7 +10,9 @@ ColorBrewer
 CONSORT
 COREQ
 Cormac
+CRAN
 CRediT
+Crossref
 CSL
 CSV
 DAG
@@ -28,6 +31,8 @@ funder's
 GBM
 generalizability
 ggeffects
+ggplot2
+ggplotly
 ggview
 gtsummary
 Hastie
@@ -81,6 +86,7 @@ tibble
 Tibshirani
 tidymodels
 tidyr
+tidyverse
 TN
 TP
 Tufte

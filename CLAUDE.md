@@ -50,6 +50,14 @@ callouts (config + color palette live in `_quarto-website.yml`).
   term, hyperlink to that definition when the term comes up in lds or another
   course repo, rather than re-defining it. Define locally only if no prereq
   site does.
+- **Semantic line breaks**: write one sentence per source line in `.md` and `.qmd` files,
+  so a diff shows what changed.
+  The rule holds in every notes repo (Ezra, 2026-10-16).
+- **Read the prose pages before editing prose**:
+  check a prose change against `chapters/conciseness.qmd`,
+  `chapters/grammar/relative-pronouns.qmd` and `chapters/defining-terms.qmd` in the same push.
+  A paragraph edit on psc#39 (2026-10-15) missed filler, a dropped "that" and a duplicate link plus citation.
+  In PR replies, say what changed in this push, never what you will do next time.
 - **Quarto chunks**: prefer `#|` YAML-style chunk options, not inline
   `r, opt = val` arguments.
 - **R style**: respect `.lintr.R`; run `lintr::lint_dir()` before declaring R
@@ -64,6 +72,11 @@ callouts (config + color palette live in `_quarto-website.yml`).
   `_quarto-website.yml`.
 - **Spell check**: add words to `inst/WORDLIST` rather than disabling the
   check (`.github/workflows/check-spelling.yaml`).
+  The spell check does not know acronyms or tool names.
+  Before the first push of a prose change, grep the diff for new capitalized acronyms and tool names,
+  and add each one to `inst/WORDLIST`, sorted case-insensitively
+  (psw#209 and psw#210 each cost a review round, 2026-10-16).
+  Update counts such as "four groups" when a list grows.
 - **Link check**: tuned in `lychee.toml`; fix broken links rather than adding
   exceptions.
 
