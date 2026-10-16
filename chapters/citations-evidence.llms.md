@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:14:45 (PDT)
+Last modified: 2026-10-16 04:25:52 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -247,7 +247,11 @@ Credit a quotation to whoever speaks it in the primary source, even when the spe
 
 When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.
 
-## 12 Cite an alias directly
+## 12 Verify each bibliography entry
+
+Check each detail of a bibliography entry against an official source. Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
+
+## 13 Cite an alias directly
 
 When a source uses another name for a defined term, write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
 
@@ -255,7 +259,7 @@ When a source uses another name for a defined term, write the alias in bold and 
 >
 > ✅ `also called the **alias** [@key, section]`
 
-## 13 Cite the original for named results
+## 14 Cite the original for named results
 
 When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
 
@@ -291,11 +295,11 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 > >
 > > ✅ Chebyshev’s inequality says that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
 
-## 14 Put the content first
+## 15 Put the content first
 
 Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
 
-## 15 Adapting another course’s material
+## 16 Adapting another course’s material
 
 When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.
 
@@ -319,7 +323,7 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### 15.1 Material from your own repositories
+### 16.1 Material from your own repositories
 
 Material moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
 
@@ -333,7 +337,7 @@ The exception has two limits:
 - It does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.
 - It does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution.
 
-## 16 Common citation errors to avoid
+## 17 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -343,39 +347,39 @@ The exception has two limits:
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 17 Examples
+## 18 Examples
 
-### 17.1 Poor (unsupported claim)
+### 18.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 17.2 Better (citation provided)
+### 18.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 17.3 Best (citation with context)
+### 18.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 17.4 Poor (irrelevant citation)
+### 18.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 17.5 Better (relevant citation)
+### 18.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 18 Conclusion
+## 19 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
