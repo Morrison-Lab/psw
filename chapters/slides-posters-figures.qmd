@@ -100,6 +100,11 @@ Before you share a figure:
 - Use colorblind-friendly palettes
   (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
 - Define colors, shapes, and line types in a legend.
+- Put the plot's legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere.
+  A bottom legend leaves the full plot width for the data and gives every figure the same layout.
+- In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/),
+  and the interactive version with plotly as described in @sec-scientific-figures.
+  [Present R results with modern packages](teaching.qmd#present-r-results-with-modern-packages) gives the reasons.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.

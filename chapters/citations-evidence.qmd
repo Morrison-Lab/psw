@@ -401,6 +401,16 @@ When a bibliography entry names an organization,
 copy the name from the organization's own page (its about page, README or footer)
 rather than expanding an acronym from memory.
 
+## Verify each bibliography entry
+
+Check each detail of a bibliography entry against an official source.
+Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/),
+check the title, volume, issue and pages against the record,
+and add the DOI.
+Check a constant in a cited theorem, such as the factors in an inequality,
+against a second free, official source,
+and say in the pull request what you checked against what.
+
 ## Cite an alias directly
 
 When a source uses another name for a defined term,
