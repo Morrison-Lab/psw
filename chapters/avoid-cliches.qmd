@@ -253,7 +253,7 @@ The order matters even when the sentence stays grammatical:
 > ✅ The padding is an identity, not a convention.
 
 Both are correct sentences; the second puts the claim first.
-The first pair is from the
+For the first pair, see the
 [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
 
 :::

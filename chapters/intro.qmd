@@ -109,13 +109,14 @@ For who counts as an author, see the ICMJE criteria in
 [Preparing a manuscript for submission](manuscript-submission.qmd).
 
 ::: {.callout-note collapse="true" title="Source"}
-This list began in the
-[Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html)
-of the UCD-SERG lab manual,
-which adapted it from the
+This list traces back to the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
 :::
+
+For further reading, see the
+[Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html)
+of the UCD-SERG lab manual.
 
 ## Contributing
 

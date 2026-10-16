@@ -526,27 +526,71 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### Material from your own repositories
+## Material from your own work
 
-Material moved between repositories you maintain needs no credit to those repositories.
-When lecture notes move from one course repository to another,
-leave the sister-repository credit out of the new work.
+Do not formally acknowledge material you borrow from yourself or your own group.
+"Your group" means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG.
+Link to it, but do not credit it,
+except for the credits and citations listed below.
+This covers:
 
-Carry over what the source repository itself credits:
+- Material your group wrote that moves between repositories you maintain.
+  When lecture notes move from one course repository to another,
+  leave the sister-repository credit out of the new work.
+  Material in those repositories that someone outside the group wrote keeps its credit (see below).
+- Text, figures or code reused from work that you or your group wrote elsewhere,
+  such as a lab manual your group maintains (the UCD-SERG lab manual, for example),
+  your own papers, or your own software.
+- A template or tool of your group's that you built the site from.
 
-- A book or paper the material follows.
-- A person outside your group whose lecture or notes it adapted.
+A formal acknowledgment tells the reader the material came from someone else,
+so it does not belong on material that is your own, wherever that material is stored.
+A co-author outside your group is someone else:
+when you reuse a co-written paper or manual,
+the work itself gets no credit (a publisher-required citation aside, see below),
+but credit each outside co-author by name, in a sentence or an author line.
+The rule concerns acknowledging reuse of your own material.
+Citing a published paper or released software of yours
+as the original publication of a result, or as a tool you used,
+is ordinary citation and stays.
+A passage or figure reused from a published paper of yours
+follows the publisher's reuse terms, which may require a citation;
+that is the only citation the reuse itself can require.
+
+Do not cite your own course notes or sites as the source of a definition or result either.
+Instead, cite the original publication where you can identify one, and a modern textbook
+(see [Cite the original for named results](#cite-the-original-for-named-results)),
+and link to your own page as further reading.
+
+❌ A citation of the group's own notes as the source of a definition:
+
+```markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@morrison2026mds].
+```
+
+✅ The original source and a textbook, with a cross-reference link to the group's page:
+
+```markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@original, sec. 2; @textbook, ch. 3].
+See also the
+[Cauchy-Schwarz inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-cauchy-schwarz)
+in the sister notes.
+```
+
+Carry over what the source of your material itself credits:
+
+- A book, paper or other work the material follows.
+  For example, the Benjamin-Chung Lab Manual, which the UCD-SERG manual credits.
+- A person outside your group whose lecture or notes that source adapted,
+  credited by name.
   For example, the lds course credits Kameron Decker Harris,
   Brian Hutchinson and Logan Sizemore,
   so any repository that reuses those lectures credits them too.
 
-The exception has two limits:
+A link to a sister site that sends the reader to further reading
+is a cross-reference, not an attribution, so it stays.
 
-- It does not forbid a credit.
-  Leave the sister-repository credit out of new work,
-  but do not strip an existing credit unless the maintainer asks.
-- It does not touch a link to a sister site that sends the reader to further reading.
-  That link is a cross-reference, not an attribution.
+When you find an existing credit to your own work, remove it and add or keep a link to it.
 
 ## Common citation errors to avoid
 
