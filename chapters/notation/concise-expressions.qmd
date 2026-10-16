@@ -1,5 +1,6 @@
 Make each expression as concise as possible.
 The less clutter an expression has, the easier it is to read.
+This is one case of [building every unit from smaller atomic units](teaching.qmd#build-every-unit-from-smaller-atomic-units).
 
 Before you finish a definition, theorem or proof,
 scan it for a sub-expression that is written out in full

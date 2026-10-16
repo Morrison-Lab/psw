@@ -68,6 +68,52 @@ before they see the formal definition.
 
 :::
 
+## Build every unit from smaller atomic units
+
+Make every unit of analysis as concise and minimal as possible.
+The units are mathematical expressions and divs of every kind:
+definitions, theorems, lemmas, corollaries, examples, remarks and proofs.
+When a unit grows complicated, do not write the complexity into it.
+Abstract the complexity out into smaller, atomic definitions, results and expressions,
+each with its own name and identifier,
+and glue the pieces together with hyperlinks.
+
+This is the compositional approach of [modular programming](https://en.wikipedia.org/wiki/Modular_programming):
+a program is built from small, single-purpose modules that call one another,
+and a maintainer changes one module without reading the rest.
+The notes work the same way.
+A theorem links to the definitions it uses,
+a proof links to the lemmas it uses,
+and an expression is written with the named pieces it is built from.
+
+- A display holds one idea.
+  Name each meaningful sub-expression, give it a macro,
+  and build the display from the names
+  (see [Making expressions concise](notation.qmd#making-expressions-concise)).
+- A div holds one term or one result.
+  Move a second term, a side property or a long argument into its own div,
+  and link to it from the place that needs it
+  (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
+- A proof states the lemmas it needs and links to them,
+  instead of deriving them in the middle of the argument.
+- A link replaces a repeated explanation.
+  If a piece is already written, link to it instead of writing it a second time.
+
+When a unit still looks long, ask what could be named and moved out.
+
+::: {#exm-atomic-units}
+
+## Splitting one long definition
+
+> ❌ One div defines the ridge estimator, defines its penalty, and proves that it shrinks the coefficients.
+>
+> ✅ Three divs: a definition of the penalty, a definition of the ridge estimator that links to the penalty, and a theorem on shrinkage that links to both.
+
+The ✅ version lets a later chapter link to the penalty alone,
+and each piece fits on a slide.
+
+:::
+
 ## Give each defined term its own div
 
 [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms)
