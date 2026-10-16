@@ -213,7 +213,7 @@ Follow these principles when introducing new terms:
   and a div interrupts a passage without ending it.
   For example, if a div defines noise as the outcome minus the "true function",
   link the term as `[true function](#def-true-function)`,
-  and write `#def-true-function` first if the document lacks it.
+  and first add a definition div with that ID if the document lacks one.
   A counterexample: the definition of noise links "mean".
   The example block after it also uses "mean",
   but without a link, wrongly assuming the earlier link carries over.
