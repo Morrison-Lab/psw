@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:47:33 (PDT)
+Last modified: 2026-10-16 05:05:17 (PDT)
 
 > **NOTE:**
 >
@@ -90,7 +90,31 @@ The plural and the filler phrases built on it (“a number of things”, “othe
 
 If you cannot name the object, quantity, step or idea, the sentence is not yet ready to write.
 
-## 4 Minimize unnecessary jargon
+## 4 Choose each preposition on purpose
+
+A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
+
+For each preposition, ask what relationship it states. If you cannot answer in one phrase, replace it with a verb that names the relationship.
+
+> **NOTE:**
+>
+> **Example 1 (Naming the relationship)**  
+>
+> > ❌ The error of the prediction is large.
+> >
+> > ✅ The prediction misses the observed outcome by a large amount.
+>
+> *Of* could mean the error the prediction makes, the error in the way it was computed, or an error that belongs to the prediction in some other way. The verb *misses* says which.
+>
+> > ❌ We fit the model for the training set.
+> >
+> > ✅ We estimate the model’s coefficients from the training set.
+>
+> *For* could mean on behalf of, in order to serve, or using. *From* states the relationship exactly: the training set is the source of the estimates.
+
+Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
+
+## 5 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
@@ -98,7 +122,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 
 > **NOTE:**
 >
-> **Example 1 (Replacing unnecessary jargon)**  
+> **Example 2 (Replacing unnecessary jargon)**  
 >
 > > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 > >

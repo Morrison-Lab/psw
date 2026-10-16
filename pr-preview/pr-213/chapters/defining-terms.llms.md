@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:47:33 (PDT)
+Last modified: 2026-10-16 05:05:17 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -44,9 +44,9 @@ Follow these principles when introducing new terms:
 
 - **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
 
-- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
+- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\mathord{\underset{\sim}{\theta}}\\ as “the value of \\\mathord{\underset{\sim}{\theta}}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
 
-  \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta}),\\
+  \\\hat{\mathord{\underset{\sim}{\theta}}} := \arg\min\_{\mathord{\underset{\sim}{\theta}}} \text{RSS}(\mathord{\underset{\sim}{\theta}}),\\
 
   not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write
 
@@ -68,6 +68,8 @@ Follow these principles when introducing new terms:
 
 - **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
 
+- **Define and link every technical term at its first use in each div:** Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term.
+
 - **Do not presuppose what the reader has not met:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it.
 
 - **Provide examples and counterexamples:** Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.
@@ -85,6 +87,10 @@ Follow these principles when introducing new terms:
   | Recall | \\\Pr(\hat Y = 1 \mid Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FN})\\ |
 
   The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
+
+- **Name the target of every estimator and predictor:** Every estimator has one target estimand, and the definition says which. A prediction is not an estimator of a mean. Its estimand is the observed outcome value of a new data point, not the population mean of that outcome. For example, the fitted model at \\x\\ is an estimator of the mean function value \\\mu(x)\\, so its bias is measured against that mean, while the prediction at \\x\\ has the new outcome \\Y\_{\*}\\ as its estimand, so its prediction error is measured against \\Y\_{\*}\\. Write “the fitted model at \\x\\ as an estimator of the mean function value”, or “the prediction of the new outcome”, and never leave the target implicit.
+
+- **Qualify “mean”, “average” and their shorthands as population or sample:** A bare “mean” or “average” does not say whether it is a quantity of the population or a value computed from one sample. Write “population mean” for the expected value of a distribution, and “sample mean” for the average of the observed values; write “population average” and “sample average” in the same way. Prefer “mean” with the qualifier to “average”. The same holds for shorthands: write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE, with a leading p for the population version and s for the sample version, and never a bare MSE, RMSE or MAE. Spelled out, the same words apply: “population mean squared error”, “sample root mean squared error”, “population mean absolute error”. Define each shorthand once, at first use, as “population mean squared error (pMSE)”. A term that already says which, such as “mean function” or “running mean”, needs no extra word, and neither does expected value notation such as \\\operatorname{E}\mathopen{}\left\[Y\right\]\mathclose{}\\. For example, write “the sample mean of the training outcomes estimates the population mean of the outcome”, not “the mean estimates the mean”. Drop the qualifier only when it is completely clear from context, such as inside a definition that has just said which one it concerns. When in doubt, keep it.
 
 ## 2 Examples of term definitions
 

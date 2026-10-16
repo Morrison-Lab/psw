@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:47:33 (PDT)
+Last modified: 2026-10-16 05:05:17 (PDT)
 
 > **NOTE:**
 >
@@ -15,16 +15,34 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 ## 1 Terms and notation
 
 - [Define every technical term](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) explicitly, next to its first use, and follow the definition with examples and counterexamples.
+
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
+
 - [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): \\x \in (a, b)\\ rather than \\a \< x \< b\\.
+
 - [Do one operation per step](../chapters/notation.llms.md#one-operation-per-step) in a derivation, and justify each step.
+
 - [Give applying a definition its own step](../chapters/notation.llms.md#applying-a-definition-is-a-step); never skip it.
+
 - [Show why you need a result before you derive it](../chapters/notation.llms.md#show-why-you-need-a-result-before-you-derive-it), and [color each result where it is used](../chapters/notation.llms.md#color-where-a-result-is-used).
+
 - [Put one equals sign on each line](../chapters/notation.llms.md#one-equals-sign-per-line): split a chain such as \\a = b = c\\ into the rows of an aligned display.
+
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
+
+- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after.
+
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
+
 - [Write each symbol through a shared macro](../chapters/notation.llms.md#using-shared-macros).
+
 - [Write out notational shorthands](../chapters/notation.llms.md#writing-out-notational-shorthands), such as the limits of a sum.
+
+- [Put words between formulas, and start a sentence with a word](../chapters/mathematical-writing.llms.md#keep-formulas-inside-sentences), not a symbol.
+
+- [Introduce a theorem with a complete sentence](../chapters/mathematical-writing.llms.md#introduce-a-theorem-with-a-sentence), and state it so that it stands alone.
+
+- [Spell out a number used as an adjective](../chapters/mathematical-writing.llms.md#write-numbers-according-to-how-they-are-used), and write the numeral for a number used as a name.
 
 ## 2 Claims and evidence
 
@@ -42,6 +60,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Organize the Results section](../chapters/paper-organization.llms.md#organizing-the-results-section) to fit the design of the study.
 - [Label variables in plain words](../chapters/paper-organization.llms.md#label-variables-in-plain-words) in figures and tables.
 - [Use descriptive subsection headings](../chapters/paper-organization.llms.md#subsection-headings).
+- [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references): move the content ahead of the sentence that uses it.
 - [Put each link to a video next to the text that it supports](../chapters/paper-organization.llms.md#links-to-videos-and-other-media).
 - Follow the [journal’s conventions for a manuscript](../chapters/manuscript-submission.llms.md), and check the [submission checklist](../chapters/manuscript-submission.llms.md#submission-checklist) before you submit.
 
@@ -79,6 +98,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences).
 - [Name the object of a relational noun](../chapters/grammar.llms.md#name-the-object-of-a-relational-noun).
 - [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject).
+- [Make every word tell](../chapters/conciseness.llms.md#make-every-word-tell): cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](../chapters/conciseness.llms.md#limit-complex-sentence-structures).
 - [Do not rule out readings that no reader would make](../chapters/conciseness.llms.md#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](../chapters/conciseness.llms.md#write-about-the-subject-not-about-the-text).

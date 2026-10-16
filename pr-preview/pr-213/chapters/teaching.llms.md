@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:47:33 (PDT)
+Last modified: 2026-10-16 05:05:17 (PDT)
 
 > **NOTE:**
 >
@@ -48,7 +48,30 @@ Active learning, in which students work through tasks themselves during class, i
 >
 > The revised version lets students attempt the idea before they see the formal definition.
 
-## 2 Give each defined term its own div
+## 2 Build every unit from smaller atomic units
+
+Make every unit of analysis as concise and minimal as possible. The units are mathematical expressions and divs of every kind: definitions, theorems, lemmas, corollaries, examples, remarks and proofs. When a unit grows complicated, do not write the complexity into it. Abstract the complexity out into smaller, atomic definitions, results and expressions, each with its own name and identifier, and glue the pieces together with hyperlinks.
+
+This is the compositional approach of [modular programming](https://en.wikipedia.org/wiki/Modular_programming): a program is built from small, single-purpose modules that call one another, and a maintainer changes one module without reading the rest. The notes work the same way. A theorem links to the definitions it uses, a proof links to the lemmas it uses, and an expression is written with the named pieces it is built from.
+
+- A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
+- A div holds one term or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
+- A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
+- A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
+
+When a unit still looks long, ask what could be named and moved out.
+
+> **NOTE:**
+>
+> **Example 2 (Splitting one long definition)**  
+>
+> > ❌ One div defines the ridge estimator, defines its penalty, and proves that it shrinks the coefficients.
+> >
+> > ✅ Three divs: a definition of the penalty, a definition of the ridge estimator that links to the penalty, and a theorem on shrinkage that links to both.
+>
+> The ✅ version lets a later chapter link to the penalty alone, and each piece fits on a slide.
+
+## 3 Give each defined term its own div
 
 [Defining terms clearly](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) covers what a good definition contains. For teaching materials, four further rules keep definitions findable.
 
@@ -59,27 +82,27 @@ Active learning, in which students work through tasks themselves during class, i
 
 Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
-## 3 State the notation and its alternatives
+## 4 State the notation and its alternatives
 
 When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will meet elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write \\\mathbb{N}\_0\\ or \\\mathbb{N}^+\\ to make the choice explicit.
 
-## 4 Lead with the simplest correct form of a definition
+## 5 Lead with the simplest correct form of a definition
 
 Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define variance as the mean squared deviation \\\operatorname{E}\left\[\operatorname{devn}(X)^2\right\]\\, where \\\operatorname{devn}(X) = X - \operatorname{E}\[X\]\\, and then prove that it equals \\\operatorname{E}\[X^2\] - (\operatorname{E}\[X\])^2\\.
 
 Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.
 
-## 5 Reuse one written version of each result
+## 6 Reuse one written version of each result
 
 When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.
 
-## 6 Use real data and compute every number
+## 7 Use real data and compute every number
 
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
 - Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.
 
-## 7 Store structured data in structured formats
+## 8 Store structured data in structured formats
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
@@ -89,7 +112,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.
 
-## 8 Show each idea applied and in a figure
+## 9 Show each idea applied and in a figure
 
 - Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
 - Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
@@ -98,7 +121,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader meets the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as [Figures and tables](../chapters/paper-organization.llms.md#figures-and-tables) describes.
 - Make each figure follow the accessibility rules below.
 
-## 9 Write labs for both languages and any computer
+## 10 Write labs for both languages and any computer
 
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
@@ -110,7 +133,7 @@ These rules apply to all teaching materials, in every course and every teaching 
 - Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
-## 10 Present R results with modern packages
+## 11 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -121,7 +144,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-## 11 Manipulate data with dplyr, not base R
+## 12 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -135,7 +158,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-## 12 Include code from files instead of copying it
+## 13 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -144,7 +167,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-## 13 Comment every code chunk to say what and why
+## 14 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -153,7 +176,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-## 14 Introduce every function in a programming primer
+## 15 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -162,14 +185,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-## 15 Make figures accessible
+## 16 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 16 Structure slides for the reader
+## 17 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -179,14 +202,24 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 17 Credit other courses without summarizing them
+## 18 Talk about the ideas, not the notes
+
+When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
+
+- Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.
+- Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.
+- Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.
+
+Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
+
+## 19 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 18 Rules that apply to all writing
+## 20 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
