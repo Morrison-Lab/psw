@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:21:53 (PDT)
+Last modified: 2026-10-16 00:27:15 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -64,7 +64,7 @@ A function of two variables, such as a loss or a residual sum of squares as a fu
 
 > **NOTE:**
 >
-> Several of the resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual cover related ground. The section on three-dimensional graphs is original to this guide.
+> Several of the resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual are worth reading alongside these sections. The section on three-dimensional graphs is original to this guide.
 
 Back to top
 

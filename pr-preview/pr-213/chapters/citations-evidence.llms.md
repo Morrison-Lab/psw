@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:21:53 (PDT)
+Last modified: 2026-10-16 00:27:15 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -310,9 +310,9 @@ This section is adapted from @zhou2024, used under the MIT License.
 Do not formally acknowledge material you borrow from yourself or your own group. Link to it, but do not credit it. This covers:
 
 - Material moved between repositories you maintain. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
-- Work you wrote or co-wrote elsewhere, such as a lab manual you co-author, your own papers, or your own software.
+- Text, figures or code reused from work that you or your group wrote elsewhere, such as a lab manual your group maintains, your own papers, or your own software.
 
-A formal acknowledgment tells the reader the material came from someone else, so it does not belong on your own work, wherever that work is stored. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays.
+A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: the rule never removes their credit. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays.
 
 Do not cite your own notes as the source of a definition or result either. Cite the original publication and a modern textbook instead, and link to your own page as further reading (see [Cite the original for named results](#cite-the-original-for-named-results)).
 
@@ -322,16 +322,18 @@ Do not cite your own notes as the source of a definition or result either. Cite 
 A feature vector is an element of the real coordinate space [@morrison2026mds].
 ```
 
-✅ A cross-reference link:
+✅ A cross-reference link, placed after the claim and the original source it cites:
 
 ``` markdown
-A feature vector is an element of the
-[real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
+A feature vector is an element of the real coordinate space [@original2024, sec. 2].
+See also the
+[real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space)
+in the sister notes.
 ```
 
-A lab manual your own group maintains, such as the UCD-SERG lab manual, counts as your own work, so it gets no credit. Carry over what the source itself credits, such as the Benjamin-Chung Lab Manual that the UCD-SERG manual credits:
+A lab manual your own group maintains, such as the UCD-SERG lab manual, counts as your own work, so it gets no credit. Carry over what a source itself credits:
 
-- A book or paper the material follows.
+- A book, paper or other work the material follows. For example, the Benjamin-Chung Lab Manual, which the UCD-SERG manual credits.
 - A person outside your group whose lecture or notes it adapted, credited by name. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
 
 A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.
