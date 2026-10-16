@@ -325,9 +325,10 @@ Follow these principles when introducing new terms:
   write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE,
   with a leading p for the population version and s for the sample version,
   and never a bare MSE, RMSE or MAE.
+  Spelled out, the same words apply:
+  "population mean squared error", "sample root mean squared error", "population mean absolute error".
   Define each shorthand once, at first use, as "population mean squared error (pMSE)".
-  A term that already says which, such as "mean function",
-  "mean squared error" or "running mean", needs no extra word beyond that,
+  A term that already says which, such as "mean function" or "running mean", needs no extra word,
   and neither does expected value notation such as $\E{Y}$.
   For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",
   not "the mean estimates the mean".
