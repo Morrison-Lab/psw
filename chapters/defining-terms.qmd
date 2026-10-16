@@ -485,7 +485,16 @@ Examples serve several crucial purposes:
   **Correct:**
   "Conciseness is the quality of expressing ideas
   using only the words necessary to communicate meaning clearly."
-  
+
+  Qualifying the term does not make the definition less circular.
+  "A new observation relative to a training set
+  is a new observation when ..." still uses the term in its own definition.
+  Define it directly instead:
+  "A new observation relative to a training set
+  is a covariate value and an outcome
+  drawn from the same population as the training observations
+  and independent of them."
+
 - **Vague definitions:**
   Avoid definitions that rely on imprecise language.
   
