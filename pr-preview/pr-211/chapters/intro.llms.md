@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 22:06:06 (PDT)
+Last modified: 2026-10-15 23:19:03 (PDT)
 
 > **NOTE:**
 >
@@ -14,10 +14,11 @@ This book is a style guide for writing in science, technology, engineering, and 
 
 ## 1 What the book covers
 
-Most chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Three chapters cover one kind of document:
+Most chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Four chapters cover one kind of document:
 
 - [Paper organization](../chapters/paper-organization.llms.md) and [Preparing a manuscript for submission](../chapters/manuscript-submission.llms.md) cover research papers.
 - [Writing for teaching](../chapters/teaching.llms.md) covers lecture notes, slides, and problem sets.
+- [Writing for code review and software](../chapters/software-text.llms.md) covers pull requests, issues, commit messages, READMEs, code comments, and release notes.
 
 ## 2 Who the book is for
 
@@ -27,7 +28,7 @@ Many rules are stated as checks that a reader can apply to a single sentence, so
 
 ## 3 How the book is organized
 
-The chapters fall into five groups:
+The chapters fall into six groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](../chapters/defining-terms.llms.md)
@@ -44,6 +45,8 @@ The chapters fall into five groups:
   - [Conciseness](../chapters/conciseness.llms.md)
 - Teaching:
   - [Writing for teaching](../chapters/teaching.llms.md)
+- Software:
+  - [Writing for code review and software](../chapters/software-text.llms.md)
 - Thinking:
   - [Writing to clarify your thinking](../chapters/writing-to-think.llms.md)
 

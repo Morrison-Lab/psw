@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 22:06:06 (PDT)
+Last modified: 2026-10-15 23:19:03 (PDT)
 
 > **NOTE:**
 >
@@ -101,10 +101,16 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
 - [Skip the credit for material from your own repositories](../chapters/citations-evidence.llms.md#material-from-your-own-repositories), but keep what those repositories credit.
 
-## 8 Thinking
+## 8 Software text
+
+- [Say what changed and why](../chapters/software-text.llms.md#say-what-changed-and-why) in a pull request or commit message.
+- [Comment why, not what](../chapters/software-text.llms.md#comment-code-sparingly).
+- [Write release notes by their effect on the user](../chapters/software-text.llms.md#write-release-notes-for-the-user).
+
+## 9 Thinking
 
 - [Write the question down first](../chapters/writing-to-think.llms.md#write-the-question-down-first).
-- [Send a written question, with the context needed to answer it](../chapters/writing-to-think.llms.md#send-a-written-question).
+- [Send a written question that gives the reader the context to answer it](../chapters/writing-to-think.llms.md#send-a-written-question).
 - [Draft the plan before you run the analysis](../chapters/writing-to-think.llms.md#keep-writing-as-the-work-grows).
 
 Back to top
