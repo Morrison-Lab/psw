@@ -376,6 +376,8 @@ Students read concepts, not the structure of the site.
 A sentence about which notes define a term adds no content,
 and it goes stale when the definition moves.
 
+## Credit other courses without summarizing them
+
 
 - Write your own version of another course's material,
   and credit the source in a collapsed `.callout-note` titled "Source",
