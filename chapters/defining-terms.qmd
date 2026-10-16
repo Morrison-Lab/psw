@@ -212,9 +212,10 @@ Follow these principles when introducing new terms:
   and make sure that definition exists.
   The same div should also link outcome, input, mean, variance and independent
   at their first use in that div.
-  A counterexample: a link to "mean" in the definition of noise
-  does not cover the example block that follows it,
-  which links "mean" again at its own first use.
+  A counterexample: an example block that uses "mean" without a link,
+  because the definition of noise just above it already linked "mean",
+  breaks the rule;
+  the example block links "mean" again at its own first use.
 
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
