@@ -314,6 +314,24 @@ Follow these principles when introducing new terms:
   or "the prediction of the new outcome",
   and never leave the target implicit.
 
+- **Qualify "mean", "average" and their shorthands as population or sample:**
+  A bare "mean" or "average" does not say whether it is a quantity of the population
+  or a value computed from one sample.
+  Write "population mean" for the expected value of a distribution,
+  and "sample mean" for the average of the observed values;
+  write "population average" and "sample average" in the same way.
+  Prefer "mean" with the qualifier to "average".
+  The same holds for shorthands:
+  write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE,
+  with a leading p for the population version and s for the sample version,
+  and never a bare MSE, RMSE or MAE.
+  Define each shorthand once, at first use, as "population mean squared error (pMSE)".
+  A term that already says which, such as "mean function",
+  "mean squared error" or "running mean", needs no extra word beyond that,
+  and neither does expected value notation such as $\E{Y}$.
+  For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",
+  not "the mean estimates the mean".
+
 ## Examples of term definitions
 
 Here are examples of well-defined terms:
