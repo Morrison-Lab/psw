@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:17:41 (PDT)
+Last modified: 2026-10-16 04:45:33 (PDT)
 
 > **NOTE:**
 >
@@ -15,16 +15,32 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 ## 1 Terms and notation
 
 - [Define every technical term](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) explicitly, next to its first use, and follow the definition with examples and counterexamples.
+
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
+
 - [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): \\x \in (a, b)\\ rather than \\a \< x \< b\\.
+
 - [Do one operation per step](../chapters/notation.llms.md#one-operation-per-step) in a derivation, and justify each step.
+
 - [Give applying a definition its own step](../chapters/notation.llms.md#applying-a-definition-is-a-step); never skip it.
+
 - [Show why you need a result before you derive it](../chapters/notation.llms.md#show-why-you-need-a-result-before-you-derive-it), and [color each result where it is used](../chapters/notation.llms.md#color-where-a-result-is-used).
+
 - [Put one equals sign on each line](../chapters/notation.llms.md#one-equals-sign-per-line): split a chain such as \\a = b = c\\ into the rows of an aligned display.
+
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
+
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
+
 - [Write each symbol through a shared macro](../chapters/notation.llms.md#using-shared-macros).
+
 - [Write out notational shorthands](../chapters/notation.llms.md#writing-out-notational-shorthands), such as the limits of a sum.
+
+- [Put words between formulas, and start a sentence with a word](../chapters/mathematical-writing.llms.md#keep-formulas-inside-sentences), not a symbol.
+
+- [Introduce a theorem with a complete sentence](../chapters/mathematical-writing.llms.md#introduce-a-theorem-with-a-sentence), and state it so that it stands alone.
+
+- [Spell out a number used as an adjective](../chapters/mathematical-writing.llms.md#write-numbers-according-to-how-they-are-used), and write the numeral for a number used as a name.
 
 ## 2 Claims and evidence
 

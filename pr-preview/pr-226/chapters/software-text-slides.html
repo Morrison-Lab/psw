@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-16 04:17:41 (PDT)</p>
+  <p class="date">Last modified: 2026-10-16 04:45:33 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -306,8 +306,21 @@
 <li>Update or delete a comment when the code changes.</li>
 </ul>
 </section>
-<section id="write-release-notes-for-the-user" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Write release notes for the user</h2>
+<section id="check-cran-before-you-name-an-r-package" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Check CRAN before you name an R package</h2>
+</section>
+<section class="slide level2">
+
+<p>Before you propose a name for an R package, check that nobody already uses it. Search these places, and report the result with the name:</p>
+<ul>
+<li>the package page on <a href="https://cran.r-project.org/">CRAN</a>, at <code>https://cran.r-project.org/web/packages/&lt;name&gt;/index.html</code>, which returns 404 when the name is free;</li>
+<li>the CRAN archive, at <code>https://cran.r-project.org/src/contrib/Archive/&lt;name&gt;/</code>, because a removed package still holds its name;</li>
+<li><a href="https://www.bioconductor.org/">Bioconductor</a>.</li>
+</ul>
+<p>A name that CRAN has used is usually unavailable for a new package and confuses users, so pick a different name.</p>
+</section>
+<section id="write-release-notes-for-the-user" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Write release notes for the user</h2>
 </section>
 <section class="slide level2">
 
