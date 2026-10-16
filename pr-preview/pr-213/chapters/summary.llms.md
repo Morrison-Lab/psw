@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:10:54 (PDT)
+Last modified: 2026-10-16 00:21:53 (PDT)
 
 > **NOTE:**
 >
@@ -99,7 +99,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible).
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
-- [Do not acknowledge material borrowed from your own work](../chapters/citations-evidence.llms.md#material-from-your-own-work), and remove any existing credit to it, but keep what that work itself credits.
+- [Do not formally acknowledge material borrowed from your own work](../chapters/citations-evidence.llms.md#material-from-your-own-work), and remove any existing credit to it, but keep what that work itself credits.
 
 ## 8 Software text
 

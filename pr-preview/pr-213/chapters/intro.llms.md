@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:10:54 (PDT)
+Last modified: 2026-10-16 00:21:53 (PDT)
 
 > **NOTE:**
 >
@@ -77,7 +77,7 @@ For who counts as an author, see the ICMJE criteria in [Preparing a manuscript f
 
 > **NOTE:**
 >
-> This list traces back to the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual has a related list.
+> This list traces back to the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual has a version of this list.
 
 ## 6 Contributing
 
