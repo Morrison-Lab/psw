@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  # The shared math macros (the latex-macros submodule) become header files for
+  # the HTML, slide and PDF formats; see tools/build_math_macros.py.
+  pre-render:
+    - tools/build_math_macros.py
   render:
     - "*.qmd"
     - "chapters/*.qmd"
@@ -15,6 +19,8 @@ project:
     - "!chapters/notation/"
     - "!chapters/conciseness/"
     - "!chapters/paper-organization/"
+    # The shared math macros are included by the pages that use them, not a page.
+    - "!latex-macros/"
 
 website:
   title: "Principles of Scientific Writing"
@@ -174,7 +180,9 @@ format:
       light: [cosmo, offwhite.scss]
       dark: darkly
     # Replaces Quarto's two-way toggle with a Light / Off-white / Parchment / Dark dropdown.
-    include-in-header: theme-picker.html
+    include-in-header:
+      - theme-picker.html
+      - _math-macros.html
     include-after-body: anchor-landing.html
     css: styles.css
     toc: true
@@ -203,7 +211,9 @@ format:
     output-file: "{stem}-slides.html"
     search: false # decks duplicate the HTML pages, so the search indexes only the HTML format
     theme: [simple, styles-reveal.scss]
-    include-in-header: qwt-reveal-toggle.html
+    include-in-header:
+      - qwt-reveal-toggle.html
+      - _math-macros.html
     slide-number: true
     chalkboard: false
     preview-links: auto
