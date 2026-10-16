@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 19:42:37 (PDT)
+Last modified: 2026-10-15 22:06:06 (PDT)
 
 > **NOTE:**
 >
@@ -28,7 +28,7 @@ Concise writing conveys ideas efficiently, using only the words necessary to com
   - “give consideration to” → “consider”
   - “is able to” → “can”
 
-Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity.
+Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity. Keep a clause or a technical term when removing it would lose meaning or precision, and never replace an honest [hedge](../chapters/avoid-cliches.llms.md#def-hedge) with false confidence.
 
 ## 2 Write in the active voice
 

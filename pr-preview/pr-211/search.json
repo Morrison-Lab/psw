@@ -11,7 +11,7 @@
     "href": "chapters/writing-to-think.html",
     "title": "Writing to clarify your thinking",
     "section": "",
-    "text": "Writing helps you find out what you think, as well as report what you already know. This chapter adapts the UCD-SERG Lab Manual’s section on the topic (UCD-SERG, n.d.)."
+    "text": "Writing helps you find out what you think, as well as report what you already know. This chapter builds on the UCD-SERG Lab Manual’s section on the topic (UCD-SERG, n.d.)."
   },
   {
     "objectID": "chapters/writing-to-think.html#write-the-question-down-first",
@@ -32,7 +32,7 @@
     "href": "chapters/writing-to-think.html#keep-writing-as-the-work-grows",
     "title": "Writing to clarify your thinking",
     "section": "3 Keep writing as the work grows",
-    "text": "3 Keep writing as the work grows\nApply the same habit to a whole project. Draft the aims, the methods, and the expected results before you run the analysis. A draft shows which parts of the plan you cannot yet state clearly, and those parts are where you need to think more."
+    "text": "3 Keep writing as the work grows\nApply the same habit to a whole project. Before you run the analysis, draft:\n\nthe aims;\nthe methods;\nthe expected results.\n\nA draft shows which parts of the plan you cannot yet state clearly, and those parts are where you need to think more."
   },
   {
     "objectID": "chapters/teaching.html",
@@ -375,7 +375,7 @@
     "href": "chapters/conciseness.html#common-ways-to-improve-conciseness",
     "title": "Conciseness",
     "section": "1 Common ways to improve conciseness",
-    "text": "1 Common ways to improve conciseness\n\nRemove redundant phrases\n\n“in order to” → “to”\n“due to the fact that” → “because”\n“at this point in time” → “now”\n“a large number of” → “many”\n\nUse the active voice (see Write in the active voice)\n\n“The experiment was conducted by the researchers” → “The researchers conducted the experiment”\n\nEliminate unnecessary qualifiers\n\n“very”, “really”, “quite” often add little meaning\n\nReplace wordy phrases with single words\n\n“make a decision” → “decide”\n“give consideration to” → “consider”\n“is able to” → “can”\n\n\nRemember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity."
+    "text": "1 Common ways to improve conciseness\n\nRemove redundant phrases\n\n“in order to” → “to”\n“due to the fact that” → “because”\n“at this point in time” → “now”\n“a large number of” → “many”\n\nUse the active voice (see Write in the active voice)\n\n“The experiment was conducted by the researchers” → “The researchers conducted the experiment”\n\nEliminate unnecessary qualifiers\n\n“very”, “really”, “quite” often add little meaning\n\nReplace wordy phrases with single words\n\n“make a decision” → “decide”\n“give consideration to” → “consider”\n“is able to” → “can”\n\n\nRemember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity. Keep a clause or a technical term when removing it would lose meaning or precision, and never replace an honest hedge with false confidence."
   },
   {
     "objectID": "chapters/conciseness.html#write-in-the-active-voice",
@@ -494,7 +494,14 @@
     "href": "chapters/avoid-cliches.html#tone",
     "title": "Avoiding clichés",
     "section": "8 Tone",
-    "text": "8 Tone\nThe last group of clichés is about register.\n\nPromotional language. Words like “powerful”, “game-changing”, and “cutting-edge” sell rather than inform. Describe what the thing does and let the reader judge.\nReflexive both-sides framing. Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Use a hedge when the evidence is genuinely mixed, not by habit.\nVague universals. “Studies show” and “experts agree”, with no specific source or number, are clichés precisely because they dodge the evidence. Name the study and give the number, as the Citations and evidence chapter recommends.\n\nA short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice."
+    "text": "8 Tone\nThe last group of clichés is about register.\n\nPromotional language. Words like “powerful”, “game-changing”, and “cutting-edge” sell rather than inform. Describe what the thing does and let the reader judge.\nReflexive both-sides framing. Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Use a hedge when the evidence is genuinely mixed, not by habit.\nVague universals. “Studies show” and “experts agree”, with no specific source or number, are clichés precisely because they dodge the evidence. Name the study and give the number, as the Citations and evidence chapter recommends."
+  },
+  {
+    "objectID": "chapters/avoid-cliches.html#how-to-use-this-list",
+    "href": "chapters/avoid-cliches.html#how-to-use-this-list",
+    "title": "Avoiding clichés",
+    "section": "9 How to use this list",
+    "text": "9 How to use this list\nWrite plainly first, then scan the draft once before you share it. Use the same list when you review someone else’s writing.\n\nOne match means little. Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.\nDo not ban a word outright. Keep a word or phrase that is the precise one for the sentence.\nDo not flatten your writing into a voiceless register. Cut the filler and the reflexes, and keep your own voice.\nSkip the scan for code, terse status lines and short conversational replies.\nDo not accuse a writer of using an assistant on the strength of the list. Say which pattern weakens the sentence and how to fix it."
   },
   {
     "objectID": "chapters/citations-evidence.html",
@@ -980,18 +987,18 @@
     "text": "6 Sentences\n\nKeep relative pronouns such as “that” and “which”.\nFollow “this” or “that” with the noun that it refers to.\nFollow a quantifier such as “both” or “each” with its noun.\nAvoid garden-path sentences.\nName the object of a relational noun.\nLead with the subject.\nLimit complex sentence structures.\nDo not rule out readings that no reader would make.\nWrite about the subject, not about the text.\nPut a list of three or more phrases in bullet points."
   },
   {
-    "objectID": "chapters/summary.html#thinking",
-    "href": "chapters/summary.html#thinking",
-    "title": "Summary",
-    "section": "7 Thinking",
-    "text": "7 Thinking\n\nWrite the question down first.\nSend a written question that states the goal, what you did, what you expected and what happened, and what you tried.\nDraft the aims, methods, and expected results before you run the analysis."
-  },
-  {
     "objectID": "chapters/summary.html#teaching-materials",
     "href": "chapters/summary.html#teaching-materials",
     "title": "Summary",
-    "section": "8 Teaching materials",
-    "text": "8 Teaching materials\n\nBuild the lecture from exercises and solutions.\nAsk the question before giving the definition.\nPresent a derivation as an exercise and solution, then the theorem and its proof.\nGive each defined term its own div.\nState the notation and its alternatives.\nLead with the simplest correct form of a definition.\nReuse one written version of each result.\nUse real data and compute every number.\nShow each idea applied and in a figure.\nWrite labs in both R and Python that run on any computer.\nMake figures accessible.\nStructure slides for the reader.\nCredit another course’s material in a collapsed “Source” callout, not in running prose.\nSkip the credit for material from your own repositories, but keep what those repositories credit."
+    "section": "7 Teaching materials",
+    "text": "7 Teaching materials\n\nBuild the lecture from exercises and solutions.\nAsk the question before giving the definition.\nPresent a derivation as an exercise and solution, then the theorem and its proof.\nGive each defined term its own div.\nState the notation and its alternatives.\nLead with the simplest correct form of a definition.\nReuse one written version of each result.\nUse real data and compute every number.\nShow each idea applied and in a figure.\nWrite labs in both R and Python that run on any computer.\nMake figures accessible.\nStructure slides for the reader.\nCredit another course’s material in a collapsed “Source” callout, not in running prose.\nSkip the credit for material from your own repositories, but keep what those repositories credit."
+  },
+  {
+    "objectID": "chapters/summary.html#thinking",
+    "href": "chapters/summary.html#thinking",
+    "title": "Summary",
+    "section": "8 Thinking",
+    "text": "8 Thinking\n\nWrite the question down first.\nSend a written question, with the context needed to answer it.\nDraft the plan before you run the analysis."
   },
   {
     "objectID": "chapters/word-choice.html",

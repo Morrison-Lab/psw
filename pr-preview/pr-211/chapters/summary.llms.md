@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 19:42:37 (PDT)
+Last modified: 2026-10-15 22:06:06 (PDT)
 
 > **NOTE:**
 >
@@ -84,13 +84,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Write about the subject, not about the text](../chapters/conciseness.llms.md#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points).
 
-## 7 Thinking
-
-- [Write the question down first](../chapters/writing-to-think.llms.md#write-the-question-down-first).
-- [Send a written question that states the goal, what you did, what you expected and what happened, and what you tried](../chapters/writing-to-think.llms.md#send-a-written-question).
-- [Draft the aims, methods, and expected results before you run the analysis](../chapters/writing-to-think.llms.md#keep-writing-as-the-work-grows).
-
-## 8 Teaching materials
+## 7 Teaching materials
 
 - [Build the lecture from exercises and solutions](../chapters/teaching.llms.md#build-the-lecture-from-exercises-and-solutions).
 - [Ask the question before giving the definition](../chapters/teaching.llms.md#exm-exercise-before-definition).
@@ -106,5 +100,11 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
 - [Skip the credit for material from your own repositories](../chapters/citations-evidence.llms.md#material-from-your-own-repositories), but keep what those repositories credit.
+
+## 8 Thinking
+
+- [Write the question down first](../chapters/writing-to-think.llms.md#write-the-question-down-first).
+- [Send a written question, with the context needed to answer it](../chapters/writing-to-think.llms.md#send-a-written-question).
+- [Draft the plan before you run the analysis](../chapters/writing-to-think.llms.md#keep-writing-as-the-work-grows).
 
 Back to top

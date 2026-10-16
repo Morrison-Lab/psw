@@ -4,9 +4,9 @@ Code
 
 Published
 
-Last modified: 2026-10-15 19:42:37 (PDT)
+Last modified: 2026-10-15 22:06:06 (PDT)
 
-Writing helps you find out what you think, as well as report what you already know. This chapter adapts the UCD-SERG Lab Manual’s section on the topic ([UCD-SERG, n.d.](#ref-ucdserglabmanual)).
+Writing helps you find out what you think, as well as report what you already know. This chapter builds on the UCD-SERG Lab Manual’s section on the topic ([UCD-SERG, n.d.](#ref-ucdserglabmanual)).
 
 ## 1 Write the question down first
 
@@ -33,7 +33,13 @@ Writing out these four parts often settles the question before you send it. When
 
 ## 3 Keep writing as the work grows
 
-Apply the same habit to a whole project. Draft the aims, the methods, and the expected results before you run the analysis. A draft shows which parts of the plan you cannot yet state clearly, and those parts are where you need to think more.
+Apply the same habit to a whole project. Before you run the analysis, draft:
+
+- the aims;
+- the methods;
+- the expected results.
+
+A draft shows which parts of the plan you cannot yet state clearly, and those parts are where you need to think more.
 
 Back to top
 
@@ -41,4 +47,4 @@ Back to top
 
 Lamport, Leslie. 2019. *Think and Write with Leslie Lamport*. Podcast interview, Mentors.fm. <https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/>.
 
-UCD-SERG. n.d. *Lab Manual: Writing to Clarify Your Thinking*. Online manual, University of California, Davis, Seroepidemiology Research Group. Accessed October 16, 2026. <https://ucd-serg.github.io/lab-manual/writing.html#writing-to-clarify-your-thinking>.
+UCD-SERG. n.d. *UCD-SeRG Lab Manual, Section “Writing to Clarify Your Thinking”*. Online manual, University of California, Davis, Seroepidemiology Research Group. Accessed October 16, 2026. <https://ucd-serg.github.io/lab-manual/writing.html#writing-to-clarify-your-thinking>.
