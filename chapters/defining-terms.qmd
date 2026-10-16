@@ -214,11 +214,10 @@ Follow these principles when introducing new terms:
   For example, if a div defines noise as the outcome minus the "true function",
   link the term as `[true function](#def-true-function)`,
   and write `#def-true-function` first if the document lacks it.
-  A counterexample: the definition of noise links "mean",
-  and the example block after it uses "mean" with no link.
-  The example block breaks the rule,
-  because the earlier link does not carry over;
-  it links "mean" at its own first use.
+  A counterexample: the definition of noise links "mean".
+  The example block after it also uses "mean",
+  but without a link, wrongly assuming the earlier link carries over.
+  The example block should link "mean" at its own first use.
 
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
