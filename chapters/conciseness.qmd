@@ -99,12 +99,10 @@ When none of these applies, rewrite the sentence with an active verb.
 
 ## Write about the ideas, not the document
 
-Explain the concept, and link to the place that defines it inside the sentence that uses it.
-Do not write a sentence about which part of the document holds what.
-Sentences such as "the statistics notes define this" or "these pages are the home of the shared definitions"
-describe the structure of the document and teach the reader nothing about the subject.
+A sentence about which part of the document holds a definition adds no content.
+State the idea and link the term, as [Talk about the ideas, not the notes](teaching.qmd#talk-about-the-ideas-not-the-notes) explains.
 
-> ❌ The statistics notes are the home of the shared error definitions, and they link to the matching pages.
+> ❌ The statistics notes define the training error as the average loss on the fitted data.
 >
 > ✅ The training error is the average loss on the data used to fit the model.
 
