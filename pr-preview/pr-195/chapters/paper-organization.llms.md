@@ -4,11 +4,21 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:46:34 (PDT)
+Last modified: 2026-10-16 10:25:17 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
-## 1 Standard paper structure
+## 1 Write to clarify your thinking
+
+Write down a question or an idea as soon as you have it, before you search for an answer. Writing it down helps you in these ways:
+
+- You see what you need to know.
+- You state the problem more precisely.
+- You often answer the question yourself while writing it.
+
+The computer scientist Leslie Lamport argues that a person who thinks without writing only thinks that they are thinking ([Lamport 2019](#ref-lamport2019think)).
+
+## 2 Standard paper structure
 
 Most scientific papers follow the IMRaD structure:
 
@@ -19,11 +29,11 @@ Most scientific papers follow the IMRaD structure:
 
 Some papers combine Results and Discussion into a single section.
 
-## 2 Organizing the Results section
+## 3 Organizing the Results section
 
 The Results section presents your findings clearly and logically. How you organize this section depends on your research design and the complexity of your analyses.
 
-### 2.1 Single outcome studies
+### 3.1 Single outcome studies
 
 When analyzing a single primary outcome, organize results by:
 
@@ -31,7 +41,7 @@ When analyzing a single primary outcome, organize results by:
 - Main analysis results
 - Sensitivity analyses or subgroup analyses
 
-### 2.2 Multiple outcomes analyzed separately
+### 3.2 Multiple outcomes analyzed separately
 
 When analyzing multiple outcomes separately, **group your results section by outcome** rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.
 
@@ -96,13 +106,13 @@ This forces readers to jump back and forth between sections to understand the co
 
 If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
 
-## 3 Figures and tables
+## 4 Figures and tables
 
-In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout ([Section 3.3](#sec-submission-layout)). Either way, number figures and tables sequentially and reference them in the text before they appear.
+In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout ([Section 4.3](#sec-submission-layout)). Either way, number figures and tables sequentially and reference them in the text before they appear.
 
 Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.
 
-### 3.1 Label variables in plain words
+### 4.1 Label variables in plain words
 
 A figure or table is read by people, not by the code that made it. Replace every variable name from the data with a label a reader understands:
 
@@ -124,7 +134,7 @@ Use the same label for a variable in every figure, table and paragraph, so a rea
 >
 > In R with `ggplot2`, set the axis and legend titles with `labs()`, and recode the category levels before plotting, for example with `forcats::fct_recode()`.
 
-### 3.2 Captions are captions, not headings
+### 4.2 Captions are captions, not headings
 
 Give every figure and table a numbered caption, including those in the supplementary material. A table without a caption is incomplete, even when its contents are correct.
 
@@ -136,7 +146,7 @@ Attach each caption to its figure or table with your writing tool’s caption fe
 
 A heading posing as a caption usually appears in the table of contents, takes on heading styling, and is not attached to its figure. Its number is typed by hand, so it falls out of step with the real numbering when figures are added, removed, or reordered.
 
-### 3.3 Manuscript layout for journal submission
+### 4.3 Manuscript layout for journal submission
 
 Many journals ask for figures and tables to follow the main text of a submitted manuscript rather than appear inline. Unless the journal’s instructions say otherwise, lay out a submission manuscript as follows:
 
@@ -146,7 +156,7 @@ Many journals ask for figures and tables to follow the main text of a submitted 
 
 In Quarto, the `{{< pagebreak >}}` shortcode inserts a page break in PDF and Word output, and a `::: {#refs}` div places the references where you put the div instead of at the end of the document. Write the figures and tables after that div.
 
-### 3.4 Check the rendered layout
+### 4.4 Check the rendered layout
 
 Captions, page breaks, and figure placement are properties of the rendered document’s layout. Problems with them are easy to miss when reading the source, and a check of the text and numbers alone will not catch them. Before calling a rendered manuscript reviewed, page through the PDF or Word output and check its layout, not only its text and numbers:
 
@@ -154,7 +164,7 @@ Captions, page breaks, and figure placement are properties of the rendered docum
 - Does each caption sit on the same page as its figure or table?
 - For a journal submission, do the main-text figures and tables come after the references and before the supplement, and does the supplementary material start on a new page?
 
-## 4 Subsection headings
+## 5 Subsection headings
 
 Use descriptive subsection headings to guide readers through your results. Headings should clearly indicate the content of each section.
 
@@ -164,7 +174,40 @@ Use descriptive subsection headings to guide readers through your results. Headi
 
 **Best heading**: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)
 
-## 5 Links to videos and other media
+## 6 Avoid forward references
+
+A forward reference points the reader to content they have not reached yet. Common forms are:
+
+- “as discussed below”
+- “see the next section”
+- “we will return to this later”
+
+The reader must hold an unresolved pointer while reading the sentence that depends on it.
+
+Fix a forward reference by moving the content ahead of the pointer. Then change “below” to “above”, or delete the pointer.
+
+If moving the content would break the order of the argument, keep the pointer, and make it a working link. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.
+
+> **NOTE:**
+>
+> **Example 2 (Removing a forward reference)**  
+>
+> > ❌ The adjusted estimates, discussed in the next section, differ from the crude estimates. The adjustment, described below, uses age and sex.
+> >
+> > ✅ The adjustment uses age and sex. The adjusted estimates differ from the crude estimates.
+>
+> In the ❌ version, both pointers send the reader to content that comes later, so the reader sees “adjusted” before the paper says what was adjusted. In the ✅ version, the sentence that defines the adjustment comes first, so neither pointer is needed.
+
+Two cases are not forward references to fix:
+
+- An overview near the start that previews the structure, such as “Section 2 describes the data, and Section 3 gives the results”. The reader is not meant to resolve the preview immediately.
+- A sentence that names a figure or table placed beside it, such as “Table 2 shows the estimates”. The reader meets the table at once.
+
+A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.
+
+When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.
+
+## 7 Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
 
@@ -180,3 +223,7 @@ For each link:
 Link public sites freely. Anyone can open them, so a link costs the reader nothing. Do not link private repositories, such as ones that hold graded homework or exams.
 
 Back to top
+
+## References
+
+Lamport, Leslie. 2019. *Think and Write with Leslie Lamport*. Podcast interview, Mentors.fm. <https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/>.

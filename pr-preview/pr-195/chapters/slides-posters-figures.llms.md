@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:46:34 (PDT)
+Last modified: 2026-10-16 10:25:17 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -16,6 +16,8 @@ When preparing slides for a lab meeting, conference, qualifying exam, or thesis 
 - **Complete, record, and review practice runs**: Before any significant presentation, rehearse the complete talk out loud, record the practice run (with screen recording software, a webcam, or your phone), and watch the recording. The recording shows your pacing, timing, filler words, and transitions, and whether slide text and figures stay legible on screen.
 - **One main point per slide**: Limit the cognitive load of each slide. If a slide presents several findings or a complex argument, split it across consecutive slides so the audience can follow each point.
 - **Prefer visual evidence**: Audiences cannot read dense paragraphs while listening to a speaker. Use clean charts, diagrams, and annotated figures instead of text-heavy bullet lists.
+- **Direct attention**: Use callouts, annotations, or a sequential reveal so the audience looks at the part of the figure you are discussing.
+- **Show software working**: When you present a package or a pipeline, show live output, reproducible code, or a screenshot instead of only listing its features.
 - **Ensure high contrast and readability**: Use large fonts and high-contrast colors. Check that axis labels, legends, and annotations can be read from the back of a large room or on a low-resolution projector.
 
 ## 2 Presentation and poster resources
@@ -41,15 +43,22 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 
 ## 4 Scientific figures
 
+Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
+
+Lead with a well-labeled figure or table instead of a long paragraph that describes a pipeline or compares groups. Use a diagram for a conceptual model, such as a directed acyclic graph (DAG), and for a process, such as a participant flow (CONSORT) diagram or a workflow schematic. Let the text interpret what the figure shows instead of listing every number the reader can already see in it. Give the key estimates in the text and point to the figure for the rest.
+
 A clear figure lets a reader check a result without help from the text. Before you share a figure:
 
 - Label the x-axis and y-axis clearly.
 - Use panel labels when a figure has several subplots.
 - Include enough tick marks and tick labels.
+- Put the ticks in the original measurement scale of each variable, however the model is parametrized and the axis is spaced. If a fit uses scaled or standardized values, place the ticks at round original values and label them with those, so a horsepower axis reads 50, 100, 150 and 200, not 0 to 1. Report numbers such as an error in the response’s units too.
 - Print tick labels as plain or comma-separated numbers, such as 0.001 or 10,000, not in scientific notation. A logarithmic axis is fine. Only the label format matters, so write 1, 10, 100 and 1,000, not 1e+00 through 1e+03. When the numbers are huge or tiny, rescale the units and say so in the axis title, such as “dollars (millions)”.
 - Use font sizes that are easy to read without dominating the plot.
 - Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
 - Define colors, shapes, and line types in a legend.
+- Put the plot’s legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.
+- In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/), and the interactive version with plotly as described in [Section 4](#sec-scientific-figures). [Present R results with modern packages](../chapters/teaching.llms.md#present-r-results-with-modern-packages) gives the reasons.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.
@@ -59,9 +68,21 @@ For more:
 - Ten Simple Rules for Better Figures ([Rougier et al. 2014](#ref-rougier2014))
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text
 
+## 5 Three-dimensional graphs
+
+A function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
+
+- Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
+- Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
+- Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.
+- An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
+- Give a 3D plot alt text that states what the surface looks like, such as “a bowl with its lowest point at …”.
+
 > **NOTE:**
 >
-> Adapted from the [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual. Several of the resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung.
+> Several of the resource links in the slide deck and figure sections began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The section on three-dimensional graphs is original to this guide.
+
+For further reading, see the [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual.
 
 Back to top
 
