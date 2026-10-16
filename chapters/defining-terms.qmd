@@ -257,6 +257,37 @@ Follow these principles when introducing new terms:
   A bolded term in running prose is usually an inline definition
   that belongs in a div,
   including a term defined in passing.
+  Give closely related terms separate divs too:
+  only full synonyms share one (see *Name the synonyms* below).
+  For example, the left and right distributive laws are two properties,
+  each with its own identifier, example and exercise,
+  so define them in two divs.
+  A reader who needs one of them can then link to exactly that one.
+
+  ::: {#exm-one-definition-per-div}
+
+  ## Splitting two related definitions
+
+  > ❌ **Definition (distributive laws).**
+  > Multiplication *distributes over addition on the left* if $a(b + c) = ab + ac$
+  > and *on the right* if $(a + b)c = ac + bc$.
+  >
+  > ✅ **Definition (left distributivity).**
+  > Multiplication *distributes over addition on the left* if $a(b + c) = ab + ac$
+  > for all $a$, $b$ and $c$.
+  >
+  > ✅ **Definition (right distributivity).**
+  > Multiplication *distributes over addition on the right* if $(a + b)c = ac + bc$
+  > for all $a$, $b$ and $c$.
+
+  The first block cannot be linked to as "left distributivity" without also pointing at the other law,
+  and one example cannot illustrate both.
+  For numbers, right distributivity follows from left distributivity because multiplication commutes,
+  so one example checks both.
+  Matrix multiplication does not commute, so establishing one law does not establish the other,
+  and each needs its own example.
+
+  :::
 
 - **Name the synonyms:**
   When a field uses several words for one concept,
