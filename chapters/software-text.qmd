@@ -10,7 +10,15 @@ format:
     output-file: software-text.docx
 ---
 
-Pull requests, issues, commit messages, READMEs, code comments, and release notes are short documents.
+Software projects depend on short documents:
+
+- pull requests;
+- issues;
+- commit messages;
+- READMEs;
+- code comments;
+- release notes.
+
 The readers of these documents are busy and often unfamiliar with the change.
 The rules in the other chapters apply to these documents too.
 This chapter lists the general rules that matter most for them and adds a few that belong to software.
