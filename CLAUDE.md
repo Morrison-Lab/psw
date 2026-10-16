@@ -46,6 +46,10 @@ callouts (config + color palette live in `_quarto-website.yml`).
 - **Lists of 3+ items**: use bullet lists, not comma-separated prose; leave a
   blank line before a markdown bullet list. A run of parallel sentences, such
   as one sentence per linked video or reading, is a bullet list even with two.
+- **Prereq definitions**: when a prereq site (mds, pds, sds) already defines a
+  term, hyperlink to that definition when the term comes up in lds or another
+  course repo, rather than re-defining it. Define locally only if no prereq
+  site does.
 - **Quarto chunks**: prefer `#|` YAML-style chunk options, not inline
   `r, opt = val` arguments.
 - **R style**: respect `.lintr.R`; run `lintr::lint_dir()` before declaring R
