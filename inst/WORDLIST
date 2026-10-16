@@ -32,7 +32,6 @@ GBM
 generalizability
 ggeffects
 ggplot2
-ggplotly
 ggview
 gtsummary
 Hastie
@@ -86,7 +85,6 @@ tibble
 Tibshirani
 tidymodels
 tidyr
-tidyverse
 TN
 TP
 Tufte

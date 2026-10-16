@@ -50,7 +50,8 @@ callouts (config + color palette live in `_quarto-website.yml`).
   term, hyperlink to that definition when the term comes up in lds or another
   course repo, rather than re-defining it. Define locally only if no prereq
   site does.
-- **Semantic line breaks**: write one sentence per source line in `.md` and `.qmd` files,
+- **Semantic line breaks**: start every sentence on its own source line in `.md` and `.qmd` files,
+  and break a long sentence at a clause boundary,
   so a diff shows what changed.
   The rule holds in every notes repo (Ezra, 2026-10-16).
 - **Read the prose pages before editing prose**:
