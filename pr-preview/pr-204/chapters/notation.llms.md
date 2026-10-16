@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 12:30:37 (PDT)
+Last modified: 2026-10-16 03:17:34 (PDT)
 
 > **NOTE:**
 >
@@ -239,7 +239,7 @@ The same rule covers these quantities:
 
 A quantity that has a macro keeps the same symbol in every document.
 
-Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`.
+Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`. The only exception is a one-off symbol that fits no semantic category, and the rule for Latin letters below says when that applies.
 
 > **NOTE:**
 >
@@ -277,7 +277,9 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 >
 > Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\reals` changes.
 
-Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:
+Latin letters follow the same rule, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.
+
+Latin letters with a fixed role show the rule. In a regression or prediction model, use these macros:
 
 - `\outvar` for the outcome variable, instead of a bare `y`;
 - `\eoutvar` for a predicted outcome;
@@ -321,13 +323,31 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
-## 7 Writing dot products
+## 7 Making expressions concise
+
+Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
+
+Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.
+
+> **NOTE:**
+>
+> **Example 16 (Naming a repeated chunk)**  
+>
+> > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
+> >
+> > ✅ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \prederr_i^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \prederr_i \predvar_i$.`
+>
+> Both versions print the same quantities. The ❌ version writes the difference `\eoutvar_i - \outvar_i` out twice. The ✅ version names it once, as the prediction error, and each formula shows at a glance what it is built from.
+
+Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
+
+## 8 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 16 (Writing a dot product)**  
+> **Example 17 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -343,7 +363,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 8 Writing out notational shorthands
+## 9 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -353,7 +373,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 17 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 18 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -366,5 +386,28 @@ Give the limits of every sum, product, and integral, and state the set that any 
 > > ✅ \\L(\theta) = \prod\_{i = 1}^{n} f(x_i; \theta)\\
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
+
+## 10 Stating assumptions before using them
+
+State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
+
+This covers every kind of condition:
+
+- a restriction on a variable (“for \\x \neq 2\\”);
+- a hypothesis of a theorem;
+- a case split;
+- a fact that a step relies on.
+
+Introduce the variable and its constraint together, as in “let \\x \neq 2\\”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
+
+> **NOTE:**
+>
+> **Example 19 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+>
+> > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
+> >
+> > ✅ Let \\x \neq 2\\. Then \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 && \text{(definition of } f\text{)}\\ &\> 0 && \text{(} x - 2 \neq 0 \text{, so its square is positive)} \end{aligned} \\
+>
+> In the ❌ version, the second line is false for \\x = 2\\, and the reader learns this only from the note at its end. In the ✅ version, “let \\x \neq 2\\” comes first, so the reader reads each line already knowing which values of \\x\\ it covers, and the justification says exactly where the condition is used.
 
 Back to top

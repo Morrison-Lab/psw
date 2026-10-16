@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 12:30:37 (PDT)
+Last modified: 2026-10-16 03:17:34 (PDT)
 
 > **NOTE:**
 >
@@ -95,6 +95,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences).
 - [Name the object of a relational noun](../chapters/grammar.llms.md#name-the-object-of-a-relational-noun).
 - [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject).
+- [Make every word tell](../chapters/conciseness.llms.md#make-every-word-tell): cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](../chapters/conciseness.llms.md#limit-complex-sentence-structures).
 - [Do not rule out readings that no reader would make](../chapters/conciseness.llms.md#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](../chapters/conciseness.llms.md#write-about-the-subject-not-about-the-text).
@@ -116,5 +117,17 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
 - [Skip the credit for material from your own repositories](../chapters/citations-evidence.llms.md#material-from-your-own-repositories), but keep what those repositories credit.
+
+## 8 Software text
+
+- [Say what changed and why](../chapters/software-text.llms.md#say-what-changed-and-why) in a pull request or commit message.
+- [Comment why, not what](../chapters/software-text.llms.md#comment-code-sparingly).
+- [Write release notes by their effect on the user](../chapters/software-text.llms.md#write-release-notes-for-the-user).
+
+## 9 Thinking
+
+- [Write the question down first](../chapters/writing-to-think.llms.md#write-the-question-down-first).
+- [Send a written question that gives the reader the context to answer it](../chapters/writing-to-think.llms.md#send-a-written-question).
+- [Draft the plan before you run the analysis](../chapters/writing-to-think.llms.md#keep-writing-as-the-work-grows).
 
 Back to top

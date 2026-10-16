@@ -329,7 +329,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-14 12:30:37 (PDT)</p>
+  <p class="date">Last modified: 2026-10-16 03:17:34 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -385,8 +385,31 @@
 <p>The revised version lets students attempt the idea before they see the formal definition.</p>
 </div>
 </section>
-<section id="give-each-defined-term-its-own-div" class="slide level2" data-number="2">
-<h2><span class="header-section-number">2</span> Give each defined term its own div</h2>
+<section id="build-every-unit-from-smaller-atomic-units" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> Build every unit from smaller atomic units</h2>
+</section>
+<section class="slide level2">
+
+<p>Make every unit of analysis as concise and minimal as possible. The units are mathematical expressions and divs of every kind: definitions, theorems, lemmas, corollaries, examples, remarks and proofs. When a unit grows complicated, do not write the complexity into it. Abstract the complexity out into smaller, atomic definitions, results and expressions, each with its own name and identifier, and glue the pieces together with hyperlinks.</p>
+<p>This is the compositional approach of <a href="https://en.wikipedia.org/wiki/Modular_programming">modular programming</a>: a program is built from small, single-purpose modules that call one another, and a maintainer changes one module without reading the rest. The notes work the same way. A theorem links to the definitions it uses, a proof links to the lemmas it uses, and an expression is written with the named pieces it is built from.</p>
+<ul>
+<li>A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>).</li>
+<li>A div holds one term or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
+<li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
+<li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
+</ul>
+<p>When a unit still looks long, ask what could be named and moved out.</p>
+<div id="exm-atomic-units" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Splitting one long definition)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ One div defines the ridge estimator, defines its penalty, and proves that it shrinks the coefficients.</p>
+<p>✅ Three divs: a definition of the penalty, a definition of the ridge estimator that links to the penalty, and a theorem on shrinkage that links to both.</p>
+</blockquote>
+<p>The ✅ version lets a later chapter link to the penalty alone, and each piece fits on a slide.</p>
+</div>
+</section>
+<section id="give-each-defined-term-its-own-div" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Give each defined term its own div</h2>
 </section>
 <section class="slide level2">
 
@@ -399,30 +422,30 @@
 </ul>
 <p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>
-<section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> State the notation and its alternatives</h2>
+<section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> State the notation and its alternatives</h2>
 </section>
 <section class="slide level2">
 
 <p>When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will meet elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write <span class="math inline">\(\mathbb{N}_0\)</span> or <span class="math inline">\(\mathbb{N}^+\)</span> to make the choice explicit.</p>
 </section>
-<section id="lead-with-the-simplest-correct-form-of-a-definition" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Lead with the simplest correct form of a definition</h2>
+<section id="lead-with-the-simplest-correct-form-of-a-definition" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Lead with the simplest correct form of a definition</h2>
 </section>
 <section class="slide level2">
 
 <p>Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define variance as the mean squared deviation <span class="math inline">\(\operatorname{E}\left[\operatorname{devn}(X)^2\right]\)</span>, where <span class="math inline">\(\operatorname{devn}(X) = X - \operatorname{E}[X]\)</span>, and then prove that it equals <span class="math inline">\(\operatorname{E}[X^2] - (\operatorname{E}[X])^2\)</span>.</p>
 <p>Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.</p>
 </section>
-<section id="reuse-one-written-version-of-each-result" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Reuse one written version of each result</h2>
+<section id="reuse-one-written-version-of-each-result" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Reuse one written version of each result</h2>
 </section>
 <section class="slide level2">
 
 <p>When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.</p>
 </section>
-<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Use real data and compute every number</h2>
+<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Use real data and compute every number</h2>
 </section>
 <section class="slide level2">
 
@@ -432,8 +455,8 @@
 <li>Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.</li>
 </ul>
 </section>
-<section id="store-structured-data-in-structured-formats" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Store structured data in structured formats</h2>
+<section id="store-structured-data-in-structured-formats" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Store structured data in structured formats</h2>
 </section>
 <section class="slide level2">
 
@@ -446,8 +469,8 @@
 <li>A short list that no other page reads can stay as prose.</li>
 </ul>
 </section>
-<section id="show-each-idea-applied-and-in-a-figure" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Show each idea applied and in a figure</h2>
+<section id="show-each-idea-applied-and-in-a-figure" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Show each idea applied and in a figure</h2>
 </section>
 <section class="slide level2">
 
@@ -460,8 +483,8 @@
 <li>Make each figure follow the accessibility rules below.</li>
 </ul>
 </section>
-<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Write labs for both languages and any computer</h2>
+<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Write labs for both languages and any computer</h2>
 </section>
 <section class="slide level2">
 
@@ -476,8 +499,8 @@
 <li>Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.</li>
 </ul>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Present R results with modern packages</h2>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -491,8 +514,8 @@
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -509,8 +532,8 @@
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -522,8 +545,8 @@
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -535,8 +558,8 @@
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -548,8 +571,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -560,8 +583,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -575,8 +598,21 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Credit other courses without summarizing them</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Talk about the ideas, not the notes</h2>
+</section>
+<section class="slide level2">
+
+<p>When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.</p>
+<ul>
+<li>Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.</li>
+<li>Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.</li>
+<li>Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.</li>
+</ul>
+<p>Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.</p>
+</section>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -587,8 +623,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
