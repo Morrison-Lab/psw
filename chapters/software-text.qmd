@@ -54,8 +54,3 @@ This chapter lists the general rules that matter most here and adds a few that b
 
 - Describe each change by its effect on the user, not by the file that changed.
 - Put breaking changes first, because the user must act on them.
-
-::: {.callout-note collapse="true" title="Source"}
-This chapter's scope, plain prose in software project text, follows the
-[Writing](https://ucd-serg.github.io/lab-manual/writing.html) chapter of the UCD-SERG lab manual.
-:::
