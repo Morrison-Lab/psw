@@ -340,18 +340,21 @@ the citation gives readers a second, free presentation
 without leaving them to search for it.
 
 The Wikipedia citation adds to the traditional reference and never replaces it.
-Put it right after the content it covers, as `([Wikipedia: Title](url))`,
-and keep the primary source's citation beside the claim it supports.
+Cite it through the bibliography like any other source,
+with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article's URL, the access date)
+keyed `wikipedia_<article_title>`,
+and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`.
+Keep the primary source's citation beside the claim it supports.
 Where a page ends a section with further reading,
-list the same Wikipedia article there too, next to the textbook chapters.
+list the same Wikipedia citation there too, next to the other further-reading sources.
 
-- Link the article for the specific concept, not a broader article that mentions it.
+- Cite the article for the specific concept, not a broader article that mentions it.
 - Read the article's definition before citing it,
   because notation and conventions vary,
   and a reader who follows the link should find the same concept you defined.
   If the article's convention differs from yours, say how.
-- Use a stable link to the article, not to a search result.
-- Link a term once where it is defined, not at every use;
+- Use a stable URL for the article, not a search result.
+- Cite an article once where its term is defined, not at every use;
   later uses link to your own definition.
 
 ::: {#exm-link-wikipedia}
@@ -361,7 +364,7 @@ list the same Wikipedia article there too, next to the textbook chapters.
 > ❌ A *Poisson random variable* counts events in a fixed interval.
 >
 > ✅ A *Poisson random variable* counts events in a fixed interval
-> ([Wikipedia: Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)).
+> [@wikipedia_poisson_distribution].
 
 A reader who wants another presentation of the Poisson distribution now has one,
 and the definition itself still comes from your own text and its traditional reference.
