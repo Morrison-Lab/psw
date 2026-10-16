@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 03:46:06 (PDT)
+Last modified: 2026-10-16 03:53:51 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -44,7 +44,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
 - Define colors, shapes, and line types in a legend.
 - Put the legend at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.
-- Draw the figure with a modern package, such as ggplot2, and with plotly when an interactive version helps, rather than with base graphics (`plot()`, `par()`, `lines()`) or other older packages.
+- Draw the figure with a modern package, such as [ggplot2](https://ggplot2.tidyverse.org/), and with [plotly](https://plotly.com/r/) when an interactive version helps, rather than with base graphics (`plot()`, `par()`, `lines()`) or other older packages.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.
