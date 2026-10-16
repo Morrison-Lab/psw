@@ -1,0 +1,62 @@
+A random variable and a value that it takes are different objects.
+Before the data are collected, the outcome is a random variable;
+after, it is a number.
+Statements about the two have different meanings.
+Write them with different symbols.
+
+Use a capital letter for the random variable
+and the matching lowercase letter for a value that it takes:
+
+- $Y$ is the random variable, such as the outcome of a coin flip before the flip;
+- $y$ is one value of $Y$, such as 1 after the flip lands heads;
+- $Y_i$ is the random variable for the $i$-th observation;
+- $y_i$ is that observation's observed value.
+
+State the convention where you first use the symbols.
+Keep it in every later section.
+Do not switch between $Y_i$ and $y_i$ for the same quantity
+unless the meaning changes from "before the data" to "after the data".
+
+::: {#exm-random-variable-vs-value}
+
+## Writing a random variable and its value
+
+> ❌ The probability that $y_i$ exceeds 3 is $0.2$.
+>
+> ✅ The probability that $Y_i$ exceeds 3 is $0.2$.
+
+> ❌ The sample mean of the $Y_i$ is 2.4.
+>
+> ✅ The sample mean of the $y_i$ is 2.4.
+
+A probability is a statement about a random variable.
+The ❌ version of the first pair puts a fixed number
+where a quantity that can vary belongs.
+An observed number has no probability of exceeding 3.
+The second pair has the reverse mistake.
+A sample mean of 2.4 is a number computed from observed values.
+The ❌ version attributes it to the random variables.
+The sample mean of the random variables, $\bar{Y}$, is itself a random variable.
+
+:::
+
+Match the notation to the claim:
+
+- Write $\Pr(Y \le y)$ for a probability,
+  with the random variable on the left of the inequality
+  and the value on the right.
+- Write $\text{E}[Y]$ and $\text{Var}(Y)$ for the mean and variance
+  of a random variable,
+  never $\text{E}[y]$ or $\text{Var}(y)$ for an observed value.
+- Write a statistic computed from observed values with lowercase letters,
+  as in $\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i$,
+  and the same statistic as a random variable with capitals,
+  $\bar{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$.
+  The first is a number, such as 2.4.
+  The second has a sampling distribution.
+
+Some fields reserve capital letters for matrices,
+or use the same letter for a random variable and its value.
+In that case, say so where you introduce the symbols.
+Add a word that tells the reader which meaning applies,
+such as "the random variable $Y_i$" or "the observed value $y_i$".
