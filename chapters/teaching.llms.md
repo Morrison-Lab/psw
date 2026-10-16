@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 23:42:45 (PDT)
+Last modified: 2026-10-16 01:46:24 (PDT)
 
 > **NOTE:**
 >
@@ -179,14 +179,24 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 17 Credit other courses without summarizing them
+## 17 Talk about the ideas, not the notes
+
+When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
+
+- Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.
+- Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.
+- Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.
+
+Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
+
+## 18 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 18 Rules that apply to all writing
+## 19 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
