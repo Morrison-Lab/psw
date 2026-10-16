@@ -10,6 +10,12 @@ format:
     output-file: defining-terms.docx
 ---
 
+::: {.content-visible when-format="docx"}
+
+{{< include ../latex-macros/macros.qmd >}}
+
+:::
+
 Clear definitions are essential to effective scientific writing.
 Every specialized term should have an explicit,
 concise definition immediately before or after its first use.
@@ -189,6 +195,31 @@ Follow these principles when introducing new terms:
 - **Define terms at first use:**
   Place the definition immediately before or after the term's first appearance.
 
+- **Define and link every technical term at its first use in each div:**
+  Inside a definition, theorem, example or other div,
+  link a technical term to its formal definition the first time it appears in that div.
+  Outside divs, link it the first time it appears in each prose passage.
+  A link in an earlier div does not carry over,
+  because readers jump into the middle of a page.
+  Link once per div or passage, not at every mention.
+  If the term has no formal definition yet,
+  write the definition in its own definition div,
+  then link to it.
+  In a series of related documents, such as course notes,
+  first look for a definition in an earlier document
+  and link to it if one exists.
+  Otherwise write the definition in the earliest document that needs the term.
+  A passage is the prose outside divs between one heading and the next,
+  and each div counts separately from the passage around it
+  and from every other div.
+  For example, if a div defines noise as the outcome minus the "true function",
+  link the term as `[true function](#def-true-function)`,
+  and first add a definition div with that ID if the document lacks one.
+  A counterexample: the definition of noise links "mean".
+  The example block after it also uses "mean",
+  but without a link, wrongly assuming the earlier link carries over.
+  The example block should link "mean" at its own first use.
+
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
@@ -226,6 +257,37 @@ Follow these principles when introducing new terms:
   A bolded term in running prose is usually an inline definition
   that belongs in a div,
   including a term defined in passing.
+  Give closely related terms separate divs too:
+  only full synonyms share one (see *Name the synonyms* below).
+  For example, the left and right distributive laws are two properties,
+  each with its own identifier, example and exercise,
+  so define them in two divs.
+  A reader who needs one of them can then link to exactly that one.
+
+  ::: {#exm-one-definition-per-div}
+
+  ## Splitting two related definitions
+
+  > ❌ **Definition (distributive laws).**
+  > Multiplication *distributes over addition on the left* if $a(b + c) = ab + ac$
+  > and *on the right* if $(a + b)c = ac + bc$.
+  >
+  > ✅ **Definition (left distributivity).**
+  > Multiplication *distributes over addition on the left* if $a(b + c) = ab + ac$
+  > for all $a$, $b$ and $c$.
+  >
+  > ✅ **Definition (right distributivity).**
+  > Multiplication *distributes over addition on the right* if $(a + b)c = ac + bc$
+  > for all $a$, $b$ and $c$.
+
+  The first block cannot be linked to as "left distributivity" without also pointing at the other law,
+  and one example cannot illustrate both.
+  For numbers, right distributivity follows from left distributivity because multiplication commutes,
+  so one example checks both.
+  Matrix multiplication does not commute, so establishing one law does not establish the other,
+  and each needs its own example.
+
+  :::
 
 - **Name the synonyms:**
   When a field uses several words for one concept,
@@ -234,6 +296,10 @@ Follow these principles when introducing new terms:
   and each is treated exactly as the primary name:
   put all of them in the div title, as in "Postulate (axiom)",
   and bold each where it first appears in the definition.
+  This covers the names other sources use, such as a textbook's,
+  which belong in the title and in bold too,
+  as in "Risk (expected loss, population risk, true risk,
+  generalization error, expected prediction error)".
   Say which one the document uses.
   Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
@@ -275,6 +341,41 @@ Follow these principles when introducing new terms:
   The precision of a classifier is a property of the classifier
   and the population it is used on;
   $\text{TP} / (\text{TP} + \text{FP})$ is one test set's estimate of it.
+
+- **Name the target of every estimator and predictor:**
+  Every estimator has one target estimand, and the definition says which.
+  A prediction is not an estimator of a mean.
+  Its estimand is the observed outcome value of a new data point,
+  not the population mean of that outcome.
+  For example, the fitted model at $\predvar$ is an estimator of the mean function value $\mean(\predvar)$,
+  so its bias is measured against that mean,
+  while the prediction at $\predvar$ has the new outcome $\newoutvar$ as its estimand,
+  so its prediction error is measured against $\newoutvar$.
+  Write "the fitted model at $\predvar$ as an estimator of the mean function value",
+  or "the prediction of the new outcome",
+  and never leave the target implicit.
+
+- **Qualify "mean", "average" and their shorthands as population or sample:**
+  A bare "mean" or "average" does not say whether it is a quantity of the population
+  or a value computed from one sample.
+  Write "population mean" for the expected value of a distribution,
+  and "sample mean" for the average of the observed values;
+  write "population average" and "sample average" in the same way.
+  Prefer "mean" with the qualifier to "average".
+  The same holds for shorthands:
+  write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE,
+  with a leading p for the population version and s for the sample version,
+  and never a bare MSE, RMSE or MAE.
+  Spelled out, the same words apply:
+  "population mean squared error", "sample root mean squared error", "population mean absolute error".
+  Define each shorthand once, at first use, as "population mean squared error (pMSE)".
+  A term that already says which, such as "mean function" or "running mean", needs no extra word,
+  and neither does expected value notation such as $\E{Y}$.
+  For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",
+  not "the mean estimates the mean".
+  Drop the qualifier only when it is completely clear from context,
+  such as inside a definition that has just said which one it concerns.
+  When in doubt, keep it.
 
 ## Examples of term definitions
 
@@ -447,7 +548,16 @@ Examples serve several crucial purposes:
   **Correct:**
   "Conciseness is the quality of expressing ideas
   using only the words necessary to communicate meaning clearly."
-  
+
+  Qualifying the term does not make the definition less circular.
+  "A new observation relative to a training set
+  is a new observation when ..." still uses the term in its own definition.
+  Define it directly instead:
+  "A new observation relative to a training set
+  is a covariate value and an outcome
+  drawn from the same population as the training observations
+  and independent of them."
+
 - **Vague definitions:**
   Avoid definitions that rely on imprecise language.
   
