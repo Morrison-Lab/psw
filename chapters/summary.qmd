@@ -138,7 +138,7 @@ Follow its link for the reasons and the exceptions.
 - [Credit another course's material](citations-evidence.qmd#adapting-another-courses-material)
   in a collapsed "Source" callout, not in running prose.
 - [Do not formally acknowledge material borrowed from your own work](citations-evidence.qmd#material-from-your-own-work),
-  and remove any existing credit to it, but keep what that work itself credits.
+  and remove any existing self-credit, but keep what that work itself credits.
 
 ## Software text
 

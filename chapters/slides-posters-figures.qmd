@@ -140,6 +140,6 @@ Several of the resource links began in the
 by Jade Benjamin-Chung.
 The [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html)
 and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters
-of the UCD-SERG lab manual cover related ground.
+of the UCD-SERG lab manual are worth reading alongside these sections.
 The section on three-dimensional graphs is original to this guide.
 :::

@@ -502,11 +502,13 @@ This covers:
 - Material moved between repositories you maintain.
   When lecture notes move from one course repository to another,
   leave the sister-repository credit out of the new work.
-- Work you wrote or co-wrote elsewhere,
-  such as a lab manual you co-author, your own papers, or your own software.
+- Text, figures or code reused from work that you or your group wrote elsewhere,
+  such as a lab manual your group maintains, your own papers, or your own software.
 
 A formal acknowledgment tells the reader the material came from someone else,
-so it does not belong on your own work, wherever that work is stored.
+so it does not belong on material that is your own, wherever that material is stored.
+A co-author outside your group is someone else:
+the rule never removes their credit.
 The rule concerns acknowledging reuse of your own material.
 Citing a published paper or released software of yours
 as the original publication of a result, or as a tool you used,
@@ -523,19 +525,21 @@ and link to your own page as further reading
 A feature vector is an element of the real coordinate space [@morrison2026mds].
 ```
 
-✅ A cross-reference link:
+✅ A cross-reference link, placed after the claim and the original source it cites:
 
 ```markdown
-A feature vector is an element of the
-[real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
+A feature vector is an element of the real coordinate space [@original2024, sec. 2].
+See also the
+[real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space)
+in the sister notes.
 ```
 
 A lab manual your own group maintains, such as the UCD-SERG lab manual,
 counts as your own work, so it gets no credit.
-Carry over what the source itself credits,
-such as the Benjamin-Chung Lab Manual that the UCD-SERG manual credits:
+Carry over what a source itself credits:
 
-- A book or paper the material follows.
+- A book, paper or other work the material follows.
+  For example, the Benjamin-Chung Lab Manual, which the UCD-SERG manual credits.
 - A person outside your group whose lecture or notes it adapted,
   credited by name.
   For example, the lds course credits Kameron Decker Harris,
