@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:04:38 (PDT)
+Last modified: 2026-10-16 00:10:54 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -312,7 +312,7 @@ Do not formally acknowledge material you borrow from yourself or your own group.
 - Material moved between repositories you maintain. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
 - Work you wrote or co-wrote elsewhere, such as a lab manual you co-author, your own papers, or your own software.
 
-A formal acknowledgment tells the reader the material came from someone else. Credit belongs to other people’s work. It does not belong to your own, wherever it is stored.
+A formal acknowledgment tells the reader the material came from someone else, so it does not belong on your own work, wherever that work is stored.
 
 Do not cite your own notes as the source of a definition or result either. Cite the original publication and a modern textbook instead, and link to your own page as further reading (see [Cite the original for named results](#cite-the-original-for-named-results)).
 
@@ -322,21 +322,21 @@ Do not cite your own notes as the source of a definition or result either. Cite 
 A feature vector is an element of the real coordinate space [@morrison2026mds].
 ```
 
-✅ A cross-reference link, with the standard source cited where the claim needs one:
+✅ A cross-reference link:
 
 ``` markdown
 A feature vector is an element of the
 [real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
 ```
 
-A work you wrote with people outside your group is the exception: credit those co-authors by name when you reuse their words or lectures.
+A person outside your group who wrote material you reuse is the exception: credit that person by name when you reuse their words or lectures. A lab manual your own group maintains, such as the UCD-SERG lab manual, counts as your own work, so it gets no credit, but what it credits, such as the Benjamin-Chung Lab Manual, is still carried.
 
 Carry over what the source itself credits:
 
 - A book or paper the material follows.
 - A person outside your group whose lecture or notes it adapted. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
 
-A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution. Keep it.
+A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.
 
 When you find an existing credit to your own work, remove it and leave the link.
 
