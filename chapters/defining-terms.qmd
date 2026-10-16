@@ -190,32 +190,40 @@ Follow these principles when introducing new terms:
   Place the definition immediately before or after the term's first appearance.
 
 - **Hyperlink every technical term to its definition at first use in each div or passage:**
-  A technical term is a term (@def-term) with a specific meaning in the field,
-  such as outcome, mean, variance or independent.
+  A technical term is a term (@def-term) used in its field-specific sense,
+  such as outcome, mean, variance or independent variable.
   Link each one to its formal definition
-  the first time it appears in each div of any kind
-  (definition, theorem, example, remark, exercise, solution or callout),
-  and the first time it appears in each prose passage outside a div,
-  where a passage is a run of prose under one heading.
+  the first time it appears in each div,
+  whatever its kind,
+  and the first time it appears in each prose passage outside a div.
+  A passage is the prose between one heading and the next,
+  and a div interrupts a passage without ending it.
+  Count plurals and other inflections as the same term,
+  and link a multiword term such as "standard deviation" as one term.
+  Skip the term a div itself defines,
+  which needs no link inside its own definition,
+  and skip headings and captions.
   A reader who lands on one block from a cross-reference,
   or on one section from a search,
   has not necessarily read the earlier ones,
-  so a link in an earlier block does not cover a later one.
+  so a link in an earlier block does not satisfy the rule for a later one.
   Later uses within the same div or passage need no link.
   Link to the document's own definition,
   or, when a prerequisite site already defines the term, to that definition;
-  write a new `#def-` div only when neither exists.
+  if neither exists, write a `#def-` div for the term
+  where the earlier guideline places it, then link to it.
   A term with nothing to link to is a gap in the document,
   not a reason to skip the link.
   For example, if a div defines noise as the outcome minus the "true function",
   link the term as `[true function](#def-true-function)`,
-  and make sure that definition exists.
-  The same div should also link outcome, input, mean, variance and independent
-  at their first use in that div.
-  A counterexample: an example block that uses "mean" without a link,
-  because the definition of noise just above it already linked "mean",
-  breaks the rule;
-  the example block links "mean" again at its own first use.
+  and write `#def-true-function` first if the document lacks it.
+  The same div links any of outcome, input, mean and variance it uses,
+  at its first use of each.
+  A counterexample: the definition of noise links "mean",
+  and the example block after it uses "mean" with no link.
+  The example block breaks the rule,
+  because the earlier link does not carry over;
+  it links "mean" at its own first use.
 
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
