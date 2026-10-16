@@ -291,6 +291,9 @@ Link these things whenever they appear:
 - a term to the place where it is defined,
   in the same document or another one;
 - a result to the theorem, equation or section that establishes it;
+- a definition, theorem or named method to its
+  [Wikipedia](https://www.wikipedia.org/) article, when one exists
+  (see [Link to Wikipedia, but do not cite it](#link-to-wikipedia-but-do-not-cite-it));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document,
@@ -326,6 +329,45 @@ can now follow the link instead of searching.
 
 :::
 
+## Link to Wikipedia, but do not cite it {#link-to-wikipedia-but-do-not-cite-it}
+
+Wikipedia is free to every reader,
+and its articles on definitions, theorems and methods are usually reliable enough
+to orient a newcomer.
+So link each definition, theorem or named method to its Wikipedia article whenever one exists:
+the link gives readers a second, free explanation
+without leaving them to search for it.
+
+Link, however, does not mean cite.
+The link tells the reader where to read more;
+the evidence for a claim still comes from the primary source,
+as [Sources to generally avoid](#sources-to-generally-avoid) explains.
+When you do both, put the Wikipedia link beside the definition
+and the citation beside the claim.
+
+- Link the article for the specific concept, not a broader article that mentions it.
+- Read the article's definition before linking it,
+  because notation and conventions vary,
+  and a reader who follows the link should find the same concept you defined.
+  If the article's convention differs from yours, say how.
+- Use a stable link to the article, not to a search result.
+- Link a term once where it is defined, not at every use;
+  later uses link to your own definition.
+
+::: {#exm-link-wikipedia}
+
+## Linking a definition to Wikipedia
+
+> ❌ A *Poisson random variable* counts events in a fixed interval.
+>
+> ✅ A *Poisson random variable* counts events in a fixed interval
+> ([Wikipedia: Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)).
+
+A reader who wants another presentation of the Poisson distribution now has one,
+and the definition itself still comes from your own text.
+
+:::
+
 ## Best practices
 
 To effectively support your claims:
@@ -348,6 +390,29 @@ Check the wording and the page against the original.
 >
 > ✅ "A computer program is said to learn ..." [@mitchell1997]
 
+Credit a quotation to whoever speaks it in the primary source,
+even when the speaker is quoting someone else.
+When attribution is in doubt, read the primary source (a transcript, the original page) first.
+Uncertainty about who said a line is not evidence about who said it.
+
+## Copy organization names from their source
+
+When a bibliography entry names an organization,
+copy the name from the organization's own page (its about page, README or footer)
+rather than expanding an acronym from memory.
+
+## Cite an alias directly
+
+When a source uses another name for a defined term,
+write the alias in bold and cite the source after it,
+as in `also called the **alias** [@key, section]`.
+The citation already says that the source uses the name,
+so do not add a sentence such as "The source uses that name".
+
+> ❌ `also called the **alias**. The cited textbook uses that name.`
+>
+> ✅ `also called the **alias** [@key, section]`
+
 ## Cite the original for named results
 
 When you present a result that carries a person's name,
@@ -358,7 +423,12 @@ The original shows readers where the result comes from
 and credits its authors.
 The textbook is where a student will actually learn it.
 
-Put the historical note in a short remark after the statement and its proof,
+When the credit is only a citation,
+end the definition or theorem div with a line `Source: @key [locator]`.
+A reference adds no commentary to the statement,
+and a separate remark that holds only a citation is clutter.
+When the credit needs substantial prose about the source or history of the content,
+put that prose in a short remark after the statement and its proof,
 not inside the definition or theorem itself,
 so that each theorem div still holds one result.
 

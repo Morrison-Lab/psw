@@ -45,6 +45,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/shared-macros.qmd >}}
 
+## Making expressions concise
+
+{{< include notation/concise-expressions.qmd >}}
+
 ## Writing dot products
 
 {{< include notation/dot-products.qmd >}}
@@ -52,3 +56,7 @@ that make quantitative writing easier to read.
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
+
+## Stating assumptions before using them
+
+{{< include notation/assumptions-first.qmd >}}

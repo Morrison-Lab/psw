@@ -22,13 +22,15 @@ Most of its rules apply to any writing that explains technical ideas.
 
 Most chapters give rules for every kind of technical writing,
 such as a paper or a set of lecture notes.
-Three chapters cover one kind of document:
+Four chapters cover one kind of document:
 
 - [Paper organization](paper-organization.qmd)
   and [Preparing a manuscript for submission](manuscript-submission.qmd)
   cover research papers.
 - [Writing for teaching](teaching.qmd)
   covers lecture notes, slides, and problem sets.
+- [Writing for code review and software](software-text.qmd)
+  covers pull requests, issues, commit messages, READMEs, code comments, and release notes.
 
 ## Who the book is for
 
@@ -48,7 +50,7 @@ without knowing what the paper is about.
 
 ## How the book is organized
 
-The chapters fall into four groups:
+The chapters fall into six groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](defining-terms.qmd)
@@ -65,6 +67,10 @@ The chapters fall into four groups:
   - [Conciseness](conciseness.qmd)
 - Teaching:
   - [Writing for teaching](teaching.qmd)
+- Software:
+  - [Writing for code review and software](software-text.qmd)
+- Thinking:
+  - [Writing to clarify your thinking](writing-to-think.qmd)
 
 The [Summary](summary.qmd) lists the book's main rules
 as a checklist for revising a draft.
