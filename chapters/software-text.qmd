@@ -10,10 +10,10 @@ format:
     output-file: software-text.docx
 ---
 
-Pull requests, issues, commit messages, READMEs, code comments and release notes are short documents.
-Their readers are busy and often unfamiliar with the change.
-The rules in the other chapters apply to them.
-This chapter lists the ones that matter most there and adds a few that belong to software.
+Pull requests, issues, commit messages, READMEs, code comments, and release notes are short documents.
+The readers of these documents are busy and often unfamiliar with the change.
+The rules in the other chapters apply to these documents too.
+This chapter lists the general rules that matter most for them and adds a few that belong to software.
 
 ## Apply the general rules
 
@@ -22,7 +22,7 @@ This chapter lists the ones that matter most there and adds a few that belong to
   write one main idea per sentence and at most one subordinate clause.
 - Cut filler and prefer plain words ([Word choice](word-choice.qmd)).
 - [Scan for clichés](avoid-cliches.qmd) before you post non-trivial prose.
-  Skip the scan for code, terse status lines and short replies.
+  Skip the scan for code, terse status lines, and short replies.
 - [Put lists in bullet points](conciseness.qmd#put-lists-in-bullet-points).
 
 ## Say what changed and why
@@ -30,7 +30,7 @@ This chapter lists the ones that matter most there and adds a few that belong to
 - Open a pull request description with the behavior a reader would see before and after the change.
 - Explain the reason for the change in the commit message, not only the content of the diff.
 - State what you checked and what you did not.
-- Link the issue, the data or the document that motivates the change.
+- Link the issue, the data, or the document that motivates the change.
 
 ## Comment code sparingly
 

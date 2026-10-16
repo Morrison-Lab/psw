@@ -30,7 +30,7 @@ Four chapters cover one kind of document:
 - [Writing for teaching](teaching.qmd)
   covers lecture notes, slides, and problem sets.
 - [Writing for code review and software](software-text.qmd)
-  covers pull requests, issues, commit messages, and code comments.
+  covers pull requests, issues, commit messages, READMEs, code comments, and release notes.
 
 ## Who the book is for
 
@@ -50,7 +50,7 @@ without knowing what the paper is about.
 
 ## How the book is organized
 
-The chapters fall into four groups:
+The chapters fall into five groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](defining-terms.qmd)
