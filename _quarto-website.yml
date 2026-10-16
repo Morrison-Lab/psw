@@ -59,6 +59,8 @@ website:
             href: chapters/conciseness.qmd
           - text: "Writing for teaching"
             href: chapters/teaching.qmd
+          - text: "Writing for code review and software"
+            href: chapters/software-text.qmd
           - text: "Slides, posters, and figures"
             href: chapters/slides-posters-figures.qmd
           - text: "Summary"
