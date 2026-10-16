@@ -240,11 +240,11 @@ Cut a qualifier, a restatement or a reason that the words before it already impl
 
 ## Cutting a clause the term already implies
 
-> ❌ `\ey`: estimated value of y, whether or not y is an outcome.
+> ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
 >
-> ✅ `\ey`: estimated value of y.
+> ✅ Estimated mean: the estimated value of the mean.
 
-The first version adds a clause that "value of y" already covers.
+The first version adds a clause that "the mean" already covers.
 The second is complete.
 
 :::
