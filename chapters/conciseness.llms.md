@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 02:42:44 (PDT)
+Last modified: 2026-10-16 02:49:17 (PDT)
 
 > **NOTE:**
 >
@@ -153,7 +153,21 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 8 Put lists in bullet points
+## 8 Do not overexplain
+
+Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.
+
+> **NOTE:**
+>
+> **Example 5 (Cutting a clause the term already implies)**  
+>
+> > ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
+> >
+> > ✅ Estimated mean: the estimated value of the mean.
+>
+> The first version adds a clause that “the mean” already covers. The second is complete.
+
+## 9 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -169,7 +183,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 5 (Turning an inline list into bullet points)**  
+> **Example 6 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -183,7 +197,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 6 (Turning a run of resource sentences into bullet points)**  
+> **Example 7 (Turning a run of resource sentences into bullet points)**  
 >
 > > ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 > >
@@ -196,7 +210,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 7 (Turning inline steps into a numbered list)**  
+> **Example 8 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -207,7 +221,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 9 Examples of concise writing
+## 10 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
