@@ -33,6 +33,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/functions-and-values.qmd >}}
 
+## Random variables and their values
+
+{{< include notation/random-variables.qmd >}}
+
 ## Matching names and notation
 
 {{< include notation/names-and-notation.qmd >}}

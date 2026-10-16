@@ -37,6 +37,8 @@ Follow its link for the reasons and the exceptions.
 - [Put one equals sign on each line](notation.qmd#one-equals-sign-per-line):
   split a chain such as $a = b = c$ into the rows of an aligned display.
 - [Distinguish a function from its value](notation.qmd#functions-and-their-values).
+- [Distinguish a random variable from its value](notation.qmd#random-variables-and-their-values):
+  $Y_i$ before the data, $y_i$ after.
 - [Use the notation that matches a quantity's name](notation.qmd#matching-names-and-notation),
   and keep the pairing the same everywhere.
 - [Write each symbol through a shared macro](notation.qmd#using-shared-macros).
