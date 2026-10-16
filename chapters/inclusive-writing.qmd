@@ -82,6 +82,8 @@ Idiom, cliché or slang | Literal wording
 the estimates blow up | the estimates become very large
 the model is a black box | we cannot read the model's decision rule from its parameters
 flexibility buys lower bias | more flexible models tend to have lower bias
+this assumption costs nothing | this assumption loses no generality
+a mean of zero buys one identity | a mean of zero implies one identity
 a ton of data | a large data set
 the method falls flat on small samples | the method has high error on small samples
 at the end of the day, we want low test error | our goal is low test error
@@ -174,6 +176,21 @@ Write "for example" or "that is".
 > for example random forests and boosted trees,
 > usually have lower mean squared error
 > than a single regression tree.
+
+## Introduce shorthand before using it
+
+Introduce every shorthand before its first use.
+This covers abbreviations and also shortened phrases,
+such as "objective" for "objective function".
+Give the full term first and mark the short form,
+for example "an *objective function*, or *objective* for short".
+Then use the short form consistently.
+
+> ❌ The objective as a function of the parameters is a paraboloid.
+> An *objective function* is the quantity we minimize.
+>
+> ✅ An *objective function*, or *objective* for short, is the quantity we minimize.
+> The objective as a function of the parameters is a paraboloid.
 
 ## Write positive statements
 

@@ -291,6 +291,9 @@ Link these things whenever they appear:
 - a term to the place where it is defined,
   in the same document or another one;
 - a result to the theorem, equation or section that establishes it;
+- a definition, theorem or named method to its
+  [Wikipedia](https://www.wikipedia.org/) article, when one exists
+  (see [Link to Wikipedia, but do not cite it](#link-to-wikipedia-but-do-not-cite-it));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document,
@@ -326,6 +329,45 @@ can now follow the link instead of searching.
 
 :::
 
+## Link to Wikipedia, but do not cite it {#link-to-wikipedia-but-do-not-cite-it}
+
+Wikipedia is free to every reader,
+and its articles on definitions, theorems and methods are usually reliable enough
+to orient a newcomer.
+So link each definition, theorem or named method to its Wikipedia article whenever one exists:
+the link gives readers a second, free explanation
+without leaving them to search for it.
+
+Link, however, does not mean cite.
+The link tells the reader where to read more;
+the evidence for a claim still comes from the primary source,
+as [Sources to generally avoid](#sources-to-generally-avoid) explains.
+When you do both, put the Wikipedia link beside the definition
+and the citation beside the claim.
+
+- Link the article for the specific concept, not a broader article that mentions it.
+- Read the article's definition before linking it,
+  because notation and conventions vary,
+  and a reader who follows the link should find the same concept you defined.
+  If the article's convention differs from yours, say how.
+- Use a stable link to the article, not to a search result.
+- Link a term once where it is defined, not at every use;
+  later uses link to your own definition.
+
+::: {#exm-link-wikipedia}
+
+## Linking a definition to Wikipedia
+
+> ❌ A *Poisson random variable* counts events in a fixed interval.
+>
+> ✅ A *Poisson random variable* counts events in a fixed interval
+> ([Wikipedia: Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)).
+
+A reader who wants another presentation of the Poisson distribution now has one,
+and the definition itself still comes from your own text.
+
+:::
+
 ## Best practices
 
 To effectively support your claims:
@@ -347,6 +389,97 @@ Check the wording and the page against the original.
 > ❌ Mitchell (1997), as quoted in Goodfellow et al. (2016), defines ...
 >
 > ✅ "A computer program is said to learn ..." [@mitchell1997]
+
+Credit a quotation to whoever speaks it in the primary source,
+even when the speaker is quoting someone else.
+When attribution is in doubt, read the primary source (a transcript, the original page) first.
+Uncertainty about who said a line is not evidence about who said it.
+
+## Copy organization names from their source
+
+When a bibliography entry names an organization,
+copy the name from the organization's own page (its about page, README or footer)
+rather than expanding an acronym from memory.
+
+## Verify each bibliography entry
+
+Check each detail of a bibliography entry against an official source.
+Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/),
+check the title, volume, issue and pages against the record,
+and add the DOI.
+Check a constant in a cited theorem, such as the factors in an inequality,
+against a second free, official source,
+and say in the pull request what you checked against what.
+
+## Cite an alias directly
+
+When a source uses another name for a defined term,
+write the alias in bold and cite the source after it,
+as in `also called the **alias** [@key, section]`.
+The citation already says that the source uses the name,
+so do not add a sentence such as "The source uses that name".
+
+> ❌ `also called the **alias**. The cited textbook uses that name.`
+>
+> ✅ `also called the **alias** [@key, section]`
+
+## Cite the original for named results
+
+When you present a result that carries a person's name,
+or whose first appearance is well documented,
+cite the publication where it first appeared
+alongside a modern textbook that teaches it.
+The original shows readers where the result comes from
+and credits its authors.
+The textbook is where a student will actually learn it.
+
+When the credit is only a citation,
+end the definition or theorem div with a line `Source: @key [locator]`.
+A reference adds no commentary to the statement,
+and a separate remark that holds only a citation is clutter.
+When the credit needs substantial prose about the source or history of the content,
+put that prose in a short remark after the statement and its proof,
+not inside the definition or theorem itself,
+so that each theorem div still holds one result.
+
+Apply the rule to:
+
+- named theorems, inequalities, and algorithms;
+- definitions that a specific paper introduced;
+- results whose usual name is not the whole story,
+  such as Chebyshev's inequality,
+  which Bienaymé derived earlier.
+
+Do not apply it to:
+
+- routine lemmas;
+- textbook exercises;
+- results with no identifiable first source.
+
+When the credit is disputed or the first source is unclear,
+say so in one sentence and cite a history of the result
+instead of naming a source you have not checked.
+
+Check every detail of the original against an official source, such as:
+
+- the publisher;
+- the journal's archive;
+- a library such as [Numdam](https://www.numdam.org/).
+
+Never cite an unauthorized copy,
+and never fill in a title, volume, or page number from memory.
+
+::::{#exm-cite-original}
+
+## Crediting Chebyshev's inequality
+
+> ❌ Chebyshev's inequality says that ...
+>
+> ✅ Chebyshev's inequality says that ...
+> Bienaymé derived the bound [@bienayme1853], and Tchébychef proved a more general form [@tchebichef1867].
+> A modern treatment is in @blitzstein2019introduction.
+
+::::
 
 ## Put the content first
 
@@ -393,27 +526,71 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### Material from your own repositories
+## Material from your own work
 
-Material moved between repositories you maintain needs no credit to those repositories.
-When lecture notes move from one course repository to another,
-leave the sister-repository credit out of the new work.
+Do not formally acknowledge material you borrow from yourself or your own group.
+"Your group" means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG.
+Link to it, but do not credit it,
+except for the credits and citations listed below.
+This covers:
 
-Carry over what the source repository itself credits:
+- Material your group wrote that moves between repositories you maintain.
+  When lecture notes move from one course repository to another,
+  leave the sister-repository credit out of the new work.
+  Material in those repositories that someone outside the group wrote keeps its credit (see below).
+- Text, figures or code reused from work that you or your group wrote elsewhere,
+  such as a lab manual your group maintains (the UCD-SERG lab manual, for example),
+  your own papers, or your own software.
+- A template or tool of your group's that you built the site from.
 
-- A book or paper the material follows.
-- A person outside your group whose lecture or notes it adapted.
+A formal acknowledgment tells the reader the material came from someone else,
+so it does not belong on material that is your own, wherever that material is stored.
+A co-author outside your group is someone else:
+when you reuse a co-written paper or manual,
+the work itself gets no credit (a publisher-required citation aside, see below),
+but credit each outside co-author by name, in a sentence or an author line.
+The rule concerns acknowledging reuse of your own material.
+Citing a published paper or released software of yours
+as the original publication of a result, or as a tool you used,
+is ordinary citation and stays.
+A passage or figure reused from a published paper of yours
+follows the publisher's reuse terms, which may require a citation;
+that is the only citation the reuse itself can require.
+
+Do not cite your own course notes or sites as the source of a definition or result either.
+Instead, cite the original publication where you can identify one, and a modern textbook
+(see [Cite the original for named results](#cite-the-original-for-named-results)),
+and link to your own page as further reading.
+
+❌ A citation of the group's own notes as the source of a definition:
+
+```markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@morrison2026mds].
+```
+
+✅ The original source and a textbook, with a cross-reference link to the group's page:
+
+```markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@original, sec. 2; @textbook, ch. 3].
+See also the
+[Cauchy-Schwarz inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-cauchy-schwarz)
+in the sister notes.
+```
+
+Carry over what the source of your material itself credits:
+
+- A book, paper or other work the material follows.
+  For example, the Benjamin-Chung Lab Manual, which the UCD-SERG manual credits.
+- A person outside your group whose lecture or notes that source adapted,
+  credited by name.
   For example, the lds course credits Kameron Decker Harris,
   Brian Hutchinson and Logan Sizemore,
   so any repository that reuses those lectures credits them too.
 
-The exception has two limits:
+A link to a sister site that sends the reader to further reading
+is a cross-reference, not an attribution, so it stays.
 
-- It does not forbid a credit.
-  Leave the sister-repository credit out of new work,
-  but do not strip an existing credit unless the maintainer asks.
-- It does not touch a link to a sister site that sends the reader to further reading.
-  That link is a cross-reference, not an attribution.
+When you find an existing credit to your own work, remove it and add or keep a link to it.
 
 ## Common citation errors to avoid
 
