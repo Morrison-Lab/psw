@@ -50,7 +50,7 @@ without knowing what the paper is about.
 
 ## How the book is organized
 
-The chapters fall into five groups:
+The chapters fall into six groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](defining-terms.qmd)
@@ -69,6 +69,8 @@ The chapters fall into five groups:
   - [Writing for teaching](teaching.qmd)
 - Software:
   - [Writing for code review and software](software-text.qmd)
+- Thinking:
+  - [Writing to clarify your thinking](writing-to-think.qmd)
 
 The [Summary](summary.qmd) lists the book's main rules
 as a checklist for revising a draft.

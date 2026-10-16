@@ -146,3 +146,9 @@ Follow its link for the reasons and the exceptions.
   in a pull request or commit message.
 - [Comment why, not what](software-text.qmd#comment-code-sparingly).
 - [Write release notes by their effect on the user](software-text.qmd#write-release-notes-for-the-user).
+
+## Thinking
+
+- [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
+- [Send a written question that gives the reader the context to answer it](writing-to-think.qmd#send-a-written-question).
+- [Draft the plan before you run the analysis](writing-to-think.qmd#keep-writing-as-the-work-grows).
