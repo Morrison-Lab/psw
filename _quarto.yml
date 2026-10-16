@@ -29,10 +29,11 @@ format:
       - sun123zxy/callouty-theorem
       - coatless-quarto/custom-callout
     include-in-header:
-      text: |
-        \usepackage{needspace}
-        \usepackage{etoolbox}
-        \AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}}
+      - text: |
+          \usepackage{needspace}
+          \usepackage{etoolbox}
+          \AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}}
+      - file: _math-macros.tex
 
 knitr:
   opts_chunk:
