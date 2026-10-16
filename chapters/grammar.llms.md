@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 10:23:00 (PDT)
+Last modified: 2026-10-16 10:30:48 (PDT)
 
 > **NOTE:**
 >
@@ -157,5 +157,37 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 > > 4.  A common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
 >
 > Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second term for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
+
+## 6 Appositive fronting
+
+An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which then follows as the subject: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.” Often the subject becomes a pronoun, as in “A disease complex with a multifactorial etiology, it is a leading cause of mortality in calves”, which needs an antecedent for “it” in the sentence before.
+
+Fronting is a stylistic choice, with costs and benefits.
+
+**Benefits**
+
+- It states the category before the specifics. The reader learns what kind of thing the subject is, then what is said about it.
+- It joins two statements without a connecting verb such as “is” or “serves as”, so the sentence is shorter.
+- It puts a familiar description first and the new claim last, where the reader’s attention lands.
+
+**Costs**
+
+- The fronted phrase must describe the grammatical subject that follows. Otherwise it dangles: “A disease complex with a multifactorial etiology, mortality in calves is high” says that mortality is a disease complex.
+- The reader waits for the subject and verb, which runs against the advice to [lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject). A long fronted appositive delays them, and a reader may take the phrase for the subject (compare [Avoid garden-path sentences](#avoid-garden-path-sentences)).
+- The sentence no longer asserts the description as a main-clause claim, so the reader may treat it as background even when it is the point.
+- A pronoun subject (“it”) needs an antecedent in the previous sentence. A reader who cannot find it must stop to look.
+- It reads as more formal and literary, which suits some venues and not others.
+
+**Guideline.** Front an appositive when it is short, familiar to the reader, and describes the subject. Keep the plain “X is Y” form when the description is the new information the paper depends on, when it is long, or when the subject is a pronoun without a clear antecedent.
+
+> **NOTE:**
+>
+> **Example 8 (Plain and fronted forms)**  
+>
+> > Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.
+> >
+> > Fronted: A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in both preweaned calves and weaned cattle.
+>
+> The fronted version is shorter and puts the category first. It works here because “a disease complex with a multifactorial etiology” describes BRD, the subject that follows it, and the subject is named, not a pronoun. If the multifactorial etiology is what the paper is about, the plain form states it as a claim the reader can challenge, and is the better choice.
 
 Back to top
