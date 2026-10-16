@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:38:59 (PDT)
+Last modified: 2026-10-16 00:47:33 (PDT)
 
 > **NOTE:**
 >
@@ -192,7 +192,7 @@ A few mechanics to keep in mind when writing one:
 > > - Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo).
 > > - Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 >
-> This example is adapted from video notes in the DATA 571 chapter on [linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html). Each bullet holds one video, so the reader can pick one without parsing the paragraph.
+> For the video notes this example comes from, see the DATA 571 chapter on [linear regression](https://morrison-lab.github.io/lds/chapters/linear-regression.html). Each bullet holds one video, so the reader can pick one without parsing the paragraph.
 
 > **NOTE:**
 >

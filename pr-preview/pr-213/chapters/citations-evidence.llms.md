@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 00:38:59 (PDT)
+Last modified: 2026-10-16 00:47:33 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -307,28 +307,28 @@ This section is adapted from @zhou2024, used under the MIT License.
 
 ## 14 Material from your own work
 
-Do not formally acknowledge material you borrow from yourself or your own group. Link to it, but do not credit it, except where a publisher’s reuse terms require a citation (see below). This covers:
+Do not formally acknowledge material you borrow from yourself or your own group. “Your group” means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG. Link to it, but do not credit it, except for the credits and citations listed below. This covers:
 
-- Material moved between repositories you maintain. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
+- Material your group wrote that moves between repositories you maintain. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work. Material in those repositories that someone outside the group wrote keeps its credit (see below).
 - Text, figures or code reused from work that you or your group wrote elsewhere, such as a lab manual your group maintains (the UCD-SERG lab manual, for example), your own papers, or your own software.
 - A template or tool of your group’s that you built the site from.
 
-A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: when you reuse a co-written paper or manual, the work itself gets no credit, but credit each outside co-author by name, in the form their role calls for (an author line, or a sentence). The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays. A passage or figure reused from a published paper of yours follows the publisher’s reuse terms, which may require a citation; that citation is the one exception to the rule above.
+A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: when you reuse a co-written paper or manual, the work itself gets no credit (a publisher-required citation aside, see below), but credit each outside co-author by name, in a sentence or an author line. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays. A passage or figure reused from a published paper of yours follows the publisher’s reuse terms, which may require a citation; that is the only citation the reuse itself can require.
 
-Do not cite your own course notes or sites as the source of a definition or result either. Cite the original publication and, where one exists, a modern textbook instead, and link to your own page as further reading (see [Cite the original for named results](#cite-the-original-for-named-results)).
+Do not cite your own course notes or sites as the source of a definition or result either. Instead, cite the original publication where you can identify one, and a modern textbook (see [Cite the original for named results](#cite-the-original-for-named-results)), and link to your own page as further reading.
 
 ❌ A citation of the group’s own notes as the source of a definition:
 
 ``` markdown
-A feature vector is an element of the real coordinate space [@morrison2026mds].
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@morrison2026mds].
 ```
 
 ✅ The original source and a textbook, with a cross-reference link to the group’s page:
 
 ``` markdown
-A feature vector is an element of the real coordinate space [@original, sec. 2; @textbook, ch. 3].
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@original, sec. 2; @textbook, ch. 3].
 See also the
-[real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space)
+[Cauchy-Schwarz inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-cauchy-schwarz)
 in the sister notes.
 ```
 
