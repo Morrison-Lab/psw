@@ -357,7 +357,27 @@ in every course and every teaching repository.
   (observed in lecture slides rendered with Quarto).
   Put a slide break after the heading and move the text onto content slides.
 
+## Talk about the ideas, not the notes
+
+When a term is defined on another page or in another site,
+state the idea in the sentence and link the term.
+Do not write about where the definition lives.
+
+- Write "the bias of an estimator",
+  linked to its definition,
+  not "the statistics notes define the bias of an estimator".
+- Do not write "see the probability notes" or "as in our notes".
+  The link already says where the term lives.
+- Name a remark by the idea it holds,
+  such as "Bias of a prediction",
+  not "Bias of a prediction in the statistics notes".
+
+Students read concepts, not the structure of the site.
+A sentence about which notes define a term adds no content,
+and it goes stale when the definition moves.
+
 ## Credit other courses without summarizing them
+
 
 - Write your own version of another course's material,
   and credit the source in a collapsed `.callout-note` titled "Source",
