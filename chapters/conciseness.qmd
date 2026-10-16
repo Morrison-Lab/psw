@@ -101,6 +101,7 @@ When none of these applies, rewrite the sentence with an active verb.
 
 A sentence about which part of the document holds a definition adds no content.
 State the idea and link the term, as [Talk about the ideas, not the notes](teaching.qmd#talk-about-the-ideas-not-the-notes) explains.
+The ✅ example below omits the link only because this guide has no page for the term.
 
 > ❌ The statistics notes define the training error as the average loss on the fitted data.
 >
