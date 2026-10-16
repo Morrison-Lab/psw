@@ -121,6 +121,8 @@ Follow its link for the reasons and the exceptions.
 - [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences).
 - [Name the object of a relational noun](grammar.qmd#name-the-object-of-a-relational-noun).
 - [Lead with the subject](conciseness.qmd#lead-with-the-subject).
+- [Make every word tell](conciseness.qmd#make-every-word-tell):
+  cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures).
 - [Do not rule out readings that no reader would make](conciseness.qmd#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
@@ -146,3 +148,16 @@ Follow its link for the reasons and the exceptions.
   in a collapsed "Source" callout, not in running prose.
 - [Skip the credit for material from your own repositories](citations-evidence.qmd#material-from-your-own-repositories),
   but keep what those repositories credit.
+
+## Software text
+
+- [Say what changed and why](software-text.qmd#say-what-changed-and-why)
+  in a pull request or commit message.
+- [Comment why, not what](software-text.qmd#comment-code-sparingly).
+- [Write release notes by their effect on the user](software-text.qmd#write-release-notes-for-the-user).
+
+## Thinking
+
+- [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
+- [Send a written question that gives the reader the context to answer it](writing-to-think.qmd#send-a-written-question).
+- [Draft the plan before you run the analysis](writing-to-think.qmd#keep-writing-as-the-work-grows).
