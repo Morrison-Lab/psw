@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 05:10:12 (PDT)
+Last modified: 2026-10-16 09:59:07 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -169,6 +169,8 @@ Examples serve several crucial purposes:
   **Incorrect:** “Conciseness is the quality of being concise.”
 
   **Correct:** “Conciseness is the quality of expressing ideas using only the words necessary to communicate meaning clearly.”
+
+  Qualifying the term does not make the definition less circular. “A new observation relative to a training set is a new observation when …” still uses the term in its own definition. Define it directly instead: “A new observation relative to a training set is a covariate value and an outcome drawn from the same population as the training observations and independent of them.”
 
 - **Vague definitions:** Avoid definitions that rely on imprecise language.
 
