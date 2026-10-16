@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 18:53:39 (PDT)
+Last modified: 2026-10-15 21:21:35 (PDT)
 
 > **NOTE:**
 >
@@ -227,6 +227,14 @@ The last group of clichés is about [register](#def-register).
 - **Reflexive both-sides framing.** Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Use a [hedge](#def-hedge) when the evidence is genuinely mixed, not by habit.
 - **Vague universals.** “Studies show” and “experts agree”, with no specific source or number, are clichés precisely because they dodge the evidence. Name the study and give the number, as the [Citations and evidence](../chapters/citations-evidence.llms.md) chapter recommends.
 
-A short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice.
+## 9 How to use this list
+
+Write plainly first, then scan the draft once before you share it. Use the same list when you review someone else’s writing.
+
+- One match means little. Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
+- Do not ban a word outright. Keep a word or phrase that is the precise one for the sentence.
+- Do not flatten your writing into a voiceless register. Cut the filler and the reflexes, and keep your own voice.
+- Skip the scan for code, terse status lines and short conversational replies.
+- Do not accuse a writer of using an assistant on the strength of the list. Say which pattern weakens the sentence and how to fix it.
 
 Back to top
