@@ -10,6 +10,8 @@ format:
     output-file: defining-terms.docx
 ---
 
+{{< include ../latex-macros/macros.qmd >}}
+
 Clear definitions are essential to effective scientific writing.
 Every specialized term should have an explicit,
 concise definition immediately before or after its first use.
