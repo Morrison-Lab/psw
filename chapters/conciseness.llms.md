@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 10:35:43 (PDT)
+Last modified: 2026-10-16 10:41:10 (PDT)
 
 > **NOTE:**
 >
@@ -176,13 +176,47 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 10 Do not overexplain
+## 10 Let a self-describing link stand alone
+
+A URL often shows the name of what it points to and where that thing lives. When it does, do not also spell out that name or host around the link. The reader would read the same facts twice.
+
+> **NOTE:**
+>
+> **Example 5 (Dropping prose that repeats a URL)**  
+>
+> > ❌ For an example, see my public notes site Morrison-Lab/sds on GitHub (<https://github.com/Morrison-Lab/sds>).
+> >
+> > ✅ For an example, see <https://github.com/Morrison-Lab/sds>.
+>
+> The URL already says that the site is on GitHub and that the repository is `Morrison-Lab/sds`.
+
+Keep a descriptive label when the URL does not show what it points to, such as a DOI or a shortened link.
+
+## 11 Keep the writer out of the way
+
+Mention yourself only where a sentence needs an actor, such as a request, an offer, or a decision you made. Elsewhere, make the subject of the sentence the thing the reader cares about. Extra references to the writer turn attention from the content to the person.
+
+> **NOTE:**
+>
+> **Example 6 (Moving the focus from the writer to the subject)**  
+>
+> > ❌ I tested this in a small private project, and I found that CI works well.
+> >
+> > ✅ CI works well in a small private test project.
+> >
+> > ❌ My build and review tools run on cloud services.
+> >
+> > ✅ The build and review tools run on cloud services.
+>
+> A request still needs its actor: “Could the space be increased, or would you allow me to register my own runner?” keeps “me” because the request is about the writer’s runner.
+
+## 12 Do not overexplain
 
 Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.
 
 > **NOTE:**
 >
-> **Example 5 (Cutting a clause the term already implies)**  
+> **Example 7 (Cutting a clause the term already implies)**  
 >
 > > ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
 > >
@@ -190,7 +224,7 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 >
 > The first version adds a clause that “the mean” already covers. The second is complete.
 
-## 11 Put lists in bullet points
+## 13 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -206,7 +240,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 6 (Turning an inline list into bullet points)**  
+> **Example 8 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -220,7 +254,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 7 (Turning a run of resource sentences into bullet points)**  
+> **Example 9 (Turning a run of resource sentences into bullet points)**  
 >
 > > ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 > >
@@ -233,7 +267,7 @@ A few mechanics to keep in mind when writing one:
 
 > **NOTE:**
 >
-> **Example 8 (Turning inline steps into a numbered list)**  
+> **Example 10 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -244,7 +278,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 12 Examples of concise writing
+## 14 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
