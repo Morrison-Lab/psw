@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 12:16:48 (PDT)
+Last modified: 2026-10-16 03:16:49 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -193,4 +193,4 @@ Back to top
 
 ## References
 
-Lamport, Leslie. 2019. *Think and Write with Leslie Lamport*. <https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/>.
+Lamport, Leslie. 2019. *Think and Write with Leslie Lamport*. Podcast interview, Mentors.fm. <https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/>.
