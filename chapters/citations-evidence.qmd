@@ -496,7 +496,7 @@ This section is adapted from @zhou2024, used under the MIT License.
 ## Material from your own work
 
 Do not formally acknowledge material you borrow from yourself or your own group.
-"Your group" means you and the other members of the lab that maintains the work, such as the Morrison Lab.
+"Your group" means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG.
 Link to it, but do not credit it,
 except for the credits and citations listed below.
 This covers:
