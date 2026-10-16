@@ -507,6 +507,10 @@ This covers:
 
 A formal acknowledgment tells the reader the material came from someone else,
 so it does not belong on your own work, wherever that work is stored.
+The rule concerns acknowledging reuse of your own material.
+Citing a published paper or released software of yours
+as the original publication of a result, or as a tool you used,
+is ordinary citation and stays.
 
 Do not cite your own notes as the source of a definition or result either.
 Cite the original publication and a modern textbook instead,
@@ -526,20 +530,20 @@ A feature vector is an element of the
 [real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
 ```
 
-A person outside your group who wrote material you reuse is the exception:
-credit that person by name when you reuse their words or lectures.
-A lab manual your own group maintains, such as the UCD-SERG lab manual, counts as your own work,
-so it gets no credit, but what it credits, such as the Benjamin-Chung Lab Manual, is still carried.
-
-Carry over what the source itself credits:
+A lab manual your own group maintains, such as the UCD-SERG lab manual,
+counts as your own work, so it gets no credit.
+Carry over what the source itself credits,
+such as the Benjamin-Chung Lab Manual that the UCD-SERG manual credits:
 
 - A book or paper the material follows.
-- A person outside your group whose lecture or notes it adapted.
+- A person outside your group whose lecture or notes it adapted,
+  credited by name.
   For example, the lds course credits Kameron Decker Harris,
   Brian Hutchinson and Logan Sizemore,
   so any repository that reuses those lectures credits them too.
 
-A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.
+A link to a sister site that sends the reader to further reading
+is a cross-reference, not an attribution, so it stays.
 
 When you find an existing credit to your own work, remove it and leave the link.
 
