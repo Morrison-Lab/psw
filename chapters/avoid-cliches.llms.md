@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 09:59:07 (PDT)
+Last modified: 2026-10-16 10:07:11 (PDT)
 
 > **NOTE:**
 >
@@ -156,7 +156,7 @@ When a sentence needs both a positive claim and a denial, state the positive cla
 > >
 > > ✅ The padding is an identity, not a convention.
 >
-> Both are correct sentences; the second puts the claim first. The first pair is from the [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
+> Both are correct sentences; the second puts the claim first. For the first pair, see the [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
 
 Often the denial can be cut. Keep it only when the reader might plausibly believe the rejected reading, as with a convention versus an identity. A denial that rejects a view nobody holds is the reframe (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature: cut it and keep the claim.
 

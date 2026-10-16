@@ -4,9 +4,9 @@ Code
 
 Published
 
-Last modified: 2026-10-16 09:59:07 (PDT)
+Last modified: 2026-10-16 10:07:11 (PDT)
 
-Writing helps you find out what you think, as well as report what you already know. This chapter builds on the UCD-SERG Lab Manual’s section on the topic ([UCD-SERG, n.d.](#ref-ucdserglabmanual)).
+Writing helps you find out what you think, as well as report what you already know. For further reading, see the section [Writing to clarify your thinking](https://ucd-serg.github.io/lab-manual/writing.html#writing-to-clarify-your-thinking) in the UCD-SERG lab manual.
 
 ## 1 Write the question down first
 
@@ -46,5 +46,3 @@ Back to top
 ## References
 
 Lamport, Leslie. 2019. *Think and Write with Leslie Lamport*. Podcast interview, Mentors.fm. <https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/>.
-
-UCD-SERG. n.d. *Lab Manual, Section “Writing to Clarify Your Thinking”*. Online manual, University of California, Davis, Seroepidemiology Research Group. Accessed October 16, 2026. <https://ucd-serg.github.io/lab-manual/writing.html#writing-to-clarify-your-thinking>.

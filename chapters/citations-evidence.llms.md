@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 09:59:07 (PDT)
+Last modified: 2026-10-16 10:07:11 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -323,21 +323,43 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### 16.1 Material from your own repositories
+## 17 Material from your own work
 
-Material moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
+Do not formally acknowledge material you borrow from yourself or your own group. “Your group” means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG. Link to it, but do not credit it, except for the credits and citations listed below. This covers:
 
-Carry over what the source repository itself credits:
+- Material your group wrote that moves between repositories you maintain. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work. Material in those repositories that someone outside the group wrote keeps its credit (see below).
+- Text, figures or code reused from work that you or your group wrote elsewhere, such as a lab manual your group maintains (the UCD-SERG lab manual, for example), your own papers, or your own software.
+- A template or tool of your group’s that you built the site from.
 
-- A book or paper the material follows.
-- A person outside your group whose lecture or notes it adapted. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
+A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: when you reuse a co-written paper or manual, the work itself gets no credit (a publisher-required citation aside, see below), but credit each outside co-author by name, in a sentence or an author line. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays. A passage or figure reused from a published paper of yours follows the publisher’s reuse terms, which may require a citation; that is the only citation the reuse itself can require.
 
-The exception has two limits:
+Do not cite your own course notes or sites as the source of a definition or result either. Instead, cite the original publication where you can identify one, and a modern textbook (see [Cite the original for named results](#cite-the-original-for-named-results)), and link to your own page as further reading.
 
-- It does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.
-- It does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution.
+❌ A citation of the group’s own notes as the source of a definition:
 
-## 17 Common citation errors to avoid
+``` markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@morrison2026mds].
+```
+
+✅ The original source and a textbook, with a cross-reference link to the group’s page:
+
+``` markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@original, sec. 2; @textbook, ch. 3].
+See also the
+[Cauchy-Schwarz inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-cauchy-schwarz)
+in the sister notes.
+```
+
+Carry over what the source of your material itself credits:
+
+- A book, paper or other work the material follows. For example, the Benjamin-Chung Lab Manual, which the UCD-SERG manual credits.
+- A person outside your group whose lecture or notes that source adapted, credited by name. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
+
+A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.
+
+When you find an existing credit to your own work, remove it and add or keep a link to it.
+
+## 18 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -347,39 +369,39 @@ The exception has two limits:
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 18 Examples
+## 19 Examples
 
-### 18.1 Poor (unsupported claim)
+### 19.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 18.2 Better (citation provided)
+### 19.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 18.3 Best (citation with context)
+### 19.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 18.4 Poor (irrelevant citation)
+### 19.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 18.5 Better (relevant citation)
+### 19.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 19 Conclusion
+## 20 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
