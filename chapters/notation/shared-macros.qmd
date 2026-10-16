@@ -119,7 +119,18 @@ only the definition of `\reals` changes.
 
 :::
 
-Latin letters with a fixed role follow the same rule.
+Latin letters follow the same rule.
+Outside a passage that discusses the notation itself,
+do not write a literal Latin or Greek letter in a math expression.
+The one exception is a one-off symbol that fits no semantic category.
+The shared macros already name outcome variables, covariates and generic parameters,
+so a one-off should almost never be needed.
+When a symbol has a category but no macro, add the macro to the shared file first.
+New macros always go in the group's shared macros repository,
+never in a repository that applies them,
+unless that repository explicitly overrides the default meaning of one specific macro.
+
+Latin letters with a fixed role show the rule.
 In a regression or prediction model, use these macros:
 
 - `\outvar` for the outcome variable, instead of a bare `y`;
