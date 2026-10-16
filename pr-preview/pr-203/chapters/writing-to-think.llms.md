@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:37:27 (PDT)
+Last modified: 2026-10-16 04:52:38 (PDT)
 
 Writing helps you find out what you think, as well as report what you already know. This chapter builds on the UCD-SERG Lab Manual’s section on the topic ([UCD-SERG, n.d.](#ref-ucdserglabmanual)).
 
