@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 10:12:22 (PDT)
+Last modified: 2026-10-16 10:17:24 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -74,7 +74,18 @@ Follow these principles when introducing new terms:
 
 - **Provide examples and counterexamples:** Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.
 
-- **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing.
+- **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing. Give closely related terms separate divs too: only full synonyms share one (see *Name the synonyms* below). For example, the left and right distributive laws are two properties, each with its own identifier, example and exercise, so define them in two divs. A reader who needs one of them can then link to exactly that one.
+
+  > **NOTE:**
+  > **Example 5 (Splitting two related definitions)**  
+  >
+  > > ❌ **Definition (distributive laws).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ and *on the right* if \\(a + b)c = ac + bc\\.
+  > >
+  > > ✅ **Definition (left distributivity).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ for all \\a\\, \\b\\ and \\c\\.
+  > >
+  > > ✅ **Definition (right distributivity).** Multiplication *distributes over addition on the right* if \\(a + b)c = ac + bc\\ for all \\a\\, \\b\\ and \\c\\.
+  >
+  > The first block cannot be linked to as “left distributivity” without also pointing at the other law, and one example cannot illustrate both. For numbers, right distributivity follows from left distributivity because multiplication commutes, so one example checks both. Matrix multiplication does not commute, so establishing one law does not establish the other, and each needs its own example.
 
 - **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title, as in “Postulate (axiom)”, and bold each where it first appears in the definition. This covers the names other sources use, such as a textbook’s, which belong in the title and in bold too, as in “Risk (expected loss, population risk, true risk, generalization error, expected prediction error)”. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
 
@@ -104,11 +115,11 @@ Here are examples of well-defined terms:
 
 > **NOTE:**
 >
-> **Example 5 (A confidence interval for mean height)** If we calculate a 95% confidence interval ([Definition 3](#def-confidence-interval)) for mean height as \[165 cm, 175 cm\], we are 95% confident that the true population mean height falls within this range.
+> **Example 6 (A confidence interval for mean height)** If we calculate a 95% confidence interval ([Definition 3](#def-confidence-interval)) for mean height as \[165 cm, 175 cm\], we are 95% confident that the true population mean height falls within this range.
 
 > **NOTE:**
 >
-> **Example 6 (A range that is not a confidence interval for the mean)** The interval from the 2.5th to the 97.5th percentile of the observed heights, \[150 cm, 190 cm\], is not a 95% confidence interval ([Definition 3](#def-confidence-interval)) for mean height. The percentile interval describes where individual heights fall, not where the population mean is likely to be, and it does not shrink as the sample grows.
+> **Example 7 (A range that is not a confidence interval for the mean)** The interval from the 2.5th to the 97.5th percentile of the observed heights, \[150 cm, 190 cm\], is not a 95% confidence interval ([Definition 3](#def-confidence-interval)) for mean height. The percentile interval describes where individual heights fall, not where the population mean is likely to be, and it does not shrink as the sample grows.
 
 > **NOTE:**
 >
@@ -116,11 +127,11 @@ Here are examples of well-defined terms:
 
 > **NOTE:**
 >
-> **Example 7 (A sentence in active voice)** “The researcher conducted the experiment” is in active voice ([Definition 4](#def-active-voice)): the subject, “the researcher”, performs the action, “conducted”.
+> **Example 8 (A sentence in active voice)** “The researcher conducted the experiment” is in active voice ([Definition 4](#def-active-voice)): the subject, “the researcher”, performs the action, “conducted”.
 
 > **NOTE:**
 >
-> **Example 8 (A sentence that is not in active voice)** “The experiment was conducted by the researcher” is not in active voice ([Definition 4](#def-active-voice)). Its subject, “the experiment”, receives the action instead of performing it, so the sentence is in passive voice.
+> **Example 9 (A sentence that is not in active voice)** “The experiment was conducted by the researcher” is not in active voice ([Definition 4](#def-active-voice)). Its subject, “the experiment”, receives the action instead of performing it, so the sentence is in passive voice.
 
 ## 3 Order: general definition, then examples
 
@@ -134,17 +145,17 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Example 9 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the fitted value of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a function of the two coefficients:
+> **Example 10 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the fitted value of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a function of the two coefficients:
 >
 > \\ \text{RSS}(\beta_0, \beta_x) = \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2. \\
 
 > **NOTE:**
 >
-> **Example 10 (Residual sum of squares of a line through three points)** For the points \\(0, 1)\\, \\(1, 2)\\, \\(2, 2)\\ and the line with \\\beta_0 = 1\\ and \\\beta_x = 0.5\\ ([Example 9](#exm-rss-line)), the residuals are \\0\\, \\0.5\\ and \\0\\, so \\\text{RSS}(1, 0.5) = 0.25\\.
+> **Example 11 (Residual sum of squares of a line through three points)** For the points \\(0, 1)\\, \\(1, 2)\\, \\(2, 2)\\ and the line with \\\beta_0 = 1\\ and \\\beta_x = 0.5\\ ([Example 10](#exm-rss-line)), the residuals are \\0\\, \\0.5\\ and \\0\\, so \\\text{RSS}(1, 0.5) = 0.25\\.
 
 > **NOTE:**
 >
-> **Example 11 (A sum of squares that is not a residual sum of squares)** For the same three points, the sum of squared deviations of \\y_i\\ from their mean, \\5/3\\, is \\2/3\\. That quantity is the total sum of squares, not the residual sum of squares ([Definition 5](#def-rss)) of the line in [Example 10](#exm-rss-three-points), because it measures spread around the mean rather than around the line’s fitted values.
+> **Example 12 (A sum of squares that is not a residual sum of squares)** For the same three points, the sum of squared deviations of \\y_i\\ from their mean, \\5/3\\, is \\2/3\\. That quantity is the total sum of squares, not the residual sum of squares ([Definition 5](#def-rss)) of the line in [Example 11](#exm-rss-three-points), because it measures spread around the mean rather than around the line’s fitted values.
 
 The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.
 
@@ -232,7 +243,7 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 12 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
+> **Example 13 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
 >
 > \\ \begin{aligned} 3^2 + 4^2 &= 9 + 16 \\ &= 25 \\ &= 5^2. \end{aligned} \\
 
@@ -242,7 +253,7 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 13 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
+> **Example 14 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
 >
 > If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
 
@@ -290,7 +301,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 14 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+> **Example 15 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
 >
 > > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
 > >
@@ -300,7 +311,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 15 (Splitting a theorem that states two results)**  
+> **Example 16 (Splitting a theorem that states two results)**  
 >
 > > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
 > >

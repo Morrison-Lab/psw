@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 10:12:22 (PDT)
+Last modified: 2026-10-16 10:17:24 (PDT)
 
 > **NOTE:**
 >
@@ -100,7 +100,18 @@ When several courses or repositories have already written the same definition, t
 
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
+- Show the data where it is first mentioned. Put a table of a few rows, or a plot of the variables, directly after the sentence that names the dataset, before any discussion of its features, the methods to apply to it, or the questions it raises. A reader who has seen the data can picture what the next slides describe, while a reader who has not must hold an abstract description in mind until the data appears. If the data are too large to show, show a sample or a summary figure. Link later mentions of the dataset back to this first display.
 - Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.
+
+> **NOTE:**
+>
+> **Example 3 (Showing the data at first mention)**  
+>
+> > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance and the loss we will minimize. Slide 10 shows a table of the first rows.
+> >
+> > ✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance and the loss, and refer back to that table and plot.
+>
+> The ✅ version lets every later slide refer to something the reader has already seen.
 
 ## 8 Store structured data in structured formats
 
