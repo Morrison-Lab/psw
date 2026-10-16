@@ -527,6 +527,9 @@ A feature vector is an element of the
 [real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
 ```
 
+A work you wrote with people outside your group is the exception:
+credit those co-authors by name when you reuse their words or lectures.
+
 Carry over what the source itself credits:
 
 - A book or paper the material follows.
