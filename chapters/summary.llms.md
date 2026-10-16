@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 05:04:39 (PDT)
+Last modified: 2026-10-16 05:10:12 (PDT)
 
 > **NOTE:**
 >
@@ -56,6 +56,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 ## 3 Papers
 
+- [Write to clarify your thinking](../chapters/paper-organization.llms.md#write-to-clarify-your-thinking): write each question or idea down as it comes.
 - [Follow the standard structure](../chapters/paper-organization.llms.md#standard-paper-structure) of a research paper.
 - [Organize the Results section](../chapters/paper-organization.llms.md#organizing-the-results-section) to fit the design of the study.
 - [Label variables in plain words](../chapters/paper-organization.llms.md#label-variables-in-plain-words) in figures and tables.

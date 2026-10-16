@@ -33,7 +33,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-3a7eae3b872f08785a56513611f0329a.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -251,14 +270,27 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-16 05:04:39 (PDT)</p>
+  <p class="date">Last modified: 2026-10-16 05:10:12 (PDT)</p>
 </section>
 <section class="slide level2">
 
 <p>Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.</p>
 </section>
-<section id="standard-paper-structure" class="slide level2" data-number="1">
-<h2><span class="header-section-number">1</span> Standard paper structure</h2>
+<section id="write-to-clarify-your-thinking" class="slide level2" data-number="1">
+<h2><span class="header-section-number">1</span> Write to clarify your thinking</h2>
+</section>
+<section class="slide level2">
+
+<p>Write down a question or an idea as soon as you have it, before you search for an answer. Writing it down helps you in these ways:</p>
+<ul>
+<li>You see what you need to know.</li>
+<li>You state the problem more precisely.</li>
+<li>You often answer the question yourself while writing it.</li>
+</ul>
+<p>The computer scientist Leslie Lamport argues that a person who thinks without writing only thinks that they are thinking <span class="citation" data-cites="lamport2019think">(<a href="#/references" role="doc-biblioref" onclick="">Lamport 2019</a>)</span>.</p>
+</section>
+<section id="standard-paper-structure" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> Standard paper structure</h2>
 </section>
 <section class="slide level2">
 
@@ -271,8 +303,8 @@
 </ul>
 <p>Some papers combine Results and Discussion into a single section.</p>
 </section>
-<section id="organizing-the-results-section" class="slide level2" data-number="2">
-<h2><span class="header-section-number">2</span> Organizing the Results section</h2>
+<section id="organizing-the-results-section" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Organizing the Results section</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -338,12 +370,12 @@
 <h4 id="exception-shared-descriptive-statistics">Exception: Shared descriptive statistics</h4>
 <p>If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.</p>
 </section>
-<section id="figures-and-tables" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> Figures and tables</h2>
+<section id="figures-and-tables" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Figures and tables</h2>
 </section>
 <section class="slide level2">
 
-<p>In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout (<a href="#/sec-submission-layout" class="quarto-xref">Section&nbsp;3.3</a>). Either way, number figures and tables sequentially and reference them in the text before they appear.</p>
+<p>In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout (<a href="#/sec-submission-layout" class="quarto-xref">Section&nbsp;4.3</a>). Either way, number figures and tables sequentially and reference them in the text before they appear.</p>
 <p>Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.</p>
 <h3 id="label-variables-in-plain-words">Label variables in plain words</h3>
 <p>A figure or table is read by people, not by the code that made it. Replace every variable name from the data with a label a reader understands:</p>
@@ -385,8 +417,8 @@
 <li>For a journal submission, do the main-text figures and tables come after the references and before the supplement, and does the supplementary material start on a new page?</li>
 </ul>
 </section>
-<section id="subsection-headings" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Subsection headings</h2>
+<section id="subsection-headings" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Subsection headings</h2>
 </section>
 <section class="slide level2">
 
@@ -395,8 +427,8 @@
 <p><strong>Better heading</strong>: “Association between treatment and mortality”</p>
 <p><strong>Best heading</strong>: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)</p>
 </section>
-<section id="avoid-forward-references" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Avoid forward references</h2>
+<section id="avoid-forward-references" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Avoid forward references</h2>
 </section>
 <section class="slide level2">
 
@@ -425,10 +457,10 @@
 <p>A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.</p>
 <p>When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.</p>
 </section>
-<section id="links-to-videos-and-other-media" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Links to videos and other media</h2>
+<section id="links-to-videos-and-other-media" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Links to videos and other media</h2>
 </section>
-<section class="slide level2">
+<section class="slide level2 smaller scrollable" id="references">
 
 <p>Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.</p>
 <p>A reader who has just finished a section is ready to use material about it. The same reader at the end of the document must guess which link goes with which section, and may never reach the list.</p>
@@ -632,6 +664,11 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 })();
 </script>
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-lamport2019think" class="csl-entry" role="listitem">
+Lamport, Leslie. 2019. <em>Think and Write with <span>Leslie Lamport</span></em>. Podcast interview, Mentors.fm. <a href="https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/">https://mentors.fm/2019/08/13/think-and-write-with-leslie-lamport/</a>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
