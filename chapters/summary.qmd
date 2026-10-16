@@ -119,12 +119,6 @@ Follow its link for the reasons and the exceptions.
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](conciseness.qmd#put-lists-in-bullet-points).
 
-## Thinking
-
-- [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
-- [Send a written question that states the goal, what you did, what you expected and what happened, and what you tried](writing-to-think.qmd#send-a-written-question).
-- [Draft the aims, methods, and expected results before you run the analysis](writing-to-think.qmd#keep-writing-as-the-work-grows).
-
 ## Teaching materials
 
 - [Build the lecture from exercises and solutions](teaching.qmd#build-the-lecture-from-exercises-and-solutions).
@@ -145,3 +139,9 @@ Follow its link for the reasons and the exceptions.
   in a collapsed "Source" callout, not in running prose.
 - [Skip the credit for material from your own repositories](citations-evidence.qmd#material-from-your-own-repositories),
   but keep what those repositories credit.
+
+## Thinking
+
+- [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
+- [Send a written question, with the context needed to answer it](writing-to-think.qmd#send-a-written-question).
+- [Draft the plan before you run the analysis](writing-to-think.qmd#keep-writing-as-the-work-grows).

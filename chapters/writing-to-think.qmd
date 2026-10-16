@@ -11,7 +11,7 @@ format:
 ---
 
 Writing helps you find out what you think, as well as report what you already know.
-This chapter adapts the UCD-SERG Lab Manual's section on the topic [@ucdserglabmanual].
+This chapter builds on the UCD-SERG Lab Manual's section on the topic [@ucdserglabmanual].
 
 ## Write the question down first
 
@@ -46,6 +46,11 @@ When the question stays open, the reader has what they need to answer it.
 ## Keep writing as the work grows
 
 Apply the same habit to a whole project.
-Draft the aims, the methods, and the expected results before you run the analysis.
+Before you run the analysis, draft:
+
+- the aims;
+- the methods;
+- the expected results.
+
 A draft shows which parts of the plan you cannot yet state clearly,
 and those parts are where you need to think more.
