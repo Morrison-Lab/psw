@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:17:13 (PDT)
+Last modified: 2026-10-16 04:58:56 (PDT)
 
 > **NOTE:**
 >
@@ -68,7 +68,15 @@ Passive voice is the right choice in a few cases:
 
 When none of these applies, rewrite the sentence with an active verb.
 
-## 4 Lead with the subject
+## 4 Write about the ideas, not the document
+
+A sentence about which part of the document holds a definition adds no content. State the idea and link the term, as [Talk about the ideas, not the notes](../chapters/teaching.llms.md#talk-about-the-ideas-not-the-notes) explains. The ✅ example below omits the link only because this guide has no page for the term.
+
+> ❌ The statistics notes define the training error as the average loss on the fitted data.
+>
+> ✅ The training error is the average loss on the data used to fit the model.
+
+## 5 Lead with the subject
 
 Start a sentence with its subject, not a dependent clause or a fronted phrase. A leading clause makes the reader hold a condition before knowing what it conditions.
 
@@ -82,7 +90,7 @@ A fronted phrase delays the subject in the same way. Move a phrase such as “in
 >
 > ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
-## 5 Limit complex sentence structures
+## 6 Limit complex sentence structures
 
 A sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (*and*, *but*, *or*) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.
 
@@ -98,7 +106,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 6 Do not rule out readings no reader would make
+## 7 Do not rule out readings no reader would make
 
 A definition says what a term means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
 
@@ -116,7 +124,7 @@ Keep a disclaimer when the confusion is real. For example, if “CI” could mea
 
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
-## 7 Avoid double negatives
+## 8 Avoid double negatives
 
 A double negative states a claim by denying its opposite, as in these phrases:
 
@@ -140,7 +148,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-## 8 Write about the subject, not about the text
+## 9 Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject. They do one of these things:
 
@@ -168,7 +176,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 9 Do not overexplain
+## 10 Do not overexplain
 
 Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.
 
@@ -182,7 +190,7 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 >
 > The first version adds a clause that “the mean” already covers. The second is complete.
 
-## 10 Put lists in bullet points
+## 11 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -236,7 +244,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 11 Examples of concise writing
+## 12 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:17:13 (PDT)
+Last modified: 2026-10-16 04:58:56 (PDT)
 
 > **NOTE:**
 >
@@ -39,6 +39,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | the estimates blow up | the estimates become very large |
 | the model is a black box | we cannot read the model’s decision rule from its parameters |
 | flexibility buys lower bias | more flexible models tend to have lower bias |
+| this assumption costs nothing | this assumption loses no generality |
+| a mean of zero buys one identity | a mean of zero implies one identity |
 | a ton of data | a large data set |
 | the method falls flat on small samples | the method has high error on small samples |
 | at the end of the day, we want low test error | our goal is low test error |
