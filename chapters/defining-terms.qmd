@@ -295,11 +295,11 @@ Follow these principles when introducing new terms:
   A prediction is not an estimator of a mean.
   Its estimand is the observed outcome value of a new data point,
   not the population mean of that outcome.
-  For example, the fitted model at $x$ is an estimator of the mean function value at $x$,
+  For example, the fitted model at $\predvar$ is an estimator of the mean function value $\mean(\predvar)$,
   so its bias is measured against that mean,
-  while the prediction at $x$ has the new outcome $Y_*$ as its estimand,
-  so its prediction error is measured against $Y_*$.
-  Write "the fitted model at $x$ as an estimator of the mean function value",
+  while the prediction at $\predvar$ has the new outcome $\newoutvar$ as its estimand,
+  so its prediction error is measured against $\newoutvar$.
+  Write "the fitted model at $\predvar$ as an estimator of the mean function value",
   or "the prediction of the new outcome",
   and never leave the target implicit.
 
