@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:32:06 (PDT)
+Last modified: 2026-10-16 10:26:16 (PDT)
 
 > **NOTE:**
 >
@@ -182,7 +182,46 @@ Use the notation to match:
 - Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
 - Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
 
-## 5 Matching names and notation
+In machine learning notes, the prediction function is \\h\\, and its value at the \\i\\-th observed input is the **fitted value**. Define it once as \\\hat{y}\_i = h(x_i)\\, then print \\\hat{y}\_i\\, not \\h(x_i)\\, wherever the fitted value appears in a loss, a residual or a risk sum. Keep \\h(x)\\ where \\h\\ itself is the subject, as in “the linear function \\h(x) = \beta_0 + \beta_x x\\”, and where the output is not a prediction of \\y_i\\, such as the decision score of a support vector machine or a vector of class probabilities.
+
+In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
+
+## 5 Random variables and their values
+
+A random variable and a value that it takes are different objects. Before the data are collected, the outcome is a random variable; after, it is a number. Statements about the two have different meanings. Write them with different symbols.
+
+Use a capital letter for the random variable and the matching lowercase letter for a value that it takes:
+
+- \\Y\\ is the random variable, such as the outcome of a coin flip before the flip;
+- \\y\\ is one value of \\Y\\, such as 1 after the flip lands heads;
+- \\Y_i\\ is the random variable for the \\i\\-th observation;
+- \\y_i\\ is that observation’s observed value.
+
+State the convention where you first use the symbols. Keep it in every later section. Do not switch between \\Y_i\\ and \\y_i\\ for the same quantity unless the meaning changes from “before the data” to “after the data”.
+
+> **NOTE:**
+>
+> **Example 8 (Writing a random variable and its value)**  
+>
+> > ❌ The probability that \\y_i\\ exceeds 3 is \\0.2\\.
+> >
+> > ✅ The probability that \\Y_i\\ exceeds 3 is \\0.2\\.
+>
+> > ❌ The sample mean of the \\Y_i\\ is 2.4.
+> >
+> > ✅ The sample mean of the \\y_i\\ is 2.4.
+>
+> A probability is a statement about a random variable. The ❌ version of the first pair puts a fixed number where a quantity that can vary belongs. An observed number has no probability of exceeding 3. The second pair has the reverse mistake. A sample mean of 2.4 is a number computed from observed values. The ❌ version attributes it to the random variables. The sample mean of the random variables, \\\bar{Y}\\, is itself a random variable.
+
+Match the notation to the claim:
+
+- Write \\\Pr(Y \le y)\\ for a probability, with the random variable on the left of the inequality and the value on the right.
+- Write \\\text{E}\[Y\]\\ and \\\text{Var}(Y)\\ for the mean and variance of a random variable, never \\\text{E}\[y\]\\ or \\\text{Var}(y)\\ for an observed value.
+- Write a statistic computed from observed values with lowercase letters, as in \\\bar{y} = \frac{1}{n}\sum\_{i=1}^n y_i\\, and the same statistic as a random variable with capitals, \\\bar{Y} = \frac{1}{n}\sum\_{i=1}^n Y_i\\. The first is a number, such as 2.4. The second has a sampling distribution.
+
+Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable \\Y_i\\” or “the observed value \\y_i\\”.
+
+## 6 Matching names and notation
 
 A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
 
@@ -190,7 +229,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 8 (Matching a name to its notation)**  
+> **Example 9 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
@@ -208,7 +247,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-## 6 Using shared macros
+## 7 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
@@ -216,7 +255,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 9 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 10 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -235,11 +274,11 @@ The same rule covers these quantities:
 
 A quantity that has a macro keeps the same symbol in every document.
 
-Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`.
+Name a macro for what the symbol means, not for the letter it prints. A macro such as `\vdelta` or `\hbeta` only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as `\delta` or inside a letter-named macro such as `\vdelta`. The only exception is a one-off symbol that fits no semantic category, and the rule for Latin letters below says when that applies.
 
 > **NOTE:**
 >
-> **Example 10 (Naming a macro for its meaning)**  
+> **Example 11 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -253,7 +292,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 11 (Naming a decorator for its meaning)**  
+> **Example 12 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -265,7 +304,7 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 
 > **NOTE:**
 >
-> **Example 12 (Naming a set for its meaning)**  
+> **Example 13 (Naming a set for its meaning)**  
 >
 > > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
 > >
@@ -273,7 +312,9 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 >
 > Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\reals` changes.
 
-Latin letters with a fixed role follow the same rule. In a regression or prediction model, use these macros:
+Latin letters follow the same rule, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.
+
+Latin letters with a fixed role show the rule. In a regression or prediction model, use these macros:
 
 - `\outvar` for the outcome variable, instead of a bare `y`;
 - `\eoutvar` for a predicted outcome;
@@ -285,7 +326,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 13 (Naming a variable for its role)**  
+> **Example 14 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -297,7 +338,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 14 (Writing a named quantity by its name)**  
+> **Example 15 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -309,7 +350,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 > **NOTE:**
 >
-> **Example 15 (Letting the macro size the bracket)**  
+> **Example 16 (Letting the macro size the bracket)**  
 >
 > > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
 > >
@@ -317,13 +358,31 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
-## 7 Writing dot products
+## 8 Making expressions concise
+
+Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
+
+Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.
+
+> **NOTE:**
+>
+> **Example 17 (Naming a repeated chunk)**  
+>
+> > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
+> >
+> > ✅ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \prederr_i^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \prederr_i \predvar_i$.`
+>
+> Both versions print the same quantities. The ❌ version writes the difference `\eoutvar_i - \outvar_i` out twice. The ✅ version names it once, as the prediction error, and each formula shows at a glance what it is built from.
+
+Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
+
+## 9 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 16 (Writing a dot product)**  
+> **Example 18 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -339,7 +398,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 8 Writing out notational shorthands
+## 10 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -349,7 +408,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 17 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 19 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -362,5 +421,28 @@ Give the limits of every sum, product, and integral, and state the set that any 
 > > ✅ \\L(\theta) = \prod\_{i = 1}^{n} f(x_i; \theta)\\
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
+
+## 11 Stating assumptions before using them
+
+State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
+
+This covers every kind of condition:
+
+- a restriction on a variable (“for \\x \neq 2\\”);
+- a hypothesis of a theorem;
+- a case split;
+- a fact that a step relies on.
+
+Introduce the variable and its constraint together, as in “let \\x \neq 2\\”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
+
+> **NOTE:**
+>
+> **Example 20 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+>
+> > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
+> >
+> > ✅ Let \\x \neq 2\\. Then \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 && \text{(definition of } f\text{)}\\ &\> 0 && \text{(} x - 2 \neq 0 \text{, so its square is positive)} \end{aligned} \\
+>
+> In the ❌ version, the second line is false for \\x = 2\\, and the reader learns this only from the note at its end. In the ✅ version, “let \\x \neq 2\\” comes first, so the reader reads each line already knowing which values of \\x\\ it covers, and the justification says exactly where the condition is used.
 
 Back to top

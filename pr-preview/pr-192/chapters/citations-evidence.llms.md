@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:32:06 (PDT)
+Last modified: 2026-10-16 10:26:16 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -177,6 +177,7 @@ A link lets a reader check a claim or learn more without searching for the sourc
 
 - a term to the place where it is defined, in the same document or another one;
 - a result to the theorem, equation or section that establishes it;
+- a definition, theorem or named method to its [Wikipedia](https://www.wikipedia.org/) article, when one exists (see [Link to Wikipedia, but do not cite it](#link-to-wikipedia-but-do-not-cite-it));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document, instead of repeating its content.
@@ -199,7 +200,28 @@ Leave a link out only for a reason such as one of the following:
 >
 > A reader who does not know lme4, or wants the exact meaning of “confidence interval” in this guide, can now follow the link instead of searching.
 
-## 8 Best practices
+## 8 Link to Wikipedia, but do not cite it
+
+Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So link each definition, theorem or named method to its Wikipedia article whenever one exists: the link gives readers a second, free explanation without leaving them to search for it.
+
+Link, however, does not mean cite. The link tells the reader where to read more; the evidence for a claim still comes from the primary source, as [Sources to generally avoid](#sources-to-generally-avoid) explains. When you do both, put the Wikipedia link beside the definition and the citation beside the claim.
+
+- Link the article for the specific concept, not a broader article that mentions it.
+- Read the article’s definition before linking it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.
+- Use a stable link to the article, not to a search result.
+- Link a term once where it is defined, not at every use; later uses link to your own definition.
+
+> **NOTE:**
+>
+> **Example 3 (Linking a definition to Wikipedia)**  
+>
+> > ❌ A *Poisson random variable* counts events in a fixed interval.
+> >
+> > ✅ A *Poisson random variable* counts events in a fixed interval ([Wikipedia: Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)).
+>
+> A reader who wants another presentation of the Poisson distribution now has one, and the definition itself still comes from your own text.
+
+## 9 Best practices
 
 To effectively support your claims:
 
@@ -211,7 +233,7 @@ To effectively support your claims:
 6.  **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7.  **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
-## 9 Quote the original
+## 10 Quote the original
 
 Quote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.
 
@@ -219,11 +241,29 @@ Quote and cite the source that said it, not a later source that quotes it. Check
 >
 > ✅ “A computer program is said to learn …” ([Mitchell 1997](#ref-mitchell1997))
 
-## 10 Cite the original for named results
+Credit a quotation to whoever speaks it in the primary source, even when the speaker is quoting someone else. When attribution is in doubt, read the primary source (a transcript, the original page) first. Uncertainty about who said a line is not evidence about who said it.
+
+## 11 Copy organization names from their source
+
+When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.
+
+## 12 Verify each bibliography entry
+
+Check each detail of a bibliography entry against an official source. Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
+
+## 13 Cite an alias directly
+
+When a source uses another name for a defined term, write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
+
+> ❌ `also called the **alias**. The cited textbook uses that name.`
+>
+> ✅ `also called the **alias** [@key, section]`
+
+## 14 Cite the original for named results
 
 When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
 
-Put the historical note in a short remark after the statement and its proof, not inside the definition or theorem itself, so that each theorem div still holds one result.
+When the credit is only a citation, end the definition or theorem div with a line `Source: @key [locator]`. A reference adds no commentary to the statement, and a separate remark that holds only a citation is clutter. When the credit needs substantial prose about the source or history of the content, put that prose in a short remark after the statement and its proof, not inside the definition or theorem itself, so that each theorem div still holds one result.
 
 Apply the rule to:
 
@@ -249,17 +289,17 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 > **NOTE:**
 >
-> **Example 3 (Crediting Chebyshev’s inequality)**  
+> **Example 4 (Crediting Chebyshev’s inequality)**  
 >
 > > ❌ Chebyshev’s inequality says that …
 > >
 > > ✅ Chebyshev’s inequality says that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
 
-## 11 Put the content first
+## 15 Put the content first
 
 Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
 
-## 12 Adapting another course’s material
+## 16 Adapting another course’s material
 
 When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.
 
@@ -283,21 +323,43 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### 12.1 Material from your own repositories
+## 17 Material from your own work
 
-Material moved between repositories you maintain needs no credit to those repositories. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work.
+Do not formally acknowledge material you borrow from yourself or your own group. “Your group” means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG. Link to it, but do not credit it, except for the credits and citations listed below. This covers:
 
-Carry over what the source repository itself credits:
+- Material your group wrote that moves between repositories you maintain. When lecture notes move from one course repository to another, leave the sister-repository credit out of the new work. Material in those repositories that someone outside the group wrote keeps its credit (see below).
+- Text, figures or code reused from work that you or your group wrote elsewhere, such as a lab manual your group maintains (the UCD-SERG lab manual, for example), your own papers, or your own software.
+- A template or tool of your group’s that you built the site from.
 
-- A book or paper the material follows.
-- A person outside your group whose lecture or notes it adapted. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
+A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: when you reuse a co-written paper or manual, the work itself gets no credit (a publisher-required citation aside, see below), but credit each outside co-author by name, in a sentence or an author line. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays. A passage or figure reused from a published paper of yours follows the publisher’s reuse terms, which may require a citation; that is the only citation the reuse itself can require.
 
-The exception has two limits:
+Do not cite your own course notes or sites as the source of a definition or result either. Instead, cite the original publication where you can identify one, and a modern textbook (see [Cite the original for named results](#cite-the-original-for-named-results)), and link to your own page as further reading.
 
-- It does not forbid a credit. Leave the sister-repository credit out of new work, but do not strip an existing credit unless the maintainer asks.
-- It does not touch a link to a sister site that sends the reader to further reading. That link is a cross-reference, not an attribution.
+❌ A citation of the group’s own notes as the source of a definition:
 
-## 13 Common citation errors to avoid
+``` markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@morrison2026mds].
+```
+
+✅ The original source and a textbook, with a cross-reference link to the group’s page:
+
+``` markdown
+The Cauchy-Schwarz inequality bounds the inner product by the product of the norms [@original, sec. 2; @textbook, ch. 3].
+See also the
+[Cauchy-Schwarz inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-cauchy-schwarz)
+in the sister notes.
+```
+
+Carry over what the source of your material itself credits:
+
+- A book, paper or other work the material follows. For example, the Benjamin-Chung Lab Manual, which the UCD-SERG manual credits.
+- A person outside your group whose lecture or notes that source adapted, credited by name. For example, the lds course credits Kameron Decker Harris, Brian Hutchinson and Logan Sizemore, so any repository that reuses those lectures credits them too.
+
+A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.
+
+When you find an existing credit to your own work, remove it and add or keep a link to it.
+
+## 18 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -307,39 +369,39 @@ The exception has two limits:
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 14 Examples
+## 19 Examples
 
-### 14.1 Poor (unsupported claim)
+### 19.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 14.2 Better (citation provided)
+### 19.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 14.3 Best (citation with context)
+### 19.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 14.4 Poor (irrelevant citation)
+### 19.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 14.5 Better (relevant citation)
+### 19.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 15 Conclusion
+## 20 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 

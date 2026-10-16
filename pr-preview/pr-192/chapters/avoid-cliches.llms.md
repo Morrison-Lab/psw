@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:32:06 (PDT)
+Last modified: 2026-10-16 10:26:16 (PDT)
 
 > **NOTE:**
 >
@@ -156,7 +156,7 @@ When a sentence needs both a positive claim and a denial, state the positive cla
 > >
 > > ✅ The padding is an identity, not a convention.
 >
-> Both are correct sentences; the second puts the claim first. The first pair is from the [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
+> Both are correct sentences; the second puts the claim first. For the first pair, see the [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
 
 Often the denial can be cut. Keep it only when the reader might plausibly believe the rejected reading, as with a convention versus an identity. A denial that rejects a view nobody holds is the reframe (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature: cut it and keep the claim.
 
@@ -227,6 +227,14 @@ The last group of clichés is about [register](#def-register).
 - **Reflexive both-sides framing.** Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Use a [hedge](#def-hedge) when the evidence is genuinely mixed, not by habit.
 - **Vague universals.** “Studies show” and “experts agree”, with no specific source or number, are clichés precisely because they dodge the evidence. Name the study and give the number, as the [Citations and evidence](../chapters/citations-evidence.llms.md) chapter recommends.
 
-A short scan for these patterns before you submit a draft catches most of them. Cut the filler and the reflexes, but keep your own voice.
+## 9 How to use this list
+
+Write plainly first, then scan the draft once before you share it. Use the same list when you review someone else’s writing.
+
+- One match means little. Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
+- Do not ban a word outright. Keep a word or phrase that is the precise one for the sentence.
+- Do not flatten your writing into a voiceless register. Cut the filler and the reflexes, and keep your own voice.
+- Skip the scan for code, terse status lines and short conversational replies.
+- Do not accuse a writer of using an assistant on the strength of the list. Say which pattern weakens the sentence and how to fix it.
 
 Back to top
