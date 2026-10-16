@@ -253,7 +253,7 @@ The order matters even when the sentence stays grammatical:
 > ✅ The padding is an identity, not a convention.
 
 Both are correct sentences; the second puts the claim first.
-The first pair is from the
+For the first pair, see the
 [linear regression chapter of lds](https://morrison-lab.github.io/lds/chapters/linear-regression.html).
 
 :::
@@ -408,7 +408,17 @@ The last group of clichés is about [register](#def-register).
   the study and give the number, as the [Citations and evidence](citations-evidence.qmd)
   chapter recommends.
 
-A short scan for these patterns before you submit a draft
-catches most of them.
-Cut the filler and the reflexes,
-but keep your own voice.
+## How to use this list
+
+Write plainly first, then scan the draft once before you share it.
+Use the same list when you review someone else's writing.
+
+- One match means little.
+  Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
+- Do not ban a word outright.
+  Keep a word or phrase that is the precise one for the sentence.
+- Do not flatten your writing into a voiceless register.
+  Cut the filler and the reflexes, and keep your own voice.
+- Skip the scan for code, terse status lines and short conversational replies.
+- Do not accuse a writer of using an assistant on the strength of the list.
+  Say which pattern weakens the sentence and how to fix it.
