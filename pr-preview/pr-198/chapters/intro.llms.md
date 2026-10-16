@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-14 01:48:37 (PDT)
+Last modified: 2026-10-16 10:24:20 (PDT)
 
 > **NOTE:**
 >
@@ -14,10 +14,11 @@ This book is a style guide for writing in science, technology, engineering, and 
 
 ## 1 What the book covers
 
-Most chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Three chapters cover one kind of document:
+Most chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Four chapters cover one kind of document:
 
 - [Paper organization](../chapters/paper-organization.llms.md) and [Preparing a manuscript for submission](../chapters/manuscript-submission.llms.md) cover research papers.
 - [Writing for teaching](../chapters/teaching.llms.md) covers lecture notes, slides, and problem sets.
+- [Writing for code review and software](../chapters/software-text.llms.md) covers pull requests, issues, commit messages, READMEs, code comments, and release notes.
 
 ## 2 Who the book is for
 
@@ -27,7 +28,7 @@ Many rules are stated as checks that a reader can apply to a single sentence, so
 
 ## 3 How the book is organized
 
-The chapters fall into four groups:
+The chapters fall into six groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](../chapters/defining-terms.llms.md)
@@ -44,6 +45,10 @@ The chapters fall into four groups:
   - [Conciseness](../chapters/conciseness.llms.md)
 - Teaching:
   - [Writing for teaching](../chapters/teaching.llms.md)
+- Software:
+  - [Writing for code review and software](../chapters/software-text.llms.md)
+- Thinking:
+  - [Writing to clarify your thinking](../chapters/writing-to-think.llms.md)
 
 The [Summary](../chapters/summary.llms.md) lists the book’s main rules as a checklist for revising a draft.
 
@@ -72,7 +77,9 @@ For who counts as an author, see the ICMJE criteria in [Preparing a manuscript f
 
 > **NOTE:**
 >
-> This list began in the [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual, which adapted it from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung.
+> This list traces back to the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung.
+
+For further reading, see the [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual.
 
 ## 6 Contributing
 
