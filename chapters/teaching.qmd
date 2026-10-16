@@ -119,6 +119,22 @@ and then prove that it equals $\operatorname{E}[X^2] - (\operatorname{E}[X])^2$.
 Parsimony outranks convention when choosing a primary definition.
 The conventional form still appears in the notes, as a named result.
 
+## Keep every unit small and link the pieces
+
+Make every unit of analysis as concise and minimal as possible.
+A unit is a mathematical expression, or a div such as a definition, a theorem or a proof.
+Move complexity out of a unit into smaller, atomic definitions and results,
+and join the pieces with hyperlinks.
+This is the modular approach of software engineering ([modular programming](https://en.wikipedia.org/wiki/Modular_programming)):
+each piece does one job, and callers use it by reference.
+
+- Define a quantity by naming the pieces it is made of, such as "the variance of the estimation error", with each piece linked to its own definition.
+- Do not expand a linked definition inside another one. Write the symbol of the piece, such as the estimation error, and let the link carry the detail.
+- Give a derived form its own theorem with a short proof, instead of a remark inside the definition.
+- Break a long expression into named parts, each defined once.
+
+(Ezra, 2026-10-16.)
+
 ## Reuse one written version of each result
 
 When several courses or repositories have already written the same definition, theorem, or exercise,
