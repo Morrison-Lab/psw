@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:37:11 (PDT)
+Last modified: 2026-10-16 04:52:23 (PDT)
 
 > **NOTE:**
 >
@@ -186,7 +186,42 @@ In machine learning notes, the prediction function is \\h\\, and its value at th
 
 In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
 
-## 5 Matching names and notation
+## 5 Random variables and their values
+
+A random variable and a value that it takes are different objects. Before the data are collected, the outcome is a random variable; after, it is a number. Statements about the two have different meanings. Write them with different symbols.
+
+Use a capital letter for the random variable and the matching lowercase letter for a value that it takes:
+
+- \\Y\\ is the random variable, such as the outcome of a coin flip before the flip;
+- \\y\\ is one value of \\Y\\, such as 1 after the flip lands heads;
+- \\Y_i\\ is the random variable for the \\i\\-th observation;
+- \\y_i\\ is that observation’s observed value.
+
+State the convention where you first use the symbols. Keep it in every later section. Do not switch between \\Y_i\\ and \\y_i\\ for the same quantity unless the meaning changes from “before the data” to “after the data”.
+
+> **NOTE:**
+>
+> **Example 8 (Writing a random variable and its value)**  
+>
+> > ❌ The probability that \\y_i\\ exceeds 3 is \\0.2\\.
+> >
+> > ✅ The probability that \\Y_i\\ exceeds 3 is \\0.2\\.
+>
+> > ❌ The sample mean of the \\Y_i\\ is 2.4.
+> >
+> > ✅ The sample mean of the \\y_i\\ is 2.4.
+>
+> A probability is a statement about a random variable. The ❌ version of the first pair puts a fixed number where a quantity that can vary belongs. An observed number has no probability of exceeding 3. The second pair has the reverse mistake. A sample mean of 2.4 is a number computed from observed values. The ❌ version attributes it to the random variables. The sample mean of the random variables, \\\bar{Y}\\, is itself a random variable.
+
+Match the notation to the claim:
+
+- Write \\\Pr(Y \le y)\\ for a probability, with the random variable on the left of the inequality and the value on the right.
+- Write \\\text{E}\[Y\]\\ and \\\text{Var}(Y)\\ for the mean and variance of a random variable, never \\\text{E}\[y\]\\ or \\\text{Var}(y)\\ for an observed value.
+- Write a statistic computed from observed values with lowercase letters, as in \\\bar{y} = \frac{1}{n}\sum\_{i=1}^n y_i\\, and the same statistic as a random variable with capitals, \\\bar{Y} = \frac{1}{n}\sum\_{i=1}^n Y_i\\. The first is a number, such as 2.4. The second has a sampling distribution.
+
+Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable \\Y_i\\” or “the observed value \\y_i\\”.
+
+## 6 Matching names and notation
 
 A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
 
@@ -194,7 +229,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 8 (Matching a name to its notation)**  
+> **Example 9 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
@@ -212,7 +247,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-## 6 Using shared macros
+## 7 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
@@ -220,7 +255,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 9 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 10 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -243,7 +278,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 10 (Naming a macro for its meaning)**  
+> **Example 11 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -257,7 +292,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 11 (Naming a decorator for its meaning)**  
+> **Example 12 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -269,7 +304,7 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 
 > **NOTE:**
 >
-> **Example 12 (Naming a set for its meaning)**  
+> **Example 13 (Naming a set for its meaning)**  
 >
 > > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
 > >
@@ -291,7 +326,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 13 (Naming a variable for its role)**  
+> **Example 14 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -303,7 +338,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 14 (Writing a named quantity by its name)**  
+> **Example 15 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -315,7 +350,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 > **NOTE:**
 >
-> **Example 15 (Letting the macro size the bracket)**  
+> **Example 16 (Letting the macro size the bracket)**  
 >
 > > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
 > >
@@ -323,7 +358,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
-## 7 Making expressions concise
+## 8 Making expressions concise
 
 Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
 
@@ -331,7 +366,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 > **NOTE:**
 >
-> **Example 16 (Naming a repeated chunk)**  
+> **Example 17 (Naming a repeated chunk)**  
 >
 > > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
 > >
@@ -341,13 +376,13 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
 
-## 8 Writing dot products
+## 9 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 17 (Writing a dot product)**  
+> **Example 18 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -363,7 +398,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 9 Writing out notational shorthands
+## 10 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -373,7 +408,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 18 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 19 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -387,7 +422,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
 
-## 10 Stating assumptions before using them
+## 11 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -402,7 +437,7 @@ Introduce the variable and its constraint together, as in “let \\x \neq 2\\”
 
 > **NOTE:**
 >
-> **Example 19 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 20 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >
