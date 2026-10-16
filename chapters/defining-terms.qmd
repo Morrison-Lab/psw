@@ -331,6 +331,9 @@ Follow these principles when introducing new terms:
   and neither does expected value notation such as $\E{Y}$.
   For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",
   not "the mean estimates the mean".
+  Drop the qualifier only when it is completely clear from context,
+  such as inside a definition that has just said which one it concerns.
+  When in doubt, keep it.
 
 ## Examples of term definitions
 
