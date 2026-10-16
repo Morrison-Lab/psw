@@ -231,6 +231,24 @@ instead of saying that it changes something.
 
 :::
 
+## Do not overexplain
+
+Say what the reader needs, and stop.
+Cut a qualifier, a restatement or a reason that the words before it already imply.
+
+::: {#exm-overexplain}
+
+## Cutting a clause the term already implies
+
+> ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
+>
+> ✅ Estimated mean: the estimated value of the mean.
+
+The first version adds a clause that "the mean" already covers.
+The second is complete.
+
+:::
+
 ## Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
