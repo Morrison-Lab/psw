@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-16 10:30:48 (PDT)</p>
+  <p class="date">Last modified: 2026-10-16 10:35:43 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -304,8 +304,25 @@
 <li><a href="https://mitcommlab.mit.edu/be/2023/09/27/toward-an-evenbetterposter-improving-the-betterposter-template/">Towards an “#evenbetterposter”</a> - the MIT Biological Engineering Communication Lab’s improvements to that template</li>
 </ul>
 </section>
-<section id="sec-scientific-figures" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> Scientific figures</h2>
+<section id="sec-show-in-a-figure" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Show the result in a figure</h2>
+</section>
+<section class="slide level2">
+
+<p>A figure often shows a pattern, an outlier or a comparison faster and more reliably than a sentence or a table can describe it. So when a result can be drawn, draw it, and use the text to point the reader to what the figure shows.</p>
+<ul>
+<li>Show the data before summarizing them. Summary statistics can hide structure that a plot of the data reveals.</li>
+<li>Put the key result of each section in a figure, and write the section’s text around that figure.</li>
+<li>Make the figure show the comparison the text claims, with the groups, fitted curve or interval on the same axes.</li>
+<li>Say in the text what to look at in the figure (see <a href="../chapters/paper-organization.html#figures-and-tables">Figures and tables</a>).</li>
+<li>Use a table instead when readers need exact values to look up or compute with.</li>
+</ul>
+<div id="exm-anscombe" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (Four datasets with the same summaries)</strong></span> <span class="citation" data-cites="anscombe1973">Anscombe (<a href="#/references" role="doc-biblioref" onclick="">1973</a>)</span> constructed four small datasets of <span class="math inline">\((x, y)\)</span> pairs (<a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Wikipedia: Anscombe’s quartet</a>). All four have the same mean of <span class="math inline">\(x\)</span> (9), the same mean of <span class="math inline">\(y\)</span> (7.5), the same correlation (0.82 to two decimal places) and the same least-squares line, with slope 0.5. A table of these summaries cannot tell the datasets apart. A scatterplot of each can: one is roughly linear with scatter, one follows a smooth curve, one is an exact line with a single outlier, and one has all but one of its points at the same <span class="math inline">\(x\)</span>.</p>
+</div>
+</section>
+<section id="sec-scientific-figures" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Scientific figures</h2>
 </section>
 <section class="slide level2">
 
@@ -322,7 +339,7 @@
 <li>Use colorblind-friendly palettes (see <a href="http://colorbrewer2.org/">ColorBrewer</a> or <a href="https://medialab.github.io/iwanthue/">iwanthue</a>).</li>
 <li>Define colors, shapes, and line types in a legend.</li>
 <li>Put the plot’s legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.</li>
-<li>In R, draw the static version of a figure with <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, and the interactive version with plotly as described in <a href="#/sec-scientific-figures" class="quarto-xref">Section&nbsp;3</a>. <a href="../chapters/teaching.html#present-r-results-with-modern-packages">Present R results with modern packages</a> gives the reasons.</li>
+<li>In R, draw the static version of a figure with <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, and the interactive version with plotly as described in <a href="#/sec-scientific-figures" class="quarto-xref">Section&nbsp;4</a>. <a href="../chapters/teaching.html#present-r-results-with-modern-packages">Present R results with modern packages</a> gives the reasons.</li>
 <li>Minimize abbreviations in labels and legends.</li>
 <li>Use transparency to show overlapping data.</li>
 <li>Show measures of precision, such as 95% confidence intervals.</li>
@@ -333,8 +350,8 @@
 <li><a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text</li>
 </ul>
 </section>
-<section id="sec-3d-graphs" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Three-dimensional graphs</h2>
+<section id="sec-3d-graphs" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Three-dimensional graphs</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
@@ -555,6 +572,9 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-anscombe1973" class="csl-entry" role="listitem">
+Anscombe, F. J. 1973. <span>“Graphs in Statistical Analysis.”</span> <em>The American Statistician</em> 27 (1): 17–21. <a href="https://doi.org/10.1080/00031305.1973.10478966">https://doi.org/10.1080/00031305.1973.10478966</a>.
+</div>
 <div id="ref-kirchoff2021" class="csl-entry" role="listitem">
 Kirchoff, Bruce. 2021. <span>“How to Tell a Compelling Story in Scientific Presentations.”</span> <em>Nature</em> 600 (7890): S88–89. <a href="https://doi.org/10.1038/d41586-021-03603-2">https://doi.org/10.1038/d41586-021-03603-2</a>.
 </div>

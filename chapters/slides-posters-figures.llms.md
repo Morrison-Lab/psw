@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 10:30:48 (PDT)
+Last modified: 2026-10-16 10:35:43 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -27,7 +27,21 @@ When preparing slides for a lab meeting, conference, qualifying exam, or thesis 
 - [How to create a better research poster in less time](https://www.youtube.com/watch?v=1RwJbhkCA58) - Mike Morrison’s video introducing the \#betterposter template
 - [Towards an “#evenbetterposter”](https://mitcommlab.mit.edu/be/2023/09/27/toward-an-evenbetterposter-improving-the-betterposter-template/) - the MIT Biological Engineering Communication Lab’s improvements to that template
 
-## 3 Scientific figures
+## 3 Show the result in a figure
+
+A figure often shows a pattern, an outlier or a comparison faster and more reliably than a sentence or a table can describe it. So when a result can be drawn, draw it, and use the text to point the reader to what the figure shows.
+
+- Show the data before summarizing them. Summary statistics can hide structure that a plot of the data reveals.
+- Put the key result of each section in a figure, and write the section’s text around that figure.
+- Make the figure show the comparison the text claims, with the groups, fitted curve or interval on the same axes.
+- Say in the text what to look at in the figure (see [Figures and tables](../chapters/paper-organization.llms.md#figures-and-tables)).
+- Use a table instead when readers need exact values to look up or compute with.
+
+> **NOTE:**
+>
+> **Example 1 (Four datasets with the same summaries)** Anscombe ([1973](#ref-anscombe1973)) constructed four small datasets of \\(x, y)\\ pairs ([Wikipedia: Anscombe’s quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)). All four have the same mean of \\x\\ (9), the same mean of \\y\\ (7.5), the same correlation (0.82 to two decimal places) and the same least-squares line, with slope 0.5. A table of these summaries cannot tell the datasets apart. A scatterplot of each can: one is roughly linear with scatter, one follows a smooth curve, one is an exact line with a single outlier, and one has all but one of its points at the same \\x\\.
+
+## 4 Scientific figures
 
 Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
@@ -44,7 +58,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
 - Define colors, shapes, and line types in a legend.
 - Put the plot’s legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.
-- In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/), and the interactive version with plotly as described in [Section 3](#sec-scientific-figures). [Present R results with modern packages](../chapters/teaching.llms.md#present-r-results-with-modern-packages) gives the reasons.
+- In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/), and the interactive version with plotly as described in [Section 4](#sec-scientific-figures). [Present R results with modern packages](../chapters/teaching.llms.md#present-r-results-with-modern-packages) gives the reasons.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.
@@ -54,7 +68,7 @@ For more:
 - Ten Simple Rules for Better Figures ([Rougier et al. 2014](#ref-rougier2014))
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text
 
-## 4 Three-dimensional graphs
+## 5 Three-dimensional graphs
 
 A function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
 
@@ -73,6 +87,8 @@ For further reading, see the [Professional Development](https://ucd-serg.github.
 Back to top
 
 ## References
+
+Anscombe, F. J. 1973. “Graphs in Statistical Analysis.” *The American Statistician* 27 (1): 17–21. <https://doi.org/10.1080/00031305.1973.10478966>.
 
 Kirchoff, Bruce. 2021. “How to Tell a Compelling Story in Scientific Presentations.” *Nature* 600 (7890): S88–89. <https://doi.org/10.1038/d41586-021-03603-2>.
 

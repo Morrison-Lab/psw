@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 10:30:48 (PDT)
+Last modified: 2026-10-16 10:35:43 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -67,6 +67,8 @@ Follow these principles when introducing new terms:
 - **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
 
 - **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
+
+- **Give every key term a formal definition in a `#def-` div:** A term that the document relies on needs its own definition div, even if an exercise, a solution, an example or a sentence of prose has already explained it. An explanation inside an exercise or solution cannot be linked to as a definition, and a student who skips the exercise never sees it. Find the gaps by listing the terms the document uses, such as the bolded phrases and the terms in section titles, and checking that each one has a `#def-` div, or a link to the page that has one. This extends *Give each term its own definition block* below from terms defined in passing to terms explained only in exercises. For example, if “loss function” first appears in an exercise that asks students to compute one, add a `#def-loss-function` div before the exercise, and link the exercise’s mentions to it.
 
 - **Define and link every technical term at its first use in each div:** Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term. A passage is the prose outside divs between one heading and the next, and each div counts separately from the passage around it and from every other div. For example, if a div defines noise as the outcome minus the “true function”, link the term as `[true function](#def-true-function)`, and first add a definition div with that ID if the document lacks one. A counterexample: the definition of noise links “mean”. The example block after it also uses “mean”, but without a link, wrongly assuming the earlier link carries over. The example block should link “mean” at its own first use.
 
