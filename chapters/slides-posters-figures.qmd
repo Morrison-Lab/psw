@@ -74,10 +74,10 @@ Give every figure alt text, a numbered caption, and a code chunk that comments w
 
 Lead with a well-labeled figure or table
 instead of a long paragraph that describes a pipeline or compares groups.
-Use a diagram for a conceptual model,
-such as a directed acyclic graph (DAG), a CONSORT flow diagram, or a workflow schematic.
+Use a diagram for a conceptual model, such as a directed acyclic graph (DAG),
+and for a process, such as a participant flow (CONSORT) diagram or a workflow schematic.
 Let the text interpret what the figure shows
-and not repeat numbers the reader can already see in it.
+instead of listing every number the reader can already see in it.
 Give the key estimates in the text and point to the figure for the rest.
 
 A clear figure lets a reader check a result without help from the text.
@@ -143,8 +143,8 @@ of the UCD-SERG lab manual.
 Several of the resource links began in the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
-The guidance on leading with figures, diagrams, directing attention and showing software
+The guidance on leading with figures, drawing diagrams, directing attention, and showing software
 is adapted from the
-[Writing](https://ucd-serg.github.io/lab-manual/writing.html) chapter of the same manual.
+[Writing](https://ucd-serg.github.io/lab-manual/writing.html) chapter of the UCD-SERG lab manual.
 The section on three-dimensional graphs is original to this guide.
 :::
