@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 02:57:01 (PDT)
+Last modified: 2026-10-16 03:53:59 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -44,9 +44,9 @@ Follow these principles when introducing new terms:
 
 - **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
 
-- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\vec{\theta}\\ as “the value of \\\vec{\theta}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
+- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\mathord{\underset{\sim}{\theta}}\\ as “the value of \\\mathord{\underset{\sim}{\theta}}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
 
-  \\\hat{\vec{\theta}} := \arg\min\_{\vec{\theta}} \text{RSS}(\vec{\theta}),\\
+  \\\hat{\mathord{\underset{\sim}{\theta}}} := \arg\min\_{\mathord{\underset{\sim}{\theta}}} \text{RSS}(\mathord{\underset{\sim}{\theta}}),\\
 
   not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write
 
@@ -68,7 +68,7 @@ Follow these principles when introducing new terms:
 
 - **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
 
-- **Hyperlink every technical term to its definition at first use in each div or passage:** A technical term is a term ([Definition 1](#def-term)) with a specific meaning in the field, such as outcome, mean, variance or independent. Link each one to its formal definition the first time it appears in each div of any kind (definition, theorem, example, remark, exercise, solution or callout), and the first time it appears in each prose passage outside a div, where a passage is a run of prose under one heading. A reader who lands on one block from a cross-reference, or on one section from a search, has not necessarily read the earlier ones, so a link in an earlier block does not cover a later one. Later uses within the same div or passage need no link. Link to the document’s own definition, or, when a prerequisite site already defines the term, to that definition; write a new `#def-` div only when neither exists. A term with nothing to link to is a gap in the document, not a reason to skip the link. For example, if a div defines noise as the outcome minus the “true function”, link the term as `[true function](#def-true-function)`, and make sure that definition exists. The same div should also link outcome, input, mean, variance and independent at their first use in that div. A counterexample: a link to “mean” in the definition of noise does not cover the example block that follows it, which links “mean” again at its own first use.
+- **Define and link every technical term at its first use in each div:** Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term. A passage is the prose between one heading and the next, and a div interrupts a passage without ending it. For example, if a div defines noise as the outcome minus the “true function”, link the term as `[true function](#def-true-function)`, and write `#def-true-function` first if the document lacks it. A counterexample: the definition of noise links “mean”. The example block after it also uses “mean”, but without a link, wrongly assuming the earlier link carries over. The example block should link “mean” at its own first use.
 
 - **Do not presuppose what the reader has not met:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it.
 
@@ -87,6 +87,8 @@ Follow these principles when introducing new terms:
   | Recall | \\\Pr(\hat Y = 1 \mid Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FN})\\ |
 
   The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
+
+- **Name the target of every estimator and predictor:** Every estimator has one target estimand, and the definition says which. A prediction is not an estimator of a mean. Its estimand is the observed outcome value of a new data point, not the population mean of that outcome. For example, the fitted model at \\x\\ is an estimator of the mean function value \\\mu(x)\\, so its bias is measured against that mean, while the prediction at \\x\\ has the new outcome \\Y\_{\*}\\ as its estimand, so its prediction error is measured against \\Y\_{\*}\\. Write “the fitted model at \\x\\ as an estimator of the mean function value”, or “the prediction of the new outcome”, and never leave the target implicit.
 
 ## 2 Examples of term definitions
 

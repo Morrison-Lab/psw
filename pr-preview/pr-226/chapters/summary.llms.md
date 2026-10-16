@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 02:57:01 (PDT)
+Last modified: 2026-10-16 03:53:59 (PDT)
 
 > **NOTE:**
 >
@@ -79,6 +79,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences).
 - [Name the object of a relational noun](../chapters/grammar.llms.md#name-the-object-of-a-relational-noun).
 - [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject).
+- [Make every word tell](../chapters/conciseness.llms.md#make-every-word-tell): cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](../chapters/conciseness.llms.md#limit-complex-sentence-structures).
 - [Do not rule out readings that no reader would make](../chapters/conciseness.llms.md#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](../chapters/conciseness.llms.md#write-about-the-subject-not-about-the-text).
