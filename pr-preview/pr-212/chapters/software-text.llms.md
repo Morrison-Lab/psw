@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 22:08:24 (PDT)
+Last modified: 2026-10-15 23:16:48 (PDT)
 
 Software projects depend on short documents:
 
@@ -46,9 +46,5 @@ Readers of these documents often arrive without context on the change, so the ru
 
 - Describe each change by its effect on the user, not by the file that changed.
 - Put breaking changes first, because the user must act on them.
-
-> **NOTE:**
->
-> This chapter’s scope, plain prose in software project text, follows the [Writing](https://ucd-serg.github.io/lab-manual/writing.html) chapter of the UCD-SERG lab manual.
 
 Back to top
