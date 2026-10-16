@@ -493,51 +493,55 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### Material from your own work
+## Material from your own work
 
 Do not formally acknowledge material you borrow from yourself or your own group.
-Link to it, but do not credit it.
+Link to it, but do not credit it,
+except where a publisher's reuse terms require a citation (see below).
 This covers:
 
 - Material moved between repositories you maintain.
   When lecture notes move from one course repository to another,
   leave the sister-repository credit out of the new work.
 - Text, figures or code reused from work that you or your group wrote elsewhere,
-  such as a lab manual your group maintains, your own papers, or your own software.
+  such as a lab manual your group maintains (the UCD-SERG lab manual, for example),
+  your own papers, or your own software.
+- A template or tool of your group's that you built the site from.
 
 A formal acknowledgment tells the reader the material came from someone else,
 so it does not belong on material that is your own, wherever that material is stored.
 A co-author outside your group is someone else:
-the rule never removes their credit.
+when you reuse a co-written paper or manual,
+the work itself gets no credit,
+but credit each outside co-author by name, in the form their role calls for (an author line, or a sentence).
 The rule concerns acknowledging reuse of your own material.
 Citing a published paper or released software of yours
 as the original publication of a result, or as a tool you used,
 is ordinary citation and stays.
 A passage or figure reused from a published paper of yours
-still follows the publisher's reuse terms, which may require a citation.
+follows the publisher's reuse terms, which may require a citation;
+that citation is the one exception to the rule above.
 
-Do not cite your own notes as the source of a definition or result either.
+Do not cite your own course notes or sites as the source of a definition or result either.
 Cite the original publication and, where one exists, a modern textbook instead,
 and link to your own page as further reading
 (see [Cite the original for named results](#cite-the-original-for-named-results)).
 
-❌ A citation of the group's own notes as the source:
+❌ A citation of the group's own notes as the source of a definition:
 
 ```markdown
 A feature vector is an element of the real coordinate space [@morrison2026mds].
 ```
 
-✅ A cross-reference link, placed after the claim and the original source it cites:
+✅ The original source and a textbook, with a cross-reference link to the group's page:
 
 ```markdown
-The inequality bounds the inner product [@original, sec. 2; @textbook, ch. 3].
+A feature vector is an element of the real coordinate space [@original, sec. 2; @textbook, ch. 3].
 See also the
 [real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space)
 in the sister notes.
 ```
 
-A lab manual your own group maintains, such as the UCD-SERG lab manual,
-counts as your own work, so it gets no credit.
 Carry over what the source of your material itself credits:
 
 - A book, paper or other work the material follows.
@@ -551,7 +555,7 @@ Carry over what the source of your material itself credits:
 A link to a sister site that sends the reader to further reading
 is a cross-reference, not an attribution, so it stays.
 
-When you find an existing credit to your own work, remove it and leave the link.
+When you find an existing credit to your own work, remove it and add or keep a link to it.
 
 ## Common citation errors to avoid
 

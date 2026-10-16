@@ -138,9 +138,10 @@ Show both when the shape of the surface matters.
 Several of the resource links in the slide deck and figure sections began in the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
+The section on three-dimensional graphs is original to this guide.
+:::
+
 For further reading, see the
 [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html)
 and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters
 of the UCD-SERG lab manual.
-The section on three-dimensional graphs is original to this guide.
-:::
