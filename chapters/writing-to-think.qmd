@@ -11,7 +11,7 @@ format:
 ---
 
 Writing is a way to find out what you think, as well as a way to report it.
-This chapter adapts the UCD-SERG Lab Manual's section on the topic [@ucdserg2025labmanual].
+This chapter adapts the UCD-SERG Lab Manual's section on the topic [@ucdserglabmanual].
 
 ## Write the question down first
 
