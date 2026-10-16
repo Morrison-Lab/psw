@@ -190,25 +190,28 @@ Follow these principles when introducing new terms:
   Place the definition immediately before or after the term's first appearance.
 
 - **Hyperlink every technical term to its definition at first use in each div or passage:**
-  Link each technical term to its formal definition
-  the first time it appears in each div,
-  such as a definition, theorem, example or remark block,
-  and the first time it appears in each prose passage outside a div.
-  A reader who opens one block, or lands on one section from a search,
+  A technical term is a term (@def-term) with a specific meaning in the field,
+  such as outcome, mean, variance or independent.
+  Link each one to its formal definition
+  the first time it appears in each div of any kind
+  (definition, theorem, example, remark, exercise, solution or callout),
+  and the first time it appears in each prose passage outside a div,
+  where a passage is a run of prose under one heading.
+  A reader who lands on one block from a cross-reference,
+  or on one section from a search,
   has not necessarily read the earlier ones,
   so a link in an earlier block does not cover a later one.
   Later uses within the same div or passage need no link.
-  If the document has no formal definition of the term,
-  write one in its own `#def-` div and link to it;
-  a term with nothing to link to is a gap in the document,
+  Link to the document's own definition,
+  or, when a prerequisite site already defines the term, to that definition;
+  write a new `#def-` div only when neither exists.
+  A term with nothing to link to is a gap in the document,
   not a reason to skip the link.
-  For example, a definition of noise as the outcome minus the "true function"
-  needs `[true function](#def-true-function)`,
-  and that definition has to exist.
-  The same div should also link
-  outcome, input, mean, variance and independent
-  at their first use in that div,
-  each to the definition the document or a prerequisite site gives.
+  For example, if a div defines noise as the outcome minus the "true function",
+  link the term as `[true function](#def-true-function)`,
+  and make sure that definition exists.
+  The same div should also link outcome, input, mean, variance and independent
+  at their first use in that div.
 
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
