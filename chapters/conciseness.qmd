@@ -43,6 +43,32 @@ but about removing words that do not contribute to meaning or clarity.
 Keep a clause or a technical term when removing it would lose meaning or precision,
 and never replace an honest [hedge](avoid-cliches.qmd#def-hedge) with false confidence.
 
+## Make every word tell
+
+Strunk's rule 13 states the principle:
+"Vigorous writing is concise.
+A sentence should contain no unnecessary words,
+a paragraph no unnecessary sentences,
+for the same reason that a drawing should have no unnecessary lines
+and a machine no unnecessary parts."
+He adds that this "requires not that the writer make all his sentences short,
+or that he avoid all detail and treat his subjects only in outline,
+but that he make every word tell"
+[@strunk1920elements, rule 13].
+
+Strunk's examples of expressions that waste words:
+
+- "the question as to whether" → "whether"
+- "used for fuel purposes" → "used for fuel"
+- "in a hasty manner" → "hastily"
+- "owing to the fact that" → "since"
+- "the fact that he had not succeeded" → "his failure"
+- "His brother, who is a member of the same firm" → "His brother, a member of the same firm"
+
+The same rule applies to statistical writing:
+"We conducted an analysis of the data to determine whether there is an association between smoking and lung cancer"
+becomes "We tested whether smoking is associated with lung cancer".
+
 ## Write in the active voice
 
 Use the [active voice](defining-terms.qmd#def-active-voice) unless you have a specific reason to use the passive.
@@ -228,6 +254,24 @@ lists related signpost phrases, such as "it is worth noting that".
 In the third pair,
 the rewrite states what the detail changes
 instead of saying that it changes something.
+
+:::
+
+## Do not overexplain
+
+Say what the reader needs, and stop.
+Cut a qualifier, a restatement or a reason that the words before it already imply.
+
+::: {#exm-overexplain}
+
+## Cutting a clause the term already implies
+
+> ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
+>
+> ✅ Estimated mean: the estimated value of the mean.
+
+The first version adds a clause that "the mean" already covers.
+The second is complete.
 
 :::
 

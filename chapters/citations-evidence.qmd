@@ -390,6 +390,29 @@ Check the wording and the page against the original.
 >
 > ✅ "A computer program is said to learn ..." [@mitchell1997]
 
+Credit a quotation to whoever speaks it in the primary source,
+even when the speaker is quoting someone else.
+When attribution is in doubt, read the primary source (a transcript, the original page) first.
+Uncertainty about who said a line is not evidence about who said it.
+
+## Copy organization names from their source
+
+When a bibliography entry names an organization,
+copy the name from the organization's own page (its about page, README or footer)
+rather than expanding an acronym from memory.
+
+## Cite an alias directly
+
+When a source uses another name for a defined term,
+write the alias in bold and cite the source after it,
+as in `also called the **alias** [@key, section]`.
+The citation already says that the source uses the name,
+so do not add a sentence such as "The source uses that name".
+
+> ❌ `also called the **alias**. The cited textbook uses that name.`
+>
+> ✅ `also called the **alias** [@key, section]`
+
 ## Cite the original for named results
 
 When you present a result that carries a person's name,
