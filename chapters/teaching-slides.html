@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-16 10:17:24 (PDT)</p>
+  <p class="date">Last modified: 2026-10-16 10:23:00 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -499,8 +499,40 @@
 <li>Make each figure follow the accessibility rules below.</li>
 </ul>
 </section>
-<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Write labs for both languages and any computer</h2>
+<section id="follow-every-example-with-an-exercise-and-solution" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Follow every example with an exercise and solution</h2>
+</section>
+<section class="slide level2">
+
+<p>Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it.</p>
+<ul>
+<li>After every <code>#exm-</code> div, add an <code>#exr-</code> div that asks the reader to do the same thing for a different case, followed by its <code>#sol-</code> div. The exercise changes the data, the function or the question, so the solution is not a copy of the example.</li>
+<li>The full sequence for a new idea is therefore: the exercise that poses the question and its solution, the definition or theorem, an example, and a practice exercise with its solution.</li>
+<li>More generally, give readers an opportunity to think at every stage: a question they can answer before the next paragraph, a calculation to try, a prediction to make before the code runs.</li>
+<li>A counterexample (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Defining terms clearly</a>) can stand in for the practice exercise when the exercise would be “decide whether this case fits the definition”.</li>
+<li>Give the practice exercise its own slug and follow the numbering and slide-break rules above.</li>
+</ul>
+<div id="exm-practice-after-example" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
+<blockquote>
+<p>✅</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a>::: {#exm-sample-mean}</span>
+<span id="cb2-2"><a aria-label="2"></a>(the sample mean of one variable in a real dataset, computed by a code chunk)</span>
+<span id="cb2-3"><a aria-label="3"></a>:::</span>
+<span id="cb2-4"><a aria-label="4"></a></span>
+<span id="cb2-5"><a aria-label="5"></a>::: {#exr-sample-mean-new-variable}</span>
+<span id="cb2-6"><a aria-label="6"></a>Compute the sample mean of a different variable in the same dataset.</span>
+<span id="cb2-7"><a aria-label="7"></a>:::</span>
+<span id="cb2-8"><a aria-label="8"></a></span>
+<span id="cb2-9"><a aria-label="9"></a>::: {#sol-sample-mean-new-variable}</span>
+<span id="cb2-10"><a aria-label="10"></a>(the code chunk and its output)</span>
+<span id="cb2-11"><a aria-label="11"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<p>The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see <a href="#/use-real-data-and-compute-every-number">Use real data and compute every number</a>).</p>
+</div>
+</section>
+<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Write labs for both languages and any computer</h2>
 </section>
 <section class="slide level2">
 
@@ -515,8 +547,8 @@
 <li>Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.</li>
 </ul>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Present R results with modern packages</h2>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -530,8 +562,8 @@
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -548,8 +580,8 @@
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -561,8 +593,8 @@
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -574,8 +606,8 @@
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -587,8 +619,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -599,8 +631,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -614,8 +646,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -627,8 +659,8 @@
 </ul>
 <p>Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.</p>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -639,8 +671,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
