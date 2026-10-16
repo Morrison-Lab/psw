@@ -54,7 +54,7 @@ and a machine no unnecessary parts."
 He adds that this "requires not that the writer make all his sentences short,
 or that he avoid all detail and treat his subjects only in outline,
 but that he make every word tell"
-[@strunk1918elements, rule 13].
+[@strunk1920elements, rule 13].
 
 Strunk's examples of expressions that waste words:
 
