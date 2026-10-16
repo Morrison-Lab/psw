@@ -55,11 +55,13 @@ This chapter lists the general rules that matter most here and adds a few that b
 Before you propose a name for an R package, check that nobody already uses it.
 Search these places, and report the result with the name:
 
-- the package page on [CRAN](https://cran.r-project.org/) (`https://cran.r-project.org/web/packages/<name>/index.html` returns 404 when the name is free);
-- the CRAN archive (`https://cran.r-project.org/src/contrib/Archive/<name>/`), because a removed package still holds its name;
+- the package page on [CRAN](https://cran.r-project.org/),
+  at `https://cran.r-project.org/web/packages/<name>/index.html`, which returns 404 when the name is free;
+- the CRAN archive,
+  at `https://cran.r-project.org/src/contrib/Archive/<name>/`, because a removed package still holds its name;
 - [Bioconductor](https://www.bioconductor.org/).
 
-A name that CRAN has used blocks a later submission and confuses users.
+A name that CRAN has used is usually unavailable for a new package and confuses users, so pick a different name.
 
 ## Write release notes for the user
 

@@ -107,7 +107,6 @@ describe the structure of the document and teach the reader nothing about the su
 > ❌ The statistics notes are the home of the shared error definitions, and they link to the matching pages.
 >
 > ✅ The training error is the average loss on the data used to fit the model.
-> (In a real document, link "training error" to its definition.)
 
 ## Lead with the subject
 

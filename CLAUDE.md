@@ -77,7 +77,7 @@ callouts (config + color palette live in `_quarto-website.yml`).
   Before the first push of a prose change, grep the diff for new capitalized acronyms and tool names,
   and add each one to `inst/WORDLIST`, sorted case-insensitively
   (psw#209 and psw#210 each cost a review round, 2026-10-16).
-  Update counts such as "four groups" when a list grows.
+  Update any count in the prose that names the size of a list you extended, such as "four groups" for a four-item list.
 - **Link check**: tuned in `lychee.toml`; fix broken links rather than adding
   exceptions.
 
