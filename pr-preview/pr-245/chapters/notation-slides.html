@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-16 16:33:12 (PDT)</p>
+  <p class="date">Last modified: 2026-10-16 16:42:31 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -615,6 +615,15 @@
 </blockquote>
 <p>Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.</p>
 </div>
+<p>Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader meets in the document’s notation table, with its meaning.</p>
+<div id="exm-describe-symbol-not-macro" class="theorem example">
+<p><span class="theorem-title"><strong>Example 17 (Describing the symbol, not the macro)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Source: <code>The macro \avgfitf prints the average fit, so write $\avgfitf{x}$ for it.</code></p>
+<p>✅ Source: <code>The average fit at $x$ is written $\avgfitf{x}$.</code></p>
+</blockquote>
+<p>The ✅ version tells the reader what the symbol means. The reader never sees the macro name, and the symbol has its own row in the notation table.</p>
+</div>
 </section>
 <section id="making-expressions-concise" class="slide level2" data-number="8">
 <h2><span class="header-section-number">8</span> Making expressions concise</h2>
@@ -624,7 +633,7 @@
 <p>Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of <a href="../chapters/teaching.html#build-every-unit-from-smaller-atomic-units">building every unit from smaller atomic units</a>.</p>
 <p>Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.</p>
 <div id="exm-concise-expression" class="theorem example">
-<p><span class="theorem-title"><strong>Example 17 (Naming a repeated chunk)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 18 (Naming a repeated chunk)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.</code></p>
 <p>✅ Source: <code>The loss is $\frac{1}{n} \sum_{i=1}^n \prederr_i^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \prederr_i \predvar_i$.</code></p>
@@ -640,7 +649,7 @@
 
 <p>When two vectors multiply to give a number, write the product as a dot product, <span class="math inline">\(\tilde{x} \cdot \tilde{\beta}\)</span>. Do not write it as a transpose product, <span class="math inline">\(\tilde{x}' \tilde{\beta}\)</span>, or with inner-product brackets, <span class="math inline">\(\langle \tilde{x}, \tilde{\beta} \rangle\)</span>. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.</p>
 <div id="exm-dot-product" class="theorem example">
-<p><span class="theorem-title"><strong>Example 18 (Writing a dot product)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 19 (Writing a dot product)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x}' \tilde{\beta}\)</span>.</p>
 <p>✅ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\)</span>.</p>
@@ -664,7 +673,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 19 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 20 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
@@ -692,7 +701,7 @@
 </ul>
 <p>Introduce the variable and its constraint together, as in “let <span class="math inline">\(x \neq 2\)</span>”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.</p>
 <div id="exm-assumptions-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 20 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
+<p><span class="theorem-title"><strong>Example 21 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}

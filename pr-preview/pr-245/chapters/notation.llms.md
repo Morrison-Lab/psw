@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 16:33:12 (PDT)
+Last modified: 2026-10-16 16:42:31 (PDT)
 
 > **NOTE:**
 >
@@ -358,6 +358,18 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
+Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader meets in the document’s notation table, with its meaning.
+
+> **NOTE:**
+>
+> **Example 17 (Describing the symbol, not the macro)**  
+>
+> > ❌ Source: `The macro \avgfitf prints the average fit, so write $\avgfitf{x}$ for it.`
+> >
+> > ✅ Source: `The average fit at $x$ is written $\avgfitf{x}$.`
+>
+> The ✅ version tells the reader what the symbol means. The reader never sees the macro name, and the symbol has its own row in the notation table.
+
 ## 8 Making expressions concise
 
 Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
@@ -366,7 +378,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 > **NOTE:**
 >
-> **Example 17 (Naming a repeated chunk)**  
+> **Example 18 (Naming a repeated chunk)**  
 >
 > > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
 > >
@@ -382,7 +394,7 @@ When two vectors multiply to give a number, write the product as a dot product, 
 
 > **NOTE:**
 >
-> **Example 18 (Writing a dot product)**  
+> **Example 19 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -408,7 +420,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 19 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 20 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -437,7 +449,7 @@ Introduce the variable and its constraint together, as in “let \\x \neq 2\\”
 
 > **NOTE:**
 >
-> **Example 20 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 21 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >

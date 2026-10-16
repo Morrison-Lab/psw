@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 16:33:12 (PDT)
+Last modified: 2026-10-16 16:42:31 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -204,12 +204,12 @@ Leave a link out only for a reason such as one of the following:
 
 Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists, and offer it as further reading: the citation gives readers a second, free presentation without leaving them to search for it.
 
-The Wikipedia citation adds to the traditional reference and never replaces it. Put it right after the content it covers, as `([Wikipedia: Title](url))`, and keep the primary source’s citation beside the claim it supports. Where a page ends a section with further reading, list the same Wikipedia article there too, next to the textbook chapters.
+The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. Keep the primary source’s citation beside the claim it supports. Where a page ends a section with further reading, list the same Wikipedia citation there too, next to the other further-reading sources.
 
-- Link the article for the specific concept, not a broader article that mentions it.
+- Cite the article for the specific concept, not a broader article that mentions it.
 - Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.
-- Use a stable link to the article, not to a search result.
-- Link a term once where it is defined, not at every use; later uses link to your own definition.
+- Use a stable URL for the article, not a search result.
+- Cite an article once where its term is defined, not at every use; later uses link to your own definition.
 
 > **NOTE:**
 >
@@ -217,7 +217,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval.
 > >
-> > ✅ A *Poisson random variable* counts events in a fixed interval ([Wikipedia: Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)).
+> > ✅ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)).
 >
 > A reader who wants another presentation of the Poisson distribution now has one, and the definition itself still comes from your own text and its traditional reference.
 
@@ -424,3 +424,5 @@ Stack Overflow. 2024. *Stack Overflow Developer Survey 2024*. <https://survey.st
 Tchébychef, P. L. 1867. “Des Valeurs Moyennes.” *Journal de Mathématiques Pures Et Appliquées*, 2nd series, vol. 12: 177–84. <https://www.numdam.org/item/JMPA_1867_2_12__177_0/>.
 
 Vapnik, Vladimir N. 1998. *Statistical Learning Theory*. Wiley. <https://www.wiley.com/en-us/Statistical+Learning+Theory-p-9780471030034>.
+
+Wikipedia contributors. 2026. *Poisson Distribution — Wikipedia, the Free Encyclopedia*. <https://en.wikipedia.org/wiki/Poisson_distribution>.
