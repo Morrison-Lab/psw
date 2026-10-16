@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 18:16:36 (PDT)
+Last modified: 2026-10-15 18:25:19 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -245,7 +245,7 @@ Quote and cite the source that said it, not a later source that quotes it. Check
 
 When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
 
-When the credit is only a citation, end the definition or theorem div with a line `Source: @key [locator]`. A reference adds no commentary to the statement, and a div that holds only a citation is clutter. When the credit needs substantial prose about the source or history of the content, put that prose in a short remark after the statement and its proof, not inside the definition or theorem itself, so that each theorem div still holds one result.
+When the credit is only a citation, end the definition or theorem div with a line `Source: @key [locator]`. A reference adds no commentary to the statement, and a separate remark that holds only a citation is clutter. When the credit needs substantial prose about the source or history of the content, put that prose in a short remark after the statement and its proof, not inside the definition or theorem itself, so that each theorem div still holds one result.
 
 Apply the rule to:
 
