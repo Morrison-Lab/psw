@@ -41,6 +41,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/shared-macros.qmd >}}
 
+## Making expressions concise
+
+{{< include notation/concise-expressions.qmd >}}
+
 ## Writing dot products
 
 {{< include notation/dot-products.qmd >}}
