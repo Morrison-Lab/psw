@@ -195,6 +195,23 @@ Follow these principles when introducing new terms:
 - **Define terms at first use:**
   Place the definition immediately before or after the term's first appearance.
 
+- **Give every key term a formal definition in a `#def-` div:**
+  A term that the document relies on needs its own definition div,
+  even if an exercise, a solution, an example or a sentence of prose
+  has already explained it.
+  An explanation inside an exercise or solution cannot be linked to as a definition,
+  and a student who skips the exercise never sees it.
+  Find the gaps by listing the terms the document uses,
+  such as the bolded phrases and the terms in section titles,
+  and checking that each one has a `#def-` div,
+  or a link to the page that has one.
+  This extends *Give each term its own definition block* below
+  from terms defined in passing to terms explained only in exercises.
+  For example, if "loss function" first appears in an exercise
+  that asks students to compute one,
+  add a `#def-loss-function` div before the exercise,
+  and link the exercise's mentions to it.
+
 - **Define and link every technical term at its first use in each div:**
   Inside a definition, theorem, example or other div,
   link a technical term to its formal definition the first time it appears in that div.
