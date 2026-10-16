@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:17:08 (PDT)
+Last modified: 2026-10-16 04:37:37 (PDT)
 
 Software projects depend on short documents:
 
@@ -42,7 +42,17 @@ Readers of these documents often arrive without context on the change, so the ru
 - Keep each comment as short as it can be while still giving the reason.
 - Update or delete a comment when the code changes.
 
-## 4 Write release notes for the user
+## 4 Check CRAN before you name an R package
+
+Before you propose a name for an R package, check that nobody already uses it. Search these places, and report the result with the name:
+
+- the package page on [CRAN](https://cran.r-project.org/), at `https://cran.r-project.org/web/packages/<name>/index.html`, which returns 404 when the name is free;
+- the CRAN archive, at `https://cran.r-project.org/src/contrib/Archive/<name>/`, because a removed package still holds its name;
+- [Bioconductor](https://www.bioconductor.org/).
+
+A name that CRAN has used is usually unavailable for a new package and confuses users, so pick a different name.
+
+## 5 Write release notes for the user
 
 - Describe each change by its effect on the user, not by the file that changed.
 - Put breaking changes first, because the user must act on them.
