@@ -209,8 +209,9 @@ Follow these principles when introducing new terms:
   first look for a definition in an earlier document
   and link to it if one exists.
   Otherwise write the definition in the earliest document that needs the term.
-  A passage is the prose between one heading and the next,
-  and a div interrupts a passage without ending it.
+  A passage is the prose outside divs between one heading and the next,
+  and each div counts separately from the passage around it
+  and from every other div.
   For example, if a div defines noise as the outcome minus the "true function",
   link the term as `[true function](#def-true-function)`,
   and first add a definition div with that ID if the document lacks one.
