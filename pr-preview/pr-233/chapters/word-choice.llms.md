@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 04:00:13 (PDT)
+Last modified: 2026-10-16 04:08:54 (PDT)
 
 > **NOTE:**
 >
@@ -100,11 +100,17 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 >
 > **Example 1 (Naming the relationship)**  
 >
-> > ❌ A new observation of a training set is a new observation for a prediction function.
+> > ❌ The error of the prediction is large.
 > >
-> > ✅ A new observation relative to a training set is a new observation when the prediction function that predicts its outcome from its covariate value is obtained by applying a fitting procedure to the training set.
+> > ✅ The prediction misses the observed outcome by a large amount.
 >
-> A new observation does not belong to a training set, so *of* was wrong. *For* did not say whether the prediction function predicts the new observation, is chosen from it, or is evaluated on it. The corrected sentence says which: the function predicts its outcome from its covariate value.
+> *Of* could mean the error the prediction makes, the error in the way it was computed, or an error that belongs to the prediction in some other way. The verb *misses* says which.
+>
+> > ❌ We fit the model for the training set.
+> >
+> > ✅ We estimate the model’s coefficients from the training set.
+>
+> *For* could mean on behalf of, in order to serve, or using. *From* states the relationship exactly: the training set is the source of the estimates.
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
