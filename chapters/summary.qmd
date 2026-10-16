@@ -140,6 +140,13 @@ Follow its link for the reasons and the exceptions.
 - [Skip the credit for material from your own repositories](citations-evidence.qmd#material-from-your-own-repositories),
   but keep what those repositories credit.
 
+## Software text
+
+- [Say what changed and why](software-text.qmd#say-what-changed-and-why)
+  in a pull request or commit message.
+- [Comment why, not what](software-text.qmd#comment-code-sparingly).
+- [Write release notes by their effect on the user](software-text.qmd#write-release-notes-for-the-user).
+
 ## Thinking
 
 - [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
