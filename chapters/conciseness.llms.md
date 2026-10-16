@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 03:13:33 (PDT)
+Last modified: 2026-10-16 03:18:47 (PDT)
 
 > **NOTE:**
 >
@@ -30,7 +30,22 @@ Concise writing conveys ideas efficiently, using only the words necessary to com
 
 Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity. Keep a clause or a technical term when removing it would lose meaning or precision, and never replace an honest [hedge](../chapters/avoid-cliches.llms.md#def-hedge) with false confidence.
 
-## 2 Write in the active voice
+## 2 Make every word tell
+
+Strunk’s rule 13 states the principle: “Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts.” He adds that this “requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that he make every word tell” ([Strunk 1920](#ref-strunk1920elements), rule 13).
+
+Strunk’s examples of expressions that waste words:
+
+- “the question as to whether” → “whether”
+- “used for fuel purposes” → “used for fuel”
+- “in a hasty manner” → “hastily”
+- “owing to the fact that” → “since”
+- “the fact that he had not succeeded” → “his failure”
+- “His brother, who is a member of the same firm” → “His brother, a member of the same firm”
+
+The same rule applies to statistical writing: “We conducted an analysis of the data to determine whether there is an association between smoking and lung cancer” becomes “We tested whether smoking is associated with lung cancer”.
+
+## 3 Write in the active voice
 
 Use the [active voice](../chapters/defining-terms.llms.md#def-active-voice) unless you have a specific reason to use the passive. An active sentence names who did what, and it is usually shorter. A passive sentence can hide the actor, and the reader then has to guess who made the choice.
 
@@ -53,7 +68,7 @@ Passive voice is the right choice in a few cases:
 
 When none of these applies, rewrite the sentence with an active verb.
 
-## 3 Lead with the subject
+## 4 Lead with the subject
 
 Start a sentence with its subject, not a dependent clause or a fronted phrase. A leading clause makes the reader hold a condition before knowing what it conditions.
 
@@ -67,7 +82,7 @@ A fronted phrase delays the subject in the same way. Move a phrase such as “in
 >
 > ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
-## 4 Limit complex sentence structures
+## 5 Limit complex sentence structures
 
 A sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (*and*, *but*, *or*) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.
 
@@ -83,7 +98,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 5 Do not rule out readings no reader would make
+## 6 Do not rule out readings no reader would make
 
 A definition says what a term means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
 
@@ -101,7 +116,7 @@ Keep a disclaimer when the confusion is real. For example, if “CI” could mea
 
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
-## 6 Avoid double negatives
+## 7 Avoid double negatives
 
 A double negative states a claim by denying its opposite, as in these phrases:
 
@@ -125,7 +140,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-## 7 Write about the subject, not about the text
+## 8 Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject. They do one of these things:
 
@@ -153,7 +168,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 8 Do not overexplain
+## 9 Do not overexplain
 
 Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.
 
@@ -167,7 +182,7 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 >
 > The first version adds a clause that “the mean” already covers. The second is complete.
 
-## 9 Put lists in bullet points
+## 10 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -221,7 +236,7 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 10 Examples of concise writing
+## 11 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
@@ -232,6 +247,8 @@ Ernest Hemingway was known for his spare, direct prose style. His short sentence
 Back to top
 
 ## References
+
+Strunk, William, Jr. 1920. *The Elements of Style*. Harcourt, Brace; Howe. <https://www.gutenberg.org/ebooks/37134>.
 
 Wikipedia contributors. 2026a. *Ernest Hemingway — Wikipedia, the Free Encyclopedia*. <https://en.wikipedia.org/wiki/Ernest_Hemingway#Writing_style>.
 

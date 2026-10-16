@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 03:13:33 (PDT)
+Last modified: 2026-10-16 03:18:47 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -87,6 +87,8 @@ Follow these principles when introducing new terms:
   | Recall | \\\Pr(\hat Y = 1 \mid Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FN})\\ |
 
   The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
+
+- **Name the target of every estimator and predictor:** Every estimator has one target estimand, and the definition says which. A prediction is not an estimator of a mean. Its estimand is the observed outcome value of a new data point, not the population mean of that outcome. For example, the fitted model at \\x\\ is an estimator of the mean function value at \\x\\, so its bias is measured against that mean, while the prediction at \\x\\ has the new outcome \\Y\_\*\\ as its estimand, so its prediction error is measured against \\Y\_\*\\. Write “the fitted model at \\x\\ as an estimator of the mean function value”, or “the prediction of the new outcome”, and never leave the target implicit.
 
 ## 2 Examples of term definitions
 
