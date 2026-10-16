@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 23:21:43 (PDT)
+Last modified: 2026-10-16 00:04:38 (PDT)
 
 > **NOTE:**
 >
@@ -28,7 +28,7 @@ Many rules are stated as checks that a reader can apply to a single sentence, so
 
 ## 3 How the book is organized
 
-The chapters fall into five groups:
+The chapters fall into six groups:
 
 - Terms, notation, and evidence:
   - [Defining terms clearly](../chapters/defining-terms.llms.md)
@@ -47,6 +47,8 @@ The chapters fall into five groups:
   - [Writing for teaching](../chapters/teaching.llms.md)
 - Software:
   - [Writing for code review and software](../chapters/software-text.llms.md)
+- Thinking:
+  - [Writing to clarify your thinking](../chapters/writing-to-think.llms.md)
 
 The [Summary](../chapters/summary.llms.md) lists the book’s main rules as a checklist for revising a draft.
 

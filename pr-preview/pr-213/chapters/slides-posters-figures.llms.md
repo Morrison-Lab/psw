@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 23:21:43 (PDT)
+Last modified: 2026-10-16 00:04:38 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -64,7 +64,7 @@ A function of two variables, such as a loss or a residual sum of squares as a fu
 
 > **NOTE:**
 >
-> The sections on slide decks, presentation resources and scientific figures are adapted from the [Professional Development](https://ucd-serg.github.io/lab-manual/professional-development.html) and [Resources](https://ucd-serg.github.io/lab-manual/resources.html) chapters of the UCD-SERG lab manual. Several of the resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung. The guidance on leading with figures, drawing diagrams, directing attention, and showing software is adapted from the [Writing](https://ucd-serg.github.io/lab-manual/writing.html) chapter of the UCD-SERG lab manual. The section on three-dimensional graphs is original to this guide.
+> Several of the presentation resource links began in the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Jade Benjamin-Chung.
 
 Back to top
 

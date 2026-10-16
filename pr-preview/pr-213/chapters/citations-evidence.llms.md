@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-15 23:21:43 (PDT)
+Last modified: 2026-10-16 00:04:38 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -328,6 +328,8 @@ A feature vector is an element of the real coordinate space [@morrison2026mds].
 A feature vector is an element of the
 [real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
 ```
+
+A work you wrote with people outside your group is the exception: credit those co-authors by name when you reuse their words or lectures.
 
 Carry over what the source itself credits:
 
