@@ -119,6 +119,11 @@ Follow its link for the reasons and the exceptions.
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](conciseness.qmd#put-lists-in-bullet-points).
 
+## Thinking
+
+- [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
+- [Send a written question that states the goal, what you did, what happened, and what you tried](writing-to-think.qmd#send-a-written-question).
+
 ## Teaching materials
 
 - [Build the lecture from exercises and solutions](teaching.qmd#build-the-lecture-from-exercises-and-solutions).

@@ -59,6 +59,8 @@ website:
             href: chapters/conciseness.qmd
           - text: "Writing for teaching"
             href: chapters/teaching.qmd
+          - text: "Writing to clarify your thinking"
+            href: chapters/writing-to-think.qmd
           - text: "Slides, posters, and figures"
             href: chapters/slides-posters-figures.qmd
           - text: "Summary"

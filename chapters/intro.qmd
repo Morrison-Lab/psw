@@ -65,6 +65,8 @@ The chapters fall into four groups:
   - [Conciseness](conciseness.qmd)
 - Teaching:
   - [Writing for teaching](teaching.qmd)
+- Thinking:
+  - [Writing to clarify your thinking](writing-to-think.qmd)
 
 The [Summary](summary.qmd) lists the book's main rules
 as a checklist for revising a draft.
