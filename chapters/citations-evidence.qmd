@@ -401,7 +401,7 @@ and credits its authors.
 The textbook is where a student will actually learn it.
 
 When the credit is only a citation,
-end the definition or theorem div with a line `Source: @key [locator].`
+end the definition or theorem div with a line `Source: @key [locator]`.
 A reference adds no commentary to the statement, and a div that holds only a citation is clutter.
 When the credit needs substantial prose about the source or history of the content,
 put that prose in a short remark after the statement and its proof,
