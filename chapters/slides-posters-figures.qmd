@@ -143,8 +143,5 @@ of the UCD-SERG lab manual.
 Several of the resource links began in the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
-The guidance on leading with figures, drawing diagrams, directing attention, and showing software
-is adapted from the
-[Writing](https://ucd-serg.github.io/lab-manual/writing.html) chapter of the UCD-SERG lab manual.
 The section on three-dimensional graphs is original to this guide.
 :::
