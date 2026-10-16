@@ -493,13 +493,41 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-### Material from your own repositories
+### Material from your own work
 
-Material moved between repositories you maintain needs no credit to those repositories.
-When lecture notes move from one course repository to another,
-leave the sister-repository credit out of the new work.
+Do not formally acknowledge material you borrow from yourself or your own group.
+Link to it, but do not credit it.
+This covers:
 
-Carry over what the source repository itself credits:
+- Material moved between repositories you maintain.
+  When lecture notes move from one course repository to another,
+  leave the sister-repository credit out of the new work.
+- Work you wrote or co-wrote elsewhere,
+  such as a lab manual you co-author, your own papers, or your own software.
+
+A formal acknowledgment tells the reader the material came from someone else.
+Credit belongs to other people's work.
+It does not belong to your own, wherever it is stored.
+
+Do not cite your own notes as the source of a definition or result either.
+Cite the original publication and a modern textbook instead,
+and link to your own page as further reading
+(see [Cite the original for named results](#cite-the-original-for-named-results)).
+
+❌ A bibliography entry for the group's own notes, cited as the source:
+
+```markdown
+A feature vector is an element of the real coordinate space [@morrison2026mds].
+```
+
+✅ A cross-reference link, with the standard source cited where the claim needs one:
+
+```markdown
+A feature vector is an element of the
+[real coordinate space](https://morrison-lab.github.io/mds/linear-algebra-vectors.html#def-real-coordinate-space).
+```
+
+Carry over what the source itself credits:
 
 - A book or paper the material follows.
 - A person outside your group whose lecture or notes it adapted.
@@ -507,13 +535,10 @@ Carry over what the source repository itself credits:
   Brian Hutchinson and Logan Sizemore,
   so any repository that reuses those lectures credits them too.
 
-The exception has two limits:
+A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution.
+Keep it.
 
-- It does not forbid a credit.
-  Leave the sister-repository credit out of new work,
-  but do not strip an existing credit unless the maintainer asks.
-- It does not touch a link to a sister site that sends the reader to further reading.
-  That link is a cross-reference, not an attribution.
+When you find an existing credit to your own work, remove it and leave the link.
 
 ## Common citation errors to avoid
 

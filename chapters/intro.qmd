@@ -108,9 +108,6 @@ For who counts as an author, see the ICMJE criteria in
 
 ::: {.callout-note collapse="true" title="Source"}
 This list began in the
-[Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html)
-of the UCD-SERG lab manual,
-which adapted it from the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
 :::
