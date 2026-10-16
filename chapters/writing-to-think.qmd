@@ -11,7 +11,8 @@ format:
 ---
 
 Writing helps you find out what you think, as well as report what you already know.
-This chapter builds on the UCD-SERG Lab Manual's section on the topic [@ucdserglabmanual].
+For further reading, see the section on the topic in the
+[UCD-SERG Lab Manual](https://ucd-serg.github.io/lab-manual/).
 
 ## Write the question down first
 

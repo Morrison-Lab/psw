@@ -29,4 +29,4 @@ as a checklist for revising a draft.
 The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) Quarto website template,
 whose structure ultimately derives from the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/index.html).
-See also the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/).
+For further reading, see the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/).

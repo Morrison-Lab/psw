@@ -112,8 +112,9 @@ For who counts as an author, see the ICMJE criteria in
 This list traces back to the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)
 by Jade Benjamin-Chung.
-The [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html)
-of the UCD-SERG lab manual has a version of this list.
+For further reading, see the
+[Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html)
+of the UCD-SERG lab manual.
 :::
 
 ## Contributing
