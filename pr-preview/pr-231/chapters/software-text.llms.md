@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 03:53:51 (PDT)
+Last modified: 2026-10-16 04:19:44 (PDT)
 
 Software projects depend on short documents:
 
@@ -46,11 +46,11 @@ Readers of these documents often arrive without context on the change, so the ru
 
 Before you propose a name for an R package, check that nobody already uses it. Search these places, and report the result with the name:
 
-- the package page on [CRAN](https://cran.r-project.org/) (`https://cran.r-project.org/web/packages/<name>/index.html` returns 404 when the name is free);
-- the CRAN archive (`https://cran.r-project.org/src/contrib/Archive/<name>/`), because a removed package still holds its name;
+- the package page on [CRAN](https://cran.r-project.org/), at `https://cran.r-project.org/web/packages/<name>/index.html`, which returns 404 when the name is free;
+- the CRAN archive, at `https://cran.r-project.org/src/contrib/Archive/<name>/`, because a removed package still holds its name;
 - [Bioconductor](https://www.bioconductor.org/).
 
-A name that CRAN has used blocks a later submission and confuses users.
+A name that CRAN has used is usually unavailable for a new package and confuses users, so pick a different name.
 
 ## 5 Write release notes for the user
 

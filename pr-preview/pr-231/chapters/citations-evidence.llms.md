@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 03:53:51 (PDT)
+Last modified: 2026-10-16 04:19:44 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -249,7 +249,7 @@ When a bibliography entry names an organization, copy the name from the organiza
 
 ## 12 Verify each bibliography entry
 
-Do not leave a bibliography entry that you wrote from memory. Look the work up in [Crossref](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
+Check each detail of a bibliography entry against an official source. Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
 
 ## 13 Cite an alias directly
 

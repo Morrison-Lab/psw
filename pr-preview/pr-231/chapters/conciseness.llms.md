@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 03:53:51 (PDT)
+Last modified: 2026-10-16 04:19:44 (PDT)
 
 > **NOTE:**
 >
@@ -70,11 +70,11 @@ When none of these applies, rewrite the sentence with an active verb.
 
 ## 4 Write about the ideas, not the document
 
-Explain the concept, and link to the place that defines it inside the sentence that uses it. Do not write a sentence about which part of the document holds what. Sentences such as “the statistics notes define this” or “these pages are the home of the shared definitions” describe the structure of the document and teach the reader nothing about the subject.
+A sentence about which part of the document holds a definition adds no content. State the idea and link the term, as [Talk about the ideas, not the notes](../chapters/teaching.llms.md#talk-about-the-ideas-not-the-notes) explains. The ✅ example below omits the link only because this guide has no page for the term.
 
-> ❌ The statistics notes are the home of the shared error definitions, and they link to the matching pages.
+> ❌ The statistics notes define the training error as the average loss on the fitted data.
 >
-> ✅ The training error is the average loss on the data used to fit the model. (In a real document, link “training error” to its definition.)
+> ✅ The training error is the average loss on the data used to fit the model.
 
 ## 5 Lead with the subject
 
