@@ -47,6 +47,8 @@ Outside a passage that discusses the notation itself,
 do not write a Greek letter in a math expression,
 either as a raw command such as `\delta`
 or inside a letter-named macro such as `\vdelta`.
+The only exception is a one-off symbol that fits no semantic category,
+and the rule for Latin letters below says when that applies.
 
 ::: {#exm-semantic-macro-name}
 
@@ -119,7 +121,18 @@ only the definition of `\reals` changes.
 
 :::
 
-Latin letters with a fixed role follow the same rule.
+Latin letters follow the same rule, with the same single exception for letters of either alphabet.
+Outside a passage that discusses the notation itself,
+do not write a literal Latin or Greek letter in a math expression.
+The exception is a one-off symbol that fits no semantic category.
+The shared macros already name outcome variables, covariates and generic parameters,
+so a one-off should almost never be needed.
+When a symbol has a category but no macro, add the macro to the shared file first.
+New macros always go in the group's shared macros repository,
+never in a repository that applies them,
+unless that repository explicitly overrides the default meaning of one specific macro.
+
+Latin letters with a fixed role show the rule.
 In a regression or prediction model, use these macros:
 
 - `\outvar` for the outcome variable, instead of a bare `y`;
