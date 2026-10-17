@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-17 02:03:16 (PDT)
+Last modified: 2026-10-17 02:10:28 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -106,6 +106,8 @@ Follow these principles when introducing new terms:
   The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
 
 - **Name the target of every estimator and predictor:** Every estimator has one target estimand, and the definition says which. A prediction is not an estimator of a mean. Its estimand is the observed outcome value of a new data point, not the population mean of that outcome. For example, the fitted model at \\x\\ is an estimator of the mean function value \\\mu(x)\\, so its bias is measured against that mean, while the prediction at \\x\\ has the new outcome \\Y\_{\*}\\ as its estimand, so its prediction error is measured against \\Y\_{\*}\\. Write “the fitted model at \\x\\ as an estimator of the mean function value”, or “the prediction of the new outcome”, and never leave the target implicit.
+
+- **Say which error:** A bare “error” does not say what is measured, on which data, or whether it is a value computed from one sample or an expectation. Every use of “error” (and of “loss”) names three things: the quantity measured, such as the squared prediction error; the data that it is computed on, such as the training set, the validation set, the test set or the population; and whether it is a sample value or an expectation. For example, write “the prediction error on the validation set”, or “the expected squared prediction error”, and never “the error” or “the smallest error”. A term that already carries all three, such as the generalization error, can stand alone after its definition.
 
 - **Make the fitted model the subject, not the fitting procedure:** A prediction, an error, a bias and a variance are all properties of fitted models, so a sentence about them has a fitted model as its subject, and a choice among candidates is a choice among fitted models. Write “the fitted model predicts”, “the prediction of the fitted model at \\x\\”, and “choose among fitted models”, and never “the procedure predicts” or “choose among procedures”. Name the fitting procedure only when the sentence is about how a fitted model is built: the inputs that the procedure needs, what it costs, or an expectation over the training sets to which it is applied. In math, write \\g\mathopen{}\left(\mathcal{D}\_{\text{train}}\right)\mathclose{}\\ for the fitted model, and \\g\\ only for the procedure itself. For example, write “the bias of the prediction \\\hat{y}\\”, not “the bias of \\g\\”.
 
