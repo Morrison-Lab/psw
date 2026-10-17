@@ -309,7 +309,8 @@ in every course and every teaching repository, not only to one course.
 - Put each step's Python and R pair in its own tabset with `group="language"`.
   Start a new tabset whenever prose or a new step sits between code chunks,
   so the reader sees one step's code in one language at a time.
-  The shared group makes one choice of language apply to every tabset on the page.
+  The shared group makes one choice of language apply to every tabset on the page,
+  as long as the tab headings use identical text in every tabset, such as always "R" and "Python".
 - Write the R code with [tidymodels](https://www.tidymodels.org/),
   or show tidymodels and base R side by side.
   Do not give base R alone.
