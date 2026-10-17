@@ -430,6 +430,18 @@ Follow these principles when introducing new terms:
   write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$ when the covariate value is salient,
   and never $\fitproc\paren{\predvar; \trainset}$ or $\candproc{\icand}\paren{\predvar; \trainset}$.
 
+- **Apply a function to its argument with the macro's f form:**
+  Where a macro names a function, such as a fitting procedure,
+  the macro with an `f` ending applies it to its argument,
+  so write the application with that macro and not with a hand-typed `\paren`.
+  For example, write $\fitprocf{\trainset}$ for the fitted model that $\fitproc$ gives on the training set $\trainset$,
+  and never $\fitproc\paren{\trainset}$.
+  The candidate counterpart is `\candprocf{l}{D}`, which prints the model that candidate $l$ fits to the data set $D$.
+  When no f form exists for the function,
+  add it in the macros repository first,
+  then bump the pin and use it,
+  as for any new macro.
+
 - **Qualify "mean", "average" and their shorthands as population or sample:**
   A bare "mean" or "average" does not say whether it is a quantity of the population
   or a value computed from one sample.
