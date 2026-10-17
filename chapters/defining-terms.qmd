@@ -419,8 +419,11 @@ Follow these principles when introducing new terms:
   Name the fitting procedure only when the sentence is about how a fitted model is built:
   the inputs that the procedure needs, what it costs,
   or an expectation over the training sets to which it is applied.
-  In math, write $\fitprocf{\trainset}$ for the fitted model,
+  In math, write $\fitmodf{\trainset}$ for the fitted model,
+  the model that the procedure produces from the training set,
   and $\fitproc$ only for the procedure itself.
+  Where the training set is not salient, write the fitted model as $\fitted$ instead,
+  the symbol that the predicted-value bullet below builds on.
   For example, write
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
