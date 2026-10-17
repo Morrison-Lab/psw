@@ -425,6 +425,31 @@ in every course and every teaching repository, in every language.
 - Comment each step that a student could not reconstruct from its name,
   such as a transformation, a modeling choice, a tuning value or a random seed.
 
+## Set `code-fold` by what the code does and whether the prose mentions it
+
+This rule applies to every executed code chunk in teaching materials,
+in every course and every teaching repository.
+
+Set `#| code-fold:` on each chunk by two questions:
+does the prose mention the code,
+and does the code produce output outside the chunk,
+such as a figure, a table, or variables that inline expressions use?
+
+- `#| code-fold: show` when the prose mentions the code and the code produces output outside the chunk:
+  a figure, a table, or variables that inline expressions use.
+  The code starts open, and a reader who wants to focus on the output can hide it.
+- `#| code-fold: true` when the prose does not mention the code.
+  This holds whether the code produces output outside the chunk or no output at all.
+  The code starts hidden, and a reader who wants it can open it.
+- `#| code-fold: false` when the prose mentions the code and the code produces no output,
+  or only output that the chunk renders inside itself.
+  The code and its output stay together, with no toggle.
+
+For example, a chunk that fits a model the text walks through and prints its coefficients
+is `false`,
+a chunk that draws a figure the text discusses is `show`,
+and a chunk that loads a package or builds an object that later chunks use is `true`.
+
 ## Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code,
