@@ -226,6 +226,14 @@ Follow these principles when introducing new terms:
   add a `#def-loss-function` div before the exercise,
   and link the exercise's mentions to it.
 
+- **Pair each technical term with its mathematical symbol:**
+  Whenever a definition, an example or a list names a quantity in words,
+  write its symbol beside the name.
+  For example, write "the slope $\beta_x$" and "the residual sum of squares $\text{RSS}$",
+  not "the slope" and "the residual sum of squares" alone.
+  The words tell the reader what the quantity means,
+  and the symbol tells the reader which letters stand for it in the equations that follow.
+
 - **Define and link every technical term at its first use in each div:**
   Inside a definition, theorem, example or other div,
   link a technical term to its formal definition the first time it appears in that div.
@@ -236,6 +244,8 @@ Follow these principles when introducing new terms:
   If the term has no formal definition yet,
   write the definition in its own definition div,
   then link to it.
+  Never define a term inline inside another div,
+  because an inline definition cannot be linked to from anywhere else.
   In a series of related documents, such as course notes,
   first look for a definition in an earlier document
   and link to it if one exists.
