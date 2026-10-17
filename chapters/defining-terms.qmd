@@ -396,6 +396,22 @@ Follow these principles when introducing new terms:
   or "the prediction of the new outcome",
   and never leave the target implicit.
 
+- **Make the fitted model the subject, not the fitting procedure:**
+  A prediction, an error, a bias and a variance
+  are all properties of fitted models, so a sentence about them has a fitted model as its subject,
+  and a choice among candidates is a choice among fitted models.
+  Write "the fitted model predicts", "the prediction of the fitted model at $\predvar$",
+  and "choose among fitted models",
+  and never "the procedure predicts" or "choose among procedures".
+  Name the fitting procedure only when the sentence is about how a fitted model is built:
+  the inputs that the procedure needs, what it costs,
+  or an expectation over the training sets to which it is applied.
+  In math, write $\fitprocf{\trainset}$ for the fitted model,
+  and $\fitproc$ only for the procedure itself.
+  For example, write
+  "the bias of the prediction $\fitprocf{\trainset}\paren{\predvar}$",
+  not "the bias of $\fitproc$".
+
 - **Qualify "mean", "average" and their shorthands as population or sample:**
   A bare "mean" or "average" does not say whether it is a quantity of the population
   or a value computed from one sample.
