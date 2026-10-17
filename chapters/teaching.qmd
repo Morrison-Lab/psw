@@ -430,7 +430,8 @@ does the prose mention the code,
 and does the code produce output outside the chunk,
 such as a figure, a table, or variables that inline expressions use?
 
-- `#| code-fold: show` when the prose mentions the code and the code produces a table or figure outside the chunk.
+- `#| code-fold: show` when the prose mentions the code and the code produces output outside the chunk:
+  a figure, a table, or variables that inline expressions use.
   The code starts open, and a reader who wants to focus on the output can hide it.
 - `#| code-fold: true` when the prose does not mention the code.
   This holds whether the code produces output outside the chunk or no output at all.
