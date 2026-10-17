@@ -414,11 +414,16 @@ Follow these principles when introducing new terms:
 
 - **Write a predicted value with the predicted-value macro:**
   A predicted value is the fitted model applied to a covariate value,
-  so write it with `\predvalf` and not as the procedure applied to a covariate value and a training set.
+  so write it with a predicted-value macro
+  and not as the procedure applied to a covariate value and a training set.
+  The macro `\predval` takes no argument and prints the predicted value of the outcome
+  at the covariate value that the sentence is about.
   The macro `\predvalf{x}` takes a covariate value $x$ and prints the prediction $\fitted\paren{x}$,
   a value of the outcome's type.
   The macro `\candpredvalf{l}{x}` takes a candidate index $l$ and a covariate value $x$,
   and prints the prediction of candidate $l$'s fitted model at $x$.
+  Use `\predval` when no covariate value needs naming,
+  and `\predvalf` or `\candpredvalf` when it does.
   For example, write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$,
   and never $\fitproc\paren{\predvar; \trainset}$ or $\candproc{\icand}\paren{\predvar; \trainset}$.
 
