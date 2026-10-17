@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 18:54:21 (PDT)
+Last modified: 2026-10-16 18:58:42 (PDT)
 
 > **NOTE:**
 >
@@ -169,6 +169,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
 - Give labs and code exercises in both R and Python, side by side.
+- Put each step’s Python and R pair in its own tabset with `group="language"`. Start a new tabset whenever prose or a new step sits between code chunks, so the reader sees one step’s code in one language at a time. The shared group makes one choice of language apply to every tabset on the page, as long as the tab headings use identical text in every tabset, such as always “R” and “Python”.
 - Write the R code with [tidymodels](https://www.tidymodels.org/), or show tidymodels and base R side by side. Do not give base R alone. [ISLR-tidymodels-labs](https://github.com/Morrison-Lab/ISLR-tidymodels-labs) shows the style.
 - When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, in the book’s order. For the ISL labs, fit Python models with `statsmodels`’ `sm.OLS`, as [ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs) does. If an exercise departs from the book, say why in the lab.
 - Never throw away an exercise you replace. Either keep both exercises, or keep the replaced one as an outtake: leave its file in place and stop including it.
