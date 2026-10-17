@@ -397,10 +397,12 @@ Follow these principles when introducing new terms:
   and never leave the target implicit.
 
 - **Say which error:**
-  A bare "error" does not say what is measured, on which data, or whether it is a value computed from one sample or an expectation.
+  A bare "error" does not say what is measured,
+  on which data,
+  or whether it is a value computed from one sample or an expectation.
   Every use of "error" (and of "loss") names three things:
   the quantity measured, such as the squared prediction error;
-  the data it is computed on, such as the training set, the validation set, the test set or the population;
+  the data that it is computed on, such as the training set, the validation set, the test set or the population;
   and whether it is a sample value or an expectation.
   For example, write "the prediction error on the validation set",
   or "the expected squared prediction error",
