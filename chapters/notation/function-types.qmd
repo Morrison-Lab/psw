@@ -11,6 +11,10 @@ so list each input with its type.
 When an output is itself a function,
 say so and give its domain and codomain too.
 
+A function's argument is not part of what specifies the function.
+Give the argument in the definition, as the domain,
+and list only the other inputs as what specifies the function.
+
 ::: {#exm-function-types}
 
 ## Typing a procedure's inputs and output
@@ -33,6 +37,15 @@ which makes a prediction only when given a covariate value.
 The ✅ version states each type,
 so a reader can check that the output of one
 is an acceptable input to the next.
+
+> ❌ A fitting procedure is specified by the data set it is fitted to,
+> its model family and its objective function.
+>
+> ✅ A fitting procedure is specified by its model family and its objective function.
+> It takes a data set as its argument.
+
+The data set is the argument of the fitting procedure,
+so it is not one of the inputs that specify the procedure.
 
 :::
 
