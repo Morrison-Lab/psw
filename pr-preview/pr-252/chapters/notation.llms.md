@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-16 22:24:22 (PDT)
+Last modified: 2026-10-16 22:30:54 (PDT)
 
 > **NOTE:**
 >
@@ -188,7 +188,13 @@ In the source, a document that uses the shared macros writes the fitted value wi
 
 ## 5 Types of functions and procedures
 
-Name the type of every function and procedure when you define it: the set it takes its argument from (its domain), the set its values lie in (its codomain), and, for each input or output, what kind of mathematical object it is. Say “function”, not “rule” or “map”, and link the formal definition of a function at first use.
+Name the type of every [function](https://morrison-lab.github.io/mds/functions.html#def-function) and procedure when you define it:
+
+- the set it takes its argument from (its [domain](https://morrison-lab.github.io/mds/functions.html#def-domain))
+- the set its values lie in (its [codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain))
+- for each input and output, what kind of mathematical object it is
+
+Say “function”, not “rule” or “map”.
 
 A procedure that takes several inputs is a function of all of them, so list each input with its type. When an output is itself a function, say so and give its domain and codomain too.
 
@@ -200,7 +206,7 @@ A procedure that takes several inputs is a function of all of them, so list each
 > >
 > > ✅ A fitting procedure is a function from data sets to fitted models. A fitted model is a function from covariate values to predicted outcomes.
 >
-> The ❌ version leaves four types unsaid. “Rule” does not say it is a function. “Data” does not say it is a data set. “A prediction” is a single predicted outcome, but the procedure’s output is the fitted model, which makes a prediction only when given a covariate value. The ✅ version states each type, so a reader can check that the output of one is an acceptable input to the next.
+> The ❌ version leaves four types unsaid. “Rule” does not say that the procedure is a function. “Data” does not say that the input is a data set. “A prediction” is a single predicted outcome, so it does not say that the output is a fitted model. Nor does it say that a fitted model is itself a function, which makes a prediction only when given a covariate value. The ✅ version states each type, so a reader can check that the output of one is an acceptable input to the next.
 
 Check each use against the stated types: a function applied to something outside its domain, or a value described with the wrong type, is an error even when the notation looks right.
 
