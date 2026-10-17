@@ -427,7 +427,7 @@ Follow these principles when introducing new terms:
   and `\predvalf` or `\candpredvalf` only when the covariate value matters,
   such as when comparing predictions at two covariate values or averaging a prediction over them.
   For example, write $\predval$ in "the bias of the prediction $\predval$" when one covariate value is fixed throughout,
-  write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$ when the covariate value is the point,
+  write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$ when the covariate value is salient,
   and never $\fitproc\paren{\predvar; \trainset}$ or $\candproc{\icand}\paren{\predvar; \trainset}$.
 
 - **Qualify "mean", "average" and their shorthands as population or sample:**
