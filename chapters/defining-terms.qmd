@@ -409,7 +409,7 @@ Follow these principles when introducing new terms:
   In math, write $\fitprocf{\trainset}$ for the fitted model,
   and $\fitproc$ only for the procedure itself.
   For example, write
-  "the bias of the prediction $\fitprocf{\trainset}\paren{\predvar}$",
+  "the bias of the prediction $\predvalf{\predvar}$",
   not "the bias of $\fitproc$".
 
 - **Qualify "mean", "average" and their shorthands as population or sample:**
