@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-17 01:12:37 (PDT)
+Last modified: 2026-10-17 02:03:16 (PDT)
 
 Writing helps you find out what you think, as well as report what you already know. For further reading, see the section [Writing to clarify your thinking](https://ucd-serg.github.io/lab-manual/writing.html#writing-to-clarify-your-thinking) in the UCD-SERG lab manual.
 
