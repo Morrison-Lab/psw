@@ -412,6 +412,16 @@ Follow these principles when introducing new terms:
   "the bias of the prediction $\predvalf{\predvar}$",
   not "the bias of $\fitproc$".
 
+- **Write a predicted value with the predicted-value macro:**
+  A predicted value is the fitted model applied to a covariate value,
+  so write it with `\predvalf` and not as the procedure applied to a covariate value and a training set.
+  The macro `\predvalf{x}` takes a covariate value $x$ and prints the prediction $\fitted\paren{x}$,
+  a value of the outcome's type.
+  The macro `\candpredvalf{l}{x}` takes a candidate index $l$ and a covariate value $x$,
+  and prints the prediction of candidate $l$'s fitted model at $x$.
+  For example, write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$,
+  and never $\fitproc\paren{\predvar; \trainset}$ or $\candproc{\icand}\paren{\predvar; \trainset}$.
+
 - **Qualify "mean", "average" and their shorthands as population or sample:**
   A bare "mean" or "average" does not say whether it is a quantity of the population
   or a value computed from one sample.
