@@ -33,6 +33,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/functions-and-values.qmd >}}
 
+## Types of functions and procedures
+
+{{< include notation/function-types.qmd >}}
+
 ## Random variables and their values
 
 {{< include notation/random-variables.qmd >}}
