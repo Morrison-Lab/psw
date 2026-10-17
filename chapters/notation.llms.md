@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-17 03:00:38 (PDT)
+Last modified: 2026-10-17 16:26:16 (PDT)
 
 > **NOTE:**
 >
@@ -198,6 +198,8 @@ Say “function”, not “rule” or “map”.
 
 A procedure that takes several inputs is a function of all of them, so list each input with its type. When an output is itself a function, say so and give its domain and codomain too.
 
+A function’s argument is not part of what specifies the function. Give the argument in the definition, as the domain, and list only the other inputs as what specifies the function.
+
 > **NOTE:**
 >
 > **Example 8 (Typing a procedure’s inputs and output)**  
@@ -207,6 +209,12 @@ A procedure that takes several inputs is a function of all of them, so list each
 > > ✅ A fitting procedure is a function from data sets to fitted models. A fitted model is a function from covariate values to predicted outcomes.
 >
 > The ❌ version leaves four types unsaid. “Rule” does not say that the procedure is a function. “Data” does not say that the input is a data set. “A prediction” is a single predicted outcome, so it does not say that the output is a fitted model. Nor does it say that a fitted model is itself a function, which makes a prediction only when given a covariate value. The ✅ version states each type, so a reader can check that the output of one is an acceptable input to the next.
+>
+> > ❌ A fitting procedure is specified by the data set it is fitted to, its model family and its objective function.
+> >
+> > ✅ A fitting procedure is specified by its model family and its objective function. It takes a data set as its argument.
+>
+> The data set is the argument of the fitting procedure, so it is not one of the inputs that specify the procedure.
 
 Check each use against the stated types: a function applied to something outside its domain, or a value described with the wrong type, is an error even when the notation looks right.
 
