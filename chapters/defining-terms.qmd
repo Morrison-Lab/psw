@@ -423,7 +423,7 @@ Follow these principles when introducing new terms:
   the model that the procedure produces from the training set,
   and $\fitproc$ only for the procedure itself.
   Where the training set is not salient, write the fitted model as $\fitted$ instead,
-  as the predicted-value bullet below suppresses the covariate value.
+  the symbol that the predicted-value bullet below builds on.
   For example, write
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
