@@ -409,7 +409,7 @@ Follow these principles when introducing new terms:
   In math, write $\fitprocf{\trainset}$ for the fitted model,
   and $\fitproc$ only for the procedure itself.
   For example, write
-  "the bias of the prediction $\predvalf{\predvar}$",
+  "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
 
 - **Write a predicted value with the predicted-value macro:**
@@ -422,9 +422,12 @@ Follow these principles when introducing new terms:
   a value of the outcome's type.
   The macro `\candpredvalf{l}{x}` takes a candidate index $l$ and a covariate value $x$,
   and prints the prediction of candidate $l$'s fitted model at $x$.
-  Use `\predval` when no covariate value needs naming,
-  and `\predvalf` or `\candpredvalf` when it does.
-  For example, write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$,
+  Suppress the covariate value where it is not salient:
+  write `\predval` when the sentence is not about which covariate value the prediction is at,
+  and `\predvalf` or `\candpredvalf` only when the covariate value matters,
+  such as when comparing predictions at two covariate values or averaging a prediction over them.
+  For example, write $\predval$ in "the bias of the prediction $\predval$" when one covariate value is fixed throughout,
+  write $\predvalf{\predvar}$ and $\candpredvalf{\icand}{\predvar}$ when the covariate value is the point,
   and never $\fitproc\paren{\predvar; \trainset}$ or $\candproc{\icand}\paren{\predvar; \trainset}$.
 
 - **Qualify "mean", "average" and their shorthands as population or sample:**
