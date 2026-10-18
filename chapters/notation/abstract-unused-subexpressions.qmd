@@ -1,0 +1,50 @@
+Replace each sub-expression that you are not manipulating with a symbol that stands for it.
+Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it.
+Every other line shows the symbol.
+
+This is one case of [making each expression as concise as possible](#making-expressions-concise).
+It also asks for the habit behind that advice:
+split a long expression into short named pieces,
+and give each piece the symbol or [shared macro](#using-shared-macros) that names its concept.
+
+Choose the symbol to match the thing it names.
+For the population mean $\E{X}$, write $\mu$.
+Add a subscript, such as $\mu_X$, only when the context holds a second mean and the reader could confuse the two.
+State the abstraction once, in a sentence such as "Let $\mu = \E{X}$",
+before the first line that uses the symbol.
+
+::: {#exm-abstract-unused-subexpressions}
+
+## Abstracting the population mean
+
+Suppose a derivation expands the variance of a random variable $X$.
+
+> ❌
+> $$
+> \begin{aligned}
+> \E{\paren{X - \E{X}}^2}
+> &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\
+> &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2
+> \end{aligned}
+> $$
+>
+> ✅ Let $\mu = \E{X}$.
+> $$
+> \begin{aligned}
+> \E{\paren{X - \mu}^2}
+> &= \E{X^2 - 2 \mu X + \mu^2}
+> && \text{(expand the square)}\\
+> &= \E{X^2} - 2 \mu \E{X} + \mu^2
+> && \text{(linearity of expectation)}\\
+> &= \E{X^2} - 2 \mu \mu + \mu^2
+> && \text{(definition of } \mu \text{)}\\
+> &= \E{X^2} - \mu^2
+> && \text{(combine like terms)}
+> \end{aligned}
+> $$
+
+In the ❌ version, $\E{X}$ is a constant that no step manipulates until the last one,
+yet it clutters every line.
+In the ✅ version, only the line that uses the definition of $\mu$ needs to know what $\mu$ stands for.
+
+:::
