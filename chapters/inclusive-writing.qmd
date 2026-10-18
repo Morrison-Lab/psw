@@ -256,6 +256,20 @@ usually have more than one linking word such as 'and' or 'but'".
 > Because of this, the lasso sets some coefficients exactly to zero.
 > Usually, more coefficients are zero when $\lambda$ is larger.
 
+A sentence that states a result and then adds "which" and "and" clauses about it
+also holds several points.
+Give each fact its own sentence, in the order a reader needs them.
+
+> ❌ The constant prediction has squared-error risk 5,
+> which is larger than the risk 1 of the conditional mean,
+> and strictly so because the two predictions differ.
+>
+> ✅ Consider the constant prediction.
+> Its squared-error risk is 5.
+> The risk of the conditional mean is 1.
+> So the constant prediction has the larger risk.
+> The inequality is strict because the two predictions differ.
+
 [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures)
 and [Lead with the subject](conciseness.qmd#lead-with-the-subject)
 give more examples.
