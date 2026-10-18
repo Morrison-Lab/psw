@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 13:18:24 (PDT)
+Last modified: 2026-10-18 13:23:31 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -202,9 +202,9 @@ Leave a link out only for a reason such as one of the following:
 
 ## 8 Cite Wikipedia, beside the primary source
 
-Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists, and offer it as further reading: the citation gives readers a second, free presentation without leaving them to search for it.
+Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.
 
-The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. Keep the primary source’s citation beside the claim it supports. Where a page ends a section with further reading, list the same Wikipedia citation there too, next to the other further-reading sources.
+The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.
 
 - Cite the article for the specific concept, not a broader article that mentions it.
 - Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.
