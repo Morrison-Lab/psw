@@ -378,7 +378,7 @@ An in-text citation, `@key`, prints the author name and the number, such as "Has
 Write `[@key]` when the source supports a claim,
 and `@key` when the author is the subject of the sentence.
 The sites get this from the shared citation style and filter in
-[Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/tree/main/citations).
+[Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
 ## Best practices
 
