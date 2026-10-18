@@ -1,0 +1,27 @@
+Make the prose and the math say the same thing.
+Every name, role and condition that a sentence gives a symbol must hold for the symbol's definition.
+Check this each time you edit either one, and in every open pull request, not only in new text.
+
+Check three things:
+
+- **The name matches the formula.**
+  A term is used only for the quantity its definition gives it.
+  If the definition names a training observation's quantity, do not use the term for a new point's quantity without saying so.
+- **The condition matches the formula.**
+  "Fixed", "independent" and "constant" in a sentence must be the status the derivation uses.
+- **The count matches the list.**
+  A number or a "both" in a sentence must agree with the items shown.
+
+::: {#exm-math-matches-prose}
+
+## Leverage of a new point
+
+The leverage $h_i$ is defined for training observation $i$ as a diagonal entry of the hat matrix.
+
+> ❌ "Let $h_0 = \tp{\phi_0} (\stprod{\design})^{-1} \phi_0$."
+> The sentence calls $h_0$ a hat-matrix entry by its symbol, although $\phi_0$ is a new point outside the training set.
+>
+> ✅ "Let $h_0$ be the leverage of the new point, $\tp{\phi_0} (\stprod{\design})^{-1} \phi_0$."
+> The sentence says the quantity belongs to the new point.
+
+:::

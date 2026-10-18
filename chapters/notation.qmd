@@ -57,6 +57,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/abstract-unused-subexpressions.qmd >}}
 
+## Matching the math to the prose {#math-matches-prose}
+
+{{< include notation/math-matches-prose.qmd >}}
+
 ## Writing dot products
 
 {{< include notation/dot-products.qmd >}}

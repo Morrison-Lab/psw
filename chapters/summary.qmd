@@ -29,6 +29,7 @@ Follow its link for the reasons and the exceptions.
 - [Prefer interval notation to a double inequality](notation.qmd#avoiding-double-inequalities):
   $x \in (a, b)$ rather than $a < x < b$.
 - [Abstract each sub-expression you are not manipulating](notation.qmd#abstract-unused-subexpressions)
+- [Make the prose and the math say the same thing](notation.qmd#math-matches-prose)
   to a symbol, such as $\mu$ for $\E{X}$.
 - [Do one operation per step](notation.qmd#one-operation-per-step)
   in a derivation, and justify each step.
