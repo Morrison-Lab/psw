@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 11:31:22 (PDT)
+Last modified: 2026-10-18 13:18:24 (PDT)
 
 > **NOTE:**
 >
@@ -420,13 +420,31 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
 
-## 10 Writing dot products
+## 10 Abstracting sub-expressions you are not manipulating
+
+Replace each sub-expression that you are not manipulating with a symbol that stands for it. Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it. Every other line shows the symbol.
+
+This is one case of [making each expression as concise as possible](#making-expressions-concise). It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or [shared macro](#using-shared-macros) that names its concept.
+
+Choose the symbol to match the thing it names. For the population mean \\\E{X}\\, write \\\mu\\. Add a subscript, such as \\\mu_X\\, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let \\\mu = \E{X}\\”, before the first line that uses the symbol.
+
+> **NOTE:**
+>
+> **Example 20 (Abstracting the population mean)** Suppose a derivation expands the variance of a random variable \\X\\.
+>
+> > ❌ \\ \begin{aligned} \E{\paren{X - \E{X}}^2} &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\ &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2 \end{aligned} \\
+> >
+> > ✅ Let \\\mu = \E{X}\\. \\ \begin{aligned} \E{\paren{X - \mu}^2} &= \E{X^2 - 2 \mu X + \mu^2} && \text{(expand the square)}\\ &= \E{X^2} - 2 \mu \E{X} + \mu^2 && \text{(linearity of expectation)}\\ &= \E{X^2} - 2 \mu \mu + \mu^2 && \text{(definition of } \mu \text{)}\\ &= \E{X^2} - \mu^2 && \text{(combine like terms)} \end{aligned} \\
+>
+> In the ❌ version, \\\E{X}\\ is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of \\\mu\\ needs to know what \\\mu\\ stands for.
+
+## 11 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 20 (Writing a dot product)**  
+> **Example 21 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -442,7 +460,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 11 Writing out notational shorthands
+## 12 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -452,7 +470,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 21 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 22 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -466,7 +484,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
 
-## 12 Stating assumptions before using them
+## 13 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -481,7 +499,7 @@ Introduce the variable and its constraint together, as in “let \\x \neq 2\\”
 
 > **NOTE:**
 >
-> **Example 22 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 23 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >

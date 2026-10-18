@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-18 11:31:22 (PDT)</p>
+  <p class="date">Last modified: 2026-10-18 13:18:24 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -671,14 +671,49 @@
 </div>
 <p>Add the macro to the shared macro file before you use it, never as a local macro in one document (see <a href="#/using-shared-macros">Using shared macros</a>), and record its meaning in that file’s <code>interpretations.tsv</code>.</p>
 </section>
-<section id="writing-dot-products" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Writing dot products</h2>
+<section id="abstract-unused-subexpressions" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Abstracting sub-expressions you are not manipulating</h2>
+</section>
+<section class="slide level2">
+
+<p>Replace each sub-expression that you are not manipulating with a symbol that stands for it. Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it. Every other line shows the symbol.</p>
+<p>This is one case of <a href="#/making-expressions-concise">making each expression as concise as possible</a>. It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or <a href="#/using-shared-macros">shared macro</a> that names its concept.</p>
+<p>Choose the symbol to match the thing it names. For the population mean <span class="math inline">\(\E{X}\)</span>, write <span class="math inline">\(\mu\)</span>. Add a subscript, such as <span class="math inline">\(\mu_X\)</span>, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let <span class="math inline">\(\mu = \E{X}\)</span>”, before the first line that uses the symbol.</p>
+<div id="exm-abstract-unused-subexpressions" class="theorem example">
+<p><span class="theorem-title"><strong>Example 20 (Abstracting the population mean)</strong></span> Suppose a derivation expands the variance of a random variable <span class="math inline">\(X\)</span>.</p>
+<blockquote>
+<p>❌ <span class="math display">\[
+\begin{aligned}
+\E{\paren{X - \E{X}}^2}
+&amp;= \E{X^2 - 2 X \E{X} + \E{X}^2}\\
+&amp;= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2
+\end{aligned}
+\]</span></p>
+<p>✅ Let <span class="math inline">\(\mu = \E{X}\)</span>. <span class="math display">\[
+\begin{aligned}
+\E{\paren{X - \mu}^2}
+&amp;= \E{X^2 - 2 \mu X + \mu^2}
+&amp;&amp; \text{(expand the square)}\\
+&amp;= \E{X^2} - 2 \mu \E{X} + \mu^2
+&amp;&amp; \text{(linearity of expectation)}\\
+&amp;= \E{X^2} - 2 \mu \mu + \mu^2
+&amp;&amp; \text{(definition of } \mu \text{)}\\
+&amp;= \E{X^2} - \mu^2
+&amp;&amp; \text{(combine like terms)}
+\end{aligned}
+\]</span></p>
+</blockquote>
+<p>In the ❌ version, <span class="math inline">\(\E{X}\)</span> is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of <span class="math inline">\(\mu\)</span> needs to know what <span class="math inline">\(\mu\)</span> stands for.</p>
+</div>
+</section>
+<section id="writing-dot-products" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Writing dot products</h2>
 </section>
 <section class="slide level2">
 
 <p>When two vectors multiply to give a number, write the product as a dot product, <span class="math inline">\(\tilde{x} \cdot \tilde{\beta}\)</span>. Do not write it as a transpose product, <span class="math inline">\(\tilde{x}' \tilde{\beta}\)</span>, or with inner-product brackets, <span class="math inline">\(\langle \tilde{x}, \tilde{\beta} \rangle\)</span>. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.</p>
 <div id="exm-dot-product" class="theorem example">
-<p><span class="theorem-title"><strong>Example 20 (Writing a dot product)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 21 (Writing a dot product)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x}' \tilde{\beta}\)</span>.</p>
 <p>✅ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\)</span>.</p>
@@ -693,8 +728,8 @@
 </ul>
 <p>Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.</p>
 </section>
-<section id="writing-out-notational-shorthands" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Writing out notational shorthands</h2>
+<section id="writing-out-notational-shorthands" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Writing out notational shorthands</h2>
 </section>
 <section class="slide level2">
 
@@ -702,7 +737,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 21 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 22 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
@@ -715,8 +750,8 @@
 <p>Each full form tells the reader the set the operator runs over: the values <span class="math inline">\(X\)</span> can take, and the indices of the <span class="math inline">\(n\)</span> observations.</p>
 </div>
 </section>
-<section id="stating-assumptions-before-using-them" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Stating assumptions before using them</h2>
+<section id="stating-assumptions-before-using-them" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Stating assumptions before using them</h2>
 </section>
 <section class="slide level2">
 
@@ -730,7 +765,7 @@
 </ul>
 <p>Introduce the variable and its constraint together, as in “let <span class="math inline">\(x \neq 2\)</span>”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.</p>
 <div id="exm-assumptions-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 22 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
+<p><span class="theorem-title"><strong>Example 23 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}

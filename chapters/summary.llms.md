@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 11:31:22 (PDT)
+Last modified: 2026-10-18 13:18:24 (PDT)
 
 > **NOTE:**
 >
@@ -19,6 +19,8 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
 
 - [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): \\x \in (a, b)\\ rather than \\a \< x \< b\\.
+
+- [Abstract each sub-expression you are not manipulating](../chapters/notation.llms.md#abstract-unused-subexpressions) to a symbol, such as \\\mu\\ for \\\E{X}\\.
 
 - [Do one operation per step](../chapters/notation.llms.md#one-operation-per-step) in a derivation, and justify each step.
 
