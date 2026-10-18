@@ -90,10 +90,12 @@ When you change one, change the other in the same edit.
 
 ::: {#exm-prose-matches-math}
 
-Suppose the formula is $\E{(Y - f(x))^2}$, a population mean at one covariate value $x$.
+## A sentence that names the wrong average
+
+Suppose the formula is $\E{\paren{\newoutvar - \predvalf{\predvar}}^2}$, a population mean at one covariate value $\predvar$.
 The sentence "the average squared error over the training set" does not describe it.
 It names a sample average over many observations.
-Write "the expected squared prediction error at $x$" instead.
+Write "the expected squared prediction error at $\predvar$" instead.
 
 :::
 
