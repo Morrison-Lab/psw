@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 14:32:31 (PDT)
+Last modified: 2026-10-18 14:37:39 (PDT)
 
 > **NOTE:**
 >
@@ -60,7 +60,7 @@ The sentence that introduces or interprets a formula must describe that formula.
 
 > **NOTE:**
 >
-> **Example 3** Suppose the formula is \\\E{(Y - f(x))^2}\\, a population mean at one covariate value \\x\\. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at \\x\\” instead.
+> **Example 3 (A sentence that names the wrong average)** Suppose the formula is \\\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\\, a population mean at one covariate value \\\predvar\\. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at \\\predvar\\” instead.
 
 Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover [using one notation for one thing](../chapters/notation.llms.md#matching-names-and-notation) and [defining every variable when you introduce it](../chapters/defining-terms.llms.md#guidelines-for-defining-terms).
 
