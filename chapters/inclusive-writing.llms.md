@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 11:25:03 (PDT)
+Last modified: 2026-10-18 11:31:22 (PDT)
 
 > **NOTE:**
 >
@@ -118,6 +118,12 @@ Long sentences with nested clauses make the reader hold several unfinished ideas
 > ❌ Because the lasso penalty, which is the sum of the absolute values of the coefficients, is not smooth at zero, some coefficients, especially when \\\lambda\\ is large, are set exactly to zero.
 >
 > ✅ The lasso penalty is the sum of the absolute values of the coefficients. The absolute value function is not smooth at zero. Because of this, the lasso sets some coefficients exactly to zero. Usually, more coefficients are zero when \\\lambda\\ is larger.
+
+A sentence that states a result and then adds “which” and “and” clauses about it also holds several points. Give each fact its own sentence, in the order a reader needs them.
+
+> ❌ The constant prediction has squared-error risk 5, which is larger than the risk 1 of the conditional mean, and strictly so because the two predictions differ.
+>
+> ✅ Consider the constant prediction. Its squared-error risk is 5. The risk of the conditional mean is 1. So the constant prediction has the larger risk. The inequality is strict because the two predictions differ.
 
 [Limit complex sentence structures](../chapters/conciseness.llms.md#limit-complex-sentence-structures) and [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject) give more examples.
 
