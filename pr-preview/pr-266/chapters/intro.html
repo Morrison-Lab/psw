@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introduction – Principles of Scientific Writing</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3f418c0a1af92b3d03a8c930c3125fbd.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-3f418c0a1af92b3d03a8c930c3125fbd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3f418c0a1af92b3d03a8c930c3125fbd.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-176991ab188c2dce71ccfeb3a8e3acd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-41cfc110e5592a79981a5cb60f49db30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-176991ab188c2dce71ccfeb3a8e3acd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+// Theme dropdown: Light, Off-white, Parchment, Dark. Quarto's own toggle
+// handles light/dark and remembers it; the two tinted palettes are a
+// data-palette attribute on <html>. The choice is kept under "mln-theme".
+// Off-white is the default for a first visit.
+(function () {
+  var KEY = "mln-theme";
+  var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
+  function stored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function isDark() { return document.body.classList.contains("quarto-dark"); }
+  function apply(choice, remember) {
+    if (choice === "offwhite" || choice === "parchment") {
+      document.documentElement.setAttribute("data-palette", choice);
+    } else {
+      document.documentElement.removeAttribute("data-palette");
+    }
+    if ((choice === "dark") !== isDark() && window.quartoToggleColorScheme) {
+      window.quartoToggleColorScheme();
+    }
+    if (remember) { try { localStorage.setItem(KEY, choice); } catch (e) {} }
+    mark(choice);
+  }
+  function mark(choice) {
+    document.querySelectorAll(".theme-picker [data-theme-choice]").forEach(function (b) {
+      var on = b.getAttribute("data-theme-choice") === choice;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-checked", on ? "true" : "false");
+    });
+  }
+  // Set the palette before first paint to avoid a flash.
+  var early = stored();
+  if (early !== "light" && early !== "dark" && early !== "parchment") early = "offwhite";
+  if (early === "offwhite" || early === "parchment") {
+    document.documentElement.setAttribute("data-palette", early);
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var toggles = document.querySelectorAll(".quarto-color-scheme-toggle");
+    if (!toggles.length) return;
+    var tools = toggles[0];
+    var wrap = document.createElement("div");
+    wrap.className = "theme-picker dropdown";
+    wrap.innerHTML =
+      '<button type="button" class="nav-link dropdown-toggle px-1 border-0 bg-transparent" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Colour theme"><i class="bi bi-palette"></i></button>' +
+      '<ul class="dropdown-menu dropdown-menu-end" role="menu">' +
+      OPTIONS.map(function (o) {
+        return '<li role="none"><button type="button" class="dropdown-item" role="menuitemradio" aria-checked="false" data-theme-choice="' + o[0] + '">' + o[1] + "</button></li>";
+      }).join("") + "</ul>";
+    tools.parentNode.insertBefore(wrap, tools);
+    toggles.forEach(function (t) { t.style.display = "none"; });
+    wrap.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-theme-choice]");
+      if (b) apply(b.getAttribute("data-theme-choice"), true);
+    });
+    var choice = stored();
+    if (OPTIONS.every(function (o) { return o[0] !== choice; })) {
+      choice = isDark() ? "dark" : "offwhite";
+    }
+    apply(choice, false);
+  });
+})();
+</script>
+<!-- Generated by tools/build_math_macros.py from latex-macros/macros.qmd. -->
+<script>
+window.MathJax = window.MathJax || {};
+window.MathJax.tex = window.MathJax.tex || {};
+window.MathJax.tex.macros = Object.assign({}, window.MathJax.tex.macros || {},
+  {"'": "^{\\top}", "1": ["\\text{1}_{#1}", 1], "ATT": "\\operatorname{ATT}", "ATTf": ["\\ATT\\paren{#1}", 1], "Ber": "\\operatorname{Ber}", "Bernoulli": "\\operatorname{Bernoulli}", "Bias": ["\\operatorname{Bias}\\paren{#1}", 1], "Biast": "\\operatorname{Bias}", "Borel": "\\borel", "Coef": ["\\Regcoef_{#1}", 1], "Cor": ["\\Cort \\paren{#1}", 1], "Corf": "\\Cor", "Corr": ["\\Corrt\\paren{#1}", 1], "Corrf": "\\Corr", "Corrs": ["\\Corrt\\paren{#1, #2}", 2], "Corrt": "\\operatorname{Corr}", "Cors": ["\\Cort \\paren{#1, #2}", 2], "Cort": "\\operatorname{Cor}", "Cov": ["\\Covt \\paren{#1}", 1], "Covf": "\\Cov", "Covs": ["\\Covt \\paren{#1, #2}", 2], "Covt": "\\operatorname{Cov}", "Deviation": "\\Delta", "Devn": "\\Deviation", "E": ["\\distop{E}\\sb{#1}", 1], "EInf": "\\einf", "ESE": ["\\ESEt\\paren{#1}", 1], "ESEE": ["\\ESEEt\\paren{#1}", 1], "ESEEf": "\\ESEE", "ESEEt": "\\operatorname{ESEE}", "ESEf": "\\ESE", "ESEt": "\\operatorname{ESE}", "ESPE": ["\\ESPEt\\paren{#1}", 1], "ESPEf": "\\ESPE", "ESPEt": "\\operatorname{ESPE}", "Ebar": "\\bar{\\operatorname{E}}", "Ebarf": ["\\Ebar\\sb{#1}", 1], "Ef": "\\E", "Ehat": "\\hat{\\operatorname{E}}", "Ehatf": ["\\Ehat\\sb{#1}", 1], "Eigvals": "\\Lambda", "Ep": "\\distop{E}", "Est": ["\\widehat{#1}", 1], "Etilde": "\\tilde{\\operatorname{E}}", "Etildef": ["\\Etilde\\sb{#1}", 1], "Exp": "\\E", "Expf": "\\E", "Expfc": ["\\distop{E}_{#1}\\sb{#2}", 2], "Expp": "\\distop{E}", "F": "\\distop{F}", "FInf": "\\einf", "Gaus": "\\operatorname{Gaussian}", "H": "\\distop{H}", "HSE": ["\\hSE\\paren{#1}", 1], "IQR": "\\operatorname{IQR}", "IQRf": ["\\IQR\\paren{#1}", 1], "Intcoef": "\\Coef{0}", "Koppa": "\\text{Ϙ}", "Lik": "\\mathcal{L}", "Likf": ["\\Lik\\paren{#1}", 1], "M": "M", "MSE": ["\\MSEt\\paren{#1}", 1], "MSEf": "\\MSE", "MSEt": "\\operatorname{MSE}", "ModResid": "\\ModResidual", "ModResidual": "R^*", "Mu": "M", "NA": "\\text{NA}", "NB": "\\operatorname{NegBin}", "Nat": "\\mathbb{N}", "NegBin": "\\operatorname{NegBin}", "Normal": "\\operatorname{N}", "OR": "\\operatorname{OR}", "Outvar": "Y", "P": "\\distop{P}", "Param": "\\Theta", "Paramspace": "\\Theta", "Pf": ["\\P \\paren{#1}", 1], "Pois": "\\operatorname{Pois}", "Poisson": "\\operatorname{Poisson}", "Predvar": "X", "Prf": ["\\Pr\\paren{#1}", 1], "Q": "\\distop{Q}", "Qf": ["\\Q\\paren{#1}", 1], "Qoppa": "\\Koppa", "RD": "\\operatorname{RD}", "RMSE": ["\\RMSEt\\paren{#1}", 1], "RMSEf": "\\RMSE", "RMSEt": "\\operatorname{RMSE}", "RR": "\\operatorname{RR}", "Range": "\\mathcal{R}", "Ratio": "\\Koppa", "Ratiof": ["\\Ratio\\paren{#1}", 1], "Regcoef": "\\mathrm{B}", "Resid": "\\Residual", "Residual": "R", "Rvar": "X", "S": "\\distop{S}", "SD": ["\\operatorname{SD}\\paren{#1}", 1], "SDf": "\\SD", "SE": ["\\operatorname{SE}\\paren{#1}", 1], "SEf": "\\SE", "SEtilde": ["\\SEtildet\\paren{#1}", 1], "SEtildef": "\\SEtilde", "SEtildet": "\\widetilde{\\operatorname{SE}}", "Sf": ["\\S\\paren{#1}", 1], "StdResid": "\\StdResidual", "StdResidual": "R^\\prime", "Surv": "\\surv", "Th": "\\Theta", "V": "{\\operatorname{Var}}", "Var": "\\var", "Varf": "\\var", "Varr": "\\operatorname{Var}", "Vart": "\\operatorname{Var}", "Xin": "\\dsn{X}", "Xxin": "X_1=x_1, \\ldots, X_n = x_n", "a": "\\alpha", "aCov": ["\\operatorname{aCov}\\paren{#1}", 1], "aVar": ["\\operatorname{aVar}\\paren{#1}", 1], "abs": ["\\mathopen{}\\left|#1\\right|\\mathclose{}", 1], "accept": "\\alpha", "adjlevel": "\\alpha", "all": "\\forall", "am": "\\arg \\max", "amin": "\\arg \\min", "and": "\\cap", "angb": ["\\mathopen{}\\left\\langle #1\\right\\rangle\\mathclose{}", 1], "angpar": "\\theta", "arcoef": "\\rho", "argmax": "\\arg \\max", "argmin": "\\arg \\min", "armijo": "c_1", "asymub": ["O\\paren{#1}", 1], "attnweight": "\\alpha", "aug": ["{#1}^{\\mathrm{aug}}", 1], "avgfit": "\\popmean_{\\modmem}", "avgfitf": ["\\avgfit\\paren{#1}", 1], "avgiN": "\\frac{1}{N}\\sumiN", "avgin": "\\frac{1}{n}\\sumin", "avgleverage": "\\bar{h}", "avgon": ["\\frac{1}{\\abs{#1}}\\sum_{\\iobs \\in #1}", 1], "avgto": ["\\frac{1}{#2}\\sumto{#1}{#2}", 2], "b": "\\beta", "ba": "\\begin{aligned}", "backerr": "\\delta", "bandwidth": "\\sigma", "bbC": "\\mathbb{C}", "bbN": "\\mathbb{N}", "bbQ": "\\mathbb{Q}", "bbR": "\\mathbb{R}", "bbZ": "\\mathbb{Z}", "bestmod": "h^*", "bestmodf": ["\\bestmod\\paren{#1}", 1], "bestpredfn": "\\predfn^*", "bestpredfnf": ["\\bestpredfn\\paren{#1}", 1], "bfA": "\\mathbf{A}", "bfB": "\\mathbf{B}", "bfC": "\\mathbf{C}", "bfD": "\\mathbf{D}", "bfDelta": "\\boldsymbol{\\Delta}", "bfE": "\\mathbf{E}", "bfF": "\\mathbf{F}", "bfG": "\\mathbf{G}", "bfGamma": "\\boldsymbol{\\Gamma}", "bfH": "\\mathbf{H}", "bfI": "\\mathbf{I}", "bfJ": "\\mathbf{J}", "bfK": "\\mathbf{K}", "bfL": "\\mathbf{L}", "bfLambda": "\\boldsymbol{\\Lambda}", "bfM": "\\mathbf{M}", "bfN": "\\mathbf{N}", "bfO": "\\mathbf{O}", "bfOmega": "\\boldsymbol{\\Omega}", "bfP": "\\mathbf{P}", "bfPhi": "\\boldsymbol{\\Phi}", "bfPi": "\\boldsymbol{\\Pi}", "bfPsi": "\\boldsymbol{\\Psi}", "bfQ": "\\mathbf{Q}", "bfR": "\\mathbf{R}", "bfS": "\\mathbf{S}", "bfSigma": "\\boldsymbol{\\Sigma}", "bfT": "\\mathbf{T}", "bfTheta": "\\boldsymbol{\\Theta}", "bfU": "\\mathbf{U}", "bfUpsilon": "\\boldsymbol{\\Upsilon}", "bfV": "\\mathbf{V}", "bfW": "\\mathbf{W}", "bfX": "\\mathbf{X}", "bfXi": "\\boldsymbol{\\Xi}", "bfY": "\\mathbf{Y}", "bfZ": "\\mathbf{Z}", "bfa": "\\mathbf{a}", "bfalpha": "\\boldsymbol{\\alpha}", "bfb": "\\mathbf{b}", "bfbeta": "\\boldsymbol{\\beta}", "bfc": "\\mathbf{c}", "bfchi": "\\boldsymbol{\\chi}", "bfd": "\\mathbf{d}", "bfdelta": "\\boldsymbol{\\delta}", "bfe": "\\mathbf{e}", "bfepsilon": "\\boldsymbol{\\epsilon}", "bfeta": "\\boldsymbol{\\eta}", "bff": "\\mathbf{f}", "bfg": "\\mathbf{g}", "bfgamma": "\\boldsymbol{\\gamma}", "bfh": "\\mathbf{h}", "bfi": "\\mathbf{i}", "bfiota": "\\boldsymbol{\\iota}", "bfj": "\\mathbf{j}", "bfk": "\\mathbf{k}", "bfkappa": "\\boldsymbol{\\kappa}", "bfl": "\\mathbf{l}", "bflambda": "\\boldsymbol{\\lambda}", "bfm": "\\mathbf{m}", "bfmu": "\\boldsymbol{\\mu}", "bfn": "\\mathbf{n}", "bfnu": "\\boldsymbol{\\nu}", "bfo": "\\mathbf{o}", "bfomega": "\\boldsymbol{\\omega}", "bfp": "\\mathbf{p}", "bfphi": "\\boldsymbol{\\phi}", "bfpi": "\\boldsymbol{\\pi}", "bfpsi": "\\boldsymbol{\\psi}", "bfq": "\\mathbf{q}", "bfr": "\\mathbf{r}", "bfrho": "\\boldsymbol{\\rho}", "bfs": "\\mathbf{s}", "bfsigma": "\\boldsymbol{\\sigma}", "bft": "\\mathbf{t}", "bftau": "\\boldsymbol{\\tau}", "bftheta": "\\boldsymbol{\\theta}", "bfu": "\\mathbf{u}", "bfupsilon": "\\boldsymbol{\\upsilon}", "bfv": "\\mathbf{v}", "bfvarepsilon": "\\boldsymbol{\\varepsilon}", "bfvarphi": "\\boldsymbol{\\varphi}", "bfvarpi": "\\boldsymbol{\\varpi}", "bfvarrho": "\\boldsymbol{\\varrho}", "bfvarsigma": "\\boldsymbol{\\varsigma}", "bfvartheta": "\\boldsymbol{\\vartheta}", "bfw": "\\mathbf{w}", "bfx": "\\mathbf{x}", "bfxi": "\\boldsymbol{\\xi}", "bfy": "\\mathbf{y}", "bfz": "\\mathbf{z}", "bfzero": "\\boldsymbol{0}", "bfzeta": "\\boldsymbol{\\zeta}", "bias": "\\Bias", "biast": "\\operatorname{Bias}", "black": ["{\\color{black}{#1}}", 1], "blue": ["{\\color{blue}{#1}}", 1], "borel": "\\scrB", "borelalg": "\\borel", "brown": ["{\\color{brown}{#1}}", 1], "cR": "\\mathcal{R}", "candfitted": ["{\\fitted_{#1}}", 1], "candfnset": ["\\mathcal{G}_{#1}", 1], "candpredvalf": ["{\\candfitted{#1}\\paren{#2}}", 2], "candproc": ["\\fitproc_{#1}", 1], "candproctuned": ["\\fitproc^{#1}", 1], "cb": ["\\mathopen{}\\left\\{#1\\right\\}\\mathclose{}", 1], "cbl": ["\\mathopen{}\\left\\{#1\\right.", 1], "cbmat": ["\\mathopen{}\\left\\{\\begin{matrix}#1\\end{matrix}\\right\\}\\mathclose{}", 1], "cd": "\\cdot", "cdev": "\\popdev", "cdf": "\\distop{F}", "cdff": ["\\cdf\\paren{#1}", 1], "cds": "\\cdots", "ceil": "\\ceiling", "ceiling": ["\\mathopen{}\\left\\lceil#1\\right\\rceil\\mathclose{}", 1], "censhist": ["\\hist{C}{#1}", 1], "censvalhist": ["\\hist{c}{#1}", 1], "cent": ["{#1}^{\\mathrm{c}}", 1], "change": "\\Delta", "ci": "\\hb {\\color{red}\\pm} \\cirad", "ciid": "\\operatorname{ciid}", "cirad": "\\za \\cdot \\hse{\\hb}", "ciradf": ["\\za \\cdot \\hse{#1}", 1], "ciradsym": "\\xi", "ckolmf": ["\\kolm\\paren{#1 \\mid #2}", 2], "clipthresh": "\\tau", "clusterassign": "C", "clusterassignf": ["\\clusterassign\\paren{#1}", 1], "codealph": "\\Sigma", "codeparams": ["{\\sb{#1, #2, #3}}_{#4}", 4], "coef": ["\\regcoef_{#1}", 1], "coll": "\\scrC", "collection": "\\coll", "combwt": "\\alpha", "combwtb": "\\beta", "condCov": ["{\\Cov{#1, #2 \\given #3}}", 3], "condE": ["{\\E{#1 \\given #2}}", 2], "condPr": ["{\\Prf{#1 \\given #2}}", 2], "condVar": ["{\\Var{#1 \\given #2}}", 2], "condcdf": ["{\\cdff{#1 \\given #2}}", 2], "condnum": "\\kappa", "condpdf": ["{\\pdf\\paren{#1 \\given #2}}", 2], "condpmf": ["{\\pmf{#1 \\given #2}}", 2], "condsurv": "\\kappa", "convrate": "\\rho", "coordfactor": "\\mu", "corpar": "\\rho", "cossim": "\\operatorname{cossim}", "cossimf": ["\\cossim\\paren{#1, #2}", 2], "covh": ["\\hcovt\\paren{#1}", 1], "covhf": "\\covh", "covhist": ["\\hist{L}{#1}", 1], "covmat": "\\Sigma", "covvalhist": ["\\hist{l}{#1}", 1], "cs": "\\kappa", "cuhaz": "{\\Lambda}", "cuhazfactor": "\\factor_{\\cuhaz}", "cuhazfactorf": ["\\cuhazfactor\\paren{#1}", 1], "cuhazff": "\\cuhazfactorf", "cuhazr": "\\cuhazratio", "cuhazratio": "\\ratio_{\\cuhaz}", "cuhazratiof": ["\\cuhazratio\\paren{#1}", 1], "cuhazrf": "\\cuhazratiof", "cum": ["\\operatorname{cum}\\paren{#1}", 1], "cumhaz": "\\cuhaz", "cutheight": "h", "cvest": ["\\Est{\\generr}_{\\text{CV}(#1)}", 1], "cvestof": ["\\Est{\\generr}^{#2}_{\\text{CV}(#1)}", 2], "cvse": ["\\operatorname{SE}_{\\text{CV}(#1)}", 1], "cvseof": ["\\operatorname{SE}^{#2}_{\\text{CV}(#1)}", 2], "cyan": ["{\\color{cyan}{#1}}", 1], "dBern": "\\operatorname{Bern}", "dBernf": ["\\dBern\\paren{#1}", 1], "dBeta": "\\operatorname{Beta}", "dBetaf": ["\\dBeta\\paren{#1}", 1], "dBin": "\\operatorname{Bin}", "dBinf": ["\\dBin\\paren{#1}", 1], "dF": "\\operatorname{F}", "dFf": ["\\dF\\paren{#1}", 1], "dGam": "\\operatorname{Gam}", "dGamf": ["\\dGam\\paren{#1}", 1], "dInvGam": "\\operatorname{InvGam}", "dInvGamf": ["\\dInvGam\\paren{#1}", 1], "dInvW": "\\operatorname{InvW}", "dInvWf": ["\\dInvW\\paren{#1}", 1], "dLaplace": "\\operatorname{Laplace}", "dLaplacef": ["\\dLaplace\\paren{#1}", 1], "dMN": "\\operatorname{MN}", "dMNf": ["\\dMN\\paren{#1}", 1], "dN": "\\operatorname{N}", "dNf": ["\\dN\\paren{#1}", 1], "dPo": "\\operatorname{Po}", "dPof": ["\\dPo\\paren{#1}", 1], "dW": "\\operatorname{W}", "dWeib": "\\operatorname{Weib}", "dWeibf": ["\\dWeib\\paren{#1}", 1], "dWf": ["\\dW\\paren{#1}", 1], "dapp": "\\dot\\approx", "darkgray": ["{\\color{darkgray}{#1}}", 1], "dataset": "\\mathcal{D}", "dderiv": ["\\frac{\\partial^2}{\\partial #1^2}", 1], "dderivf": ["\\frac{\\partial^2 #1}{\\partial #2^2}", 2], "ddist": "\\ \\dot{\\sim} \\ ", "decay": "\\gamma", "defEInf": "\\einf \\eqdef \\E{\\oinf(\\vx|\\theta)}", "defHR": "\\hr(t| \\vx : \\vxs) \\eqdef \\frac{\\haz(t|\\vx)}{\\haz(t|\\vxs)}", "defHess": "\\hess \\eqdef \\deriv{\\vth}\\deriv{\\vth^{\\top}} \\llik(\\vx | \\vth)", "defLik": "\\Lik(\\theta) \\eqdef \\p(\\vX = \\vx | \\Theta = \\theta)", "defLogLik": "\\lik \\eqdef \\logf{\\Lik(\\vx|\\th)}", "defOInf": "\\oinf \\eqdef -\\hess(\\vx|\\vth)", "defScore": "\\score \\eqdef \\deriv{\\th} \\lik(\\vx|\\th)", "defeq": "\\stackrel{\\text{def}}{=}", "degmat": "\\Delta", "dens": "\\p", "deriv": ["\\frac{\\partial}{\\partial #1}", 1], "derivf": ["\\frac{\\partial #1}{\\partial #2}", 2], "derivfdn": "\\derivff", "derivff": ["\\frac{\\partial #2}{\\partial #1}", 2], "derivfnd": "\\derivf", "design": "D", "deviance": "D", "deviation": "\\delta", "deviationf": ["\\deviation_{#2}\\paren{#1}", 2], "deviationv": "\\vec{\\deviation}", "devn": "\\deviation", "devnv": "\\deviationv", "dexp": "\\operatorname{exp}'", "dexpf": ["\\dexp \\cb{#1}", 1], "dexpitf": ["\\expit'\\cb{#1}", 1], "df": "\\nu", "diag": "\\operatorname{diag}", "diagf": ["\\diag\\paren{#1}", 1], "dif": ["\\frac{d #1}{d #2}", 2], "diff": "\\Delta", "diffeta": "\\diff \\eta", "diffloghaz": "\\diff \\loghaz", "difflogodds": "\\diff \\logodds", "diffvx": "\\diff\\vx", "dims": ["\\ub{#1}_{#2}", 2], "dinvoddsf": ["{\\invodds}'\\cb{#1}", 1], "dist": "\\ \\sim \\ ", "distfam": "\\mathcal{P}", "distfamof": ["\\distfam_{#1}", 1], "distiid": "\\siid", "distmem": "P", "distmemof": ["\\distmem_{#1}", 1], "distop": ["\\operatorname{#1}", 1], "dlog": "\\logt'", "dlogf": ["\\dlog \\cb{#1}", 1], "doddsf": ["{\\oddst}'\\cb{#1}", 1], "doddsinvf": ["{\\oddsinv}'\\cb{#1}", 1], "dpf": "\\dprodf", "dpr": "\\cdot", "dprod": ["#1 \\cdot #2", 2], "dprodf": "\\dprod", "dsim": "\\ \\dot{\\sim} \\ ", "dsn": ["#1_1, \\ldots, #1_n", 1], "dsvn": ["#1_1=#2_1, \\ldots, #1_n = #2_n", 2], "dt": "\\operatorname{t}", "dtf": ["\\dt\\paren{#1}", 1], "dualvar": "\\alpha", "e": ["\\euler^{#1}", 1], "eATT": "\\Est{\\ATT}", "eATTf": ["\\eATT\\paren{#1}", 1], "eBias": ["\\eBiast\\paren{#1}", 1], "eBiast": "\\mathop{\\Est{\\Biast}}\\nolimits", "eCor": ["\\ecort\\paren{#1}", 1], "eCorf": "\\eCor", "eCorr": ["\\eCorrt\\paren{#1}", 1], "eCorrf": "\\eCorr", "eCorrs": ["\\eCorrt\\paren{#1, #2}", 2], "eCorrt": "\\mathop{\\Est{\\Corrt}}\\nolimits", "eCors": ["\\ecort\\paren{#1, #2}", 2], "eCovt": "\\mathop{\\Est{\\Covt}}\\nolimits", "eE": ["\\mathop{\\est{\\operatorname{E}}}\\nolimits\\sb{#1}", 1], "eExp": "\\eE", "eExpf": "\\eE", "eKoppa": "\\est{\\Koppa}", "eMSE": ["\\eMSEt\\paren{#1}", 1], "eMSEf": "\\eMSE", "eMSEt": "\\mathop{\\Est{\\MSEt}}\\nolimits", "ePr": ["\\mathop{\\Est{\\Pr}}\\nolimits\\sb{#1}", 1], "eQ": "\\mathop{\\est{\\Q}}\\nolimits", "eQf": ["\\eQ\\paren{#1}", 1], "eQoppa": "\\eKoppa", "eR": "\\est{R}", "eRD": "\\Est{\\RD}", "eRMSE": ["\\eRMSEt\\paren{#1}", 1], "eRMSEf": "\\eRMSE", "eRMSEt": "\\mathop{\\Est{\\RMSEt}}\\nolimits", "eRR": "\\Est{\\RR}", "eRatio": "\\est{\\Ratio}", "eRatiof": ["\\eRatio\\paren{#1}", 1], "eS": "\\est{\\Sigma}", "eSD": ["\\mathop{\\Est{\\operatorname{SD}}}\\nolimits\\paren{#1}", 1], "eSDf": "\\eSD", "eSE": "\\mathop{\\Est{\\operatorname{SE}}}\\nolimits", "eSEf": ["\\eSE\\paren{#1}", 1], "eSEt": "\\mathop{\\Est{\\operatorname{SE}}}\\nolimits", "eSig": "\\est{\\Sigma}", "eSigma": "\\est{\\Sigma}", "eSurv": "\\mathop{\\est{\\surv}}\\nolimits", "eSurvf": ["\\eSurv\\paren{#1}", 1], "eVar": ["\\mathop{\\Est{\\operatorname{Var}}}\\nolimits\\paren{#1}", 1], "ea": "\\end{aligned}", "eb": "\\est{\\beta}", "ebias": "\\eBias", "ecdf": "\\mathop{\\est{\\cdf}}\\nolimits", "ecdff": ["\\ecdf\\paren{#1}", 1], "ecoef": ["\\est{\\regcoef}_{#1}", 1], "ecort": "\\mathop{\\Est{\\Cort}}\\nolimits", "ecovf": ["\\ecovt\\paren{#1}", 1], "ecovmat": "\\est{\\covmat}", "ecovt": "\\mathop{\\Est{\\Covt}}\\nolimits", "ecuhaz": "\\est{\\cuhaz}", "ecuhazfactor": "\\efactor_{\\cuhaz}", "ecuhazfactorf": ["\\ecuhazfactor\\paren{#1}", 1], "ecuhazff": "\\ecuhazfactorf", "ecuhazr": "\\ecuhazratio", "ecuhazratio": "\\eratio_{\\cuhaz}", "ecuhazratiof": ["\\ecuhazratio\\paren{#1}", 1], "ecuhazrf": "\\ecuhazratiof", "ecumhaz": "\\ecuhaz", "edf": "\\est{\\df}", "edifflogodds": "\\Est{\\difflogodds}", "edistmem": "\\est{\\distmem}", "edistmemof": ["\\edistmem_{#1}", 1], "eeinf": "\\est{\\einf}", "eeinff": ["\\eeinf \\paren{#1}", 1], "ef": "\\e", "efactor": "\\est{\\factor}", "efactorf": ["\\efactor\\paren{#1}", 1], "efcuhaz": "\\ecuhazfactor", "efcuhazf": "\\ecuhazfactorf", "eff": "\\efactorf", "efhaz": "\\ehazfactor", "efhazf": "\\ehazfactorf", "efitted": "\\ey", "efodds": "\\eoddsfactor", "efoddsf": "\\eoddsfactorf", "efprev": "\\eprevfactor", "efprevf": "\\eprevfactorf", "efrate": "\\eratefactor", "efratef": "\\eratefactorf", "efrisk": "\\eriskfactor", "efriskf": "\\eriskfactorf", "efsurv": "\\esurvfactor", "efsurvf": "\\esurvfactorf", "ehaz": "\\erate", "ehazfactor": "\\efactor_{\\haz}", "ehazfactorf": ["\\ehazfactor\\paren{#1}", 1], "ehazff": "\\ehazfactorf", "ehazr": "\\ehazratio", "ehazratio": "\\eratio_{\\haz}", "ehazrf": "\\ehrf", "ehr": "\\ehazratio", "ehrf": ["\\ehazratio\\paren{#1}", 1], "eigval": "\\lambda", "einf": "\\mathcal{I}", "einff": ["\\einf\\paren{#1}", 1], "einfm": "\\mathcal{I}", "eintcoef": "\\ecoef{0}", "ek": "\\est{\\kappa}", "ekappa": "\\est{\\kappa}", "ekoppa": "\\est{\\koppa}", "el": "\\est{\\lambda}", "emean": "\\est{\\mean}", "emodmem": "\\est{\\modmem}", "emodmemat": ["\\emodmem_{#1}", 1], "emodmematf": ["\\emodmemat{#1}\\paren{#2}", 2], "emodmemf": ["\\emodmem\\paren{#1}", 1], "emodmemof": ["\\emodmem_{#1}", 1], "emp": "\\text{emp}", "emprisk": "\\epoprisk", "empriskf": "\\epopriskf", "emu": "\\est{\\mu}", "emuf": ["\\emu\\paren{#1}", 1], "entropy": "H", "entropyf": ["\\entropy\\paren{#1}", 1], "enuisance": "\\est{\\nuisance}", "eodds": "\\est{\\odds}", "eoddsfactor": "\\efactor_{\\odds}", "eoddsfactorf": ["\\eoddsfactor\\paren{#1}", 1], "eoddsff": "\\eoddsfactorf", "eorf": ["\\eror\\paren{#1}", 1], "eoutvar": "\\est{\\outvar}", "ep": "\\mathop{\\est{\\p}}\\nolimits", "eparam": "\\est{\\param}", "epe": ["\\operatorname{EPE}^{#1}_{#2}\\paren{#3}", 3], "epl": ["\\operatorname{EPL}^{#1}_{#2}\\paren{#3}", 3], "epoprisk": "\\est{\\poprisk}", "epopriskf": ["\\epoprisk\\paren{#1}", 1], "eprecision": "\\est{\\precision}", "epredfn": "\\est{\\predfn}", "epredfnf": ["\\epredfn\\paren{#1}", 1], "eprev": "\\eprob", "eprevfactor": "\\efactor_{\\prev}", "eprevfactorf": ["\\eprevfactor\\paren{#1}", 1], "eprevff": "\\eprevfactorf", "eprevratio": "\\eratio_{\\prev}", "eprevratiof": ["\\eprevratio\\paren{#1}", 1], "eprob": "\\est{\\prob}", "eprobs": "\\eprob", "eprr": "\\eprevratio", "eprrf": "\\eprevratiof", "eps": "\\varepsilon", "epsf": "\\epsp", "epsp": ["\\eps\\paren{#1}", 1], "eqGLMRatio": "\\ror(\\vx,\\vxs) = \\exp{(\\diffvx) \\cdot \\vb}", "eqdef": "\\stackrel{\\text{def}}{=}", "eqoppa": "\\ekoppa", "equantile": "\\mathop{\\est{\\quantile}}\\nolimits", "equantilef": ["\\equantile\\paren{#1}", 1], "erate": "\\est{\\rate}", "eratefactor": "\\efactor_{\\rate}", "eratefactorf": ["\\eratefactor\\paren{#1}", 1], "erateff": "\\eratefactorf", "erater": "\\erateratio", "erateratio": "\\eratio_{\\rate}", "erateratiof": ["\\erateratio\\paren{#1}", 1], "eraterf": "\\erateratiof", "eratio": "\\est{\\ratio}", "eratiof": ["\\eratio\\paren{#1}", 1], "ercuhaz": "\\ecuhazratio", "ercuhazf": "\\ecuhazratiof", "eregcoef": "\\est{\\regcoef}", "erf": ["\\err\\paren{#1}", 1], "erhaz": "\\ehazratio", "erhazf": "\\ehrf", "erisk": "\\eprob", "eriskfactor": "\\efactor_{\\risk}", "eriskfactorf": ["\\eriskfactor\\paren{#1}", 1], "eriskff": "\\eriskfactorf", "eriskr": "\\eriskratio", "eriskratio": "\\eratio_{\\risk}", "eriskratiof": ["\\eriskratio\\paren{#1}", 1], "eriskrf": "\\eriskratiof", "eror": "\\eratio_{\\odds}", "err": "\\eps", "errate": "\\erateratio", "erratef": "\\erateratiof", "errcov": "\\Omega", "errfrac": "\\delta", "errisk": "\\eriskratio", "erriskf": "\\eriskratiof", "ersurv": "\\esurvratio", "ersurvf": "\\esurvratiof", "es": "\\est{\\sigma}", "esdpar": "\\est{\\sdpar}", "ese": ["\\eset\\paren{#1}", 1], "esef": "\\ese", "esemp": "\\esurv_{\\emp}", "esempf": ["\\esemp\\paren{#1}", 1], "eset": "\\mathop{\\Est{\\operatorname{se}}}\\nolimits", "esig": "\\est{\\sigma}", "eskm": "\\esurv_{\\km}", "eskmf": ["\\eskm\\paren{#1}", 1], "esnaa": "\\esurv_{\\naa}", "esnaaf": ["\\esnaa\\paren{#1}", 1], "est": ["\\hat{#1}", 1], "estimand": "\\Delta", "esttmp": ["{\\Est{#1}}^*", 1], "esttmpl": "\\esttmp{\\lambda}", "esurv": "\\mathop{\\est{\\surv}}\\nolimits", "esurvfactor": "\\efactor_{\\surv}", "esurvfactorf": ["\\esurvfactor\\paren{#1}", 1], "esurvff": "\\esurvfactorf", "esurvr": "\\esurvratio", "esurvratio": "\\eratio_{\\surv}", "esurvratiof": ["\\esurvratio\\paren{#1}", 1], "esurvrf": "\\esurvratiof", "etargetfn": "\\est{\\targetfn}", "etargetfnf": ["\\etargetfn\\paren{#1}", 1], "eth": "\\est{\\theta}", "ethml": "\\eth_{\\text{ML}}", "euler": "\\text{e}", "evalAt": ["\\evalbar{#1}_{#2}", 2], "evalbar": ["\\left.{#1}\\right|", 1], "evar": "\\mathop{\\Est{\\Vart}}\\nolimits", "evarf": ["\\evart\\paren{#1}", 1], "evarpar": "\\est{\\sdpar}^2", "evart": "\\mathop{\\Est{\\Vart}}\\nolimits", "evb": "\\est{\\vb}", "evcoef": "\\evb", "event": "\\delta", "eventnocens": ["D^{\\bar{c}=0}_{#1}", 1], "events": "\\scrF", "eventspace": "\\events", "evhcoef": "\\evb", "evparam": "\\est{\\vparam}", "exp": ["\\operatorname{exp}\\cb{#1}", 1], "expf": ["\\operatorname{exp}\\cb{#1}", 1], "expfn": "\\expf", "expgenerr": ["\\generr^{#1}\\paren{#2}", 2], "expit": "\\operatorname{expit}", "expitf": ["\\expit\\cb{#1}", 1], "expt": "\\operatorname{exp}", "ey": "\\est{y}", "f": "\\distop{f}", "factor": "\\theta", "factorf": ["\\factor\\paren{#1}", 1], "failprob": "\\delta", "fcuhaz": "\\cuhazfactor", "fcuhazf": "\\cuhazfactorf", "fdens": "\\f", "featmap": "\\phi", "ff": "\\factorf", "ffield": ["\\mathbb{F}_{#1}", 1], "fhaz": "\\hazfactor", "fhazf": "\\hazfactorf", "fitmodf": ["{\\fitted_{#1}}", 1], "fitproc": "g", "fitprocf": ["\\fitproc\\paren{#1}", 1], "fitted": "\\hy", "fittedwo": ["\\fitted^{(-#1)}\\paren{#2}", 2], "floor": ["\\mathopen{}\\left\\lfloor#1\\right\\rfloor\\mathclose{}", 1], "fmass": "\\F", "fodds": "\\oddsfactor", "foddsf": "\\oddsfactorf", "fold": ["\\mathcal{F}_{#1}", 1], "foldassign": "\\kappa", "foldmse": ["\\MSEt_{#1}", 1], "foldmseof": ["\\MSEt^{#2}_{#1}", 2], "foldof": ["\\kappa\\paren{#1}", 1], "foldsize": ["n_{#1}", 1], "fprev": "\\prevfactor", "fprevf": "\\prevfactorf", "frate": "\\ratefactor", "fratef": "\\ratefactorf", "frisk": "\\riskfactor", "friskf": "\\riskfactorf", "fsurv": "\\survfactor", "fsurvf": "\\survfactorf", "g": "\\gamma", "gM": "M", "ga": "\\alpha", "gammafn": "\\Gamma", "gb": "\\beta", "gd": "\\delta", "generr": "\\operatorname{Err}", "gensalg": ["\\sigma\\paren{#1}", 1], "gensigmaalg": "\\gensalg", "gg": "\\gamma", "given": "\\mid", "gl": "\\lambda", "gm": "\\mu", "grad": "\\nabla", "gradf": ["\\grad #1", 1], "gradwrt": ["\\grad_{#1} #2", 2], "gray": ["{\\color{gray}{#1}}", 1], "green": ["{\\color{green}{#1}}", 1], "growthfn": "m_{\\modelfam}", "growthfnf": ["\\growthfn\\paren{#1}", 1], "gs": "\\sigma", "h": "\\distop{h}", "hATT": "\\widehat{\\ATT}", "hATTf": ["\\hATT\\paren{#1}", 1], "hBias": ["\\hBiast\\paren{#1}", 1], "hBiast": "\\mathop{\\widehat{\\Biast}}\\nolimits", "hCor": ["\\hcort\\paren{#1}", 1], "hCorf": "\\hCor", "hCorr": ["\\hCorrt\\paren{#1}", 1], "hCorrf": "\\hCorr", "hCorrs": ["\\hCorrt\\paren{#1, #2}", 2], "hCorrt": "\\mathop{\\widehat{\\Corrt}}\\nolimits", "hCors": ["\\hcort\\paren{#1, #2}", 2], "hCovt": "\\mathop{\\widehat{\\Covt}}\\nolimits", "hE": ["\\mathop{\\hat{\\operatorname{E}}}\\nolimits\\sb{#1}", 1], "hExp": "\\hE", "hExpf": "\\hE", "hKoppa": "\\hat{\\Koppa}", "hMSE": ["\\hMSEt\\paren{#1}", 1], "hMSEf": "\\hMSE", "hMSEt": "\\mathop{\\widehat{\\MSEt}}\\nolimits", "hPr": ["\\mathop{\\widehat{\\Pr}}\\nolimits\\sb{#1}", 1], "hQ": "\\mathop{\\hat{\\Q}}\\nolimits", "hQf": ["\\hQ\\paren{#1}", 1], "hQoppa": "\\hKoppa", "hR": "\\hat{R}", "hRD": "\\widehat{\\RD}", "hRMSE": ["\\hRMSEt\\paren{#1}", 1], "hRMSEf": "\\hRMSE", "hRMSEt": "\\mathop{\\widehat{\\RMSEt}}\\nolimits", "hRR": "\\widehat{\\RR}", "hRatio": "\\hat{\\Ratio}", "hRatiof": ["\\hRatio\\paren{#1}", 1], "hS": "\\hat \\Sigma", "hSD": ["\\mathop{\\widehat{\\operatorname{SD}}}\\nolimits\\paren{#1}", 1], "hSDf": "\\hSD", "hSE": "\\mathop{\\widehat{\\operatorname{SE}}}\\nolimits", "hSEf": "\\HSE", "hSEt": "\\mathop{\\widehat{\\operatorname{SE}}}\\nolimits", "hSig": "\\hat \\Sigma", "hSigma": "\\hat \\Sigma", "hSurv": "\\mathop{\\hat{\\surv}}\\nolimits", "hSurvf": ["\\hSurv\\paren{#1}", 1], "hVar": ["\\mathop{\\widehat{\\operatorname{Var}}}\\nolimits\\paren{#1}", 1], "hamdist": ["\\Delta\\paren{#1, #2}", 2], "hatmat": "H", "haz": "{\\lambda}", "hazfactor": "\\factor_{\\haz}", "hazfactorf": ["\\hazfactor\\paren{#1}", 1], "hazff": "\\hazfactorf", "hazr": "\\hazratio", "hazratio": "\\ratio_{\\haz}", "hazrf": "\\hrf", "hb": "\\hat \\beta", "hbias": "\\hBias", "hcdf": "\\mathop{\\hat{\\cdf}}\\nolimits", "hcdff": ["\\hcdf\\paren{#1}", 1], "hcoef": ["\\hat{\\regcoef}_{#1}", 1], "hcort": "\\mathop{\\widehat{\\Cort}}\\nolimits", "hcovf": "\\covh", "hcovmat": "\\hat{\\Sigma}", "hcovt": "\\mathop{\\widehat{\\Covt}}\\nolimits", "hcuhaz": "\\hat{\\cuhaz}", "hcuhazfactor": "\\hfactor_{\\cuhaz}", "hcuhazfactorf": ["\\hcuhazfactor\\paren{#1}", 1], "hcuhazff": "\\hcuhazfactorf", "hcuhazr": "\\hcuhazratio", "hcuhazratio": "\\hratio_{\\cuhaz}", "hcuhazratiof": ["\\hcuhazratio\\paren{#1}", 1], "hcuhazrf": "\\hcuhazratiof", "hcumhaz": "\\hcuhaz", "hdf": "\\hat{\\nu}", "hdifflogodds": "\\widehat{\\difflogodds}", "heinf": "\\hat{\\einf}", "heinff": ["\\heinf \\paren{#1}", 1], "heldoutval": ["\\outvar_{*,#1}", 1], "heldoutvar": ["\\Outvar_{*,#1}", 1], "heldpredval": ["\\predvar_{*,#1}", 1], "heldpredvar": ["\\Predvar_{*,#1}", 1], "hess": "\\llik''", "hessf": ["\\hess \\paren{#1}", 1], "hessian": "\\hess", "hessianf": "\\hessf", "hessij": "\\llik_{ij}''", "hessijalt": "{\\sb{\\hess}}_{ij}", "hessm": "\\llik''", "hf": "\\hat{f}", "hfactor": "\\hat{\\factor}", "hfactorf": ["\\hfactor\\paren{#1}", 1], "hfcuhaz": "\\hcuhazfactor", "hfcuhazf": "\\hcuhazfactorf", "hff": "\\hfactorf", "hfhaz": "\\hhazfactor", "hfhazf": "\\hhazfactorf", "hfodds": "\\hoddsfactor", "hfoddsf": "\\hoddsfactorf", "hfprev": "\\hprevfactor", "hfprevf": "\\hprevfactorf", "hfrate": "\\hratefactor", "hfratef": "\\hratefactorf", "hfrisk": "\\hriskfactor", "hfriskf": "\\hriskfactorf", "hfsurv": "\\hsurvfactor", "hfsurvf": "\\hsurvfactorf", "hfx": ["\\hf\\paren{#1}", 1], "hhaz": "\\hrate", "hhazfactor": "\\hfactor_{\\haz}", "hhazfactorf": ["\\hhazfactor\\paren{#1}", 1], "hhazff": "\\hhazfactorf", "hhazr": "\\hhazratio", "hhazratio": "\\hratio_{\\haz}", "hhazrf": "\\hhrf", "hhr": "\\hhazratio", "hhrf": ["\\hhazratio\\paren{#1}", 1], "hidval": "h", "hidvalof": ["\\hidval_{#1}", 1], "highend": "\\beta", "hintcoef": "\\hcoef{0}", "hist": ["\\bar{#1}_{#2}", 2], "hk": "\\hat \\kappa", "hkappa": "\\hat \\kappa", "hkoppa": "\\hat{\\koppa}", "hl": "\\hat \\lambda", "hmean": "\\hat{\\mu}", "hmodmem": "\\hat{\\modmem}", "hmodmemf": ["\\hmodmem\\paren{#1}", 1], "hmodmemof": ["\\hmodmem_{#1}", 1], "hmu": "\\hat{\\mu}", "hmuf": ["\\hmu\\paren{#1}", 1], "hnuisance": "\\hat{\\lambda}", "hodds": "\\hat{\\odds}", "hoddsfactor": "\\hfactor_{\\odds}", "hoddsfactorf": ["\\hoddsfactor\\paren{#1}", 1], "hoddsff": "\\hoddsfactorf", "horf": ["\\hror\\paren{#1}", 1], "hp": "\\mathop{\\hat{\\p}}\\nolimits", "hparam": "\\hat{\\theta}", "hpoprisk": "\\hat{\\poprisk}", "hpopriskf": ["\\hpoprisk\\paren{#1}", 1], "hprecision": "\\hat{\\tau}", "hprev": "\\hprob", "hprevfactor": "\\hfactor_{\\prev}", "hprevfactorf": ["\\hprevfactor\\paren{#1}", 1], "hprevff": "\\hprevfactorf", "hprevratio": "\\hratio_{\\prev}", "hprevratiof": ["\\hprevratio\\paren{#1}", 1], "hprob": "\\hat{\\prob}", "hprobs": "\\hprob", "hprr": "\\hprevratio", "hprrf": "\\hprevratiof", "hqoppa": "\\hkoppa", "hquantile": "\\mathop{\\hat{\\quantile}}\\nolimits", "hquantilef": ["\\hquantile\\paren{#1}", 1], "hr": "\\hazratio", "hrate": "\\hat{\\rate}", "hratefactor": "\\hfactor_{\\rate}", "hratefactorf": ["\\hratefactor\\paren{#1}", 1], "hrateff": "\\hratefactorf", "hrater": "\\hrateratio", "hrateratio": "\\hratio_{\\rate}", "hrateratiof": ["\\hrateratio\\paren{#1}", 1], "hraterf": "\\hrateratiof", "hratio": "\\hat{\\ratio}", "hratiof": ["\\hratio\\paren{#1}", 1], "hrcuhaz": "\\hcuhazratio", "hrcuhazf": "\\hcuhazratiof", "hregcoef": "\\hat{\\beta}", "hrf": ["\\hazratio\\paren{#1}", 1], "hrhaz": "\\hhazratio", "hrhazf": "\\hhrf", "hrisk": "\\hprob", "hriskfactor": "\\hfactor_{\\risk}", "hriskfactorf": ["\\hriskfactor\\paren{#1}", 1], "hriskff": "\\hriskfactorf", "hriskr": "\\hriskratio", "hriskratio": "\\hratio_{\\risk}", "hriskratiof": ["\\hriskratio\\paren{#1}", 1], "hriskrf": "\\hriskratiof", "hror": "\\hratio_{\\odds}", "hrrate": "\\hrateratio", "hrratef": "\\hrateratiof", "hrrisk": "\\hriskratio", "hrriskf": "\\hriskratiof", "hrsurv": "\\hsurvratio", "hrsurvf": "\\hsurvratiof", "hs": "\\hat \\sigma", "hsdpar": "\\hat{\\sigma}", "hse": ["\\hset\\paren{#1}", 1], "hsef": "\\hse", "hsemp": "\\hsurv_{\\emp}", "hsempf": ["\\hsemp\\paren{#1}", 1], "hset": "\\mathop{\\widehat{\\operatorname{se}}}\\nolimits", "hsig": "\\hat \\sigma", "hskm": "\\hsurv_{\\km}", "hskmf": ["\\hskm\\paren{#1}", 1], "hsnaa": "\\hsurv_{\\naa}", "hsnaaf": ["\\hsnaa\\paren{#1}", 1], "hsurv": "\\mathop{\\hat{\\surv}}\\nolimits", "hsurvfactor": "\\hfactor_{\\surv}", "hsurvfactorf": ["\\hsurvfactor\\paren{#1}", 1], "hsurvff": "\\hsurvfactorf", "hsurvr": "\\hsurvratio", "hsurvratio": "\\hratio_{\\surv}", "hsurvratiof": ["\\hsurvratio\\paren{#1}", 1], "hsurvrf": "\\hsurvratiof", "htargetfn": "\\hat{\\targetfn}", "htargetfnf": ["\\htargetfn\\paren{#1}", 1], "hth": "\\hat\\theta", "hthml": "\\hth_{\\text{ML}}", "hvar": "\\mathop{\\widehat{\\Vart}}\\nolimits", "hvarf": ["\\hvart\\paren{#1}", 1], "hvarpar": "\\hat{\\sigma}^2", "hvart": "\\mathop{\\widehat{\\Vart}}\\nolimits", "hvb": "\\hat{\\vb}", "hvcoef": "\\hvb", "hvparam": "\\hat{\\vec{\\theta}}", "hy": "\\hat y", "icand": "l", "idmat": "\\mathbb{I}", "ifold": "j", "iid": "\\operatorname{iid}", "imgheight": "h", "imgwidth": "w", "inas": "\\overset{\\scriptstyle a.s.}{\\longrightarrow}", "incidence": "\\bar{\\haz}", "ind": "\\perp\\!\\!\\!\\perp", "indic": ["\\mathbb{1}_{#1}", 1], "indiccb": ["\\mathbb{1}\\cb{#1}", 1], "indicf": "\\indic", "indicp": ["\\mathbb{1}\\paren{#1}", 1], "indist": "\\overset{\\scriptstyle d}{\\longrightarrow}", "indold": "⫫", "indpt": "\\ind", "inprob": "\\overset{\\scriptstyle p}{\\longrightarrow}", "inputdim": "p", "intcoef": "\\coef{0}", "interest": "\\psi", "inv": ["{\\paren{#1}}^{-1}", 1], "invcb": ["{\\cb{#1}}^{-1}", 1], "invf": "\\inv", "invodds": "\\operatorname{invodds}", "invoddsf": ["\\invodds\\cb{#1}", 1], "invp": "\\inv", "invsb": ["{\\sb{#1}}^{-1}", 1], "iobs": "i", "iprod": ["\\angb{#1, #2}", 2], "iprodf": "\\iprod", "k": "\\kappa", "kerngaus": "\\frac{-1}{2}\\frac{(x-\\mu)^2}{\\ss}", "km": "\\text{KM}", "kolm": "K", "kolmf": ["\\kolm\\paren{#1}", 1], "koppa": "\\text{ϙ}", "kron": "\\delta", "l": "\\lambda", "lagmult": "\\lambda", "lam": "\\lambda", "lbound": "\\ell", "lds": "\\ldots", "leak": "\\alpha", "learnrate": "\\alpha", "lebesgue": "\\lambda", "lev": ["h_{#1}", 1], "levelset": "\\mathcal{L}", "levelsetof": ["\\levelset_{#1}\\paren{#2}", 2], "leverage": ["h_{#1}", 1], "lightgray": ["{\\color{lightgray}{#1}}", 1], "lik": "\\llik", "likf": "\\llikf", "likgaus": "{\\paren{2\\pi\\ss}}^{-1/2}\\expf{\\kerngaus}", "lime": ["{\\color{lime}{#1}}", 1], "lincomp": "\\eta", "linefn": "\\phi", "llexpmean": "-\\logf{\\pmean} - \\frac{x}{\\pmean}", "llgaus": "\\frac{-1}{2}\\paren{\\logf{2\\pi\\ss} + \\frac{\\devn^2}{\\ss}}", "llik": "\\ell", "llikf": ["\\llik \\paren{#1}", 1], "logf": ["\\logt\\cb{#1}", 1], "loghaz": "\\lincomp", "logit": "\\operatorname{logit}", "logitf": ["\\logit\\cb{#1}", 1], "logl": "\\llik", "loglf": "\\llikf", "loglik": "\\llik", "loglikf": "\\llikf", "logodds": "\\lincomp", "logoddsf": ["\\logodds \\paren{#1}", 1], "logoddst": "\\text{log-odds}", "lograte": "\\lincomp", "logt": "\\operatorname{log}", "loss": "L", "lossf": ["\\loss\\paren{#1}", 1], "lowend": "\\alpha", "lp": ["\\dprodf{#1}{\\vb}", 1], "lpdp": "\\lp{\\vx}", "lpnorm": ["\\ell_{#1}", 1], "lrstat": "\\Lambda", "lsresid": "\\varepsilon", "m": "\\mu", "mX": "\\matr{X}", "machineps": "\\varepsilon", "maelr": ["\\operatorname{MAE}\\paren{#1}", 1], "magenta": ["{\\color{magenta}{#1}}", 1], "mahal": "\\Delta", "mahaldist": "\\delta", "mass": "\\P", "mat": ["\\mathbf{#1}", 1], "mathscr": ["\\mathcal{#1}", 1], "matr": ["\\mathbf{#1}", 1], "matvec": "\\vct", "matvecf": "\\vctf", "mbackerr": "\\Delta", "mean": "\\mu", "meanfnof": ["\\mean_{#1}", 1], "meanfnoff": ["{\\meanfnof{#1}\\paren{#2}}", 2], "measure": "\\mu", "measureb": "\\nu", "med": "\\operatorname{med}", "medf": ["\\med\\paren{#1}", 1], "midpt": "\\tau", "modelfam": "\\mathcal{H}", "modmem": "h", "modmemf": ["\\modmem\\paren{#1}", 1], "modmemof": ["\\modmem_{#1}", 1], "modresid": "r^*", "modresidual": "r^*", "mpredvar": "\\matr{\\Predvar}", "mselr": ["\\operatorname{MSE}\\paren{#1}", 1], "mx": "\\matr{x}", "naa": "\\text{NA}", "ncand": "L", "ndist": ["\\Normal\\paren{#1}", 1], "nevents": "s", "newoutval": "\\outvar_{*}", "newoutvar": "\\Outvar_{*}", "newpredval": "\\predvar_{*}", "newpredvar": "\\Predvar_{*}", "nfn": "n_{F-}", "nfolds": "k", "nfp": "n_{F+}", "nheld": "m", "nmodels": "M", "nobs": "n", "noise": "\\popdev", "norm": ["\\mathopen{}\\left\\lVert#1\\right\\rVert\\mathclose{}", 1], "normcdf": "\\Phi", "normpdf": "\\phi", "normsq": ["{\\norm{#1}}\\sq", 1], "nparams": "p^{*}", "npatterns": "K", "nreps": "m", "ntn": "n_{T-}", "ntp": "n_{T+}", "nuisance": "\\lambda", "nulldeviance": "\\deviance_0", "nullity": "\\nu", "objfn": "\\mathcal{J}", "objfnf": ["{\\objfn\\paren{#1}}", 1], "obsidx": "I", "obsloss": ["\\ell_{#1}", 1], "obsmean": ["\\mean\\paren{#1}", 1], "obsprob": ["\\prob\\paren{#1}", 1], "odds": "\\omega", "oddsf": ["\\oddst\\cb{#1}", 1], "oddsfactor": "\\factor_{\\odds}", "oddsfactorf": ["\\oddsfactor\\paren{#1}", 1], "oddsff": "\\oddsfactorf", "oddsinv": "\\oddst^{-1}", "oddsinvf": ["\\oddsinv\\cb{#1}", 1], "oddst": "\\operatorname{odds}", "oinf": "I", "oinff": ["\\oinf\\paren{#1}", 1], "oinfm": "\\mat{I}", "olive": ["{\\color{olive}{#1}}", 1], "om": "\\omega", "omu": "\\obsmean", "opi": "\\obsprob", "oprod": ["#1 \\tp{#2}", 2], "optalg": "\\mathcal{A}", "orange": ["{\\color{orange}{#1}}", 1], "orf": ["\\ror\\paren{#1}", 1], "outbar": "\\bar{\\outvar}", "outcome": "\\omega", "outvar": "y", "overdisp": "\\rho", "p": "\\distop{p}", "pMAE": ["\\pMAEt\\paren{#1}", 1], "pMAEf": "\\pMAE", "pMAEt": "\\operatorname{pMAE}", "pMSE": ["\\pMSEt\\paren{#1}", 1], "pMSEf": "\\pMSE", "pMSEt": "\\operatorname{pMSE}", "pRMSE": ["\\pRMSEt\\paren{#1}", 1], "pRMSEf": "\\pRMSE", "pRMSEt": "\\operatorname{pRMSE}", "param": "\\theta", "paren": ["\\mathopen{}\\left(#1\\right)\\mathclose{}", 1], "pdens": "\\p", "pdf": "\\distop{f}", "penaltygrid": "\\Lambda", "pf": ["\\p \\paren{#1}", 1], "ph": "\\mathop{\\hat{\\p}}\\nolimits", "phaz": "\\Expf{\\haz}", "pink": ["{\\color{pink}{#1}}", 1], "plim": "\\operatorname{plim}", "plimf": ["\\plim\\paren{#1}", 1], "pmass": "\\P", "pmat": ["\\begin{pmatrix}#1\\end{pmatrix}", 1], "pmean": "\\mu", "pmf": ["\\distop{P}\\paren{#1}", 1], "pmu": "\\potmean", "poismean": "\\phi", "polydeg": "d", "poolsize": "q", "popdev": "\\nu", "popdevf": ["\\popdev_{#1}", 1], "popdist": "P", "popmean": "\\mu", "poprisk": "R", "popriskf": ["\\poprisk\\paren{#1}", 1], "potmean": ["\\mean_{#1}", 1], "potout": ["Y_{#1}", 1], "potprob": ["\\prob_{#1}", 1], "ppi": "\\potprob", "pr": "\\p", "precision": "\\tau", "predbar": "\\bar{\\predvar}", "prederr": "\\err", "predfam": "\\mathcal{Y}", "predfamof": ["\\predfam_{#1}", 1], "predfn": "g", "predfnf": ["\\predfn\\paren{#1}", 1], "predval": "\\eoutvar", "predvalf": ["{\\fitted\\paren{#1}}", 1], "predvar": "x", "prev": "\\pi", "prevalence": "\\pi", "prevfactor": "\\factor_{\\prev}", "prevfactorf": ["\\prevfactor\\paren{#1}", 1], "prevff": "\\prevfactorf", "prevratio": "\\ratio_{\\prev}", "prevratiof": ["\\prevratio\\paren{#1}", 1], "prob": "\\pi", "probit": "\\operatorname{probit}", "probs": "\\pi", "probst": "\\operatorname{probs}", "probt": "\\operatorname{prob}", "prodin": "\\prod_{i=1}^n", "propstep": "\\varepsilon", "prr": "\\prevratio", "prrf": "\\prevratiof", "pt": ["{\\paren{#1}}^{\\top}", 1], "purple": ["{\\color{purple}{#1}}", 1], "py": "\\potout", "qform": ["\\tp{#2} #1 #2", 2], "qoppa": "\\koppa", "quantile": "\\distop{Q}", "quantilef": ["\\quantile\\paren{#1}", 1], "quantlevel": "\\beta", "range": "\\mathcal{R}", "rangef": ["\\cR(#1)", 1], "rank": "\\operatorname{rank}", "rankf": ["\\rank\\paren{#1}", 1], "rate": "{\\lambda}", "ratefactor": "\\factor_{\\rate}", "ratefactorf": ["\\ratefactor\\paren{#1}", 1], "rateff": "\\ratefactorf", "rater": "\\rateratio", "rateratio": "\\ratio_{\\rate}", "rateratiof": ["\\rateratio\\paren{#1}", 1], "raterf": "\\rateratiof", "ratio": "\\koppa", "ratiof": ["\\ratio\\paren{#1}", 1], "rcuhaz": "\\cuhazratio", "rcuhazf": "\\cuhazratiof", "reals": "\\mathbb{R}", "recallweight": "\\beta", "red": ["{\\color{red}{#1}}", 1], "regbetasum": "\\beta_1 x_1+ \\dots + \\beta_p x_p", "regcoef": "\\beta", "reglincomb": "\\vx \\cdot \\vb", "regpar": "\\lambda", "resid": "r", "residual": "r", "residv": "\\vec{r}", "resp": "\\gamma", "rfac": "h", "rfacf": ["\\rfac\\paren{#1}", 1], "rhaz": "\\hazratio", "rhazf": "\\hrf", "risk": "\\pi", "riskfactor": "\\factor_{\\risk}", "riskfactorf": ["\\riskfactor\\paren{#1}", 1], "riskff": "\\riskfactorf", "riskr": "\\riskratio", "riskratio": "\\ratio_{\\risk}", "riskratiof": ["\\riskratio\\paren{#1}", 1], "riskrf": "\\riskratiof", "riskset": "\\mathcal{R}", "risksetf": ["\\riskset\\paren{#1}", 1], "riskt": "\\operatorname{risk}", "rmselr": ["\\RMSEt\\paren{#1}", 1], "ror": "\\ratio_{\\odds}", "rrate": "\\rateratio", "rratef": "\\rateratiof", "rrisk": "\\riskratio", "rriskf": "\\riskratiof", "rsurv": "\\survratio", "rsurvf": "\\survratiof", "rvar": "x", "rvarbar": "\\bar{\\rvar}", "rvrate": "\\Lambda", "s": "\\sigma", "sMAE": ["\\sMAEt\\paren{#1}", 1], "sMAEf": "\\sMAE", "sMAEt": "\\operatorname{sMAE}", "sMSE": ["\\sMSEt\\paren{#1}", 1], "sMSEf": "\\sMSE", "sMSEt": "\\operatorname{sMSE}", "sRMSE": ["\\sRMSEt\\paren{#1}", 1], "sRMSEf": "\\sRMSE", "sRMSEt": "\\operatorname{sRMSE}", "salg": "\\scrS", "salgS": "\\scrS", "salgT": "\\scrT", "samplemean": ["\\bar{#1}_{#2}", 2], "samplespace": "\\Omega", "satdeviance": "\\deviance_{\\mathrm{sat}}", "satllik": "\\llik_{\\mathrm{sat}}", "sb": ["\\mathopen{}\\left[#1\\right]\\mathclose{}", 1], "sbmat": ["\\begin{bmatrix}#1\\end{bmatrix}", 1], "schedfrac": "\\zeta", "schedlen": "\\tau", "sciid": "\\ \\sim_{\\ciid}\\ ", "score": "\\llik'", "scoreexpf": "\\frac{\\devn}{\\Varf{X}}", "scoref": ["\\score \\paren{#1}", 1], "scorei": "\\vec{\\llik_i'}", "scorev": "\\vec{\\llik'}", "scorevi": "\\vec{\\llik_i'}", "scrA": "\\mathscr{A}", "scrB": "\\mathscr{B}", "scrC": "\\mathscr{C}", "scrF": "\\mathscr{F}", "scrS": "\\mathscr{S}", "scrT": "\\mathscr{T}", "sd": ["\\operatorname{sd}\\paren{#1}", 1], "sdbetween": "\\tau", "sdest": "\\tau", "sdpar": "\\sigma", "sdprior": "\\tau", "sdprod": ["\\dprod{#1}{#1}", 1], "sdprodf": "\\sdprod", "se": ["\\operatorname{se}\\paren{#1}", 1], "seed": "\\mathfrak{s}", "sef": "\\se", "seq": ["#1{:}#2", 2], "set": "\\cb", "sfac": "g", "sfacf": ["\\sfac\\paren{#1 ; #2}", 2], "shape": "\\alpha", "shapeb": "\\beta", "shrinkage": "\\nu", "siglevel": "\\alpha", "sigmaalg": "\\salg", "sigmaalgebra": "\\salg", "sigmoid": "\\sigma", "sigmoidf": ["\\sigmoid\\paren{#1}", 1], "sign": "\\signt", "signf": ["\\signt\\cb{#1}", 1], "signt": "\\operatorname{sign}", "siid": "\\ \\sim_{\\iid}\\ ", "simiid": "\\siid", "simind": "\\ \\sim_{\\ind}\\ ", "singval": "\\sigma", "siprod": ["\\iprod{#1}{#1}", 1], "slack": "\\xi", "smallconst": "\\varepsilon", "soprod": ["#1 \\tp{#1}", 1], "sparen": ["(#1)", 1], "sq": "^2", "sqf": ["{\\paren{#1}}\\sq", 1], "srcalph": "\\mathcal{X}", "ss": "\\sigma^2", "sscp": "A", "ssout": "S_{\\outvar\\outvar}", "sspred": "S_{\\predvar\\predvar}", "sspredout": "S_{\\predvar\\outvar}", "ssqf": ["\\sigma^2\\paren{#1}", 1], "starf": ["#1^*", 1], "stat": "T", "statf": ["\\stat\\paren{#1}", 1], "stationary": "\\pi", "stdresid": "r'", "stdresidual": "r^\\prime", "step": "\\delta", "stepvec": "\\vecf{\\delta}", "stprod": ["\\tprod{#1}{#1}", 1], "strlen": "\\abs", "strongconv": "\\mu", "subdiv": "\\Delta", "sumiN": "\\sum_{i=1}^N", "sumin": "\\sum_{i=1}^n", "sumip": "\\sum_{i=1}^p", "sumjn": "\\sum_{j=1}^n", "sumjp": "\\sum_{j=1}^p", "sumkK": "\\sum_{k=1}^{K}", "sumn": ["\\sum_{#1=1}^n", 1], "sumto": ["\\sum_{#1=1}^{#2}", 2], "surv": "\\distop{S}", "survf": ["\\surv\\paren{#1}", 1], "survfactor": "\\factor_{\\surv}", "survfactorf": ["\\survfactor\\paren{#1}", 1], "survff": "\\survfactorf", "survr": "\\survratio", "survratio": "\\ratio_{\\surv}", "survratiof": ["\\survratio\\paren{#1}", 1], "survrf": "\\survratiof", "svfrac": "\\nu", "targeterr": "\\deviation_{\\targetfn}", "targeterrf": ["\\targeterr\\paren{#1}", 1], "targetfn": "\\mu", "targetfnf": ["\\targetfn\\paren{#1}", 1], "teal": ["{\\color{teal}{#1}}", 1], "termfn": ["t_{#1}", 1], "termvec": ["\\vecf{t}_{#1}", 1], "testerr": "\\overline{\\operatorname{err}}_{\\text{test}}", "testidx": "I_{\\text{test}}", "testset": "\\mathcal{D}_{\\text{test}}", "tf": "\\therefore", "th": "\\theta", "thmADistMLE": "\\hth_{ML}\\ \\dot \\sim\\ \\ndist{\\th,{\\sb{\\einf(\\vth)}}^{-1}}", "thmHessij": "\\hessij =\n\\deriv{\\th_i}\\deriv{\\th_j} \\llik(\\vX = \\vx | \\vth)", "thresh": "\\theta", "tolin": "\\delta", "tolout": "\\varepsilon", "tp": ["{#1}^{\\top}", 1], "tprod": ["\\tp{#1} #2", 2], "tprodf": "\\tprod", "tr": "\\operatorname{tr}", "trainerr": "\\overline{\\operatorname{err}}", "trainidx": "I_{\\text{train}}", "trainset": "\\mathcal{D}_{\\text{train}}", "trf": ["\\tr\\paren{#1}", 1], "trthist": ["\\hist{A}{#1}", 1], "trtvalhist": ["\\hist{a}{#1}", 1], "truemeanfn": "\\targetfn", "truemeanfnf": ["\\targetfnf{#1}", 1], "truenulls": "\\mathcal{I}_0", "truthind": "\\delta", "tuning": "\\lambda", "typetwoerr": "\\beta", "ub": "\\underbrace", "ubf": ["\\ub{#1}_{#2}", 2], "ubound": "u", "unitthresh": "\\Theta", "universe": "\\Omega", "v": ["\\vecf{#1}", 1], "vD": "\\vecf{D}", "vOutvar": "\\vecf{\\Outvar}", "vPredvar": "\\vecf{\\Predvar}", "vT": "\\vecf{T}", "vX": "\\vecf{X}", "vY": "\\vecf{Y}", "vZ": "\\vecf{Z}", "va": "\\vecf{a}", "valerr": "\\overline{\\operatorname{err}}_{\\text{val}}", "validx": "I_{\\text{val}}", "valset": "\\mathcal{D}_{\\text{val}}", "var": ["\\operatorname{Var}\\paren{#1}", 1], "varf": "\\var", "varh": ["\\varht\\paren{#1}", 1], "varhf": "\\varh", "varht": "\\mathop{\\widehat{\\operatorname{Var}}}\\nolimits", "varpar": "\\sigma^2", "vb": "\\vec \\beta", "vbackerr": "\\vecf{\\delta}", "vbeta": "\\vec \\beta", "vc": ["\\boldsymbol{#1}", 1], "vcdim": "d_{\\mathrm{VC}}", "vcdimf": ["\\vcdim\\paren{#1}", 1], "vch": "\\operatorname{vech}", "vchf": ["\\vch\\paren{#1}", 1], "vcoef": "\\vbeta", "vconst": "\\vecf{c}", "vcs": "\\operatorname{vecs}", "vcsf": ["\\vcs\\paren{#1}", 1], "vct": "\\operatorname{vec}", "vctf": ["\\vct\\paren{#1}", 1], "vd": "\\vecf{d}", "vdelta": "\\vecf{\\delta}", "ve": "\\vecf{e}", "vec": ["\\vecf{#1}", 1], "vecf": ["\\mathord{\\smash[b]{\\underset{\\raise.3ex\\hbox{$\\scriptstyle\\sim$}}{#1}}\\vphantom{#1}}", 1], "veoutvar": "\\vecf{\\eoutvar}", "veps": "\\vec{\\varepsilon}", "vepsilon": "\\vecf{\\epsilon}", "vfeatmap": "\\vecf{\\phi}", "vg": "\\vecf{g}", "vh": "\\vecf{h}", "vhcoef": "\\hvb", "vhidgrad": "\\vecf{\\epsilon}", "vhidval": "\\vecf{\\hidval}", "violet": ["{\\color{violet}{#1}}", 1], "vlagmult": "\\vecf{\\lambda}", "vlsresid": "\\vec{\\varepsilon}", "vm": "\\vec \\m", "vnoise": "\\vec{\\popdev}", "vone": "\\vec{1}", "votewt": "\\alpha", "voutvar": "\\vecf{\\outvar}", "vp": "\\vecf{p}", "vparam": "\\vec{\\theta}", "vphi": "\\vecf{\\phi}", "vpi": "\\vecf{\\pi}", "vprederr": "\\vecf{\\prederr}", "vpredval": "\\veoutvar", "vpredvar": "\\vecf{\\predvar}", "vprob": "\\vecf{\\pi}", "vq": "\\vecf{q}", "vr": "\\vecf{r}", "vresid": "\\vecf{\\resid}", "vt": "\\vecf{t}", "vth": "\\vec{\\theta}", "vu": "\\vecf{u}", "vv": "\\vecf{v}", "vw": "\\vecf{w}", "vx": "\\vecf{x}", "vxi": "\\vecf{x}_i", "vxs": "\\mathord{{\\vec{x}^*}}", "vy": "\\vecf{y}", "vz": "\\vecf{z}", "vzero": "\\vec{0}", "white": ["{\\color{white}{#1}}", 1], "wterr": "\\varepsilon", "xbar": "\\bar{x}", "xderiv": ["\\frac{\\partial^2}{\\partial #1 \\partial #2}", 2], "xderivf": ["\\frac{\\partial^2 #1}{\\partial #2 \\partial #3}", 3], "xderivff": ["\\frac{\\partial^2 #3}{\\partial #1 \\partial #2}", 3], "xin": "\\dsn{x}", "yellow": ["{\\color{yellow}{#1}}", 1], "yh": "\\hat y", "yin": "\\dsn{y}", "za": "z_{1 - \\frac{\\alpha}{2}}", "~": "\\approx"});
+</script>
+<style>
+div.callout-remark.callout {
+  border-left-color: #AD1457;
+}
+div.callout-remark.callout-style-default .callout-header {
+  background-color: rgba(173, 20, 87, 0.13);
+}
+div.callout-remark .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-remark.callout-style-default .callout-icon::before, div.callout-remark.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23AD1457" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-proof.callout {
+  border-left-color: #37474F;
+}
+div.callout-proof.callout-style-default .callout-header {
+  background-color: rgba(55, 71, 79, 0.13);
+}
+div.callout-proof .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-proof.callout-style-default .callout-icon::before, div.callout-proof.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2337474F" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-exr.callout {
+  border-left-color: #FFA500;
+}
+div.callout-exr.callout-style-default .callout-header {
+  background-color: rgba(255, 165, 0, 0.13);
+}
+div.callout-exr .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-exr.callout-style-default .callout-icon::before, div.callout-exr.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23FFA500" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-prp.callout {
+  border-left-color: #827717;
+}
+div.callout-prp.callout-style-default .callout-header {
+  background-color: rgba(130, 119, 23, 0.13);
+}
+div.callout-prp .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prp.callout-style-default .callout-icon::before, div.callout-prp.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23827717" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-cor.callout {
+  border-left-color: #00838F;
+}
+div.callout-cor.callout-style-default .callout-header {
+  background-color: rgba(0, 131, 143, 0.13);
+}
+div.callout-cor .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-cor.callout-style-default .callout-icon::before, div.callout-cor.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2300838F" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-solution.callout {
+  border-left-color: #4E342E;
+}
+div.callout-solution.callout-style-default .callout-header {
+  background-color: rgba(78, 52, 46, 0.13);
+}
+div.callout-solution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-solution.callout-style-default .callout-icon::before, div.callout-solution.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%234E342E" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-exm.callout {
+  border-left-color: #6A1B9A;
+}
+div.callout-exm.callout-style-default .callout-header {
+  background-color: rgba(106, 27, 154, 0.13);
+}
+div.callout-exm .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-exm.callout-style-default .callout-icon::before, div.callout-exm.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%236A1B9A" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-cnj.callout {
+  border-left-color: #558B2F;
+}
+div.callout-cnj.callout-style-default .callout-header {
+  background-color: rgba(85, 139, 47, 0.13);
+}
+div.callout-cnj .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-cnj.callout-style-default .callout-icon::before, div.callout-cnj.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23558B2F" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-lem.callout {
+  border-left-color: #1565C0;
+}
+div.callout-lem.callout-style-default .callout-header {
+  background-color: rgba(21, 101, 192, 0.13);
+}
+div.callout-lem .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-lem.callout-style-default .callout-icon::before, div.callout-lem.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%231565C0" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+div.callout-def.callout {
+  border-left-color: #1B5E20;
+}
+div.callout-def.callout-style-default .callout-header {
+  background-color: rgba(27, 94, 32, 0.13);
+}
+div.callout-def .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-def.callout-style-default .callout-icon::before, div.callout-def.callout-titled .callout-icon::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%231B5E20" class="bi bi-exclamation-triangle" viewBox="0 0 16 16"><path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/></svg>');
+}
+</style>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Principles of Scientific Writing</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chapters</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
+        <li>
+    <a class="dropdown-item" href="../chapters/intro.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/defining-terms.html">
+ <span class="dropdown-text">Defining terms clearly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/notation.html">
+ <span class="dropdown-text">Mathematical notation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/mathematical-writing.html">
+ <span class="dropdown-text">Writing mathematics in sentences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/citations-evidence.html">
+ <span class="dropdown-text">Citations and evidence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/paper-organization.html">
+ <span class="dropdown-text">Paper organization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/manuscript-submission.html">
+ <span class="dropdown-text">Preparing a manuscript for submission</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/word-choice.html">
+ <span class="dropdown-text">Word choice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/avoid-cliches.html">
+ <span class="dropdown-text">Avoiding clichés</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/inclusive-writing.html">
+ <span class="dropdown-text">Writing for every reader</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/grammar.html">
+ <span class="dropdown-text">Grammar</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/conciseness.html">
+ <span class="dropdown-text">Conciseness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/teaching.html">
+ <span class="dropdown-text">Writing for teaching</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/software-text.html">
+ <span class="dropdown-text">Writing for code review and software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/writing-to-think.html">
+ <span class="dropdown-text">Writing to clarify your thinking</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/slides-posters-figures.html">
+ <span class="dropdown-text">Slides, posters, and figures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/summary.html">
+ <span class="dropdown-text">Summary</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../references.html"> 
+<span class="menu-text">References</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/d-morrison/psw"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-the-book-covers" id="toc-what-the-book-covers" class="nav-link active" data-scroll-target="#what-the-book-covers"><span class="header-section-number">1</span> What the book covers</a></li>
+  <li><a href="#who-the-book-is-for" id="toc-who-the-book-is-for" class="nav-link" data-scroll-target="#who-the-book-is-for"><span class="header-section-number">2</span> Who the book is for</a></li>
+  <li><a href="#how-the-book-is-organized" id="toc-how-the-book-is-organized" class="nav-link" data-scroll-target="#how-the-book-is-organized"><span class="header-section-number">3</span> How the book is organized</a></li>
+  <li><a href="#how-to-read-the-book" id="toc-how-to-read-the-book" class="nav-link" data-scroll-target="#how-to-read-the-book"><span class="header-section-number">4</span> How to read the book</a></li>
+  <li><a href="#sec-further-reading" id="toc-sec-further-reading" class="nav-link" data-scroll-target="#sec-further-reading"><span class="header-section-number">5</span> Further reading</a></li>
+  <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing"><span class="header-section-number">6</span> Contributing</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/d-morrison/psw/edit/main/chapters/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/d-morrison/psw/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/d-morrison/psw/blob/main/chapters/intro.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="intro-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="intro-handout.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="intro.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Introduction</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Last modified: 2026-10-18 00:25:45 (PDT)</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>AI-Assisted Authorship
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This chapter was written with the assistance of GitHub Copilot, which expanded on outlined ideas and draft notes provided by the author. The content represents the author’s perspective and has been reviewed for accuracy, but the detailed prose was generated through AI assistance.</p>
+</div>
+</div>
+<p>This book is a style guide for writing in science, technology, engineering, and mathematics (STEM). Most of its examples come from statistics and data analysis, because statistics and data analysis are the fields that I work in. Most of its rules apply to any writing that explains technical ideas.</p>
+<section id="what-the-book-covers" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="what-the-book-covers"><span class="header-section-number">1</span> What the book covers</h2>
+<p>Most chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Four chapters cover one kind of document:</p>
+<ul>
+<li><a href="../chapters/paper-organization.html">Paper organization</a> and <a href="../chapters/manuscript-submission.html">Preparing a manuscript for submission</a> cover research papers.</li>
+<li><a href="../chapters/teaching.html">Writing for teaching</a> covers lecture notes, slides, and problem sets.</li>
+<li><a href="../chapters/software-text.html">Writing for code review and software</a> covers pull requests, issues, commit messages, READMEs, code comments, and release notes.</li>
+</ul>
+</section>
+<section id="who-the-book-is-for" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="who-the-book-is-for"><span class="header-section-number">2</span> Who the book is for</h2>
+<p>I wrote this book for students and mentees who are learning to write about their research. I also wrote it for the AI writing assistants that draft and edit prose for me.</p>
+<p>Many rules are stated as checks that a reader can apply to a single sentence, so a student and an AI assistant can apply them the same way. For example, the section on <a href="../chapters/grammar.html#demonstrative-pronouns">demonstrative pronouns</a> asks whether each “this” or “that” is followed by the noun that it refers to. A person or a program can answer that question without knowing what the paper is about.</p>
+</section>
+<section id="how-the-book-is-organized" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="how-the-book-is-organized"><span class="header-section-number">3</span> How the book is organized</h2>
+<p>The chapters fall into six groups:</p>
+<ul>
+<li>Terms, notation, and evidence:
+<ul>
+<li><a href="../chapters/defining-terms.html">Defining terms clearly</a></li>
+<li><a href="../chapters/notation.html">Mathematical notation</a></li>
+<li><a href="../chapters/citations-evidence.html">Citations and evidence</a></li>
+</ul></li>
+<li>Papers:
+<ul>
+<li><a href="../chapters/paper-organization.html">Paper organization</a></li>
+<li><a href="../chapters/manuscript-submission.html">Preparing a manuscript for submission</a></li>
+</ul></li>
+<li>Words and sentences:
+<ul>
+<li><a href="../chapters/word-choice.html">Word choice</a></li>
+<li><a href="../chapters/avoid-cliches.html">Avoiding clichés</a></li>
+<li><a href="../chapters/inclusive-writing.html">Writing for every reader</a></li>
+<li><a href="../chapters/grammar.html">Grammar</a></li>
+<li><a href="../chapters/conciseness.html">Conciseness</a></li>
+</ul></li>
+<li>Teaching:
+<ul>
+<li><a href="../chapters/teaching.html">Writing for teaching</a></li>
+</ul></li>
+<li>Software:
+<ul>
+<li><a href="../chapters/software-text.html">Writing for code review and software</a></li>
+</ul></li>
+<li>Thinking:
+<ul>
+<li><a href="../chapters/writing-to-think.html">Writing to clarify your thinking</a></li>
+</ul></li>
+</ul>
+<p>The <a href="../chapters/summary.html">Summary</a> lists the book’s main rules as a checklist for revising a draft.</p>
+</section>
+<section id="how-to-read-the-book" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="how-to-read-the-book"><span class="header-section-number">4</span> How to read the book</h2>
+<p>You can read the chapters in any order. Most sections state one rule and the reason for it, and then show the rule applied to an example. Many sections compare a weaker version of a passage with a stronger one. For example, the <a href="../chapters/word-choice.html">Word choice</a> chapter recommends “before” over “prior to”:</p>
+<blockquote class="blockquote">
+<p>❌ Prior to fitting the model, we removed outliers.</p>
+<p>✅ We removed outliers before fitting the model.</p>
+</blockquote>
+<p>Definitions, examples, and exercises appear in numbered, colored boxes, so that other sections and other documents can link to them.</p>
+<p>Use the book as a reference while you write, and use the <a href="../chapters/summary.html">Summary</a> checklist when you revise.</p>
+</section>
+<section id="sec-further-reading" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="sec-further-reading"><span class="header-section-number">5</span> Further reading</h2>
+<p>These shorter guides cover some of the same ground:</p>
+<ul>
+<li>Novelist Cormac McCarthy’s tips on how to write a great science paper <span class="citation" data-cites="savage2019">(<a href="#ref-savage2019" role="doc-biblioref">Savage and Yeh 2019</a>)</span></li>
+<li>Elements of style <span class="citation" data-cites="natphys2007elements">(<a href="#ref-natphys2007elements" role="doc-biblioref">Nature Physics 2007</a>)</span> - a <em>Nature Physics</em> editorial on scientific writing</li>
+<li>The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences <span class="citation" data-cites="luby2022pathway">(<a href="#ref-luby2022pathway" role="doc-biblioref">Luby and Southern 2022</a>)</span></li>
+<li><a href="https://x.com/acagamic/status/1680381737816424450">Secret, actionable writing tips</a> - a thread on X</li>
+</ul>
+<p>For who counts as an author, see the ICMJE criteria in <a href="../chapters/manuscript-submission.html">Preparing a manuscript for submission</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Source">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Source
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This list traces back to the <a href="https://jadebc.github.io/lab-manual/">Benjamin-Chung Lab Manual</a> by Jade Benjamin-Chung.</p>
+</div>
+</div>
+</div>
+<p>For further reading, see the <a href="https://ucd-serg.github.io/lab-manual/resources.html">Resources chapter</a> of the UCD-SERG lab manual.</p>
+</section>
+<section id="contributing" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="contributing"><span class="header-section-number">6</span> Contributing</h2>
+<p>The book is a work in progress. If a rule is unclear, wrong, or missing, open an issue on the book’s <a href="https://github.com/Morrison-Lab/psw/issues">GitHub repository</a>.</p>
+
+
+<!-- -->
+
+<script>
+const theoremLikeClasses = new Set([
+  "thm",
+  "theorem",
+  "lem",
+  "lemma",
+  "cor",
+  "corollary",
+  "prp",
+  "proposition",
+  "cnj",
+  "conjecture",
+  "def",
+  "definition",
+  "exm",
+  "example",
+  "exr",
+  "exercise",
+  "proof",
+  "remark",
+  "solution"
+]);
+const inlineAnchorSeparator = "\u00A0";
+const maxAnchorRetryAttempts = 5;
+const anchorRetryDelayMs = 50;
+
+const isTheoremLikeDiv = (div) =>
+  Array.from(div.classList).some((className) => theoremLikeClasses.has(className));
+
+const addTheoremLikeDivAnchors = () => {
+  for (const theoremDiv of window.document.querySelectorAll("div[id]")) {
+    if (!isTheoremLikeDiv(theoremDiv)) {
+      continue;
+    }
+
+    if (!theoremDiv.classList.contains("anchored")) {
+      theoremDiv.classList.add("anchored");
+    }
+
+    if (!theoremDiv.dataset.anchorId) {
+      theoremDiv.dataset.anchorId = theoremDiv.id;
+    }
+  }
+};
+
+const ensureSectionHeadingAnchorAttributes = () => {
+  for (const sectionHeading of window.document.querySelectorAll(
+    "section[id] > h1, section[id] > h2, section[id] > h3, section[id] > h4, section[id] > h5, section[id] > h6"
+  )) {
+    if (!sectionHeading.classList.contains("anchored")) {
+      sectionHeading.classList.add("anchored");
+    }
+
+    if (!sectionHeading.dataset.anchorId) {
+      sectionHeading.dataset.anchorId = sectionHeading.parentElement.id;
+    }
+  }
+};
+
+const normalizeInternalAnchorLinkIcons = () => {
+  for (const link of window.document.querySelectorAll(
+    "a.anchorjs-link, a.quarto-xref"
+  )) {
+    if (link.classList.contains("quarto-xref")) {
+      link.classList.add("no-external");
+      link.classList.remove("external");
+      continue;
+    }
+
+    const href = link.getAttribute("href") || "";
+    if (!href.startsWith("#")) {
+      continue;
+    }
+
+    link.classList.add("no-external");
+    link.classList.remove("external");
+  }
+};
+
+const moveTheoremDivAnchorsInline = () => {
+  let hasPendingAnchors = false;
+
+  for (const theoremDiv of window.document.querySelectorAll("div[id]")) {
+    if (!isTheoremLikeDiv(theoremDiv)) {
+      continue;
+    }
+
+    const theoremTitle = theoremDiv.querySelector(".theorem-title");
+    if (!theoremTitle) {
+      continue;
+    }
+
+    const anchorLink = Array.from(
+      theoremDiv.querySelectorAll("a.anchorjs-link")
+    ).find((link) => {
+      const href = link.getAttribute("href") || "";
+      return href === `#${theoremDiv.id}` || href.endsWith(`#${theoremDiv.id}`);
+    });
+
+    if (anchorLink && anchorLink.parentElement === theoremTitle) {
+      continue;
+    }
+
+    if (!anchorLink) {
+      hasPendingAnchors = true;
+      continue;
+    }
+
+    anchorLink.classList.remove("external");
+    theoremTitle.append(inlineAnchorSeparator);
+    theoremTitle.append(anchorLink);
+  }
+
+  return hasPendingAnchors;
+};
+
+const moveTheoremDivAnchorsInlineWithRetry = (
+  attemptsRemaining = maxAnchorRetryAttempts
+) => {
+  const hasPendingAnchors = moveTheoremDivAnchorsInline();
+  if (hasPendingAnchors && attemptsRemaining > 0) {
+    window.setTimeout(() => {
+      moveTheoremDivAnchorsInlineWithRetry(attemptsRemaining - 1);
+    }, anchorRetryDelayMs);
+  }
+};
+
+if (window.document.readyState === "loading") {
+  window.document.addEventListener("DOMContentLoaded", () => {
+    addTheoremLikeDivAnchors();
+    ensureSectionHeadingAnchorAttributes();
+    normalizeInternalAnchorLinkIcons();
+    moveTheoremDivAnchorsInlineWithRetry();
+  });
+} else {
+  addTheoremLikeDivAnchors();
+  ensureSectionHeadingAnchorAttributes();
+  normalizeInternalAnchorLinkIcons();
+  moveTheoremDivAnchorsInlineWithRetry();
+}
+
+window.addEventListener("load", () => {
+  normalizeInternalAnchorLinkIcons();
+  moveTheoremDivAnchorsInlineWithRetry();
+});
+</script>
+
+<script>
+const defaultAnchorIconFallback = "#";
+
+function getDefaultAnchorTemplate() {
+  const defaultAnchor = document.querySelector("a.anchorjs-link[data-anchorjs-icon]");
+  if (!defaultAnchor) {
+    return null;
+  }
+
+  return {
+    icon: defaultAnchor.getAttribute("data-anchorjs-icon"),
+    style: defaultAnchor.getAttribute("style")
+  };
+}
+
+function alignEquationAnchorWithDefault(anchor, template) {
+  if (!anchor) {
+    return;
+  }
+
+  anchor.classList.remove("external");
+
+  if (template && template.icon) {
+    anchor.setAttribute("data-anchorjs-icon", template.icon);
+    anchor.textContent = "";
+  } else if (!anchor.textContent) {
+    anchor.textContent = defaultAnchorIconFallback;
+  }
+
+  if (template && template.style) {
+    anchor.setAttribute("style", template.style);
+  } else {
+    anchor.removeAttribute("style");
+  }
+}
+
+function alignEquationAnchorsWithDefault() {
+  const template = getDefaultAnchorTemplate();
+  document.querySelectorAll("a.equation-anchor").forEach(function (anchor) {
+    alignEquationAnchorWithDefault(anchor, template);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const equations = document.querySelectorAll("span[id^='eq-']");
+  equations.forEach(function (equation) {
+    if (equation.querySelector(".equation-anchor")) {
+      return;
+    }
+
+    if (!equation.querySelector(".math.display")) {
+      return;
+    }
+
+    const id = equation.getAttribute("id");
+    if (!id) {
+      return;
+    }
+
+    equation.classList.add("equation-anchor-target");
+
+    const anchor = document.createElement("a");
+    anchor.className = "equation-anchor anchorjs-link";
+    anchor.href = "#" + id;
+    anchor.setAttribute("aria-label", "Permalink to this equation");
+    equation.appendChild(anchor);
+  });
+
+  alignEquationAnchorsWithDefault();
+});
+
+window.addEventListener("load", alignEquationAnchorsWithDefault);
+</script>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-luby2022pathway" class="csl-entry" role="listitem">
+Luby, Stephen, and Dorothy L. Southern. 2022. <em>The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences</em>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-98175-4">https://doi.org/10.1007/978-3-030-98175-4</a>.
+</div>
+<div id="ref-natphys2007elements" class="csl-entry" role="listitem">
+Nature Physics. 2007. <span>“Elements of Style.”</span> <em>Nature Physics</em> 3: 581. <a href="https://doi.org/10.1038/nphys724">https://doi.org/10.1038/nphys724</a>.
+</div>
+<div id="ref-savage2019" class="csl-entry" role="listitem">
+Savage, Van, and Pamela Yeh. 2019. <span>“Novelist <span>Cormac McCarthy</span>’s Tips on How to Write a Great Science Paper.”</span> <em>Nature</em> 574 (7778): 441–42. <a href="https://doi.org/10.1038/d41586-019-02918-5">https://doi.org/10.1038/d41586-019-02918-5</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script>
+// Typesetting equations and loading images change the height of everything
+// above the reader and push the text they were reading out of view. Keep the
+// reader's place: until they scroll, that is the link target (#id or a text
+// fragment, #:~:text=...); once they scroll, it is the block of text at about
+// a third of the way down the window. Each time the page height changes, put
+// that place back where it was in the window, until the height has held still
+// for 1.5 s after MathJax finishes (or 30 s have passed). The CSS
+// scroll-margin-top in styles.css places a link target in the upper-middle.
+// A text fragment is not in location.hash, so it is read from the navigation
+// entry (a browser that strips it leaves only the id behaviour).
+// Following another in-page link ends this: the browser's jump is the new place.
+(function () {
+  var hash = "", text = null;
+  try { hash = decodeURIComponent(location.hash.slice(1).replace(/:~:.*$/, "")); } catch (e) {}
+  try {
+    var nav = performance.getEntriesByType("navigation")[0];
+    var m = nav && /#.*?:~:.*?\btext=([^&]*)/.exec(nav.name);
+    // Split on the raw commas before decoding: an encoded comma (%2C) is text.
+    // The form is [prefix-,]start[,end][,-suffix]: drop a prefix or suffix
+    // only when there are other parts, so a lone term may start or end in "-".
+    var parts = m ? m[1].split(",") : [];
+    if (parts.length > 1 && /-$/.test(parts[0])) parts.shift();
+    if (parts.length > 1 && /^-/.test(parts[parts.length - 1])) parts.pop();
+    if (parts[0]) text = decodeURIComponent(parts[0]);
+  } catch (e) {}
+
+  function findText() {
+    var needle = text.replace(/\s+/g, " ").toLowerCase();
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        var p = n.parentElement;
+        return p && !p.closest("script, style, mjx-container, nav")
+          ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    for (var n = walker.nextNode(); n; n = walker.nextNode()) {
+      if (n.data.replace(/\s+/g, " ").toLowerCase().indexOf(needle) >= 0) return n.parentElement;
+    }
+    return null;
+  }
+  function target() {
+    var el = hash && document.getElementById(hash);
+    return el || (text && findText());
+  }
+
+  // The reader's place: null means the link target; otherwise a block of text
+  // and where its top sat in the window when the reader last scrolled.
+  var place = null, expectedY = null, engaged = false, queued = false, stopped = false;
+  var BLOCK = "p, li, h1, h2, h3, h4, h5, h6, figcaption, td, th, pre, blockquote";
+
+  function land() {
+    if (place) {
+      // A block the reader has since collapsed or removed has no position to
+      // keep: leave the page alone until their next scroll picks a new one.
+      if (!place.el.isConnected || !place.el.getClientRects().length) return;
+      var d = place.el.getBoundingClientRect().top - place.top;
+      if (Math.abs(d) >= 1) window.scrollBy({ top: d, behavior: "instant" });
+    } else {
+      var el = target();
+      if (el) el.scrollIntoView({ block: text && !hash ? "center" : "start", behavior: "instant" });
+    }
+    expectedY = window.scrollY;
+  }
+  function track() {
+    queued = false;
+    if (stopped || Math.abs(window.scrollY - expectedY) < 1) return; // our own landing
+    expectedY = window.scrollY;
+    var line = window.innerHeight / 3;
+    var at = document.elementFromPoint(window.innerWidth / 2, line);
+    var el = at && at.closest(BLOCK);
+    if (el && el.closest("mjx-container, nav")) el = null;
+    if (!el) { // the point fell in a margin: take the first block below the line
+      var all = document.querySelectorAll(BLOCK);
+      for (var i = 0; i < all.length && !el; i++) {
+        if (all[i].getBoundingClientRect().bottom > line && !all[i].closest("mjx-container, nav")) el = all[i];
+      }
+    }
+    if (el) place = { el: el, top: el.getBoundingClientRect().top };
+  }
+
+  // Only the reader's own input makes a scroll theirs: the browser's jump to
+  // #id on load is not.
+  function engage() { engaged = true; }
+  ["wheel", "touchstart", "pointerdown"].forEach(function (ev) {
+    window.addEventListener(ev, engage, { passive: true });
+  });
+  window.addEventListener("keydown", function (e) {
+    if (/^(Arrow|Page|Home$|End$| $)/.test(e.key)) engage();
+  }, { passive: true });
+  window.addEventListener("scroll", function () {
+    if (engaged && !queued) { queued = true; requestAnimationFrame(track); }
+  }, { passive: true });
+
+  var ro, timer, ready = false;
+  function finish() { stopped = true; if (ro) ro.disconnect(); }
+  function quiet() { clearTimeout(timer); if (ready) timer = setTimeout(finish, 1500); }
+  window.addEventListener("hashchange", finish, { once: true });
+  setTimeout(finish, 30000);
+
+  if (window.ResizeObserver) {
+    ro = new ResizeObserver(function () { if (!stopped) { land(); quiet(); } });
+    ro.observe(document.body);
+  }
+  function afterMath() {
+    var mj = window.MathJax;
+    var p = mj && mj.startup && mj.startup.promise;
+    function done() { ready = true; if (!stopped) { land(); quiet(); } }
+    (p || Promise.resolve()).then(done, done);
+  }
+  if (document.readyState === "complete") afterMath();
+  else window.addEventListener("load", afterMath);
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/d-morrison\.github\.io\/psw\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Introduction"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html: default</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  revealjs:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: intro-slides.html</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: intro-handout.pdf</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  docx:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: intro.docx</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>{{&lt; include _copilot-disclaimer.qmd &gt;}}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>This book is a style guide for writing in science, technology,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>engineering, and mathematics (STEM).</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Most of its examples come from statistics and data analysis,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>because statistics and data analysis are the fields that I work in.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Most of its rules apply to any writing that explains technical ideas.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## What the book covers</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Most chapters give rules for every kind of technical writing,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>such as a paper or a set of lecture notes.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Four chapters cover one kind of document:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Paper organization</span><span class="co">](paper-organization.qmd)</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  and <span class="co">[</span><span class="ot">Preparing a manuscript for submission</span><span class="co">](manuscript-submission.qmd)</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  cover research papers.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Writing for teaching</span><span class="co">](teaching.qmd)</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  covers lecture notes, slides, and problem sets.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Writing for code review and software</span><span class="co">](software-text.qmd)</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  covers pull requests, issues, commit messages, READMEs, code comments, and release notes.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Who the book is for</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>I wrote this book for students and mentees</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>who are learning to write about their research.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>I also wrote it for the AI writing assistants</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>that draft and edit prose for me.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Many rules are stated as checks</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>that a reader can apply to a single sentence,</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>so a student and an AI assistant can apply them the same way.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>For example,</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>the section on <span class="co">[</span><span class="ot">demonstrative pronouns</span><span class="co">](grammar.qmd#demonstrative-pronouns)</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>asks whether each "this" or "that" is followed by the noun that it refers to.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>A person or a program can answer that question</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>without knowing what the paper is about.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## How the book is organized</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>The chapters fall into six groups:</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Terms, notation, and evidence:</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Defining terms clearly</span><span class="co">](defining-terms.qmd)</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Mathematical notation</span><span class="co">](notation.qmd)</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Citations and evidence</span><span class="co">](citations-evidence.qmd)</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Papers:</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Paper organization</span><span class="co">](paper-organization.qmd)</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Preparing a manuscript for submission</span><span class="co">](manuscript-submission.qmd)</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Words and sentences:</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Word choice</span><span class="co">](word-choice.qmd)</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Avoiding clichés</span><span class="co">](avoid-cliches.qmd)</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Writing for every reader</span><span class="co">](inclusive-writing.qmd)</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Grammar</span><span class="co">](grammar.qmd)</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Conciseness</span><span class="co">](conciseness.qmd)</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Teaching:</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Writing for teaching</span><span class="co">](teaching.qmd)</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Software:</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Writing for code review and software</span><span class="co">](software-text.qmd)</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Thinking:</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Writing to clarify your thinking</span><span class="co">](writing-to-think.qmd)</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">Summary</span><span class="co">](summary.qmd)</span> lists the book's main rules</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>as a checklist for revising a draft.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to read the book</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>You can read the chapters in any order.</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Most sections state one rule and the reason for it,</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>and then show the rule applied to an example.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Many sections compare a weaker version of a passage with a stronger one.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>For example,</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>the <span class="co">[</span><span class="ot">Word choice</span><span class="co">](word-choice.qmd)</span> chapter</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>recommends "before" over "prior to":</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; ❌ Prior to fitting the model, we removed outliers.</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; ✅ We removed outliers before fitting the model.</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Definitions, examples, and exercises appear in numbered, colored boxes,</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>so that other sections and other documents can link to them.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Use the book as a reference while you write,</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>and use the <span class="co">[</span><span class="ot">Summary</span><span class="co">](summary.qmd)</span> checklist when you revise.</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further reading {#sec-further-reading}</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>These shorter guides cover some of the same ground:</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Novelist Cormac McCarthy's tips on how to write a great science paper <span class="co">[</span><span class="ot">@savage2019</span><span class="co">]</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Elements of style <span class="co">[</span><span class="ot">@natphys2007elements</span><span class="co">]</span> - a *Nature Physics* editorial on scientific writing</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences <span class="co">[</span><span class="ot">@luby2022pathway</span><span class="co">]</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Secret, actionable writing tips</span><span class="co">](https://x.com/acagamic/status/1680381737816424450)</span> -</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>  a thread on X</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>For who counts as an author, see the ICMJE criteria in</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Preparing a manuscript for submission</span><span class="co">](manuscript-submission.qmd)</span>.</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="true" title="Source"}</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>This list traces back to the</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Benjamin-Chung Lab Manual</span><span class="co">](https://jadebc.github.io/lab-manual/)</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>by Jade Benjamin-Chung.</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>For further reading, see the</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Resources chapter</span><span class="co">](https://ucd-serg.github.io/lab-manual/resources.html)</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>of the UCD-SERG lab manual.</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contributing</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>The book is a work in progress.</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>If a rule is unclear, wrong, or missing,</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>open an issue on the book's</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">GitHub repository</span><span class="co">](https://github.com/Morrison-Lab/psw/issues)</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/d-morrison/psw/edit/main/chapters/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/d-morrison/psw/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/d-morrison/psw/blob/main/chapters/intro.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
