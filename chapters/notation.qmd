@@ -53,6 +53,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/concise-expressions.qmd >}}
 
+## Abstracting sub-expressions you are not manipulating {#abstract-unused-subexpressions}
+
+{{< include notation/abstract-unused-subexpressions.qmd >}}
+
 ## Writing dot products
 
 {{< include notation/dot-products.qmd >}}
