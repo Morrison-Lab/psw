@@ -81,6 +81,27 @@ Say what each step does and why the next one follows.
 A sentence such as "Because the set $S$ has an element, we can pick one and call it $s$" tells the reader
 where the argument is going, and the bare formula does not.
 
+### Make the prose say what the formula says
+
+The sentence that introduces or interprets a formula must describe that formula.
+Check every term in the sentence against the formula, symbol by symbol.
+The words and the symbols must name the same quantity, the same data, and the same kind of average.
+When you change one, change the other in the same edit.
+
+::: {#exm-prose-matches-math}
+
+Suppose the formula is $\E{(Y - f(x))^2}$, a population mean at one covariate value $x$.
+The sentence "the average squared error over the training set" does not describe it.
+It names a sample average over many observations.
+Write "the expected squared prediction error at $x$" instead.
+
+:::
+
+Before you submit, reread each formula next to the sentence that describes it.
+Do the same after every edit to either one.
+Related rules cover [using one notation for one thing](notation.qmd#matching-names-and-notation)
+and [defining every variable when you introduce it](defining-terms.qmd#guidelines-for-defining-terms).
+
 ## Introduce a theorem with a sentence
 
 The line before a theorem, lemma or algorithm should be a complete sentence,
