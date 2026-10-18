@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-18 13:23:31 (PDT)</p>
+  <p class="date">Last modified: 2026-10-18 14:45:14 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -320,6 +320,12 @@
 <p>Many readers skim past the formulas on a first reading. Replace each formula by a placeholder such as “blah”. If the sentence no longer reads smoothly, rewrite it.</p>
 <h3 id="tie-formulas-together-with-commentary">Tie formulas together with commentary</h3>
 <p>A list of formulas with no words between them is the style of a homework paper. Say what each step does and why the next one follows. A sentence such as “Because the set <span class="math inline">\(S\)</span> has an element, we can pick one and call it <span class="math inline">\(s\)</span>” tells the reader where the argument is going, and the bare formula does not.</p>
+<h3 id="make-the-prose-say-what-the-formula-says">Make the prose say what the formula says</h3>
+<p>The sentence that introduces or interprets a formula must describe that formula. Check every term in the sentence against the formula, symbol by symbol. The words and the symbols must name the same quantity, the same data, and the same kind of average. When you change one, change the other in the same edit.</p>
+<div id="exm-prose-matches-math" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (A sentence that names the wrong average)</strong></span> Suppose the formula is <span class="math inline">\(\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\)</span>, a population mean at one covariate value <span class="math inline">\(\predvar\)</span>. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at <span class="math inline">\(\predvar\)</span>” instead.</p>
+</div>
+<p>Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover <a href="../chapters/notation.html#matching-names-and-notation">using one notation for one thing</a> and <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">defining every variable when you introduce it</a>.</p>
 </section>
 <section id="introduce-a-theorem-with-a-sentence" class="slide level2" data-number="2">
 <h2><span class="header-section-number">2</span> Introduce a theorem with a sentence</h2>
@@ -328,7 +334,7 @@
 
 <p>The line before a theorem, lemma or algorithm should be a complete sentence, or end with a colon. Do not let a heading such as “Theorem” finish a sentence that began above it.</p>
 <div id="exm-introduce-theorem" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Introducing a theorem)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Introducing a theorem)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ This gives the following <strong>Theorem.</strong> <span class="math inline">\(G(x)\)</span> is increasing.</p>
 <p>✅ Next we prove a result about monotonicity. <strong>Theorem.</strong> The function <span class="math inline">\(G(x)\)</span> defined in equation (3) is increasing.</p>

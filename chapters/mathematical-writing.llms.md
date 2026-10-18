@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 13:23:31 (PDT)
+Last modified: 2026-10-18 14:45:14 (PDT)
 
 > **NOTE:**
 >
@@ -54,13 +54,23 @@ Many readers skim past the formulas on a first reading. Replace each formula by 
 
 A list of formulas with no words between them is the style of a homework paper. Say what each step does and why the next one follows. A sentence such as “Because the set \\S\\ has an element, we can pick one and call it \\s\\” tells the reader where the argument is going, and the bare formula does not.
 
+### 1.6 Make the prose say what the formula says
+
+The sentence that introduces or interprets a formula must describe that formula. Check every term in the sentence against the formula, symbol by symbol. The words and the symbols must name the same quantity, the same data, and the same kind of average. When you change one, change the other in the same edit.
+
+> **NOTE:**
+>
+> **Example 3 (A sentence that names the wrong average)** Suppose the formula is \\\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\\, a population mean at one covariate value \\\predvar\\. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at \\\predvar\\” instead.
+
+Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover [using one notation for one thing](../chapters/notation.llms.md#matching-names-and-notation) and [defining every variable when you introduce it](../chapters/defining-terms.llms.md#guidelines-for-defining-terms).
+
 ## 2 Introduce a theorem with a sentence
 
 The line before a theorem, lemma or algorithm should be a complete sentence, or end with a colon. Do not let a heading such as “Theorem” finish a sentence that began above it.
 
 > **NOTE:**
 >
-> **Example 3 (Introducing a theorem)**  
+> **Example 4 (Introducing a theorem)**  
 >
 > > ❌ This gives the following **Theorem.** \\G(x)\\ is increasing.
 > >
