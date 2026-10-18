@@ -371,6 +371,15 @@ and the definition itself still comes from your own text and its traditional ref
 
 :::
 
+## Number bracketed citations {#number-bracketed-citations}
+
+On the lab's notes sites, a bracketed citation, `[@key]`, prints as a number, such as [1] or [1, p. 5].
+An in-text citation, `@key`, prints the author name and the number, such as "Hastie et al. [2]".
+Write `[@key]` when the source supports a claim,
+and `@key` when the author is the subject of the sentence.
+The sites get this from the shared citation style and filter in
+[Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/tree/main/citations).
+
 ## Best practices
 
 To effectively support your claims:
