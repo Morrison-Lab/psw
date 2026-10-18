@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 00:51:36 (PDT)
+Last modified: 2026-10-18 01:00:35 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -223,7 +223,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 
 ## 9 Number bracketed citations
 
-On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, such as \[1\] or \[1, p. 5\]. An in-text citation, `@key`, prints the author name and the number, such as “Hastie et al. \[2\]”. Write `[@key]` when the source supports a claim, and `@key` when the author is the subject of the sentence. The sites get this from the shared citation style and filter in [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/tree/main/citations).
+On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, such as \[1\] or \[1, p. 5\]. An in-text citation, `@key`, prints the author name and the number, such as “Hastie et al. \[2\]”. Write `[@key]` when the source supports a claim, and `@key` when the author is the subject of the sentence. The sites get this from the shared citation style and filter in [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
 ## 10 Best practices
 
