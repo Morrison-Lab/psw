@@ -76,8 +76,6 @@ The ❌ version leaves the reader to work out
 that $\predvar$ is a number you choose and $\Outvar$ is random.
 The ✅ version names the input as a value and the output as a variable,
 which is what the symbols say.
-The bias--variance theorems in [lds#1162](https://github.com/Morrison-Lab/lds/pull/1162)
-are written this way.
 
 :::
 
