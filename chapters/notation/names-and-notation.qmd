@@ -47,7 +47,7 @@ Before you release a document that reuses a quantity from another one,
 search both for its name and its symbols,
 and make them agree.
 
-## Label every inline symbol
+### Label every inline symbol
 
 In prose, write a text label next to every inline math symbol.
 The label tells the reader what the symbol stands for
