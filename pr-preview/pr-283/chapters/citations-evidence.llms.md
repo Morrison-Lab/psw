@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 22:03:02 (PDT)
+Last modified: 2026-10-18 22:24:37 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -227,15 +227,15 @@ On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, 
 
 ## 10 Cite a source once per passage
 
-Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`.
+Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`. The rule to cite a Wikipedia article once, where its term is defined, is a case of this one.
 
 > **NOTE:**
 >
 > **Example 4 (Citing one source once in a definition)**  
 >
-> > ❌ A *training set* is the part of the data used to fit a model ([**wikipedia_training_validation_and_test_data_sets?**](#ref-wikipedia_training_validation_and_test_data_sets)). Source: ([**wikipedia_training_validation_and_test_data_sets?**](#ref-wikipedia_training_validation_and_test_data_sets)).
+> > ❌ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)). Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 > >
-> > ✅ A *training set* is the part of the data used to fit a model. Source: ([**wikipedia_training_validation_and_test_data_sets?**](#ref-wikipedia_training_validation_and_test_data_sets)).
+> > ✅ A *Poisson random variable* counts events in a fixed interval. Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 >
 > Both versions credit the same article. The second one does it once, in the source line that closes the div.
 
