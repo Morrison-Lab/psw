@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 21:52:19 (PDT)
+Last modified: 2026-10-19 00:31:49 (PDT)
 
 > **NOTE:**
 >
@@ -32,7 +32,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
 
-- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after.
+- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after, and call each a “variable” or a “value” in the words too.
 
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
 
@@ -52,6 +52,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support), such as calling a step “trivial”.
 - [Cite a relevant source](../chapters/citations-evidence.llms.md#what-makes-a-citation-relevant) that is [trustworthy](../chapters/citations-evidence.llms.md#what-makes-a-source-trustworthy).
 - [Copy exact wording with caution](../chapters/citations-evidence.llms.md#copy-paste-with-caution), even from your own earlier work.
+- [Cite a source once per passage](../chapters/citations-evidence.llms.md#cite-once-per-passage).
 - [Link liberally](../chapters/citations-evidence.llms.md#link-liberally) to the sources and tools that you mention.
 - [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) rather than a source that quotes it.
 - [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first): name the topic, not its author, in headings and sentences.
