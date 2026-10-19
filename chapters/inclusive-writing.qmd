@@ -89,10 +89,23 @@ Fix a value $t$. | Choose a value $t$.
 a ton of data | a large data set
 the method falls flat on small samples | the method has high error on small samples
 at the end of the day, we want low test error | our goal is low test error
+Write the bias of an estimator. | Derive an expression for the bias of an estimator.
+Write $X$ in terms of $Y$. | Express $X$ in terms of $Y$.
 
 Idioms, clichés and slang, with literal alternatives
 
 :::
+
+Mathematical writing has idioms too.
+In an exercise, "Write the bias of an estimator" means
+"derive an expression for the bias of an estimator".
+A reader who takes "write" literally
+may copy the definition instead of deriving the result.
+Name the action instead:
+"derive" for a result the reader must work out,
+"express" for a rewrite in terms of other quantities,
+"state" for a result the reader recalls,
+and "give" for a value the reader reads off.
 
 Idioms are a kind of metaphor,
 so [Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language)
