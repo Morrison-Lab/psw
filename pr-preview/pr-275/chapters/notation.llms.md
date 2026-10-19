@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:02:51 (PDT)
+Last modified: 2026-10-19 00:09:40 (PDT)
 
 > **NOTE:**
 >
@@ -251,6 +251,18 @@ Match the notation to the claim:
 - Write \\\text{E}\[Y\]\\ and \\\text{Var}(Y)\\ for the mean and variance of a random variable, never \\\text{E}\[y\]\\ or \\\text{Var}(y)\\ for an observed value.
 - Write a statistic computed from observed values with lowercase letters, as in \\\bar{y} = \frac{1}{n}\sum\_{i=1}^n y_i\\, and the same statistic as a random variable with capitals, \\\bar{Y} = \frac{1}{n}\sum\_{i=1}^n Y_i\\. The first is a number, such as 2.4. The second has a sampling distribution.
 
+Name the kind of object in the words, too, not only in the symbol. Call a random variable a “variable”, such as “the output variable \\\Outvar\\”, and call a number a “value”, such as “the input value \\\predvar\\” or “the observed value \\\outvar\\”. Do not say “fix \\\predvar\\” or “let \\\predvar\\ be fixed”. It does not say whether \\\predvar\\ is a variable held constant or a value you chose. Say “choose an input value \\\predvar\\”, or “take the observed value \\\outvar\\ as given”.
+
+> **NOTE:**
+>
+> **Example 10 (Naming a variable and its value in the words)**  
+>
+> > ❌ Fix an input \\\predvar\\, and let \\\Outvar = \truemeanfnf{\predvar} + \noise\\.
+> >
+> > ✅ Choose an input value \\\predvar\\, and let the output variable \\\Outvar = \truemeanfnf{\predvar} + \noise\\.
+>
+> The ❌ version leaves the reader to work out that \\\predvar\\ is a number you choose and \\\Outvar\\ is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.
+
 Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable \\Y_i\\” or “the observed value \\y_i\\”.
 
 ## 7 Matching names and notation
@@ -261,7 +273,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 10 (Matching a name to its notation)**  
+> **Example 11 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
 > >
@@ -287,7 +299,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 11 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 12 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -310,7 +322,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 12 (Naming a macro for its meaning)**  
+> **Example 13 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -324,7 +336,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 13 (Naming a decorator for its meaning)**  
+> **Example 14 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -336,7 +348,7 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 
 > **NOTE:**
 >
-> **Example 14 (Naming a set for its meaning)**  
+> **Example 15 (Naming a set for its meaning)**  
 >
 > > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
 > >
@@ -358,7 +370,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 15 (Naming a variable for its role)**  
+> **Example 16 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -370,7 +382,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 16 (Writing a named quantity by its name)**  
+> **Example 17 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -382,7 +394,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 > **NOTE:**
 >
-> **Example 17 (Letting the macro size the bracket)**  
+> **Example 18 (Letting the macro size the bracket)**  
 >
 > > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
 > >
@@ -394,7 +406,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 
 > **NOTE:**
 >
-> **Example 18 (Describing the symbol, not the macro)**  
+> **Example 19 (Describing the symbol, not the macro)**  
 >
 > > ❌ Source: `The macro \avgfitf prints the average fit, so write $\avgfitf{x}$ for it.`
 > >
@@ -410,7 +422,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 > **NOTE:**
 >
-> **Example 19 (Naming a repeated chunk)**  
+> **Example 20 (Naming a repeated chunk)**  
 >
 > > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
 > >
@@ -430,7 +442,7 @@ Choose the symbol to match the thing it names. For the population mean \\\E{X}\\
 
 > **NOTE:**
 >
-> **Example 20 (Abstracting the population mean)** Suppose a derivation expands the variance of a random variable \\X\\.
+> **Example 21 (Abstracting the population mean)** Suppose a derivation expands the variance of a random variable \\X\\.
 >
 > > ❌ \\ \begin{aligned} \E{\paren{X - \E{X}}^2} &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\ &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2 \end{aligned} \\
 > >
@@ -444,7 +456,7 @@ When two vectors multiply to give a number, write the product as a dot product, 
 
 > **NOTE:**
 >
-> **Example 21 (Writing a dot product)**  
+> **Example 22 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -470,7 +482,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 22 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 23 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -499,7 +511,7 @@ Introduce the variable and its constraint together, as in “let \\x \neq 2\\”
 
 > **NOTE:**
 >
-> **Example 23 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 24 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >
