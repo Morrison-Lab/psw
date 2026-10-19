@@ -55,6 +55,32 @@ Match the notation to the claim:
   The first is a number, such as 2.4.
   The second has a sampling distribution.
 
+Name the kind of object in the words, too, not only in the symbol.
+Call a random variable a "variable", such as "the output variable $\Outvar$",
+and call a number a "value", such as "the input value $\predvar$" or "the observed value $\outvar$".
+Do not say "fix $\predvar$" or "let $\predvar$ be fixed".
+It does not say whether $\predvar$ is a variable held constant or a value you chose.
+Say "choose an input value $\predvar$",
+or "take the observed value $\outvar$ as given".
+
+::: {#exm-variable-vs-value-in-words}
+
+## Naming a variable and its value in the words
+
+> ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanfnf{\predvar} + \noise$.
+>
+> ✅ Choose an input value $\predvar$,
+> and let the output variable $\Outvar = \truemeanfnf{\predvar} + \noise$.
+
+The ❌ version leaves the reader to work out
+that $\predvar$ is a number you choose and $\Outvar$ is random.
+The ✅ version names the input as a value and the output as a variable,
+which is what the symbols say.
+The bias--variance theorems in [lds#1162](https://github.com/Morrison-Lab/lds/pull/1162)
+are written this way.
+
+:::
+
 Some fields reserve capital letters for matrices,
 or use the same letter for a random variable and its value.
 In that case, say so where you introduce the symbols.
