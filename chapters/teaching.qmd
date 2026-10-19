@@ -34,7 +34,8 @@ Pose each task as an exercise, give students time to try it, and then show the s
   and the formal `#def-` or `#thm-` div follows the solution div.
 - Give each bottom-level prompt its own `#exr-` div and its own `#sol-` div,
   in order, rather than one exercise with parts (a) through (e).
-  A numbered list of questions inside one exercise is the same thing as parts, so split it too.
+  Any exercise with several parts is split, however the parts are marked:
+  letters, numbers or bullets.
   Put the shared setup in the first exercise,
   and begin each later exercise by citing it, as in "Make the assumptions of the first exercise."
   Later exercises can use earlier results through cross-references.
