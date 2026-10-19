@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:16:56 (PDT)
+Last modified: 2026-10-19 00:24:16 (PDT)
 
 > **NOTE:**
 >
@@ -509,6 +509,13 @@ This covers every kind of condition:
 
 Introduce the variable and its constraint together, as in “let \\x \neq 2\\”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
 
+An assumptions list and a notation list are different lists:
+
+- An assumptions list states conditions that the result depends on. Write it as a bullet list under “Assume:”.
+- A notation list names objects. Write it as a bullet list under “Let:”.
+
+Write the lead-in word once, before the list, and make each bullet complete the lead-in sentence. Do not repeat the word in every bullet, and do not mix the two kinds of list in one list. When both are needed, write the notation list first, because the assumptions use the names it introduces.
+
 > **NOTE:**
 >
 > **Example 24 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
@@ -518,5 +525,33 @@ Introduce the variable and its constraint together, as in “let \\x \neq 2\\”
 > > ✅ Let \\x \neq 2\\. Then \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 && \text{(definition of } f\text{)}\\ &\> 0 && \text{(} x - 2 \neq 0 \text{, so its square is positive)} \end{aligned} \\
 >
 > In the ❌ version, the second line is false for \\x = 2\\, and the reader learns this only from the note at its end. In the ✅ version, “let \\x \neq 2\\” comes first, so the reader reads each line already knowing which values of \\x\\ it covers, and the justification says exactly where the condition is used.
+
+> **NOTE:**
+>
+> **Example 25 (Writing several assumptions as one list)**  
+>
+> > ❌ Assume the sample size \\n\\ is larger than \\30\\. Assume the observations are independent. Assume the population variance \\\sigma^2\\ is finite.
+> >
+> > ✅ Assume:
+> >
+> > - the sample size \\n\\ is larger than \\30\\,
+> > - the observations are independent, and
+> > - the population variance \\\sigma^2\\ is finite.
+>
+> The ✅ version writes “Assume” once, and the bullets show that the three assumptions are parallel and separate.
+
+> **NOTE:**
+>
+> **Example 26 (Writing several names as one list)**  
+>
+> > ❌ Let \\n\\ be the sample size. Let \\\bar{y}\\ be the sample mean. Let \\s\\ be the sample standard deviation.
+> >
+> > ✅ Let:
+> >
+> > - \\n\\ be the sample size,
+> > - \\\bar{y}\\ be the sample mean, and
+> > - \\s\\ be the sample standard deviation.
+>
+> These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size \\n\\ larger than \\30\\, a separate assumptions list after this one would state it.
 
 Back to top
