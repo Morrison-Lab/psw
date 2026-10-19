@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 16:43:32 (PDT)
+Last modified: 2026-10-19 00:02:51 (PDT)
 
 > **NOTE:**
 >
@@ -52,6 +52,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support), such as calling a step “trivial”.
 - [Cite a relevant source](../chapters/citations-evidence.llms.md#what-makes-a-citation-relevant) that is [trustworthy](../chapters/citations-evidence.llms.md#what-makes-a-source-trustworthy).
 - [Copy exact wording with caution](../chapters/citations-evidence.llms.md#copy-paste-with-caution), even from your own earlier work.
+- [Cite a source once per passage](../chapters/citations-evidence.llms.md#cite-once-per-passage).
 - [Link liberally](../chapters/citations-evidence.llms.md#link-liberally) to the sources and tools that you mention.
 - [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) rather than a source that quotes it.
 - [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first): name the topic, not its author, in headings and sentences.
