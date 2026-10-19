@@ -272,6 +272,14 @@ Follow these principles when introducing new terms:
   Then link each definite noun phrase to what it refers to,
   with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`,
   so that a reader who has forgotten or skipped the referent can find it.
+  Skip the link when the referent is introduced in the same div,
+  or in the same prose passage, as the phrase.
+  Inside a div, the antecedent has to be in that div:
+  an earlier div does not count,
+  because readers jump into the middle of a page.
+  For example, an exercise that says "Explain the labels" with no labels named in it
+  has no antecedent, even if an earlier exercise names some.
+  Name the labels in the exercise, or link them to where they are introduced.
 
 - **Provide examples and counterexamples:**
   Every definition should include at least one concrete example
