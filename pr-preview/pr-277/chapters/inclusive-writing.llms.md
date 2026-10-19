@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 21:55:00 (PDT)
+Last modified: 2026-10-19 00:17:02 (PDT)
 
 > **NOTE:**
 >
@@ -41,6 +41,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | flexibility buys lower bias | more flexible models tend to have lower bias |
 | this assumption costs nothing | this assumption loses no generality |
 | a mean of zero buys one identity | a mean of zero implies one identity |
+| Fix \\\varepsilon \> 0\\. | Let \\\varepsilon \> 0\\. |
+| Fix a value \\t\\. | Choose a value \\t\\. |
 | a ton of data | a large data set |
 | the method falls flat on small samples | the method has high error on small samples |
 | at the end of the day, we want low test error | our goal is low test error |
