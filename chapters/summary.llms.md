@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 23:56:20 (PDT)
+Last modified: 2026-10-19 00:03:25 (PDT)
 
 > **NOTE:**
 >
@@ -32,7 +32,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
 
-- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after.
+- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after, and call each a “variable” or a “value” in the words too.
 
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
 
