@@ -433,10 +433,11 @@ Follow these principles when introducing new terms:
   so call it a fitted model every time.
   Write "the fitted model predicts",
   and never "the prediction rule predicts".
-  The term "prediction rule" appears once,
-  as an italic alias inside the definition of the fitted model,
+  When a set of notes defines the fitted model,
+  "prediction rule" belongs only in that definition, as an italic alias,
   so that a reader who meets the alias elsewhere can find its meaning.
-  The old anchor stays as a span on the alias,
+  If the notes once defined "prediction rule" under its own anchor,
+  keep the old anchor as a span on the alias,
   so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:**
