@@ -46,3 +46,29 @@ A student then has to learn that $h$, $w$ and $b$ are $\mu$, $\beta_x$ and $\bet
 Before you release a document that reuses a quantity from another one,
 search both for its name and its symbols,
 and make them agree.
+
+## Label every inline symbol
+
+In prose, write a text label next to every inline math symbol.
+The label tells the reader what the symbol stands for
+without making them search for its definition.
+Put the label before the symbol, as in "the population noise variance, $\sigma^2$".
+
+::: {#exm-label-inline-symbol}
+
+## Labeling a symbol in a list of quantities
+
+> ❌ Which of the three quantities
+> (squared bias, variance of $\hat{y}$, $\sigma^2$)
+> can a better prediction method reduce?
+>
+> ✅ Which of the three quantities
+> (the squared bias, the variance of the prediction $\hat{y}$,
+> and the population noise variance $\sigma^2$)
+> can a better prediction method reduce?
+
+In the ❌ version, the reader sees $\sigma^2$ with no word for it.
+In the ✅ version, each quantity has a label,
+and the symbol that follows the label confirms which quantity is meant.
+
+:::
