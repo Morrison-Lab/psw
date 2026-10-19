@@ -464,7 +464,6 @@ Follow these principles when introducing new terms:
   then bump the pin and use it,
   as for any new macro.
   A missing f form is never a reason to type the operator and the delimiter separately.
-  (Directive from Ezra, 2026-10-18, review of lds#1157.)
 
 - **Qualify "mean", "average" and their shorthands as population or sample:**
   A bare "mean" or "average" does not say whether it is a quantity of the population
