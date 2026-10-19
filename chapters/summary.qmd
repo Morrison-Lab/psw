@@ -64,6 +64,7 @@ Follow its link for the reasons and the exceptions.
   that is [trustworthy](citations-evidence.qmd#what-makes-a-source-trustworthy).
 - [Copy exact wording with caution](citations-evidence.qmd#copy-paste-with-caution),
   even from your own earlier work.
+- [Cite a source once per passage](citations-evidence.qmd#cite-once-per-passage).
 - [Link liberally](citations-evidence.qmd#link-liberally)
   to the sources and tools that you mention.
 - [Quote the original](citations-evidence.qmd#quote-the-original)
