@@ -25,6 +25,13 @@ An assumptions list and a notation list are different lists:
 - A notation list names objects.
   Write it as a bullet list under "Let:".
 
+A condition that can fail is an assumption.
+A parametrization is not:
+it writes a quantity in terms of named parameters or pieces,
+so it holds by definition and goes under "Let:".
+Do not label a parametrization as an assumption,
+because that tells the reader a condition is being imposed when none is.
+
 Write the lead-in word once, before the list,
 and make each bullet complete the lead-in sentence.
 Do not repeat the word in every bullet,
@@ -106,5 +113,32 @@ These bullets name objects and assume nothing about them,
 so this is a notation list.
 If the result also needed a condition such as a sample size $n$ larger than $30$,
 a separate assumptions list after this one would state it.
+
+:::
+
+::: {#exm-parametrization-is-notation}
+
+## Defining the noise is a parametrization, not an assumption
+
+> ❌ Assume:
+>
+> - the outcome variable is $\Outvar = \truemeanf{\predvar} + \noise$, and
+> - the noise variable $\noise$ has population mean $0$.
+>
+> ✅ Let:
+>
+> - $\truemeanf{\predvar}$ be the population mean of the outcome variable $\Outvar$ given the input value $\predvar$, and
+> - $\noise = \Outvar - \truemeanf{\predvar}$ be the noise variable.
+>
+> Then $\Outvar = \truemeanf{\predvar} + \noise$,
+> and the population mean of $\noise$ given $\predvar$ is $0$.
+
+In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data.
+They are not.
+Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true
+for every distribution of $\Outvar$ that has a finite population mean.
+The ✅ version puts the definitions under "Let:" and derives the zero mean.
+A real assumption, such as the noise variable being independent of the input value,
+can fail, so it belongs under "Assume:".
 
 :::

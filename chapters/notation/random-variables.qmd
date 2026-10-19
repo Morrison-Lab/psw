@@ -67,10 +67,10 @@ or "take the observed value $\outvar$ as given".
 
 ## Naming a variable and its value in the words
 
-> ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanfnf{\predvar} + \noise$.
+> ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanf{\predvar} + \noise$.
 >
 > ✅ Choose an input value $\predvar$,
-> and let the output variable $\Outvar = \truemeanfnf{\predvar} + \noise$.
+> and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
 
 The ❌ version leaves the reader to work out
 that $\predvar$ is a number you choose and $\Outvar$ is random.
