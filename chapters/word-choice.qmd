@@ -195,7 +195,7 @@ they must stop and work out which concept the sentence means.
 Pick the word's established meaning in the course sequence,
 and name the other concept with a different phrase.
 If the other field's word is still useful,
-list it as a labelled alias in the definition of the concept it names.
+list it as a labeled alias in the definition of the concept it names.
 
 For example, *hypothesis* means a statistical hypothesis:
 a claim about a population, such as a null hypothesis that a test examines.
