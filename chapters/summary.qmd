@@ -99,6 +99,7 @@ Follow its link for the reasons and the exceptions.
 - [Follow an abstract statement with an example](word-choice.qmd#follow-an-abstract-statement-with-an-example).
 - [Replace the word "thing"](word-choice.qmd#say-which-thing)
   with the object, quantity, step, or idea that it stands for.
+- [Give a technical word one meaning](word-choice.qmd#give-a-technical-word-one-meaning).
 - [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon).
 - [Edit out clusters of clichéd words and sentence shapes](avoid-cliches.qmd),
   which make prose read as generic or machine-drafted.
