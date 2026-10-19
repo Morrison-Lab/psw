@@ -623,6 +623,37 @@ and the numerical case is a special case of the line, so it follows the line.
 The counterexample comes after the examples,
 once the reader knows what the definition covers.
 
+## Give a defined quantity its expression and its prose reading
+
+When a term names a quantity with a mathematical form,
+the definition states the expression
+and then reads it aloud in a prose sentence that says the same thing.
+The expression makes the definition exact.
+The prose reading lets the reader check that they understood it.
+The two must match
+(see [Make the prose say what the formula says](mathematical-writing.qmd#make-the-prose-say-what-the-formula-says)).
+A term with no mathematical form, such as active voice, keeps its prose definition alone.
+
+::: {#def-variance-expression-and-prose}
+
+## Variance, with its expression and its prose reading
+
+The **variance** of a random variable $X$ is
+$$\Var{X} = \E{\paren{X - \E{X}}^2}.$$
+In words, it is the population mean of the squared deviation of $X$ from its population mean.
+
+:::
+
+::: {#exm-not-expression-and-prose}
+
+## A definition that gives only one of the two
+
+"The variance is how spread out $X$ is" gives no expression, so a reader cannot compute it.
+"The variance is $\E{\paren{X - \E{X}}^2}$" gives no reading, so a reader cannot check their understanding.
+@def-variance-expression-and-prose gives both.
+
+:::
+
 ## Why examples matter
 
 Examples serve several crucial purposes:
