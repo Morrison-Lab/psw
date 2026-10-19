@@ -21,13 +21,13 @@ cite it in the justification on that line.
 An assumptions list and a notation list are different lists:
 
 - An assumptions list states conditions that the result depends on.
-  Write it as a bullet list with "Suppose" or "Assume" once, before the list.
+  Write it as a bullet list under "Assume:".
 - A notation list names objects.
-  Write it as a bullet list with "Let" or "Write" once, before the list.
+  Write it as a bullet list under "Let:".
 
-End each lead-in with a colon,
+Write the lead-in word once, before the list,
 and make each bullet complete the lead-in sentence.
-Do not repeat the verb in every sentence,
+Do not repeat the word in every bullet,
 and do not mix the two kinds of list in one list.
 When both are needed, write the notation list first, because the assumptions use the names it introduces.
 
@@ -71,17 +71,17 @@ and the justification says exactly where the condition is used.
 
 ## Writing several assumptions as one list
 
-> ❌ Suppose $x \neq 2$.
-> Suppose $f(x) = (x - 2)^2$.
-> Suppose $x$ is less than $5$.
+> ❌ Assume $x \neq 2$.
+> Assume $f(x) = (x - 2)^2$.
+> Assume $x$ is less than $5$.
 >
-> ✅ Suppose:
+> ✅ Assume:
 >
 > - $x \neq 2$,
 > - $f(x) = (x - 2)^2$, and
 > - $x$ is less than $5$.
 
-The ✅ version writes "Suppose" once,
+The ✅ version writes "Assume" once,
 and the bullets show that the three assumptions are parallel and separate.
 
 :::
