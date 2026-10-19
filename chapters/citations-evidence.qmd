@@ -386,21 +386,22 @@ The sites get this from the shared citation style and filter in
 ## Cite a source once per passage {#cite-once-per-passage}
 
 Cite a source once in each div or passage, at the claim it supports.
-A second citation of the same source in the same div adds a number the reader must look up again
+A second citation of the same source in the same div adds a number that the reader must look up again
 and tells them nothing new.
 Cite again only when the second claim rests on a different part of the source,
 and then give a locator, such as `[@key, p. 5]`.
+The rule to cite a Wikipedia article once, where its term is defined, is a case of this one.
 
 ::: {#exm-cite-once}
 
 ## Citing one source once in a definition
 
-> ❌ A *training set* is the part of the data used to fit a model
-> [@wikipedia_training_validation_and_test_data_sets].
-> Source: @wikipedia_training_validation_and_test_data_sets.
+> ❌ A *Poisson random variable* counts events in a fixed interval
+> [@wikipedia_poisson_distribution].
+> Source: @wikipedia_poisson_distribution.
 >
-> ✅ A *training set* is the part of the data used to fit a model.
-> Source: @wikipedia_training_validation_and_test_data_sets.
+> ✅ A *Poisson random variable* counts events in a fixed interval.
+> Source: @wikipedia_poisson_distribution.
 
 Both versions credit the same article.
 The second one does it once, in the source line that closes the div.
