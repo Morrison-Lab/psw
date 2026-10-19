@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 21:50:22 (PDT)
+Last modified: 2026-10-18 21:59:14 (PDT)
 
 > **NOTE:**
 >
@@ -279,7 +279,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-## 8 Label every inline symbol
+### 7.1 Label every inline symbol
 
 In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, \\\sigma^2\\”.
 
@@ -293,7 +293,7 @@ In prose, write a text label next to every inline math symbol. The label tells t
 >
 > In the ❌ version, the reader sees \\\sigma^2\\ with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.
 
-## 9 Using shared macros
+## 8 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
@@ -416,7 +416,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 >
 > The ✅ version tells the reader what the symbol means. The reader never sees the macro name, and the symbol has its own row in the notation table.
 
-## 10 Making expressions concise
+## 9 Making expressions concise
 
 Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
 
@@ -434,7 +434,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
 
-## 11 Abstracting sub-expressions you are not manipulating
+## 10 Abstracting sub-expressions you are not manipulating
 
 Replace each sub-expression that you are not manipulating with a symbol that stands for it. Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it. Every other line shows the symbol.
 
@@ -452,7 +452,7 @@ Choose the symbol to match the thing it names. For the population mean \\\E{X}\\
 >
 > In the ❌ version, \\\E{X}\\ is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of \\\mu\\ needs to know what \\\mu\\ stands for.
 
-## 12 Writing dot products
+## 11 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
@@ -474,7 +474,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 13 Writing out notational shorthands
+## 12 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -498,7 +498,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
 
-## 14 Stating assumptions before using them
+## 13 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
