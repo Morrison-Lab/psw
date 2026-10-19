@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 01:18:03 (PDT)
+Last modified: 2026-10-19 02:57:24 (PDT)
 
 > **NOTE:**
 >
@@ -46,8 +46,17 @@ The word “lean” in the first version is an idiom. The second version asks th
 | a ton of data | a large data set |
 | the method falls flat on small samples | the method has high error on small samples |
 | at the end of the day, we want low test error | our goal is low test error |
+| Write the bias of an estimator. | Derive an expression for the bias of an estimator. |
+| Write \\X\\ in terms of \\Y\\. | Express \\X\\ in terms of \\Y\\. |
 
 Table 1: Idioms, clichés and slang, with literal alternatives
+
+Mathematical writing has idioms too. In an exercise, “Write the bias of an estimator” means “derive an expression for the bias of an estimator”. A reader who takes “write” literally may copy the definition instead of deriving the result. Name the action instead:
+
+- “derive” for a result the reader must work out;
+- “express” for a rewrite in terms of other quantities;
+- “state” for a result the reader recalls;
+- “give” for a value the reader reads off.
 
 Idioms are a kind of metaphor, so [Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language) applies to them too, and gives more examples.
 
