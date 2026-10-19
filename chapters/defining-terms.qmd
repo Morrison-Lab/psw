@@ -452,13 +452,18 @@ Follow these principles when introducing new terms:
   so write the application with that macro and not with a hand-typed `\paren`.
   For example, write $\fitprocf{\trainset}$ for the fitted model that $\fitproc$ gives on the training set $\trainset$,
   and never $\fitproc\paren{\trainset}$.
+  The same holds for an operator and every delimiter macro
+  (`\paren`, `\sb`, `\cb`, `\set`, `\abs`, `\norm` and `\angb`),
+  and for an alias of the operator:
+  write $\E{\outvar}$, and never $\Ep\sb{\outvar}$.
   Before adding an f form, check that no macro already prints the notation:
   `\candfitted{l}` already prints the fitted model of candidate $l$,
   and a second macro for the same notation is not an f form.
   When no macro prints the notation,
-  add the f form in the macros repository first,
+  create the f form in the macros repository first, in the same session,
   then bump the pin and use it,
   as for any new macro.
+  A missing f form is never a reason to type the operator and the delimiter separately.
 
 - **Qualify "mean", "average" and their shorthands as population or sample:**
   A bare "mean" or "average" does not say whether it is a quantity of the population
