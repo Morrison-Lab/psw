@@ -18,6 +18,12 @@ then write the steps that need the constraint.
 When a step uses a fact proved earlier,
 cite it in the justification on that line.
 
+When there are several assumptions,
+write them as a bullet list with the verb ("Let", "Suppose" or "Assume") once, before the list.
+End the lead-in with a colon,
+and make each bullet complete the lead-in sentence.
+Do not repeat the verb in every sentence.
+
 ::: {#exm-assumptions-first}
 
 ## Stating the restriction on $x$ before using it
@@ -51,5 +57,24 @@ and the reader learns this only from the note at its end.
 In the ✅ version, "let $x \neq 2$" comes first,
 so the reader reads each line already knowing which values of $x$ it covers,
 and the justification says exactly where the condition is used.
+
+:::
+
+::: {#exm-assumptions-bullet-list}
+
+## Writing several assumptions as one list
+
+> ❌ Let $x$ be a real number.
+> Let $x \neq 2$.
+> Let $f(x) = (x - 2)^2$.
+>
+> ✅ Let:
+>
+> - $x$ be a real number,
+> - $x \neq 2$, and
+> - $f(x) = (x - 2)^2$.
+
+The ✅ version writes "Let" once,
+and the bullets show that the three assumptions are parallel and separate.
 
 :::
