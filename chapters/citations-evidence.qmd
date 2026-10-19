@@ -383,6 +383,30 @@ Write the description first, and end the sentence with the bracketed `[@key]`.
 The sites get this from the shared citation style and filter in
 [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
+## Cite a source once per passage {#cite-once-per-passage}
+
+Cite a source once in each div or passage, at the claim it supports.
+A second citation of the same source in the same div adds a number the reader must look up again
+and tells them nothing new.
+Cite again only when the second claim rests on a different part of the source,
+and then give a locator, such as `[@key, p. 5]`.
+
+::: {#exm-cite-once}
+
+## Citing one source once in a definition
+
+> ❌ A *training set* is the part of the data used to fit a model
+> [@wikipedia_training_validation_and_test_data_sets].
+> Source: @wikipedia_training_validation_and_test_data_sets.
+>
+> ✅ A *training set* is the part of the data used to fit a model.
+> Source: @wikipedia_training_validation_and_test_data_sets.
+
+Both versions credit the same article.
+The second one does it once, in the source line that closes the div.
+
+:::
+
 ## Best practices
 
 To effectively support your claims:
@@ -613,6 +637,7 @@ When you find an existing credit to your own work, remove it and add or keep a l
 - **Vague attribution**: Using phrases like "studies have shown" without citing specific studies
 - **Appeal to obviousness**: Using "obviously", "clearly", or "as everyone knows" in place of a derivation or a citation
 - **Circular citation**: Citing a paper that doesn't contain the claimed information but cites another paper that does (cite the original source)
+- **Redundant citation**: Citing the same source more than once in one div or passage (see [Cite a source once per passage](#cite-once-per-passage))
 - **Citation padding**: Adding citations that don't actually support your claims just to appear well-referenced
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
