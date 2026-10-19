@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-18 23:00:30 (PDT)</p>
+  <p class="date">Last modified: 2026-10-18 23:56:20 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -566,8 +566,23 @@
 
 <p>On the lab’s notes sites, a bracketed citation, <code>[@key]</code>, prints as a number, such as [1] or [1, p.&nbsp;5]. An in-text citation, <code>@key</code>, prints the author name and the number, such as “Hastie et al.&nbsp;[2]”. Write <code>[@key]</code> when the source supports a claim, and <code>@key</code> when the author is the subject of the sentence. Never start a sentence or a list item with a bare <code>@key</code> unless the author is its subject. The author list becomes the subject, so a list of such items prints the same author name, such as “Wikipedia contributors [3]”, again and again. Write the description first, and end the sentence with the bracketed <code>[@key]</code>. The sites get this from the shared citation style and filter in <a href="https://github.com/Morrison-Lab/macros/blob/main/citations/README.md">Morrison-Lab/macros</a>.</p>
 </section>
-<section id="best-practices" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Best practices</h2>
+<section id="cite-once-per-passage" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Cite a source once per passage</h2>
+</section>
+<section class="slide level2">
+
+<p>Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as <code>[@key, p. 5]</code>. The rule to cite a Wikipedia article once, where its term is defined, is a case of this one.</p>
+<div id="exm-cite-once" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (Citing one source once in a definition)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ A <em>Poisson random variable</em> counts events in a fixed interval <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>. Source: <span class="citation" data-cites="wikipedia_poisson_distribution">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>.</p>
+<p>✅ A <em>Poisson random variable</em> counts events in a fixed interval. Source: <span class="citation" data-cites="wikipedia_poisson_distribution">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>.</p>
+</blockquote>
+<p>Both versions credit the same article. The second one does it once, in the source line that closes the div.</p>
+</div>
+</section>
+<section id="best-practices" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Best practices</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -582,8 +597,8 @@
 <li><strong>Cite diverse sources</strong>: When possible, include work from different research groups and perspectives</li>
 </ol>
 </section>
-<section id="quote-the-original" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Quote the original</h2>
+<section id="quote-the-original" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Quote the original</h2>
 </section>
 <section class="slide level2">
 
@@ -594,22 +609,22 @@
 </blockquote>
 <p>Credit a quotation to whoever speaks it in the primary source, even when the speaker is quoting someone else. When attribution is in doubt, read the primary source (a transcript, the original page) first. Uncertainty about who said a line is not evidence about who said it.</p>
 </section>
-<section id="copy-organization-names-from-their-source" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Copy organization names from their source</h2>
+<section id="copy-organization-names-from-their-source" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Copy organization names from their source</h2>
 </section>
 <section class="slide level2">
 
 <p>When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.</p>
 </section>
-<section id="verify-each-bibliography-entry" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Verify each bibliography entry</h2>
+<section id="verify-each-bibliography-entry" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Verify each bibliography entry</h2>
 </section>
 <section class="slide level2">
 
 <p>Check each detail of a bibliography entry against an official source. Look the work up through <a href="https://search.crossref.org/">Crossref search</a> or its <a href="https://api.crossref.org/">REST API</a>, check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.</p>
 </section>
-<section id="cite-an-alias-directly" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Cite an alias directly</h2>
+<section id="cite-an-alias-directly" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Cite an alias directly</h2>
 </section>
 <section class="slide level2">
 
@@ -619,8 +634,8 @@
 <p>✅ <code>also called the **alias** [@key, section]</code></p>
 </blockquote>
 </section>
-<section id="cite-the-original-for-named-results" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Cite the original for named results</h2>
+<section id="cite-the-original-for-named-results" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Cite the original for named results</h2>
 </section>
 <section class="slide level2">
 
@@ -647,22 +662,22 @@
 </ul>
 <p>Never cite an unauthorized copy, and never fill in a title, volume, or page number from memory.</p>
 <div id="exm-cite-original" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Crediting Chebyshev’s inequality)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Crediting Chebyshev’s inequality)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Chebyshev’s inequality says that …</p>
 <p>✅ Chebyshev’s inequality says that … Bienaymé derived the bound <span class="citation" data-cites="bienayme1853">(<a href="#/references" role="doc-biblioref" onclick="">Bienaymé 1853</a>)</span>, and Tchébychef proved a more general form <span class="citation" data-cites="tchebichef1867">(<a href="#/references" role="doc-biblioref" onclick="">Tchébychef 1867</a>)</span>. A modern treatment is in <span class="citation" data-cites="blitzstein2019introduction">Blitzstein and Hwang (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span>.</p>
 </blockquote>
 </div>
 </section>
-<section id="put-the-content-first" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Put the content first</h2>
+<section id="put-the-content-first" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Put the content first</h2>
 </section>
 <section class="slide level2">
 
 <p>Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.</p>
 </section>
-<section id="adapting-another-courses-material" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Adapting another course’s material</h2>
+<section id="adapting-another-courses-material" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Adapting another course’s material</h2>
 </section>
 <section class="slide level2">
 
@@ -678,8 +693,8 @@
 <span id="cb2-4"><a aria-label="4"></a>This section is adapted from @zhou2024, used under the MIT License.</span>
 <span id="cb2-5"><a aria-label="5"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="material-from-your-own-work" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Material from your own work</h2>
+<section id="material-from-your-own-work" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Material from your own work</h2>
 </section>
 <section class="slide level2">
 
@@ -706,8 +721,8 @@
 <p>A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.</p>
 <p>When you find an existing credit to your own work, remove it and add or keep a link to it.</p>
 </section>
-<section id="common-citation-errors-to-avoid" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Common citation errors to avoid</h2>
+<section id="common-citation-errors-to-avoid" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Common citation errors to avoid</h2>
 </section>
 <section class="slide level2">
 
@@ -716,13 +731,14 @@
 <li><strong>Vague attribution</strong>: Using phrases like “studies have shown” without citing specific studies</li>
 <li><strong>Appeal to obviousness</strong>: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation</li>
 <li><strong>Circular citation</strong>: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)</li>
+<li><strong>Redundant citation</strong>: Citing the same source more than once in one div or passage (see <a href="#/cite-once-per-passage">Cite a source once per passage</a>)</li>
 <li><strong>Citation padding</strong>: Adding citations that don’t actually support your claims just to appear well-referenced</li>
 <li><strong>Selective citation</strong>: Only citing work that supports your position while ignoring contradictory evidence</li>
 <li><strong>Ghost authorship</strong>: Failing to cite work that directly influenced your ideas</li>
 </ul>
 </section>
-<section id="examples" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Examples</h2>
+<section id="examples" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Examples</h2>
 </section>
 <section class="slide level2">
 
@@ -752,8 +768,8 @@
 </blockquote>
 <p><strong>Improvement</strong>: The citation is to a current survey of programming language usage.</p>
 </section>
-<section id="conclusion" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Conclusion</h2>
+<section id="conclusion" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Conclusion</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
