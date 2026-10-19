@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 02:57:24 (PDT)
+Last modified: 2026-10-19 03:32:07 (PDT)
 
 > **NOTE:**
 >
@@ -90,7 +90,21 @@ The plural and the filler phrases built on it (“a number of things”, “othe
 
 If you cannot name the object, quantity, step or idea, the sentence is not yet ready to write.
 
-## 4 Choose each preposition on purpose
+## 4 Write the full phrase
+
+Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
+
+The same rule applies to symbols. Write a function with its argument, such as \\\truemeanf{\predvar}\\, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.
+
+> **NOTE:**
+>
+> **Example 1 (Writing the full phrase and the argument)** The display equation is \\\Outvar = \truemeanf{\predvar} + \noise\\.
+>
+> > ❌ The outcome variable is the true mean function plus noise.
+> >
+> > ✅ The outcome variable is the true mean function of the outcome variable given the input value \\\predvar\\, namely \\\truemeanf{\predvar}\\, plus noise.
+
+## 5 Choose each preposition on purpose
 
 A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
 
@@ -98,7 +112,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 > **NOTE:**
 >
-> **Example 1 (Naming the relationship)**  
+> **Example 2 (Naming the relationship)**  
 >
 > > ❌ The error of the prediction is large.
 > >
@@ -114,7 +128,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
-## 5 Minimize unnecessary jargon
+## 6 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
@@ -122,7 +136,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 
 > **NOTE:**
 >
-> **Example 2 (Replacing unnecessary jargon)**  
+> **Example 3 (Replacing unnecessary jargon)**  
 >
 > > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 > >
