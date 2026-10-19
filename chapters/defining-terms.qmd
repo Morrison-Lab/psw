@@ -428,6 +428,17 @@ Follow these principles when introducing new terms:
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
 
+- **Say "fitted model", not "prediction rule":**
+  A fitted model that is used to predict outcomes is still a fitted model,
+  so call it a fitted model every time.
+  Write "the fitted model predicts",
+  and never "the prediction rule predicts".
+  The term "prediction rule" appears once,
+  as an italic alias inside the definition of the fitted model,
+  so that a reader who meets the alias elsewhere can find its meaning.
+  The old anchor stays as a span on the alias,
+  so that links to it still land there.
+
 - **Write a predicted value with the predicted-value macro:**
   A predicted value is the fitted model applied to a covariate value,
   so write it with a predicted-value macro
