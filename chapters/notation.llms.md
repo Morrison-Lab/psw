@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:24:16 (PDT)
+Last modified: 2026-10-19 00:31:38 (PDT)
 
 > **NOTE:**
 >
@@ -291,6 +291,20 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
+### 7.1 Label every inline symbol
+
+In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, \\\sigma^2\\”.
+
+> **NOTE:**
+>
+> **Example 12 (Labeling a symbol in a list of quantities)**  
+>
+> > ❌ Which of the three quantities (squared bias, variance of \\\hat{y}\\, \\\sigma^2\\) can a better prediction method reduce?
+> >
+> > ✅ Which of the three quantities (the squared bias, the variance of the prediction \\\hat{y}\\, and the population noise variance \\\sigma^2\\) can a better prediction method reduce?
+>
+> In the ❌ version, the reader sees \\\sigma^2\\ with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.
+
 ## 8 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
@@ -299,7 +313,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 12 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 13 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -322,7 +336,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 13 (Naming a macro for its meaning)**  
+> **Example 14 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -336,7 +350,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 14 (Naming a decorator for its meaning)**  
+> **Example 15 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -348,7 +362,7 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 
 > **NOTE:**
 >
-> **Example 15 (Naming a set for its meaning)**  
+> **Example 16 (Naming a set for its meaning)**  
 >
 > > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
 > >
@@ -370,7 +384,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 16 (Naming a variable for its role)**  
+> **Example 17 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -382,7 +396,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 17 (Writing a named quantity by its name)**  
+> **Example 18 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -394,7 +408,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 > **NOTE:**
 >
-> **Example 18 (Letting the macro size the bracket)**  
+> **Example 19 (Letting the macro size the bracket)**  
 >
 > > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
 > >
@@ -406,7 +420,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 
 > **NOTE:**
 >
-> **Example 19 (Describing the symbol, not the macro)**  
+> **Example 20 (Describing the symbol, not the macro)**  
 >
 > > ❌ Source: `The macro \avgfitf prints the average fit, so write $\avgfitf{x}$ for it.`
 > >
@@ -422,7 +436,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 > **NOTE:**
 >
-> **Example 20 (Naming a repeated chunk)**  
+> **Example 21 (Naming a repeated chunk)**  
 >
 > > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
 > >
@@ -442,7 +456,7 @@ Choose the symbol to match the thing it names. For the population mean \\\E{X}\\
 
 > **NOTE:**
 >
-> **Example 21 (Abstracting the population mean)** Suppose a derivation expands the variance of a random variable \\X\\.
+> **Example 22 (Abstracting the population mean)** Suppose a derivation expands the variance of a random variable \\X\\.
 >
 > > ❌ \\ \begin{aligned} \E{\paren{X - \E{X}}^2} &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\ &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2 \end{aligned} \\
 > >
@@ -456,7 +470,7 @@ When two vectors multiply to give a number, write the product as a dot product, 
 
 > **NOTE:**
 >
-> **Example 22 (Writing a dot product)**  
+> **Example 23 (Writing a dot product)**  
 >
 > > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
 > >
@@ -482,7 +496,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 23 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 24 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -518,7 +532,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 24 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 25 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >
@@ -528,7 +542,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 25 (Writing several assumptions as one list)**  
+> **Example 26 (Writing several assumptions as one list)**  
 >
 > > ❌ Assume the sample size \\n\\ is larger than \\30\\. Assume the observations are independent. Assume the population variance \\\sigma^2\\ is finite.
 > >
@@ -542,7 +556,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 26 (Writing several names as one list)**  
+> **Example 27 (Writing several names as one list)**  
 >
 > > ❌ Let \\n\\ be the sample size. Let \\\bar{y}\\ be the sample mean. Let \\s\\ be the sample standard deviation.
 > >

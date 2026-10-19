@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-19 00:24:16 (PDT)</p>
+  <p class="date">Last modified: 2026-10-19 00:31:38 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -563,6 +563,16 @@
 <p>The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that <span class="math inline">\(h\)</span>, <span class="math inline">\(w\)</span> and <span class="math inline">\(b\)</span> are <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\beta_0\)</span>.</p>
 </div>
 <p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
+<h3 id="label-every-inline-symbol">Label every inline symbol</h3>
+<p>In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, <span class="math inline">\(\sigma^2\)</span>”.</p>
+<div id="exm-label-inline-symbol" class="theorem example">
+<p><span class="theorem-title"><strong>Example 12 (Labeling a symbol in a list of quantities)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Which of the three quantities (squared bias, variance of <span class="math inline">\(\hat{y}\)</span>, <span class="math inline">\(\sigma^2\)</span>) can a better prediction method reduce?</p>
+<p>✅ Which of the three quantities (the squared bias, the variance of the prediction <span class="math inline">\(\hat{y}\)</span>, and the population noise variance <span class="math inline">\(\sigma^2\)</span>) can a better prediction method reduce?</p>
+</blockquote>
+<p>In the ❌ version, the reader sees <span class="math inline">\(\sigma^2\)</span> with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.</p>
+</div>
 </section>
 <section id="using-shared-macros" class="slide level2" data-number="8">
 <h2><span class="header-section-number">8</span> Using shared macros</h2>
@@ -572,7 +582,7 @@
 <p>Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.</p>
 <p>Before you write any symbol, search the group’s shared macro file for the concept it names. If a macro names the concept, use it. If none does, add one to the shared file before you use the symbol, so the next document finds it.</p>
 <div id="exm-use-shared-macro" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Using a shared macro)</strong></span> This example compares the source you type, so both versions appear as code.</p>
+<p><span class="theorem-title"><strong>Example 13 (Using a shared macro)</strong></span> This example compares the source you type, so both versions appear as code.</p>
 <blockquote>
 <p>❌ Source: <code>Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.</code></p>
 <p>✅ Source: <code>Let $\coef{1}$ be the slope and write the sum as $\sumin$.</code></p>
@@ -591,7 +601,7 @@
 <p>A quantity that has a macro keeps the same symbol in every document.</p>
 <p>Name a macro for what the symbol means, not for the letter it prints. A macro such as <code>\vdelta</code> or <code>\hbeta</code> only spells a Greek letter, so it names no concept, and changing the symbol for that concept still means editing every use. Outside a passage that discusses the notation itself, do not write a Greek letter in a math expression, either as a raw command such as <code>\delta</code> or inside a letter-named macro such as <code>\vdelta</code>. The only exception is a one-off symbol that fits no semantic category, and the rule for Latin letters below says when that applies.</p>
 <div id="exm-semantic-macro-name" class="theorem example">
-<p><span class="theorem-title"><strong>Example 13 (Naming a macro for its meaning)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 14 (Naming a macro for its meaning)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.</code></p>
 <p>✅ Source: <code>The error at layer $\ell$ is $\backerr^{(\ell)}$, and the step size is $\learnrate$.</code></p>
@@ -601,7 +611,7 @@
 <p>A passage about the notation itself, such as a table that lists each symbol and what it means, may write the letters directly.</p>
 <p>The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a fitted value or a Fourier transform, so <code>\hat</code> names no concept either. Write the macro that names the role instead, such as <code>\est{}</code> for an estimate, and keep <code>\hat</code> for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.</p>
 <div id="exm-semantic-decorator" class="theorem example">
-<p><span class="theorem-title"><strong>Example 14 (Naming a decorator for its meaning)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 15 (Naming a decorator for its meaning)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The estimate $\hat{\mean}$ is close to $\mean$.</code></p>
 <p>✅ Source: <code>The estimate $\est{\mean}$ is close to $\mean$.</code></p>
@@ -610,7 +620,7 @@
 </div>
 <p>Font commands follow the same rule. <code>\mathscr</code>, <code>\mathcal</code>, <code>\mathbb</code> and <code>\mathbf</code> say how a letter is drawn, not what it stands for, so a raw <code>\mathbb{R}</code> or <code>\mathscr{A}</code> leaves the reader of the source guessing at the concept and leaves the group editing every use to change the symbol. Write the macro that names the concept. Name the macro for the set, such as <code>\reals</code> for the real numbers, not for the font, as <code>\bbR</code> would be. A document that reaches for a font command directly has found a concept with no macro yet: add the macro to the shared file, then use it. As with Greek letters, a passage that discusses the notation itself may write the font command directly.</p>
 <div id="exm-semantic-font" class="theorem example">
-<p><span class="theorem-title"><strong>Example 15 (Naming a set for its meaning)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 16 (Naming a set for its meaning)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The function maps $\mathbb{R}$ to $\mathbb{R}$.</code></p>
 <p>✅ Source: <code>The function maps $\reals$ to $\reals$.</code></p>
@@ -628,7 +638,7 @@
 </ul>
 <p>For an observation used to fit the model, the residual is the negative of the prediction error. Write <code>\resid</code> for the observed minus the predicted outcome and <code>\prederr</code> for the predicted minus the observed outcome, never one for the other. For an estimate of a parameter, <code>\erf{\eparam}</code> is the estimation error, the estimate minus the true value; it prints <span class="math inline">\(\varepsilon\)</span>, the symbol the shared macros use for an error. These macros need a version of the shared macros that includes them, so update a repository’s copy before using them there. The outcome, predictor and residual macros also have random-variable and vector forms, such as <code>\Outvar</code>, <code>\voutvar</code> and <code>\vresid</code>.</p>
 <div id="exm-semantic-latin-letter" class="theorem example">
-<p><span class="theorem-title"><strong>Example 16 (Naming a variable for its role)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 17 (Naming a variable for its role)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The residual is $e_i = y_i - \hat{y}_i$.</code></p>
 <p>✅ Source: <code>The residual is $\resid_i = \outvar_i - \eoutvar_i$.</code></p>
@@ -637,7 +647,7 @@
 </div>
 <p>Once a quantity has a name and a macro, write the macro instead of the expression that defines it. Each equation then stays short, and a reader sees which quantity it is about.</p>
 <div id="exm-named-quantity" class="theorem example">
-<p><span class="theorem-title"><strong>Example 17 (Writing a named quantity by its name)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 18 (Writing a named quantity by its name)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.</code></p>
 <p>✅ Source: <code>The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \vprederr$.</code></p>
@@ -646,7 +656,7 @@
 </div>
 <p>Delimiters follow the same rule. Manual sizing commands, such as <code>\big</code> and <code>\left</code> with <code>\right</code>, say how a bracket is drawn, not what it groups. The shared macros <code>\paren{}</code>, <code>\sb{}</code>, <code>\cb{}</code>, <code>\set{}</code> and <code>\abs{}</code> size themselves to their contents, so write them instead of a hand-sized pair. Arrows such as <code>\leftarrow</code> are not delimiters.</p>
 <div id="exm-semantic-delimiter" class="theorem example">
-<p><span class="theorem-title"><strong>Example 18 (Letting the macro size the bracket)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 19 (Letting the macro size the bracket)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The mean is $\E{\left( X - \mu \right)^2}$.</code></p>
 <p>✅ Source: <code>The mean is $\E{\paren{X - \mu}^2}$.</code></p>
@@ -655,7 +665,7 @@
 </div>
 <p>Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader meets in the document’s notation table, with its meaning.</p>
 <div id="exm-describe-symbol-not-macro" class="theorem example">
-<p><span class="theorem-title"><strong>Example 19 (Describing the symbol, not the macro)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 20 (Describing the symbol, not the macro)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The macro \avgfitf prints the average fit, so write $\avgfitf{x}$ for it.</code></p>
 <p>✅ Source: <code>The average fit at $x$ is written $\avgfitf{x}$.</code></p>
@@ -671,7 +681,7 @@
 <p>Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of <a href="../chapters/teaching.html#build-every-unit-from-smaller-atomic-units">building every unit from smaller atomic units</a>.</p>
 <p>Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.</p>
 <div id="exm-concise-expression" class="theorem example">
-<p><span class="theorem-title"><strong>Example 20 (Naming a repeated chunk)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 21 (Naming a repeated chunk)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Source: <code>The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.</code></p>
 <p>✅ Source: <code>The loss is $\frac{1}{n} \sum_{i=1}^n \prederr_i^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \prederr_i \predvar_i$.</code></p>
@@ -689,7 +699,7 @@
 <p>This is one case of <a href="#/making-expressions-concise">making each expression as concise as possible</a>. It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or <a href="#/using-shared-macros">shared macro</a> that names its concept.</p>
 <p>Choose the symbol to match the thing it names. For the population mean <span class="math inline">\(\E{X}\)</span>, write <span class="math inline">\(\mu\)</span>. Add a subscript, such as <span class="math inline">\(\mu_X\)</span>, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let <span class="math inline">\(\mu = \E{X}\)</span>”, before the first line that uses the symbol.</p>
 <div id="exm-abstract-unused-subexpressions" class="theorem example">
-<p><span class="theorem-title"><strong>Example 21 (Abstracting the population mean)</strong></span> Suppose a derivation expands the variance of a random variable <span class="math inline">\(X\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 22 (Abstracting the population mean)</strong></span> Suppose a derivation expands the variance of a random variable <span class="math inline">\(X\)</span>.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -722,7 +732,7 @@
 
 <p>When two vectors multiply to give a number, write the product as a dot product, <span class="math inline">\(\tilde{x} \cdot \tilde{\beta}\)</span>. Do not write it as a transpose product, <span class="math inline">\(\tilde{x}' \tilde{\beta}\)</span>, or with inner-product brackets, <span class="math inline">\(\langle \tilde{x}, \tilde{\beta} \rangle\)</span>. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.</p>
 <div id="exm-dot-product" class="theorem example">
-<p><span class="theorem-title"><strong>Example 22 (Writing a dot product)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 23 (Writing a dot product)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x}' \tilde{\beta}\)</span>.</p>
 <p>✅ The model is <span class="math inline">\(f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\)</span>.</p>
@@ -746,7 +756,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 23 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 24 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
@@ -780,7 +790,7 @@
 </ul>
 <p>Write the lead-in word once, before the list, and make each bullet complete the lead-in sentence. Do not repeat the word in every bullet, and do not mix the two kinds of list in one list. When both are needed, write the notation list first, because the assumptions use the names it introduces.</p>
 <div id="exm-assumptions-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 24 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
+<p><span class="theorem-title"><strong>Example 25 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -803,7 +813,7 @@ f(x) - f(2)
 <p>In the ❌ version, the second line is false for <span class="math inline">\(x = 2\)</span>, and the reader learns this only from the note at its end. In the ✅ version, “let <span class="math inline">\(x \neq 2\)</span>” comes first, so the reader reads each line already knowing which values of <span class="math inline">\(x\)</span> it covers, and the justification says exactly where the condition is used.</p>
 </div>
 <div id="exm-assumptions-bullet-list" class="theorem example">
-<p><span class="theorem-title"><strong>Example 25 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 26 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Assume the sample size <span class="math inline">\(n\)</span> is larger than <span class="math inline">\(30\)</span>. Assume the observations are independent. Assume the population variance <span class="math inline">\(\sigma^2\)</span> is finite.</p>
 <p>✅ Assume:</p>
@@ -816,7 +826,7 @@ f(x) - f(2)
 <p>The ✅ version writes “Assume” once, and the bullets show that the three assumptions are parallel and separate.</p>
 </div>
 <div id="exm-notation-bullet-list" class="theorem example">
-<p><span class="theorem-title"><strong>Example 26 (Writing several names as one list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 27 (Writing several names as one list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Let <span class="math inline">\(n\)</span> be the sample size. Let <span class="math inline">\(\bar{y}\)</span> be the sample mean. Let <span class="math inline">\(s\)</span> be the sample standard deviation.</p>
 <p>✅ Let:</p>
