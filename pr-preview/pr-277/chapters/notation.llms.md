@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-18 21:46:40 (PDT)
+Last modified: 2026-10-18 21:55:00 (PDT)
 
 > **NOTE:**
 >
@@ -518,13 +518,13 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > **Example 24 (Writing several assumptions as one list)**  
 >
-> > ❌ Assume \\x \neq 2\\. Assume \\f(x) = (x - 2)^2\\. Assume \\x\\ is less than \\5\\.
+> > ❌ Assume the sample size \\n\\ is larger than \\30\\. Assume the observations are independent. Assume the population variance \\\sigma^2\\ is finite.
 > >
 > > ✅ Assume:
 > >
-> > - \\x \neq 2\\,
-> > - \\f(x) = (x - 2)^2\\, and
-> > - \\x\\ is less than \\5\\.
+> > - the sample size \\n\\ is larger than \\30\\,
+> > - the observations are independent, and
+> > - the population variance \\\sigma^2\\ is finite.
 >
 > The ✅ version writes “Assume” once, and the bullets show that the three assumptions are parallel and separate.
 
@@ -540,6 +540,6 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 > > - \\\bar{y}\\ be the sample mean, and
 > > - \\s\\ be the sample standard deviation.
 >
-> These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as \\n \> 30\\, a separate assumptions list after this one would state it.
+> These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size \\n\\ larger than \\30\\, a separate assumptions list after this one would state it.
 
 Back to top
