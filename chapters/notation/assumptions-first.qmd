@@ -18,11 +18,18 @@ then write the steps that need the constraint.
 When a step uses a fact proved earlier,
 cite it in the justification on that line.
 
-When there are several assumptions,
-write them as a bullet list with the verb ("Let", "Suppose" or "Assume") once, before the list.
-End the lead-in with a colon,
+An assumptions list and a notation list are different lists:
+
+- An assumptions list states conditions that the result depends on.
+  Write it as a bullet list with "Suppose" or "Assume" once, before the list.
+- A notation list names objects.
+  Write it as a bullet list with "Let" or "Write" once, before the list.
+
+End each lead-in with a colon,
 and make each bullet complete the lead-in sentence.
-Do not repeat the verb in every sentence.
+Do not repeat the verb in every sentence,
+and do not mix the two kinds of list in one list.
+When both are needed, write the notation list first, because the assumptions use the names it introduces.
 
 ::: {#exm-assumptions-first}
 
@@ -64,17 +71,38 @@ and the justification says exactly where the condition is used.
 
 ## Writing several assumptions as one list
 
-> ❌ Let $x$ be a real number.
-> Let $x \neq 2$.
-> Let $f(x) = (x - 2)^2$.
+> ❌ Suppose $x \neq 2$.
+> Suppose $f(x) = (x - 2)^2$.
+> Suppose $x$ is less than $5$.
+>
+> ✅ Suppose:
+>
+> - $x \neq 2$,
+> - $f(x) = (x - 2)^2$, and
+> - $x$ is less than $5$.
+
+The ✅ version writes "Suppose" once,
+and the bullets show that the three assumptions are parallel and separate.
+
+:::
+
+::: {#exm-notation-bullet-list}
+
+## Writing several names as one list
+
+> ❌ Let $n$ be the sample size.
+> Let $\bar{y}$ be the sample mean.
+> Let $s$ be the sample standard deviation.
 >
 > ✅ Let:
 >
-> - $x$ be a real number,
-> - $x \neq 2$, and
-> - $f(x) = (x - 2)^2$.
+> - $n$ be the sample size,
+> - $\bar{y}$ be the sample mean, and
+> - $s$ be the sample standard deviation.
 
-The ✅ version writes "Let" once,
-and the bullets show that the three assumptions are parallel and separate.
+These bullets name objects and assume nothing about them,
+so this is a notation list.
+If the result also needed a condition such as $n > 30$,
+a separate assumptions list after this one would state it.
 
 :::
