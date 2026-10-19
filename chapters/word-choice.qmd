@@ -185,6 +185,31 @@ without saying what.
 If you cannot name the object, quantity, step or idea,
 the sentence is not yet ready to write.
 
+## Write the full phrase
+
+Do not leave out words the phrase needs to be complete.
+A clipped phrase such as "the true mean function" asks the reader to supply the missing words,
+and the reader may supply different ones than you meant.
+Readers who are learning English, and readers who read literally, cannot always recover them.
+Name what the object is a function of, and what it is conditional on.
+
+The same rule applies to symbols.
+Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name,
+unless the sentence is about the function as a whole and the page has said so.
+A symbol in a sentence should look like the same symbol in the display equation it refers to.
+
+:::{#exm-full-phrase}
+
+## Writing the full phrase and the argument
+
+The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
+
+> ❌ The outcome variable is the true mean function plus noise.
+>
+> ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
+
+:::
+
 ## Choose each preposition on purpose
 
 A preposition states a relationship between two things.
