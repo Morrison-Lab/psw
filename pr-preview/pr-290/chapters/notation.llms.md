@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:42:27 (PDT)
+Last modified: 2026-10-19 00:51:40 (PDT)
 
 > **NOTE:**
 >
@@ -257,9 +257,9 @@ Name the kind of object in the words, too, not only in the symbol. Call a random
 >
 > **Example 10 (Naming a variable and its value in the words)**  
 >
-> > ❌ Fix an input \\\predvar\\, and let \\\Outvar = \truemeanfnf{\predvar} + \noise\\.
+> > ❌ Fix an input \\\predvar\\, and let \\\Outvar = \truemeanf{\predvar} + \noise\\.
 > >
-> > ✅ Choose an input value \\\predvar\\, and let the output variable \\\Outvar = \truemeanfnf{\predvar} + \noise\\.
+> > ✅ Choose an input value \\\predvar\\, and let the output variable \\\Outvar = \truemeanf{\predvar} + \noise\\.
 >
 > The ❌ version leaves the reader to work out that \\\predvar\\ is a number you choose and \\\Outvar\\ is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.
 
@@ -576,16 +576,16 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > > ❌ Assume:
 > >
-> > - the outcome variable is \\\Outvar = \truemeanfnf{\predvar} + \noise\\, and
+> > - the outcome variable is \\\Outvar = \truemeanf{\predvar} + \noise\\, and
 > > - the noise variable \\\noise\\ has population mean \\0\\.
 > >
 > > ✅ Let:
 > >
-> > - \\\truemeanfnf{\predvar}\\ be the population mean of the outcome variable \\\Outvar\\ given the input value \\\predvar\\, and
-> > - \\\noise = \Outvar - \truemeanfnf{\predvar}\\ be the noise variable.
+> > - \\\truemeanf{\predvar}\\ be the population mean of the outcome variable \\\Outvar\\ given the input value \\\predvar\\, and
+> > - \\\noise = \Outvar - \truemeanf{\predvar}\\ be the noise variable.
 > >
-> > Then \\\Outvar = \truemeanfnf{\predvar} + \noise\\, and the population mean of \\\noise\\ given \\\predvar\\ is \\0\\.
+> > Then \\\Outvar = \truemeanf{\predvar} + \noise\\, and the population mean of \\\noise\\ given \\\predvar\\ is \\0\\.
 >
-> In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining \\\noise = \Outvar - \truemeanfnf{\predvar}\\ makes both statements true for every distribution of \\\Outvar\\ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
+> In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining \\\noise = \Outvar - \truemeanf{\predvar}\\ makes both statements true for every distribution of \\\Outvar\\ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
 Back to top
