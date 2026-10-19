@@ -122,23 +122,23 @@ a separate assumptions list after this one would state it.
 
 > ❌ Assume:
 >
-> - the outcome variable is $\Outvar = \truemeanf{\predvar} + \noise$, and
+> - the outcome variable is $\Outvar = \truemeanfnf{\predvar} + \noise$, and
 > - the noise variable $\noise$ has population mean $0$.
 >
 > ✅ Let:
 >
-> - $\truemeanf{\predvar}$ be the population mean of the outcome variable $\Outvar$ given the input variable $\predvar$, and
-> - $\noise = \Outvar - \truemeanf{\predvar}$ be the noise variable.
+> - $\truemeanfnf{\predvar}$ be the population mean of the outcome variable $\Outvar$ given the input value $\predvar$, and
+> - $\noise = \Outvar - \truemeanfnf{\predvar}$ be the noise variable.
 >
-> Then $\Outvar = \truemeanf{\predvar} + \noise$,
+> Then $\Outvar = \truemeanfnf{\predvar} + \noise$,
 > and the population mean of $\noise$ given $\predvar$ is $0$.
 
 In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data.
 They are not.
-Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true
+Defining $\noise = \Outvar - \truemeanfnf{\predvar}$ makes both statements true
 for every distribution of $\Outvar$ that has a finite population mean.
 The ✅ version puts the definitions under "Let:" and derives the zero mean.
-A real assumption, such as the noise variable being independent of the input variable,
+A real assumption, such as the noise variable being independent of the input value,
 can fail, so it belongs under "Assume:".
 
 :::
