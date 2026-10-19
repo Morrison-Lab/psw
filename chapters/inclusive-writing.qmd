@@ -102,10 +102,11 @@ In an exercise, "Write the bias of an estimator" means
 A reader who takes "write" literally
 may copy the definition instead of deriving the result.
 Name the action instead:
-"derive" for a result the reader must work out,
-"express" for a rewrite in terms of other quantities,
-"state" for a result the reader recalls,
-and "give" for a value the reader reads off.
+
+- "derive" for a result the reader must work out;
+- "express" for a rewrite in terms of other quantities;
+- "state" for a result the reader recalls;
+- "give" for a value the reader reads off.
 
 Idioms are a kind of metaphor,
 so [Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language)
