@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 23:30:24 (PDT)
+Last modified: 2026-10-20 00:37:42 (PDT)
 
 > **NOTE:**
 >
@@ -48,6 +48,9 @@ The word “lean” in the first version is an idiom. The second version asks th
 | at the end of the day, we want low test error | our goal is low test error |
 | Write the bias of an estimator. | Derive an expression for the bias of an estimator. |
 | Write \\X\\ in terms of \\Y\\. | Express \\X\\ in terms of \\Y\\. |
+| Take a sample of size \\n\\ and call the sample mean \\\bar x\\. | Consider a sample of size \\n\\ and denote the sample mean by \\\bar x\\. |
+| the residual lies in \\(-1, 1)\\ | the residual is in \\(-1, 1)\\ |
+| the certain distribution sits at \\0\\, the uniform distribution at \\\log 4\\, and the skewed distribution lies between them | the certain distribution has entropy \\0\\, the uniform distribution has entropy \\\log 4\\, and the skewed distribution has entropy between those two values |
 
 Table 1: Idioms, clichés and slang, with literal alternatives
 
