@@ -91,6 +91,8 @@ the method falls flat on small samples | the method has high error on small samp
 at the end of the day, we want low test error | our goal is low test error
 Write the bias of an estimator. | Derive an expression for the bias of an estimator.
 Write $X$ in terms of $Y$. | Express $X$ in terms of $Y$.
+the residual lies in $(-1, 1)$ | the residual is in $(-1, 1)$
+the uniform distribution sits at $\log 4$, and the skewed distribution lies between them | the uniform distribution has entropy $\log 4$, and the skewed distribution has entropy between the other two
 
 Idioms, clichés and slang, with literal alternatives
 
