@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 17:05:32 (PDT)
+Last modified: 2026-10-19 17:13:10 (PDT)
 
 > **NOTE:**
 >
@@ -14,7 +14,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 ## 1 Terms and notation
 
-- [Define every technical term](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) explicitly, next to its first use, and follow the definition with examples and counterexamples.
+- [Define every technical term](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) explicitly, before its first use, and follow the definition with examples and counterexamples.
 
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
 
