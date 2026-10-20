@@ -317,11 +317,11 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-19 23:24:54 (PDT)</p>
+  <p class="date">Last modified: 2026-10-19 23:30:24 (PDT)</p>
 </section>
 <section class="slide level2">
 
-<p>Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:</p>
+<p>Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:</p>
 <div id="def-term" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 1 (Term)</strong></span> A <strong>term</strong> is a word or phrase with a specific, technical meaning within a particular field or context.</p>
 </div>
@@ -365,7 +365,7 @@
 <li><p><strong>Define a term directly, not as a modification of another term:</strong> State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.</p></li>
 <li><p><strong>Define in the most general form the document needs:</strong> State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.</p></li>
 <li><p><strong>Follow the definition with examples, from general to specific:</strong> Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see <a href="#/order-general-definition-then-examples">Order: general definition, then examples</a>).</p></li>
-<li><p><strong>Define terms at first use:</strong> Place the definition immediately before or after the term’s first appearance.</p></li>
+<li><p><strong>Define terms at first use:</strong> Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see <a href="../chapters/paper-organization.html#avoid-forward-references">Avoid forward references</a>). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first; do not remove the hyperlink to hide the forward reference.</p></li>
 <li><p><strong>Give every key term a formal definition in a <code>#def-</code> div:</strong> A term that the document relies on needs its own definition div, even if an exercise, a solution, an example or a sentence of prose has already explained it. An explanation inside an exercise or solution cannot be linked to as a definition, and a student who skips the exercise never sees it. Find the gaps by listing the terms the document uses, such as the bolded phrases and the terms in section titles, and checking that each one has a <code>#def-</code> div, or a link to the page that has one. This extends <em>Give each term its own definition block</em> below from terms defined in passing to terms explained only in exercises. For example, if “loss function” first appears in an exercise that asks students to compute one, add a <code>#def-loss-function</code> div before the exercise, and link the exercise’s mentions to it.</p></li>
 <li><p><strong>Pair each technical term with its mathematical symbol:</strong> Whenever a definition, an example or a list names a quantity in words, write its symbol beside the name. For example, write “the slope <span class="math inline">\(\beta_x\)</span>” and “the residual sum of squares <span class="math inline">\(\text{RSS}\)</span>”, not “the slope” and “the residual sum of squares” alone. The words tell the reader what the quantity means, and the symbol tells the reader which letters stand for it in the equations that follow.</p></li>
 <li><p><strong>Define and link every technical term at its first use in each div:</strong> Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. Never define a term inline inside another div, because an inline definition cannot be linked to from anywhere else. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term. A passage is the prose outside divs between one heading and the next, and each div counts separately from the passage around it and from every other div. For example, if a div defines noise as the outcome minus the “true function”, link the term as <code>[true function](#def-true-function)</code>, and first add a definition div with that ID if the document lacks one. A counterexample: the definition of noise links “mean”. The example block after it also uses “mean”, but without a link, wrongly assuming the earlier link carries over. The example block should link “mean” at its own first use.</p></li>
@@ -455,7 +455,7 @@
 </section>
 <section class="slide level2">
 
-<p>When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:</p>
+<p>When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite terms defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:</p>
 <div id="def-rss" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 5 (Residual sum of squares)</strong></span> The <strong>residual sum of squares</strong> of a model fitted to data is the sum of its squared residuals:</p>
 <p><span class="math display">\[\text{RSS} = \sum_{i=1}^n r_i^2.\]</span></p>
@@ -474,8 +474,21 @@
 </div>
 <p>The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.</p>
 </section>
-<section id="why-examples-matter" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Why examples matter</h2>
+<section id="give-a-defined-quantity-its-expression-and-its-prose-reading" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Give a defined quantity its expression and its prose reading</h2>
+</section>
+<section class="slide level2">
+
+<p>When a term names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see <a href="../chapters/mathematical-writing.html#make-the-prose-say-what-the-formula-says">Make the prose say what the formula says</a>). A term with no mathematical form, such as active voice, keeps its prose definition alone.</p>
+<div id="def-variance-expression-and-prose" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 6 (Variance, with its expression and its prose reading)</strong></span> The <strong>variance</strong> of a random variable <span class="math inline">\(X\)</span> is <span class="math display">\[\operatorname{Var}\mathopen{}\left(X\right)\mathclose{} = \operatorname{E}\mathopen{}\left[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left[X\right]\mathclose{}\right)\mathclose{}^2\right]\mathclose{}.\]</span> In words, it is the population mean of the squared deviation of <span class="math inline">\(X\)</span> from its population mean.</p>
+</div>
+<div id="exm-not-expression-and-prose" class="theorem example">
+<p><span class="theorem-title"><strong>Example 13 (A definition that gives only one of the two)</strong></span> “The variance is how spread out <span class="math inline">\(X\)</span> is” gives no expression, so a reader cannot compute it. “The variance is <span class="math inline">\(\operatorname{E}\mathopen{}\left[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left[X\right]\mathclose{}\right)\mathclose{}^2\right]\mathclose{}\)</span>” gives no reading, so a reader cannot check their understanding. <a href="#/def-variance-expression-and-prose" class="quarto-xref">Definition&nbsp;6</a> gives both.</p>
+</div>
+</section>
+<section id="why-examples-matter" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Why examples matter</h2>
 </section>
 <section class="slide level2">
 
@@ -488,8 +501,8 @@
 <li><p><strong>Boundaries:</strong> Counterexamples show where a definition stops applying, which is where readers most often misapply it.</p></li>
 </ul>
 </section>
-<section id="common-pitfalls-to-avoid" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Common pitfalls to avoid</h2>
+<section id="common-pitfalls-to-avoid" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Common pitfalls to avoid</h2>
 </section>
 <section class="slide level2">
 
@@ -505,8 +518,8 @@
 <li><p><strong>Examples without context:</strong> Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.</p></li>
 </ul>
 </section>
-<section id="mathematical-statements-require-examples" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Mathematical statements require examples</h2>
+<section id="mathematical-statements-require-examples" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Mathematical statements require examples</h2>
 </section>
 <section class="slide level2">
 
@@ -545,7 +558,7 @@
 <p><span class="math display">\[a^2 + b^2 = c^2.\]</span></p>
 </div>
 <div id="exm-pythagoras" class="theorem example">
-<p><span class="theorem-title"><strong>Example 13 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5:</p>
+<p><span class="theorem-title"><strong>Example 14 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5:</p>
 <p><span class="math display">\[
 \begin{aligned}
   3^2 + 4^2 &amp;= 9 + 16 \\
@@ -555,15 +568,15 @@
 \]</span></p>
 </div>
 <div id="def-postulate" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 6 (Postulate (axiom))</strong></span> A <strong>postulate</strong> (or <strong>axiom</strong>) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
+<p><span class="theorem-title"><strong>Definition 7 (Postulate (axiom))</strong></span> A <strong>postulate</strong> (or <strong>axiom</strong>) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
 </div>
 <div id="exm-parallel-postulate" class="theorem example">
-<p><span class="theorem-title"><strong>Example 14 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
+<p><span class="theorem-title"><strong>Example 15 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
 <p>If we have line <span class="math inline">\(L\)</span> and point <span class="math inline">\(P\)</span> not on <span class="math inline">\(L\)</span>, only one line through <span class="math inline">\(P\)</span> will never intersect <span class="math inline">\(L\)</span>.</p>
 </div>
 </section>
-<section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
+<section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
 </section>
 <section class="slide level2">
 
@@ -579,7 +592,7 @@
 <li><strong>Start from the side that simplifies.</strong> When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Another route is to solve a definition for the term you want: add <span class="math inline">\(\mu_i\)</span> to both sides of <span class="math inline">\(\varepsilon_i = Y_i - \mu_i\)</span>, then simplify the right-hand side to <span class="math inline">\(Y_i\)</span>, one operation per line. Adding a term to both sides of an equation is an ordinary step, not the pattern to avoid.</li>
 </ul>
 <div id="def-sample-mean" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 7 (Sample mean)</strong></span> The <strong>sample mean</strong> of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> is their average:</p>
+<p><span class="theorem-title"><strong>Definition 8 (Sample mean)</strong></span> The <strong>sample mean</strong> of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> is their average:</p>
 <p><span class="math display">\[\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.\]</span></p>
 </div>
 <div id="exr-sum-deviations" class="theorem exercise">
@@ -587,7 +600,7 @@
 <p><span class="math display">\[
 \sum_{i=1}^n (x_i - \bar{x}) = 0,
 \]</span></p>
-<p>where <span class="math inline">\(\bar{x}\)</span> is the sample mean (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;7</a>).</p>
+<p>where <span class="math inline">\(\bar{x}\)</span> is the sample mean (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;8</a>).</p>
 </div>
 <div id="sol-sum-deviations" class="proof solution">
 <p><span class="proof-title"><em>Solution 1</em>. </span><span class="math display">\[
@@ -605,14 +618,14 @@
 \]</span></p>
 </div>
 <div id="thm-sum-deviations" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 2 (Deviations from the mean sum to zero)</strong></span> The deviations of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> from their sample mean <span class="math inline">\(\bar{x}\)</span> (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;7</a>) sum to zero:</p>
+<p><span class="theorem-title"><strong>Theorem 2 (Deviations from the mean sum to zero)</strong></span> The deviations of numbers <span class="math inline">\(x_1, \ldots, x_n\)</span> from their sample mean <span class="math inline">\(\bar{x}\)</span> (<a href="#/def-sample-mean" class="quarto-xref">Definition&nbsp;8</a>) sum to zero:</p>
 <p><span class="math display">\[\sum_{i=1}^n (x_i - \bar{x}) = 0.\]</span></p>
 </div>
 <div class="proof">
 <p><span class="proof-title"><em>Proof</em>. </span><a href="#/exr-sum-deviations" class="quarto-xref">Exercise&nbsp;1</a> derives this result.</p>
 </div>
 <div id="exm-derivation-direction" class="theorem example">
-<p><span class="theorem-title"><strong>Example 15 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 16 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -646,7 +659,7 @@ Y_i
 <p>The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from <span class="math inline">\(\mu_i + \varepsilon_i\)</span>, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it gives a line to each step that a single “cancel” justification would hide (see <a href="../chapters/notation.html#one-operation-per-step">One operation per step</a>).</p>
 </div>
 <div id="exm-one-result-per-theorem" class="theorem example">
-<p><span class="theorem-title"><strong>Example 16 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 17 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Theorem.</strong> Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: <span class="math display">\[Y_i = \mu_i + \varepsilon_i,
 \qquad

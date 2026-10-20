@@ -4,9 +4,9 @@ Code
 
 Published
 
-Last modified: 2026-10-19 23:24:54 (PDT)
+Last modified: 2026-10-19 23:30:24 (PDT)
 
-Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
+Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
 > **NOTE:**
 >
@@ -68,7 +68,7 @@ Follow these principles when introducing new terms:
 
 - **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
 
-- **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
+- **Define terms at first use:** Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first; do not remove the hyperlink to hide the forward reference.
 
 - **Give every key term a formal definition in a `#def-` div:** A term that the document relies on needs its own definition div, even if an exercise, a solution, an example or a sentence of prose has already explained it. An explanation inside an exercise or solution cannot be linked to as a definition, and a student who skips the exercise never sees it. Find the gaps by listing the terms the document uses, such as the bolded phrases and the terms in section titles, and checking that each one has a `#def-` div, or a link to the page that has one. This extends *Give each term its own definition block* below from terms defined in passing to terms explained only in exercises. For example, if “loss function” first appears in an exercise that asks students to compute one, add a `#def-loss-function` div before the exercise, and link the exercise’s mentions to it.
 
@@ -151,7 +151,7 @@ Here are examples of well-defined terms:
 
 ## 3 Order: general definition, then examples
 
-When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:
+When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite terms defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:
 
 > **NOTE:**
 >
@@ -175,7 +175,19 @@ When a concept has special cases, write the general definition first and compact
 
 The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.
 
-## 4 Why examples matter
+## 4 Give a defined quantity its expression and its prose reading
+
+When a term names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see [Make the prose say what the formula says](../chapters/mathematical-writing.llms.md#make-the-prose-say-what-the-formula-says)). A term with no mathematical form, such as active voice, keeps its prose definition alone.
+
+> **NOTE:**
+>
+> **Definition 6 (Variance, with its expression and its prose reading)** The **variance** of a random variable \\X\\ is \\\operatorname{Var}\mathopen{}\left(X\right)\mathclose{} = \operatorname{E}\mathopen{}\left\[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left\[X\right\]\mathclose{}\right)\mathclose{}^2\right\]\mathclose{}.\\ In words, it is the population mean of the squared deviation of \\X\\ from its population mean.
+
+> **NOTE:**
+>
+> **Example 13 (A definition that gives only one of the two)** “The variance is how spread out \\X\\ is” gives no expression, so a reader cannot compute it. “The variance is \\\operatorname{E}\mathopen{}\left\[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left\[X\right\]\mathclose{}\right)\mathclose{}^2\right\]\mathclose{}\\” gives no reading, so a reader cannot check their understanding. [Definition 6](#def-variance-expression-and-prose) gives both.
+
+## 5 Why examples matter
 
 Examples serve several crucial purposes:
 
@@ -189,7 +201,7 @@ Examples serve several crucial purposes:
 
 - **Boundaries:** Counterexamples show where a definition stops applying, which is where readers most often misapply it.
 
-## 5 Common pitfalls to avoid
+## 6 Common pitfalls to avoid
 
 - **Circular definitions:** Do not define a term using the term itself.
 
@@ -209,11 +221,11 @@ Examples serve several crucial purposes:
 
 - **Examples without context:** Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.
 
-## 6 Mathematical statements require examples
+## 7 Mathematical statements require examples
 
 Mathematical theorems, lemmas, corollaries, and postulates should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
 
-### 6.1 Using theorem environments in Quarto
+### 7.1 Using theorem environments in Quarto
 
 When writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.
 
@@ -249,7 +261,7 @@ $$a^2 + b^2 = c^2.$$
 
 This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using `@thm-pythagorean`.
 
-### 6.2 Example: Pythagorean theorem
+### 7.2 Example: Pythagorean theorem
 
 > **NOTE:**
 >
@@ -259,21 +271,21 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 13 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
+> **Example 14 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
 >
 > \\ \begin{aligned} 3^2 + 4^2 &= 9 + 16 \\ &= 25 \\ &= 5^2. \end{aligned} \\
 
 > **NOTE:**
 >
-> **Definition 6 (Postulate (axiom))** A **postulate** (or **axiom**) is a statement accepted as true without proof, serving as a starting point for further reasoning.
+> **Definition 7 (Postulate (axiom))** A **postulate** (or **axiom**) is a statement accepted as true without proof, serving as a starting point for further reasoning.
 
 > **NOTE:**
 >
-> **Example 14 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
+> **Example 15 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
 >
 > If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
 
-## 7 Presenting a derivation: exercise, solution, theorem, proof
+## 8 Presenting a derivation: exercise, solution, theorem, proof
 
 In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader meets the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
 
@@ -289,7 +301,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Definition 7 (Sample mean)** The **sample mean** of numbers \\x_1, \ldots, x_n\\ is their average:
+> **Definition 8 (Sample mean)** The **sample mean** of numbers \\x_1, \ldots, x_n\\ is their average:
 >
 > \\\bar{x} := \frac{1}{n} \sum\_{i=1}^n x_i.\\
 
@@ -299,7 +311,7 @@ Follow these principles:
 >
 > \\ \sum\_{i=1}^n (x_i - \bar{x}) = 0, \\
 >
-> where \\\bar{x}\\ is the sample mean ([Definition 7](#def-sample-mean)).
+> where \\\bar{x}\\ is the sample mean ([Definition 8](#def-sample-mean)).
 
 > **NOTE:**
 >
@@ -307,7 +319,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 7](#def-sample-mean)) sum to zero:
+> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 8](#def-sample-mean)) sum to zero:
 >
 > \\\sum\_{i=1}^n (x_i - \bar{x}) = 0.\\
 
@@ -317,7 +329,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 15 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+> **Example 16 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
 >
 > > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
 > >
@@ -327,7 +339,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 16 (Splitting a theorem that states two results)**  
+> **Example 17 (Splitting a theorem that states two results)**  
 >
 > > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
 > >
