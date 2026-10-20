@@ -22,7 +22,7 @@ Follow its link for the reasons and the exceptions.
 ## Terms and notation
 
 - [Define every technical term](defining-terms.qmd#guidelines-for-defining-terms)
-  explicitly, next to its first use,
+  explicitly, before its first use,
   and follow the definition with examples and counterexamples.
 - [Give each mathematical statement an example](defining-terms.qmd#mathematical-statements-require-examples)
   that applies it.
