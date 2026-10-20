@@ -201,12 +201,18 @@ Common forms are:
 - "as discussed below"
 - "see the next section"
 - "we will return to this later"
+- a technical term or result used before the definition or theorem that introduces it
 
 The reader must hold an unresolved pointer
 while reading the sentence that depends on it.
 
-Fix a forward reference by moving the content ahead of the pointer.
-Then change "below" to "above", or delete the pointer.
+Fix a forward reference by moving the content ahead of the pointer,
+so that each definition or result precedes the sentences that use it.
+Then change "below" to "above", or delete the directional word.
+Do not fix a forward reference by removing the hyperlink to the later definition or theorem
+while leaving the term in the sentence:
+the sentence still uses a concept the reader has not met,
+and the reader also loses the link to its definition.
 
 If moving the content would break the order of the argument,
 keep the pointer, and make it a working link.

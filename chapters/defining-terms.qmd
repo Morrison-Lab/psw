@@ -18,7 +18,7 @@ format:
 
 Clear definitions are essential to effective scientific writing.
 Every specialized term should have an explicit,
-concise definition immediately before or after its first use.
+concise definition before its first use.
 Readers should not need to search for the meaning of a term
 or infer it from context alone. For example:
 
@@ -207,7 +207,12 @@ Follow these principles when introducing new terms:
   (see [Order: general definition, then examples](#order-general-definition-then-examples)).
   
 - **Define terms at first use:**
-  Place the definition immediately before or after the term's first appearance.
+  Place the definition of a term before the first definition, theorem or passage that relies on it,
+  so that every link to a definition points backward rather than forward
+  (see [Avoid forward references](paper-organization.qmd#avoid-forward-references)).
+  When a definition or theorem uses a term whose definition comes later in the document,
+  reorder the content so the definition comes first;
+  do not remove the hyperlink to hide the forward reference.
 
 - **Give every key term a formal definition in a `#def-` div:**
   A term that the document relies on needs its own definition div,
@@ -584,6 +589,16 @@ write the general definition first and compactly,
 then one example block per special case,
 ordered from the most general to the most specific.
 Put any commentary in a remark block after them.
+When the special cases have their own definitions,
+define the general concept first from prerequisite terms defined before it,
+and then define the special cases after it.
+Do not define the general concept by listing the special-case definitions that follow it,
+or move the general definition after its special cases:
+define the prerequisite terms first
+(for example, define lower and upper bounds first,
+then define an interval as a subset of the real numbers between two bounds,
+possibly including one or both bounds,
+and then define closed, open and half-open intervals).
 For example, a statistics text that defines the residual sum of squares
 would give these blocks, in this order:
 
