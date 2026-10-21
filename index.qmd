@@ -30,4 +30,4 @@ The site's CI tooling was copied from the
 [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/),
 a fork of the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/index.html).
-It is built from the [qwt](https://github.com/Morrison-Lab/qwt) website template.
+The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) website template.
