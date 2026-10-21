@@ -4,9 +4,9 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:51:29 (PDT)
+Last modified: 2026-10-21 12:10:11 (PDT)
 
-Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition immediately before or after its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
+Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
 > **NOTE:**
 >
@@ -68,7 +68,7 @@ Follow these principles when introducing new terms:
 
 - **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
 
-- **Define terms at first use:** Place the definition immediately before or after the term’s first appearance.
+- **Define terms at first use:** Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first; do not remove the hyperlink to hide the forward reference.
 
 - **Give every key term a formal definition in a `#def-` div:** A term that the document relies on needs its own definition div, even if an exercise, a solution, an example or a sentence of prose has already explained it. An explanation inside an exercise or solution cannot be linked to as a definition, and a student who skips the exercise never sees it. Find the gaps by listing the terms the document uses, such as the bolded phrases and the terms in section titles, and checking that each one has a `#def-` div, or a link to the page that has one. This extends *Give each term its own definition block* below from terms defined in passing to terms explained only in exercises. For example, if “loss function” first appears in an exercise that asks students to compute one, add a `#def-loss-function` div before the exercise, and link the exercise’s mentions to it.
 
@@ -76,7 +76,7 @@ Follow these principles when introducing new terms:
 
 - **Define and link every technical term at its first use in each div:** Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. Never define a term inline inside another div, because an inline definition cannot be linked to from anywhere else. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term. A passage is the prose outside divs between one heading and the next, and each div counts separately from the passage around it and from every other div. For example, if a div defines noise as the outcome minus the “true function”, link the term as `[true function](#def-true-function)`, and first add a definition div with that ID if the document lacks one. A counterexample: the definition of noise links “mean”. The example block after it also uses “mean”, but without a link, wrongly assuming the earlier link carries over. The example block should link “mean” at its own first use.
 
-- **Do not presuppose what the reader has not met:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it.
+- **Do not presuppose what the reader has not met:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it. Skip the link when the referent is introduced in the same div, or in the same prose passage, as the phrase. Inside a div, the antecedent has to be in that div: an earlier div does not count, because readers jump into the middle of a page. For example, an exercise that says “Explain the labels” with no labels named in it has no antecedent, even if an earlier exercise names some. Name the labels in the exercise, or link them to where they are introduced.
 
 - **Provide examples and counterexamples:** Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.
 
@@ -110,6 +110,8 @@ Follow these principles when introducing new terms:
 - **Say which error:** A bare “error” does not say what is measured, on which data, or whether it is a value computed from one sample or an expectation. Every use of “error” (and of “loss”) names three things: the quantity measured, such as the squared prediction error; the data that it is computed on, such as the training set, the validation set, the test set or the population; and whether it is a sample value or an expectation. For example, write “the prediction error on the validation set”, or “the expected squared prediction error”, and never “the error” or “the smallest error”. A term that already carries all three, such as the generalization error, can stand alone after its definition.
 
 - **Make the fitted model the subject, not the fitting procedure:** A prediction, an error, a bias and a variance are all properties of fitted models, so a sentence about them has a fitted model as its subject, and a choice among candidates is a choice among fitted models. Write “the fitted model predicts”, “the prediction of the fitted model at \\x\\”, and “choose among fitted models”, and never “the procedure predicts” or “choose among procedures”. Name the fitting procedure only when the sentence is about how a fitted model is built: the inputs that the procedure needs, what it costs, or an expectation over the training sets to which it is applied. In math, write \\{\hat y\_{\mathcal{D}\_{\text{train}}}}\\ for the fitted model, the model that the procedure produces from the training set, and \\g\\ only for the procedure itself. Where the training set is not salient, write the fitted model as \\\hat y\\ instead, the symbol that the predicted-value bullet below builds on. For example, write “the bias of the prediction \\\hat{y}\\”, not “the bias of \\g\\”.
+
+- **Say “fitted model”, not “prediction rule”:** A fitted model that is used to predict outcomes is still a fitted model, and a second name for one object makes readers wonder whether there are two objects, so call it a fitted model every time. Write “the fitted model predicts”, and never “the prediction rule predicts”. When a set of notes defines the fitted model, “prediction rule” belongs only in that definition, as an alias in bold and in the div title, so that a reader who meets the alias elsewhere can find its meaning. If the notes once defined “prediction rule” under its own anchor, keep the old anchor as a span on the alias, so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:** A predicted value is the fitted model applied to a covariate value, so write it with a predicted-value macro and not as the procedure applied to a covariate value and a training set. The macro `\predval` takes no argument and prints the predicted value of the outcome at the covariate value that the sentence is about. The macro `\predvalf{x}` takes a covariate value \\x\\ and prints the prediction \\\hat y\mathopen{}\left(x\right)\mathclose{}\\, a value of the outcome’s type. The macro `\candpredvalf{l}{x}` takes a candidate index \\l\\ and a covariate value \\x\\, and prints the prediction of candidate \\l\\’s fitted model at \\x\\. Suppress the covariate value where it is not salient: write `\predval` when the sentence is not about which covariate value the prediction is at, and `\predvalf` or `\candpredvalf` only when the covariate value matters, such as when comparing predictions at two covariate values or averaging a prediction over them. For example, write \\\hat{y}\\ in “the bias of the prediction \\\hat{y}\\” when one covariate value is fixed throughout, write \\{\hat y\mathopen{}\left(x\right)\mathclose{}}\\ and \\{{\hat y\_{l}}\mathopen{}\left(x\right)\mathclose{}}\\ when the covariate value is salient, and never \\g\mathopen{}\left(x; \mathcal{D}\_{\text{train}}\right)\mathclose{}\\ or \\g\_{l}\mathopen{}\left(x; \mathcal{D}\_{\text{train}}\right)\mathclose{}\\.
 
@@ -149,7 +151,7 @@ Here are examples of well-defined terms:
 
 ## 3 Order: general definition, then examples
 
-When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:
+When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite terms defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:
 
 > **NOTE:**
 >
@@ -173,7 +175,19 @@ When a concept has special cases, write the general definition first and compact
 
 The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.
 
-## 4 Why examples matter
+## 4 Give a defined quantity its expression and its prose reading
+
+When a term names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see [Make the prose say what the formula says](../chapters/mathematical-writing.llms.md#make-the-prose-say-what-the-formula-says)). A term with no mathematical form, such as active voice, keeps its prose definition alone.
+
+> **NOTE:**
+>
+> **Definition 6 (Variance, with its expression and its prose reading)** The **variance** of a random variable \\X\\ is \\\operatorname{Var}\mathopen{}\left(X\right)\mathclose{} = \operatorname{E}\mathopen{}\left\[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left\[X\right\]\mathclose{}\right)\mathclose{}^2\right\]\mathclose{}.\\ In words, it is the population mean of the squared deviation of \\X\\ from its population mean.
+
+> **NOTE:**
+>
+> **Example 13 (A definition that gives only one of the two)** “The variance is how spread out \\X\\ is” gives no expression, so a reader cannot compute it. “The variance is \\\operatorname{E}\mathopen{}\left\[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left\[X\right\]\mathclose{}\right)\mathclose{}^2\right\]\mathclose{}\\” gives no reading, so a reader cannot check their understanding. [Definition 6](#def-variance-expression-and-prose) gives both.
+
+## 5 Why examples matter
 
 Examples serve several crucial purposes:
 
@@ -187,7 +201,7 @@ Examples serve several crucial purposes:
 
 - **Boundaries:** Counterexamples show where a definition stops applying, which is where readers most often misapply it.
 
-## 5 Common pitfalls to avoid
+## 6 Common pitfalls to avoid
 
 - **Circular definitions:** Do not define a term using the term itself.
 
@@ -207,11 +221,11 @@ Examples serve several crucial purposes:
 
 - **Examples without context:** Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.
 
-## 6 Mathematical statements require examples
+## 7 Mathematical statements require examples
 
 Mathematical theorems, lemmas, corollaries, and postulates should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
 
-### 6.1 Using theorem environments in Quarto
+### 7.1 Using theorem environments in Quarto
 
 When writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.
 
@@ -247,7 +261,7 @@ $$a^2 + b^2 = c^2.$$
 
 This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using `@thm-pythagorean`.
 
-### 6.2 Example: Pythagorean theorem
+### 7.2 Example: Pythagorean theorem
 
 > **NOTE:**
 >
@@ -257,21 +271,21 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 13 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
+> **Example 14 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
 >
 > \\ \begin{aligned} 3^2 + 4^2 &= 9 + 16 \\ &= 25 \\ &= 5^2. \end{aligned} \\
 
 > **NOTE:**
 >
-> **Definition 6 (Postulate (axiom))** A **postulate** (or **axiom**) is a statement accepted as true without proof, serving as a starting point for further reasoning.
+> **Definition 7 (Postulate (axiom))** A **postulate** (or **axiom**) is a statement accepted as true without proof, serving as a starting point for further reasoning.
 
 > **NOTE:**
 >
-> **Example 14 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
+> **Example 15 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
 >
 > If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
 
-## 7 Presenting a derivation: exercise, solution, theorem, proof
+## 8 Presenting a derivation: exercise, solution, theorem, proof
 
 In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader meets the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
 
@@ -287,7 +301,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Definition 7 (Sample mean)** The **sample mean** of numbers \\x_1, \ldots, x_n\\ is their average:
+> **Definition 8 (Sample mean)** The **sample mean** of numbers \\x_1, \ldots, x_n\\ is their average:
 >
 > \\\bar{x} := \frac{1}{n} \sum\_{i=1}^n x_i.\\
 
@@ -297,7 +311,7 @@ Follow these principles:
 >
 > \\ \sum\_{i=1}^n (x_i - \bar{x}) = 0, \\
 >
-> where \\\bar{x}\\ is the sample mean ([Definition 7](#def-sample-mean)).
+> where \\\bar{x}\\ is the sample mean ([Definition 8](#def-sample-mean)).
 
 > **NOTE:**
 >
@@ -305,7 +319,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 7](#def-sample-mean)) sum to zero:
+> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 8](#def-sample-mean)) sum to zero:
 >
 > \\\sum\_{i=1}^n (x_i - \bar{x}) = 0.\\
 
@@ -315,7 +329,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 15 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+> **Example 16 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
 >
 > > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
 > >
@@ -325,7 +339,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 16 (Splitting a theorem that states two results)**  
+> **Example 17 (Splitting a theorem that states two results)**  
 >
 > > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
 > >

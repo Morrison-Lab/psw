@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:51:29 (PDT)
+Last modified: 2026-10-21 12:10:11 (PDT)
 
 > **NOTE:**
 >
@@ -19,7 +19,7 @@ Active learning, in which students work through tasks themselves during class, i
 - Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.
 - Pose every calculation, derivation, or proof as an exercise, and put the worked steps in the solution.
 - Ask the question that a definition or theorem answers before stating it. The solution answers informally, in plain words, and the formal `#def-` or `#thm-` div follows the solution div.
-- Give each bottom-level prompt its own `#exr-` div and its own `#sol-` div, in order, rather than one exercise with parts (a) through (e). A numbered list of questions inside one exercise is the same thing as parts, so split it too. Put the shared setup in the first exercise, and begin each later exercise by citing it, as in “Make the assumptions of the first exercise.” Later exercises can use earlier results through cross-references.
+- Give each bottom-level prompt its own `#exr-` div and its own `#sol-` div, in order, rather than one exercise with parts (a) through (e). Any exercise with several parts is split, however the parts are marked: letters, numbers or bullets. Put the shared setup in the first exercise, and begin each later exercise by citing it, as in “Make the assumptions of the first exercise.” Later exercises can use earlier results through cross-references.
 - On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
 - Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.

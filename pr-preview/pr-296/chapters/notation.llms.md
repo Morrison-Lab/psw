@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:51:29 (PDT)
+Last modified: 2026-10-21 12:10:11 (PDT)
 
 > **NOTE:**
 >
@@ -257,9 +257,9 @@ Name the kind of object in the words, too, not only in the symbol. Call a random
 >
 > **Example 10 (Naming a variable and its value in the words)**  
 >
-> > ❌ Fix an input \\\predvar\\, and let \\\Outvar = \truemeanfnf{\predvar} + \noise\\.
+> > ❌ Fix an input \\\predvar\\, and let \\\Outvar = \truemeanf{\predvar} + \noise\\.
 > >
-> > ✅ Choose an input value \\\predvar\\, and let the output variable \\\Outvar = \truemeanfnf{\predvar} + \noise\\.
+> > ✅ Choose an input value \\\predvar\\, and let the output variable \\\Outvar = \truemeanf{\predvar} + \noise\\.
 >
 > The ❌ version leaves the reader to work out that \\\predvar\\ is a number you choose and \\\Outvar\\ is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.
 
@@ -528,6 +528,8 @@ An assumptions list and a notation list are different lists:
 - An assumptions list states conditions that the result depends on. Write it as a bullet list under “Assume:”.
 - A notation list names objects. Write it as a bullet list under “Let:”.
 
+A condition that can fail is an assumption. A parametrization is not: it writes a quantity in terms of named parameters or pieces, so it holds by definition and goes under “Let:”. Do not label a parametrization as an assumption, because that tells the reader a condition is being imposed when none is.
+
 Write the lead-in word once, before the list, and make each bullet complete the lead-in sentence. Do not repeat the word in every bullet, and do not mix the two kinds of list in one list. When both are needed, write the notation list first, because the assumptions use the names it introduces.
 
 > **NOTE:**
@@ -567,5 +569,23 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 > > - \\s\\ be the sample standard deviation.
 >
 > These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size \\n\\ larger than \\30\\, a separate assumptions list after this one would state it.
+
+> **NOTE:**
+>
+> **Example 28 (Defining the noise is a parametrization, not an assumption)**  
+>
+> > ❌ Assume:
+> >
+> > - the outcome variable is \\\Outvar = \truemeanf{\predvar} + \noise\\, and
+> > - the noise variable \\\noise\\ has population mean \\0\\.
+> >
+> > ✅ Let:
+> >
+> > - \\\truemeanf{\predvar}\\ be the population mean of the outcome variable \\\Outvar\\ given the input value \\\predvar\\, and
+> > - \\\noise = \Outvar - \truemeanf{\predvar}\\ be the noise variable.
+> >
+> > Then \\\Outvar = \truemeanf{\predvar} + \noise\\, and the population mean of \\\noise\\ given \\\predvar\\ is \\0\\.
+>
+> In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining \\\noise = \Outvar - \truemeanf{\predvar}\\ makes both statements true for every distribution of \\\Outvar\\ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
 Back to top

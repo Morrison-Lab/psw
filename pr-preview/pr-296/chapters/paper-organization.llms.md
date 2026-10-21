@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:51:29 (PDT)
+Last modified: 2026-10-21 12:10:11 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -181,10 +181,11 @@ A forward reference points the reader to content they have not reached yet. Comm
 - “as discussed below”
 - “see the next section”
 - “we will return to this later”
+- a technical term or result used before the definition or theorem that introduces it
 
 The reader must hold an unresolved pointer while reading the sentence that depends on it.
 
-Fix a forward reference by moving the content ahead of the pointer. Then change “below” to “above”, or delete the pointer.
+Fix a forward reference by moving the content ahead of the pointer, so that each definition or result precedes the sentences that use it. Then change “below” to “above”, or delete the directional word. Do not fix a forward reference by removing the hyperlink to the later definition or theorem while leaving the term in the sentence: the sentence still uses a concept the reader has not met, and the reader also loses the link to its definition.
 
 If moving the content would break the order of the argument, keep the pointer, and make it a working link. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-19 00:51:29 (PDT)
+Last modified: 2026-10-21 12:10:11 (PDT)
 
 > **NOTE:**
 >
@@ -46,8 +46,26 @@ The word “lean” in the first version is an idiom. The second version asks th
 | a ton of data | a large data set |
 | the method falls flat on small samples | the method has high error on small samples |
 | at the end of the day, we want low test error | our goal is low test error |
+| Write the bias of an estimator. | Derive an expression for the bias of an estimator. |
+| Write \\X\\ in terms of \\Y\\. | Express \\X\\ in terms of \\Y\\. |
+| Take a sample of size \\n\\ and call the sample mean \\\bar x\\. | Consider a sample of size \\n\\ and denote the sample mean by \\\bar x\\. |
+| the residual lies in \\(-1, 1)\\ | the residual is in \\(-1, 1)\\ |
+| the certain distribution sits at \\0\\, the uniform distribution at \\\log 4\\, and the skewed distribution lies between them | the certain distribution has entropy \\0\\, the uniform distribution has entropy \\\log 4\\, and the skewed distribution has entropy between those two values |
+| the two discriminant scores agree at \\x\\ | the two discriminant scores are equal at \\x\\ |
+| the derivative vanishes at \\\hat\theta\\ | the derivative equals \\0\\ at \\\hat\theta\\ |
+| setting \\K = 2\\ recovers the binary log-odds | setting \\K = 2\\ gives the binary log-odds |
+| the probability \\p\\ lives in \\(0, 1)\\ | the probability \\p\\ is in \\(0, 1)\\ |
+| the linear model knows nothing about the range \\\[0, 1\]\\ | the linear model does not constrain predictions to \\\[0, 1\]\\ |
+| Say which class the classifier predicts at \\x = 2\\. | State which class the classifier predicts at \\x = 2\\. |
 
 Table 1: Idioms, clichés and slang, with literal alternatives
+
+Mathematical writing has idioms too. In an exercise, “Write the bias of an estimator” means “derive an expression for the bias of an estimator”, and “Say which estimator has smaller variance” means “state which estimator has smaller variance”. A reader who takes “write” or “say” literally may copy the definition or give an informal remark instead of deriving or stating the result. Name the action instead:
+
+- “derive” for a result the reader must work out;
+- “express” for a rewrite in terms of other quantities;
+- “state” for a result the reader recalls;
+- “give” for a value the reader reads off.
 
 Idioms are a kind of metaphor, so [Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language) applies to them too, and gives more examples.
 
