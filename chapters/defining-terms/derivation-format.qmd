@@ -3,7 +3,7 @@ present a derivation as one or more exercises,
 each followed by its solution,
 then the theorem that records the result,
 with a short proof that cites the exercises.
-The reader meets the question before the answer,
+The reader reads the question before the answer,
 can try each step before reading it,
 and can find the result itself without searching through the working.
 
