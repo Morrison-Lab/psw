@@ -513,6 +513,38 @@ in every course and every teaching repository.
   (observed in lecture slides rendered with Quarto).
   Put a slide break after the heading and move the text onto content slides.
 
+## Give each concept in a note sheet its own row
+
+A note sheet is a reference table of formulas with brief labels and no prose.
+This is one case of
+[building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units).
+Give each concept its own row.
+A row holds one formula and one short label.
+
+- Never put two definitions in one row.
+- Never merge rows to save space.
+  Find the room another way, such as a smaller table font or a second table beside the first.
+- Never put notation or assumptions inside a label.
+  Give each assumption its own row, and state the notation once in its own row.
+- Write each formula in its most compact form,
+  built from pieces that have their own rows
+  (see [Making expressions concise](notation.qmd#making-expressions-concise)).
+
+The same rule applies to every other reference table, such as a table of notation.
+
+::: {#exm-note-sheet-rows}
+
+## Splitting a merged row
+
+> ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
+>
+> ✅ Rows: `Dot product` with its formula, then `Sample mean` with its formula.
+
+The ❌ row makes the reader find where one concept ends and the next begins.
+The ✅ rows let the reader find one formula by one label.
+
+:::
+
 ## Talk about the ideas, not the notes
 
 When a term is defined on another page or in another site,
