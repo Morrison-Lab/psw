@@ -133,6 +133,10 @@ Before you share a figure:
 - Use font sizes that are easy to read without dominating the plot.
 - Use colorblind-friendly palettes
   (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
+  Even a colorblind-friendly palette has pairs of colors that are close together when it holds many colors.
+  When a figure has more than 3 or 4 groups,
+  also map the group to a shape or a line type,
+  so that color is never the only cue.
 - Define colors, shapes, and line types in a legend.
 - Put the plot's legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere.
   A bottom legend leaves the full plot width for the data and gives every figure the same layout.
