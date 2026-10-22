@@ -107,6 +107,12 @@ Idioms, clichés and slang, with literal alternatives
 
 :::
 
+For a reader's first contact with a term or notation, write "encounter".
+Do not write "meet", which treats the idea as a person.
+Do not write "see" either,
+because it names one sensory modality,
+and readers also listen to text or read it in braille.
+
 Mathematical writing has idioms too.
 In an exercise, "Write the bias of an estimator" means
 "derive an expression for the bias of an estimator",
