@@ -157,7 +157,7 @@ For example, to differentiate a composite function:
 3. Derive the outer derivative in its own block.
 4. Return to the main derivation, and substitute both results.
 
-A reader who reads the inner derivative first
+A reader who sees the inner derivative first
 does not yet know what it is for.
 
 #### Color where a result is used
