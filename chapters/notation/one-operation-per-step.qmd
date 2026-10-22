@@ -85,7 +85,7 @@ Common ways to combine steps without noticing:
 
 Replacing a named quantity with its definition
 is one of the most important steps in a derivation.
-It is where the general rules are applied to the specific problem,
+It applies the general rules to the specific problem,
 so never skip it or merge it into the next step.
 Give it its own line, justified as "definition of ...".
 The same holds for a result from an earlier part of the same problem:
