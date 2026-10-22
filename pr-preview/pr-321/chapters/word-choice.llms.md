@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 12:44:49 (PDT)
+Last modified: 2026-10-22 13:47:40 (PDT)
 
 > **NOTE:**
 >
@@ -92,7 +92,7 @@ If you cannot name the object, quantity, step or idea, the sentence is not yet r
 
 ## 4 Give a technical word one meaning
 
-A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader sees the word in its second sense, they must stop and work out which concept the sentence means.
+A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader encounters the word in its second sense, they must stop and work out which concept the sentence means.
 
 Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.
 

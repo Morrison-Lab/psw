@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 12:44:49 (PDT)
+Last modified: 2026-10-22 13:47:40 (PDT)
 
 > **NOTE:**
 >
@@ -24,7 +24,7 @@ Each rule below comes with an example. Several rules extend sections in other ch
 
 ## 1 Use literal language
 
-Say exactly what you mean. Do not use idioms, clichés, slang, jokes or sarcasm. An idiom is a phrase whose meaning is different from the meanings of its words, such as “blow up” for “become very large”. A reader who has not seen the phrase before has to guess what it means. A reader who takes words literally may guess wrong. The W3C guidance says: “Use literal and concrete language” and “Do not use metaphors and similes unless you include an explanation” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Literal Language). GitHub Docs says: “Avoid turns of phrase, idioms, and slang that are specific to a particular region or country” ([GitHub 2026a](#ref-github_docs_style)).
+Say exactly what you mean. Do not use idioms, clichés, slang, jokes or sarcasm. An idiom is a phrase whose meaning is different from the meanings of its words, such as “blow up” for “become very large”. A reader who has not encountered the phrase before has to guess what it means. A reader who takes words literally may guess wrong. The W3C guidance says: “Use literal and concrete language” and “Do not use metaphors and similes unless you include an explanation” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Literal Language). GitHub Docs says: “Avoid turns of phrase, idioms, and slang that are specific to a particular region or country” ([GitHub 2026a](#ref-github_docs_style)).
 
 > ❌ Which way does this course lean?
 >
@@ -48,8 +48,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | at the end of the day, we want low test error | our goal is low test error |
 | Write the bias of an estimator. | Derive an expression for the bias of an estimator. |
 | Write \\X\\ in terms of \\Y\\. | Express \\X\\ in terms of \\Y\\. |
-| You will meet this notation again. | You will see this notation again. |
-| We first meet the odds in logistic regression. | We first see the odds in logistic regression. |
+| You will meet this notation again. | You will encounter this notation again. |
+| We first meet the odds in logistic regression. | We first encounter the odds in logistic regression. |
 | Take a sample of size \\n\\ and call the sample mean \\\bar x\\. | Consider a sample of size \\n\\ and denote the sample mean by \\\bar x\\. |
 | the residual lies in \\(-1, 1)\\ | the residual is in \\(-1, 1)\\ |
 | the certain distribution sits at \\0\\, the uniform distribution at \\\log 4\\, and the skewed distribution lies between them | the certain distribution has entropy \\0\\, the uniform distribution has entropy \\\log 4\\, and the skewed distribution has entropy between those two values |
@@ -61,6 +61,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | Say which class the classifier predicts at \\x = 2\\. | State which class the classifier predicts at \\x = 2\\. |
 
 Table 1: Idioms, clichés and slang, with literal alternatives
+
+For a reader’s first contact with a term or notation, write “encounter”. Do not write “meet”, which treats the idea as a person. Do not write “see” either, because it names one sensory modality, and readers also listen to text or read it in braille.
 
 Mathematical writing has idioms too. In an exercise, “Write the bias of an estimator” means “derive an expression for the bias of an estimator”, and “Say which estimator has smaller variance” means “state which estimator has smaller variance”. A reader who takes “write” or “say” literally may copy the definition or give an informal remark instead of deriving or stating the result. Name the action instead:
 

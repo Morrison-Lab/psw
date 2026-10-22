@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 12:44:49 (PDT)
+Last modified: 2026-10-22 13:47:40 (PDT)
 
 > **NOTE:**
 >
@@ -81,7 +81,7 @@ Common ways to combine steps without noticing:
 
 ### 2.1 Applying a definition is a step
 
-Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules are applied to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
+Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
 
 > **NOTE:**
 >
@@ -110,7 +110,7 @@ Derive an intermediate result only after the main derivation has shown that it n
 3.  Derive the outer derivative in its own block.
 4.  Return to the main derivation, and substitute both results.
 
-A reader who sees the inner derivative first does not yet know what it is for.
+A reader who encounters the inner derivative first does not yet know what it is for.
 
 #### Color where a result is used
 
@@ -416,7 +416,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
-Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader sees in the document’s notation table, with its meaning.
+Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader encounters in the document’s notation table, with its meaning.
 
 > **NOTE:**
 >
