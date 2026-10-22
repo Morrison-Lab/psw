@@ -61,6 +61,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/dot-products.qmd >}}
 
+## Writing the predictor and design matrices
+
+{{< include notation/predictor-and-design-matrices.qmd >}}
+
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
