@@ -25,4 +25,7 @@ exclude = [
   # Morrison-Lab/ai-config is private, so every page in it answers 503 to the
   # checker's unauthenticated request; the agent instruction files link it (#82).
   "^https://github\\.com/Morrison-Lab/ai-config([/#?].*)?$",
+  # credit.niso.org (the CRediT taxonomy) times out from the GitHub runners on
+  # every run, with no other error; manuscript-submission.qmd links it.
+  "^https://credit\\.niso\\.org/?$",
 ]
