@@ -56,7 +56,7 @@ Do not use idioms, clichés, slang, jokes or sarcasm.
 An idiom is a phrase whose meaning
 is different from the meanings of its words,
 such as "blow up" for "become very large".
-A reader who has not seen the phrase before has to guess what it means.
+A reader who has not encountered the phrase before has to guess what it means.
 A reader who takes words literally may guess wrong.
 The W3C guidance says:
 "Use literal and concrete language" and
@@ -91,8 +91,8 @@ the method falls flat on small samples | the method has high error on small samp
 at the end of the day, we want low test error | our goal is low test error
 Write the bias of an estimator. | Derive an expression for the bias of an estimator.
 Write $X$ in terms of $Y$. | Express $X$ in terms of $Y$.
-You will meet this notation again. | You will see this notation again.
-We first meet the odds in logistic regression. | We first see the odds in logistic regression.
+You will meet this notation again. | You will encounter this notation again.
+We first meet the odds in logistic regression. | We first encounter the odds in logistic regression.
 Take a sample of size $n$ and call the sample mean $\bar x$. | Consider a sample of size $n$ and denote the sample mean by $\bar x$.
 the residual lies in $(-1, 1)$ | the residual is in $(-1, 1)$
 the certain distribution sits at $0$, the uniform distribution at $\log 4$, and the skewed distribution lies between them | the certain distribution has entropy $0$, the uniform distribution has entropy $\log 4$, and the skewed distribution has entropy between those two values

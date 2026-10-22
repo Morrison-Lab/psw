@@ -217,7 +217,7 @@ Macros are for the author, not the reader.
 Reader-facing text, such as a lecture, a handout or a notation section,
 describes the symbols that a macro prints and what they mean,
 and never names the macro that produced them.
-List every symbol that the reader sees in the document's notation table,
+List every symbol that the reader encounters in the document's notation table,
 with its meaning.
 
 ::: {#exm-describe-symbol-not-macro}

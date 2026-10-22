@@ -189,7 +189,7 @@ the sentence is not yet ready to write.
 
 A word that names a technical concept keeps that one meaning on every page.
 Two fields often use the same word for different concepts.
-When a reader sees the word in its second sense,
+When a reader encounters the word in its second sense,
 they must stop and work out which concept the sentence means.
 
 Pick the word's established meaning in the course sequence,
