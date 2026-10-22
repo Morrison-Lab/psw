@@ -61,6 +61,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/dot-products.qmd >}}
 
+## Using the notation that best represents the concept
+
+{{< include notation/best-notation-for-the-concept.qmd >}}
+
 ## Writing the predictor and design matrices
 
 {{< include notation/predictor-and-design-matrices.qmd >}}
