@@ -23,7 +23,7 @@ The notes also cover spelling, punctuation and refereeing, which this book does 
 
 ## Keep formulas inside sentences
 
-Readers meet a formula as part of a sentence,
+Readers encounter a formula as part of a sentence,
 so the words around it decide whether the formula can be read.
 
 ### Separate formulas with words

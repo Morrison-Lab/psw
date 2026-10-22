@@ -191,7 +191,7 @@ Follow these principles when introducing new terms:
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
   the rest of the document relies on,
-  not just for the first case the reader meets.
+  not just for the first case the reader encounters.
   For example, define the residual sum of squares
   as the sum of squared residuals of any fitted model,
   not as a formula for a straight line.
@@ -266,7 +266,7 @@ Follow these principles when introducing new terms:
   but without a link, wrongly assuming the earlier link carries over.
   The example block should link "mean" at its own first use.
 
-- **Do not presuppose what the reader has not met:**
+- **Do not presuppose what the reader has not encountered:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
   "Fit a line to the synthetic data" is unjustified
@@ -357,7 +357,7 @@ Follow these principles when introducing new terms:
   Say which one the document uses.
   Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
-  A reader who meets the other words in another source
+  A reader who encounters the other words in another source
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
 
@@ -449,7 +449,7 @@ Follow these principles when introducing new terms:
   and never "the prediction rule predicts".
   When a set of notes defines the fitted model,
   "prediction rule" belongs only in that definition, as an alias in bold and in the div title,
-  so that a reader who meets the alias elsewhere can find its meaning.
+  so that a reader who encounters the alias elsewhere can find its meaning.
   If the notes once defined "prediction rule" under its own anchor,
   keep the old anchor as a span on the alias,
   so that links to it still land there.
