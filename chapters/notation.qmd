@@ -69,6 +69,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/general-form-formulas.qmd >}}
 
+## Writing the mean function and the prediction function
+
+{{< include notation/mean-and-prediction-functions.qmd >}}
+
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
