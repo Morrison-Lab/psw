@@ -156,7 +156,8 @@ Follow these principles when introducing new terms:
 - **Define a new symbol by its most direct, literal meaning, and derive its other forms:**
   Define a shorthand symbol directly from the objects it summarizes,
   then prove any equivalent form as a result.
-  For example, with deviations $\delta_i := y_i - \mu$,
+  For example, with deviations $\delta_i := y_i - \mu$
+  from the population mean $\mu$,
   define the sample mean of the deviations as
 
   $$\bar{\delta} := \frac{1}{n} \sum_{i=1}^n \delta_i,$$
