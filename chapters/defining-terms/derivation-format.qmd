@@ -13,6 +13,10 @@ Follow these principles:
   Split a long derivation into exercises a reader can attempt one at a time,
   such as each partial derivative, then solving the resulting equations,
   then checking the second derivative.
+  An exercise asks for one thing:
+  never fold two tasks into one exercise,
+  such as "assemble the score and show that the new symbol equals the sample mean minus the mean".
+  Give each task its own exercise and solution.
 - **The solution follows its exercise.**
   Put each solution directly after its exercise,
   and give it an id named after the exercise
