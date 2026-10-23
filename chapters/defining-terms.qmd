@@ -441,19 +441,15 @@ Follow these principles when introducing new terms:
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
 
-- **Say "fitted model", not "prediction rule":**
-  A fitted model that is used to predict outcomes is still a fitted model,
-  and a second name for one object makes readers wonder whether there are two objects,
-  so call it a fitted model every time.
-  Write "the fitted model predicts",
-  and never "the prediction rule predicts".
-  "Prediction rule" is not an alias of "fitted model",
-  because not every fitted model is used to predict outcomes.
-  It is a separate term, defined in its own `#def-prediction-rule` div
-  as a fitted model that is used to predict outcomes at a new covariate value.
-  Use the term only in that definition and its example,
-  or in a sentence about this use of a fitted model,
-  and link it to the definition at its first use.
+- **Use "prediction rule" only for a fitted model in its role as a predictor:**
+  Not every fitted model is used to predict outcomes,
+  so "prediction rule" is a narrower term, not another name for "fitted model".
+  Define it in its own `#def-prediction-rule` div
+  as a fitted model that is used to predict outcomes at a new covariate value,
+  and link it to that definition at its first use.
+  Where a sentence is about the fitted model in general,
+  or about what the fitted model does, write "the fitted model" and "the fitted model predicts".
+  Reserve "the prediction rule" for a sentence about the model in its role as a predictor.
   If the notes once defined "prediction rule" as a span inside the fitted model's definition,
   keep that anchor on the new div,
   so that links to it still land there.
