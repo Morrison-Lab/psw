@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 20:23:53 (PDT)
+Last modified: 2026-10-23 00:08:24 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -315,7 +315,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(split the sum)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
+> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(distribute the sum over the terms)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
 
 > **NOTE:**
 >
