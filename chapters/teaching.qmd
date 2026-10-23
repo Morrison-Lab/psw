@@ -239,13 +239,16 @@ This rule applies to all teaching materials, in every course and every teaching 
   a theorem that uses a definition gets its own example,
   and so does the definition.
   The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
-- Give nearly every `#exm-` div a figure of its data, model or results
-  (Ezra, 2026-10-23).
-  Put the figure inside the div, or include a `_fig` subfile there.
+- Give every `#exm-` div a figure of its data, model or results,
+  or mark it as having nothing to plot (Ezra, 2026-10-23).
+  Put the figure inside the div,
+  or include a subfile whose name ends in `_fig` inside the div.
   When an example has nothing to plot, such as a single number,
-  add `<!-- no-figure: reason -->` inside the div and state the reason.
+  add `<!-- no-figure: reason -->` inside the div,
+  replacing `reason` with why there is nothing to plot.
   The `check-exm-figures` workflow in `gha` reports each example in a pull request
-  that has neither ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
+  that has no figure and no `no-figure` comment
+  ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
 - Give every topic at least one figure that shows the idea,
   such as the data with a fitted curve, a distribution, or a diagram of the procedure.
   A page of definitions with no figure and no data is incomplete.
