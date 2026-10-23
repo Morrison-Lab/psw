@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-23 11:24:10 (PDT)</p>
+  <p class="date">Last modified: 2026-10-23 13:27:37 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -493,6 +493,7 @@
 <ul>
 <li>Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.</li>
 <li>Follow every abstract div directly with a concrete <code>#exm-</code> div. The rule covers each <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code> and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The <a href="https://github.com/Morrison-Lab/ai-config/pull/4386">ai-config rule</a> links here.</li>
+<li>Give nearly every <code>#exm-</code> div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in <code>_fig</code> inside the div. When an example has nothing to plot, such as a single number, add <code>&lt;!-- no-figure: reason --&gt;</code> inside the div, replacing <code>reason</code> with why there is nothing to plot. The <code>check-exm-figures</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> reports, in a pull request, each example that has no figure and no <code>no-figure</code> comment (<a href="https://github.com/Morrison-Lab/gha/issues/1193">gha#1193</a>).</li>
 <li>Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.</li>
 <li>Prerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.</li>
 <li>Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader meets the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as <a href="../chapters/paper-organization.html#figures-and-tables">Figures and tables</a> describes.</li>
