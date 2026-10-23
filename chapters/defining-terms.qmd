@@ -449,9 +449,13 @@ Follow these principles when introducing new terms:
   and link it to that definition at its first use.
   Write "the fitted model" for a sentence about the model itself,
   such as its form, its coefficients or its fit to the training set.
-  Write "the prediction rule" only for a sentence about using the model to predict a new outcome.
+  Write "the prediction rule" only where the sentence needs the role of predicting a new outcome
+  to tell it from other uses of the fitted model.
+  The verb does not change the term:
+  keep writing "the fitted model predicts",
+  as the bullet above requires.
   For example, write "the fitted model has slope 2"
-  and "the prediction rule is applied to a new patient",
+  and "a clinic uses the prediction rule for new patients",
   and not "the prediction rule has slope 2".
   If the notes once defined "prediction rule" as a span inside the fitted model's definition,
   keep that anchor on the new div,
