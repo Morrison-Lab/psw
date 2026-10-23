@@ -374,6 +374,21 @@ Follow these principles when introducing new terms:
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
 
+- **Tell synonyms from hyponyms:**
+  A *synonym* names the same concept as the primary term,
+  so it belongs in the div title.
+  A *hyponym* names a special case of another term,
+  such as "linear regression" for "regression model",
+  so it is a different concept.
+  Give each hyponym its own `#def-` div,
+  and never put it in the title of the general term
+  or introduce it with "also called"
+  (Ezra, 2026-10-23).
+  When unsure, check both directions.
+  Is every instance of the new term an instance of the old term?
+  Is every instance of the old term an instance of the new term?
+  If only the first holds, the new term is a hyponym.
+
 - **Distinguish estimands from estimators:**
   An *estimand* is the quantity a study is after,
   defined on the population or the data-generating distribution;
