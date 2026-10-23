@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-23 00:08:24 (PDT)
+Last modified: 2026-10-23 00:13:07 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -55,6 +55,12 @@ Follow these principles when introducing new terms:
   not the two sums that RSS and TSS stand for.
 
 - **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
+
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:** Define a shorthand symbol directly from the objects it summarizes, then prove any equivalent form as a result. For example, with deviations \\\delta_i := y_i - \mu\\ from the population mean \\\mu\\, define the sample mean of the deviations as
+
+  \\\bar{\delta} := \frac{1}{n} \sum\_{i=1}^n \delta_i,\\
+
+  then show that \\\bar{\delta} = \bar{y} - \mu\\. Defining \\\bar{\delta}\\ as \\\bar{y} - \mu\\ states a result in place of the meaning, and hides that the symbol is a mean of the deviations.
 
 - **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density function (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with \\k\\ degrees of freedom by its pdf
 
