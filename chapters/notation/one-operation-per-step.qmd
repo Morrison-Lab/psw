@@ -34,7 +34,7 @@ $-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
 > \begin{aligned}
 > -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
 > &= -2 \left(\sum_{i=1}^n y_i - \sum_{i=1}^n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
-> && \text{(split the sum)}\\
+> && \text{(distribute the sum over the terms)}\\
 > &= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
 > && \text{(sum of a constant)}\\
 > &= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
@@ -47,7 +47,7 @@ $-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
 > $$
 
 The ❌ version does five operations in one line:
-it splits the sum,
+it distributes the sum over the terms,
 sums a constant,
 factors a constant out of a sum,
 substitutes $n \bar{y}$,
@@ -80,6 +80,15 @@ Common ways to combine steps without noticing:
   and drops the $\cdot 1$;
 - writing "setting this to zero and dividing by $-2n$ gives",
   which hides two operations in a sentence.
+
+### Name a step by its standard rule
+
+Justify a line with the standard name of the rule it applies,
+not an informal description of what it does to the symbols.
+Write "distribute the sum over the terms" rather than "split the sum",
+and "factor the constant out of the sum" rather than "pull out the constant".
+A standard name tells the reader which rule to check the line against;
+an informal one only describes the change.
 
 ### Applying a definition is a step
 
