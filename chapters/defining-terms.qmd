@@ -153,6 +153,19 @@ Follow these principles when introducing new terms:
   that has not been defined yet,
   and hides that the model is a statement about the outcome's distribution.
 
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:**
+  Define a shorthand symbol directly from the objects it summarizes,
+  then prove any equivalent form as a result.
+  For example, with deviations $\delta_i := y_i - \mu$
+  from the population mean $\mu$,
+  define the sample mean of the deviations as
+
+  $$\bar{\delta} := \frac{1}{n} \sum_{i=1}^n \delta_i,$$
+
+  then show that $\bar{\delta} = \bar{y} - \mu$.
+  Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning,
+  and hides that the symbol is a mean of the deviations.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
   by its probability density function (pdf) or probability mass function (pmf)
@@ -441,17 +454,24 @@ Follow these principles when introducing new terms:
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
 
-- **Say "fitted model", not "prediction rule":**
-  A fitted model that is used to predict outcomes is still a fitted model,
-  and a second name for one object makes readers wonder whether there are two objects,
-  so call it a fitted model every time.
-  Write "the fitted model predicts",
-  and never "the prediction rule predicts".
-  When a set of notes defines the fitted model,
-  "prediction rule" belongs only in that definition, as an alias in bold and in the div title,
-  so that a reader who meets the alias elsewhere can find its meaning.
-  If the notes once defined "prediction rule" under its own anchor,
-  keep the old anchor as a span on the alias,
+- **Use "prediction rule" only for a fitted model in its role as a predictor:**
+  Not every fitted model is used to predict outcomes,
+  so "prediction rule" is a narrower term, not another name for "fitted model".
+  Define it in its own `#def-prediction-rule` div
+  as a fitted model that is used to predict outcomes at a new covariate value,
+  and link it to that definition at its first use.
+  Write "the fitted model" for a sentence about the model itself,
+  such as its form, its coefficients or its fit to the training set.
+  Write "the prediction rule" only where the sentence needs the role of predicting a new outcome
+  to tell it from other uses of the fitted model.
+  The verb does not change the term:
+  keep writing "the fitted model predicts",
+  as the bullet above requires.
+  For example, write "the fitted model has slope 2"
+  and "a clinic uses the prediction rule for new patients",
+  and not "the prediction rule has slope 2".
+  If the notes once defined "prediction rule" as a span inside the fitted model's definition,
+  keep that anchor on the new div,
   so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:**
