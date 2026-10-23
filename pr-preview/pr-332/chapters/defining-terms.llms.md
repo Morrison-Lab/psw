@@ -1,0 +1,358 @@
+# Defining terms clearly
+
+Code
+
+Published
+
+Last modified: 2026-10-22 21:56:45 (PDT)
+
+Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
+
+> **NOTE:**
+>
+> **Definition 1 (Term)** A **term** is a word or phrase with a specific, technical meaning within a particular field or context.
+
+> **NOTE:**
+>
+> **Example 1 (“Significant” used as a term)** In “the difference was statistically significant at the 5% level”, “significant” is a term ([Definition 1](#def-term)): it means that a hypothesis test rejected its null hypothesis at that level.
+
+> **NOTE:**
+>
+> **Example 2 (“Significant” used as an ordinary word)** In “staffing is a significant problem for the clinic”, “significant” is not a term ([Definition 1](#def-term)). It carries its everyday meaning, “large” or “important”, and no hypothesis test is involved.
+
+> **NOTE:**
+>
+> **Definition 2 (Population)** In statistics, a **population** is the complete set of all items or individuals of interest.
+
+> **NOTE:**
+>
+> **Example 3 (A population of patients)** For a study of blood-sugar control, the population ([Definition 2](#def-population)) might be all adults in California with type 2 diabetes in 2024.
+
+> **NOTE:**
+>
+> **Example 4 (A sample is not the population)** The 500 patients who enrolled in that study are not the population ([Definition 2](#def-population)). They are a sample drawn from the population, and the study’s estimates describe the population only as far as the sample represents it.
+
+> **NOTE:**
+>
+> *Remark 1* (Population is not only geographic). In everyday use, “population” usually means the people living in a place. The statistical sense in [Definition 2](#def-population) is broader: a population can be all the patients with a condition, all the batches a factory produces, or any other set of items of interest.
+
+## 1 Guidelines for defining terms
+
+Follow these principles when introducing new terms:
+
+- **Provide explicit definitions:** State clearly what a term means, rather than assuming readers will understand from context.
+
+- **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
+
+- **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\theta}}\vphantom{\theta}}\\ as “the value of \\\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\theta}}\vphantom{\theta}}\\ that minimizes the [residual sum of squares](#def-rss)” *and* as
+
+  \\\hat{\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\theta}}\vphantom{\theta}}} := \arg\min\_{\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\theta}}\vphantom{\theta}}} \text{RSS}(\mathord{\smash\[b\]{\underset{\raise.3ex\hbox{\$\scriptstyle\sim\$}}{\theta}}\vphantom{\theta}}),\\
+
+  not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write
+
+  \\R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},\\
+
+  not the two sums that RSS and TSS stand for.
+
+- **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
+
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:** Define a shorthand symbol directly from the objects it summarizes, then prove any equivalent form as a result. For example, with deviations \\\delta_i := y_i - \mu\\ from the population mean \\\mu\\, define the sample mean of the deviations as
+
+  \\\bar{\delta} := \frac{1}{n} \sum\_{i=1}^n \delta_i,\\
+
+  then show that \\\bar{\delta} = \bar{y} - \mu\\. Defining \\\bar{\delta}\\ as \\\bar{y} - \mu\\ states a result in place of the meaning, and hides that the symbol is a mean of the deviations.
+
+- **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density function (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with \\k\\ degrees of freedom by its pdf
+
+  \\f(x) := \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2}\\\Gamma(k/2)}, \quad x \in (0, \infty),\\
+
+  and state as a theorem that, for a positive integer \\k\\, the sum of the squares of \\k\\ independent standard normal random variables has this distribution. The density is defined for every real \\k \> 0\\; the theorem covers only integer \\k\\. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density that later calculations need.
+
+- **Define a term directly, not as a modification of another term:** State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.
+
+- **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader meets. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
+
+- **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
+
+- **Define terms at first use:** Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first; do not remove the hyperlink to hide the forward reference.
+
+- **Give every key term a formal definition in a `#def-` div:** A term that the document relies on needs its own definition div, even if an exercise, a solution, an example or a sentence of prose has already explained it. An explanation inside an exercise or solution cannot be linked to as a definition, and a student who skips the exercise never sees it. Find the gaps by listing the terms the document uses, such as the bolded phrases and the terms in section titles, and checking that each one has a `#def-` div, or a link to the page that has one. This extends *Give each term its own definition block* below from terms defined in passing to terms explained only in exercises. For example, if “loss function” first appears in an exercise that asks students to compute one, add a `#def-loss-function` div before the exercise, and link the exercise’s mentions to it.
+
+- **Pair each technical term with its mathematical symbol:** Whenever a definition, an example or a list names a quantity in words, write its symbol beside the name. For example, write “the slope \\\beta_x\\” and “the residual sum of squares \\\text{RSS}\\”, not “the slope” and “the residual sum of squares” alone. The words tell the reader what the quantity means, and the symbol tells the reader which letters stand for it in the equations that follow.
+
+- **Define and link every technical term at its first use in each div:** Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. Never define a term inline inside another div, because an inline definition cannot be linked to from anywhere else. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term. A passage is the prose outside divs between one heading and the next, and each div counts separately from the passage around it and from every other div. For example, if a div defines noise as the outcome minus the “true function”, link the term as `[true function](#def-true-function)`, and first add a definition div with that ID if the document lacks one. A counterexample: the definition of noise links “mean”. The example block after it also uses “mean”, but without a link, wrongly assuming the earlier link carries over. The example block should link “mean” at its own first use.
+
+- **Do not presuppose what the reader has not met:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it. Skip the link when the referent is introduced in the same div, or in the same prose passage, as the phrase. Inside a div, the antecedent has to be in that div: an earlier div does not count, because readers jump into the middle of a page. For example, an exercise that says “Explain the labels” with no labels named in it has no antecedent, even if an earlier exercise names some. Name the labels in the exercise, or link them to where they are introduced.
+
+- **Provide examples and counterexamples:** Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.
+
+- **Give each term its own definition block:** In a Quarto document, put every definition in its own `#def-` div (see [Using theorem environments in Quarto](#using-theorem-environments-in-quarto)), one term per div, with commentary after the div rather than inside it, in a remark block (`#rem-`) when it is about the concept. Never nest one theorem-type block (any of the prefixes listed in [Using theorem environments in Quarto](#using-theorem-environments-in-quarto), such as `#def-`, `#exm-`, `#exr-`, `#sol-` or `#rem-`) inside another; give each its own div, in order. A bolded term in running prose is usually an inline definition that belongs in a div, including a term defined in passing. Give closely related terms separate divs too: only full synonyms share one (see *Name the synonyms* below). For example, the left and right distributive laws are two properties, each with its own identifier, example and exercise, so define them in two divs. A reader who needs one of them can then link to exactly that one.
+
+  > **NOTE:**
+  > **Example 5 (Splitting two related definitions)**  
+  >
+  > > ❌ **Definition (distributive laws).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ and *on the right* if \\(a + b)c = ac + bc\\.
+  > >
+  > > ✅ **Definition (left distributivity).** Multiplication *distributes over addition on the left* if \\a(b + c) = ab + ac\\ for all \\a\\, \\b\\ and \\c\\.
+  > >
+  > > ✅ **Definition (right distributivity).** Multiplication *distributes over addition on the right* if \\(a + b)c = ac + bc\\ for all \\a\\, \\b\\ and \\c\\.
+  >
+  > The first block cannot be linked to as “left distributivity” without also pointing at the other law, and one example cannot illustrate both. For numbers, right distributivity follows from left distributivity because multiplication commutes, so one example checks both. Matrix multiplication does not commute, so establishing one law does not establish the other, and each needs its own example.
+
+- **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title, as in “Postulate (axiom)”, and bold each where it first appears in the definition. This covers the names other sources use, such as a textbook’s, which belong in the title and in bold too, as in “Risk (expected loss, population risk, true risk, generalization error, expected prediction error)”. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who meets the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
+
+- **Distinguish estimands from estimators:** An *estimand* is the quantity a study is after, defined on the population or the data-generating distribution; an *estimator* is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, \\\theta\\ and \\\hat\theta\\). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. Keep that order across the whole document, not only within one definition: the estimand’s definition, with its exercise and example, comes before the estimator’s, and the estimator’s definition links back to it. For example, define the risk of a model, its expected loss on new data, before the empirical risk, its average loss on the training data; define the population mean before the sample mean, and a parameter before its maximum likelihood estimate. Reading the estimator first leaves the reader with a formula and no answer to the question of what it is for. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction \\\hat Y\\ of the true class \\Y\\, and counts \\\text{TP}\\, \\\text{FP}\\, \\\text{FN}\\ and \\\text{TN}\\ from a test set of size \\n\\:
+
+  | Name | Estimand | Estimator |
+  |----|----|----|
+  | Accuracy | \\\Pr(\hat Y = Y)\\ | \\(\text{TP} + \text{TN}) / n\\ |
+  | Precision | \\\Pr(Y = 1 \mid \hat Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FP})\\ |
+  | Recall | \\\Pr(\hat Y = 1 \mid Y = 1)\\ | \\\text{TP} / (\text{TP} + \text{FN})\\ |
+
+  The precision of a classifier is a property of the classifier and the population it is used on; \\\text{TP} / (\text{TP} + \text{FP})\\ is one test set’s estimate of it.
+
+- **Name the target of every estimator and predictor:** Every estimator has one target estimand, and the definition says which. A prediction is not an estimator of a mean. Its estimand is the observed outcome value of a new data point, not the population mean of that outcome. For example, the fitted model at \\x\\ is an estimator of the mean function value \\\mu(x)\\, so its bias is measured against that mean, while the prediction at \\x\\ has the new outcome \\Y\_{\*}\\ as its estimand, so its prediction error is measured against \\Y\_{\*}\\. Write “the fitted model at \\x\\ as an estimator of the mean function value”, or “the prediction of the new outcome”, and never leave the target implicit.
+
+- **Say which error:** A bare “error” does not say what is measured, on which data, or whether it is a value computed from one sample or an expectation. Every use of “error” (and of “loss”) names three things: the quantity measured, such as the squared prediction error; the data that it is computed on, such as the training set, the validation set, the test set or the population; and whether it is a sample value or an expectation. For example, write “the prediction error on the validation set”, or “the expected squared prediction error”, and never “the error” or “the smallest error”. A term that already carries all three, such as the generalization error, can stand alone after its definition.
+
+- **Make the fitted model the subject, not the fitting procedure:** A prediction, an error, a bias and a variance are all properties of fitted models, so a sentence about them has a fitted model as its subject, and a choice among candidates is a choice among fitted models. Write “the fitted model predicts”, “the prediction of the fitted model at \\x\\”, and “choose among fitted models”, and never “the procedure predicts” or “choose among procedures”. Name the fitting procedure only when the sentence is about how a fitted model is built: the inputs that the procedure needs, what it costs, or an expectation over the training sets to which it is applied. In math, write \\{\hat y\_{\mathcal{D}\_{\text{train}}}}\\ for the fitted model, the model that the procedure produces from the training set, and \\g\\ only for the procedure itself. Where the training set is not salient, write the fitted model as \\\hat y\\ instead, the symbol that the predicted-value bullet below builds on. For example, write “the bias of the prediction \\\hat{y}\\”, not “the bias of \\g\\”.
+
+- **Use “prediction rule” only for a fitted model in its role as a predictor:** Not every fitted model is used to predict outcomes, so “prediction rule” is a narrower term, not another name for “fitted model”. Define it in its own `#def-prediction-rule` div as a fitted model that is used to predict outcomes at a new covariate value, and link it to that definition at its first use. Write “the fitted model” for a sentence about the model itself, such as its form, its coefficients or its fit to the training set. Write “the prediction rule” only where the sentence needs the role of predicting a new outcome to tell it from other uses of the fitted model. The verb does not change the term: keep writing “the fitted model predicts”, as the bullet above requires. For example, write “the fitted model has slope 2” and “a clinic uses the prediction rule for new patients”, and not “the prediction rule has slope 2”. If the notes once defined “prediction rule” as a span inside the fitted model’s definition, keep that anchor on the new div, so that links to it still land there.
+
+- **Write a predicted value with the predicted-value macro:** A predicted value is the fitted model applied to a covariate value, so write it with a predicted-value macro and not as the procedure applied to a covariate value and a training set. The macro `\predval` takes no argument and prints the predicted value of the outcome at the covariate value that the sentence is about. The macro `\predvalf{x}` takes a covariate value \\x\\ and prints the prediction \\\hat y\mathopen{}\left(x\right)\mathclose{}\\, a value of the outcome’s type. The macro `\candpredvalf{l}{x}` takes a candidate index \\l\\ and a covariate value \\x\\, and prints the prediction of candidate \\l\\’s fitted model at \\x\\. Suppress the covariate value where it is not salient: write `\predval` when the sentence is not about which covariate value the prediction is at, and `\predvalf` or `\candpredvalf` only when the covariate value matters, such as when comparing predictions at two covariate values or averaging a prediction over them. For example, write \\\hat{y}\\ in “the bias of the prediction \\\hat{y}\\” when one covariate value is fixed throughout, write \\{\hat y\mathopen{}\left(x\right)\mathclose{}}\\ and \\{{\hat y\_{l}}\mathopen{}\left(x\right)\mathclose{}}\\ when the covariate value is salient, and never \\g\mathopen{}\left(x; \mathcal{D}\_{\text{train}}\right)\mathclose{}\\ or \\g\_{l}\mathopen{}\left(x; \mathcal{D}\_{\text{train}}\right)\mathclose{}\\.
+
+- **Apply a function to its argument with the macro’s f form:** Where a macro names a function, such as a fitting procedure, the macro with an `f` ending applies it to its argument, so write the application with that macro and not with a hand-typed `\paren`. For example, write \\g\mathopen{}\left(\mathcal{D}\_{\text{train}}\right)\mathclose{}\\ for the fitted model that \\g\\ gives on the training set \\\mathcal{D}\_{\text{train}}\\, and never \\g\mathopen{}\left(\mathcal{D}\_{\text{train}}\right)\mathclose{}\\. The same holds for an operator and every delimiter macro (`\paren`, `\sb`, `\cb`, `\set`, `\abs`, `\norm` and `\angb`), and for an alias of the operator: write \\\operatorname{E}\mathopen{}\left\[y\right\]\mathclose{}\\, and never \\\operatorname{E}\mathopen{}\left\[y\right\]\mathclose{}\\. Before adding an f form, check that no macro already prints the notation: `\candfitted{l}` already prints the fitted model of candidate \\l\\, and a second macro for the same notation is not an f form. When no macro prints the notation, create the f form in the macros repository first, in the same session, then bump the pin and use it, as for any new macro. A missing f form is never a reason to type the operator and the delimiter separately.
+
+- **Qualify “mean”, “average” and their shorthands as population or sample:** A bare “mean” or “average” does not say whether it is a quantity of the population or a value computed from one sample. Write “population mean” for the expected value of a distribution, and “sample mean” for the average of the observed values; write “population average” and “sample average” in the same way. Prefer “mean” with the qualifier to “average”. The same holds for shorthands: write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE, with a leading p for the population version and s for the sample version, and never a bare MSE, RMSE or MAE. Spelled out, the same words apply: “population mean squared error”, “sample root mean squared error”, “population mean absolute error”. Define each shorthand once, at first use, as “population mean squared error (pMSE)”. A term that already says which, such as “mean function” or “running mean”, needs no extra word, and neither does expected value notation such as \\\operatorname{E}\mathopen{}\left\[Y\right\]\mathclose{}\\. For example, write “the sample mean of the training outcomes estimates the population mean of the outcome”, not “the mean estimates the mean”. Drop the qualifier only when it is completely clear from context, such as inside a definition that has just said which one it concerns. When in doubt, keep it.
+
+## 2 Examples of term definitions
+
+Here are examples of well-defined terms:
+
+> **NOTE:**
+>
+> **Definition 3 (Confidence interval)** A **confidence interval** with confidence level \\1 - \alpha\\ for a parameter \\\theta\\ is an interval \\\[L, U\]\\ computed from a sample that contains \\\theta\\ with probability \\1 - \alpha\\ over repeated samples:
+>
+> \\\Pr(\theta \in \[L, U\]) = 1 - \alpha.\\
+
+> **NOTE:**
+>
+> **Example 6 (A confidence interval for mean height)** If we calculate a 95% confidence interval ([Definition 3](#def-confidence-interval)) for mean height as \[165 cm, 175 cm\], we are 95% confident that the true population mean height falls within this range.
+
+> **NOTE:**
+>
+> **Example 7 (A range that is not a confidence interval for the mean)** The interval from the 2.5th to the 97.5th percentile of the observed heights, \[150 cm, 190 cm\], is not a 95% confidence interval ([Definition 3](#def-confidence-interval)) for mean height. The percentile interval describes where individual heights fall, not where the population mean is likely to be, and it does not shrink as the sample grows.
+
+> **NOTE:**
+>
+> **Definition 4 (Active voice)** **Active voice** is a sentence structure where the subject performs the action expressed by the verb.
+
+> **NOTE:**
+>
+> **Example 8 (A sentence in active voice)** “The researcher conducted the experiment” is in active voice ([Definition 4](#def-active-voice)): the subject, “the researcher”, performs the action, “conducted”.
+
+> **NOTE:**
+>
+> **Example 9 (A sentence that is not in active voice)** “The experiment was conducted by the researcher” is not in active voice ([Definition 4](#def-active-voice)). Its subject, “the experiment”, receives the action instead of performing it, so the sentence is in passive voice.
+
+## 3 Order: general definition, then examples
+
+When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite terms defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:
+
+> **NOTE:**
+>
+> **Definition 5 (Residual sum of squares)** The **residual sum of squares** of a model fitted to data is the sum of its squared residuals:
+>
+> \\\text{RSS} = \sum\_{i=1}^n r_i^2.\\
+
+> **NOTE:**
+>
+> **Example 10 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the fitted value of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a function of the two coefficients:
+>
+> \\ \text{RSS}(\beta_0, \beta_x) = \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2. \\
+
+> **NOTE:**
+>
+> **Example 11 (Residual sum of squares of a line through three points)** For the points \\(0, 1)\\, \\(1, 2)\\, \\(2, 2)\\ and the line with \\\beta_0 = 1\\ and \\\beta_x = 0.5\\ ([Example 10](#exm-rss-line)), the residuals are \\0\\, \\0.5\\ and \\0\\, so \\\text{RSS}(1, 0.5) = 0.25\\.
+
+> **NOTE:**
+>
+> **Example 12 (A sum of squares that is not a residual sum of squares)** For the same three points, the sum of squared deviations of \\y_i\\ from their mean, \\5/3\\, is \\2/3\\. That quantity is the total sum of squares, not the residual sum of squares ([Definition 5](#def-rss)) of the line in [Example 11](#exm-rss-three-points), because it measures spread around the mean rather than around the line’s fitted values.
+
+The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.
+
+## 4 Give a defined quantity its expression and its prose reading
+
+When a term names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see [Make the prose say what the formula says](../chapters/mathematical-writing.llms.md#make-the-prose-say-what-the-formula-says)). A term with no mathematical form, such as active voice, keeps its prose definition alone.
+
+> **NOTE:**
+>
+> **Definition 6 (Variance, with its expression and its prose reading)** The **variance** of a random variable \\X\\ is \\\operatorname{Var}\mathopen{}\left(X\right)\mathclose{} = \operatorname{E}\mathopen{}\left\[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left\[X\right\]\mathclose{}\right)\mathclose{}^2\right\]\mathclose{}.\\ In words, it is the population mean of the squared deviation of \\X\\ from its population mean.
+
+> **NOTE:**
+>
+> **Example 13 (A definition that gives only one of the two)** “The variance is how spread out \\X\\ is” gives no expression, so a reader cannot compute it. “The variance is \\\operatorname{E}\mathopen{}\left\[\mathopen{}\left(X - \operatorname{E}\mathopen{}\left\[X\right\]\mathclose{}\right)\mathclose{}^2\right\]\mathclose{}\\” gives no reading, so a reader cannot check their understanding. [Definition 6](#def-variance-expression-and-prose) gives both.
+
+## 5 Why examples matter
+
+Examples serve several crucial purposes:
+
+- **Concrete understanding:** Examples transform abstract concepts into tangible instances that readers can visualize and understand.
+
+- **Verification:** Readers can work through examples themselves to verify they understand the definition or theorem.
+
+- **Application:** Examples show how to apply definitions and theorems to solve real problems.
+
+- **Memory:** Concrete examples are easier to remember than abstract definitions alone.
+
+- **Boundaries:** Counterexamples show where a definition stops applying, which is where readers most often misapply it.
+
+## 6 Common pitfalls to avoid
+
+- **Circular definitions:** Do not define a term using the term itself.
+
+  **Incorrect:** “Conciseness is the quality of being concise.”
+
+  **Correct:** “Conciseness is the quality of expressing ideas using only the words necessary to communicate meaning clearly.”
+
+  Qualifying the term does not make the definition less circular. “A new observation relative to a training set is a new observation when …” still uses the term in its own definition. Define it directly instead: “A new observation relative to a training set is a covariate value and an outcome drawn from the same population as the training observations and independent of them.”
+
+- **Vague definitions:** Avoid definitions that rely on imprecise language.
+
+  **Incorrect:** “A variable is something that can change.”
+
+  **Correct:** “A variable is a symbol representing a value that can take on different values.”
+
+- **Missing examples:** Never leave a definition without at least one example.
+
+- **Examples without context:** Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.
+
+## 7 Mathematical statements require examples
+
+Mathematical theorems, lemmas, corollaries, and postulates should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
+
+### 7.1 Using theorem environments in Quarto
+
+When writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.
+
+Quarto provides built-in theorem environments including:
+
+- `#thm-` for theorems
+- `#lem-` for lemmas
+- `#cor-` for corollaries
+- `#prp-` for propositions
+- `#cnj-` for conjectures
+- `#def-` for definitions
+- `#exm-` for examples
+- `#exr-` for exercises
+- `#sol-` for solutions, named after their exercise (`#exr-foo` and `#sol-foo`)
+- `#rem-` for remarks
+
+See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) for complete details.
+
+**Example syntax:**
+
+``` markdown
+::: {#thm-pythagorean}
+
+## Pythagorean theorem
+
+In a right triangle,
+the square of the hypotenuse equals the sum of squares of the other two sides:
+
+$$a^2 + b^2 = c^2.$$
+
+:::
+```
+
+This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using `@thm-pythagorean`.
+
+### 7.2 Example: Pythagorean theorem
+
+> **NOTE:**
+>
+> **Theorem 1 (Pythagorean theorem)** In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides:
+>
+> \\a^2 + b^2 = c^2.\\
+
+> **NOTE:**
+>
+> **Example 14 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
+>
+> \\ \begin{aligned} 3^2 + 4^2 &= 9 + 16 \\ &= 25 \\ &= 5^2. \end{aligned} \\
+
+> **NOTE:**
+>
+> **Definition 7 (Postulate (axiom))** A **postulate** (or **axiom**) is a statement accepted as true without proof, serving as a starting point for further reasoning.
+
+> **NOTE:**
+>
+> **Example 15 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
+>
+> If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
+
+## 8 Presenting a derivation: exercise, solution, theorem, proof
+
+In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader meets the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
+
+Follow these principles:
+
+- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.
+- **The solution follows its exercise.** Put each solution directly after its exercise, and give it an id named after the exercise (`#exr-foo` and `#sol-foo`), so a reader who wants to check one step can find its working.
+- **The theorem states the result; the proof cites the exercises.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the exercises it rests on, not a second copy of their working.
+- **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
+- **One operation per line.** Inside each solution, write every displayed line with a single operation and its justification (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
+- **One result per theorem.** Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the exercise it rests on.
+- **Start from the side that simplifies.** When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Another route is to solve a definition for the term you want: add \\\mu_i\\ to both sides of \\\varepsilon_i = Y_i - \mu_i\\, then simplify the right-hand side to \\Y_i\\, one operation per line. Adding a term to both sides of an equation is an ordinary step, not the pattern to avoid.
+
+> **NOTE:**
+>
+> **Definition 8 (Sample mean)** The **sample mean** of numbers \\x_1, \ldots, x_n\\ is their average:
+>
+> \\\bar{x} := \frac{1}{n} \sum\_{i=1}^n x_i.\\
+
+> **NOTE:**
+>
+> **Exercise 1 (Deviations from the mean)** Show that
+>
+> \\ \sum\_{i=1}^n (x_i - \bar{x}) = 0, \\
+>
+> where \\\bar{x}\\ is the sample mean ([Definition 8](#def-sample-mean)).
+
+> **NOTE:**
+>
+> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(split the sum)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
+
+> **NOTE:**
+>
+> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers \\x_1, \ldots, x_n\\ from their sample mean \\\bar{x}\\ ([Definition 8](#def-sample-mean)) sum to zero:
+>
+> \\\sum\_{i=1}^n (x_i - \bar{x}) = 0.\\
+
+> **NOTE:**
+>
+> *Proof*. [Exercise 1](#exr-sum-deviations) derives this result.
+
+> **NOTE:**
+>
+> **Example 16 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+>
+> > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
+> >
+> > ✅ \\ \begin{aligned} \mu_i + \varepsilon_i &= \mu_i + (Y_i - \mu_i) && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + Y_i - \mu_i && \text{(remove the parentheses)}\\ &= Y_i + \mu_i - \mu_i && \text{(reorder the terms)}\\ &= Y_i + (\mu_i - \mu_i) && \text{(group the last two terms)}\\ &= Y_i + 0 && \text{(} a - a = 0\text{)}\\ &= Y_i && \text{(} a + 0 = a\text{)} \end{aligned} \\
+>
+> The ❌ version’s first line adds a term the reader has no reason to expect. The ✅ version starts from \\\mu_i + \varepsilon_i\\, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it gives a line to each step that a single “cancel” justification would hide (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
+
+> **NOTE:**
+>
+> **Example 17 (Splitting a theorem that states two results)**  
+>
+> > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
+> >
+> > ✅ **Theorem 1.** Each outcome is its mean plus its deviation: \\Y_i = \mu_i + \varepsilon_i.\\
+> >
+> > **Theorem 2.** Given the covariates, each deviation is Gaussian with mean 0: \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
+>
+> The first result is algebra from the definition of \\\varepsilon_i\\; the second needs the model’s distribution. In separate blocks, each gets the proof it needs, and a later step that uses only the first can cite only the first.
+
+Back to top
