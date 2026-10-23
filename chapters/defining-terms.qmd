@@ -447,9 +447,12 @@ Follow these principles when introducing new terms:
   Define it in its own `#def-prediction-rule` div
   as a fitted model that is used to predict outcomes at a new covariate value,
   and link it to that definition at its first use.
-  Where a sentence is about the fitted model in general,
-  or about what the fitted model does, write "the fitted model" and "the fitted model predicts".
-  Reserve "the prediction rule" for a sentence about the model in its role as a predictor.
+  Write "the fitted model" for a sentence about the model itself,
+  such as its form, its coefficients or its fit to the training set.
+  Write "the prediction rule" only for a sentence about using the model to predict a new outcome.
+  For example, write "the fitted model has slope 2"
+  and "the prediction rule is applied to a new patient",
+  and not "the prediction rule has slope 2".
   If the notes once defined "prediction rule" as a span inside the fitted model's definition,
   keep that anchor on the new div,
   so that links to it still land there.
