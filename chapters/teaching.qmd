@@ -239,8 +239,8 @@ This rule applies to all teaching materials, in every course and every teaching 
   a theorem that uses a definition gets its own example,
   and so does the definition.
   The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
-- Give nearly every `#exm-` div a figure of its data, model or results,
-  and state a reason in each such div that has none (Ezra, 2026-10-23).
+- Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23).
+  When an example has no figure, state the reason in that div.
   Put the figure inside the div,
   or include a subfile whose name ends in `_fig` inside the div.
   When an example has nothing to plot, such as a single number,
