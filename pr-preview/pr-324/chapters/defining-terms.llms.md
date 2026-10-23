@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 15:35:48 (PDT)
+Last modified: 2026-10-23 11:16:33 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -55,6 +55,12 @@ Follow these principles when introducing new terms:
   not the two sums that RSS and TSS stand for.
 
 - **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
+
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:** Define a shorthand symbol directly from the objects it summarizes, then prove any equivalent form as a result. For example, with deviations \\\delta_i := y_i - \mu\\ from the population mean \\\mu\\, define the sample mean of the deviations as
+
+  \\\bar{\delta} := \frac{1}{n} \sum\_{i=1}^n \delta_i,\\
+
+  then show that \\\bar{\delta} = \bar{y} - \mu\\. Defining \\\bar{\delta}\\ as \\\bar{y} - \mu\\ states a result in place of the meaning, and hides that the symbol is a mean of the deviations.
 
 - **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density function (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with \\k\\ degrees of freedom by its pdf
 
@@ -111,7 +117,7 @@ Follow these principles when introducing new terms:
 
 - **Make the fitted model the subject, not the fitting procedure:** A prediction, an error, a bias and a variance are all properties of fitted models, so a sentence about them has a fitted model as its subject, and a choice among candidates is a choice among fitted models. Write “the fitted model predicts”, “the prediction of the fitted model at \\x\\”, and “choose among fitted models”, and never “the procedure predicts” or “choose among procedures”. Name the fitting procedure only when the sentence is about how a fitted model is built: the inputs that the procedure needs, what it costs, or an expectation over the training sets to which it is applied. In math, write \\{\hat y\_{\mathcal{D}\_{\text{train}}}}\\ for the fitted model, the model that the procedure produces from the training set, and \\g\\ only for the procedure itself. Where the training set is not salient, write the fitted model as \\\hat y\\ instead, the symbol that the predicted-value bullet below builds on. For example, write “the bias of the prediction \\\hat{y}\\”, not “the bias of \\g\\”.
 
-- **Say “fitted model”, not “prediction rule”:** A fitted model that is used to predict outcomes is still a fitted model, and a second name for one object makes readers wonder whether there are two objects, so call it a fitted model every time. Write “the fitted model predicts”, and never “the prediction rule predicts”. When a set of notes defines the fitted model, “prediction rule” belongs only in that definition, as an alias in bold and in the div title, so that a reader who meets the alias elsewhere can find its meaning. If the notes once defined “prediction rule” under its own anchor, keep the old anchor as a span on the alias, so that links to it still land there.
+- **Use “prediction rule” only for a fitted model in its role as a predictor:** Not every fitted model is used to predict outcomes, so “prediction rule” is a narrower term, not another name for “fitted model”. Define it in its own `#def-prediction-rule` div as a fitted model that is used to predict outcomes at a new covariate value, and link it to that definition at its first use. Write “the fitted model” for a sentence about the model itself, such as its form, its coefficients or its fit to the training set. Write “the prediction rule” only where the sentence needs the role of predicting a new outcome to tell it from other uses of the fitted model. The verb does not change the term: keep writing “the fitted model predicts”, as the bullet above requires. For example, write “the fitted model has slope 2” and “a clinic uses the prediction rule for new patients”, and not “the prediction rule has slope 2”. If the notes once defined “prediction rule” as a span inside the fitted model’s definition, keep that anchor on the new div, so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:** A predicted value is the fitted model applied to a covariate value, so write it with a predicted-value macro and not as the procedure applied to a covariate value and a training set. The macro `\predval` takes no argument and prints the predicted value of the outcome at the covariate value that the sentence is about. The macro `\predvalf{x}` takes a covariate value \\x\\ and prints the prediction \\\hat y\mathopen{}\left(x\right)\mathclose{}\\, a value of the outcome’s type. The macro `\candpredvalf{l}{x}` takes a candidate index \\l\\ and a covariate value \\x\\, and prints the prediction of candidate \\l\\’s fitted model at \\x\\. Suppress the covariate value where it is not salient: write `\predval` when the sentence is not about which covariate value the prediction is at, and `\predvalf` or `\candpredvalf` only when the covariate value matters, such as when comparing predictions at two covariate values or averaging a prediction over them. For example, write \\\hat{y}\\ in “the bias of the prediction \\\hat{y}\\” when one covariate value is fixed throughout, write \\{\hat y\mathopen{}\left(x\right)\mathclose{}}\\ and \\{{\hat y\_{l}}\mathopen{}\left(x\right)\mathclose{}}\\ when the covariate value is salient, and never \\g\mathopen{}\left(x; \mathcal{D}\_{\text{train}}\right)\mathclose{}\\ or \\g\_{l}\mathopen{}\left(x; \mathcal{D}\_{\text{train}}\right)\mathclose{}\\.
 
@@ -315,7 +321,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(split the sum)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
+> *Solution 1*. \\ \begin{aligned} \sum\_{i=1}^n (x_i - \bar{x}) &= \sum\_{i=1}^n x_i - \sum\_{i=1}^n \bar{x} && \text{(distribute the sum over the terms)}\\ &= \sum\_{i=1}^n x_i - n \bar{x} && \text{(sum of a constant)}\\ &= n \bar{x} - n \bar{x} && \text{(}\sum\_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\ &= 0 && \text{(subtract)} \end{aligned} \\
 
 > **NOTE:**
 >

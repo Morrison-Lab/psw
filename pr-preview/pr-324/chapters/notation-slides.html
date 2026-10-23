@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-22 15:35:48 (PDT)</p>
+  <p class="date">Last modified: 2026-10-23 11:16:33 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -325,11 +325,11 @@
 \begin{aligned}
 -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
 &amp;= -2 \left(\sum_{i=1}^n y_i - \sum_{i=1}^n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
-&amp;&amp; \text{(split the sum)}\\
+&amp;&amp; \text{(distribute the sum over the terms)}\\
 &amp;= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
 &amp;&amp; \text{(sum of a constant)}\\
 &amp;= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
-&amp;&amp; \text{(constant factor out of the sum)}\\
+&amp;&amp; \text{(factor the constant out of the sum)}\\
 &amp;= -2 \left(n \bar{y} - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
 &amp;&amp; \text{(}\sum_{i} y_i = n \bar{y}\text{)}\\
 &amp;= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
@@ -337,7 +337,7 @@
 \end{aligned}
 \]</span></p>
 </blockquote>
-<p>The ❌ version does five operations in one line: it splits the sum, sums a constant, factors a constant out of a sum, substitutes <span class="math inline">\(n \bar{y}\)</span>, and substitutes <span class="math inline">\(n \bar{x}\)</span>. The ✅ version gives each of the five its own line.</p>
+<p>The ❌ version does five operations in one line: it distributes the sum over the terms, sums a constant, factors a constant out of a sum, substitutes <span class="math inline">\(n \bar{y}\)</span>, and substitutes <span class="math inline">\(n \bar{x}\)</span>. The ✅ version gives each of the five its own line.</p>
 </div>
 <p>Common ways to combine steps without noticing:</p>
 <ul>
@@ -350,6 +350,8 @@
 <li>canceling <span class="math inline">\(n\)</span> in <span class="math inline">\(n \cdot \frac{b}{n}\)</span> rewrites the division as multiplication by a reciprocal (<span class="math inline">\(n \cdot (b \cdot \frac{1}{n})\)</span>), removes the parentheses (<span class="math inline">\(n \cdot b \cdot \frac{1}{n}\)</span>), reorders the factors (<span class="math inline">\(b \cdot n \cdot \frac{1}{n}\)</span>), groups the two that cancel (<span class="math inline">\(b \cdot (n \cdot \frac{1}{n})\)</span>), replaces <span class="math inline">\(n \cdot \frac{1}{n}\)</span> with <span class="math inline">\(1\)</span> (<span class="math inline">\(b \cdot 1\)</span>), and drops the <span class="math inline">\(\cdot 1\)</span>;</li>
 <li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
 </ul>
+<h3 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h3>
+<p>Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.</p>
 <h3 id="applying-a-definition-is-a-step">Applying a definition is a step</h3>
 <p>Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules meet the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
 <div id="exm-apply-definition-step" class="theorem example">
