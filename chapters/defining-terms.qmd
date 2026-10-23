@@ -153,6 +153,18 @@ Follow these principles when introducing new terms:
   that has not been defined yet,
   and hides that the model is a statement about the outcome's distribution.
 
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:**
+  Define a shorthand symbol directly from the objects it summarizes,
+  then prove any equivalent form as a result.
+  For example, with deviations $\delta_i := y_i - \mu$,
+  define the sample mean of the deviations as
+
+  $$\bar{\delta} := \frac{1}{n} \sum_{i=1}^n \delta_i,$$
+
+  then show that $\bar{\delta} = \bar{y} - \mu$.
+  Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning,
+  and hides that the symbol is a mean of the deviations.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
   by its probability density function (pdf) or probability mass function (pmf)
