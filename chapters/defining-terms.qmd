@@ -447,11 +447,15 @@ Follow these principles when introducing new terms:
   so call it a fitted model every time.
   Write "the fitted model predicts",
   and never "the prediction rule predicts".
-  When a set of notes defines the fitted model,
-  "prediction rule" belongs only in that definition, as an alias in bold and in the div title,
-  so that a reader who meets the alias elsewhere can find its meaning.
-  If the notes once defined "prediction rule" under its own anchor,
-  keep the old anchor as a span on the alias,
+  "Prediction rule" is not an alias of "fitted model",
+  because not every fitted model is used to predict outcomes.
+  It is a separate term, defined in its own `#def-prediction-rule` div
+  as a fitted model that is used to predict outcomes at a new covariate value.
+  Use the term only in that definition and its example,
+  or in a sentence about this use of a fitted model,
+  and link it to the definition at its first use.
+  If the notes once defined "prediction rule" as a span inside the fitted model's definition,
+  keep that anchor on the new div,
   so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:**
