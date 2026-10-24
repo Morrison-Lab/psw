@@ -1,0 +1,15 @@
+Use the notation that best represents the concept being depicted.
+Choose the symbol, the macro and the name by asking what the object is,
+not by asking what is quicker to type or what the nearby text used.
+A symbol that fits a different concept sends the reader to the wrong idea.
+
+The rules that follow are cases of this principle:
+
+- The predictor matrix and the design matrix are different objects, so they get different symbols.
+- The mean function is a mean, so it is $\mu$, not $f$.
+- The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
+- A reference formula is a general statement, so it is written in its general form, not for one example.
+
+When no rule covers a case, ask the same question:
+which symbol, name and form best represents the concept here?
+Then record the answer as a rule, with this principle as its reason.
