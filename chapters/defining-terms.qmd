@@ -252,6 +252,19 @@ Follow these principles when introducing new terms:
   The words tell the reader what the quantity means,
   and the symbol tells the reader which letters stand for it in the equations that follow.
 
+- **Give a definition a symbol only when the object recurs in formulas:**
+  Introduce a new symbol or macro for a defined term
+  when the term appears in at least two formulas.
+  A term that appears only in words, such as "pairwise disjoint",
+  needs no symbol.
+  A term that recurs in formulas, such as a level set, needs one,
+  so the reader sees the same object written the same way each time.
+  Define the symbol by the term's most literal meaning,
+  such as the preimage of a single value for a level set.
+  No check can decide this rule,
+  because whether a term "recurs" depends on how the notes use it,
+  so a reviewer judges it.
+
 - **Define and link every technical term at its first use in each div:**
   Inside a definition, theorem, example or other div,
   link a technical term to its formal definition the first time it appears in that div.
