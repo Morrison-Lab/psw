@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 11:14:07 (PDT)
+Last modified: 2026-10-25 11:29:12 (PDT)
 
 > **NOTE:**
 >
@@ -295,7 +295,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 > >
 > > ✅ Despite the limits of the study’s methods, the results suggest a substantial association between the exposure and the outcome.
 >
-> The ✅ version drops “It is imperative to acknowledge that”, which only says that the next claim matters. It replaces “notwithstanding” and “are indicative of” with plainer words, as [Replacing unnecessary jargon](../chapters/word-choice.llms.md#exm-jargon) does for single words. It also removes the relative clauses “that were encountered in the course of the study” and “that were obtained”, because a study’s constraints are ones it met, and its findings are ones it obtained.
+> The ✅ version drops “It is imperative to acknowledge that”, which only says that the next claim matters. It replaces “notwithstanding” with “despite” and “are indicative of” with “suggest”, as [Replacing unnecessary jargon](../chapters/word-choice.llms.md#exm-jargon) does for single words. It puts the noun phrases in plainer words too: “methodological constraints” becomes “the limits of the study’s methods”, and “findings” becomes “results”. It also removes the relative clauses “that were encountered in the course of the study” and “that were obtained”, because a study’s constraints are ones it faced, and its findings are ones it obtained.
 
 ## 15 Examples of concise writing
 
