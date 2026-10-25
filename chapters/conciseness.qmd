@@ -339,6 +339,46 @@ The second is complete.
 
 {{< include conciseness/bullet-lists.qmd >}}
 
+## Write to communicate, not to impress
+
+Many rules in this chapter serve one aim:
+the reader should reach your meaning without extra work.
+A long word, a nested sentence or a crowded paragraph
+can make a text sound more formal,
+but it can add work for the reader
+without adding to the meaning.
+So at each level of the text,
+choose the plainest form that still carries the full meaning:
+
+- for words, see [Word choice](word-choice.qmd);
+- for sentences, see [Limit complex sentence structures](#limit-complex-sentence-structures);
+- for paragraphs, give each one a single topic,
+  as [Keep a predictable structure](inclusive-writing.qmd#keep-a-predictable-structure) says;
+- for mathematics, see [Making expressions concise](notation.qmd#making-expressions-concise).
+
+::: {#exm-communicate-not-impress}
+
+## Rewriting a sentence written to sound formal
+
+> ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints
+> that were encountered in the course of the study,
+> the findings that were obtained are indicative of a substantial association
+> between the exposure and the outcome.
+>
+> ✅ Despite the limits of the study's methods,
+> the results suggest a substantial association between the exposure and the outcome.
+
+The ✅ version drops "It is imperative to acknowledge that",
+which only says that the next claim matters.
+It replaces "notwithstanding" and "are indicative of" with plainer words,
+as [Replacing unnecessary jargon](word-choice.qmd#exm-jargon) does for single words.
+It also removes the relative clauses "that were encountered in the course of the study"
+and "that were obtained",
+because a study's constraints are ones it met,
+and its findings are ones it obtained.
+
+:::
+
 ## Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
