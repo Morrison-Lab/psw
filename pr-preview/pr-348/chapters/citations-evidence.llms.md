@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 11:08:36 (PDT)
+Last modified: 2026-10-25 11:31:24 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -181,9 +181,9 @@ A link lets a reader check a claim or learn more without searching for the sourc
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document, instead of repeating its content;
-- a reference back to earlier content, such as “as defined above” or “the model from the previous section”, to that content.
+- a back-reference, such as “as defined above” or “the model from the previous section”, to the content that it points back to.
 
-A reader who skipped the earlier section, or who opened the page from a link to its middle, can jump to the content a reference points back to only if the reference is a link. Put the link on the words that name the target, once per paragraph, as the exceptions below allow. Where you can, use the target’s name instead of “above” or “earlier”, since a word that names a position becomes wrong when a later edit moves the content (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)).
+A reader who skipped the earlier section, or who opened the page from a link to its middle, can jump to the content that a back-reference points to only if the back-reference is a link. Put the link on the words that name the target, once per paragraph, as the exceptions below allow. Where you can, use the target’s name instead of “above” or “earlier”, since a word that names a position becomes wrong when a later edit moves the content (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)).
 
 > **NOTE:**
 >
@@ -191,7 +191,7 @@ A reader who skipped the earlier section, or who opened the page from a link to 
 >
 > > ❌ The likelihood of the logistic regression model from the previous chapter is a product of Bernoulli probabilities.
 > >
-> > ✅ The likelihood of the [logistic regression model](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) is a product of Bernoulli probabilities.
+> > ✅ The likelihood of the [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) model is a product of Bernoulli probabilities.
 >
 > In the ✅ version, the link takes the reader to the model’s definition.
 
