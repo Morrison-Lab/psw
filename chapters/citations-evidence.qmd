@@ -300,7 +300,7 @@ Link these things whenever they appear:
   instead of repeating its content;
 - a back-reference,
   such as "as defined above" or "the model from the previous section",
-  to the content it points back to.
+  to the content that it points back to.
 
 A reader who skipped the earlier section,
 or who opened the page from a link to its middle,
