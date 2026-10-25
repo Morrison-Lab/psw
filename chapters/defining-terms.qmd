@@ -292,6 +292,18 @@ Follow these principles when introducing new terms:
   but without a link, wrongly assuming the earlier link carries over.
   The example block should link "mean" at its own first use.
 
+- **Link the longest defined phrase:**
+  When a longer phrase has its own definition,
+  link the whole phrase to that definition,
+  not a shorter term inside it.
+  For example, link `[logistic regression](#def-logistic-regression)`,
+  not "logistic `[regression](#def-regression)`".
+  The shorter term names a different concept,
+  so linking it sends the reader to the wrong definition.
+  Link the shorter term only where it stands alone.
+  The `check-term-links` check in
+  [gha](https://github.com/Morrison-Lab/gha/pull/1220) flags a partial link.
+
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
