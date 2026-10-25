@@ -298,13 +298,13 @@ Link these things whenever they appear:
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document,
   instead of repeating its content;
-- a reference back to earlier content,
+- a back-reference,
   such as "as defined above" or "the model from the previous section",
-  to that content.
+  to the content it points back to.
 
 A reader who skipped the earlier section,
 or who opened the page from a link to its middle,
-can jump to the content a reference points back to only if the reference is a link.
+can jump to the content that a back-reference points to only if the back-reference is a link.
 Put the link on the words that name the target,
 once per paragraph, as the exceptions below allow.
 Where you can, use the target's name instead of "above" or "earlier",
@@ -319,7 +319,7 @@ when a later edit moves the content
 > ❌ The likelihood of the logistic regression model from the previous chapter
 > is a product of Bernoulli probabilities.
 >
-> ✅ The likelihood of the [logistic regression model](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression)
+> ✅ The likelihood of the [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) model
 > is a product of Bernoulli probabilities.
 
 In the ✅ version, the link takes the reader to the model's definition.
