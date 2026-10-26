@@ -1,0 +1,20 @@
+# Thin caller of Morrison-Lab/gha's reusable exercise-before-result check.
+# It flags a changed result div with no exercise before it.
+# Blocking and diff-scoped: it fails a PR only for lines the PR adds.
+# No `push` trigger: with no PR base to diff against, the reusable workflow
+# skips, so a push run would report success, having checked nothing.
+
+name: Check exercise-before-result
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-exercise-before-result.yml@v3
+    with:
+      paths-ignore: '_extensions/**,latex-macros/**'
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
