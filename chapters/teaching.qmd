@@ -249,6 +249,13 @@ This rule applies to all teaching materials, in every course and every teaching 
   The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
   reports, in a pull request, each example that has no figure and no `no-figure` comment
   ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
+- Give every div whose title mentions visualization
+  (visualize, visualizing, visualization) a corresponding figure (Ezra, 2026-10-26).
+  For an exercise, the solution includes the figure.
+  The `check-visualization-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
+  reports, in a pull request, each such div that has no figure in it or in its solution,
+  and `<!-- no-figure: reason -->` inside the div is the same exception as for an example
+  ([gha#1262](https://github.com/Morrison-Lab/gha/pull/1262)).
 - Give every topic at least one figure that shows the idea,
   such as the data with a fitted curve, a distribution, or a diagram of the procedure.
   A page of definitions with no figure and no data is incomplete.
