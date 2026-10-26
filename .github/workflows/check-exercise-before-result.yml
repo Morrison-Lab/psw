@@ -1,0 +1,19 @@
+# Thin caller of Morrison-Lab/gha's reusable exercise-before-result check.
+# It flags a `#thm-`, `#lem-`, `#cor-` or `#prp-` div that a PR adds or edits
+# without an exercise and its solution just before it in the include order.
+# Blocking and diff-scoped: it fails a PR only for results the PR adds or edits.
+
+name: Check exercise-before-result
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-exercise-before-result.yml@v3
+    with:
+      paths-ignore: '_extensions/**,latex-macros/**'
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
