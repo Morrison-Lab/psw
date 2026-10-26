@@ -138,6 +138,8 @@ Follow its link for the reasons and the exceptions.
 - [Do not rule out readings that no reader would make](conciseness.qmd#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](conciseness.qmd#put-lists-in-bullet-points).
+- [Write to communicate, not to impress](conciseness.qmd#write-to-communicate-not-to-impress):
+  use the plainest form that still carries the full meaning.
 
 ## Teaching materials
 
