@@ -306,7 +306,7 @@ A reader who skipped the earlier section,
 or who opened the page from a link to its middle,
 can jump to the content that a back-reference points to only if the back-reference is a link.
 Put the link on the words that name the target,
-once per paragraph, as the exceptions below allow.
+once per paragraph.
 Where you can, use the target's name instead of "above" or "earlier",
 since a word that names a position becomes wrong
 when a later edit moves the content
