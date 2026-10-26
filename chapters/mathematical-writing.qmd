@@ -185,9 +185,11 @@ and cite that result div in the later argument.
 
 ## Citing a result div
 
-> ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
+> ❌ **Proof.**
+> By Solution 9 and Solution 10, the claim holds.
 >
-> ✅ **Proof.** By Lemma 4 and Lemma 5, the claim holds.
+> ✅ **Proof.**
+> By Lemma 4 and Lemma 5, the claim holds.
 
 The ❌ version sends the reader to answers that the notes may reorder, hide or drop.
 The ✅ version cites claims that the notes state, number and keep.
@@ -221,9 +223,11 @@ A solution decomposes the same way: each solution is the smallest argument that 
 
 ## Citing a step instead of deriving it
 
-> ❌ **Proof.** By the chain rule, the gradient of each term is $2 r_i \phi_i$, where $r_i$ is the residual and $\phi_i$ the design vector, and summing over $i$ gives the claim.
+> ❌ **Proof.**
+> By the chain rule, the gradient of each term is $2 r_i \phi_i$, where $r_i$ is the residual and $\phi_i$ the design vector, and summing over $i$ gives the claim.
 >
-> ✅ **Proof.** By Lemma 4 and Lemma 5, the claim holds.
+> ✅ **Proof.**
+> By Lemma 4 and Lemma 5, the claim holds.
 
 The ❌ proof repeats a derivation that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 
