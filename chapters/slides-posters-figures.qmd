@@ -155,6 +155,13 @@ Before you share a figure:
 - In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/),
   and the interactive version with plotly as described in @sec-scientific-figures.
   [Present R results with modern packages](teaching.qmd#present-r-results-with-modern-packages) gives the reasons.
+- Draw a tree (a parse tree, decision tree, dendrogram, or any other hierarchy) as a diagram figure,
+  not only as nested bullets.
+  A nested list hides how the branches relate and makes a reader count indentation to find a node's parent.
+  Keep the list too when it adds information, such as a text alternative for readers who cannot see the diagram.
+  Draw the diagram from the tree's data, with leaves and internal nodes distinguished by fill and a legend at the bottom,
+  and give it a Figure Div with saved alt text that reads out the structure.
+  The gha check `check-tree-lists` flags a nested list of three or more levels in an example or definition that mentions a tree.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.
