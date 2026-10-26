@@ -1,17 +1,17 @@
 Write a matrix in matrix styling, not in the plain italic of a scalar.
-This holds for the predictor matrix $X$ in every file you edit:
+This holds for the predictor matrix $\mX$ in every file you edit:
 notes, assignments, solutions, slides and note sheets.
-A plain $X$ reads as a random variable or a single number.
+A plain italic "X" reads as a random variable or a single number.
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
 write the predictor matrix with the matrix macro `\mX`.
 
 Keep two objects apart, because they are not the same matrix:
 
 - The *predictor matrix* holds the raw inputs.
-  Its rows are the predictor vectors $\tilde{x}_i$ of the $n$ observations.
+  Its rows are the predictor vectors $\vx_i$ of the $n$ observations.
   Write it `\mX`.
 - The *design matrix* holds the inputs after any feature map and the intercept trick.
-  Its rows are the design vectors $\tilde{\phi}(\tilde{x}_i)$.
+  Its rows are the design vectors $\vfeatmap(\vx_i)$.
   Write it `\design(\mX)`, or `\design` for short.
 
 The same split holds for one observation:
@@ -25,8 +25,8 @@ the design matrix equals the predictor matrix, but say so rather than reuse one 
 
 > ❌ Let $X$ be the design matrix, and fit $\hat{\beta} = (X'X)^{-1}X'y$.
 >
-> ✅ Let $\mathbf{X}$ be the predictor matrix and $D(\mathbf{X})$ the design matrix.
-> The fitted coefficients solve the normal equations for $D(\mathbf{X})$.
+> ✅ Let $\mX$ be the predictor matrix and $\design(\mX)$ the design matrix.
+> The fitted coefficients solve the normal equations for $\design(\mX)$.
 
 The ✅ version shows which matrix holds the raw inputs
 and which holds the columns the model uses.

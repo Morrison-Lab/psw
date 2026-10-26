@@ -10,7 +10,7 @@ and an example shows only one case.
 
 > ❌ $\frac{d(u^2)}{dw} = 2u \frac{du}{dw}$
 >
-> ✅ $\frac{d f(u)}{dw} = f'(u) \frac{du}{dw}$
+> ✅ $\dif{f(u)}{w} = f'(u) \dif{u}{w}$
 
 The ❌ line is the chain rule for squaring only.
 The ✅ line holds for every differentiable $f$,
