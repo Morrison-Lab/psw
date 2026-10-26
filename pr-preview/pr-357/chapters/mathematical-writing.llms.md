@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:43:48 (PDT)
+Last modified: 2026-10-26 01:28:21 (PDT)
 
 > **NOTE:**
 >
@@ -14,7 +14,7 @@ A mathematical paper is made of sentences, and the formulas are part of the sent
 
 ## 1 Keep formulas inside sentences
 
-Readers meet a formula as part of a sentence, so the words around it decide whether the formula can be read.
+Readers encounter a formula as part of a sentence, so the words around it decide whether the formula can be read.
 
 ### 1.1 Separate formulas with words
 
