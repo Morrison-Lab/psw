@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 19:31:42 (PDT)
+Last modified: 2026-10-25 19:39:54 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -180,7 +180,20 @@ A link lets a reader check a claim or learn more without searching for the sourc
 - a definition, theorem or named method to its [Wikipedia](https://www.wikipedia.org/) article, when one exists (see [Cite Wikipedia, beside the primary source](#cite-wikipedia-beside-the-primary-source));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
-- a related section elsewhere in the document, instead of repeating its content.
+- a related section elsewhere in the document, instead of repeating its content;
+- a back-reference, such as “as defined above” or “the model from the previous section”, to the content that it points back to.
+
+A reader who skipped the earlier section, or who opened the page from a link to its middle, can jump to the content that a back-reference points to only if the back-reference is a link. Put the link on the words that name the target, once per paragraph. Where you can, use the target’s name instead of “above” or “earlier”, since a word that names a position becomes wrong when a later edit moves the content (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)).
+
+> **NOTE:**
+>
+> **Example 2 (Linking a reference back to earlier content)**  
+>
+> > ❌ The likelihood of the logistic regression model from the previous chapter is a product of Bernoulli probabilities.
+> >
+> > ✅ The likelihood of the [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) model is a product of Bernoulli probabilities.
+>
+> In the ✅ version, the link takes the reader to the model’s definition.
 
 In [Quarto](https://quarto.org/docs/authoring/cross-references.html), use a cross-reference such as `@def-confidence-interval` for a definition or result in the same document, so the link updates when numbering changes (see [Defining terms clearly](../chapters/defining-terms.llms.md)). For a target on another page, use an ordinary link to that page’s anchor.
 
@@ -192,7 +205,7 @@ Leave a link out only for a reason such as one of the following:
 
 > **NOTE:**
 >
-> **Example 2 (Adding links a reader would use)**  
+> **Example 3 (Adding links a reader would use)**  
 >
 > > ❌ We fit the model with the lme4 package and report a 95% confidence interval for each fixed effect.
 > >
@@ -213,7 +226,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 
 > **NOTE:**
 >
-> **Example 3 (Citing a definition’s Wikipedia article)**  
+> **Example 4 (Citing a definition’s Wikipedia article)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval.
 > >
@@ -231,7 +244,7 @@ Cite a source once in each div or passage, at the claim it supports. A second ci
 
 > **NOTE:**
 >
-> **Example 4 (Citing one source once in a definition)**  
+> **Example 5 (Citing one source once in a definition)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)). Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 > >
@@ -307,7 +320,7 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 > **NOTE:**
 >
-> **Example 5 (Crediting Chebyshev’s inequality)**  
+> **Example 6 (Crediting Chebyshev’s inequality)**  
 >
 > > ❌ Chebyshev’s inequality bounds the probability that …
 > >
