@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:19:16 (PDT)
+Last modified: 2026-10-26 01:57:12 (PDT)
 
 > **NOTE:**
 >
@@ -85,7 +85,7 @@ Justify a line with the standard name of the rule it applies, not an informal de
 
 ### 2.2 Applying a definition is a step
 
-Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules meet the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
+Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
 
 > **NOTE:**
 >
@@ -114,7 +114,7 @@ Derive an intermediate result only after the main derivation has shown that it n
 3.  Derive the outer derivative in its own block.
 4.  Return to the main derivation, and substitute both results.
 
-A reader who meets the inner derivative first does not yet know what it is for.
+A reader who encounters the inner derivative first does not yet know what it is for.
 
 #### Color where a result is used
 
@@ -420,7 +420,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
-Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader meets in the document’s notation table, with its meaning.
+Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader encounters in the document’s notation table, with its meaning.
 
 > **NOTE:**
 >
@@ -499,7 +499,7 @@ Use the notation that best represents the concept being depicted. Choose the sym
 The rules that follow are cases of this principle:
 
 - The predictor matrix and the design matrix are different objects, so they get different symbols.
-- The mean function is a mean, so it is \\\mu\\, not \\f\\.
+- The mean function is a mean, so it is \\\truemean\\, not \\\predfn\\.
 - The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
 - A reference formula is a general statement, so it is written in its general form, not for one example.
 
@@ -507,12 +507,12 @@ When no rule covers a case, ask the same question: which symbol, name and form b
 
 ## 13 Writing the predictor and design matrices
 
-Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix \\X\\ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain \\X\\ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
+Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix \\\mX\\ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic \\X\\ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
 
 Keep two objects apart, because they are not the same matrix:
 
-- The *predictor matrix* holds the raw inputs. Its rows are the predictor vectors \\\tilde{x}\_i\\ of the \\n\\ observations. Write it `\mX`.
-- The *design matrix* holds the inputs after any feature map and the intercept trick. Its rows are the design vectors \\\tilde{\phi}(\tilde{x}\_i)\\. Write it `\design(\mX)`, or `\design` for short.
+- The *predictor matrix* holds the raw inputs. Its rows are the predictor vectors \\\vx_i\\ of the \\n\\ observations. Write it `\mX`.
+- The *design matrix* holds the inputs after any feature map and the intercept trick. Its rows are the design vectors \\\vfeatmap(\vx_i)\\. Write it `\design(\mX)`, or `\design` for short.
 
 The same split holds for one observation: the predictor vector is `\vx`, and the design vector is `\vfeatmap(\vx)`. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.
 
@@ -522,7 +522,7 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 >
 > > ❌ Let \\X\\ be the design matrix, and fit \\\hat{\beta} = (X'X)^{-1}X'y\\.
 > >
-> > ✅ Let \\\mathbf{X}\\ be the predictor matrix and \\D(\mathbf{X})\\ the design matrix. The fitted coefficients solve the normal equations for \\D(\mathbf{X})\\.
+> > ✅ Let \\\mX\\ be the predictor matrix and \\\design(\mX)\\ the design matrix. The fitted coefficients solve the normal equations for \\\design(\mX)\\.
 >
 > The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.
 
@@ -536,7 +536,7 @@ On a reference sheet, a formula sheet or a summary, state each formula in its ge
 >
 > > ❌ \\\frac{d(u^2)}{dw} = 2u \frac{du}{dw}\\
 > >
-> > ✅ \\\frac{d f(u)}{dw} = f'(u) \frac{du}{dw}\\
+> > ✅ \\\dif{f(u)}{w} = f'(u) \dif{u}{w}\\
 >
 > The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable \\f\\, and the squaring case follows by taking \\f(u) = u^2\\.
 
@@ -544,9 +544,9 @@ Put a specific case on the sheet only as a labeled example next to the general f
 
 ## 15 Writing the mean function and the prediction function
 
-Write the mean function as \\\mu\\, not as \\f\\. The mean function is the population mean of the outcome given the inputs, \\\mu(x)\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
+Write the mean function as \\\truemean\\, not as \\\predfn\\. The mean function is the population mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
-Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol \\\hat{g}\\) for an estimated one, or `\predfnf{x}` (symbol \\g\\) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function \\\mu\\ itself.
+Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol \\\epredfn\\) for an estimated one, or `\predfnf{x}` (symbol \\\predfn\\) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function \\\truemean\\ itself.
 
 > **NOTE:**
 >
@@ -554,9 +554,9 @@ Name the object you mean. When the text refers to the fitted prediction function
 >
 > > ❌ The expected squared error of the fitted mean function at \\x\\ is \\\E{(y - \hat{f}(x))^2}\\.
 > >
-> > ✅ The expected squared error of the fitted prediction function at \\x\\ is \\\E{(y - \hat{g}(x))^2}\\, and its bias is \\\E{\hat{g}(x)} - \mu(x)\\.
+> > ✅ The expected squared error of the fitted prediction function at \\x\\ is \\\E{\paren{\outvar - \epredfnf{x}}^2}\\, and its bias is \\\E{\epredfnf{x}} - \truemeanf{x}\\.
 >
-> The ✅ version names the fitted prediction function where the concept is a prediction, and keeps \\\mu\\ for the mean it is compared with.
+> The ✅ version names the fitted prediction function where the concept is a prediction, and keeps \\\truemean\\ for the mean it is compared with.
 
 ## 16 Writing out notational shorthands
 

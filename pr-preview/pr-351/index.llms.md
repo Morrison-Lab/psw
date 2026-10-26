@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:19:16 (PDT)
+Last modified: 2026-10-26 01:57:12 (PDT)
 
 # Preface
 
@@ -14,6 +14,6 @@ The [Introduction](chapters/intro.llms.md) describes the book’s scope and read
 
 ## 0.1 Acknowledgments
 
-The site’s CI tooling was copied from the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/), a fork of the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/index.html). The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) website template.
+The site’s CI tooling was written by Ezra Morrison for the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/). The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) website template.
 
 Back to top

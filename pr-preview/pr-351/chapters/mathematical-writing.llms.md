@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:19:16 (PDT)
+Last modified: 2026-10-26 01:57:12 (PDT)
 
 > **NOTE:**
 >
@@ -14,7 +14,7 @@ A mathematical paper is made of sentences, and the formulas are part of the sent
 
 ## 1 Keep formulas inside sentences
 
-Readers meet a formula as part of a sentence, so the words around it decide whether the formula can be read.
+Readers encounter a formula as part of a sentence, so the words around it decide whether the formula can be read.
 
 ### 1.1 Separate formulas with words
 
@@ -118,9 +118,9 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 
 Add an exercise and its solution just before every result div that you add or edit. The exercise asks the student to prove the result, and the result div then states what the solution showed. Every later argument cites the result div.
 
-The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Put the HTML comment `<!-- check-solution-citations: allow -->` on the line that holds the `@sol-` cross-reference, so that the `check-solution-citations` workflow can tell this citation from a citation of a solution to a different exercise. The comment is for maintainers: Quarto removes it from the rendered page.
+The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is one line, “By **?@sol-x**.”, with one citation. A proof with its own steps, display math or a second citation cites result divs instead.
 
-The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It does not check prose outside those divs, but the rule still applies there.
+The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For any other line that must cite a solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it, whichever solution the line cites. Quarto removes the comment from the rendered page. The workflow does not check prose outside those divs, but the rule still applies there.
 
 ## 9 Rules that other chapters cover
 

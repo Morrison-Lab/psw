@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 01:19:16 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 01:57:12 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -427,14 +427,14 @@
 <li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.</li>
 <li>Keep only the definition in a <code>#def-</code> div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate <code>#thm-</code>, <code>#lem-</code> or <code>#prp-</code> div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.</li>
 </ul>
-<p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
+<p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>
 <section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="4">
 <h2><span class="header-section-number">4</span> State the notation and its alternatives</h2>
 </section>
 <section class="slide level2">
 
-<p>When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will meet elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write <span class="math inline">\(\mathbb{N}_0\)</span> or <span class="math inline">\(\mathbb{N}^+\)</span> to make the choice explicit.</p>
+<p>When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write <span class="math inline">\(\mathbb{N}_0\)</span> or <span class="math inline">\(\mathbb{N}^+\)</span> to make the choice explicit.</p>
 </section>
 <section id="lead-with-the-simplest-correct-form-of-a-definition" class="slide level2" data-number="5">
 <h2><span class="header-section-number">5</span> Lead with the simplest correct form of a definition</h2>
@@ -496,7 +496,7 @@
 <li>Give nearly every <code>#exm-</code> div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in <code>_fig</code> inside the div. When an example has nothing to plot, such as a single number, add <code>&lt;!-- no-figure: reason --&gt;</code> inside the div, replacing <code>reason</code> with why there is nothing to plot. The <code>check-exm-figures</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> reports, in a pull request, each example that has no figure and no <code>no-figure</code> comment (<a href="https://github.com/Morrison-Lab/gha/issues/1193">gha#1193</a>).</li>
 <li>Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.</li>
 <li>Prerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.</li>
-<li>Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader meets the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as <a href="../chapters/paper-organization.html#figures-and-tables">Figures and tables</a> describes.</li>
+<li>Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader encounters the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as <a href="../chapters/paper-organization.html#figures-and-tables">Figures and tables</a> describes.</li>
 <li>Make each figure follow the accessibility rules below.</li>
 </ul>
 </section>
@@ -629,7 +629,7 @@
 
 <p>This rule applies to all teaching materials that run code, in every course and every teaching repository.</p>
 <ul>
-<li>Give the course a programming primer that introduces each package function the course’s chapters call. A student meets the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.</li>
+<li>Give the course a programming primer that introduces each package function the course’s chapters call. A student encounters the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.</li>
 <li>Keep the primer complete by computing the list of functions, not by remembering it. Scan the code chunks of the chapters for the functions they call, and compare the list with the functions the primer mentions. Run the scan when a chapter adds a function, and again before a term starts.</li>
 <li>Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.</li>
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>

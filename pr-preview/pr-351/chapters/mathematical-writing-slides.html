@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 01:19:16 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 01:57:12 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -294,7 +294,7 @@
 </section>
 <section class="slide level2">
 
-<p>Readers meet a formula as part of a sentence, so the words around it decide whether the formula can be read.</p>
+<p>Readers encounter a formula as part of a sentence, so the words around it decide whether the formula can be read.</p>
 <h3 id="separate-formulas-with-words">Separate formulas with words</h3>
 <p>Put words between two formulas. Without them, the reader cannot tell where one formula ends and the next begins.</p>
 <div id="exm-separate-formulas" class="theorem example">
@@ -394,8 +394,8 @@
 <p>The ❌ version sends the reader to answers that the notes may reorder, hide or drop. The ✅ version cites claims that the notes state, number and keep.</p>
 </div>
 <p>Add an exercise and its solution just before every result div that you add or edit. The exercise asks the student to prove the result, and the result div then states what the solution showed. Every later argument cites the result div.</p>
-<p>The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Put the HTML comment <code>&lt;!-- check-solution-citations: allow --&gt;</code> on the line that holds the <code>@sol-</code> cross-reference, so that the <code>check-solution-citations</code> workflow can tell this citation from a citation of a solution to a different exercise. The comment is for maintainers: Quarto removes it from the rendered page.</p>
-<p>The <code>check-solution-citations</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>Morrison-Lab/gha</code></a> flags a <code>@sol-</code> cross-reference inside a proof or result div. It does not check prose outside those divs, but the rule still applies there.</p>
+<p>The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is one line, “By <strong>?@sol-x</strong>.”, with one citation. A proof with its own steps, display math or a second citation cites result divs instead.</p>
+<p>The <code>check-solution-citations</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>Morrison-Lab/gha</code></a> flags a <code>@sol-</code> cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For any other line that must cite a solution, the HTML comment <code>&lt;!-- check-solution-citations: allow --&gt;</code> on that line tells the workflow to skip it, whichever solution the line cites. Quarto removes the comment from the rendered page. The workflow does not check prose outside those divs, but the rule still applies there.</p>
 </section>
 <section id="rules-that-other-chapters-cover" class="slide level2" data-number="9">
 <h2><span class="header-section-number">9</span> Rules that other chapters cover</h2>
