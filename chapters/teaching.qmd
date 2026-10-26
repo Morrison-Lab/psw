@@ -252,7 +252,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Give every div whose title mentions visualization
   (*visualize*, *visualizing*, *visualization*) a corresponding figure (Ezra, 2026-10-26).
   For an exercise, the figure may sit in the exercise or in its solution.
-  The rule covers any div that asks for a picture:
+  The rule also covers any div that asks for a picture:
   a title or an exercise prompt that says *plot*, *sketch*, *draw*, *diagram*, or *contour*
   (in any inflection, such as *plotting* or *sketching*),
   or that asks the reader to mark points on a surface.
