@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:39:31 (PDT)
+Last modified: 2026-10-26 01:08:23 (PDT)
 
 > **NOTE:**
 >
@@ -104,21 +104,23 @@ Do not use proof by contradiction where a direct proof will do. The course’s w
 
 ## 8 Cite results, not solutions
 
-A derivation or proof never cites a solution to an exercise. A solution answers a question for the reader who attempted it, so it is not a result that other arguments can build on. Follow each solution that a later argument relies on with a result div (a theorem, lemma, corollary or proposition) that states the claim, and cite that result div in the later argument.
+A proof, or any derivation that supports a result, never cites a solution to an exercise. A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on. Follow each solution that a later argument relies on with a result div (a theorem, lemma, corollary or proposition) that states the claim, and cite that result div in the later argument.
 
 > **NOTE:**
 >
 > **Example 5 (Citing a result div)**  
 >
-> > ❌ **Proof.** By Solution 9 and Solution 10.
+> > ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
 > >
-> > ✅ **Proof.** By Lemma 4 and Lemma 5.
+> > ✅ **Proof.** By Lemma 4 and Lemma 5, the claim holds.
 >
 > The ❌ version sends the reader to answers that the notes may reorder, hide or drop. The ✅ version cites claims that the notes state, number and keep.
 
-The one exception is an exercise that asks students to prove a result before the result is stated. The proof of that result may then cite the solution that precedes it. Mark that citation with an HTML comment, `<!-- check-solution-citations: allow -->`, so that a reader and a checker can tell it from a citation of unrelated work.
+Add an exercise and its solution just before every result div that you add or edit. The exercise asks the student to prove the result, and the result div then states what the solution showed. Every later argument cites the result div.
 
-Add an exercise and its solution just before every result div that you add or edit. The exercise asks the student to prove the result, and the result div then states what the solution showed. The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a cross-reference to a solution inside a proof or result div.
+The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Put the HTML comment `<!-- check-solution-citations: allow -->` on the line that holds the `@sol-` cross-reference, so that the `check-solution-citations` workflow can tell this citation from a citation of a solution to a different exercise. The comment is for maintainers: Quarto removes it from the rendered page.
+
+The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It does not check prose outside those divs, but the rule still applies there.
 
 ## 9 Rules that other chapters cover
 

@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 00:39:31 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 01:08:23 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -384,17 +384,18 @@
 </section>
 <section class="slide level2">
 
-<p>A derivation or proof never cites a solution to an exercise. A solution answers a question for the reader who attempted it, so it is not a result that other arguments can build on. Follow each solution that a later argument relies on with a result div (a theorem, lemma, corollary or proposition) that states the claim, and cite that result div in the later argument.</p>
+<p>A proof, or any derivation that supports a result, never cites a solution to an exercise. A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on. Follow each solution that a later argument relies on with a result div (a theorem, lemma, corollary or proposition) that states the claim, and cite that result div in the later argument.</p>
 <div id="exm-cite-results" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Citing a result div)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ <strong>Proof.</strong> By Solution 9 and Solution 10.</p>
-<p>✅ <strong>Proof.</strong> By Lemma 4 and Lemma 5.</p>
+<p>❌ <strong>Proof.</strong> By Solution 9 and Solution 10, the claim holds.</p>
+<p>✅ <strong>Proof.</strong> By Lemma 4 and Lemma 5, the claim holds.</p>
 </blockquote>
 <p>The ❌ version sends the reader to answers that the notes may reorder, hide or drop. The ✅ version cites claims that the notes state, number and keep.</p>
 </div>
-<p>The one exception is an exercise that asks students to prove a result before the result is stated. The proof of that result may then cite the solution that precedes it. Mark that citation with an HTML comment, <code>&lt;!-- check-solution-citations: allow --&gt;</code>, so that a reader and a checker can tell it from a citation of unrelated work.</p>
-<p>Add an exercise and its solution just before every result div that you add or edit. The exercise asks the student to prove the result, and the result div then states what the solution showed. The <code>check-solution-citations</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>Morrison-Lab/gha</code></a> flags a cross-reference to a solution inside a proof or result div.</p>
+<p>Add an exercise and its solution just before every result div that you add or edit. The exercise asks the student to prove the result, and the result div then states what the solution showed. Every later argument cites the result div.</p>
+<p>The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Put the HTML comment <code>&lt;!-- check-solution-citations: allow --&gt;</code> on the line that holds the <code>@sol-</code> cross-reference, so that the <code>check-solution-citations</code> workflow can tell this citation from a citation of a solution to a different exercise. The comment is for maintainers: Quarto removes it from the rendered page.</p>
+<p>The <code>check-solution-citations</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>Morrison-Lab/gha</code></a> flags a <code>@sol-</code> cross-reference inside a proof or result div. It does not check prose outside those divs, but the rule still applies there.</p>
 </section>
 <section id="rules-that-other-chapters-cover" class="slide level2" data-number="9">
 <h2><span class="header-section-number">9</span> Rules that other chapters cover</h2>
