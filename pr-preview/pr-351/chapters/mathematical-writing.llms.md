@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 10:21:50 (PDT)
+Last modified: 2026-10-26 10:35:14 (PDT)
 
 > **NOTE:**
 >
@@ -118,9 +118,9 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 
 Add an exercise and its solution just before every result div that you add or edit. The exercise does not state the result. It asks the student to find the result, such as “find an expression for the spread of a random variable using its first two moments”, so that the reader discovers the result, and the result div then states what the solution showed. Every later argument cites the result div.
 
-The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation. When the exercise has several parts, the line may cite each part, as in `By @sol-x and @sol-x-part2.` A proof with its own steps or display math cites result divs instead.
+The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation. This is the one place where a proof cites a solution. [Derivation format](defining-terms/derivation-format.qmd) describes the exercise, solution, theorem and proof pattern. When the exercise has several parts, the line may cite each part, as in the line `By @sol-x and @sol-x-part2.`, which ends in a period. A proof with its own steps or display math cites result divs instead.
 
-The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For a one-line proof that cites several parts of the paired solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it. Quarto removes the comment from the rendered page. The workflow does not check prose outside those divs, but the rule still applies there.
+The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For a one-line proof that cites several parts of the paired solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip that line. Quarto removes the comment from the rendered page. The workflow does not check prose outside proof and result divs, but the rule still applies there.
 
 ## 9 Keep each div minimal: cite, never inline
 
@@ -130,9 +130,9 @@ Every result div states one result and every solution div answers one exercise, 
 >
 > **Example 6 (Citing a step instead of deriving it)**  
 >
-> > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 r_i \phi_i\\, where \\r_i\\ is the residual and \\\phi_i\\ the design vector, and summing over \\i\\ gives the claim.
+> > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 \resid_i \vfeatmap(\vx_i)\\, where \\\resid_i\\ is the residual and \\\vfeatmap(\vx_i)\\ the design vector, and summing over \\i\\ gives the claim.
 > >
-> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of \\2 r_i \phi_i\\ over \\i\\.
+> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of \\2 \resid_i \vfeatmap(\vx_i)\\ over \\i\\.
 >
 > The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 
