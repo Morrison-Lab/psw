@@ -212,14 +212,14 @@ A proof with its own steps, display math or a second citation cites result divs 
 
 The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div.
 It lets a one-line proof with one citation pass.
-When a proof of a result that an exercise asked students to prove must say more than that one line, the HTML comment `<!-- check-solution-citations: allow -->` on the line that cites the solution tells the workflow to skip it.
+When the proof of a result must say more than that one line, the HTML comment `<!-- check-solution-citations: allow -->` on the line that cites the paired exercise's solution tells the workflow to skip that line.
 Quarto removes the comment from the rendered page.
 The workflow does not check prose outside those divs, but the rule still applies there.
 
 ## Keep each div minimal: cite, never inline
 
 Every div states one result or answers one exercise, and does no more.
-When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite it.
+When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite that result div.
 Never derive the step inline.
 A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.
 
