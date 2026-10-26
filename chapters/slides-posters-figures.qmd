@@ -108,10 +108,11 @@ Give every figure alt text, a numbered caption, and a code chunk that comments w
 
 Open each caption with a sentence that says what the figure or table shows,
 so a reader who sees only the float learns its point without following a link.
-A cross-reference to the example or section it illustrates may follow as support,
-but it never replaces that sentence:
-"The slope of the logistic function at the scores of @exm-x" says nothing until the reader looks up the example,
-while "The slope of the logistic function falls from its peak at 0 to near zero at 5 (@exm-x)" does.
+A cross-reference to the example or section it illustrates may support that sentence,
+after it or in parentheses inside it,
+but it never replaces it:
+"The symmetry of `@exm-x`." says nothing until the reader looks up the example,
+while "The slope of the logistic function falls from its peak at 0 to near zero at 5 (`@exm-x`)." does.
 
 Lead with a well-labeled figure or table
 instead of a long paragraph that describes a pipeline or compares groups.
