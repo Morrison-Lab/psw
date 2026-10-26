@@ -26,7 +26,8 @@ as a checklist for revising a draft.
 
 ## Acknowledgments
 
-The site's structure ultimately derives from the
+The site's CI tooling was copied from the
+[UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/),
+a fork of the
 [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/index.html).
-For further reading, see the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/)
-and the [qwt](https://github.com/Morrison-Lab/qwt) website template.
+The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) website template.
