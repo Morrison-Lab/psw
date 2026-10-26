@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:14:04 (PDT)
+Last modified: 2026-10-26 01:27:10 (PDT)
 
 > **NOTE:**
 >
@@ -230,9 +230,9 @@ A list of three or more phrases, written inline and separated by commas, makes t
 
 A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.
 
-Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
-
 A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
+
+Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
 A few mechanics to keep in mind when writing a bullet list:
 
@@ -286,7 +286,7 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > > ❌ At \\z = 0\\ the slope is \\\dexpitf{0} = 1/4\\. At \\z = 2\\ it is \\\dexpitf{2} \approx 0.105\\. At \\z = -2\\ it is \\\dexpitf{-2} \approx 0.105\\.
 > >
-> > ✅ The slope \\\dexpitf{z}\\ at three scores:
+> > ✅ The slope \\\dexpitf{z}\\ at three values of \\z\\:
 > >
 > > - **\\z = 0\\:** \\\dexpitf{0} = 1/4\\.
 > > - **\\z = 2\\:** \\\dexpitf{2} \approx 0.105\\.

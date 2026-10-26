@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 01:14:04 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 01:27:10 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -353,7 +353,7 @@
 <h3 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h3>
 <p>Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.</p>
 <h3 id="applying-a-definition-is-a-step">Applying a definition is a step</h3>
-<p>Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules meet the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
+<p>Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
 <div id="exm-apply-definition-step" class="theorem example">
 <p><span class="theorem-title"><strong>Example 4 (Applying the definition of a vector before differentiating it)</strong></span> Suppose the prediction error vector is defined as <span class="math inline">\(\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\)</span>, and a derivation needs its derivative with respect to <span class="math inline">\(\tilde{\beta}\)</span>.</p>
 <blockquote>
@@ -390,7 +390,7 @@
 <li>Derive the outer derivative in its own block.</li>
 <li>Return to the main derivation, and substitute both results.</li>
 </ol>
-<p>A reader who meets the inner derivative first does not yet know what it is for.</p>
+<p>A reader who encounters the inner derivative first does not yet know what it is for.</p>
 <h4 id="color-where-a-result-is-used">Color where a result is used</h4>
 <p>Give each intermediate result a text color, and use the same color wherever that result appears:</p>
 <ul>
@@ -665,7 +665,7 @@
 </blockquote>
 <p>Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.</p>
 </div>
-<p>Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader meets in the document’s notation table, with its meaning.</p>
+<p>Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader encounters in the document’s notation table, with its meaning.</p>
 <div id="exm-describe-symbol-not-macro" class="theorem example">
 <p><span class="theorem-title"><strong>Example 20 (Describing the symbol, not the macro)</strong></span> &nbsp;</p>
 <blockquote>
@@ -759,7 +759,7 @@
 <p>The rules that follow are cases of this principle:</p>
 <ul>
 <li>The predictor matrix and the design matrix are different objects, so they get different symbols.</li>
-<li>The mean function is a mean, so it is <span class="math inline">\(\mu\)</span>, not <span class="math inline">\(f\)</span>.</li>
+<li>The mean function is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(\predfn\)</span>.</li>
 <li>The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.</li>
 <li>A reference formula is a general statement, so it is written in its general form, not for one example.</li>
 </ul>
@@ -770,18 +770,18 @@
 </section>
 <section class="slide level2">
 
-<p>Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix <span class="math inline">\(X\)</span> in every file you edit: notes, assignments, solutions, slides and note sheets. A plain <span class="math inline">\(X\)</span> reads as a random variable or a single number. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write the predictor matrix with the matrix macro <code>\mX</code>.</p>
+<p>Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix <span class="math inline">\(\mX\)</span> in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic <span class="math inline">\(X\)</span> reads as a random variable or a single number. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write the predictor matrix with the matrix macro <code>\mX</code>.</p>
 <p>Keep two objects apart, because they are not the same matrix:</p>
 <ul>
-<li>The <em>predictor matrix</em> holds the raw inputs. Its rows are the predictor vectors <span class="math inline">\(\tilde{x}_i\)</span> of the <span class="math inline">\(n\)</span> observations. Write it <code>\mX</code>.</li>
-<li>The <em>design matrix</em> holds the inputs after any feature map and the intercept trick. Its rows are the design vectors <span class="math inline">\(\tilde{\phi}(\tilde{x}_i)\)</span>. Write it <code>\design(\mX)</code>, or <code>\design</code> for short.</li>
+<li>The <em>predictor matrix</em> holds the raw inputs. Its rows are the predictor vectors <span class="math inline">\(\vx_i\)</span> of the <span class="math inline">\(n\)</span> observations. Write it <code>\mX</code>.</li>
+<li>The <em>design matrix</em> holds the inputs after any feature map and the intercept trick. Its rows are the design vectors <span class="math inline">\(\vfeatmap(\vx_i)\)</span>. Write it <code>\design(\mX)</code>, or <code>\design</code> for short.</li>
 </ul>
 <p>The same split holds for one observation: the predictor vector is <code>\vx</code>, and the design vector is <code>\vfeatmap(\vx)</code>. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.</p>
 <div id="exm-predictor-vs-design-matrix" class="theorem example">
 <p><span class="theorem-title"><strong>Example 24 (Predictor matrix and design matrix)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Let <span class="math inline">\(X\)</span> be the design matrix, and fit <span class="math inline">\(\hat{\beta} = (X'X)^{-1}X'y\)</span>.</p>
-<p>✅ Let <span class="math inline">\(\mathbf{X}\)</span> be the predictor matrix and <span class="math inline">\(D(\mathbf{X})\)</span> the design matrix. The fitted coefficients solve the normal equations for <span class="math inline">\(D(\mathbf{X})\)</span>.</p>
+<p>✅ Let <span class="math inline">\(\mX\)</span> be the predictor matrix and <span class="math inline">\(\design(\mX)\)</span> the design matrix. The fitted coefficients solve the normal equations for <span class="math inline">\(\design(\mX)\)</span>.</p>
 </blockquote>
 <p>The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.</p>
 </div>
@@ -796,7 +796,7 @@
 <p><span class="theorem-title"><strong>Example 25 (Stating the chain rule)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\frac{d(u^2)}{dw} = 2u \frac{du}{dw}\)</span></p>
-<p>✅ <span class="math inline">\(\frac{d f(u)}{dw} = f'(u) \frac{du}{dw}\)</span></p>
+<p>✅ <span class="math inline">\(\dif{f(u)}{w} = f'(u) \dif{u}{w}\)</span></p>
 </blockquote>
 <p>The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable <span class="math inline">\(f\)</span>, and the squaring case follows by taking <span class="math inline">\(f(u) = u^2\)</span>.</p>
 </div>
@@ -807,15 +807,15 @@
 </section>
 <section class="slide level2">
 
-<p>Write the mean function as <span class="math inline">\(\mu\)</span>, not as <span class="math inline">\(f\)</span>. The mean function is the population mean of the outcome given the inputs, <span class="math inline">\(\mu(x)\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
-<p>Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it <code>\epredfnf{x}</code> (symbol <span class="math inline">\(\hat{g}\)</span>) for an estimated one, or <code>\predfnf{x}</code> (symbol <span class="math inline">\(g\)</span>) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function <span class="math inline">\(\mu\)</span> itself.</p>
+<p>Write the mean function as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(\predfn\)</span>. The mean function is the population mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
+<p>Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it <code>\epredfnf{x}</code> (symbol <span class="math inline">\(\epredfn\)</span>) for an estimated one, or <code>\predfnf{x}</code> (symbol <span class="math inline">\(\predfn\)</span>) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function <span class="math inline">\(\truemean\)</span> itself.</p>
 <div id="exm-mean-vs-prediction-function" class="theorem example">
 <p><span class="theorem-title"><strong>Example 26 (Mean function and fitted prediction function)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The expected squared error of the fitted mean function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{(y - \hat{f}(x))^2}\)</span>.</p>
-<p>✅ The expected squared error of the fitted prediction function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{(y - \hat{g}(x))^2}\)</span>, and its bias is <span class="math inline">\(\E{\hat{g}(x)} - \mu(x)\)</span>.</p>
+<p>✅ The expected squared error of the fitted prediction function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{\paren{\outvar - \epredfnf{x}}^2}\)</span>, and its bias is <span class="math inline">\(\E{\epredfnf{x}} - \truemeanf{x}\)</span>.</p>
 </blockquote>
-<p>The ✅ version names the fitted prediction function where the concept is a prediction, and keeps <span class="math inline">\(\mu\)</span> for the mean it is compared with.</p>
+<p>The ✅ version names the fitted prediction function where the concept is a prediction, and keeps <span class="math inline">\(\truemean\)</span> for the mean it is compared with.</p>
 </div>
 </section>
 <section id="writing-out-notational-shorthands" class="slide level2" data-number="16">
