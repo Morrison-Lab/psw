@@ -158,10 +158,14 @@ Before you share a figure:
 - Draw a tree (a parse tree, decision tree, dendrogram, or any other hierarchy) as a diagram figure,
   not only as nested bullets.
   A nested list hides how the branches relate and makes a reader count indentation to find a node's parent.
-  Keep the list too when it adds information, such as a text alternative for readers who cannot see the diagram.
-  Draw the diagram from the tree's data, with leaves and internal nodes distinguished by fill and a legend at the bottom,
-  and give it a Figure Div with saved alt text that reads out the structure.
-  The gha check `check-tree-lists` flags a nested list of three or more levels in an example or definition that mentions a tree.
+  Keep the list too when it adds information the diagram lacks.
+  Draw the diagram from the tree's data and fill leaves and internal nodes differently,
+  with the legend at the bottom.
+  Wrap the diagram in a `#fig-` div with a caption and alt text that reads out the structure.
+  The [Morrison-Lab/gha](https://github.com/Morrison-Lab/gha) check `check-tree-lists` flags a pull request that adds
+  a definition, example or other labelled div that mentions a tree, holds a list nested three or more levels deep,
+  and has no figure;
+  a `<!-- no-tree-figure: reason -->` comment inside the div exempts it.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.
