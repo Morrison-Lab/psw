@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:28:21 (PDT)
+Last modified: 2026-10-26 01:40:54 (PDT)
 
 > **NOTE:**
 >
@@ -230,9 +230,11 @@ A list of three or more phrases, written inline and separated by commas, makes t
 
 A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.
 
+A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
+
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
-A few mechanics to keep in mind when writing one:
+A few mechanics to keep in mind when writing a bullet list:
 
 - Keep the items grammatically parallel, so each one completes the introducing sentence the same way.
 - Leave a blank line before the list; without it, Markdown reads the list as part of the paragraph above.
@@ -278,6 +280,20 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
+> **NOTE:**
+>
+> **Example 11 (Turning a paragraph of cases into bullet points)**  
+>
+> > ❌ At \\z = 0\\ the slope is \\\dexpitf{0} = 1/4\\. At \\z = 2\\ it is \\\dexpitf{2} \approx 0.105\\. At \\z = -2\\ it is \\\dexpitf{-2} \approx 0.105\\.
+> >
+> > ✅ The slope \\\dexpitf{z}\\ at three values of \\z\\:
+> >
+> > - **\\z = 0\\:** \\\dexpitf{0} = 1/4\\.
+> > - **\\z = 2\\:** \\\dexpitf{2} \approx 0.105\\.
+> > - **\\z = -2\\:** \\\dexpitf{-2} \approx 0.105\\.
+>
+> The labels let the reader find a case at a glance, and the bullets show that there are three.
+
 ## 14 Write to communicate, not to impress
 
 Many rules in this chapter serve one aim: the reader should reach your meaning without extra work. A long word, a nested sentence or a crowded paragraph can make a text sound more formal, but it can add work for the reader without adding to the meaning. So at each level of the text, choose the plainest form that still carries the full meaning:
@@ -289,7 +305,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 
 > **NOTE:**
 >
-> **Example 11 (Rewriting a sentence written to sound formal)**  
+> **Example 12 (Rewriting a sentence written to sound formal)**  
 >
 > > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.
 > >
