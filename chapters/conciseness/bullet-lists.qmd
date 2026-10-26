@@ -22,8 +22,6 @@ when content has a shape, show that shape in the markup.
 A case analysis is a parallel run too.
 Write one bullet per case,
 and begin each with a bold label that names the case.
-Display math can sit inside a bullet,
-indented to the bullet's text.
 
 A few mechanics to keep in mind when writing a bullet list:
 
