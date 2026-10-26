@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 13:43:45 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 14:13:25 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -345,6 +345,7 @@
 <li>Define colors, shapes, and line types in a legend.</li>
 <li>Put the plot’s legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.</li>
 <li>In R, draw the static version of a figure with <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, and the interactive version with plotly as described in <a href="#/sec-scientific-figures" class="quarto-xref">Section&nbsp;4</a>. <a href="../chapters/teaching.html#present-r-results-with-modern-packages">Present R results with modern packages</a> gives the reasons.</li>
+<li>Draw a tree (a parse tree, decision tree, dendrogram, or any other hierarchy) as a diagram figure, not only as nested bullets. A nested list hides how the branches relate and makes a reader count indentation to find a node’s parent. Keep the list too when it adds information the diagram lacks. Draw the diagram from the tree’s data and fill leaves and internal nodes differently, with the legend at the bottom. Wrap the diagram in a <code>#fig-</code> div with a caption, and set alt text that reads out the structure with <code>fig-alt</code>. The <a href="https://github.com/Morrison-Lab/gha">Morrison-Lab/gha</a> check <code>check-tree-lists</code> flags a pull request that adds a definition, example, or other labeled div that mentions a tree, holds a list nested three or more levels deep, and has no figure; a <code>&lt;!-- no-tree-figure: reason --&gt;</code> comment inside the div exempts it.</li>
 <li>Minimize abbreviations in labels and legends.</li>
 <li>Use transparency to show overlapping data.</li>
 <li>Show measures of precision, such as 95% confidence intervals.</li>
