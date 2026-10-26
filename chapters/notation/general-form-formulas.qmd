@@ -1,0 +1,21 @@
+On a reference sheet, a formula sheet or a summary,
+state each formula in its general form.
+Do not state it only for a specific example.
+A reader looks a formula up to apply it to a new case,
+and an example shows only one case.
+
+::: {#exm-general-form-formula}
+
+## Stating the chain rule
+
+> ❌ $\frac{d(u^2)}{dw} = 2u \frac{du}{dw}$
+>
+> ✅ $\dif{f(u)}{w} = f'(u) \dif{u}{w}$
+
+The ❌ line is the chain rule for squaring only.
+The ✅ line holds for every differentiable $f$,
+and the squaring case follows by taking $f(u) = u^2$.
+
+:::
+
+Put a specific case on the sheet only as a labeled example next to the general formula.

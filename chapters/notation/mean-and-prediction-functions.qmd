@@ -1,0 +1,26 @@
+Write the mean function as $\truemean$, not as $\predfn$.
+The mean function is the population mean of the outcome given the inputs, $\truemeanf{x}$.
+In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
+write it `\truemeanf{x}`.
+
+Name the object you mean.
+When the text refers to the fitted prediction function as a concept,
+the rule that turns an input into a predicted outcome,
+write the fitted prediction function, not the fitted mean function.
+Write it `\epredfnf{x}` (symbol $\epredfn$) for an estimated one, or `\predfnf{x}` (symbol $\predfn$) for any prediction function.
+Use the fitted or estimated mean function only where the text is about
+estimating the mean function $\truemean$ itself.
+
+::: {#exm-mean-vs-prediction-function}
+
+## Mean function and fitted prediction function
+
+> ❌ The expected squared error of the fitted mean function at $x$ is $\E{(y - \hat{f}(x))^2}$.
+>
+> ✅ The expected squared error of the fitted prediction function at $x$ is $\E{\paren{\outvar - \epredfnf{x}}^2}$,
+> and its bias is $\E{\epredfnf{x}} - \truemeanf{x}$.
+
+The ✅ version names the fitted prediction function where the concept is a prediction,
+and keeps $\truemean$ for the mean it is compared with.
+
+:::
