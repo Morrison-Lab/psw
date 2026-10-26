@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:03:10 (PDT)
+Last modified: 2026-10-26 01:14:04 (PDT)
 
 > **NOTE:**
 >
@@ -232,7 +232,7 @@ A run of parallel sentences is a list too, even with only two items. The common 
 
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
-A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case. Display math can sit inside a bullet, indented to the bullet’s text.
+A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
 
 A few mechanics to keep in mind when writing a bullet list:
 
