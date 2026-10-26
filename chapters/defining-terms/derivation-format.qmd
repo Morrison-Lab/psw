@@ -80,7 +80,7 @@ $$
 \begin{aligned}
 \sum_{i=1}^n (x_i - \bar{x})
 &= \sum_{i=1}^n x_i - \sum_{i=1}^n \bar{x}
-&& \text{(split the sum)}\\
+&& \text{(distribute the sum over the terms)}\\
 &= \sum_{i=1}^n x_i - n \bar{x}
 && \text{(sum of a constant)}\\
 &= n \bar{x} - n \bar{x}

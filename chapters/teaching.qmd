@@ -34,7 +34,8 @@ Pose each task as an exercise, give students time to try it, and then show the s
   and the formal `#def-` or `#thm-` div follows the solution div.
 - Give each bottom-level prompt its own `#exr-` div and its own `#sol-` div,
   in order, rather than one exercise with parts (a) through (e).
-  A numbered list of questions inside one exercise is the same thing as parts, so split it too.
+  Any exercise with several parts is split, however the parts are marked:
+  letters, numbers or bullets.
   Put the shared setup in the first exercise,
   and begin each later exercise by citing it, as in "Make the assumptions of the first exercise."
   Later exercises can use earlier results through cross-references.
@@ -238,6 +239,16 @@ This rule applies to all teaching materials, in every course and every teaching 
   a theorem that uses a definition gets its own example,
   and so does the definition.
   The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
+- Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23).
+  When an example has no figure, state the reason in that div.
+  Put the figure inside the div,
+  or include a subfile whose name ends in `_fig` inside the div.
+  When an example has nothing to plot, such as a single number,
+  add `<!-- no-figure: reason -->` inside the div,
+  replacing `reason` with why there is nothing to plot.
+  The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
+  reports, in a pull request, each example that has no figure and no `no-figure` comment
+  ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
 - Give every topic at least one figure that shows the idea,
   such as the data with a fitted curve, a distribution, or a diagram of the procedure.
   A page of definitions with no figure and no data is incomplete.

@@ -18,7 +18,7 @@ format:
 
 Clear definitions are essential to effective scientific writing.
 Every specialized term should have an explicit,
-concise definition immediately before or after its first use.
+concise definition before its first use.
 Readers should not need to search for the meaning of a term
 or infer it from context alone. For example:
 
@@ -153,6 +153,19 @@ Follow these principles when introducing new terms:
   that has not been defined yet,
   and hides that the model is a statement about the outcome's distribution.
 
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:**
+  Define a shorthand symbol directly from the objects it summarizes,
+  then prove any equivalent form as a result.
+  For example, with deviations $\delta_i := y_i - \mu$
+  from the population mean $\mu$,
+  define the sample mean of the deviations as
+
+  $$\bar{\delta} := \frac{1}{n} \sum_{i=1}^n \delta_i,$$
+
+  then show that $\bar{\delta} = \bar{y} - \mu$.
+  Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning,
+  and hides that the symbol is a mean of the deviations.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
   by its probability density function (pdf) or probability mass function (pmf)
@@ -207,7 +220,12 @@ Follow these principles when introducing new terms:
   (see [Order: general definition, then examples](#order-general-definition-then-examples)).
   
 - **Define terms at first use:**
-  Place the definition immediately before or after the term's first appearance.
+  Place the definition of a term before the first definition, theorem or passage that relies on it,
+  so that every link to a definition points backward rather than forward
+  (see [Avoid forward references](paper-organization.qmd#avoid-forward-references)).
+  When a definition or theorem uses a term whose definition comes later in the document,
+  reorder the content so the definition comes first;
+  do not remove the hyperlink to hide the forward reference.
 
 - **Give every key term a formal definition in a `#def-` div:**
   A term that the document relies on needs its own definition div,
@@ -233,6 +251,19 @@ Follow these principles when introducing new terms:
   not "the slope" and "the residual sum of squares" alone.
   The words tell the reader what the quantity means,
   and the symbol tells the reader which letters stand for it in the equations that follow.
+
+- **Give a definition a symbol only when the object recurs in formulas:**
+  Introduce a new symbol or macro for a defined term
+  when the term appears in at least two formulas.
+  A term that appears only in words, such as "pairwise disjoint",
+  needs no symbol.
+  A term that recurs in formulas, such as a level set, needs one,
+  so the reader sees the same object written the same way each time.
+  Define the symbol by the term's most literal meaning,
+  such as the preimage of a single value for a level set.
+  No check can decide this rule,
+  because whether a term "recurs" depends on how the notes use it,
+  so a reviewer judges it.
 
 - **Define and link every technical term at its first use in each div:**
   Inside a definition, theorem, example or other div,
@@ -261,6 +292,18 @@ Follow these principles when introducing new terms:
   but without a link, wrongly assuming the earlier link carries over.
   The example block should link "mean" at its own first use.
 
+- **Link the longest defined phrase:**
+  When a longer phrase has its own definition,
+  link the whole phrase to that definition,
+  not a shorter term inside it.
+  For example, link `[logistic regression](#def-logistic-regression)`,
+  not "logistic `[regression](#def-regression)`".
+  The shorter term names a different concept,
+  so linking it sends the reader to the wrong definition.
+  Link the shorter term only where it stands alone.
+  The `check-term-links` check in
+  [gha](https://github.com/Morrison-Lab/gha/pull/1220) flags a partial link.
+
 - **Do not presuppose what the reader has not met:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
@@ -272,6 +315,14 @@ Follow these principles when introducing new terms:
   Then link each definite noun phrase to what it refers to,
   with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`,
   so that a reader who has forgotten or skipped the referent can find it.
+  Skip the link when the referent is introduced in the same div,
+  or in the same prose passage, as the phrase.
+  Inside a div, the antecedent has to be in that div:
+  an earlier div does not count,
+  because readers jump into the middle of a page.
+  For example, an exercise that says "Explain the labels" with no labels named in it
+  has no antecedent, even if an earlier exercise names some.
+  Name the labels in the exercise, or link them to where they are introduced.
 
 - **Provide examples and counterexamples:**
   Every definition should include at least one concrete example
@@ -335,18 +386,35 @@ Follow these principles when introducing new terms:
   such as *learning*, *training* and *fitting* a model,
   every word that names the concept is an alternative name,
   and each is treated exactly as the primary name:
-  put all of them in the div title, as in "Postulate (axiom)",
+  put all of them in the div title as a comma-separated list,
+  with the primary name first, as in "Postulate, axiom",
   and bold each where it first appears in the definition.
+  Do not use parentheses or a phrase such as "also called" in the title.
   This covers the names other sources use, such as a textbook's,
   which belong in the title and in bold too,
-  as in "Risk (expected loss, population risk, true risk,
-  generalization error, expected prediction error)".
+  as in "Risk, expected loss, population risk, true risk,
+  generalization error, expected prediction error".
   Say which one the document uses.
   Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
   A reader who meets the other words in another source
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
+
+- **Tell synonyms from hyponyms:**
+  A *synonym* names the same concept as the primary term,
+  so it belongs in the div title.
+  A *hyponym* names a special case of another term,
+  such as "linear regression" for "regression model",
+  so it is a different concept.
+  Give each hyponym its own `#def-` div,
+  and never put it in the title of the general term
+  or introduce it with "also called"
+  (Ezra, 2026-10-23).
+  When unsure, check both directions.
+  Is every instance of the new term an instance of the old term?
+  Is every instance of the old term an instance of the new term?
+  If only the first holds, the new term is a hyponym.
 
 - **Distinguish estimands from estimators:**
   An *estimand* is the quantity a study is after,
@@ -427,6 +495,26 @@ Follow these principles when introducing new terms:
   For example, write
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
+
+- **Use "prediction rule" only for a fitted model in its role as a predictor:**
+  Not every fitted model is used to predict outcomes,
+  so "prediction rule" is a narrower term, not another name for "fitted model".
+  Define it in its own `#def-prediction-rule` div
+  as a fitted model that is used to predict outcomes at a new covariate value,
+  and link it to that definition at its first use.
+  Write "the fitted model" for a sentence about the model itself,
+  such as its form, its coefficients or its fit to the training set.
+  Write "the prediction rule" only where the sentence needs the role of predicting a new outcome
+  to tell it from other uses of the fitted model.
+  The verb does not change the term:
+  keep writing "the fitted model predicts",
+  as the bullet above requires.
+  For example, write "the fitted model has slope 2"
+  and "a clinic uses the prediction rule for new patients",
+  and not "the prediction rule has slope 2".
+  If the notes once defined "prediction rule" as a span inside the fitted model's definition,
+  keep that anchor on the new div,
+  so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:**
   A predicted value is the fitted model applied to a covariate value,
@@ -563,6 +651,16 @@ write the general definition first and compactly,
 then one example block per special case,
 ordered from the most general to the most specific.
 Put any commentary in a remark block after them.
+When the special cases have their own definitions,
+define the general concept first from prerequisite terms defined before it,
+and then define the special cases after it.
+Do not define the general concept by listing the special-case definitions that follow it,
+or move the general definition after its special cases:
+define the prerequisite terms first
+(for example, define lower and upper bounds first,
+then define an interval as a subset of the real numbers between two bounds,
+possibly including one or both bounds,
+and then define closed, open and half-open intervals).
 For example, a statistics text that defines the residual sum of squares
 would give these blocks, in this order:
 
@@ -622,6 +720,37 @@ The line is a special case, so it is an example,
 and the numerical case is a special case of the line, so it follows the line.
 The counterexample comes after the examples,
 once the reader knows what the definition covers.
+
+## Give a defined quantity its expression and its prose reading
+
+When a term names a quantity with a mathematical form,
+the definition states the expression
+and then reads it aloud in a prose sentence that says the same thing.
+The expression makes the definition exact.
+The prose reading lets the reader check that they understood it.
+The two must match
+(see [Make the prose say what the formula says](mathematical-writing.qmd#make-the-prose-say-what-the-formula-says)).
+A term with no mathematical form, such as active voice, keeps its prose definition alone.
+
+::: {#def-variance-expression-and-prose}
+
+## Variance, with its expression and its prose reading
+
+The **variance** of a random variable $X$ is
+$$\Var{X} = \E{\paren{X - \E{X}}^2}.$$
+In words, it is the population mean of the squared deviation of $X$ from its population mean.
+
+:::
+
+::: {#exm-not-expression-and-prose}
+
+## A definition that gives only one of the two
+
+"The variance is how spread out $X$ is" gives no expression, so a reader cannot compute it.
+"The variance is $\E{\paren{X - \E{X}}^2}$" gives no reading, so a reader cannot check their understanding.
+@def-variance-expression-and-prose gives both.
+
+:::
 
 ## Why examples matter
 

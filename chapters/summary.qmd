@@ -22,7 +22,7 @@ Follow its link for the reasons and the exceptions.
 ## Terms and notation
 
 - [Define every technical term](defining-terms.qmd#guidelines-for-defining-terms)
-  explicitly, next to its first use,
+  explicitly, before its first use,
   and follow the definition with examples and counterexamples.
 - [Give each mathematical statement an example](defining-terms.qmd#mathematical-statements-require-examples)
   that applies it.
@@ -99,6 +99,7 @@ Follow its link for the reasons and the exceptions.
 - [Follow an abstract statement with an example](word-choice.qmd#follow-an-abstract-statement-with-an-example).
 - [Replace the word "thing"](word-choice.qmd#say-which-thing)
   with the object, quantity, step, or idea that it stands for.
+- [Give a technical word one meaning](word-choice.qmd#give-a-technical-word-one-meaning).
 - [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon).
 - [Edit out clusters of clichéd words and sentence shapes](avoid-cliches.qmd),
   which make prose read as generic or machine-drafted.
@@ -137,6 +138,8 @@ Follow its link for the reasons and the exceptions.
 - [Do not rule out readings that no reader would make](conciseness.qmd#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](conciseness.qmd#put-lists-in-bullet-points).
+- [Write to communicate, not to impress](conciseness.qmd#write-to-communicate-not-to-impress):
+  use the plainest form that still carries the full meaning.
 
 ## Teaching materials
 
