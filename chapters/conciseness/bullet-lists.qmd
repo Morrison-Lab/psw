@@ -19,6 +19,13 @@ where a reader scans a list rather than reading it as a sentence.
 The rule is one case of a broader preference for more structure:
 when content has a shape, show that shape in the markup.
 
+A case analysis is a parallel run too.
+When a result holds in several cases,
+write one bullet per case,
+and begin each with a bold label that names the case.
+Display math can sit inside a bullet,
+indented to the bullet's text.
+
 A few mechanics to keep in mind when writing one:
 
 - Keep the items grammatically parallel,
@@ -77,5 +84,23 @@ so the reader can pick one without parsing the paragraph.
 
 The numbers show the order of the steps,
 and the loop condition moves into the introducing sentence.
+
+:::
+
+::: {#exm-case-bullets}
+
+## Turning case paragraphs into bullet points
+
+> ❌ At $z = 0$ the slope is $\sigmoid'(0) = 1/4$.
+> At $z = 2$ it is $\sigmoid'(2) \approx 0.105$, and it is the same at $z = -2$.
+>
+> ✅ The slope $\sigmoid'(z)$ at three scores:
+>
+> - **$z = 0$:** $\sigmoid'(0) = 1/4$, the highest value.
+> - **$z = 2$:** $\sigmoid'(2) \approx 0.105$.
+> - **$z = -2$:** the same as at $z = 2$, by symmetry.
+
+The labels let the reader find a case at a glance,
+and the bullets show that there are three.
 
 :::
