@@ -1383,13 +1383,6 @@
     "href": "index.html",
     "title": "Principles of Scientific Writing",
     "section": "",
-    "text": "This website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\nThe site’s CI tooling was written by Ezra Morrison for the UCD-SERG lab manual. The site is built from the qwt website template."
-  },
-  {
-    "objectID": "index.html#acknowledgments",
-    "href": "index.html#acknowledgments",
-    "title": "Principles of Scientific Writing",
-    "section": "",
-    "text": "The site’s CI tooling was written by Ezra Morrison for the UCD-SERG lab manual. The site is built from the qwt website template."
+    "text": "Preface\nThis website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]
