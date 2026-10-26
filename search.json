@@ -1348,13 +1348,13 @@
     "href": "index.html",
     "title": "Principles of Scientific Writing",
     "section": "",
-    "text": "This website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\nThe site’s structure ultimately derives from the Benjamin-Chung Lab Manual. For further reading, see the UCD-SERG lab manual and the qwt website template."
+    "text": "This website presents my perspective on writing in science, technology, engineering, and mathematics (STEM), with a focus on writing about statistical data analysis. Most of its rules also apply to informative prose in general. I intend to give it to academic mentees as a style guide reference, and also use it as a notebook for myself.\nThe Introduction describes the book’s scope and readers, and how to use its chapters. The Summary lists the book’s main rules as a checklist for revising a draft.\n\n\nThe site’s CI tooling was copied from the UCD-SERG lab manual, a fork of the Benjamin-Chung Lab Manual. The site is built from the qwt website template."
   },
   {
     "objectID": "index.html#acknowledgments",
     "href": "index.html#acknowledgments",
     "title": "Principles of Scientific Writing",
     "section": "",
-    "text": "The site’s structure ultimately derives from the Benjamin-Chung Lab Manual. For further reading, see the UCD-SERG lab manual and the qwt website template."
+    "text": "The site’s CI tooling was copied from the UCD-SERG lab manual, a fork of the Benjamin-Chung Lab Manual. The site is built from the qwt website template."
   }
 ]
