@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:27:11 (PDT)
+Last modified: 2026-10-26 01:33:48 (PDT)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
