@@ -1,6 +1,7 @@
 Anscombe
 API
 Attenborough
+Bernoulli
 betterposter
 Bienaymé
 Bioconductor
@@ -36,10 +37,13 @@ generalizability
 ggeffects
 ggplot2
 ggview
+gha
 gtsummary
 Hastie
 Hg
 Hutchinson
+hyponym
+hyponyms
 ICMJE
 iDs
 IMRaD
@@ -94,6 +98,8 @@ SRQR
 STARD
 Starmer
 STEM
+synset
+synsets
 tabset
 Tchébychef
 tibble
@@ -106,4 +112,5 @@ Tufte
 Tufte's
 UCD
 Weinberger
+Wordnet
 YAML

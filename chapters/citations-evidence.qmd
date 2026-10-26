@@ -297,7 +297,34 @@ Link these things whenever they appear:
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
 - a related section elsewhere in the document,
-  instead of repeating its content.
+  instead of repeating its content;
+- a back-reference,
+  such as "as defined above" or "the model from the previous section",
+  to the content that it points back to.
+
+A reader who skipped the earlier section,
+or who opened the page from a link to its middle,
+can jump to the content that a back-reference points to only if the back-reference is a link.
+Put the link on the words that name the target,
+once per paragraph.
+Where you can, use the target's name instead of "above" or "earlier",
+since a word that names a position becomes wrong
+when a later edit moves the content
+(see [Avoid forward references](paper-organization.qmd#avoid-forward-references)).
+
+::: {#exm-link-back-reference}
+
+## Linking a reference back to earlier content
+
+> ❌ The likelihood of the logistic regression model from the previous chapter
+> is a product of Bernoulli probabilities.
+>
+> ✅ The likelihood of the [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) model
+> is a product of Bernoulli probabilities.
+
+In the ✅ version, the link takes the reader to the model's definition.
+
+:::
 
 In [Quarto](https://quarto.org/docs/authoring/cross-references.html),
 use a cross-reference such as `@def-confidence-interval`
@@ -513,9 +540,9 @@ and never fill in a title, volume, or page number from memory.
 
 ## Crediting Chebyshev's inequality
 
-> ❌ Chebyshev's inequality says that ...
+> ❌ Chebyshev's inequality bounds the probability that ...
 >
-> ✅ Chebyshev's inequality says that ...
+> ✅ Chebyshev's inequality bounds the probability that ...
 > Bienaymé derived the bound [@bienayme1853], and Tchébychef proved a more general form [@tchebichef1867].
 > A modern treatment is in @blitzstein2019introduction.
 
