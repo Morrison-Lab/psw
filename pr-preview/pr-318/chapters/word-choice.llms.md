@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 12:08:42 (PDT)
+Last modified: 2026-10-25 22:12:01 (PDT)
 
 > **NOTE:**
 >
@@ -20,6 +20,8 @@ I recommend trying to replace Latin-derived words and phrases with Old English-d
 Table 1: Commonly used Latin words and phrases and Anglish alternatives
 
 See also <https://bark-fa.github.io/Anglish-Translator/>
+
+To find a replacement for a word, look the word up on the [Open English Wordnet website](https://en-word.net/) ([source on GitHub](https://github.com/globalwordnet/english-wordnet)). Open English Wordnet groups English words into sets of synonyms, called synsets. A word with several meanings appears in several synsets, one for each meaning, so choose the synset that matches the meaning you intend. Then pick the word in that synset that your readers are most likely to understand easily.
 
 [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more words, many of them Latin-derived, that writers reach for by reflex, with plainer alternatives.
 
