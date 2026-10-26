@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 09:47:33 (PDT)
+Last modified: 2026-10-26 10:21:50 (PDT)
 
 > **NOTE:**
 >
@@ -116,15 +116,15 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 >
 > The ❌ version sends the reader to answers that the notes may reorder, hide or drop. The ✅ version cites claims that the notes state, number and keep.
 
-Add an exercise and its solution just before every result div that you add or edit. The exercise does not state the result. It asks the student to find it, such as “find an expression for the spread of a random variable using its first two moments”, so that the reader discovers the result, and the result div then states what the solution showed. Every later argument cites the result div.
+Add an exercise and its solution just before every result div that you add or edit. The exercise does not state the result. It asks the student to find the result, such as “find an expression for the spread of a random variable using its first two moments”, so that the reader discovers the result, and the result div then states what the solution showed. Every later argument cites the result div.
 
-The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is one line, “By **?@sol-x**.”, with one citation. A proof with its own steps, display math or a second citation cites result divs instead.
+The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation. When the exercise has several parts, the line may cite each part, as in `By @sol-x and @sol-x-part2.` A proof with its own steps or display math cites result divs instead.
 
-The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For any other line that must cite a solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it, whichever solution the line cites. Quarto removes the comment from the rendered page. The workflow does not check prose outside those divs, but the rule still applies there.
+The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For a one-line proof that cites several parts of the paired solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it. Quarto removes the comment from the rendered page. The workflow does not check prose outside those divs, but the rule still applies there.
 
 ## 9 Keep each div minimal: cite, never inline
 
-Every div states one result or answers one exercise, and does no more. When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite it. Never derive the step inline. A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.
+Every result div states one result and every solution div answers one exercise, and each does no more. When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite that result div. Never derive the step inline. A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.
 
 > **NOTE:**
 >
@@ -132,13 +132,13 @@ Every div states one result or answers one exercise, and does no more. When a pr
 >
 > > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 r_i \phi_i\\, where \\r_i\\ is the residual and \\\phi_i\\ the design vector, and summing over \\i\\ gives the claim.
 > >
-> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of the summands’ gradients.
+> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of \\2 r_i \phi_i\\ over \\i\\.
 >
-> The ❌ proof repeats a derivation that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
+> The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 
 No div repeats reasoning that it could cite instead. Two arguments that share a step cite one result div, so a correction to the step is made once.
 
-A check can flag display math in a proof, but it cannot decide whether a step is reusable, so this rule stays a writing rule that review enforces. The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) covers the part that a check can decide.
+No check can decide whether a step is reusable, so this rule stays a writing rule that review enforces. The `check-solution-citations` workflow covers only the citation of solutions.
 
 ## 10 Rules that other chapters cover
 
