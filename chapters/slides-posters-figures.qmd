@@ -107,8 +107,8 @@ Keep a static image for the PDF and Word outputs, which cannot show a widget.
 Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
 Open each caption with a sentence that says what the figure or table shows,
-so a reader who sees only the float learns its point without following a link.
-A cross-reference to the example or section it illustrates may support that sentence,
+so a reader who sees only the figure or table learns its point without following a link.
+A cross-reference to the example or section that the figure or table illustrates may support that sentence,
 after it or in parentheses inside it,
 but it never replaces it:
 "The symmetry of `@exm-x`." says nothing until the reader looks up the example,
