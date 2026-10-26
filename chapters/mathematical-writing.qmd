@@ -243,7 +243,7 @@ No div repeats reasoning that it could cite instead.
 Two arguments that share a step cite one result div, so a correction to the step is made once.
 
 A check can flag display math in a proof, but it cannot decide whether a step is reusable, so this rule stays a writing rule that review enforces.
-The `check-solution-citations` and `check-exercise-before-result` workflows in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) cover the parts that a check can decide.
+The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) covers the part that a check can decide.
 
 ## Rules that other chapters cover
 
