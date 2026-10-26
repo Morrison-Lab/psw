@@ -25,4 +25,7 @@ exclude = [
   # Morrison-Lab/ai-config is private, so every page in it answers 503 to the
   # checker's unauthenticated request; the agent instruction files link it (#82).
   "^https://github\\.com/Morrison-Lab/ai-config([/#?].*)?$",
+  # credit.niso.org (the CRediT taxonomy) timed out from GitHub's runners on
+  # all four runs on 2026-10-22 (psw#324, psw#325), so the check stays red.
+  "^https://credit\\.niso\\.org/?$",
 ]
