@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 15:35:52 (PDT)
+Last modified: 2026-10-25 22:11:55 (PDT)
 
 > **NOTE:**
 >
@@ -127,6 +127,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 
 - Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
 - Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
+- Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in `_fig` inside the div. When an example has nothing to plot, such as a single number, add `<!-- no-figure: reason -->` inside the div, replacing `reason` with why there is nothing to plot. The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each example that has no figure and no `no-figure` comment ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
 - Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.
 - Prerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.
 - Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader meets the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as [Figures and tables](../chapters/paper-organization.llms.md#figures-and-tables) describes.

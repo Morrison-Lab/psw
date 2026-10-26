@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 15:35:52 (PDT)
+Last modified: 2026-10-25 22:11:55 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -55,7 +55,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Put the ticks in the original measurement scale of each variable, however the model is parametrized and the axis is spaced. If a fit uses scaled or standardized values, place the ticks at round original values and label them with those, so a horsepower axis reads 50, 100, 150 and 200, not 0 to 1. Report numbers such as an error in the response’s units too.
 - Print tick labels as plain or comma-separated numbers, such as 0.001 or 10,000, not in scientific notation. A logarithmic axis is fine. Only the label format matters, so write 1, 10, 100 and 1,000, not 1e+00 through 1e+03. When the numbers are huge or tiny, rescale the units and say so in the axis title, such as “dollars (millions)”.
 - Use font sizes that are easy to read without dominating the plot.
-- Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
+- Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)). Pair color with shape or line type, so that color is never the only way to tell groups apart. This matters most with more than 3 or 4 groups, because even a colorblind-friendly palette then has pairs of colors that are close together.
 - Define colors, shapes, and line types in a legend.
 - Put the plot’s legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.
 - In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/), and the interactive version with plotly as described in [Section 4](#sec-scientific-figures). [Present R results with modern packages](../chapters/teaching.llms.md#present-r-results-with-modern-packages) gives the reasons.
