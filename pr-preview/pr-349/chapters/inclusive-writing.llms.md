@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 11:29:12 (PDT)
+Last modified: 2026-10-25 19:24:41 (PDT)
 
 > **NOTE:**
 >
@@ -57,6 +57,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | the probability \\p\\ lives in \\(0, 1)\\ | the probability \\p\\ is in \\(0, 1)\\ |
 | the linear model knows nothing about the range \\\[0, 1\]\\ | the linear model does not constrain predictions to \\\[0, 1\]\\ |
 | Say which class the classifier predicts at \\x = 2\\. | State which class the classifier predicts at \\x = 2\\. |
+| the noise model says that the errors have mean zero | in the noise model, the errors have mean zero |
+| as Theorem 2 says, the estimator is unbiased | by Theorem 2, the estimator is unbiased |
 
 Table 1: Idioms, clichés and slang, with literal alternatives
 
