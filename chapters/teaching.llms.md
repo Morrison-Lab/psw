@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:55:25 (PDT)
+Last modified: 2026-10-26 01:27:11 (PDT)
 
 > **NOTE:**
 >
@@ -80,11 +80,11 @@ When a unit still looks long, ask what could be named and moved out.
 - Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.
 
-Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who meets one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
+Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
 ## 4 State the notation and its alternatives
 
-When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will meet elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write \\\mathbb{N}\_0\\ or \\\mathbb{N}^+\\ to make the choice explicit.
+When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write \\\mathbb{N}\_0\\ or \\\mathbb{N}^+\\ to make the choice explicit.
 
 ## 5 Lead with the simplest correct form of a definition
 
@@ -130,7 +130,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in `_fig` inside the div. When an example has nothing to plot, such as a single number, add `<!-- no-figure: reason -->` inside the div, replacing `reason` with why there is nothing to plot. The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each example that has no figure and no `no-figure` comment ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
 - Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.
 - Prerequisite notes follow the same rule as course lectures. A prerequisite page that is only definitions and algebra needs an applied example and a figure.
-- Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader meets the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as [Figures and tables](../chapters/paper-organization.llms.md#figures-and-tables) describes.
+- Place each figure directly after the sentence that first refers to it. Do not refer to a figure, table, or result that appears later in the document, because the reader encounters the reference before the thing it points to. This rule is for teaching materials, which are reading copies. A journal submission may collect its figures at the end, as [Figures and tables](../chapters/paper-organization.llms.md#figures-and-tables) describes.
 - Make each figure follow the accessibility rules below.
 
 ## 10 Follow every example with an exercise and solution
@@ -237,7 +237,7 @@ For example, a chunk that fits a model the text walks through and prints its coe
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
-- Give the course a programming primer that introduces each package function the course’s chapters call. A student meets the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.
+- Give the course a programming primer that introduces each package function the course’s chapters call. A student encounters the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.
 - Keep the primer complete by computing the list of functions, not by remembering it. Scan the code chunks of the chapters for the functions they call, and compare the list with the functions the primer mentions. Run the scan when a chapter adds a function, and again before a term starts.
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
@@ -259,7 +259,28 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 20 Talk about the ideas, not the notes
+## 20 Give each concept in a note sheet its own row
+
+A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
+
+- Never put two definitions in one row.
+- Never merge rows to save space. Find the room another way, such as a smaller table font or a second table beside the first.
+- Never put notation or assumptions inside a label. Give each assumption its own row, and state the notation once in its own row.
+- Write each formula in its most compact form, built from pieces that have their own rows (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
+
+The same rule applies to every other reference table, such as a table of notation.
+
+> **NOTE:**
+>
+> **Example 5 (Splitting a merged row)**  
+>
+> > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
+> >
+> > ✅ Rows: `Dot product` with its formula, then `Sample mean` with its formula.
+>
+> The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
+
+## 21 Talk about the ideas, not the notes
 
 When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -269,14 +290,14 @@ When a term is defined on another page or in another site, state the idea in the
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
-## 21 Credit other courses without summarizing them
+## 22 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 22 Rules that apply to all writing
+## 23 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
