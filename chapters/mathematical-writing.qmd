@@ -193,17 +193,19 @@ The ✅ version cites claims that the notes state, number and keep.
 
 :::
 
-The one exception to this citation rule is an exercise that asks students to prove a result before the result is stated.
-The proof of that result may then cite the solution that precedes it.
-Put the HTML comment `<!-- check-solution-citations: allow -->` on the line that holds the `@sol-` cross-reference,
-so that a checker can tell the citation from one of unrelated work.
-The comment is for maintainers: Quarto removes it from the rendered page.
-
-Separately from that exception, add an exercise and its solution just before every result div that you add or edit.
+Add an exercise and its solution just before every result div that you add or edit.
 The exercise asks the student to prove the result,
 and the result div then states what the solution showed.
+Every later argument cites the result div.
+
+The one exception to the citation rule follows from that pairing:
+the proof of the result itself may cite the solution of the exercise that asks for that same result.
+Put the HTML comment `<!-- check-solution-citations: allow -->` on the line that holds the `@sol-` cross-reference,
+so that the `check-solution-citations` workflow can tell this citation from a citation of a solution to a different exercise.
+The comment is for maintainers: Quarto removes it from the rendered page.
+
 The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div.
-Prose outside those divs is not checked, so the rule still applies there.
+It does not check prose outside those divs, but the rule still applies there.
 
 ## Rules that other chapters cover
 
