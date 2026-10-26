@@ -153,6 +153,19 @@ Follow these principles when introducing new terms:
   that has not been defined yet,
   and hides that the model is a statement about the outcome's distribution.
 
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:**
+  Define a shorthand symbol directly from the objects it summarizes,
+  then prove any equivalent form as a result.
+  For example, with deviations $\delta_i := y_i - \mu$
+  from the population mean $\mu$,
+  define the sample mean of the deviations as
+
+  $$\bar{\delta} := \frac{1}{n} \sum_{i=1}^n \delta_i,$$
+
+  then show that $\bar{\delta} = \bar{y} - \mu$.
+  Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning,
+  and hides that the symbol is a mean of the deviations.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
   by its probability density function (pdf) or probability mass function (pmf)
@@ -239,6 +252,19 @@ Follow these principles when introducing new terms:
   The words tell the reader what the quantity means,
   and the symbol tells the reader which letters stand for it in the equations that follow.
 
+- **Give a definition a symbol only when the object recurs in formulas:**
+  Introduce a new symbol or macro for a defined term
+  when the term appears in at least two formulas.
+  A term that appears only in words, such as "pairwise disjoint",
+  needs no symbol.
+  A term that recurs in formulas, such as a level set, needs one,
+  so the reader sees the same object written the same way each time.
+  Define the symbol by the term's most literal meaning,
+  such as the preimage of a single value for a level set.
+  No check can decide this rule,
+  because whether a term "recurs" depends on how the notes use it,
+  so a reviewer judges it.
+
 - **Define and link every technical term at its first use in each div:**
   Inside a definition, theorem, example or other div,
   link a technical term to its formal definition the first time it appears in that div.
@@ -265,6 +291,18 @@ Follow these principles when introducing new terms:
   The example block after it also uses "mean",
   but without a link, wrongly assuming the earlier link carries over.
   The example block should link "mean" at its own first use.
+
+- **Link the longest defined phrase:**
+  When a longer phrase has its own definition,
+  link the whole phrase to that definition,
+  not a shorter term inside it.
+  For example, link `[logistic regression](#def-logistic-regression)`,
+  not "logistic `[regression](#def-regression)`".
+  The shorter term names a different concept,
+  so linking it sends the reader to the wrong definition.
+  Link the shorter term only where it stands alone.
+  The `check-term-links` check in
+  [gha](https://github.com/Morrison-Lab/gha/pull/1220) flags a partial link.
 
 - **Do not presuppose what the reader has not encountered:**
   A definite noun phrase, one that starts with "the",
@@ -348,18 +386,35 @@ Follow these principles when introducing new terms:
   such as *learning*, *training* and *fitting* a model,
   every word that names the concept is an alternative name,
   and each is treated exactly as the primary name:
-  put all of them in the div title, as in "Postulate (axiom)",
+  put all of them in the div title as a comma-separated list,
+  with the primary name first, as in "Postulate, axiom",
   and bold each where it first appears in the definition.
+  Do not use parentheses or a phrase such as "also called" in the title.
   This covers the names other sources use, such as a textbook's,
   which belong in the title and in bold too,
-  as in "Risk (expected loss, population risk, true risk,
-  generalization error, expected prediction error)".
+  as in "Risk, expected loss, population risk, true risk,
+  generalization error, expected prediction error".
   Say which one the document uses.
   Name near-synonyms in the definition block or in a callout beside it,
   and state how they differ.
   A reader who encounters the other words in another source
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
+
+- **Tell synonyms from hyponyms:**
+  A *synonym* names the same concept as the primary term,
+  so it belongs in the div title.
+  A *hyponym* names a special case of another term,
+  such as "linear regression" for "regression model",
+  so it is a different concept.
+  Give each hyponym its own `#def-` div,
+  and never put it in the title of the general term
+  or introduce it with "also called"
+  (Ezra, 2026-10-23).
+  When unsure, check both directions.
+  Is every instance of the new term an instance of the old term?
+  Is every instance of the old term an instance of the new term?
+  If only the first holds, the new term is a hyponym.
 
 - **Distinguish estimands from estimators:**
   An *estimand* is the quantity a study is after,
@@ -441,17 +496,24 @@ Follow these principles when introducing new terms:
   "the bias of the prediction $\predval$",
   not "the bias of $\fitproc$".
 
-- **Say "fitted model", not "prediction rule":**
-  A fitted model that is used to predict outcomes is still a fitted model,
-  and a second name for one object makes readers wonder whether there are two objects,
-  so call it a fitted model every time.
-  Write "the fitted model predicts",
-  and never "the prediction rule predicts".
-  When a set of notes defines the fitted model,
-  "prediction rule" belongs only in that definition, as an alias in bold and in the div title,
-  so that a reader who encounters the alias elsewhere can find its meaning.
-  If the notes once defined "prediction rule" under its own anchor,
-  keep the old anchor as a span on the alias,
+- **Use "prediction rule" only for a fitted model in its role as a predictor:**
+  Not every fitted model is used to predict outcomes,
+  so "prediction rule" is a narrower term, not another name for "fitted model".
+  Define it in its own `#def-prediction-rule` div
+  as a fitted model that is used to predict outcomes at a new covariate value,
+  and link it to that definition at its first use.
+  Write "the fitted model" for a sentence about the model itself,
+  such as its form, its coefficients or its fit to the training set.
+  Write "the prediction rule" only where the sentence needs the role of predicting a new outcome
+  to tell it from other uses of the fitted model.
+  The verb does not change the term:
+  keep writing "the fitted model predicts",
+  as the bullet above requires.
+  For example, write "the fitted model has slope 2"
+  and "a clinic uses the prediction rule for new patients",
+  and not "the prediction rule has slope 2".
+  If the notes once defined "prediction rule" as a span inside the fitted model's definition,
+  keep that anchor on the new div,
   so that links to it still land there.
 
 - **Write a predicted value with the predicted-value macro:**
