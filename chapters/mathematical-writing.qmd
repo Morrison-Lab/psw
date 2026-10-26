@@ -208,6 +208,8 @@ Every later argument cites the result div.
 The one exception to the citation rule follows from that pairing:
 the proof of the result itself may cite the solution of the exercise that asks for that same result.
 Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation.
+This is the one place where a proof cites a solution rather than an exercise,
+and [Derivation format](defining-terms/derivation-format.qmd) says what the proof cites in every other case.
 When the exercise has several parts, the line may cite each part, as in `By @sol-x and @sol-x-part2.`
 A proof with its own steps or display math cites result divs instead.
 
@@ -234,7 +236,7 @@ A solution decomposes the same way: each solution is the smallest argument that 
 > ✅ **Proof.**
 > Lemma 4 gives the gradient of each summand,
 > and Lemma 5 says that the gradient of a sum is the sum of the gradients,
-> so the gradient of the total is the sum of $2 r_i \phi_i$ over $i$.
+> so the gradient of the total is the sum of $2 \resid_i \vfeatmap(\vx_i)$ over $i$.
 
 The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 

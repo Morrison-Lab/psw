@@ -22,6 +22,8 @@ Follow these principles:
   The theorem gives the result in prose and as a display equation.
   Its proof is a few sentences that cite the exercises it rests on,
   not a second copy of their working.
+  A later argument that uses the result cites the theorem, never the solution
+  (see [Cite results, not solutions](../mathematical-writing.qmd#cite-results-not-solutions)).
 - **Define notation first.**
   Introduce any notation the exercises use in its own definition before them,
   not inside the theorem that follows them.
