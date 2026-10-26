@@ -144,7 +144,7 @@ and is treated like the primary name:
 it appears in the div title and is bold where it first appears in the definition.
 Name synonyms and near-synonyms where the term is defined,
 and say which one the notes use.
-A student who meets one name here and another in a textbook
+A student who encounters one name here and another in a textbook
 cannot tell whether the difference matters.
 For a near-synonym, name the seam:
 critical points include the stationary points
@@ -153,7 +153,7 @@ and also the points where the derivative does not exist.
 ## State the notation and its alternatives
 
 When a symbol or convention has more than one common form,
-state the one the notes use and name the others a reader will meet elsewhere.
+state the one the notes use and name the others a reader will encounter elsewhere.
 Put the alternatives in the definition div or in a callout beside it.
 For example, some sources include 0 in the natural numbers and others exclude it,
 so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
@@ -256,7 +256,7 @@ This rule applies to all teaching materials, in every course and every teaching 
   A prerequisite page that is only definitions and algebra needs an applied example and a figure.
 - Place each figure directly after the sentence that first refers to it.
   Do not refer to a figure, table, or result that appears later in the document,
-  because the reader meets the reference before the thing it points to.
+  because the reader encounters the reference before the thing it points to.
   This rule is for teaching materials, which are reading copies.
   A journal submission may collect its figures at the end,
   as [Figures and tables](paper-organization.qmd#figures-and-tables) describes.
@@ -470,7 +470,7 @@ This rule applies to all teaching materials that run code,
 in every course and every teaching repository.
 
 - Give the course a programming primer that introduces each package function the course's chapters call.
-  A student meets the function there first, in a short note, a worked example and an exercise,
+  A student encounters the function there first, in a short note, a worked example and an exercise,
   and then sees it used in the chapters.
 - Keep the primer complete by computing the list of functions, not by remembering it.
   Scan the code chunks of the chapters for the functions they call,

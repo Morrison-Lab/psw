@@ -211,7 +211,7 @@ so that each definition or result precedes the sentences that use it.
 Then change "below" to "above", or delete the directional word.
 Do not fix a forward reference by removing the hyperlink to the later definition or theorem
 while leaving the term in the sentence:
-the sentence still uses a concept the reader has not met,
+the sentence still uses a concept the reader has not encountered,
 and the reader also loses the link to its definition.
 
 If moving the content would break the order of the argument,
@@ -244,7 +244,7 @@ Two cases are not forward references to fix:
   such as "Section 2 describes the data, and Section 3 gives the results".
   The reader is not meant to resolve the preview immediately.
 - A sentence that names a figure or table placed beside it, such as "Table 2 shows the estimates".
-  The reader meets the table at once.
+  The reader encounters the table at once.
 
 A word such as "below" in an ordinary comparison, as in "values below the detection limit",
 is not a pointer at all.
