@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-22 15:42:15 (PDT)
+Last modified: 2026-10-25 22:11:51 (PDT)
 
 > **NOTE:**
 >
@@ -108,6 +108,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Do not rule out readings that no reader would make](../chapters/conciseness.llms.md#do-not-rule-out-readings-no-reader-would-make).
 - [Write about the subject, not about the text](../chapters/conciseness.llms.md#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points).
+- [Write to communicate, not to impress](../chapters/conciseness.llms.md#write-to-communicate-not-to-impress): use the plainest form that still carries the full meaning.
 
 ## 7 Teaching materials
 
