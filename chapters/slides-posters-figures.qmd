@@ -106,6 +106,18 @@ such as a surface over two parameters.
 Keep a static image for the PDF and Word outputs, which cannot show a widget.
 Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
+Open each caption with a sentence that says what the figure or table shows,
+so a reader who sees only the figure or table learns its point without following a link.
+A cross-reference to the example or section that the figure or table illustrates may support that sentence,
+either after the sentence or in parentheses within the sentence,
+but the cross-reference never replaces the sentence.
+Two captions for the same figure show the difference:
+
+- Pointer only: "The symmetry of `@exm-x`."
+  The reader learns nothing until following the link.
+- Self-contained: "The logistic function at $-2$ is as high as $1$ minus its value at $2$ (`@exm-x`)."
+  The reader learns the point at once.
+
 Lead with a well-labeled figure or table
 instead of a long paragraph that describes a pipeline or compares groups.
 Use a diagram for a conceptual model, such as a directed acyclic graph (DAG),

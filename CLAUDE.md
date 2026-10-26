@@ -46,6 +46,7 @@ callouts (config + color palette live in `_quarto-website.yml`).
 - **Lists of 3+ items**: use bullet lists, not comma-separated prose; leave a
   blank line before a markdown bullet list. A run of parallel sentences, such
   as one sentence per linked video or reading, is a bullet list even with two.
+  So is a case analysis: one bullet per case, each starting with a bold case label.
 - **Prereq definitions**: when a prereq site (mds, pds, sds) already defines a
   term, hyperlink to that definition when the term comes up in lds or another
   course repo, rather than re-defining it. Define locally only if no prereq
@@ -59,6 +60,11 @@ callouts (config + color palette live in `_quarto-website.yml`).
   `chapters/grammar/relative-pronouns.qmd` and `chapters/defining-terms.qmd` in the same push.
   A paragraph edit on psc#39 (2026-10-15) missed filler, a dropped "that" and a duplicate link plus citation.
   In PR replies, say what changed in this push, never what you will do next time.
+- **Semantic macros in every page's math**: write each symbol through the shared macro that names its concept
+  (`\mX`, `\vx`, `\truemean`, `\epredfnf{x}`, `\dif{f(u)}{w}`, ...), in the prose and in the ✅ examples of the notation rules too.
+  Raw LaTeX is allowed only inside a ❌ counter-example or a passage that discusses the notation itself (see `chapters/notation/shared-macros.qmd`).
+  Before pushing a notation page, grep its `$...$` for bare `X`, `\tilde`, `\mathbf`, `\hat` and `\frac{d`,
+  and look each symbol up in `latex-macros/macros.qmd` (psw#318 shipped raw symbols, caught in review, 2026-10-26).
 - **Quarto chunks**: prefer `#|` YAML-style chunk options, not inline
   `r, opt = val` arguments.
 - **R style**: respect `.lintr.R`; run `lintr::lint_dir()` before declaring R
