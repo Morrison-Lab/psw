@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 19:43:06 (PDT)
+Last modified: 2026-10-25 19:48:50 (PDT)
 
 > **NOTE:**
 >
@@ -278,7 +278,26 @@ A few mechanics to keep in mind when writing one:
 >
 > The numbers show the order of the steps, and the loop condition moves into the introducing sentence.
 
-## 14 Examples of concise writing
+## 14 Write to communicate, not to impress
+
+Many rules in this chapter serve one aim: the reader should reach your meaning without extra work. A long word, a nested sentence or a crowded paragraph can make a text sound more formal, but it can add work for the reader without adding to the meaning. So at each level of the text, choose the plainest form that still carries the full meaning:
+
+- for words, see [Word choice](../chapters/word-choice.llms.md);
+- for sentences, see [Limit complex sentence structures](#limit-complex-sentence-structures);
+- for paragraphs, give each one a single topic, as [Keep a predictable structure](../chapters/inclusive-writing.llms.md#keep-a-predictable-structure) says;
+- for mathematics, see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise).
+
+> **NOTE:**
+>
+> **Example 11 (Rewriting a sentence written to sound formal)**  
+>
+> > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.
+> >
+> > ✅ Despite the limits of the study’s methods, the results suggest a substantial association between the exposure and the outcome.
+>
+> The ✅ version drops “It is imperative to acknowledge that”, which only says that the next claim matters. It replaces “notwithstanding” with “despite” and “are indicative of” with “suggest”, as [Replacing unnecessary jargon](../chapters/word-choice.llms.md#exm-jargon) does for single words. It puts the noun phrases in plainer words too: “methodological constraints” becomes “the limits of the study’s methods”, and “findings” becomes “results”. It also removes the relative clauses “that were encountered in the course of the study” and “that were obtained”, because a study’s constraints are ones it faced, and its findings are ones it obtained.
+
+## 15 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
