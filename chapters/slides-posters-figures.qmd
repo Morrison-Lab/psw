@@ -163,7 +163,7 @@ Before you share a figure:
   with the legend at the bottom.
   Wrap the diagram in a `#fig-` div with a caption and alt text that reads out the structure.
   The [Morrison-Lab/gha](https://github.com/Morrison-Lab/gha) check `check-tree-lists` flags a pull request that adds
-  a definition, example or other labelled div that mentions a tree, holds a list nested three or more levels deep,
+  a definition, example or other labeled div that mentions a tree, holds a list nested three or more levels deep,
   and has no figure;
   a `<!-- no-tree-figure: reason -->` comment inside the div exempts it.
 - Minimize abbreviations in labels and legends.
