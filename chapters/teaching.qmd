@@ -251,13 +251,11 @@ This rule applies to all teaching materials, in every course and every teaching 
   ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
 - Give every div whose title mentions visualization
   (*visualize*, *visualizing*, *visualization*) a corresponding figure (Ezra, 2026-10-26).
-  For an exercise, the solution includes the figure.
+  For an exercise, the figure may sit in the exercise or in its solution.
   The rule covers any div that asks for a picture:
   a title or an exercise prompt that says *plot*, *sketch*, *draw*, *diagram*, or *contour*
   (in any inflection, such as *plotting* or *sketching*),
   or that asks the reader to mark points on a surface.
-  The solution shows the picture that the exercise asks for;
-  the check accepts a figure in the exercise or in its solution.
   The `check-visualization-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
   reports, in a pull request, each such div that has no figure in it or in its solution,
   and a `<!-- no-figure: reason -->` comment inside the div suppresses that report,
