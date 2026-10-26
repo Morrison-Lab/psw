@@ -23,9 +23,3 @@ The [Introduction](chapters/intro.qmd) describes the book's scope and readers,
 and how to use its chapters.
 The [Summary](chapters/summary.qmd) lists the book's main rules
 as a checklist for revising a draft.
-
-## Acknowledgments
-
-The site's CI tooling was written by Ezra Morrison
-for the [UCD-SERG lab manual](https://ucd-serg.github.io/lab-manual/).
-The site is built from the [qwt](https://github.com/Morrison-Lab/qwt) website template.
