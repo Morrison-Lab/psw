@@ -161,9 +161,9 @@ Before you share a figure:
   Keep the list too when it adds information the diagram lacks.
   Draw the diagram from the tree's data and fill leaves and internal nodes differently,
   with the legend at the bottom.
-  Wrap the diagram in a `#fig-` div with a caption and alt text that reads out the structure.
+  Wrap the diagram in a `#fig-` div with a caption, and set alt text that reads out the structure with `fig-alt`.
   The [Morrison-Lab/gha](https://github.com/Morrison-Lab/gha) check `check-tree-lists` flags a pull request that adds
-  a definition, example or other labeled div that mentions a tree, holds a list nested three or more levels deep,
+  a definition, example, or other labeled div that mentions a tree, holds a list nested three or more levels deep,
   and has no figure;
   a `<!-- no-tree-figure: reason -->` comment inside the div exempts it.
 - Minimize abbreviations in labels and legends.
