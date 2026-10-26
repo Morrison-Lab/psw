@@ -210,14 +210,14 @@ the proof of the result itself may cite the solution of the exercise that asks f
 Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation.
 This is the one place where a proof cites a solution.
 [Derivation format](defining-terms/derivation-format.qmd) describes the exercise, solution, theorem and proof pattern.
-When the exercise has several parts, the line may cite each part, as in `By @sol-x and @sol-x-part2.`
+When the exercise has several parts, the line may cite each part, as in the line `By @sol-x and @sol-x-part2.`, which ends in a period.
 A proof with its own steps or display math cites result divs instead.
 
 The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div.
 It lets a one-line proof with one citation pass.
-For a one-line proof that cites several parts of the paired solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it.
+For a one-line proof that cites several parts of the paired solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip that line.
 Quarto removes the comment from the rendered page.
-The workflow does not check prose outside those divs, but the rule still applies there.
+The workflow does not check prose outside proof and result divs, but the rule still applies there.
 
 ## Keep each div minimal: cite, never inline
 
