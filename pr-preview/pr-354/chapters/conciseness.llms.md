@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:52:41 (PDT)
+Last modified: 2026-10-26 01:03:10 (PDT)
 
 > **NOTE:**
 >
@@ -284,13 +284,13 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > **Example 11 (Turning a paragraph of cases into bullet points)**  
 >
-> > ❌ At \\z = 0\\ the slope is \\\sigmoid'(0) = 1/4\\. At \\z = 2\\ it is \\\sigmoid'(2) \approx 0.105\\. At \\z = -2\\ it is \\\sigmoid'(-2) \approx 0.105\\.
+> > ❌ At \\z = 0\\ the slope is \\\dexpitf{0} = 1/4\\. At \\z = 2\\ it is \\\dexpitf{2} \approx 0.105\\. At \\z = -2\\ it is \\\dexpitf{-2} \approx 0.105\\.
 > >
-> > ✅ The slope \\\sigmoid'(z)\\ at three scores:
+> > ✅ The slope \\\dexpitf{z}\\ at three scores:
 > >
-> > - **\\z = 0\\:** \\\sigmoid'(0) = 1/4\\.
-> > - **\\z = 2\\:** \\\sigmoid'(2) \approx 0.105\\.
-> > - **\\z = -2\\:** \\\sigmoid'(-2) \approx 0.105\\.
+> > - **\\z = 0\\:** \\\dexpitf{0} = 1/4\\.
+> > - **\\z = 2\\:** \\\dexpitf{2} \approx 0.105\\.
+> > - **\\z = -2\\:** \\\dexpitf{-2} \approx 0.105\\.
 >
 > The labels let the reader find a case at a glance, and the bullets show that there are three.
 

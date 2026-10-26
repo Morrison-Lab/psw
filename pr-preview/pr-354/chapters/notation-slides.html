@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 00:52:41 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 01:03:10 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -690,6 +690,7 @@
 </blockquote>
 <p>Both versions print the same quantities. The ❌ version writes the difference <code>\eoutvar_i - \outvar_i</code> out twice. The ✅ version names it once, as the prediction error, and each formula shows at a glance what it is built from.</p>
 </div>
+<p>Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared error as the squared bias plus the variance plus the irreducible error, and define each of the three pieces on its own, instead of expanding them inside the formula.</p>
 <p>Add the macro to the shared macro file before you use it, never as a local macro in one document (see <a href="#/using-shared-macros">Using shared macros</a>), and record its meaning in that file’s <code>interpretations.tsv</code>.</p>
 </section>
 <section id="abstract-unused-subexpressions" class="slide level2" data-number="10">
@@ -749,8 +750,76 @@
 </ul>
 <p>Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.</p>
 </section>
-<section id="writing-out-notational-shorthands" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Writing out notational shorthands</h2>
+<section id="using-the-notation-that-best-represents-the-concept" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Using the notation that best represents the concept</h2>
+</section>
+<section class="slide level2">
+
+<p>Use the notation that best represents the concept being depicted. Choose the symbol, the macro and the name by asking what the object is, not by asking what is quicker to type or what the nearby text used. A symbol that fits a different concept sends the reader to the wrong idea.</p>
+<p>The rules that follow are cases of this principle:</p>
+<ul>
+<li>The predictor matrix and the design matrix are different objects, so they get different symbols.</li>
+<li>The mean function is a mean, so it is <span class="math inline">\(\mu\)</span>, not <span class="math inline">\(f\)</span>.</li>
+<li>The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.</li>
+<li>A reference formula is a general statement, so it is written in its general form, not for one example.</li>
+</ul>
+<p>When no rule covers a case, ask the same question: which symbol, name and form best represents the concept here? Then record the answer as a rule, with this principle as its reason.</p>
+</section>
+<section id="writing-the-predictor-and-design-matrices" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Writing the predictor and design matrices</h2>
+</section>
+<section class="slide level2">
+
+<p>Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix <span class="math inline">\(X\)</span> in every file you edit: notes, assignments, solutions, slides and note sheets. A plain <span class="math inline">\(X\)</span> reads as a random variable or a single number. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write the predictor matrix with the matrix macro <code>\mX</code>.</p>
+<p>Keep two objects apart, because they are not the same matrix:</p>
+<ul>
+<li>The <em>predictor matrix</em> holds the raw inputs. Its rows are the predictor vectors <span class="math inline">\(\tilde{x}_i\)</span> of the <span class="math inline">\(n\)</span> observations. Write it <code>\mX</code>.</li>
+<li>The <em>design matrix</em> holds the inputs after any feature map and the intercept trick. Its rows are the design vectors <span class="math inline">\(\tilde{\phi}(\tilde{x}_i)\)</span>. Write it <code>\design(\mX)</code>, or <code>\design</code> for short.</li>
+</ul>
+<p>The same split holds for one observation: the predictor vector is <code>\vx</code>, and the design vector is <code>\vfeatmap(\vx)</code>. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.</p>
+<div id="exm-predictor-vs-design-matrix" class="theorem example">
+<p><span class="theorem-title"><strong>Example 24 (Predictor matrix and design matrix)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Let <span class="math inline">\(X\)</span> be the design matrix, and fit <span class="math inline">\(\hat{\beta} = (X'X)^{-1}X'y\)</span>.</p>
+<p>✅ Let <span class="math inline">\(\mathbf{X}\)</span> be the predictor matrix and <span class="math inline">\(D(\mathbf{X})\)</span> the design matrix. The fitted coefficients solve the normal equations for <span class="math inline">\(D(\mathbf{X})\)</span>.</p>
+</blockquote>
+<p>The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.</p>
+</div>
+</section>
+<section id="stating-formulas-in-their-general-form" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Stating formulas in their general form</h2>
+</section>
+<section class="slide level2">
+
+<p>On a reference sheet, a formula sheet or a summary, state each formula in its general form. Do not state it only for a specific example. A reader looks a formula up to apply it to a new case, and an example shows only one case.</p>
+<div id="exm-general-form-formula" class="theorem example">
+<p><span class="theorem-title"><strong>Example 25 (Stating the chain rule)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ <span class="math inline">\(\frac{d(u^2)}{dw} = 2u \frac{du}{dw}\)</span></p>
+<p>✅ <span class="math inline">\(\frac{d f(u)}{dw} = f'(u) \frac{du}{dw}\)</span></p>
+</blockquote>
+<p>The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable <span class="math inline">\(f\)</span>, and the squaring case follows by taking <span class="math inline">\(f(u) = u^2\)</span>.</p>
+</div>
+<p>Put a specific case on the sheet only as a labeled example next to the general formula.</p>
+</section>
+<section id="writing-the-mean-function-and-the-prediction-function" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Writing the mean function and the prediction function</h2>
+</section>
+<section class="slide level2">
+
+<p>Write the mean function as <span class="math inline">\(\mu\)</span>, not as <span class="math inline">\(f\)</span>. The mean function is the population mean of the outcome given the inputs, <span class="math inline">\(\mu(x)\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
+<p>Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it <code>\epredfnf{x}</code> (symbol <span class="math inline">\(\hat{g}\)</span>) for an estimated one, or <code>\predfnf{x}</code> (symbol <span class="math inline">\(g\)</span>) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function <span class="math inline">\(\mu\)</span> itself.</p>
+<div id="exm-mean-vs-prediction-function" class="theorem example">
+<p><span class="theorem-title"><strong>Example 26 (Mean function and fitted prediction function)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The expected squared error of the fitted mean function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{(y - \hat{f}(x))^2}\)</span>.</p>
+<p>✅ The expected squared error of the fitted prediction function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{(y - \hat{g}(x))^2}\)</span>, and its bias is <span class="math inline">\(\E{\hat{g}(x)} - \mu(x)\)</span>.</p>
+</blockquote>
+<p>The ✅ version names the fitted prediction function where the concept is a prediction, and keeps <span class="math inline">\(\mu\)</span> for the mean it is compared with.</p>
+</div>
+</section>
+<section id="writing-out-notational-shorthands" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Writing out notational shorthands</h2>
 </section>
 <section class="slide level2">
 
@@ -758,7 +827,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 24 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 27 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
@@ -771,8 +840,8 @@
 <p>Each full form tells the reader the set the operator runs over: the values <span class="math inline">\(X\)</span> can take, and the indices of the <span class="math inline">\(n\)</span> observations.</p>
 </div>
 </section>
-<section id="stating-assumptions-before-using-them" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Stating assumptions before using them</h2>
+<section id="stating-assumptions-before-using-them" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Stating assumptions before using them</h2>
 </section>
 <section class="slide level2">
 
@@ -793,7 +862,7 @@
 <p>A condition that can fail is an assumption. A parametrization is not: it writes a quantity in terms of named parameters or pieces, so it holds by definition and goes under “Let:”. Do not label a parametrization as an assumption, because that tells the reader a condition is being imposed when none is.</p>
 <p>Write the lead-in word once, before the list, and make each bullet complete the lead-in sentence. Do not repeat the word in every bullet, and do not mix the two kinds of list in one list. When both are needed, write the notation list first, because the assumptions use the names it introduces.</p>
 <div id="exm-assumptions-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 25 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
+<p><span class="theorem-title"><strong>Example 28 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -816,7 +885,7 @@ f(x) - f(2)
 <p>In the ❌ version, the second line is false for <span class="math inline">\(x = 2\)</span>, and the reader learns this only from the note at its end. In the ✅ version, “let <span class="math inline">\(x \neq 2\)</span>” comes first, so the reader reads each line already knowing which values of <span class="math inline">\(x\)</span> it covers, and the justification says exactly where the condition is used.</p>
 </div>
 <div id="exm-assumptions-bullet-list" class="theorem example">
-<p><span class="theorem-title"><strong>Example 26 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 29 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Assume the sample size <span class="math inline">\(n\)</span> is larger than <span class="math inline">\(30\)</span>. Assume the observations are independent. Assume the population variance <span class="math inline">\(\sigma^2\)</span> is finite.</p>
 <p>✅ Assume:</p>
@@ -829,7 +898,7 @@ f(x) - f(2)
 <p>The ✅ version writes “Assume” once, and the bullets show that the three assumptions are parallel and separate.</p>
 </div>
 <div id="exm-notation-bullet-list" class="theorem example">
-<p><span class="theorem-title"><strong>Example 27 (Writing several names as one list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 30 (Writing several names as one list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Let <span class="math inline">\(n\)</span> be the sample size. Let <span class="math inline">\(\bar{y}\)</span> be the sample mean. Let <span class="math inline">\(s\)</span> be the sample standard deviation.</p>
 <p>✅ Let:</p>
@@ -842,7 +911,7 @@ f(x) - f(2)
 <p>These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size <span class="math inline">\(n\)</span> larger than <span class="math inline">\(30\)</span>, a separate assumptions list after this one would state it.</p>
 </div>
 <div id="exm-parametrization-is-notation" class="theorem example">
-<p><span class="theorem-title"><strong>Example 28 (Defining the noise is a parametrization, not an assumption)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 31 (Defining the noise is a parametrization, not an assumption)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Assume:</p>
 <ul>

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:52:41 (PDT)
+Last modified: 2026-10-26 01:03:10 (PDT)
 
 > **NOTE:**
 >
@@ -259,7 +259,28 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 20 Talk about the ideas, not the notes
+## 20 Give each concept in a note sheet its own row
+
+A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
+
+- Never put two definitions in one row.
+- Never merge rows to save space. Find the room another way, such as a smaller table font or a second table beside the first.
+- Never put notation or assumptions inside a label. Give each assumption its own row, and state the notation once in its own row.
+- Write each formula in its most compact form, built from pieces that have their own rows (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
+
+The same rule applies to every other reference table, such as a table of notation.
+
+> **NOTE:**
+>
+> **Example 5 (Splitting a merged row)**  
+>
+> > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
+> >
+> > ✅ Rows: `Dot product` with its formula, then `Sample mean` with its formula.
+>
+> The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
+
+## 21 Talk about the ideas, not the notes
 
 When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -269,14 +290,14 @@ When a term is defined on another page or in another site, state the idea in the
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
-## 21 Credit other courses without summarizing them
+## 22 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 22 Rules that apply to all writing
+## 23 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
