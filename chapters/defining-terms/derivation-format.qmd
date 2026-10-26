@@ -18,11 +18,12 @@ Follow these principles:
   and give it an id named after the exercise
   (`#exr-foo` and `#sol-foo`),
   so a reader who wants to check one step can find its working.
-- **The theorem states the result; the proof cites the exercises.**
+- **The theorem states the result; the proof cites results.**
   The theorem gives the result in prose and as a display equation.
-  Its proof is a few sentences that cite the exercises it rests on,
+  Its proof is a few sentences that cite the results it rests on,
   not a second copy of their working.
-  A later argument that uses the result cites the theorem, never the solution
+  A proof that does no derivation of its own is one line citing the solution of the exercise that asks for the result,
+  and every later argument cites the theorem, never the solution
   (see [Cite results, not solutions](../mathematical-writing.qmd#cite-results-not-solutions)).
 - **Define notation first.**
   Introduce any notation the exercises use in its own definition before them,
@@ -38,7 +39,7 @@ Follow these principles:
   or set side by side in one display equation,
   usually belong in two blocks:
   each can then be cited on its own,
-  and each proof cites only the exercise it rests on.
+  and each proof cites only the result it rests on.
 - **Start from the side that simplifies.**
   When a derivation would add and subtract a term
   to turn one side into the other,

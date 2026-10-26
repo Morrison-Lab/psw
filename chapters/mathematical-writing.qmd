@@ -208,8 +208,8 @@ Every later argument cites the result div.
 The one exception to the citation rule follows from that pairing:
 the proof of the result itself may cite the solution of the exercise that asks for that same result.
 Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation.
-This is the one place where a proof cites a solution rather than an exercise,
-and [Derivation format](defining-terms/derivation-format.qmd) says what the proof cites in every other case.
+This is the one place where a proof cites a solution.
+[Derivation format](defining-terms/derivation-format.qmd) describes the exercise, solution, theorem and proof pattern.
 When the exercise has several parts, the line may cite each part, as in `By @sol-x and @sol-x-part2.`
 A proof with its own steps or display math cites result divs instead.
 
@@ -231,7 +231,7 @@ A solution decomposes the same way: each solution is the smallest argument that 
 ## Citing a step instead of deriving it
 
 > ❌ **Proof.**
-> By the chain rule, the gradient of each summand is $2 r_i \phi_i$, where $r_i$ is the residual and $\phi_i$ the design vector, and summing over $i$ gives the claim.
+> By the chain rule, the gradient of each summand is $2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
 >
 > ✅ **Proof.**
 > Lemma 4 gives the gradient of each summand,
