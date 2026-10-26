@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 01:01:16 (PDT)
+Last modified: 2026-10-26 01:14:42 (PDT)
 
 > **NOTE:**
 >
@@ -499,7 +499,7 @@ Use the notation that best represents the concept being depicted. Choose the sym
 The rules that follow are cases of this principle:
 
 - The predictor matrix and the design matrix are different objects, so they get different symbols.
-- The mean function is a mean, so it is \\\truemean\\, not \\f\\.
+- The mean function is a mean, so it is \\\truemean\\, not \\\predfn\\.
 - The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
 - A reference formula is a general statement, so it is written in its general form, not for one example.
 
@@ -507,7 +507,7 @@ When no rule covers a case, ask the same question: which symbol, name and form b
 
 ## 13 Writing the predictor and design matrices
 
-Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix \\\mX\\ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic “X” reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
+Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix \\\mX\\ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic \\X\\ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
 
 Keep two objects apart, because they are not the same matrix:
 
@@ -544,7 +544,7 @@ Put a specific case on the sheet only as a labeled example next to the general f
 
 ## 15 Writing the mean function and the prediction function
 
-Write the mean function as \\\truemean\\, not as \\f\\. The mean function is the population mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
+Write the mean function as \\\truemean\\, not as \\\predfn\\. The mean function is the population mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
 Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol \\\epredfn\\) for an estimated one, or `\predfnf{x}` (symbol \\\predfn\\) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function \\\truemean\\ itself.
 

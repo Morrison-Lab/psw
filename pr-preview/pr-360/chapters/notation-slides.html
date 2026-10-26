@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 01:01:16 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 01:14:42 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -759,7 +759,7 @@
 <p>The rules that follow are cases of this principle:</p>
 <ul>
 <li>The predictor matrix and the design matrix are different objects, so they get different symbols.</li>
-<li>The mean function is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(f\)</span>.</li>
+<li>The mean function is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(\predfn\)</span>.</li>
 <li>The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.</li>
 <li>A reference formula is a general statement, so it is written in its general form, not for one example.</li>
 </ul>
@@ -770,7 +770,7 @@
 </section>
 <section class="slide level2">
 
-<p>Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix <span class="math inline">\(\mX\)</span> in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic “X” reads as a random variable or a single number. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write the predictor matrix with the matrix macro <code>\mX</code>.</p>
+<p>Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix <span class="math inline">\(\mX\)</span> in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic <span class="math inline">\(X\)</span> reads as a random variable or a single number. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write the predictor matrix with the matrix macro <code>\mX</code>.</p>
 <p>Keep two objects apart, because they are not the same matrix:</p>
 <ul>
 <li>The <em>predictor matrix</em> holds the raw inputs. Its rows are the predictor vectors <span class="math inline">\(\vx_i\)</span> of the <span class="math inline">\(n\)</span> observations. Write it <code>\mX</code>.</li>
@@ -807,7 +807,7 @@
 </section>
 <section class="slide level2">
 
-<p>Write the mean function as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(f\)</span>. The mean function is the population mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
+<p>Write the mean function as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(\predfn\)</span>. The mean function is the population mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
 <p>Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it <code>\epredfnf{x}</code> (symbol <span class="math inline">\(\epredfn\)</span>) for an estimated one, or <code>\predfnf{x}</code> (symbol <span class="math inline">\(\predfn\)</span>) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function <span class="math inline">\(\truemean\)</span> itself.</p>
 <div id="exm-mean-vs-prediction-function" class="theorem example">
 <p><span class="theorem-title"><strong>Example 26 (Mean function and fitted prediction function)</strong></span> &nbsp;</p>
