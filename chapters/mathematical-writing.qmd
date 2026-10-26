@@ -176,7 +176,8 @@ and it does not assume that the entries are integers or restate their ordering.
 ## Cite results, not solutions
 
 A proof, or any derivation that supports a result, never cites a solution to an exercise.
-A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on.
+A solution answers an exercise for the reader who attempted the exercise,
+so the solution is not a result that other arguments can build on.
 Follow each solution that a later argument relies on with a result div (a theorem, lemma, corollary or proposition) that states the claim,
 and cite that result div in the later argument.
 
