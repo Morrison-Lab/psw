@@ -207,12 +207,13 @@ Every later argument cites the result div.
 
 The one exception to the citation rule follows from that pairing:
 the proof of the result itself may cite the solution of the exercise that asks for that same result.
-Such a proof does no derivation of its own: it is one line, "By @sol-x.", with one citation.
+Such a proof does no derivation of its own: it is one line, "By `@sol-x`.", with one citation.
 A proof with its own steps, display math or a second citation cites result divs instead.
 
 The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div.
 It lets a one-line proof with one citation pass.
-For any other line that must cite a solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it, whichever solution the line cites.
+The only other case is an exercise that asks students to prove a result before it is stated, where the proof of that result may cite the preceding proof.
+The HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip it.
 Quarto removes the comment from the rendered page.
 The workflow does not check prose outside those divs, but the rule still applies there.
 
@@ -235,7 +236,7 @@ A solution decomposes the same way: each solution is the smallest argument that 
 > and Lemma 5 says that the gradient of a sum is the sum of the gradients,
 > so the gradient of the total is the sum of the summands' gradients.
 
-The ❌ proof repeats a derivation that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
+The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 
 :::
 
