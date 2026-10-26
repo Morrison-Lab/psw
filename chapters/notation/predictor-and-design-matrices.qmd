@@ -1,7 +1,7 @@
 Write a matrix in matrix styling, not in the plain italic of a scalar.
 This holds for the predictor matrix $\mX$ in every file you edit:
 notes, assignments, solutions, slides and note sheets.
-A plain italic "X" reads as a random variable or a single number.
+A plain italic $X$ reads as a random variable or a single number.
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
 write the predictor matrix with the matrix macro `\mX`.
 

@@ -61,7 +61,7 @@ callouts (config + color palette live in `_quarto-website.yml`).
   In PR replies, say what changed in this push, never what you will do next time.
 - **Semantic macros in every page's math**: write each symbol through the shared macro that names its concept
   (`\mX`, `\vx`, `\truemean`, `\epredfnf{x}`, `\dif{f(u)}{w}`, ...), in the prose and in the ✅ examples of the notation rules too.
-  Raw LaTeX is allowed only inside a ❌ counter-example.
+  Raw LaTeX is allowed only inside a ❌ counter-example or a passage that discusses the notation itself (see `chapters/notation/shared-macros.qmd`).
   Before pushing a notation page, grep its `$...$` for bare `X`, `\tilde`, `\mathbf`, `\hat` and `\frac{d`,
   and look each symbol up in `latex-macros/macros.qmd` (psw#318 shipped raw symbols, caught in review, 2026-10-26).
 - **Quarto chunks**: prefer `#|` YAML-style chunk options, not inline

@@ -6,7 +6,7 @@ A symbol that fits a different concept sends the reader to the wrong idea.
 The rules that follow are cases of this principle:
 
 - The predictor matrix and the design matrix are different objects, so they get different symbols.
-- The mean function is a mean, so it is $\truemean$, not $f$.
+- The mean function is a mean, so it is $\truemean$, not $\predfn$.
 - The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
 - A reference formula is a general statement, so it is written in its general form, not for one example.
 

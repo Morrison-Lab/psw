@@ -1,4 +1,4 @@
-Write the mean function as $\truemean$, not as $f$.
+Write the mean function as $\truemean$, not as $\predfn$.
 The mean function is the population mean of the outcome given the inputs, $\truemeanf{x}$.
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
 write it `\truemeanf{x}`.
