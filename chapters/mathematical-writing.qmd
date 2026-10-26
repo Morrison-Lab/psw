@@ -224,7 +224,7 @@ A solution decomposes the same way: each solution is the smallest argument that 
 ## Citing a step instead of deriving it
 
 > ❌ **Proof.**
-> By the chain rule, the gradient of each term is $2 r_i \phi_i$, where $r_i$ is the residual and $\phi_i$ the design vector, and summing over $i$ gives the claim.
+> By the chain rule, the gradient of each summand is $2 r_i \phi_i$, where $r_i$ is the residual and $\phi_i$ the design vector, and summing over $i$ gives the claim.
 >
 > ✅ **Proof.**
 > By Lemma 4 and Lemma 5, the claim holds.
