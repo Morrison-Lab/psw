@@ -185,12 +185,11 @@ with no new results.
 
 ## Reporting guidelines
 
-Find the guideline for the study design on the
-[EQUATOR Network](https://www.equator-network.org/),
+Find the guideline for the study design in the EQUATOR Network's catalog [@simera2010catalogue],
 follow it while writing,
 and submit the completed checklist if the journal asks for it.
 @tbl-reporting-guidelines lists the common ones.
-Check the EQUATOR page for the current version before citing one.
+Check the EQUATOR Network's website for the current version before citing one.
 
 | Design | Guideline |
 |---|---|

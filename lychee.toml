@@ -28,7 +28,4 @@ exclude = [
   # credit.niso.org (the CRediT taxonomy) timed out from GitHub's runners on
   # all four runs on 2026-10-22 (psw#324, psw#325), so the check stays red.
   "^https://credit\\.niso\\.org/?$",
-  # www.equator-network.org answers the runner with a 404 while it loads in a
-  # browser (#370); excluded until a browser check shows whether the page moved.
-  "^https://www\\.equator-network\\.org/?$",
 ]
