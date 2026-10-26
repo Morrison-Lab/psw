@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 11:04:08 (PDT)
+Last modified: 2026-10-25 19:24:38 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -309,9 +309,9 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 >
 > **Example 5 (Crediting Chebyshev’s inequality)**  
 >
-> > ❌ Chebyshev’s inequality says that …
+> > ❌ Chebyshev’s inequality bounds the probability that …
 > >
-> > ✅ Chebyshev’s inequality says that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
+> > ✅ Chebyshev’s inequality bounds the probability that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
 
 ## 17 Put the content first
 
