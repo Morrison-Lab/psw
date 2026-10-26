@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-24 14:48:44 (PDT)
+Last modified: 2026-10-26 02:30:22 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -185,7 +185,7 @@ A forward reference points the reader to content they have not reached yet. Comm
 
 The reader must hold an unresolved pointer while reading the sentence that depends on it.
 
-Fix a forward reference by moving the content ahead of the pointer, so that each definition or result precedes the sentences that use it. Then change “below” to “above”, or delete the directional word. Do not fix a forward reference by removing the hyperlink to the later definition or theorem while leaving the term in the sentence: the sentence still uses a concept the reader has not met, and the reader also loses the link to its definition.
+Fix a forward reference by moving the content ahead of the pointer, so that each definition or result precedes the sentences that use it. Then change “below” to “above”, or delete the directional word. Do not fix a forward reference by removing the hyperlink to the later definition or theorem while leaving the term in the sentence: the sentence still uses a concept the reader has not encountered, and the reader also loses the link to its definition.
 
 If moving the content would break the order of the argument, keep the pointer, and make it a working link. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.
 
@@ -202,7 +202,7 @@ If moving the content would break the order of the argument, keep the pointer, a
 Two cases are not forward references to fix:
 
 - An overview near the start that previews the structure, such as “Section 2 describes the data, and Section 3 gives the results”. The reader is not meant to resolve the preview immediately.
-- A sentence that names a figure or table placed beside it, such as “Table 2 shows the estimates”. The reader meets the table at once.
+- A sentence that names a figure or table placed beside it, such as “Table 2 shows the estimates”. The reader encounters the table at once.
 
 A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.
 

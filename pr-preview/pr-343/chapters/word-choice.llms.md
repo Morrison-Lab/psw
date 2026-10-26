@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-24 14:48:44 (PDT)
+Last modified: 2026-10-26 02:30:22 (PDT)
 
 > **NOTE:**
 >
@@ -20,6 +20,8 @@ I recommend trying to replace Latin-derived words and phrases with Old English-d
 Table 1: Commonly used Latin words and phrases and Anglish alternatives
 
 See also <https://bark-fa.github.io/Anglish-Translator/>
+
+To find a replacement for a word, look the word up on the [Open English Wordnet website](https://en-word.net/) ([source on GitHub](https://github.com/globalwordnet/english-wordnet)). Open English Wordnet groups English words into sets of synonyms, called synsets. A word with several meanings appears in several synsets, one for each meaning, so choose the synset that matches the meaning you intend. Then pick the word in that synset that your readers are most likely to understand easily.
 
 [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more words, many of them Latin-derived, that writers reach for by reflex, with plainer alternatives.
 
@@ -92,7 +94,7 @@ If you cannot name the object, quantity, step or idea, the sentence is not yet r
 
 ## 4 Give a technical word one meaning
 
-A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader meets the word in its second sense, they must stop and work out which concept the sentence means.
+A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader encounters the word in its second sense, they must stop and work out which concept the sentence means.
 
 Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.
 
