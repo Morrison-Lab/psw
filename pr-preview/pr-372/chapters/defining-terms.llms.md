@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 12:44:18 (PDT)
+Last modified: 2026-10-26 13:16:51 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -305,10 +305,10 @@ Follow these principles:
 
 - **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.
 - **The solution follows its exercise.** Put each solution directly after its exercise, and give it an id named after the exercise (`#exr-foo` and `#sol-foo`), so a reader who wants to check one step can find its working.
-- **The theorem states the result; the proof cites the exercises.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the exercises it rests on, not a second copy of their working.
+- **The theorem states the result; the proof cites results.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the results it rests on, not a second copy of their working. A proof that does no derivation of its own is one line citing the solution of the exercise that asks for the result, and every later argument cites the theorem, never the solution (see [Cite results, not solutions](../mathematical-writing.qmd#cite-results-not-solutions)).
 - **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
 - **One operation per line.** Inside each solution, write every displayed line with a single operation and its justification (see [One operation per step](../chapters/notation.llms.md#one-operation-per-step)).
-- **One result per theorem.** Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the exercise it rests on.
+- **One result per theorem.** Give each theorem, corollary or lemma block a single result, with its own exercise and proof. Two results joined by a semicolon, or set side by side in one display equation, usually belong in two blocks: each can then be cited on its own, and each proof cites only the result it rests on.
 - **Start from the side that simplifies.** When a derivation would add and subtract a term to turn one side into the other, start from the other side instead. Simplifying an expression needs only definitions and algebra, while adding and subtracting a term asks the reader to accept a step whose purpose shows only later. Another route is to solve a definition for the term you want: add \\\mu_i\\ to both sides of \\\varepsilon_i = Y_i - \mu_i\\, then simplify the right-hand side to \\Y_i\\, one operation per line. Adding a term to both sides of an equation is an ordinary step, not the pattern to avoid.
 
 > **NOTE:**
