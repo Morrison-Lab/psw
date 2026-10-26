@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 09:30:11 (PDT)
+Last modified: 2026-10-26 09:47:33 (PDT)
 
 > **NOTE:**
 >
@@ -132,13 +132,13 @@ Every div states one result or answers one exercise, and does no more. When a pr
 >
 > > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 r_i \phi_i\\, where \\r_i\\ is the residual and \\\phi_i\\ the design vector, and summing over \\i\\ gives the claim.
 > >
-> > ✅ **Proof.** Lemma 4 gives the gradient of each summand as \\2 r_i \phi_i\\, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is \\\sum_i 2 r_i \phi_i\\.
+> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of the summands’ gradients.
 >
 > The ❌ proof repeats a derivation that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 
 No div repeats reasoning that it could cite instead. Two arguments that share a step cite one result div, so a correction to the step is made once.
 
-A check can flag display math in a proof, but it cannot decide whether a step is reusable, so this rule stays a writing rule that review enforces. The `check-solution-citations` and `check-exercise-before-result` workflows in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) cover the parts that a check can decide.
+A check can flag display math in a proof, but it cannot decide whether a step is reusable, so this rule stays a writing rule that review enforces. The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) covers the part that a check can decide.
 
 ## 10 Rules that other chapters cover
 
