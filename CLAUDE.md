@@ -59,6 +59,11 @@ callouts (config + color palette live in `_quarto-website.yml`).
   check a prose change against `chapters/conciseness.qmd`,
   `chapters/grammar/relative-pronouns.qmd` and `chapters/defining-terms.qmd` in the same push.
   A paragraph edit on psc#39 (2026-10-15) missed filler, a dropped "that" and a duplicate link plus citation.
+  When the edit holds math, add the `chapters/notation/` pages
+  (`one-equals-per-line.qmd`, `functions-and-values.qmd`, `one-operation-per-step.qmd`),
+  and check the whole section, not only the flagged line.
+  On lds#1416 (2026-10-26) four pushes each fixed one reviewer nit,
+  and the notation pages then showed two more hits in the same four lines.
   In PR replies, say what changed in this push, never what you will do next time.
 - **Semantic macros in every page's math**: write each symbol through the shared macro that names its concept
   (`\mX`, `\vx`, `\truemean`, `\epredfnf{x}`, `\dif{f(u)}{w}`, ...), in the prose and in the ✅ examples of the notation rules too.
