@@ -199,7 +199,9 @@ The ✅ version cites claims that the notes state, number and keep.
 :::
 
 Add an exercise and its solution just before every result div that you add or edit.
-The exercise asks the student to prove the result,
+The exercise does not state the result.
+It asks the student to find it, such as "find an expression for the variance in terms of the first two moments",
+so that the reader discovers the result,
 and the result div then states what the solution showed.
 Every later argument cites the result div.
 
