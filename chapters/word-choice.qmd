@@ -216,6 +216,25 @@ In machine learning, *hypothesis* also names a candidate prediction function.
 The definition of the prediction function family can then say
 that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 
+## Name a quantity for what it is
+
+A name should say what kind of thing the quantity is.
+A variance is a variance, a risk is a risk, and an error is a realized difference between a prediction and an outcome.
+Calling a variance an error, or calling a quantity "irreducible" without saying given what, misleads the reader.
+
+For example, the variance of the outcome around its conditional mean is the *residual variance*.
+It is a component of the expected squared prediction error, not an error,
+and it is irreducible only given the inputs the model uses:
+a further input that predicts the outcome reduces it.
+
+> ❌ The irreducible error is the part no model can remove.
+>
+> ✅ The residual variance is the part no model using the same inputs can remove.
+
+Mention the common name once, as an alias in the definition, and use the accurate term everywhere else.
+No mechanical check can tell a misleading name from an accurate one,
+so this rule is enforced by review.
+
 ## Write the full phrase
 
 Do not leave out words the phrase needs to be complete.
