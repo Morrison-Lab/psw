@@ -30,7 +30,7 @@ and each formula shows at a glance what it is built from.
 Write each expression in its most compact form,
 built from named sub-pieces that are defined separately.
 Use one form per expression, and keep it simple.
-For example, write the expected squared error
+For example, write the expected squared prediction error
 as the squared bias plus the variance plus the residual variance, <!-- check-term-links: allow -->
 and define each of the three pieces on its own,
 instead of expanding them inside the formula.
