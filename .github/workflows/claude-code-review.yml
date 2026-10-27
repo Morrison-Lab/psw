@@ -27,7 +27,6 @@ jobs:
       # requests, and the run fails at startup with "startup_failure" before
       # any job is created (#43).
       actions: read
-      checks: read
     uses: Morrison-Lab/gha/.github/workflows/claude-code-review.yml@v2
     secrets: inherit
     with:
