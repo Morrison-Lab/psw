@@ -249,6 +249,18 @@ This rule applies to all teaching materials, in every course and every teaching 
   The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
   reports, in a pull request, each example that has no figure and no `no-figure` comment
   ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
+- Give every div whose title mentions visualization
+  (*visualize*, *visualizing*, *visualization*) a corresponding figure (Ezra, 2026-10-26).
+  For an exercise, the figure may sit in the exercise or in its solution.
+  The rule also covers any div that asks for a picture:
+  a title or an exercise prompt that says *plot*, *sketch*, *draw*, *diagram*, or *contour*
+  (in any inflection, such as *plotting* or *sketching*),
+  or that asks the reader to mark points on a surface.
+  The `check-visualization-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
+  reports, in a pull request, each such div that has no figure in it or in its solution,
+  and a `<!-- no-figure: reason -->` comment inside the div suppresses that report,
+  as it does for an example
+  ([gha#1262](https://github.com/Morrison-Lab/gha/pull/1262)).
 - Give every topic at least one figure that shows the idea,
   such as the data with a fitted curve, a distribution, or a diagram of the procedure.
   A page of definitions with no figure and no data is incomplete.
@@ -596,6 +608,54 @@ Do not write about where the definition lives.
 Students read concepts, not the structure of the site.
 A sentence about which notes define a term adds no content,
 and it goes stale when the definition moves.
+
+## Write grading rubrics as checklists
+
+Structure the rubric for most STEM questions as a checklist
+(Ezra, 2026-10-26).
+A grader then marks each item as earned or not,
+and the points are the sum of the earned items.
+A rubric written as a paragraph makes the grader reconstruct the items,
+and two graders reconstruct different items.
+
+- Write one checklist item per observable criterion,
+  and put its points first.
+- Make the points of the items sum to the question's points,
+  and state that total in the line that introduces the checklist.
+- Write each item so that it is either met or not met.
+  Name the answer or the evidence that meets the criterion, as in
+  "cites the gap between training and CV MSE".
+- List an acceptable alternative answer as a sub-bullet without points
+  under the item it also satisfies,
+  so the items still sum to the question's points.
+  Do not put the alternative in a separate paragraph.
+- Keep the rubric in the solution, after the answer,
+  so a course that withholds solutions from students withholds the rubric too.
+- Use another structure when a question has no separable criteria,
+  such as a single holistic judgment of a proof's rigor.
+
+::: {#exm-rubric-checklist}
+
+## A rubric as a checklist
+
+> ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$,
+> three for "orthogonal" with its link to the normal equation.
+
+> ✅
+>
+> ```markdown
+> Grading (6 points):
+>
+> - [ ] 2 points: gives $\vresid = \tp{[-1, -1, 1]}$.
+> - [ ] 1 point: computes $\dprod{\vx}{\vresid} = 0$.
+> - [ ] 3 points: says $\vresid$ is orthogonal to $\vx$
+>   and links this orthogonality to the normal equation.
+> ```
+
+The checklist shows the grader each item to mark
+and lets a script check that the points sum to the total.
+
+:::
 
 ## Credit other courses without summarizing them
 
