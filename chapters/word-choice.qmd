@@ -221,9 +221,9 @@ that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 A name should say what kind of thing the quantity is.
 Each kind of quantity has its own name:
 
-- *A variance* measures spread. <!-- check-term-links: allow -->
-- *A risk* is an expected loss.
-- *An error* is a realized difference between a prediction and an outcome.
+- **A variance** measures spread. <!-- check-term-links: allow -->
+- **A risk** is an expected loss. <!-- check-term-links: allow -->
+- **An error** is a realized difference between a prediction and an outcome. <!-- check-term-links: allow -->
 
 Calling a variance an error, or calling a quantity "irreducible" without saying given what, misleads the reader. <!-- check-term-links: allow -->
 
@@ -236,7 +236,7 @@ a further input that predicts the outcome reduces it.
 >
 > ✅ The residual variance is the part no model using the same inputs can remove. <!-- check-term-links: allow -->
 
-Mention the common name once, as an alias in the definition, and use the accurate [term](#def-term) everywhere else.
+Mention the common name once, as an alias in the definition, and use the accurate [term](defining-terms.qmd#def-term) everywhere else.
 No mechanical check can tell a misleading name from an accurate one,
 so this rule is enforced by review.
 
