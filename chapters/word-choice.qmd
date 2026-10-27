@@ -221,9 +221,9 @@ that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 A name should say what kind of thing the quantity is.
 Each kind of quantity has its own name:
 
-- A variance measures spread. <!-- check-term-links: allow -->
-- A risk is an expected loss.
-- An error is a realized difference between a prediction and an outcome.
+- *A variance* measures spread. <!-- check-term-links: allow -->
+- *A risk* is an expected loss.
+- *An error* is a realized difference between a prediction and an outcome.
 
 Calling a variance an error, or calling a quantity "irreducible" without saying given what, misleads the reader. <!-- check-term-links: allow -->
 
