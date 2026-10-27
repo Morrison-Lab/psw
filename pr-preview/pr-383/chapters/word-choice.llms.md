@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-27 01:56:31 (PDT)
+Last modified: 2026-10-27 02:13:44 (PDT)
 
 > **NOTE:**
 >
@@ -110,9 +110,9 @@ The definition of the prediction function family can then say that machine-learn
 
 A name should say what kind of thing the quantity is. Each kind of quantity has its own name:
 
-- A variance measures spread.
-- A risk is an expected loss.
-- An error is a realized difference between a prediction and an outcome.
+- **A variance** measures spread.
+- **A risk** is an expected loss.
+- **An error** is a realized difference between a prediction and an outcome.
 
 Calling a variance an error, or calling a quantity “irreducible” without saying given what, misleads the reader.
 
@@ -122,7 +122,7 @@ For example, the variance of the outcome given the inputs is the *residual varia
 >
 > ✅ The residual variance is the part no model using the same inputs can remove.
 
-Mention the common name once, as an alias in the definition, and use the accurate [term](#def-term) everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.
+Mention the common name once, as an alias in the definition, and use the accurate [term](../chapters/defining-terms.llms.md#def-term) everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.
 
 ## 6 Write the full phrase
 
