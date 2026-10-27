@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 19:27:28 (PDT)
+Last modified: 2026-10-26 23:59:30 (PDT)
 
 > **NOTE:**
 >
@@ -291,14 +291,44 @@ When a term is defined on another page or in another site, state the idea in the
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
-## 22 Credit other courses without summarizing them
+## 22 Write grading rubrics as checklists
+
+Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
+
+- Write one checklist item per observable criterion, and put its points first.
+- Make the points of the items sum to the question’s points, and state that total in the line that introduces the checklist.
+- Write each item so that it is either met or not met. Name the answer or the evidence that meets the criterion, as in “cites the gap between training and CV MSE”.
+- List an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put the alternative in a separate paragraph.
+- Keep the rubric in the solution, after the answer, so a course that withholds solutions from students withholds the rubric too.
+- Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.
+
+> **NOTE:**
+>
+> **Example 6 (A rubric as a checklist)**  
+>
+> > ❌ Grading (6 points): two for \\\vec r\\, one for \\\dprod{\vx}{\vec r} = 0\\, three for “orthogonal” with its link to the normal equation.
+>
+> > ✅
+> >
+> > ``` markdown
+> > Grading (6 points):
+> >
+> > - [ ] 2 points: gives $\vresid = \tp{[-1, -1, 1]}$.
+> > - [ ] 1 point: computes $\dprod{\vx}{\vresid} = 0$.
+> > - [ ] 3 points: says $\vresid$ is orthogonal to $\vx$
+> >   and links this orthogonality to the normal equation.
+> > ```
+>
+> The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
+
+## 23 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 23 Rules that apply to all writing
+## 24 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 

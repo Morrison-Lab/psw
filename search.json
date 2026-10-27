@@ -189,18 +189,25 @@
     "text": "21 Talk about the ideas, not the notes\nWhen a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.\n\nWrite “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.\nDo not write “see the probability notes” or “as in our notes”. The link already says where the term lives.\nName a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.\n\nStudents read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves."
   },
   {
+    "objectID": "chapters/teaching.html#write-grading-rubrics-as-checklists",
+    "href": "chapters/teaching.html#write-grading-rubrics-as-checklists",
+    "title": "Writing for teaching",
+    "section": "22 Write grading rubrics as checklists",
+    "text": "22 Write grading rubrics as checklists\nStructure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.\n\nWrite one checklist item per observable criterion, and put its points first.\nMake the points of the items sum to the question’s points, and state that total in the line that introduces the checklist.\nWrite each item so that it is either met or not met. Name the answer or the evidence that meets the criterion, as in “cites the gap between training and CV MSE”.\nList an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put the alternative in a separate paragraph.\nKeep the rubric in the solution, after the answer, so a course that withholds solutions from students withholds the rubric too.\nUse another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.\n\n\n\n\n\n\n\n\nExample 6 (A rubric as a checklist)  \n\n❌ Grading (6 points): two for \\(\\vec r\\), one for \\(\\dprod{\\vx}{\\vec r} = 0\\), three for “orthogonal” with its link to the normal equation.\n\n\n✅\nGrading (6 points):\n\n- [ ] 2 points: gives $\\vresid = \\tp{[-1, -1, 1]}$.\n- [ ] 1 point: computes $\\dprod{\\vx}{\\vresid} = 0$.\n- [ ] 3 points: says $\\vresid$ is orthogonal to $\\vx$\n  and links this orthogonality to the normal equation.\n\nThe checklist shows the grader each item to mark and lets a script check that the points sum to the total."
+  },
+  {
     "objectID": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "href": "chapters/teaching.html#credit-other-courses-without-summarizing-them",
     "title": "Writing for teaching",
-    "section": "22 Credit other courses without summarizing them",
-    "text": "22 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
+    "section": "23 Credit other courses without summarizing them",
+    "text": "23 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
   },
   {
     "objectID": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "23 Rules that apply to all writing",
-    "text": "23 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid clichés."
+    "section": "24 Rules that apply to all writing",
+    "text": "24 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid clichés."
   },
   {
     "objectID": "chapters/software-text.html",
