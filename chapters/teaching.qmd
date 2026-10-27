@@ -39,6 +39,12 @@ Pose each task as an exercise, give students time to try it, and then show the s
   Put the shared setup in the first exercise,
   and begin each later exercise by citing it, as in "Make the assumptions of the first exercise."
   Later exercises can use earlier results through cross-references.
+- Make each exercise ask for one thing (Ezra, 2026-10-27).
+  A prompt that says "compute the slope, and compare it with the fitted value"
+  asks for two things, so split it into two exercises,
+  each with its own solution.
+  The same holds for any list item or step inside an exercise.
+  Words such as "and then", "and also" and ", and compare" mark a second ask.
 - On slides, put a slide break between an exercise and its solution,
   so the prompt is on screen alone while students work.
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
