@@ -304,14 +304,13 @@ Follow these principles when introducing new terms:
   The `check-term-links` check in
   [gha](https://github.com/Morrison-Lab/gha/pull/1220) flags a partial link.
 
-- **Link the term where the sentence uses it, not in a parenthetical list:**
-  Write the term as a link inside the sentence that needs it.
-  Do not name the terms in the sentence and then list their definitions in a parenthesis after it.
+- **Link the [term](#def-term) where the sentence uses it, not in a parenthetical list:**
+  Write the name as a link inside the sentence that needs it.
+  Do not name the concepts in the sentence and then list their definitions in a parenthesis after it.
   For example, write
   "the error is the sum of its squared `[bias](#def-bias)`,
   its `[variance](#def-variance)` and the `[irreducible error](#def-irreducible-error)`",
-  not "the error is bias, variance and irreducible error
-  `(definitions: bias, variance, irreducible error)`".
+  not `the error is bias, variance and irreducible error (definitions: bias, variance, irreducible error)`.
   The parenthetical makes the reader read each term twice,
   and it separates the link from the place where the term does its work.
   If a term sits inside math, where a link cannot go,
