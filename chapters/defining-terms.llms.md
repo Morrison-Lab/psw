@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 23:59:30 (PDT)
+Last modified: 2026-10-27 01:39:34 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
