@@ -1,11 +1,13 @@
-# Housekeeping half of the PR-preview family: periodically deletes gh-pages
+# Housekeeping half of the PR-preview family: periodically deletes `gh-pages`
 # preview directories for PRs that are no longer open, so closed previews stop
-# accumulating. The calling job grants contents:write so it can commit the
-# deletions back to gh-pages.
+# accumulating. The called reusable workflow commits the deletions back to
+# `gh-pages` and lists pull requests and workflow runs, so the calling job
+# grants `contents: write`, `pull-requests: read`, and `actions: read`. A
+# narrower grant fails the call at startup.
 #
 # Do NOT name a `concurrency:` group `gh-pages` in this caller (deadlock,
 # https://github.com/Morrison-Lab/gha/issues/809).
-name: Clean up PR Previews
+name: Clean up PR previews
 
 on:
   workflow_dispatch:
