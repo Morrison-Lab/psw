@@ -306,17 +306,16 @@ Follow these principles when introducing new terms:
 
 - **Link the [term](#def-term) where the sentence uses it, not in a parenthetical list:**
   Write the name as a link inside the sentence that needs it.
-  Do not name the concepts in the sentence and then list their definitions in a parenthesis after it.
+  Do not name the concepts in the sentence and then list their definitions in a parenthetical after it.
   For example, write
-  "the error is the sum of its squared `[bias](#def-bias)`,
-  its `[variance](#def-variance)` and the `[irreducible error](#def-irreducible-error)`",
-  not `the error is bias, variance and irreducible error (definitions: bias, variance, irreducible error)`.
+  `the error is the sum of its squared [bias](#def-bias), its [variance](#def-variance), and the [irreducible error](#def-irreducible-error)`,
+  not `the error is the sum of its squared bias, its variance, and the irreducible error (definitions: [bias](#def-bias), [variance](#def-variance), [irreducible error](#def-irreducible-error))`.
   The parenthetical makes the reader read each term twice,
   and it separates the link from the place where the term does its work.
   If a term sits inside math, where a link cannot go,
-  name it in words in the sentence and link it there.
+  name the term in words in the sentence and link those words.
   The `check-quarto-prose` check in
-  [gha](https://github.com/Morrison-Lab/gha/pull/1271) flags a parenthesis that opens with `(definition:` or `(definitions:`.
+  [gha](https://github.com/Morrison-Lab/gha/pull/1271) flags a parenthetical that opens with `(definition:` or `(definitions:`.
 
 - **Do not presuppose what the reader has not encountered:**
   A definite noun phrase, one that starts with "the",
