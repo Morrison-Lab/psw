@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 23:14:28 (PDT)
+Last modified: 2026-10-26 23:27:36 (PDT)
 
 > **NOTE:**
 >
@@ -293,13 +293,13 @@ Students read concepts, not the structure of the site. A sentence about which no
 
 ## 22 Write grading rubrics as checklists
 
-Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-27). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different ones.
+Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-27). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
 - Write one checklist item per observable criterion, and put its points first.
-- Make the points of the items sum to the question’s points, and say so in the heading.
-- Write each item so that it is either met or not met. Name the answer or the evidence that earns it, as in “cites the gap between training and CV MSE”.
-- List an acceptable alternative answer as its own item, or under the item it replaces, not in a separate paragraph.
-- Keep the rubric inside the `.sol` div, after the answer, so the student copy never shows it.
+- Make the points of the items sum to the question’s points, and state that total in the line that introduces the checklist.
+- Write each item so that it is either met or not met. Name the answer or the evidence that meets the criterion, as in “cites the gap between training and CV MSE”.
+- List an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put it in a separate paragraph.
+- Keep the rubric in the solution, after the answer, so a course that withholds solutions from students withholds the rubric too.
 - Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.
 
 > **NOTE:**
@@ -313,10 +313,10 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-27). 
 > > ``` markdown
 > > Grading (6 points):
 > >
-> > - [ ] 2 points: gives $\vec r = \tp{[-1, -1, 1]}$.
-> > - [ ] 1 point: computes $\dprod{\vx}{\vec r} = 0$.
-> > - [ ] 3 points: says $\vec r$ is orthogonal to $\vx$
-> >   and links that to the normal equation.
+> > - [ ] 2 points: gives $\vresid = \tp{[-1, -1, 1]}$.
+> > - [ ] 1 point: computes $\dprod{\vx}{\vresid} = 0$.
+> > - [ ] 3 points: says $\vresid$ is orthogonal to $\vx$
+> >   and links this orthogonality to the normal equation.
 > > ```
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.

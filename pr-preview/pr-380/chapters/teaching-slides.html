@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-26 23:14:28 (PDT)</p>
+  <p class="date">Last modified: 2026-10-26 23:27:36 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -703,13 +703,13 @@
 </section>
 <section class="slide level2">
 
-<p>Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-27). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different ones.</p>
+<p>Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-27). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.</p>
 <ul>
 <li>Write one checklist item per observable criterion, and put its points first.</li>
-<li>Make the points of the items sum to the question’s points, and say so in the heading.</li>
-<li>Write each item so that it is either met or not met. Name the answer or the evidence that earns it, as in “cites the gap between training and CV MSE”.</li>
-<li>List an acceptable alternative answer as its own item, or under the item it replaces, not in a separate paragraph.</li>
-<li>Keep the rubric inside the <code>.sol</code> div, after the answer, so the student copy never shows it.</li>
+<li>Make the points of the items sum to the question’s points, and state that total in the line that introduces the checklist.</li>
+<li>Write each item so that it is either met or not met. Name the answer or the evidence that meets the criterion, as in “cites the gap between training and CV MSE”.</li>
+<li>List an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put it in a separate paragraph.</li>
+<li>Keep the rubric in the solution, after the answer, so a course that withholds solutions from students withholds the rubric too.</li>
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
@@ -721,10 +721,10 @@
 <p>✅</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>Grading (6 points):</span>
 <span id="cb3-2"><a aria-label="2"></a></span>
-<span id="cb3-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vec r = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
-<span id="cb3-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vec r} = 0$.</span>
-<span id="cb3-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vec r$ is orthogonal to $\vx$</span>
-<span id="cb3-6"><a aria-label="6"></a>  and links that to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
+<span id="cb3-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
+<span id="cb3-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
+<span id="cb3-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
