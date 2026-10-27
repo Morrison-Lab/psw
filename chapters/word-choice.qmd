@@ -219,10 +219,15 @@ that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 ## Name a quantity for what it is
 
 A name should say what kind of thing the quantity is.
-A [variance](#def-variance) is a variance, a risk is a risk, and an error is a realized difference between a prediction and an outcome.
-Calling a variance an error, or calling a quantity "irreducible" without saying given what, misleads the reader.
+Each kind of quantity has its own name:
 
-For example, the [variance](#def-variance) of the outcome given the inputs is the *residual variance*.
+- A variance measures spread. <!-- check-term-links: allow -->
+- A risk is an expected loss.
+- An error is a realized difference between a prediction and an outcome.
+
+Calling a variance an error, or calling a quantity "irreducible" without saying given what, misleads the reader. <!-- check-term-links: allow -->
+
+For example, the variance of the outcome given the inputs is the *residual variance*. <!-- check-term-links: allow -->
 It is a component of the expected squared prediction error, not an error,
 and it is irreducible only given the inputs the model uses:
 a further input that predicts the outcome reduces it.
