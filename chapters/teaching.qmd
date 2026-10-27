@@ -586,6 +586,52 @@ Students read concepts, not the structure of the site.
 A sentence about which notes define a term adds no content,
 and it goes stale when the definition moves.
 
+## Write grading rubrics as checklists
+
+Structure the rubric for most STEM questions as a checklist
+(Ezra, 2026-10-27).
+A grader then marks each item as earned or not,
+and the points are the sum of the earned items.
+A rubric written as a paragraph makes the grader reconstruct the items,
+and two graders reconstruct different ones.
+
+- Write one checklist item per observable criterion,
+  and put its points first.
+- Make the points of the items sum to the question's points,
+  and say so in the heading.
+- Write each item so that it is either met or not met.
+  Name the answer or the evidence that earns it, as in
+  "cites the gap between training and CV MSE".
+- List an acceptable alternative answer as its own item,
+  or under the item it replaces, not in a separate paragraph.
+- Keep the rubric inside the `.sol` div, after the answer,
+  so the student copy never shows it.
+- Use another structure when a question has no separable criteria,
+  such as a single holistic judgment of a proof's rigor.
+
+::: {#exm-rubric-checklist}
+
+## A rubric as a checklist
+
+> ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$,
+> three for "orthogonal" with its link to the normal equation.
+
+> ✅
+>
+> ```markdown
+> Grading (6 points):
+>
+> - [ ] 2 points: gives $\vec r = \tp{[-1, -1, 1]}$.
+> - [ ] 1 point: computes $\dprod{\vx}{\vec r} = 0$.
+> - [ ] 3 points: says $\vec r$ is orthogonal to $\vx$
+>   and links that to the normal equation.
+> ```
+
+The checklist shows the grader each item to mark
+and lets a script check that the points sum to the total.
+
+:::
+
 ## Credit other courses without summarizing them
 
 
