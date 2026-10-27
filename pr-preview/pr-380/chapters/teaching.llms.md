@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 23:27:36 (PDT)
+Last modified: 2026-10-26 23:34:58 (PDT)
 
 > **NOTE:**
 >
@@ -293,12 +293,12 @@ Students read concepts, not the structure of the site. A sentence about which no
 
 ## 22 Write grading rubrics as checklists
 
-Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-27). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
+Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
 - Write one checklist item per observable criterion, and put its points first.
 - Make the points of the items sum to the question’s points, and state that total in the line that introduces the checklist.
 - Write each item so that it is either met or not met. Name the answer or the evidence that meets the criterion, as in “cites the gap between training and CV MSE”.
-- List an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put it in a separate paragraph.
+- List an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put the alternative in a separate paragraph.
 - Keep the rubric in the solution, after the answer, so a course that withholds solutions from students withholds the rubric too.
 - Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.
 

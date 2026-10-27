@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 23:27:36 (PDT)
+Last modified: 2026-10-26 23:34:58 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
