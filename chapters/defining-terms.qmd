@@ -308,8 +308,8 @@ Follow these principles when introducing new terms:
   Write the name as a link inside the sentence that needs it.
   Do not name the concepts in the sentence and then list their definitions in a parenthetical after it.
   For example, write
-  `the error is the sum of its squared [bias](#def-bias), its [variance](#def-variance), and the [residual variance](#def-residual-variance)`,
-  not `the error is the sum of its squared bias, its variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))`.
+  `the expected squared prediction error is the sum of the squared [bias](#def-bias), the [variance](#def-variance), and the [residual variance](#def-residual-variance)`,
+  not `the expected squared prediction error is the sum of the squared bias, the variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))`.
   The parenthetical makes the reader read each term twice,
   and it separates the link from the place where the term does its work.
   If a term sits inside math, where a link cannot go,
