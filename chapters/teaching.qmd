@@ -125,6 +125,30 @@ and each piece fits on a slide.
 
 :::
 
+## Say what a yes-or-no answer means
+
+Follow a "Yes" or "No" with what the answer means in the words of the question,
+as in "No: it's not possible that the advanced network has a test error of 0.25,"
+not a bare "No."
+(Ezra, 2026-10-28).
+A reader who sees only the first line then still knows what the answer claims,
+and a bare "No." leaves open what is being denied.
+The rule covers solutions, worked examples and any other answer to a question.
+
+::: {#exm-yes-no-conclusion}
+
+## Saying what a "No" means
+
+> ❌ No. The irreducible error is a lower bound on the expected squared prediction error.
+>
+> ✅ No: it's not possible that the advanced network has a test error of 0.25.
+> The irreducible error is a lower bound on the expected squared prediction error.
+
+The ✅ version states the conclusion in the question's own words,
+so the reasons that follow support a claim the reader has already seen.
+
+:::
+
 ## Give each question's answer its own paragraph
 
 When a prompt asks several questions, answer each one in its own paragraph, or in several paragraphs if it needs them
