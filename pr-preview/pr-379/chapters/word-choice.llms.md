@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-27 20:05:11 (PDT)
+Last modified: 2026-10-27 20:20:05 (PDT)
 
 > **NOTE:**
 >
@@ -106,7 +106,25 @@ For example, *hypothesis* means a statistical hypothesis: a claim about a popula
 
 The definition of the prediction function family can then say that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 
-## 5 Write the full phrase
+## 5 Name a quantity for what it is
+
+A name should say what kind of thing the quantity is. Each kind of quantity has its own name:
+
+- **A variance** measures spread.
+- **A risk** is an expected loss.
+- **An error** is a realized difference between a prediction and an outcome.
+
+Calling a variance an error, or calling a quantity “irreducible” without saying given what, misleads the reader.
+
+For example, the variance of the outcome given the inputs is the *residual variance*. It is a component of the expected squared prediction error, not an error, and it is irreducible only given the inputs the model uses: a further input that predicts the outcome reduces it.
+
+> ❌ The irreducible error is the part no model can remove.
+>
+> ✅ The residual variance is the part no model using the same inputs can remove.
+
+Mention the common name once, as an alias in the definition, and use the accurate [term](../chapters/defining-terms.llms.md#def-term) everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.
+
+## 6 Write the full phrase
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
 
@@ -120,7 +138,7 @@ The same rule applies to symbols. Write a function with its argument, such as \\
 > >
 > > ✅ The outcome variable is the true mean function of the outcome variable given the input value \\\predvar\\, namely \\\truemeanf{\predvar}\\, plus noise.
 
-## 6 Choose each preposition on purpose
+## 7 Choose each preposition on purpose
 
 A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
 
@@ -144,7 +162,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
-## 7 Minimize unnecessary jargon
+## 8 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
