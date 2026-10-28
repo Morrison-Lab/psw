@@ -25,7 +25,7 @@ unless the meaning changes from "before the data" to "after the data".
 >
 > ✅ The probability that $Y_i$ exceeds 3 is $0.2$.
 
-> ❌ The sample mean of the $Y_i$ is 2.4.
+> ❌ The sample mean of the $Y_i$ is 2.4. <!-- check-term-links: allow -->
 >
 > ✅ The sample mean of the $y_i$ is 2.4.
 
@@ -45,7 +45,7 @@ Match the notation to the claim:
 - Write $\Pr(Y \le y)$ for a probability,
   with the random variable on the left of the inequality
   and the value on the right.
-- Write $\text{E}[Y]$ and $\text{Var}(Y)$ for the mean and variance
+- Write $\text{E}[Y]$ and $\text{Var}(Y)$ for the mean and [variance](defining-terms.qmd#def-variance-expression-and-prose)
   of a random variable,
   never $\text{E}[y]$ or $\text{Var}(y)$ for an observed value.
 - Write a statistic computed from observed values with lowercase letters,

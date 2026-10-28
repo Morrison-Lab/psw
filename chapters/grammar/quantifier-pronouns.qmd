@@ -23,9 +23,9 @@ You do not need a complete list of quantifiers to apply the advice.
 Whenever a quantifier stands where a noun should be,
 the reader has to search backward to find out what it quantifies.
 Follow the quantifier with the noun:
-"**both models**", "**all three estimators**", "**each interval**".
+"**both models**", "**all three estimators**", "**each interval**". <!-- check-term-links: allow -->
 An "of" phrase that names the noun works too:
-"**none of the intervals**".
+"**none of the intervals**". <!-- check-term-links: allow -->
 
 ::: {#exm-quantifier-pronoun}
 
@@ -33,7 +33,8 @@ An "of" phrase that names the noun works too:
 
 > ❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both** return the same fit.
 >
-> ✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both models** return the same fit.
+> ✅ We fit a linear model and a spline model to the 2019 and 2020 surveys.
+> **Both models** return the same fit. <!-- check-term-links: allow -->
 
 In the first version, "both" could mean the two models or the two surveys.
 Adding "models" settles which pair the sentence is about.

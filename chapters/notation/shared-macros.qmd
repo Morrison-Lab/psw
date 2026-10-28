@@ -33,7 +33,7 @@ The same rule covers these quantities:
 - transposes
 - hats on estimates
 - expectations
-- variances
+- variances <!-- check-term-links: allow -->
 - probabilities
 - vectors
 
@@ -71,7 +71,7 @@ may write the letters directly.
 
 The same reasoning applies to decorators.
 A hat, a tilde or a bar says how a symbol is drawn, not what it means.
-A hat can mark an estimate, a fitted value or a Fourier transform,
+A hat can mark an estimate, a [fitted value](#def-fitted-value) or a Fourier transform,
 so `\hat` names no concept either.
 Write the macro that names the role instead,
 such as `\est{}` for an estimate,

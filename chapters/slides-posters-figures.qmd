@@ -115,7 +115,7 @@ Two captions for the same figure show the difference:
 
 - Pointer only: "The symmetry of `@exm-x`."
   The reader learns nothing until following the link.
-- Self-contained: "The logistic function at $-2$ is as high as $1$ minus its value at $2$ (`@exm-x`)."
+- Self-contained: "The logistic function at $-2$ is as high as $1$ minus its value at $2$ (`@exm-x`)." <!-- check-term-links: allow -->
   The reader learns the point at once.
 
 Lead with a well-labeled figure or table
@@ -173,7 +173,7 @@ Before you share a figure:
   a `<!-- no-tree-figure: reason -->` comment inside the div exempts it.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
-- Show measures of precision, such as 95% confidence intervals.
+- Show measures of precision, such as 95% [confidence interval](defining-terms.qmd#def-confidence-interval)s.
 
 For more:
 
@@ -184,7 +184,7 @@ For more:
 
 ## Three-dimensional graphs {#sec-3d-graphs}
 
-A function of two variables, such as a loss or a residual sum of squares
+A [function](https://morrison-lab.github.io/mds/functions.html#def-function) of two variables, such as a loss or a [residual sum of squares](defining-terms.qmd#def-rss)
 as a function of a regression's intercept and slope,
 is a surface.
 A contour plot shows where the function takes given values and is easy to read values from.

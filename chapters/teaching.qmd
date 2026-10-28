@@ -40,7 +40,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
   and begin each later exercise by citing it, as in "Make the assumptions of the first exercise."
   Later exercises can use earlier results through cross-references.
 - Make each exercise ask for one thing (Ezra, 2026-10-27).
-  A prompt that says "compute the slope, and compare it with the fitted value"
+  A prompt that says "compute the slope, and compare it with the fitted value" <!-- check-term-links: allow -->
   asks for two things, so split it into two exercises,
   each with its own solution.
   Split a list item or step inside an exercise the same way,

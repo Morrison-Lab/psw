@@ -10,7 +10,7 @@ which needs an antecedent for "it" in the sentence before.
 
 Fronting is a stylistic choice, with costs and benefits.
 
-**Benefits**
+**Benefits** <!-- check-term-links: allow -->
 
 - It states the category before the specifics.
   The reader learns what kind of thing the subject is,
@@ -20,7 +20,7 @@ Fronting is a stylistic choice, with costs and benefits.
 - It puts a familiar description first and the new claim last,
   where the reader's attention lands.
 
-**Costs**
+**Costs** <!-- check-term-links: allow -->
 
 - The fronted phrase must describe the grammatical subject that follows.
   Otherwise it dangles:

@@ -7,7 +7,7 @@ scan it for a sub-expression that is written out in full
 more than once,
 or that is a conceptually coherent chunk
 even if it appears only once,
-such as the prediction error (the fitted value minus the outcome)
+such as the prediction error (the [fitted value](#def-fitted-value) minus the outcome)
 or the loss of a prediction on one observation.
 Give the chunk a name and a macro,
 and write the macro everywhere the chunk appears.
