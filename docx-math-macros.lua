@@ -22,10 +22,59 @@ local DOCX_OVERRIDES = [[
 \providecommand{\textcolor}[2]{#2}
 ]]
 
--- The tilde-under vector as the reader expands it, around a brace-free
--- argument (a Lua pattern cannot match nested braces).
-local VECF_EXPANDED = "\\mathord{\\smash%[b%]{\\underset{\\raise%.3ex"
-  .. "\\hbox{%$\\scriptstyle\\sim%$}}{([^{}]*)}}\\vphantom{[^{}]*}}"
+-- The tilde-under vector as the reader expands it:
+-- VECF_OPEN <arg>} VPHANTOM <arg>}}
+local VECF_OPEN = "\\mathord{\\smash[b]{\\underset{\\raise.3ex"
+  .. "\\hbox{$\\scriptstyle\\sim$}}{"
+local VPHANTOM = "}\\vphantom{"
+
+-- Index just past the brace group whose "{" is at `open`, or nil.
+local function group_end(text, open)
+  local depth = 0
+  local i = open
+  while i <= #text do
+    local c = text:sub(i, i)
+    if c == "\\" then
+      i = i + 1
+    elseif c == "{" then
+      depth = depth + 1
+    elseif c == "}" then
+      depth = depth - 1
+      if depth == 0 then
+        return i + 1
+      end
+    end
+    i = i + 1
+  end
+  return nil
+end
+
+-- Replace each expanded tilde-under vector with the Word form, matching
+-- braces so an argument such as \hat{\Noise} is handled.
+local function simplify_vecf(text)
+  local out = {}
+  local pos = 1
+  while true do
+    local s = text:find(VECF_OPEN, pos, true)
+    if not s then
+      break
+    end
+    local arg_open = s + #VECF_OPEN - 1
+    local arg_end = group_end(text, arg_open)
+    local after = arg_end and text:sub(arg_end, arg_end + #VPHANTOM - 1)
+    local ph_end = after == VPHANTOM
+      and group_end(text, arg_end + #VPHANTOM - 1)
+    if not ph_end or text:sub(ph_end, ph_end) ~= "}" then
+      break
+    end
+    table.insert(out, text:sub(pos, s - 1))
+    table.insert(out, "\\underset{\\sim}{" ..
+      text:sub(arg_open + 1, arg_end - 2) .. "}")
+    pos = ph_end + 1
+  end
+  table.insert(out, text:sub(pos))
+  return table.concat(out)
+end
 
 local function read_macros()
   local dirs = {}
@@ -76,7 +125,7 @@ function Pandoc(doc)
   -- does) has its math expanded by the reader, before this filter runs,
   -- with the original tilde-under vector. Swap in the Word form.
   for _, m in ipairs(maths) do
-    m.text = m.text:gsub(VECF_EXPANDED, "\\underset{\\sim}{%1}")
+    m.text = simplify_vecf(m.text)
   end
 
   -- One paragraph per Math element, in document order. \( \) and \[ \]
