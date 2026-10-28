@@ -429,6 +429,22 @@ Follow these principles when introducing new [term](#def-term)s:
   Is every instance of the old term an instance of the new term?
   If only the first holds, the new term is a hyponym.
 
+- **Keep an entrenched misnomer, and clarify it once:**
+  Some names the literature has fixed are technically wrong,
+  such as "linear regression" for a model with an intercept, <!-- check-term-links: allow -->
+  whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mds/functions.html#def-function) of the predictors,
+  not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one
+  (Ezra, 2026-10-28).
+  Wherever the wording is yours, use the precise word:
+  write "affine in the predictors" for a function with an intercept,
+  and "linear" only when the intercept is zero.
+  Keep a name the reader will meet in other sources,
+  such as linear regression, linear decay or linear approximation,
+  because renaming it cuts the reader off from that literature.
+  Clarify it once, in parentheses, at its definition or its first use on a page,
+  as in "linear (strictly, affine) decay",
+  and use the established name unqualified after that.
+
 - **Distinguish estimands from estimators:**
   An *estimand* is the quantity a study is after,
   defined on the population or the data-generating distribution;
