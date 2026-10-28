@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 15:17:52 (PDT)
+Last modified: 2026-10-28 15:25:44 (PDT)
 
 > **NOTE:**
 >
@@ -94,11 +94,15 @@ In a proof, a sentence such as “so \\A = B\\” or “this gives \\A = B\\” 
 
 > **NOTE:**
 >
-> ❌ “Setting the gradient to zero yields \\\tp{\design} \design \vcoef = \tp{\design} \vy\\.”
+> **Example 5 (Displaying the normal equations)**  
 >
-> ✅ “Setting the gradient to zero yields the normal equations:”
+> > ❌ Setting the gradient to zero yields \\\stprod{\design} \vcoef = \tp{\design} \vy\\.
+> >
+> > ✅ Setting the gradient to zero yields the normal equations:
+> >
+> > \\\stprod{\design} \vcoef = \tp{\design} \vy\\
 >
-> \\\tp{\design} \design \vcoef = \tp{\design} \vy\\
+> In the ❌ version the result sits in the middle of a line, where the reader can miss it. The ✅ version gives it a line of its own.
 
 ## 4 Write numbers according to how they are used
 
@@ -124,7 +128,7 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 
 > **NOTE:**
 >
-> **Example 5 (Citing a result div)**  
+> **Example 6 (Citing a result div)**  
 >
 > > ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
 > >
@@ -144,7 +148,7 @@ Every result div states one result and every solution div answers one exercise, 
 
 > **NOTE:**
 >
-> **Example 6 (Citing a step instead of deriving it)**  
+> **Example 7 (Citing a step instead of deriving it)**  
 >
 > > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 \resid_i \vfeatmap(\vx_i)\\, where \\\resid_i\\ is the residual and \\\vfeatmap(\vx_i)\\ the design vector, and summing over \\i\\ gives the claim.
 > >
