@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:41:42 (PDT)
+Last modified: 2026-10-27 20:05:27 (PDT)
 
 > **NOTE:**
 >
@@ -85,7 +85,7 @@ Justify a line with the standard name of the rule it applies, not an informal de
 
 ### 2.2 Applying a definition is a step
 
-Replacing a named quantity with its definition is one of the most important steps in a derivation. It is where the general rules meet the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
+Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
 
 > **NOTE:**
 >
@@ -114,7 +114,7 @@ Derive an intermediate result only after the main derivation has shown that it n
 3.  Derive the outer derivative in its own block.
 4.  Return to the main derivation, and substitute both results.
 
-A reader who meets the inner derivative first does not yet know what it is for.
+A reader who encounters the inner derivative first does not yet know what it is for.
 
 #### Color where a result is used
 
@@ -420,7 +420,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 >
 > Both versions print the same expression. In the ✅ version, the macro sizes the bracket, and a group that changes how brackets are drawn edits one definition in the shared file.
 
-Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader meets in the document’s notation table, with its meaning.
+Macros are for the author, not the reader. Reader-facing text, such as a lecture, a handout or a notation section, describes the symbols that a macro prints and what they mean, and never names the macro that produced them. List every symbol that the reader encounters in the document’s notation table, with its meaning.
 
 > **NOTE:**
 >
@@ -447,6 +447,10 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 > > ✅ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \prederr_i^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \prederr_i \predvar_i$.`
 >
 > Both versions print the same quantities. The ❌ version writes the difference `\eoutvar_i - \outvar_i` out twice. The ✅ version names it once, as the prediction error, and each formula shows at a glance what it is built from.
+
+Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared error as the squared bias plus the variance plus the irreducible error, and define each of the three pieces on its own, instead of expanding them inside the formula.
+
+Search the shared macros for the chunk before you write it by hand. A macro often exists already, and any expression spelled out in full that a macro or a shorter form could say is the sign that nobody looked. A difference is only the commonest case. For example, an exercise wrote the left side of the bias–variance decomposition as `\E{\paren{\newoutvar - \predvalf{\newpredval}}^2}`, when `\prederrf{\predvalf{\newpredval}}` names the same prediction error, and the squared bias, written out the same way, has `\biassymf`. When you find one such chunk, sweep the other notes repositories for it, in small batches of one repository each.
 
 Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
 
@@ -490,7 +494,73 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 12 Writing out notational shorthands
+## 12 Using the notation that best represents the concept
+
+Use the notation that best represents the concept being depicted. Choose the symbol, the macro and the name by asking what the object is, not by asking what is quicker to type or what the nearby text used. A symbol that fits a different concept sends the reader to the wrong idea.
+
+The rules that follow are cases of this principle:
+
+- The predictor matrix and the design matrix are different objects, so they get different symbols.
+- The mean function is a mean, so it is \\\truemean\\, not \\\predfn\\.
+- The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
+- A reference formula is a general statement, so it is written in its general form, not for one example.
+
+When no rule covers a case, ask the same question: which symbol, name and form best represents the concept here? Then record the answer as a rule, with this principle as its reason.
+
+## 13 Writing the predictor and design matrices
+
+Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix \\\mX\\ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic \\X\\ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
+
+Keep two objects apart, because they are not the same matrix:
+
+- The *predictor matrix* holds the raw inputs. Its rows are the predictor vectors \\\vx_i\\ of the \\n\\ observations. Write it `\mX`.
+- The *design matrix* holds the inputs after any feature map and the intercept trick. Its rows are the design vectors \\\vfeatmap(\vx_i)\\. Write it `\design(\mX)`, or `\design` for short.
+
+The same split holds for one observation: the predictor vector is `\vx`, and the design vector is `\vfeatmap(\vx)`. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.
+
+> **NOTE:**
+>
+> **Example 24 (Predictor matrix and design matrix)**  
+>
+> > ❌ Let \\X\\ be the design matrix, and fit \\\hat{\beta} = (X'X)^{-1}X'y\\.
+> >
+> > ✅ Let \\\mX\\ be the predictor matrix and \\\design(\mX)\\ the design matrix. The fitted coefficients solve the normal equations for \\\design(\mX)\\.
+>
+> The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.
+
+## 14 Stating formulas in their general form
+
+On a reference sheet, a formula sheet or a summary, state each formula in its general form. Do not state it only for a specific example. A reader looks a formula up to apply it to a new case, and an example shows only one case.
+
+> **NOTE:**
+>
+> **Example 25 (Stating the chain rule)**  
+>
+> > ❌ \\\frac{d(u^2)}{dw} = 2u \frac{du}{dw}\\
+> >
+> > ✅ \\\dif{f(u)}{w} = f'(u) \dif{u}{w}\\
+>
+> The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable \\f\\, and the squaring case follows by taking \\f(u) = u^2\\.
+
+Put a specific case on the sheet only as a labeled example next to the general formula.
+
+## 15 Writing the mean function and the prediction function
+
+Write the mean function as \\\truemean\\, not as \\\predfn\\. The mean function is the population mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
+
+Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol \\\epredfn\\) for an estimated one, or `\predfnf{x}` (symbol \\\predfn\\) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function \\\truemean\\ itself.
+
+> **NOTE:**
+>
+> **Example 26 (Mean function and fitted prediction function)**  
+>
+> > ❌ The expected squared error of the fitted mean function at \\x\\ is \\\E{(y - \hat{f}(x))^2}\\.
+> >
+> > ✅ The expected squared error of the fitted prediction function at \\x\\ is \\\E{\paren{\outvar - \epredfnf{x}}^2}\\, and its bias is \\\E{\epredfnf{x}} - \truemeanf{x}\\.
+>
+> The ✅ version names the fitted prediction function where the concept is a prediction, and keeps \\\truemean\\ for the mean it is compared with.
+
+## 16 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -500,7 +570,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 24 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 27 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -514,7 +584,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
 
-## 13 Stating assumptions before using them
+## 17 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -538,7 +608,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 25 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 28 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >
@@ -548,7 +618,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 26 (Writing several assumptions as one list)**  
+> **Example 29 (Writing several assumptions as one list)**  
 >
 > > ❌ Assume the sample size \\n\\ is larger than \\30\\. Assume the observations are independent. Assume the population variance \\\sigma^2\\ is finite.
 > >
@@ -562,7 +632,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 27 (Writing several names as one list)**  
+> **Example 30 (Writing several names as one list)**  
 >
 > > ❌ Let \\n\\ be the sample size. Let \\\bar{y}\\ be the sample mean. Let \\s\\ be the sample standard deviation.
 > >
@@ -576,7 +646,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 28 (Defining the noise is a parametrization, not an assumption)**  
+> **Example 31 (Defining the noise is a parametrization, not an assumption)**  
 >
 > > ❌ Assume:
 > >

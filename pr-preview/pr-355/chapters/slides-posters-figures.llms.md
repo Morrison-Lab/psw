@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:41:42 (PDT)
+Last modified: 2026-10-27 20:05:27 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -45,6 +45,11 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 
 Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
+Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:
+
+- Pointer only: “The symmetry of `@exm-x`.” The reader learns nothing until following the link.
+- Self-contained: “The logistic function at \\-2\\ is as high as \\1\\ minus its value at \\2\\ (`@exm-x`).” The reader learns the point at once.
+
 Lead with a well-labeled figure or table instead of a long paragraph that describes a pipeline or compares groups. Use a diagram for a conceptual model, such as a directed acyclic graph (DAG), and for a process, such as a participant flow (CONSORT) diagram or a workflow schematic. Let the text interpret what the figure shows instead of listing every number the reader can already see in it. Give the key estimates in the text and point to the figure for the rest.
 
 A clear figure lets a reader check a result without help from the text. Before you share a figure:
@@ -59,6 +64,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Define colors, shapes, and line types in a legend.
 - Put the plot’s legend (the key to colors, shapes and line types) at the bottom of the plot, unless you have a reason to put it elsewhere. A bottom legend leaves the full plot width for the data and gives every figure the same layout.
 - In R, draw the static version of a figure with [ggplot2](https://ggplot2.tidyverse.org/), and the interactive version with plotly as described in [Section 4](#sec-scientific-figures). [Present R results with modern packages](../chapters/teaching.llms.md#present-r-results-with-modern-packages) gives the reasons.
+- Draw a tree (a parse tree, decision tree, dendrogram, or any other hierarchy) as a diagram figure, not only as nested bullets. A nested list hides how the branches relate and makes a reader count indentation to find a node’s parent. Keep the list too when it adds information the diagram lacks. Draw the diagram from the tree’s data and fill leaves and internal nodes differently, with the legend at the bottom. Wrap the diagram in a `#fig-` div with a caption, and set alt text that reads out the structure with `fig-alt`. The [Morrison-Lab/gha](https://github.com/Morrison-Lab/gha) check `check-tree-lists` flags a pull request that adds a definition, example, or other labeled div that mentions a tree, holds a list nested three or more levels deep, and has no figure; a `<!-- no-tree-figure: reason -->` comment inside the div exempts it.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
 - Show measures of precision, such as 95% confidence intervals.

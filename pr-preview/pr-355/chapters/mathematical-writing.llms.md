@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 00:41:42 (PDT)
+Last modified: 2026-10-27 20:05:27 (PDT)
 
 > **NOTE:**
 >
@@ -14,7 +14,7 @@ A mathematical paper is made of sentences, and the formulas are part of the sent
 
 ## 1 Keep formulas inside sentences
 
-Readers meet a formula as part of a sentence, so the words around it decide whether the formula can be read.
+Readers encounter a formula as part of a sentence, so the words around it decide whether the formula can be read.
 
 ### 1.1 Separate formulas with words
 
@@ -102,7 +102,45 @@ Write “assume that \\G\\ is finite”, not “assume \\G\\ is finite”. The w
 
 Do not use proof by contradiction where a direct proof will do. The course’s worked example proves a lemma both ways. The direct proof is shorter, and it does not assume that the entries are integers or restate their ordering.
 
-## 8 Rules that other chapters cover
+## 8 Cite results, not solutions
+
+A proof, or any derivation that supports a result, never cites a solution to an exercise. A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on. Follow each solution that contains a reusable result with a result div (a theorem, lemma, corollary or proposition) that states the claim. The test is whether the solution contains a result that other arguments could use, not whether any later argument currently relies on it. Cite that result div in every argument that uses the claim.
+
+> **NOTE:**
+>
+> **Example 5 (Citing a result div)**  
+>
+> > ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
+> >
+> > ✅ **Proof.** By Lemma 4 and Lemma 5, the claim holds.
+>
+> The ❌ version sends the reader to answers that the notes may reorder, hide or drop. The ✅ version cites claims that the notes state, number and keep.
+
+Add an exercise and its solution just before every result div that you add or edit. The exercise does not state the result. It asks the student to find the result, such as “find an expression for the spread of a random variable using its first two moments”, so that the reader discovers the result, and the result div then states what the solution showed. Every later argument cites the result div.
+
+The one exception to the citation rule follows from that pairing: the proof of the result itself may cite the solution of the exercise that asks for that same result. Such a proof does no derivation of its own: it is the one line `By @sol-x.`, with one citation. This is the one place where a proof cites a solution. [Derivation format](defining-terms/derivation-format.qmd) describes the exercise, solution, theorem and proof pattern. When the exercise has several parts, the line may cite each part, as in the line `By @sol-x and @sol-x-part2.`, which ends in a period. A proof with its own steps or display math cites result divs instead.
+
+The `check-solution-citations` workflow in [`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha) flags a `@sol-` cross-reference inside a proof or result div. It lets a one-line proof with one citation pass. For a one-line proof that cites several parts of the paired solution, the HTML comment `<!-- check-solution-citations: allow -->` on that line tells the workflow to skip that line. Quarto removes the comment from the rendered page. The workflow does not check prose outside proof and result divs, but the rule still applies there.
+
+## 9 Keep each div minimal: cite, never inline
+
+Every result div states one result and every solution div answers one exercise, and each does no more. When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite that result div. Never derive the step inline. A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.
+
+> **NOTE:**
+>
+> **Example 6 (Citing a step instead of deriving it)**  
+>
+> > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 \resid_i \vfeatmap(\vx_i)\\, where \\\resid_i\\ is the residual and \\\vfeatmap(\vx_i)\\ the design vector, and summing over \\i\\ gives the claim.
+> >
+> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of \\2 \resid_i \vfeatmap(\vx_i)\\ over \\i\\.
+>
+> The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
+
+No div repeats reasoning that it could cite instead. Two arguments that share a step cite one result div, so a correction to the step is made once.
+
+No check can decide whether a step is reusable, so this rule stays a writing rule that review enforces. The `check-solution-citations` workflow covers only the citation of solutions.
+
+## 10 Rules that other chapters cover
 
 [Table 1](#tbl-knuth-elsewhere) lists the course’s other rules and where this book discusses them.
 
