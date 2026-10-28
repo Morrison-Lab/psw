@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:14:18 (PDT)
+Last modified: 2026-10-28 00:37:47 (PDT)
 
 > **NOTE:**
 >
@@ -31,7 +31,7 @@ Just to be clear, although I prefer Anglish words, I have no particular preferen
 
 ## 1 Avoid vague and metaphorical language
 
-Scientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise term for the thing you are describing. [Table 2](#tbl-vague-precise) lists some common vague phrases and more precise alternatives.
+Scientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise [term](../chapters/defining-terms.llms.md#def-term) for the thing you are describing. [Table 2](#tbl-vague-precise) lists some common vague phrases and more precise alternatives.
 
 | Vague or metaphorical | More precise                             |
 |-----------------------|------------------------------------------|
@@ -46,7 +46,7 @@ The precise alternative is not always shorter, but it tells the reader exactly w
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are [clichés](../chapters/avoid-cliches.llms.md#def-cliche), and [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more of them.
 
-Money words are idioms too when no money is involved. “Costs us”, “buys us” and “at the price of” borrow from commerce to describe a trade-off, and the reader must translate them back. Say what is lost or gained. Keep a literal use: a computational cost, a monetary cost, or a cost function that the text defines as a term.
+Money words are idioms too when no money is involved. “Costs us”, “buys us” and “at the price of” borrow from commerce to describe a trade-off, and the reader must translate them back. Say what is lost or gained. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term.
 
 > ❌ Nesting the cross-validation loop costs another factor of \\K\\ in computing time.
 >
@@ -98,7 +98,7 @@ A word that names a technical concept keeps that one meaning on every page. Two 
 
 Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.
 
-For example, *hypothesis* means a statistical hypothesis: a claim about a population, such as a null hypothesis that a test examines. In machine learning, *hypothesis* also names a candidate prediction function.
+For example, *hypothesis* means a statistical hypothesis: a claim about a [population](../chapters/defining-terms.llms.md#def-population), such as a null hypothesis that a test examines. In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function).
 
 > ❌ The learner picks one hypothesis from the hypothesis set.
 >
@@ -164,7 +164,7 @@ Keep a plain preposition when it states the relationship exactly, such as *in* f
 
 ## 8 Minimize unnecessary jargon
 
-Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
+Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical [term](../chapters/defining-terms.llms.md#def-term) can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
 Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see [Name the synonyms](../chapters/defining-terms.llms.md#guidelines-for-defining-terms)).
 

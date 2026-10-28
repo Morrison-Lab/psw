@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 00:14:18 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:37:47 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -374,7 +374,7 @@
 <div id="exm-exercise-before-definition" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (Asking before defining)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ <strong>Generalization</strong> is the ability of a model to perform well on new data.</p>
+<p>❌ <strong>Generalization</strong> is the ability of a model to perform well on new data. <!-- check-term-links: allow --></p>
 </blockquote>
 <blockquote>
 <p>✅</p>
@@ -402,7 +402,7 @@
 <p>This is the compositional approach of <a href="https://en.wikipedia.org/wiki/Modular_programming">modular programming</a>: a program is built from small, single-purpose modules that call one another, and a maintainer changes one module without reading the rest. The notes work the same way. A theorem links to the definitions it uses, a proof links to the lemmas it uses, and an expression is written with the named pieces it is built from.</p>
 <ul>
 <li>A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>).</li>
-<li>A div holds one term or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
+<li>A div holds one <a href="../chapters/defining-terms.html#def-term">term</a> or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
 <li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
 <li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
 </ul>
@@ -425,7 +425,7 @@
 <ul>
 <li>Replace a bolded keyword in running prose with a <code>#def-</code> div. A bolded keyword usually marks an inline definition.</li>
 <li>Define one term per <code>#def-</code> div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.</li>
-<li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.</li>
+<li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>, gets its own div after the general case, and the two link to each other.</li>
 <li>Keep only the definition in a <code>#def-</code> div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate <code>#thm-</code>, <code>#lem-</code> or <code>#prp-</code> div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.</li>
 </ul>
 <p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
@@ -442,7 +442,7 @@
 </section>
 <section class="slide level2">
 
-<p>Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define variance as the mean squared deviation <span class="math inline">\(\operatorname{E}\left[\operatorname{devn}(X)^2\right]\)</span>, where <span class="math inline">\(\operatorname{devn}(X) = X - \operatorname{E}[X]\)</span>, and then prove that it equals <span class="math inline">\(\operatorname{E}[X^2] - (\operatorname{E}[X])^2\)</span>.</p>
+<p>Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define <a href="../chapters/defining-terms.html#def-variance-expression-and-prose">variance</a> as the mean squared deviation <span class="math inline">\(\operatorname{E}\left[\operatorname{devn}(X)^2\right]\)</span>, where <span class="math inline">\(\operatorname{devn}(X) = X - \operatorname{E}[X]\)</span>, and then prove that it equals <span class="math inline">\(\operatorname{E}[X^2] - (\operatorname{E}[X])^2\)</span>.</p>
 <p>Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.</p>
 </section>
 <section id="reuse-one-written-version-of-each-result" class="slide level2" data-number="6">
@@ -479,7 +479,7 @@
 
 <p>This rule applies to all teaching materials, in every course and every teaching repository.</p>
 <ul>
-<li>Keep a list or table of like items, such as courses, readings, channels or glossary terms, in a CSV, YAML or JSON file with one record per item. The page reads the file and builds the table or list with a short function, instead of holding a hand-written Markdown table.</li>
+<li>Keep a list or table of like items, such as courses, readings, channels or glossary <a href="../chapters/defining-terms.html#def-term">term</a>s, in a CSV, YAML or JSON file with one record per item. The page reads the file and builds the table or list with a short function, <!-- check-term-links: allow --> instead of holding a hand-written Markdown table.</li>
 <li>A data file can be counted, filtered, sorted and reused by another page, and a new row is a one-line change that a reviewer reads as data.</li>
 <li>List the file under the page’s <code>resources:</code> when the site publishes it.</li>
 <li>Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.</li>
@@ -509,7 +509,7 @@
 
 <p>Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it.</p>
 <ul>
-<li>After every <code>#exm-</code> div, add an <code>#exr-</code> div that asks the reader to do the same thing for a different case, followed by its <code>#sol-</code> div. The exercise changes the data, the function or the question, so the solution is not a copy of the example.</li>
+<li>After every <code>#exm-</code> div, add an <code>#exr-</code> div that asks the reader to do the same thing for a different case, followed by its <code>#sol-</code> div. The exercise changes the data, the function or the question, <!-- check-term-links: allow --> so the solution is not a copy of the example.</li>
 <li>The full sequence for a new idea is therefore: the exercise that poses the question and its solution, the definition or theorem, an example, and a practice exercise with its solution.</li>
 <li>More generally, give readers an opportunity to think at every stage: a question they can answer before the next paragraph, a calculation to try, a prediction to make before the code runs.</li>
 <li>A counterexample (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Defining terms clearly</a>) can stand in for the practice exercise when the exercise would be “decide whether this case fits the definition”.</li>
@@ -544,7 +544,7 @@
 <li>Give labs and code exercises in both R and Python, side by side.</li>
 <li>Put each step’s Python and R pair in its own tabset with <code>group="language"</code>. Start a new tabset whenever prose or a new step sits between code chunks, so the reader sees one step’s code in one language at a time. The shared group makes one choice of language apply to every tabset on the page, as long as the tab headings use identical text in every tabset, such as always “R” and “Python”.</li>
 <li>Write the R code with <a href="https://www.tidymodels.org/">tidymodels</a>, or show tidymodels and base R side by side. Do not give base R alone. <a href="https://github.com/Morrison-Lab/ISLR-tidymodels-labs">ISLR-tidymodels-labs</a> shows the style.</li>
-<li>When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, in the book’s order. For the ISL labs, fit Python models with <code>statsmodels</code>’ <code>sm.OLS</code>, as <a href="https://github.com/intro-stat-learning/ISLP_labs">ISLP_labs</a> does. If an exercise departs from the book, say why in the lab.</li>
+<li>When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, <!-- check-term-links: allow --> in the book’s order. For the ISL labs, fit Python models with <code>statsmodels</code>’ <code>sm.OLS</code>, as <a href="https://github.com/intro-stat-learning/ISLP_labs">ISLP_labs</a> does. If an exercise departs from the book, say why in the lab.</li>
 <li>Never throw away an exercise you replace. Either keep both exercises, or keep the replaced one as an outtake: leave its file in place and stop including it.</li>
 <li>Tell students where to get the data.</li>
 <li>Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a <code>github.com</code> link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.</li>
@@ -578,7 +578,7 @@
 
 <p>This rule applies to all R code in teaching materials, in every course and every teaching repository.</p>
 <ul>
-<li>Even when you fit a model with a base R function such as <code>lm()</code> or <code>glm()</code>, show its results with modern packages, not with base R output.</li>
+<li>Even when you fit a model with a base R function such as <code>lm()</code> or <code>glm()</code>, <!-- check-term-links: allow --> show its results with modern packages, not with base R output.</li>
 <li>Show coefficient tables with <a href="https://easystats.github.io/parameters/">parameters</a> (<code>parameters() |&gt; print_md()</code>) or <a href="https://cran.r-project.org/package=gtsummary">gtsummary</a> (<code>tbl_regression()</code>), not with <code>summary()</code> or <code>coef(summary())</code> printouts.</li>
 <li>Draw figures with <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, not with base graphics such as <code>plot()</code>, <code>lines()</code> and <code>abline()</code>.</li>
 <li>Draw model plots with packages built on ggplot2: <a href="https://strengejacke.github.io/sjPlot/">sjPlot</a> or <a href="https://strengejacke.github.io/ggeffects/">ggeffects</a> for predictions, and <a href="https://easystats.github.io/performance/">performance</a>’s <code>check_model()</code> for diagnostic plots.</li>
@@ -600,7 +600,7 @@
 <li>Stack data frames with <code>bind_rows()</code>, not with <code>rbind()</code>.</li>
 <li>Build data frames with <a href="https://tibble.tidyverse.org/">tibble</a>’s <code>tibble()</code>, not with <code>data.frame()</code>.</li>
 <li>Chain steps with the native pipe <code>|&gt;</code>.</li>
-<li>Do not nest function calls. Write <code>tibble(x, y) |&gt; pander()</code>, not <code>pander(tibble(x, y))</code>, and <code>sizes |&gt; lapply(f) |&gt; bind_rows()</code>, not <code>bind_rows(lapply(sizes, f))</code>. Give a call that would sit inside an argument, such as <code>data = filter(df, train)</code> in a model call, a name on its own line first.</li>
+<li>Do not nest function calls. <!-- check-term-links: allow --> Write <code>tibble(x, y) |&gt; pander()</code>, not <code>pander(tibble(x, y))</code>, and <code>sizes |&gt; lapply(f) |&gt; bind_rows()</code>, not <code>bind_rows(lapply(sizes, f))</code>. Give a call that would sit inside an argument, such as <code>data = filter(df, train)</code> in a model call, a name on its own line first.</li>
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
@@ -651,8 +651,8 @@
 
 <p>This rule applies to all teaching materials that run code, in every course and every teaching repository.</p>
 <ul>
-<li>Give the course a programming primer that introduces each package function the course’s chapters call. A student encounters the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.</li>
-<li>Keep the primer complete by computing the list of functions, not by remembering it. Scan the code chunks of the chapters for the functions they call, and compare the list with the functions the primer mentions. Run the scan when a chapter adds a function, and again before a term starts.</li>
+<li>Give the course a programming primer that introduces each package function the course’s chapters call. <!-- check-term-links: allow --> A student encounters the function there first, in a short note, a worked example and an exercise, and then sees it used in the chapters.</li>
+<li>Keep the primer complete by computing the list of functions, not by remembering it. Scan the code chunks of the chapters for the functions they call, and compare the list with the functions the primer mentions. Run the scan when a chapter adds a function, and again before a term starts. <!-- check-term-links: allow --></li>
 <li>Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.</li>
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
@@ -711,7 +711,7 @@
 </section>
 <section class="slide level2">
 
-<p>When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.</p>
+<p>When a <a href="../chapters/defining-terms.html#def-term">term</a> is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.</p>
 <ul>
 <li>Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.</li>
 <li>Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.</li>

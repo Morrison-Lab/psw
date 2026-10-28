@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:14:18 (PDT)
+Last modified: 2026-10-28 00:37:47 (PDT)
 
 > **NOTE:**
 >
@@ -56,7 +56,7 @@ Make every unit of analysis as concise and minimal as possible. The units are ma
 This is the compositional approach of [modular programming](https://en.wikipedia.org/wiki/Modular_programming): a program is built from small, single-purpose modules that call one another, and a maintainer changes one module without reading the rest. The notes work the same way. A theorem links to the definitions it uses, a proof links to the lemmas it uses, and an expression is written with the named pieces it is built from.
 
 - A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
-- A div holds one term or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
+- A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
 - A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
 
@@ -78,7 +78,7 @@ When a unit still looks long, ask what could be named and moved out.
 
 - Replace a bolded keyword in running prose with a `#def-` div. A bolded keyword usually marks an inline definition.
 - Define one term per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
-- Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation function, gets its own div after the general case, and the two link to each other.
+- Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mds/functions.html#def-function), gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.
 
 Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
@@ -89,7 +89,7 @@ When a symbol or convention has more than one common form, state the one the not
 
 ## 5 Lead with the simplest correct form of a definition
 
-Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define variance as the mean squared deviation \\\operatorname{E}\left\[\operatorname{devn}(X)^2\right\]\\, where \\\operatorname{devn}(X) = X - \operatorname{E}\[X\]\\, and then prove that it equals \\\operatorname{E}\[X^2\] - (\operatorname{E}\[X\])^2\\.
+Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) as the mean squared deviation \\\operatorname{E}\left\[\operatorname{devn}(X)^2\right\]\\, where \\\operatorname{devn}(X) = X - \operatorname{E}\[X\]\\, and then prove that it equals \\\operatorname{E}\[X^2\] - (\operatorname{E}\[X\])^2\\.
 
 Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.
 
@@ -118,7 +118,7 @@ When several courses or repositories have already written the same definition, t
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
-- Keep a list or table of like items, such as courses, readings, channels or glossary terms, in a CSV, YAML or JSON file with one record per item. The page reads the file and builds the table or list with a short function, instead of holding a hand-written Markdown table.
+- Keep a list or table of like items, such as courses, readings, channels or glossary [term](../chapters/defining-terms.llms.md#def-term)s, in a CSV, YAML or JSON file with one record per item. The page reads the file and builds the table or list with a short function, instead of holding a hand-written Markdown table.
 - A data file can be counted, filtered, sorted and reused by another page, and a new row is a one-line change that a reviewer reads as data.
 - List the file under the page’s `resources:` when the site publishes it.
 - Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.
@@ -298,7 +298,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 ## 22 Talk about the ideas, not the notes
 
-When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
+When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
 - Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.
 - Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.

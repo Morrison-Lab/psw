@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 00:14:18 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:37:47 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -417,12 +417,12 @@
 <p><span class="theorem-title"><strong>Example 1 (Replacing an appeal to familiarity)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Substituting the normal density into the likelihood gives the familiar three-term formula.</p>
-<p>✅ For an independent sample <span class="math inline">\(x_1, \ldots, x_n\)</span> from a normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, substituting the normal density into the likelihood and taking logarithms gives <span class="math display">\[
+<p>✅ For an independent sample <span class="math inline">\(x_1, \ldots, x_n\)</span> from a normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, <!-- check-term-links: allow --> substituting the normal density into the likelihood and taking logarithms gives <span class="math display">\[
 \ell(\mu, \sigma^2) =
 -\frac{n}{2}\log(2\pi)
 - \frac{n}{2}\log\left(\sigma^2\right)
 - \frac{1}{2\sigma^2}\sum_{i=1}^{n}\left(x_i - \mu\right)^2.
-\]</span> The three terms are, in order:</p>
+\]</span> The three terms are, <!-- check-term-links: allow --> in order:</p>
 <ul>
 <li>a constant that does not involve the parameters;</li>
 <li>a term that depends on <span class="math inline">\(\sigma^2\)</span> but not on <span class="math inline">\(\mu\)</span>;</li>
@@ -514,7 +514,7 @@
 
 <p>A link lets a reader check a claim or learn more without searching for the source themselves. When in doubt, add the link; leave one out only for a specific reason. Link these things whenever they appear:</p>
 <ul>
-<li>a term to the place where it is defined, in the same document or another one;</li>
+<li>a <a href="../chapters/defining-terms.html#def-term">term</a> to the place where it is defined, in the same document or another one;</li>
 <li>a result to the theorem, equation or section that establishes it;</li>
 <li>a definition, theorem or named method to its <a href="https://www.wikipedia.org/">Wikipedia</a> article, when one exists (see <a href="#/cite-wikipedia-beside-the-primary-source">Cite Wikipedia, beside the primary source</a>);</li>
 <li>a cited source to its <a href="https://www.doi.org/">DOI</a> or official URL;</li>
@@ -526,7 +526,7 @@
 <div id="exm-link-back-reference" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2 (Linking a reference back to earlier content)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ The likelihood of the logistic regression model from the previous chapter is a product of Bernoulli probabilities.</p>
+<p>❌ The likelihood of the logistic regression model from the previous chapter <!-- check-term-links: allow --> is a product of Bernoulli probabilities.</p>
 <p>✅ The likelihood of the <a href="https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression">logistic regression</a> model is a product of Bernoulli probabilities.</p>
 </blockquote>
 <p>In the ✅ version, the link takes the reader to the model’s definition.</p>
@@ -541,7 +541,7 @@
 <div id="exm-link-liberally" class="theorem example">
 <p><span class="theorem-title"><strong>Example 3 (Adding links a reader would use)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ We fit the model with the lme4 package and report a 95% confidence interval for each fixed effect.</p>
+<p>❌ We fit the model with the lme4 package and report a 95% confidence interval for each fixed effect. <!-- check-term-links: allow --></p>
 <p>✅ We fit the model with the <a href="https://cran.r-project.org/package=lme4">lme4</a> package and report a 95% <a href="../chapters/defining-terms.html#def-confidence-interval">confidence interval</a> for each fixed effect.</p>
 </blockquote>
 <p>A reader who does not know lme4, or wants the exact meaning of “confidence interval” in this guide, can now follow the link instead of searching.</p>
@@ -558,7 +558,7 @@
 <li>Cite the article for the specific concept, not a broader article that mentions it.</li>
 <li>Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.</li>
 <li>Use a stable URL for the article, not a search result.</li>
-<li>Cite an article once where its term is defined, not at every use; later uses link to your own definition.</li>
+<li>Cite an article once where its <a href="../chapters/defining-terms.html#def-term">term</a> is defined, not at every use; later uses link to your own definition.</li>
 </ul>
 <div id="exm-link-wikipedia" class="theorem example">
 <p><span class="theorem-title"><strong>Example 4 (Citing a definition’s Wikipedia article)</strong></span> &nbsp;</p>
@@ -581,7 +581,7 @@
 </section>
 <section class="slide level2">
 
-<p>Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as <code>[@key, p. 5]</code>. The rule to cite a Wikipedia article once, where its term is defined, is a case of this one.</p>
+<p>Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as <code>[@key, p. 5]</code>. The rule to cite a Wikipedia article once, where its <a href="../chapters/defining-terms.html#def-term">term</a> is defined, is a case of this one.</p>
 <div id="exm-cite-once" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Citing one source once in a definition)</strong></span> &nbsp;</p>
 <blockquote>
@@ -638,7 +638,7 @@
 </section>
 <section class="slide level2">
 
-<p>When a source uses another name for a defined term, write the alias in bold and cite the source after it, as in <code>also called the **alias** [@key, section]</code>. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.</p>
+<p>When a source uses another name for a defined <a href="../chapters/defining-terms.html#def-term">term</a>, write the alias in bold and cite the source after it, as in <code>also called the **alias** [@key, section]</code>. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.</p>
 <blockquote>
 <p>❌ <code>also called the **alias**. The cited textbook uses that name.</code></p>
 <p>✅ <code>also called the **alias** [@key, section]</code></p>
@@ -714,7 +714,7 @@
 <li>Text, figures or code reused from work that you or your group wrote elsewhere, such as a lab manual your group maintains (the UCD-SERG lab manual, for example), your own papers, or your own software.</li>
 <li>A template or tool of your group’s that you built the site from.</li>
 </ul>
-<p>A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: when you reuse a co-written paper or manual, the work itself gets no credit (a publisher-required citation aside, see below), but credit each outside co-author by name, in a sentence or an author line. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays. A passage or figure reused from a published paper of yours follows the publisher’s reuse terms, which may require a citation; that is the only citation the reuse itself can require.</p>
+<p>A formal acknowledgment tells the reader the material came from someone else, so it does not belong on material that is your own, wherever that material is stored. A co-author outside your group is someone else: when you reuse a co-written paper or manual, the work itself gets no credit (a publisher-required citation aside, see below), but credit each outside co-author by name, in a sentence or an author line. The rule concerns acknowledging reuse of your own material. Citing a published paper or released software of yours as the original publication of a result, or as a tool you used, is ordinary citation and stays. A passage or figure reused from a published paper of yours follows the publisher’s reuse terms, which may require a citation<!-- check-term-links: allow -->; that is the only citation the reuse itself can require.</p>
 <p>Do not cite your own course notes or sites as the source of a definition or result either. Instead, cite the original publication where you can identify one, and a modern textbook (see <a href="#/cite-the-original-for-named-results">Cite the original for named results</a>), and link to your own page as further reading.</p>
 <p>❌ A citation of the group’s own notes as the source of a definition:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>The Cauchy-Schwarz inequality bounds the inner product by the product of the norms <span class="co">[</span><span class="ot">@morrison2026mds</span><span class="co">]</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
