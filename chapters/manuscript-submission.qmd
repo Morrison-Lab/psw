@@ -62,17 +62,17 @@ and keep the end-of-document copies only for review drafts.
 
 The title page carries:
 
-- A specific, informative **title** that names the population,
+- A specific, informative **title** that names the [population](defining-terms.qmd#def-population), <!-- check-term-links: allow -->
   the exposure or intervention, the outcome,
   and the design where they fit.
   Avoid abbreviations, questions, and puns,
   and check the character limit.
-- A **running head** (short title), if the journal asks for one.
+- A **running head** (short title), if the journal asks for one. <!-- check-term-links: allow -->
 - **Authors**: full names, degrees if required, affiliations,
   and ORCID iDs.
   The authors agree on the byline order among themselves.
-- The **corresponding author**'s name, postal address, and email.
-- **Word counts** for the abstract and the main text.
+- The **corresponding author**'s name, postal address, and email. <!-- check-term-links: allow -->
+- **Word counts** for the abstract and the main text. <!-- check-term-links: allow -->
   The main-text count usually runs from the Introduction through the
   Discussion and excludes the abstract, references, tables,
   and figure legends.
@@ -95,7 +95,7 @@ use the [CRediT taxonomy](https://credit.niso.org/).
 
 ## Abstract
 
-- Use a **structured** abstract with the journal's headings.
+- Use a **structured** abstract with the journal's headings. <!-- check-term-links: allow -->
   A generic set is Background, Objective, Methods, Results,
   and Conclusions.
   Clinical journals often split Methods into
@@ -103,7 +103,7 @@ use the [CRediT taxonomy](https://credit.niso.org/).
   Exposures; and Main Outcomes and Measures.
 - Most limits fall between 250 and 350 words.
 - The Results give the sample size
-  and the main effect estimates with their confidence intervals,
+  and the main effect estimates with their [confidence interval](defining-terms.qmd#def-confidence-interval)s,
   not only *P* values.
   Phrase each effect estimate as an estimate
   ("we estimated that ..."),
@@ -115,7 +115,7 @@ use the [CRediT taxonomy](https://credit.niso.org/).
 - Leave out citations, undefined abbreviations,
   and references to tables or figures.
 - Give 3 to 6 keywords,
-  preferably [MeSH](https://meshb.nlm.nih.gov/) terms.
+  preferably [MeSH](https://meshb.nlm.nih.gov/) [term](defining-terms.qmd#def-term)s.
 
 ## Main text
 
@@ -294,7 +294,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
 
 ## Statistics and numbers
 
-- Give each estimate with its 95% confidence interval,
+- Give each estimate with its 95% [confidence interval](defining-terms.qmd#def-confidence-interval),
   in one consistent format,
   such as "0.82 (95% CI, 0.71 to 0.95)".
   Use "to" rather than a dash when a bound is negative.
@@ -314,7 +314,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   Avoid "trend toward significance" and "marginally significant".
   Use "significant" only in its statistical sense.
 - When an interval is wide, say that the estimate
-  **had more uncertainty**,
+  **had more uncertainty**, <!-- check-term-links: allow -->
   rather than calling it "less precise" or "imprecise".
   An interval that crosses the null is compatible with both benefit
   and harm, so say that too,
@@ -375,7 +375,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   again at its first use in the main text,
   and use it consistently after that.
 - Define abbreviations again in each table footnote and figure legend.
-- Abbreviate only terms that appear several times,
+- Abbreviate only [term](defining-terms.qmd#def-term)s that appear several times,
   and never in the title.
 - Standard terms such as CI, SD, and IQR need no definition
   in most journals.
@@ -400,7 +400,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
 ## Prose
 
 - Follow the rest of this guide:
-  plain words, short sentences, and the active voice.
+  plain words, short sentences, and the [active voice](defining-terms.qmd#def-active-voice).
 - Use the past tense for what was done and found
   (Methods and Results)
   and the present tense for established knowledge
@@ -421,7 +421,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   - reviewer conversations;
   - references to earlier drafts; and
   - to-do notes.
-- Use one term per concept throughout the paper.
+- Use one [term](defining-terms.qmd#def-term) per concept throughout the paper.
 - Define every group, period, and outcome before you use it.
 
 ## Required statements

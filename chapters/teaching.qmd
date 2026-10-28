@@ -56,7 +56,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
 
 ## Asking before defining
 
-> ❌ **Generalization** is the ability of a model to perform well on new data.
+> ❌ **Generalization** is the ability of a model to perform well on new data. <!-- check-term-links: allow -->
 
 > ✅
 >
@@ -101,7 +101,7 @@ and an expression is written with the named pieces it is built from.
   Name each meaningful sub-expression, give it a macro,
   and build the display from the names
   (see [Making expressions concise](notation.qmd#making-expressions-concise)).
-- A div holds one term or one result.
+- A div holds one [term](defining-terms.qmd#def-term) or one result.
   Move a second term, a side property or a long argument into its own div,
   and link to it from the place that needs it
   (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
@@ -139,7 +139,7 @@ For teaching materials, four further rules keep definitions findable.
   so nothing can link to it.
 - Never nest one theorem-type div inside another.
   The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
-  A special case, such as a linear evaluation function,
+  A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mds/functions.html#def-function),
   gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div.
   Put the properties of the defined object, such as the symmetry and idempotence of a matrix,
@@ -169,7 +169,7 @@ so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
 
 Define a quantity in the form that needs the fewest symbols,
 and state the textbook form as a theorem that follows.
-For example, define variance as the mean squared deviation $\operatorname{E}\left[\operatorname{devn}(X)^2\right]$,
+For example, define [variance](defining-terms.qmd#def-variance-expression-and-prose) as the mean squared deviation $\operatorname{E}\left[\operatorname{devn}(X)^2\right]$,
 where $\operatorname{devn}(X) = X - \operatorname{E}[X]$,
 and then prove that it equals $\operatorname{E}[X^2] - (\operatorname{E}[X])^2$.
 
@@ -224,9 +224,9 @@ The ✅ version lets every later slide refer to something the reader has already
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
-- Keep a list or table of like items, such as courses, readings, channels or glossary terms,
+- Keep a list or table of like items, such as courses, readings, channels or glossary [term](defining-terms.qmd#def-term)s,
   in a CSV, YAML or JSON file with one record per item.
-  The page reads the file and builds the table or list with a short function,
+  The page reads the file and builds the table or list with a short function, <!-- check-term-links: allow -->
   instead of holding a hand-written Markdown table.
 - A data file can be counted, filtered, sorted and reused by another page,
   and a new row is a one-line change that a reviewer reads as data.
@@ -291,7 +291,7 @@ So each example gets a practice exercise, with its solution, right after it.
 - After every `#exm-` div, add an `#exr-` div that asks the reader
   to do the same thing for a different case,
   followed by its `#sol-` div.
-  The exercise changes the data, the function or the question,
+  The exercise changes the data, the function or the question, <!-- check-term-links: allow -->
   so the solution is not a copy of the example.
 - The full sequence for a new idea is therefore:
   the exercise that poses the question and its solution,
@@ -349,7 +349,7 @@ in every course and every teaching repository, not only to one course.
   Do not give base R alone.
   [ISLR-tidymodels-labs](https://github.com/Morrison-Lab/ISLR-tidymodels-labs)
   shows the style.
-- When a lab follows a textbook's lab, use the book's exercises, data and fitting functions,
+- When a lab follows a textbook's lab, use the book's exercises, data and fitting functions, <!-- check-term-links: allow -->
   in the book's order.
   For the ISL labs, fit Python models with `statsmodels`' `sm.OLS`, as
   [ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs) does.
@@ -401,7 +401,7 @@ in every course and every teaching repository, in every language.
 This rule applies to all R code in teaching materials,
 in every course and every teaching repository.
 
-- Even when you fit a model with a base R function such as `lm()` or `glm()`,
+- Even when you fit a model with a base R function such as `lm()` or `glm()`, <!-- check-term-links: allow -->
   show its results with modern packages, not with base R output.
 - Show coefficient tables with
   [parameters](https://easystats.github.io/parameters/) (`parameters() |> print_md()`)
@@ -435,7 +435,7 @@ in every course and every teaching repository.
   [tibble](https://tibble.tidyverse.org/)'s `tibble()`,
   not with `data.frame()`.
 - Chain steps with the native pipe `|>`.
-- Do not nest function calls.
+- Do not nest function calls. <!-- check-term-links: allow -->
   Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`,
   and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`.
   Give a call that would sit inside an argument,
@@ -512,13 +512,13 @@ and a chunk that loads a package or builds an object that later chunks use is `t
 This rule applies to all teaching materials that run code,
 in every course and every teaching repository.
 
-- Give the course a programming primer that introduces each package function the course's chapters call.
+- Give the course a programming primer that introduces each package function the course's chapters call. <!-- check-term-links: allow -->
   A student encounters the function there first, in a short note, a worked example and an exercise,
   and then sees it used in the chapters.
 - Keep the primer complete by computing the list of functions, not by remembering it.
   Scan the code chunks of the chapters for the functions they call,
   and compare the list with the functions the primer mentions.
-  Run the scan when a chapter adds a function, and again before a term starts.
+  Run the scan when a chapter adds a function, and again before a term starts. <!-- check-term-links: allow -->
 - Add the missing functions in separate pull requests, one per package.
   A pull request that adds a function to a chapter adds it to the primer too,
   or links the primer entry that already introduces it.
@@ -600,7 +600,7 @@ The ✅ rows let the reader find one formula by one label.
 
 ## Talk about the ideas, not the notes
 
-When a term is defined on another page or in another site,
+When a [term](defining-terms.qmd#def-term) is defined on another page or in another site,
 state the idea in the sentence and link the term.
 Do not write about where the definition lives.
 
