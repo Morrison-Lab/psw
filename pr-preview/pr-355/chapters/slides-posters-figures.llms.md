@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-27 20:34:11 (PDT)
+Last modified: 2026-10-27 20:44:41 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -54,7 +54,7 @@ Lead with a well-labeled figure or table instead of a long paragraph that descri
 
 A clear figure lets a reader check a result without help from the text. Before you share a figure:
 
-- Label the x-axis and y-axis clearly. Name each quantity in plain words, and add its symbol only as an option: “Probability, π” and “Log-odds, η”, not “π” or “η” alone, and not “f(x)” or “x1”. A reader should not have to look up a symbol to know what an axis shows.
+- Label the x-axis and y-axis clearly. Name each quantity in plain words, and add its symbol only as an option: “Probability, \\\prob\\” and “Log-odds, \\\logodds\\”, not “\\\prob\\” or “\\\logodds\\” alone, and not “f(x)” or “x1”. A reader should not have to look up a symbol to know what an axis shows.
 - Use panel labels when a figure has several subplots.
 - Include enough tick marks and tick labels.
 - Put the ticks in the original measurement scale of each variable, however the model is parametrized and the axis is spaced. If a fit uses scaled or standardized values, place the ticks at round original values and label them with those, so a horsepower axis reads 50, 100, 150 and 200, not 0 to 1. Report numbers such as an error in the response’s units too.
