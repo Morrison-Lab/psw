@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-27 13:10:13 (PDT)</p>
+  <p class="date">Last modified: 2026-10-27 20:13:11 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -690,7 +690,7 @@
 </blockquote>
 <p>Both versions print the same quantities. The ❌ version writes the difference <code>\eoutvar_i - \outvar_i</code> out twice. The ✅ version names it once, as the prediction error, and each formula shows at a glance what it is built from.</p>
 </div>
-<p>Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared error as the squared bias plus the variance plus the irreducible error, and define each of the three pieces on its own, instead of expanding them inside the formula.</p>
+<p>Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared prediction error as the squared bias plus the variance plus the residual variance, <!-- check-term-links: allow --> and define each of the three pieces on its own, instead of expanding them inside the formula.</p>
 <p>Search the shared macros for the chunk before you write it by hand. A macro often exists already, and any expression spelled out in full that a macro or a shorter form could say is the sign that nobody looked. A difference is only the commonest case. For example, an exercise wrote the left side of the bias–variance decomposition as <code>\E{\paren{\newoutvar - \predvalf{\newpredval}}^2}</code>, when <code>\prederrf{\predvalf{\newpredval}}</code> names the same prediction error, and the squared bias, written out the same way, has <code>\biassymf</code>. When you find one such chunk, sweep the other notes repositories for it, in small batches of one repository each.</p>
 <p>Add the macro to the shared macro file before you use it, never as a local macro in one document (see <a href="#/using-shared-macros">Using shared macros</a>), and record its meaning in that file’s <code>interpretations.tsv</code>.</p>
 </section>

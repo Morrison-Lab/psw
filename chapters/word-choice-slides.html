@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-27 13:10:13 (PDT)</p>
+  <p class="date">Last modified: 2026-10-27 20:13:11 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -407,8 +407,27 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 <p>The definition of the prediction function family can then say that machine-learning texts call it a <em>hypothesis class</em> or <em>hypothesis space</em>.</p>
 </section>
-<section id="write-the-full-phrase" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Write the full phrase</h2>
+<section id="name-a-quantity-for-what-it-is" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Name a quantity for what it is</h2>
+</section>
+<section class="slide level2">
+
+<p>A name should say what kind of thing the quantity is. Each kind of quantity has its own name:</p>
+<ul>
+<li><strong>A variance</strong> measures spread. <!-- check-term-links: allow --></li>
+<li><strong>A risk</strong> is an expected loss. <!-- check-term-links: allow --></li>
+<li><strong>An error</strong> is a realized difference between a prediction and an outcome. <!-- check-term-links: allow --></li>
+</ul>
+<p>Calling a variance an error, or calling a quantity “irreducible” without saying given what, misleads the reader. <!-- check-term-links: allow --></p>
+<p>For example, the variance of the outcome given the inputs is the <em>residual variance</em>. <!-- check-term-links: allow --> It is a component of the expected squared prediction error, not an error, and it is irreducible only given the inputs the model uses: a further input that predicts the outcome reduces it.</p>
+<blockquote>
+<p>❌ The irreducible error is the part no model can remove.</p>
+<p>✅ The residual variance is the part no model using the same inputs can remove. <!-- check-term-links: allow --></p>
+</blockquote>
+<p>Mention the common name once, as an alias in the definition, and use the accurate <a href="../chapters/defining-terms.html#def-term">term</a> everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.</p>
+</section>
+<section id="write-the-full-phrase" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Write the full phrase</h2>
 </section>
 <section class="slide level2">
 
@@ -422,8 +441,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 </div>
 </section>
-<section id="choose-each-preposition-on-purpose" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Choose each preposition on purpose</h2>
+<section id="choose-each-preposition-on-purpose" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Choose each preposition on purpose</h2>
 </section>
 <section class="slide level2">
 
@@ -444,8 +463,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>Keep a plain preposition when it states the relationship exactly, such as <em>in</em> for location and <em>by</em> for the agent of a passive verb.</p>
 </section>
-<section id="minimize-unnecessary-jargon" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Minimize unnecessary jargon</h2>
+<section id="minimize-unnecessary-jargon" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Minimize unnecessary jargon</h2>
 </section>
 <section class="slide level2">
 
