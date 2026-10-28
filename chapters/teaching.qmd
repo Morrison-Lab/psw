@@ -127,7 +127,7 @@ and each piece fits on a slide.
 
 ## Say what a yes-or-no answer means
 
-Follow a "Yes" or "No" with what the answer means in the question's own terms,
+Follow a "Yes" or "No" with what the answer means in the words of the question,
 as in "No: it's not possible that the advanced network has a test error of 0.25,"
 not a bare "No."
 (Ezra, 2026-10-28).
@@ -144,7 +144,7 @@ The rule covers solutions, worked examples and any other answer to a question.
 > ✅ No: it's not possible that the advanced network has a test error of 0.25.
 > The irreducible error is a lower bound on the expected squared prediction error.
 
-The ✅ version states the conclusion in the question's terms, so the reasons that follow support a claim the reader has already seen.
+The ✅ version states the conclusion in the question's own words, so the reasons that follow support a claim the reader has already seen.
 
 :::
 
