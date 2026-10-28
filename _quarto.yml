@@ -34,6 +34,25 @@ format:
           \usepackage{etoolbox}
           \AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}}
       - file: _math-macros.tex
+      # This block maps characters that Latin Modern has no glyph for.
+      # LuaLaTeX drops such a character with only a log warning, so the
+      # handouts printed the bad and good examples with no ❌/✅ marker (#387).
+      # Box-drawing characters in code-block trees map to one ASCII character
+      # each, so the columns stay aligned in the monospaced font.
+      # \tracinglostchars=3 makes any other missing glyph an error, so the
+      # build fails instead of printing a blank: map the new character here,
+      # or write it as math.
+      - text: |
+          \usepackage{newunicodechar}
+          \usepackage{pifont}
+          \usepackage{xcolor}
+          \newunicodechar{✅}{\textcolor{green!50!black}{\ding{51}}}
+          \newunicodechar{❌}{\textcolor{red!70!black}{\ding{55}}}
+          \newunicodechar{─}{-}
+          \newunicodechar{│}{|}
+          \newunicodechar{├}{+}
+          \newunicodechar{└}{+}
+          \tracinglostchars=3
 
 knitr:
   opts_chunk:
