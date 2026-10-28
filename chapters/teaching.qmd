@@ -365,6 +365,30 @@ in every course and every teaching repository, not only to one course.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
 
+## Keep each step's code in one chunk, and put parallel chunks in a language tabset
+
+This rule applies to every executed code chunk in teaching materials,
+in every course and every teaching repository, in every language.
+
+- Put parallel versions of one computation in one language tabset, never one chunk after another.
+  A reader should see one language at a time.
+- Write one chunk for each step of the computation.
+  A figure's code is one chunk, even when it takes ten lines.
+- Split a chunk only for a reason that the reader can see:
+  - **Own label or options**: the second part needs its own label, caption or chunk options.
+  - **Separate output**: the second part shows output that the first part should not.
+  - **Dependent prose**: prose between the parts needs the first part's output.
+- Do not split a chunk to name its parts, or to keep it short.
+  Comments name the parts
+  (see [Comment every code chunk to say what and why](#comment-every-code-chunk-to-say-what-and-why)).
+- Give a chunk that only stores values for later code or inline code `#| include: false`.
+  When the chunk that computes those values is already hidden, merge the storing code into that chunk.
+- Check for output that splits a chunk without a reason.
+  In Python, reticulate prints the value of each top-level call that returns something other than `None`
+  and shows the chunk as one code block per printed value,
+  such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`.
+  End each such call with a semicolon, or assign its value.
+
 ## Present R results with modern packages
 
 This rule applies to all R code in teaching materials,
@@ -585,6 +609,54 @@ Do not write about where the definition lives.
 Students read concepts, not the structure of the site.
 A sentence about which notes define a term adds no content,
 and it goes stale when the definition moves.
+
+## Write grading rubrics as checklists
+
+Structure the rubric for most STEM questions as a checklist
+(Ezra, 2026-10-26).
+A grader then marks each item as earned or not,
+and the points are the sum of the earned items.
+A rubric written as a paragraph makes the grader reconstruct the items,
+and two graders reconstruct different items.
+
+- Write one checklist item per observable criterion,
+  and put its points first.
+- Make the points of the items sum to the question's points,
+  and state that total in the line that introduces the checklist.
+- Write each item so that it is either met or not met.
+  Name the answer or the evidence that meets the criterion, as in
+  "cites the gap between training and CV MSE".
+- List an acceptable alternative answer as a sub-bullet without points
+  under the item it also satisfies,
+  so the items still sum to the question's points.
+  Do not put the alternative in a separate paragraph.
+- Keep the rubric in the solution, after the answer,
+  so a course that withholds solutions from students withholds the rubric too.
+- Use another structure when a question has no separable criteria,
+  such as a single holistic judgment of a proof's rigor.
+
+::: {#exm-rubric-checklist}
+
+## A rubric as a checklist
+
+> ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$,
+> three for "orthogonal" with its link to the normal equation.
+
+> ✅
+>
+> ```markdown
+> Grading (6 points):
+>
+> - [ ] 2 points: gives $\vresid = \tp{[-1, -1, 1]}$.
+> - [ ] 1 point: computes $\dprod{\vx}{\vresid} = 0$.
+> - [ ] 3 points: says $\vresid$ is orthogonal to $\vx$
+>   and links this orthogonality to the normal equation.
+> ```
+
+The checklist shows the grader each item to mark
+and lets a script check that the points sum to the total.
+
+:::
 
 ## Credit other courses without summarizing them
 
