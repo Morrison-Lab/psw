@@ -151,14 +151,19 @@ Put the equation in a display and let the sentence introduce it.
 Use inline math for symbols and short expressions inside a sentence,
 not for the equation the reader is meant to remember.
 
-::: {.callout-note}
-#### Example: the normal equations
+::: {#exm-key-equation-displayed}
 
-❌ "Setting the gradient to zero yields $\tp{\design} \design \vcoef = \tp{\design} \vy$."
+## Displaying the normal equations
 
-✅ "Setting the gradient to zero yields the normal equations:"
+> ❌ Setting the gradient to zero yields $\stprod{\design} \vcoef = \tp{\design} \vy$.
+>
+> ✅ Setting the gradient to zero yields the normal equations:
+>
+> $$\stprod{\design} \vcoef = \tp{\design} \vy$$
 
-$$\tp{\design} \design \vcoef = \tp{\design} \vy$$
+In the ❌ version the result sits in the middle of a line, where the reader can miss it.
+The ✅ version gives it a line of its own.
+
 :::
 
 ## Write numbers according to how they are used
