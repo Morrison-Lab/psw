@@ -97,6 +97,18 @@ callouts (config + color palette live in `_quarto-website.yml`).
   instead of leaving a blank (psw#387).
   Write a Greek letter or other symbol as math through a shared macro,
   or map the character in the `newunicodechar` block in `_quarto.yml`.
+- **Term links**: link a defined term once per div and once per passage,
+  where a passage is the prose between one heading and the next
+  (see "Define and link every technical term" in `chapters/defining-terms.qmd`).
+  gha's `check-term-links` treats every blank-line paragraph as a passage,
+  so on a changed line it can ask for a link the rule does not need;
+  answer that with `<!-- check-term-links: allow -->` on the line, not a second link
+  (psw#391, psw#392).
+  Link a plural through its singular stem, as in `[term](...)s`:
+  the checker learns a plural link text as a separate term.
+- **Re-running the Claude review**: a `/review` comment does not start one here.
+  Run the `claude-code-review.yml` workflow with the PR number
+  (`workflow_dispatch` input `pr_number`); a push also starts one.
 
 ## Pull request expectations
 
