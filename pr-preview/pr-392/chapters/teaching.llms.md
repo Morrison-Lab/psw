@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-27 23:33:41 (PDT)
+Last modified: 2026-10-28 00:02:13 (PDT)
 
 > **NOTE:**
 >
@@ -77,11 +77,11 @@ When a unit still looks long, ask what could be named and moved out.
 [Defining terms clearly](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) covers what a good definition contains. For teaching materials, four further rules keep definitions findable.
 
 - Replace a bolded keyword in running prose with a `#def-` div. A bolded keyword usually marks an inline definition.
-- Define one [term](../chapters/defining-terms.llms.md#def-term) per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
+- Define one term per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
 - Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mds/functions.html#def-function), gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.
 
-Every alternative name for the same concept stays in the div of the [term](../chapters/defining-terms.llms.md#def-term) it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
+Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
 ## 4 State the notation and its alternatives
 
@@ -153,7 +153,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 > >
 > > ``` markdown
 > > ::: {#exm-sample-mean}
-> > (the [sample mean](defining-terms.qmd#def-sample-mean) of one variable in a real dataset, computed by a code chunk)
+> > (the sample mean of one variable in a real dataset, computed by a code chunk)
 > > :::
 > >
 > > ::: {#exr-sample-mean-new-variable}
@@ -301,10 +301,10 @@ The same rule applies to every other reference table, such as a table of notatio
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
 - Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.
-- Do not write “see the probability notes” or “as in our notes”. The link already says where the [term](../chapters/defining-terms.llms.md#def-term) lives.
+- Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.
 - Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.
 
-Students read concepts, not the structure of the site. A sentence about which notes define a [term](../chapters/defining-terms.llms.md#def-term) adds no content, and it goes stale when the definition moves.
+Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
 ## 23 Write grading rubrics as checklists
 

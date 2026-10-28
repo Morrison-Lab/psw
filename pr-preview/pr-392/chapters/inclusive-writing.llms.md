@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-27 23:33:41 (PDT)
+Last modified: 2026-10-28 00:02:13 (PDT)
 
 > **NOTE:**
 >
@@ -95,7 +95,7 @@ Many statistical [term](../chapters/defining-terms.llms.md#def-term)s are everyd
 >
 > ✅ The model is biased: at a given input, its average prediction over many training sets differs from the true mean outcome at that input. (Here *bias* has its statistical meaning; it does not mean the model is unfair.)
 
-Once you define the [term](../chapters/defining-terms.llms.md#def-term), use the same word for the same idea every time. The plain language guidelines say that using a different term “may cause the reader to wonder if you’re referring to the same group” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Use the same terms consistently).
+Once you define the term, use the same word for the same idea every time. The plain language guidelines say that using a different term “may cause the reader to wonder if you’re referring to the same group” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Use the same terms consistently).
 
 > ❌ We split the data into a training set and a test set. We then compute the error on the held-out data.
 >

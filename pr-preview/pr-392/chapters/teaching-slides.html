@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-27 23:33:41 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:02:13 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -424,11 +424,11 @@
 <p><a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Defining terms clearly</a> covers what a good definition contains. For teaching materials, four further rules keep definitions findable.</p>
 <ul>
 <li>Replace a bolded keyword in running prose with a <code>#def-</code> div. A bolded keyword usually marks an inline definition.</li>
-<li>Define one <a href="../chapters/defining-terms.html#def-term">term</a> per <code>#def-</code> div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.</li>
+<li>Define one term per <code>#def-</code> div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.</li>
 <li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>, gets its own div after the general case, and the two link to each other.</li>
 <li>Keep only the definition in a <code>#def-</code> div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate <code>#thm-</code>, <code>#lem-</code> or <code>#prp-</code> div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.</li>
 </ul>
-<p>Every alternative name for the same concept stays in the div of the <a href="../chapters/defining-terms.html#def-term">term</a> it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
+<p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>
 <section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="4">
 <h2><span class="header-section-number">4</span> State the notation and its alternatives</h2>
@@ -520,7 +520,7 @@
 <blockquote>
 <p>✅</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a>::: {#exm-sample-mean}</span>
-<span id="cb2-2"><a aria-label="2"></a>(the <span class="co">[</span><span class="ot">sample mean</span><span class="co">](defining-terms.qmd#def-sample-mean)</span> of one variable in a real dataset, computed by a code chunk)</span>
+<span id="cb2-2"><a aria-label="2"></a>(the sample mean of one variable in a real dataset, computed by a code chunk)</span>
 <span id="cb2-3"><a aria-label="3"></a>:::</span>
 <span id="cb2-4"><a aria-label="4"></a></span>
 <span id="cb2-5"><a aria-label="5"></a>::: {#exr-sample-mean-new-variable}</span>
@@ -714,10 +714,10 @@
 <p>When a <a href="../chapters/defining-terms.html#def-term">term</a> is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.</p>
 <ul>
 <li>Write “the bias of an estimator”, linked to its definition, not “the statistics notes define the bias of an estimator”.</li>
-<li>Do not write “see the probability notes” or “as in our notes”. The link already says where the <a href="../chapters/defining-terms.html#def-term">term</a> lives.</li>
+<li>Do not write “see the probability notes” or “as in our notes”. The link already says where the term lives.</li>
 <li>Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.</li>
 </ul>
-<p>Students read concepts, not the structure of the site. A sentence about which notes define a <a href="../chapters/defining-terms.html#def-term">term</a> adds no content, and it goes stale when the definition moves.</p>
+<p>Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.</p>
 </section>
 <section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="23">
 <h2><span class="header-section-number">23</span> Write grading rubrics as checklists</h2>
