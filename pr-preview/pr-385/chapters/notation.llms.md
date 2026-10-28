@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-27 20:11:58 (PDT)
+Last modified: 2026-10-27 20:58:58 (PDT)
 
 > **NOTE:**
 >
@@ -448,7 +448,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 >
 > Both versions print the same quantities. The ❌ version writes the difference `\eoutvar_i - \outvar_i` out twice. The ✅ version names it once, as the prediction error, and each formula shows at a glance what it is built from.
 
-Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared error as the squared bias plus the variance plus the irreducible error, and define each of the three pieces on its own, instead of expanding them inside the formula.
+Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared prediction error as the squared bias plus the variance plus the residual variance, and define each of the three pieces on its own, instead of expanding them inside the formula.
 
 Search the shared macros for the chunk before you write it by hand. A macro often exists already, and any expression spelled out in full that a macro or a shorter form could say is the sign that nobody looked. A difference is only the commonest case. For example, an exercise wrote the left side of the bias–variance decomposition as `\E{\paren{\newoutvar - \predvalf{\newpredval}}^2}`, when `\prederrf{\predvalf{\newpredval}}` names the same prediction error, and the squared bias, written out the same way, has `\biassymf`. When you find one such chunk, sweep the other notes repositories for it, in small batches of one repository each.
 
