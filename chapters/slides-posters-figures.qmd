@@ -130,6 +130,11 @@ A clear figure lets a reader check a result without help from the text.
 Before you share a figure:
 
 - Label the x-axis and y-axis clearly.
+  Name each quantity in plain words, and add its symbol only as an option:
+  "Probability, $\prob$" and "Log-odds, $\logodds$",
+  not "$\prob$" or "$\logodds$" alone,
+  and not "f(x)" or "x1".
+  A reader should not have to look up a symbol to know what an axis shows.
 - Use panel labels when a figure has several subplots.
 - Include enough tick marks and tick labels.
 - Put the ticks in the original measurement scale of each variable,
