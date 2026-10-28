@@ -125,6 +125,29 @@ and each piece fits on a slide.
 
 :::
 
+## Spell out the conclusion of a yes-or-no answer
+
+Start an answer to a yes-or-no question with a full sentence
+that states the conclusion you are drawing,
+not with a bare "Yes." or "No."
+(Ezra, 2026-10-28).
+A reader who sees only the first line then still knows what the answer claims,
+and a bare "No." leaves open what is being denied.
+The rule covers solutions, worked examples and any other answer to a question.
+
+::: {#exm-yes-no-conclusion}
+
+## Spelling out a "No"
+
+> ❌ No. The irreducible error is a lower bound on the expected squared prediction error.
+>
+> ✅ No, the test error cannot be below the irreducible error.
+> The irreducible error is a lower bound on the expected squared prediction error.
+
+The ✅ version states the conclusion itself, so the reasons that follow support a claim the reader has already seen.
+
+:::
+
 ## Give each defined term its own div
 
 [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms)
