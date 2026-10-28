@@ -135,6 +135,9 @@ Before you share a figure:
   not "$\prob$" or "$\logodds$" alone,
   and not "f(x)" or "x1".
   A reader should not have to look up a symbol to know what an axis shows.
+  Wrap a long y-axis title onto two lines
+  so that it stays horizontal and readable,
+  rather than rotating it or shortening it to a symbol.
 - Use panel labels when a figure has several subplots.
 - Include enough tick marks and tick labels.
 - Put the ticks in the original measurement scale of each variable,
