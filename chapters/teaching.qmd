@@ -144,7 +144,8 @@ The rule covers solutions, worked examples and any other answer to a question.
 > ✅ No: it's not possible that the advanced network has a test error of 0.25.
 > The irreducible error is a lower bound on the expected squared prediction error.
 
-The ✅ version states the conclusion in the question's own words, so the reasons that follow support a claim the reader has already seen.
+The ✅ version states the conclusion in the question's own words,
+so the reasons that follow support a claim the reader has already seen.
 
 :::
 
