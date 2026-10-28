@@ -30,7 +30,7 @@ exclude readers who do not share the writer's background.
 Those readers must first work out what the words mean,
 and only then can they think about the ideas.
 The plain language guidelines put it this way:
-"The first rule of plain language is: **write for your audience**"
+"The first rule of plain language is: **write for your audience**" <!-- check-term-links: allow -->
 [@plainlanguage_gov, Audience].
 Your audience includes all of these readers.
 
@@ -90,10 +90,10 @@ a ton of data | a large data set
 the method falls flat on small samples | the method has high error on small samples
 at the end of the day, we want low test error | our goal is low test error
 Write the bias of an estimator. | Derive an expression for the bias of an estimator.
-Write $X$ in terms of $Y$. | Express $X$ in terms of $Y$.
+Write $X$ in terms of $Y$. | Express $X$ in terms of $Y$. <!-- check-term-links: allow -->
 You will meet this notation again. | You will encounter this notation again.
-We first meet the odds in logistic regression. | We first encounter the odds in logistic regression.
-Take a sample of size $n$ and call the sample mean $\bar x$. | Consider a sample of size $n$ and denote the sample mean by $\bar x$.
+We first meet the odds in logistic regression. | We first encounter the odds in logistic regression. <!-- check-term-links: allow -->
+Take a sample of size $n$ and call the sample mean $\bar x$. | Consider a sample of size $n$ and denote the sample mean by $\bar x$. <!-- check-term-links: allow -->
 the residual lies in $(-1, 1)$ | the residual is in $(-1, 1)$
 the certain distribution sits at $0$, the uniform distribution at $\log 4$, and the skewed distribution lies between them | the certain distribution has entropy $0$, the uniform distribution has entropy $\log 4$, and the skewed distribution has entropy between those two values
 the two discriminant scores agree at $x$ | the two discriminant scores are equal at $x$
@@ -109,7 +109,7 @@ Idioms, clichés and slang, with literal alternatives
 
 :::
 
-For a reader's first contact with a term or notation, write "encounter".
+For a reader's first contact with a [term](defining-terms.qmd#def-term) or notation, write "encounter".
 Do not write "meet", which treats the idea as a person.
 Do not write "see" either,
 because it names one sensory modality,
@@ -118,7 +118,7 @@ and readers also listen to text or read it in braille.
 Mathematical writing has idioms too.
 In an exercise, "Write the bias of an estimator" means
 "derive an expression for the bias of an estimator",
-and "Say which estimator has smaller variance" means
+and "Say which estimator has smaller variance" means <!-- check-term-links: allow -->
 "state which estimator has smaller variance".
 A reader who takes "write" or "say" literally
 may copy the definition or give an informal remark
@@ -153,14 +153,14 @@ The second version uses common words,
 and it says what the method does
 instead of calling it a "heuristic".
 
-Some technical terms are necessary.
+Some technical [term](defining-terms.qmd#def-term)s are necessary.
 [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)
 explains when to keep a technical term
 and how to define it.
 
 ## Say when a common word has a technical meaning
 
-Many statistical terms are everyday words
+Many statistical [term](defining-terms.qmd#def-term)s are everyday words
 with a different technical meaning.
 Examples include *bias*, *significant*, *confidence*, *normal*,
 *regression*, *error* and *likelihood*.
@@ -219,8 +219,8 @@ Write "for example" or "that is".
 
 Introduce every shorthand before its first use.
 This covers abbreviations and also shortened phrases,
-such as "objective" for "objective function".
-Give the full term first and mark the short form,
+such as "objective" for "objective function". <!-- check-term-links: allow -->
+Give the full [term](defining-terms.qmd#def-term) first and mark the short form,
 for example "an *objective function*, or *objective* for short".
 Then use the short form consistently.
 
@@ -263,7 +263,7 @@ to open up a noun string by
 "using more prepositions and articles"
 [@plainlanguage_gov, Avoid noun strings].
 
-> ❌ We report the test set error rate estimate variance.
+> ❌ We report the test set error rate estimate variance. <!-- check-term-links: allow -->
 >
 > ✅ We report the variance of the estimated error rate on the test set.
 
@@ -290,7 +290,7 @@ usually have more than one linking word such as 'and' or 'but'".
 > especially when $\lambda$ is large, are set exactly to zero.
 >
 > ✅ The lasso penalty is the sum of the absolute values of the coefficients.
-> The absolute value function is not smooth at zero.
+> The absolute value function is not smooth at zero. <!-- check-term-links: allow -->
 > Because of this, the lasso sets some coefficients exactly to zero.
 > Usually, more coefficients are zero when $\lambda$ is larger.
 

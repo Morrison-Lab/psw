@@ -138,7 +138,7 @@ rather than to defer to it.
 > gives the familiar three-term formula.
 >
 > ✅ For an independent sample $x_1, \ldots, x_n$
-> from a normal distribution with mean $\mu$ and variance $\sigma^2$,
+> from a normal distribution with mean $\mu$ and variance $\sigma^2$, <!-- check-term-links: allow -->
 > substituting the normal density into the likelihood
 > and taking logarithms gives
 > $$
@@ -147,7 +147,7 @@ rather than to defer to it.
 > - \frac{n}{2}\log\left(\sigma^2\right)
 > - \frac{1}{2\sigma^2}\sum_{i=1}^{n}\left(x_i - \mu\right)^2.
 > $$
-> The three terms are,
+> The three terms are, <!-- check-term-links: allow -->
 > in order:
 >
 > - a constant that does not involve the parameters;
@@ -288,7 +288,7 @@ When in doubt, add the link;
 leave one out only for a specific reason.
 Link these things whenever they appear:
 
-- a term to the place where it is defined,
+- a [term](defining-terms.qmd#def-term) to the place where it is defined,
   in the same document or another one;
 - a result to the theorem, equation or section that establishes it;
 - a definition, theorem or named method to its
@@ -316,7 +316,7 @@ when a later edit moves the content
 
 ## Linking a reference back to earlier content
 
-> ❌ The likelihood of the logistic regression model from the previous chapter
+> ❌ The likelihood of the logistic regression model from the previous chapter <!-- check-term-links: allow -->
 > is a product of Bernoulli probabilities.
 >
 > ✅ The likelihood of the [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) model
@@ -344,7 +344,7 @@ Leave a link out only for a reason such as one of the following:
 ## Adding links a reader would use
 
 > ❌ We fit the model with the lme4 package
-> and report a 95% confidence interval for each fixed effect.
+> and report a 95% confidence interval for each fixed effect. <!-- check-term-links: allow -->
 >
 > ✅ We fit the model with the [lme4](https://cran.r-project.org/package=lme4) package
 > and report a 95% [confidence interval](defining-terms.qmd#def-confidence-interval)
@@ -381,7 +381,7 @@ A Further reading section lists primary sources, textbooks, courses and other re
   and a reader who follows the link should find the same concept you defined.
   If the article's convention differs from yours, say how.
 - Use a stable URL for the article, not a search result.
-- Cite an article once where its term is defined, not at every use;
+- Cite an article once where its [term](defining-terms.qmd#def-term) is defined, not at every use;
   later uses link to your own definition.
 
 ::: {#exm-link-wikipedia}
@@ -417,7 +417,7 @@ A second citation of the same source in the same div adds a number that the read
 and tells them nothing new.
 Cite again only when the second claim rests on a different part of the source,
 and then give a locator, such as `[@key, p. 5]`.
-The rule to cite a Wikipedia article once, where its term is defined, is a case of this one.
+The rule to cite a Wikipedia article once, where its [term](defining-terms.qmd#def-term) is defined, is a case of this one.
 
 ::: {#exm-cite-once}
 
@@ -480,7 +480,7 @@ and say in the pull request what you checked against what.
 
 ## Cite an alias directly
 
-When a source uses another name for a defined term,
+When a source uses another name for a defined [term](defining-terms.qmd#def-term),
 write the alias in bold and cite the source after it,
 as in `also called the **alias** [@key, section]`.
 The citation already says that the source uses the name,
@@ -621,7 +621,7 @@ Citing a published paper or released software of yours
 as the original publication of a result, or as a tool you used,
 is ordinary citation and stays.
 A passage or figure reused from a published paper of yours
-follows the publisher's reuse terms, which may require a citation;
+follows the publisher's reuse terms, which may require a citation<!-- check-term-links: allow -->;
 that is the only citation the reuse itself can require.
 
 Do not cite your own course notes or sites as the source of a definition or result either.
