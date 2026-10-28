@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:02:38 (PDT)
+Last modified: 2026-10-28 00:37:59 (PDT)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -35,7 +35,7 @@ Tables and figures go at the end of the main text, not inline. For page breaks a
 
 The title page carries:
 
-- A specific, informative **title** that names the population, the exposure or intervention, the outcome, and the design where they fit. Avoid abbreviations, questions, and puns, and check the character limit.
+- A specific, informative **title** that names the [population](../chapters/defining-terms.llms.md#def-population), the exposure or intervention, the outcome, and the design where they fit. Avoid abbreviations, questions, and puns, and check the character limit.
 - A **running head** (short title), if the journal asks for one.
 - **Authors**: full names, degrees if required, affiliations, and ORCID iDs. The authors agree on the byline order among themselves.
 - The **corresponding author**’s name, postal address, and email.
@@ -56,10 +56,10 @@ Contributors who do not meet all four go in the acknowledgments, with their perm
 
 - Use a **structured** abstract with the journal’s headings. A generic set is Background, Objective, Methods, Results, and Conclusions. Clinical journals often split Methods into Design, Setting, and Participants; Exposures; and Main Outcomes and Measures.
 - Most limits fall between 250 and 350 words.
-- The Results give the sample size and the main effect estimates with their confidence intervals, not only *P* values. Phrase each effect estimate as an estimate (“we estimated that …”), per [Statistics and numbers](#statistics-and-numbers). Report the primary outcome first.
+- The Results give the sample size and the main effect estimates with their [confidence interval](../chapters/defining-terms.llms.md#def-confidence-interval)s, not only *P* values. Phrase each effect estimate as an estimate (“we estimated that …”), per [Statistics and numbers](#statistics-and-numbers). Report the primary outcome first.
 - The Conclusions follow from the results and match the design. Use causal language only when the identification strategy supports it, and name that strategy.
 - Leave out citations, undefined abbreviations, and references to tables or figures.
-- Give 3 to 6 keywords, preferably [MeSH](https://meshb.nlm.nih.gov/) terms.
+- Give 3 to 6 keywords, preferably [MeSH](https://meshb.nlm.nih.gov/) [term](../chapters/defining-terms.llms.md#def-term)s.
 
 ## 4 Main text
 
@@ -163,7 +163,7 @@ Table 1: Common reporting guidelines by study design
 
 ## 8 Statistics and numbers
 
-- Give each estimate with its 95% confidence interval, in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.
+- Give each estimate with its 95% [confidence interval](../chapters/defining-terms.llms.md#def-confidence-interval), in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.
 - Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact reads as a known value rather than as an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places (“*P* = .03”), and “*P* \< .001” below that. AMA style uses a capital italic *P* and no leading zero. Never write “*P* = 0.000” or “NS”.
 - Lead with estimates and intervals, not significance. Avoid “trend toward significance” and “marginally significant”. Use “significant” only in its statistical sense.
@@ -194,7 +194,7 @@ Table 1: Common reporting guidelines by study design
 
 - Define each abbreviation at its first use in the abstract, again at its first use in the main text, and use it consistently after that.
 - Define abbreviations again in each table footnote and figure legend.
-- Abbreviate only terms that appear several times, and never in the title.
+- Abbreviate only [term](../chapters/defining-terms.llms.md#def-term)s that appear several times, and never in the title.
 - Standard terms such as CI, SD, and IQR need no definition in most journals. Check the journal’s list.
 
 ## 11 References
@@ -208,7 +208,7 @@ Table 1: Common reporting guidelines by study design
 
 ## 12 Prose
 
-- Follow the rest of this guide: plain words, short sentences, and the active voice.
+- Follow the rest of this guide: plain words, short sentences, and the [active voice](../chapters/defining-terms.llms.md#def-active-voice).
 - Use the past tense for what was done and found (Methods and Results) and the present tense for established knowledge and for what the findings mean.
 - Match causal language to the design. Write “was associated with” for associations, and use causal verbs only when the design and its stated assumptions justify them.
 - Avoid stock phrases and [AI tells](../chapters/avoid-cliches.llms.md#def-ai-tell), such as “novel”, “groundbreaking”, “delve”, “crucial”, and “not just X but Y” constructions. See [Avoiding clichés](../chapters/avoid-cliches.llms.md).
@@ -219,7 +219,7 @@ Table 1: Common reporting guidelines by study design
   - reviewer conversations;
   - references to earlier drafts; and
   - to-do notes.
-- Use one term per concept throughout the paper.
+- Use one [term](../chapters/defining-terms.llms.md#def-term) per concept throughout the paper.
 - Define every group, period, and outcome before you use it.
 
 ## 13 Required statements

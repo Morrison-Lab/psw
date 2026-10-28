@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:02:38 (PDT)
+Last modified: 2026-10-28 00:37:59 (PDT)
 
 > **NOTE:**
 >
@@ -64,7 +64,7 @@ The word “lean” in the first version is an idiom. The second version asks th
 
 Table 1: Idioms, clichés and slang, with literal alternatives
 
-For a reader’s first contact with a term or notation, write “encounter”. Do not write “meet”, which treats the idea as a person. Do not write “see” either, because it names one sensory modality, and readers also listen to text or read it in braille.
+For a reader’s first contact with a [term](../chapters/defining-terms.llms.md#def-term) or notation, write “encounter”. Do not write “meet”, which treats the idea as a person. Do not write “see” either, because it names one sensory modality, and readers also listen to text or read it in braille.
 
 Mathematical writing has idioms too. In an exercise, “Write the bias of an estimator” means “derive an expression for the bias of an estimator”, and “Say which estimator has smaller variance” means “state which estimator has smaller variance”. A reader who takes “write” or “say” literally may copy the definition or give an informal remark instead of deriving or stating the result. Name the action instead:
 
@@ -85,11 +85,11 @@ Use the most common word that is still correct. The W3C guidance says to “Use 
 
 The second version uses common words, and it says what the method does instead of calling it a “heuristic”.
 
-Some technical terms are necessary. [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon) explains when to keep a technical term and how to define it.
+Some technical [term](../chapters/defining-terms.llms.md#def-term)s are necessary. [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon) explains when to keep a technical term and how to define it.
 
 ## 3 Say when a common word has a technical meaning
 
-Many statistical terms are everyday words with a different technical meaning. Examples include *bias*, *significant*, *confidence*, *normal*, *regression*, *error* and *likelihood*. A reader who knows only the everyday meaning will read the sentence as a different claim. The W3C guidance says: “Do not invent new words or give words new meanings” and “Do not expect people to learn new meanings for words just to use your content” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Clear Words). A technical course needs these terms. So say that the technical meaning differs, and give the technical meaning in plain words.
+Many statistical [term](../chapters/defining-terms.llms.md#def-term)s are everyday words with a different technical meaning. Examples include *bias*, *significant*, *confidence*, *normal*, *regression*, *error* and *likelihood*. A reader who knows only the everyday meaning will read the sentence as a different claim. The W3C guidance says: “Do not invent new words or give words new meanings” and “Do not expect people to learn new meanings for words just to use your content” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Clear Words). A technical course needs these terms. So say that the technical meaning differs, and give the technical meaning in plain words.
 
 > ❌ The model is biased.
 >
@@ -111,7 +111,7 @@ Write out an abbreviation the first time you use it, or replace it with a short 
 
 ## 5 Introduce shorthand before using it
 
-Introduce every shorthand before its first use. This covers abbreviations and also shortened phrases, such as “objective” for “objective function”. Give the full term first and mark the short form, for example “an *objective function*, or *objective* for short”. Then use the short form consistently.
+Introduce every shorthand before its first use. This covers abbreviations and also shortened phrases, such as “objective” for “objective function”. Give the full [term](../chapters/defining-terms.llms.md#def-term) first and mark the short form, for example “an *objective function*, or *objective* for short”. Then use the short form consistently.
 
 > ❌ The objective as a function of the parameters is a paraboloid. An *objective function* is the quantity we minimize.
 >

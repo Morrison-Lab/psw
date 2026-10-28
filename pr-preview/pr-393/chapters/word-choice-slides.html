@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 00:02:38 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:37:59 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -307,7 +307,7 @@ Table&nbsp;1: Commonly used Latin words and phrases and Anglish alternatives
 </section>
 <section class="slide level2">
 
-<p>Scientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise term for the thing you are describing. <a href="#/tbl-vague-precise" class="quarto-xref">Table&nbsp;2</a> lists some common vague phrases and more precise alternatives.</p>
+<p>Scientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise <a href="../chapters/defining-terms.html#def-term">term</a> for the thing you are describing. <a href="#/tbl-vague-precise" class="quarto-xref">Table&nbsp;2</a> lists some common vague phrases and more precise alternatives.</p>
 <div id="tbl-vague-precise" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-vague-precise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -345,7 +345,7 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>The precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.</p>
 <p>Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. <a href="../chapters/inclusive-writing.html#use-literal-language">Use literal language</a> explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are <a href="../chapters/avoid-cliches.html#def-cliche">clichés</a>, and <a href="../chapters/avoid-cliches.html#overused-vocabulary">Overused vocabulary</a> lists more of them.</p>
-<p>Money words are idioms too when no money is involved. “Costs us”, “buys us” and “at the price of” borrow from commerce to describe a trade-off, and the reader must translate them back. Say what is lost or gained. Keep a literal use: a computational cost, a monetary cost, or a cost function that the text defines as a term.</p>
+<p>Money words are idioms too when no money is involved. “Costs us”, “buys us” and “at the price of” borrow from commerce to describe a trade-off, and the reader must translate them back. Say what is lost or gained. Keep a literal use: a computational cost, a monetary cost, or a cost <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> that the text defines as a term. <!-- check-term-links: allow --></p>
 <blockquote>
 <p>❌ Nesting the cross-validation loop costs another factor of <span class="math inline">\(K\)</span> in computing time.</p>
 <p>✅ Nesting the cross-validation loop multiplies the computing time by <span class="math inline">\(K\)</span>.</p>
@@ -400,7 +400,7 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 
 <p>A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader encounters the word in its second sense, they must stop and work out which concept the sentence means.</p>
 <p>Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.</p>
-<p>For example, <em>hypothesis</em> means a statistical hypothesis: a claim about a population, such as a null hypothesis that a test examines. In machine learning, <em>hypothesis</em> also names a candidate prediction function.</p>
+<p>For example, <em>hypothesis</em> means a statistical hypothesis: a claim about a <a href="../chapters/defining-terms.html#def-population">population</a>, such as a null hypothesis that a test examines. In machine learning, <em>hypothesis</em> also names a candidate prediction <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>.</p>
 <blockquote>
 <p>❌ The learner picks one hypothesis from the hypothesis set.</p>
 <p>✅ The learner picks one function from the prediction function family.</p>
@@ -431,12 +431,12 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </section>
 <section class="slide level2">
 
-<p>Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.</p>
+<p>Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, <!-- check-term-links: allow --> and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.</p>
 <p>The same rule applies to symbols. Write a function with its argument, such as <span class="math inline">\(\truemeanf{\predvar}\)</span>, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.</p>
 <div id="exm-full-phrase" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (Writing the full phrase and the argument)</strong></span> The display equation is <span class="math inline">\(\Outvar = \truemeanf{\predvar} + \noise\)</span>.</p>
 <blockquote>
-<p>❌ The outcome variable is the true mean function plus noise.</p>
+<p>❌ The outcome variable is the true mean function plus noise. <!-- check-term-links: allow --></p>
 <p>✅ The outcome variable is the true mean function of the outcome variable given the input value <span class="math inline">\(\predvar\)</span>, namely <span class="math inline">\(\truemeanf{\predvar}\)</span>, plus noise.</p>
 </blockquote>
 </div>
@@ -468,7 +468,7 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </section>
 <section class="slide level2">
 
-<p>Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical term can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.</p>
+<p>Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical <a href="../chapters/defining-terms.html#def-term">term</a> can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.</p>
 <p>Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Name the synonyms</a>).</p>
 <div id="exm-jargon" class="theorem example">
 <p><span class="theorem-title"><strong>Example 3 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>

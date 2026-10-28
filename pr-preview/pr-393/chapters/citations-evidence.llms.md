@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:02:38 (PDT)
+Last modified: 2026-10-28 00:37:59 (PDT)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -175,7 +175,7 @@ A related case is repetition *within* your own document. When a passage you are 
 
 A link lets a reader check a claim or learn more without searching for the source themselves. When in doubt, add the link; leave one out only for a specific reason. Link these things whenever they appear:
 
-- a term to the place where it is defined, in the same document or another one;
+- a [term](../chapters/defining-terms.llms.md#def-term) to the place where it is defined, in the same document or another one;
 - a result to the theorem, equation or section that establishes it;
 - a definition, theorem or named method to its [Wikipedia](https://www.wikipedia.org/) article, when one exists (see [Cite Wikipedia, beside the primary source](#cite-wikipedia-beside-the-primary-source));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
@@ -222,7 +222,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 - Cite the article for the specific concept, not a broader article that mentions it.
 - Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.
 - Use a stable URL for the article, not a search result.
-- Cite an article once where its term is defined, not at every use; later uses link to your own definition.
+- Cite an article once where its [term](../chapters/defining-terms.llms.md#def-term) is defined, not at every use; later uses link to your own definition.
 
 > **NOTE:**
 >
@@ -240,7 +240,7 @@ On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, 
 
 ## 10 Cite a source once per passage
 
-Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`. The rule to cite a Wikipedia article once, where its term is defined, is a case of this one.
+Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`. The rule to cite a Wikipedia article once, where its [term](../chapters/defining-terms.llms.md#def-term) is defined, is a case of this one.
 
 > **NOTE:**
 >
@@ -284,7 +284,7 @@ Check each detail of a bibliography entry against an official source. Look the w
 
 ## 15 Cite an alias directly
 
-When a source uses another name for a defined term, write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
+When a source uses another name for a defined [term](../chapters/defining-terms.llms.md#def-term), write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
 
 > ❌ `also called the **alias**. The cited textbook uses that name.`
 >
