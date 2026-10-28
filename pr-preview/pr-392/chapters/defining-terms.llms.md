@@ -4,9 +4,9 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:02:13 (PDT)
+Last modified: 2026-10-28 00:14:43 (PDT)
 
-Clear definitions are essential to effective scientific writing. Every specialized term should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
+Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
 > **NOTE:**
 >
@@ -38,7 +38,7 @@ Clear definitions are essential to effective scientific writing. Every specializ
 
 ## 1 Guidelines for defining terms
 
-Follow these principles when introducing new terms:
+Follow these principles when introducing new [term](#def-term)s:
 
 - **Provide explicit definitions:** State clearly what a term means, rather than assuming readers will understand from context.
 
@@ -54,9 +54,9 @@ Follow these principles when introducing new terms:
 
   not the two sums that RSS and TSS stand for.
 
-- **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean function. For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
+- **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean [function](https://morrison-lab.github.io/mds/functions.html#def-function). For example, define simple linear regression as \\Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\\, independently, with \\\mu_i := \mu(x_i)\\ and \\\mu(x) := \beta_0 + \beta_x x\\. Then define the deviation \\\varepsilon_i := Y_i - \mu(x_i)\\, and state \\Y_i = \mu_i + \varepsilon_i\\ with \\\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\\ as a result proved from those definitions. Writing the model as “\\Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\\ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
 
-- **Define a new symbol by its most direct, literal meaning, and derive its other forms:** Define a shorthand symbol directly from the objects it summarizes, then prove any equivalent form as a result. For example, with deviations \\\delta_i := y_i - \mu\\ from the population mean \\\mu\\, define the sample mean of the deviations as
+- **Define a new symbol by its most direct, literal meaning, and derive its other forms:** Define a shorthand symbol directly from the objects it summarizes, then prove any equivalent form as a result. For example, with deviations \\\delta_i := y_i - \mu\\ from the [population](#def-population) mean \\\mu\\, define the [sample mean](#def-sample-mean) of the deviations as
 
   \\\bar{\delta} := \frac{1}{n} \sum\_{i=1}^n \delta_i,\\
 
@@ -86,7 +86,7 @@ Follow these principles when introducing new terms:
 
 - **Link the longest defined phrase:** When a longer phrase has its own definition, link the whole phrase to that definition, not a shorter term inside it. For example, link `[logistic regression](#def-logistic-regression)`, not “logistic `[regression](#def-regression)`”. The shorter term names a different concept, so linking it sends the reader to the wrong definition. Link the shorter term only where it stands alone. The `check-term-links` check in [gha](https://github.com/Morrison-Lab/gha/pull/1220) flags a partial link.
 
-- **Link the [term](#def-term) where the sentence uses it, not in a parenthetical list:** Write the name as a link inside the sentence that needs it. Do not name the concepts in the sentence and then list their definitions in a parenthetical after it. For example, write `the expected squared prediction error is the sum of the squared [bias](#def-bias), the [variance](#def-variance), and the [residual variance](#def-residual-variance)`, not `the expected squared prediction error is the sum of the squared bias, the variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))`. The parenthetical makes the reader read each term twice, and it separates the link from the place where the term does its work. If a term sits inside math, where a link cannot go, name the term in words in the sentence and link those words. The `check-quarto-prose` check in [gha](https://github.com/Morrison-Lab/gha/pull/1271) flags a parenthetical that opens with `(definition:` or `(definitions:`.
+- **Link the term where the sentence uses it, not in a parenthetical list:** Write the name as a link inside the sentence that needs it. Do not name the concepts in the sentence and then list their definitions in a parenthetical after it. For example, write `the expected squared prediction error is the sum of the squared [bias](#def-bias), the [variance](#def-variance), and the [residual variance](#def-residual-variance)`, not `the expected squared prediction error is the sum of the squared bias, the variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))`. The parenthetical makes the reader read each term twice, and it separates the link from the place where the term does its work. If a term sits inside math, where a link cannot go, name the term in words in the sentence and link those words. The `check-quarto-prose` check in [gha](https://github.com/Morrison-Lab/gha/pull/1271) flags a parenthetical that opens with `(definition:` or `(definitions:`.
 
 - **Do not presuppose what the reader has not encountered:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it. Skip the link when the referent is introduced in the same div, or in the same prose passage, as the phrase. Inside a div, the antecedent has to be in that div: an earlier div does not count, because readers jump into the middle of a page. For example, an exercise that says “Explain the labels” with no labels named in it has no antecedent, even if an earlier exercise names some. Name the labels in the exercise, or link them to where they are introduced.
 
@@ -123,7 +123,7 @@ Follow these principles when introducing new terms:
 
 - **Say which error:** A bare “error” does not say what is measured, on which data, or whether it is a value computed from one sample or an expectation. Every use of “error” (and of “loss”) names three things: the quantity measured, such as the squared prediction error; the data that it is computed on, such as the training set, the validation set, the test set or the population; and whether it is a sample value or an expectation. For example, write “the prediction error on the validation set”, or “the expected squared prediction error”, and never “the error” or “the smallest error”. A term that already carries all three, such as the generalization error, can stand alone after its definition.
 
-- **Make the fitted model the subject, not the fitting procedure:** A prediction, an error, a bias and a variance are all properties of fitted models, so a sentence about them has a fitted model as its subject, and a choice among candidates is a choice among fitted models. Write “the fitted model predicts”, “the prediction of the fitted model at \\x\\”, and “choose among fitted models”, and never “the procedure predicts” or “choose among procedures”. Name the fitting procedure only when the sentence is about how a fitted model is built: the inputs that the procedure needs, what it costs, or an expectation over the training sets to which it is applied. In math, write \\{\hat y\_{\mathcal{D}\_{\text{train}}}}\\ for the fitted model, the model that the procedure produces from the training set, and \\g\\ only for the procedure itself. Where the training set is not salient, write the fitted model as \\\hat y\\ instead, the symbol that the predicted-value bullet below builds on. For example, write “the bias of the prediction \\\hat{y}\\”, not “the bias of \\g\\”.
+- **Make the fitted model the subject, not the fitting procedure:** A prediction, an error, a bias and a [variance](#def-variance-expression-and-prose) are all properties of fitted models, so a sentence about them has a fitted model as its subject, and a choice among candidates is a choice among fitted models. Write “the fitted model predicts”, “the prediction of the fitted model at \\x\\”, and “choose among fitted models”, and never “the procedure predicts” or “choose among procedures”. Name the fitting procedure only when the sentence is about how a fitted model is built: the inputs that the procedure needs, what it costs, or an expectation over the training sets to which it is applied. In math, write \\{\hat y\_{\mathcal{D}\_{\text{train}}}}\\ for the fitted model, the model that the procedure produces from the training set, and \\g\\ only for the procedure itself. Where the training set is not salient, write the fitted model as \\\hat y\\ instead, the symbol that the predicted-value bullet below builds on. For example, write “the bias of the prediction \\\hat{y}\\”, not “the bias of \\g\\”.
 
 - **Use “prediction rule” only for a fitted model in its role as a predictor:** Not every fitted model is used to predict outcomes, so “prediction rule” is a narrower term, not another name for “fitted model”. Define it in its own `#def-prediction-rule` div as a fitted model that is used to predict outcomes at a new covariate value, and link it to that definition at its first use. Write “the fitted model” for a sentence about the model itself, such as its form, its coefficients or its fit to the training set. Write “the prediction rule” only where the sentence needs the role of predicting a new outcome to tell it from other uses of the fitted model. The verb does not change the term: keep writing “the fitted model predicts”, as the bullet above requires. For example, write “the fitted model has slope 2” and “a clinic uses the prediction rule for new patients”, and not “the prediction rule has slope 2”. If the notes once defined “prediction rule” as a span inside the fitted model’s definition, keep that anchor on the new div, so that links to it still land there.
 
@@ -135,7 +135,7 @@ Follow these principles when introducing new terms:
 
 ## 2 Examples of term definitions
 
-Here are examples of well-defined terms:
+Here are examples of well-defined [term](#def-term)s:
 
 > **NOTE:**
 >
@@ -165,7 +165,7 @@ Here are examples of well-defined terms:
 
 ## 3 Order: general definition, then examples
 
-When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite terms defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the residual sum of squares would give these blocks, in this order:
+When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite [term](#def-term)s defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the [residual sum of squares](#def-rss) would give these blocks, in this order:
 
 > **NOTE:**
 >
@@ -191,7 +191,7 @@ The definition stays one sentence and one equation, so it still applies when the
 
 ## 4 Give a defined quantity its expression and its prose reading
 
-When a term names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see [Make the prose say what the formula says](../chapters/mathematical-writing.llms.md#make-the-prose-say-what-the-formula-says)). A term with no mathematical form, such as active voice, keeps its prose definition alone.
+When a [term](#def-term) names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see [Make the prose say what the formula says](../chapters/mathematical-writing.llms.md#make-the-prose-say-what-the-formula-says)). A term with no mathematical form, such as [active voice](#def-active-voice), keeps its prose definition alone.
 
 > **NOTE:**
 >
@@ -217,13 +217,13 @@ Examples serve several crucial purposes:
 
 ## 6 Common pitfalls to avoid
 
-- **Circular definitions:** Do not define a term using the term itself.
+- **Circular definitions:** Do not define a [term](#def-term) using the term itself.
 
   **Incorrect:** “Conciseness is the quality of being concise.”
 
   **Correct:** “Conciseness is the quality of expressing ideas using only the words necessary to communicate meaning clearly.”
 
-  Qualifying the term does not make the definition less circular. “A new observation relative to a training set is a new observation when …” still uses the term in its own definition. Define it directly instead: “A new observation relative to a training set is a covariate value and an outcome drawn from the same population as the training observations and independent of them.”
+  Qualifying the term does not make the definition less circular. “A new observation relative to a training set is a new observation when …” still uses the term in its own definition. Define it directly instead: “A new observation relative to a training set is a covariate value and an outcome drawn from the same [population](#def-population) as the training observations and independent of them.”
 
 - **Vague definitions:** Avoid definitions that rely on imprecise language.
 
@@ -237,7 +237,7 @@ Examples serve several crucial purposes:
 
 ## 7 Mathematical statements require examples
 
-Mathematical theorems, lemmas, corollaries, and postulates should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
+Mathematical theorems, lemmas, corollaries, and [postulate](#def-postulate)s should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
 
 ### 7.1 Using theorem environments in Quarto
 
