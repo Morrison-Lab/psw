@@ -27,7 +27,7 @@ An assumptions list and a notation list are different lists:
 
 A condition that can fail is an assumption.
 A parametrization is not:
-it writes a quantity in terms of named parameters or pieces,
+it writes a quantity in terms of named parameters or pieces, <!-- check-term-links: allow -->
 so it holds by definition and goes under "Let:".
 Do not label a parametrization as an assumption,
 because that tells the reader a condition is being imposed when none is.
@@ -82,7 +82,7 @@ and the justification says exactly where the condition is used.
 
 > ❌ Assume the sample size $n$ is larger than $30$.
 > Assume the observations are independent.
-> Assume the population variance $\sigma^2$ is finite.
+> Assume the population variance $\sigma^2$ is finite. <!-- check-term-links: allow -->
 >
 > ✅ Assume:
 >
@@ -100,7 +100,7 @@ and the bullets show that the three assumptions are parallel and separate.
 ## Writing several names as one list
 
 > ❌ Let $n$ be the sample size.
-> Let $\bar{y}$ be the sample mean.
+> Let $\bar{y}$ be the sample mean. <!-- check-term-links: allow -->
 > Let $s$ be the sample standard deviation.
 >
 > ✅ Let:
@@ -123,7 +123,7 @@ a separate assumptions list after this one would state it.
 > ❌ Assume:
 >
 > - the outcome variable is $\Outvar = \truemeanf{\predvar} + \noise$, and
-> - the noise variable $\noise$ has population mean $0$.
+> - the noise variable $\noise$ has population mean $0$. <!-- check-term-links: allow -->
 >
 > ✅ Let:
 >

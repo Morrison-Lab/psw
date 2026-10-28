@@ -84,7 +84,7 @@ where the argument is going, and the bare formula does not.
 ### Make the prose say what the formula says
 
 The sentence that introduces or interprets a formula must describe that formula.
-Check every term in the sentence against the formula, symbol by symbol.
+Check every [term](defining-terms.qmd#def-term) in the sentence against the formula, symbol by symbol.
 The words and the symbols must name the same quantity, the same data, and the same kind of average.
 When you change one, change the other in the same edit.
 
@@ -92,7 +92,7 @@ When you change one, change the other in the same edit.
 
 ## A sentence that names the wrong average
 
-Suppose the formula is $\E{\paren{\newoutvar - \predvalf{\predvar}}^2}$, a population mean at one covariate value $\predvar$.
+Suppose the formula is $\E{\paren{\newoutvar - \predvalf{\predvar}}^2}$, a [population](defining-terms.qmd#def-population) mean at one covariate value $\predvar$.
 The sentence "the average squared error over the training set" does not describe it.
 It names a sample average over many observations.
 Write "the expected squared prediction error at $\predvar$" instead.
@@ -118,7 +118,8 @@ Do not let a heading such as "Theorem" finish a sentence that began above it.
 > **Theorem.** $G(x)$ is increasing.
 >
 > ✅ Next we prove a result about monotonicity.
-> **Theorem.** The function $G(x)$ defined in equation (3) is increasing.
+> **Theorem.**
+> The function $G(x)$ defined in equation (3) is increasing. <!-- check-term-links: allow -->
 
 The ❌ version breaks a sentence across the theorem and starts the theorem with a symbol.
 The ✅ version uses a complete sentence, and the theorem names its object.
@@ -262,7 +263,7 @@ Motivate a result before you derive it | [Show why you need a result before you 
 Avoid strings of nouns used as adjectives | [Rewrite noun strings and hidden verbs](inclusive-writing.qmd#rewrite-noun-strings-and-hidden-verbs)
 Avoid unnecessary jargon | [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)
 Write sentences that can be read from left to right without ambiguity | [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences)
-Use "that" instead of "which" in a restrictive clause | [Relative pronouns](grammar.qmd#relative-pronouns)
+Use "that" instead of "which" in a [restrictive clause](grammar.qmd#def-restrictive-clause) | [Relative pronouns](grammar.qmd#relative-pronouns)
 Do not praise your own work | [Tone](avoid-cliches.qmd#tone)
 
 Rules from the course that other chapters of this book cover

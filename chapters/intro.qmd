@@ -52,7 +52,7 @@ without knowing what the paper is about.
 
 The chapters fall into six groups:
 
-- Terms, notation, and evidence:
+- Terms, notation, and evidence: <!-- check-term-links: allow -->
   - [Defining terms clearly](defining-terms.qmd)
   - [Mathematical notation](notation.qmd)
   - [Citations and evidence](citations-evidence.qmd)

@@ -45,7 +45,7 @@ Results
 
 #### What to avoid
 
-**Don't group by analysis type** when outcomes are analyzed separately:
+**Don't group by analysis type** when outcomes are analyzed separately: <!-- check-term-links: allow -->
 
 ```
 Results (POOR ORGANIZATION)

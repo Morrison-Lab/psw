@@ -35,7 +35,7 @@ In a course that writes regression in statistical notation:
 
 > ❌ Consider the model $h(x) = w x + b$.
 >
-> ✅ Consider the mean function $\mu(x) = \beta_0 + \beta_x x$.
+> ✅ Consider the mean function $\mu(x) = \beta_0 + \beta_x x$. <!-- check-term-links: allow -->
 
 The ❌ version names the same quantity as the rest of the course
 with a different word and different symbols.
@@ -52,19 +52,19 @@ and make them agree.
 In prose, write a text label next to every inline math symbol.
 The label tells the reader what the symbol stands for
 without making them search for its definition.
-Put the label before the symbol, as in "the population noise variance, $\sigma^2$".
+Put the label before the symbol, as in "the population noise variance, $\sigma^2$". <!-- check-term-links: allow -->
 
 ::: {#exm-label-inline-symbol}
 
 ## Labeling a symbol in a list of quantities
 
 > ❌ Which of the three quantities
-> (squared bias, variance of $\hat{y}$, $\sigma^2$)
+> (squared bias, variance of $\hat{y}$, $\sigma^2$) <!-- check-term-links: allow -->
 > can a better prediction method reduce?
 >
 > ✅ Which of the three quantities
 > (the squared bias, the variance of the prediction $\hat{y}$,
-> and the population noise variance $\sigma^2$)
+> and the population noise variance $\sigma^2$) <!-- check-term-links: allow -->
 > can a better prediction method reduce?
 
 In the ❌ version, the reader sees $\sigma^2$ with no word for it.

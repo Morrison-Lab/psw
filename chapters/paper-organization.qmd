@@ -201,7 +201,7 @@ Common forms are:
 - "as discussed below"
 - "see the next section"
 - "we will return to this later"
-- a technical term or result used before the definition or theorem that introduces it
+- a technical [term](defining-terms.qmd#def-term) or result used before the definition or theorem that introduces it
 
 The reader must hold an unresolved pointer
 while reading the sentence that depends on it.

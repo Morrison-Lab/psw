@@ -693,8 +693,8 @@ $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 ## Residual sum of squares of a straight line
 
 For a straight line with intercept $\beta_0$ and slope $\beta_x$,
-the fitted value of observation $i$ is $\beta_0 + \beta_x x_i$,
-so the residual sum of squares (@def-rss) is a function of the two coefficients:
+the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\beta_0 + \beta_x x_i$,
+so the residual sum of squares (@def-rss) is a [function](https://morrison-lab.github.io/mds/functions.html#def-function) of the two coefficients:
 
 $$
 \text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2.
@@ -723,7 +723,7 @@ is $2/3$.
 That quantity is the total sum of squares,
 not the residual sum of squares (@def-rss) of the line in @exm-rss-three-points,
 because it measures spread around the mean
-rather than around the line's fitted values.
+rather than around the line's [fitted value](notation.qmd#def-fitted-value)s.
 
 :::
 

@@ -49,7 +49,7 @@ It catalogs the most common clichés so you can remove them.
 
 ## Terms used in this chapter
 
-The rest of this chapter uses these terms.
+The rest of this chapter uses these [term](defining-terms.qmd#def-term)s.
 
 ::: {#def-register}
 
@@ -417,7 +417,7 @@ Use the same list when you review someone else's writing.
   Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
 - Do not ban a word outright.
   Keep a word or phrase that is the precise one for the sentence.
-- Do not flatten your writing into a voiceless register.
+- Do not flatten your writing into a voiceless [register](#def-register).
   Cut the filler and the reflexes, and keep your own voice.
 - Skip the scan for code, terse status lines and short conversational replies.
 - Do not accuse a writer of using an assistant on the strength of the list.

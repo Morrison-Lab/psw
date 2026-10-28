@@ -47,7 +47,7 @@ $-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
 > $$
 
 The ❌ version does five operations in one line:
-it distributes the sum over the terms,
+it distributes the sum over the terms, <!-- check-term-links: allow -->
 sums a constant,
 factors a constant out of a sum,
 substitutes $n \bar{y}$,
@@ -64,7 +64,7 @@ Common ways to combine steps without noticing:
   and the chain rule in the same line;
 - substituting a result and then simplifying it;
 - multiplying constants and factoring them out of a sum;
-- expanding a product and collecting like terms;
+- expanding a product and collecting like terms<!-- check-term-links: allow -->;
 - canceling $a$ in $a + (b - a)$
   removes the parentheses ($a + b - a$),
   reorders the terms ($b + a - a$),
@@ -85,7 +85,7 @@ Common ways to combine steps without noticing:
 
 Justify a line with the standard name of the rule it applies,
 not an informal description of what it does to the symbols.
-Write "distribute the sum over the terms" rather than "split the sum",
+Write "distribute the sum over the terms" rather than "split the sum", <!-- check-term-links: allow -->
 and "factor the constant out of the sum" rather than "pull out the constant".
 A standard name tells the reader which rule to check the line against;
 an informal one only describes the change.
@@ -158,7 +158,7 @@ can also keep each line short.
 
 Derive an intermediate result only after the main derivation
 has shown that it needs that result.
-For example, to differentiate a composite function:
+For example, to differentiate a composite [function](https://morrison-lab.github.io/mds/functions.html#def-function):
 
 1. Start the main derivation, and apply the chain rule.
    The result is a product of an inner and an outer derivative, not yet known.

@@ -8,7 +8,7 @@ split a long expression into short named pieces,
 and give each piece the symbol or [shared macro](#using-shared-macros) that names its concept.
 
 Choose the symbol to match the thing it names.
-For the population mean $\E{X}$, write $\mu$.
+For the [population](defining-terms.qmd#def-population) mean $\E{X}$, write $\mu$.
 Add a subscript, such as $\mu_X$, only when the context holds a second mean and the reader could confuse the two.
 State the abstraction once, in a sentence such as "Let $\mu = \E{X}$",
 before the first line that uses the symbol.
@@ -17,7 +17,7 @@ before the first line that uses the symbol.
 
 ## Abstracting the population mean
 
-Suppose a derivation expands the variance of a random variable $X$.
+Suppose a derivation expands the [variance](defining-terms.qmd#def-variance-expression-and-prose) of a random variable $X$.
 
 > ❌
 > $$

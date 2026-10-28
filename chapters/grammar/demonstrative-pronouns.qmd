@@ -7,9 +7,9 @@ There are four demonstrative words:
 
 They can serve two roles.
 As adjectives, they modify a noun:
-"**this** result", "**those** samples".
+"**this** result", "**those** samples". <!-- check-term-links: allow -->
 As standalone pronouns, they replace a noun:
-"**This** shows...", "**That** means...".
+"**This** shows...", "**That** means...". <!-- check-term-links: allow -->
 
 When a demonstrative stands alone as a pronoun,
 the reader has to search backward for its referent —
@@ -30,13 +30,17 @@ End the sentence with the noun instead.
 
 ## Naming the referent
 
-> ❌ The model overfit the training data. **This** poses a problem for deployment.
+> ❌ The model overfit the training data.
+> **This** poses a problem for deployment. <!-- check-term-links: allow -->
 >
-> ✅ The model overfit the training data. **This overfitting** poses a problem for deployment.
+> ✅ The model overfit the training data.
+> **This overfitting** poses a problem for deployment. <!-- check-term-links: allow -->
 >
-> ❌ The first model's estimates were biased upward. The second model avoids **this**.
+> ❌ The first model's estimates were biased upward.
+> The second model avoids **this**. <!-- check-term-links: allow -->
 >
-> ✅ The first model's estimates were biased upward. The second model avoids **this bias**.
+> ✅ The first model's estimates were biased upward.
+> The second model avoids **this bias**. <!-- check-term-links: allow -->
 
 Adding the nouns "overfitting" and "bias"
 states exactly what each "this" refers to,

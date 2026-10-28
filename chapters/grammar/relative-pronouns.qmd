@@ -13,18 +13,32 @@ and keeping the relative pronoun rather than dropping it.
 
 ### Restrictive vs. non-restrictive clauses: *that* vs. *which*
 
-Use *that* for a **restrictive** clause —
-one that identifies which thing you mean,
+::: {#def-restrictive-clause}
+
+## Restrictive clause
+
+A **restrictive clause** is a relative clause that identifies which thing you mean,
 and that cannot be removed without changing the meaning of the sentence.
-Use *which*, set off by commas, for a **non-restrictive** clause —
-one that adds information the reader does not need
+
+:::
+
+::: {#def-non-restrictive-clause}
+
+## Non-restrictive clause
+
+A **non-restrictive clause** is a relative clause that adds information the reader does not need
 in order to know which thing you mean.
+
+:::
+
+Use *that* for a [restrictive clause](#def-restrictive-clause).
+Use *which*, set off by commas, for a [non-restrictive clause](#def-non-restrictive-clause).
 
 ::: {#exm-that-restrictive}
 
 ## Restrictive clause (*that*)
 
-> The dataset **that** we collected in 2023 contains 4,000 records.
+> The dataset **that** we collected in 2023 contains 4,000 records. <!-- check-term-links: allow -->
 
 The clause "that we collected in 2023"
 tells the reader which dataset we mean.
@@ -38,7 +52,7 @@ and takes *that* with no comma.
 
 ## Non-restrictive clause (*which*)
 
-> Our 2023 dataset, **which** contains 4,000 records, is publicly available.
+> Our 2023 dataset, **which** contains 4,000 records, is publicly available. <!-- check-term-links: allow -->
 
 The clause "which contains 4,000 records"
 adds a detail,
@@ -67,7 +81,7 @@ even when the grammar would let you drop it.
 
 > ❌ This body of work laid the methodological groundwork I now apply to enteric fever.
 >
-> ✅ This body of work laid the methodological groundwork **that** I now apply to enteric fever.
+> ✅ This body of work laid the methodological groundwork **that** I now apply to enteric fever. <!-- check-term-links: allow -->
 
 The word "that" signals immediately
 that a describing clause is beginning,

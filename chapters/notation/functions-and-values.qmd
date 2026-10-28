@@ -1,4 +1,4 @@
-A function and its value at a point are different objects.
+A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects.
 In $\mu_i = \mu(x_i)$,
 $\mu$ is a function,
 and $\mu(x_i)$ is a number:
@@ -14,7 +14,7 @@ or keep the placeholder and name the substitution:
 
 ## Saying where a function is evaluated
 
-> ❌ Each outcome is centered on the value of a mean function $\mu(x)$
+> ❌ Each outcome is centered on the value of a mean function $\mu(x)$ <!-- check-term-links: allow -->
 > at its own covariate values.
 >
 > ✅ Each outcome is centered on a mean function $\mu(x)$
@@ -48,11 +48,20 @@ Use the notation to match:
   and say "evaluated at" when you substitute a point into it.
 - Write $\mu(x_i)$, or "the value of $\mu$ at $x_i$", for a value.
 
-In machine learning notes, the prediction function is $h$,
-and its value at the $i$-th observed input is the **fitted value**.
-Define it once as $\hat{y}_i = h(x_i)$,
+::: {#def-fitted-value}
+
+## Fitted value
+
+The **fitted value** of observation $i$ is the value that a fitted model predicts
+at that observation's input.
+In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $h$,
+it is $\hat{y}_i = h(x_i)$.
+
+:::
+
+Define the [fitted value](#def-fitted-value) once,
 then print $\hat{y}_i$, not $h(x_i)$,
-wherever the fitted value appears in a loss, a residual or a risk sum.
+wherever it appears in a loss, a residual or a risk sum.
 Keep $h(x)$ where $h$ itself is the subject,
 as in "the linear function $h(x) = \beta_0 + \beta_x x$",
 and where the output is not a prediction of $y_i$,

@@ -22,7 +22,7 @@ and list only the other inputs as what specifies the function.
 > ❌ A fitting procedure is a rule that takes data
 > and produces a prediction.
 >
-> ✅ A fitting procedure is a function
+> ✅ A fitting procedure is a function <!-- check-term-links: allow -->
 > from data sets to fitted models.
 > A fitted model is a function
 > from covariate values to predicted outcomes.
