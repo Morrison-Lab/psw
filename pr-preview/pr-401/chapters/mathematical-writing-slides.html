@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 15:42:04 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 16:05:55 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -349,6 +349,22 @@
 <section class="slide level2">
 
 <p>Put each important formula on a line by itself. Number the important ones, even if you do not refer to them, because a reader may want to refer to them later. Quarto’s <a href="https://quarto.org/docs/authoring/cross-references.html#equations">equation cross-references</a> number a display and let you link to it.</p>
+<p>A key equation always goes in a display, never inline. A key equation is any of these:</p>
+<ul>
+<li>the conclusion of a theorem, lemma, or proposition;</li>
+<li>an equation that a proof builds toward;</li>
+<li>an equation that a later step refers to.</li>
+</ul>
+<p>In a proof, a sentence such as “so <span class="math inline">\(A = B\)</span>” or “this gives <span class="math inline">\(A = B\)</span>” hides the result in the middle of a line. Put the equation in a display and let the sentence introduce it. Use inline math for symbols and short expressions inside a sentence, not for the equation the reader is meant to remember.</p>
+<div id="exm-key-equation-displayed" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Displaying the normal equations)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Setting the gradient to zero yields <span class="math inline">\(\stprod{\design} \vcoef = \tp{\design} \vy\)</span>.</p>
+<p>✅ Setting the gradient to zero yields the normal equations:</p>
+<p><span class="math display">\[\stprod{\design} \vcoef = \tp{\design} \vy\]</span></p>
+</blockquote>
+<p>In the ❌ version the result sits in the middle of a line, where the reader can miss it. The ✅ version gives it a line of its own.</p>
+</div>
 </section>
 <section id="write-numbers-according-to-how-they-are-used" class="slide level2" data-number="4">
 <h2><span class="header-section-number">4</span> Write numbers according to how they are used</h2>
@@ -386,7 +402,7 @@
 
 <p>A proof, or any derivation that supports a result, never cites a solution to an exercise. A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on. Follow each solution that contains a reusable result with a result div (a theorem, lemma, corollary or proposition) that states the claim. The test is whether the solution contains a result that other arguments could use, not whether any later argument currently relies on it. Cite that result div in every argument that uses the claim.</p>
 <div id="exm-cite-results" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Citing a result div)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Citing a result div)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Proof.</strong> By Solution 9 and Solution 10, the claim holds.</p>
 <p>✅ <strong>Proof.</strong> By Lemma 4 and Lemma 5, the claim holds.</p>
@@ -404,7 +420,7 @@
 
 <p>Every result div states one result and every solution div answers one exercise, and each does no more. When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite that result div. Never derive the step inline. A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.</p>
 <div id="exm-never-inline" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Citing a step instead of deriving it)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Citing a step instead of deriving it)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Proof.</strong> By the chain rule, the gradient of each summand is <span class="math inline">\(2 \resid_i \vfeatmap(\vx_i)\)</span>, where <span class="math inline">\(\resid_i\)</span> is the residual and <span class="math inline">\(\vfeatmap(\vx_i)\)</span> the design vector, and summing over <span class="math inline">\(i\)</span> gives the claim.</p>
 <p>✅ <strong>Proof.</strong> Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of <span class="math inline">\(2 \resid_i \vfeatmap(\vx_i)\)</span> over <span class="math inline">\(i\)</span>.</p>

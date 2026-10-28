@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 15:42:04 (PDT)
+Last modified: 2026-10-28 16:05:55 (PDT)
 
 > **NOTE:**
 >
@@ -84,6 +84,26 @@ Write the statement of a theorem so that it stands alone. A reader who jumps to 
 
 Put each important formula on a line by itself. Number the important ones, even if you do not refer to them, because a reader may want to refer to them later. Quarto’s [equation cross-references](https://quarto.org/docs/authoring/cross-references.html#equations) number a display and let you link to it.
 
+A key equation always goes in a display, never inline. A key equation is any of these:
+
+- the conclusion of a theorem, lemma, or proposition;
+- an equation that a proof builds toward;
+- an equation that a later step refers to.
+
+In a proof, a sentence such as “so \\A = B\\” or “this gives \\A = B\\” hides the result in the middle of a line. Put the equation in a display and let the sentence introduce it. Use inline math for symbols and short expressions inside a sentence, not for the equation the reader is meant to remember.
+
+> **NOTE:**
+>
+> **Example 5 (Displaying the normal equations)**  
+>
+> > ❌ Setting the gradient to zero yields \\\stprod{\design} \vcoef = \tp{\design} \vy\\.
+> >
+> > ✅ Setting the gradient to zero yields the normal equations:
+> >
+> > \\\stprod{\design} \vcoef = \tp{\design} \vy\\
+>
+> In the ❌ version the result sits in the middle of a line, where the reader can miss it. The ✅ version gives it a line of its own.
+
 ## 4 Write numbers according to how they are used
 
 Spell out a small number when it is an adjective: “the proof uses three lemmas”. Write the numeral when the number is a name or a value: “Lemma 3 is used 12 times”, “the total rose by 4”. Capitalize the name of a numbered result, as in “Theorem 1” and “Lemma 2”.
@@ -108,7 +128,7 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 
 > **NOTE:**
 >
-> **Example 5 (Citing a result div)**  
+> **Example 6 (Citing a result div)**  
 >
 > > ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
 > >
@@ -128,7 +148,7 @@ Every result div states one result and every solution div answers one exercise, 
 
 > **NOTE:**
 >
-> **Example 6 (Citing a step instead of deriving it)**  
+> **Example 7 (Citing a step instead of deriving it)**  
 >
 > > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 \resid_i \vfeatmap(\vx_i)\\, where \\\resid_i\\ is the residual and \\\vfeatmap(\vx_i)\\ the design vector, and summing over \\i\\ gives the claim.
 > >
