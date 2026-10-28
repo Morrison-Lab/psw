@@ -14,12 +14,16 @@ Put each sentence in its own bullet,
 so the reader sees how many resources there are
 and where each one starts.
 
+A case analysis is a parallel run too.
+Write one bullet per case,
+and begin each with a bold label that names the case.
+
 Bullet lists matter most on slides,
 where a reader scans a list rather than reading it as a sentence.
 The rule is one case of a broader preference for more structure:
 when content has a shape, show that shape in the markup.
 
-A few mechanics to keep in mind when writing one:
+A few mechanics to keep in mind when writing a bullet list:
 
 - Keep the items grammatically parallel,
   so each one completes the introducing sentence the same way.
@@ -77,5 +81,24 @@ so the reader can pick one without parsing the paragraph.
 
 The numbers show the order of the steps,
 and the loop condition moves into the introducing sentence.
+
+:::
+
+::: {#exm-case-bullets}
+
+## Turning a paragraph of cases into bullet points
+
+> ❌ At $z = 0$ the slope is $\dexpitf{0} = 1/4$.
+> At $z = 2$ it is $\dexpitf{2} \approx 0.105$.
+> At $z = -2$ it is $\dexpitf{-2} \approx 0.105$.
+>
+> ✅ The slope $\dexpitf{z}$ at three values of $z$:
+>
+> - **$z = 0$:** $\dexpitf{0} = 1/4$.
+> - **$z = 2$:** $\dexpitf{2} \approx 0.105$.
+> - **$z = -2$:** $\dexpitf{-2} \approx 0.105$.
+
+The labels let the reader find a case at a glance,
+and the bullets show that there are three.
 
 :::

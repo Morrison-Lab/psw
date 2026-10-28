@@ -144,7 +144,7 @@ and is treated like the primary name:
 it appears in the div title and is bold where it first appears in the definition.
 Name synonyms and near-synonyms where the term is defined,
 and say which one the notes use.
-A student who meets one name here and another in a textbook
+A student who encounters one name here and another in a textbook
 cannot tell whether the difference matters.
 For a near-synonym, name the seam:
 critical points include the stationary points
@@ -153,7 +153,7 @@ and also the points where the derivative does not exist.
 ## State the notation and its alternatives
 
 When a symbol or convention has more than one common form,
-state the one the notes use and name the others a reader will meet elsewhere.
+state the one the notes use and name the others a reader will encounter elsewhere.
 Put the alternatives in the definition div or in a callout beside it.
 For example, some sources include 0 in the natural numbers and others exclude it,
 so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
@@ -249,6 +249,18 @@ This rule applies to all teaching materials, in every course and every teaching 
   The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
   reports, in a pull request, each example that has no figure and no `no-figure` comment
   ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
+- Give every div whose title mentions visualization
+  (*visualize*, *visualizing*, *visualization*) a corresponding figure (Ezra, 2026-10-26).
+  For an exercise, the figure may sit in the exercise or in its solution.
+  The rule also covers any div that asks for a picture:
+  a title or an exercise prompt that says *plot*, *sketch*, *draw*, *diagram*, or *contour*
+  (in any inflection, such as *plotting* or *sketching*),
+  or that asks the reader to mark points on a surface.
+  The `check-visualization-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
+  reports, in a pull request, each such div that has no figure in it or in its solution,
+  and a `<!-- no-figure: reason -->` comment inside the div suppresses that report,
+  as it does for an example
+  ([gha#1262](https://github.com/Morrison-Lab/gha/pull/1262)).
 - Give every topic at least one figure that shows the idea,
   such as the data with a fitted curve, a distribution, or a diagram of the procedure.
   A page of definitions with no figure and no data is incomplete.
@@ -256,7 +268,7 @@ This rule applies to all teaching materials, in every course and every teaching 
   A prerequisite page that is only definitions and algebra needs an applied example and a figure.
 - Place each figure directly after the sentence that first refers to it.
   Do not refer to a figure, table, or result that appears later in the document,
-  because the reader meets the reference before the thing it points to.
+  because the reader encounters the reference before the thing it points to.
   This rule is for teaching materials, which are reading copies.
   A journal submission may collect its figures at the end,
   as [Figures and tables](paper-organization.qmd#figures-and-tables) describes.
@@ -352,6 +364,30 @@ in every course and every teaching repository, not only to one course.
 - Do not assume that students own a laptop.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
+
+## Keep each step's code in one chunk, and put parallel chunks in a language tabset
+
+This rule applies to every executed code chunk in teaching materials,
+in every course and every teaching repository, in every language.
+
+- Put parallel versions of one computation in one language tabset, never one chunk after another.
+  A reader should see one language at a time.
+- Write one chunk for each step of the computation.
+  A figure's code is one chunk, even when it takes ten lines.
+- Split a chunk only for a reason that the reader can see:
+  - **Own label or options**: the second part needs its own label, caption or chunk options.
+  - **Separate output**: the second part shows output that the first part should not.
+  - **Dependent prose**: prose between the parts needs the first part's output.
+- Do not split a chunk to name its parts, or to keep it short.
+  Comments name the parts
+  (see [Comment every code chunk to say what and why](#comment-every-code-chunk-to-say-what-and-why)).
+- Give a chunk that only stores values for later code or inline code `#| include: false`.
+  When the chunk that computes those values is already hidden, merge the storing code into that chunk.
+- Check for output that splits a chunk without a reason.
+  In Python, reticulate prints the value of each top-level call that returns something other than `None`
+  and shows the chunk as one code block per printed value,
+  such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`.
+  End each such call with a semicolon, or assign its value.
 
 ## Present R results with modern packages
 
@@ -470,7 +506,7 @@ This rule applies to all teaching materials that run code,
 in every course and every teaching repository.
 
 - Give the course a programming primer that introduces each package function the course's chapters call.
-  A student meets the function there first, in a short note, a worked example and an exercise,
+  A student encounters the function there first, in a short note, a worked example and an exercise,
   and then sees it used in the chapters.
 - Keep the primer complete by computing the list of functions, not by remembering it.
   Scan the code chunks of the chapters for the functions they call,
@@ -523,6 +559,38 @@ in every course and every teaching repository.
   (observed in lecture slides rendered with Quarto).
   Put a slide break after the heading and move the text onto content slides.
 
+## Give each concept in a note sheet its own row
+
+A note sheet is a reference table of formulas with brief labels and no prose.
+This is one case of
+[building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units).
+Give each concept its own row.
+A row holds one formula and one short label.
+
+- Never put two definitions in one row.
+- Never merge rows to save space.
+  Find the room another way, such as a smaller table font or a second table beside the first.
+- Never put notation or assumptions inside a label.
+  Give each assumption its own row, and state the notation once in its own row.
+- Write each formula in its most compact form,
+  built from pieces that have their own rows
+  (see [Making expressions concise](notation.qmd#making-expressions-concise)).
+
+The same rule applies to every other reference table, such as a table of notation.
+
+::: {#exm-note-sheet-rows}
+
+## Splitting a merged row
+
+> ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
+>
+> ✅ Rows: `Dot product` with its formula, then `Sample mean` with its formula.
+
+The ❌ row makes the reader find where one concept ends and the next begins.
+The ✅ rows let the reader find one formula by one label.
+
+:::
+
 ## Talk about the ideas, not the notes
 
 When a term is defined on another page or in another site,
@@ -541,6 +609,54 @@ Do not write about where the definition lives.
 Students read concepts, not the structure of the site.
 A sentence about which notes define a term adds no content,
 and it goes stale when the definition moves.
+
+## Write grading rubrics as checklists
+
+Structure the rubric for most STEM questions as a checklist
+(Ezra, 2026-10-26).
+A grader then marks each item as earned or not,
+and the points are the sum of the earned items.
+A rubric written as a paragraph makes the grader reconstruct the items,
+and two graders reconstruct different items.
+
+- Write one checklist item per observable criterion,
+  and put its points first.
+- Make the points of the items sum to the question's points,
+  and state that total in the line that introduces the checklist.
+- Write each item so that it is either met or not met.
+  Name the answer or the evidence that meets the criterion, as in
+  "cites the gap between training and CV MSE".
+- List an acceptable alternative answer as a sub-bullet without points
+  under the item it also satisfies,
+  so the items still sum to the question's points.
+  Do not put the alternative in a separate paragraph.
+- Keep the rubric in the solution, after the answer,
+  so a course that withholds solutions from students withholds the rubric too.
+- Use another structure when a question has no separable criteria,
+  such as a single holistic judgment of a proof's rigor.
+
+::: {#exm-rubric-checklist}
+
+## A rubric as a checklist
+
+> ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$,
+> three for "orthogonal" with its link to the normal equation.
+
+> ✅
+>
+> ```markdown
+> Grading (6 points):
+>
+> - [ ] 2 points: gives $\vresid = \tp{[-1, -1, 1]}$.
+> - [ ] 1 point: computes $\dprod{\vx}{\vresid} = 0$.
+> - [ ] 3 points: says $\vresid$ is orthogonal to $\vx$
+>   and links this orthogonality to the normal equation.
+> ```
+
+The checklist shows the grader each item to mark
+and lets a script check that the points sum to the total.
+
+:::
 
 ## Credit other courses without summarizing them
 
