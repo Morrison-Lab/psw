@@ -91,6 +91,10 @@ callouts (config + color palette live in `_quarto-website.yml`).
   Update any count in the prose that names the size of a list you extended, such as "four groups" for a four-item list.
 - **Link check**: tuned in `lychee.toml`; fix broken links rather than adding
   exceptions.
+- **PDF glyphs**: the PDF build fails on any character its fonts cannot print,
+  instead of leaving a blank (psw#387).
+  Write a Greek letter or other symbol as math through a shared macro,
+  or map the character in the `newunicodechar` block in `_quarto.yml`.
 
 ## Pull request expectations
 
