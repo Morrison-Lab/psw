@@ -125,11 +125,11 @@ and each piece fits on a slide.
 
 :::
 
-## Spell out the conclusion of a yes-or-no answer
+## Say what a yes-or-no answer means
 
-Start an answer to a yes-or-no question with a full sentence
-that states the conclusion you are drawing,
-not with a bare "Yes." or "No."
+Follow a "Yes" or "No" with what the answer means in the question's own terms,
+as in "No: it's not possible that the advanced network has a test error of 0.25,"
+not a bare "No."
 (Ezra, 2026-10-28).
 A reader who sees only the first line then still knows what the answer claims,
 and a bare "No." leaves open what is being denied.
@@ -137,14 +137,14 @@ The rule covers solutions, worked examples and any other answer to a question.
 
 ::: {#exm-yes-no-conclusion}
 
-## Spelling out a "No"
+## Saying what a "No" means
 
 > ❌ No. The irreducible error is a lower bound on the expected squared prediction error.
 >
-> ✅ No, the test error cannot be below the irreducible error.
+> ✅ No: it's not possible that the advanced network has a test error of 0.25.
 > The irreducible error is a lower bound on the expected squared prediction error.
 
-The ✅ version states the conclusion itself, so the reasons that follow support a claim the reader has already seen.
+The ✅ version states the conclusion in the question's terms, so the reasons that follow support a claim the reader has already seen.
 
 :::
 
