@@ -138,6 +138,34 @@ because a reader may want to refer to them later.
 Quarto's [equation cross-references](https://quarto.org/docs/authoring/cross-references.html#equations)
 number a display and let you link to it.
 
+A key equation always goes in a display, never inline.
+A key equation is any of these:
+
+- the conclusion of a theorem, lemma, or proposition;
+- an equation that a proof builds toward;
+- an equation that a later step refers to.
+
+In a proof, a sentence such as "so $A = B$" or "this gives $A = B$"
+hides the result in the middle of a line.
+Put the equation in a display and let the sentence introduce it.
+Use inline math for symbols and short expressions inside a sentence,
+not for the equation the reader is meant to remember.
+
+::: {#exm-key-equation-displayed}
+
+## Displaying the normal equations
+
+> ❌ Setting the gradient to zero yields $\stprod{\design} \vcoef = \tp{\design} \vy$.
+>
+> ✅ Setting the gradient to zero yields the normal equations:
+>
+> $$\stprod{\design} \vcoef = \tp{\design} \vy$$
+
+In the ❌ version the result sits in the middle of a line, where the reader can miss it.
+The ✅ version gives it a line of its own.
+
+:::
+
 ## Write numbers according to how they are used
 
 Spell out a small number when it is an adjective:
