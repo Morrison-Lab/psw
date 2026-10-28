@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-26 14:07:20 (PDT)
+Last modified: 2026-10-27 20:05:13 (PDT)
 
 > **NOTE:**
 >
@@ -179,7 +179,21 @@ These rules apply to all teaching materials, in every course and every teaching 
 - Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
-## 12 Present R results with modern packages
+## 12 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
+
+This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
+
+- Put parallel versions of one computation in one language tabset, never one chunk after another. A reader should see one language at a time.
+- Write one chunk for each step of the computation. A figure’s code is one chunk, even when it takes ten lines.
+- Split a chunk only for a reason that the reader can see:
+  - **Own label or options**: the second part needs its own label, caption or chunk options.
+  - **Separate output**: the second part shows output that the first part should not.
+  - **Dependent prose**: prose between the parts needs the first part’s output.
+- Do not split a chunk to name its parts, or to keep it short. Comments name the parts (see [Comment every code chunk to say what and why](#comment-every-code-chunk-to-say-what-and-why)).
+- Give a chunk that only stores values for later code or inline code `#| include: false`. When the chunk that computes those values is already hidden, merge the storing code into that chunk.
+- Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than `None` and shows the chunk as one code block per printed value, such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`. End each such call with a semicolon, or assign its value.
+
+## 13 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -190,7 +204,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-## 13 Manipulate data with dplyr, not base R
+## 14 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -204,7 +218,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-## 14 Include code from files instead of copying it
+## 15 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -213,7 +227,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-## 15 Comment every code chunk to say what and why
+## 16 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -222,7 +236,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-## 16 Set `code-fold` by what the code does and whether the prose mentions it
+## 17 Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
@@ -234,7 +248,7 @@ Set `#| code-fold:` on each chunk by two questions: does the prose mention the c
 
 For example, a chunk that fits a model the text walks through and prints its coefficients is `false`, a chunk that draws a figure the text discusses is `show`, and a chunk that loads a package or builds an object that later chunks use is `true`.
 
-## 17 Introduce every function in a programming primer
+## 18 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -243,14 +257,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-## 18 Make figures accessible
+## 19 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 19 Structure slides for the reader
+## 20 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -260,7 +274,7 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 20 Give each concept in a note sheet its own row
+## 21 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -281,7 +295,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-## 21 Talk about the ideas, not the notes
+## 22 Talk about the ideas, not the notes
 
 When a term is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -291,14 +305,44 @@ When a term is defined on another page or in another site, state the idea in the
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
-## 22 Credit other courses without summarizing them
+## 23 Write grading rubrics as checklists
+
+Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
+
+- Write one checklist item per observable criterion, and put its points first.
+- Make the points of the items sum to the question’s points, and state that total in the line that introduces the checklist.
+- Write each item so that it is either met or not met. Name the answer or the evidence that meets the criterion, as in “cites the gap between training and CV MSE”.
+- List an acceptable alternative answer as a sub-bullet without points under the item it also satisfies, so the items still sum to the question’s points. Do not put the alternative in a separate paragraph.
+- Keep the rubric in the solution, after the answer, so a course that withholds solutions from students withholds the rubric too.
+- Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.
+
+> **NOTE:**
+>
+> **Example 6 (A rubric as a checklist)**  
+>
+> > ❌ Grading (6 points): two for \\\vec r\\, one for \\\dprod{\vx}{\vec r} = 0\\, three for “orthogonal” with its link to the normal equation.
+>
+> > ✅
+> >
+> > ``` markdown
+> > Grading (6 points):
+> >
+> > - [ ] 2 points: gives $\vresid = \tp{[-1, -1, 1]}$.
+> > - [ ] 1 point: computes $\dprod{\vx}{\vresid} = 0$.
+> > - [ ] 3 points: says $\vresid$ is orthogonal to $\vx$
+> >   and links this orthogonality to the normal equation.
+> > ```
+>
+> The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
+
+## 24 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 23 Rules that apply to all writing
+## 25 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
