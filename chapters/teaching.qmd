@@ -125,6 +125,15 @@ and each piece fits on a slide.
 
 :::
 
+## Give each question's answer its own paragraph
+
+When a prompt asks several questions, answer each one in its own paragraph, or in several paragraphs if it needs them
+(Ezra, 2026-10-28).
+A solution to "Which model underfits, which overfits most, and which would you choose?"
+has one paragraph for the underfitting model, one for the overfitting model and one for the choice.
+A reader looking for one answer then finds it without reading the others.
+No automated check enforces this rule, because a script cannot tell how many questions a prompt asks.
+
 ## Give each defined term its own div
 
 [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms)
