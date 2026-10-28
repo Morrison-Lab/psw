@@ -24,7 +24,7 @@ project:
 
 website:
   title: "Principles of Scientific Writing"
-  site-url: https://d-morrison.github.io/psw/
+  site-url: https://morrison-lab.github.io/psw/
   description: "A style guide for writing in science, technology, engineering, and mathematics, focused on writing about statistical data analysis."
   # https://quarto.org/docs/websites/website-llms.html — use `llms-txt:`, not `llms:` (schema error)
   llms-txt: true
@@ -33,7 +33,7 @@ website:
   back-to-top-navigation: true
   page-navigation: true
   reader-mode: true
-  repo-url: https://github.com/d-morrison/psw
+  repo-url: https://github.com/Morrison-Lab/psw
   repo-actions: [edit, issue, source]
   navbar:
     left:
@@ -79,7 +79,7 @@ website:
         href: references.qmd
     right:
       - icon: github
-        href: https://github.com/d-morrison/psw
+        href: https://github.com/Morrison-Lab/psw
         aria-label: GitHub
 
 callouty-theorem:
