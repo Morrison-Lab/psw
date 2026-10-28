@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 > **NOTE:**
 >
@@ -23,7 +23,7 @@ Prefer interval notation instead: \\x \in (a, b)\\.
 Interval notation is easier to read for three reasons:
 
 - It states one relation instead of two, so the reader parses a single claim rather than combining a pair of them.
-- It names the set you actually mean, so the same expression can be reused as a domain, a constraint, or the argument of a quantifier.
+- It names the set you actually mean, so the same expression can be reused as a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), a constraint, or the argument of a quantifier.
 - It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than \\\le\\ and \\\<\\.
 
 > **NOTE:**
@@ -107,7 +107,7 @@ Splitting every step makes derivations longer. Keep them readable by breaking th
 
 #### Show why you need a result before you derive it
 
-Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite function:
+Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite [function](https://morrison-lab.github.io/mds/functions.html#def-function):
 
 1.  Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.
 2.  Pause the main derivation, and derive the inner derivative in its own block.
@@ -160,7 +160,7 @@ Separate equations set side by side, such as \\x = 1, \quad y = 2\\, each have o
 
 ## 4 Functions and their values
 
-A function and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Written with its placeholder argument, \\\mu(x)\\ already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
+A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Written with its placeholder argument, \\\mu(x)\\ already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
 
 > **NOTE:**
 >
@@ -186,7 +186,11 @@ Use the notation to match:
 - Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
 - Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
 
-In machine learning notes, the prediction function is \\h\\, and its value at the \\i\\-th observed input is the **fitted value**. Define it once as \\\hat{y}\_i = h(x_i)\\, then print \\\hat{y}\_i\\, not \\h(x_i)\\, wherever the fitted value appears in a loss, a residual or a risk sum. Keep \\h(x)\\ where \\h\\ itself is the subject, as in “the linear function \\h(x) = \beta_0 + \beta_x x\\”, and where the output is not a prediction of \\y_i\\, such as the decision score of a support vector machine or a vector of class probabilities.
+> **NOTE:**
+>
+> **Definition 2 (Fitted value)** The **fitted value** of observation \\i\\ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function) is \\h\\, it is \\\hat{y}\_i = h(x_i)\\.
+
+Define the [fitted value](#def-fitted-value) once, then print \\\hat{y}\_i\\, not \\h(x_i)\\, wherever it appears in a loss, a residual or a risk sum. Keep \\h(x)\\ where \\h\\ itself is the subject, as in “the linear function \\h(x) = \beta_0 + \beta_x x\\”, and where the output is not a prediction of \\y_i\\, such as the decision score of a support vector machine or a vector of class probabilities.
 
 In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
 
@@ -252,7 +256,7 @@ State the convention where you first use the symbols. Keep it in every later sec
 Match the notation to the claim:
 
 - Write \\\Pr(Y \le y)\\ for a probability, with the random variable on the left of the inequality and the value on the right.
-- Write \\\text{E}\[Y\]\\ and \\\text{Var}(Y)\\ for the mean and variance of a random variable, never \\\text{E}\[y\]\\ or \\\text{Var}(y)\\ for an observed value.
+- Write \\\text{E}\[Y\]\\ and \\\text{Var}(Y)\\ for the mean and [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable, never \\\text{E}\[y\]\\ or \\\text{Var}(y)\\ for an observed value.
 - Write a statistic computed from observed values with lowercase letters, as in \\\bar{y} = \frac{1}{n}\sum\_{i=1}^n y_i\\, and the same statistic as a random variable with capitals, \\\bar{Y} = \frac{1}{n}\sum\_{i=1}^n Y_i\\. The first is a number, such as 2.4. The second has a sampling distribution.
 
 Name the kind of object in the words, too, not only in the symbol. Call a random variable a “variable”, such as “the output variable \\\Outvar\\”, and call a number a “value”, such as “the input value \\\predvar\\” or “the observed value \\\outvar\\”. Do not say “fix \\\predvar\\” or “let \\\predvar\\ be fixed”. It does not say whether \\\predvar\\ is a variable held constant or a value you chose. Say “choose an input value \\\predvar\\”, or “take the observed value \\\outvar\\ as given”.
@@ -350,7 +354,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 A passage about the notation itself, such as a table that lists each symbol and what it means, may write the letters directly.
 
-The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a fitted value or a Fourier transform, so `\hat` names no concept either. Write the macro that names the role instead, such as `\est{}` for an estimate, and keep `\hat` for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.
+The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a [fitted value](#def-fitted-value) or a Fourier transform, so `\hat` names no concept either. Write the macro that names the role instead, such as `\est{}` for an estimate, and keep `\hat` for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.
 
 > **NOTE:**
 >
@@ -436,7 +440,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 
 Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
 
-Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.
+Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the [fitted value](#def-fitted-value) minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.
 
 > **NOTE:**
 >
@@ -460,11 +464,11 @@ Replace each sub-expression that you are not manipulating with a symbol that sta
 
 This is one case of [making each expression as concise as possible](#making-expressions-concise). It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or [shared macro](#using-shared-macros) that names its concept.
 
-Choose the symbol to match the thing it names. For the population mean \\\E{X}\\, write \\\mu\\. Add a subscript, such as \\\mu_X\\, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let \\\mu = \E{X}\\”, before the first line that uses the symbol.
+Choose the symbol to match the thing it names. For the [population](../chapters/defining-terms.llms.md#def-population) mean \\\E{X}\\, write \\\mu\\. Add a subscript, such as \\\mu_X\\, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let \\\mu = \E{X}\\”, before the first line that uses the symbol.
 
 > **NOTE:**
 >
-> **Example 22 (Abstracting the population mean)** Suppose a derivation expands the variance of a random variable \\X\\.
+> **Example 22 (Abstracting the population mean)** Suppose a derivation expands the [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable \\X\\.
 >
 > > ❌ \\ \begin{aligned} \E{\paren{X - \E{X}}^2} &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\ &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2 \end{aligned} \\
 > >
@@ -501,7 +505,7 @@ Use the notation that best represents the concept being depicted. Choose the sym
 The rules that follow are cases of this principle:
 
 - The predictor matrix and the design matrix are different objects, so they get different symbols.
-- The mean function is a mean, so it is \\\truemean\\, not \\\predfn\\.
+- The mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) is a mean, so it is \\\truemean\\, not \\\predfn\\.
 - The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
 - A reference formula is a general statement, so it is written in its general form, not for one example.
 
@@ -546,7 +550,7 @@ Put a specific case on the sheet only as a labeled example next to the general f
 
 ## 15 Writing the mean function and the prediction function
 
-Write the mean function as \\\truemean\\, not as \\\predfn\\. The mean function is the population mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
+Write the mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) as \\\truemean\\, not as \\\predfn\\. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
 Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol \\\epredfn\\) for an estimated one, or `\predfnf{x}` (symbol \\\predfn\\) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function \\\truemean\\ itself.
 

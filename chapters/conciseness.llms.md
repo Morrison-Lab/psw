@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 > **NOTE:**
 >
@@ -28,7 +28,7 @@ Concise writing conveys ideas efficiently, using only the words necessary to com
   - “give consideration to” → “consider”
   - “is able to” → “can”
 
-Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity. Keep a clause or a technical term when removing it would lose meaning or precision, and never replace an honest [hedge](../chapters/avoid-cliches.llms.md#def-hedge) with false confidence.
+Remember: concise writing is not about making every sentence as short as possible, but about removing words that do not contribute to meaning or clarity. Keep a clause or a technical [term](../chapters/defining-terms.llms.md#def-term) when removing it would lose meaning or precision, and never replace an honest [hedge](../chapters/avoid-cliches.llms.md#def-hedge) with false confidence.
 
 ## 2 Make every word tell
 
@@ -70,7 +70,7 @@ When none of these applies, rewrite the sentence with an active verb.
 
 ## 4 Write about the ideas, not the document
 
-A sentence about which part of the document holds a definition adds no content. State the idea and link the term, as [Talk about the ideas, not the notes](../chapters/teaching.llms.md#talk-about-the-ideas-not-the-notes) explains. The ✅ example below omits the link only because this guide has no page for the term.
+A sentence about which part of the document holds a definition adds no content. State the idea and link the [term](../chapters/defining-terms.llms.md#def-term), as [Talk about the ideas, not the notes](../chapters/teaching.llms.md#talk-about-the-ideas-not-the-notes) explains. The ✅ example below omits the link only because this guide has no page for the term.
 
 > ❌ The statistics notes define the training error as the average loss on the fitted data.
 >
@@ -108,7 +108,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 
 ## 7 Do not rule out readings no reader would make
 
-A definition says what a term means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
+A definition says what a [term](../chapters/defining-terms.llms.md#def-term) means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
 
 > **NOTE:**
 >
@@ -146,7 +146,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 > >
 > > ✅ The data do not rule out a dose-response relationship, but they do not support one either.
 >
-> Writers usually choose “not inconsistent with” to hedge “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
+> Writers usually choose “not inconsistent with” to [hedge](../chapters/avoid-cliches.llms.md#def-hedge) “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
 ## 9 Write about the subject, not about the text
 

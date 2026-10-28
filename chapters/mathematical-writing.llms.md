@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 > **NOTE:**
 >
@@ -56,11 +56,11 @@ A list of formulas with no words between them is the style of a homework paper. 
 
 ### 1.6 Make the prose say what the formula says
 
-The sentence that introduces or interprets a formula must describe that formula. Check every term in the sentence against the formula, symbol by symbol. The words and the symbols must name the same quantity, the same data, and the same kind of average. When you change one, change the other in the same edit.
+The sentence that introduces or interprets a formula must describe that formula. Check every [term](../chapters/defining-terms.llms.md#def-term) in the sentence against the formula, symbol by symbol. The words and the symbols must name the same quantity, the same data, and the same kind of average. When you change one, change the other in the same edit.
 
 > **NOTE:**
 >
-> **Example 3 (A sentence that names the wrong average)** Suppose the formula is \\\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\\, a population mean at one covariate value \\\predvar\\. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at \\\predvar\\” instead.
+> **Example 3 (A sentence that names the wrong average)** Suppose the formula is \\\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\\, a [population](../chapters/defining-terms.llms.md#def-population) mean at one covariate value \\\predvar\\. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at \\\predvar\\” instead.
 
 Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover [using one notation for one thing](../chapters/notation.llms.md#matching-names-and-notation) and [defining every variable when you introduce it](../chapters/defining-terms.llms.md#guidelines-for-defining-terms).
 
@@ -152,7 +152,7 @@ No check can decide whether a step is reusable, so this rule stays a writing rul
 | Avoid strings of nouns used as adjectives | [Rewrite noun strings and hidden verbs](../chapters/inclusive-writing.llms.md#rewrite-noun-strings-and-hidden-verbs) |
 | Avoid unnecessary jargon | [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon) |
 | Write sentences that can be read from left to right without ambiguity | [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) |
-| Use “that” instead of “which” in a restrictive clause | [Relative pronouns](../chapters/grammar.llms.md#relative-pronouns) |
+| Use “that” instead of “which” in a [restrictive clause](../chapters/grammar.llms.md#def-restrictive-clause) | [Relative pronouns](../chapters/grammar.llms.md#relative-pronouns) |
 | Do not praise your own work | [Tone](../chapters/avoid-cliches.llms.md#tone) |
 
 Table 1: Rules from the course that other chapters of this book cover

@@ -317,7 +317,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 00:37:47 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:45:54 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -468,7 +468,7 @@
 <p><span class="math display">\[\text{RSS} = \sum_{i=1}^n r_i^2.\]</span></p>
 </div>
 <div id="exm-rss-line" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the fitted value of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a function of the two coefficients:</p>
+<p><span class="theorem-title"><strong>Example 10 (Residual sum of squares of a straight line)</strong></span> For a straight line with intercept <span class="math inline">\(\beta_0\)</span> and slope <span class="math inline">\(\beta_x\)</span>, the <a href="../chapters/notation.html#def-fitted-value">fitted value</a> of observation <span class="math inline">\(i\)</span> is <span class="math inline">\(\beta_0 + \beta_x x_i\)</span>, so the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) is a <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> of the two coefficients:</p>
 <p><span class="math display">\[
 \text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2.
 \]</span></p>
@@ -477,7 +477,7 @@
 <p><span class="theorem-title"><strong>Example 11 (Residual sum of squares of a line through three points)</strong></span> For the points <span class="math inline">\((0, 1)\)</span>, <span class="math inline">\((1, 2)\)</span>, <span class="math inline">\((2, 2)\)</span> and the line with <span class="math inline">\(\beta_0 = 1\)</span> and <span class="math inline">\(\beta_x = 0.5\)</span> (<a href="#/exm-rss-line" class="quarto-xref">Example&nbsp;10</a>), the residuals are <span class="math inline">\(0\)</span>, <span class="math inline">\(0.5\)</span> and <span class="math inline">\(0\)</span>, so <span class="math inline">\(\text{RSS}(1, 0.5) = 0.25\)</span>.</p>
 </div>
 <div id="exm-not-rss" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (A sum of squares that is not a residual sum of squares)</strong></span> For the same three points, the sum of squared deviations of <span class="math inline">\(y_i\)</span> from their mean, <span class="math inline">\(5/3\)</span>, is <span class="math inline">\(2/3\)</span>. That quantity is the total sum of squares, not the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) of the line in <a href="#/exm-rss-three-points" class="quarto-xref">Example&nbsp;11</a>, because it measures spread around the mean rather than around the line’s fitted values.</p>
+<p><span class="theorem-title"><strong>Example 12 (A sum of squares that is not a residual sum of squares)</strong></span> For the same three points, the sum of squared deviations of <span class="math inline">\(y_i\)</span> from their mean, <span class="math inline">\(5/3\)</span>, is <span class="math inline">\(2/3\)</span>. That quantity is the total sum of squares, not the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) of the line in <a href="#/exm-rss-three-points" class="quarto-xref">Example&nbsp;11</a>, because it measures spread around the mean rather than around the line’s <a href="../chapters/notation.html#def-fitted-value">fitted value</a>s.</p>
 </div>
 <p>The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.</p>
 </section>

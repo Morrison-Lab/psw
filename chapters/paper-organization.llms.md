@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -181,7 +181,7 @@ A forward reference points the reader to content they have not reached yet. Comm
 - “as discussed below”
 - “see the next section”
 - “we will return to this later”
-- a technical term or result used before the definition or theorem that introduces it
+- a technical [term](../chapters/defining-terms.llms.md#def-term) or result used before the definition or theorem that introduces it
 
 The reader must hold an unresolved pointer while reading the sentence that depends on it.
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 > **NOTE:**
 >
@@ -26,7 +26,7 @@ Human drafts use the same patterns, so this chapter is for any writer, including
 
 ## 1 Terms used in this chapter
 
-The rest of this chapter uses these terms.
+The rest of this chapter uses these [term](../chapters/defining-terms.llms.md#def-term)s.
 
 > **NOTE:**
 >
@@ -233,7 +233,7 @@ Write plainly first, then scan the draft once before you share it. Use the same 
 
 - One match means little. Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
 - Do not ban a word outright. Keep a word or phrase that is the precise one for the sentence.
-- Do not flatten your writing into a voiceless register. Cut the filler and the reflexes, and keep your own voice.
+- Do not flatten your writing into a voiceless [register](#def-register). Cut the filler and the reflexes, and keep your own voice.
 - Skip the scan for code, terse status lines and short conversational replies.
 - Do not accuse a writer of using an assistant on the strength of the list. Say which pattern weakens the sentence and how to fix it.
 

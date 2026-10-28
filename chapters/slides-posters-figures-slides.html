@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 00:37:47 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:45:54 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -330,7 +330,7 @@
 <p>Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:</p>
 <ul>
 <li>Pointer only: “The symmetry of <code>@exm-x</code>.” The reader learns nothing until following the link.</li>
-<li>Self-contained: “The logistic function at <span class="math inline">\(-2\)</span> is as high as <span class="math inline">\(1\)</span> minus its value at <span class="math inline">\(2\)</span> (<code>@exm-x</code>).” The reader learns the point at once.</li>
+<li>Self-contained: “The logistic function at <span class="math inline">\(-2\)</span> is as high as <span class="math inline">\(1\)</span> minus its value at <span class="math inline">\(2\)</span> (<code>@exm-x</code>).” <!-- check-term-links: allow --> The reader learns the point at once.</li>
 </ul>
 <p>Lead with a well-labeled figure or table instead of a long paragraph that describes a pipeline or compares groups. Use a diagram for a conceptual model, such as a directed acyclic graph (DAG), and for a process, such as a participant flow (CONSORT) diagram or a workflow schematic. Let the text interpret what the figure shows instead of listing every number the reader can already see in it. Give the key estimates in the text and point to the figure for the rest.</p>
 <p>A clear figure lets a reader check a result without help from the text. Before you share a figure:</p>
@@ -348,7 +348,7 @@
 <li>Draw a tree (a parse tree, decision tree, dendrogram, or any other hierarchy) as a diagram figure, not only as nested bullets. A nested list hides how the branches relate and makes a reader count indentation to find a node’s parent. Keep the list too when it adds information the diagram lacks. Draw the diagram from the tree’s data and fill leaves and internal nodes differently, with the legend at the bottom. Wrap the diagram in a <code>#fig-</code> div with a caption, and set alt text that reads out the structure with <code>fig-alt</code>. The <a href="https://github.com/Morrison-Lab/gha">Morrison-Lab/gha</a> check <code>check-tree-lists</code> flags a pull request that adds a definition, example, or other labeled div that mentions a tree, holds a list nested three or more levels deep, and has no figure; a <code>&lt;!-- no-tree-figure: reason --&gt;</code> comment inside the div exempts it.</li>
 <li>Minimize abbreviations in labels and legends.</li>
 <li>Use transparency to show overlapping data.</li>
-<li>Show measures of precision, such as 95% confidence intervals.</li>
+<li>Show measures of precision, such as 95% <a href="../chapters/defining-terms.html#def-confidence-interval">confidence interval</a>s.</li>
 </ul>
 <p>For more:</p>
 <ul>
@@ -361,7 +361,7 @@
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
-<p>A function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.</p>
+<p>A <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> of two variables, such as a loss or a <a href="../chapters/defining-terms.html#def-rss">residual sum of squares</a> as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.</p>
 <ul>
 <li>Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.</li>
 <li>Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.</li>

@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 00:37:47 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 00:45:54 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -282,7 +282,7 @@
 <p>Interval notation is easier to read for three reasons:</p>
 <ul>
 <li>It states one relation instead of two, so the reader parses a single claim rather than combining a pair of them.</li>
-<li>It names the set you actually mean, so the same expression can be reused as a domain, a constraint, or the argument of a quantifier.</li>
+<li>It names the set you actually mean, so the same expression can be reused as a <a href="https://morrison-lab.github.io/mds/functions.html#def-domain">domain</a>, a constraint, or the argument of a quantifier.</li>
 <li>It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than <span class="math inline">\(\le\)</span> and <span class="math inline">\(&lt;\)</span>.</li>
 </ul>
 <div id="exm-double-inequality" class="theorem example">
@@ -295,7 +295,7 @@
 </div>
 <p>The same guidance applies to prose: write “for <span class="math inline">\(x \in (0, 1)\)</span>” rather than “for <span class="math inline">\(x\)</span> between 0 and 1, exclusive”.</p>
 <h3 id="when-the-middle-term-is-not-a-single-symbol">When the middle term is not a single symbol</h3>
-<p>Interval notation works best when the quantity being constrained is a single expression. When the middle term is complicated, naming it first keeps the constraint short.</p>
+<p>Interval notation works best when the quantity being constrained is a single expression. When the middle term is complicated, <!-- check-term-links: allow --> naming it first keeps the constraint short.</p>
 <div id="exm-naming-the-middle-term" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2 (Naming the middle term)</strong></span> &nbsp;</p>
 <blockquote>
@@ -337,7 +337,7 @@
 \end{aligned}
 \]</span></p>
 </blockquote>
-<p>The ❌ version does five operations in one line: it distributes the sum over the terms, sums a constant, factors a constant out of a sum, substitutes <span class="math inline">\(n \bar{y}\)</span>, and substitutes <span class="math inline">\(n \bar{x}\)</span>. The ✅ version gives each of the five its own line.</p>
+<p>The ❌ version does five operations in one line: it distributes the sum over the terms, <!-- check-term-links: allow --> sums a constant, factors a constant out of a sum, substitutes <span class="math inline">\(n \bar{y}\)</span>, and substitutes <span class="math inline">\(n \bar{x}\)</span>. The ✅ version gives each of the five its own line.</p>
 </div>
 <p>Common ways to combine steps without noticing:</p>
 <ul>
@@ -345,13 +345,13 @@
 <li>applying the rule for the derivative of a sum and the chain rule in the same line;</li>
 <li>substituting a result and then simplifying it;</li>
 <li>multiplying constants and factoring them out of a sum;</li>
-<li>expanding a product and collecting like terms;</li>
+<li>expanding a product and collecting like terms<!-- check-term-links: allow -->;</li>
 <li>canceling <span class="math inline">\(a\)</span> in <span class="math inline">\(a + (b - a)\)</span> removes the parentheses (<span class="math inline">\(a + b - a\)</span>), reorders the terms (<span class="math inline">\(b + a - a\)</span>), groups the two that cancel (<span class="math inline">\(b + (a - a)\)</span>), replaces <span class="math inline">\(a - a\)</span> with <span class="math inline">\(0\)</span> (<span class="math inline">\(b + 0\)</span>), and drops the <span class="math inline">\(+ 0\)</span>;</li>
 <li>canceling <span class="math inline">\(n\)</span> in <span class="math inline">\(n \cdot \frac{b}{n}\)</span> rewrites the division as multiplication by a reciprocal (<span class="math inline">\(n \cdot (b \cdot \frac{1}{n})\)</span>), removes the parentheses (<span class="math inline">\(n \cdot b \cdot \frac{1}{n}\)</span>), reorders the factors (<span class="math inline">\(b \cdot n \cdot \frac{1}{n}\)</span>), groups the two that cancel (<span class="math inline">\(b \cdot (n \cdot \frac{1}{n})\)</span>), replaces <span class="math inline">\(n \cdot \frac{1}{n}\)</span> with <span class="math inline">\(1\)</span> (<span class="math inline">\(b \cdot 1\)</span>), and drops the <span class="math inline">\(\cdot 1\)</span>;</li>
 <li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
 </ul>
 <h3 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h3>
-<p>Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.</p>
+<p>Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, <!-- check-term-links: allow --> and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.</p>
 <h3 id="applying-a-definition-is-a-step">Applying a definition is a step</h3>
 <p>Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
 <div id="exm-apply-definition-step" class="theorem example">
@@ -383,7 +383,7 @@
 <h3 id="long-derivations">Long derivations</h3>
 <p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
 <h4 id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h4>
-<p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite function:</p>
+<p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>:</p>
 <ol type="1">
 <li>Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.</li>
 <li>Pause the main derivation, and derive the inner derivative in its own block.</li>
@@ -445,11 +445,11 @@
 </section>
 <section class="slide level2">
 
-<p>A function and its value at a point are different objects. In <span class="math inline">\(\mu_i = \mu(x_i)\)</span>, <span class="math inline">\(\mu\)</span> is a function, and <span class="math inline">\(\mu(x_i)\)</span> is a number: the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>. Written with its placeholder argument, <span class="math inline">\(\mu(x)\)</span> already denotes a value, so “the value of <span class="math inline">\(\mu(x)\)</span> at <span class="math inline">\(x_i\)</span>” reads as a value of a value. Either drop the placeholder and write “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, or keep the placeholder and name the substitution: “<span class="math inline">\(\mu(x)\)</span> evaluated at <span class="math inline">\(x_i\)</span>”.</p>
+<p>A <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> and its value at a point are different objects. In <span class="math inline">\(\mu_i = \mu(x_i)\)</span>, <span class="math inline">\(\mu\)</span> is a function, and <span class="math inline">\(\mu(x_i)\)</span> is a number: the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>. Written with its placeholder argument, <span class="math inline">\(\mu(x)\)</span> already denotes a value, so “the value of <span class="math inline">\(\mu(x)\)</span> at <span class="math inline">\(x_i\)</span>” reads as a value of a value. Either drop the placeholder and write “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, or keep the placeholder and name the substitution: “<span class="math inline">\(\mu(x)\)</span> evaluated at <span class="math inline">\(x_i\)</span>”.</p>
 <div id="exm-function-evaluated-at" class="theorem example">
 <p><span class="theorem-title"><strong>Example 7 (Saying where a function is evaluated)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Each outcome is centered on the value of a mean function <span class="math inline">\(\mu(x)\)</span> at its own covariate values.</p>
+<p>❌ Each outcome is centered on the value of a mean function <span class="math inline">\(\mu(x)\)</span> <!-- check-term-links: allow --> at its own covariate values.</p>
 <p>✅ Each outcome is centered on a mean function <span class="math inline">\(\mu(x)\)</span> evaluated at that outcome’s covariate values.</p>
 </blockquote>
 <blockquote>
@@ -468,7 +468,10 @@
 <li>Write <span class="math inline">\(\mu(x)\)</span> with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function <span class="math inline">\(\mu(x)\)</span>” or <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>, and say “evaluated at” when you substitute a point into it.</li>
 <li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
 </ul>
-<p>In machine learning notes, the prediction function is <span class="math inline">\(h\)</span>, and its value at the <span class="math inline">\(i\)</span>-th observed input is the <strong>fitted value</strong>. Define it once as <span class="math inline">\(\hat{y}_i = h(x_i)\)</span>, then print <span class="math inline">\(\hat{y}_i\)</span>, not <span class="math inline">\(h(x_i)\)</span>, wherever the fitted value appears in a loss, a residual or a risk sum. Keep <span class="math inline">\(h(x)\)</span> where <span class="math inline">\(h\)</span> itself is the subject, as in “the linear function <span class="math inline">\(h(x) = \beta_0 + \beta_x x\)</span>”, and where the output is not a prediction of <span class="math inline">\(y_i\)</span>, such as the decision score of a support vector machine or a vector of class probabilities.</p>
+<div id="def-fitted-value" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2 (Fitted value)</strong></span> The <strong>fitted value</strong> of observation <span class="math inline">\(i\)</span> is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> is <span class="math inline">\(h\)</span>, it is <span class="math inline">\(\hat{y}_i = h(x_i)\)</span>.</p>
+</div>
+<p>Define the <a href="#/def-fitted-value">fitted value</a> once, then print <span class="math inline">\(\hat{y}_i\)</span>, not <span class="math inline">\(h(x_i)\)</span>, wherever it appears in a loss, a residual or a risk sum. Keep <span class="math inline">\(h(x)\)</span> where <span class="math inline">\(h\)</span> itself is the subject, as in “the linear function <span class="math inline">\(h(x) = \beta_0 + \beta_x x\)</span>”, and where the output is not a prediction of <span class="math inline">\(y_i\)</span>, such as the decision score of a support vector machine or a vector of class probabilities.</p>
 <p>In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, <code>\eoutvar</code> (see <a href="#/using-shared-macros">Using shared macros</a>), and a document without them may write <code>\hat{y}</code>.</p>
 </section>
 <section id="types-of-functions-and-procedures" class="slide level2" data-number="5">
@@ -489,7 +492,7 @@
 <p><span class="theorem-title"><strong>Example 8 (Typing a procedure’s inputs and output)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ A fitting procedure is a rule that takes data and produces a prediction.</p>
-<p>✅ A fitting procedure is a function from data sets to fitted models. A fitted model is a function from covariate values to predicted outcomes.</p>
+<p>✅ A fitting procedure is a function <!-- check-term-links: allow --> from data sets to fitted models. A fitted model is a function from covariate values to predicted outcomes.</p>
 </blockquote>
 <p>The ❌ version leaves four types unsaid. “Rule” does not say that the procedure is a function. “Data” does not say that the input is a data set. “A prediction” is a single predicted outcome, so it does not say that the output is a fitted model. Nor does it say that a fitted model is itself a function, which makes a prediction only when given a covariate value. The ✅ version states each type, so a reader can check that the output of one is an acceptable input to the next.</p>
 <blockquote>
@@ -521,7 +524,7 @@
 <p>✅ The probability that <span class="math inline">\(Y_i\)</span> exceeds 3 is <span class="math inline">\(0.2\)</span>.</p>
 </blockquote>
 <blockquote>
-<p>❌ The sample mean of the <span class="math inline">\(Y_i\)</span> is 2.4.</p>
+<p>❌ The sample mean of the <span class="math inline">\(Y_i\)</span> is 2.4. <!-- check-term-links: allow --></p>
 <p>✅ The sample mean of the <span class="math inline">\(y_i\)</span> is 2.4.</p>
 </blockquote>
 <p>A probability is a statement about a random variable. The ❌ version of the first pair puts a fixed number where a quantity that can vary belongs. An observed number has no probability of exceeding 3. The second pair has the reverse mistake. A sample mean of 2.4 is a number computed from observed values. The ❌ version attributes it to the random variables. The sample mean of the random variables, <span class="math inline">\(\bar{Y}\)</span>, is itself a random variable.</p>
@@ -529,7 +532,7 @@
 <p>Match the notation to the claim:</p>
 <ul>
 <li>Write <span class="math inline">\(\Pr(Y \le y)\)</span> for a probability, with the random variable on the left of the inequality and the value on the right.</li>
-<li>Write <span class="math inline">\(\text{E}[Y]\)</span> and <span class="math inline">\(\text{Var}(Y)\)</span> for the mean and variance of a random variable, never <span class="math inline">\(\text{E}[y]\)</span> or <span class="math inline">\(\text{Var}(y)\)</span> for an observed value.</li>
+<li>Write <span class="math inline">\(\text{E}[Y]\)</span> and <span class="math inline">\(\text{Var}(Y)\)</span> for the mean and <a href="../chapters/defining-terms.html#def-variance-expression-and-prose">variance</a> of a random variable, never <span class="math inline">\(\text{E}[y]\)</span> or <span class="math inline">\(\text{Var}(y)\)</span> for an observed value.</li>
 <li>Write a statistic computed from observed values with lowercase letters, as in <span class="math inline">\(\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i\)</span>, and the same statistic as a random variable with capitals, <span class="math inline">\(\bar{Y} = \frac{1}{n}\sum_{i=1}^n Y_i\)</span>. The first is a number, such as 2.4. The second has a sampling distribution.</li>
 </ul>
 <p>Name the kind of object in the words, too, not only in the symbol. Call a random variable a “variable”, such as “the output variable <span class="math inline">\(\Outvar\)</span>”, and call a number a “value”, such as “the input value <span class="math inline">\(\predvar\)</span>” or “the observed value <span class="math inline">\(\outvar\)</span>”. Do not say “fix <span class="math inline">\(\predvar\)</span>” or “let <span class="math inline">\(\predvar\)</span> be fixed”. It does not say whether <span class="math inline">\(\predvar\)</span> is a variable held constant or a value you chose. Say “choose an input value <span class="math inline">\(\predvar\)</span>”, or “take the observed value <span class="math inline">\(\outvar\)</span> as given”.</p>
@@ -560,18 +563,18 @@
 <p>In a course that writes regression in statistical notation:</p>
 <blockquote>
 <p>❌ Consider the model <span class="math inline">\(h(x) = w x + b\)</span>.</p>
-<p>✅ Consider the mean function <span class="math inline">\(\mu(x) = \beta_0 + \beta_x x\)</span>.</p>
+<p>✅ Consider the mean function <span class="math inline">\(\mu(x) = \beta_0 + \beta_x x\)</span>. <!-- check-term-links: allow --></p>
 </blockquote>
 <p>The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that <span class="math inline">\(h\)</span>, <span class="math inline">\(w\)</span> and <span class="math inline">\(b\)</span> are <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\beta_0\)</span>.</p>
 </div>
 <p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
 <h3 id="label-every-inline-symbol">Label every inline symbol</h3>
-<p>In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, <span class="math inline">\(\sigma^2\)</span>”.</p>
+<p>In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, <span class="math inline">\(\sigma^2\)</span>”. <!-- check-term-links: allow --></p>
 <div id="exm-label-inline-symbol" class="theorem example">
 <p><span class="theorem-title"><strong>Example 12 (Labeling a symbol in a list of quantities)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Which of the three quantities (squared bias, variance of <span class="math inline">\(\hat{y}\)</span>, <span class="math inline">\(\sigma^2\)</span>) can a better prediction method reduce?</p>
-<p>✅ Which of the three quantities (the squared bias, the variance of the prediction <span class="math inline">\(\hat{y}\)</span>, and the population noise variance <span class="math inline">\(\sigma^2\)</span>) can a better prediction method reduce?</p>
+<p>❌ Which of the three quantities (squared bias, variance of <span class="math inline">\(\hat{y}\)</span>, <span class="math inline">\(\sigma^2\)</span>) <!-- check-term-links: allow --> can a better prediction method reduce?</p>
+<p>✅ Which of the three quantities (the squared bias, the variance of the prediction <span class="math inline">\(\hat{y}\)</span>, and the population noise variance <span class="math inline">\(\sigma^2\)</span>) <!-- check-term-links: allow --> can a better prediction method reduce?</p>
 </blockquote>
 <p>In the ❌ version, the reader sees <span class="math inline">\(\sigma^2\)</span> with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.</p>
 </div>
@@ -596,7 +599,7 @@
 <li>transposes</li>
 <li>hats on estimates</li>
 <li>expectations</li>
-<li>variances</li>
+<li>variances <!-- check-term-links: allow --></li>
 <li>probabilities</li>
 <li>vectors</li>
 </ul>
@@ -611,7 +614,7 @@
 <p>Both versions print the same symbols. In the ✅ version, a reader of the source sees what each symbol stands for, and a group that changes the symbol for the step size changes one line in the shared file.</p>
 </div>
 <p>A passage about the notation itself, such as a table that lists each symbol and what it means, may write the letters directly.</p>
-<p>The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a fitted value or a Fourier transform, so <code>\hat</code> names no concept either. Write the macro that names the role instead, such as <code>\est{}</code> for an estimate, and keep <code>\hat</code> for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.</p>
+<p>The same reasoning applies to decorators. A hat, a tilde or a bar says how a symbol is drawn, not what it means. A hat can mark an estimate, a <a href="#/def-fitted-value">fitted value</a> or a Fourier transform, so <code>\hat</code> names no concept either. Write the macro that names the role instead, such as <code>\est{}</code> for an estimate, and keep <code>\hat</code> for passages that discuss the notation itself. New math follows this now; existing hats are converted in separate sweeps.</p>
 <div id="exm-semantic-decorator" class="theorem example">
 <p><span class="theorem-title"><strong>Example 15 (Naming a decorator for its meaning)</strong></span> &nbsp;</p>
 <blockquote>
@@ -681,7 +684,7 @@
 <section class="slide level2">
 
 <p>Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of <a href="../chapters/teaching.html#build-every-unit-from-smaller-atomic-units">building every unit from smaller atomic units</a>.</p>
-<p>Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the fitted value minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.</p>
+<p>Before you finish a definition, theorem or proof, scan it for a sub-expression that is written out in full more than once, or that is a conceptually coherent chunk even if it appears only once, such as the prediction error (the <a href="#/def-fitted-value">fitted value</a> minus the outcome) or the loss of a prediction on one observation. Give the chunk a name and a macro, and write the macro everywhere the chunk appears.</p>
 <div id="exm-concise-expression" class="theorem example">
 <p><span class="theorem-title"><strong>Example 21 (Naming a repeated chunk)</strong></span> &nbsp;</p>
 <blockquote>
@@ -701,9 +704,9 @@
 
 <p>Replace each sub-expression that you are not manipulating with a symbol that stands for it. Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it. Every other line shows the symbol.</p>
 <p>This is one case of <a href="#/making-expressions-concise">making each expression as concise as possible</a>. It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or <a href="#/using-shared-macros">shared macro</a> that names its concept.</p>
-<p>Choose the symbol to match the thing it names. For the population mean <span class="math inline">\(\E{X}\)</span>, write <span class="math inline">\(\mu\)</span>. Add a subscript, such as <span class="math inline">\(\mu_X\)</span>, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let <span class="math inline">\(\mu = \E{X}\)</span>”, before the first line that uses the symbol.</p>
+<p>Choose the symbol to match the thing it names. For the <a href="../chapters/defining-terms.html#def-population">population</a> mean <span class="math inline">\(\E{X}\)</span>, write <span class="math inline">\(\mu\)</span>. Add a subscript, such as <span class="math inline">\(\mu_X\)</span>, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let <span class="math inline">\(\mu = \E{X}\)</span>”, before the first line that uses the symbol.</p>
 <div id="exm-abstract-unused-subexpressions" class="theorem example">
-<p><span class="theorem-title"><strong>Example 22 (Abstracting the population mean)</strong></span> Suppose a derivation expands the variance of a random variable <span class="math inline">\(X\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 22 (Abstracting the population mean)</strong></span> Suppose a derivation expands the <a href="../chapters/defining-terms.html#def-variance-expression-and-prose">variance</a> of a random variable <span class="math inline">\(X\)</span>.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -760,7 +763,7 @@
 <p>The rules that follow are cases of this principle:</p>
 <ul>
 <li>The predictor matrix and the design matrix are different objects, so they get different symbols.</li>
-<li>The mean function is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(\predfn\)</span>.</li>
+<li>The mean <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(\predfn\)</span>.</li>
 <li>The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.</li>
 <li>A reference formula is a general statement, so it is written in its general form, not for one example.</li>
 </ul>
@@ -808,12 +811,12 @@
 </section>
 <section class="slide level2">
 
-<p>Write the mean function as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(\predfn\)</span>. The mean function is the population mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
+<p>Write the mean <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(\predfn\)</span>. The mean function is the <a href="../chapters/defining-terms.html#def-population">population</a> mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
 <p>Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it <code>\epredfnf{x}</code> (symbol <span class="math inline">\(\epredfn\)</span>) for an estimated one, or <code>\predfnf{x}</code> (symbol <span class="math inline">\(\predfn\)</span>) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function <span class="math inline">\(\truemean\)</span> itself.</p>
 <div id="exm-mean-vs-prediction-function" class="theorem example">
 <p><span class="theorem-title"><strong>Example 26 (Mean function and fitted prediction function)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ The expected squared error of the fitted mean function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{(y - \hat{f}(x))^2}\)</span>.</p>
+<p>❌ The expected squared error of the fitted mean function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{(y - \hat{f}(x))^2}\)</span>. <!-- check-term-links: allow --></p>
 <p>✅ The expected squared error of the fitted prediction function at <span class="math inline">\(x\)</span> is <span class="math inline">\(\E{\paren{\outvar - \epredfnf{x}}^2}\)</span>, and its bias is <span class="math inline">\(\E{\epredfnf{x}} - \truemeanf{x}\)</span>.</p>
 </blockquote>
 <p>The ✅ version names the fitted prediction function where the concept is a prediction, and keeps <span class="math inline">\(\truemean\)</span> for the mean it is compared with.</p>
@@ -860,7 +863,7 @@
 <li>An assumptions list states conditions that the result depends on. Write it as a bullet list under “Assume:”.</li>
 <li>A notation list names objects. Write it as a bullet list under “Let:”.</li>
 </ul>
-<p>A condition that can fail is an assumption. A parametrization is not: it writes a quantity in terms of named parameters or pieces, so it holds by definition and goes under “Let:”. Do not label a parametrization as an assumption, because that tells the reader a condition is being imposed when none is.</p>
+<p>A condition that can fail is an assumption. A parametrization is not: it writes a quantity in terms of named parameters or pieces, <!-- check-term-links: allow --> so it holds by definition and goes under “Let:”. Do not label a parametrization as an assumption, because that tells the reader a condition is being imposed when none is.</p>
 <p>Write the lead-in word once, before the list, and make each bullet complete the lead-in sentence. Do not repeat the word in every bullet, and do not mix the two kinds of list in one list. When both are needed, write the notation list first, because the assumptions use the names it introduces.</p>
 <div id="exm-assumptions-first" class="theorem example">
 <p><span class="theorem-title"><strong>Example 28 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
@@ -888,7 +891,7 @@ f(x) - f(2)
 <div id="exm-assumptions-bullet-list" class="theorem example">
 <p><span class="theorem-title"><strong>Example 29 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Assume the sample size <span class="math inline">\(n\)</span> is larger than <span class="math inline">\(30\)</span>. Assume the observations are independent. Assume the population variance <span class="math inline">\(\sigma^2\)</span> is finite.</p>
+<p>❌ Assume the sample size <span class="math inline">\(n\)</span> is larger than <span class="math inline">\(30\)</span>. Assume the observations are independent. Assume the population variance <span class="math inline">\(\sigma^2\)</span> is finite. <!-- check-term-links: allow --></p>
 <p>✅ Assume:</p>
 <ul>
 <li>the sample size <span class="math inline">\(n\)</span> is larger than <span class="math inline">\(30\)</span>,</li>
@@ -901,7 +904,7 @@ f(x) - f(2)
 <div id="exm-notation-bullet-list" class="theorem example">
 <p><span class="theorem-title"><strong>Example 30 (Writing several names as one list)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Let <span class="math inline">\(n\)</span> be the sample size. Let <span class="math inline">\(\bar{y}\)</span> be the sample mean. Let <span class="math inline">\(s\)</span> be the sample standard deviation.</p>
+<p>❌ Let <span class="math inline">\(n\)</span> be the sample size. Let <span class="math inline">\(\bar{y}\)</span> be the sample mean. <!-- check-term-links: allow --> Let <span class="math inline">\(s\)</span> be the sample standard deviation.</p>
 <p>✅ Let:</p>
 <ul>
 <li><span class="math inline">\(n\)</span> be the sample size,</li>
@@ -917,7 +920,7 @@ f(x) - f(2)
 <p>❌ Assume:</p>
 <ul>
 <li>the outcome variable is <span class="math inline">\(\Outvar = \truemeanf{\predvar} + \noise\)</span>, and</li>
-<li>the noise variable <span class="math inline">\(\noise\)</span> has population mean <span class="math inline">\(0\)</span>.</li>
+<li>the noise variable <span class="math inline">\(\noise\)</span> has population mean <span class="math inline">\(0\)</span>. <!-- check-term-links: allow --></li>
 </ul>
 <p>✅ Let:</p>
 <ul>

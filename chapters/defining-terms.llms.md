@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -175,7 +175,7 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Example 10 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the fitted value of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a function of the two coefficients:
+> **Example 10 (Residual sum of squares of a straight line)** For a straight line with intercept \\\beta_0\\ and slope \\\beta_x\\, the [fitted value](../chapters/notation.llms.md#def-fitted-value) of observation \\i\\ is \\\beta_0 + \beta_x x_i\\, so the residual sum of squares ([Definition 5](#def-rss)) is a [function](https://morrison-lab.github.io/mds/functions.html#def-function) of the two coefficients:
 >
 > \\ \text{RSS}(\beta_0, \beta_x) = \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2. \\
 
@@ -185,7 +185,7 @@ When a concept has special cases, write the general definition first and compact
 
 > **NOTE:**
 >
-> **Example 12 (A sum of squares that is not a residual sum of squares)** For the same three points, the sum of squared deviations of \\y_i\\ from their mean, \\5/3\\, is \\2/3\\. That quantity is the total sum of squares, not the residual sum of squares ([Definition 5](#def-rss)) of the line in [Example 11](#exm-rss-three-points), because it measures spread around the mean rather than around the line’s fitted values.
+> **Example 12 (A sum of squares that is not a residual sum of squares)** For the same three points, the sum of squared deviations of \\y_i\\ from their mean, \\5/3\\, is \\2/3\\. That quantity is the total sum of squares, not the residual sum of squares ([Definition 5](#def-rss)) of the line in [Example 11](#exm-rss-three-points), because it measures spread around the mean rather than around the line’s [fitted value](../chapters/notation.llms.md#def-fitted-value)s.
 
 The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.
 

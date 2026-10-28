@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 > **NOTE:**
 >
@@ -26,7 +26,15 @@ Two habits make these clauses easier to read: choosing between *that* and *which
 
 ### 1.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
 
-Use *that* for a **restrictive** clause — one that identifies which thing you mean, and that cannot be removed without changing the meaning of the sentence. Use *which*, set off by commas, for a **non-restrictive** clause — one that adds information the reader does not need in order to know which thing you mean.
+> **NOTE:**
+>
+> **Definition 1 (Restrictive clause)** A **restrictive clause** is a relative clause that identifies which thing you mean, and that cannot be removed without changing the meaning of the sentence.
+
+> **NOTE:**
+>
+> **Definition 2 (Non-restrictive clause)** A **non-restrictive clause** is a relative clause that adds information the reader does not need in order to know which thing you mean.
+
+Use *that* for a [restrictive clause](#def-restrictive-clause). Use *which*, set off by commas, for a [non-restrictive clause](#def-non-restrictive-clause).
 
 > **NOTE:**
 >
@@ -156,7 +164,7 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 > > 3.  In technical writing, a common cause of garden-path parsing is a clause that describes a noun but has lost its opening *that* or *that were*.
 > > 4.  A common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
 >
-> Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second term for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
+> Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second [term](../chapters/defining-terms.llms.md#def-term) for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
 
 ## 6 Appositive fronting
 

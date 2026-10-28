@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 00:37:47 (PDT)
+Last modified: 2026-10-28 00:45:54 (PDT)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -67,7 +67,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Draw a tree (a parse tree, decision tree, dendrogram, or any other hierarchy) as a diagram figure, not only as nested bullets. A nested list hides how the branches relate and makes a reader count indentation to find a node’s parent. Keep the list too when it adds information the diagram lacks. Draw the diagram from the tree’s data and fill leaves and internal nodes differently, with the legend at the bottom. Wrap the diagram in a `#fig-` div with a caption, and set alt text that reads out the structure with `fig-alt`. The [Morrison-Lab/gha](https://github.com/Morrison-Lab/gha) check `check-tree-lists` flags a pull request that adds a definition, example, or other labeled div that mentions a tree, holds a list nested three or more levels deep, and has no figure; a `<!-- no-tree-figure: reason -->` comment inside the div exempts it.
 - Minimize abbreviations in labels and legends.
 - Use transparency to show overlapping data.
-- Show measures of precision, such as 95% confidence intervals.
+- Show measures of precision, such as 95% [confidence interval](../chapters/defining-terms.llms.md#def-confidence-interval)s.
 
 For more:
 
@@ -76,7 +76,7 @@ For more:
 
 ## 5 Three-dimensional graphs
 
-A function of two variables, such as a loss or a residual sum of squares as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
+A [function](https://morrison-lab.github.io/mds/functions.html#def-function) of two variables, such as a loss or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
 
 - Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
 - Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
