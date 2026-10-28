@@ -11,8 +11,8 @@ Encoding: UTF-8
 Language: en-US
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/d-morrison/psw, https://d-morrison.github.io/psw/
-BugReports: https://github.com/d-morrison/psw/issues
+URL: https://github.com/Morrison-Lab/psw, https://morrison-lab.github.io/psw/
+BugReports: https://github.com/Morrison-Lab/psw/issues
 Depends:
     R (>= 4.1.0)
 Imports:
