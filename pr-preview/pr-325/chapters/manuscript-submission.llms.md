@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-25 22:11:55 (PDT)
+Last modified: 2026-10-27 20:05:14 (PDT)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -117,7 +117,7 @@ Write two to four sentences that the data support, with no new results.
 
 ## 5 Reporting guidelines
 
-Find the guideline for the study design on the [EQUATOR Network](https://www.equator-network.org/), follow it while writing, and submit the completed checklist if the journal asks for it. [Table 1](#tbl-reporting-guidelines) lists the common ones. Check the EQUATOR page for the current version before citing one.
+Find the guideline for the study design on the [EQUATOR Network](https://equator-network.org/) website, which catalogs reporting guidelines for health research ([Simera et al. 2010](#ref-simera2010catalogue)). Follow the guideline while writing, and submit the completed checklist if the journal asks for it. [Table 1](#tbl-reporting-guidelines) lists the common guidelines. Check the EQUATOR Network website for the current version of a guideline before citing it.
 
 | Design | Guideline |
 |----|----|
@@ -264,3 +264,7 @@ A document that renders without errors is not ready to submit. The first item is
 16. The cover letter is drafted. It states the question, the main finding, why this journal, that the work is not under consideration elsewhere, and any suggested or excluded reviewers.
 
 Back to top
+
+## References
+
+Simera, Iveta, David Moher, John Hoey, Kenneth F. Schulz, and Douglas G. Altman. 2010. “A Catalogue of Reporting Guidelines for Health Research.” *European Journal of Clinical Investigation* 40 (1): 35–53. <https://doi.org/10.1111/j.1365-2362.2009.02234.x>.
