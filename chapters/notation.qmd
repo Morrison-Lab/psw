@@ -61,6 +61,22 @@ that make quantitative writing easier to read.
 
 {{< include notation/dot-products.qmd >}}
 
+## Using the notation that best represents the concept
+
+{{< include notation/best-notation-for-the-concept.qmd >}}
+
+## Writing the predictor and design matrices
+
+{{< include notation/predictor-and-design-matrices.qmd >}}
+
+## Stating formulas in their general form
+
+{{< include notation/general-form-formulas.qmd >}}
+
+## Writing the mean function and the prediction function
+
+{{< include notation/mean-and-prediction-functions.qmd >}}
+
 ## Writing out notational shorthands
 
 {{< include notation/notational-shorthands.qmd >}}
