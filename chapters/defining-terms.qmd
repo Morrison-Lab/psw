@@ -17,7 +17,7 @@ format:
 :::
 
 Clear definitions are essential to effective scientific writing.
-Every specialized term should have an explicit,
+Every specialized [term](#def-term) should have an explicit,
 concise definition before its first use.
 Readers should not need to search for the meaning of a term
 or infer it from context alone. For example:
@@ -97,7 +97,7 @@ or any other set of items of interest.
 
 ## Guidelines for defining terms
 
-Follow these principles when introducing new terms:
+Follow these principles when introducing new [term](#def-term)s:
 
 - **Provide explicit definitions:**
   State clearly what a term means,
@@ -140,7 +140,7 @@ Follow these principles when introducing new terms:
 - **Define a statistical model by its distribution, and derive its other forms:**
   Define a regression model by the distribution of the outcome
   conditional on the covariates,
-  centered on a named mean function.
+  centered on a named mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
   For example, define simple linear regression as
   $Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)$, independently,
   with $\mu_i := \mu(x_i)$ and $\mu(x) := \beta_0 + \beta_x x$.
@@ -157,8 +157,8 @@ Follow these principles when introducing new terms:
   Define a shorthand symbol directly from the objects it summarizes,
   then prove any equivalent form as a result.
   For example, with deviations $\delta_i := y_i - \mu$
-  from the population mean $\mu$,
-  define the sample mean of the deviations as
+  from the [population](#def-population) mean $\mu$,
+  define the [sample mean](#def-sample-mean) of the deviations as
 
   $$\bar{\delta} := \frac{1}{n} \sum_{i=1}^n \delta_i,$$
 
@@ -400,7 +400,7 @@ Follow these principles when introducing new terms:
   every word that names the concept is an alternative name,
   and each is treated exactly as the primary name:
   put all of them in the div title as a comma-separated list,
-  with the primary name first, as in "Postulate, axiom",
+  with the primary name first, as in "Postulate, axiom", <!-- check-term-links: allow -->
   and bold each where it first appears in the definition.
   Do not use parentheses or a phrase such as "also called" in the title.
   This covers the names other sources use, such as a textbook's,
@@ -491,7 +491,7 @@ Follow these principles when introducing new terms:
   A term that already carries all three, such as the generalization error, can stand alone after its definition.
 
 - **Make the fitted model the subject, not the fitting procedure:**
-  A prediction, an error, a bias and a variance
+  A prediction, an error, a bias and a [variance](#def-variance-expression-and-prose)
   are all properties of fitted models, so a sentence about them has a fitted model as its subject,
   and a choice among candidates is a choice among fitted models.
   Write "the fitted model predicts", "the prediction of the fitted model at $\predvar$",
@@ -590,7 +590,7 @@ Follow these principles when introducing new terms:
 
 ## Examples of term definitions
 
-Here are examples of well-defined terms:
+Here are examples of well-defined [term](#def-term)s:
 
 ::: {#def-confidence-interval}
 
@@ -665,7 +665,7 @@ then one example block per special case,
 ordered from the most general to the most specific.
 Put any commentary in a remark block after them.
 When the special cases have their own definitions,
-define the general concept first from prerequisite terms defined before it,
+define the general concept first from prerequisite [term](#def-term)s defined before it,
 and then define the special cases after it.
 Do not define the general concept by listing the special-case definitions that follow it,
 or move the general definition after its special cases:
@@ -674,7 +674,7 @@ define the prerequisite terms first
 then define an interval as a subset of the real numbers between two bounds,
 possibly including one or both bounds,
 and then define closed, open and half-open intervals).
-For example, a statistics text that defines the residual sum of squares
+For example, a statistics text that defines the [residual sum of squares](#def-rss)
 would give these blocks, in this order:
 
 ::: {#def-rss}
@@ -736,14 +736,14 @@ once the reader knows what the definition covers.
 
 ## Give a defined quantity its expression and its prose reading
 
-When a term names a quantity with a mathematical form,
+When a [term](#def-term) names a quantity with a mathematical form,
 the definition states the expression
 and then reads it aloud in a prose sentence that says the same thing.
 The expression makes the definition exact.
 The prose reading lets the reader check that they understood it.
 The two must match
 (see [Make the prose say what the formula says](mathematical-writing.qmd#make-the-prose-say-what-the-formula-says)).
-A term with no mathematical form, such as active voice, keeps its prose definition alone.
+A term with no mathematical form, such as [active voice](#def-active-voice), keeps its prose definition alone.
 
 ::: {#def-variance-expression-and-prose}
 
@@ -792,7 +792,7 @@ Examples serve several crucial purposes:
 ## Common pitfalls to avoid
 
 - **Circular definitions:**
-  Do not define a term using the term itself.
+  Do not define a [term](#def-term) using the term itself.
   
   **Incorrect:**
   "Conciseness is the quality of being concise."
@@ -807,7 +807,7 @@ Examples serve several crucial purposes:
   Define it directly instead:
   "A new observation relative to a training set
   is a covariate value and an outcome
-  drawn from the same population as the training observations
+  drawn from the same [population](#def-population) as the training observations
   and independent of them."
 
 - **Vague definitions:**
@@ -832,7 +832,7 @@ Examples serve several crucial purposes:
 Mathematical theorems,
 lemmas,
 corollaries,
-and postulates should always include examples
+and [postulate](#def-postulate)s should always include examples
 that demonstrate their application.
 Abstract mathematical statements become more accessible
 when readers can see concrete instances.
