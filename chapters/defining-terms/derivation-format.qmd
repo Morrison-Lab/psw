@@ -41,7 +41,7 @@ Follow these principles:
   each can then be cited on its own,
   and each proof cites only the result it rests on.
 - **Start from the side that simplifies.**
-  When a derivation would add and subtract a term
+  When a derivation would add and subtract a term <!-- check-term-links: allow -->
   to turn one side into the other,
   start from the other side instead.
   Simplifying an expression needs only definitions and algebra,
@@ -150,7 +150,7 @@ and a derivation needs $Y_i = \mu_i + \varepsilon_i$.
 > \end{aligned}
 > $$
 
-The ❌ version's first line adds a term the reader has no reason to expect.
+The ❌ version's first line adds a term the reader has no reason to expect. <!-- check-term-links: allow -->
 The ✅ version starts from $\mu_i + \varepsilon_i$,
 which a definition expands,
 and every line after that rewrites or simplifies what is already there.
