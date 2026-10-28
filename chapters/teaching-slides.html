@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 14:23:41 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 14:35:19 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -416,15 +416,30 @@
 <p>The ✅ version lets a later chapter link to the penalty alone, and each piece fits on a slide.</p>
 </div>
 </section>
-<section id="give-each-questions-answer-its-own-paragraph" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> Give each question’s answer its own paragraph</h2>
+<section id="say-what-a-yes-or-no-answer-means" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Say what a yes-or-no answer means</h2>
+</section>
+<section class="slide level2">
+
+<p>Follow a “Yes” or “No” with what the answer means in the words of the question, as in “No: it’s not possible that the advanced network has a test error of 0.25,” not a bare “No.” (Ezra, 2026-10-28). A reader who sees only the first line then still knows what the answer claims, and a bare “No.” leaves open what is being denied. The rule covers solutions, worked examples and any other answer to a question.</p>
+<div id="exm-yes-no-conclusion" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Saying what a “No” means)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ No.&nbsp;The irreducible error is a lower bound on the expected squared prediction error.</p>
+<p>✅ No: it’s not possible that the advanced network has a test error of 0.25. The irreducible error is a lower bound on the expected squared prediction error.</p>
+</blockquote>
+<p>The ✅ version states the conclusion in the question’s own words, so the reasons that follow support a claim the reader has already seen.</p>
+</div>
+</section>
+<section id="give-each-questions-answer-its-own-paragraph" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Give each question’s answer its own paragraph</h2>
 </section>
 <section class="slide level2">
 
 <p>When a prompt asks several questions, answer each one in its own paragraph, or in several paragraphs if it needs them (Ezra, 2026-10-28). A solution to “Which model underfits, which overfits most, and which would you choose?” has one paragraph for the underfitting model, one for the overfitting model and one for the choice. A reader looking for one answer then finds it without reading the others. No automated check enforces this rule, because a script cannot tell how many questions a prompt asks.</p>
 </section>
-<section id="give-each-defined-term-its-own-div" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Give each defined term its own div</h2>
+<section id="give-each-defined-term-its-own-div" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Give each defined term its own div</h2>
 </section>
 <section class="slide level2">
 
@@ -437,30 +452,30 @@
 </ul>
 <p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>
-<section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> State the notation and its alternatives</h2>
+<section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> State the notation and its alternatives</h2>
 </section>
 <section class="slide level2">
 
 <p>When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write <span class="math inline">\(\mathbb{N}_0\)</span> or <span class="math inline">\(\mathbb{N}^+\)</span> to make the choice explicit.</p>
 </section>
-<section id="lead-with-the-simplest-correct-form-of-a-definition" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Lead with the simplest correct form of a definition</h2>
+<section id="lead-with-the-simplest-correct-form-of-a-definition" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Lead with the simplest correct form of a definition</h2>
 </section>
 <section class="slide level2">
 
 <p>Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define <a href="../chapters/defining-terms.html#def-variance-expression-and-prose">variance</a> as the mean squared deviation <span class="math inline">\(\operatorname{E}\left[\operatorname{devn}(X)^2\right]\)</span>, where <span class="math inline">\(\operatorname{devn}(X) = X - \operatorname{E}[X]\)</span>, and then prove that it equals <span class="math inline">\(\operatorname{E}[X^2] - (\operatorname{E}[X])^2\)</span>.</p>
 <p>Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.</p>
 </section>
-<section id="reuse-one-written-version-of-each-result" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Reuse one written version of each result</h2>
+<section id="reuse-one-written-version-of-each-result" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Reuse one written version of each result</h2>
 </section>
 <section class="slide level2">
 
 <p>When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.</p>
 </section>
-<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Use real data and compute every number</h2>
+<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Use real data and compute every number</h2>
 </section>
 <section class="slide level2">
 
@@ -471,7 +486,7 @@
 <li>Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.</li>
 </ul>
 <div id="exm-show-data-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Showing the data at first mention)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Showing the data at first mention)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance and the loss we will minimize. Slide 10 shows a table of the first rows.</p>
 <p>✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance and the loss, and refer back to that table and plot.</p>
@@ -479,8 +494,8 @@
 <p>The ✅ version lets every later slide refer to something the reader has already seen.</p>
 </div>
 </section>
-<section id="store-structured-data-in-structured-formats" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Store structured data in structured formats</h2>
+<section id="store-structured-data-in-structured-formats" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Store structured data in structured formats</h2>
 </section>
 <section class="slide level2">
 
@@ -493,8 +508,8 @@
 <li>A short list that no other page reads can stay as prose.</li>
 </ul>
 </section>
-<section id="show-each-idea-applied-and-in-a-figure" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Show each idea applied and in a figure</h2>
+<section id="show-each-idea-applied-and-in-a-figure" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Show each idea applied and in a figure</h2>
 </section>
 <section class="slide level2">
 
@@ -509,8 +524,8 @@
 <li>Make each figure follow the accessibility rules below.</li>
 </ul>
 </section>
-<section id="follow-every-example-with-an-exercise-and-solution" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Follow every example with an exercise and solution</h2>
+<section id="follow-every-example-with-an-exercise-and-solution" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Follow every example with an exercise and solution</h2>
 </section>
 <section class="slide level2">
 
@@ -523,7 +538,7 @@
 <li>Give the practice exercise its own slug and follow the numbering and slide-break rules above.</li>
 </ul>
 <div id="exm-practice-after-example" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
 <blockquote>
 <p>✅</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a>::: {#exm-sample-mean}</span>
@@ -541,8 +556,8 @@
 <p>The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see <a href="#/use-real-data-and-compute-every-number">Use real data and compute every number</a>).</p>
 </div>
 </section>
-<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Write labs for both languages and any computer</h2>
+<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Write labs for both languages and any computer</h2>
 </section>
 <section class="slide level2">
 
@@ -558,8 +573,8 @@
 <li>Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.</li>
 </ul>
 </section>
-<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
+<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
 </section>
 <section class="slide level2">
 
@@ -578,8 +593,8 @@
 <li>Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than <code>None</code> and shows the chunk as one code block per printed value, such as a <code>&lt;matplotlib.lines.Line2D object at 0x...&gt;</code> line after every <code>ax.plot(...)</code>. End each such call with a semicolon, or assign its value.</li>
 </ul>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Present R results with modern packages</h2>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -593,8 +608,8 @@
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -611,8 +626,8 @@
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -624,8 +639,8 @@
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -637,8 +652,8 @@
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
+<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
 </section>
 <section class="slide level2">
 
@@ -651,8 +666,8 @@
 </ul>
 <p>For example, a chunk that fits a model the text walks through and prints its coefficients is <code>false</code>, a chunk that draws a figure the text discusses is <code>show</code>, and a chunk that loads a package or builds an object that later chunks use is <code>true</code>.</p>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -664,8 +679,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -676,8 +691,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -691,8 +706,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -705,7 +720,7 @@
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -713,8 +728,8 @@
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -726,8 +741,8 @@
 </ul>
 <p>Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.</p>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -741,7 +756,7 @@
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
@@ -757,8 +772,8 @@
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -769,8 +784,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
