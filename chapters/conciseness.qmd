@@ -186,6 +186,35 @@ For example, if "CI" could mean confidence interval or cumulative incidence <!--
 in the same paper,
 say which one you mean each time.
 
+A contrast you keep must not be a straw man.
+Say who holds the confusing reading, and cite a source that shows it,
+so the reader sees why the alternative needs ruling out.
+A bare "not X" leaves the reader to guess
+whether anyone reads the term as X. <!-- check-term-links: allow -->
+If you cannot find a source or a reader who holds the reading,
+the contrast fails the test above, so remove it.
+
+::: {#exm-fleshed-out-contrast}
+
+## Explaining the contrast, or dropping it
+
+> ❌ Statistics uses "predictor" for a feature, not for a model.
+>
+> ✅ Statistics uses "predictor" for a feature.
+> Some machine learning texts use the same word for a fitted prediction function: <!-- check-term-links: allow -->
+> Hastie, Tibshirani and Friedman call the averaged forest function
+> "the random forest (regression) predictor"
+> [@hastie2009esl, equation 15.2].
+> In these notes, "predictor" always means a feature.
+
+The first version rules out a reading without saying that anyone holds it.
+The second shows that the reading exists, with a source,
+and says which meaning the text uses.
+If no text used the word that way,
+the right revision would be to delete the clause "not for a model".
+
+:::
+
 The same test applies to explanations:
 explain what your intended readers do not already know,
 and leave out what they do.
