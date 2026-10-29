@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 18:26:29 (PDT)
+Last modified: 2026-10-28 18:32:23 (PDT)
 
 > **NOTE:**
 >
@@ -564,7 +564,21 @@ Name the object you mean. When the text refers to the fitted prediction function
 >
 > The ✅ version names the fitted prediction function where the concept is a prediction, and keeps \\\truemean\\ for the mean it is compared with.
 
-## 16 Writing out notational shorthands
+## 16 Writing the log-odds
+
+Use \\\logodds\\ (the Greek letter eta) for the log-odds, not \\z\\ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, \\\logodds\\” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
+
+> **NOTE:**
+>
+> **Example 27 (Argument of the logistic function)**  
+>
+> > ❌ The logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function) is \\\sigma(z) = 1 / (1 + e^{-z})\\, evaluated at the log-odds \\z\\.
+> >
+> > ✅ The logistic function is \\\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}\\, evaluated at the log-odds \\\logodds\\.
+>
+> The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen \\\logodds\\ elsewhere recognizes it here.
+
+## 17 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
 
@@ -574,7 +588,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 27 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 28 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
 >
 > > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
 > >
@@ -588,7 +602,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
 
-## 17 Stating assumptions before using them
+## 18 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -612,7 +626,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 28 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 29 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
 >
 > > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
 > >
@@ -622,7 +636,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 29 (Writing several assumptions as one list)**  
+> **Example 30 (Writing several assumptions as one list)**  
 >
 > > ❌ Assume the sample size \\n\\ is larger than \\30\\. Assume the observations are independent. Assume the population variance \\\sigma^2\\ is finite.
 > >
@@ -636,7 +650,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 30 (Writing several names as one list)**  
+> **Example 31 (Writing several names as one list)**  
 >
 > > ❌ Let \\n\\ be the sample size. Let \\\bar{y}\\ be the sample mean. Let \\s\\ be the sample standard deviation.
 > >
@@ -650,7 +664,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 31 (Defining the noise is a parametrization, not an assumption)**  
+> **Example 32 (Defining the noise is a parametrization, not an assumption)**  
 >
 > > ❌ Assume:
 > >

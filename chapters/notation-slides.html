@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 18:26:29 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 18:32:23 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -822,8 +822,23 @@
 <p>The ✅ version names the fitted prediction function where the concept is a prediction, and keeps <span class="math inline">\(\truemean\)</span> for the mean it is compared with.</p>
 </div>
 </section>
-<section id="writing-out-notational-shorthands" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Writing out notational shorthands</h2>
+<section id="writing-the-log-odds" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Writing the log-odds</h2>
+</section>
+<section class="slide level2">
+
+<p>Use <span class="math inline">\(\logodds\)</span> (the Greek letter eta) for the log-odds, not <span class="math inline">\(z\)</span> or another letter. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\logodds</code>. Use it wherever the quantity is the log-odds, including the argument of the logistic <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>, so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, <span class="math inline">\(\logodds\)</span>” (see <a href="../chapters/slides-posters-figures.html#sec-scientific-figures">Scientific figures</a>).</p>
+<div id="exm-log-odds-symbol" class="theorem example">
+<p><span class="theorem-title"><strong>Example 27 (Argument of the logistic function)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The logistic <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> is <span class="math inline">\(\sigma(z) = 1 / (1 + e^{-z})\)</span>, evaluated at the log-odds <span class="math inline">\(z\)</span>.</p>
+<p>✅ The logistic function is <span class="math inline">\(\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}\)</span>, evaluated at the log-odds <span class="math inline">\(\logodds\)</span>.</p>
+</blockquote>
+<p>The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen <span class="math inline">\(\logodds\)</span> elsewhere recognizes it here.</p>
+</div>
+</section>
+<section id="writing-out-notational-shorthands" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Writing out notational shorthands</h2>
 </section>
 <section class="slide level2">
 
@@ -831,7 +846,7 @@
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
 <p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
-<p><span class="theorem-title"><strong>Example 27 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="theorem-title"><strong>Example 28 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>
 <p>❌ <span class="math inline">\(\text{E}[X] = \sum_x x \Pr(X = x)\)</span></p>
 <p>✅ <span class="math inline">\(\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)\)</span></p>
@@ -844,8 +859,8 @@
 <p>Each full form tells the reader the set the operator runs over: the values <span class="math inline">\(X\)</span> can take, and the indices of the <span class="math inline">\(n\)</span> observations.</p>
 </div>
 </section>
-<section id="stating-assumptions-before-using-them" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Stating assumptions before using them</h2>
+<section id="stating-assumptions-before-using-them" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Stating assumptions before using them</h2>
 </section>
 <section class="slide level2">
 
@@ -866,7 +881,7 @@
 <p>A condition that can fail is an assumption. A parametrization is not: it writes a quantity in terms of named parameters or pieces, <!-- check-term-links: allow --> so it holds by definition and goes under “Let:”. Do not label a parametrization as an assumption, because that tells the reader a condition is being imposed when none is.</p>
 <p>Write the lead-in word once, before the list, and make each bullet complete the lead-in sentence. Do not repeat the word in every bullet, and do not mix the two kinds of list in one list. When both are needed, write the notation list first, because the assumptions use the names it introduces.</p>
 <div id="exm-assumptions-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 28 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
+<p><span class="theorem-title"><strong>Example 29 (Stating the restriction on <span class="math inline">\(x\)</span> before using it)</strong></span> To show that <span class="math inline">\(x = 2\)</span> is a strict local minimizer of <span class="math inline">\(f(x) = (x - 2)^2\)</span>, we show that <span class="math inline">\(f(x) &gt; f(2)\)</span> for every <span class="math inline">\(x\)</span> near 2 other than 2 itself.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -889,7 +904,7 @@ f(x) - f(2)
 <p>In the ❌ version, the second line is false for <span class="math inline">\(x = 2\)</span>, and the reader learns this only from the note at its end. In the ✅ version, “let <span class="math inline">\(x \neq 2\)</span>” comes first, so the reader reads each line already knowing which values of <span class="math inline">\(x\)</span> it covers, and the justification says exactly where the condition is used.</p>
 </div>
 <div id="exm-assumptions-bullet-list" class="theorem example">
-<p><span class="theorem-title"><strong>Example 29 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 30 (Writing several assumptions as one list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Assume the sample size <span class="math inline">\(n\)</span> is larger than <span class="math inline">\(30\)</span>. Assume the observations are independent. Assume the population variance <span class="math inline">\(\sigma^2\)</span> is finite. <!-- check-term-links: allow --></p>
 <p>✅ Assume:</p>
@@ -902,7 +917,7 @@ f(x) - f(2)
 <p>The ✅ version writes “Assume” once, and the bullets show that the three assumptions are parallel and separate.</p>
 </div>
 <div id="exm-notation-bullet-list" class="theorem example">
-<p><span class="theorem-title"><strong>Example 30 (Writing several names as one list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 31 (Writing several names as one list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Let <span class="math inline">\(n\)</span> be the sample size. Let <span class="math inline">\(\bar{y}\)</span> be the sample mean. <!-- check-term-links: allow --> Let <span class="math inline">\(s\)</span> be the sample standard deviation.</p>
 <p>✅ Let:</p>
@@ -915,7 +930,7 @@ f(x) - f(2)
 <p>These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size <span class="math inline">\(n\)</span> larger than <span class="math inline">\(30\)</span>, a separate assumptions list after this one would state it.</p>
 </div>
 <div id="exm-parametrization-is-notation" class="theorem example">
-<p><span class="theorem-title"><strong>Example 31 (Defining the noise is a parametrization, not an assumption)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 32 (Defining the noise is a parametrization, not an assumption)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Assume:</p>
 <ul>
