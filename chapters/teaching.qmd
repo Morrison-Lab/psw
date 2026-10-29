@@ -83,6 +83,15 @@ Pose each task as an exercise, give students time to try it, and then show the s
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
 - Put a hint in a callout titled "Hint" inside the exercise div,
   not in italic text.
+- Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29).
+  Whatever the title tells the reader about the object, the body also says:
+  name the object, link its definition, and say where it arises and what it is used for.
+  For a title such as "Maximizing a gamma-family kernel",
+  the body says what a gamma distribution and its kernel are,
+  and that maximizing the kernel finds the mode without computing the normalizing constant.
+  A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care.
+  The first exercise of a split series carries the background,
+  and each later exercise begins by citing it, as the splitting rule above says.
 
 ::: {#exm-exercise-before-definition}
 
