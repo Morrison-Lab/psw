@@ -1,0 +1,18 @@
+Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter.
+In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
+write it `\logodds`.
+Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function),
+so that the same quantity has one symbol in every chapter and figure.
+Label a figure axis that shows it "Log-odds, $\logodds$" (see [Scientific figures](slides-posters-figures.qmd#sec-scientific-figures)).
+
+::: {#exm-log-odds-symbol}
+
+## Argument of the logistic function
+
+> ❌ The logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
+>
+> ✅ The logistic function is $\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}$, evaluated at the log-odds $\logodds$.
+
+The ✅ version uses the lab's symbol for the log-odds, so a reader who has seen $\logodds$ elsewhere recognizes it here.
+
+:::
