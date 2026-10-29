@@ -333,7 +333,8 @@ The same source renders as a web page, a slide deck and a handout,
 and each format orders and breaks the content differently,
 so "above" can point at nothing, or at the wrong thing.
 Style guides advise "earlier" or "preceding" and "later" or "following"
-for a position in a document [@google2025style, entry "above"; @google2025style, entry "below"].
+for a position in a document
+[@google2025style, entry "above"; @google2025style, entry "below"].
 Prefer the label of the result, figure, table or section,
 because a label tells the reader what to find
 and survives a reordering.
