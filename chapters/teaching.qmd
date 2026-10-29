@@ -766,6 +766,32 @@ and lets a script check that the points sum to the total.
 - Where the book is the subject rather than its authors, name the book by its title,
   because a bare citation key renders as the author list.
 
+## Finish each unit completely
+
+Complete each sentence, step, [term](defining-terms.qmd#def-term), result and exercise,
+and do not leave part of it implied, merged into a neighbor, or half done.
+A reader should never have to finish a unit for you.
+Several rules in this guide are cases of this one:
+
+- **Sentence.**
+  Write each sentence [in words or in math, not both](mathematical-writing.qmd#write-each-sentence-in-words-or-in-math-not-both),
+  so a hybrid becomes one complete sentence of each kind.
+- **Step.**
+  Give each operation [its own line and justification](notation/one-operation-per-step.qmd),
+  and do not "cancel" several operations as one step.
+- **Term.** <!-- check-term-links: allow -->
+  [Give each defined term its own div](#give-each-defined-term-its-own-div),
+  and keep equalities and equivalences out of the definition by stating them as results.
+- **Result.**
+  [Restate a result](#build-the-lecture-from-exercises-and-solutions) first derived in a solution as a theorem after the exercise,
+  so the result stands alone.
+- **Exercise.**
+  [Split an exercise with several parts](#build-the-lecture-from-exercises-and-solutions),
+  so each exercise asks for one thing.
+
+When you catch yourself taking a shortcut, finish the unit instead.
+A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
+
 ## Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
