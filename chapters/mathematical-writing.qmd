@@ -311,7 +311,7 @@ The `check-solution-citations` workflow covers only the citation of solutions.
 
 Halmos advises "avoid the use of irrelevant symbols"
 and states the rule in its showy form as "use no letter only once"
-[@halmos1970write, sec. 15].
+[@halmos1970write, section 15].
 A symbol that appears once, in the sentence that introduces it,
 adds a name for the reader to hold and nothing to use it for.
 Delete the symbol, or use it in the statement that needs it.
@@ -327,7 +327,7 @@ Delete the symbol, or use it in the statement that needs it.
 Nothing in the sentence refers to $f$ again,
 so the symbol contributes nothing to the statement.
 Halmos gives this sentence as his example
-[@halmos1970write, sec. 15].
+[@halmos1970write, section 15].
 
 :::
 
@@ -335,7 +335,7 @@ When you apply a displayed relation to a second object, name the relation or res
 Halmos calls "$g$ also satisfies (*)" "logical and alphabetical nonsense"
 and advises "(*) remains satisfied if $f$ is replaced by $g$",
 or, better, giving the relation a name
-[@halmos1970write, sec. 15].
+[@halmos1970write, section 15].
 A named relation also lets the reader find it without hunting for a tag.
 
 :::{#exm-name-the-relation}
@@ -366,16 +366,16 @@ When a later result treats a parallel or more general case,
 Halmos advises that "it is a big help to the reader
 if you use the same words in the same order for as long as possible,
 and then, with a proper roll of drums, emphasize the difference"
-[@halmos1970write, sec. 11].
+[@halmos1970write, section 11].
 He adds that listing the shared conditions and dropping one is not enough;
 say which condition changed
-[@halmos1970write, sec. 11].
+[@halmos1970write, section 11].
 
 :::{#exm-parallel-wording}
 
 ## Defining the lasso in the words of the ridge definition
 
-> ❌ The ridge estimate minimizes the residual sum of squares plus a penalty on the size of the coefficients, which is the sum of their squares.
+> ❌ The ridge estimate minimizes the [residual sum of squares](defining-terms.qmd#def-rss) plus a penalty on the size of the coefficients, which is the sum of their squares.
 > The lasso estimate is the vector of coefficients with the smallest penalized fit, where the penalty adds up the absolute values.
 >
 > ✅ The ridge estimate minimizes the residual sum of squares plus a penalty equal to the sum of the squared coefficients.
