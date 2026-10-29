@@ -150,14 +150,14 @@ Do not give a mathematical object a mind.
 A derivative does not "recommend" a direction,
 a model does not "know" or "want" anything,
 and an approximation is not "trustworthy".
-Each such phrase hides a precise claim, and the claim is what the reader needs.
+Each such phrase hides a precise claim, and the reader needs that claim stated plainly.
 State the condition under which the claim holds,
 with the inequality or the order of the error,
 and display it when it is a key equation.
 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
-> ✅ The [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) has error $o(\norm{\vh})$ as $\vh \to \vzero$,
+> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$,
 > so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Some single words cause a different problem.
