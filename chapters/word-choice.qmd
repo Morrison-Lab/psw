@@ -183,7 +183,7 @@ is a lemma left unextracted
 The `check-avoided-words` check in gha warns on
 a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain),
 [codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain),
-[range](https://morrison-lab.github.io/mds/functions.html#def-range) or sample space named by a bare capital letter or by "some",
+range or sample space named by a bare capital letter or by "some", <!-- check-term-links: allow -->
 such as "domain A" or "some range".
 It cannot tell whether a specific object exists,
 so a warning only asks you to check.
