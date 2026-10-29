@@ -83,6 +83,15 @@ Pose each task as an exercise, give students time to try it, and then show the s
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
 - Put a hint in a callout titled "Hint" inside the exercise div,
   not in italic text.
+- Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29).
+  Whatever the title tells the reader about the object, the body also says:
+  name the object, link its definition, and say where it arises and what it is used for.
+  For a title such as "Maximizing a gamma-family kernel",
+  the body says what a gamma distribution and its kernel are,
+  and that maximizing the kernel finds the mode without computing the normalizing constant.
+  A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care.
+  The first exercise of a split series carries the background,
+  and each later exercise begins by citing it, as the splitting rule above says.
 
 ::: {#exm-exercise-before-definition}
 
@@ -139,6 +148,16 @@ and an expression is written with the named pieces it is built from.
   (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A proof states the lemmas it needs and links to them,
   instead of deriving them in the middle of the argument.
+- Extract a lemma wherever feasible.
+  When a proof, solution or example states a general fact that does not depend on its setting,
+  such as $\E{Z^2} = \var{Z} + \sqf{\E{Z}}$ for any random variable $Z$,
+  give the fact its own lemma div before its first use,
+  and link to it from each place that uses it.
+  Put the lemma on the prerequisite site that owns the topic
+  ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)),
+  not in the course page that needs it.
+  Extract a lemma from a passage when you edit that passage anyway,
+  and do not sweep existing content.
 - A link replaces a repeated explanation.
   If a piece is already written, link to it instead of writing it a second time.
 
