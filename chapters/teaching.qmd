@@ -760,7 +760,7 @@ Several rules in this guide are cases of this one:
 - **Step.**
   Give each operation [its own line and justification](notation/one-operation-per-step.qmd),
   and do not "cancel" several operations as one step.
-- **Term.**
+- **Term.** <!-- check-term-links: allow -->
   [Give each defined term its own div](#give-each-defined-term-its-own-div),
   and keep equalities and equivalences out of the definition by stating them as results.
 - **Result.**
