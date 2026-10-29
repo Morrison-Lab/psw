@@ -117,10 +117,17 @@ the first states the result in words, and the second states it as a displayed fo
 
 ## Splitting a hybrid sentence
 
-> ❌ The reducible risk is zero if and only if $\P(\predfnf{\Predvar} = \E{\Outvar \mid \Predvar}) = 1$.
+> ❌ The reducible risk is zero if and only if $\P(\predfnf{\Predvar} \ne \E{\Outvar \mid \Predvar}) = 0$.
 >
-> ✅ The reducible risk is zero if and only if the prediction function equals the conditional mean with probability 1. <!-- check-term-links: allow -->
-> $$\E{\sqf{\E{\Outvar \mid \Predvar} - \predfnf{\Predvar}}} = 0 \iff \P(\predfnf{\Predvar} = \E{\Outvar \mid \Predvar}) = 1$$
+> ✅ The reducible risk is zero if and only if the prediction function differs from the conditional mean with probability 0. <!-- check-term-links: allow -->
+>
+> $$
+> \ba
+> \E{\sqf{\condE{\Outvar}{\Predvar} - \predfnf{\Predvar}}} &= 0
+> \\
+> \iff \Pf{\predfnf{\Predvar} \ne \condE{\Outvar}{\Predvar}} &= 0
+> \ea
+> $$
 
 The ❌ version puts the first condition in words and the second in math.
 The ✅ version says the result once in words and once in math.
