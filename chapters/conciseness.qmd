@@ -126,6 +126,42 @@ unless it sets a scope that the whole paragraph depends on.
 >
 > ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
+## Put the emphatic words at the end
+
+The end of a sentence is the position the reader remembers.
+Strunk states the rule as "Place the emphatic words of a sentence at the end"
+[@strunk1920elements, rule 18].
+Put the claim you want the reader to keep last,
+and put the qualifications, the citation and the filler before it.
+
+> ❌ The estimate becomes more precise as the sample size grows, in general.
+>
+> ✅ In general, the estimate becomes more precise as the sample size grows.
+
+## Express coordinate ideas in parallel form
+
+Items that play the same role in a sentence or a list
+take the same grammatical form.
+Strunk calls this parallel construction:
+"expressions of similar content and function should be" outwardly similar
+[@strunk1920elements, rule 15].
+In a bullet list,
+start every item the same way,
+with a verb, a noun phrase or a full sentence,
+and end every item with the same punctuation.
+
+> ❌ The report should:
+>
+> - summarize the data;
+> - the model is described;
+> - a table of results.
+>
+> ✅ The report should:
+>
+> - summarize the data;
+> - describe the model;
+> - tabulate the results.
+
 ## Limit complex sentence structures
 
 A sentence with several nested dependent clauses
