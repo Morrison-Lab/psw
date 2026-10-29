@@ -302,8 +302,10 @@ Watch for these shapes:
   ("It may seem trivial. In fact, ...").
   This is the [antithesis](#def-antithesis) spread over two sentences.
 - **The personified abstraction.** A definition, method or result that
-  "forces", "invites", "demands" or "asks" something of the reader.
-  Name who does what.
+  "forces", "invites", "demands" or "asks" something of the reader,
+  or a mathematical object that "recommends", "knows" or "wants" something.
+  Name who does what, and state the condition the phrase hides
+  ([Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language)).
 - **The colon reveal.** A setup, then a colon, then the point.
   Lead with the point.
 - **The answered rhetorical question.** "The result? A faster fit."
