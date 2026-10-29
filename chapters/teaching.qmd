@@ -89,7 +89,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
   For a title such as "Maximizing a gamma-family kernel",
   the body says what a gamma distribution and its kernel are,
   and that maximizing the kernel finds the mode without computing the normalizing constant.
-  A body that only restates the function leaves a reader who skipped the title with a formula and no reason to care.
+  A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care.
   The first exercise of a split series carries the background,
   and each later exercise begins by citing it, as the splitting rule above says.
 
