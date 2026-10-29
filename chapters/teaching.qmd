@@ -147,7 +147,8 @@ and an expression is written with the named pieces it is built from.
   Put the lemma on the prerequisite site that owns the topic
   ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)),
   not in the course page that needs it.
-  Extract a lemma from a passage when you edit that passage anyway; do not sweep existing content.
+  Extract a lemma from a passage when you edit that passage anyway,
+  and do not sweep existing content.
 - A link replaces a repeated explanation.
   If a piece is already written, link to it instead of writing it a second time.
 
