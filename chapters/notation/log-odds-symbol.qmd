@@ -1,4 +1,4 @@
-Write the log-odds as $\logodds$ (the Greek letter eta), not as $z$ or another letter.
+Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter.
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
 write it `\logodds`.
 Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function),
