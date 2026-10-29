@@ -634,7 +634,8 @@ in every course and every teaching repository.
   as [Put lists in bullet points](conciseness.qmd#put-lists-in-bullet-points) describes.
 - Show every proof on the slides.
   Do not wrap a proof in `{.content-hidden when-format="revealjs"}`.
-  Remove an existing wrapper from a proof when you edit the file for another reason, and do not sweep the others
+  Remove an existing wrapper from a proof when you edit the file for another reason,
+  and do not sweep the others
   (Ezra, 2026-10-29).
 - Put each named example in an `#exm-` div.
 - Put on a slide only what you want the audience to look at.
