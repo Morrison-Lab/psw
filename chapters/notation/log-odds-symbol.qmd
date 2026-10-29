@@ -3,7 +3,7 @@ In a group that uses shared macros (see [Using shared macros](#using-shared-macr
 write it `\logodds`.
 Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function),
 so that the same quantity has one symbol in every chapter and figure.
-Label a figure axis that shows it "Log-odds, $\logodds$" (see [Axis titles](slides-posters-figures.qmd)).
+Label a figure axis that shows it "Log-odds, $\logodds$" (see [Scientific figures](slides-posters-figures.qmd#sec-scientific-figures)).
 
 ::: {#exm-log-odds-symbol}
 
