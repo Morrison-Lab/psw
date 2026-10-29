@@ -42,6 +42,16 @@ Pose each task as an exercise, give students time to try it, and then show the s
   The check never sweeps existing content:
   restate the result when you edit the passage anyway.
   `<!-- restated-ok: reason -->` in the solution exempts a result that is stated elsewhere.
+  A restated theorem passes review only when it meets these four conditions:
+
+  - **The proof stands alone.**
+    It derives the result step by step, or cites earlier results,
+    and does not only point back at the solution that first derived it.
+  - **The statement uses only defined symbols.**
+    Every symbol in it is defined in the statement itself or in an earlier div.
+  - **The first use of each term is linked** to the div that defines it.
+  - **Each source line holds one clause**,
+    as the semantic line break rule requires.
 - Give each bottom-level prompt its own `#exr-` div and its own `#sol-` div,
   in order, rather than one exercise with parts (a) through (e).
   Any exercise with several parts is split, however the parts are marked:
