@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 19:03:34 (PDT)
+Last modified: 2026-10-28 19:15:22 (PDT)
 
 > **NOTE:**
 >
@@ -130,9 +130,9 @@ A contrast you keep must not be a straw man. Say who holds the confusing reading
 >
 > > ❌ Statistics uses “predictor” for a feature, not for a model.
 > >
-> > ✅ Statistics uses “predictor” for a feature. Some machine learning texts use the same word for a fitted prediction function: Hastie et al. call the averaged forest function \\\hat{f}\_{\text{rf}}(x)\\ “the random forest (regression) predictor” ([Hastie et al. 2009](#ref-hastie2009esl), eq. 15.2). In these notes, “predictor” always means a feature.
+> > ✅ Statistics uses “predictor” for a feature. Some machine learning texts use the same word for a fitted prediction function: Hastie, Tibshirani and Friedman call the averaged forest function “the random forest (regression) predictor” ([Hastie et al. 2009](#ref-hastie2009esl), equation 15.2). In these notes, “predictor” always means a feature.
 >
-> The first version rules out a reading without saying that anyone holds it. The second shows that the reading exists, with a source, and says which meaning the text uses. If no text used the word that way, the right revision would be to delete the second sentence of the original.
+> The first version rules out a reading without saying that anyone holds it. The second shows that the reading exists, with a source, and says which meaning the text uses. If no text used the word that way, the right revision would be to delete the clause “not for a model”.
 
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
