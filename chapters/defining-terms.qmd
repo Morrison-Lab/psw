@@ -166,9 +166,9 @@ Follow these principles when introducing new [term](#def-term)s:
   Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning,
   and hides that the symbol is a mean of the deviations.
 
-- **Put only the defining equation in a [definition](#def-term), and state equivalences as results:**
+- **Put only the defining equation in a definition, and state equivalences as results:**
   A definition div displays one equation,
-  the one that links the symbol of the defined term to its definitional expression.
+  the one that links the symbol of the defined [term](#def-term) to its definitional expression.
   It does not display a chain of equal expressions,
   and it does not display an equivalent form.
   It does not state that the defined concept is the same as, or equivalent to, another concept either.
