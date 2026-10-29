@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 14:28:33 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 14:36:14 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -413,6 +413,7 @@
 <li>A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>).</li>
 <li>A div holds one <a href="../chapters/defining-terms.html#def-term">term</a> or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
 <li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
+<li>Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as <span class="math inline">\(\E{Z^2} = \var{Z} + \sqf{\E{Z}}\)</span> for any random variable <span class="math inline">\(Z\)</span>, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic (<a href="https://morrison-lab.github.io/mds/">mds</a>, <a href="https://morrison-lab.github.io/pds/">pds</a> or <a href="https://morrison-lab.github.io/sds/">sds</a>), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.</li>
 <li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
 </ul>
 <p>When a unit still looks long, ask what could be named and moved out.</p>
