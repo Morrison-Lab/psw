@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 14:35:32 (PDT)
+Last modified: 2026-10-29 15:25:43 (PDT)
 
 > **NOTE:**
 >
@@ -64,13 +64,29 @@ The sentence that introduces or interprets a formula must describe that formula.
 
 Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover [using one notation for one thing](../chapters/notation.llms.md#matching-names-and-notation) and [defining every variable when you introduce it](../chapters/defining-terms.llms.md#guidelines-for-defining-terms).
 
+### 1.7 Write each sentence in words or in math, not both
+
+A sentence is either entirely in words or entirely in math. A single inline expression inside a word sentence is fine, as in “the prediction function \\\predfn\\ equals the conditional mean”. A sentence that states one condition in words and a second condition as a relation between expressions is a hybrid. Split it into two complete sentences: the first states the result in words, and the second states it as a displayed formula.
+
+> **NOTE:**
+>
+> **Example 4 (Splitting a hybrid sentence)**  
+>
+> > ❌ The reducible risk is zero if and only if \\\P(\predfnf{\Predvar} \ne \E{\Outvar \mid \Predvar}) = 0\\.
+> >
+> > ✅ The reducible risk is zero if and only if the prediction function differs from the conditional mean with probability 0.
+> >
+> > \\ \ba \E{\sqf{\condE{\Outvar}{\Predvar} - \predfnf{\Predvar}}} &= 0 \\ \iff \Pf{\predfnf{\Predvar} \ne \condE{\Outvar}{\Predvar}} &= 0 \ea \\
+>
+> The ❌ version puts the first condition in words and the second in math. The ✅ version says the result once in words and once in math.
+
 ## 2 Introduce a theorem with a sentence
 
 The line before a theorem, lemma or algorithm should be a complete sentence, or end with a colon. Do not let a heading such as “Theorem” finish a sentence that began above it.
 
 > **NOTE:**
 >
-> **Example 4 (Introducing a theorem)**  
+> **Example 5 (Introducing a theorem)**  
 >
 > > ❌ This gives the following **Theorem.** \\G(x)\\ is increasing.
 > >
@@ -94,7 +110,7 @@ In a proof, a sentence such as “so \\A = B\\” or “this gives \\A = B\\” 
 
 > **NOTE:**
 >
-> **Example 5 (Displaying the normal equations)**  
+> **Example 6 (Displaying the normal equations)**  
 >
 > > ❌ Setting the gradient to zero yields \\\stprod{\design} \vcoef = \tp{\design} \vy\\.
 > >
@@ -128,7 +144,7 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 
 > **NOTE:**
 >
-> **Example 6 (Citing a result div)**  
+> **Example 7 (Citing a result div)**  
 >
 > > ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
 > >
@@ -148,7 +164,7 @@ Every result div states one result and every solution div answers one exercise, 
 
 > **NOTE:**
 >
-> **Example 7 (Citing a step instead of deriving it)**  
+> **Example 8 (Citing a step instead of deriving it)**  
 >
 > > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 \resid_i \vfeatmap(\vx_i)\\, where \\\resid_i\\ is the residual and \\\vfeatmap(\vx_i)\\ the design vector, and summing over \\i\\ gives the claim.
 > >
