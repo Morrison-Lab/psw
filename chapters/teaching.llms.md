@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 15:25:43 (PDT)
+Last modified: 2026-10-29 15:37:42 (PDT)
 
 > **NOTE:**
 >
@@ -380,7 +380,19 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 27 Rules that apply to all writing
+## 27 Finish each unit completely
+
+Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
+
+- **Sentence.** Write each sentence [in words or in math, not both](../chapters/mathematical-writing.llms.md#write-each-sentence-in-words-or-in-math-not-both), so a hybrid becomes one complete sentence of each kind.
+- **Step.** Give each operation [its own line and justification](notation/one-operation-per-step.qmd), and do not “cancel” several operations as one step.
+- **Term.** [Give each defined term its own div](#give-each-defined-term-its-own-div), and keep equalities and equivalences out of the definition by stating them as results.
+- **Result.** [Restate a result](#build-the-lecture-from-exercises-and-solutions) first derived in a solution as a theorem after the exercise, so the result stands alone.
+- **Exercise.** [Split an exercise with several parts](#build-the-lecture-from-exercises-and-solutions), so each exercise asks for one thing.
+
+When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
+
+## 28 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 

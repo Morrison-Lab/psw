@@ -224,11 +224,18 @@
     "text": "26 Credit other courses without summarizing them\n\nWrite your own version of another course’s material, and credit the source in a collapsed .callout-note titled “Source”, not in running prose. Adapting another course’s material gives the details, including when a ::: notes div is a safe alternative.\nQuote the primary source directly, and check the wording and page against the original. Quote the original explains why.\nTitle a section by its topic, not by its author or course. Put the content first explains why.\nWhere the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list."
   },
   {
+    "objectID": "chapters/teaching.html#finish-each-unit-completely",
+    "href": "chapters/teaching.html#finish-each-unit-completely",
+    "title": "Writing for teaching",
+    "section": "27 Finish each unit completely",
+    "text": "27 Finish each unit completely\nComplete each sentence, step, term, result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:\n\nSentence. Write each sentence in words or in math, not both, so a hybrid becomes one complete sentence of each kind.\nStep. Give each operation its own line and justification, and do not “cancel” several operations as one step.\nTerm.  Give each defined term its own div, and keep equalities and equivalences out of the definition by stating them as results.\nResult. Restate a result first derived in a solution as a theorem after the exercise, so the result stands alone.\nExercise. Split an exercise with several parts, so each exercise asks for one thing.\n\nWhen you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them."
+  },
+  {
     "objectID": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "href": "chapters/teaching.html#rules-that-apply-to-all-writing",
     "title": "Writing for teaching",
-    "section": "27 Rules that apply to all writing",
-    "text": "27 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid clichés."
+    "section": "28 Rules that apply to all writing",
+    "text": "28 Rules that apply to all writing\nThese rules from the other chapters apply to teaching materials as to any other writing:\n\nstart a sentence with its subject;\nname the referent instead of a bare demonstrative;\nsay which thing;\nstate the literal claim instead of an idiom;\navoid clichés."
   },
   {
     "objectID": "chapters/software-text.html",
