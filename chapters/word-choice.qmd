@@ -122,7 +122,7 @@ Money words are idioms too when no money is involved.
 "Costs us", "buys us", "at the price of", "pays off", "affordable", "cheap"
 and "the whole bargain" borrow from commerce
 to describe a trade-off, and the reader must translate them back.
-A verb "trade" does the same: "that trade" and "we trade bias for variance"
+A verb "trade" does the same: "that trade" and "we trade accuracy for speed"
 put a bargain where there is a relationship between two quantities.
 Say what is lost or gained, and which quantity changes with which.
 Keep a literal use:
@@ -144,7 +144,7 @@ or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-funct
 > ❌ That trade is the whole bargain of gradient descent.
 >
 > ✅ Gradient descent decreases the objective only when each step is small enough
-> for the linear approximation to hold.
+> for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
 
 Do not give a mathematical object a mind.
 A derivative does not "recommend" a direction,
@@ -157,7 +157,7 @@ and display it when it is a key equation.
 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
-> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$,
+> ✅ The [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) has error $o(\norm{\vh})$ as $\vh \to \vzero$,
 > so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Some single words cause a different problem.
