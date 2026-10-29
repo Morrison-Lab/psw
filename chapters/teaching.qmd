@@ -632,6 +632,10 @@ in every course and every teaching repository.
   so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list,
   as [Put lists in bullet points](conciseness.qmd#put-lists-in-bullet-points) describes.
+- Show every proof on the slides.
+  Do not wrap a proof in `{.content-hidden when-format="revealjs"}`.
+  Remove an existing wrapper from a proof when you edit the file for another reason, and do not sweep the others
+  (Ezra, 2026-10-29).
 - Put each named example in an `#exm-` div.
 - Put on a slide only what you want the audience to look at.
   Put an example in an `#exm-` div and short commentary in a `#rem-` div,
