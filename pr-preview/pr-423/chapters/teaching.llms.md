@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 14:29:02 (PDT)
+Last modified: 2026-10-29 14:36:23 (PDT)
 
 > **NOTE:**
 >
@@ -41,6 +41,8 @@ Active learning, in which students work through tasks themselves during class, i
 
 - Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.
 
+- Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29). Whatever the title tells the reader about the object, the body also says: name the object, link its definition, and say where it arises and what it is used for. For a title such as “Maximizing a gamma-family kernel”, the body says what a gamma distribution and its kernel are, and that maximizing the kernel finds the mode without computing the normalizing constant. A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care. The first exercise of a split series carries the background, and each later exercise begins by citing it, as the splitting rule above says.
+
 > **NOTE:**
 >
 > **Example 1 (Asking before defining)**  
@@ -74,6 +76,7 @@ This is the compositional approach of [modular programming](https://en.wikipedia
 - A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
 - A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
+- Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as \\\E{Z^2} = \var{Z} + \sqf{\E{Z}}\\ for any random variable \\Z\\, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
 - A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
 
 When a unit still looks long, ask what could be named and moved out.
@@ -379,11 +382,11 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 ## 27 Finish each unit completely
 
-Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbour, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
+Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
 - **Sentence.** Write each sentence [in words or in math, not both](../chapters/mathematical-writing.llms.md#write-each-sentence-in-words-or-in-math-not-both), so a hybrid becomes one complete sentence of each kind.
 - **Step.** Give each operation [its own line and justification](notation/one-operation-per-step.qmd), and do not “cancel” several operations as one step.
-- **[Term](../chapters/defining-terms.llms.md#def-term).** [Give each defined term its own div](#give-each-defined-term-its-own-div), and keep equalities and equivalences out of the definition by stating them as results.
+- **Term.** [Give each defined term its own div](#give-each-defined-term-its-own-div), and keep equalities and equivalences out of the definition by stating them as results.
 - **Result.** [Restate a result](#build-the-lecture-from-exercises-and-solutions) first derived in a solution as a theorem after the exercise, so the result stands alone.
 - **Exercise.** [Split an exercise with several parts](#build-the-lecture-from-exercises-and-solutions), so each exercise asks for one thing.
 

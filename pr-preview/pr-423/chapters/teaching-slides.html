@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 14:29:02 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 14:36:23 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -378,6 +378,7 @@
 <li><p>On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.</p></li>
 <li><p>Give each solution the slug of its exercise, with <code>sol-</code> in place of <code>exr-</code>.</p></li>
 <li><p>Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.</p></li>
+<li><p>Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29). Whatever the title tells the reader about the object, the body also says: name the object, link its definition, and say where it arises and what it is used for. For a title such as “Maximizing a gamma-family kernel”, the body says what a gamma distribution and its kernel are, and that maximizing the kernel finds the mode without computing the normalizing constant. A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care. The first exercise of a split series carries the background, and each later exercise begins by citing it, as the splitting rule above says.</p></li>
 </ul>
 <div id="exm-exercise-before-definition" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (Asking before defining)</strong></span> &nbsp;</p>
@@ -412,6 +413,7 @@
 <li>A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>).</li>
 <li>A div holds one <a href="../chapters/defining-terms.html#def-term">term</a> or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
 <li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
+<li>Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as <span class="math inline">\(\E{Z^2} = \var{Z} + \sqf{\E{Z}}\)</span> for any random variable <span class="math inline">\(Z\)</span>, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic (<a href="https://morrison-lab.github.io/mds/">mds</a>, <a href="https://morrison-lab.github.io/pds/">pds</a> or <a href="https://morrison-lab.github.io/sds/">sds</a>), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.</li>
 <li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
 </ul>
 <p>When a unit still looks long, ask what could be named and moved out.</p>
@@ -797,11 +799,11 @@
 </section>
 <section class="slide level2">
 
-<p>Complete each sentence, step, <a href="../chapters/defining-terms.html#def-term">term</a>, result and exercise, and do not leave part of it implied, merged into a neighbour, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:</p>
+<p>Complete each sentence, step, <a href="../chapters/defining-terms.html#def-term">term</a>, result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:</p>
 <ul>
 <li><strong>Sentence.</strong> Write each sentence <a href="../chapters/mathematical-writing.html#write-each-sentence-in-words-or-in-math-not-both">in words or in math, not both</a>, so a hybrid becomes one complete sentence of each kind.</li>
 <li><strong>Step.</strong> Give each operation <a href="notation/one-operation-per-step.qmd">its own line and justification</a>, and do not “cancel” several operations as one step.</li>
-<li><strong><a href="../chapters/defining-terms.html#def-term">Term</a>.</strong> <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>, and keep equalities and equivalences out of the definition by stating them as results.</li>
+<li><strong>Term.</strong> <!-- check-term-links: allow --> <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>, and keep equalities and equivalences out of the definition by stating them as results.</li>
 <li><strong>Result.</strong> <a href="#/build-the-lecture-from-exercises-and-solutions">Restate a result</a> first derived in a solution as a theorem after the exercise, so the result stands alone.</li>
 <li><strong>Exercise.</strong> <a href="#/build-the-lecture-from-exercises-and-solutions">Split an exercise with several parts</a>, so each exercise asks for one thing.</li>
 </ul>

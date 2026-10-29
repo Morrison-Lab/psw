@@ -33,7 +33,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-3a7eae3b872f08785a56513611f0329a.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -251,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 14:29:02 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 14:36:23 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -472,15 +491,53 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>Keep a plain preposition when it states the relationship exactly, such as <em>in</em> for location and <em>by</em> for the agent of a passive verb.</p>
 </section>
-<section id="minimize-unnecessary-jargon" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Minimize unnecessary jargon</h2>
+<section id="refer-to-a-place-in-the-document-by-its-label" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Refer to a place in the document by its label</h2>
 </section>
 <section class="slide level2">
+
+<p>Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document <span class="citation" data-cites="google2025style google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entry “above”; <a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entry “below”)</span>. Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.</p>
+<div id="exm-position-words" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Replacing “above” with a label)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The next figure draws the fits behind the table above.</p>
+<p>✅ The next figure draws the fits behind <code>@tbl-fits</code>.</p>
+</blockquote>
+<p>The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders <code>@tbl-fits</code> as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.</p>
+</div>
+</section>
+<section id="leave-out-words-that-judge-difficulty-or-add-nothing" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Leave out words that judge difficulty or add nothing</h2>
+</section>
+<section class="slide level2">
+
+<p>“Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entries “just” and “easy, easily”)</span>. “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. <a href="../chapters/citations-evidence.html#do-not-substitute-flippancy-for-support">Do not substitute flippancy for support</a> covers the same problem for “obvious” and “clearly”.</p>
+<p>Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.</p>
+</section>
+<section id="give-a-date-or-a-version-instead-of-a-time-relative-word" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Give a date or a version instead of a time-relative word</h2>
+</section>
+<section class="slide level2">
+
+<p>Do not write “now”, “new” or “currently” for a state that will change. The Google style guide says these words “can render such documentation inaccurate, outdated, or unmeaningful” <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, “Timeless documentation”)</span> and says of “currently”: “Avoid because this word is implied” <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entry “currently”)</span>. Say which date, version or release the statement holds for.</p>
+<p>The guide does not list “recently”, but it fails the same way. In course notes it also fails when pages reorder, because “recently” assumed an order of lectures that the page does not fix.</p>
+<div id="exm-time-relative" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (Replacing “recently” with a pointer)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ A missing <em>that</em> is a common cause of garden-path sentences, as we recently saw.</p>
+<p>✅ A missing <em>that</em> is a common cause of garden-path sentences, as <a href="../chapters/grammar.html#avoid-garden-path-sentences">Avoid garden-path sentences</a> shows.</p>
+</blockquote>
+</div>
+</section>
+<section id="minimize-unnecessary-jargon" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Minimize unnecessary jargon</h2>
+</section>
+<section class="slide level2 smaller scrollable" id="references">
 
 <p>Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical <a href="../chapters/defining-terms.html#def-term">term</a> can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.</p>
 <p>Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Name the synonyms</a>).</p>
 <div id="exm-jargon" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.</p>
 <p>✅ We wrote a custom program to combine data from several sources.</p>
@@ -680,6 +737,11 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 })();
 </script>
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-google2025style" class="csl-entry" role="listitem">
+Google. n.d. <em>Google Developer Documentation Style Guide</em>. Web page. <a href="https://developers.google.com/style">https://developers.google.com/style</a>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

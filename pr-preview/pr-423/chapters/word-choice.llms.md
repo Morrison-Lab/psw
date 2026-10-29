@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 14:29:02 (PDT)
+Last modified: 2026-10-29 14:36:23 (PDT)
 
 > **NOTE:**
 >
@@ -172,7 +172,41 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
-## 8 Minimize unnecessary jargon
+## 8 Refer to a place in the document by its label
+
+Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document ([Google, n.d.](#ref-google2025style), entry “above”; [Google, n.d.](#ref-google2025style), entry “below”). Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.
+
+> **NOTE:**
+>
+> **Example 3 (Replacing “above” with a label)**  
+>
+> > ❌ The next figure draws the fits behind the table above.
+> >
+> > ✅ The next figure draws the fits behind `@tbl-fits`.
+>
+> The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders `@tbl-fits` as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.
+
+## 9 Leave out words that judge difficulty or add nothing
+
+“Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them ([Google, n.d.](#ref-google2025style), entries “just” and “easy, easily”). “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) covers the same problem for “obvious” and “clearly”.
+
+Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.
+
+## 10 Give a date or a version instead of a time-relative word
+
+Do not write “now”, “new” or “currently” for a state that will change. The Google style guide says these words “can render such documentation inaccurate, outdated, or unmeaningful” ([Google, n.d.](#ref-google2025style), “Timeless documentation”) and says of “currently”: “Avoid because this word is implied” ([Google, n.d.](#ref-google2025style), entry “currently”). Say which date, version or release the statement holds for.
+
+The guide does not list “recently”, but it fails the same way. In course notes it also fails when pages reorder, because “recently” assumed an order of lectures that the page does not fix.
+
+> **NOTE:**
+>
+> **Example 4 (Replacing “recently” with a pointer)**  
+>
+> > ❌ A missing *that* is a common cause of garden-path sentences, as we recently saw.
+> >
+> > ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) shows.
+
+## 11 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical [term](../chapters/defining-terms.llms.md#def-term) can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
@@ -180,7 +214,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 
 > **NOTE:**
 >
-> **Example 3 (Replacing unnecessary jargon)**  
+> **Example 5 (Replacing unnecessary jargon)**  
 >
 > > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 > >
@@ -191,3 +225,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 For each technical word, ask whether it carries meaning that a plainer word would lose. If it does not, replace it with the plainer word. If it does carry necessary meaning but a reader outside your subfield would not understand it, define it clearly at first use.
 
 Back to top
+
+## References
+
+Google. n.d. *Google Developer Documentation Style Guide*. Web page. <https://developers.google.com/style>.
