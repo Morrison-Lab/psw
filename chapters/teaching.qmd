@@ -139,6 +139,15 @@ and an expression is written with the named pieces it is built from.
   (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A proof states the lemmas it needs and links to them,
   instead of deriving them in the middle of the argument.
+- Extract a lemma wherever feasible.
+  When a proof, solution or example states a general fact that does not depend on its setting,
+  such as $\E{Z^2} = \var{Z} + \sqf{\E{Z}}$ for any random variable $Z$,
+  give the fact its own lemma div before its first use,
+  and link to it from each place that uses it.
+  Put the lemma on the prerequisite site that owns the topic
+  ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)),
+  not in the course page that needs it.
+  Extract a lemma from a passage when you edit that passage anyway; do not sweep existing content.
 - A link replaces a repeated explanation.
   If a piece is already written, link to it instead of writing it a second time.
 
