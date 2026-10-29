@@ -145,22 +145,15 @@ take the same grammatical form.
 Strunk calls this parallel construction,
 and states the rule as "Express co-ordinate ideas in similar form"
 [@strunk1920elements, rule 15].
-In a bullet list,
-start every item the same way,
-with a verb, a noun phrase or a full sentence,
-and end every item with the same punctuation.
+[Put lists in bullet points](#put-lists-in-bullet-points)
+applies the rule to the items of a list.
+The rule also holds inside one sentence,
+where a series joins verbs, noun phrases or adjectives
+and each item should be the same kind of phrase.
 
-> ❌ The report should:
+> ❌ The model is fast, accurate and has been validated.
 >
-> - summarize the data;
-> - the model is described;
-> - a table of results.
->
-> ✅ The report should:
->
-> - summarize the data;
-> - describe the model;
-> - tabulate the results.
+> ✅ The model is fast, accurate and validated.
 
 ## Limit complex sentence structures
 
