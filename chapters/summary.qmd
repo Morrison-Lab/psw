@@ -135,7 +135,8 @@ Follow its link for the reasons and the exceptions.
 - [Make every word tell](conciseness.qmd#make-every-word-tell):
   cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures).
-- [Do not rule out readings that no reader would make](conciseness.qmd#do-not-rule-out-readings-no-reader-would-make).
+- [Do not rule out readings that no reader would make](conciseness.qmd#do-not-rule-out-readings-no-reader-would-make):
+  when you keep a contrast, say who holds the other reading and cite a source.
 - [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text).
 - [Put a list of three or more phrases in bullet points](conciseness.qmd#put-lists-in-bullet-points).
 - [Write to communicate, not to impress](conciseness.qmd#write-to-communicate-not-to-impress):
