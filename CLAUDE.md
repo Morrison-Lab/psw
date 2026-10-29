@@ -76,6 +76,11 @@ callouts (config + color palette live in `_quarto-website.yml`).
   `r, opt = val` arguments.
 - **R style**: respect `.lintr.R`; run `lintr::lint_dir()` before declaring R
   changes done.
+- **No nested calls in R**: `lint-changed-lines.yaml` lints the R code and R chunks that a PR adds or edits,
+  with `lms::default_linters(nested_calls = TRUE)`.
+  Its `nested_calls = TRUE` setting enforces the lab's [no-nested-calls rule](https://github.com/Morrison-Lab/ai-config/blob/main/shared/coding/avoid-nesting.md).
+  The linters also flag base R functions that have tidyverse replacements.
+  Run the same linters on a file before pushing with `lintr::lint("file.qmd", linters = lms::default_linters(nested_calls = TRUE))`.
 
 ## Working in this repo
 
