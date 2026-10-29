@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 14:00:34 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 14:28:33 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -326,6 +326,23 @@
 <p><span class="theorem-title"><strong>Example 3 (A sentence that names the wrong average)</strong></span> Suppose the formula is <span class="math inline">\(\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\)</span>, a <a href="../chapters/defining-terms.html#def-population">population</a> mean at one covariate value <span class="math inline">\(\predvar\)</span>. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at <span class="math inline">\(\predvar\)</span>” instead.</p>
 </div>
 <p>Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover <a href="../chapters/notation.html#matching-names-and-notation">using one notation for one thing</a> and <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">defining every variable when you introduce it</a>.</p>
+<h3 id="write-each-sentence-in-words-or-in-math-not-both">Write each sentence in words or in math, not both</h3>
+<p>A sentence is either entirely in words or entirely in math. A single inline expression inside a word sentence is fine, as in “the prediction function <span class="math inline">\(\predfn\)</span> equals the conditional mean”. <!-- check-term-links: allow --> A sentence that states one condition in words and a second condition as a relation between expressions is a hybrid. Split it into two complete sentences: the first states the result in words, and the second states it as a displayed formula.</p>
+<div id="exm-no-hybrid-sentences" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (Splitting a hybrid sentence)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The reducible risk is zero if and only if <span class="math inline">\(\P(\predfnf{\Predvar} \ne \E{\Outvar \mid \Predvar}) = 0\)</span>.</p>
+<p>✅ The reducible risk is zero if and only if the prediction function differs from the conditional mean with probability 0. <!-- check-term-links: allow --></p>
+<p><span class="math display">\[
+\ba
+\E{\sqf{\condE{\Outvar}{\Predvar} - \predfnf{\Predvar}}} &amp;= 0
+\\
+\iff \Pf{\predfnf{\Predvar} \ne \condE{\Outvar}{\Predvar}} &amp;= 0
+\ea
+\]</span></p>
+</blockquote>
+<p>The ❌ version puts the first condition in words and the second in math. The ✅ version says the result once in words and once in math.</p>
+</div>
 </section>
 <section id="introduce-a-theorem-with-a-sentence" class="slide level2" data-number="2">
 <h2><span class="header-section-number">2</span> Introduce a theorem with a sentence</h2>
@@ -334,7 +351,7 @@
 
 <p>The line before a theorem, lemma or algorithm should be a complete sentence, or end with a colon. Do not let a heading such as “Theorem” finish a sentence that began above it.</p>
 <div id="exm-introduce-theorem" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Introducing a theorem)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Introducing a theorem)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ This gives the following <strong>Theorem.</strong> <span class="math inline">\(G(x)\)</span> is increasing.</p>
 <p>✅ Next we prove a result about monotonicity. <strong>Theorem.</strong> The function <span class="math inline">\(G(x)\)</span> defined in equation (3) is increasing. <!-- check-term-links: allow --></p>
@@ -357,7 +374,7 @@
 </ul>
 <p>In a proof, a sentence such as “so <span class="math inline">\(A = B\)</span>” or “this gives <span class="math inline">\(A = B\)</span>” hides the result in the middle of a line. Put the equation in a display and let the sentence introduce it. Use inline math for symbols and short expressions inside a sentence, not for the equation the reader is meant to remember.</p>
 <div id="exm-key-equation-displayed" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Displaying the normal equations)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Displaying the normal equations)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Setting the gradient to zero yields <span class="math inline">\(\stprod{\design} \vcoef = \tp{\design} \vy\)</span>.</p>
 <p>✅ Setting the gradient to zero yields the normal equations:</p>
@@ -402,7 +419,7 @@
 
 <p>A proof, or any derivation that supports a result, never cites a solution to an exercise. A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on. Follow each solution that contains a reusable result with a result div (a theorem, lemma, corollary or proposition) that states the claim. The test is whether the solution contains a result that other arguments could use, not whether any later argument currently relies on it. Cite that result div in every argument that uses the claim.</p>
 <div id="exm-cite-results" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Citing a result div)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Citing a result div)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Proof.</strong> By Solution 9 and Solution 10, the claim holds.</p>
 <p>✅ <strong>Proof.</strong> By Lemma 4 and Lemma 5, the claim holds.</p>
@@ -420,7 +437,7 @@
 
 <p>Every result div states one result and every solution div answers one exercise, and each does no more. When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite that result div. Never derive the step inline. A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.</p>
 <div id="exm-never-inline" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Citing a step instead of deriving it)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Citing a step instead of deriving it)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Proof.</strong> By the chain rule, the gradient of each summand is <span class="math inline">\(2 \resid_i \vfeatmap(\vx_i)\)</span>, where <span class="math inline">\(\resid_i\)</span> is the residual and <span class="math inline">\(\vfeatmap(\vx_i)\)</span> the design vector, and summing over <span class="math inline">\(i\)</span> gives the claim.</p>
 <p>✅ <strong>Proof.</strong> Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of <span class="math inline">\(2 \resid_i \vfeatmap(\vx_i)\)</span> over <span class="math inline">\(i\)</span>.</p>
