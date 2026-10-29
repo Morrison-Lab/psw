@@ -320,7 +320,7 @@ Delete the symbol, or use it in the statement that needs it.
 
 ## Deleting a symbol that is named and never used
 
-> ❌ Every continuous real-valued function $f$ on a compact space is bounded.
+> ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mds/functions.html#def-function) $f$ on a compact space is bounded.
 >
 > ✅ Every continuous real-valued function on a compact space is bounded.
 
@@ -342,10 +342,10 @@ A named relation also lets the reader find it without hunting for a tag.
 
 ## Naming the relation instead of tagging it
 
-> ❌ The sample mean satisfies Equation 3, which says that the estimator's expected value equals the parameter.
-> The sample variance also satisfies Equation 3.
+> ❌ The [sample mean](defining-terms.qmd#def-sample-mean) satisfies Equation 3, which says that the estimator's expected value equals the parameter.
+> The sample [variance](defining-terms.qmd#def-variance-expression-and-prose) also satisfies Equation 3.
 >
-> ✅ The sample mean is an unbiased estimator of the population mean.
+> ✅ The sample mean is an unbiased estimator of the [population](defining-terms.qmd#def-population) mean.
 > The sample variance is an unbiased estimator of the population variance.
 
 In the ❌ version, "also satisfies Equation 3" is a statement about a different parameter,
