@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 20:05:55 (PDT)
+Last modified: 2026-10-28 20:59:43 (PDT)
 
 > **NOTE:**
 >
@@ -122,6 +122,18 @@ A definition says what a [term](../chapters/defining-terms.llms.md#def-term) mea
 
 Keep a disclaimer when the confusion is real. For example, if “CI” could mean confidence interval or cumulative incidence in the same paper, say which one you mean each time.
 
+A contrast you keep must not be a straw man. Say who holds the confusing reading, and cite a source that shows it, so the reader sees why the alternative needs ruling out. A bare “not X” leaves the reader to guess whether anyone reads the term as X. If you cannot find a source or a reader who holds the reading, the contrast fails the test above, so remove it.
+
+> **NOTE:**
+>
+> **Example 3 (Explaining the contrast, or dropping it)**  
+>
+> > ❌ Statistics uses “predictor” for a feature, not for a model.
+> >
+> > ✅ Statistics uses “predictor” for a feature. Some machine learning texts use the same word for a fitted prediction function: Hastie, Tibshirani and Friedman call the averaged forest function “the random forest (regression) predictor” ([Hastie et al. 2009](#ref-hastie2009esl), equation 15.2). In these notes, “predictor” always means a feature.
+>
+> The first version rules out a reading without saying that anyone holds it. The second shows that the reading exists, with a source, and says which meaning the text uses. If no text used the word that way, the right revision would be to delete the clause “not for a model”.
+
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
 ## 8 Avoid double negatives
@@ -138,7 +150,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 
 > **NOTE:**
 >
-> **Example 3 (Stating a claim directly)**  
+> **Example 4 (Stating a claim directly)**  
 >
 > > ❌ The association was not inconsistent with a dose-response relationship.
 > >
@@ -160,7 +172,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 
 > **NOTE:**
 >
-> **Example 4 (Replacing a sentence about the text)**  
+> **Example 5 (Replacing a sentence about the text)**  
 >
 > > ❌ One trap worth naming: the sample excludes people who moved.
 > >
@@ -182,7 +194,7 @@ A URL often shows the name of what it points to and where that thing lives. When
 
 > **NOTE:**
 >
-> **Example 5 (Dropping prose that repeats a URL)**  
+> **Example 6 (Dropping prose that repeats a URL)**  
 >
 > > ❌ For an example, see my public notes site Morrison-Lab/sds on GitHub (<https://github.com/Morrison-Lab/sds>).
 > >
@@ -198,7 +210,7 @@ Mention yourself only where a sentence needs an actor, such as a request, an off
 
 > **NOTE:**
 >
-> **Example 6 (Moving the focus from the writer to the subject)**  
+> **Example 7 (Moving the focus from the writer to the subject)**  
 >
 > > ❌ I tested this in a small private project, and I found that CI works well.
 > >
@@ -216,7 +228,7 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 
 > **NOTE:**
 >
-> **Example 7 (Cutting a clause the term already implies)**  
+> **Example 8 (Cutting a clause the term already implies)**  
 >
 > > ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
 > >
@@ -242,7 +254,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 8 (Turning an inline list into bullet points)**  
+> **Example 9 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -256,7 +268,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 9 (Turning a run of resource sentences into bullet points)**  
+> **Example 10 (Turning a run of resource sentences into bullet points)**  
 >
 > > ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 > >
@@ -269,7 +281,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 10 (Turning inline steps into a numbered list)**  
+> **Example 11 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -282,7 +294,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 11 (Turning a paragraph of cases into bullet points)**  
+> **Example 12 (Turning a paragraph of cases into bullet points)**  
 >
 > > ❌ At \\z = 0\\ the slope is \\\dexpitf{0} = 1/4\\. At \\z = 2\\ it is \\\dexpitf{2} \approx 0.105\\. At \\z = -2\\ it is \\\dexpitf{-2} \approx 0.105\\.
 > >
@@ -305,7 +317,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 
 > **NOTE:**
 >
-> **Example 12 (Rewriting a sentence written to sound formal)**  
+> **Example 13 (Rewriting a sentence written to sound formal)**  
 >
 > > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.
 > >
@@ -324,6 +336,8 @@ Ernest Hemingway was known for his spare, direct prose style. His short sentence
 Back to top
 
 ## References
+
+Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. 2009. *The Elements of Statistical Learning: Data Mining, Inference, and Prediction*. 2nd ed. Springer. <https://hastie.su.domains/ElemStatLearn/>.
 
 Strunk, William, Jr. 1920. *The Elements of Style*. Harcourt, Brace; Howe. <https://www.gutenberg.org/ebooks/37134>.
 

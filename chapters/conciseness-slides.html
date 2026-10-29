@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-28 20:05:55 (PDT)</p>
+  <p class="date">Last modified: 2026-10-28 20:59:43 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -418,6 +418,15 @@
 <p>In causal inference, the average effect of treatment on the treated is usually abbreviated ATT, so a reader is unlikely to read “TTE” that way. The second sentence introduces a meaning that the reader would not otherwise have considered.</p>
 </div>
 <p>Keep a disclaimer when the confusion is real. For example, if “CI” could mean confidence interval or cumulative incidence <!-- check-term-links: allow --> in the same paper, say which one you mean each time.</p>
+<p>A contrast you keep must not be a straw man. Say who holds the confusing reading, and cite a source that shows it, so the reader sees why the alternative needs ruling out. A bare “not X” leaves the reader to guess whether anyone reads the term as X. <!-- check-term-links: allow --> If you cannot find a source or a reader who holds the reading, the contrast fails the test above, so remove it.</p>
+<div id="exm-fleshed-out-contrast" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Explaining the contrast, or dropping it)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Statistics uses “predictor” for a feature, not for a model.</p>
+<p>✅ Statistics uses “predictor” for a feature. Some machine learning texts use the same word for a fitted prediction function: <!-- check-term-links: allow --> Hastie, Tibshirani and Friedman call the averaged forest function “the random forest (regression) predictor” <span class="citation" data-cites="hastie2009esl">(<a href="#/references" role="doc-biblioref" onclick="">Hastie et al. 2009</a>, equation 15.2)</span>. In these notes, “predictor” always means a feature.</p>
+</blockquote>
+<p>The first version rules out a reading without saying that anyone holds it. The second shows that the reading exists, with a source, and says which meaning the text uses. If no text used the word that way, the right revision would be to delete the clause “not for a model”.</p>
+</div>
 <p>The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.</p>
 </section>
 <section id="avoid-double-negatives" class="slide level2" data-number="8">
@@ -434,7 +443,7 @@
 <p>The reader has to cancel the two negatives to recover the claim, and the result is often vaguer than the writer intended. State the claim directly. If you mean something weaker than the direct claim, say what the weaker claim is.</p>
 <p>A single negative is fine. “We did not reject the null hypothesis” denies one thing, and it is the standard wording for a test result.</p>
 <div id="exm-double-negative" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Stating a claim directly)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Stating a claim directly)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The association was not inconsistent with a dose-response relationship.</p>
 <p>✅ The association was consistent with a dose-response relationship.</p>
@@ -456,7 +465,7 @@
 </ul>
 <p>Each one makes the reader read a sentence before reaching the content it promises. State the content directly. <a href="../chapters/avoid-cliches.html#rhetorical-reflexes">Rhetorical reflexes</a> lists related signpost phrases, such as “it is worth noting that”.</p>
 <div id="exm-self-referential" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Replacing a sentence about the text)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Replacing a sentence about the text)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ One trap worth naming: the sample excludes people who moved.</p>
 <p>✅ The sample excludes people who moved.</p>
@@ -475,7 +484,7 @@
 
 <p>A URL often shows the name of what it points to and where that thing lives. When it does, do not also spell out that name or host around the link. The reader would read the same facts twice.</p>
 <div id="exm-self-describing-link" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Dropping prose that repeats a URL)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Dropping prose that repeats a URL)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ For an example, see my public notes site Morrison-Lab/sds on GitHub (<a href="https://github.com/Morrison-Lab/sds" class="uri">https://github.com/Morrison-Lab/sds</a>).</p>
 <p>✅ For an example, see <a href="https://github.com/Morrison-Lab/sds" class="uri">https://github.com/Morrison-Lab/sds</a>.</p>
@@ -491,7 +500,7 @@
 
 <p>Mention yourself only where a sentence needs an actor, such as a request, an offer, or a decision you made. Elsewhere, make the subject of the sentence the thing the reader cares about. Extra references to the writer turn attention from the content to the person.</p>
 <div id="exm-writer-out-of-the-way" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Moving the focus from the writer to the subject)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Moving the focus from the writer to the subject)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ I tested this in a small private project, and I found that CI works well.</p>
 <p>✅ CI works well in a small private test project.</p>
@@ -508,7 +517,7 @@
 
 <p>Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.</p>
 <div id="exm-overexplain" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Cutting a clause the term already implies)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Cutting a clause the term already implies)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.</p>
 <p>✅ Estimated mean: the estimated value of the mean.</p>
@@ -532,7 +541,7 @@
 <li>Keep a short series of single words inline, such as “R, Julia, or Python”.</li>
 </ul>
 <div id="exm-bullet-lists" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Turning an inline list into bullet points)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (Turning an inline list into bullet points)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.</p>
 <p>✅ Machine learning combines three components:</p>
@@ -545,7 +554,7 @@
 <p>The revised version puts each component on its own line, so the reader sees at a glance that there are three.</p>
 </div>
 <div id="exm-resource-lists" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Turning a run of resource sentences into bullet points)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Turning a run of resource sentences into bullet points)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Hastie and Tibshirani <a href="https://www.youtube.com/watch?v=o9hoLdylWKo">extend least squares to several predictors</a>. Starmer explains <a href="https://www.youtube.com/watch?v=zITIFTsivN8">multiple regression</a>.</p>
 <p>✅ Videos:</p>
@@ -557,7 +566,7 @@
 <p>For the video notes this example comes from, see the DATA 571 chapter on <a href="https://morrison-lab.github.io/lds/chapters/linear-regression.html">linear regression</a>. Each bullet holds one video, so the reader can pick one without parsing the paragraph.</p>
 </div>
 <div id="exm-numbered-lists" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Turning inline steps into a numbered list)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Turning inline steps into a numbered list)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ k-means starts with <span class="math inline">\(k\)</span> group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.</p>
 <p>✅ k-means starts with <span class="math inline">\(k\)</span> group centers and repeats two steps until the assignments stop changing:</p>
@@ -569,7 +578,7 @@
 <p>The numbers show the order of the steps, and the loop condition moves into the introducing sentence.</p>
 </div>
 <div id="exm-case-bullets" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Turning a paragraph of cases into bullet points)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Turning a paragraph of cases into bullet points)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ At <span class="math inline">\(z = 0\)</span> the slope is <span class="math inline">\(\dexpitf{0} = 1/4\)</span>. At <span class="math inline">\(z = 2\)</span> it is <span class="math inline">\(\dexpitf{2} \approx 0.105\)</span>. At <span class="math inline">\(z = -2\)</span> it is <span class="math inline">\(\dexpitf{-2} \approx 0.105\)</span>.</p>
 <p>✅ The slope <span class="math inline">\(\dexpitf{z}\)</span> at three values of <span class="math inline">\(z\)</span>:</p>
@@ -595,7 +604,7 @@
 <li>for mathematics, see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>.</li>
 </ul>
 <div id="exm-communicate-not-impress" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Rewriting a sentence written to sound formal)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 13 (Rewriting a sentence written to sound formal)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.</p>
 <p>✅ Despite the limits of the study’s methods, the results suggest a substantial association between the exposure and the outcome.</p>
@@ -804,6 +813,9 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hastie2009esl" class="csl-entry" role="listitem">
+Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. 2009. <em>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</em>. 2nd ed. Springer. <a href="https://hastie.su.domains/ElemStatLearn/">https://hastie.su.domains/ElemStatLearn/</a>.
+</div>
 <div id="ref-strunk1920elements" class="csl-entry" role="listitem">
 Strunk, William, Jr. 1920. <em>The Elements of Style</em>. Harcourt, Brace; Howe. <a href="https://www.gutenberg.org/ebooks/37134">https://www.gutenberg.org/ebooks/37134</a>.
 </div>
