@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-28 17:19:05 (PDT)
+Last modified: 2026-10-28 17:30:37 (PDT)
 
 > **NOTE:**
 >
@@ -566,7 +566,7 @@ Name the object you mean. When the text refers to the fitted prediction function
 
 ## 16 Writing the log-odds
 
-Write the log-odds as \\\logodds\\ (the Greek letter eta), not as \\z\\ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, \\\logodds\\” (see [Axis titles](../chapters/slides-posters-figures.llms.md)).
+Use \\\logodds\\ (the Greek letter eta) for the log-odds, not \\z\\ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, \\\logodds\\” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
 > **NOTE:**
 >
