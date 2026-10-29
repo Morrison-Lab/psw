@@ -49,7 +49,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
     and does not only point back at the solution that first derived it.
   - **The statement uses only defined symbols.**
     Every symbol in it is defined in the statement itself or in an earlier div.
-  - **The first use of each term is linked** to the div that defines it.
+  - **The first use of each [term](defining-terms.qmd#def-term) is linked** to the div that defines it.
   - **Each source line holds one clause**,
     as the semantic line break rule requires.
 - Give each bottom-level prompt its own `#exr-` div and its own `#sol-` div,
