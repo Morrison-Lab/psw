@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 13:19:48 (PDT)
+Last modified: 2026-10-29 13:28:12 (PDT)
 
 > **NOTE:**
 >
@@ -100,19 +100,11 @@ The end of a sentence is the position the reader remembers. Strunk states the ru
 
 ## 7 Express coordinate ideas in parallel form
 
-Items that play the same role in a sentence or a list take the same grammatical form. Strunk calls this parallel construction, and states the rule as “Express co-ordinate ideas in similar form” ([Strunk 1920](#ref-strunk1920elements), rule 15). In a bullet list, start every item the same way, with a verb, a noun phrase or a full sentence, and end every item with the same punctuation.
+Items that play the same role in a sentence or a list take the same grammatical form. Strunk calls this parallel construction, and states the rule as “Express co-ordinate ideas in similar form” ([Strunk 1920](#ref-strunk1920elements), rule 15). [Put lists in bullet points](#put-lists-in-bullet-points) applies the rule to the items of a list. The rule also holds inside one sentence, where a series joins verbs, noun phrases or adjectives and each item should be the same kind of phrase.
 
-> ❌ The report should:
+> ❌ The model is fast, accurate and has been validated.
 >
-> - summarize the data;
-> - the model is described;
-> - a table of results.
->
-> ✅ The report should:
->
-> - summarize the data;
-> - describe the model;
-> - tabulate the results.
+> ✅ The model is fast, accurate and validated.
 
 ## 8 Limit complex sentence structures
 

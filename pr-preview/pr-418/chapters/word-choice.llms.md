@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 13:19:48 (PDT)
+Last modified: 2026-10-29 13:28:12 (PDT)
 
 > **NOTE:**
 >
@@ -174,7 +174,7 @@ Keep a plain preposition when it states the relationship exactly, such as *in* f
 
 ## 8 Refer to a place in the document by its label
 
-Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document \[Google ([n.d.](#ref-google2025style)), entry “above”; entry “below”\]. Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.
+Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document ([Google, n.d.](#ref-google2025style), entry “above”; [Google, n.d.](#ref-google2025style), entry “below”). Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.
 
 > **NOTE:**
 >
@@ -182,9 +182,9 @@ Do not use “above” or “below” for a position in a document. The same sou
 >
 > > ❌ The next figure draws the fits behind the table above.
 > >
-> > ✅ The next figure draws the fits behind Table 2.
+> > ✅ The next figure draws the fits behind `@tbl-fits`.
 >
-> The rewrite needs a label on the table, so labeling it is part of the fix. In Quarto, write the cross-reference to the label so that the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.
+> The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders `@tbl-fits` as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.
 
 ## 9 Leave out words that judge difficulty or add nothing
 
@@ -202,9 +202,9 @@ The guide does not list “recently”, but it fails the same way. In course not
 >
 > **Example 4 (Replacing “recently” with a pointer)**  
 >
-> > ❌ This certainly does not mean all classifiers are equally good (we recently studied Bayes’ decision rule).
+> > ❌ A missing *that* is a common cause of garden-path sentences, as we recently saw.
 > >
-> > ✅ This certainly does not mean all classifiers are equally good (see Bayes’ decision rule in the chapter on classification).
+> > ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) shows.
 
 ## 11 Minimize unnecessary jargon
 
