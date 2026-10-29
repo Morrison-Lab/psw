@@ -157,7 +157,7 @@ and display it when it is a key equation.
 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
-> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$,
+> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, <!-- check-term-links: allow -->
 > so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Some single words cause a different problem.
