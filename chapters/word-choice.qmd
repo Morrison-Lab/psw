@@ -168,6 +168,13 @@ A placeholder makes the reader ask which set is meant,
 and the writer has already answered that question.
 Keep a placeholder only where the statement is abstract on purpose,
 such as a general definition that holds for any set.
+The same aim, stated from the other side:
+state a result at the generality it holds,
+no narrower than its argument needs.
+A fact that a proof proves only for one case,
+when the argument works for all cases,
+is a lemma left unextracted
+([Extract a lemma wherever feasible](teaching.qmd)).
 
 > ❌ The mode is an element of the set A at which the density is largest.
 >
@@ -175,7 +182,8 @@ such as a general definition that holds for any set.
 
 The `check-avoided-words` check in gha warns on
 a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain),
-codomain, range or sample space named by a bare capital letter or by "some",
+[codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain),
+[range](https://morrison-lab.github.io/mds/functions.html#def-range) or sample space named by a bare capital letter or by "some",
 such as "domain A" or "some range".
 It cannot tell whether a specific object exists,
 so a warning only asks you to check.
