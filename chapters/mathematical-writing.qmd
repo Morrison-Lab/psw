@@ -104,6 +104,36 @@ Do the same after every edit to either one.
 Related rules cover [using one notation for one thing](notation.qmd#matching-names-and-notation)
 and [defining every variable when you introduce it](defining-terms.qmd#guidelines-for-defining-terms).
 
+### Write each sentence in words or in math, not both
+
+A sentence is either entirely in words or entirely in math.
+A single inline expression inside a word sentence is fine,
+as in "the prediction function $\predfn$ equals the conditional mean". <!-- check-term-links: allow -->
+A sentence that states one condition in words and a second condition as a relation between expressions is a hybrid.
+Split it into two complete sentences:
+the first states the result in words, and the second states it as a displayed formula.
+
+::: {#exm-no-hybrid-sentences}
+
+## Splitting a hybrid sentence
+
+> ❌ The reducible risk is zero if and only if $\P(\predfnf{\Predvar} \ne \E{\Outvar \mid \Predvar}) = 0$.
+>
+> ✅ The reducible risk is zero if and only if the prediction function differs from the conditional mean with probability 0. <!-- check-term-links: allow -->
+>
+> $$
+> \ba
+> \E{\sqf{\condE{\Outvar}{\Predvar} - \predfnf{\Predvar}}} &= 0
+> \\
+> \iff \Pf{\predfnf{\Predvar} \ne \condE{\Outvar}{\Predvar}} &= 0
+> \ea
+> $$
+
+The ❌ version puts the first condition in words and the second in math.
+The ✅ version says the result once in words and once in math.
+
+:::
+
 ## Introduce a theorem with a sentence
 
 The line before a theorem, lemma or algorithm should be a complete sentence,
