@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 15:44:03 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 16:45:39 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -386,6 +386,12 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 <p>❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.</p>
 <p>✅ The linear approximation has error <span class="math inline">\(o(\norm{\vh})\)</span> as <span class="math inline">\(\vh \to \vzero\)</span>, <!-- check-term-links: allow --> so the objective decreases along the negative gradient only for steps <span class="math inline">\(\vh\)</span> that are small enough.</p>
 </blockquote>
+<p>Be as specific as feasible. When the text has a specific object, name it, and do not let a generic placeholder stand in for it, such as “some set”, “a set A” or “the object”. A placeholder makes the reader ask which set is meant, and the writer has already answered that question. Keep a placeholder only where the statement is abstract on purpose, such as a general definition that holds for any set. The same aim, stated from the other side: state a result at the generality it holds, no narrower than its argument needs. A fact that a proof proves only for one case, when the argument works for all cases, is a lemma left unextracted (<a href="../chapters/teaching.html">Extract a lemma wherever feasible</a>).</p>
+<blockquote>
+<p>❌ The mode is an element of the set A at which the density is largest.</p>
+<p>✅ The mode is an element of the <a href="https://morrison-lab.github.io/mds/functions.html#def-range">range</a> of the random variable at which the density is largest.</p>
+</blockquote>
+<p>The <code>check-avoided-words</code> check in gha warns on a <a href="https://morrison-lab.github.io/mds/functions.html#def-domain">domain</a>, <a href="https://morrison-lab.github.io/mds/functions.html#def-codomain">codomain</a>, range or sample space named by a bare capital letter or by “some”, <!-- check-term-links: allow --> such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.</p>
 <p>Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. <a href="../chapters/citations-evidence.html#do-not-substitute-flippancy-for-support">Do not substitute flippancy for support</a> says when those words are a problem and what to write instead.</p>
 </section>
 <section id="follow-an-abstract-statement-with-an-example" class="slide level2" data-number="2">

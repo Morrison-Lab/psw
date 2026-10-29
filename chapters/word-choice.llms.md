@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 15:44:03 (PDT)
+Last modified: 2026-10-29 16:45:39 (PDT)
 
 > **NOTE:**
 >
@@ -69,6 +69,14 @@ Do not give a mathematical object a mind. A derivative does not “recommend” 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
 > ✅ The linear approximation has error \\o(\norm{\vh})\\ as \\\vh \to \vzero\\, so the objective decreases along the negative gradient only for steps \\\vh\\ that are small enough.
+
+Be as specific as feasible. When the text has a specific object, name it, and do not let a generic placeholder stand in for it, such as “some set”, “a set A” or “the object”. A placeholder makes the reader ask which set is meant, and the writer has already answered that question. Keep a placeholder only where the statement is abstract on purpose, such as a general definition that holds for any set. The same aim, stated from the other side: state a result at the generality it holds, no narrower than its argument needs. A fact that a proof proves only for one case, when the argument works for all cases, is a lemma left unextracted ([Extract a lemma wherever feasible](../chapters/teaching.llms.md)).
+
+> ❌ The mode is an element of the set A at which the density is largest.
+>
+> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mds/functions.html#def-range) of the random variable at which the density is largest.
+
+The `check-avoided-words` check in gha warns on a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), [codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain), range or sample space named by a bare capital letter or by “some”, such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.
 
 Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) says when those words are a problem and what to write instead.
 
