@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 08:00:13 (PDT)
+Last modified: 2026-10-29 12:57:04 (PDT)
 
 > **NOTE:**
 >
@@ -186,7 +186,7 @@ Beyond the [antithesis](#def-antithesis), clichéd drafts lean on a set of sente
 Watch for these shapes:
 
 - **The straw objection.** A doubt raised only to be answered (“It may seem trivial. In fact, …”). This is the [antithesis](#def-antithesis) spread over two sentences.
-- **The personified abstraction.** A definition, method or result that “forces”, “invites”, “demands” or “asks” something of the reader. Name who does what.
+- **The personified abstraction.** A definition, method or result that “forces”, “invites”, “demands” or “asks” something of the reader, or a mathematical object that “recommends”, “knows” or “wants” something. Name who does what, and state the condition the phrase hides ([Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language)).
 - **The colon reveal.** A setup, then a colon, then the point. Lead with the point.
 - **The answered rhetorical question.** “The result? A faster fit.” or “Why does this matter? Because …”. State the result.
 - **The throat-clearing lead-in.** “Here’s the thing:”, “Here’s why:”, “The key is”, “Put simply,”. Delete the lead-in.

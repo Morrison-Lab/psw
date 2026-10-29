@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 08:00:13 (PDT)
+Last modified: 2026-10-29 12:57:04 (PDT)
 
 > **NOTE:**
 >
@@ -46,7 +46,7 @@ The precise alternative is not always shorter, but it tells the reader exactly w
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are [clichés](../chapters/avoid-cliches.llms.md#def-cliche), and [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more of them.
 
-Money words are idioms too when no money is involved. “Costs us”, “buys us” and “at the price of” borrow from commerce to describe a trade-off, and the reader must translate them back. Say what is lost or gained. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term.
+Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term.
 
 > ❌ Nesting the cross-validation loop costs another factor of \\K\\ in computing time.
 >
@@ -59,6 +59,16 @@ Money words are idioms too when no money is involved. “Costs us”, “buys us
 > ❌ The penalty costs us a little flexibility at the ends of the curve.
 >
 > ✅ The penalty reduces the curve’s flexibility a little at its ends.
+
+> ❌ That trade is the whole bargain of gradient descent.
+>
+> ✅ Gradient descent decreases the objective only when each step is small enough for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
+
+Do not give a mathematical object a mind. A derivative does not “recommend” a direction, a model does not “know” or “want” anything, and an approximation is not “trustworthy”. Each such phrase hides a precise claim, and the reader needs that claim stated plainly. State the condition under which the claim holds, with the inequality or the order of the error, and display it when it is a key equation.
+
+> ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
+>
+> ✅ The linear approximation has error \\o(\norm{\vh})\\ as \\\vh \to \vzero\\, so the objective decreases along the negative gradient only for steps \\\vh\\ that are small enough.
 
 Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) says when those words are a problem and what to write instead.
 
