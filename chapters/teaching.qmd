@@ -39,6 +39,18 @@ Pose each task as an exercise, give students time to try it, and then show the s
   Put the shared setup in the first exercise,
   and begin each later exercise by citing it, as in "Make the assumptions of the first exercise."
   Later exercises can use earlier results through cross-references.
+- Split the solution the same way as its exercise (Ezra, 2026-10-28).
+  Each `#sol-` of a split exercise answers only its own `#exr-`,
+  takes its slug from that exercise (see the slug rule below),
+  and sits in its own subfile after its exercise.
+  This covers code: a lab solution puts each step's code, output and figure in the solution of the exercise that asks for it,
+  not all in the first solution.
+  A solution does not label parts such as "(b)" or "Part 2",
+  and does not draw a figure that a later exercise asks for.
+  Code that a later part needs stays in the earliest solution that needs it,
+  because the page shares one session per language.
+  The `check-split-solutions` workflow in [`gha`](https://github.com/Morrison-Lab/gha) enforces this
+  ([gha#1290](https://github.com/Morrison-Lab/gha/issues/1290)).
 - Make each exercise ask for one thing (Ezra, 2026-10-27).
   A prompt that says "compute the slope, and compare it with the fitted value" <!-- check-term-links: allow -->
   asks for two things, so split it into two exercises,
