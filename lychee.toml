@@ -28,4 +28,7 @@ exclude = [
   # credit.niso.org (the CRediT taxonomy) timed out from GitHub's runners on
   # all four runs on 2026-10-22 (psw#324, psw#325), so the check stays red.
   "^https://credit\\.niso\\.org/?$",
+  # en-word.net answered 503 to the checker on psw#408 (run 40831812392), on a
+  # page that PR did not touch.
+  "^https://en-word\\.net/?$",
 ]
