@@ -142,8 +142,8 @@ and put the qualifications, the citation and the filler before it.
 
 Items that play the same role in a sentence or a list
 take the same grammatical form.
-Strunk calls this parallel construction:
-"expressions of similar content and function should be" outwardly similar
+Strunk calls this parallel construction,
+and states the rule as "Express co-ordinate ideas in similar form"
 [@strunk1920elements, rule 15].
 In a bullet list,
 start every item the same way,
