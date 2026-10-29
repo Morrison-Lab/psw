@@ -9,7 +9,7 @@ Label a figure axis that shows it "Log-odds, $\logodds$" (see [Axis titles](slid
 
 ## Argument of the logistic function
 
-> ❌ The logistic function is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
+> ❌ The logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
 >
 > ✅ The logistic function is $\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}$, evaluated at the log-odds $\logodds$.
 
