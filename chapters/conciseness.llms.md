@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 13:51:16 (PDT)
+Last modified: 2026-10-29 14:29:08 (PDT)
 
 > **NOTE:**
 >
@@ -90,7 +90,23 @@ A fronted phrase delays the subject in the same way. Move a phrase such as “in
 >
 > ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
-## 6 Limit complex sentence structures
+## 6 Put the emphatic words at the end
+
+The end of a sentence is the position the reader remembers. Strunk states the rule as “Place the emphatic words of a sentence at the end” ([Strunk 1920](#ref-strunk1920elements), rule 18). Put the claim you want the reader to keep last, and put the qualifications, the citation and the filler before it.
+
+> ❌ The estimate becomes more precise as the sample size grows, in general.
+>
+> ✅ In general, the estimate becomes more precise as the sample size grows.
+
+## 7 Express coordinate ideas in parallel form
+
+Items that play the same role in a sentence or a list take the same grammatical form. Strunk calls this parallel construction, and states the rule as “Express co-ordinate ideas in similar form” ([Strunk 1920](#ref-strunk1920elements), rule 15). [Put lists in bullet points](#put-lists-in-bullet-points) applies the rule to the items of a list. The rule also holds inside one sentence, where a series joins verbs, noun phrases or adjectives and each item should be the same kind of phrase.
+
+> ❌ The model is fast, accurate and has been validated.
+>
+> ✅ The model is fast, accurate and validated.
+
+## 8 Limit complex sentence structures
 
 A sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (*and*, *but*, *or*) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.
 
@@ -106,7 +122,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-## 7 Do not rule out readings no reader would make
+## 9 Do not rule out readings no reader would make
 
 A definition says what a [term](../chapters/defining-terms.llms.md#def-term) means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
 
@@ -136,7 +152,7 @@ A contrast you keep must not be a straw man. Say who holds the confusing reading
 
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
-## 8 Avoid double negatives
+## 10 Avoid double negatives
 
 A double negative states a claim by denying its opposite, as in these phrases:
 
@@ -160,7 +176,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to [hedge](../chapters/avoid-cliches.llms.md#def-hedge) “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-## 9 Write about the subject, not about the text
+## 11 Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject. They do one of these things:
 
@@ -188,7 +204,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-## 10 Let a self-describing link stand alone
+## 12 Let a self-describing link stand alone
 
 A URL often shows the name of what it points to and where that thing lives. When it does, do not also spell out that name or host around the link. The reader would read the same facts twice.
 
@@ -204,7 +220,7 @@ A URL often shows the name of what it points to and where that thing lives. When
 
 Keep a descriptive label when the URL does not show what it points to, such as a DOI or a shortened link.
 
-## 11 Keep the writer out of the way
+## 13 Keep the writer out of the way
 
 Mention yourself only where a sentence needs an actor, such as a request, an offer, or a decision you made. Elsewhere, make the subject of the sentence the thing the reader cares about. Extra references to the writer turn attention from the content to the person.
 
@@ -222,7 +238,7 @@ Mention yourself only where a sentence needs an actor, such as a request, an off
 >
 > A request still needs its actor: “Could the space be increased, or would you allow me to register my own runner?” keeps “me” because the request is about the writer’s runner.
 
-## 12 Do not overexplain
+## 14 Do not overexplain
 
 Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.
 
@@ -236,7 +252,7 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 >
 > The first version adds a clause that “the mean” already covers. The second is complete.
 
-## 13 Put lists in bullet points
+## 15 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -306,7 +322,7 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > The labels let the reader find a case at a glance, and the bullets show that there are three.
 
-## 14 Write to communicate, not to impress
+## 16 Write to communicate, not to impress
 
 Many rules in this chapter serve one aim: the reader should reach your meaning without extra work. A long word, a nested sentence or a crowded paragraph can make a text sound more formal, but it can add work for the reader without adding to the meaning. So at each level of the text, choose the plainest form that still carries the full meaning:
 
@@ -325,7 +341,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 >
 > The ✅ version drops “It is imperative to acknowledge that”, which only says that the next claim matters. It replaces “notwithstanding” with “despite” and “are indicative of” with “suggest”, as [Replacing unnecessary jargon](../chapters/word-choice.llms.md#exm-jargon) does for single words. It puts the noun phrases in plainer words too: “methodological constraints” becomes “the limits of the study’s methods”, and “findings” becomes “results”. It also removes the relative clauses “that were encountered in the course of the study” and “that were obtained”, because a study’s constraints are ones it faced, and its findings are ones it obtained.
 
-## 15 Examples of concise writing
+## 17 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
