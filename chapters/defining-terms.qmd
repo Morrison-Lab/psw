@@ -166,6 +166,19 @@ Follow these principles when introducing new [term](#def-term)s:
   Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning,
   and hides that the symbol is a mean of the deviations.
 
+- **Put only the defining equation in a definition, and state equivalences as results:**
+  A definition div displays one equation,
+  the one that links the symbol of the defined term to its definitional expression.
+  It does not display a chain of equal expressions,
+  and it does not display an equivalent form.
+  State each equality between expressions, and each equivalence between concepts,
+  in its own result (a theorem, lemma, corollary or proposition) after the definition.
+  For example, define the residual variance at $\predvar$ as $\varpar \eqdef \condVar{\noise}{\Predvar = \predvar}$,
+  then state $\varpar = \condVar{\Outvar}{\Predvar = \predvar}$ as a result.
+  A definition that also shows $= \condVar{\Outvar}{\Predvar = \predvar}$
+  asserts a result without a statement or a proof,
+  and the reader cannot tell which equality is the definition.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
   by its probability density function (pdf) or probability mass function (pmf)
