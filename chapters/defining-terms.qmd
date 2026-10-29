@@ -207,11 +207,11 @@ Follow these principles when introducing new [term](#def-term)s:
   leaves the reader to check that the two symbols denote one object.
 
 - **Make a definition as concise as possible:**
-  State the term with the fewest words and symbols that fix it exactly.
+  State the [term](#def-term) with the fewest words and symbols that fix it exactly.
   Build on terms that are already defined, and link them,
   instead of spelling out again what they mean.
   For example, define a mode of a distribution as an element of the
-  [argmax](https://morrison-lab.github.io/mds/algebra-basics.html#def-argmax) of its density or mass function,
+  [argmax](https://morrison-lab.github.io/mds/algebra-basics.html#def-argmax) of its density or mass [function](https://morrison-lab.github.io/mds/functions.html#def-function),
   not by writing out the inequality that the argmax stands for.
   The inequality belongs in the definition of the argmax, which the reader can follow the link to.
   A definition that restates a linked term is longer to read and drifts from the original if either changes.
