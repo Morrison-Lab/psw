@@ -183,6 +183,29 @@ Follow these principles when introducing new [term](#def-term)s:
   a definition that adds "equivalently, the variance of the outcome given the covariates"
   states a result, so it belongs in one.
 
+- **Write both sides of a definition in the same notation:**
+  The symbol on the left names an object,
+  and the right side expands that object's own definition.
+  It does not describe the object in another way,
+  because the step from one description to the other is a result.
+  For example, with the conditional expectation function $\truemean$ and its prediction error $\prederrf{\truemean}$,
+  define the residual risk as $\popriskf{\truemean} = \E{\sqf{\prederrf{\truemean}}}$,
+  not as $\popriskf{\truemean} = \E{\sqf{\Outvar - \E{\Outvar \mid \Predvar}}}$.
+  The second form spells the function $\truemean$ out on the right
+  but names it on the left,
+  so a reader cannot tell whether the two sides describe the same object.
+  Derive the second form from the first in a proof.
+
+- **Reuse the notation and the concept names of the result that introduces an object:**
+  When an earlier theorem names an object,
+  every later definition about it uses the same symbols and the same concept.
+  Do not coin an alias symbol or a synonym term for it.
+  For example, a theorem that decomposes the squared-error risk
+  and names the minimizing function $\truemean$
+  fixes the residual risk as the risk $\popriskf{\truemean}$ of that function.
+  A definition that names the residual risk through a second symbol for the same function
+  leaves the reader to check that the two symbols denote one object.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
   by its probability density function (pdf) or probability mass function (pmf)
