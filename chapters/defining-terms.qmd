@@ -479,6 +479,21 @@ Follow these principles when introducing new [term](#def-term)s:
   Is every instance of the old term an instance of the new term?
   If only the first holds, the new term is a hyponym.
 
+- **Tell synonyms from equivalent concepts:**
+  Only true synonyms share a div title as aliases:
+  names for one concept, which has one definition.
+  Two concepts that happen to be equivalent are different concepts, however often they coincide.
+  Give each its own definition, an example after each,
+  and a theorem showing that they agree
+  (see *Put only the defining equation in a definition* above).
+  A test: if each name has its own natural definition,
+  they are two concepts.
+  For example, a loss defined as the negative log of the predicted probability of the observed class
+  and a loss defined as the cross-entropy between two distributions
+  each have a natural definition,
+  so give each its own div and state that they agree as a theorem,
+  instead of titling one div with both names.
+
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
   such as "linear regression" for a model with an intercept, <!-- check-term-links: allow -->
