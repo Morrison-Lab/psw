@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 00:12:59 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 00:21:17 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -365,6 +365,7 @@
 <li>Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.</li>
 <li>Pose every calculation, derivation, or proof as an exercise, and put the worked steps in the solution.</li>
 <li>Ask the question that a definition or theorem answers before stating it. The solution answers informally, in plain words, and the formal <code>#def-</code> or <code>#thm-</code> div follows the solution div.</li>
+<li>Restate every result that a solution first derives in its own theorem-type div (<code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code> or <code>#prp-</code>) after the exercise (Ezra, 2026-10-29). The solution shows the working, and the theorem div states the result by itself, so a reader can find and cite it. The <code>check-restated-results</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> warns about a derivation solution that a pull request edits and that no theorem-type div follows (<a href="https://github.com/Morrison-Lab/gha/issues/1309">gha#1309</a>). The check never sweeps existing content: restate the result when you edit the passage anyway. <code>&lt;!-- restated-ok: reason --&gt;</code> in the solution exempts a result that is stated elsewhere.</li>
 <li>Give each bottom-level prompt its own <code>#exr-</code> div and its own <code>#sol-</code> div, in order, rather than one exercise with parts (a) through (e). Any exercise with several parts is split, however the parts are marked: letters, numbers or bullets. Put the shared setup in the first exercise, and begin each later exercise by citing it, as in “Make the assumptions of the first exercise.” Later exercises can use earlier results through cross-references.</li>
 <li>Split the solution the same way as its exercise (Ezra, 2026-10-28). Each <code>#sol-</code> of a split exercise answers only its own <code>#exr-</code>, takes its slug from that exercise (see the slug rule below), and sits in its own subfile after its exercise. This covers code: a lab solution puts each step’s code, output and figure in the solution of the exercise that asks for it, not all in the first solution. A solution does not label parts such as “(b)” or “Part 2”, and does not draw a figure that a later exercise asks for. Code that a later part needs stays in the earliest solution that needs it, because the page shares one session per language. The <code>check-split-solutions</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> enforces this (<a href="https://github.com/Morrison-Lab/gha/issues/1290">gha#1290</a>).</li>
 <li>Make each exercise ask for one thing (Ezra, 2026-10-27). A prompt that says “compute the slope, and compare it with the fitted value” <!-- check-term-links: allow --> asks for two things, so split it into two exercises, each with its own solution. Split a list item or step inside an exercise the same way, into separate exercises. Phrases such as “and then”, “and also”, and “and compare” mark a second ask.</li>
