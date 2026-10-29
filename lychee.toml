@@ -31,4 +31,7 @@ exclude = [
   # en-word.net answered 503 to the checker on psw#408 (run 40831812392), on a
   # page that PR did not touch.
   "^https://en-word\\.net/?$",
+  # www.numdam.org timed out from GitHub's runners on psw#432 (run 40971504515),
+  # on a page that PR did not touch; a re-run passed.
+  "^https://www\\.numdam\\.org/?$",
 ]
