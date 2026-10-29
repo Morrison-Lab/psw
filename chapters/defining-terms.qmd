@@ -188,7 +188,7 @@ Follow these principles when introducing new [term](#def-term)s:
   and the right side expands that object's own definition.
   It does not describe the object in another way,
   because the step from one description to the other is a result.
-  For example, with the conditional expectation function $\truemean$ and its prediction error $\prederrf{\truemean}$,
+  For example, with the conditional expectation [function](https://morrison-lab.github.io/mds/functions.html#def-function) $\truemean$ and its prediction error $\prederrf{\truemean}$,
   define the residual risk as $\popriskf{\truemean} = \E{\sqf{\prederrf{\truemean}}}$,
   not as $\popriskf{\truemean} = \E{\sqf{\Outvar - \E{\Outvar \mid \Predvar}}}$.
   The second form spells the function $\truemean$ out on the right
@@ -199,9 +199,9 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Reuse the notation and the concept names of the result that introduces an object:**
   When an earlier theorem names an object,
   every later definition about it uses the same symbols and the same concept.
-  Do not coin an alias symbol or a synonym term for it.
+  Do not coin an alias symbol or a synonym [term](#def-term) for it.
   For example, a theorem that decomposes the squared-error risk
-  and names the minimizing function $\truemean$
+  and names the minimizing [function](https://morrison-lab.github.io/mds/functions.html#def-function) $\truemean$
   fixes the residual risk as the risk $\popriskf{\truemean}$ of that function.
   A definition that names the residual risk through a second symbol for the same function
   leaves the reader to check that the two symbols denote one object.
