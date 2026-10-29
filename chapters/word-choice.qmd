@@ -326,6 +326,76 @@ the training set is the source of the estimates.
 Keep a plain preposition when it states the relationship exactly,
 such as *in* for location and *by* for the agent of a passive verb.
 
+## Refer to a place in the document by its label
+
+Do not use "above" or "below" for a position in a document.
+The same source renders as a web page, a slide deck and a handout,
+and each format orders and breaks the content differently,
+so "above" can point at nothing, or at the wrong thing.
+Style guides advise "earlier" or "preceding" and "later" or "following"
+for a position in a document
+[@google2025style, entry "above"; @google2025style, entry "below"].
+Prefer the label of the result, figure, table or section,
+because a label tells the reader what to find
+and survives a reordering.
+
+:::{#exm-position-words}
+
+## Replacing "above" with a label
+
+> ❌ The next figure draws the fits behind the table above.
+>
+> ✅ The next figure draws the fits behind `@tbl-fits`.
+
+The rewrite needs a label on the table,
+so labeling it is part of the fix.
+Quarto renders `@tbl-fits` as "Table 2",
+and the number follows the table when the page changes.
+A comparison, such as "a value above the threshold",
+does not refer to a position in the document and is fine.
+
+:::
+
+## Leave out words that judge difficulty or add nothing
+
+"Just" and "easy" ("easily") rarely carry meaning.
+The Google style guide says "just" is "a filler word that you can delete without affecting your meaning"
+and says to try eliminating "easy" and "easily"
+"because usually the same meaning can be conveyed without" them
+[@google2025style, entries "just" and "easy, easily"].
+"Easy" also judges the reader:
+a reader who finds the step hard is told the difficulty is their own.
+[Do not substitute flippancy for support](citations-evidence.qmd#do-not-substitute-flippancy-for-support)
+covers the same problem for "obvious" and "clearly".
+
+Keep the word when it carries meaning.
+"Just before the loop ends" states a position in time,
+and deleting "just" changes it.
+
+## Give a date or a version instead of a time-relative word
+
+Do not write "now", "new" or "currently" for a state that will change.
+The Google style guide says these words
+"can render such documentation inaccurate, outdated, or unmeaningful"
+[@google2025style, "Timeless documentation"]
+and says of "currently": "Avoid because this word is implied" [@google2025style, entry "currently"].
+Say which date, version or release the statement holds for.
+
+The guide does not list "recently",
+but it fails the same way.
+In course notes it also fails when pages reorder,
+because "recently" assumed an order of lectures that the page does not fix.
+
+:::{#exm-time-relative}
+
+## Replacing "recently" with a pointer
+
+> ❌ A missing *that* is a common cause of garden-path sentences, as we recently saw.
+>
+> ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences) shows.
+
+:::
+
 ## Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field.
