@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 16:56:32 (PDT)
+Last modified: 2026-10-29 17:02:18 (PDT)
 
 > **NOTE:**
 >
@@ -75,6 +75,7 @@ This is the compositional approach of [modular programming](https://en.wikipedia
 
 - A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
 - A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
+- A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
 - Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as \\\E{Z^2} = \var{Z} + \sqf{\E{Z}}\\ for any random variable \\Z\\, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
 - A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
@@ -306,6 +307,7 @@ This rule applies to all teaching materials that run code, in every course and e
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
+- Show every proof on the slides. Do not wrap a proof in `{.content-hidden when-format="revealjs"}`. Remove an existing wrapper from a proof when you edit the file for another reason, and do not sweep the others (Ezra, 2026-10-29).
 - Put each named example in an `#exm-` div.
 - Put on a slide only what you want the audience to look at. Put an example in an `#exm-` div and short commentary in a `#rem-` div, because a `::: notes` div is plain text without a box on the web page.
 - Put a long paragraph of commentary in a remark that is also speaker notes: `::: {#rem-name .remark .notes}`. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short `#rem-` div only when the slide needs a takeaway to look at.

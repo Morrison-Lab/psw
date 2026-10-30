@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 16:56:32 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 17:02:18 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -412,6 +412,7 @@
 <ul>
 <li>A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>).</li>
 <li>A div holds one <a href="../chapters/defining-terms.html#def-term">term</a> or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
+<li>A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.</li>
 <li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
 <li>Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as <span class="math inline">\(\E{Z^2} = \var{Z} + \sqf{\E{Z}}\)</span> for any random variable <span class="math inline">\(Z\)</span>, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic (<a href="https://morrison-lab.github.io/mds/">mds</a>, <a href="https://morrison-lab.github.io/pds/">pds</a> or <a href="https://morrison-lab.github.io/sds/">sds</a>), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.</li>
 <li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
@@ -709,6 +710,7 @@
 <ul>
 <li>Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.</li>
 <li>Put a list of three or more phrases in a bullet list, as <a href="../chapters/conciseness.html#put-lists-in-bullet-points">Put lists in bullet points</a> describes.</li>
+<li>Show every proof on the slides. Do not wrap a proof in <code>{.content-hidden when-format="revealjs"}</code>. Remove an existing wrapper from a proof when you edit the file for another reason, and do not sweep the others (Ezra, 2026-10-29).</li>
 <li>Put each named example in an <code>#exm-</code> div.</li>
 <li>Put on a slide only what you want the audience to look at. Put an example in an <code>#exm-</code> div and short commentary in a <code>#rem-</code> div, because a <code>::: notes</code> div is plain text without a box on the web page.</li>
 <li>Put a long paragraph of commentary in a remark that is also speaker notes: <code>::: {#rem-name .remark .notes}</code>. Reveal.js shows it only in speaker view, so the audience does not have to read it, and the web page shows it as a boxed remark. Readers who did not attend the lecture use the web page, so nothing is lost, and nothing is said twice. Give a long paragraph a separate short <code>#rem-</code> div only when the slide needs a takeaway to look at.</li>
