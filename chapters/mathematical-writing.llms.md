@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 16:45:39 (PDT)
+Last modified: 2026-10-29 16:56:32 (PDT)
 
 > **NOTE:**
 >
@@ -176,7 +176,53 @@ No div repeats reasoning that it could cite instead. Two arguments that share a 
 
 No check can decide whether a step is reusable, so this rule stays a writing rule that review enforces. The `check-solution-citations` workflow covers only the citation of solutions.
 
-## 10 Rules that other chapters cover
+## 10 Use no symbol that the statement does not need
+
+Halmos advises “avoid the use of irrelevant symbols” and states the rule in its showy form as “use no letter only once” ([Halmos 1970, sec. 15](#ref-halmos1970write)). A symbol that appears once, in the sentence that introduces it, adds a name for the reader to hold and nothing to use it for. Delete the symbol, or use it in the statement that needs it.
+
+> **NOTE:**
+>
+> **Example 9 (Deleting a symbol that is named and never used)**  
+>
+> > ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mds/functions.html#def-function) \\f\\ on a compact space is bounded.
+> >
+> > ✅ Every continuous real-valued function on a compact space is bounded.
+>
+> Nothing in the sentence refers to \\f\\ again, so the symbol contributes nothing to the statement. Halmos gives this sentence as his example ([Halmos 1970, sec. 15](#ref-halmos1970write)).
+
+When you apply a displayed relation to a second object, name the relation or restate it, rather than citing its tag. Halmos calls “\\g\\ also satisfies (*)” ”logical and alphabetical nonsense” and advises ”(*) remains satisfied if \\f\\ is replaced by \\g\\”, or, better, giving the relation a name ([Halmos 1970, sec. 15](#ref-halmos1970write)). A named relation also lets the reader find it without hunting for a tag.
+
+> **NOTE:**
+>
+> **Example 10 (Naming the relation instead of tagging it)**  
+>
+> > ❌ The [sample mean](../chapters/defining-terms.llms.md#def-sample-mean) satisfies Equation 3, which says that the estimator’s expected value equals the parameter. The sample [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) also satisfies Equation 3.
+> >
+> > ✅ The sample mean is an unbiased estimator of the [population](../chapters/defining-terms.llms.md#def-population) mean. The sample variance is an unbiased estimator of the population variance.
+>
+> In the ❌ version, “also satisfies Equation 3” is a statement about a different parameter, and the equation says nothing about which parameter. The ✅ version names the property, “unbiased”, and states each parameter.
+
+Halmos also says this rule “is sometimes better to break than to obey”: a symbol that you introduce so that a later sentence in the same paragraph can use it is not superfluous. No check can tell a symbol that a later sentence uses from one that it never uses, because “later” can span pages, so this stays a writing rule that review enforces.
+
+## 11 Repeat the wording of parallel results, then point out the difference
+
+When a later result treats a parallel or more general case, Halmos advises that “it is a big help to the reader if you use the same words in the same order for as long as possible, and then, with a proper roll of drums, emphasize the difference” ([Halmos 1970, sec. 11](#ref-halmos1970write)). He adds that listing the shared conditions and dropping one is not enough; say which condition changed ([Halmos 1970, sec. 11](#ref-halmos1970write)).
+
+> **NOTE:**
+>
+> **Example 11 (Defining the lasso in the words of the ridge definition)**  
+>
+> > ❌ The ridge estimate minimizes the [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) plus a penalty on the size of the coefficients, which is the sum of their squares. The lasso estimate is the vector of coefficients with the smallest penalized fit, where the penalty adds up the absolute values.
+> >
+> > ✅ The ridge estimate minimizes the residual sum of squares plus a penalty equal to the sum of the squared coefficients. The lasso estimate minimizes the residual sum of squares plus a penalty equal to the sum of the absolute values of the coefficients. The two definitions differ only in the penalty.
+>
+> The ❌ pair varies every phrase, so the reader must compare them clause by clause to find that only the penalty differs. The ✅ pair repeats the shared words and ends by naming the one change.
+
+Rewording is for the places where the meaning differs. Do not repeat a result for the sake of repetition; [reuse one written version of each result](../chapters/teaching.llms.md#reuse-one-written-version-of-each-result) covers that case.
+
+No check can decide that two results are parallel, so this stays a writing rule that review enforces.
+
+## 12 Rules that other chapters cover
 
 [Table 1](#tbl-knuth-elsewhere) lists the course’s other rules and where this book discusses them.
 
@@ -196,5 +242,7 @@ Table 1: Rules from the course that other chapters of this book cover
 Back to top
 
 ## References
+
+Halmos, Paul R. 1970. “How to Write Mathematics.” *L’Enseignement Mathématique* 16. <https://doi.org/10.5169/seals-43857>.
 
 Knuth, Donald E., Tracy Larrabee, and Paul M. Roberts. 1987. *Mathematical Writing*. <https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf>.

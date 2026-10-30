@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 16:45:39 (PDT)</p>
+  <p class="date">Last modified: 2026-10-29 16:56:32 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -447,8 +447,50 @@
 <p>No div repeats reasoning that it could cite instead. Two arguments that share a step cite one result div, so a correction to the step is made once.</p>
 <p>No check can decide whether a step is reusable, so this rule stays a writing rule that review enforces. The <code>check-solution-citations</code> workflow covers only the citation of solutions.</p>
 </section>
-<section id="rules-that-other-chapters-cover" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Rules that other chapters cover</h2>
+<section id="use-no-symbol-that-the-statement-does-not-need" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Use no symbol that the statement does not need</h2>
+</section>
+<section class="slide level2">
+
+<p>Halmos advises “avoid the use of irrelevant symbols” and states the rule in its showy form as “use no letter only once” <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 15</a>)</span>. A symbol that appears once, in the sentence that introduces it, adds a name for the reader to hold and nothing to use it for. Delete the symbol, or use it in the statement that needs it.</p>
+<div id="exm-superfluous-symbol" class="theorem example">
+<p><span class="theorem-title"><strong>Example 9 (Deleting a symbol that is named and never used)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Every continuous real-valued <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> <span class="math inline">\(f\)</span> on a compact space is bounded.</p>
+<p>✅ Every continuous real-valued function on a compact space is bounded.</p>
+</blockquote>
+<p>Nothing in the sentence refers to <span class="math inline">\(f\)</span> again, so the symbol contributes nothing to the statement. Halmos gives this sentence as his example <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 15</a>)</span>.</p>
+</div>
+<p>When you apply a displayed relation to a second object, name the relation or restate it, rather than citing its tag. Halmos calls “<span class="math inline">\(g\)</span> also satisfies (<em>)” ”logical and alphabetical nonsense” and advises ”(</em>) remains satisfied if <span class="math inline">\(f\)</span> is replaced by <span class="math inline">\(g\)</span>”, or, better, giving the relation a name <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 15</a>)</span>. A named relation also lets the reader find it without hunting for a tag.</p>
+<div id="exm-name-the-relation" class="theorem example">
+<p><span class="theorem-title"><strong>Example 10 (Naming the relation instead of tagging it)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The <a href="../chapters/defining-terms.html#def-sample-mean">sample mean</a> satisfies Equation 3, which says that the estimator’s expected value equals the parameter. The sample <a href="../chapters/defining-terms.html#def-variance-expression-and-prose">variance</a> also satisfies Equation 3.</p>
+<p>✅ The sample mean is an unbiased estimator of the <a href="../chapters/defining-terms.html#def-population">population</a> mean. The sample variance is an unbiased estimator of the population variance.</p>
+</blockquote>
+<p>In the ❌ version, “also satisfies Equation 3” is a statement about a different parameter, and the equation says nothing about which parameter. The ✅ version names the property, “unbiased”, and states each parameter.</p>
+</div>
+<p>Halmos also says this rule “is sometimes better to break than to obey”: a symbol that you introduce so that a later sentence in the same paragraph can use it is not superfluous. No check can tell a symbol that a later sentence uses from one that it never uses, because “later” can span pages, so this stays a writing rule that review enforces.</p>
+</section>
+<section id="repeat-the-wording-of-parallel-results-then-point-out-the-difference" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Repeat the wording of parallel results, then point out the difference</h2>
+</section>
+<section class="slide level2">
+
+<p>When a later result treats a parallel or more general case, Halmos advises that “it is a big help to the reader if you use the same words in the same order for as long as possible, and then, with a proper roll of drums, emphasize the difference” <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 11</a>)</span>. He adds that listing the shared conditions and dropping one is not enough; say which condition changed <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 11</a>)</span>.</p>
+<div id="exm-parallel-wording" class="theorem example">
+<p><span class="theorem-title"><strong>Example 11 (Defining the lasso in the words of the ridge definition)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The ridge estimate minimizes the <a href="../chapters/defining-terms.html#def-rss">residual sum of squares</a> plus a penalty on the size of the coefficients, which is the sum of their squares. The lasso estimate is the vector of coefficients with the smallest penalized fit, where the penalty adds up the absolute values.</p>
+<p>✅ The ridge estimate minimizes the residual sum of squares plus a penalty equal to the sum of the squared coefficients. The lasso estimate minimizes the residual sum of squares plus a penalty equal to the sum of the absolute values of the coefficients. The two definitions differ only in the penalty.</p>
+</blockquote>
+<p>The ❌ pair varies every phrase, so the reader must compare them clause by clause to find that only the penalty differs. The ✅ pair repeats the shared words and ends by naming the one change.</p>
+</div>
+<p>Rewording is for the places where the meaning differs. Do not repeat a result for the sake of repetition; <a href="../chapters/teaching.html#reuse-one-written-version-of-each-result">reuse one written version of each result</a> covers that case.</p>
+<p>No check can decide that two results are parallel, so this stays a writing rule that review enforces.</p>
+</section>
+<section id="rules-that-other-chapters-cover" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Rules that other chapters cover</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
@@ -697,6 +739,9 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-halmos1970write" class="csl-entry" role="listitem">
+Halmos, Paul R. 1970. <span>“How to Write Mathematics.”</span> <em>L’Enseignement Math<span>é</span>matique</em> 16. <a href="https://doi.org/10.5169/seals-43857">https://doi.org/10.5169/seals-43857</a>.
+</div>
 <div id="ref-knuth1987mathematical" class="csl-entry" role="listitem">
 Knuth, Donald E., Tracy Larrabee, and Paul M. Roberts. 1987. <em>Mathematical Writing</em>. <a href="https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf">https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf</a>.
 </div>
