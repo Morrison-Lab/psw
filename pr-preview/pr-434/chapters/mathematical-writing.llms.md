@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 17:04:15 (PDT)
+Last modified: 2026-10-29 17:11:04 (PDT)
 
 > **NOTE:**
 >
@@ -224,7 +224,7 @@ No check can decide that two results are parallel, so this stays a writing rule 
 
 ## 12 State a theorem in one short sentence
 
-Halmos advises that “the statement of the theorem should consist of one sentence whenever possible”, and that the sentence be a short one ([Halmos 1970, sec. 10](#ref-halmos1970write)). Put the introductory comments, preliminary definitions and motivation before the statement, and the proof after it. Leave asides out of the statement itself: “Without loss of generality we may assume …” and “Moreover it follows from Theorem 1 that …” “do not belong in the statement of a theorem” ([Halmos 1970, sec. 10](#ref-halmos1970write)). A reasoning word in a statement (“so”, “because”) is a separate fault, and [Build every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units) covers it.
+Halmos advises that “the statement of the theorem should consist of one sentence whenever possible”, and that the sentence be a short one ([Halmos 1970, sec. 10](#ref-halmos1970write)). Put the introductory comments, preliminary definitions and motivation before the statement, and the proof after it. Leave asides out of the statement itself. Halmos says that phrases such as “without loss of generality we may assume …” and “moreover it follows from Theorem 1 that …” do not belong in the statement of a theorem ([Halmos 1970, sec. 10](#ref-halmos1970write)). A reasoning word in a statement (“so”, “because”) is a separate fault, and [Build every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units) covers it.
 
 > **NOTE:**
 >
@@ -238,7 +238,7 @@ Halmos advises that “the statement of the theorem should consist of one senten
 
 A statement that lists many hypotheses and many conclusions is too long for one sentence. Halmos says that “a list of eight hypotheses … and a list of six conclusions do not a theorem make; they are a badly expounded theory”, and that the hypotheses “probably describe a general concept that deserves to be isolated, named, and studied” ([Halmos 1970, sec. 10](#ref-halmos1970write)). Name the shared concept in its own definition, and state each conclusion as its own result.
 
-A warn-only check flags “without loss of generality”, “moreover” and “furthermore” on a line that a pull request adds to a theorem statement. No check can measure whether a statement is short or whether its hypotheses form a concept, so the length rule stays a writing rule that review enforces.
+A warn-only check ([gha#1368](https://github.com/Morrison-Lab/gha/pull/1368)) flags “without loss of generality”, “moreover” and “furthermore” on a line that a pull request adds to a theorem statement. No check can measure whether a statement is short or whether its hypotheses form a concept, so the length rule stays a writing rule that review enforces.
 
 ## 13 Rules that other chapters cover
 
