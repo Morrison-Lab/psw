@@ -193,6 +193,33 @@ Headings should clearly indicate the content of each section.
 **Best heading**: "Treatment reduced mortality by 30%"
 (when appropriate and not overstating findings)
 
+## Heading levels
+
+A page's title is its level 1 heading, so the body starts at level 2.
+Each heading is at most one level deeper than the heading before it.
+Three mistakes break this outline:
+
+- **A skipped level.**
+  A `####` heading directly after a `##` heading leaves a missing level 3,
+  which breaks the table of contents and the numbering.
+- **A page that starts too deep.**
+  A page whose first heading is level 3 or deeper usually kept the headings
+  of the larger page it was split out of.
+  Raise the headings when you move a section into its own page,
+  and when you write a shared include, remember that it takes its level
+  from the page that includes it.
+- **A first heading that repeats the title.**
+  A section copied into its own page often keeps its heading,
+  so the page opens with its title twice.
+  Drop the heading and keep its id, if anything links to it,
+  on an empty anchor such as `[]{#sec-newton}` at the top of the page.
+
+The `####` title of a definition, example or exercise div is not a heading in this sense.
+
+The `check-heading-levels` workflow in
+[Morrison-Lab/gha](https://github.com/Morrison-Lab/gha) flags these three mistakes
+on the heading lines a pull request adds.
+
 ## Avoid forward references
 
 A forward reference points the reader to content they have not reached yet.
