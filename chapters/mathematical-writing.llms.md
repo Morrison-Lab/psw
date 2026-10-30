@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 17:02:18 (PDT)
+Last modified: 2026-10-29 18:12:52 (PDT)
 
 > **NOTE:**
 >
@@ -222,7 +222,25 @@ Rewording is for the places where the meaning differs. Do not repeat a result fo
 
 No check can decide that two results are parallel, so this stays a writing rule that review enforces.
 
-## 12 Rules that other chapters cover
+## 12 State a theorem in one short sentence
+
+Halmos advises that “the statement of the theorem should consist of one sentence whenever possible”, and that the sentence be a short one ([Halmos 1970, sec. 10](#ref-halmos1970write)). Put the introductory comments, preliminary definitions and motivation before the statement, and the proof after it. Leave asides out of the statement itself. Halmos says that phrases such as “without loss of generality we may assume …” and “moreover it follows from Theorem 1 that …” do not belong in the statement of a theorem ([Halmos 1970, sec. 10](#ref-halmos1970write)). A reasoning word in a statement (“so”, “because”) is a separate fault, and [Build every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units) covers it.
+
+> **NOTE:**
+>
+> **Example 12 (Moving an aside out of a statement)**  
+>
+> > ❌ Without loss of generality, let \\x \> 0\\. Moreover, the sequence converges.
+> >
+> > ✅ If \\x \> 0\\, then the sequence converges.
+>
+> The ❌ statement is two sentences, and the first one is an aside. The ✅ statement is one implication. If the case \\x \< 0\\ needs the same argument, say so in the proof.
+
+A statement that lists many hypotheses and many conclusions is too long for one sentence. Halmos says that “a list of eight hypotheses … and a list of six conclusions do not a theorem make; they are a badly expounded theory”, and that the hypotheses “probably describe a general concept that deserves to be isolated, named, and studied” ([Halmos 1970, sec. 10](#ref-halmos1970write)). Name the shared concept in its own definition, and state each conclusion as its own result.
+
+A warn-only check ([gha#1368](https://github.com/Morrison-Lab/gha/pull/1368)) flags “without loss of generality”, “moreover” and “furthermore” on a line that a pull request adds to a theorem statement. No check can measure whether a statement is short or whether its hypotheses form a concept, so the length rule stays a writing rule that review enforces.
+
+## 13 Rules that other chapters cover
 
 [Table 1](#tbl-knuth-elsewhere) lists the course’s other rules and where this book discusses them.
 
