@@ -196,9 +196,9 @@ Headings should clearly indicate the content of each section.
 ## Heading levels
 
 A page's title is its level 1 heading, so the sections of the page start at level 2
-(the chapters of [rme](https://github.com/d-morrison/rme)
+(the chapters of [rme](https://morrison-lab.github.io/rme/)
 put their sections at level 1 under the title instead,
-and the check below flags only a first heading deeper than level 2).
+and the check below does not flag a first heading at level 1).
 Whichever level a site starts at, each heading is at most one level deeper than the heading before it.
 Three mistakes break this outline:
 
