@@ -424,7 +424,8 @@ If the case $x < 0$ needs the same argument, say so in the proof.
 :::
 
 A statement that lists many hypotheses and many conclusions is too long for one sentence.
-Halmos says that "a list of eight hypotheses ... and a list of six conclusions do not a theorem make; they are a badly expounded theory",
+Halmos says that "a list of eight hypotheses ... and a list of six conclusions do not a theorem make;
+they are a badly expounded theory",
 and that the hypotheses "probably describe a general concept that deserves to be isolated, named, and studied"
 [@halmos1970write, section 10].
 Name the shared concept in its own definition,
