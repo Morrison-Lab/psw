@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.19">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.20">
 
   <title>Principles of Scientific Writing – Writing for teaching</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-29 18:12:52 (PDT)</p>
+  <p class="date">Last modified: 2026-10-31 07:13:32 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -702,8 +702,23 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Structure slides for the reader</h2>
+<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Split a page before it grows too long</h2>
+</section>
+<section class="slide level2">
+
+<p>A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.</p>
+<ul>
+<li>Split a page that fails either test into several pages, one coherent topic each. The <a href="https://morrison-lab.github.io/mds/">math prerequisites</a> page on measures, for example, became six pages for this reason.</li>
+<li>Split along the headings that already divide the page, and give each new page its own title and a short introduction.</li>
+<li>Keep the old section ids as stubs that link to the new pages, so links from other pages and other sites still reach the content.</li>
+<li>Link between the new pages where one page uses a concept that another page defines.</li>
+<li>Do not delete anything to shorten a page: move it to the page where it belongs.</li>
+</ul>
+<p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
+</section>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -718,8 +733,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -740,8 +755,8 @@
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -753,8 +768,8 @@
 </ul>
 <p>Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.</p>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -784,8 +799,8 @@
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -796,8 +811,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -811,8 +826,8 @@
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-29 18:12:52 (PDT)
+Last modified: 2026-10-31 07:13:32 (PDT)
 
 > **NOTE:**
 >
@@ -303,7 +303,19 @@ This rule applies to all teaching materials that run code, in every course and e
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 22 Structure slides for the reader
+## 22 Split a page before it grows too long
+
+A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.
+
+- Split a page that fails either test into several pages, one coherent topic each. The [math prerequisites](https://morrison-lab.github.io/mds/) page on measures, for example, became six pages for this reason.
+- Split along the headings that already divide the page, and give each new page its own title and a short introduction.
+- Keep the old section ids as stubs that link to the new pages, so links from other pages and other sites still reach the content.
+- Link between the new pages where one page uses a concept that another page defines.
+- Do not delete anything to shorten a page: move it to the page where it belongs.
+
+The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
+
+## 23 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -314,7 +326,7 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 23 Give each concept in a note sheet its own row
+## 24 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -335,7 +347,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-## 24 Talk about the ideas, not the notes
+## 25 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -345,7 +357,7 @@ When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
-## 25 Write grading rubrics as checklists
+## 26 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -375,14 +387,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-## 26 Credit other courses without summarizing them
+## 27 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 27 Finish each unit completely
+## 28 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -394,7 +406,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-## 28 Rules that apply to all writing
+## 29 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
