@@ -624,6 +624,38 @@ in every course and every teaching repository.
   so the reference has no target there
   (observed when rendering lecture notes to PDF).
 
+## Split a page before it grows too long
+
+A page should load and finish rendering its math in under 5 seconds,
+and its scroll bar should not shrink to its smallest length
+(Ezra, 2026-10-31).
+The browser typesets every formula on a page,
+so a page with hundreds of formulas takes seconds to finish.
+A page tall enough to shrink the scroll bar to its minimum
+leaves the reader no way to see where they are in it.
+
+- Split a page that fails either test into several pages,
+  one coherent topic each.
+  The [math prerequisites](https://morrison-lab.github.io/mds/) page on measures,
+  for example, became six pages for this reason.
+- Split along the headings that already divide the page,
+  and give each new page its own title and a short introduction.
+- Keep the old section ids as stubs that link to the new pages,
+  so links from other pages and other sites still reach the content.
+- Link between the new pages where one page uses a concept that another page defines.
+- Do not delete anything to shorten a page:
+  move it to the page where it belongs.
+
+The `check-page-length` check in
+[`gha`](https://github.com/Morrison-Lab/gha)
+([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377))
+warns when a pull request adds to a page that, with its includes expanded,
+has more than 600 math expressions or 5000 source lines.
+Those limits are proxies,
+since the check does not run a browser.
+It warns only on pages a pull request touches,
+so split a long page when you next edit it, and do not sweep the others.
+
 ## Structure slides for the reader
 
 - Check the rendered slides, not only the web page.
