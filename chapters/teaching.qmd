@@ -647,7 +647,8 @@ leaves the reader no way to see where they are in it.
   move it to the page where it belongs.
 
 The `check-page-length` check in
-[`Morrison-Lab/gha`](https://github.com/Morrison-Lab/gha)
+[`gha`](https://github.com/Morrison-Lab/gha)
+([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377))
 warns when a pull request adds to a page that, with its includes expanded,
 has more than 600 math expressions or 5000 source lines.
 Those limits are proxies,
