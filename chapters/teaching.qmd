@@ -642,7 +642,7 @@ leaves the reader no way to see where they are in it.
   and give each new page its own title and a short introduction.
 - Keep the old section ids as stubs that link to the new pages,
   so links from other pages and other sites still reach the content.
-- Link between the new pages where one uses a term the other defines.
+- Link between the new pages where one page uses a concept that another page defines.
 - Do not delete anything to shorten a page:
   move it to the page where it belongs.
 
