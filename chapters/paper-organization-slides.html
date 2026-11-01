@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-10-31 07:13:32 (PDT)</p>
+  <p class="date">Last modified: 2026-11-01 01:56:20 (PDT)</p>
 </section>
 <section class="slide level2">
 
@@ -427,8 +427,22 @@
 <p><strong>Better heading</strong>: “Association between treatment and mortality”</p>
 <p><strong>Best heading</strong>: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)</p>
 </section>
-<section id="avoid-forward-references" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Avoid forward references</h2>
+<section id="heading-levels" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Heading levels</h2>
+</section>
+<section class="slide level2">
+
+<p>A page’s title is its level 1 heading, so the sections of the page start at level 2 (the chapters of <a href="https://morrison-lab.github.io/rme/">rme</a> put their sections at level 1 under the title instead, and the check below does not flag a first heading at level 1). Whichever level a site starts at, each heading is at most one level deeper than the heading before it. Three mistakes break this outline:</p>
+<ul>
+<li><strong>A skipped level.</strong> A <code>####</code> heading directly after a <code>##</code> heading leaves a missing level 3, so the table of contents shows a gap and section numbers can read <code>1.0.1</code>.</li>
+<li><strong>A page that starts too deep.</strong> A page whose first heading is level 3 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.</li>
+<li><strong>A first heading that repeats the title.</strong> A section copied into its own page often keeps its heading, so the page opens with its title twice. Drop the heading. If something links to <code>page.html#sec-newton</code>, keep that link working with an empty anchor such as <code>[]{#sec-newton}</code> at the top of the page. The anchor adds an empty paragraph, and a Quarto <code>@sec-newton</code> reference does not resolve through it, so a page that uses such a reference keeps its heading instead.</li>
+</ul>
+<p>The <code>####</code> title of a definition, example or exercise div is not a heading in this sense.</p>
+<p>The <a href="https://morrison-lab.github.io/gha/reference/check-heading-levels.html"><code>check-heading-levels</code> workflow</a> in Morrison-Lab/gha flags these three mistakes on the heading lines a pull request adds.</p>
+</section>
+<section id="avoid-forward-references" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Avoid forward references</h2>
 </section>
 <section class="slide level2">
 
@@ -458,8 +472,8 @@
 <p>A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.</p>
 <p>When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.</p>
 </section>
-<section id="links-to-videos-and-other-media" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Links to videos and other media</h2>
+<section id="links-to-videos-and-other-media" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Links to videos and other media</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 

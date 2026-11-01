@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-10-31 07:13:32 (PDT)
+Last modified: 2026-11-01 01:56:20 (PDT)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -174,7 +174,19 @@ Use descriptive subsection headings to guide readers through your results. Headi
 
 **Best heading**: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)
 
-## 6 Avoid forward references
+## 6 Heading levels
+
+A page’s title is its level 1 heading, so the sections of the page start at level 2 (the chapters of [rme](https://morrison-lab.github.io/rme/) put their sections at level 1 under the title instead, and the check below does not flag a first heading at level 1). Whichever level a site starts at, each heading is at most one level deeper than the heading before it. Three mistakes break this outline:
+
+- **A skipped level.** A `####` heading directly after a `##` heading leaves a missing level 3, so the table of contents shows a gap and section numbers can read `1.0.1`.
+- **A page that starts too deep.** A page whose first heading is level 3 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.
+- **A first heading that repeats the title.** A section copied into its own page often keeps its heading, so the page opens with its title twice. Drop the heading. If something links to `page.html#sec-newton`, keep that link working with an empty anchor such as `[]{#sec-newton}` at the top of the page. The anchor adds an empty paragraph, and a Quarto `@sec-newton` reference does not resolve through it, so a page that uses such a reference keeps its heading instead.
+
+The `####` title of a definition, example or exercise div is not a heading in this sense.
+
+The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags these three mistakes on the heading lines a pull request adds.
+
+## 7 Avoid forward references
 
 A forward reference points the reader to content they have not reached yet. Common forms are:
 
@@ -208,7 +220,7 @@ A word such as “below” in an ordinary comparison, as in “values below the 
 
 When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.
 
-## 7 Links to videos and other media
+## 8 Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
 
