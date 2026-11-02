@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 10:54:53 (PST)
+Last modified: 2026-11-02 11:15:11 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,7 @@ Last modified: 2026-11-02 10:54:53 (PST)
 
 Clear grammar removes friction between your ideas and your reader. This chapter collects a few grammatical habits that consistently make scientific writing easier to read.
 
-## 1 Relative pronouns
+# 1 Relative pronouns
 
 Relative pronouns introduce a clause that describes a preceding noun. The relative pronouns are:
 
@@ -24,7 +24,7 @@ Relative pronouns introduce a clause that describes a preceding noun. The relati
 
 Two habits make these clauses easier to read: choosing between *that* and *which* correctly, and keeping the relative pronoun rather than dropping it.
 
-### 1.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
+### 1.0.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
 
 > **NOTE:**
 >
@@ -54,7 +54,7 @@ Use *that* for a [restrictive clause](#def-restrictive-clause). Use *which*, set
 
 A quick test: if you can drop the clause without changing which thing you are describing, use *which* and commas; otherwise, use *that*.
 
-### 1.2 Do not omit relative pronouns
+### 1.0.2 Do not omit relative pronouns
 
 English lets you drop a relative pronoun in some sentences, but keeping it makes the structure of the sentence explicit and easier to parse on the first read. Prefer to keep *that*, *which*, or *who*, even when the grammar would let you drop it.
 
@@ -68,7 +68,7 @@ English lets you drop a relative pronoun in some sentences, but keeping it makes
 >
 > The word “that” signals immediately that a describing clause is beginning, so the reader does not briefly misread “the methodological groundwork I” as a single phrase and then have to backtrack.
 
-## 2 Demonstrative pronouns
+# 2 Demonstrative pronouns
 
 There are four demonstrative words:
 
@@ -97,7 +97,7 @@ A demonstrative at the end of a sentence has no room after it for a naming noun,
 >
 > Adding the nouns “overfitting” and “bias” states exactly what each “this” refers to, instead of leaving the reader to infer it. The second pair ends its sentence with the demonstrative, so the fix has to add the noun after it, at the very end.
 
-## 3 Quantifiers used as pronouns
+# 3 Quantifiers used as pronouns
 
 Words that say how many, or how much, of something cause the same problem as demonstratives when they stand alone in place of a noun. Grammars call these words *quantifiers*, and call a quantifier that stands alone an *indefinite pronoun*. The common ones are:
 
@@ -125,7 +125,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 >
 > In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.
 
-## 4 Avoid garden-path sentences
+# 4 Avoid garden-path sentences
 
 A *garden-path sentence* leads the reader into one reading and then forces them to go back and reread when the rest of the sentence does not fit ([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)). The sentence may be grammatical, but the reader parses it twice.
 
@@ -143,7 +143,7 @@ When you reread a sentence and stumble, find the point where your first reading 
 >
 > In the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject.
 
-## 5 Name the object of a relational noun
+# 5 Name the object of a relational noun
 
 Some nouns name a relation, so they are incomplete without the thing they relate to. Relational nouns include:
 
@@ -166,7 +166,7 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 >
 > Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second [term](../chapters/defining-terms.llms.md#def-term) for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
 
-## 6 Appositive fronting
+# 6 Appositive fronting
 
 An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which then follows as the subject: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.” Often the subject becomes a pronoun, as in “A disease complex with a multifactorial etiology, it is a leading cause of mortality in calves”, which needs an antecedent for “it” in the sentence before.
 
