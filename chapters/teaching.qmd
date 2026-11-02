@@ -24,7 +24,7 @@ The reader of a paper is a researcher who already knows the field and wants to j
 
 | | Teaching materials | Writing for peers (a paper) |
 |---|---|---|
-| Reader | A learner who needs each term defined before it is used. | A researcher in the field who knows the standard terms. |
+| Reader | A learner who needs each [term](defining-terms.qmd#def-term) defined before it is used. | A researcher in the field who knows the standard terms. |
 | Purpose | The reader can do the method afterwards. | The reader can judge and build on the new result. |
 | Standard material | Stated in full, with its definitions, notation, and worked examples. | Cited, not restated. |
 | Order | An exercise first, then the definition, the result, and its proof. | [The standard paper structure](paper-organization.qmd#standard-paper-structure). |
