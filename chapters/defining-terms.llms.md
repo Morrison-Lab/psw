@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 10:48:55 (PST)
+Last modified: 2026-11-02 11:25:41 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -36,7 +36,7 @@ Clear definitions are essential to effective scientific writing. Every specializ
 >
 > *Remark 1* (Population is not only geographic). In everyday use, “population” usually means the people living in a place. The statistical sense in [Definition 2](#def-population) is broader: a population can be all the patients with a condition, all the batches a factory produces, or any other set of items of interest.
 
-## 1 Guidelines for defining terms
+# 1 Guidelines for defining terms
 
 Follow these principles when introducing new [term](#def-term)s:
 
@@ -145,7 +145,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Qualify “mean”, “average” and their shorthands as population or sample:** A bare “mean” or “average” does not say whether it is a quantity of the population or a value computed from one sample. Write “population mean” for the expected value of a distribution, and “sample mean” for the average of the observed values; write “population average” and “sample average” in the same way. Prefer “mean” with the qualifier to “average”. The same holds for shorthands: write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE, with a leading p for the population version and s for the sample version, and never a bare MSE, RMSE or MAE. Spelled out, the same words apply: “population mean squared error”, “sample root mean squared error”, “population mean absolute error”. Define each shorthand once, at first use, as “population mean squared error (pMSE)”. A term that already says which, such as “mean function” or “running mean”, needs no extra word, and neither does expected value notation such as ${\mathbb{E}\mathopen{}\left[Y\right]\mathclose{}}$. For example, write “the sample mean of the training outcomes estimates the population mean of the outcome”, not “the mean estimates the mean”. Drop the qualifier only when it is completely clear from context, such as inside a definition that has just said which one it concerns. When in doubt, keep it.
 
-## 2 Examples of term definitions
+# 2 Examples of term definitions
 
 Here are examples of well-defined [term](#def-term)s:
 
@@ -175,7 +175,7 @@ Here are examples of well-defined [term](#def-term)s:
 >
 > **Example 9 (A sentence that is not in active voice)** “The experiment was conducted by the researcher” is not in active voice ([Definition 4](#def-active-voice)). Its subject, “the experiment”, receives the action instead of performing it, so the sentence is in passive voice.
 
-## 3 Order: general definition, then examples
+# 3 Order: general definition, then examples
 
 When a concept has special cases, write the general definition first and compactly, then one example block per special case, ordered from the most general to the most specific. Put any commentary in a remark block after them. When the special cases have their own definitions, define the general concept first from prerequisite [term](#def-term)s defined before it, and then define the special cases after it. Do not define the general concept by listing the special-case definitions that follow it, or move the general definition after its special cases: define the prerequisite terms first (for example, define lower and upper bounds first, then define an interval as a subset of the real numbers between two bounds, possibly including one or both bounds, and then define closed, open and half-open intervals). For example, a statistics text that defines the [residual sum of squares](#def-rss) would give these blocks, in this order:
 
@@ -201,7 +201,7 @@ When a concept has special cases, write the general definition first and compact
 
 The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.
 
-## 4 Give a defined quantity its expression and its prose reading
+# 4 Give a defined quantity its expression and its prose reading
 
 When a [term](#def-term) names a quantity with a mathematical form, the definition states the expression and then reads it aloud in a prose sentence that says the same thing. The expression makes the definition exact. The prose reading lets the reader check that they understood it. The two must match (see [Make the prose say what the formula says](../chapters/mathematical-writing.llms.md#make-the-prose-say-what-the-formula-says)). A term with no mathematical form, such as [active voice](#def-active-voice), keeps its prose definition alone.
 
@@ -213,7 +213,7 @@ When a [term](#def-term) names a quantity with a mathematical form, the definiti
 >
 > **Example 13 (A definition that gives only one of the two)** “The variance is how spread out $X$ is” gives no expression, so a reader cannot compute it. “The variance is ${\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$” gives no reading, so a reader cannot check their understanding. [Definition 6](#def-variance-expression-and-prose) gives both.
 
-## 5 Define an activity separately from doing it well
+# 5 Define an activity separately from doing it well
 
 A [term](#def-term) that names an activity, such as fitting, estimating or generalizing, does not also name how well the activity is done. Give the activity one definition, and give the quality its own definition and its own term, such as “a good fit” or “a consistent estimator”. Three reasons:
 
@@ -233,7 +233,7 @@ A [term](#def-term) that names an activity, such as fitting, estimating or gener
 >
 > **Example 16 (Fitting and a good fit)** *Fitting* is choosing the parameter values of a model from data, for example by minimizing the [residual sum of squares](#def-rss). A *good fit* is a fitted model whose residual sum of squares is at most a stated tolerance. A line can be fitted to any data, including data that it fits badly.
 
-## 6 Why examples matter
+# 6 Why examples matter
 
 Examples serve several crucial purposes:
 
@@ -247,7 +247,7 @@ Examples serve several crucial purposes:
 
 - **Boundaries:** Counterexamples show where a definition stops applying, which is where readers most often misapply it.
 
-## 7 Common pitfalls to avoid
+# 7 Common pitfalls to avoid
 
 - **Circular definitions:** Do not define a [term](#def-term) using the term itself.
 
@@ -267,11 +267,11 @@ Examples serve several crucial purposes:
 
 - **Examples without context:** Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.
 
-## 8 Mathematical statements require examples
+# 8 Mathematical statements require examples
 
 Mathematical theorems, lemmas, corollaries, and [postulate](#def-postulate)s should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
 
-### 8.1 Using theorem environments in Quarto
+## 8.1 Using theorem environments in Quarto
 
 When writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.
 
@@ -307,7 +307,7 @@ $$a^2 + b^2 = c^2.$$
 
 This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using `@thm-pythagorean`.
 
-### 8.2 Example: Pythagorean theorem
+## 8.2 Example: Pythagorean theorem
 
 > **NOTE:**
 >
@@ -335,7 +335,7 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 >
 > If we have line $L$ and point $P$ not on $L$, only one line through $P$ will never intersect $L$.
 
-## 9 Presenting a derivation: exercise, solution, theorem, proof
+# 9 Presenting a derivation: exercise, solution, theorem, proof
 
 In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader encounters the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
 

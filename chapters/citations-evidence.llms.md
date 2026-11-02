@@ -4,11 +4,11 @@ Code
 
 Published
 
-Last modified: 2026-11-02 10:48:55 (PST)
+Last modified: 2026-11-02 11:25:41 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
-## 1 Why claims need support
+# 1 Why claims need support
 
 Scientific writing aims to convey truthful, verifiable information. Unsupported claims undermine this goal in several ways:
 
@@ -20,11 +20,11 @@ Scientific writing aims to convey truthful, verifiable information. Unsupported 
 
 When you make a claim, you are asking readers to accept it as true. They deserve to know why they should trust that claim.
 
-## 2 What constitutes adequate support
+# 2 What constitutes adequate support
 
 Different types of claims require different types of support:
 
-### 2.1 Empirical claims
+## 2.1 Empirical claims
 
 Claims about observable phenomena or data should be supported by:
 
@@ -33,7 +33,7 @@ Claims about observable phenomena or data should be supported by:
 - Description of experimental methods that generated the evidence
 - Links to publicly accessible datasets
 
-### 2.2 Theoretical claims
+## 2.2 Theoretical claims
 
 Claims about concepts, models, or interpretations should be supported by:
 
@@ -42,7 +42,7 @@ Claims about concepts, models, or interpretations should be supported by:
 - Mathematical derivations or proofs
 - References to review articles that synthesize relevant theoretical work
 
-### 2.3 Methodological claims
+## 2.3 Methodological claims
 
 Claims about appropriate methods or best practices should be supported by:
 
@@ -51,11 +51,11 @@ Claims about appropriate methods or best practices should be supported by:
 - Expert consensus statements
 - Validation studies
 
-### 2.4 Common knowledge
+## 2.4 Common knowledge
 
 Not every statement requires citation. Well-established facts that are common knowledge within your field (for example, “DNA is a double helix” in molecular biology) can be stated without citation. However, when in doubt, provide a citation—over-citing is preferable to under-citing.
 
-## 3 Do not substitute flippancy for support
+# 3 Do not substitute flippancy for support
 
 Some phrases assert that a claim needs no support instead of supplying any:
 
@@ -95,13 +95,13 @@ Deleting the phrase and keeping the claim is also usually an improvement: “the
 >
 > The second version gives the reader the formula and where it came from, so they can check the algebra themselves. The first version asks them to take the writer’s word for it, and offers no help to anyone who has not seen the result before.
 
-### 3.1 “Trivial” and “trivially”
+## 3.1 “Trivial” and “trivially”
 
 “Trivial” and “trivially” usually work the same way: they announce that a step is too small to write down, which relieves the writer of writing it down. Treat them as a prompt to check the step, and to write it out if it takes only a line.
 
 The word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case. For example, a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries.
 
-## 4 What makes a citation relevant
+# 4 What makes a citation relevant
 
 A relevant citation is one that actually supports the specific claim you are making. Common problems with citation relevance include:
 
@@ -117,23 +117,23 @@ To ensure relevance:
 - Cite the most direct source available
 - When citing for general background versus specific claims, make the distinction clear
 
-## 5 What makes a source trustworthy
+# 5 What makes a source trustworthy
 
 Not all sources are equally reliable. Consider these factors when evaluating trustworthiness:
 
-### 5.1 Peer review
+## 5.1 Peer review
 
 Peer-reviewed publications in reputable journals have undergone expert scrutiny. This doesn’t guarantee correctness, but it provides a baseline level of quality control.
 
-### 5.2 Reputation of authors and institutions
+## 5.2 Reputation of authors and institutions
 
 Work from recognized experts and well-regarded institutions tends to be more reliable, though this should not be the sole criterion.
 
-### 5.3 Replication and consensus
+## 5.3 Replication and consensus
 
 Findings that have been replicated by independent groups or that represent scientific consensus are more trustworthy than isolated claims.
 
-### 5.4 Transparency and reproducibility
+## 5.4 Transparency and reproducibility
 
 Studies that:
 
@@ -144,7 +144,7 @@ Studies that:
 
 are more trustworthy than those lacking these features.
 
-### 5.5 Preprints and non-peer-reviewed sources
+## 5.5 Preprints and non-peer-reviewed sources
 
 Preprints can be valuable for accessing cutting-edge research, but they have not undergone peer review. When citing preprints:
 
@@ -152,7 +152,7 @@ Preprints can be valuable for accessing cutting-edge research, but they have not
 - Check whether a peer-reviewed version has since been published
 - Exercise extra scrutiny of the methods and conclusions
 
-### 5.6 Sources to generally avoid
+## 5.6 Sources to generally avoid
 
 Some sources typically lack the rigor needed for scientific writing:
 
@@ -162,7 +162,7 @@ Some sources typically lack the rigor needed for scientific writing:
 - Predatory or pay-to-publish journals without genuine peer review
 - Retracted papers
 
-## 6 Copy-paste with caution
+# 6 Copy-paste with caution
 
 Copying exact wording — whether from another writer or from your own earlier work, and even with a citation — can cause problems: plagiarism, if the wording is not clearly marked as a quotation, and a shift in voice that makes the text harder to read.
 
@@ -174,7 +174,7 @@ A few rules of thumb:
 
 A related case is repetition *within* your own document. When a passage you are tempted to copy already appears elsewhere, cross-reference it instead of repeating it: this keeps a single source of truth and improves concision.
 
-## 7 Link liberally
+# 7 Link liberally
 
 A link lets a reader check a claim or learn more without searching for the source themselves. When in doubt, add the link; leave one out only for a specific reason. Link these things whenever they appear:
 
@@ -216,7 +216,7 @@ Leave a link out only for a reason such as one of the following:
 >
 > A reader who does not know lme4, or wants the exact meaning of “confidence interval” in this guide, can now follow the link instead of searching.
 
-## 8 Cite Wikipedia, beside the primary source
+# 8 Cite Wikipedia, beside the primary source
 
 Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.
 
@@ -237,11 +237,11 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 >
 > A reader who wants another presentation of the Poisson distribution now has one, and the definition itself still comes from your own text and its traditional reference.
 
-## 9 Number bracketed citations
+# 9 Number bracketed citations
 
 On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, such as \[1\] or \[1, p. 5\]. An in-text citation, `@key`, prints the author name and the number, such as “Hastie et al. \[2\]”. Write `[@key]` when the source supports a claim, and `@key` when the author is the subject of the sentence. Never start a sentence or a list item with a bare `@key` unless the author is its subject. The author list becomes the subject, so a list of such items prints the same author name, such as “Wikipedia contributors \[3\]”, again and again. Write the description first, and end the sentence with the bracketed `[@key]`. The sites get this from the shared citation style and filter in [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
-## 10 Cite a source once per passage
+# 10 Cite a source once per passage
 
 Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`. The rule to cite a Wikipedia article once, where its [term](../chapters/defining-terms.llms.md#def-term) is defined, is a case of this one.
 
@@ -255,7 +255,7 @@ Cite a source once in each div or passage, at the claim it supports. A second ci
 >
 > Both versions credit the same article. The second one does it once, in the source line that closes the div.
 
-## 11 Best practices
+# 11 Best practices
 
 To effectively support your claims:
 
@@ -267,7 +267,7 @@ To effectively support your claims:
 6.  **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7.  **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
-## 12 Quote the original
+# 12 Quote the original
 
 Quote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.
 
@@ -277,15 +277,15 @@ Quote and cite the source that said it, not a later source that quotes it. Check
 
 Credit a quotation to whoever speaks it in the primary source, even when the speaker is quoting someone else. When attribution is in doubt, read the primary source (a transcript, the original page) first. Uncertainty about who said a line is not evidence about who said it.
 
-## 13 Copy organization names from their source
+# 13 Copy organization names from their source
 
 When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.
 
-## 14 Verify each bibliography entry
+# 14 Verify each bibliography entry
 
 Check each detail of a bibliography entry against an official source. Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
 
-## 15 Cite an alias directly
+# 15 Cite an alias directly
 
 When a source uses another name for a defined [term](../chapters/defining-terms.llms.md#def-term), write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
 
@@ -293,7 +293,7 @@ When a source uses another name for a defined [term](../chapters/defining-terms.
 >
 > ✅ `also called the **alias** [@key, section]`
 
-## 16 Cite the original for named results
+# 16 Cite the original for named results
 
 When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
 
@@ -329,11 +329,11 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 > >
 > > ✅ Chebyshev’s inequality bounds the probability that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
 
-## 17 Put the content first
+# 17 Put the content first
 
 Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
 
-## 18 Adapting another course’s material
+# 18 Adapting another course’s material
 
 When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.
 
@@ -357,7 +357,7 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-## 19 Material from your own work
+# 19 Material from your own work
 
 Do not formally acknowledge material you borrow from yourself or your own group. “Your group” means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG. Link to it, but do not credit it, except for the credits and citations listed below. This covers:
 
@@ -393,7 +393,7 @@ A link to a sister site that sends the reader to further reading is a cross-refe
 
 When you find an existing credit to your own work, remove it and add or keep a link to it.
 
-## 20 Common citation errors to avoid
+# 20 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -404,39 +404,39 @@ When you find an existing credit to your own work, remove it and add or keep a l
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-## 21 Examples
+# 21 Examples
 
-### 21.1 Poor (unsupported claim)
+## 21.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-### 21.2 Better (citation provided)
+## 21.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-### 21.3 Best (citation with context)
+## 21.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-### 21.4 Poor (irrelevant citation)
+## 21.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-### 21.5 Better (relevant citation)
+## 21.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-## 22 Conclusion
+# 22 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 10:48:55 (PST)
+Last modified: 2026-11-02 11:25:41 (PST)
 
 > **NOTE:**
 >
@@ -22,7 +22,7 @@ The rules in this chapter come mostly from three sources:
 
 Each rule below comes with an example. Several rules extend sections in other chapters, and they link to those sections instead of repeating them.
 
-## 1 Use literal language
+# 1 Use literal language
 
 Say exactly what you mean. Do not use idioms, clichés, slang, jokes or sarcasm. An idiom is a phrase whose meaning is different from the meanings of its words, such as “blow up” for “become very large”. A reader who has not encountered the phrase before has to guess what it means. A reader who takes words literally may guess wrong. The W3C guidance says: “Use literal and concrete language” and “Do not use metaphors and similes unless you include an explanation” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Literal Language). GitHub Docs says: “Avoid turns of phrase, idioms, and slang that are specific to a particular region or country” ([GitHub 2026a](#ref-github_docs_style)).
 
@@ -77,7 +77,7 @@ Mathematical writing has idioms too. In an exercise, “Write the bias of an est
 
 Idioms are a kind of metaphor, so [Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language) applies to them too, and gives more examples.
 
-## 2 Use common words, and define technical ones
+# 2 Use common words, and define technical ones
 
 Use the most common word that is still correct. The W3C guidance says to “Use common and clear words in all content” and to “Remove or explain uncommon acronyms, abbreviations, and jargon” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Clear Words).
 
@@ -89,7 +89,7 @@ The second version uses common words, and it says what the method does instead o
 
 Some technical [term](../chapters/defining-terms.llms.md#def-term)s are necessary. [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon) explains when to keep a technical term and how to define it.
 
-## 3 Say when a common word has a technical meaning
+# 3 Say when a common word has a technical meaning
 
 Many statistical [term](../chapters/defining-terms.llms.md#def-term)s are everyday words with a different technical meaning. Examples include *bias*, *significant*, *confidence*, *normal*, *regression*, *error* and *likelihood*. A reader who knows only the everyday meaning will read the sentence as a different claim. The W3C guidance says: “Do not invent new words or give words new meanings” and “Do not expect people to learn new meanings for words just to use your content” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Clear Words). A technical course needs these terms. So say that the technical meaning differs, and give the technical meaning in plain words.
 
@@ -103,7 +103,7 @@ Once you define the term, use the same word for the same idea every time. The pl
 >
 > ✅ We split the data into a training set and a test set. We then compute the error on the test set.
 
-## 4 Spell out abbreviations
+# 4 Spell out abbreviations
 
 Write out an abbreviation the first time you use it, or replace it with a short name. The plain language guidelines say abbreviations “constantly require the reader to look back to earlier pages” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Minimize abbreviations). Do not use the Latin abbreviations *e.g.* and *i.e.*: “Few people know what they mean, and they often confuse the two” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Use examples). Write “for example” or “that is”.
 
@@ -111,7 +111,7 @@ Write out an abbreviation the first time you use it, or replace it with a short 
 >
 > ✅ Ensembles of trees, for example random forests and boosted trees, usually have lower mean squared error than a single regression tree.
 
-## 5 Introduce shorthand before using it
+# 5 Introduce shorthand before using it
 
 Introduce every shorthand before its first use. This covers abbreviations and also shortened phrases, such as “objective” for “objective function”. Give the full [term](../chapters/defining-terms.llms.md#def-term) first and mark the short form, for example “an *objective function*, or *objective* for short”. Then use the short form consistently.
 
@@ -119,7 +119,7 @@ Introduce every shorthand before its first use. This covers abbreviations and al
 >
 > ✅ An *objective function*, or *objective* for short, is the quantity we minimize. The objective as a function of the parameters is a paraboloid.
 
-## 6 Write positive statements
+# 6 Write positive statements
 
 State what is true, not what is not false. A double negative makes the reader turn “no” into “yes” before they can use the sentence. The W3C guidance says not to “use a double negative to express a positive” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Avoid Double Negatives or Nested Clauses), and the plain language guidelines give the same advice ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Use positive language).
 
@@ -127,7 +127,7 @@ State what is true, not what is not false. A double negative makes the reader tu
 >
 > ✅ We reject the null hypothesis when the p-value is 0.05 or less.
 
-## 7 Rewrite noun strings and hidden verbs
+# 7 Rewrite noun strings and hidden verbs
 
 A noun string is a row of nouns that act as adjectives, such as “test set error rate estimate”. The reader has to work out which noun modifies which. A hidden verb (also called a *nominalization*) is a verb turned into a noun, such as “perform an estimation of” in place of “estimate”. GitHub Docs advises against both. It says noun strings “can lead to incorrect translations”, and nominalizations make sentences “longer, harder to understand, and harder to translate” ([GitHub 2026a](#ref-github_docs_style)). The plain language guidelines say to open up a noun string by “using more prepositions and articles” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Avoid noun strings).
 
@@ -139,7 +139,7 @@ A noun string is a row of nouns that act as adjectives, such as “test set erro
 >
 > ✅ We evaluated how accurately the model predicts.
 
-## 8 Put one idea in each sentence
+# 8 Put one idea in each sentence
 
 Long sentences with nested clauses make the reader hold several unfinished ideas at once. That is hard for readers with a memory impairment ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Keep Text Succinct), and for readers who are translating as they go. The W3C guidance says: “Use short sentences. Have only one point per sentence” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Keep Text Succinct). It also says that “Sentences that have more than one point usually have more than one linking word such as ‘and’ or ‘but’”.
 
@@ -155,7 +155,7 @@ A sentence that states a result and then adds “which” and “and” clauses 
 
 [Limit complex sentence structures](../chapters/conciseness.llms.md#limit-complex-sentence-structures) and [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject) give more examples.
 
-## 9 State every step and every point
+# 9 State every step and every point
 
 Write every step of an argument or a procedure. Do not leave a step for the reader to fill in, and do not hint at a point you could state. The W3C guidance says readers may need “definitions or explanations for implied or ambiguous information” such as jokes, sarcasm and metaphors ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Explain Implied Content).
 
@@ -165,7 +165,7 @@ Write every step of an argument or a procedure. Do not leave a step for the read
 
 The first version implies a reason and never states it. A reader who does not already know the reason learns nothing. Words like “obviously” and “clearly” hide a step in the same way; [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) explains what to write instead.
 
-## 10 Say what numbers and symbols mean
+# 10 Say what numbers and symbols mean
 
 Do not leave a number or a formula for the reader to interpret. Some readers find numbers hard to process ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Provide Alternatives for Numerical Concepts). Text-to-speech tools can also read numbers and symbols wrongly ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Use Clear, Unambiguous Formatting and Punctuation). The CDC Clear Communication Index scores a document on whether it explains what its numbers mean ([Centers for Disease Control and Prevention 2026](#ref-cdc_ccindex)).
 
@@ -183,7 +183,7 @@ For a formula, say each symbol’s meaning in words at first use, and then say w
 
 The [Mathematical notation](../chapters/notation.llms.md) chapter has more rules for notation.
 
-## 11 Use examples that every reader knows
+# 11 Use examples that every reader knows
 
 Choose examples that do not need a particular culture, country, sport or hobby to understand. GitHub Docs says to “Use examples that are generic and can be understood by most people” and to “Avoid examples that are controversial or culturally specific to a group” ([GitHub 2026b](#ref-github_docs_translation)).
 
@@ -197,7 +197,7 @@ The first example needs knowledge of American football before the reader can thi
 >
 > ✅ Each student submits their code by Friday.
 
-## 12 Keep a predictable structure
+# 12 Keep a predictable structure
 
 Readers find text easier to follow when each part has one purpose, and when parts of the same kind always look the same. The W3C guidance says to “Keep paragraphs short. Have only one topic in each paragraph”, to “Try to have the aim of the paragraph or chunk at the beginning”, and to “Use bulleted or numbered lists” and “short descriptive headings” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Keep Text Succinct). It also recommends a short summary at the start of a long document ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Provide Summary of Long Documents and Media). In course materials, the same advice applies across pages: the Cornell Center for Teaching Innovation suggests “a predictable weekly structure and consistent layout” ([Cornell University Center for Teaching Innovation 2026](#ref-cornell_udl)).
 
@@ -207,7 +207,7 @@ Readers find text easier to follow when each part has one purpose, and when part
 
 [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) and the [Paper organization](../chapters/paper-organization.llms.md) chapter cover lists and headings in more detail.
 
-## 13 Present ideas in more than one form
+# 13 Present ideas in more than one form
 
 Readers differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” ([Cornell University Center for Teaching Innovation 2026](#ref-cornell_udl)). For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.
 
@@ -217,7 +217,7 @@ Readers differ in what helps them understand. Universal Design for Learning (UDL
 
 Each figure also needs a caption and alt text, so that a reader who cannot see it gets the same information.
 
-## 14 Test your writing with a reader
+# 14 Test your writing with a reader
 
 You cannot judge your own writing from the reader’s side, because you already know what you meant. The W3C guidance ends with “Test with real users!” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga)). The plain language guidelines describe *paraphrase testing*: ask a reader to explain the text in their own words, and compare their version with what you meant ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Paraphrase testing).
 
