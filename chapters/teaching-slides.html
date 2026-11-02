@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 10:26:27 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 10:35:32 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -775,8 +775,23 @@
 </ul>
 <p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Structure slides for the reader</h2>
+<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Keep sibling headings to about five</h2>
+</section>
+<section class="slide level2">
+
+<p>Aim for at most about five sibling headings under one parent heading, and split or group the headings when there are more than seven (Ezra, 2026-11-02). Sibling headings are headings of the same level under the same parent. The top-level headings of a page or book chapter count as siblings under the page.</p>
+<p>A reader who scans a list of headings holds the whole list in mind while choosing among them. Miller’s <a href="https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two">“magical number seven, plus or minus two”</a> is the classic estimate of how many items a person can hold at once. Cowan’s <a href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/magical-number-4-in-shortterm-memory-a-reconsideration-of-mental-storage-capacity/44023F1147D4A1D44BDC0AD226838496">reconsideration</a> puts the capacity nearer four chunks. Those estimates concern memory, and a reader can look at a table of contents again, so the limit is a guideline and not a hard rule. Aim for five so that the guideline still holds when a few headings are added later.</p>
+<ul>
+<li>Group related sibling headings under a new parent heading that names what they share.</li>
+<li>Split a page with too many top-level headings into several pages, as in <a href="#/split-a-page-before-it-grows-too-long">Split a page before it grows too long</a>.</li>
+<li>Leave a list of parallel parts, such as one heading per lab or per week, alone when the parts have no natural grouping, and say in the introduction how many there are.</li>
+<li>Do not delete a heading to meet the guideline: move its content under the heading it belongs to.</li>
+</ul>
+<p>The <code>check-heading-siblings</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1390">gha#1390</a>) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.</p>
+</section>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -791,8 +806,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -813,8 +828,8 @@
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -844,8 +859,8 @@
 </div>
 <p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again. Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -875,8 +890,8 @@
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -887,8 +902,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="29">
-<h2><span class="header-section-number">29</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="30">
+<h2><span class="header-section-number">30</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -902,8 +917,8 @@
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="30">
-<h2><span class="header-section-number">30</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="31">
+<h2><span class="header-section-number">31</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
