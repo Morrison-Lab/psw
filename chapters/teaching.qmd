@@ -33,7 +33,7 @@ The reader of a paper is a researcher who already knows the field and wants to j
 
 Four consequences follow for how you write.
 
-- **Define every term that the reader might not know.**
+- **Define every term that the reader might not know.** <!-- check-term-links: allow -->
   A paper may use a standard term of its field without a definition.
   Teaching materials define the term, or link to the page that does.
 - **Show each step of a derivation.**
