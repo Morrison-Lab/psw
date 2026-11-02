@@ -113,10 +113,12 @@ Pose each task as an exercise, give students time to try it, and then show the s
   Phrases such as "and then", "and also", and "and compare" mark a second ask.
 - Put the instruction or question of an exercise in its own paragraph,
   apart from the scenario information (Ezra, 2026-11-02).
-  The scenario paragraphs give the data, the setting and the definitions the exercise needs,
-  and the last paragraph asks the question or gives the instruction ("Show that ...", "Which model ...?").
+  The scenario paragraphs give the data, the setting and the definitions that the exercise needs,
+  and the last paragraph asks the question
+  or gives the instruction ("Show that ...", "Which model ...?").
   A reader scanning for the task then finds it without rereading the setup.
-  A paragraph that runs from the scenario into the task, as in "A clinic records ... Estimate the odds ratio.", hides the task.
+  A paragraph that runs from the scenario into the task hides the task,
+  as in "A clinic records ... Estimate the odds ratio."
 - On slides, put a slide break between an exercise and its solution,
   so the prompt is on screen alone while students work.
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
