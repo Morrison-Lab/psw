@@ -793,6 +793,31 @@ Students read concepts, not the structure of the site.
 A sentence about which notes define a term adds no content,
 and it goes stale when the definition moves.
 
+The same holds inside a page.
+Focus on the content of the notes, not on their structure
+(Ezra, 2026-11-02).
+When a part refers back to an earlier exercise, example, or result,
+name the specific objects it reuses
+instead of pointing at the exercise as a whole.
+"Use the setup of Exercise 1" makes the reader reread the exercise
+to learn which data, variables, or model the part needs.
+
+::: {.callout-note title="Name what the back-reference reuses"}
+
+- ❌ "Use the setup of Exercise 1."
+- ✅ "Use the WCGS data, with outcome $\Outvar$ (coronary heart disease) and predictor $\Predvar$ (behavior pattern) from Exercise 1."
+
+:::
+
+Keep the cross-reference
+so that the reader can look up the full statement,
+and add the names of the reused data, variables, parameters, or model.
+When the notes define a dataset in its own callout,
+link the dataset by that callout's id
+instead of describing it again.
+Prefer a self-contained sentence
+when the part needs only one or two of those objects.
+
 ## Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist
