@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 10:14:18 (PST)
+Last modified: 2026-11-02 11:13:57 (PST)
 
 > **NOTE:**
 >
@@ -258,6 +258,8 @@ A list of three or more phrases, written inline and separated by commas, makes t
 
 A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.
 
+A series introduced by a colon is a list too, even with only two items, when the items hold math or links. Write each item as a bullet, and display any equation the reader must remember (see [Example 13](#exm-colon-series)).
+
 A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
 
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
@@ -322,6 +324,19 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > The labels let the reader find a case at a glance, and the bullets show that there are three.
 
+> **NOTE:**
+>
+> **Example 13 (Turning a colon series with math into bullet points)**  
+>
+> > ❌ Derive the other two formulations: minimizing the negative log-likelihood $\argmin_{\vcoef}\ \sb{-\llik(\vcoef)}$, and empirical risk minimization $\argmin_{\vcoef}\empriskf{\vcoef}$ with $\emprisk = \tfrac1\nobs\sum_i \lossf{\outvar_i, \prob_i}$.
+> >
+> > ✅ Derive the other two formulations:
+> >
+> > - minimizing the negative log-likelihood, $\argmin_{\vcoef}\ \sb{-\llik(\vcoef)}$;
+> > - empirical risk minimization, $\argmin_{\vcoef}\empriskf{\vcoef}$, with $$\emprisk = \tfrac1\nobs\sum_i \lossf{\outvar_i, \prob_i}.$$
+>
+> Each bullet holds one formulation, and the definition of the empirical risk is displayed rather than buried in the sentence.
+
 ## 16 Write to communicate, not to impress
 
 Many rules in this chapter serve one aim: the reader should reach your meaning without extra work. A long word, a nested sentence or a crowded paragraph can make a text sound more formal, but it can add work for the reader without adding to the meaning. So at each level of the text, choose the plainest form that still carries the full meaning:
@@ -333,7 +348,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 
 > **NOTE:**
 >
-> **Example 13 (Rewriting a sentence written to sound formal)**  
+> **Example 14 (Rewriting a sentence written to sound formal)**  
 >
 > > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.
 > >

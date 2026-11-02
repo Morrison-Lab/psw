@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 10:14:18 (PST)
+Last modified: 2026-11-02 11:13:57 (PST)
 
 > **NOTE:**
 >
@@ -56,6 +56,8 @@ Active learning, in which students work through tasks themselves during class, i
 - Split the solution the same way as its exercise (Ezra, 2026-10-28). Each `#sol-` of a split exercise answers only its own `#exr-`, takes its slug from that exercise (see the slug rule below), and sits in its own subfile after its exercise. This covers code: a lab solution puts each step’s code, output and figure in the solution of the exercise that asks for it, not all in the first solution. A solution does not label parts such as “(b)” or “Part 2”, and does not draw a figure that a later exercise asks for. Code that a later part needs stays in the earliest solution that needs it, because the page shares one session per language. The `check-split-solutions` workflow in [`gha`](https://github.com/Morrison-Lab/gha) enforces this ([gha#1290](https://github.com/Morrison-Lab/gha/issues/1290)).
 
 - Make each exercise ask for one thing (Ezra, 2026-10-27). A prompt that says “compute the slope, and compare it with the fitted value” asks for two things, so split it into two exercises, each with its own solution. Split a list item or step inside an exercise the same way, into separate exercises. Phrases such as “and then”, “and also”, and “and compare” mark a second ask.
+
+- Put the instruction or question of an exercise in its own paragraph, apart from the scenario information (Ezra, 2026-11-02). The scenario paragraphs give the data, the setting and the definitions that the exercise needs, and the last paragraph asks the question or gives the instruction (“Show that …”, “Which model …?”). A reader scanning for the task then finds it without rereading the setup. A paragraph that runs from the scenario into the task hides the task.
 
 - On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.
 
@@ -339,7 +341,20 @@ A page should load and finish rendering its math in under 5 seconds, and its scr
 
 The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
 
-# 24 Structure slides for the reader
+# 24 Keep sibling headings to about five
+
+Aim for at most about five sibling headings under one parent heading, and split or group the headings when there are more than seven (Ezra, 2026-11-02). Sibling headings are headings of the same level under the same parent. The top-level headings of a page or book chapter count as siblings under the page.
+
+A reader who scans a list of headings holds the whole list in mind while choosing among them. Miller’s [“magical number seven, plus or minus two”](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two) is the classic estimate of how many items a person can hold at once. Cowan’s [reconsideration](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/magical-number-4-in-shortterm-memory-a-reconsideration-of-mental-storage-capacity/44023F1147D4A1D44BDC0AD226838496) puts the capacity nearer four chunks. Those estimates concern memory, and a reader can look at a table of contents again, so the limit is a guideline and not a hard rule. Aim for five so that the guideline still holds when a few headings are added later.
+
+- Group related sibling headings under a new parent heading that names what they share.
+- Split a page with too many top-level headings into several pages, as in [Split a page before it grows too long](#split-a-page-before-it-grows-too-long).
+- Leave a list of parallel parts, such as one heading per lab or per week, alone when the parts have no natural grouping, and say in the introduction how many there are.
+- Do not delete a heading to meet the guideline: move its content under the heading it belongs to.
+
+The `check-heading-siblings` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1390](https://github.com/Morrison-Lab/gha/pull/1390)) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.
+
+# 25 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -350,7 +365,7 @@ The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-# 25 Give each concept in a note sheet its own row
+# 26 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -371,7 +386,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-# 26 Talk about the ideas, not the notes
+# 27 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -390,7 +405,7 @@ The same holds inside a page. Focus on the content of the notes, not on their st
 
 Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again. Prefer a self-contained sentence when the part needs only one or two of those objects.
 
-# 27 Write grading rubrics as checklists
+# 28 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -420,14 +435,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-# 28 Credit other courses without summarizing them
+# 29 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-# 29 Finish each unit completely
+# 30 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -439,7 +454,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-# 30 Rules that apply to all writing
+# 31 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
