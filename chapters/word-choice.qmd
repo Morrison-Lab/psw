@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: word-choice-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: word-choice-handout.pdf
   docx:
@@ -75,7 +76,7 @@ it is only a practical consideration,
 based on the realities of English as the current default language of science
 and the relatively-recent hybridization of the English language.
 
-## Avoid vague and metaphorical language
+# Avoid vague and metaphorical language
 
 Scientific claims should be precise enough to test.
 Vague or metaphorical phrases can sound evocative,
@@ -196,7 +197,7 @@ instead of supplying any.
 says when those words are a problem
 and what to write instead.
 
-## Follow an abstract statement with an example
+# Follow an abstract statement with an example
 
 An abstract or general statement is fine,
 as long as a concrete example follows it.
@@ -221,7 +222,7 @@ When you write a general claim,
 ask what one specific case of it looks like,
 and put that case right after the claim.
 
-## Say which thing
+# Say which thing
 
 The word *thing* almost never survives a second look.
 Name the object, quantity, step or idea it stands for.
@@ -243,7 +244,7 @@ without saying what.
 If you cannot name the object, quantity, step or idea,
 the sentence is not yet ready to write.
 
-## Give a technical word one meaning
+# Give a technical word one meaning
 
 A word that names a technical concept keeps that one meaning on every page.
 Two fields often use the same word for different concepts.
@@ -266,7 +267,7 @@ In machine learning, *hypothesis* also names a candidate prediction [function](h
 The definition of the prediction function family can then say
 that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 
-## Name a quantity for what it is
+# Name a quantity for what it is
 
 A name should say what kind of thing the quantity is.
 Each kind of quantity has its own name:
@@ -290,7 +291,7 @@ Mention the common name once, as an alias in the definition, and use the accurat
 No mechanical check can tell a misleading name from an accurate one,
 so this rule is enforced by review.
 
-## Write the full phrase
+# Write the full phrase
 
 Do not leave out words the phrase needs to be complete.
 A clipped phrase such as "the true mean function" asks the reader to supply the missing words, <!-- check-term-links: allow -->
@@ -305,7 +306,7 @@ A symbol in a sentence should look like the same symbol in the display equation 
 
 :::{#exm-full-phrase}
 
-## Writing the full phrase and the argument
+# Writing the full phrase and the argument
 
 The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 
@@ -315,7 +316,7 @@ The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 
 :::
 
-## Choose each preposition on purpose
+# Choose each preposition on purpose
 
 A preposition states a relationship between two things.
 Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex,
@@ -330,7 +331,7 @@ If you cannot answer in one phrase, replace it with a verb that names the relati
 
 :::{#exm-prepositions}
 
-## Naming the relationship
+# Naming the relationship
 
 > ❌ The error of the prediction is large.
 >
@@ -354,7 +355,7 @@ the training set is the source of the estimates.
 Keep a plain preposition when it states the relationship exactly,
 such as *in* for location and *by* for the agent of a passive verb.
 
-## Refer to a place in the document by its label
+# Refer to a place in the document by its label
 
 Do not use "above" or "below" for a position in a document.
 The same source renders as a web page, a slide deck and a handout,
@@ -369,7 +370,7 @@ and survives a reordering.
 
 :::{#exm-position-words}
 
-## Replacing "above" with a label
+# Replacing "above" with a label
 
 > ❌ The next figure draws the fits behind the table above.
 >
@@ -384,7 +385,7 @@ does not refer to a position in the document and is fine.
 
 :::
 
-## Leave out words that judge difficulty or add nothing
+# Leave out words that judge difficulty or add nothing
 
 "Just" and "easy" ("easily") rarely carry meaning.
 The Google style guide says "just" is "a filler word that you can delete without affecting your meaning"
@@ -400,7 +401,7 @@ Keep the word when it carries meaning.
 "Just before the loop ends" states a position in time,
 and deleting "just" changes it.
 
-## Give a date or a version instead of a time-relative word
+# Give a date or a version instead of a time-relative word
 
 Do not write "now", "new" or "currently" for a state that will change.
 The Google style guide says these words
@@ -416,7 +417,7 @@ because "recently" assumed an order of lectures that the page does not fix.
 
 :::{#exm-time-relative}
 
-## Replacing "recently" with a pointer
+# Replacing "recently" with a pointer
 
 > ❌ A missing *that* is a common cause of garden-path sentences, as we recently saw.
 >
@@ -424,7 +425,7 @@ because "recently" assumed an order of lectures that the page does not fix.
 
 :::
 
-## Minimize unnecessary jargon
+# Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field.
 Some jargon is necessary:
@@ -446,7 +447,7 @@ list them where you define it
 
 :::{#exm-jargon}
 
-## Replacing unnecessary jargon
+# Replacing unnecessary jargon
 
 > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 >
