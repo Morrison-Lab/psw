@@ -862,8 +862,8 @@ Three reasons:
 - **The quality needs a criterion.**
   "Does well" and "good" are comparisons without a standard.
   State the quantity that measures the quality and the threshold or ordering applied to it.
-- **Sources use the [term](#def-term) both ways.**
-  Name the sense a document uses, so that a reader who knows the other sense is not misled.
+- **Sources use the term both ways.**
+  Name the sense that a document uses, so that a reader who knows the other sense is not misled.
 
 ::: {#exm-activity-quality-estimation}
 
@@ -881,7 +881,7 @@ An estimator can be used to estimate, and still be inconsistent.
 
 [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization)
 is the use of a model fitted to a training set to predict the outputs of inputs outside it.
-A model [*generalizes well*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalizes-well)
+A model *generalizes well*
 when its average loss on new input--output pairs from the target population is at most a stated tolerance.
 A model can generalize, in the first sense, and generalize poorly, in the second.
 
@@ -893,7 +893,7 @@ A model can generalize, in the first sense, and generalize poorly, in the second
 
 *Fitting* is choosing the parameter values of a model from data, for example by minimizing the [residual sum of squares](#def-rss).
 A *good fit* is a fitted model whose residual sum of squares is at most a stated tolerance.
-A line can be fitted to any data, including data it fits badly.
+A line can be fitted to any data, including data that it fits badly.
 
 :::
 
