@@ -16,7 +16,7 @@ format:
 
 ::: {#def-cliche}
 
-## Cliché
+# Cliché
 
 A **cliché** is a word, phrase, sentence shape, or formatting habit
 that a writer uses by reflex
@@ -35,7 +35,7 @@ and to doubt that its author checked it.
 
 ::: {#def-ai-tell}
 
-## AI tell
+# AI tell
 
 An **AI tell** is a [cliché](#def-cliche)
 that readers associate with text written by an AI assistant.
@@ -47,13 +47,13 @@ so this chapter is for any writer,
 including anyone editing a draft that an assistant helped write.
 It catalogs the most common clichés so you can remove them.
 
-## Terms used in this chapter
+# Terms used in this chapter
 
 The rest of this chapter uses these [term](defining-terms.qmd#def-term)s.
 
 ::: {#def-register}
 
-## Register
+# Register
 
 A writer's **register** is the level of formality and kind of language
 they choose for a particular audience and setting,
@@ -63,7 +63,7 @@ such as conversational, technical, or promotional.
 
 ::: {#def-antithesis}
 
-## Antithesis
+# Antithesis
 
 An **antithesis** is a construction that sets two contrasting ideas
 side by side in parallel form,
@@ -73,7 +73,7 @@ such as "not X, but Y" or "X, not Y".
 
 ::: {#def-hedge}
 
-## Hedge
+# Hedge
 
 A **hedge** is a word or phrase that softens a claim
 or marks uncertainty about it,
@@ -83,7 +83,7 @@ such as "may", "suggests", or "possibly".
 
 ::: {#def-copula}
 
-## Copula
+# Copula
 
 A **copula** is a verb, usually a form of "to be",
 that links a subject to a description of it,
@@ -93,7 +93,7 @@ as "is" does in "the estimate is biased".
 
 ::: {#def-participial-clause}
 
-## Participial clause
+# Participial clause
 
 A **participial clause** is a clause built on a verb form
 ending in "-ing" or "-ed" that has no subject of its own,
@@ -104,14 +104,14 @@ at the end of a sentence.
 
 ::: {#def-aphorism}
 
-## Aphorism
+# Aphorism
 
 An **aphorism** is a short, quotable sentence
 that states a general truth or verdict.
 
 :::
 
-## A caveat
+# A caveat
 
 No single word or pattern below is wrong on its own.
 Each has legitimate uses.
@@ -122,7 +122,7 @@ Edit for the cluster, not the isolated instance,
 and do not flatten your prose into a voiceless [register](#def-register)
 trying to avoid every word on a list.
 
-## Overused vocabulary
+# Overused vocabulary
 
 Some words turn up more often than needed,
 in stock prose and especially in machine-generated text.
@@ -193,7 +193,7 @@ Two more families recur, and each member should give way to the literal claim:
   - "the key takeaway"
   - "more than just"
 
-## Rhetorical reflexes
+# Rhetorical reflexes
 
 Writers reach for a few sentence shapes by reflex,
 whether or not the content calls for them.
@@ -203,7 +203,7 @@ It promises a profound contrast and usually delivers a hollow one.
 
 :::{#exm-antithesis}
 
-## The "not just X, but Y" reflex
+# The "not just X, but Y" reflex
 
 > ❌ This method is not just fast — it is transformative.
 >
@@ -225,7 +225,7 @@ Other reflexes to watch for:
 - **Hollow summaries.** A closing paragraph that opens with "in conclusion" and
   only restates what you just said adds nothing. End on a real point.
 
-## Say what it is before what it is not
+# Say what it is before what it is not
 
 When a sentence needs both a positive claim and a denial,
 state the positive claim first.
@@ -236,7 +236,7 @@ until the second clause arrives.
 
 :::{#exm-positive-first}
 
-## Positive claim, then denial
+# Positive claim, then denial
 
 > ❌ The padding is not a convention, it is an identity.
 >
@@ -265,7 +265,7 @@ A denial that rejects a view nobody holds is the reframe
 (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature:
 cut it and keep the claim.
 
-## Clichéd sentence shapes
+# Clichéd sentence shapes
 
 Beyond the [antithesis](#def-antithesis),
 clichéd drafts lean on a set of sentence shapes
@@ -273,7 +273,7 @@ that stage a point instead of stating it.
 
 :::{#exm-staged-point}
 
-## A staged point
+# A staged point
 
 > ❌ It can read like a definition that says nothing.
 > Its use is in what it forces you to name:
@@ -378,7 +378,7 @@ Other chapters cover each:
 - informal idioms
   ([Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language)).
 
-## Formatting habits
+# Formatting habits
 
 Some clichés are typographic rather than verbal.
 
@@ -394,7 +394,7 @@ Some clichés are typographic rather than verbal.
   or four sentences, read as monotonous. Let paragraph length follow the
   ideas.
 
-## Tone
+# Tone
 
 The last group of clichés is about [register](#def-register).
 
@@ -410,7 +410,7 @@ The last group of clichés is about [register](#def-register).
   the study and give the number, as the [Citations and evidence](citations-evidence.qmd)
   chapter recommends.
 
-## How to use this list
+# How to use this list
 
 Write plainly first, then scan the draft once before you share it.
 Use the same list when you review someone else's writing.

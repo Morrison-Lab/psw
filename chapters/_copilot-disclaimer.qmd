@@ -1,5 +1,5 @@
 ::: {.callout-note}
-## AI-Assisted Authorship
+# AI-Assisted Authorship
 
 This chapter was written with the assistance of GitHub Copilot,
 which expanded on outlined ideas and draft notes provided by the author.

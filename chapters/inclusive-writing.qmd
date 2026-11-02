@@ -49,7 +49,7 @@ Several rules extend sections in other chapters,
 and they link to those sections
 instead of repeating them.
 
-## Use literal language
+# Use literal language
 
 Say exactly what you mean.
 Do not use idioms, clichés, slang, jokes or sarcasm.
@@ -137,7 +137,7 @@ so [Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metap
 applies to them too,
 and gives more examples.
 
-## Use common words, and define technical ones
+# Use common words, and define technical ones
 
 Use the most common word that is still correct.
 The W3C guidance says to
@@ -160,7 +160,7 @@ Some technical [term](defining-terms.qmd#def-term)s are necessary.
 explains when to keep a technical term
 and how to define it.
 
-## Say when a common word has a technical meaning
+# Say when a common word has a technical meaning
 
 Many statistical [term](defining-terms.qmd#def-term)s are everyday words
 with a different technical meaning.
@@ -198,7 +198,7 @@ if you're referring to the same group"
 > ✅ We split the data into a training set and a test set.
 > We then compute the error on the test set.
 
-## Spell out abbreviations
+# Spell out abbreviations
 
 Write out an abbreviation the first time you use it,
 or replace it with a short name.
@@ -217,7 +217,7 @@ Write "for example" or "that is".
 > usually have lower mean squared error
 > than a single regression tree.
 
-## Introduce shorthand before using it
+# Introduce shorthand before using it
 
 Introduce every shorthand before its first use.
 This covers abbreviations and also shortened phrases,
@@ -232,7 +232,7 @@ Then use the short form consistently.
 > ✅ An *objective function*, or *objective* for short, is the quantity we minimize.
 > The objective as a function of the parameters is a paraboloid.
 
-## Write positive statements
+# Write positive statements
 
 State what is true, not what is not false.
 A double negative makes the reader turn "no" into "yes"
@@ -247,7 +247,7 @@ and the plain language guidelines give the same advice
 >
 > ✅ We reject the null hypothesis when the p-value is 0.05 or less.
 
-## Rewrite noun strings and hidden verbs
+# Rewrite noun strings and hidden verbs
 
 A noun string is a row of nouns that act as adjectives,
 such as "test set error rate estimate".
@@ -273,7 +273,7 @@ to open up a noun string by
 >
 > ✅ We evaluated how accurately the model predicts.
 
-## Put one idea in each sentence
+# Put one idea in each sentence
 
 Long sentences with nested clauses
 make the reader hold several unfinished ideas at once.
@@ -314,7 +314,7 @@ Give each fact its own sentence, in the order a reader needs them.
 and [Lead with the subject](conciseness.qmd#lead-with-the-subject)
 give more examples.
 
-## State every step and every point
+# State every step and every point
 
 Write every step of an argument or a procedure.
 Do not leave a step for the reader to fill in,
@@ -337,7 +337,7 @@ Words like "obviously" and "clearly" hide a step in the same way;
 [Do not substitute flippancy for support](citations-evidence.qmd#do-not-substitute-flippancy-for-support)
 explains what to write instead.
 
-## Say what numbers and symbols mean
+# Say what numbers and symbols mean
 
 Do not leave a number or a formula for the reader to interpret.
 Some readers find numbers hard to process
@@ -372,7 +372,7 @@ and then say what the formula does in a sentence:
 
 The [Mathematical notation](notation.qmd) chapter has more rules for notation.
 
-## Use examples that every reader knows
+# Use examples that every reader knows
 
 Choose examples that do not need a particular culture,
 country, sport or hobby to understand.
@@ -396,7 +396,7 @@ Use "they" for a person whose gender you do not know:
 >
 > ✅ Each student submits their code by Friday.
 
-## Keep a predictable structure
+# Keep a predictable structure
 
 Readers find text easier to follow
 when each part has one purpose,
@@ -426,7 +426,7 @@ the Cornell Center for Teaching Innovation suggests
 and the [Paper organization](paper-organization.qmd) chapter
 cover lists and headings in more detail.
 
-## Present ideas in more than one form
+# Present ideas in more than one form
 
 Readers differ in what helps them understand.
 Universal Design for Learning (UDL)
@@ -448,7 +448,7 @@ or code.
 Each figure also needs a caption and alt text,
 so that a reader who cannot see it gets the same information.
 
-## Test your writing with a reader
+# Test your writing with a reader
 
 You cannot judge your own writing from the reader's side,
 because you already know what you meant.
