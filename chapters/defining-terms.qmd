@@ -853,7 +853,7 @@ In words, it is the population mean of the squared deviation of $X$ from its pop
 A [term](#def-term) that names an activity, such as fitting, estimating or generalizing,
 does not also name how well the activity is done.
 Give the activity one definition,
-and give the quality its own definition and its own term, such as "a good fit", "a consistent estimator" or "generalizes well".
+and give the quality its own definition and its own term, such as "a good fit" or "a consistent estimator".
 Three reasons:
 
 - **The activity can be done badly.**
