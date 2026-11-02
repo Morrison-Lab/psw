@@ -16,6 +16,39 @@ Lecture notes, slides, and problem sets teach rather than report.
 The general rules for scientific writing in the other chapters still apply.
 This chapter adds the rules that apply to teaching materials in particular.
 
+## Teaching writing and writing for peers
+
+A teaching document and a paper have different readers, so they follow different rules.
+The reader of a teaching document is learning the material.
+The reader of a paper is a researcher who already knows the field and wants to judge new work.
+
+| | Teaching materials | Writing for peers (a paper) |
+|---|---|---|
+| Reader | A learner who needs each [term](defining-terms.qmd#def-term) defined before it is used. | A researcher in the field who knows the standard terms. |
+| Purpose | The reader can do the method afterwards. | The reader can judge and build on the new result. |
+| Standard material | Stated in full, with its definitions, notation, and worked examples. | Cited, not restated. |
+| Order | An exercise first, then the definition, the result, and its proof. | [The standard paper structure](paper-organization.qmd#standard-paper-structure). |
+| Examples | Every definition is followed by an example, and every example by an exercise. | Examples appear where they support a claim. |
+| Repetition | One written version of each result is reused wherever it is needed. | Each result is stated once, where the argument needs it. |
+
+Four consequences follow for how you write.
+
+- **Define every term that the reader might not know.** <!-- check-term-links: allow -->
+  A paper may use a standard term of its field without a definition.
+  Teaching materials define the term, or link to the page that does.
+- **Show each step of a derivation.**
+  A paper may skip a routine step.
+  Teaching materials give one operation per line, so the learner can check each step.
+- **Test the reader's understanding.**
+  Teaching materials include exercises and solutions.
+  A paper does not.
+- **Use the same notation throughout, and state its alternatives.**
+  A paper fixes one notation for its own argument.
+  A learner also meets other notations in other textbooks and papers.
+
+The rest of this chapter gives the rules for teaching materials.
+The chapters on [paper organization](paper-organization.qmd) and [manuscript submission](manuscript-submission.qmd) give the rules for papers.
+
 ## Build the lecture from exercises and solutions
 
 Active learning, in which students work through tasks themselves during class,
