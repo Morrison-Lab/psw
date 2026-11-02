@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:25:41 (PST)
+Last modified: 2026-11-02 11:32:05 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,7 @@ Last modified: 2026-11-02 11:25:41 (PST)
 
 This book is a style guide for writing in science, technology, engineering, and mathematics (STEM). Most of its examples come from statistics and data analysis, because statistics and data analysis are the fields that I work in. Most of its rules apply to any writing that explains technical ideas.
 
-## 1 What the book covers
+# 1 What the book covers
 
 Most chapters give rules for every kind of technical writing, such as a paper or a set of lecture notes. Four chapters cover one kind of document:
 
@@ -20,13 +20,13 @@ Most chapters give rules for every kind of technical writing, such as a paper or
 - [Writing for teaching](../chapters/teaching.llms.md) covers lecture notes, slides, and problem sets.
 - [Writing for code review and software](../chapters/software-text.llms.md) covers pull requests, issues, commit messages, READMEs, code comments, and release notes.
 
-## 2 Who the book is for
+# 2 Who the book is for
 
 I wrote this book for students and mentees who are learning to write about their research. I also wrote it for the AI writing assistants that draft and edit prose for me.
 
 Many rules are stated as checks that a reader can apply to a single sentence, so a student and an AI assistant can apply them the same way. For example, the section on [demonstrative pronouns](../chapters/grammar.llms.md#demonstrative-pronouns) asks whether each “this” or “that” is followed by the noun that it refers to. A person or a program can answer that question without knowing what the paper is about.
 
-## 3 How the book is organized
+# 3 How the book is organized
 
 The chapters fall into six groups:
 
@@ -52,7 +52,7 @@ The chapters fall into six groups:
 
 The [Summary](../chapters/summary.llms.md) lists the book’s main rules as a checklist for revising a draft.
 
-## 4 How to read the book
+# 4 How to read the book
 
 You can read the chapters in any order. Most sections state one rule and the reason for it, and then show the rule applied to an example. Many sections compare a weaker version of a passage with a stronger one. For example, the [Word choice](../chapters/word-choice.llms.md) chapter recommends “before” over “prior to”:
 
@@ -64,7 +64,7 @@ Definitions, examples, and exercises appear in numbered, colored boxes, so that 
 
 Use the book as a reference while you write, and use the [Summary](../chapters/summary.llms.md) checklist when you revise.
 
-## 5 Further reading
+# 5 Further reading
 
 These shorter guides cover some of the same ground:
 
@@ -81,7 +81,7 @@ For who counts as an author, see the ICMJE criteria in [Preparing a manuscript f
 
 For further reading, see the [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual.
 
-## 6 Contributing
+# 6 Contributing
 
 The book is a work in progress. If a rule is unclear, wrong, or missing, open an issue on the book’s [GitHub repository](https://github.com/Morrison-Lab/psw/issues).
 

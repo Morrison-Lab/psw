@@ -4,11 +4,11 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:25:41 (PST)
+Last modified: 2026-11-02 11:32:05 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
-## 1 Guidelines for slide decks
+# 1 Guidelines for slide decks
 
 When preparing slides for a lab meeting, conference, qualifying exam, or thesis defense, follow these guidelines:
 
@@ -20,14 +20,14 @@ When preparing slides for a lab meeting, conference, qualifying exam, or thesis 
 - **Show software working**: When you present a package or a pipeline, show live output, reproducible code, or a screenshot instead of only listing its features.
 - **Ensure high contrast and readability**: Use large fonts and high-contrast colors. Check that axis labels, legends, and annotations can be read from the back of a large room or on a low-resolution projector.
 
-## 2 Presentation and poster resources
+# 2 Presentation and poster resources
 
 - How to tell a compelling story in scientific presentations ([Kirchoff 2021](#ref-kirchoff2021))
 - The science of storytelling: the David Attenborough style of scientific presentation ([Ratcliff 2023](#ref-ratcliff2023))
 - [How to create a better research poster in less time](https://www.youtube.com/watch?v=1RwJbhkCA58) - Mike Morrison’s video introducing the \#betterposter template
 - [Towards an “#evenbetterposter”](https://mitcommlab.mit.edu/be/2023/09/27/toward-an-evenbetterposter-improving-the-betterposter-template/) - the MIT Biological Engineering Communication Lab’s improvements to that template
 
-## 3 Show the result in a figure
+# 3 Show the result in a figure
 
 A figure often shows a pattern, an outlier or a comparison faster and more reliably than a sentence or a table can describe it. So when a result can be drawn, draw it, and use the text to point the reader to what the figure shows.
 
@@ -41,7 +41,7 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 >
 > **Example 1 (Four datasets with the same summaries)** Anscombe ([1973](#ref-anscombe1973)) constructed four small datasets of $(x, y)$ pairs ([Wikipedia: Anscombe’s quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)). All four have the same mean of $x$ (9), the same mean of $y$ (7.5), the same correlation (0.82 to two decimal places) and the same least-squares line, with slope 0.5. A table of these summaries cannot tell the datasets apart. A scatterplot of each can: one is roughly linear with scatter, one follows a smooth curve, one is an exact line with a single outlier, and one has all but one of its points at the same $x$.
 
-## 4 Scientific figures
+# 4 Scientific figures
 
 Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
@@ -74,7 +74,7 @@ For more:
 - Ten Simple Rules for Better Figures ([Rougier et al. 2014](#ref-rougier2014))
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text
 
-## 5 Three-dimensional graphs
+# 5 Three-dimensional graphs
 
 A [function](https://morrison-lab.github.io/mds/functions.html#def-function) of two variables, such as a loss or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
 
