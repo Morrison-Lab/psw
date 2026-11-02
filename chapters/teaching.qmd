@@ -730,6 +730,7 @@ Aim for five so that the guideline still holds when a few headings are added lat
 
 The `check-heading-siblings` check in
 [`gha`](https://github.com/Morrison-Lab/gha)
+([gha#1390](https://github.com/Morrison-Lab/gha/pull/1390))
 warns when a pull request adds a heading to a group of more than seven siblings.
 It warns only on pages a pull request touches,
 so regroup a page when you next edit it, and do not sweep the others.
