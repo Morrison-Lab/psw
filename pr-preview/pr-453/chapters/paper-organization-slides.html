@@ -270,12 +270,14 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 10:47:07 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 10:54:53 (PST)</p>
 </section>
 <section class="slide level2">
 
 <p>Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.</p>
-<h3 data-number="1" id="write-to-clarify-your-thinking"><span class="header-section-number">1</span> Write to clarify your thinking</h3>
+</section>
+<section id="write-to-clarify-your-thinking" class="slide level2" data-number="1">
+<h2><span class="header-section-number">1</span> Write to clarify your thinking</h2>
 </section>
 <section class="slide level2">
 
@@ -286,7 +288,9 @@
 <li>You often answer the question yourself while writing it.</li>
 </ul>
 <p>The computer scientist Leslie Lamport argues that a person who thinks without writing only thinks that they are thinking <span class="citation" data-cites="lamport2019think">(<a href="#/references" role="doc-biblioref" onclick="">Lamport 2019</a>)</span>.</p>
-<h3 data-number="2" id="standard-paper-structure"><span class="header-section-number">2</span> Standard paper structure</h3>
+</section>
+<section id="standard-paper-structure" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> Standard paper structure</h2>
 </section>
 <section class="slide level2">
 
@@ -298,21 +302,23 @@
 <li><strong>Discussion</strong>: Interpret the findings and their implications</li>
 </ul>
 <p>Some papers combine Results and Discussion into a single section.</p>
-<h3 data-number="3" id="organizing-the-results-section"><span class="header-section-number">3</span> Organizing the Results section</h3>
+</section>
+<section id="organizing-the-results-section" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Organizing the Results section</h2>
 </section>
 <section class="slide level2 scrollable">
 
 <p>The Results section presents your findings clearly and logically. How you organize this section depends on your research design and the complexity of your analyses.</p>
-<h4 id="single-outcome-studies">Single outcome studies</h4>
+<h3 id="single-outcome-studies">Single outcome studies</h3>
 <p>When analyzing a single primary outcome, organize results by:</p>
 <ul>
 <li>Descriptive statistics first</li>
 <li>Main analysis results</li>
 <li>Sensitivity analyses or subgroup analyses</li>
 </ul>
-<h4 id="multiple-outcomes-analyzed-separately">Multiple outcomes analyzed separately</h4>
+<h3 id="multiple-outcomes-analyzed-separately">Multiple outcomes analyzed separately</h3>
 <p>When analyzing multiple outcomes separately, <strong>group your results section by outcome</strong> rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.</p>
-<h5 id="why-group-by-outcome">Why group by outcome</h5>
+<h4 id="why-group-by-outcome">Why group by outcome</h4>
 <p>Grouping by outcome helps readers:</p>
 <ul>
 <li>Follow the story of each outcome from descriptive statistics through final results</li>
@@ -320,7 +326,7 @@
 <li>Understand the complete picture for each outcome before moving to the next</li>
 <li>Navigate directly to outcomes of interest</li>
 </ul>
-<h5 id="how-to-organize-by-outcome">How to organize by outcome</h5>
+<h4 id="how-to-organize-by-outcome">How to organize by outcome</h4>
 <p>For each outcome, present:</p>
 <ol type="1">
 <li>Descriptive statistics</li>
@@ -345,7 +351,7 @@
     ├── Main analysis
     ├── Sensitivity analyses
     └── Subgroup analyses</code></pre>
-<h5 id="what-to-avoid">What to avoid</h5>
+<h4 id="what-to-avoid">What to avoid</h4>
 <p><strong>Don’t group by analysis type</strong> when outcomes are analyzed separately: <!-- check-term-links: allow --></p>
 <pre><code>Results (POOR ORGANIZATION)
 ├── Descriptive statistics
@@ -361,15 +367,17 @@
     ├── Hospital readmission
     └── Quality of life</code></pre>
 <p>This forces readers to jump back and forth between sections to understand the complete story for any single outcome.</p>
-<h5 id="exception-shared-descriptive-statistics">Exception: Shared descriptive statistics</h5>
+<h4 id="exception-shared-descriptive-statistics">Exception: Shared descriptive statistics</h4>
 <p>If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.</p>
-<h3 data-number="4" id="figures-and-tables"><span class="header-section-number">4</span> Figures and tables</h3>
+</section>
+<section id="figures-and-tables" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Figures and tables</h2>
 </section>
 <section class="slide level2">
 
 <p>In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout (<a href="#/sec-submission-layout" class="quarto-xref">Section&nbsp;4.3</a>). Either way, number figures and tables sequentially and reference them in the text before they appear.</p>
 <p>Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.</p>
-<h4 id="label-variables-in-plain-words">Label variables in plain words</h4>
+<h3 id="label-variables-in-plain-words">Label variables in plain words</h3>
 <p>A figure or table is read by people, not by the code that made it. Replace every variable name from the data with a label a reader understands:</p>
 <ul>
 <li>turn underscores and other code punctuation into spaces;</li>
@@ -387,13 +395,13 @@
 </blockquote>
 <p>In R with <code>ggplot2</code>, set the axis and legend titles with <code>labs()</code>, and recode the category levels before plotting, for example with <code>forcats::fct_recode()</code>.</p>
 </div>
-<h4 id="captions-are-captions-not-headings">Captions are captions, not headings</h4>
+<h3 id="captions-are-captions-not-headings">Captions are captions, not headings</h3>
 <p>Give every figure and table a numbered caption, including those in the supplementary material. A table without a caption is incomplete, even when its contents are correct.</p>
 <p>Attach each caption to its figure or table with your writing tool’s caption feature (in Quarto, the last line of a <code>#fig-</code> or <code>#tbl-</code> div), not as a section heading.</p>
 <p><strong>Poor caption</strong>: a section heading that reads “Supplementary Figure S43: Distribution of follow-up time”, placed above the figure</p>
 <p><strong>Better caption</strong>: “Distribution of follow-up time”, written as a caption attached to the figure, with its label and number generated by your writing tool rather than typed by hand (a supplementary “S” prefix may need extra setup in the tool)</p>
 <p>A heading posing as a caption usually appears in the table of contents, takes on heading styling, and is not attached to its figure. Its number is typed by hand, so it falls out of step with the real numbering when figures are added, removed, or reordered.</p>
-<h4 id="sec-submission-layout">Manuscript layout for journal submission</h4>
+<h3 id="sec-submission-layout">Manuscript layout for journal submission</h3>
 <p>Many journals ask for figures and tables to follow the main text of a submitted manuscript rather than appear inline. Unless the journal’s instructions say otherwise, lay out a submission manuscript as follows:</p>
 <ul>
 <li><strong>Put all main-text figures and tables at the end of the main manuscript</strong>, after the main text and the references, and before the supplementary material. The main text still cites each one by number.</li>
@@ -401,14 +409,16 @@
 <li><strong>Keep each caption with its figure or table.</strong> Insert a page break before the first figure or table and between consecutive ones, so that each one starts on a page where it fits with its caption. Do not let a caption fall on a different page from its figure or table, or split across a page break, unless it cannot be avoided, as when a figure or table and its caption together are taller than a full page.</li>
 </ul>
 <p>In Quarto, the <code>{{&lt; pagebreak &gt;}}</code> shortcode inserts a page break in PDF and Word output, and a <code>::: {#refs}</code> div places the references where you put the div instead of at the end of the document. Write the figures and tables after that div.</p>
-<h4 id="check-the-rendered-layout">Check the rendered layout</h4>
+<h3 id="check-the-rendered-layout">Check the rendered layout</h3>
 <p>Captions, page breaks, and figure placement are properties of the rendered document’s layout. Problems with them are easy to miss when reading the source, and a check of the text and numbers alone will not catch them. Before calling a rendered manuscript reviewed, page through the PDF or Word output and check its layout, not only its text and numbers:</p>
 <ul>
 <li>Does every figure and table have a numbered caption?</li>
 <li>Does each caption sit on the same page as its figure or table?</li>
 <li>For a journal submission, do the main-text figures and tables come after the references and before the supplement, and does the supplementary material start on a new page?</li>
 </ul>
-<h3 data-number="5" id="subsection-headings"><span class="header-section-number">5</span> Subsection headings</h3>
+</section>
+<section id="subsection-headings" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Subsection headings</h2>
 </section>
 <section class="slide level2">
 
@@ -416,7 +426,9 @@
 <p><strong>Poor heading</strong>: “Analysis 1”</p>
 <p><strong>Better heading</strong>: “Association between treatment and mortality”</p>
 <p><strong>Best heading</strong>: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)</p>
-<h3 data-number="6" id="heading-levels"><span class="header-section-number">6</span> Heading levels</h3>
+</section>
+<section id="heading-levels" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Heading levels</h2>
 </section>
 <section class="slide level2">
 
@@ -428,7 +440,9 @@
 </ul>
 <p>The <code>####</code> title of a definition, example or exercise div is not a heading in this sense.</p>
 <p>The <a href="https://morrison-lab.github.io/gha/reference/check-heading-levels.html"><code>check-heading-levels</code> workflow</a> in Morrison-Lab/gha flags these three mistakes on the heading lines a pull request adds.</p>
-<h3 data-number="7" id="avoid-forward-references"><span class="header-section-number">7</span> Avoid forward references</h3>
+</section>
+<section id="avoid-forward-references" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Avoid forward references</h2>
 </section>
 <section class="slide level2">
 
@@ -457,7 +471,9 @@
 </ul>
 <p>A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.</p>
 <p>When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.</p>
-<h3 data-number="8" id="links-to-videos-and-other-media"><span class="header-section-number">8</span> Links to videos and other media</h3>
+</section>
+<section id="links-to-videos-and-other-media" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Links to videos and other media</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 

@@ -317,7 +317,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 10:47:07 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 10:54:53 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -343,7 +343,9 @@
 <div id="rem-population" class="proof remark">
 <p><span class="proof-title"><em>Remark 1</em> (Population is not only geographic). </span>In everyday use, “population” usually means the people living in a place. The statistical sense in <a href="#/def-population" class="quarto-xref">Definition&nbsp;2</a> is broader: a population can be all the patients with a condition, all the batches a factory produces, or any other set of items of interest.</p>
 </div>
-<h3 data-number="1" id="guidelines-for-defining-terms"><span class="header-section-number">1</span> Guidelines for defining terms</h3>
+</section>
+<section id="guidelines-for-defining-terms" class="slide level2" data-number="1">
+<h2><span class="header-section-number">1</span> Guidelines for defining terms</h2>
 </section>
 <section class="slide level2">
 
@@ -434,7 +436,9 @@
 <li><p><strong>Apply a function to its argument with the macro’s f form:</strong> Where a macro names a function, such as a fitting procedure, the macro with an <code>f</code> ending applies it to its argument, so write the application with that macro and not with a hand-typed <code>\paren</code>. For example, write <span class="math inline">\({g\mathopen{}\left(\mathcal{D}_{\text{train}}\right)\mathclose{}}\)</span> for the fitted model that <span class="math inline">\(g\)</span> gives on the training set <span class="math inline">\(\mathcal{D}_{\text{train}}\)</span>, and never <span class="math inline">\(g\mathopen{}\left(\mathcal{D}_{\text{train}}\right)\mathclose{}\)</span>. The same holds for an operator and every delimiter macro (<code>\paren</code>, <code>\sb</code>, <code>\cb</code>, <code>\set</code>, <code>\abs</code>, <code>\norm</code> and <code>\angb</code>), and for an alias of the operator: write <span class="math inline">\({\mathbb{E}\mathopen{}\left[y\right]\mathclose{}}\)</span>, and never <span class="math inline">\(\mathbb{E}\mathopen{}\left[y\right]\mathclose{}\)</span>. Before adding an f form, check that no macro already prints the notation: <code>\candfitted{l}</code> already prints the fitted model of candidate <span class="math inline">\(l\)</span>, and a second macro for the same notation is not an f form. When no macro prints the notation, create the f form in the macros repository first, in the same session, then bump the pin and use it, as for any new macro. A missing f form is never a reason to type the operator and the delimiter separately.</p></li>
 <li><p><strong>Qualify “mean”, “average” and their shorthands as population or sample:</strong> A bare “mean” or “average” does not say whether it is a quantity of the population or a value computed from one sample. Write “population mean” for the expected value of a distribution, and “sample mean” for the average of the observed values; write “population average” and “sample average” in the same way. Prefer “mean” with the qualifier to “average”. The same holds for shorthands: write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE, with a leading p for the population version and s for the sample version, and never a bare MSE, RMSE or MAE. Spelled out, the same words apply: “population mean squared error”, “sample root mean squared error”, “population mean absolute error”. Define each shorthand once, at first use, as “population mean squared error (pMSE)”. A term that already says which, such as “mean function” or “running mean”, needs no extra word, and neither does expected value notation such as <span class="math inline">\({\mathbb{E}\mathopen{}\left[Y\right]\mathclose{}}\)</span>. For example, write “the sample mean of the training outcomes estimates the population mean of the outcome”, not “the mean estimates the mean”. Drop the qualifier only when it is completely clear from context, such as inside a definition that has just said which one it concerns. When in doubt, keep it.</p></li>
 </ul>
-<h3 data-number="2" id="examples-of-term-definitions"><span class="header-section-number">2</span> Examples of term definitions</h3>
+</section>
+<section id="examples-of-term-definitions" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> Examples of term definitions</h2>
 </section>
 <section class="slide level2">
 
@@ -458,7 +462,9 @@
 <div id="exm-passive-voice" class="theorem example">
 <p><span class="theorem-title"><strong>Example 9 (A sentence that is not in active voice)</strong></span> “The experiment was conducted by the researcher” is not in active voice (<a href="#/def-active-voice" class="quarto-xref">Definition&nbsp;4</a>). Its subject, “the experiment”, receives the action instead of performing it, so the sentence is in passive voice.</p>
 </div>
-<h3 data-number="3" id="order-general-definition-then-examples"><span class="header-section-number">3</span> Order: general definition, then examples</h3>
+</section>
+<section id="order-general-definition-then-examples" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Order: general definition, then examples</h2>
 </section>
 <section class="slide level2">
 
@@ -480,7 +486,9 @@
 <p><span class="theorem-title"><strong>Example 12 (A sum of squares that is not a residual sum of squares)</strong></span> For the same three points, the sum of squared deviations of <span class="math inline">\(y_i\)</span> from their mean, <span class="math inline">\(5/3\)</span>, is <span class="math inline">\(2/3\)</span>. That quantity is the total sum of squares, not the residual sum of squares (<a href="#/def-rss" class="quarto-xref">Definition&nbsp;5</a>) of the line in <a href="#/exm-rss-three-points" class="quarto-xref">Example&nbsp;11</a>, because it measures spread around the mean rather than around the line’s <a href="../chapters/notation.html#def-fitted-value">fitted value</a>s.</p>
 </div>
 <p>The definition stays one sentence and one equation, so it still applies when the document later fits a model that is not a line. The line is a special case, so it is an example, and the numerical case is a special case of the line, so it follows the line. The counterexample comes after the examples, once the reader knows what the definition covers.</p>
-<h3 data-number="4" id="give-a-defined-quantity-its-expression-and-its-prose-reading"><span class="header-section-number">4</span> Give a defined quantity its expression and its prose reading</h3>
+</section>
+<section id="give-a-defined-quantity-its-expression-and-its-prose-reading" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Give a defined quantity its expression and its prose reading</h2>
 </section>
 <section class="slide level2">
 
@@ -491,7 +499,9 @@
 <div id="exm-not-expression-and-prose" class="theorem example">
 <p><span class="theorem-title"><strong>Example 13 (A definition that gives only one of the two)</strong></span> “The variance is how spread out <span class="math inline">\(X\)</span> is” gives no expression, so a reader cannot compute it. “The variance is <span class="math inline">\({\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}\)</span>” gives no reading, so a reader cannot check their understanding. <a href="#/def-variance-expression-and-prose" class="quarto-xref">Definition&nbsp;6</a> gives both.</p>
 </div>
-<h3 data-number="5" id="define-an-activity-separately-from-doing-it-well"><span class="header-section-number">5</span> Define an activity separately from doing it well</h3>
+</section>
+<section id="define-an-activity-separately-from-doing-it-well" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Define an activity separately from doing it well</h2>
 </section>
 <section class="slide level2">
 
@@ -510,7 +520,9 @@
 <div id="exm-activity-quality-fit" class="theorem example">
 <p><span class="theorem-title"><strong>Example 16 (Fitting and a good fit)</strong></span> <em>Fitting</em> is choosing the parameter values of a model from data, for example by minimizing the <a href="#/def-rss">residual sum of squares</a>. A <em>good fit</em> is a fitted model whose residual sum of squares is at most a stated tolerance. A line can be fitted to any data, including data that it fits badly.</p>
 </div>
-<h3 data-number="6" id="why-examples-matter"><span class="header-section-number">6</span> Why examples matter</h3>
+</section>
+<section id="why-examples-matter" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Why examples matter</h2>
 </section>
 <section class="slide level2">
 
@@ -522,7 +534,9 @@
 <li><p><strong>Memory:</strong> Concrete examples are easier to remember than abstract definitions alone.</p></li>
 <li><p><strong>Boundaries:</strong> Counterexamples show where a definition stops applying, which is where readers most often misapply it.</p></li>
 </ul>
-<h3 data-number="7" id="common-pitfalls-to-avoid"><span class="header-section-number">7</span> Common pitfalls to avoid</h3>
+</section>
+<section id="common-pitfalls-to-avoid" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Common pitfalls to avoid</h2>
 </section>
 <section class="slide level2">
 
@@ -537,12 +551,14 @@
 <li><p><strong>Missing examples:</strong> Never leave a definition without at least one example.</p></li>
 <li><p><strong>Examples without context:</strong> Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.</p></li>
 </ul>
-<h3 data-number="8" id="mathematical-statements-require-examples"><span class="header-section-number">8</span> Mathematical statements require examples</h3>
+</section>
+<section id="mathematical-statements-require-examples" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Mathematical statements require examples</h2>
 </section>
 <section class="slide level2">
 
 <p>Mathematical theorems, lemmas, corollaries, and <a href="#/def-postulate">postulate</a>s should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.</p>
-<h4 id="using-theorem-environments-in-quarto">Using theorem environments in Quarto</h4>
+<h3 id="using-theorem-environments-in-quarto">Using theorem environments in Quarto</h3>
 <p>When writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.</p>
 <p>Quarto provides built-in theorem environments including:</p>
 <ul>
@@ -570,7 +586,7 @@
 <span id="cb1-9"><a aria-label="9"></a></span>
 <span id="cb1-10"><a aria-label="10"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using <code>@thm-pythagorean</code>.</p>
-<h4 id="example-pythagorean-theorem">Example: Pythagorean theorem</h4>
+<h3 id="example-pythagorean-theorem">Example: Pythagorean theorem</h3>
 <div id="thm-pythagoras" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 1 (Pythagorean theorem)</strong></span> In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides:</p>
 <p><span class="math display">\[a^2 + b^2 = c^2.\]</span></p>
@@ -592,7 +608,9 @@
 <p><span class="theorem-title"><strong>Example 18 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
 <p>If we have line <span class="math inline">\(L\)</span> and point <span class="math inline">\(P\)</span> not on <span class="math inline">\(L\)</span>, only one line through <span class="math inline">\(P\)</span> will never intersect <span class="math inline">\(L\)</span>.</p>
 </div>
-<h3 data-number="9" id="presenting-a-derivation-exercise-solution-theorem-proof"><span class="header-section-number">9</span> Presenting a derivation: exercise, solution, theorem, proof</h3>
+</section>
+<section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
 </section>
 <section class="slide level2">
 
