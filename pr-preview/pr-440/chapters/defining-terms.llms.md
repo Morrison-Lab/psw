@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-01 23:30:01 (PST)
+Last modified: 2026-11-01 23:38:23 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -219,7 +219,7 @@ A [term](#def-term) that names an activity, such as fitting, estimating or gener
 
 - **The activity can be done badly.** A definition that builds the quality in, such as “an algorithm generalizes when it does well on new data”, makes “generalizes poorly” a contradiction.
 - **The quality needs a criterion.** “Does well” and “good” are comparisons without a standard. State the quantity that measures the quality and the threshold or ordering applied to it.
-- **Sources use the [term](#def-term) both ways.** Name the sense a document uses, so that a reader who knows the other sense is not misled.
+- **Sources use the name both ways.** Name the sense that a document uses, so that a reader who knows the other sense is not misled.
 
 > **NOTE:**
 >
@@ -227,11 +227,11 @@ A [term](#def-term) that names an activity, such as fitting, estimating or gener
 
 > **NOTE:**
 >
-> **Example 15 (Generalization and generalizing well)** [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization) is the use of a model fitted to a training set to predict the outputs of inputs outside it. A model [*generalizes well*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalizes-well) when its average loss on new input–output pairs from the target population is at most a stated tolerance. A model can generalize, in the first sense, and generalize poorly, in the second.
+> **Example 15 (Generalization and generalizing well)** [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization) is the use of a model fitted to a training set to predict the outputs of inputs outside it. A model *generalizes well* when its average loss on new input–output pairs from the target population is at most a stated tolerance. A model can generalize, in the first sense, and generalize poorly, in the second.
 
 > **NOTE:**
 >
-> **Example 16 (Fitting and a good fit)** *Fitting* is choosing the parameter values of a model from data, for example by minimizing the [residual sum of squares](#def-rss). A *good fit* is a fitted model whose residual sum of squares is at most a stated tolerance. A line can be fitted to any data, including data it fits badly.
+> **Example 16 (Fitting and a good fit)** *Fitting* is choosing the parameter values of a model from data, for example by minimizing the [residual sum of squares](#def-rss). A *good fit* is a fitted model whose residual sum of squares is at most a stated tolerance. A line can be fitted to any data, including data that it fits badly.
 
 ## 6 Why examples matter
 
