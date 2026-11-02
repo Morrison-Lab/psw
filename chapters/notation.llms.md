@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:32:05 (PST)
+Last modified: 2026-11-02 11:46:43 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,7 @@ Last modified: 2026-11-02 11:32:05 (PST)
 
 Notation is part of your prose, and readers parse it the same way they parse a sentence. This chapter collects notational habits that make quantitative writing easier to read.
 
-## 1 Avoiding double inequalities
+# 1 Avoiding double inequalities
 
 > **NOTE:**
 >
@@ -38,7 +38,7 @@ Interval notation is easier to read for three reasons:
 
 The same guidance applies to prose: write “for $x \in (0, 1)$” rather than “for $x$ between 0 and 1, exclusive”.
 
-### 1.1 When the middle term is not a single symbol
+### 1.0.1 When the middle term is not a single symbol
 
 Interval notation works best when the quantity being constrained is a single expression. When the middle term is complicated, naming it first keeps the constraint short.
 
@@ -52,7 +52,7 @@ Interval notation works best when the quantity being constrained is a single exp
 
 Finally, a chain that compares three *different* quantities — for example $\hat{\theta}_1 < \hat{\theta}_2 < \hat{\theta}_3$ — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements ($\hat{\theta}_1 < \hat{\theta}_2$ and $\hat{\theta}_2 < \hat{\theta}_3$) unless the ordering of all three is the point you are making.
 
-## 2 One operation per step
+# 2 One operation per step
 
 Write a derivation so that each displayed line does exactly one thing to the line before it: apply one rule, substitute one result, or simplify one piece. Give each line its own justification.
 
@@ -94,11 +94,11 @@ Common ways to combine steps without noticing:
 - canceling $n$ in $n \cdot \frac{b}{n}$ rewrites the division as multiplication by a reciprocal ($n \cdot (b \cdot \frac{1}{n})$), removes the parentheses ($n \cdot b \cdot \frac{1}{n}$), reorders the factors ($b \cdot n \cdot \frac{1}{n}$), groups the two that cancel ($b \cdot (n \cdot \frac{1}{n})$), replaces $n \cdot \frac{1}{n}$ with $1$ ($b \cdot 1$), and drops the $\cdot 1$;
 - writing “setting this to zero and dividing by $-2n$ gives”, which hides two operations in a sentence.
 
-### 2.1 Name a step by its standard rule
+### 2.0.1 Name a step by its standard rule
 
 Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.
 
-### 2.2 Applying a definition is a step
+### 2.0.2 Applying a definition is a step
 
 Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
 
@@ -124,11 +124,11 @@ Replacing a named quantity with its definition is one of the most important step
 >
 > The ❌ version applies the definition of $\tilde{e}$ and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.
 
-### 2.3 Using a fact the reader has not seen
+### 2.0.3 Using a fact the reader has not seen
 
 When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.
 
-### 2.4 Long derivations
+### 2.0.4 Long derivations
 
 Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$, can also keep each line short.
 
@@ -163,7 +163,7 @@ State the color key in words at the start of the derivation, so the derivation i
 >
 > Separate blocks then find $\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}$ and $\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}$, and the main derivation resumes with $\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}$. The colors show at a glance which block each factor came from.
 
-## 3 One equals sign per line
+# 3 One equals sign per line
 
 Put at most one equals sign on each line of math. When a result takes two or more equalities, write them as an aligned display, with one equality per row, each row starting with `&=`.
 
@@ -191,7 +191,7 @@ The rule applies wherever an equals sign appears:
 
 Separate equations set side by side, such as $x = 1, \quad y = 2$, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.
 
-## 4 Functions and their values
+# 4 Functions and their values
 
 A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” reads as a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
 
@@ -227,7 +227,7 @@ Define the [fitted value](#def-fitted-value) once, then print $\hat{y}_i$, not $
 
 In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
 
-## 5 Types of functions and procedures
+# 5 Types of functions and procedures
 
 Name the type of every [function](https://morrison-lab.github.io/mds/functions.html#def-function) and procedure when you define it:
 
@@ -259,7 +259,7 @@ A function’s argument is not part of what specifies the function. Give the arg
 
 Check each use against the stated types: a function applied to something outside its domain, or a value described with the wrong type, is an error even when the notation looks right.
 
-## 6 Random variables and their values
+# 6 Random variables and their values
 
 A random variable and a value that it takes are different objects. Before the data are collected, the outcome is a random variable; after, it is a number. Statements about the two have different meanings. Write them with different symbols.
 
@@ -306,7 +306,7 @@ Name the kind of object in the words, too, not only in the symbol. Call a random
 
 Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable $Y_i$” or “the observed value $y_i$”.
 
-## 7 Matching names and notation
+# 7 Matching names and notation
 
 A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
 
@@ -332,7 +332,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-### 7.1 Label every inline symbol
+### 7.0.1 Label every inline symbol
 
 In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, $\sigma^2$”.
 
@@ -346,7 +346,7 @@ In prose, write a text label next to every inline math symbol. The label tells t
 >
 > In the ❌ version, the reader sees $\sigma^2$ with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.
 
-## 8 Using shared macros
+# 8 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
@@ -469,7 +469,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 >
 > The ✅ version tells the reader what the symbol means. The reader never sees the macro name, and the symbol has its own row in the notation table.
 
-## 9 Making expressions concise
+# 9 Making expressions concise
 
 Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
 
@@ -491,7 +491,7 @@ Search the shared macros for the chunk before you write it by hand. A macro ofte
 
 Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
 
-## 10 Abstracting sub-expressions you are not manipulating
+# 10 Abstracting sub-expressions you are not manipulating
 
 Replace each sub-expression that you are not manipulating with a symbol that stands for it. Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it. Every other line shows the symbol.
 
@@ -523,7 +523,7 @@ Choose the symbol to match the thing it names. For the [population](../chapters/
 >
 > In the ❌ version, $\E{X}$ is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of $\mu$ needs to know what $\mu$ stands for.
 
-## 11 Writing dot products
+# 11 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, $\tilde{x} \cdot \tilde{\beta}$. Do not write it as a transpose product, $\tilde{x}' \tilde{\beta}$, or with inner-product brackets, $\langle \tilde{x}, \tilde{\beta} \rangle$. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
@@ -545,7 +545,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-## 12 Using the notation that best represents the concept
+# 12 Using the notation that best represents the concept
 
 Use the notation that best represents the concept being depicted. Choose the symbol, the macro and the name by asking what the object is, not by asking what is quicker to type or what the nearby text used. A symbol that fits a different concept sends the reader to the wrong idea.
 
@@ -558,7 +558,7 @@ The rules that follow are cases of this principle:
 
 When no rule covers a case, ask the same question: which symbol, name and form best represents the concept here? Then record the answer as a rule, with this principle as its reason.
 
-## 13 Writing the predictor and design matrices
+# 13 Writing the predictor and design matrices
 
 Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix $\mX$ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic $X$ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
 
@@ -579,7 +579,7 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 >
 > The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.
 
-## 14 Stating formulas in their general form
+# 14 Stating formulas in their general form
 
 On a reference sheet, a formula sheet or a summary, state each formula in its general form. Do not state it only for a specific example. A reader looks a formula up to apply it to a new case, and an example shows only one case.
 
@@ -595,7 +595,7 @@ On a reference sheet, a formula sheet or a summary, state each formula in its ge
 
 Put a specific case on the sheet only as a labeled example next to the general formula.
 
-## 15 Writing the mean function and the prediction function
+# 15 Writing the mean function and the prediction function
 
 Write the mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) as $\truemean$, not as $\predfn$. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, $\truemeanf{x}$. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
@@ -611,7 +611,7 @@ Name the object you mean. When the text refers to the fitted prediction function
 >
 > The ✅ version names the fitted prediction function where the concept is a prediction, and keeps $\truemean$ for the mean it is compared with.
 
-## 16 Writing the log-odds
+# 16 Writing the log-odds
 
 Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
@@ -625,7 +625,7 @@ Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another lette
 >
 > The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen $\logodds$ elsewhere recognizes it here.
 
-## 17 Writing out notational shorthands
+# 17 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in $\sum_x f(x)$. In permanent writing (notes, papers, and published slides), write the full form instead: $\sum_{x \in \mathcal{R}(X)} f(x)$, where $\mathcal{R}(X)$ is the set of values that $X$ can take.
 
@@ -649,7 +649,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values $X$ can take, and the indices of the $n$ observations.
 
-## 18 Stating assumptions before using them
+# 18 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 

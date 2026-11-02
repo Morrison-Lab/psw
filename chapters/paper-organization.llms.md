@@ -4,11 +4,11 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:32:05 (PST)
+Last modified: 2026-11-02 11:46:43 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
-## 1 Write to clarify your thinking
+# 1 Write to clarify your thinking
 
 Write down a question or an idea as soon as you have it, before you search for an answer. Writing it down helps you in these ways:
 
@@ -18,7 +18,7 @@ Write down a question or an idea as soon as you have it, before you search for a
 
 The computer scientist Leslie Lamport argues that a person who thinks without writing only thinks that they are thinking ([Lamport 2019](#ref-lamport2019think)).
 
-## 2 Standard paper structure
+# 2 Standard paper structure
 
 Most scientific papers follow the IMRaD structure:
 
@@ -29,11 +29,11 @@ Most scientific papers follow the IMRaD structure:
 
 Some papers combine Results and Discussion into a single section.
 
-## 3 Organizing the Results section
+# 3 Organizing the Results section
 
 The Results section presents your findings clearly and logically. How you organize this section depends on your research design and the complexity of your analyses.
 
-### 3.1 Single outcome studies
+## 3.1 Single outcome studies
 
 When analyzing a single primary outcome, organize results by:
 
@@ -41,11 +41,11 @@ When analyzing a single primary outcome, organize results by:
 - Main analysis results
 - Sensitivity analyses or subgroup analyses
 
-### 3.2 Multiple outcomes analyzed separately
+## 3.2 Multiple outcomes analyzed separately
 
 When analyzing multiple outcomes separately, **group your results section by outcome** rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.
 
-#### Why group by outcome
+### 3.2.1 Why group by outcome
 
 Grouping by outcome helps readers:
 
@@ -54,7 +54,7 @@ Grouping by outcome helps readers:
 - Understand the complete picture for each outcome before moving to the next
 - Navigate directly to outcomes of interest
 
-#### How to organize by outcome
+### 3.2.2 How to organize by outcome
 
 For each outcome, present:
 
@@ -82,7 +82,7 @@ For each outcome, present:
         ├── Sensitivity analyses
         └── Subgroup analyses
 
-#### What to avoid
+### 3.2.3 What to avoid
 
 **Don’t group by analysis type** when outcomes are analyzed separately:
 
@@ -102,17 +102,17 @@ For each outcome, present:
 
 This forces readers to jump back and forth between sections to understand the complete story for any single outcome.
 
-#### Exception: Shared descriptive statistics
+### 3.2.4 Exception: Shared descriptive statistics
 
 If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
 
-## 4 Figures and tables
+# 4 Figures and tables
 
 In a reading copy (a website, a preprint, or a draft circulated to coauthors), place figures and tables near the relevant text that describes them. A journal submission often needs a different layout ([Section 4.3](#sec-submission-layout)). Either way, number figures and tables sequentially and reference them in the text before they appear.
 
 Each figure and table should have a clear, informative caption that allows readers to understand it without reading the main text.
 
-### 4.1 Label variables in plain words
+## 4.1 Label variables in plain words
 
 A figure or table is read by people, not by the code that made it. Replace every variable name from the data with a label a reader understands:
 
@@ -134,7 +134,7 @@ Use the same label for a variable in every figure, table and paragraph, so a rea
 >
 > In R with `ggplot2`, set the axis and legend titles with `labs()`, and recode the category levels before plotting, for example with `forcats::fct_recode()`.
 
-### 4.2 Captions are captions, not headings
+## 4.2 Captions are captions, not headings
 
 Give every figure and table a numbered caption, including those in the supplementary material. A table without a caption is incomplete, even when its contents are correct.
 
@@ -146,7 +146,7 @@ Attach each caption to its figure or table with your writing tool’s caption fe
 
 A heading posing as a caption usually appears in the table of contents, takes on heading styling, and is not attached to its figure. Its number is typed by hand, so it falls out of step with the real numbering when figures are added, removed, or reordered.
 
-### 4.3 Manuscript layout for journal submission
+## 4.3 Manuscript layout for journal submission
 
 Many journals ask for figures and tables to follow the main text of a submitted manuscript rather than appear inline. Unless the journal’s instructions say otherwise, lay out a submission manuscript as follows:
 
@@ -156,7 +156,7 @@ Many journals ask for figures and tables to follow the main text of a submitted 
 
 In Quarto, the `{{< pagebreak >}}` shortcode inserts a page break in PDF and Word output, and a `::: {#refs}` div places the references where you put the div instead of at the end of the document. Write the figures and tables after that div.
 
-### 4.4 Check the rendered layout
+## 4.4 Check the rendered layout
 
 Captions, page breaks, and figure placement are properties of the rendered document’s layout. Problems with them are easy to miss when reading the source, and a check of the text and numbers alone will not catch them. Before calling a rendered manuscript reviewed, page through the PDF or Word output and check its layout, not only its text and numbers:
 
@@ -164,7 +164,7 @@ Captions, page breaks, and figure placement are properties of the rendered docum
 - Does each caption sit on the same page as its figure or table?
 - For a journal submission, do the main-text figures and tables come after the references and before the supplement, and does the supplementary material start on a new page?
 
-## 5 Subsection headings
+# 5 Subsection headings
 
 Use descriptive subsection headings to guide readers through your results. Headings should clearly indicate the content of each section.
 
@@ -174,19 +174,19 @@ Use descriptive subsection headings to guide readers through your results. Headi
 
 **Best heading**: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)
 
-## 6 Heading levels
+# 6 Heading levels
 
-A page’s title is its level 1 heading, so the sections of the page start at level 2 (the chapters of [rme](https://morrison-lab.github.io/rme/) put their sections at level 1 under the title instead, and the check below does not flag a first heading at level 1). Whichever level a site starts at, each heading is at most one level deeper than the heading before it. Three mistakes break this outline:
+A page’s title is not a numbered level, so the sections of the page start at level 1. A page whose sections start at level 2 numbers them 0.1, 0.2 and so on under `number-sections: true`. Each heading is at most one level deeper than the heading before it. Three mistakes break this outline:
 
-- **A skipped level.** A `####` heading directly after a `##` heading leaves a missing level 3, so the table of contents shows a gap and section numbers can read `1.0.1`.
-- **A page that starts too deep.** A page whose first heading is level 3 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.
+- **A skipped level.** A `###` heading directly after a `#` heading leaves a missing level 2, so the table of contents shows a gap and section numbers can read `1.0.1`.
+- **A page that starts too deep.** A page whose first heading is level 2 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.
 - **A first heading that repeats the title.** A section copied into its own page often keeps its heading, so the page opens with its title twice. Drop the heading. If something links to `page.html#sec-newton`, keep that link working with an empty anchor such as `[]{#sec-newton}` at the top of the page. The anchor adds an empty paragraph, and a Quarto `@sec-newton` reference does not resolve through it, so a page that uses such a reference keeps its heading instead.
 
 The `####` title of a definition, example or exercise div is not a heading in this sense.
 
 The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags these three mistakes on the heading lines a pull request adds.
 
-## 7 Avoid forward references
+# 7 Avoid forward references
 
 A forward reference points the reader to content they have not reached yet. Common forms are:
 
@@ -220,7 +220,7 @@ A word such as “below” in an ordinary comparison, as in “values below the 
 
 When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.
 
-## 8 Links to videos and other media
+# 8 Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
 

@@ -4,13 +4,13 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:32:05 (PST)
+Last modified: 2026-11-02 11:46:43 (PST)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
 The target journal’s *Instructions for Authors* override everything here: word limits, abstract headings, reference style, where figures go, and file formats. Read them first. When no journal has been chosen yet, use the defaults below. They follow the [ICMJE Recommendations](https://www.icmje.org/recommendations/) and the *AMA Manual of Style*, which most clinical and health-services journals use.
 
-## 1 Document order
+# 1 Document order
 
 Assemble the main document in this order:
 
@@ -31,7 +31,7 @@ Assemble the main document in this order:
 
 Tables and figures go at the end of the main text, not inline. For page breaks and caption placement, follow [Manuscript layout for journal submission](../chapters/paper-organization.llms.md#sec-submission-layout) in Paper organization. Some journals want figures uploaded as separate files, with the figure legends listed after the references. When that is the instruction, follow it, and keep the end-of-document copies only for review drafts.
 
-## 2 Title page
+# 2 Title page
 
 The title page carries:
 
@@ -52,7 +52,7 @@ Authorship follows the four [ICMJE criteria](https://www.icmje.org/recommendatio
 
 Contributors who do not meet all four go in the acknowledgments, with their permission. When the journal asks for contribution statements, use the [CRediT taxonomy](https://credit.niso.org/).
 
-## 3 Abstract
+# 3 Abstract
 
 - Use a **structured** abstract with the journal’s headings. A generic set is Background, Objective, Methods, Results, and Conclusions. Clinical journals often split Methods into Design, Setting, and Participants; Exposures; and Main Outcomes and Measures.
 - Most limits fall between 250 and 350 words.
@@ -61,13 +61,13 @@ Contributors who do not meet all four go in the acknowledgments, with their perm
 - Leave out citations, undefined abbreviations, and references to tables or figures.
 - Give 3 to 6 keywords, preferably [MeSH](https://meshb.nlm.nih.gov/) [term](../chapters/defining-terms.llms.md#def-term)s.
 
-## 4 Main text
+# 4 Main text
 
-### 4.1 Introduction
+## 4.1 Introduction
 
 Three short paragraphs are usually enough: what is known, the gap, and the objective or hypothesis. End with a sentence that states the aim. Do not preview the results.
 
-### 4.2 Methods
+## 4.2 Methods
 
 Give enough detail that another analyst could reproduce the analysis:
 
@@ -88,7 +88,7 @@ Give enough detail that another analyst could reproduce the analysis:
 - ethics approval or exemption, and consent or its waiver; and
 - the reporting guideline that the paper follows.
 
-### 4.3 Results
+## 4.3 Results
 
 - Open with the analytic sample and its characteristics (Table 1).
 - Report the primary outcome, then secondary outcomes, then sensitivity analyses, in the same order that the Methods introduced them.
@@ -96,7 +96,7 @@ Give enough detail that another analyst could reproduce the analysis:
 - Give the key estimates in the text and point to the table for the rest. Do not restate every cell.
 - Cite every table and figure in the text, in numerical order, at its first relevant mention.
 
-### 4.4 Discussion
+## 4.4 Discussion
 
 A standard Discussion runs through:
 
@@ -111,11 +111,11 @@ A standard Discussion runs through:
     - power; and
 5.  implications for practice, policy, or research.
 
-### 4.5 Conclusions
+## 4.5 Conclusions
 
 Write two to four sentences that the data support, with no new results.
 
-## 5 Reporting guidelines
+# 5 Reporting guidelines
 
 Find the guideline for the study design on the [EQUATOR Network](https://equator-network.org/) website, which catalogs reporting guidelines for health research ([Simera et al. 2010](#ref-simera2010catalogue)). Follow the guideline while writing, and submit the completed checklist if the journal asks for it. [Table 1](#tbl-reporting-guidelines) lists the common guidelines. Check the EQUATOR Network website for the current version of a guideline before citing it.
 
@@ -136,7 +136,7 @@ Find the guideline for the study design on the [EQUATOR Network](https://equator
 
 Table 1: Common reporting guidelines by study design
 
-## 6 Tables
+# 6 Tables
 
 - Number every table in citation order (Table 1, Table 2, and so on), and give every table a caption.
 - Put the caption above the table. It says what, who, where, and when, in one phrase.
@@ -149,7 +149,7 @@ Table 1: Common reporting guidelines by study design
 - Make the table fit the page width. Split a wide table or move it to the supplement.
 - Keep the table’s footnotes with the table.
 
-## 7 Figures
+# 7 Figures
 
 - Number every figure in citation order, and give every figure a caption.
 - Put the legend below the figure: a title phrase, then sentences that explain panels, symbols, error bars (“Error bars indicate 95% CIs”), and abbreviations.
@@ -161,7 +161,7 @@ Table 1: Common reporting guidelines by study design
 - Label the panels of a multi-panel figure A, B, C, and refer to them in the legend.
 - Add alt text when the journal supports it.
 
-## 8 Statistics and numbers
+# 8 Statistics and numbers
 
 - Give each estimate with its 95% [confidence interval](../chapters/defining-terms.llms.md#def-confidence-interval), in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.
 - Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact reads as a known value rather than as an estimate from the data.
@@ -175,7 +175,7 @@ Table 1: Common reporting guidelines by study design
 - Name the estimand and the estimator for every effect, for example “the average treatment effect on the treated, estimated with the Callaway and Sant’Anna difference-in-differences estimator”.
 - Make the numbers in the abstract, text, tables, and figures agree. Generate every number that comes from the analysis with code, such as an inline R expression in Quarto, rather than typing it into the prose. A typed number goes stale when the data or the analysis changes, and nothing warns you that it no longer matches the tables.
 
-## 9 Supplement
+# 9 Supplement
 
 - Prepare the supplement as a separate document, or as a clearly separated part after a page break. Give it its own title page with the paper’s title and authors, and a table of contents.
 - Number its items in the journal’s scheme: “eTable 1”, “eFigure 1”, and “eMethods” in JAMA style, or “Table S1” and “Figure S1” elsewhere. The numbering and caption rules for the main text apply here too.
@@ -190,14 +190,14 @@ Table 1: Common reporting guidelines by study design
   - pipeline or audit notes, such as data-quality checks, step-by-step exclusions, and reconciliation with earlier reports.
 - Hold the supplement to the same standard as the main text.
 
-## 10 Abbreviations
+# 10 Abbreviations
 
 - Define each abbreviation at its first use in the abstract, again at its first use in the main text, and use it consistently after that.
 - Define abbreviations again in each table footnote and figure legend.
 - Abbreviate only [term](../chapters/defining-terms.llms.md#def-term)s that appear several times, and never in the title.
 - Standard terms such as CI, SD, and IQR need no definition in most journals. Check the journal’s list.
 
-## 11 References
+# 11 References
 
 - Use the journal’s reference style. AMA and Vancouver, numbered in order of first citation, are the usual defaults.
 - Generate the reference list from a `.bib` file with a CSL style, rather than formatting it by hand.
@@ -206,7 +206,7 @@ Table 1: Common reporting guidelines by study design
 - Include DOIs when the style allows them.
 - Cite the software and R packages that the analysis relied on.
 
-## 12 Prose
+# 12 Prose
 
 - Follow the rest of this guide: plain words, short sentences, and the [active voice](../chapters/defining-terms.llms.md#def-active-voice).
 - Use the past tense for what was done and found (Methods and Results) and the present tense for established knowledge and for what the findings mean.
@@ -222,7 +222,7 @@ Table 1: Common reporting guidelines by study design
 - Use one [term](../chapters/defining-terms.llms.md#def-term) per concept throughout the paper.
 - Define every group, period, and outcome before you use it.
 
-## 13 Required statements
+# 13 Required statements
 
 Most journals require each of these, either in the text or in the submission forms:
 
@@ -234,7 +234,7 @@ Most journals require each of these, either in the text or in the submission for
 - use of AI tools in writing or analysis, if the journal’s policy asks; and
 - prior presentation or preprints.
 
-## 14 Rendering and layout in Quarto
+# 14 Rendering and layout in Quarto
 
 - Render from source every time, and never edit the output file by hand.
 - Place page breaks and captions as described in [Manuscript layout for journal submission](../chapters/paper-organization.llms.md#sec-submission-layout) in Paper organization.
@@ -242,7 +242,7 @@ Most journals require each of these, either in the text or in the submission for
 - Use double spacing, line numbers, and page numbers if the journal asks for them.
 - Check that every cross-reference resolves.
 
-## 15 Submission checklist
+# 15 Submission checklist
 
 A document that renders without errors is not ready to submit. The first item is a hard gate: no one should call a manuscript ready, or merge a change to it, until someone has looked at every page of the current render. Before calling a manuscript ready:
 

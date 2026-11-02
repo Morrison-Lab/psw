@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 11:32:05 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 11:46:43 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -294,7 +294,7 @@
 <p>The rewrite makes the two constraints look alike, so the reader can compare them directly instead of checking four inequality symbols.</p>
 </div>
 <p>The same guidance applies to prose: write “for <span class="math inline">\(x \in (0, 1)\)</span>” rather than “for <span class="math inline">\(x\)</span> between 0 and 1, exclusive”.</p>
-<h3 id="when-the-middle-term-is-not-a-single-symbol">When the middle term is not a single symbol</h3>
+<h4 id="when-the-middle-term-is-not-a-single-symbol">When the middle term is not a single symbol</h4>
 <p>Interval notation works best when the quantity being constrained is a single expression. When the middle term is complicated, <!-- check-term-links: allow --> naming it first keeps the constraint short.</p>
 <div id="exm-naming-the-middle-term" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2 (Naming the middle term)</strong></span> &nbsp;</p>
@@ -350,9 +350,9 @@
 <li>canceling <span class="math inline">\(n\)</span> in <span class="math inline">\(n \cdot \frac{b}{n}\)</span> rewrites the division as multiplication by a reciprocal (<span class="math inline">\(n \cdot (b \cdot \frac{1}{n})\)</span>), removes the parentheses (<span class="math inline">\(n \cdot b \cdot \frac{1}{n}\)</span>), reorders the factors (<span class="math inline">\(b \cdot n \cdot \frac{1}{n}\)</span>), groups the two that cancel (<span class="math inline">\(b \cdot (n \cdot \frac{1}{n})\)</span>), replaces <span class="math inline">\(n \cdot \frac{1}{n}\)</span> with <span class="math inline">\(1\)</span> (<span class="math inline">\(b \cdot 1\)</span>), and drops the <span class="math inline">\(\cdot 1\)</span>;</li>
 <li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
 </ul>
-<h3 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h3>
+<h4 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h4>
 <p>Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, <!-- check-term-links: allow --> and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.</p>
-<h3 id="applying-a-definition-is-a-step">Applying a definition is a step</h3>
+<h4 id="applying-a-definition-is-a-step">Applying a definition is a step</h4>
 <p>Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
 <div id="exm-apply-definition-step" class="theorem example">
 <p><span class="theorem-title"><strong>Example 4 (Applying the definition of a vector before differentiating it)</strong></span> Suppose the prediction error vector is defined as <span class="math inline">\(\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\)</span>, and a derivation needs its derivative with respect to <span class="math inline">\(\tilde{\beta}\)</span>.</p>
@@ -378,11 +378,11 @@
 </blockquote>
 <p>The ❌ version applies the definition of <span class="math inline">\(\tilde{e}\)</span> and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.</p>
 </div>
-<h3 id="using-a-fact-the-reader-has-not-seen">Using a fact the reader has not seen</h3>
+<h4 id="using-a-fact-the-reader-has-not-seen">Using a fact the reader has not seen</h4>
 <p>When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.</p>
-<h3 id="long-derivations">Long derivations</h3>
+<h4 id="long-derivations">Long derivations</h4>
 <p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
-<h4 id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h4>
+<h5 id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h5>
 <p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>:</p>
 <ol type="1">
 <li>Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.</li>
@@ -391,7 +391,7 @@
 <li>Return to the main derivation, and substitute both results.</li>
 </ol>
 <p>A reader who encounters the inner derivative first does not yet know what it is for.</p>
-<h4 id="color-where-a-result-is-used">Color where a result is used</h4>
+<h5 id="color-where-a-result-is-used">Color where a result is used</h5>
 <p>Give each intermediate result a text color, and use the same color wherever that result appears:</p>
 <ul>
 <li>in the line where a later step needs it, as a placeholder;</li>
@@ -568,7 +568,7 @@
 <p>The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that <span class="math inline">\(h\)</span>, <span class="math inline">\(w\)</span> and <span class="math inline">\(b\)</span> are <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\beta_0\)</span>.</p>
 </div>
 <p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
-<h3 id="label-every-inline-symbol">Label every inline symbol</h3>
+<h4 id="label-every-inline-symbol">Label every inline symbol</h4>
 <p>In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, <span class="math inline">\(\sigma^2\)</span>”. <!-- check-term-links: allow --></p>
 <div id="exm-label-inline-symbol" class="theorem example">
 <p><span class="theorem-title"><strong>Example 12 (Labeling a symbol in a list of quantities)</strong></span> &nbsp;</p>
