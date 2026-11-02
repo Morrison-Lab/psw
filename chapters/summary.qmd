@@ -4,7 +4,6 @@ format:
   html: default
   revealjs:
     output-file: summary-slides.html
-    shift-heading-level-by: 1
   pdf:
     output-file: summary-handout.pdf
   docx:
@@ -20,7 +19,7 @@ and fix each passage that breaks a rule.
 Each rule is stated in a few words here.
 Follow its link for the reasons and the exceptions.
 
-# Terms and notation
+## Terms and notation
 
 - [Define every technical term](defining-terms.qmd#guidelines-for-defining-terms)
   explicitly, before its first use,
@@ -56,7 +55,7 @@ Follow its link for the reasons and the exceptions.
 - [Spell out a number used as an adjective](mathematical-writing.qmd#write-numbers-according-to-how-they-are-used),
   and write the numeral for a number used as a name.
 
-# Claims and evidence
+## Claims and evidence
 
 - [Support every claim](citations-evidence.qmd#why-claims-need-support)
   with a citation or with data.
@@ -74,7 +73,7 @@ Follow its link for the reasons and the exceptions.
 - [Put the content first](citations-evidence.qmd#put-the-content-first):
   name the topic, not its author, in headings and sentences.
 
-# Papers
+## Papers
 
 - [Write to clarify your thinking](paper-organization.qmd#write-to-clarify-your-thinking):
   write each question or idea down as it comes.
@@ -92,7 +91,7 @@ Follow its link for the reasons and the exceptions.
   and check the [submission checklist](manuscript-submission.qmd#submission-checklist)
   before you submit.
 
-# Words
+## Words
 
 - [Prefer plain words to Latin-derived ones](word-choice.qmd)
   where a plain word says the same thing.
@@ -106,7 +105,7 @@ Follow its link for the reasons and the exceptions.
   which make prose read as generic or machine-drafted.
 - [Say what something is before what it is not](avoid-cliches.qmd#say-what-it-is-before-what-it-is-not).
 
-# Writing for every reader
+## Writing for every reader
 
 - [Use literal language](inclusive-writing.qmd#use-literal-language).
 - [Use common words, and define technical ones](inclusive-writing.qmd#use-common-words-and-define-technical-ones).
@@ -124,7 +123,7 @@ Follow its link for the reasons and the exceptions.
 - [Present ideas in more than one form](inclusive-writing.qmd#present-ideas-in-more-than-one-form).
 - [Test your writing with a reader](inclusive-writing.qmd#test-your-writing-with-a-reader).
 
-# Sentences
+## Sentences
 
 - [Keep relative pronouns](grammar.qmd#relative-pronouns)
   such as "that" and "which".
@@ -143,7 +142,7 @@ Follow its link for the reasons and the exceptions.
 - [Write to communicate, not to impress](conciseness.qmd#write-to-communicate-not-to-impress):
   use the plainest form that still carries the full meaning.
 
-# Teaching materials
+## Teaching materials
 
 - [Build the lecture from exercises and solutions](teaching.qmd#build-the-lecture-from-exercises-and-solutions).
 - [Ask the question before giving the definition](teaching.qmd#exm-exercise-before-definition).
@@ -164,14 +163,14 @@ Follow its link for the reasons and the exceptions.
 - [Do not formally acknowledge material borrowed from your own work](citations-evidence.qmd#material-from-your-own-work),
   and remove any existing credit to your own work, but keep what that work itself credits.
 
-# Software text
+## Software text
 
 - [Say what changed and why](software-text.qmd#say-what-changed-and-why)
   in a pull request or commit message.
 - [Comment why, not what](software-text.qmd#comment-code-sparingly).
 - [Write release notes by their effect on the user](software-text.qmd#write-release-notes-for-the-user).
 
-# Thinking
+## Thinking
 
 - [Write the question down first](writing-to-think.qmd#write-the-question-down-first).
 - [Send a written question that gives the reader the context to answer it](writing-to-think.qmd#send-a-written-question).
