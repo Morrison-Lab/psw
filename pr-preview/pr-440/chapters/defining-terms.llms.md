@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:41:48 (PST)
+Last modified: 2026-11-02 00:47:42 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -227,7 +227,7 @@ A [term](#def-term) that names an activity, such as fitting, estimating or gener
 
 > **NOTE:**
 >
-> **Example 15 (Generalization and generalizing well)** [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization) is the use of a model fitted to a training set to predict the outputs of inputs outside it. A model *generalizes well* when it predicts the outputs of new inputs accurately: its average prediction error on new inputs and their outputs, from the target population, is at most a stated tolerance. A model can generalize, in the first sense, and generalize poorly, in the second.
+> **Example 15 (Generalization and generalizing well)** [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization) is the use of a model fitted to a training set to predict the outputs of inputs outside it. A model *generalizes well* when its average prediction error on new inputs and their outputs, from the target population, is at most a stated tolerance. A model can generalize, in the first sense, and generalize poorly, in the second.
 
 > **NOTE:**
 >
