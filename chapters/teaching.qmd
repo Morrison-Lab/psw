@@ -797,8 +797,8 @@ to learn which data, variables, or model the part needs.
 
 ::: {.callout-note title="Name what the back-reference reuses"}
 
-- ❌ "Use the setup of @exr-wcgs-odds."
-- ✅ "Use the WCGS data, with outcome $Y$ (coronary heart disease) and predictor $X$ (behavior pattern) from @exr-wcgs-odds."
+- ❌ "Use the setup of Exercise 1."
+- ✅ "Use the WCGS data, with outcome $\Outvar$ (coronary heart disease) and predictor $\Predvar$ (behavior pattern) from Exercise 1."
 
 :::
 
