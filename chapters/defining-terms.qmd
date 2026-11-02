@@ -882,7 +882,8 @@ An estimator can be used to estimate, and still be inconsistent.
 [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization)
 is the use of a model fitted to a training set to predict the outputs of inputs outside it.
 A model *generalizes well*
-when its average loss on new input--output pairs from the target population is at most a stated tolerance.
+when it predicts the outputs of new inputs accurately:
+its average prediction error on new inputs and their outputs, from the target population, is at most a stated tolerance.
 A model can generalize, in the first sense, and generalize poorly, in the second.
 
 :::
