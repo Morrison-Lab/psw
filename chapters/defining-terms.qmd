@@ -862,7 +862,7 @@ Three reasons:
 - **The quality needs a criterion.**
   "Does well" and "good" are comparisons without a standard.
   State the quantity that measures the quality and the threshold or ordering applied to it.
-- **Sources use the term both ways.**
+- **Sources use the name both ways.**
   Name the sense that a document uses, so that a reader who knows the other sense is not misled.
 
 ::: {#exm-activity-quality-estimation}
