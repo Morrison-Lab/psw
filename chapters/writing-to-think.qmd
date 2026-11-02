@@ -15,7 +15,7 @@ For further reading, see the section
 [Writing to clarify your thinking](https://ucd-serg.github.io/lab-manual/writing.html#writing-to-clarify-your-thinking)
 in the UCD-SERG lab manual.
 
-## Write the question down first
+# Write the question down first
 
 When a question or idea comes up, write it down right away,
 before you search for an answer or ask anyone.
@@ -30,7 +30,7 @@ argues that thinking without writing is only the feeling of thinking [@lamport20
 If you cannot write an idea down clearly,
 you probably do not understand it yet.
 
-## Send a written question
+# Send a written question
 
 Once the question is on the page, you can send it to a collaborator, mentor, or forum.
 A written question lets the reader answer without a meeting to recover the context.
@@ -45,7 +45,7 @@ A good written question has four parts:
 Writing out these four parts often settles the question before you send it.
 When the question stays open, the reader has what they need to answer it.
 
-## Keep writing as the work grows
+# Keep writing as the work grows
 
 Apply the same habit to a whole project.
 Before you run the analysis, draft:
