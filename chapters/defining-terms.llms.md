@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:40:27 (PST)
+Last modified: 2026-11-02 00:57:36 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -213,7 +213,27 @@ When a [term](#def-term) names a quantity with a mathematical form, the definiti
 >
 > **Example 13 (A definition that gives only one of the two)** “The variance is how spread out \\X\\ is” gives no expression, so a reader cannot compute it. “The variance is \\{\mathbb{E}\mathopen{}\left\[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left\[X\right\]\mathclose{}}\right)\mathclose{}^2\right\]\mathclose{}}\\” gives no reading, so a reader cannot check their understanding. [Definition 6](#def-variance-expression-and-prose) gives both.
 
-## 5 Why examples matter
+## 5 Define an activity separately from doing it well
+
+A [term](#def-term) that names an activity, such as fitting, estimating or generalizing, does not also name how well the activity is done. Give the activity one definition, and give the quality its own definition and its own term, such as “a good fit” or “a consistent estimator”. Three reasons:
+
+- **The activity can be done badly.** A definition that builds the quality in, such as “an algorithm generalizes when it does well on new data”, makes “generalizes poorly” a contradiction.
+- **The quality needs a criterion.** “Does well” and “good” are comparisons without a standard. State the quantity that measures the quality and the threshold or ordering applied to it.
+- **Sources use the name both ways.** Name the sense that a document uses, so that a reader who knows the other sense is not misled.
+
+> **NOTE:**
+>
+> **Example 14 (Estimation and a consistent estimator)** *Estimation* is the computation of a value for a parameter from a sample. An estimator is *consistent* when its estimates converge in probability to the parameter as the sample size grows. An estimator can be used to estimate, and still be inconsistent.
+
+> **NOTE:**
+>
+> **Example 15 (Generalization and generalizing well)** [*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization) is the use of a model fitted to a training set to predict the outputs of inputs outside it. A model *generalizes well* when its average prediction error on new inputs and their outputs, from the target population, is at most a stated tolerance. A model can generalize, in the first sense, and generalize poorly, in the second.
+
+> **NOTE:**
+>
+> **Example 16 (Fitting and a good fit)** *Fitting* is choosing the parameter values of a model from data, for example by minimizing the [residual sum of squares](#def-rss). A *good fit* is a fitted model whose residual sum of squares is at most a stated tolerance. A line can be fitted to any data, including data that it fits badly.
+
+## 6 Why examples matter
 
 Examples serve several crucial purposes:
 
@@ -227,7 +247,7 @@ Examples serve several crucial purposes:
 
 - **Boundaries:** Counterexamples show where a definition stops applying, which is where readers most often misapply it.
 
-## 6 Common pitfalls to avoid
+## 7 Common pitfalls to avoid
 
 - **Circular definitions:** Do not define a [term](#def-term) using the term itself.
 
@@ -247,11 +267,11 @@ Examples serve several crucial purposes:
 
 - **Examples without context:** Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.
 
-## 7 Mathematical statements require examples
+## 8 Mathematical statements require examples
 
 Mathematical theorems, lemmas, corollaries, and [postulate](#def-postulate)s should always include examples that demonstrate their application. Abstract mathematical statements become more accessible when readers can see concrete instances.
 
-### 7.1 Using theorem environments in Quarto
+### 8.1 Using theorem environments in Quarto
 
 When writing mathematical or technical content in Quarto, use theorem environments to demarcate and highlight the structure of your content. These environments provide consistent formatting, automatic numbering, and cross-reference capabilities.
 
@@ -287,7 +307,7 @@ $$a^2 + b^2 = c^2.$$
 
 This produces automatically numbered output like “Theorem 2.1 (Pythagorean theorem)” and can be referenced elsewhere in your document using `@thm-pythagorean`.
 
-### 7.2 Example: Pythagorean theorem
+### 8.2 Example: Pythagorean theorem
 
 > **NOTE:**
 >
@@ -297,7 +317,7 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 14 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
+> **Example 17 (Pythagorean theorem example)** For a triangle with sides 3, 4, and 5:
 >
 > \\ \begin{aligned} 3^2 + 4^2 &= 9 + 16 \\ &= 25 \\ &= 5^2. \end{aligned} \\
 
@@ -307,11 +327,11 @@ This produces automatically numbered output like “Theorem 2.1 (Pythagorean the
 
 > **NOTE:**
 >
-> **Example 15 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
+> **Example 18 (Euclid’s parallel postulate)** Through a point not on a line, exactly one line can be drawn parallel to the given line.
 >
 > If we have line \\L\\ and point \\P\\ not on \\L\\, only one line through \\P\\ will never intersect \\L\\.
 
-## 8 Presenting a derivation: exercise, solution, theorem, proof
+## 9 Presenting a derivation: exercise, solution, theorem, proof
 
 In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader encounters the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.
 
@@ -355,7 +375,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 16 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
+> **Example 19 (Deriving an equality from the side that simplifies)** Suppose an outcome \\Y_i\\ has mean \\\mu_i\\ and deviation \\\varepsilon_i := Y_i - \mu_i\\, and a derivation needs \\Y_i = \mu_i + \varepsilon_i\\.
 >
 > > ❌ \\ \begin{aligned} Y_i &= Y_i - \mu_i + \mu_i && \text{(add and subtract } \mu_i\text{)}\\ &= \varepsilon_i + \mu_i && \text{(definition of } \varepsilon_i\text{)}\\ &= \mu_i + \varepsilon_i && \text{(reorder the terms)} \end{aligned} \\
 > >
@@ -365,7 +385,7 @@ Follow these principles:
 
 > **NOTE:**
 >
-> **Example 17 (Splitting a theorem that states two results)**  
+> **Example 20 (Splitting a theorem that states two results)**  
 >
 > > ❌ **Theorem.** Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: \\Y_i = \mu_i + \varepsilon_i, \qquad \varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2).\\
 > >

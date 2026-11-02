@@ -317,7 +317,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 00:40:27 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 00:57:36 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -500,8 +500,29 @@
 <p><span class="theorem-title"><strong>Example 13 (A definition that gives only one of the two)</strong></span> “The variance is how spread out <span class="math inline">\(X\)</span> is” gives no expression, so a reader cannot compute it. “The variance is <span class="math inline">\({\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}\)</span>” gives no reading, so a reader cannot check their understanding. <a href="#/def-variance-expression-and-prose" class="quarto-xref">Definition&nbsp;6</a> gives both.</p>
 </div>
 </section>
-<section id="why-examples-matter" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Why examples matter</h2>
+<section id="define-an-activity-separately-from-doing-it-well" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Define an activity separately from doing it well</h2>
+</section>
+<section class="slide level2">
+
+<p>A <a href="#/def-term">term</a> that names an activity, such as fitting, estimating or generalizing, does not also name how well the activity is done. Give the activity one definition, and give the quality its own definition and its own term, such as “a good fit” or “a consistent estimator”. Three reasons:</p>
+<ul>
+<li><strong>The activity can be done badly.</strong> A definition that builds the quality in, such as “an algorithm generalizes when it does well on new data”, makes “generalizes poorly” a contradiction.</li>
+<li><strong>The quality needs a criterion.</strong> “Does well” and “good” are comparisons without a standard. State the quantity that measures the quality and the threshold or ordering applied to it.</li>
+<li><strong>Sources use the name both ways.</strong> Name the sense that a document uses, so that a reader who knows the other sense is not misled.</li>
+</ul>
+<div id="exm-activity-quality-estimation" class="theorem example">
+<p><span class="theorem-title"><strong>Example 14 (Estimation and a consistent estimator)</strong></span> <em>Estimation</em> is the computation of a value for a parameter from a sample. An estimator is <em>consistent</em> when its estimates converge in probability to the parameter as the sample size grows. An estimator can be used to estimate, and still be inconsistent.</p>
+</div>
+<div id="exm-activity-quality-generalization" class="theorem example">
+<p><span class="theorem-title"><strong>Example 15 (Generalization and generalizing well)</strong></span> <a href="https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization"><em>Generalization</em></a> is the use of a model fitted to a training set to predict the outputs of inputs outside it. A model <em>generalizes well</em> when its average prediction error on new inputs and their outputs, from the target population, is at most a stated tolerance. A model can generalize, in the first sense, and generalize poorly, in the second.</p>
+</div>
+<div id="exm-activity-quality-fit" class="theorem example">
+<p><span class="theorem-title"><strong>Example 16 (Fitting and a good fit)</strong></span> <em>Fitting</em> is choosing the parameter values of a model from data, for example by minimizing the <a href="#/def-rss">residual sum of squares</a>. A <em>good fit</em> is a fitted model whose residual sum of squares is at most a stated tolerance. A line can be fitted to any data, including data that it fits badly.</p>
+</div>
+</section>
+<section id="why-examples-matter" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Why examples matter</h2>
 </section>
 <section class="slide level2">
 
@@ -514,8 +535,8 @@
 <li><p><strong>Boundaries:</strong> Counterexamples show where a definition stops applying, which is where readers most often misapply it.</p></li>
 </ul>
 </section>
-<section id="common-pitfalls-to-avoid" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Common pitfalls to avoid</h2>
+<section id="common-pitfalls-to-avoid" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Common pitfalls to avoid</h2>
 </section>
 <section class="slide level2">
 
@@ -531,8 +552,8 @@
 <li><p><strong>Examples without context:</strong> Ensure examples clearly illustrate the specific aspect of the definition they are meant to demonstrate.</p></li>
 </ul>
 </section>
-<section id="mathematical-statements-require-examples" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Mathematical statements require examples</h2>
+<section id="mathematical-statements-require-examples" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Mathematical statements require examples</h2>
 </section>
 <section class="slide level2">
 
@@ -571,7 +592,7 @@
 <p><span class="math display">\[a^2 + b^2 = c^2.\]</span></p>
 </div>
 <div id="exm-pythagoras" class="theorem example">
-<p><span class="theorem-title"><strong>Example 14 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5:</p>
+<p><span class="theorem-title"><strong>Example 17 (Pythagorean theorem example)</strong></span> For a triangle with sides 3, 4, and 5:</p>
 <p><span class="math display">\[
 \begin{aligned}
   3^2 + 4^2 &amp;= 9 + 16 \\
@@ -584,12 +605,12 @@
 <p><span class="theorem-title"><strong>Definition 7 (Postulate (axiom))</strong></span> A <strong>postulate</strong> (or <strong>axiom</strong>) is a statement accepted as true without proof, serving as a starting point for further reasoning.</p>
 </div>
 <div id="exm-parallel-postulate" class="theorem example">
-<p><span class="theorem-title"><strong>Example 15 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
+<p><span class="theorem-title"><strong>Example 18 (Euclid’s parallel postulate)</strong></span> Through a point not on a line, exactly one line can be drawn parallel to the given line.</p>
 <p>If we have line <span class="math inline">\(L\)</span> and point <span class="math inline">\(P\)</span> not on <span class="math inline">\(L\)</span>, only one line through <span class="math inline">\(P\)</span> will never intersect <span class="math inline">\(L\)</span>.</p>
 </div>
 </section>
-<section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
+<section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
 </section>
 <section class="slide level2">
 
@@ -638,7 +659,7 @@
 <p><span class="proof-title"><em>Proof</em>. </span><a href="#/exr-sum-deviations" class="quarto-xref">Exercise&nbsp;1</a> derives this result.</p>
 </div>
 <div id="exm-derivation-direction" class="theorem example">
-<p><span class="theorem-title"><strong>Example 16 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 19 (Deriving an equality from the side that simplifies)</strong></span> Suppose an outcome <span class="math inline">\(Y_i\)</span> has mean <span class="math inline">\(\mu_i\)</span> and deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu_i\)</span>, and a derivation needs <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span>.</p>
 <blockquote>
 <p>❌ <span class="math display">\[
 \begin{aligned}
@@ -672,7 +693,7 @@ Y_i
 <p>The ❌ version’s first line adds a term the reader has no reason to expect. <!-- check-term-links: allow --> The ✅ version starts from <span class="math inline">\(\mu_i + \varepsilon_i\)</span>, which a definition expands, and every line after that rewrites or simplifies what is already there. The ✅ version is longer because it gives a line to each step that a single “cancel” justification would hide (see <a href="../chapters/notation.html#one-operation-per-step">One operation per step</a>).</p>
 </div>
 <div id="exm-one-result-per-theorem" class="theorem example">
-<p><span class="theorem-title"><strong>Example 17 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 20 (Splitting a theorem that states two results)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Theorem.</strong> Each outcome is its mean plus its deviation; given the covariates, each deviation is Gaussian with mean 0: <span class="math display">\[Y_i = \mu_i + \varepsilon_i,
 \qquad
