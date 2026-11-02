@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 10:14:20 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 10:47:07 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -269,9 +269,7 @@
 </div>
 </div>
 <p>Notation is part of your prose, and readers parse it the same way they parse a sentence. This chapter collects notational habits that make quantitative writing easier to read.</p>
-</section>
-<section id="avoiding-double-inequalities" class="slide level2" data-number="1">
-<h2><span class="header-section-number">1</span> Avoiding double inequalities</h2>
+<h3 data-number="1" id="avoiding-double-inequalities"><span class="header-section-number">1</span> Avoiding double inequalities</h3>
 </section>
 <section class="slide level2">
 
@@ -294,7 +292,7 @@
 <p>The rewrite makes the two constraints look alike, so the reader can compare them directly instead of checking four inequality symbols.</p>
 </div>
 <p>The same guidance applies to prose: write “for <span class="math inline">\(x \in (0, 1)\)</span>” rather than “for <span class="math inline">\(x\)</span> between 0 and 1, exclusive”.</p>
-<h3 id="when-the-middle-term-is-not-a-single-symbol">When the middle term is not a single symbol</h3>
+<h4 id="when-the-middle-term-is-not-a-single-symbol">When the middle term is not a single symbol</h4>
 <p>Interval notation works best when the quantity being constrained is a single expression. When the middle term is complicated, <!-- check-term-links: allow --> naming it first keeps the constraint short.</p>
 <div id="exm-naming-the-middle-term" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2 (Naming the middle term)</strong></span> &nbsp;</p>
@@ -304,9 +302,7 @@
 </blockquote>
 </div>
 <p>Finally, a chain that compares three <em>different</em> quantities — for example <span class="math inline">\(\hat{\theta}_1 &lt; \hat{\theta}_2 &lt; \hat{\theta}_3\)</span> — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements (<span class="math inline">\(\hat{\theta}_1 &lt; \hat{\theta}_2\)</span> and <span class="math inline">\(\hat{\theta}_2 &lt; \hat{\theta}_3\)</span>) unless the ordering of all three is the point you are making.</p>
-</section>
-<section id="one-operation-per-step" class="slide level2" data-number="2">
-<h2><span class="header-section-number">2</span> One operation per step</h2>
+<h3 data-number="2" id="one-operation-per-step"><span class="header-section-number">2</span> One operation per step</h3>
 </section>
 <section class="slide level2 scrollable">
 
@@ -350,9 +346,9 @@
 <li>canceling <span class="math inline">\(n\)</span> in <span class="math inline">\(n \cdot \frac{b}{n}\)</span> rewrites the division as multiplication by a reciprocal (<span class="math inline">\(n \cdot (b \cdot \frac{1}{n})\)</span>), removes the parentheses (<span class="math inline">\(n \cdot b \cdot \frac{1}{n}\)</span>), reorders the factors (<span class="math inline">\(b \cdot n \cdot \frac{1}{n}\)</span>), groups the two that cancel (<span class="math inline">\(b \cdot (n \cdot \frac{1}{n})\)</span>), replaces <span class="math inline">\(n \cdot \frac{1}{n}\)</span> with <span class="math inline">\(1\)</span> (<span class="math inline">\(b \cdot 1\)</span>), and drops the <span class="math inline">\(\cdot 1\)</span>;</li>
 <li>writing “setting this to zero and dividing by <span class="math inline">\(-2n\)</span> gives”, which hides two operations in a sentence.</li>
 </ul>
-<h3 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h3>
+<h4 id="name-a-step-by-its-standard-rule">Name a step by its standard rule</h4>
 <p>Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, <!-- check-term-links: allow --> and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.</p>
-<h3 id="applying-a-definition-is-a-step">Applying a definition is a step</h3>
+<h4 id="applying-a-definition-is-a-step">Applying a definition is a step</h4>
 <p>Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.</p>
 <div id="exm-apply-definition-step" class="theorem example">
 <p><span class="theorem-title"><strong>Example 4 (Applying the definition of a vector before differentiating it)</strong></span> Suppose the prediction error vector is defined as <span class="math inline">\(\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\)</span>, and a derivation needs its derivative with respect to <span class="math inline">\(\tilde{\beta}\)</span>.</p>
@@ -378,11 +374,11 @@
 </blockquote>
 <p>The ❌ version applies the definition of <span class="math inline">\(\tilde{e}\)</span> and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.</p>
 </div>
-<h3 id="using-a-fact-the-reader-has-not-seen">Using a fact the reader has not seen</h3>
+<h4 id="using-a-fact-the-reader-has-not-seen">Using a fact the reader has not seen</h4>
 <p>When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.</p>
-<h3 id="long-derivations">Long derivations</h3>
+<h4 id="long-derivations">Long derivations</h4>
 <p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
-<h4 id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h4>
+<h5 id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h5>
 <p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>:</p>
 <ol type="1">
 <li>Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.</li>
@@ -391,7 +387,7 @@
 <li>Return to the main derivation, and substitute both results.</li>
 </ol>
 <p>A reader who encounters the inner derivative first does not yet know what it is for.</p>
-<h4 id="color-where-a-result-is-used">Color where a result is used</h4>
+<h5 id="color-where-a-result-is-used">Color where a result is used</h5>
 <p>Give each intermediate result a text color, and use the same color wherever that result appears:</p>
 <ul>
 <li>in the line where a later step needs it, as a placeholder;</li>
@@ -408,9 +404,7 @@
 \]</span></p>
 <p>Separate blocks then find <span class="math inline">\(\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}\)</span> and <span class="math inline">\(\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}\)</span>, and the main derivation resumes with <span class="math inline">\(\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}\)</span>. The colors show at a glance which block each factor came from.</p>
 </div>
-</section>
-<section id="one-equals-sign-per-line" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> One equals sign per line</h2>
+<h3 data-number="3" id="one-equals-sign-per-line"><span class="header-section-number">3</span> One equals sign per line</h3>
 </section>
 <section class="slide level2">
 
@@ -439,9 +433,7 @@
 <li><strong>For a statement that several quantities are equal.</strong> Write ✅ <span class="math inline">\(H_0\colon \beta_j = 0\)</span> for every <span class="math inline">\(j \in \{1, \ldots, p\}\)</span> rather than ❌ <span class="math inline">\(H_0\colon \beta_1 = \beta_2 = \cdots = \beta_p = 0\)</span>, so that each claim is a single equality.</li>
 </ul>
 <p>Separate equations set side by side, such as <span class="math inline">\(x = 1, \quad y = 2\)</span>, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.</p>
-</section>
-<section id="functions-and-their-values" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Functions and their values</h2>
+<h3 data-number="4" id="functions-and-their-values"><span class="header-section-number">4</span> Functions and their values</h3>
 </section>
 <section class="slide level2">
 
@@ -473,9 +465,7 @@
 </div>
 <p>Define the <a href="#/def-fitted-value">fitted value</a> once, then print <span class="math inline">\(\hat{y}_i\)</span>, not <span class="math inline">\(h(x_i)\)</span>, wherever it appears in a loss, a residual or a risk sum. Keep <span class="math inline">\(h(x)\)</span> where <span class="math inline">\(h\)</span> itself is the subject, as in “the linear function <span class="math inline">\(h(x) = \beta_0 + \beta_x x\)</span>”, and where the output is not a prediction of <span class="math inline">\(y_i\)</span>, such as the decision score of a support vector machine or a vector of class probabilities.</p>
 <p>In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, <code>\eoutvar</code> (see <a href="#/using-shared-macros">Using shared macros</a>), and a document without them may write <code>\hat{y}</code>.</p>
-</section>
-<section id="types-of-functions-and-procedures" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Types of functions and procedures</h2>
+<h3 data-number="5" id="types-of-functions-and-procedures"><span class="header-section-number">5</span> Types of functions and procedures</h3>
 </section>
 <section class="slide level2">
 
@@ -502,9 +492,7 @@
 <p>The data set is the argument of the fitting procedure, so it is not one of the inputs that specify the procedure.</p>
 </div>
 <p>Check each use against the stated types: a function applied to something outside its domain, or a value described with the wrong type, is an error even when the notation looks right.</p>
-</section>
-<section id="random-variables-and-their-values" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Random variables and their values</h2>
+<h3 data-number="6" id="random-variables-and-their-values"><span class="header-section-number">6</span> Random variables and their values</h3>
 </section>
 <section class="slide level2">
 
@@ -545,9 +533,7 @@
 <p>The ❌ version leaves the reader to work out that <span class="math inline">\(\predvar\)</span> is a number you choose and <span class="math inline">\(\Outvar\)</span> is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.</p>
 </div>
 <p>Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable <span class="math inline">\(Y_i\)</span>” or “the observed value <span class="math inline">\(y_i\)</span>”.</p>
-</section>
-<section id="matching-names-and-notation" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Matching names and notation</h2>
+<h3 data-number="7" id="matching-names-and-notation"><span class="header-section-number">7</span> Matching names and notation</h3>
 </section>
 <section class="slide level2">
 
@@ -568,7 +554,7 @@
 <p>The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that <span class="math inline">\(h\)</span>, <span class="math inline">\(w\)</span> and <span class="math inline">\(b\)</span> are <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\beta_0\)</span>.</p>
 </div>
 <p>Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.</p>
-<h3 id="label-every-inline-symbol">Label every inline symbol</h3>
+<h4 id="label-every-inline-symbol">Label every inline symbol</h4>
 <p>In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, <span class="math inline">\(\sigma^2\)</span>”. <!-- check-term-links: allow --></p>
 <div id="exm-label-inline-symbol" class="theorem example">
 <p><span class="theorem-title"><strong>Example 12 (Labeling a symbol in a list of quantities)</strong></span> &nbsp;</p>
@@ -578,9 +564,7 @@
 </blockquote>
 <p>In the ❌ version, the reader sees <span class="math inline">\(\sigma^2\)</span> with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.</p>
 </div>
-</section>
-<section id="using-shared-macros" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Using shared macros</h2>
+<h3 data-number="8" id="using-shared-macros"><span class="header-section-number">8</span> Using shared macros</h3>
 </section>
 <section class="slide level2">
 
@@ -677,9 +661,7 @@
 </blockquote>
 <p>The ✅ version tells the reader what the symbol means. The reader never sees the macro name, and the symbol has its own row in the notation table.</p>
 </div>
-</section>
-<section id="making-expressions-concise" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Making expressions concise</h2>
+<h3 data-number="9" id="making-expressions-concise"><span class="header-section-number">9</span> Making expressions concise</h3>
 </section>
 <section class="slide level2">
 
@@ -696,9 +678,7 @@
 <p>Write each expression in its most compact form, built from named sub-pieces that are defined separately. Use one form per expression, and keep it simple. For example, write the expected squared prediction error as the squared bias plus the variance plus the residual variance, <!-- check-term-links: allow --> and define each of the three pieces on its own, instead of expanding them inside the formula.</p>
 <p>Search the shared macros for the chunk before you write it by hand. A macro often exists already, and any expression spelled out in full that a macro or a shorter form could say is the sign that nobody looked. A difference is only the commonest case. For example, an exercise wrote the left side of the bias–variance decomposition as <code>\E{\paren{\newoutvar - \predvalf{\newpredval}}^2}</code>, when <code>\prederrf{\predvalf{\newpredval}}</code> names the same prediction error, and the squared bias, written out the same way, has <code>\biassymf</code>. When you find one such chunk, sweep the other notes repositories for it, in small batches of one repository each.</p>
 <p>Add the macro to the shared macro file before you use it, never as a local macro in one document (see <a href="#/using-shared-macros">Using shared macros</a>), and record its meaning in that file’s <code>interpretations.tsv</code>.</p>
-</section>
-<section id="abstract-unused-subexpressions" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Abstracting sub-expressions you are not manipulating</h2>
+<h3 data-number="10" id="abstract-unused-subexpressions"><span class="header-section-number">10</span> Abstracting sub-expressions you are not manipulating</h3>
 </section>
 <section class="slide level2">
 
@@ -731,9 +711,7 @@
 </blockquote>
 <p>In the ❌ version, <span class="math inline">\(\E{X}\)</span> is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of <span class="math inline">\(\mu\)</span> needs to know what <span class="math inline">\(\mu\)</span> stands for.</p>
 </div>
-</section>
-<section id="writing-dot-products" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Writing dot products</h2>
+<h3 data-number="11" id="writing-dot-products"><span class="header-section-number">11</span> Writing dot products</h3>
 </section>
 <section class="slide level2">
 
@@ -753,9 +731,7 @@
 <li>a quadratic form, such as <span class="math inline">\(\tilde{x}' A \tilde{x}\)</span></li>
 </ul>
 <p>Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.</p>
-</section>
-<section id="using-the-notation-that-best-represents-the-concept" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Using the notation that best represents the concept</h2>
+<h3 data-number="12" id="using-the-notation-that-best-represents-the-concept"><span class="header-section-number">12</span> Using the notation that best represents the concept</h3>
 </section>
 <section class="slide level2">
 
@@ -768,9 +744,7 @@
 <li>A reference formula is a general statement, so it is written in its general form, not for one example.</li>
 </ul>
 <p>When no rule covers a case, ask the same question: which symbol, name and form best represents the concept here? Then record the answer as a rule, with this principle as its reason.</p>
-</section>
-<section id="writing-the-predictor-and-design-matrices" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Writing the predictor and design matrices</h2>
+<h3 data-number="13" id="writing-the-predictor-and-design-matrices"><span class="header-section-number">13</span> Writing the predictor and design matrices</h3>
 </section>
 <section class="slide level2">
 
@@ -789,9 +763,7 @@
 </blockquote>
 <p>The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.</p>
 </div>
-</section>
-<section id="stating-formulas-in-their-general-form" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Stating formulas in their general form</h2>
+<h3 data-number="14" id="stating-formulas-in-their-general-form"><span class="header-section-number">14</span> Stating formulas in their general form</h3>
 </section>
 <section class="slide level2">
 
@@ -805,9 +777,7 @@
 <p>The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable <span class="math inline">\(f\)</span>, and the squaring case follows by taking <span class="math inline">\(f(u) = u^2\)</span>.</p>
 </div>
 <p>Put a specific case on the sheet only as a labeled example next to the general formula.</p>
-</section>
-<section id="writing-the-mean-function-and-the-prediction-function" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Writing the mean function and the prediction function</h2>
+<h3 data-number="15" id="writing-the-mean-function-and-the-prediction-function"><span class="header-section-number">15</span> Writing the mean function and the prediction function</h3>
 </section>
 <section class="slide level2">
 
@@ -821,9 +791,7 @@
 </blockquote>
 <p>The ✅ version names the fitted prediction function where the concept is a prediction, and keeps <span class="math inline">\(\truemean\)</span> for the mean it is compared with.</p>
 </div>
-</section>
-<section id="writing-the-log-odds" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Writing the log-odds</h2>
+<h3 data-number="16" id="writing-the-log-odds"><span class="header-section-number">16</span> Writing the log-odds</h3>
 </section>
 <section class="slide level2">
 
@@ -836,9 +804,7 @@
 </blockquote>
 <p>The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen <span class="math inline">\(\logodds\)</span> elsewhere recognizes it here.</p>
 </div>
-</section>
-<section id="writing-out-notational-shorthands" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Writing out notational shorthands</h2>
+<h3 data-number="17" id="writing-out-notational-shorthands"><span class="header-section-number">17</span> Writing out notational shorthands</h3>
 </section>
 <section class="slide level2">
 
@@ -858,9 +824,7 @@
 </blockquote>
 <p>Each full form tells the reader the set the operator runs over: the values <span class="math inline">\(X\)</span> can take, and the indices of the <span class="math inline">\(n\)</span> observations.</p>
 </div>
-</section>
-<section id="stating-assumptions-before-using-them" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Stating assumptions before using them</h2>
+<h3 data-number="18" id="stating-assumptions-before-using-them"><span class="header-section-number">18</span> Stating assumptions before using them</h3>
 </section>
 <section class="slide level2">
 
