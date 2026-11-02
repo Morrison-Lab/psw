@@ -375,7 +375,10 @@ This rule applies to all teaching materials, in every course and every teaching 
   Leave a figure that several examples share outside every div, and cite it from each.
   The `check-figure-placement` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
   reports, in a pull request, each figure on a changed line that no prose cites
-  and each figure placed directly after an example or exercise div without being inside it.
+  and each figure placed directly after an example, exercise or solution div without being inside it.
+  A `<!-- figure-placement: allow -->` comment on the figure or inside its div
+  suppresses the report for a shared figure
+  ([gha#1378](https://github.com/Morrison-Lab/gha/pull/1378)).
 
 ## Follow every example with an exercise and solution
 
