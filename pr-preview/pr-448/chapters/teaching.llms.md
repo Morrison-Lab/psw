@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 09:56:24 (PST)
+Last modified: 2026-11-02 10:05:32 (PST)
 
 > **NOTE:**
 >
@@ -57,7 +57,7 @@ Active learning, in which students work through tasks themselves during class, i
 
 - Make each exercise ask for one thing (Ezra, 2026-10-27). A prompt that says “compute the slope, and compare it with the fitted value” asks for two things, so split it into two exercises, each with its own solution. Split a list item or step inside an exercise the same way, into separate exercises. Phrases such as “and then”, “and also”, and “and compare” mark a second ask.
 
-- Put the instruction or question of an exercise in its own paragraph, apart from the scenario information (Ezra, 2026-11-02). The scenario paragraphs give the data, the setting and the definitions the exercise needs, and the last paragraph asks the question or gives the instruction (“Show that …”, “Which model …?”). A reader scanning for the task then finds it without rereading the setup. A paragraph that runs from the scenario into the task, as in “A clinic records … Estimate the odds ratio.”, hides the task.
+- Put the instruction or question of an exercise in its own paragraph, apart from the scenario information (Ezra, 2026-11-02). The scenario paragraphs give the data, the setting and the definitions that the exercise needs, and the last paragraph asks the question or gives the instruction (“Show that …”, “Which model …?”). A reader scanning for the task then finds it without rereading the setup. A paragraph that runs from the scenario into the task hides the task.
 
 - On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.
 
@@ -382,6 +382,15 @@ When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another
 - Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
+
+The same holds inside a page. Focus on the content of the notes, not on their structure (Ezra, 2026-11-02). When a part refers back to an earlier exercise, example, or result, name the specific objects it reuses instead of pointing at the exercise as a whole. “Use the setup of Exercise 1” makes the reader reread the exercise to learn which data, variables, or model the part needs.
+
+> **NOTE:**
+>
+> - ❌ “Use the setup of Exercise 1.”
+> - ✅ “Use the WCGS data, with outcome $\Outvar$ (coronary heart disease) and predictor $\Predvar$ (behavior pattern) from Exercise 1.”
+
+Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again. Prefer a self-contained sentence when the part needs only one or two of those objects.
 
 ## 27 Write grading rubrics as checklists
 

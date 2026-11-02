@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 09:56:24 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 10:05:32 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -431,7 +431,7 @@
 <li><p>Give each bottom-level prompt its own <code>#exr-</code> div and its own <code>#sol-</code> div, in order, rather than one exercise with parts (a) through (e). Any exercise with several parts is split, however the parts are marked: letters, numbers or bullets. Put the shared setup in the first exercise, and begin each later exercise by citing it, as in “Make the assumptions of the first exercise.” Later exercises can use earlier results through cross-references.</p></li>
 <li><p>Split the solution the same way as its exercise (Ezra, 2026-10-28). Each <code>#sol-</code> of a split exercise answers only its own <code>#exr-</code>, takes its slug from that exercise (see the slug rule below), and sits in its own subfile after its exercise. This covers code: a lab solution puts each step’s code, output and figure in the solution of the exercise that asks for it, not all in the first solution. A solution does not label parts such as “(b)” or “Part 2”, and does not draw a figure that a later exercise asks for. Code that a later part needs stays in the earliest solution that needs it, because the page shares one session per language. The <code>check-split-solutions</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> enforces this (<a href="https://github.com/Morrison-Lab/gha/issues/1290">gha#1290</a>).</p></li>
 <li><p>Make each exercise ask for one thing (Ezra, 2026-10-27). A prompt that says “compute the slope, and compare it with the fitted value” <!-- check-term-links: allow --> asks for two things, so split it into two exercises, each with its own solution. Split a list item or step inside an exercise the same way, into separate exercises. Phrases such as “and then”, “and also”, and “and compare” mark a second ask.</p></li>
-<li><p>Put the instruction or question of an exercise in its own paragraph, apart from the scenario information (Ezra, 2026-11-02). The scenario paragraphs give the data, the setting and the definitions the exercise needs, and the last paragraph asks the question or gives the instruction (“Show that …”, “Which model …?”). A reader scanning for the task then finds it without rereading the setup. A paragraph that runs from the scenario into the task, as in “A clinic records … Estimate the odds ratio.”, hides the task.</p></li>
+<li><p>Put the instruction or question of an exercise in its own paragraph, apart from the scenario information (Ezra, 2026-11-02). The scenario paragraphs give the data, the setting and the definitions that the exercise needs, and the last paragraph asks the question or gives the instruction (“Show that …”, “Which model …?”). A reader scanning for the task then finds it without rereading the setup. A paragraph that runs from the scenario into the task hides the task.</p></li>
 <li><p>On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.</p></li>
 <li><p>Give each solution the slug of its exercise, with <code>sol-</code> in place of <code>exr-</code>.</p></li>
 <li><p>Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.</p></li>
@@ -826,6 +826,24 @@
 <li>Name a remark by the idea it holds, such as “Bias of a prediction”, not “Bias of a prediction in the statistics notes”.</li>
 </ul>
 <p>Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.</p>
+<p>The same holds inside a page. Focus on the content of the notes, not on their structure (Ezra, 2026-11-02). When a part refers back to an earlier exercise, example, or result, name the specific objects it reuses instead of pointing at the exercise as a whole. “Use the setup of Exercise 1” makes the reader reread the exercise to learn which data, variables, or model the part needs.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Name what the back-reference reuses</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>❌ “Use the setup of Exercise 1.”</li>
+<li>✅ “Use the WCGS data, with outcome <span class="math inline">\(\Outvar\)</span> (coronary heart disease) and predictor <span class="math inline">\(\Predvar\)</span> (behavior pattern) from Exercise 1.”</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again. Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
 </section>
 <section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="27">
 <h2><span class="header-section-number">27</span> Write grading rubrics as checklists</h2>
