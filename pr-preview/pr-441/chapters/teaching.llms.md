@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-01 23:39:40 (PST)
+Last modified: 2026-11-01 23:45:43 (PST)
 
 > **NOTE:**
 >
@@ -27,7 +27,7 @@ A teaching document and a paper have different readers, so they follow different
 
 Four consequences follow for how you write.
 
-- **Define every [term](../chapters/defining-terms.llms.md#def-term) the reader might not know.** A paper may use a standard term of its field without a definition. Teaching materials define the term, or link to the page that does.
+- **Define every term that the reader might not know.** A paper may use a standard term of its field without a definition. Teaching materials define the term, or link to the page that does.
 - **Show each step of a derivation.** A paper may skip a routine step. Teaching materials give one operation per line, so the learner can check each step.
 - **Test the reader’s understanding.** Teaching materials include exercises and solutions. A paper does not.
 - **Use the same notation throughout, and state its alternatives.** A paper fixes one notation for its own argument. A learner also meets other notations in other textbooks and papers.
