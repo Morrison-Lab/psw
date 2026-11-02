@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: conciseness-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: conciseness-handout.pdf
   docx:
@@ -19,7 +20,7 @@ Eliminate redundancy and verbosity.
 When you can express an idea in fewer words without losing meaning,
 do so.
 
-## Common ways to improve conciseness
+# Common ways to improve conciseness
 
 - Remove redundant phrases
   - "in order to" → "to"
@@ -43,7 +44,7 @@ but about removing words that do not contribute to meaning or clarity.
 Keep a clause or a technical [term](defining-terms.qmd#def-term) when removing it would lose meaning or precision,
 and never replace an honest [hedge](avoid-cliches.qmd#def-hedge) with false confidence.
 
-## Make every word tell
+# Make every word tell
 
 Strunk's rule 13 states the principle:
 "Vigorous writing is concise.
@@ -69,7 +70,7 @@ The same rule applies to statistical writing:
 "We conducted an analysis of the data to determine whether there is an association between smoking and lung cancer"
 becomes "We tested whether smoking is associated with lung cancer".
 
-## Write in the active voice
+# Write in the active voice
 
 Use the [active voice](defining-terms.qmd#def-active-voice) unless you have a specific reason to use the passive.
 An active sentence names who did what, and it is usually shorter.
@@ -97,7 +98,7 @@ Passive voice is the right choice in a few cases:
 
 When none of these applies, rewrite the sentence with an active verb.
 
-## Write about the ideas, not the document
+# Write about the ideas, not the document
 
 A sentence about which part of the document holds a definition adds no content.
 State the idea and link the [term](defining-terms.qmd#def-term), as [Talk about the ideas, not the notes](teaching.qmd#talk-about-the-ideas-not-the-notes) explains.
@@ -107,7 +108,7 @@ The ✅ example below omits the link only because this guide has no page for the
 >
 > ✅ The training error is the average loss on the data used to fit the model.
 
-## Lead with the subject
+# Lead with the subject
 
 Start a sentence with its subject, not a dependent clause or a fronted phrase.
 A leading clause makes the reader hold a condition
@@ -126,7 +127,7 @@ unless it sets a scope that the whole paragraph depends on.
 >
 > ✅ A common cause of garden-path sentences in technical writing is a missing *that*.
 
-## Put the emphatic words at the end
+# Put the emphatic words at the end
 
 The end of a sentence is the position the reader remembers.
 Strunk states the rule as "Place the emphatic words of a sentence at the end"
@@ -138,7 +139,7 @@ and put the qualifications, the citation and the filler before it.
 >
 > ✅ In general, the estimate becomes more precise as the sample size grows.
 
-## Express coordinate ideas in parallel form
+# Express coordinate ideas in parallel form
 
 Items that play the same role in a sentence or a list
 take the same grammatical form.
@@ -155,7 +156,7 @@ and each item should be the same kind of phrase.
 >
 > ✅ The model is fast, accurate and validated.
 
-## Limit complex sentence structures
+# Limit complex sentence structures
 
 A sentence with several nested dependent clauses
 forces the reader to hold each unfinished clause in mind
@@ -171,7 +172,7 @@ each carrying one main idea.
 
 ::: {#exm-nested-clauses}
 
-## Splitting an over-nested sentence
+# Splitting an over-nested sentence
 
 > ❌ Because the assay, which we had validated the previous year using samples that were collected before the outbreak began, produced results that, although noisy, were consistent with prior reports, we proceeded with the analysis.
 >
@@ -184,7 +185,7 @@ so the reader can absorb each idea before moving on.
 
 :::
 
-## Do not rule out readings no reader would make
+# Do not rule out readings no reader would make
 
 A definition says what a [term](defining-terms.qmd#def-term) means.
 It does not need to list the things the term does not mean,
@@ -195,7 +196,7 @@ and can plant the confusion it was meant to prevent.
 
 ::: {#exm-gratuitous-disclaimer}
 
-## Dropping a needless disclaimer
+# Dropping a needless disclaimer
 
 > ❌ In this manuscript, TTE means target trial emulation.
 > It does not mean effect of treatment on the treated.
@@ -225,7 +226,7 @@ the contrast fails the test above, so remove it.
 
 ::: {#exm-fleshed-out-contrast}
 
-## Explaining the contrast, or dropping it
+# Explaining the contrast, or dropping it
 
 > ❌ Statistics uses "predictor" for a feature, not for a model.
 >
@@ -250,7 +251,7 @@ and leave out what they do.
 A methods section for statisticians does not need to define a p-value;
 a report for clinicians might.
 
-## Avoid double negatives
+# Avoid double negatives
 
 A double negative states a claim by denying its opposite,
 as in these phrases:
@@ -271,7 +272,7 @@ and it is the standard wording for a test result.
 
 ::: {#exm-double-negative}
 
-## Stating a claim directly
+# Stating a claim directly
 
 > ❌ The association was not inconsistent with a dose-response relationship.
 >
@@ -286,7 +287,7 @@ Choose the one you mean.
 
 :::
 
-## Write about the subject, not about the text
+# Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject.
 They do one of these things:
@@ -303,7 +304,7 @@ lists related signpost phrases, such as "it is worth noting that".
 
 ::: {#exm-self-referential}
 
-## Replacing a sentence about the text
+# Replacing a sentence about the text
 
 > ❌ One trap worth naming: the sample excludes people who moved.
 >
@@ -325,7 +326,7 @@ instead of saying that it changes something.
 
 :::
 
-## Let a self-describing link stand alone
+# Let a self-describing link stand alone
 
 A URL often shows the name of what it points to and where that thing lives.
 When it does,
@@ -334,7 +335,7 @@ The reader would read the same facts twice.
 
 ::: {#exm-self-describing-link}
 
-## Dropping prose that repeats a URL
+# Dropping prose that repeats a URL
 
 > ❌ For an example, see my public notes site Morrison-Lab/sds on GitHub
 > (<https://github.com/Morrison-Lab/sds>).
@@ -349,7 +350,7 @@ and that the repository is `Morrison-Lab/sds`.
 Keep a descriptive label when the URL does not show what it points to,
 such as a DOI or a shortened link.
 
-## Keep the writer out of the way
+# Keep the writer out of the way
 
 Mention yourself only where a sentence needs an actor,
 such as a request, an offer, or a decision you made.
@@ -359,7 +360,7 @@ Extra references to the writer turn attention from the content to the person.
 
 ::: {#exm-writer-out-of-the-way}
 
-## Moving the focus from the writer to the subject
+# Moving the focus from the writer to the subject
 
 > ❌ I tested this in a small private project, and I found that CI works well.
 >
@@ -375,14 +376,14 @@ keeps "me" because the request is about the writer's runner.
 
 :::
 
-## Do not overexplain
+# Do not overexplain
 
 Say what the reader needs, and stop.
 Cut a qualifier, a restatement or a reason that the words before it already imply.
 
 ::: {#exm-overexplain}
 
-## Cutting a clause the term already implies
+# Cutting a clause the term already implies
 
 > ❌ Estimated mean: the estimated value of the mean, whether or not it is a mean of an outcome.
 >
@@ -393,11 +394,11 @@ The second is complete.
 
 :::
 
-## Put lists in bullet points
+# Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
 
-## Write to communicate, not to impress
+# Write to communicate, not to impress
 
 Many rules in this chapter serve one aim:
 the reader should reach your meaning without extra work.
@@ -416,7 +417,7 @@ choose the plainest form that still carries the full meaning:
 
 ::: {#exm-communicate-not-impress}
 
-## Rewriting a sentence written to sound formal
+# Rewriting a sentence written to sound formal
 
 > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints
 > that were encountered in the course of the study,
@@ -441,7 +442,7 @@ and its findings are ones it obtained.
 
 :::
 
-## Examples of concise writing
+# Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
