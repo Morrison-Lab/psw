@@ -14,6 +14,13 @@ Put each sentence in its own bullet,
 so the reader sees how many resources there are
 and where each one starts.
 
+A series introduced by a colon is a list too,
+even with only two items,
+when the items hold math or links.
+Write each item as a bullet,
+and display any equation the reader must remember
+(see @exm-colon-series).
+
 A case analysis is a parallel run too.
 Write one bullet per case,
 and begin each with a bold label that names the case.
@@ -100,5 +107,22 @@ and the loop condition moves into the introducing sentence.
 
 The labels let the reader find a case at a glance,
 and the bullets show that there are three.
+
+:::
+
+::: {#exm-colon-series}
+
+## Turning a colon series with math into bullet points
+
+> ❌ Derive the other two formulations: minimizing the negative log-likelihood $\argmin_{\vcoef}\ \sb{-\llik(\vcoef)}$, and empirical risk minimization $\argmin_{\vcoef}\empriskf{\vcoef}$ with $\emprisk = \tfrac1\nobs\sum_i \lossf{\outvar_i, \prob_i}$.
+>
+> ✅ Derive the other two formulations:
+>
+> - minimizing the negative log-likelihood, $\argmin_{\vcoef}\ \sb{-\llik(\vcoef)}$;
+> - empirical risk minimization, $\argmin_{\vcoef}\empriskf{\vcoef}$, with
+>   $$\emprisk = \tfrac1\nobs\sum_i \lossf{\outvar_i, \prob_i}.$$
+
+Each bullet holds one formulation,
+and the definition of the empirical risk is displayed rather than buried in the sentence.
 
 :::
