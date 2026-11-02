@@ -848,6 +848,55 @@ In words, it is the population mean of the squared deviation of $X$ from its pop
 
 :::
 
+## Define an activity separately from doing it well
+
+A [term](#def-term) that names an activity, such as fitting, estimating or generalizing,
+does not also name how well the activity is done.
+Give the activity one definition,
+and give the quality its own definition and its own term, such as "a good fit" or "a consistent estimator".
+Three reasons:
+
+- **The activity can be done badly.**
+  A definition that builds the quality in, such as "an algorithm generalizes when it does well on new data",
+  makes "generalizes poorly" a contradiction.
+- **The quality needs a criterion.**
+  "Does well" and "good" are comparisons without a standard.
+  State the quantity that measures the quality and the threshold or ordering applied to it.
+- **Sources use the name both ways.**
+  Name the sense that a document uses, so that a reader who knows the other sense is not misled.
+
+::: {#exm-activity-quality-estimation}
+
+## Estimation and a consistent estimator
+
+*Estimation* is the computation of a value for a parameter from a sample.
+An estimator is *consistent* when its estimates converge in probability to the parameter as the sample size grows.
+An estimator can be used to estimate, and still be inconsistent.
+
+:::
+
+::: {#exm-activity-quality-generalization}
+
+## Generalization and generalizing well
+
+[*Generalization*](https://morrison-lab.github.io/lds/chapters/course-overview.html#def-generalization)
+is the use of a model fitted to a training set to predict the outputs of inputs outside it.
+A model *generalizes well*
+when its average prediction error on new inputs and their outputs, from the target population, is at most a stated tolerance.
+A model can generalize, in the first sense, and generalize poorly, in the second.
+
+:::
+
+::: {#exm-activity-quality-fit}
+
+## Fitting and a good fit
+
+*Fitting* is choosing the parameter values of a model from data, for example by minimizing the [residual sum of squares](#def-rss).
+A *good fit* is a fitted model whose residual sum of squares is at most a stated tolerance.
+A line can be fitted to any data, including data that it fits badly.
+
+:::
+
 ## Why examples matter
 
 Examples serve several crucial purposes:
