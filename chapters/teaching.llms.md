@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-01 23:47:05 (PST)
+Last modified: 2026-11-02 00:40:27 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,29 @@ Last modified: 2026-11-01 23:47:05 (PST)
 
 Lecture notes, slides, and problem sets teach rather than report. The general rules for scientific writing in the other chapters still apply. This chapter adds the rules that apply to teaching materials in particular.
 
-## 1 Build the lecture from exercises and solutions
+## 1 Teaching writing and writing for peers
+
+A teaching document and a paper have different readers, so they follow different rules. The reader of a teaching document is learning the material. The reader of a paper is a researcher who already knows the field and wants to judge new work.
+
+|  | Teaching materials | Writing for peers (a paper) |
+|----|----|----|
+| Reader | A learner who needs each [term](../chapters/defining-terms.llms.md#def-term) defined before it is used. | A researcher in the field who knows the standard terms. |
+| Purpose | The reader can do the method afterwards. | The reader can judge and build on the new result. |
+| Standard material | Stated in full, with its definitions, notation, and worked examples. | Cited, not restated. |
+| Order | An exercise first, then the definition, the result, and its proof. | [The standard paper structure](../chapters/paper-organization.llms.md#standard-paper-structure). |
+| Examples | Every definition is followed by an example, and every example by an exercise. | Examples appear where they support a claim. |
+| Repetition | One written version of each result is reused wherever it is needed. | Each result is stated once, where the argument needs it. |
+
+Four consequences follow for how you write.
+
+- **Define every term that the reader might not know.** A paper may use a standard term of its field without a definition. Teaching materials define the term, or link to the page that does.
+- **Show each step of a derivation.** A paper may skip a routine step. Teaching materials give one operation per line, so the learner can check each step.
+- **Test the reader’s understanding.** Teaching materials include exercises and solutions. A paper does not.
+- **Use the same notation throughout, and state its alternatives.** A paper fixes one notation for its own argument. A learner also meets other notations in other textbooks and papers.
+
+The rest of this chapter gives the rules for teaching materials. The chapters on [paper organization](../chapters/paper-organization.llms.md) and [manuscript submission](../chapters/manuscript-submission.llms.md) give the rules for papers.
+
+## 2 Build the lecture from exercises and solutions
 
 Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
 
@@ -67,7 +89,7 @@ Active learning, in which students work through tasks themselves during class, i
 >
 > The revised version lets students attempt the idea before they see the formal definition.
 
-## 2 Build every unit from smaller atomic units
+## 3 Build every unit from smaller atomic units
 
 Make every unit of analysis as concise and minimal as possible. The units are mathematical expressions and divs of every kind: definitions, theorems, lemmas, corollaries, examples, remarks and proofs. When a unit grows complicated, do not write the complexity into it. Abstract the complexity out into smaller, atomic definitions, results and expressions, each with its own name and identifier, and glue the pieces together with hyperlinks.
 
@@ -92,7 +114,7 @@ When a unit still looks long, ask what could be named and moved out.
 >
 > The ✅ version lets a later chapter link to the penalty alone, and each piece fits on a slide.
 
-## 3 Say what a yes-or-no answer means
+## 4 Say what a yes-or-no answer means
 
 Follow a “Yes” or “No” with what the answer means in the words of the question, as in “No: it’s not possible that the advanced network has a test error of 0.25,” not a bare “No.” (Ezra, 2026-10-28). A reader who sees only the first line then still knows what the answer claims, and a bare “No.” leaves open what is being denied. The rule covers solutions, worked examples and any other answer to a question.
 
@@ -106,11 +128,11 @@ Follow a “Yes” or “No” with what the answer means in the words of the qu
 >
 > The ✅ version states the conclusion in the question’s own words, so the reasons that follow support a claim the reader has already seen.
 
-## 4 Give each question’s answer its own paragraph
+## 5 Give each question’s answer its own paragraph
 
 When a prompt asks several questions, answer each one in its own paragraph, or in several paragraphs if it needs them (Ezra, 2026-10-28). A solution to “Which model underfits, which overfits most, and which would you choose?” has one paragraph for the underfitting model, one for the overfitting model and one for the choice. A reader looking for one answer then finds it without reading the others. No automated check enforces this rule, because a script cannot tell how many questions a prompt asks.
 
-## 5 Give each defined term its own div
+## 6 Give each defined term its own div
 
 [Defining terms clearly](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) covers what a good definition contains. For teaching materials, four further rules keep definitions findable.
 
@@ -121,21 +143,21 @@ When a prompt asks several questions, answer each one in its own paragraph, or i
 
 Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
-## 6 State the notation and its alternatives
+## 7 State the notation and its alternatives
 
 When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write \\\mathbb{N}\_0\\ or \\\mathbb{N}^+\\ to make the choice explicit.
 
-## 7 Lead with the simplest correct form of a definition
+## 8 Lead with the simplest correct form of a definition
 
 Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) as the mean squared deviation \\\operatorname{E}\left\[\operatorname{devn}(X)^2\right\]\\, where \\\operatorname{devn}(X) = X - \operatorname{E}\[X\]\\, and then prove that it equals \\\operatorname{E}\[X^2\] - (\operatorname{E}\[X\])^2\\.
 
 Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.
 
-## 8 Reuse one written version of each result
+## 9 Reuse one written version of each result
 
 When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.
 
-## 9 Use real data and compute every number
+## 10 Use real data and compute every number
 
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
@@ -152,7 +174,7 @@ When several courses or repositories have already written the same definition, t
 >
 > The ✅ version lets every later slide refer to something the reader has already seen.
 
-## 10 Store structured data in structured formats
+## 11 Store structured data in structured formats
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
@@ -162,7 +184,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.
 
-## 11 Show each idea applied and in a figure
+## 12 Show each idea applied and in a figure
 
 - Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
 - Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
@@ -175,7 +197,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Discuss and cross-reference every figure in the prose (Ezra, 2026-11-02). Cite it with `@fig-id`, and say what the reader should see in it. A figure that no sentence cites or interprets is decoration.
 - Nest a figure that belongs to one example or exercise inside that `#exm-`, `#exr-` or `#sol-` div (Ezra, 2026-11-02). A figure outside the div leaves the example or exercise incomplete when the reader meets it alone, and moves with the wrong text when the page is reorganized. Leave a figure that several examples share outside every div, and cite it from each. The `check-figure-placement` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each figure on a changed line that no prose cites and each figure placed directly after an example, exercise or solution div without being inside it. A `<!-- figure-placement: allow -->` comment on the figure or inside its div suppresses the report for a shared figure ([gha#1378](https://github.com/Morrison-Lab/gha/pull/1378)).
 
-## 12 Follow every example with an exercise and solution
+## 13 Follow every example with an exercise and solution
 
 Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it.
 
@@ -207,7 +229,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 >
 > The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see [Use real data and compute every number](#use-real-data-and-compute-every-number)).
 
-## 13 Write labs for both languages and any computer
+## 14 Write labs for both languages and any computer
 
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
@@ -220,7 +242,7 @@ These rules apply to all teaching materials, in every course and every teaching 
 - Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
-## 14 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
+## 15 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
 
@@ -234,7 +256,7 @@ This rule applies to every executed code chunk in teaching materials, in every c
 - Give a chunk that only stores values for later code or inline code `#| include: false`. When the chunk that computes those values is already hidden, merge the storing code into that chunk.
 - Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than `None` and shows the chunk as one code block per printed value, such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`. End each such call with a semicolon, or assign its value.
 
-## 15 Present R results with modern packages
+## 16 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -245,7 +267,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-## 16 Manipulate data with dplyr, not base R
+## 17 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -259,7 +281,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-## 17 Include code from files instead of copying it
+## 18 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -268,7 +290,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-## 18 Comment every code chunk to say what and why
+## 19 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -277,7 +299,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-## 19 Set `code-fold` by what the code does and whether the prose mentions it
+## 20 Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
@@ -289,7 +311,7 @@ Set `#| code-fold:` on each chunk by two questions: does the prose mention the c
 
 For example, a chunk that fits a model the text walks through and prints its coefficients is `false`, a chunk that draws a figure the text discusses is `show`, and a chunk that loads a package or builds an object that later chunks use is `true`.
 
-## 20 Introduce every function in a programming primer
+## 21 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -298,14 +320,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-## 21 Make figures accessible
+## 22 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-## 22 Split a page before it grows too long
+## 23 Split a page before it grows too long
 
 A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.
 
@@ -317,7 +339,7 @@ A page should load and finish rendering its math in under 5 seconds, and its scr
 
 The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
 
-## 23 Structure slides for the reader
+## 24 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -328,7 +350,7 @@ The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-## 24 Give each concept in a note sheet its own row
+## 25 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -349,7 +371,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-## 25 Talk about the ideas, not the notes
+## 26 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -359,7 +381,7 @@ When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another
 
 Students read concepts, not the structure of the site. A sentence about which notes define a term adds no content, and it goes stale when the definition moves.
 
-## 26 Write grading rubrics as checklists
+## 27 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -389,14 +411,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-## 27 Credit other courses without summarizing them
+## 28 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-## 28 Finish each unit completely
+## 29 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -408,7 +430,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-## 29 Rules that apply to all writing
+## 30 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
