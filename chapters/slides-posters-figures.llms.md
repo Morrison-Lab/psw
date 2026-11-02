@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -39,7 +39,7 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 
 > **NOTE:**
 >
-> **Example 1 (Four datasets with the same summaries)** Anscombe ([1973](#ref-anscombe1973)) constructed four small datasets of \\(x, y)\\ pairs ([Wikipedia: Anscombe’s quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)). All four have the same mean of \\x\\ (9), the same mean of \\y\\ (7.5), the same correlation (0.82 to two decimal places) and the same least-squares line, with slope 0.5. A table of these summaries cannot tell the datasets apart. A scatterplot of each can: one is roughly linear with scatter, one follows a smooth curve, one is an exact line with a single outlier, and one has all but one of its points at the same \\x\\.
+> **Example 1 (Four datasets with the same summaries)** Anscombe ([1973](#ref-anscombe1973)) constructed four small datasets of $(x, y)$ pairs ([Wikipedia: Anscombe’s quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)). All four have the same mean of $x$ (9), the same mean of $y$ (7.5), the same correlation (0.82 to two decimal places) and the same least-squares line, with slope 0.5. A table of these summaries cannot tell the datasets apart. A scatterplot of each can: one is roughly linear with scatter, one follows a smooth curve, one is an exact line with a single outlier, and one has all but one of its points at the same $x$.
 
 ## 4 Scientific figures
 
@@ -48,13 +48,13 @@ Include a figure wherever one helps a reader see a definition, an example, or a 
 Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:
 
 - Pointer only: “The symmetry of `@exm-x`.” The reader learns nothing until following the link.
-- Self-contained: “The logistic function at \\-2\\ is as high as \\1\\ minus its value at \\2\\ (`@exm-x`).” The reader learns the point at once.
+- Self-contained: “The logistic function at $-2$ is as high as $1$ minus its value at $2$ (`@exm-x`).” The reader learns the point at once.
 
 Lead with a well-labeled figure or table instead of a long paragraph that describes a pipeline or compares groups. Use a diagram for a conceptual model, such as a directed acyclic graph (DAG), and for a process, such as a participant flow (CONSORT) diagram or a workflow schematic. Let the text interpret what the figure shows instead of listing every number the reader can already see in it. Give the key estimates in the text and point to the figure for the rest.
 
 A clear figure lets a reader check a result without help from the text. Before you share a figure:
 
-- Label the x-axis and y-axis clearly. Name each quantity in plain words, and add its symbol only as an option: “Probability, \\\prob\\” and “Log-odds, \\\logodds\\”, not “\\\prob\\” or “\\\logodds\\” alone, and not “f(x)” or “x1”. A reader should not have to look up a symbol to know what an axis shows. Wrap a long y-axis title onto two lines so that it stays horizontal and readable, rather than rotating it or shortening it to a symbol.
+- Label the x-axis and y-axis clearly. Name each quantity in plain words, and add its symbol only as an option: “Probability, $\prob$” and “Log-odds, $\logodds$”, not “$\prob$” or “$\logodds$” alone, and not “f(x)” or “x1”. A reader should not have to look up a symbol to know what an axis shows. Wrap a long y-axis title onto two lines so that it stays horizontal and readable, rather than rotating it or shortening it to a symbol.
 - Use panel labels when a figure has several subplots.
 - Include enough tick marks and tick labels.
 - Put the ticks in the original measurement scale of each variable, however the model is parametrized and the axis is spaced. If a fit uses scaled or standardized values, place the ticks at round original values and label them with those, so a horsepower axis reads 50, 100, 150 and 200, not 0 to 1. Report numbers such as an error in the response’s units too.

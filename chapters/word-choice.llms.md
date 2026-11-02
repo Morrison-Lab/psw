@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -48,9 +48,9 @@ Informal idioms are metaphors too. “Kicks in”, “the whole point” and “
 
 Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term.
 
-> ❌ Nesting the cross-validation loop costs another factor of \\K\\ in computing time.
+> ❌ Nesting the cross-validation loop costs another factor of $K$ in computing time.
 >
-> ✅ Nesting the cross-validation loop multiplies the computing time by \\K\\.
+> ✅ Nesting the cross-validation loop multiplies the computing time by $K$.
 
 > ❌ Continuity buys us the intermediate value theorem.
 >
@@ -68,7 +68,7 @@ Do not give a mathematical object a mind. A derivative does not “recommend” 
 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
-> ✅ The linear approximation has error \\o(\norm{\vh})\\ as \\\vh \to \vzero\\, so the objective decreases along the negative gradient only for steps \\\vh\\ that are small enough.
+> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Be as specific as feasible. When the text has a specific object, name it, and do not let a generic placeholder stand in for it, such as “some set”, “a set A” or “the object”. A placeholder makes the reader ask which set is meant, and the writer has already answered that question. Keep a placeholder only where the statement is abstract on purpose, such as a general definition that holds for any set. The same aim, stated from the other side: state a result at the generality it holds, no narrower than its argument needs. A fact that a proof proves only for one case, when the argument works for all cases, is a lemma left unextracted ([Extract a lemma wherever feasible](../chapters/teaching.llms.md)).
 
@@ -146,15 +146,15 @@ Mention the common name once, as an alias in the definition, and use the accurat
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
 
-The same rule applies to symbols. Write a function with its argument, such as \\\truemeanf{\predvar}\\, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.
+The same rule applies to symbols. Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.
 
 > **NOTE:**
 >
-> **Example 1 (Writing the full phrase and the argument)** The display equation is \\\Outvar = \truemeanf{\predvar} + \noise\\.
+> **Example 1 (Writing the full phrase and the argument)** The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 >
 > > ❌ The outcome variable is the true mean function plus noise.
 > >
-> > ✅ The outcome variable is the true mean function of the outcome variable given the input value \\\predvar\\, namely \\\truemeanf{\predvar}\\, plus noise.
+> > ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
 
 ## 7 Choose each preposition on purpose
 

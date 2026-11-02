@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -18,9 +18,9 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
 
-- [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): \\x \in (a, b)\\ rather than \\a \< x \< b\\.
+- [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): $x \in (a, b)$ rather than $a < x < b$.
 
-- [Abstract each sub-expression you are not manipulating](../chapters/notation.llms.md#abstract-unused-subexpressions) to a symbol, such as \\\mu\\ for \\\E{X}\\.
+- [Abstract each sub-expression you are not manipulating](../chapters/notation.llms.md#abstract-unused-subexpressions) to a symbol, such as $\mu$ for $\E{X}$.
 
 - [Do one operation per step](../chapters/notation.llms.md#one-operation-per-step) in a derivation, and justify each step.
 
@@ -28,11 +28,11 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 - [Show why you need a result before you derive it](../chapters/notation.llms.md#show-why-you-need-a-result-before-you-derive-it), and [color each result where it is used](../chapters/notation.llms.md#color-where-a-result-is-used).
 
-- [Put one equals sign on each line](../chapters/notation.llms.md#one-equals-sign-per-line): split a chain such as \\a = b = c\\ into the rows of an aligned display.
+- [Put one equals sign on each line](../chapters/notation.llms.md#one-equals-sign-per-line): split a chain such as $a = b = c$ into the rows of an aligned display.
 
 - [Distinguish a function from its value](../chapters/notation.llms.md#functions-and-their-values).
 
-- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): \\Y_i\\ before the data, \\y_i\\ after, and call each a “variable” or a “value” in the words too.
+- [Distinguish a random variable from its value](../chapters/notation.llms.md#random-variables-and-their-values): $Y_i$ before the data, $y_i$ after, and call each a “variable” or a “value” in the words too.
 
 - [Use the notation that matches a quantity’s name](../chapters/notation.llms.md#matching-names-and-notation), and keep the pairing the same everywhere.
 

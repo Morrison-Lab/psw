@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -99,7 +99,7 @@ This is the compositional approach of [modular programming](https://en.wikipedia
 - A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
-- Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as \\\E{Z^2} = \var{Z} + \sqf{\E{Z}}\\ for any random variable \\Z\\, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
+- Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as $\E{Z^2} = \var{Z} + \sqf{\E{Z}}$ for any random variable $Z$, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
 - A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
 
 When a unit still looks long, ask what could be named and moved out.
@@ -145,11 +145,11 @@ Every alternative name for the same concept stays in the div of the term it name
 
 ## 7 State the notation and its alternatives
 
-When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write \\\mathbb{N}\_0\\ or \\\mathbb{N}^+\\ to make the choice explicit.
+When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
 
 ## 8 Lead with the simplest correct form of a definition
 
-Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) as the mean squared deviation \\\operatorname{E}\left\[\operatorname{devn}(X)^2\right\]\\, where \\\operatorname{devn}(X) = X - \operatorname{E}\[X\]\\, and then prove that it equals \\\operatorname{E}\[X^2\] - (\operatorname{E}\[X\])^2\\.
+Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) as the mean squared deviation $\operatorname{E}\left[\operatorname{devn}(X)^2\right]$, where $\operatorname{devn}(X) = X - \operatorname{E}[X]$, and then prove that it equals $\operatorname{E}[X^2] - (\operatorname{E}[X])^2$.
 
 Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.
 
@@ -396,7 +396,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > **Example 7 (A rubric as a checklist)**  
 >
-> > ❌ Grading (6 points): two for \\\vec r\\, one for \\\dprod{\vx}{\vec r} = 0\\, three for “orthogonal” with its link to the normal equation.
+> > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >
 > > ✅
 > >

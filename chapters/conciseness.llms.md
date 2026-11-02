@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -299,9 +299,9 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > **Example 11 (Turning inline steps into a numbered list)**  
 >
-> > ❌ k-means starts with \\k\\ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
+> > ❌ k-means starts with $k$ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
-> > ✅ k-means starts with \\k\\ group centers and repeats two steps until the assignments stop changing:
+> > ✅ k-means starts with $k$ group centers and repeats two steps until the assignments stop changing:
 > >
 > > 1.  assign each point to its nearest center;
 > > 2.  move each center to the mean of its points.
@@ -312,13 +312,13 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > **Example 12 (Turning a paragraph of cases into bullet points)**  
 >
-> > ❌ At \\z = 0\\ the slope is \\\dexpitf{0} = 1/4\\. At \\z = 2\\ it is \\\dexpitf{2} \approx 0.105\\. At \\z = -2\\ it is \\\dexpitf{-2} \approx 0.105\\.
+> > ❌ At $z = 0$ the slope is $\dexpitf{0} = 1/4$. At $z = 2$ it is $\dexpitf{2} \approx 0.105$. At $z = -2$ it is $\dexpitf{-2} \approx 0.105$.
 > >
-> > ✅ The slope \\\dexpitf{z}\\ at three values of \\z\\:
+> > ✅ The slope $\dexpitf{z}$ at three values of $z$:
 > >
-> > - **\\z = 0\\:** \\\dexpitf{0} = 1/4\\.
-> > - **\\z = 2\\:** \\\dexpitf{2} \approx 0.105\\.
-> > - **\\z = -2\\:** \\\dexpitf{-2} \approx 0.105\\.
+> > - $z = 0$: $\dexpitf{0} = 1/4$.
+> > - $z = 2$: $\dexpitf{2} \approx 0.105$.
+> > - $z = -2$: $\dexpitf{-2} \approx 0.105$.
 >
 > The labels let the reader find a case at a glance, and the bullets show that there are three.
 

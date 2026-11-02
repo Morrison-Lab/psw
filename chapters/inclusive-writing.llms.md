@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -43,24 +43,24 @@ The word “lean” in the first version is an idiom. The second version asks th
 | a mean of zero buys one identity | a mean of zero implies one identity |
 | that trade is the whole bargain of gradient descent | gradient descent decreases the objective only when each step is small enough |
 | the recommendation is trustworthy only as far as the step is small | the objective decreases only for steps that are small enough |
-| Fix \\\varepsilon \> 0\\. | Let \\\varepsilon \> 0\\. |
-| Fix a value \\t\\. | Choose a value \\t\\. |
+| Fix $\varepsilon > 0$. | Let $\varepsilon > 0$. |
+| Fix a value $t$. | Choose a value $t$. |
 | a ton of data | a large data set |
 | the method falls flat on small samples | the method has high error on small samples |
 | at the end of the day, we want low test error | our goal is low test error |
 | Write the bias of an estimator. | Derive an expression for the bias of an estimator. |
-| Write \\X\\ in terms of \\Y\\. | Express \\X\\ in terms of \\Y\\. |
+| Write $X$ in terms of $Y$. | Express $X$ in terms of $Y$. |
 | You will meet this notation again. | You will encounter this notation again. |
 | We first meet the odds in logistic regression. | We first encounter the odds in logistic regression. |
-| Take a sample of size \\n\\ and call the sample mean \\\bar x\\. | Consider a sample of size \\n\\ and denote the sample mean by \\\bar x\\. |
-| the residual lies in \\(-1, 1)\\ | the residual is in \\(-1, 1)\\ |
-| the certain distribution sits at \\0\\, the uniform distribution at \\\log 4\\, and the skewed distribution lies between them | the certain distribution has entropy \\0\\, the uniform distribution has entropy \\\log 4\\, and the skewed distribution has entropy between those two values |
-| the two discriminant scores agree at \\x\\ | the two discriminant scores are equal at \\x\\ |
-| the derivative vanishes at \\\hat\theta\\ | the derivative equals \\0\\ at \\\hat\theta\\ |
-| setting \\K = 2\\ recovers the binary log-odds | setting \\K = 2\\ gives the binary log-odds |
-| the probability \\p\\ lives in \\(0, 1)\\ | the probability \\p\\ is in \\(0, 1)\\ |
-| the linear model knows nothing about the range \\\[0, 1\]\\ | the linear model does not constrain predictions to \\\[0, 1\]\\ |
-| Say which class the classifier predicts at \\x = 2\\. | State which class the classifier predicts at \\x = 2\\. |
+| Take a sample of size $n$ and call the sample mean $\bar x$. | Consider a sample of size $n$ and denote the sample mean by $\bar x$. |
+| the residual lies in $(-1, 1)$ | the residual is in $(-1, 1)$ |
+| the certain distribution sits at $0$, the uniform distribution at $\log 4$, and the skewed distribution lies between them | the certain distribution has entropy $0$, the uniform distribution has entropy $\log 4$, and the skewed distribution has entropy between those two values |
+| the two discriminant scores agree at $x$ | the two discriminant scores are equal at $x$ |
+| the derivative vanishes at $\hat\theta$ | the derivative equals $0$ at $\hat\theta$ |
+| setting $K = 2$ recovers the binary log-odds | setting $K = 2$ gives the binary log-odds |
+| the probability $p$ lives in $(0, 1)$ | the probability $p$ is in $(0, 1)$ |
+| the linear model knows nothing about the range $[0, 1]$ | the linear model does not constrain predictions to $[0, 1]$ |
+| Say which class the classifier predicts at $x = 2$. | State which class the classifier predicts at $x = 2$. |
 | the noise model says that the errors have mean zero | in the noise model, the errors have mean zero |
 | as Theorem 2 says, the estimator is unbiased | by Theorem 2, the estimator is unbiased |
 
@@ -143,9 +143,9 @@ A noun string is a row of nouns that act as adjectives, such as “test set erro
 
 Long sentences with nested clauses make the reader hold several unfinished ideas at once. That is hard for readers with a memory impairment ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Keep Text Succinct), and for readers who are translating as they go. The W3C guidance says: “Use short sentences. Have only one point per sentence” ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Keep Text Succinct). It also says that “Sentences that have more than one point usually have more than one linking word such as ‘and’ or ‘but’”.
 
-> ❌ Because the lasso penalty, which is the sum of the absolute values of the coefficients, is not smooth at zero, some coefficients, especially when \\\lambda\\ is large, are set exactly to zero.
+> ❌ Because the lasso penalty, which is the sum of the absolute values of the coefficients, is not smooth at zero, some coefficients, especially when $\lambda$ is large, are set exactly to zero.
 >
-> ✅ The lasso penalty is the sum of the absolute values of the coefficients. The absolute value function is not smooth at zero. Because of this, the lasso sets some coefficients exactly to zero. Usually, more coefficients are zero when \\\lambda\\ is larger.
+> ✅ The lasso penalty is the sum of the absolute values of the coefficients. The absolute value function is not smooth at zero. Because of this, the lasso sets some coefficients exactly to zero. Usually, more coefficients are zero when $\lambda$ is larger.
 
 A sentence that states a result and then adds “which” and “and” clauses about it also holds several points. Give each fact its own sentence, in the order a reader needs them.
 
@@ -177,9 +177,9 @@ For a number, say what it means in words:
 
 For a formula, say each symbol’s meaning in words at first use, and then say what the formula does in a sentence:
 
-> ❌ \\\hat\beta = (X^\top X)^{-1} X^\top y\\.
+> ❌ $\hat\beta = (X^\top X)^{-1} X^\top y$.
 >
-> ✅ Let \\X\\ be the \\n \times p\\ matrix of inputs, with linearly independent columns, and let \\y\\ be the vector of \\n\\ outcomes. Let \\X^\top\\ be the transpose of \\X\\. The least squares estimate of the coefficients is \\\hat\beta = (X^\top X)^{-1} X^\top y\\. In words, \\\hat\beta\\ is the coefficient vector that makes the sum of squared prediction errors on the training data as small as possible.
+> ✅ Let $X$ be the $n \times p$ matrix of inputs, with linearly independent columns, and let $y$ be the vector of $n$ outcomes. Let $X^\top$ be the transpose of $X$. The least squares estimate of the coefficients is $\hat\beta = (X^\top X)^{-1} X^\top y$. In words, $\hat\beta$ is the coefficient vector that makes the sum of squared prediction errors on the training data as small as possible.
 
 The [Mathematical notation](../chapters/notation.llms.md) chapter has more rules for notation.
 
@@ -211,9 +211,9 @@ Readers find text easier to follow when each part has one purpose, and when part
 
 Readers differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” ([Cornell University Center for Teaching Innovation 2026](#ref-cornell_udl)). For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.
 
-> ❌ A slide that gives only the formula for \\k\\-fold cross-validation.
+> ❌ A slide that gives only the formula for $k$-fold cross-validation.
 >
-> ✅ A slide that gives the formula, a figure of the data split into \\k\\ folds, and one sentence saying what the formula averages.
+> ✅ A slide that gives the formula, a figure of the data split into $k$ folds, and one sentence saying what the formula averages.
 
 Each figure also needs a caption and alt text, so that a reader who cannot see it gets the same information.
 

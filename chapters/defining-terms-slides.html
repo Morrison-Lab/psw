@@ -6,13 +6,13 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.20">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.11.9">
 
   <title>Principles of Scientific Writing – Defining terms clearly</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
@@ -100,7 +100,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-3a7eae3b872f08785a56513611f0329a.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2f864dea3a88ad6a30a035ab8c618cbd.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -317,7 +317,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 00:57:36 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 09:42:58 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -377,7 +377,7 @@
 <li><p><strong>Pair each technical term with its mathematical symbol:</strong> Whenever a definition, an example or a list names a quantity in words, write its symbol beside the name. For example, write “the slope <span class="math inline">\(\beta_x\)</span>” and “the residual sum of squares <span class="math inline">\(\text{RSS}\)</span>”, not “the slope” and “the residual sum of squares” alone. The words tell the reader what the quantity means, and the symbol tells the reader which letters stand for it in the equations that follow.</p></li>
 <li><p><strong>Give a definition a symbol only when the object recurs in formulas:</strong> Introduce a new symbol or macro for a defined term when the term appears in at least two formulas. A term that appears only in words, such as “pairwise disjoint”, needs no symbol. A term that recurs in formulas, such as a level set, needs one, so the reader sees the same object written the same way each time. Define the symbol by the term’s most literal meaning, such as the preimage of a single value for a level set. No check can decide this rule, because whether a term “recurs” depends on how the notes use it, so a reviewer judges it.</p></li>
 <li><p><strong>Define and link every technical term at its first use in each div:</strong> Inside a definition, theorem, example or other div, link a technical term to its formal definition the first time it appears in that div. Outside divs, link it the first time it appears in each prose passage. A link in an earlier div does not carry over, because readers jump into the middle of a page. Link once per div or passage, not at every mention. If the term has no formal definition yet, write the definition in its own definition div, then link to it. Never define a term inline inside another div, because an inline definition cannot be linked to from anywhere else. In a series of related documents, such as course notes, first look for a definition in an earlier document and link to it if one exists. Otherwise write the definition in the earliest document that needs the term. A passage is the prose outside divs between one heading and the next, and each div counts separately from the passage around it and from every other div. For example, if a div defines noise as the outcome minus the “true function”, link the term as <code>[true function](#def-true-function)</code>, and first add a definition div with that ID if the document lacks one. A counterexample: the definition of noise links “mean”. The example block after it also uses “mean”, but without a link, wrongly assuming the earlier link carries over. The example block should link “mean” at its own first use.</p></li>
-<li><p><strong>Link the longest defined phrase:</strong> When a longer phrase has its own definition, link the whole phrase to that definition, not a shorter term inside it. For example, link <code>[logistic regression](#def-logistic-regression)</code>, not “logistic <code>[regression](#def-regression)</code>”. The shorter term names a different concept, so linking it sends the reader to the wrong definition. Link the shorter term only where it stands alone. The <code>check-term-links</code> check in <a href="https://github.com/Morrison-Lab/gha/pull/1220">gha</a> flags a partial link.</p></li>
+<li><p><strong>Link the longest defined phrase:</strong> When a longer phrase has its own definition, link the whole phrase to that definition, not a shorter term inside it. For example, link <code>[logistic regression](#def-logistic-regression)</code>, not “logistic <code>[regression](#def-regression)</code>”. The shorter term names a different concept, so linking it sends the reader to the wrong definition. Link the shorter term only where it stands alone. The same holds when the definition is on another page or site: write <code>[likelihood ratio test](https://morrison-lab.github.io/sds/intro-MLEs.html#def-lrt-stat)</code>, not “<code>[likelihood](https://morrison-lab.github.io/sds/intro-MLEs.html#def-lik)</code> ratio test”, which sends the reader to the definition of likelihood, a different concept. If no definition titled with the whole phrase exists, link the phrase to the closest definition that covers it, here the likelihood ratio statistic, and the check then learns the phrase. The <code>check-term-links</code> check in <a href="https://github.com/Morrison-Lab/gha/pull/1220">gha</a> flags a partial link.</p></li>
 <li><p><strong>Link the term where the sentence uses it, not in a parenthetical list:</strong> <!-- check-term-links: allow --> Write the name as a link inside the sentence that needs it. Do not name the concepts in the sentence and then list their definitions in a parenthetical after it. For example, write <code>the expected squared prediction error is the sum of the squared [bias](#def-bias), the [variance](#def-variance), and the [residual variance](#def-residual-variance)</code>, not <code>the expected squared prediction error is the sum of the squared bias, the variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))</code>. The parenthetical makes the reader read each term twice, and it separates the link from the place where the term does its work. If a term sits inside math, where a link cannot go, name the term in words in the sentence and link those words. The <code>check-quarto-prose</code> check in <a href="https://github.com/Morrison-Lab/gha/pull/1271">gha</a> flags a parenthetical that opens with <code>(definition:</code> or <code>(definitions:</code>.</p></li>
 <li><p><strong>Do not presuppose what the reader has not encountered:</strong> A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as <code>[the synthetic data](#exm-synthetic-data)</code>, so that a reader who has forgotten or skipped the referent can find it. Skip the link when the referent is introduced in the same div, or in the same prose passage, as the phrase. Inside a div, the antecedent has to be in that div: an earlier div does not count, because readers jump into the middle of a page. For example, an exercise that says “Explain the labels” with no labels named in it has no antecedent, even if an earlier exercise names some. Name the labels in the exercise, or link them to where they are introduced.</p></li>
 <li><p><strong>Provide examples and counterexamples:</strong> Every definition should include at least one concrete example that illustrates how the term is used, and at least one counterexample: a case that looks as if it fits the definition but does not. The example shows what the term covers; the counterexample shows where its boundary is, which is often where readers misapply it. Put each in its own example block after the definition.</p></li>
@@ -931,7 +931,7 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1186,7 +1186,8 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
           // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
           for (var i=0; i<links.length; i++) {
             const link = links[i];
             if (!isInternal(link.href)) {
@@ -1195,8 +1196,69 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
+            };
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
+              }
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
           const config = {
             allowHTML: true,
@@ -1210,6 +1272,7 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
             interactiveBorder: 10,
             theme: 'light-border',
             placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
           };
           if (contentFn) {
             config.content = contentFn;

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -24,9 +24,9 @@ Put words between two formulas. Without them, the reader cannot tell where one f
 >
 > **Example 1 (Separating two formulas)**  
 >
-> > ❌ Define \\f_k\\, \\k \ge 2\\.
+> > ❌ Define $f_k$, $k \ge 2$.
 > >
-> > ✅ Define \\f_k\\, where \\k \ge 2\\.
+> > ✅ Define $f_k$, where $k \ge 2$.
 >
 > In the ❌ version the comma between the two formulas reads as part of the first one. The ✅ version names the relation between them.
 
@@ -38,13 +38,13 @@ A sentence that starts with a symbol is hard to see as a new sentence, because t
 >
 > **Example 2 (Starting a sentence with a word)**  
 >
-> > ❌ \\t^2 - 5\\ has two real roots.
+> > ❌ $t^2 - 5$ has two real roots.
 > >
-> > ✅ The polynomial \\t^2 - 5\\ has two real roots.
+> > ✅ The polynomial $t^2 - 5$ has two real roots.
 
 ### 1.3 Write logical symbols as words
 
-In prose, write “implies”, “for every” and “there exists”, not \\\Rightarrow\\, \\\forall\\ and \\\exists\\. The same goes for the symbols for “therefore” and “such that”. Keep the symbols in a work on logic.
+In prose, write “implies”, “for every” and “there exists”, not $\Rightarrow$, $\forall$ and $\exists$. The same goes for the symbols for “therefore” and “such that”. Keep the symbols in a work on logic.
 
 ### 1.4 Test the sentence with the formulas removed
 
@@ -52,7 +52,7 @@ Many readers skim past the formulas on a first reading. Replace each formula by 
 
 ### 1.5 Tie formulas together with commentary
 
-A list of formulas with no words between them is the style of a homework paper. Say what each step does and why the next one follows. A sentence such as “Because the set \\S\\ has an element, we can pick one and call it \\s\\” tells the reader where the argument is going, and the bare formula does not.
+A list of formulas with no words between them is the style of a homework paper. Say what each step does and why the next one follows. A sentence such as “Because the set $S$ has an element, we can pick one and call it $s$” tells the reader where the argument is going, and the bare formula does not.
 
 ### 1.6 Make the prose say what the formula says
 
@@ -60,23 +60,27 @@ The sentence that introduces or interprets a formula must describe that formula.
 
 > **NOTE:**
 >
-> **Example 3 (A sentence that names the wrong average)** Suppose the formula is \\\E{\paren{\newoutvar - \predvalf{\predvar}}^2}\\, a [population](../chapters/defining-terms.llms.md#def-population) mean at one covariate value \\\predvar\\. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at \\\predvar\\” instead.
+> **Example 3 (A sentence that names the wrong average)** Suppose the formula is $\E{\paren{\newoutvar - \predvalf{\predvar}}^2}$, a [population](../chapters/defining-terms.llms.md#def-population) mean at one covariate value $\predvar$. The sentence “the average squared error over the training set” does not describe it. It names a sample average over many observations. Write “the expected squared prediction error at $\predvar$” instead.
 
 Before you submit, reread each formula next to the sentence that describes it. Do the same after every edit to either one. Related rules cover [using one notation for one thing](../chapters/notation.llms.md#matching-names-and-notation) and [defining every variable when you introduce it](../chapters/defining-terms.llms.md#guidelines-for-defining-terms).
 
 ### 1.7 Write each sentence in words or in math, not both
 
-A sentence is either entirely in words or entirely in math. A single inline expression inside a word sentence is fine, as in “the prediction function \\\predfn\\ equals the conditional mean”. A sentence that states one condition in words and a second condition as a relation between expressions is a hybrid. Split it into two complete sentences: the first states the result in words, and the second states it as a displayed formula.
+A sentence is either entirely in words or entirely in math. A single inline expression inside a word sentence is fine, as in “the prediction function $\predfn$ equals the conditional mean”. A sentence that states one condition in words and a second condition as a relation between expressions is a hybrid. Split it into two complete sentences: the first states the result in words, and the second states it as a displayed formula.
 
 > **NOTE:**
 >
 > **Example 4 (Splitting a hybrid sentence)**  
 >
-> > ❌ The reducible risk is zero if and only if \\\P(\predfnf{\Predvar} \ne \E{\Outvar \mid \Predvar}) = 0\\.
+> > ❌ The reducible risk is zero if and only if $\P(\predfnf{\Predvar} \ne \E{\Outvar \mid \Predvar}) = 0$.
 > >
 > > ✅ The reducible risk is zero if and only if the prediction function differs from the conditional mean with probability 0.
 > >
-> > \\ \ba \E{\sqf{\condE{\Outvar}{\Predvar} - \predfnf{\Predvar}}} &= 0 \\ \iff \Pf{\predfnf{\Predvar} \ne \condE{\Outvar}{\Predvar}} &= 0 \ea \\
+> > $$\ba
+> > \E{\sqf{\condE{\Outvar}{\Predvar} - \predfnf{\Predvar}}} &= 0
+> > \\
+> > \iff \Pf{\predfnf{\Predvar} \ne \condE{\Outvar}{\Predvar}} &= 0
+> > \ea$$
 >
 > The ❌ version puts the first condition in words and the second in math. The ✅ version says the result once in words and once in math.
 
@@ -88,9 +92,9 @@ The line before a theorem, lemma or algorithm should be a complete sentence, or 
 >
 > **Example 5 (Introducing a theorem)**  
 >
-> > ❌ This gives the following **Theorem.** \\G(x)\\ is increasing.
+> > ❌ This gives the following **Theorem.** $G(x)$ is increasing.
 > >
-> > ✅ Next we prove a result about monotonicity. **Theorem.** The function \\G(x)\\ defined in equation (3) is increasing.
+> > ✅ Next we prove a result about monotonicity. **Theorem.** The function $G(x)$ defined in equation (3) is increasing.
 >
 > The ❌ version breaks a sentence across the theorem and starts the theorem with a symbol. The ✅ version uses a complete sentence, and the theorem names its object.
 
@@ -106,17 +110,17 @@ A key equation always goes in a display, never inline. A key equation is any of 
 - an equation that a proof builds toward;
 - an equation that a later step refers to.
 
-In a proof, a sentence such as “so \\A = B\\” or “this gives \\A = B\\” hides the result in the middle of a line. Put the equation in a display and let the sentence introduce it. Use inline math for symbols and short expressions inside a sentence, not for the equation the reader is meant to remember.
+In a proof, a sentence such as “so $A = B$” or “this gives $A = B$” hides the result in the middle of a line. Put the equation in a display and let the sentence introduce it. Use inline math for symbols and short expressions inside a sentence, not for the equation the reader is meant to remember.
 
 > **NOTE:**
 >
 > **Example 6 (Displaying the normal equations)**  
 >
-> > ❌ Setting the gradient to zero yields \\\stprod{\design} \vcoef = \tp{\design} \vy\\.
+> > ❌ Setting the gradient to zero yields $\stprod{\design} \vcoef = \tp{\design} \vy$.
 > >
 > > ✅ Setting the gradient to zero yields the normal equations:
 > >
-> > \\\stprod{\design} \vcoef = \tp{\design} \vy\\
+> > $$\stprod{\design} \vcoef = \tp{\design} \vy$$
 >
 > In the ❌ version the result sits in the middle of a line, where the reader can miss it. The ✅ version gives it a line of its own.
 
@@ -126,13 +130,13 @@ Spell out a small number when it is an adjective: “the proof uses three lemmas
 
 ## 5 Keep subscripts under control
 
-Do not name the elements of a set unless you need to. If you write “Let \\X = \\x_1, \dots, x_n\\\\”, you will need \\x\_{i_1}, \dots, x\_{i_m}\\ as soon as you take a subset of \\X\\. A subscript on a subscript is hard to read. Write “an element \\x\\ of \\X\\” instead, and refer to \\x\\ and \\y\\ for two elements. Use \\x_1\\ and \\x_2\\ only when you need two specified elements.
+Do not name the elements of a set unless you need to. If you write “Let $X = \{x_1, \dots, x_n\}$”, you will need $x_{i_1}, \dots, x_{i_m}$ as soon as you take a subset of $X$. A subscript on a subscript is hard to read. Write “an element $x$ of $X$” instead, and refer to $x$ and $y$ for two elements. Use $x_1$ and $x_2$ only when you need two specified elements.
 
 ## 6 Choose the voice and the person
 
 Use “we” to mean the author and the reader together, as in “we can now prove”. Write “we prove”, not the passive “it can be proved”. Avoid “I” unless the author’s persona is relevant.
 
-Write “assume that \\G\\ is finite”, not “assume \\G\\ is finite”. The word “that” helps the reader parse the sentence. Do not write “we have that \\y = z\\”; write “we have \\y = z\\”.
+Write “assume that $G$ is finite”, not “assume $G$ is finite”. The word “that” helps the reader parse the sentence. Do not write “we have that $y = z$”; write “we have $y = z$”.
 
 ## 7 Choose the proof that fits the claim
 
@@ -166,9 +170,9 @@ Every result div states one result and every solution div answers one exercise, 
 >
 > **Example 8 (Citing a step instead of deriving it)**  
 >
-> > ❌ **Proof.** By the chain rule, the gradient of each summand is \\2 \resid_i \vfeatmap(\vx_i)\\, where \\\resid_i\\ is the residual and \\\vfeatmap(\vx_i)\\ the design vector, and summing over \\i\\ gives the claim.
+> > ❌ **Proof.** By the chain rule, the gradient of each summand is $2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
 > >
-> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of \\2 \resid_i \vfeatmap(\vx_i)\\ over \\i\\.
+> > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of $2 \resid_i \vfeatmap(\vx_i)$ over $i$.
 >
 > The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.
 
@@ -184,13 +188,13 @@ Halmos advises “avoid the use of irrelevant symbols” and states the rule in 
 >
 > **Example 9 (Deleting a symbol that is named and never used)**  
 >
-> > ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mds/functions.html#def-function) \\f\\ on a compact space is bounded.
+> > ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mds/functions.html#def-function) $f$ on a compact space is bounded.
 > >
 > > ✅ Every continuous real-valued function on a compact space is bounded.
 >
-> Nothing in the sentence refers to \\f\\ again, so the symbol contributes nothing to the statement. Halmos gives this sentence as his example ([Halmos 1970, sec. 15](#ref-halmos1970write)).
+> Nothing in the sentence refers to $f$ again, so the symbol contributes nothing to the statement. Halmos gives this sentence as his example ([Halmos 1970, sec. 15](#ref-halmos1970write)).
 
-When you apply a displayed relation to a second object, name the relation or restate it, rather than citing its tag. Halmos calls “\\g\\ also satisfies (*)” ”logical and alphabetical nonsense” and advises ”(*) remains satisfied if \\f\\ is replaced by \\g\\”, or, better, giving the relation a name ([Halmos 1970, sec. 15](#ref-halmos1970write)). A named relation also lets the reader find it without hunting for a tag.
+When you apply a displayed relation to a second object, name the relation or restate it, rather than citing its tag. Halmos calls “$g$ also satisfies (*)” ”logical and alphabetical nonsense” and advises ”(*) remains satisfied if $f$ is replaced by $g$”, or, better, giving the relation a name ([Halmos 1970, sec. 15](#ref-halmos1970write)). A named relation also lets the reader find it without hunting for a tag.
 
 > **NOTE:**
 >
@@ -230,11 +234,11 @@ Halmos advises that “the statement of the theorem should consist of one senten
 >
 > **Example 12 (Moving an aside out of a statement)**  
 >
-> > ❌ Without loss of generality, let \\x \> 0\\. Moreover, the sequence converges.
+> > ❌ Without loss of generality, let $x > 0$. Moreover, the sequence converges.
 > >
-> > ✅ If \\x \> 0\\, then the sequence converges.
+> > ✅ If $x > 0$, then the sequence converges.
 >
-> The ❌ statement is two sentences, and the first one is an aside. The ✅ statement is one implication. If the case \\x \< 0\\ needs the same argument, say so in the proof.
+> The ❌ statement is two sentences, and the first one is an aside. The ✅ statement is one implication. If the case $x < 0$ needs the same argument, say so in the proof.
 
 A statement that lists many hypotheses and many conclusions is too long for one sentence. Halmos says that “a list of eight hypotheses … and a list of six conclusions do not a theorem make; they are a badly expounded theory”, and that the hypotheses “probably describe a general concept that deserves to be isolated, named, and studied” ([Halmos 1970, sec. 10](#ref-halmos1970write)). Name the shared concept in its own definition, and state each conclusion as its own result.
 

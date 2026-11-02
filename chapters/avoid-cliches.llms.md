@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -168,9 +168,9 @@ Beyond the [antithesis](#def-antithesis), clichéd drafts lean on a set of sente
 >
 > **Example 3 (A staged point)**  
 >
-> > ❌ It can read like a definition that says nothing. Its use is in what it forces you to name: a project that cannot say what its \\E\\, \\T\\ and \\P\\ are has not yet stated a machine learning problem.
+> > ❌ It can read like a definition that says nothing. Its use is in what it forces you to name: a project that cannot say what its $E$, $T$ and $P$ are has not yet stated a machine learning problem.
 > >
-> > ✅ A machine learning problem is stated only when its experience \\E\\, task \\T\\ and performance measure \\P\\ are named.
+> > ✅ A machine learning problem is stated only when its experience $E$, task $T$ and performance measure $P$ are named.
 >
 > The first version packs six clichés into two sentences:
 >

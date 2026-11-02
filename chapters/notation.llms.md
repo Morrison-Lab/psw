@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 00:57:36 (PST)
+Last modified: 2026-11-02 09:42:58 (PST)
 
 > **NOTE:**
 >
@@ -16,27 +16,27 @@ Notation is part of your prose, and readers parse it the same way they parse a s
 
 > **NOTE:**
 >
-> **Definition 1 (Double inequality (chained inequality))** A **double inequality** (or **chained inequality**) places one quantity between two others, as in \\a \< x \< b\\.
+> **Definition 1 (Double inequality (chained inequality))** A **double inequality** (or **chained inequality**) places one quantity between two others, as in $a < x < b$.
 
-Prefer interval notation instead: \\x \in (a, b)\\.
+Prefer interval notation instead: $x \in (a, b)$.
 
 Interval notation is easier to read for three reasons:
 
 - It states one relation instead of two, so the reader parses a single claim rather than combining a pair of them.
 - It names the set you actually mean, so the same expression can be reused as a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), a constraint, or the argument of a quantifier.
-- It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than \\\le\\ and \\\<\\.
+- It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than $\le$ and $<$.
 
 > **NOTE:**
 >
 > **Example 1 (Rewriting a double inequality)**  
 >
-> > ❌ Suppose \\0 \le p \le 1\\ and \\0 \< \sigma \< \infty\\.
+> > ❌ Suppose $0 \le p \le 1$ and $0 < \sigma < \infty$.
 > >
-> > ✅ Suppose \\p \in \[0, 1\]\\ and \\\sigma \in (0, \infty)\\.
+> > ✅ Suppose $p \in [0, 1]$ and $\sigma \in (0, \infty)$.
 >
 > The rewrite makes the two constraints look alike, so the reader can compare them directly instead of checking four inequality symbols.
 
-The same guidance applies to prose: write “for \\x \in (0, 1)\\” rather than “for \\x\\ between 0 and 1, exclusive”.
+The same guidance applies to prose: write “for $x \in (0, 1)$” rather than “for $x$ between 0 and 1, exclusive”.
 
 ### 1.1 When the middle term is not a single symbol
 
@@ -46,11 +46,11 @@ Interval notation works best when the quantity being constrained is a single exp
 >
 > **Example 2 (Naming the middle term)**  
 >
-> > ❌ \\0 \< \frac{\hat{\theta} - \theta}{\text{se}(\hat{\theta})} \< 1.96\\
+> > ❌ $0 < \frac{\hat{\theta} - \theta}{\text{se}(\hat{\theta})} < 1.96$
 > >
-> > ✅ Let \\z = \dfrac{\hat{\theta} - \theta}{\text{se}(\hat{\theta})}\\; then \\z \in (0, 1.96)\\.
+> > ✅ Let $z = \dfrac{\hat{\theta} - \theta}{\text{se}(\hat{\theta})}$; then $z \in (0, 1.96)$.
 
-Finally, a chain that compares three *different* quantities — for example \\\hat{\theta}\_1 \< \hat{\theta}\_2 \< \hat{\theta}\_3\\ — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements (\\\hat{\theta}\_1 \< \hat{\theta}\_2\\ and \\\hat{\theta}\_2 \< \hat{\theta}\_3\\) unless the ordering of all three is the point you are making.
+Finally, a chain that compares three *different* quantities — for example $\hat{\theta}_1 < \hat{\theta}_2 < \hat{\theta}_3$ — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements ($\hat{\theta}_1 < \hat{\theta}_2$ and $\hat{\theta}_2 < \hat{\theta}_3$) unless the ordering of all three is the point you are making.
 
 ## 2 One operation per step
 
@@ -60,13 +60,28 @@ Combining steps saves the writer a line and costs every reader a calculation. A 
 
 > **NOTE:**
 >
-> **Example 3 (Splitting a combined step)** Suppose a derivation has reached \\-2 \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i)\\.
+> **Example 3 (Splitting a combined step)** Suppose a derivation has reached $-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
 >
-> > ❌ \\ \begin{aligned} -2 \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i) &= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x}) \end{aligned} \\
+> > ❌ $$\begin{aligned}
+> > -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+> > &= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+> > \end{aligned}$$
 > >
-> > ✅ \\ \begin{aligned} -2 \sum\_{i=1}^n (y_i - \beta_0 - \beta_x x_i) &= -2 \left(\sum\_{i=1}^n y_i - \sum\_{i=1}^n \beta_0 - \sum\_{i=1}^n \beta_x x_i\right) && \text{(distribute the sum over the terms)}\\ &= -2 \left(\sum\_{i=1}^n y_i - n \beta_0 - \sum\_{i=1}^n \beta_x x_i\right) && \text{(sum of a constant)}\\ &= -2 \left(\sum\_{i=1}^n y_i - n \beta_0 - \beta_x \sum\_{i=1}^n x_i\right) && \text{(factor the constant out of the sum)}\\ &= -2 \left(n \bar{y} - n \beta_0 - \beta_x \sum\_{i=1}^n x_i\right) && \text{(}\sum\_{i} y_i = n \bar{y}\text{)}\\ &= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x}) && \text{(}\sum\_{i} x_i = n \bar{x}\text{)} \end{aligned} \\
+> > ✅ $$\begin{aligned}
+> > -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
+> > &= -2 \left(\sum_{i=1}^n y_i - \sum_{i=1}^n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+> > && \text{(distribute the sum over the terms)}\\
+> > &= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \sum_{i=1}^n \beta_x x_i\right)
+> > && \text{(sum of a constant)}\\
+> > &= -2 \left(\sum_{i=1}^n y_i - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+> > && \text{(factor the constant out of the sum)}\\
+> > &= -2 \left(n \bar{y} - n \beta_0 - \beta_x \sum_{i=1}^n x_i\right)
+> > && \text{(}\sum_{i} y_i = n \bar{y}\text{)}\\
+> > &= -2 (n \bar{y} - n \beta_0 - \beta_x n \bar{x})
+> > && \text{(}\sum_{i} x_i = n \bar{x}\text{)}
+> > \end{aligned}$$
 >
-> The ❌ version does five operations in one line: it distributes the sum over the terms, sums a constant, factors a constant out of a sum, substitutes \\n \bar{y}\\, and substitutes \\n \bar{x}\\. The ✅ version gives each of the five its own line.
+> The ❌ version does five operations in one line: it distributes the sum over the terms, sums a constant, factors a constant out of a sum, substitutes $n \bar{y}$, and substitutes $n \bar{x}$. The ✅ version gives each of the five its own line.
 
 Common ways to combine steps without noticing:
 
@@ -75,9 +90,9 @@ Common ways to combine steps without noticing:
 - substituting a result and then simplifying it;
 - multiplying constants and factoring them out of a sum;
 - expanding a product and collecting like terms;
-- canceling \\a\\ in \\a + (b - a)\\ removes the parentheses (\\a + b - a\\), reorders the terms (\\b + a - a\\), groups the two that cancel (\\b + (a - a)\\), replaces \\a - a\\ with \\0\\ (\\b + 0\\), and drops the \\+ 0\\;
-- canceling \\n\\ in \\n \cdot \frac{b}{n}\\ rewrites the division as multiplication by a reciprocal (\\n \cdot (b \cdot \frac{1}{n})\\), removes the parentheses (\\n \cdot b \cdot \frac{1}{n}\\), reorders the factors (\\b \cdot n \cdot \frac{1}{n}\\), groups the two that cancel (\\b \cdot (n \cdot \frac{1}{n})\\), replaces \\n \cdot \frac{1}{n}\\ with \\1\\ (\\b \cdot 1\\), and drops the \\\cdot 1\\;
-- writing “setting this to zero and dividing by \\-2n\\ gives”, which hides two operations in a sentence.
+- canceling $a$ in $a + (b - a)$ removes the parentheses ($a + b - a$), reorders the terms ($b + a - a$), groups the two that cancel ($b + (a - a)$), replaces $a - a$ with $0$ ($b + 0$), and drops the $+ 0$;
+- canceling $n$ in $n \cdot \frac{b}{n}$ rewrites the division as multiplication by a reciprocal ($n \cdot (b \cdot \frac{1}{n})$), removes the parentheses ($n \cdot b \cdot \frac{1}{n}$), reorders the factors ($b \cdot n \cdot \frac{1}{n}$), groups the two that cancel ($b \cdot (n \cdot \frac{1}{n})$), replaces $n \cdot \frac{1}{n}$ with $1$ ($b \cdot 1$), and drops the $\cdot 1$;
+- writing “setting this to zero and dividing by $-2n$ gives”, which hides two operations in a sentence.
 
 ### 2.1 Name a step by its standard rule
 
@@ -89,13 +104,25 @@ Replacing a named quantity with its definition is one of the most important step
 
 > **NOTE:**
 >
-> **Example 4 (Applying the definition of a vector before differentiating it)** Suppose the prediction error vector is defined as \\\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\\, and a derivation needs its derivative with respect to \\\tilde{\beta}\\.
+> **Example 4 (Applying the definition of a vector before differentiating it)** Suppose the prediction error vector is defined as $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$, and a derivation needs its derivative with respect to $\tilde{\beta}$.
 >
-> > ❌ \\ \begin{aligned} \frac{\partial}{\partial \tilde{\beta}} \tilde{e} &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta}) - \frac{\partial}{\partial \tilde{\beta}} \tilde{y} && \text{(derivative of a difference)} \end{aligned} \\
+> > ❌ $$\begin{aligned}
+> > \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+> > &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+> > - \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+> > && \text{(derivative of a difference)}
+> > \end{aligned}$$
 > >
-> > ✅ \\ \begin{aligned} \frac{\partial}{\partial \tilde{\beta}} \tilde{e} &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta} - \tilde{y}) && \text{(definition of } \tilde{e} \text{)}\\ &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta}) - \frac{\partial}{\partial \tilde{\beta}} \tilde{y} && \text{(derivative of a difference)} \end{aligned} \\
+> > ✅ $$\begin{aligned}
+> > \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
+> > &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta} - \tilde{y})
+> > && \text{(definition of } \tilde{e} \text{)}\\
+> > &= \frac{\partial}{\partial \tilde{\beta}} (\Phi \tilde{\beta})
+> > - \frac{\partial}{\partial \tilde{\beta}} \tilde{y}
+> > && \text{(derivative of a difference)}
+> > \end{aligned}$$
 >
-> The ❌ version applies the definition of \\\tilde{e}\\ and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.
+> The ❌ version applies the definition of $\tilde{e}$ and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.
 
 ### 2.3 Using a fact the reader has not seen
 
@@ -103,7 +130,7 @@ When a step relies on a fact the document has not yet shown, such as deviations 
 
 ### 2.4 Long derivations
 
-Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing \\d_i\\ for \\(y_i - \bar{y}) - \beta_x (x_i - \bar{x})\\, can also keep each line short.
+Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$, can also keep each line short.
 
 #### Show why you need a result before you derive it
 
@@ -128,69 +155,75 @@ State the color key in words at the start of the derivation, so the derivation i
 
 > **NOTE:**
 >
-> **Example 5 (Coloring the two factors of a chain rule)** Writing the mean squared error as \\\frac{1}{n} \tilde{e} \cdot \tilde{e}\\, with \\\tilde{e} = \Phi \tilde{\beta} - \tilde{y}\\, the chain rule gives
+> **Example 5 (Coloring the two factors of a chain rule)** Writing the mean squared error as $\frac{1}{n} \tilde{e} \cdot \tilde{e}$, with $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$, the chain rule gives
 >
-> \\ \frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta}) = \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)} \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}. \\
+> $$\frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta})
+> = \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)}
+>   \textcolor{red}{\left(\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}\right)}.$$
 >
-> Separate blocks then find \\\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}\\ and \\\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}\\, and the main derivation resumes with \\\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}\\. The colors show at a glance which block each factor came from.
+> Separate blocks then find $\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}$ and $\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}$, and the main derivation resumes with $\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}$. The colors show at a glance which block each factor came from.
 
 ## 3 One equals sign per line
 
 Put at most one equals sign on each line of math. When a result takes two or more equalities, write them as an aligned display, with one equality per row, each row starting with `&=`.
 
-A chain such as \\a = b = c\\ on one line asks the reader to find where each step starts and ends, and to check every step at once. An aligned display puts each step on its own row, so the reader can check one row at a time, and the left-hand side, written once, stays visible above the rows that rewrite it. The rows also leave room for a justification at the end of each step, as [One operation per step](../chapters/notation.llms.md#one-operation-per-step) asks.
+A chain such as $a = b = c$ on one line asks the reader to find where each step starts and ends, and to check every step at once. An aligned display puts each step on its own row, so the reader can check one row at a time, and the left-hand side, written once, stays visible above the rows that rewrite it. The rows also leave room for a justification at the end of each step, as [One operation per step](../chapters/notation.llms.md#one-operation-per-step) asks.
 
 > **NOTE:**
 >
 > **Example 6 (Splitting a chain into rows)**  
 >
-> > ❌ \\ \hat{B} = \arg\min_B \\Y - X B\\\_F^2 = \arg\min_B \sum\_{k=1}^C \\Y\_{\*,k} - X B\_{\*,k}\\^2 \\
+> > ❌ $$\hat{B} = \arg\min_B \|Y - X B\|_F^2 = \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2$$
 > >
-> > ✅ \\ \begin{aligned} \hat{B} &= \arg\min_B \\Y - X B\\\_F^2 \\ &= \arg\min_B \sum\_{k=1}^C \\Y\_{\*,k} - X B\_{\*,k}\\^2 \end{aligned} \\
+> > ✅ $$\begin{aligned}
+> > \hat{B}
+> > &= \arg\min_B \|Y - X B\|_F^2 \\
+> > &= \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2
+> > \end{aligned}$$
 >
 > The ❌ version makes the reader find the second equals sign in a long line before they can compare the two expressions. The ✅ version sets the two expressions one above the other, starting at the same place.
 
 The rule applies wherever an equals sign appears:
 
 - **Inside an aligned display.** A row such as `&= b = c` is still a chain; split it into two rows.
-- **In running text.** An inline chain such as ❌ \\\bar{x} = \frac{6}{3} = 2\\ becomes an aligned display, or two statements in the sentence.
-- **For a statement that several quantities are equal.** Write ✅ \\H_0\colon \beta_j = 0\\ for every \\j \in \\1, \ldots, p\\\\ rather than ❌ \\H_0\colon \beta_1 = \beta_2 = \cdots = \beta_p = 0\\, so that each claim is a single equality.
+- **In running text.** An inline chain such as ❌ $\bar{x} = \frac{6}{3} = 2$ becomes an aligned display, or two statements in the sentence.
+- **For a statement that several quantities are equal.** Write ✅ $H_0\colon \beta_j = 0$ for every $j \in \{1, \ldots, p\}$ rather than ❌ $H_0\colon \beta_1 = \beta_2 = \cdots = \beta_p = 0$, so that each claim is a single equality.
 
-Separate equations set side by side, such as \\x = 1, \quad y = 2\\, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.
+Separate equations set side by side, such as $x = 1, \quad y = 2$, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.
 
 ## 4 Functions and their values
 
-A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In \\\mu_i = \mu(x_i)\\, \\\mu\\ is a function, and \\\mu(x_i)\\ is a number: the value of \\\mu\\ at \\x_i\\. Written with its placeholder argument, \\\mu(x)\\ already denotes a value, so “the value of \\\mu(x)\\ at \\x_i\\” reads as a value of a value. Either drop the placeholder and write “the value of \\\mu\\ at \\x_i\\”, or keep the placeholder and name the substitution: “\\\mu(x)\\ evaluated at \\x_i\\”.
+A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” reads as a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
 
 > **NOTE:**
 >
 > **Example 7 (Saying where a function is evaluated)**  
 >
-> > ❌ Each outcome is centered on the value of a mean function \\\mu(x)\\ at its own covariate values.
+> > ❌ Each outcome is centered on the value of a mean function $\mu(x)$ at its own covariate values.
 > >
-> > ✅ Each outcome is centered on a mean function \\\mu(x)\\ evaluated at that outcome’s covariate values.
+> > ✅ Each outcome is centered on a mean function $\mu(x)$ evaluated at that outcome’s covariate values.
 >
-> > ❌ the value of the density \\f(x)\\ at 0
+> > ❌ the value of the density $f(x)$ at 0
 > >
-> > ✅ the value of \\f\\ at 0, or \\f(0)\\
+> > ✅ the value of $f$ at 0, or $f(0)$
 >
-> > ❌ the likelihood \\L(\theta)\\ at \\\hat{\theta}\\
+> > ❌ the likelihood $L(\theta)$ at $\hat{\theta}$
 > >
-> > ✅ \\L(\theta)\\ evaluated at \\\hat{\theta}\\, or \\L(\hat{\theta})\\
+> > ✅ $L(\theta)$ evaluated at $\hat{\theta}$, or $L(\hat{\theta})$
 >
-> In each ❌ version, “the value of” or “at” sits next to a placeholder argument, so the reader has to decide whether \\\mu(x)\\, \\f(x)\\ or \\L(\theta)\\ means the function or one of its values. The first ❌ version also has an ambiguous “its”: the nearest candidate is the mean function, not the outcome.
+> In each ❌ version, “the value of” or “at” sits next to a placeholder argument, so the reader has to decide whether $\mu(x)$, $f(x)$ or $L(\theta)$ means the function or one of its values. The first ❌ version also has an ambiguous “its”: the nearest candidate is the mean function, not the outcome.
 
 Use the notation to match:
 
-- Write \\\mu\\, or “the mean function”, for the function itself.
-- Write \\\mu(x)\\ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function \\\mu(x)\\” or \\\mu(x) := \beta_0 + \beta_x x\\, and say “evaluated at” when you substitute a point into it.
-- Write \\\mu(x_i)\\, or “the value of \\\mu\\ at \\x_i\\”, for a value.
+- Write $\mu$, or “the mean function”, for the function itself.
+- Write $\mu(x)$ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function $\mu(x)$” or $\mu(x) := \beta_0 + \beta_x x$, and say “evaluated at” when you substitute a point into it.
+- Write $\mu(x_i)$, or “the value of $\mu$ at $x_i$”, for a value.
 
 > **NOTE:**
 >
-> **Definition 2 (Fitted value)** The **fitted value** of observation \\i\\ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function) is \\h\\, it is \\\hat{y}\_i = h(x_i)\\.
+> **Definition 2 (Fitted value)** The **fitted value** of observation $i$ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $h$, it is $\hat{y}_i = h(x_i)$.
 
-Define the [fitted value](#def-fitted-value) once, then print \\\hat{y}\_i\\, not \\h(x_i)\\, wherever it appears in a loss, a residual or a risk sum. Keep \\h(x)\\ where \\h\\ itself is the subject, as in “the linear function \\h(x) = \beta_0 + \beta_x x\\”, and where the output is not a prediction of \\y_i\\, such as the decision score of a support vector machine or a vector of class probabilities.
+Define the [fitted value](#def-fitted-value) once, then print $\hat{y}_i$, not $h(x_i)$, wherever it appears in a loss, a residual or a risk sum. Keep $h(x)$ where $h$ itself is the subject, as in “the linear function $h(x) = \beta_0 + \beta_x x$”, and where the output is not a prediction of $y_i$, such as the decision score of a support vector machine or a vector of class probabilities.
 
 In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
 
@@ -232,46 +265,46 @@ A random variable and a value that it takes are different objects. Before the da
 
 Use a capital letter for the random variable and the matching lowercase letter for a value that it takes:
 
-- \\Y\\ is the random variable, such as the outcome of a coin flip before the flip;
-- \\y\\ is one value of \\Y\\, such as 1 after the flip lands heads;
-- \\Y_i\\ is the random variable for the \\i\\-th observation;
-- \\y_i\\ is that observation’s observed value.
+- $Y$ is the random variable, such as the outcome of a coin flip before the flip;
+- $y$ is one value of $Y$, such as 1 after the flip lands heads;
+- $Y_i$ is the random variable for the $i$-th observation;
+- $y_i$ is that observation’s observed value.
 
-State the convention where you first use the symbols. Keep it in every later section. Do not switch between \\Y_i\\ and \\y_i\\ for the same quantity unless the meaning changes from “before the data” to “after the data”.
+State the convention where you first use the symbols. Keep it in every later section. Do not switch between $Y_i$ and $y_i$ for the same quantity unless the meaning changes from “before the data” to “after the data”.
 
 > **NOTE:**
 >
 > **Example 9 (Writing a random variable and its value)**  
 >
-> > ❌ The probability that \\y_i\\ exceeds 3 is \\0.2\\.
+> > ❌ The probability that $y_i$ exceeds 3 is $0.2$.
 > >
-> > ✅ The probability that \\Y_i\\ exceeds 3 is \\0.2\\.
+> > ✅ The probability that $Y_i$ exceeds 3 is $0.2$.
 >
-> > ❌ The sample mean of the \\Y_i\\ is 2.4.
+> > ❌ The sample mean of the $Y_i$ is 2.4.
 > >
-> > ✅ The sample mean of the \\y_i\\ is 2.4.
+> > ✅ The sample mean of the $y_i$ is 2.4.
 >
-> A probability is a statement about a random variable. The ❌ version of the first pair puts a fixed number where a quantity that can vary belongs. An observed number has no probability of exceeding 3. The second pair has the reverse mistake. A sample mean of 2.4 is a number computed from observed values. The ❌ version attributes it to the random variables. The sample mean of the random variables, \\\bar{Y}\\, is itself a random variable.
+> A probability is a statement about a random variable. The ❌ version of the first pair puts a fixed number where a quantity that can vary belongs. An observed number has no probability of exceeding 3. The second pair has the reverse mistake. A sample mean of 2.4 is a number computed from observed values. The ❌ version attributes it to the random variables. The sample mean of the random variables, $\bar{Y}$, is itself a random variable.
 
 Match the notation to the claim:
 
-- Write \\\Pr(Y \le y)\\ for a probability, with the random variable on the left of the inequality and the value on the right.
-- Write \\\text{E}\[Y\]\\ and \\\text{Var}(Y)\\ for the mean and [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable, never \\\text{E}\[y\]\\ or \\\text{Var}(y)\\ for an observed value.
-- Write a statistic computed from observed values with lowercase letters, as in \\\bar{y} = \frac{1}{n}\sum\_{i=1}^n y_i\\, and the same statistic as a random variable with capitals, \\\bar{Y} = \frac{1}{n}\sum\_{i=1}^n Y_i\\. The first is a number, such as 2.4. The second has a sampling distribution.
+- Write $\Pr(Y \le y)$ for a probability, with the random variable on the left of the inequality and the value on the right.
+- Write $\text{E}[Y]$ and $\text{Var}(Y)$ for the mean and [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable, never $\text{E}[y]$ or $\text{Var}(y)$ for an observed value.
+- Write a statistic computed from observed values with lowercase letters, as in $\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i$, and the same statistic as a random variable with capitals, $\bar{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$. The first is a number, such as 2.4. The second has a sampling distribution.
 
-Name the kind of object in the words, too, not only in the symbol. Call a random variable a “variable”, such as “the output variable \\\Outvar\\”, and call a number a “value”, such as “the input value \\\predvar\\” or “the observed value \\\outvar\\”. Do not say “fix \\\predvar\\” or “let \\\predvar\\ be fixed”. It does not say whether \\\predvar\\ is a variable held constant or a value you chose. Say “choose an input value \\\predvar\\”, or “take the observed value \\\outvar\\ as given”.
+Name the kind of object in the words, too, not only in the symbol. Call a random variable a “variable”, such as “the output variable $\Outvar$”, and call a number a “value”, such as “the input value $\predvar$” or “the observed value $\outvar$”. Do not say “fix $\predvar$” or “let $\predvar$ be fixed”. It does not say whether $\predvar$ is a variable held constant or a value you chose. Say “choose an input value $\predvar$”, or “take the observed value $\outvar$ as given”.
 
 > **NOTE:**
 >
 > **Example 10 (Naming a variable and its value in the words)**  
 >
-> > ❌ Fix an input \\\predvar\\, and let \\\Outvar = \truemeanf{\predvar} + \noise\\.
+> > ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanf{\predvar} + \noise$.
 > >
-> > ✅ Choose an input value \\\predvar\\, and let the output variable \\\Outvar = \truemeanf{\predvar} + \noise\\.
+> > ✅ Choose an input value $\predvar$, and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
 >
-> The ❌ version leaves the reader to work out that \\\predvar\\ is a number you choose and \\\Outvar\\ is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.
+> The ❌ version leaves the reader to work out that $\predvar$ is a number you choose and $\Outvar$ is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.
 
-Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable \\Y_i\\” or “the observed value \\y_i\\”.
+Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable $Y_i$” or “the observed value $y_i$”.
 
 ## 7 Matching names and notation
 
@@ -283,35 +316,35 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 >
 > **Example 11 (Matching a name to its notation)**  
 >
-> > ❌ Compute the dot product \\\tilde{a}' \tilde{b}\\.
+> > ❌ Compute the dot product $\tilde{a}' \tilde{b}$.
 > >
-> > ✅ Compute the dot product \\\tilde{a} \cdot \tilde{b}\\.
+> > ✅ Compute the dot product $\tilde{a} \cdot \tilde{b}$.
 >
-> The ❌ version names a dot product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the dot product \\\tilde{a} \cdot \tilde{b}\\ equals the matrix product \\\tilde{a}' \tilde{b}\\”. [Writing dot products](#writing-dot-products) says when to use each form.
+> The ❌ version names a dot product but writes a matrix product with a transpose. The two are equal for column vectors, but the reader sees two names for one quantity. If you want to show that they are equal, say so in a sentence, as in “the dot product $\tilde{a} \cdot \tilde{b}$ equals the matrix product $\tilde{a}' \tilde{b}$”. [Writing dot products](#writing-dot-products) says when to use each form.
 >
 > In a course that writes regression in statistical notation:
 >
-> > ❌ Consider the model \\h(x) = w x + b\\.
+> > ❌ Consider the model $h(x) = w x + b$.
 > >
-> > ✅ Consider the mean function \\\mu(x) = \beta_0 + \beta_x x\\.
+> > ✅ Consider the mean function $\mu(x) = \beta_0 + \beta_x x$.
 >
-> The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that \\h\\, \\w\\ and \\b\\ are \\\mu\\, \\\beta_x\\ and \\\beta_0\\.
+> The ❌ version names the same quantity as the rest of the course with a different word and different symbols. A student then has to learn that $h$, $w$ and $b$ are $\mu$, $\beta_x$ and $\beta_0$.
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
 ### 7.1 Label every inline symbol
 
-In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, \\\sigma^2\\”.
+In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, $\sigma^2$”.
 
 > **NOTE:**
 >
 > **Example 12 (Labeling a symbol in a list of quantities)**  
 >
-> > ❌ Which of the three quantities (squared bias, variance of \\\hat{y}\\, \\\sigma^2\\) can a better prediction method reduce?
+> > ❌ Which of the three quantities (squared bias, variance of $\hat{y}$, $\sigma^2$) can a better prediction method reduce?
 > >
-> > ✅ Which of the three quantities (the squared bias, the variance of the prediction \\\hat{y}\\, and the population noise variance \\\sigma^2\\) can a better prediction method reduce?
+> > ✅ Which of the three quantities (the squared bias, the variance of the prediction $\hat{y}$, and the population noise variance $\sigma^2$) can a better prediction method reduce?
 >
-> In the ❌ version, the reader sees \\\sigma^2\\ with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.
+> In the ❌ version, the reader sees $\sigma^2$ with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.
 
 ## 8 Using shared macros
 
@@ -388,7 +421,7 @@ Latin letters with a fixed role show the rule. In a regression or prediction mod
 - `\resid` for a residual, the observed minus the predicted outcome;
 - `\prederr` for a prediction error, the predicted minus the observed outcome.
 
-For an observation used to fit the model, the residual is the negative of the prediction error. Write `\resid` for the observed minus the predicted outcome and `\prederr` for the predicted minus the observed outcome, never one for the other. For an estimate of a parameter, `\erf{\eparam}` is the estimation error, the estimate minus the true value; it prints \\\varepsilon\\, the symbol the shared macros use for an error. These macros need a version of the shared macros that includes them, so update a repository’s copy before using them there. The outcome, predictor and residual macros also have random-variable and vector forms, such as `\Outvar`, `\voutvar` and `\vresid`.
+For an observation used to fit the model, the residual is the negative of the prediction error. Write `\resid` for the observed minus the predicted outcome and `\prederr` for the predicted minus the observed outcome, never one for the other. For an estimate of a parameter, `\erf{\eparam}` is the estimation error, the estimate minus the true value; it prints $\varepsilon$, the symbol the shared macros use for an error. These macros need a version of the shared macros that includes them, so update a repository’s copy before using them there. The outcome, predictor and residual macros also have random-variable and vector forms, such as `\Outvar`, `\voutvar` and `\vresid`.
 
 > **NOTE:**
 >
@@ -398,7 +431,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 > >
 > > ✅ Source: `The residual is $\resid_i = \outvar_i - \eoutvar_i$.`
 >
-> The ✅ version prints the residual as \\r\\, the symbol the shared macros use for it; the other letters are the same in both. In the ✅ version, a reader of the source can tell which letter is the outcome and which is the residual.
+> The ✅ version prints the residual as $r$, the symbol the shared macros use for it; the other letters are the same in both. In the ✅ version, a reader of the source can tell which letter is the outcome and which is the residual.
 
 Once a quantity has a name and a macro, write the macro instead of the expression that defines it. Each equation then stays short, and a reader sees which quantity it is about.
 
@@ -464,37 +497,51 @@ Replace each sub-expression that you are not manipulating with a symbol that sta
 
 This is one case of [making each expression as concise as possible](#making-expressions-concise). It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or [shared macro](#using-shared-macros) that names its concept.
 
-Choose the symbol to match the thing it names. For the [population](../chapters/defining-terms.llms.md#def-population) mean \\\E{X}\\, write \\\mu\\. Add a subscript, such as \\\mu_X\\, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let \\\mu = \E{X}\\”, before the first line that uses the symbol.
+Choose the symbol to match the thing it names. For the [population](../chapters/defining-terms.llms.md#def-population) mean $\E{X}$, write $\mu$. Add a subscript, such as $\mu_X$, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let $\mu = \E{X}$”, before the first line that uses the symbol.
 
 > **NOTE:**
 >
-> **Example 22 (Abstracting the population mean)** Suppose a derivation expands the [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable \\X\\.
+> **Example 22 (Abstracting the population mean)** Suppose a derivation expands the [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable $X$.
 >
-> > ❌ \\ \begin{aligned} \E{\paren{X - \E{X}}^2} &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\ &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2 \end{aligned} \\
+> > ❌ $$\begin{aligned}
+> > \E{\paren{X - \E{X}}^2}
+> > &= \E{X^2 - 2 X \E{X} + \E{X}^2}\\
+> > &= \E{X^2} - 2 \E{X} \E{X} + \E{X}^2
+> > \end{aligned}$$
 > >
-> > ✅ Let \\\mu = \E{X}\\. \\ \begin{aligned} \E{\paren{X - \mu}^2} &= \E{X^2 - 2 \mu X + \mu^2} && \text{(expand the square)}\\ &= \E{X^2} - 2 \mu \E{X} + \mu^2 && \text{(linearity of expectation)}\\ &= \E{X^2} - 2 \mu \mu + \mu^2 && \text{(definition of } \mu \text{)}\\ &= \E{X^2} - \mu^2 && \text{(combine like terms)} \end{aligned} \\
+> > ✅ Let $\mu = \E{X}$. $$\begin{aligned}
+> > \E{\paren{X - \mu}^2}
+> > &= \E{X^2 - 2 \mu X + \mu^2}
+> > && \text{(expand the square)}\\
+> > &= \E{X^2} - 2 \mu \E{X} + \mu^2
+> > && \text{(linearity of expectation)}\\
+> > &= \E{X^2} - 2 \mu \mu + \mu^2
+> > && \text{(definition of } \mu \text{)}\\
+> > &= \E{X^2} - \mu^2
+> > && \text{(combine like terms)}
+> > \end{aligned}$$
 >
-> In the ❌ version, \\\E{X}\\ is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of \\\mu\\ needs to know what \\\mu\\ stands for.
+> In the ❌ version, $\E{X}$ is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of $\mu$ needs to know what $\mu$ stands for.
 
 ## 11 Writing dot products
 
-When two vectors multiply to give a number, write the product as a dot product, \\\tilde{x} \cdot \tilde{\beta}\\. Do not write it as a transpose product, \\\tilde{x}' \tilde{\beta}\\, or with inner-product brackets, \\\langle \tilde{x}, \tilde{\beta} \rangle\\. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
+When two vectors multiply to give a number, write the product as a dot product, $\tilde{x} \cdot \tilde{\beta}$. Do not write it as a transpose product, $\tilde{x}' \tilde{\beta}$, or with inner-product brackets, $\langle \tilde{x}, \tilde{\beta} \rangle$. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
 > **Example 23 (Writing a dot product)**  
 >
-> > ❌ The model is \\f(\tilde{x}) = \tilde{x}' \tilde{\beta}\\.
+> > ❌ The model is $f(\tilde{x}) = \tilde{x}' \tilde{\beta}$.
 > >
-> > ✅ The model is \\f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}\\.
+> > ✅ The model is $f(\tilde{x}) = \tilde{x} \cdot \tilde{\beta}$.
 >
 > Both versions give the same number. The ✅ version shows it as one product of two vectors. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the ✅ version with the dot-product macro, for example `$\dprod{\vx}{\vbeta}$`.
 
 Keep the transpose where the product is not a dot product of two vectors:
 
-- a product of matrices, such as \\X'X\\
-- an outer product, such as \\\tilde{x}\tilde{x}'\\
-- a quadratic form, such as \\\tilde{x}' A \tilde{x}\\
+- a product of matrices, such as $X'X$
+- an outer product, such as $\tilde{x}\tilde{x}'$
+- a quadratic form, such as $\tilde{x}' A \tilde{x}$
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
@@ -505,7 +552,7 @@ Use the notation that best represents the concept being depicted. Choose the sym
 The rules that follow are cases of this principle:
 
 - The predictor matrix and the design matrix are different objects, so they get different symbols.
-- The mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) is a mean, so it is \\\truemean\\, not \\\predfn\\.
+- The mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) is a mean, so it is $\truemean$, not $\predfn$.
 - The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
 - A reference formula is a general statement, so it is written in its general form, not for one example.
 
@@ -513,12 +560,12 @@ When no rule covers a case, ask the same question: which symbol, name and form b
 
 ## 13 Writing the predictor and design matrices
 
-Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix \\\mX\\ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic \\X\\ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
+Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix $\mX$ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic $X$ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
 
 Keep two objects apart, because they are not the same matrix:
 
-- The *predictor matrix* holds the raw inputs. Its rows are the predictor vectors \\\vx_i\\ of the \\n\\ observations. Write it `\mX`.
-- The *design matrix* holds the inputs after any feature map and the intercept trick. Its rows are the design vectors \\\vfeatmap(\vx_i)\\. Write it `\design(\mX)`, or `\design` for short.
+- The *predictor matrix* holds the raw inputs. Its rows are the predictor vectors $\vx_i$ of the $n$ observations. Write it `\mX`.
+- The *design matrix* holds the inputs after any feature map and the intercept trick. Its rows are the design vectors $\vfeatmap(\vx_i)$. Write it `\design(\mX)`, or `\design` for short.
 
 The same split holds for one observation: the predictor vector is `\vx`, and the design vector is `\vfeatmap(\vx)`. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.
 
@@ -526,9 +573,9 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 >
 > **Example 24 (Predictor matrix and design matrix)**  
 >
-> > ❌ Let \\X\\ be the design matrix, and fit \\\hat{\beta} = (X'X)^{-1}X'y\\.
+> > ❌ Let $X$ be the design matrix, and fit $\hat{\beta} = (X'X)^{-1}X'y$.
 > >
-> > ✅ Let \\\mX\\ be the predictor matrix and \\\design(\mX)\\ the design matrix. The fitted coefficients solve the normal equations for \\\design(\mX)\\.
+> > ✅ Let $\mX$ be the predictor matrix and $\design(\mX)$ the design matrix. The fitted coefficients solve the normal equations for $\design(\mX)$.
 >
 > The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.
 
@@ -540,67 +587,67 @@ On a reference sheet, a formula sheet or a summary, state each formula in its ge
 >
 > **Example 25 (Stating the chain rule)**  
 >
-> > ❌ \\\frac{d(u^2)}{dw} = 2u \frac{du}{dw}\\
+> > ❌ $\frac{d(u^2)}{dw} = 2u \frac{du}{dw}$
 > >
-> > ✅ \\\dif{f(u)}{w} = f'(u) \dif{u}{w}\\
+> > ✅ $\dif{f(u)}{w} = f'(u) \dif{u}{w}$
 >
-> The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable \\f\\, and the squaring case follows by taking \\f(u) = u^2\\.
+> The ❌ line is the chain rule for squaring only. The ✅ line holds for every differentiable $f$, and the squaring case follows by taking $f(u) = u^2$.
 
 Put a specific case on the sheet only as a labeled example next to the general formula.
 
 ## 15 Writing the mean function and the prediction function
 
-Write the mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) as \\\truemean\\, not as \\\predfn\\. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, \\\truemeanf{x}\\. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
+Write the mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) as $\truemean$, not as $\predfn$. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, $\truemeanf{x}$. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
-Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol \\\epredfn\\) for an estimated one, or `\predfnf{x}` (symbol \\\predfn\\) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function \\\truemean\\ itself.
+Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol $\epredfn$) for an estimated one, or `\predfnf{x}` (symbol $\predfn$) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function $\truemean$ itself.
 
 > **NOTE:**
 >
 > **Example 26 (Mean function and fitted prediction function)**  
 >
-> > ❌ The expected squared error of the fitted mean function at \\x\\ is \\\E{(y - \hat{f}(x))^2}\\.
+> > ❌ The expected squared error of the fitted mean function at $x$ is $\E{(y - \hat{f}(x))^2}$.
 > >
-> > ✅ The expected squared error of the fitted prediction function at \\x\\ is \\\E{\paren{\outvar - \epredfnf{x}}^2}\\, and its bias is \\\E{\epredfnf{x}} - \truemeanf{x}\\.
+> > ✅ The expected squared error of the fitted prediction function at $x$ is $\E{\paren{\outvar - \epredfnf{x}}^2}$, and its bias is $\E{\epredfnf{x}} - \truemeanf{x}$.
 >
-> The ✅ version names the fitted prediction function where the concept is a prediction, and keeps \\\truemean\\ for the mean it is compared with.
+> The ✅ version names the fitted prediction function where the concept is a prediction, and keeps $\truemean$ for the mean it is compared with.
 
 ## 16 Writing the log-odds
 
-Use \\\logodds\\ (the Greek letter eta) for the log-odds, not \\z\\ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, \\\logodds\\” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
+Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
 > **NOTE:**
 >
 > **Example 27 (Argument of the logistic function)**  
 >
-> > ❌ The logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function) is \\\sigma(z) = 1 / (1 + e^{-z})\\, evaluated at the log-odds \\z\\.
+> > ❌ The logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
 > >
-> > ✅ The logistic function is \\\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}\\, evaluated at the log-odds \\\logodds\\.
+> > ✅ The logistic function is $\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}$, evaluated at the log-odds $\logodds$.
 >
-> The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen \\\logodds\\ elsewhere recognizes it here.
+> The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen $\logodds$ elsewhere recognizes it here.
 
 ## 17 Writing out notational shorthands
 
-A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in \\\sum_x f(x)\\. In permanent writing (notes, papers, and published slides), write the full form instead: \\\sum\_{x \in \mathcal{R}(X)} f(x)\\, where \\\mathcal{R}(X)\\ is the set of values that \\X\\ can take.
+A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in $\sum_x f(x)$. In permanent writing (notes, papers, and published slides), write the full form instead: $\sum_{x \in \mathcal{R}(X)} f(x)$, where $\mathcal{R}(X)$ is the set of values that $X$ can take.
 
-The full form costs the writer a few characters and saves every reader a guess. A reader who sees \\\sum_x\\ has to work out which values of \\x\\ the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as \\\sum\_{x \in \mathbb{Z}}\\ shows the wrong set at a glance, while \\\sum_x\\ hides the same mistake.
+The full form costs the writer a few characters and saves every reader a guess. A reader who sees $\sum_x$ has to work out which values of $x$ the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as $\sum_{x \in \mathbb{Z}}$ shows the wrong set at a glance, while $\sum_x$ hides the same mistake.
 
 Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands) catalogs common shorthands and their full forms.
 
 > **NOTE:**
 >
-> **Example 28 (Writing out the limits of a sum and the range of an index)** For a discrete random variable \\X\\:
+> **Example 28 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
 >
-> > ❌ \\\text{E}\[X\] = \sum_x x \Pr(X = x)\\
+> > ❌ $\text{E}[X] = \sum_x x \Pr(X = x)$
 > >
-> > ✅ \\\text{E}\[X\] = \sum\_{x \in \mathcal{R}(X)} x \Pr(X = x)\\
+> > ✅ $\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)$
 >
-> For the likelihood of \\n\\ independent observations \\x_1, \ldots, x_n\\:
+> For the likelihood of $n$ independent observations $x_1, \ldots, x_n$:
 >
-> > ❌ \\L(\theta) = \prod_i f(x_i; \theta)\\
+> > ❌ $L(\theta) = \prod_i f(x_i; \theta)$
 > >
-> > ✅ \\L(\theta) = \prod\_{i = 1}^{n} f(x_i; \theta)\\
+> > ✅ $L(\theta) = \prod_{i = 1}^{n} f(x_i; \theta)$
 >
-> Each full form tells the reader the set the operator runs over: the values \\X\\ can take, and the indices of the \\n\\ observations.
+> Each full form tells the reader the set the operator runs over: the values $X$ can take, and the indices of the $n$ observations.
 
 ## 18 Stating assumptions before using them
 
@@ -608,12 +655,12 @@ State each assumption before the step that uses it. A reader processes a derivat
 
 This covers every kind of condition:
 
-- a restriction on a variable (“for \\x \neq 2\\”);
+- a restriction on a variable (“for $x \neq 2$”);
 - a hypothesis of a theorem;
 - a case split;
 - a fact that a step relies on.
 
-Introduce the variable and its constraint together, as in “let \\x \neq 2\\”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
+Introduce the variable and its constraint together, as in “let $x \neq 2$”, then write the steps that need the constraint. When a step uses a fact proved earlier, cite it in the justification on that line.
 
 An assumptions list and a notation list are different lists:
 
@@ -626,25 +673,36 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 29 (Stating the restriction on \\x\\ before using it)** To show that \\x = 2\\ is a strict local minimizer of \\f(x) = (x - 2)^2\\, we show that \\f(x) \> f(2)\\ for every \\x\\ near 2 other than 2 itself.
+> **Example 29 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
 >
-> > ❌ \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 \\ &\> 0 && \text{(for every } x \neq 2\text{)} \end{aligned} \\
+> > ❌ $$\begin{aligned}
+> > f(x) - f(2)
+> > &= (x - 2)^2 - 0 \\
+> > &> 0
+> > && \text{(for every } x \neq 2\text{)}
+> > \end{aligned}$$
 > >
-> > ✅ Let \\x \neq 2\\. Then \\ \begin{aligned} f(x) - f(2) &= (x - 2)^2 - 0 && \text{(definition of } f\text{)}\\ &\> 0 && \text{(} x - 2 \neq 0 \text{, so its square is positive)} \end{aligned} \\
+> > ✅ Let $x \neq 2$. Then $$\begin{aligned}
+> > f(x) - f(2)
+> > &= (x - 2)^2 - 0
+> > && \text{(definition of } f\text{)}\\
+> > &> 0
+> > && \text{(} x - 2 \neq 0 \text{, so its square is positive)}
+> > \end{aligned}$$
 >
-> In the ❌ version, the second line is false for \\x = 2\\, and the reader learns this only from the note at its end. In the ✅ version, “let \\x \neq 2\\” comes first, so the reader reads each line already knowing which values of \\x\\ it covers, and the justification says exactly where the condition is used.
+> In the ❌ version, the second line is false for $x = 2$, and the reader learns this only from the note at its end. In the ✅ version, “let $x \neq 2$” comes first, so the reader reads each line already knowing which values of $x$ it covers, and the justification says exactly where the condition is used.
 
 > **NOTE:**
 >
 > **Example 30 (Writing several assumptions as one list)**  
 >
-> > ❌ Assume the sample size \\n\\ is larger than \\30\\. Assume the observations are independent. Assume the population variance \\\sigma^2\\ is finite.
+> > ❌ Assume the sample size $n$ is larger than $30$. Assume the observations are independent. Assume the population variance $\sigma^2$ is finite.
 > >
 > > ✅ Assume:
 > >
-> > - the sample size \\n\\ is larger than \\30\\,
+> > - the sample size $n$ is larger than $30$,
 > > - the observations are independent, and
-> > - the population variance \\\sigma^2\\ is finite.
+> > - the population variance $\sigma^2$ is finite.
 >
 > The ✅ version writes “Assume” once, and the bullets show that the three assumptions are parallel and separate.
 
@@ -652,15 +710,15 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > **Example 31 (Writing several names as one list)**  
 >
-> > ❌ Let \\n\\ be the sample size. Let \\\bar{y}\\ be the sample mean. Let \\s\\ be the sample standard deviation.
+> > ❌ Let $n$ be the sample size. Let $\bar{y}$ be the sample mean. Let $s$ be the sample standard deviation.
 > >
 > > ✅ Let:
 > >
-> > - \\n\\ be the sample size,
-> > - \\\bar{y}\\ be the sample mean, and
-> > - \\s\\ be the sample standard deviation.
+> > - $n$ be the sample size,
+> > - $\bar{y}$ be the sample mean, and
+> > - $s$ be the sample standard deviation.
 >
-> These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size \\n\\ larger than \\30\\, a separate assumptions list after this one would state it.
+> These bullets name objects and assume nothing about them, so this is a notation list. If the result also needed a condition such as a sample size $n$ larger than $30$, a separate assumptions list after this one would state it.
 
 > **NOTE:**
 >
@@ -668,16 +726,16 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > > ❌ Assume:
 > >
-> > - the outcome variable is \\\Outvar = \truemeanf{\predvar} + \noise\\, and
-> > - the noise variable \\\noise\\ has population mean \\0\\.
+> > - the outcome variable is $\Outvar = \truemeanf{\predvar} + \noise$, and
+> > - the noise variable $\noise$ has population mean $0$.
 > >
 > > ✅ Let:
 > >
-> > - \\\truemeanf{\predvar}\\ be the population mean of the outcome variable \\\Outvar\\ given the input value \\\predvar\\, and
-> > - \\\noise = \Outvar - \truemeanf{\predvar}\\ be the noise variable.
+> > - $\truemeanf{\predvar}$ be the population mean of the outcome variable $\Outvar$ given the input value $\predvar$, and
+> > - $\noise = \Outvar - \truemeanf{\predvar}$ be the noise variable.
 > >
-> > Then \\\Outvar = \truemeanf{\predvar} + \noise\\, and the population mean of \\\noise\\ given \\\predvar\\ is \\0\\.
+> > Then $\Outvar = \truemeanf{\predvar} + \noise$, and the population mean of $\noise$ given $\predvar$ is $0$.
 >
-> In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining \\\noise = \Outvar - \truemeanf{\predvar}\\ makes both statements true for every distribution of \\\Outvar\\ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
+> In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
 Back to top
