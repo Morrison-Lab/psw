@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: teaching-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: teaching-handout.pdf
   docx:
@@ -16,7 +17,7 @@ Lecture notes, slides, and problem sets teach rather than report.
 The general rules for scientific writing in the other chapters still apply.
 This chapter adds the rules that apply to teaching materials in particular.
 
-## Teaching writing and writing for peers
+# Teaching writing and writing for peers
 
 A teaching document and a paper have different readers, so they follow different rules.
 The reader of a teaching document is learning the material.
@@ -49,7 +50,7 @@ Four consequences follow for how you write.
 The rest of this chapter gives the rules for teaching materials.
 The chapters on [paper organization](paper-organization.qmd) and [manuscript submission](manuscript-submission.qmd) give the rules for papers.
 
-## Build the lecture from exercises and solutions
+# Build the lecture from exercises and solutions
 
 Active learning, in which students work through tasks themselves during class,
 improves exam performance over lecture alone [@freeman2014active].
@@ -135,7 +136,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
 
 ::: {#exm-exercise-before-definition}
 
-## Asking before defining
+# Asking before defining
 
 > ❌ **Generalization** is the ability of a model to perform well on new data. <!-- check-term-links: allow -->
 
@@ -160,7 +161,7 @@ before they see the formal definition.
 
 :::
 
-## Build every unit from smaller atomic units
+# Build every unit from smaller atomic units
 
 Make every unit of analysis as concise and minimal as possible.
 The units are mathematical expressions and divs of every kind:
@@ -207,7 +208,7 @@ When a unit still looks long, ask what could be named and moved out.
 
 ::: {#exm-atomic-units}
 
-## Splitting one long definition
+# Splitting one long definition
 
 > ❌ One div defines the ridge estimator, defines its penalty, and proves that it shrinks the coefficients.
 >
@@ -218,7 +219,7 @@ and each piece fits on a slide.
 
 :::
 
-## Say what a yes-or-no answer means
+# Say what a yes-or-no answer means
 
 Follow a "Yes" or "No" with what the answer means in the words of the question,
 as in "No: it's not possible that the advanced network has a test error of 0.25,"
@@ -230,7 +231,7 @@ The rule covers solutions, worked examples and any other answer to a question.
 
 ::: {#exm-yes-no-conclusion}
 
-## Saying what a "No" means
+# Saying what a "No" means
 
 > ❌ No. The irreducible error is a lower bound on the expected squared prediction error.
 >
@@ -242,7 +243,7 @@ so the reasons that follow support a claim the reader has already seen.
 
 :::
 
-## Give each question's answer its own paragraph
+# Give each question's answer its own paragraph
 
 When a prompt asks several questions, answer each one in its own paragraph, or in several paragraphs if it needs them
 (Ezra, 2026-10-28).
@@ -251,7 +252,7 @@ has one paragraph for the underfitting model, one for the overfitting model and 
 A reader looking for one answer then finds it without reading the others.
 No automated check enforces this rule, because a script cannot tell how many questions a prompt asks.
 
-## Give each defined term its own div
+# Give each defined term its own div
 
 [Defining terms clearly](defining-terms.qmd#guidelines-for-defining-terms)
 covers what a good definition contains.
@@ -283,7 +284,7 @@ For a near-synonym, name the seam:
 critical points include the stationary points
 and also the points where the derivative does not exist.
 
-## State the notation and its alternatives
+# State the notation and its alternatives
 
 When a symbol or convention has more than one common form,
 state the one the notes use and name the others a reader will encounter elsewhere.
@@ -291,7 +292,7 @@ Put the alternatives in the definition div or in a callout beside it.
 For example, some sources include 0 in the natural numbers and others exclude it,
 so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
 
-## Lead with the simplest correct form of a definition
+# Lead with the simplest correct form of a definition
 
 Define a quantity in the form that needs the fewest symbols,
 and state the textbook form as a theorem that follows.
@@ -302,7 +303,7 @@ and then prove that it equals $\operatorname{E}[X^2] - (\operatorname{E}[X])^2$.
 Parsimony outranks convention when choosing a primary definition.
 The conventional form still appears in the notes, as a named result.
 
-## Reuse one written version of each result
+# Reuse one written version of each result
 
 When several courses or repositories have already written the same definition, theorem, or exercise,
 compare the versions on notation, decomposition, parsimony, and clarity.
@@ -310,7 +311,7 @@ Use the best one, or merge them, and make it the single copy.
 Other places include or link to that copy
 instead of keeping a second wording that can drift.
 
-## Use real data and compute every number
+# Use real data and compute every number
 
 - Where an example needs data, use a real dataset
   instead of invented round numbers.
@@ -331,7 +332,7 @@ instead of keeping a second wording that can drift.
 
 ::: {#exm-show-data-first}
 
-## Showing the data at first mention
+# Showing the data at first mention
 
 > ❌ Slides 3 to 9 discuss the spam data's 57 predictors, its class imbalance
 > and the loss we will minimize.
@@ -346,7 +347,7 @@ The ✅ version lets every later slide refer to something the reader has already
 
 :::
 
-## Store structured data in structured formats
+# Store structured data in structured formats
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
@@ -361,7 +362,7 @@ This rule applies to all teaching materials, in every course and every teaching 
   and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.
 
-## Show each idea applied and in a figure
+# Show each idea applied and in a figure
 
 - Give every definition, method and result at least one applied example
   that computes it on real data,
@@ -420,7 +421,7 @@ This rule applies to all teaching materials, in every course and every teaching 
   suppresses the report for a shared figure
   ([gha#1378](https://github.com/Morrison-Lab/gha/pull/1378)).
 
-## Follow every example with an exercise and solution
+# Follow every example with an exercise and solution
 
 Reading a worked example is passive.
 A reader who has just seen one method applied
@@ -447,7 +448,7 @@ So each example gets a practice exercise, with its solution, right after it.
 
 ::: {#exm-practice-after-example}
 
-## An example followed by a practice exercise
+# An example followed by a practice exercise
 
 > ✅
 >
@@ -472,7 +473,7 @@ before moving on, and the solution's numbers still come from running code
 
 :::
 
-## Write labs for both languages and any computer
+# Write labs for both languages and any computer
 
 These rules apply to all teaching materials,
 in every course and every teaching repository, not only to one course.
@@ -511,7 +512,7 @@ in every course and every teaching repository, not only to one course.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
 
-## Keep each step's code in one chunk, and put parallel chunks in a language tabset
+# Keep each step's code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials,
 in every course and every teaching repository, in every language.
@@ -535,7 +536,7 @@ in every course and every teaching repository, in every language.
   such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`.
   End each such call with a semicolon, or assign its value.
 
-## Present R results with modern packages
+# Present R results with modern packages
 
 This rule applies to all R code in teaching materials,
 in every course and every teaching repository.
@@ -556,7 +557,7 @@ in every course and every teaching repository.
   or [broom](https://cran.r-project.org/package=broom)'s `glance()`.
 - Ezra's [rme](https://github.com/d-morrison/rme) notes show the style.
 
-## Manipulate data with dplyr, not base R
+# Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials,
 in every course and every teaching repository.
@@ -583,7 +584,7 @@ in every course and every teaching repository.
   as is indexing a matrix or a vector.
   The rule is about selecting, filtering and building data frames.
 
-## Include code from files instead of copying it
+# Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -605,7 +606,7 @@ This rule applies to code that appears in more than one place in teaching materi
   install it with `quarto add quarto-ext/include-code-files`,
   and commit the `_extensions` directory it creates.
 
-## Comment every code chunk to say what and why
+# Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials,
 in every course and every teaching repository, in every language.
@@ -621,7 +622,7 @@ in every course and every teaching repository, in every language.
 - Comment each step that a student could not reconstruct from its name,
   such as a transformation, a modeling choice, a tuning value or a random seed.
 
-## Set `code-fold` by what the code does and whether the prose mentions it
+# Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials,
 in every course and every teaching repository.
@@ -646,7 +647,7 @@ is `false`,
 a chunk that draws a figure the text discusses is `show`,
 and a chunk that loads a package or builds an object that later chunks use is `true`.
 
-## Introduce every function in a programming primer
+# Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code,
 in every course and every teaching repository.
@@ -664,7 +665,7 @@ in every course and every teaching repository.
 - Functions that a chapter defines for itself are not package functions.
   A chapter introduces those where it defines them.
 
-## Make figures accessible
+# Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text.
@@ -677,7 +678,7 @@ in every course and every teaching repository.
   so the reference has no target there
   (observed when rendering lecture notes to PDF).
 
-## Split a page before it grows too long
+# Split a page before it grows too long
 
 A page should load and finish rendering its math in under 5 seconds,
 and its scroll bar should not shrink to its smallest length
@@ -709,7 +710,7 @@ since the check does not run a browser.
 It warns only on pages a pull request touches,
 so split a long page when you next edit it, and do not sweep the others.
 
-## Keep sibling headings to about five
+# Keep sibling headings to about five
 
 Aim for at most about five sibling headings under one parent heading,
 and split or group the headings when there are more than seven
@@ -742,7 +743,7 @@ warns when a pull request adds a heading to a group of more than seven siblings.
 It warns only on pages a pull request touches,
 so regroup a page when you next edit it, and do not sweep the others.
 
-## Structure slides for the reader
+# Structure slides for the reader
 
 - Check the rendered slides, not only the web page.
   Slides need the same boxes and colors on theorem-type and callout divs
@@ -775,7 +776,7 @@ so regroup a page when you next edit it, and do not sweep the others.
   (observed in lecture slides rendered with Quarto).
   Put a slide break after the heading and move the text onto content slides.
 
-## Give each concept in a note sheet its own row
+# Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose.
 This is one case of
@@ -796,7 +797,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 ::: {#exm-note-sheet-rows}
 
-## Splitting a merged row
+# Splitting a merged row
 
 > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
 >
@@ -807,7 +808,7 @@ The ✅ rows let the reader find one formula by one label.
 
 :::
 
-## Talk about the ideas, not the notes
+# Talk about the ideas, not the notes
 
 When a [term](defining-terms.qmd#def-term) is defined on another page or in another site,
 state the idea in the sentence and link the term.
@@ -851,7 +852,7 @@ instead of describing it again.
 Prefer a self-contained sentence
 when the part needs only one or two of those objects.
 
-## Write grading rubrics as checklists
+# Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist
 (Ezra, 2026-10-26).
@@ -878,7 +879,7 @@ and two graders reconstruct different items.
 
 ::: {#exm-rubric-checklist}
 
-## A rubric as a checklist
+# A rubric as a checklist
 
 > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$,
 > three for "orthogonal" with its link to the normal equation.
@@ -899,7 +900,7 @@ and lets a script check that the points sum to the total.
 
 :::
 
-## Credit other courses without summarizing them
+# Credit other courses without summarizing them
 
 
 - Write your own version of another course's material,
@@ -916,7 +917,7 @@ and lets a script check that the points sum to the total.
 - Where the book is the subject rather than its authors, name the book by its title,
   because a bare citation key renders as the author list.
 
-## Finish each unit completely
+# Finish each unit completely
 
 Complete each sentence, step, [term](defining-terms.qmd#def-term), result and exercise,
 and do not leave part of it implied, merged into a neighbor, or half done.
@@ -942,7 +943,7 @@ Several rules in this guide are cases of this one:
 When you catch yourself taking a shortcut, finish the unit instead.
 A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-## Rules that apply to all writing
+# Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
