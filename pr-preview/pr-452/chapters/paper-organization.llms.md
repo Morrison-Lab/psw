@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:13:57 (PST)
+Last modified: 2026-11-02 11:29:21 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -45,7 +45,7 @@ When analyzing a single primary outcome, organize results by:
 
 When analyzing multiple outcomes separately, **group your results section by outcome** rather than by analysis type. This organization improves clarity and readability by keeping all information about each outcome together.
 
-#### Why group by outcome
+### 3.2.1 Why group by outcome
 
 Grouping by outcome helps readers:
 
@@ -54,7 +54,7 @@ Grouping by outcome helps readers:
 - Understand the complete picture for each outcome before moving to the next
 - Navigate directly to outcomes of interest
 
-#### How to organize by outcome
+### 3.2.2 How to organize by outcome
 
 For each outcome, present:
 
@@ -82,7 +82,7 @@ For each outcome, present:
         ├── Sensitivity analyses
         └── Subgroup analyses
 
-#### What to avoid
+### 3.2.3 What to avoid
 
 **Don’t group by analysis type** when outcomes are analyzed separately:
 
@@ -102,7 +102,7 @@ For each outcome, present:
 
 This forces readers to jump back and forth between sections to understand the complete story for any single outcome.
 
-#### Exception: Shared descriptive statistics
+### 3.2.4 Exception: Shared descriptive statistics
 
 If your descriptive statistics apply to all outcomes (for example, baseline characteristics in a clinical trial), present them once at the beginning before discussing individual outcomes.
 

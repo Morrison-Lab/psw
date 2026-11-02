@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 11:13:57 (PST)
+Last modified: 2026-11-02 11:29:21 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,7 @@ Last modified: 2026-11-02 11:13:57 (PST)
 
 This chapter lists the book’s main rules as a checklist. Use the checklist when you revise a draft: read the draft once for each group of rules, and fix each passage that breaks a rule. Each rule is stated in a few words here. Follow its link for the reasons and the exceptions.
 
-## 1 Terms and notation
+# 1 Terms and notation
 
 - [Define every technical term](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) explicitly, before its first use, and follow the definition with examples and counterexamples.
 
@@ -46,7 +46,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 
 - [Spell out a number used as an adjective](../chapters/mathematical-writing.llms.md#write-numbers-according-to-how-they-are-used), and write the numeral for a number used as a name.
 
-## 2 Claims and evidence
+# 2 Claims and evidence
 
 - [Support every claim](../chapters/citations-evidence.llms.md#why-claims-need-support) with a citation or with data.
 - [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support), such as calling a step “trivial”.
@@ -57,7 +57,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) rather than a source that quotes it.
 - [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first): name the topic, not its author, in headings and sentences.
 
-## 3 Papers
+# 3 Papers
 
 - [Write to clarify your thinking](../chapters/paper-organization.llms.md#write-to-clarify-your-thinking): write each question or idea down as it comes.
 - [Follow the standard structure](../chapters/paper-organization.llms.md#standard-paper-structure) of a research paper.
@@ -68,7 +68,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Put each link to a video next to the text that it supports](../chapters/paper-organization.llms.md#links-to-videos-and-other-media).
 - Follow the [journal’s conventions for a manuscript](../chapters/manuscript-submission.llms.md), and check the [submission checklist](../chapters/manuscript-submission.llms.md#submission-checklist) before you submit.
 
-## 4 Words
+# 4 Words
 
 - [Prefer plain words to Latin-derived ones](../chapters/word-choice.llms.md) where a plain word says the same thing.
 - [Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language).
@@ -79,7 +79,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Edit out clusters of clichéd words and sentence shapes](../chapters/avoid-cliches.llms.md), which make prose read as generic or machine-drafted.
 - [Say what something is before what it is not](../chapters/avoid-cliches.llms.md#say-what-it-is-before-what-it-is-not).
 
-## 5 Writing for every reader
+# 5 Writing for every reader
 
 - [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language).
 - [Use common words, and define technical ones](../chapters/inclusive-writing.llms.md#use-common-words-and-define-technical-ones).
@@ -95,7 +95,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Present ideas in more than one form](../chapters/inclusive-writing.llms.md#present-ideas-in-more-than-one-form).
 - [Test your writing with a reader](../chapters/inclusive-writing.llms.md#test-your-writing-with-a-reader).
 
-## 6 Sentences
+# 6 Sentences
 
 - [Keep relative pronouns](../chapters/grammar.llms.md#relative-pronouns) such as “that” and “which”.
 - [Follow “this” or “that” with the noun that it refers to](../chapters/grammar.llms.md#demonstrative-pronouns).
@@ -110,7 +110,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Put a list of three or more phrases in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points).
 - [Write to communicate, not to impress](../chapters/conciseness.llms.md#write-to-communicate-not-to-impress): use the plainest form that still carries the full meaning.
 
-## 7 Teaching materials
+# 7 Teaching materials
 
 - [Build the lecture from exercises and solutions](../chapters/teaching.llms.md#build-the-lecture-from-exercises-and-solutions).
 - [Ask the question before giving the definition](../chapters/teaching.llms.md#exm-exercise-before-definition).
@@ -127,13 +127,13 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
 - [Do not formally acknowledge material borrowed from your own work](../chapters/citations-evidence.llms.md#material-from-your-own-work), and remove any existing credit to your own work, but keep what that work itself credits.
 
-## 8 Software text
+# 8 Software text
 
 - [Say what changed and why](../chapters/software-text.llms.md#say-what-changed-and-why) in a pull request or commit message.
 - [Comment why, not what](../chapters/software-text.llms.md#comment-code-sparingly).
 - [Write release notes by their effect on the user](../chapters/software-text.llms.md#write-release-notes-for-the-user).
 
-## 9 Thinking
+# 9 Thinking
 
 - [Write the question down first](../chapters/writing-to-think.llms.md#write-the-question-down-first).
 - [Send a written question that gives the reader the context to answer it](../chapters/writing-to-think.llms.md#send-a-written-question).
