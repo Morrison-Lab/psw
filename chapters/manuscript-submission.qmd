@@ -25,7 +25,7 @@ They follow the
 and the *AMA Manual of Style*,
 which most clinical and health-services journals use.
 
-## Document order
+# Document order
 
 Assemble the main document in this order:
 
@@ -58,7 +58,7 @@ with the figure legends listed after the references.
 When that is the instruction, follow it,
 and keep the end-of-document copies only for review drafts.
 
-## Title page
+# Title page
 
 The title page carries:
 
@@ -93,7 +93,7 @@ with their permission.
 When the journal asks for contribution statements,
 use the [CRediT taxonomy](https://credit.niso.org/).
 
-## Abstract
+# Abstract
 
 - Use a **structured** abstract with the journal's headings. <!-- check-term-links: allow -->
   A generic set is Background, Objective, Methods, Results,
@@ -117,16 +117,16 @@ use the [CRediT taxonomy](https://credit.niso.org/).
 - Give 3 to 6 keywords,
   preferably [MeSH](https://meshb.nlm.nih.gov/) [term](defining-terms.qmd#def-term)s.
 
-## Main text
+# Main text
 
-### Introduction
+## Introduction
 
 Three short paragraphs are usually enough:
 what is known, the gap, and the objective or hypothesis.
 End with a sentence that states the aim.
 Do not preview the results.
 
-### Methods
+## Methods
 
 Give enough detail that another analyst could reproduce the analysis:
 
@@ -148,7 +148,7 @@ Give enough detail that another analyst could reproduce the analysis:
 - ethics approval or exemption, and consent or its waiver; and
 - the reporting guideline that the paper follows.
 
-### Results
+## Results
 
 - Open with the analytic sample and its characteristics (Table 1).
 - Report the primary outcome, then secondary outcomes,
@@ -160,7 +160,7 @@ Give enough detail that another analyst could reproduce the analysis:
 - Cite every table and figure in the text,
   in numerical order, at its first relevant mention.
 
-### Discussion
+## Discussion
 
 A standard Discussion runs through:
 
@@ -178,12 +178,12 @@ A standard Discussion runs through:
    - power; and
 5. implications for practice, policy, or research.
 
-### Conclusions
+## Conclusions
 
 Write two to four sentences that the data support,
 with no new results.
 
-## Reporting guidelines
+# Reporting guidelines
 
 Find the guideline for the study design on the [EQUATOR Network](https://equator-network.org/) website,
 which catalogs reporting guidelines for health research [@simera2010catalogue].
@@ -209,7 +209,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
 
 : Common reporting guidelines by study design {#tbl-reporting-guidelines}
 
-## Tables
+# Tables
 
 - Number every table in citation order (Table 1, Table 2, and so on),
   and give every table a caption.
@@ -237,7 +237,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   Split a wide table or move it to the supplement.
 - Keep the table's footnotes with the table.
 
-## Figures
+# Figures
 
 - Number every figure in citation order,
   and give every figure a caption.
@@ -292,7 +292,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   and refer to them in the legend.
 - Add alt text when the journal supports it.
 
-## Statistics and numbers
+# Statistics and numbers
 
 - Give each estimate with its 95% [confidence interval](defining-terms.qmd#def-confidence-interval),
   in one consistent format,
@@ -346,7 +346,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   A typed number goes stale when the data or the analysis changes,
   and nothing warns you that it no longer matches the tables.
 
-## Supplement
+# Supplement
 
 - Prepare the supplement as a separate document,
   or as a clearly separated part after a page break.
@@ -369,7 +369,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
     and reconciliation with earlier reports.
 - Hold the supplement to the same standard as the main text.
 
-## Abbreviations
+# Abbreviations
 
 - Define each abbreviation at its first use in the abstract,
   again at its first use in the main text,
@@ -381,7 +381,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
   in most journals.
   Check the journal's list.
 
-## References
+# References
 
 - Use the journal's reference style.
   AMA and Vancouver, numbered in order of first citation,
@@ -397,7 +397,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
 - Include DOIs when the style allows them.
 - Cite the software and R packages that the analysis relied on.
 
-## Prose
+# Prose
 
 - Follow the rest of this guide:
   plain words, short sentences, and the [active voice](defining-terms.qmd#def-active-voice).
@@ -424,7 +424,7 @@ Check the EQUATOR Network website for the current version of a guideline before 
 - Use one [term](defining-terms.qmd#def-term) per concept throughout the paper.
 - Define every group, period, and outcome before you use it.
 
-## Required statements
+# Required statements
 
 Most journals require each of these,
 either in the text or in the submission forms:
@@ -439,7 +439,7 @@ either in the text or in the submission forms:
   and
 - prior presentation or preprints.
 
-## Rendering and layout in Quarto
+# Rendering and layout in Quarto
 
 - Render from source every time,
   and never edit the output file by hand.
@@ -452,7 +452,7 @@ either in the text or in the submission forms:
   if the journal asks for them.
 - Check that every cross-reference resolves.
 
-## Submission checklist
+# Submission checklist
 
 A document that renders without errors is not ready to submit.
 The first item is a hard gate:

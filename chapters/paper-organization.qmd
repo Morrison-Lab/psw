@@ -15,7 +15,7 @@ and understand your findings.
 The structure of your paper should guide readers logically
 from your research question through your methods to your results and conclusions.
 
-## Write to clarify your thinking
+# Write to clarify your thinking
 
 Write down a question or an idea as soon as you have it,
 before you search for an answer.
@@ -28,7 +28,7 @@ Writing it down helps you in these ways:
 The computer scientist Leslie Lamport argues that a person
 who thinks without writing only thinks that they are thinking [@lamport2019think].
 
-## Standard paper structure
+# Standard paper structure
 
 Most scientific papers follow the IMRaD structure:
 
@@ -39,13 +39,13 @@ Most scientific papers follow the IMRaD structure:
 
 Some papers combine Results and Discussion into a single section.
 
-## Organizing the Results section
+# Organizing the Results section
 
 The Results section presents your findings clearly and logically.
 How you organize this section depends on your research design
 and the complexity of your analyses.
 
-### Single outcome studies
+## Single outcome studies
 
 When analyzing a single primary outcome,
 organize results by:
@@ -54,11 +54,11 @@ organize results by:
 - Main analysis results
 - Sensitivity analyses or subgroup analyses
 
-### Multiple outcomes analyzed separately
+## Multiple outcomes analyzed separately
 
 {{< include paper-organization/multiple-outcomes.qmd >}}
 
-## Figures and tables
+# Figures and tables
 
 In a reading copy
 (a website, a preprint, or a draft circulated to coauthors),
@@ -73,7 +73,7 @@ Each figure and table should have a clear,
 informative caption that allows readers to understand it
 without reading the main text.
 
-### Label variables in plain words
+## Label variables in plain words
 
 A figure or table is read by people, not by the code that made it.
 Replace every variable name from the data with a label a reader understands:
@@ -89,7 +89,7 @@ so a reader can match them up.
 
 ::: {#exm-figure-labels}
 
-## Relabeling axes and a legend
+# Relabeling axes and a legend
 
 > ❌ x-axis `age_yrs`, y-axis `sbp`, legend `trt_grp`: `ctrl`, `tx`
 >
@@ -103,7 +103,7 @@ for example with `forcats::fct_recode()`.
 
 :::
 
-### Captions are captions, not headings
+## Captions are captions, not headings
 
 Give every figure and table a numbered caption,
 including those in the supplementary material.
@@ -132,7 +132,7 @@ Its number is typed by hand,
 so it falls out of step with the real numbering
 when figures are added, removed, or reordered.
 
-### Manuscript layout for journal submission {#sec-submission-layout}
+## Manuscript layout for journal submission {#sec-submission-layout}
 
 Many journals ask for figures and tables
 to follow the main text of a submitted manuscript
@@ -163,7 +163,7 @@ where you put the div
 instead of at the end of the document.
 Write the figures and tables after that div.
 
-### Check the rendered layout
+## Check the rendered layout
 
 Captions, page breaks, and figure placement
 are properties of the rendered document's layout.
@@ -181,7 +181,7 @@ not only its text and numbers:
   and before the supplement,
   and does the supplementary material start on a new page?
 
-## Subsection headings
+# Subsection headings
 
 Use descriptive subsection headings to guide readers through your results.
 Headings should clearly indicate the content of each section.
@@ -193,7 +193,7 @@ Headings should clearly indicate the content of each section.
 **Best heading**: "Treatment reduced mortality by 30%"
 (when appropriate and not overstating findings)
 
-## Heading levels
+# Heading levels
 
 A page's title is its level 1 heading, so the sections of the page start at level 2
 (the chapters of [rme](https://morrison-lab.github.io/rme/)
@@ -226,7 +226,7 @@ The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/referen
 in Morrison-Lab/gha flags these three mistakes
 on the heading lines a pull request adds.
 
-## Avoid forward references
+# Avoid forward references
 
 A forward reference points the reader to content they have not reached yet.
 Common forms are:
@@ -256,7 +256,7 @@ The reader then loses both the warning and the jump.
 
 ::: {#exm-forward-reference}
 
-## Removing a forward reference
+# Removing a forward reference
 
 > ❌ The adjusted estimates, discussed in the next section, differ from the crude estimates.
 > The adjustment, described below, uses age and sex.
@@ -287,7 +287,7 @@ such as "the two sections above" or "the previous section".
 Name the target instead, as in "the sections on mortality and morbidity",
 so that a later insertion does not make the position wrong.
 
-## Links to videos and other media
+# Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material
 in a short note right after the text the material supports.
