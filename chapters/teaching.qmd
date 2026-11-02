@@ -805,6 +805,9 @@ to learn which data, variables, or model the part needs.
 Keep the cross-reference
 so that the reader can look up the full statement,
 and add the names of the reused data, variables, parameters, or model.
+When the notes define a dataset in its own callout,
+link the dataset by that callout's id
+instead of describing it again.
 Prefer a self-contained sentence
 when the part needs only one or two of those objects.
 
