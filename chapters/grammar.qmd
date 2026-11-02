@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: grammar-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: grammar-handout.pdf
   docx:
@@ -16,26 +17,26 @@ Clear grammar removes friction between your ideas and your reader.
 This chapter collects a few grammatical habits
 that consistently make scientific writing easier to read.
 
-## Relative pronouns
+# Relative pronouns
 
 {{< include grammar/relative-pronouns.qmd >}}
 
-## Demonstrative pronouns
+# Demonstrative pronouns
 
 {{< include grammar/demonstrative-pronouns.qmd >}}
 
-## Quantifiers used as pronouns
+# Quantifiers used as pronouns
 
 {{< include grammar/quantifier-pronouns.qmd >}}
 
-## Avoid garden-path sentences
+# Avoid garden-path sentences
 
 {{< include grammar/garden-path-sentences.qmd >}}
 
-## Name the object of a relational noun
+# Name the object of a relational noun
 
 {{< include grammar/relational-nouns.qmd >}}
 
-## Appositive fronting
+# Appositive fronting
 
 {{< include grammar/appositive-fronting.qmd >}}
