@@ -6,6 +6,7 @@ format:
   html: default
   revealjs:
     output-file: avoid-cliches-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: avoid-cliches-handout.pdf
   docx:

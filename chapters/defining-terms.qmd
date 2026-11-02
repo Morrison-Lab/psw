@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: defining-terms-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: defining-terms-handout.pdf
   docx:

@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: grammar-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: grammar-handout.pdf
   docx:

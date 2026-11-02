@@ -4,6 +4,7 @@ format:
   html: default
   revealjs:
     output-file: inclusive-writing-slides.html
+    shift-heading-level-by: 1
   pdf:
     output-file: inclusive-writing-handout.pdf
   docx:
