@@ -293,7 +293,7 @@ so neither pointer is needed.
 
 :::
 
-Two cases are not forward references to fix:
+Three cases are not forward references to fix:
 
 - An overview near the start that previews the structure of the whole document,
   such as "Section 2 describes the data, and Section 3 gives the results".
@@ -304,6 +304,9 @@ Two cases are not forward references to fix:
   not inside the first item,
   because it describes the whole group
   and an item that carries it reads wrongly alone, or on its own slide.
+  State the content directly, as in "The negative gradient decreases the cost the most",
+  not "This exercise shows that the negative gradient is the best direction",
+  which describes the structure of the notes instead of the subject.
 - A sentence that names a figure or table placed beside it, such as "Table 2 shows the estimates".
   The reader encounters the table at once.
 
