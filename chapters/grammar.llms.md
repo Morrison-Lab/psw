@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 11:41:21 (PST)
+Last modified: 2026-11-03 13:13:33 (PST)
 
 > **NOTE:**
 >
@@ -197,5 +197,25 @@ Fronting is a stylistic choice, with costs and benefits.
 > > Fronted: A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in both preweaned calves and weaned cattle.
 >
 > The fronted version is shorter and puts the category first. It works here because “a disease complex with a multifactorial etiology” describes BRD, the subject that follows it, and the subject is named, not a pronoun. If the multifactorial etiology is what the paper is about, the plain form states it as a claim the reader can challenge, and is the better choice.
+
+# 7 Put a comma before the last item of a list
+
+In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the *serial comma*, or the *Oxford comma*. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.
+
+Write “the mean, the median, and the mode”, not “the mean, the median and the mode”. The same holds when the items are long, are split across source lines, or contain math.
+
+> **NOTE:**
+>
+> **Example 9 (Adding the serial comma)**  
+>
+> > ❌ We compare the lasso, ridge regression and elastic net.
+> >
+> > ✅ We compare the lasso, ridge regression, and elastic net.
+>
+> In the first version, a reader can take “ridge regression and elastic net” as a single method that combines the two. The comma before “and” shows that there are three methods.
+
+A list of two items takes no comma: “the mean and the median”. A phrase that opens a sentence is set off by its own comma, and it does not make a list: “In practice, the mean and the median agree.”
+
+A line that must keep a list without the serial comma, such as a quotation or the ❌ half of an example, takes the marker `<!-- check-serial-comma: allow -->`.
 
 Back to top
