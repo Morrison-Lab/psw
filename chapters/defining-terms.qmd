@@ -971,7 +971,7 @@ Examples serve several crucial purposes:
   say so once rather than switching silently.
   A bare "the mode" leaves the reader to guess the object,
   and a wrong guess misattributes the characteristic:
-  a mode is a mode of one function,
+  a mode is a mode of one [function](https://morrison-lab.github.io/mds/functions.html#def-function),
   and the modes of a kernel and of its density coincide only by a theorem,
   not by definition.
 
