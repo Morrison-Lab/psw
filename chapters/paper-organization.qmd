@@ -310,7 +310,7 @@ Name the target instead, as in "the sections on mortality and morbidity",
 so that a later insertion does not make the position wrong.
 When the target has a cross-reference label,
 link it instead of describing its position:
-write "Exercises @exr-a through @exr-b establish the properties",
+write "Exercises `@exr-a` through `@exr-b` establish the properties",
 not "The next exercises establish the properties".
 
 # Links to videos and other media
