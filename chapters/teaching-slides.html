@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-02 22:34:16 (PST)</p>
+  <p class="date">Last modified: 2026-11-02 23:07:25 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -736,8 +736,30 @@
 </ul>
 <p>For example, a chunk that fits a model the text walks through and prints its coefficients is <code>false</code>, a chunk that draws a figure the text discusses is <code>show</code>, and a chunk that loads a package or builds an object that later chunks use is <code>true</code>.</p>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Introduce every function in a programming primer</h2>
+<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Put a full command in a code block, not in inline code</h2>
+</section>
+<section class="slide level2">
+
+<p>This rule applies to all teaching materials that name commands, in every course and every teaching repository.</p>
+<ul>
+<li>Put a full command that a reader will run, such as an install command, in its own fenced code block with a language, such as <code>r</code> or <code>python</code>. A rendered code block has a copy button, and inline code does not.</li>
+<li>Do not run the block when its output is not the point. Open the fence with the language alone, as in <code>r</code>, and not in braces, as in <code>{r}</code>, so Quarto shows the code and does not evaluate it.</li>
+<li>Keep inline code for a name inside a sentence, such as the name of a package, a variable or an argument.</li>
+<li>Introduce the block with a sentence that ends in a colon. Do not follow a semicolon or a colon in the sentence with inline code that the reader has to select by hand.</li>
+</ul>
+<div id="exm-command-block" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>: <code>install.packages(c("readr", "dplyr", "ggplot2", "purrr"))</code>.</p>
+<p>✅ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<p>The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.</p>
+</div>
+</section>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -749,8 +771,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -761,8 +783,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Split a page before it grows too long</h2>
+<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Split a page before it grows too long</h2>
 </section>
 <section class="slide level2">
 
@@ -776,8 +798,8 @@
 </ul>
 <p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Keep sibling headings to about five</h2>
+<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Keep sibling headings to about five</h2>
 </section>
 <section class="slide level2">
 
@@ -791,8 +813,8 @@
 </ul>
 <p>The <code>check-heading-siblings</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1390">gha#1390</a>) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Fold a one-paragraph section into its neighbor</h2>
+<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Fold a one-paragraph section into its neighbor</h2>
 </section>
 <section class="slide level2">
 
@@ -805,8 +827,8 @@
 <li>Do not delete the content: move it to the section it belongs to.</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -821,8 +843,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -835,7 +857,7 @@
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -843,8 +865,8 @@
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -874,8 +896,8 @@
 </div>
 <p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and name it beside the link. Quarto renders <code>@dat-wcgs</code> as “Dataset 1” in the link text, so write “the WCGS data (<code>@dat-wcgs</code>)”. Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="29">
-<h2><span class="header-section-number">29</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="30">
+<h2><span class="header-section-number">30</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -889,24 +911,24 @@
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
 <blockquote>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>Grading (6 points):</span>
-<span id="cb3-2"><a aria-label="2"></a></span>
-<span id="cb3-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
-<span id="cb3-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
-<span id="cb3-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
-<span id="cb3-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a aria-label="1"></a>Grading (6 points):</span>
+<span id="cb4-2"><a aria-label="2"></a></span>
+<span id="cb4-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
+<span id="cb4-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
+<span id="cb4-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
+<span id="cb4-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="30">
-<h2><span class="header-section-number">30</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="31">
+<h2><span class="header-section-number">31</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -917,8 +939,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="31">
-<h2><span class="header-section-number">31</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="32">
+<h2><span class="header-section-number">32</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -932,8 +954,8 @@
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="32">
-<h2><span class="header-section-number">32</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="33">
+<h2><span class="header-section-number">33</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
