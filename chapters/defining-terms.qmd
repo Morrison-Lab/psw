@@ -971,8 +971,8 @@ Examples serve several crucial purposes:
   say so once rather than switching silently.
   A bare "the mode" leaves the reader to guess the object,
   and a wrong guess misattributes the characteristic:
-  a mode belongs to a density,
-  and the maximizer of a kernel is that mode only by a theorem,
+  a mode is a mode of one function,
+  and the modes of a kernel and of its density coincide only by a theorem,
   not by definition.
 
   **Incorrect:**
