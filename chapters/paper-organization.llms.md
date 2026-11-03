@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 08:00:47 (PST)
+Last modified: 2026-11-03 10:28:30 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -227,9 +227,10 @@ If moving the content would break the order of the argument, keep the pointer, a
 >
 > In the ❌ version, both pointers send the reader to content that comes later, so the reader sees “adjusted” before the paper says what was adjusted. In the ✅ version, the sentence that defines the adjustment comes first, so neither pointer is needed.
 
-Two cases are not forward references to fix:
+Three cases are not forward references to fix:
 
-- An overview near the start that previews the structure, such as “Section 2 describes the data, and Section 3 gives the results”. The reader is not meant to resolve the preview immediately.
+- An overview near the start that previews the structure of the whole document, such as “Section 2 describes the data, and Section 3 gives the results”. The reader is not meant to resolve the preview immediately.
+- An overview of a group of items, such as “The next four exercises establish the properties of the sigmoid”. Put it in its own paragraph before the first item, not inside the first item, because it describes the whole group and an item that carries it reads wrongly alone, or on its own slide. [Write about the subject, not about the text](../chapters/conciseness.llms.md#write-about-the-subject-not-about-the-text): say “The negative gradient decreases the cost the most”, not “This exercise shows that the negative gradient is the best direction”.
 - A sentence that names a figure or table placed beside it, such as “Table 2 shows the estimates”. The reader encounters the table at once.
 
 A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.
