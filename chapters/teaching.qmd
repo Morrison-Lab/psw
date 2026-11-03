@@ -669,7 +669,7 @@ in every course and every teaching repository.
 
 ::: {#exm-command-block}
 
-## Moving an install command out of a sentence
+# Moving an install command out of a sentence
 
 > ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
 >
