@@ -962,10 +962,10 @@ Examples serve several crucial purposes:
   that can take on different values."
   
 - **A characteristic without its object:**
-  A mode, kernel, support, maximum or median belongs to one object,
+  A mode, kernel, support, maximum, or median belongs to one object,
   and the sentence names that object.
   Name the object whose definition the characteristic is stated for,
-  such as the density, the distribution, the likelihood or the kernel,
+  such as the density, the distribution, the likelihood, or the kernel,
   and use "of the distribution" only when the definition is for distributions.
   Where a text moves from a distribution to its density,
   say so once rather than switching silently.
