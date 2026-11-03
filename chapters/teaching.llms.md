@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 22:15:39 (PST)
+Last modified: 2026-11-02 22:28:41 (PST)
 
 > **NOTE:**
 >
@@ -413,7 +413,7 @@ The same holds inside a page. Focus on the content of the notes, not on their st
 > - ❌ “Use the setup of Exercise 1.”
 > - ✅ “Use the WCGS data, with outcome $\Outvar$ (coronary heart disease) and predictor $\Predvar$ (behavior pattern) from Exercise 1.”
 
-Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again. Prefer a self-contained sentence when the part needs only one or two of those objects.
+Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and name it beside the link. Quarto renders `@dat-wcgs` as “Dataset 1” in the link text, so write “the WCGS data (`@dat-wcgs`)”. Prefer a self-contained sentence when the part needs only one or two of those objects.
 
 # 29 Write grading rubrics as checklists
 
