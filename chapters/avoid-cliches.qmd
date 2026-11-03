@@ -112,17 +112,6 @@ that states a general truth or verdict.
 
 :::
 
-# A caveat
-
-No single word or pattern below is wrong on its own.
-Each has legitimate uses.
-The signal is clustering and mechanical repetition,
-the same constructions appearing again and again
-regardless of what each sentence needs.
-Edit for the cluster, not the isolated instance,
-and do not flatten your prose into a voiceless [register](#def-register)
-trying to avoid every word on a list.
-
 # Overused vocabulary
 
 Some words turn up more often than needed,
@@ -417,7 +406,10 @@ Write plainly first, then scan the draft once before you share it.
 Use the same list when you review someone else's writing.
 
 - One match means little.
-  Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
+  Several matches in one paragraph, or the same pattern repeated across a document, are the real signal:
+  the same constructions appearing again and again,
+  regardless of what each sentence needs.
+  Edit for the cluster, not the isolated instance.
 - Do not ban a word outright.
   Keep a word or phrase that is the precise one for the sentence.
 - Do not flatten your writing into a voiceless [register](#def-register).
