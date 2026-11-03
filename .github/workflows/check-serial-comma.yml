@@ -1,0 +1,19 @@
+# Thin caller of Morrison-Lab/gha's reusable serial comma check.
+# The check flags a list of three or more items with no comma before the final "and" or "or"
+# on a line a PR adds or edits.
+# Blocking and diff-scoped: it fails a PR only for lines the PR adds or edits.
+# A manual `workflow_dispatch` run checks the whole tree instead.
+
+name: Check serial comma
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-serial-comma.yml@v3
+    with:
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
