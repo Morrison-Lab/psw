@@ -78,6 +78,7 @@ and the relatively-recent hybridization of the English language.
 
 # Avoid vague and metaphorical language
 
+Write simple, direct prose (Ezra, 2026-11-03).
 Scientific claims should be precise enough to test.
 Vague or metaphorical phrases can sound evocative,
 but they leave the reader guessing
