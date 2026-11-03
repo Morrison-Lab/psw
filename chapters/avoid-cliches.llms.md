@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 13:25:00 (PST)
+Last modified: 2026-11-02 19:49:15 (PST)
 
 > **NOTE:**
 >
@@ -52,11 +52,7 @@ The rest of this chapter uses these [term](../chapters/defining-terms.llms.md#de
 >
 > **Definition 8 (Aphorism)** An **aphorism** is a short, quotable sentence that states a general truth or verdict.
 
-# 2 A caveat
-
-No single word or pattern below is wrong on its own. Each has legitimate uses. The signal is clustering and mechanical repetition, the same constructions appearing again and again regardless of what each sentence needs. Edit for the cluster, not the isolated instance, and do not flatten your prose into a voiceless [register](#def-register) trying to avoid every word on a list.
-
-# 3 Overused vocabulary
+# 2 Overused vocabulary
 
 Some words turn up more often than needed, in stock prose and especially in machine-generated text. Many of them are also Latin-derived words with plainer alternatives, so the advice here overlaps with the [Word choice](../chapters/word-choice.llms.md) chapter. [Table 1](#tbl-overused-vocabulary) lists frequent offenders and plainer replacements.
 
@@ -113,7 +109,7 @@ Whole phrases recur too. “In today’s fast-paced world”, “it is important
   - “the key takeaway”
   - “more than just”
 
-# 4 Rhetorical reflexes
+# 3 Rhetorical reflexes
 
 Writers reach for a few sentence shapes by reflex, whether or not the content calls for them.
 
@@ -136,7 +132,7 @@ Other reflexes to watch for:
 - **Hedging stacks.** “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest [hedge](#def-hedge); drop the rest.
 - **Hollow summaries.** A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point.
 
-# 5 Say what it is before what it is not
+# 4 Say what it is before what it is not
 
 When a sentence needs both a positive claim and a denial, state the positive claim first. The reader learns what the subject is before being told what to rule out, and the denial then attaches to a claim already made. Opening with the denial makes the reader carry an unsupported denial until the second clause arrives.
 
@@ -160,7 +156,7 @@ When a sentence needs both a positive claim and a denial, state the positive cla
 
 Often the denial can be cut. Keep it only when the reader might plausibly believe the rejected reading, as with a convention versus an identity. A denial that rejects a view nobody holds is the reframe (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature: cut it and keep the claim.
 
-# 6 Clichéd sentence shapes
+# 5 Clichéd sentence shapes
 
 Beyond the [antithesis](#def-antithesis), clichéd drafts lean on a set of sentence shapes that stage a point instead of stating it.
 
@@ -210,7 +206,7 @@ Four more habits blur the referent or delay the claim. Other chapters cover each
 - a dependent clause opening a sentence ([Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject));
 - informal idioms ([Avoid vague and metaphorical language](../chapters/word-choice.llms.md#avoid-vague-and-metaphorical-language)).
 
-# 7 Formatting habits
+# 6 Formatting habits
 
 Some clichés are typographic rather than verbal.
 
@@ -219,7 +215,7 @@ Some clichés are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three or four sentences, read as monotonous. Let paragraph length follow the ideas.
 
-# 8 Tone
+# 7 Tone
 
 The last group of clichés is about [register](#def-register).
 
@@ -227,11 +223,11 @@ The last group of clichés is about [register](#def-register).
 - **Reflexive both-sides framing.** Tacking “however, it is important to consider the other side” onto every claim signals caution without adding content. Use a [hedge](#def-hedge) when the evidence is genuinely mixed, not by habit.
 - **Vague universals.** “Studies show” and “experts agree”, with no specific source or number, are clichés precisely because they dodge the evidence. Name the study and give the number, as the [Citations and evidence](../chapters/citations-evidence.llms.md) chapter recommends.
 
-# 9 How to use this list
+# 8 How to use this list
 
 Write plainly first, then scan the draft once before you share it. Use the same list when you review someone else’s writing.
 
-- One match means little. Several matches in one paragraph, or the same pattern repeated across a document, are the real signal.
+- One match means little. Several matches in one paragraph, or the same pattern repeated across a document, are the real signal: the same constructions appearing again and again, regardless of what each sentence needs. Edit for the cluster, not the isolated instance.
 - Do not ban a word outright. Keep a word or phrase that is the precise one for the sentence.
 - Do not flatten your writing into a voiceless [register](#def-register). Cut the filler and the reflexes, and keep your own voice.
 - Skip the scan for code, terse status lines and short conversational replies.
