@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 22:28:41 (PST)
+Last modified: 2026-11-02 22:34:16 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -174,19 +174,21 @@ Use descriptive subsection headings to guide readers through your results. Headi
 
 **Best heading**: “Treatment reduced mortality by 30%” (when appropriate and not overstating findings)
 
-Write each heading as a plain noun phrase that names its content, the way a table of contents entry does, or as a plain statement of the result, as in the best heading above. A heading is not a question and does not tease the answer. Do not begin a heading, or a phrase after its colon, with who, what, when, where, why, how or which.
+Write each heading as a verb phrase that names what the section does, such as “Interpreting the coefficients”, or as a plain statement of the result, as in the best heading above. Prefer the verb to a noun made from it: “Interpreting the coefficients” rather than “Interpretation of the coefficients”. A heading is not a question and does not tease the answer. Do not begin a heading, or a phrase after its colon, with who, what, when, where, why, how or which.
 
 **Poor headings**:
 
 - “What the coefficients mean”
 - “Fitting: where the cost comes from”
 - “How sure are the coefficients?”
+- “Regularization of the model”
 
 **Better headings**:
 
-- “Interpretation of the coefficients”
-- “Fitting by maximum likelihood”
-- “Uncertainty of the coefficients”
+- “Interpreting the coefficients”
+- “Fitting the model by maximum likelihood”
+- “Quantifying the uncertainty of the coefficients”
+- “Regularizing the model”
 
 # 6 Heading levels
 
