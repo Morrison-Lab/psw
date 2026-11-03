@@ -970,9 +970,10 @@ Examples serve several crucial purposes:
   Where a text moves from a distribution to its density,
   say so once rather than switching silently.
   A bare "the mode" leaves the reader to guess the object,
-  and the guess can change the meaning:
-  the mode of a kernel is just its maximizer,
-  while the mode of a density is the point the kernel helps find.
+  and a wrong guess misattributes the characteristic:
+  a mode belongs to a density,
+  and the maximizer of a kernel is that mode only by a theorem,
+  not by definition.
 
   **Incorrect:**
   "The gamma distribution has the kernel $x^{a-1} e^{-x}$,
