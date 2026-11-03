@@ -746,6 +746,23 @@ warns when a pull request adds a heading to a group of more than seven siblings.
 It warns only on pages a pull request touches,
 so regroup a page when you next edit it, and do not sweep the others.
 
+# Fold a one-paragraph section into its neighbor
+
+Give a heading to a point that can stand alone,
+and fold a section of a single short paragraph into the section it qualifies or follows
+(Ezra, 2026-11-02).
+A heading that opens a one-paragraph section adds an entry to the list of headings
+and gives the reader nothing to find there.
+This is a guideline, not a minimum length:
+a definition, a distinct step or a named result can be short.
+
+- Merge a caveat into the section it qualifies.
+  If it qualifies a whole list, put it in the closing section on how to use the list.
+- Use a callout for an aside to one nearby claim.
+- Use a footnote for a minor qualification.
+- If a point is one of several parallel points, make it an item in the parent's list.
+- Do not delete the content: move it to the section it belongs to.
+
 # Structure slides for the reader
 
 - Check the rendered slides, not only the web page.
