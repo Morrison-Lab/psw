@@ -411,6 +411,28 @@ Write the description first, and end the sentence with the bracketed `[@key]`.
 The sites get this from the shared citation style and filter in
 [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
+# Place a citation right after the claim it supports {#place-citation-after-claim}
+
+Place citations immediately after the claim or claims they support.
+A citation at the end of a sentence reads as support for the whole sentence,
+so when it supports only one claim in it, put it beside that claim.
+When one source supports every claim in a sentence, the end of the sentence is right after the claims.
+
+::: {#exm-place-citation}
+
+# Placing a citation after a definition
+
+> ❌ A *Poisson random variable* [@wikipedia_poisson_distribution], or *Poisson count*,
+> counts events in a fixed interval.
+>
+> ✅ A *Poisson random variable*, or *Poisson count*,
+> counts events in a fixed interval [@wikipedia_poisson_distribution].
+
+The article presents the definition, and the definition is the claim,
+so the citation follows the definition rather than interrupting it after the term.
+
+:::
+
 # Cite a source once per passage {#cite-once-per-passage}
 
 Cite a source once in each div or passage, at the claim it supports.
