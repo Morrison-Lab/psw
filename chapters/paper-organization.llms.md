@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 10:28:30 (PST)
+Last modified: 2026-11-03 11:41:21 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -235,7 +235,7 @@ Three cases are not forward references to fix:
 
 A word such as “below” in an ordinary comparison, as in “values below the detection limit”, is not a pointer at all.
 
-When you insert or move a section, check the references that name a position, such as “the two sections above” or “the previous section”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong.
+When you insert or move a section, check the references that name a position, such as “the two sections above”, “the previous section”, or “the next exercises”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong. When the target has a cross-reference label, link it instead of describing its position: write “Exercises `@exr-a` through `@exr-b` establish the properties”, not “The next exercises establish the properties”.
 
 # 8 Links to videos and other media
 
