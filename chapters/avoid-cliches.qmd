@@ -392,8 +392,8 @@ Some clichés are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a
   scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three
-  or four sentences, seem monotonous. Let paragraph length follow the
-  ideas.
+  or four sentences, seem monotonous.
+  Let paragraph length follow the ideas.
 
 # Tone
 
