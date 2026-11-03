@@ -119,6 +119,12 @@ Two captions for the same figure show the difference:
 - Self-contained: "The logistic function at $-2$ is as high as $1$ minus its value at $2$ (`@exm-x`)." <!-- check-term-links: allow -->
   The reader learns the point at once.
 
+Write the caption in simple, direct prose (Ezra, 2026-11-03).
+A caption does not rely on another figure's caption:
+do not describe a figure as "the same paths as `@fig-x`, lifted onto the surface" or "the surface whose level sets are in `@fig-x`".
+State what this figure shows, as if it were the only figure on the page.
+A figure that adds a view of another, such as a surface for a contour plot, gets a caption that names its own quantities and its own point.
+
 Lead with a well-labeled figure or table
 instead of a long paragraph that describes a pipeline or compares groups.
 Use a diagram for a conceptual model, such as a directed acyclic graph (DAG),
