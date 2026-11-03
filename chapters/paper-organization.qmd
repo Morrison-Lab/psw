@@ -295,9 +295,15 @@ so neither pointer is needed.
 
 Two cases are not forward references to fix:
 
-- An overview near the start that previews the structure,
+- An overview near the start that previews the structure of the whole document,
   such as "Section 2 describes the data, and Section 3 gives the results".
   The reader is not meant to resolve the preview immediately.
+- An overview of a group of items,
+  such as "The next four exercises establish the properties of the sigmoid function".
+  Put it in its own paragraph before the first item,
+  not inside the first item,
+  because it describes the whole group
+  and an item that carries it reads wrongly alone, or on its own slide.
 - A sentence that names a figure or table placed beside it, such as "Table 2 shows the estimates".
   The reader encounters the table at once.
 
