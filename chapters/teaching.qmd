@@ -650,6 +650,41 @@ is `false`,
 a chunk that draws a figure the text discusses is `show`,
 and a chunk that loads a package or builds an object that later chunks use is `true`.
 
+# Put a full command in a code block, not in inline code
+
+This rule applies to all teaching materials that name commands,
+in every course and every teaching repository.
+
+- Put a full command that a reader will run, such as an install command,
+  in its own fenced code block with a language, such as `r` or `python`.
+  A rendered code block has a copy button, and inline code does not.
+- Do not run the block when its output is not the point.
+  Open the fence with the language alone, as in `r`, and not in braces, as in `{r}`,
+  so Quarto shows the code and does not evaluate it.
+- Keep inline code for a name inside a sentence,
+  such as a function, a package or an argument.
+- Introduce the block with a sentence that ends in a colon.
+  Do not follow a semicolon or a colon in the sentence with inline code
+  that the reader has to select by hand.
+
+::: {#exm-command-block}
+
+## Moving an install command out of a sentence
+
+> ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
+>
+> ✅ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`:
+>
+> ```r
+> install.packages(c("readr", "dplyr", "ggplot2", "purrr"))
+> ```
+
+The package names stay inline because they sit in the sentence.
+The install command moves to a block,
+so the reader copies it with one click.
+
+:::
+
 # Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code,
