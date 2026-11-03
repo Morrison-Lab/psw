@@ -26,7 +26,7 @@ rather than choosing it for the sentence at hand.
 :::
 
 [Clichés](#def-cliche) recur across unrelated documents,
-so they make writing read as generic and unconsidered,
+so they make writing seem generic and unconsidered,
 even when the underlying content is sound.
 
 AI writing assistants often produce these patterns in clusters,
@@ -381,8 +381,8 @@ Some clichés are typographic rather than verbal.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a
   scientific document. Leave them out.
 - **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three
-  or four sentences, read as monotonous. Let paragraph length follow the
-  ideas.
+  or four sentences, seem monotonous.
+  Let paragraph length follow the ideas.
 
 # Tone
 
