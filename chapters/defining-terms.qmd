@@ -961,6 +961,28 @@ Examples serve several crucial purposes:
   "A variable is a symbol representing a value
   that can take on different values."
   
+- **A characteristic without its object:**
+  A mode, kernel, support, maximum or median belongs to one object,
+  and the sentence names that object.
+  Name the object whose definition the characteristic is stated for,
+  such as the density, the distribution, the likelihood or the kernel,
+  and use "of the distribution" only when the definition is for distributions.
+  Where a text moves from a distribution to its density,
+  say so once rather than switching silently.
+  A bare "the mode" leaves the reader to guess the object,
+  and the guess can change the meaning:
+  the mode of a kernel is just its maximizer,
+  while the mode of a density is the point the kernel helps find.
+
+  **Incorrect:**
+  "The gamma distribution has the kernel $x^{a-1} e^{-x}$,
+  so maximizing it finds the mode."
+
+  **Correct:**
+  "The gamma density has the kernel $x^{a-1} e^{-x}$,
+  so maximizing the kernel finds the mode of the density."
+  A kernel is defined for a density, not for a distribution.
+
 - **Missing examples:**
   Never leave a definition without at least one example.
   
