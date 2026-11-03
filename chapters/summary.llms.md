@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -76,7 +76,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Replace the word “thing”](../chapters/word-choice.llms.md#say-which-thing) with the object, quantity, step, or idea that it stands for.
 - [Give a technical word one meaning](../chapters/word-choice.llms.md#give-a-technical-word-one-meaning).
 - [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon).
-- [Edit out clusters of clichéd words and sentence shapes](../chapters/avoid-cliches.llms.md), which make prose read as generic or machine-drafted.
+- [Edit out clusters of clichéd words and sentence shapes](../chapters/avoid-cliches.llms.md), which make prose seem generic or machine-drafted.
 - [Say what something is before what it is not](../chapters/avoid-cliches.llms.md#say-what-it-is-before-what-it-is-not).
 
 # 5 Writing for every reader

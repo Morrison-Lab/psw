@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -14,7 +14,7 @@ Last modified: 2026-11-02 19:49:15 (PST)
 >
 > **Definition 1 (Cliché)** A **cliché** is a word, phrase, sentence shape, or formatting habit that a writer uses by reflex rather than choosing it for the sentence at hand.
 
-[Clichés](#def-cliche) recur across unrelated documents, so they make writing read as generic and unconsidered, even when the underlying content is sound.
+[Clichés](#def-cliche) recur across unrelated documents, so they make writing seem generic and unconsidered, even when the underlying content is sound.
 
 AI writing assistants often produce these patterns in clusters, and many readers have learned to treat the patterns as signs that a draft was generated and to doubt that its author checked it.
 
@@ -213,7 +213,7 @@ Some clichés are typographic rather than verbal.
 - **The em-dash as a default connector.** Some writers, and many AI drafts, use the em-dash to join almost any two clauses. Vary your punctuation: a period, a comma, or a semicolon is often the better fit.
 - **Bold-leading bullets everywhere.** A `**Term:** explanation` bullet is fine once, but applying the pattern to every list turns it into a tic. Use it when the label earns emphasis, plain bullets otherwise.
 - **Emoji section headers.** Emoji in headings signal a blog post, not a scientific document. Leave them out.
-- **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three or four sentences, read as monotonous. Let paragraph length follow the ideas.
+- **Uniform paragraph rhythm.** Paragraphs of near-identical length, each three or four sentences, seem monotonous. Let paragraph length follow the ideas.
 
 # 7 Tone
 

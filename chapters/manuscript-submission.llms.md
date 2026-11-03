@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 This chapter collects the conventions that journals expect of a research manuscript at submission. Apply them by default, without waiting for a reviewer to ask.
 
@@ -164,7 +164,7 @@ Table 1: Common reporting guidelines by study design
 # 8 Statistics and numbers
 
 - Give each estimate with its 95% [confidence interval](../chapters/defining-terms.llms.md#def-confidence-interval), in one consistent format, such as “0.82 (95% CI, 0.71 to 0.95)”. Use “to” rather than a dash when a bound is negative.
-- Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact reads as a known value rather than as an estimate from the data.
+- Describe an estimate as an estimate, in the abstract too. Write “Under the stated difference-in-differences assumptions, we estimated that the intervention reduced time in notes by 1.26 minutes (95% CI, 0.68 to 1.84)”, not “Under the stated difference-in-differences assumptions, the intervention reduced time in notes by 1.26 minutes”. A point estimate stated as a bare fact seems to be a known value rather than an estimate from the data.
 - Report exact *P* values to 2 or 3 decimal places (“*P* = .03”), and “*P* \< .001” below that. AMA style uses a capital italic *P* and no leading zero. Never write “*P* = 0.000” or “NS”.
 - Lead with estimates and intervals, not significance. Avoid “trend toward significance” and “marginally significant”. Use “significant” only in its statistical sense.
 - When an interval is wide, say that the estimate **had more uncertainty**, rather than calling it “less precise” or “imprecise”. An interval that crosses the null is compatible with both benefit and harm, so say that too, rather than reporting “no effect”.

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -63,6 +63,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | Say which class the classifier predicts at $x = 2$. | State which class the classifier predicts at $x = 2$. |
 | the noise model says that the errors have mean zero | in the noise model, the errors have mean zero |
 | as Theorem 2 says, the estimator is unbiased | by Theorem 2, the estimator is unbiased |
+| the table reads as a list of errors | the table seems to be a list of errors |
+| the formula comes across as a definition | the formula seems to be a definition |
 
 Table 1: Idioms, clichés and slang, with literal alternatives
 

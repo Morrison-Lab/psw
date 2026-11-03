@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -193,7 +193,7 @@ Separate equations set side by side, such as $x = 1, \quad y = 2$, each have one
 
 # 4 Functions and their values
 
-A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” reads as a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
+A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” names a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
 
 > **NOTE:**
 >
@@ -560,7 +560,7 @@ When no rule covers a case, ask the same question: which symbol, name and form b
 
 # 13 Writing the predictor and design matrices
 
-Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix $\mX$ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic $X$ reads as a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
+Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix $\mX$ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic $X$ suggests a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
 
 Keep two objects apart, because they are not the same matrix:
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -184,7 +184,7 @@ Fronting is a stylistic choice, with costs and benefits.
 - The reader waits for the subject and verb, which runs against the advice to [lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject). A long fronted appositive delays them, and a reader may take the phrase for the subject (compare [Avoid garden-path sentences](#avoid-garden-path-sentences)).
 - The sentence no longer asserts the description as a main-clause claim, so the reader may treat it as background even when it is the point.
 - A pronoun subject (“it”) needs an antecedent in the previous sentence. A reader who cannot find it must stop to look.
-- It reads as more formal and literary, which suits some venues and not others.
+- It seems more formal and literary, which suits some venues and not others.
 
 **Guideline.** Front an appositive when it is short, familiar to the reader, and describes the subject. Keep the plain “X is Y” form when the description is the new information the paper depends on, when it is long, or when the subject is a pronoun without a clear antecedent.
 

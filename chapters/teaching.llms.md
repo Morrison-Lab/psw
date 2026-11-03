@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -181,7 +181,7 @@ When several courses or repositories have already written the same definition, t
 This rule applies to all teaching materials, in every course and every teaching repository.
 
 - Keep a list or table of like items, such as courses, readings, channels or glossary [term](../chapters/defining-terms.llms.md#def-term)s, in a CSV, YAML or JSON file with one record per item. The page reads the file and builds the table or list with a short function, instead of holding a hand-written Markdown table.
-- A data file can be counted, filtered, sorted and reused by another page, and a new row is a one-line change that a reviewer reads as data.
+- A data file can be counted, filtered, sorted and reused by another page, and a new row is a one-line change that a reviewer recognizes as a data change.
 - List the file under the page’s `resources:` when the site publishes it.
 - Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-02 19:49:15 (PST)
+Last modified: 2026-11-02 19:55:32 (PST)
 
 > **NOTE:**
 >
@@ -28,7 +28,7 @@ Put words between two formulas. Without them, the reader cannot tell where one f
 > >
 > > ✅ Define $f_k$, where $k \ge 2$.
 >
-> In the ❌ version the comma between the two formulas reads as part of the first one. The ✅ version names the relation between them.
+> In the ❌ version the comma between the two formulas seems to belong to the first one. The ✅ version names the relation between them.
 
 ## 1.2 Do not start a sentence with a symbol
 
