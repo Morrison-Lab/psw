@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 13:57:20 (PST)
+Last modified: 2026-11-03 15:03:18 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -262,6 +262,12 @@ Examples serve several crucial purposes:
   **Incorrect:** “A variable is something that can change.”
 
   **Correct:** “A variable is a symbol representing a value that can take on different values.”
+
+- **A characteristic without its object:** A mode, kernel, support, maximum, or median belongs to one object, and the sentence names that object. Name the object whose definition the characteristic is stated for, such as the density, the distribution, the likelihood, or the kernel, and use “of the distribution” only when the definition is for distributions. Where a text moves from a distribution to its density, say so once rather than switching silently. A bare “the mode” leaves the reader to guess the object, and a wrong guess misattributes the characteristic: a mode is a mode of one [function](https://morrison-lab.github.io/mds/functions.html#def-function), and the modes of a kernel and of its density coincide only by a theorem, not by definition.
+
+  **Incorrect:** “The gamma distribution has the kernel $x^{a-1} e^{-x}$, so maximizing it finds the mode.”
+
+  **Correct:** “The gamma density has the kernel $x^{a-1} e^{-x}$, so maximizing the kernel finds the mode of the density.” A kernel is defined for a density, not for a distribution.
 
 - **Missing examples:** Never leave a definition without at least one example.
 
