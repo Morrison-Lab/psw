@@ -662,7 +662,7 @@ in every course and every teaching repository.
   Open the fence with the language alone, as in `r`, and not in braces, as in `{r}`,
   so Quarto shows the code and does not evaluate it.
 - Keep inline code for a name inside a sentence,
-  such as a function, a package or an argument.
+  such as the name of a package, a variable or an argument.
 - Introduce the block with a sentence that ends in a colon.
   Do not follow a semicolon or a colon in the sentence with inline code
   that the reader has to select by hand.
