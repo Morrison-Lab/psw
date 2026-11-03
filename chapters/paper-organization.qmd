@@ -206,8 +206,8 @@ with who, what, when, where, why, how or which.
 **Poor headings**:
 
 - "What the coefficients mean"
-- "Interpretation of the coefficients"
-- "How sure are the coefficients?"
+- "Fitting: where the cost comes from"
+- "Uncertainty of the coefficients"
 
 **Better headings**:
 
