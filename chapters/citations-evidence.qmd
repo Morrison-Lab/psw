@@ -429,7 +429,7 @@ When one source supports every claim in a sentence, the end of the sentence is r
 > counts events in a fixed interval [@wikipedia_poisson_distribution].
 
 The article presents the definition, and the definition is the claim,
-so the citation follows the definition rather than interrupting it after the term.
+so the citation follows the definition rather than interrupting it after the [term](defining-terms.qmd#def-term).
 
 :::
 
