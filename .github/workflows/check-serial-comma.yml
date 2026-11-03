@@ -16,4 +16,5 @@ jobs:
       contents: read
     uses: Morrison-Lab/gha/.github/workflows/check-serial-comma.yml@v3
     with:
-      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
+      paths-ignore: '_extensions/**,latex-macros/**'
+      whole-tree:${{ github.event_name == 'workflow_dispatch' }}
