@@ -84,6 +84,11 @@ but they leave the reader guessing
 at the specific quantity or mechanism you mean.
 Whenever you can,
 replace a metaphor with the precise [term](defining-terms.qmd#def-term) for the thing you are describing.
+Test each verb and preposition:
+it must be literally true of its subject.
+A point does not "sit" at a height, and an estimate does not "live" in an interval.
+Write that the point is at the height and the estimate is in the interval.
+No list of phrases is complete, so apply the test to every word instead of looking a phrase up.
 @tbl-vague-precise lists some common vague phrases
 and more precise alternatives.
 
