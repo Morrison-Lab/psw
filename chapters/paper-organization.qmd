@@ -207,13 +207,15 @@ with who, what, when, where, why, how or which.
 
 - "What the coefficients mean"
 - "Fitting: where the cost comes from"
-- "Uncertainty of the coefficients"
+- "How sure are the coefficients?"
+- "Regularization of the model"
 
 **Better headings**:
 
 - "Interpreting the coefficients"
 - "Fitting the model by maximum likelihood"
 - "Quantifying the uncertainty of the coefficients"
+- "Regularizing the model"
 
 # Heading levels
 
