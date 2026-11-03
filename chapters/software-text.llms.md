@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 15:03:18 (PST)
+Last modified: 2026-11-03 15:46:25 (PST)
 
 Software projects depend on short documents:
 
@@ -56,5 +56,16 @@ A name that CRAN has used is usually unavailable for a new package and confuses 
 
 - Describe each change by its effect on the user, not by the file that changed.
 - Put breaking changes first, because the user must act on them.
+
+# 6 Nest document source files by heading level
+
+Split a long Quarto document into files that follow its headings:
+
+- The page file holds the YAML header, the macros include, every first-level heading, and an include of the body of each first-level section.
+- A section body holds that section’s second-level headings, and an include of the body of each subsection.
+- Continue the same way at each deeper level.
+- A file holds the headings nested below its own section’s heading, never that heading itself, so no file only adds one heading to one include.
+
+Readers and reviewers then find the outline in one place, and an author edits each file as a unit. Apply the structure to a page when you edit it, and leave pages you are not editing as they are.
 
 Back to top
