@@ -314,9 +314,13 @@ A word such as "below" in an ordinary comparison, as in "values below the detect
 is not a pointer at all.
 
 When you insert or move a section, check the references that name a position,
-such as "the two sections above" or "the previous section".
+such as "the two sections above", "the previous section", or "the next exercises".
 Name the target instead, as in "the sections on mortality and morbidity",
 so that a later insertion does not make the position wrong.
+When the target has a cross-reference label,
+link it instead of describing its position:
+write "Exercises `@exr-a` through `@exr-b` establish the properties",
+not "The next exercises establish the properties".
 
 # Links to videos and other media
 
