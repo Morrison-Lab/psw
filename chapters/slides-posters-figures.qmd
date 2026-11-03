@@ -120,7 +120,7 @@ Two captions for the same figure show the difference:
   The reader learns the point at once.
 
 A caption does not rely on another figure's caption (Ezra, 2026-11-03):
-do not describe a figure as "the same paths as `@fig-x`, lifted onto the surface" or "the surface whose level sets are in `@fig-x`".
+do not describe a figure as "the surface of `@fig-x`" or "the same paths as `@fig-x`".
 State what this figure shows, as if it were the only figure on the page.
 A figure that adds a view of another, such as a surface for a contour plot, gets a caption that names its own quantities and its own point.
 
