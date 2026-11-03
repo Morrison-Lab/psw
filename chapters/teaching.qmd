@@ -869,8 +869,9 @@ and add the names of the reused data, variables, parameters, or model.
 When the notes define a dataset in its own callout,
 link the dataset by that callout's id
 instead of describing it again,
-and name it beside the link:
-"the WCGS data (`@dat-wcgs`)" renders the dataset's number as the link text.
+and name it beside the link.
+Quarto renders `@dat-wcgs` as "Dataset 1" in the link text,
+so write "the WCGS data (`@dat-wcgs`)".
 Prefer a self-contained sentence
 when the part needs only one or two of those objects.
 
