@@ -5,7 +5,7 @@ and $\mu(x_i)$ is a number:
 the value of $\mu$ at $x_i$.
 Written with its placeholder argument,
 $\mu(x)$ already denotes a value,
-so "the value of $\mu(x)$ at $x_i$" reads as a value of a value.
+so "the value of $\mu(x)$ at $x_i$" names a value of a value.
 Either drop the placeholder and write "the value of $\mu$ at $x_i$",
 or keep the placeholder and name the substitution:
 "$\mu(x)$ evaluated at $x_i$".

@@ -103,7 +103,7 @@ Follow its link for the reasons and the exceptions.
 - [Give a technical word one meaning](word-choice.qmd#give-a-technical-word-one-meaning).
 - [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon).
 - [Edit out clusters of clichéd words and sentence shapes](avoid-cliches.qmd),
-  which make prose read as generic or machine-drafted.
+  which make prose seem generic or machine-drafted.
 - [Say what something is before what it is not](avoid-cliches.qmd#say-what-it-is-before-what-it-is-not).
 
 # Writing for every reader

@@ -40,7 +40,7 @@ Without them, the reader cannot tell where one formula ends and the next begins.
 >
 > ✅ Define $f_k$, where $k \ge 2$.
 
-In the ❌ version the comma between the two formulas reads as part of the first one.
+In the ❌ version the comma between the two formulas seems to belong to the first one.
 The ✅ version names the relation between them.
 
 :::

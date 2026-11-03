@@ -35,7 +35,7 @@ Fronting is a stylistic choice, with costs and benefits.
   so the reader may treat it as background even when it is the point.
 - A pronoun subject ("it") needs an antecedent in the previous sentence.
   A reader who cannot find it must stop to look.
-- It reads as more formal and literary, which suits some venues and not others.
+- It seems more formal and literary, which suits some venues and not others.
 
 **Guideline.**
 Front an appositive when it is short, familiar to the reader, and describes the subject.
