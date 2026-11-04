@@ -129,7 +129,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
   not in italic text.
 - Give every exercise a hint that links to the sections of the notes it draws on (Ezra, 2026-11-04),
   in a lab as in a homework.
-  Where an exercise asks for code, link the page of the programming primer that introduces the function it needs,
+  Where an exercise asks for code, link the section of the programming primer that introduces each command it needs,
   and link each definition or result the exercise rests on.
   Use a direct anchor link on the longest phrase that names the thing,
   as [Link the words, not a trailing citation](citations-evidence.qmd#link-the-words) describes.
