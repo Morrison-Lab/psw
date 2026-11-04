@@ -421,9 +421,9 @@ so the page needs no bibliography entry.
 
 # Linking the defined term to its Wikipedia article
 
-> ❌ A Poisson random variable [@wikipedia_poisson_distribution] counts events in a fixed interval.
+> ❌ `A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.`
 >
-> ✅ A [Poisson random variable](https://en.wikipedia.org/wiki/Poisson_distribution) counts events in a fixed interval.
+> ✅ A [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is a set of vertices joined by edges.
 
 The second version gives the reader the article from the word they were already reading.
 
