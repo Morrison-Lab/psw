@@ -922,9 +922,11 @@ and add the names of the reused data, variables, parameters, or model.
 When the notes define a dataset in its own callout,
 link the dataset by that callout's id
 instead of describing it again,
-and name it beside the link.
+and put the link on the dataset's name.
 Quarto renders `@dat-wcgs` as "Dataset 1" in the link text,
-so write "the WCGS data (`@dat-wcgs`)".
+so write "the [WCGS data](#dat-wcgs)",
+not "the WCGS data (`@dat-wcgs`)"
+(Ezra, 2026-11-04; see "Link the words, not a trailing citation" in `chapters/citations-evidence.qmd`).
 Prefer a self-contained sentence
 when the part needs only one or two of those objects.
 
