@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 08:50:26 (PST)
+Last modified: 2026-11-04 08:55:22 (PST)
 
 > **NOTE:**
 >
@@ -64,6 +64,8 @@ Active learning, in which students work through tasks themselves during class, i
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
 
 - Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.
+
+- Give every exercise a hint that links to the sections of the notes it draws on (Ezra, 2026-11-04), in a lab as in a homework. Where an exercise asks for code, link the section of the programming primer that introduces each command it needs, and link each definition or result the exercise rests on. Use a direct anchor link on the longest phrase that names the thing, as [Link the words, not a trailing citation](../chapters/citations-evidence.llms.md#link-the-words) describes. The hint points the reader to the material and does not give the answer.
 
 - Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29). Whatever the title tells the reader about the object, the body also says: name the object, link its definition, and say where it arises and what it is used for. For a title such as “Maximizing a gamma-family kernel”, the body says what a gamma distribution and its kernel are, and that maximizing the kernel finds the mode without computing the normalizing constant. A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care. The first exercise of a split series carries the background, and each later exercise begins by citing it, as the splitting rule above says.
 
@@ -444,7 +446,7 @@ The same holds inside a page. Focus on the content of the notes, not on their st
 > - ❌ “Use the setup of Exercise 1.”
 > - ✅ “Use the WCGS data, with outcome $\Outvar$ (coronary heart disease) and predictor $\Predvar$ (behavior pattern) from Exercise 1.”
 
-Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and name it beside the link. Quarto renders `@dat-wcgs` as “Dataset 1” in the link text, so write “the WCGS data (`@dat-wcgs`)”. Prefer a self-contained sentence when the part needs only one or two of those objects.
+Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders `@dat-wcgs` as “Dataset 1” in the link text, so write the dataset name as the link text, as in `[WCGS data](#dat-wcgs)`, not “the WCGS data (`@dat-wcgs`)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in `chapters/citations-evidence.qmd`). Prefer a self-contained sentence when the part needs only one or two of those objects.
 
 # 31 Write grading rubrics as checklists
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 08:50:26 (PST)
+Last modified: 2026-11-04 08:55:22 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -239,7 +239,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 
 # 9 Link the words, not a trailing citation
 
-When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as \[3\] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as `(see the Wikipedia article)` has the same fault.
+When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as \[3\] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as `(see the Wikipedia article)` has the same fault. A dataset reference follows the same rule (Ezra, 2026-11-04): link the dataset’s name to the dataset’s description, as in `` Use the [`Smarket` data](#dat-smarket). ``, not `` Use the `Smarket` data (@dat-smarket). ``, whose cross-reference renders as a parenthetical “(Dataset 1)” after the name.
 
 Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as `**[set](url)**`. Keep the numbered `[@key]` citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as `p. 5`. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.
 
