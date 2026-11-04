@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 08:11:34 (PST)
+Last modified: 2026-11-04 08:18:37 (PST)
 
 > **NOTE:**
 >
@@ -262,7 +262,11 @@ A series introduced by a colon is a list too, even with only two items, when the
 
 A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
 
-Say whether a list is exhaustive or exemplary. Ezra Morrison’s rule (2026-11-04): “always specify whether a list is exhaustive (with a lead-in like”X consists of the following categories:“) versus exemplary (lead in with”for example: “,”including:“, end with”etc”, or similar).” Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see [Example 14](#exm-exhaustive-exemplary)).
+Say whether a list is exhaustive or exemplary. Ezra Morrison stated the rule on 2026-11-04:
+
+> always specify whether a list is exhaustive (with a lead-in like “X consists of the following categories:”) versus exemplary (lead in with “for example:”, “including:”, end with “etc”, or similar)
+
+Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see [Example 14](#exm-exhaustive-exemplary)).
 
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
@@ -363,7 +367,7 @@ A few mechanics to keep in mind when writing a bullet list:
 > > - specificity;
 > > - etc.
 >
-> The first lead-in reads as exhaustive, yet a confusion matrix yields more metrics than the three listed. The second lead-in says the four cells are the whole set, and the third says its list is a sample.
+> The first lead-in reads as exhaustive, yet a confusion matrix yields more metrics than the three listed. The second lead-in says that the four cells are the whole set, and the third says that its list is a sample.
 
 # 16 Write to communicate, not to impress
 
