@@ -248,36 +248,36 @@
     "objectID": "chapters/citations-evidence.html#poor-unsupported-claim",
     "href": "chapters/citations-evidence.html#poor-unsupported-claim",
     "title": "Citations and evidence",
-    "section": "21.1 Poor (unsupported claim)",
-    "text": "21.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support."
+    "section": "22.1 Poor (unsupported claim)",
+    "text": "22.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support."
   },
   {
     "objectID": "chapters/citations-evidence.html#better-citation-provided",
     "href": "chapters/citations-evidence.html#better-citation-provided",
     "title": "Citations and evidence",
-    "section": "21.2 Better (citation provided)",
-    "text": "21.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim."
+    "section": "22.2 Better (citation provided)",
+    "text": "22.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim."
   },
   {
     "objectID": "chapters/citations-evidence.html#best-citation-with-context",
     "href": "chapters/citations-evidence.html#best-citation-with-context",
     "title": "Citations and evidence",
-    "section": "21.3 Best (citation with context)",
-    "text": "21.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained."
+    "section": "22.3 Best (citation with context)",
+    "text": "22.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained."
   },
   {
     "objectID": "chapters/citations-evidence.html#poor-irrelevant-citation",
     "href": "chapters/citations-evidence.html#poor-irrelevant-citation",
     "title": "Citations and evidence",
-    "section": "21.4 Poor (irrelevant citation)",
-    "text": "21.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science."
+    "section": "22.4 Poor (irrelevant citation)",
+    "text": "22.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science."
   },
   {
     "objectID": "chapters/citations-evidence.html#better-relevant-citation",
     "href": "chapters/citations-evidence.html#better-relevant-citation",
     "title": "Citations and evidence",
-    "section": "21.5 Better (relevant citation)",
-    "text": "21.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
+    "section": "22.5 Better (relevant citation)",
+    "text": "22.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
   },
   {
     "objectID": "chapters/defining-terms.html",
