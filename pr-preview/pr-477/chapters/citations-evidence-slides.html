@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-03 16:41:21 (PST)</p>
+  <p class="date">Last modified: 2026-11-03 16:55:18 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -586,7 +586,7 @@
 <section class="slide level2">
 
 <p>Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.</p>
-<p>The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a <code>@misc</code> entry in <code>references.bib</code> (author <code>{Wikipedia contributors}</code>, the article’s URL, the access date) keyed <code>wikipedia_&lt;article_title&gt;</code>, and put the citation right after the content it covers, as <code>[@wikipedia_poisson_distribution]</code>. When the content is a defined <a href="../chapters/defining-terms.html#def-term">term</a>, link the term’s own words to the article instead, as described in <a href="#/link-the-words">Link the words, not a trailing citation</a>. Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.</p>
+<p>The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a <code>@misc</code> entry in <code>references.bib</code> (author <code>{Wikipedia contributors}</code>, the article’s URL, the access date) keyed <code>wikipedia_&lt;article_title&gt;</code>, and put the citation right after the content it covers, as <code>[@wikipedia_poisson_distribution]</code>. When the content is the name of a concept you define, link those words to the article instead, as described in <a href="#/link-the-words">Link the words, not a trailing citation</a>. Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.</p>
 <ul>
 <li>Cite the article for the specific concept, not a broader article that mentions it.</li>
 <li>Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.</li>
@@ -607,12 +607,12 @@
 </section>
 <section class="slide level2">
 
-<p>When a source backs a <a href="../chapters/defining-terms.html#def-term">term</a> or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as [3] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as <code>(see the Wikipedia article)</code> has the same fault.</p>
-<p>Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded defined <a href="../chapters/defining-terms.html#def-term">term</a>, put the link inside the bold, as <code>**[set](url)**</code>. Keep the numbered <code>[@key]</code> citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as <code>p. 5</code>. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.</p>
+<p>When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as [3] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as <code>(see the Wikipedia article)</code> has the same fault.</p>
+<p>Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as <code>**[set](url)**</code>. Keep the numbered <code>[@key]</code> citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as <code>p. 5</code>. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.</p>
 <div id="exm-link-the-words" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Linking the defined term to its Wikipedia article)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ A graph <span class="citation" data-cites="wikipedia_graph_theory">(<a href="#/references" role="doc-biblioref" onclick=""><strong>wikipedia_graph_theory?</strong></a>)</span> is a set of vertices joined by edges.</p>
+<p>❌ <code>A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.</code></p>
 <p>✅ A <a href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">graph</a> is a set of vertices joined by edges.</p>
 </blockquote>
 <p>The second version gives the reader the article from the word they were already reading.</p>

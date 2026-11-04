@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 16:41:21 (PST)
+Last modified: 2026-11-03 16:55:18 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -220,7 +220,7 @@ Leave a link out only for a reason such as one of the following:
 
 Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.
 
-The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. When the content is a defined [term](../chapters/defining-terms.llms.md#def-term), link the term’s own words to the article instead, as described in [Link the words, not a trailing citation](#link-the-words). Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.
+The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. When the content is the name of a concept you define, link those words to the article instead, as described in [Link the words, not a trailing citation](#link-the-words). Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.
 
 - Cite the article for the specific concept, not a broader article that mentions it.
 - Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.
@@ -239,15 +239,15 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 
 # 9 Link the words, not a trailing citation
 
-When a source backs a [term](../chapters/defining-terms.llms.md#def-term) or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as \[3\] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as `(see the Wikipedia article)` has the same fault.
+When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as \[3\] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as `(see the Wikipedia article)` has the same fault.
 
-Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded defined [term](../chapters/defining-terms.llms.md#def-term), put the link inside the bold, as `**[set](url)**`. Keep the numbered `[@key]` citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as `p. 5`. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.
+Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as `**[set](url)**`. Keep the numbered `[@key]` citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as `p. 5`. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.
 
 > **NOTE:**
 >
 > **Example 5 (Linking the defined term to its Wikipedia article)**  
 >
-> > ❌ A graph ([**wikipedia_graph_theory?**](#ref-wikipedia_graph_theory)) is a set of vertices joined by edges.
+> > ❌ `A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.`
 > >
 > > ✅ A [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is a set of vertices joined by edges.
 >
