@@ -409,6 +409,10 @@ Do not write the words and then add a numbered citation or a parenthetical link 
 A trailing number such as [3] makes the reader leave the sentence to find out what it points to,
 and it separates the link from the words it supports.
 A parenthetical such as `(see the Wikipedia article)` has the same fault.
+A dataset reference follows the same rule (Ezra, 2026-11-04):
+link the dataset's name to the dataset's description, as in ``Use the [`Smarket` data](#dat-smarket).``,
+not ``Use the `Smarket` data (@dat-smarket).``,
+whose cross-reference renders as a parenthetical "(Dataset 1)" after the name.
 
 Link the longest phrase that names the thing, in the sentence that uses it.
 Inside a bolded name, put the link inside the bold, as `**[set](url)**`.
