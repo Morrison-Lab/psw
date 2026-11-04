@@ -31,7 +31,7 @@ Ezra Morrison stated the rule on 2026-11-04:
 > always specify whether a list is exhaustive
 > (with a lead-in like "X consists of the following categories:")
 > versus exemplary
-> (lead in with "for example: ", "including:", end with "etc", or similar)
+> (lead in with "for example: ", "including:", end with "etc", or similar).
 
 Without a marker, the reader cannot tell
 whether an item left off the list is missing from the topic
