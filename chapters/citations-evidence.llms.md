@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 16:43:22 (PST)
+Last modified: 2026-11-03 17:12:27 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -220,7 +220,7 @@ Leave a link out only for a reason such as one of the following:
 
 Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.
 
-The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.
+The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article’s URL, the access date) keyed `wikipedia_<article_title>`, and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`. When the content is the name of a concept you define, link those words to the article instead, as described in [Link the words, not a trailing citation](#link-the-words). Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.
 
 - Cite the article for the specific concept, not a broader article that mentions it.
 - Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.
@@ -237,17 +237,33 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 >
 > A reader who wants another presentation of the Poisson distribution now has one, and the definition itself still comes from your own text and its traditional reference.
 
-# 9 Number bracketed citations
+# 9 Link the words, not a trailing citation
+
+When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as \[3\] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as `(see the Wikipedia article)` has the same fault.
+
+Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as `**[set](url)**`. Keep the numbered `[@key]` citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as `p. 5`. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.
+
+> **NOTE:**
+>
+> **Example 5 (Linking the defined term to its Wikipedia article)**  
+>
+> > ❌ `A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.`
+> >
+> > ✅ A [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is a set of vertices joined by edges.
+>
+> The second version gives the reader the article from the word they were already reading.
+
+# 10 Number bracketed citations
 
 On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, such as \[1\] or \[1, p. 5\]. An in-text citation, `@key`, prints the author name and the number, such as “Hastie et al. \[2\]”. Write `[@key]` when the source supports a claim, and `@key` when the author is the subject of the sentence. Never start a sentence or a list item with a bare `@key` unless the author is its subject. The author list becomes the subject, so a list of such items prints the same author name, such as “Wikipedia contributors \[3\]”, again and again. Write the description first, and end the sentence with the bracketed `[@key]`. The sites get this from the shared citation style and filter in [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
-# 10 Place a citation right after the claim it supports
+# 11 Place a citation right after the claim it supports
 
 Place citations immediately after the claim or claims they support. A citation at the end of a sentence reads as support for the whole sentence, so when it supports only one claim in it, put it beside that claim. When one source supports every claim in a sentence, the end of the sentence is right after the claims.
 
 > **NOTE:**
 >
-> **Example 5 (Placing a citation after a definition)**  
+> **Example 6 (Placing a citation after a definition)**  
 >
 > > ❌ A *Poisson random variable* ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)), or *Poisson count*, counts events in a fixed interval.
 > >
@@ -255,13 +271,13 @@ Place citations immediately after the claim or claims they support. A citation a
 >
 > The article presents the definition, and the definition is the claim, so the citation follows the definition rather than interrupting it after the [term](../chapters/defining-terms.llms.md#def-term).
 
-# 11 Cite a source once per passage
+# 12 Cite a source once per passage
 
 Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`. The rule to cite a Wikipedia article once, where its [term](../chapters/defining-terms.llms.md#def-term) is defined, is a case of this one.
 
 > **NOTE:**
 >
-> **Example 6 (Citing one source once in a definition)**  
+> **Example 7 (Citing one source once in a definition)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)). Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 > >
@@ -269,7 +285,7 @@ Cite a source once in each div or passage, at the claim it supports. A second ci
 >
 > Both versions credit the same article. The second one does it once, in the source line that closes the div.
 
-# 12 Best practices
+# 13 Best practices
 
 To effectively support your claims:
 
@@ -281,7 +297,7 @@ To effectively support your claims:
 6.  **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7.  **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
-# 13 Quote the original
+# 14 Quote the original
 
 Quote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.
 
@@ -291,15 +307,15 @@ Quote and cite the source that said it, not a later source that quotes it. Check
 
 Credit a quotation to whoever speaks it in the primary source, even when the speaker is quoting someone else. When attribution is in doubt, read the primary source (a transcript, the original page) first. Uncertainty about who said a line is not evidence about who said it.
 
-# 14 Copy organization names from their source
+# 15 Copy organization names from their source
 
 When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.
 
-# 15 Verify each bibliography entry
+# 16 Verify each bibliography entry
 
 Check each detail of a bibliography entry against an official source. Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
 
-# 16 Cite an alias directly
+# 17 Cite an alias directly
 
 When a source uses another name for a defined [term](../chapters/defining-terms.llms.md#def-term), write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
 
@@ -307,7 +323,7 @@ When a source uses another name for a defined [term](../chapters/defining-terms.
 >
 > ✅ `also called the **alias** [@key, section]`
 
-# 17 Cite the original for named results
+# 18 Cite the original for named results
 
 When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
 
@@ -337,17 +353,17 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 > **NOTE:**
 >
-> **Example 7 (Crediting Chebyshev’s inequality)**  
+> **Example 8 (Crediting Chebyshev’s inequality)**  
 >
 > > ❌ Chebyshev’s inequality bounds the probability that …
 > >
 > > ✅ Chebyshev’s inequality bounds the probability that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
 
-# 18 Put the content first
+# 19 Put the content first
 
 Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
 
-# 19 Adapting another course’s material
+# 20 Adapting another course’s material
 
 When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.
 
@@ -371,7 +387,7 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-# 20 Material from your own work
+# 21 Material from your own work
 
 Do not formally acknowledge material you borrow from yourself or your own group. “Your group” means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG. Link to it, but do not credit it, except for the credits and citations listed below. This covers:
 
@@ -407,7 +423,7 @@ A link to a sister site that sends the reader to further reading is a cross-refe
 
 When you find an existing credit to your own work, remove it and add or keep a link to it.
 
-# 21 Common citation errors to avoid
+# 22 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
@@ -418,39 +434,39 @@ When you find an existing credit to your own work, remove it and add or keep a l
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-# 22 Examples
+# 23 Examples
 
-## 22.1 Poor (unsupported claim)
+## 23.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-## 22.2 Better (citation provided)
+## 23.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-## 22.3 Best (citation with context)
+## 23.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-## 22.4 Poor (irrelevant citation)
+## 23.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-## 22.5 Better (relevant citation)
+## 23.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-# 23 Conclusion
+# 24 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
