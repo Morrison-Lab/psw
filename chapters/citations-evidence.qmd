@@ -371,6 +371,8 @@ Cite it through the bibliography like any other source,
 with a `@misc` entry in `references.bib` (author `{Wikipedia contributors}`, the article's URL, the access date)
 keyed `wikipedia_<article_title>`,
 and put the citation right after the content it covers, as `[@wikipedia_poisson_distribution]`.
+When the content is the name of a concept you define, link those words to the article instead,
+as described in [Link the words, not a trailing citation](#link-the-words).
 Keep the primary source's citation beside the claim it supports.
 Never list a Wikipedia article in a Further reading section.
 Wikipedia appears only as a citation beside the content it covers.
@@ -396,6 +398,34 @@ A Further reading section lists primary sources, textbooks, courses and other re
 
 A reader who wants another presentation of the Poisson distribution now has one,
 and the definition itself still comes from your own text and its traditional reference.
+
+:::
+
+# Link the words, not a trailing citation {#link-the-words}
+
+When a source backs the name of a defined concept or a named result, and the source has a stable web page,
+hyperlink the words themselves to that page.
+Do not write the words and then add a numbered citation or a parenthetical link after them.
+A trailing number such as [3] makes the reader leave the sentence to find out what it points to,
+and it separates the link from the words it supports.
+A parenthetical such as `(see the Wikipedia article)` has the same fault.
+
+Link the longest phrase that names the thing, in the sentence that uses it.
+Inside a bolded name, put the link inside the bold, as `**[set](url)**`.
+Keep the numbered `[@key]` citation for a claim that no phrase names,
+for a source without a stable page, such as a book, and for a locator such as `p. 5`.
+Where a link replaces the citation, the link is the credit,
+so the page needs no bibliography entry.
+
+::: {#exm-link-the-words}
+
+# Linking the defined term to its Wikipedia article
+
+> ❌ `A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.`
+>
+> ✅ A [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is a set of vertices joined by edges.
+
+The second version gives the reader the article from the word they were already reading.
 
 :::
 
