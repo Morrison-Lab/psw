@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 23:26:12 (PST)
+Last modified: 2026-11-04 00:19:01 (PST)
 
 > **NOTE:**
 >
@@ -188,7 +188,9 @@ This rule applies to all teaching materials, in every course and every teaching 
 
 # 12 Pair exploratory data analysis with plots
 
-- Make each exploratory data analysis exercise or lab include graphical methods, not only numerical summaries (Ezra, 2026-11-04). Pair the summary with a plot of the same quantity: a histogram or boxplot for a distribution, and a scatterplot or time plot for a trend or a relationship.
+- Make each exploratory data analysis exercise or lab include graphical methods, not only numerical summaries (Ezra, 2026-11-04). Pair the summary with a plot of the same quantity:
+  - **A distribution:** a histogram or boxplot.
+  - **A trend or a relationship:** a scatterplot or time plot.
 - Do not limit an exploratory analysis to counts and correlations. A plot shows the shape, the outliers, and the trend that one number hides.
 - Give each plot the figure treatment in [Make figures accessible](#make-figures-accessible).
 
