@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 08:18:37 (PST)
+Last modified: 2026-11-04 08:40:04 (PST)
 
 > **NOTE:**
 >
@@ -264,7 +264,7 @@ A case analysis is a parallel run too. Write one bullet per case, and begin each
 
 Say whether a list is exhaustive or exemplary. Ezra Morrison stated the rule on 2026-11-04:
 
-> always specify whether a list is exhaustive (with a lead-in like “X consists of the following categories:”) versus exemplary (lead in with “for example:”, “including:”, end with “etc”, or similar)
+> always specify whether a list is exhaustive (with a lead-in like “X consists of the following categories:”) versus exemplary (lead in with “for example:”, “including:”, end with “etc”, or similar).
 
 Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see [Example 14](#exm-exhaustive-exemplary)).
 
