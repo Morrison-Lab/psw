@@ -369,6 +369,9 @@ Follow these principles when introducing new [term](#def-term)s:
   For example, write
   `the expected squared prediction error is the sum of the squared [bias](#def-bias), the [variance](#def-variance), and the [residual variance](#def-residual-variance)`,
   not `the expected squared prediction error is the sum of the squared bias, the variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))`.
+  The same holds for a source:
+  link the term's words to the source's page instead of adding a numbered citation after them,
+  as [Link the words, not a trailing citation](citations-evidence.qmd#link-the-words) describes.
   The parenthetical makes the reader read each term twice,
   and it separates the link from the place where the term does its work.
   If a term sits inside math, where a link cannot go,
