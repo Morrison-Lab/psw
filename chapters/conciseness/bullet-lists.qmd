@@ -25,6 +25,19 @@ A case analysis is a parallel run too.
 Write one bullet per case,
 and begin each with a bold label that names the case.
 
+Say whether a list is exhaustive or exemplary.
+Ezra Morrison stated the rule on 2026-11-04:
+
+> always specify whether a list is exhaustive
+> (with a lead-in like "X consists of the following categories:")
+> versus exemplary
+> (lead in with "for example: ", "including:", end with "etc", or similar).
+
+Without a marker, the reader cannot tell
+whether an item left off the list is missing from the topic
+or only from the list
+(see @exm-exhaustive-exemplary).
+
 Bullet lists matter most on slides,
 where a reader scans a list rather than reading it as a sentence.
 The rule is one case of a broader preference for more structure:
@@ -124,5 +137,36 @@ and the bullets show that there are three.
 
 Each bullet holds one formulation,
 and the definition of the empirical risk is displayed rather than buried in the sentence.
+
+:::
+
+::: {#exm-exhaustive-exemplary}
+
+## Marking a list as exhaustive or exemplary
+
+> ❌ The metrics computed from a confusion matrix are:
+>
+> - accuracy;
+> - sensitivity;
+> - specificity.
+>
+> ✅ A confusion matrix for a binary classifier consists of the following four cells:
+>
+> - true positives;
+> - false positives;
+> - false negatives;
+> - true negatives.
+>
+> ✅ Metrics computed from a confusion matrix include:
+>
+> - accuracy;
+> - sensitivity;
+> - specificity;
+> - etc.
+
+The first lead-in reads as exhaustive,
+yet a confusion matrix yields more metrics than the three listed.
+The second lead-in says that the four cells are the whole set,
+and the third says that its list is a sample.
 
 :::
