@@ -373,7 +373,7 @@ This rule applies to all teaching materials, in every course and every teaching 
   a histogram or boxplot for a distribution,
   and a scatterplot or time plot for a trend or a relationship.
 - Do not limit an exploratory analysis to counts and correlations.
-  A plot shows the shape, the outliers and the trend that one number hides.
+  A plot shows the shape, the outliers, and the trend that one number hides.
 - Give each plot the figure treatment in [Make figures accessible](#make-figures-accessible).
 
 # Show each idea applied and in a figure
