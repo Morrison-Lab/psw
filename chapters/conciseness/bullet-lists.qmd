@@ -26,11 +26,13 @@ Write one bullet per case,
 and begin each with a bold label that names the case.
 
 Say whether a list is exhaustive or exemplary.
-Ezra Morrison's rule (2026-11-04):
-"always specify whether a list is exhaustive
-(with a lead-in like "X consists of the following categories:")
-versus exemplary
-(lead in with "for example: ", "including:", end with "etc", or similar)."
+Ezra Morrison stated the rule on 2026-11-04:
+
+> always specify whether a list is exhaustive
+> (with a lead-in like "X consists of the following categories:")
+> versus exemplary
+> (lead in with "for example: ", "including:", end with "etc", or similar)
+
 Without a marker, the reader cannot tell
 whether an item left off the list is missing from the topic
 or only from the list
@@ -164,7 +166,7 @@ and the definition of the empirical risk is displayed rather than buried in the 
 
 The first lead-in reads as exhaustive,
 yet a confusion matrix yields more metrics than the three listed.
-The second lead-in says the four cells are the whole set,
-and the third says its list is a sample.
+The second lead-in says that the four cells are the whole set,
+and the third says that its list is a sample.
 
 :::
