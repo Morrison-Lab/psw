@@ -573,7 +573,8 @@ They give an alternative to the reader who is short of time:
 They label a step that has no condition and say when to do it:
 "this step is optional and should be performed only if we want each gene to be on the same scale" [@james2021islr2, section 12.5, p. 543].
 
-> ❌ In another language, use a port of `SyncRNG` to get the same data; without one, draw your own data from the same model.
+> ❌ In another language, use a port of `SyncRNG` to get the same data;
+> without one, draw your own data from the same model.
 >
 > ✅ If you use a language other than R or Python, use a port of `SyncRNG` to get the same data.
 > If no port exists, draw your own data from the same model;
