@@ -64,7 +64,7 @@ and he divided it into four maxims [@davis2024implicature]:
 
 A reader of technical writing expects the same cooperation from the author.
 A sentence that breaks a maxim makes the reader stop and guess what the author meant.
-Most rules in this book name one way to break a maxim, and the fix.
+Most rules in this book name one way to break a maxim and the fix.
 
 The chapters serve the maxims as follows:
 
