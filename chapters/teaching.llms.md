@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 17:19:51 (PST)
+Last modified: 2026-11-04 17:36:25 (PST)
 
 > **NOTE:**
 >
@@ -163,7 +163,17 @@ Parsimony outranks convention when choosing a primary definition. The convention
 
 When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.
 
-# 10 Use real data and compute every number
+# 10 Match datasets and assignments to the reference texts
+
+Students can ask an AI assistant for a complete solution to any homework problem, so a problem is no more secure for never having been published (Ezra, 2026-11-04). Choose assignments for their fit with the course, not for novelty.
+
+- Use as an in-class example the dataset that the reference texts and the other instructors of the course use for that topic. Depart from it only for a stated reason.
+- Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic, and use the same datasets they do.
+- Keep assessment that must be secure, such as an exam, in a setting the instructor controls, because a take-home problem cannot be.
+
+Check the reference text itself before naming its datasets. Open the chapter and list the dataset each section uses, rather than recalling them.
+
+# 11 Use real data and compute every number
 
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
@@ -180,7 +190,7 @@ When several courses or repositories have already written the same definition, t
 >
 > The ✅ version lets every later slide refer to something the reader has already seen.
 
-# 11 Store structured data in structured formats
+# 12 Store structured data in structured formats
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
@@ -190,7 +200,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.
 
-# 12 Pair exploratory data analysis with plots
+# 13 Pair exploratory data analysis with plots
 
 - Make each exploratory data analysis exercise or lab include graphical methods, not only numerical summaries (Ezra, 2026-11-04). Pair the summary with a plot of the same quantity:
   - **A distribution:** a histogram or boxplot.
@@ -198,7 +208,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Do not limit an exploratory analysis to counts and correlations. A plot shows the shape, the outliers, and the trend that one number hides.
 - Give each plot the figure treatment in [Make figures accessible](#make-figures-accessible).
 
-# 13 Show each idea applied and in a figure
+# 14 Show each idea applied and in a figure
 
 - Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
 - Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
@@ -211,7 +221,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Discuss and cross-reference every figure in the prose (Ezra, 2026-11-02). Cite it with `@fig-id`, and say what the reader should see in it. A figure that no sentence cites or interprets is decoration.
 - Nest a figure that belongs to one example or exercise inside that `#exm-`, `#exr-` or `#sol-` div (Ezra, 2026-11-02). A figure outside the div leaves the example or exercise incomplete when the reader meets it alone, and moves with the wrong text when the page is reorganized. Leave a figure that several examples share outside every div, and cite it from each. The `check-figure-placement` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each figure on a changed line that no prose cites and each figure placed directly after an example, exercise or solution div without being inside it. A `<!-- figure-placement: allow -->` comment on the figure or inside its div suppresses the report for a shared figure ([gha#1378](https://github.com/Morrison-Lab/gha/pull/1378)).
 
-# 14 Follow every example with an exercise and solution
+# 15 Follow every example with an exercise and solution
 
 Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it.
 
@@ -243,7 +253,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 >
 > The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see [Use real data and compute every number](#use-real-data-and-compute-every-number)).
 
-# 15 Write labs for both languages and any computer
+# 16 Write labs for both languages and any computer
 
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
@@ -256,7 +266,7 @@ These rules apply to all teaching materials, in every course and every teaching 
 - Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
-# 16 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
+# 17 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
 
@@ -270,7 +280,7 @@ This rule applies to every executed code chunk in teaching materials, in every c
 - Give a chunk that only stores values for later code or inline code `#| include: false`. When the chunk that computes those values is already hidden, merge the storing code into that chunk.
 - Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than `None` and shows the chunk as one code block per printed value, such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`. End each such call with a semicolon, or assign its value.
 
-# 17 Present R results with modern packages
+# 18 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -281,7 +291,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-# 18 Manipulate data with dplyr, not base R
+# 19 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -295,7 +305,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-# 19 Include code from files instead of copying it
+# 20 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -304,7 +314,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-# 20 Comment every code chunk to say what and why
+# 21 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -313,7 +323,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-# 21 Set `code-fold` by what the code does and whether the prose mentions it
+# 22 Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
@@ -325,7 +335,7 @@ Set `#| code-fold:` on each chunk by two questions: does the prose mention the c
 
 For example, a chunk that fits a model the text walks through and prints its coefficients is `false`, a chunk that draws a figure the text discusses is `show`, and a chunk that loads a package or builds an object that later chunks use is `true`.
 
-# 22 Put a full command in a code block, not in inline code
+# 23 Put a full command in a code block, not in inline code
 
 This rule applies to all teaching materials that name commands, in every course and every teaching repository.
 
@@ -348,7 +358,7 @@ This rule applies to all teaching materials that name commands, in every course 
 >
 > The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.
 
-# 23 Introduce every function in a programming primer
+# 24 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -357,14 +367,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-# 24 Make figures accessible
+# 25 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-# 25 Split a page before it grows too long
+# 26 Split a page before it grows too long
 
 A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.
 
@@ -376,7 +386,7 @@ A page should load and finish rendering its math in under 5 seconds, and its scr
 
 The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
 
-# 26 Keep sibling headings to about five
+# 27 Keep sibling headings to about five
 
 Aim for at most about five sibling headings under one parent heading, and split or group the headings when there are more than seven (Ezra, 2026-11-02). Sibling headings are headings of the same level under the same parent. The top-level headings of a page or book chapter count as siblings under the page.
 
@@ -389,7 +399,7 @@ A reader who scans a list of headings holds the whole list in mind while choosin
 
 The `check-heading-siblings` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1390](https://github.com/Morrison-Lab/gha/pull/1390)) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.
 
-# 27 Fold a one-paragraph section into its neighbor
+# 28 Fold a one-paragraph section into its neighbor
 
 Give a heading to a point that can stand alone, and fold a section of a single short paragraph into the section it qualifies or follows (Ezra, 2026-11-02). A heading that opens a one-paragraph section adds an entry to the list of headings and gives the reader nothing to find there. This is a guideline, not a minimum length: a definition, a distinct step or a named result can be short.
 
@@ -399,7 +409,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - If a point is one of several parallel points, make it an item in the parent’s list.
 - Do not delete the content: move it to the section it belongs to.
 
-# 28 Structure slides for the reader
+# 29 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -410,7 +420,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-# 29 Give each concept in a note sheet its own row
+# 30 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -431,7 +441,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-# 30 Talk about the ideas, not the notes
+# 31 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -450,7 +460,7 @@ The same holds inside a page. Focus on the content of the notes, not on their st
 
 Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders `@dat-wcgs` as “Dataset 1” in the link text, so write the dataset name as the link text, as in `[WCGS data](#dat-wcgs)`, not “the WCGS data (`@dat-wcgs`)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in `chapters/citations-evidence.qmd`). Prefer a self-contained sentence when the part needs only one or two of those objects.
 
-# 31 Write grading rubrics as checklists
+# 32 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -480,14 +490,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-# 32 Credit other courses without summarizing them
+# 33 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-# 33 Finish each unit completely
+# 34 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -499,7 +509,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-# 34 Rules that apply to all writing
+# 35 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
