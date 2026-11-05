@@ -681,10 +681,12 @@ does the prose mention the code?
 - `#| code-fold: true` when the prose does not mention the code.
   The code starts hidden, and a reader who wants it can open it.
 
-For example, a chunk that fits a model the text walks through and prints its coefficients is `show`,
-a chunk that draws a figure the text discusses is `show`,
-a chunk that defines the helper [function](https://morrison-lab.github.io/mds/functions.html#def-function)s a section introduces is `show`,
-and a chunk that loads a package the text never mentions is `true`.
+For example:
+
+- A chunk that fits a model the text walks through and prints its coefficients is `show`.
+- A chunk that draws a figure the text discusses is `show`.
+- A chunk that defines the helper functions a section introduces is `show`. <!-- check-term-links: allow -->
+- A chunk that loads a package the text never mentions is `true`.
 
 # Put a full command in a code block, not in inline code
 
