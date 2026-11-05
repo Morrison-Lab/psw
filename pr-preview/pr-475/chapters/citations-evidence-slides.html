@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-03 14:47:49 (PST)</p>
+  <p class="date">Last modified: 2026-11-04 17:42:21 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -586,7 +586,7 @@
 <section class="slide level2">
 
 <p>Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.</p>
-<p>The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a <code>@misc</code> entry in <code>references.bib</code> (author <code>{Wikipedia contributors}</code>, the article’s URL, the access date) keyed <code>wikipedia_&lt;article_title&gt;</code>, and put the citation right after the content it covers, as <code>[@wikipedia_poisson_distribution]</code>. Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.</p>
+<p>The Wikipedia citation adds to the traditional reference and never replaces it. Cite it through the bibliography like any other source, with a <code>@misc</code> entry in <code>references.bib</code> (author <code>{Wikipedia contributors}</code>, the article’s URL, the access date) keyed <code>wikipedia_&lt;article_title&gt;</code>, and put the citation right after the content it covers, as <code>[@wikipedia_poisson_distribution]</code>. When the content is the name of a concept you define, link those words to the article instead, as described in <a href="#/link-the-words">Link the words, not a trailing citation</a>. Keep the primary source’s citation beside the claim it supports. Never list a Wikipedia article in a Further reading section. Wikipedia appears only as a citation beside the content it covers. A Further reading section lists primary sources, textbooks, courses and other resources instead.</p>
 <ul>
 <li>Cite the article for the specific concept, not a broader article that mentions it.</li>
 <li>Read the article’s definition before citing it, because notation and conventions vary, and a reader who follows the link should find the same concept you defined. If the article’s convention differs from yours, say how.</li>
@@ -602,21 +602,52 @@
 <p>A reader who wants another presentation of the Poisson distribution now has one, and the definition itself still comes from your own text and its traditional reference.</p>
 </div>
 </section>
-<section id="number-bracketed-citations" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Number bracketed citations</h2>
+<section id="link-the-words" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Link the words, not a trailing citation</h2>
+</section>
+<section class="slide level2">
+
+<p>When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as [3] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as <code>(see the Wikipedia article)</code> has the same fault. A dataset reference follows the same rule (Ezra, 2026-11-04): link the dataset’s name to the dataset’s description, as in <code>Use the [`Smarket` data](#dat-smarket).</code>, not <code>Use the `Smarket` data (@dat-smarket).</code>, whose cross-reference renders as a parenthetical “(Dataset 1)” after the name.</p>
+<p>Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as <code>**[set](url)**</code>. Keep the numbered <code>[@key]</code> citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as <code>p. 5</code>. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.</p>
+<div id="exm-link-the-words" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Linking the defined term to its Wikipedia article)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ <code>A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.</code></p>
+<p>✅ A <a href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">graph</a> is a set of vertices joined by edges.</p>
+</blockquote>
+<p>The second version gives the reader the article from the word they were already reading.</p>
+</div>
+</section>
+<section id="number-bracketed-citations" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Number bracketed citations</h2>
 </section>
 <section class="slide level2">
 
 <p>On the lab’s notes sites, a bracketed citation, <code>[@key]</code>, prints as a number, such as [1] or [1, p.&nbsp;5]. An in-text citation, <code>@key</code>, prints the author name and the number, such as “Hastie et al.&nbsp;[2]”. Write <code>[@key]</code> when the source supports a claim, and <code>@key</code> when the author is the subject of the sentence. Never start a sentence or a list item with a bare <code>@key</code> unless the author is its subject. The author list becomes the subject, so a list of such items prints the same author name, such as “Wikipedia contributors [3]”, again and again. Write the description first, and end the sentence with the bracketed <code>[@key]</code>. The sites get this from the shared citation style and filter in <a href="https://github.com/Morrison-Lab/macros/blob/main/citations/README.md">Morrison-Lab/macros</a>.</p>
 </section>
-<section id="cite-once-per-passage" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Cite a source once per passage</h2>
+<section id="place-citation-after-claim" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Place a citation right after the claim it supports</h2>
+</section>
+<section class="slide level2">
+
+<p>Place citations immediately after the claim or claims they support. A citation at the end of a sentence reads as support for the whole sentence, so when it supports only one claim in it, put it beside that claim. When one source supports every claim in a sentence, the end of the sentence is right after the claims.</p>
+<div id="exm-place-citation" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Placing a citation after a definition)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ A <em>Poisson random variable</em> <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>, or <em>Poisson count</em>, counts events in a fixed interval.</p>
+<p>✅ A <em>Poisson random variable</em>, or <em>Poisson count</em>, counts events in a fixed interval <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>.</p>
+</blockquote>
+<p>The article presents the definition, and the definition is the claim, so the citation follows the definition rather than interrupting it after the <a href="../chapters/defining-terms.html#def-term">term</a>.</p>
+</div>
+</section>
+<section id="cite-once-per-passage" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Cite a source once per passage</h2>
 </section>
 <section class="slide level2">
 
 <p>Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as <code>[@key, p. 5]</code>. The rule to cite a Wikipedia article once, where its <a href="../chapters/defining-terms.html#def-term">term</a> is defined, is a case of this one.</p>
 <div id="exm-cite-once" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Citing one source once in a definition)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Citing one source once in a definition)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ A <em>Poisson random variable</em> counts events in a fixed interval <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>. Source: <span class="citation" data-cites="wikipedia_poisson_distribution">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>.</p>
 <p>✅ A <em>Poisson random variable</em> counts events in a fixed interval. Source: <span class="citation" data-cites="wikipedia_poisson_distribution">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>.</p>
@@ -624,8 +655,8 @@
 <p>Both versions credit the same article. The second one does it once, in the source line that closes the div.</p>
 </div>
 </section>
-<section id="best-practices" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Best practices</h2>
+<section id="best-practices" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Best practices</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -640,8 +671,8 @@
 <li><strong>Cite diverse sources</strong>: When possible, include work from different research groups and perspectives</li>
 </ol>
 </section>
-<section id="quote-the-original" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Quote the original</h2>
+<section id="quote-the-original" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Quote the original</h2>
 </section>
 <section class="slide level2">
 
@@ -652,22 +683,22 @@
 </blockquote>
 <p>Credit a quotation to whoever speaks it in the primary source, even when the speaker is quoting someone else. When attribution is in doubt, read the primary source (a transcript, the original page) first. Uncertainty about who said a line is not evidence about who said it.</p>
 </section>
-<section id="copy-organization-names-from-their-source" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Copy organization names from their source</h2>
+<section id="copy-organization-names-from-their-source" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Copy organization names from their source</h2>
 </section>
 <section class="slide level2">
 
 <p>When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.</p>
 </section>
-<section id="verify-each-bibliography-entry" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Verify each bibliography entry</h2>
+<section id="verify-each-bibliography-entry" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Verify each bibliography entry</h2>
 </section>
 <section class="slide level2">
 
 <p>Check each detail of a bibliography entry against an official source. Look the work up through <a href="https://search.crossref.org/">Crossref search</a> or its <a href="https://api.crossref.org/">REST API</a>, check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.</p>
 </section>
-<section id="cite-an-alias-directly" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Cite an alias directly</h2>
+<section id="cite-an-alias-directly" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Cite an alias directly</h2>
 </section>
 <section class="slide level2">
 
@@ -677,8 +708,8 @@
 <p>✅ <code>also called the **alias** [@key, section]</code></p>
 </blockquote>
 </section>
-<section id="cite-the-original-for-named-results" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Cite the original for named results</h2>
+<section id="cite-the-original-for-named-results" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Cite the original for named results</h2>
 </section>
 <section class="slide level2">
 
@@ -705,22 +736,22 @@
 </ul>
 <p>Never cite an unauthorized copy, and never fill in a title, volume, or page number from memory.</p>
 <div id="exm-cite-original" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Crediting Chebyshev’s inequality)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Crediting Chebyshev’s inequality)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Chebyshev’s inequality bounds the probability that …</p>
 <p>✅ Chebyshev’s inequality bounds the probability that … Bienaymé derived the bound <span class="citation" data-cites="bienayme1853">(<a href="#/references" role="doc-biblioref" onclick="">Bienaymé 1853</a>)</span>, and Tchébychef proved a more general form <span class="citation" data-cites="tchebichef1867">(<a href="#/references" role="doc-biblioref" onclick="">Tchébychef 1867</a>)</span>. A modern treatment is in <span class="citation" data-cites="blitzstein2019introduction">Blitzstein and Hwang (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span>.</p>
 </blockquote>
 </div>
 </section>
-<section id="put-the-content-first" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Put the content first</h2>
+<section id="put-the-content-first" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Put the content first</h2>
 </section>
 <section class="slide level2">
 
 <p>Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.</p>
 </section>
-<section id="adapting-another-courses-material" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Adapting another course’s material</h2>
+<section id="adapting-another-courses-material" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Adapting another course’s material</h2>
 </section>
 <section class="slide level2">
 
@@ -736,8 +767,8 @@
 <span id="cb2-4"><a aria-label="4"></a>This section is adapted from @zhou2024, used under the MIT License.</span>
 <span id="cb2-5"><a aria-label="5"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="material-from-your-own-work" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Material from your own work</h2>
+<section id="material-from-your-own-work" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Material from your own work</h2>
 </section>
 <section class="slide level2">
 
@@ -764,8 +795,8 @@
 <p>A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.</p>
 <p>When you find an existing credit to your own work, remove it and add or keep a link to it.</p>
 </section>
-<section id="common-citation-errors-to-avoid" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Common citation errors to avoid</h2>
+<section id="common-citation-errors-to-avoid" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Common citation errors to avoid</h2>
 </section>
 <section class="slide level2">
 
@@ -780,12 +811,12 @@
 <li><strong>Ghost authorship</strong>: Failing to cite work that directly influenced your ideas</li>
 </ul>
 </section>
-<section id="examples" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Examples</h2>
+<section id="examples" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Examples</h2>
 </section>
 <section class="slide level2">
 
-<h3 data-number="21.1" id="poor-unsupported-claim"><span class="header-section-number">21.1</span> Poor (unsupported claim)</h3>
+<h3 data-number="23.1" id="poor-unsupported-claim"><span class="header-section-number">23.1</span> Poor (unsupported claim)</h3>
 </section>
 <section class="slide level2">
 
@@ -793,7 +824,7 @@
 <p>Machine learning models often perform poorly on small datasets.</p>
 </blockquote>
 <p><strong>Problem</strong>: This claim is stated as fact without any support.</p>
-<h3 data-number="21.2" id="better-citation-provided"><span class="header-section-number">21.2</span> Better (citation provided)</h3>
+<h3 data-number="23.2" id="better-citation-provided"><span class="header-section-number">23.2</span> Better (citation provided)</h3>
 </section>
 <section class="slide level2">
 
@@ -801,7 +832,7 @@
 <p>Machine learning models often perform poorly on small datasets <span class="citation" data-cites="vapnik1998 hawkins2004">(<a href="#/references" role="doc-biblioref" onclick="">Vapnik 1998</a>; <a href="#/references" role="doc-biblioref" onclick="">Hawkins 2004</a>)</span>.</p>
 </blockquote>
 <p><strong>Improvement</strong>: Citations provide evidence for the claim.</p>
-<h3 data-number="21.3" id="best-citation-with-context"><span class="header-section-number">21.3</span> Best (citation with context)</h3>
+<h3 data-number="23.3" id="best-citation-with-context"><span class="header-section-number">23.3</span> Best (citation with context)</h3>
 </section>
 <section class="slide level2">
 
@@ -809,7 +840,7 @@
 <p>Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data <span class="citation" data-cites="vapnik1998 hawkins2004">(<a href="#/references" role="doc-biblioref" onclick="">Vapnik 1998</a>; <a href="#/references" role="doc-biblioref" onclick="">Hawkins 2004</a>)</span>.</p>
 </blockquote>
 <p><strong>Improvement</strong>: The specific support each citation provides is explained.</p>
-<h3 data-number="21.4" id="poor-irrelevant-citation"><span class="header-section-number">21.4</span> Poor (irrelevant citation)</h3>
+<h3 data-number="23.4" id="poor-irrelevant-citation"><span class="header-section-number">23.4</span> Poor (irrelevant citation)</h3>
 </section>
 <section class="slide level2">
 
@@ -817,7 +848,7 @@
 <p>Python is the most popular programming language for data science <span class="citation" data-cites="knuth84">(<a href="#/references" role="doc-biblioref" onclick="">Knuth 1984</a>)</span>.</p>
 </blockquote>
 <p><strong>Problem</strong>: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.</p>
-<h3 data-number="21.5" id="better-relevant-citation"><span class="header-section-number">21.5</span> Better (relevant citation)</h3>
+<h3 data-number="23.5" id="better-relevant-citation"><span class="header-section-number">23.5</span> Better (relevant citation)</h3>
 </section>
 <section class="slide level2">
 
@@ -826,8 +857,8 @@
 </blockquote>
 <p><strong>Improvement</strong>: The citation is to a current survey of programming language usage.</p>
 </section>
-<section id="conclusion" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Conclusion</h2>
+<section id="conclusion" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Conclusion</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 

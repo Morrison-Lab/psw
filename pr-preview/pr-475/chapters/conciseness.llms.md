@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 14:47:49 (PST)
+Last modified: 2026-11-04 17:42:21 (PST)
 
 > **NOTE:**
 >
@@ -262,6 +262,12 @@ A series introduced by a colon is a list too, even with only two items, when the
 
 A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
 
+Say whether a list is exhaustive or exemplary. Ezra Morrison stated the rule on 2026-11-04:
+
+> always specify whether a list is exhaustive (with a lead-in like “X consists of the following categories:”) versus exemplary (lead in with “for example:”, “including:”, end with “etc”, or similar).
+
+Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see [Example 14](#exm-exhaustive-exemplary)).
+
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
 A few mechanics to keep in mind when writing a bullet list:
@@ -337,6 +343,32 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > Each bullet holds one formulation, and the definition of the empirical risk is displayed rather than buried in the sentence.
 
+> **NOTE:**
+>
+> **Example 14 (Marking a list as exhaustive or exemplary)**  
+>
+> > ❌ The metrics computed from a confusion matrix are:
+> >
+> > - accuracy;
+> > - sensitivity;
+> > - specificity.
+> >
+> > ✅ A confusion matrix for a binary classifier consists of the following four cells:
+> >
+> > - true positives;
+> > - false positives;
+> > - false negatives;
+> > - true negatives.
+> >
+> > ✅ Metrics computed from a confusion matrix include:
+> >
+> > - accuracy;
+> > - sensitivity;
+> > - specificity;
+> > - etc.
+>
+> The first lead-in reads as exhaustive, yet a confusion matrix yields more metrics than the three listed. The second lead-in says that the four cells are the whole set, and the third says that its list is a sample.
+
 # 16 Write to communicate, not to impress
 
 Many rules in this chapter serve one aim: the reader should reach your meaning without extra work. A long word, a nested sentence or a crowded paragraph can make a text sound more formal, but it can add work for the reader without adding to the meaning. So at each level of the text, choose the plainest form that still carries the full meaning:
@@ -348,7 +380,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 
 > **NOTE:**
 >
-> **Example 14 (Rewriting a sentence written to sound formal)**  
+> **Example 15 (Rewriting a sentence written to sound formal)**  
 >
 > > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.
 > >

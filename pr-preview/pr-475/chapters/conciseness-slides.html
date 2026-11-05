@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-03 14:47:49 (PST)</p>
+  <p class="date">Last modified: 2026-11-04 17:42:21 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -556,6 +556,11 @@
 <p>A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.</p>
 <p>A series introduced by a colon is a list too, even with only two items, when the items hold math or links. Write each item as a bullet, and display any equation the reader must remember (see <a href="#/exm-colon-series" class="quarto-xref">Example&nbsp;13</a>).</p>
 <p>A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.</p>
+<p>Say whether a list is exhaustive or exemplary. Ezra Morrison stated the rule on 2026-11-04:</p>
+<blockquote>
+<p>always specify whether a list is exhaustive (with a lead-in like “X consists of the following categories:”) versus exemplary (lead in with “for example:”, “including:”, end with “etc”, or similar).</p>
+</blockquote>
+<p>Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see <a href="#/exm-exhaustive-exemplary" class="quarto-xref">Example&nbsp;14</a>).</p>
 <p>Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.</p>
 <p>A few mechanics to keep in mind when writing a bullet list:</p>
 <ul>
@@ -625,6 +630,32 @@
 </blockquote>
 <p>Each bullet holds one formulation, and the definition of the empirical risk is displayed rather than buried in the sentence.</p>
 </div>
+<div id="exm-exhaustive-exemplary" class="theorem example">
+<p><span class="theorem-title"><strong>Example 14 (Marking a list as exhaustive or exemplary)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The metrics computed from a confusion matrix are:</p>
+<ul>
+<li>accuracy;</li>
+<li>sensitivity;</li>
+<li>specificity.</li>
+</ul>
+<p>✅ A confusion matrix for a binary classifier consists of the following four cells:</p>
+<ul>
+<li>true positives;</li>
+<li>false positives;</li>
+<li>false negatives;</li>
+<li>true negatives.</li>
+</ul>
+<p>✅ Metrics computed from a confusion matrix include:</p>
+<ul>
+<li>accuracy;</li>
+<li>sensitivity;</li>
+<li>specificity;</li>
+<li>etc.</li>
+</ul>
+</blockquote>
+<p>The first lead-in reads as exhaustive, yet a confusion matrix yields more metrics than the three listed. The second lead-in says that the four cells are the whole set, and the third says that its list is a sample.</p>
+</div>
 </section>
 <section id="write-to-communicate-not-to-impress" class="slide level2" data-number="16">
 <h2><span class="header-section-number">16</span> Write to communicate, not to impress</h2>
@@ -639,7 +670,7 @@
 <li>for mathematics, see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>.</li>
 </ul>
 <div id="exm-communicate-not-impress" class="theorem example">
-<p><span class="theorem-title"><strong>Example 14 (Rewriting a sentence written to sound formal)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 15 (Rewriting a sentence written to sound formal)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.</p>
 <p>✅ Despite the limits of the study’s methods, the results suggest a substantial association between the exposure and the outcome.</p>

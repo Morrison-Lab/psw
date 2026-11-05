@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 14:47:49 (PST)
+Last modified: 2026-11-04 17:42:21 (PST)
 
 > **NOTE:**
 >
@@ -120,6 +120,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Lead with the simplest correct form of a definition](../chapters/teaching.llms.md#lead-with-the-simplest-correct-form-of-a-definition).
 - [Reuse one written version of each result](../chapters/teaching.llms.md#reuse-one-written-version-of-each-result).
 - [Use real data and compute every number](../chapters/teaching.llms.md#use-real-data-and-compute-every-number).
+- [Pair exploratory data analysis with plots](../chapters/teaching.llms.md#pair-exploratory-data-analysis-with-plots).
 - [Show each idea applied and in a figure](../chapters/teaching.llms.md#show-each-idea-applied-and-in-a-figure).
 - [Write labs in both R and Python](../chapters/teaching.llms.md#write-labs-for-both-languages-and-any-computer) that run on any computer.
 - [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible).

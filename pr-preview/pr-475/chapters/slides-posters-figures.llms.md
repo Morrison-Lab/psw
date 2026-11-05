@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-03 14:47:49 (PST)
+Last modified: 2026-11-04 17:42:21 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -81,6 +81,7 @@ For more:
 A [function](https://morrison-lab.github.io/mds/functions.html#def-function) of two variables, such as a loss or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
 
 - Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
+- Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points, placed right after the contour plot. The 3D plot may be a separate figure that cross-references the contour plot.
 - Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
 - Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.
 - An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).

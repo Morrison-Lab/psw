@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-03 14:47:49 (PST)</p>
+  <p class="date">Last modified: 2026-11-04 17:42:21 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -435,6 +435,8 @@
 <li><p>On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.</p></li>
 <li><p>Give each solution the slug of its exercise, with <code>sol-</code> in place of <code>exr-</code>.</p></li>
 <li><p>Put a hint in a callout titled “Hint” inside the exercise div, not in italic text.</p></li>
+<li><p>Give every exercise a hint that links to the sections of the notes it draws on (Ezra, 2026-11-04), in a lab as in a homework. Where an exercise asks for code, link the section of the programming primer that introduces each command it needs, and link each definition or result the exercise rests on. Use a direct anchor link on the longest phrase that names the thing, as <a href="../chapters/citations-evidence.html#link-the-words">Link the words, not a trailing citation</a> describes. The hint points the reader to the material and does not give the answer.</p></li>
+<li><p>Where the solution has a tab for each language, a hint that names a command of one language names the other language’s counterpart too (Ezra, 2026-11-04). Say which language each command belongs to, as in “<code>.predict</code> in Python, <code>predict()</code> in R”, and link the primer example whose tabs show both. A reader working in the other language otherwise finds only a name that does not exist in their language.</p></li>
 <li><p>Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29). Whatever the title tells the reader about the object, the body also says: name the object, link its definition, and say where it arises and what it is used for. For a title such as “Maximizing a gamma-family kernel”, the body says what a gamma distribution and its kernel are, and that maximizing the kernel finds the mode without computing the normalizing constant. A body that only restates the formula leaves a reader who skipped the title with a formula and no reason to care. The first exercise of a split series carries the background, and each later exercise begins by citing it, as the splitting rule above says.</p></li>
 </ul>
 <div id="exm-exercise-before-definition" class="theorem example">
@@ -542,8 +544,21 @@
 
 <p>When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.</p>
 </section>
-<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Use real data and compute every number</h2>
+<section id="match-datasets-and-assignments-to-the-reference-texts" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Match datasets and assignments to the reference texts</h2>
+</section>
+<section class="slide level2">
+
+<p>Students can ask an AI assistant for a complete solution to any homework problem, so a problem is no more secure for never having been published (Ezra, 2026-11-04). Choose assignments for their fit with the course, not for novelty.</p>
+<ul>
+<li>Use as an in-class example the dataset that the reference texts and the other instructors of the course use for that topic. Depart from it only for a stated reason.</li>
+<li>Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic, and use the same datasets they do.</li>
+<li>Keep assessment that must be secure, such as an exam, in a setting the instructor controls, because a take-home problem cannot be.</li>
+</ul>
+<p>Check the reference text itself before naming its datasets. Open the chapter and list the dataset each section uses, rather than recalling them.</p>
+</section>
+<section id="use-real-data-and-compute-every-number" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Use real data and compute every number</h2>
 </section>
 <section class="slide level2">
 
@@ -562,8 +577,8 @@
 <p>The ✅ version lets every later slide refer to something the reader has already seen.</p>
 </div>
 </section>
-<section id="store-structured-data-in-structured-formats" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Store structured data in structured formats</h2>
+<section id="store-structured-data-in-structured-formats" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Store structured data in structured formats</h2>
 </section>
 <section class="slide level2">
 
@@ -576,8 +591,23 @@
 <li>A short list that no other page reads can stay as prose.</li>
 </ul>
 </section>
-<section id="show-each-idea-applied-and-in-a-figure" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Show each idea applied and in a figure</h2>
+<section id="pair-exploratory-data-analysis-with-plots" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Pair exploratory data analysis with plots</h2>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Make each exploratory data analysis exercise or lab include graphical methods, not only numerical summaries (Ezra, 2026-11-04). Pair the summary with a plot of the same quantity:
+<ul>
+<li><strong>A distribution:</strong> a histogram or boxplot.</li>
+<li><strong>A trend or a relationship:</strong> a scatterplot or time plot.</li>
+</ul></li>
+<li>Do not limit an exploratory analysis to counts and correlations. A plot shows the shape, the outliers, and the trend that one number hides.</li>
+<li>Give each plot the figure treatment in <a href="#/make-figures-accessible">Make figures accessible</a>.</li>
+</ul>
+</section>
+<section id="show-each-idea-applied-and-in-a-figure" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Show each idea applied and in a figure</h2>
 </section>
 <section class="slide level2">
 
@@ -594,8 +624,8 @@
 <li>Nest a figure that belongs to one example or exercise inside that <code>#exm-</code>, <code>#exr-</code> or <code>#sol-</code> div (Ezra, 2026-11-02). A figure outside the div leaves the example or exercise incomplete when the reader meets it alone, and moves with the wrong text when the page is reorganized. Leave a figure that several examples share outside every div, and cite it from each. The <code>check-figure-placement</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> reports, in a pull request, each figure on a changed line that no prose cites and each figure placed directly after an example, exercise or solution div without being inside it. A <code>&lt;!-- figure-placement: allow --&gt;</code> comment on the figure or inside its div suppresses the report for a shared figure (<a href="https://github.com/Morrison-Lab/gha/pull/1378">gha#1378</a>).</li>
 </ul>
 </section>
-<section id="follow-every-example-with-an-exercise-and-solution" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Follow every example with an exercise and solution</h2>
+<section id="follow-every-example-with-an-exercise-and-solution" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Follow every example with an exercise and solution</h2>
 </section>
 <section class="slide level2">
 
@@ -626,8 +656,8 @@
 <p>The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see <a href="#/use-real-data-and-compute-every-number">Use real data and compute every number</a>).</p>
 </div>
 </section>
-<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Write labs for both languages and any computer</h2>
+<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Write labs for both languages and any computer</h2>
 </section>
 <section class="slide level2">
 
@@ -643,8 +673,8 @@
 <li>Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.</li>
 </ul>
 </section>
-<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
+<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
 </section>
 <section class="slide level2">
 
@@ -663,8 +693,8 @@
 <li>Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than <code>None</code> and shows the chunk as one code block per printed value, such as a <code>&lt;matplotlib.lines.Line2D object at 0x...&gt;</code> line after every <code>ax.plot(...)</code>. End each such call with a semicolon, or assign its value.</li>
 </ul>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Present R results with modern packages</h2>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -678,8 +708,8 @@
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -696,8 +726,8 @@
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -709,8 +739,8 @@
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -722,8 +752,8 @@
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
+<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
 </section>
 <section class="slide level2">
 
@@ -736,8 +766,8 @@
 </ul>
 <p>For example, a chunk that fits a model the text walks through and prints its coefficients is <code>false</code>, a chunk that draws a figure the text discusses is <code>show</code>, and a chunk that loads a package or builds an object that later chunks use is <code>true</code>.</p>
 </section>
-<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Put a full command in a code block, not in inline code</h2>
+<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Put a full command in a code block, not in inline code</h2>
 </section>
 <section class="slide level2">
 
@@ -758,8 +788,8 @@
 <p>The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.</p>
 </div>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -771,8 +801,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -783,8 +813,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Split a page before it grows too long</h2>
+<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Split a page before it grows too long</h2>
 </section>
 <section class="slide level2">
 
@@ -798,8 +828,8 @@
 </ul>
 <p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Keep sibling headings to about five</h2>
+<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Keep sibling headings to about five</h2>
 </section>
 <section class="slide level2">
 
@@ -813,8 +843,8 @@
 </ul>
 <p>The <code>check-heading-siblings</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1390">gha#1390</a>) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Fold a one-paragraph section into its neighbor</h2>
+<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Fold a one-paragraph section into its neighbor</h2>
 </section>
 <section class="slide level2">
 
@@ -827,8 +857,8 @@
 <li>Do not delete the content: move it to the section it belongs to.</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -843,8 +873,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="30">
+<h2><span class="header-section-number">30</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -865,8 +895,8 @@
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="29">
-<h2><span class="header-section-number">29</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="31">
+<h2><span class="header-section-number">31</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -894,10 +924,10 @@
 </div>
 </div>
 </div>
-<p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and name it beside the link. Quarto renders <code>@dat-wcgs</code> as “Dataset 1” in the link text, so write “the WCGS data (<code>@dat-wcgs</code>)”. Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
+<p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders <code>@dat-wcgs</code> as “Dataset 1” in the link text, so write the dataset name as the link text, as in <code>[WCGS data](#dat-wcgs)</code>, not “the WCGS data (<code>@dat-wcgs</code>)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in <code>chapters/citations-evidence.qmd</code>). Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="30">
-<h2><span class="header-section-number">30</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="32">
+<h2><span class="header-section-number">32</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -927,8 +957,8 @@
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="31">
-<h2><span class="header-section-number">31</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="33">
+<h2><span class="header-section-number">33</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -939,8 +969,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="32">
-<h2><span class="header-section-number">32</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="34">
+<h2><span class="header-section-number">34</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -954,8 +984,8 @@
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="33">
-<h2><span class="header-section-number">33</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="35">
+<h2><span class="header-section-number">35</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
