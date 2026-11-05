@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 13:27:00 (PST)
+Last modified: 2026-11-05 13:35:21 (PST)
 
 > **NOTE:**
 >
@@ -35,7 +35,7 @@ The rules in this book apply one idea from the philosopher Paul Grice. Grice obs
 - **Relation:** be relevant.
 - **Manner:** be clear, which includes avoiding obscurity and ambiguity, being brief, and being orderly.
 
-A reader of technical writing expects the same cooperation from the author. A sentence that breaks a maxim makes the reader stop and guess what the author meant. Most rules in this book name one way to break a maxim, and the fix.
+A reader of technical writing expects the same cooperation from the author. A sentence that breaks a maxim makes the reader stop and guess what the author meant. Most rules in this book name one way to break a maxim and the fix.
 
 The chapters serve the maxims as follows:
 
@@ -115,7 +115,7 @@ Back to top
 
 ## References
 
-Davis, Wayne. 2024. “Implicature.” In *The Stanford Encyclopedia of Philosophy*, edited by Edward N. Zalta and Uri Nodelman. <https://plato.stanford.edu/entries/implicature/>.
+Davis, Wayne. 2024. *Implicature*. The Stanford Encyclopedia of Philosophy, edited by Edward N. Zalta and Uri Nodelman. <https://plato.stanford.edu/entries/implicature/>.
 
 Grice, H. Paul. 1975. “Logic and Conversation.” In *Syntax and Semantics 3: Speech Acts*, edited by Peter Cole and Jerry L. Morgan. Academic Press.
 
