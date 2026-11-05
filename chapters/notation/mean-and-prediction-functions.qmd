@@ -1,4 +1,4 @@
-Write the mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) as $\truemean$, not as $\predfn$.
+Write the mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function) as $\truemean$, not as $\predfn$.
 The mean function is the [population](defining-terms.qmd#def-population) mean of the outcome given the inputs, $\truemeanf{x}$.
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
 write it `\truemeanf{x}`.

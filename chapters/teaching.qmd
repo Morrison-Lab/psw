@@ -280,7 +280,7 @@ For teaching materials, four further rules keep definitions findable.
   so nothing can link to it.
 - Never nest one theorem-type div inside another.
   The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
-  A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mds/functions.html#def-function),
+  A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mcs/functions.html#def-function),
   gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div.
   Put the properties of the defined object, such as the symmetry and idempotence of a matrix,
@@ -703,7 +703,7 @@ does the prose mention the code?
 
 - `#| code-fold: show` when the prose mentions the code.
   The choice of `show` holds whether the code produces output outside the chunk or not,
-  and a chunk that defines [function](https://morrison-lab.github.io/mds/functions.html#def-function)s or objects that later chunks use counts as producing output.
+  and a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use counts as producing output.
   The code starts open, and a reader who wants to focus on the output can hide it.
 - `#| code-fold: true` when the prose does not mention the code.
   The code starts hidden, and a reader who wants it can open it.
