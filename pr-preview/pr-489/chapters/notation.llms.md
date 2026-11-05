@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 12:46:05 (PST)
+Last modified: 2026-11-05 13:19:23 (PST)
 
 > **NOTE:**
 >
@@ -753,7 +753,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 
 > **NOTE:**
 >
-> **Example 33 (Separating the setup from the stationary point)**  
+> **Example 33 (Separating the function and its gradient from the stationary point)**  
 >
 > > ❌ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$, which is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
 > >
