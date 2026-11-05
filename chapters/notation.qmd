@@ -94,6 +94,6 @@ that make quantitative writing easier to read.
 
 {{< include notation/framing-apart-from-conclusions.qmd >}}
 
-# Writing a gradient with its symbol
+# Writing a quantity's symbol on the left
 
-{{< include notation/gradient-symbol.qmd >}}
+{{< include notation/symbol-on-the-left.qmd >}}
