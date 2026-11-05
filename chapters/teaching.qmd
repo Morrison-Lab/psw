@@ -325,6 +325,22 @@ Use the best one, or merge them, and make it the single copy.
 Other places include or link to that copy
 instead of keeping a second wording that can drift.
 
+# Match datasets and assignments to the reference texts
+
+Students can ask an AI assistant for a complete solution to any homework problem,
+so a problem is no more secure for never having been published (Ezra, 2026-11-04).
+Choose assignments for their fit with the course, not for novelty.
+
+- Use as an in-class example the dataset that the reference texts and the other instructors of the course use for that topic.
+  Depart from it only for a stated reason.
+- Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic,
+  and use the same datasets they do.
+- Keep assessment that must be secure, such as an exam, in a setting the instructor controls,
+  because a take-home problem cannot be.
+
+Check the reference text itself before naming its datasets.
+Open the chapter and list the dataset each section uses, rather than recalling them.
+
 # Use real data and compute every number
 
 - Where an example needs data, use a real dataset
