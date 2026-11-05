@@ -5,7 +5,7 @@ Writing $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$ names the gradient and gives it
 Give the gradient its own display when later steps refer to it.
 
 The same holds for any derived quantity that later steps use:
-a Hessian, a derivative, a mean function.
+a Hessian, a derivative, a mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
 Write its symbol, an equals sign, and the expression.
 
 ::: {#exm-gradient-symbol}

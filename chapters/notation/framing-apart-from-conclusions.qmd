@@ -1,6 +1,6 @@
 Put the framing in one paragraph and the conclusions drawn from it in the next.
 The framing is the setup the conclusions rest on:
-the definitions, the given function or data,
+the definitions, the given [function](https://morrison-lab.github.io/mds/functions.html#def-function) or data,
 and the quantities computed from them, such as a gradient.
 A conclusion is a statement the framing implies.
 
@@ -28,7 +28,8 @@ then see what follows from it.
 > so $\vzero_{2 \times 1}$ is a stationary point.
 
 In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes.
-In the ✅ version, the first paragraph holds the framing, $f$ and its gradient,
+In the ✅ version, the first paragraph holds the framing,
+which is $f$ and its gradient,
 and the second holds the conclusion.
 
 :::
