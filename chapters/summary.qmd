@@ -154,6 +154,7 @@ Follow its link for the reasons and the exceptions.
 - [Lead with the simplest correct form of a definition](teaching.qmd#lead-with-the-simplest-correct-form-of-a-definition).
 - [Reuse one written version of each result](teaching.qmd#reuse-one-written-version-of-each-result).
 - [Use real data and compute every number](teaching.qmd#use-real-data-and-compute-every-number).
+- [Pair exploratory data analysis with plots](teaching.qmd#pair-exploratory-data-analysis-with-plots).
 - [Show each idea applied and in a figure](teaching.qmd#show-each-idea-applied-and-in-a-figure).
 - [Write labs in both R and Python](teaching.qmd#write-labs-for-both-languages-and-any-computer)
   that run on any computer.

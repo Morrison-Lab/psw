@@ -369,6 +369,9 @@ Follow these principles when introducing new [term](#def-term)s:
   For example, write
   `the expected squared prediction error is the sum of the squared [bias](#def-bias), the [variance](#def-variance), and the [residual variance](#def-residual-variance)`,
   not `the expected squared prediction error is the sum of the squared bias, the variance, and the residual variance (definitions: [bias](#def-bias), [variance](#def-variance), [residual variance](#def-residual-variance))`.
+  The same holds for a source:
+  link the term's words to the source's page instead of adding a numbered citation after them,
+  as [Link the words, not a trailing citation](citations-evidence.qmd#link-the-words) describes.
   The parenthetical makes the reader read each term twice,
   and it separates the link from the place where the term does its work.
   If a term sits inside math, where a link cannot go,
@@ -961,6 +964,29 @@ Examples serve several crucial purposes:
   "A variable is a symbol representing a value
   that can take on different values."
   
+- **A characteristic without its object:**
+  A mode, kernel, support, maximum, or median belongs to one object,
+  and the sentence names that object.
+  Name the object whose definition the characteristic is stated for,
+  such as the density, the distribution, the likelihood, or the kernel,
+  and use "of the distribution" only when the definition is for distributions.
+  Where a text moves from a distribution to its density,
+  say so once rather than switching silently.
+  A bare "the mode" leaves the reader to guess the object,
+  and a wrong guess misattributes the characteristic:
+  a mode is a mode of one [function](https://morrison-lab.github.io/mds/functions.html#def-function),
+  and the modes of a kernel and of its density coincide only by a theorem,
+  not by definition.
+
+  **Incorrect:**
+  "The gamma distribution has the kernel $x^{a-1} e^{-x}$,
+  so maximizing it finds the mode."
+
+  **Correct:**
+  "The gamma density has the kernel $x^{a-1} e^{-x}$,
+  so maximizing the kernel finds the mode of the density."
+  A kernel is defined for a density, not for a distribution.
+
 - **Missing examples:**
   Never leave a definition without at least one example.
   

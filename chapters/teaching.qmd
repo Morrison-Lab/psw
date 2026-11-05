@@ -127,6 +127,17 @@ Pose each task as an exercise, give students time to try it, and then show the s
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
 - Put a hint in a callout titled "Hint" inside the exercise div,
   not in italic text.
+- Give every exercise a hint that links to the sections of the notes it draws on (Ezra, 2026-11-04),
+  in a lab as in a homework.
+  Where an exercise asks for code, link the section of the programming primer that introduces each command it needs,
+  and link each definition or result the exercise rests on.
+  Use a direct anchor link on the longest phrase that names the thing,
+  as [Link the words, not a trailing citation](citations-evidence.qmd#link-the-words) describes.
+  The hint points the reader to the material and does not give the answer.
+- Where the solution has a tab for each language, a hint that names a command of one language names the other language's counterpart too (Ezra, 2026-11-04).
+  Say which language each command belongs to, as in "`.predict` in Python, `predict()` in R",
+  and link the primer example whose tabs show both.
+  A reader working in the other language otherwise finds only a name that does not exist in their language.
 - Give each exercise the background that its title implies, and say why the reader should care (Ezra, 2026-10-29).
   Whatever the title tells the reader about the object, the body also says:
   name the object, link its definition, and say where it arises and what it is used for.
@@ -314,6 +325,22 @@ Use the best one, or merge them, and make it the single copy.
 Other places include or link to that copy
 instead of keeping a second wording that can drift.
 
+# Match datasets and assignments to the reference texts
+
+Students can ask an AI assistant for a complete solution to any homework problem,
+so a problem is no more secure for never having been published (Ezra, 2026-11-04).
+Choose assignments for their fit with the course, not for novelty.
+
+- Use as an in-class example the dataset that the reference texts and the other instructors of the course use for that topic.
+  Depart from it only for a stated reason.
+- Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic,
+  and use the same datasets they do.
+- Keep assessment that must be secure, such as an exam, in a setting the instructor controls,
+  because a take-home problem cannot be.
+
+Check the reference text itself before naming its datasets.
+Open the chapter and list the dataset each section uses, rather than recalling them.
+
 # Use real data and compute every number
 
 - Where an example needs data, use a real dataset
@@ -364,6 +391,17 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Convert an existing hand-written table in its own pull request,
   and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.
+
+# Pair exploratory data analysis with plots
+
+- Make each exploratory data analysis exercise or lab include graphical methods,
+  not only numerical summaries (Ezra, 2026-11-04).
+  Pair the summary with a plot of the same quantity:
+  - **A distribution:** a histogram or boxplot.
+  - **A trend or a relationship:** a scatterplot or time plot.
+- Do not limit an exploratory analysis to counts and correlations.
+  A plot shows the shape, the outliers, and the trend that one number hides.
+- Give each plot the figure treatment in [Make figures accessible](#make-figures-accessible).
 
 # Show each idea applied and in a figure
 
@@ -904,9 +942,11 @@ and add the names of the reused data, variables, parameters, or model.
 When the notes define a dataset in its own callout,
 link the dataset by that callout's id
 instead of describing it again,
-and name it beside the link.
+and put the link on the dataset's name.
 Quarto renders `@dat-wcgs` as "Dataset 1" in the link text,
-so write "the WCGS data (`@dat-wcgs`)".
+so write the dataset name as the link text, as in `[WCGS data](#dat-wcgs)`,
+not "the WCGS data (`@dat-wcgs`)"
+(Ezra, 2026-11-04; see "Link the words, not a trailing citation" in `chapters/citations-evidence.qmd`).
 Prefer a self-contained sentence
 when the part needs only one or two of those objects.
 
