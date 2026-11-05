@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 17:36:25 (PST)
+Last modified: 2026-11-04 17:59:03 (PST)
 
 > **NOTE:**
 >
@@ -55,6 +55,9 @@ The word “lean” in the first version is an idiom. The second version asks th
 | Take a sample of size $n$ and call the sample mean $\bar x$. | Consider a sample of size $n$ and denote the sample mean by $\bar x$. |
 | the residual lies in $(-1, 1)$ | the residual is in $(-1, 1)$ |
 | the certain distribution sits at $0$, the uniform distribution at $\log 4$, and the skewed distribution lies between them | the certain distribution has entropy $0$, the uniform distribution has entropy $\log 4$, and the skewed distribution has entropy between those two values |
+| the car sits at height $1$ | the car is at height $1$ |
+| the car is drawn at height $1$ | the car is plotted at height $1$ |
+| the origin sits on the side of the dome | the origin is on the side of the dome |
 | the two discriminant scores agree at $x$ | the two discriminant scores are equal at $x$ |
 | the derivative vanishes at $\hat\theta$ | the derivative equals $0$ at $\hat\theta$ |
 | setting $K = 2$ recovers the binary log-odds | setting $K = 2$ gives the binary log-odds |

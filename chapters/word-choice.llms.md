@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 17:36:25 (PST)
+Last modified: 2026-11-04 17:59:03 (PST)
 
 > **NOTE:**
 >
@@ -31,7 +31,7 @@ Just to be clear, although I prefer Anglish words, I have no particular preferen
 
 # 1 Avoid vague and metaphorical language
 
-Scientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise [term](../chapters/defining-terms.llms.md#def-term) for the thing you are describing. [Table 2](#tbl-vague-precise) lists some common vague phrases and more precise alternatives.
+Write simple, direct prose (Ezra, 2026-11-03). Scientific claims should be precise enough to test. Vague or metaphorical phrases can sound evocative, but they leave the reader guessing at the specific quantity or mechanism you mean. Whenever you can, replace a metaphor with the precise [term](../chapters/defining-terms.llms.md#def-term) for the thing you are describing. Test every word, whatever its part of speech: it must be literally true of what it names or describes. A point does not “sit” at a height, and an estimate does not “live” in an interval. Write that the point is at the height and the estimate is in the interval. No list of phrases is complete, so apply the test to every word instead of looking a phrase up. [Table 2](#tbl-vague-precise) lists some common vague phrases and more precise alternatives.
 
 | Vague or metaphorical | More precise                             |
 |-----------------------|------------------------------------------|

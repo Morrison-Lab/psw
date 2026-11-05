@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 17:36:25 (PST)
+Last modified: 2026-11-04 17:59:03 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -49,6 +49,8 @@ Open each caption with a sentence that says what the figure or table shows, so a
 
 - Pointer only: “The symmetry of `@exm-x`.” The reader learns nothing until following the link.
 - Self-contained: “The logistic function at $-2$ is as high as $1$ minus its value at $2$ (`@exm-x`).” The reader learns the point at once.
+
+A caption does not rely on another figure’s caption (Ezra, 2026-11-03): do not describe a figure as “the surface of `@fig-x`” or “the same paths as `@fig-x`”. State what this figure shows, as if it were the only figure on the page. A figure that adds a view of another, such as a surface for a contour plot, gets a caption that names its own quantities and its own point.
 
 Lead with a well-labeled figure or table instead of a long paragraph that describes a pipeline or compares groups. Use a diagram for a conceptual model, such as a directed acyclic graph (DAG), and for a process, such as a participant flow (CONSORT) diagram or a workflow schematic. Let the text interpret what the figure shows instead of listing every number the reader can already see in it. Give the key estimates in the text and point to the figure for the rest.
 
