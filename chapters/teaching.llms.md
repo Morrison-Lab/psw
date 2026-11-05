@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-04 17:59:03 (PST)
+Last modified: 2026-11-04 22:55:07 (PST)
 
 > **NOTE:**
 >
@@ -327,13 +327,17 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
-Set `#| code-fold:` on each chunk by two questions: does the prose mention the code, and does the code produce output outside the chunk, such as a figure, a table, or variables that inline expressions use?
+Set `#| code-fold:` on each chunk to `show` or `true`. Never set `false`: it removes the toggle and gains nothing, because `show` also keeps the code and its output together. The choice depends on one question: does the prose mention the code?
 
-- `#| code-fold: show` when the prose mentions the code and the code produces output outside the chunk: a figure, a table, or variables that inline expressions use. The code starts open, and a reader who wants to focus on the output can hide it.
-- `#| code-fold: true` when the prose does not mention the code. This holds whether the code produces output outside the chunk or no output at all. The code starts hidden, and a reader who wants it can open it.
-- `#| code-fold: false` when the prose mentions the code and the code produces no output, or only output that the chunk renders inside itself. The code and its output stay together, with no toggle.
+- `#| code-fold: show` when the prose mentions the code. The choice of `show` holds whether the code produces output outside the chunk or not, and a chunk that defines [function](https://morrison-lab.github.io/mds/functions.html#def-function)s or objects that later chunks use counts as producing output. The code starts open, and a reader who wants to focus on the output can hide it.
+- `#| code-fold: true` when the prose does not mention the code. The code starts hidden, and a reader who wants it can open it.
 
-For example, a chunk that fits a model the text walks through and prints its coefficients is `false`, a chunk that draws a figure the text discusses is `show`, and a chunk that loads a package or builds an object that later chunks use is `true`.
+For example:
+
+- A chunk that fits a model the text walks through and prints its coefficients is `show`.
+- A chunk that draws a figure the text discusses is `show`.
+- A chunk that defines the helper functions a section introduces is `show`.
+- A chunk that loads a package the text never mentions is `true`.
 
 # 23 Put a full command in a code block, not in inline code
 
