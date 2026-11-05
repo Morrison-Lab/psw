@@ -1,12 +1,12 @@
 Put the framing in one paragraph and the conclusions drawn from it in the next.
-The framing is the setup the conclusions rest on:
+The framing is the setup that the conclusions rest on:
 
 - the definitions,
 - the given data,
 - the given [function](https://morrison-lab.github.io/mds/functions.html#def-function), and
 - the quantities computed from them, such as a gradient.
 
-A conclusion is a statement the framing implies.
+A conclusion is a statement that the framing implies.
 
 A reader who meets a conclusion in the middle of the setup
 cannot tell which sentences define the problem and which ones report a result.
