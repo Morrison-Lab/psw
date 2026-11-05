@@ -1,8 +1,11 @@
 Put the framing in one paragraph and the conclusions drawn from it in the next.
 The framing is the setup the conclusions rest on:
-the definitions, the given data,
-the given [function](https://morrison-lab.github.io/mds/functions.html#def-function),
-and the quantities computed from them, such as a gradient.
+
+- the definitions,
+- the given data,
+- the given [function](https://morrison-lab.github.io/mds/functions.html#def-function), and
+- the quantities computed from them, such as a gradient.
+
 A conclusion is a statement the framing implies.
 
 A reader who meets a conclusion in the middle of the setup
@@ -22,7 +25,7 @@ then see what follows from it.
 > Its gradient is
 >
 > $$
-> \gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}.
+> \gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.
 > $$
 >
 > The gradient $\gradf{f}(\vx)$ is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$,
