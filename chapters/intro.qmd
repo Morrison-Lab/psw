@@ -51,7 +51,7 @@ without knowing what the paper is about.
 
 # The principle behind the rules
 
-The rules in this book apply one idea from the philosopher H. Paul Grice.
+The rules in this book apply one idea from the philosopher Paul Grice.
 Grice observed that people in a conversation expect each contribution
 to serve the purpose of the exchange [@grice1975].
 He called this expectation the cooperative principle,
