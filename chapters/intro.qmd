@@ -74,7 +74,7 @@ The chapters serve the maxims as follows:
   - "Not less than required":
     [Defining terms clearly](defining-terms.qmd)
     and the sections of [Word choice](word-choice.qmd)
-    on naming which thing a sentence is about and following an abstract statement with an example.
+    on naming the object a sentence refers to and following an abstract statement with an example.
 - **Quality:**
   [Citations and evidence](citations-evidence.qmd),
   which asks for support for each claim and for checking each source,
@@ -93,7 +93,7 @@ The chapters serve the maxims as follows:
 
 The maxims describe what a reader expects.
 They are not a checklist,
-because whether a sentence is relevant, or informative enough,
+because whether a sentence is relevant or informative enough
 depends on the reader and the purpose of the document.
 This book therefore states each rule as a check that does not depend on the reader,
 as the previous section describes,
