@@ -89,3 +89,11 @@ that make quantitative writing easier to read.
 # Stating assumptions before using them
 
 {{< include notation/assumptions-first.qmd >}}
+
+# Separating the framing from the conclusions
+
+{{< include notation/framing-apart-from-conclusions.qmd >}}
+
+# Writing a gradient with its symbol
+
+{{< include notation/gradient-symbol.qmd >}}

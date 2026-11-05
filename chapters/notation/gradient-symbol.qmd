@@ -1,0 +1,25 @@
+When you state a gradient, write its symbol as the left-hand side of its expression.
+"Its gradient is $\tp{(2 x_1,\ -2 x_2)}$" gives the expression a name in words only,
+so the reader has no symbol to cite in the steps that follow.
+Writing $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$ names the gradient and gives its value together.
+Give the gradient its own display when later steps refer to it.
+
+The same holds for any derived quantity that later steps use:
+a Hessian, a derivative, a mean function.
+Write its symbol, an equals sign, and the expression.
+
+::: {#exm-gradient-symbol}
+
+## Writing the gradient with its symbol
+
+> ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
+>
+> ✅ The gradient of $f(\vx) = x_1^2 - x_2^2$ is
+>
+> $$
+> \gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}.
+> $$
+
+The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
+
+:::
