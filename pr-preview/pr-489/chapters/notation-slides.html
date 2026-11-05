@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-05 12:25:29 (PST)</p>
+  <p class="date">Last modified: 2026-11-05 12:46:05 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -952,7 +952,14 @@ f(x) - f(2)
 </section>
 <section class="slide level2">
 
-<p>Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup the conclusions rest on: the definitions, the given data, the given <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>, and the quantities computed from them, such as a gradient. A conclusion is a statement the framing implies.</p>
+<p>Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:</p>
+<ul>
+<li>the definitions,</li>
+<li>the given data,</li>
+<li>the given <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>, and</li>
+<li>the quantities computed from them, such as a gradient.</li>
+</ul>
+<p>A conclusion is a statement that the framing implies.</p>
 <p>A reader who meets a conclusion in the middle of the setup cannot tell which sentences define the problem and which ones report a result. A separate paragraph for each lets the reader take in the setup first, then see what follows from it.</p>
 <div id="exm-framing-apart-from-conclusions" class="theorem example">
 <p><span class="theorem-title"><strong>Example 33 (Separating the setup from the stationary point)</strong></span> &nbsp;</p>
@@ -960,27 +967,33 @@ f(x) - f(2)
 <p>❌ Let <span class="math inline">\(f(\vx) = x_1^2 - x_2^2\)</span>. Its gradient is <span class="math inline">\(\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}\)</span>, which is <span class="math inline">\(\vzero_{2 \times 1}\)</span> only at <span class="math inline">\(\vx = \vzero_{2 \times 1}\)</span>, so <span class="math inline">\(\vzero_{2 \times 1}\)</span> is a stationary point.</p>
 <p>✅ Let <span class="math inline">\(f(\vx) = x_1^2 - x_2^2\)</span>. Its gradient is</p>
 <p><span class="math display">\[
-\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}.
+\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.
 \]</span></p>
 <p>The gradient <span class="math inline">\(\gradf{f}(\vx)\)</span> is <span class="math inline">\(\vzero_{2 \times 1}\)</span> only at <span class="math inline">\(\vx = \vzero_{2 \times 1}\)</span>, so <span class="math inline">\(\vzero_{2 \times 1}\)</span> is a stationary point.</p>
 </blockquote>
 <p>In the ❌ version, one sentence defines <span class="math inline">\(f\)</span>, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is <span class="math inline">\(f\)</span> and its gradient, and the second holds the conclusion.</p>
 </div>
 </section>
-<section id="writing-a-gradient-with-its-symbol" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Writing a gradient with its symbol</h2>
+<section id="writing-a-quantitys-symbol-on-the-left" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Writing a quantity’s symbol on the left</h2>
 </section>
 <section class="slide level2">
 
-<p>When you state a gradient, write its symbol as the left-hand side of its expression. “Its gradient is <span class="math inline">\(\tp{(2 x_1,\ -2 x_2)}\)</span>” gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing <span class="math inline">\(\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}\)</span> names the gradient and gives its value together. Give the gradient its own display when later steps refer to it.</p>
-<p>The same holds for any derived quantity that later steps use: a Hessian, a derivative, a mean <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>. Write its symbol, an equals sign, and the expression.</p>
-<div id="exm-gradient-symbol" class="theorem example">
+<p>When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.</p>
+<p>The rule holds for any quantity that later steps use:</p>
+<ul>
+<li>a gradient,</li>
+<li>a Hessian,</li>
+<li>a derivative, and</li>
+<li>a mean <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>.</li>
+</ul>
+<div id="exm-symbol-on-the-left" class="theorem example">
 <p><span class="theorem-title"><strong>Example 34 (Writing the gradient with its symbol)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The gradient of <span class="math inline">\(f(\vx) = x_1^2 - x_2^2\)</span> is <span class="math inline">\(\tp{(2 x_1,\ -2 x_2)}\)</span>.</p>
 <p>✅ The gradient of <span class="math inline">\(f(\vx) = x_1^2 - x_2^2\)</span> is</p>
 <p><span class="math display">\[
-\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}.
+\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.
 \]</span></p>
 </blockquote>
 <p>The ✅ version supplies <span class="math inline">\(\gradf{f}(\vx)\)</span>, which a later line can set equal to <span class="math inline">\(\vzero_{2 \times 1}\)</span>.</p>

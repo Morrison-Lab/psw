@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 12:25:29 (PST)
+Last modified: 2026-11-05 12:46:05 (PST)
 
 > **NOTE:**
 >
@@ -740,7 +740,14 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 # 19 Separating the framing from the conclusions
 
-Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup the conclusions rest on: the definitions, the given data, the given [function](https://morrison-lab.github.io/mds/functions.html#def-function), and the quantities computed from them, such as a gradient. A conclusion is a statement the framing implies.
+Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:
+
+- the definitions,
+- the given data,
+- the given [function](https://morrison-lab.github.io/mds/functions.html#def-function), and
+- the quantities computed from them, such as a gradient.
+
+A conclusion is a statement that the framing implies.
 
 A reader who meets a conclusion in the middle of the setup cannot tell which sentences define the problem and which ones report a result. A separate paragraph for each lets the reader take in the setup first, then see what follows from it.
 
@@ -752,17 +759,22 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 > >
 > > ✅ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is
 > >
-> > $$\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}.$$
+> > $$\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.$$
 > >
 > > The gradient $\gradf{f}(\vx)$ is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
 >
 > In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is $f$ and its gradient, and the second holds the conclusion.
 
-# 20 Writing a gradient with its symbol
+# 20 Writing a quantity’s symbol on the left
 
-When you state a gradient, write its symbol as the left-hand side of its expression. “Its gradient is $\tp{(2 x_1,\ -2 x_2)}$” gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$ names the gradient and gives its value together. Give the gradient its own display when later steps refer to it.
+When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.
 
-The same holds for any derived quantity that later steps use: a Hessian, a derivative, a mean [function](https://morrison-lab.github.io/mds/functions.html#def-function). Write its symbol, an equals sign, and the expression.
+The rule holds for any quantity that later steps use:
+
+- a gradient,
+- a Hessian,
+- a derivative, and
+- a mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
 
 > **NOTE:**
 >
@@ -772,7 +784,7 @@ The same holds for any derived quantity that later steps use: a Hessian, a deriv
 > >
 > > ✅ The gradient of $f(\vx) = x_1^2 - x_2^2$ is
 > >
-> > $$\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}.$$
+> > $$\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.$$
 >
 > The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
 
