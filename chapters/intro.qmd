@@ -49,6 +49,56 @@ asks whether each "this" or "that" is followed by the noun that it refers to.
 A person or a program can answer that question
 without knowing what the paper is about.
 
+# The principle behind the rules
+
+The rules in this book apply one idea from the philosopher H. Paul Grice.
+Grice observed that people in a conversation expect each contribution
+to serve the purpose of the exchange [@grice1975].
+He called this expectation the cooperative principle,
+and he divided it into four maxims [@davis2024implicature]:
+
+- **Quantity:** be as informative as required.
+- **Quality:** say only what you believe true and can justify.
+- **Relation:** be relevant.
+- **Manner:** be clear, which includes avoiding obscurity and ambiguity, being brief, and being orderly.
+
+A reader of technical writing expects the same cooperation from the author.
+A sentence that breaks a maxim makes the reader stop and guess what the author meant.
+Most rules in this book name one way to break a maxim, and the fix.
+
+The chapters serve the maxims as follows:
+
+- **Quantity:**
+  - "Not more than required":
+    [Conciseness](conciseness.qmd).
+  - "Not less than required":
+    [Defining terms clearly](defining-terms.qmd)
+    and the sections of [Word choice](word-choice.qmd)
+    on naming which thing a sentence is about and following an abstract statement with an example.
+- **Quality:**
+  [Citations and evidence](citations-evidence.qmd),
+  which asks for support for each claim and for checking each source,
+  and [Avoiding clichés](avoid-cliches.qmd).
+- **Relation:**
+  the sections of [Conciseness](conciseness.qmd)
+  on writing about the ideas and not about the document,
+  and the layout of the Results section in [Paper organization](paper-organization.qmd).
+- **Manner:**
+  - Obscurity: [Word choice](word-choice.qmd).
+  - Ambiguity: [Grammar](grammar.qmd).
+  - Brevity: [Conciseness](conciseness.qmd).
+  - Order: the sections on assumptions first in [Mathematical notation](notation.qmd),
+    on forward references in [Paper organization](paper-organization.qmd),
+    and on giving the general definition before examples in [Defining terms clearly](defining-terms.qmd).
+
+The maxims describe what a reader expects.
+They are not a checklist,
+because whether a sentence is relevant, or informative enough,
+depends on the reader and the purpose of the document.
+This book therefore states each rule as a check that does not depend on the reader,
+as the previous section describes,
+and uses the maxims to explain why each rule exists.
+
 # How the book is organized
 
 The chapters fall into six groups:
