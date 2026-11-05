@@ -553,6 +553,32 @@ in every course and every teaching repository, not only to one course.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
 
+# Phrase optional steps as conditions
+
+An instruction that applies to only some readers reads as an order to all of them.
+Put the condition first, then the instruction,
+as in "If you use a language other than R or Python, ...".
+
+- State the condition at the start of the sentence, as "If you ..., do ...".
+  The reader who is not in that case can stop reading at the comma.
+- Do not open with a bare imperative that only some readers should follow.
+- Where a step can be skipped, say what the reader loses or what to do instead.
+- Give each case its own sentence.
+
+The labs in the reference text write optional work this way.
+They state the condition first and then the consequence:
+"If you have not installed ggplot2, then the code below will still run, but the plot will be less attractive" [@james2021islr2, section 10.9, p. 445].
+They give an alternative to the reader who is short of time:
+"If you are in a rush, then you could set B equal to a smaller value (e.g. B = 500)" [@james2021islr2, section 13.6, p. 587].
+They label a step that has no condition and say when to do it:
+"this step is optional and should be performed only if we want each gene to be on the same scale" [@james2021islr2, section 12.5, p. 543].
+
+> ❌ In another language, use a port of `SyncRNG` to get the same data; without one, draw your own data from the same model.
+>
+> ✅ If you use a language other than R or Python, use a port of `SyncRNG` to get the same data.
+> If no port exists, draw your own data from the same model;
+> your numbers will differ slightly from the key's.
+
 # Keep each step's code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials,
