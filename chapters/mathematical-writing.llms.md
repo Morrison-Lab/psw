@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 16:57:57 (PST)
+Last modified: 2026-11-05 18:06:41 (PST)
 
 > **NOTE:**
 >
@@ -188,7 +188,7 @@ Halmos advises “avoid the use of irrelevant symbols” and states the rule in 
 >
 > **Example 9 (Deleting a symbol that is named and never used)**  
 >
-> > ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mds/functions.html#def-function) $f$ on a compact space is bounded.
+> > ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $f$ on a compact space is bounded.
 > >
 > > ✅ Every continuous real-valued function on a compact space is bounded.
 >

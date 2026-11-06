@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 16:57:57 (PST)
+Last modified: 2026-11-05 18:06:41 (PST)
 
 > **NOTE:**
 >
@@ -144,7 +144,7 @@ When a prompt asks several questions, answer each one in its own paragraph, or i
 
 - Replace a bolded keyword in running prose with a `#def-` div. A bolded keyword usually marks an inline definition.
 - Define one term per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
-- Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mds/functions.html#def-function), gets its own div after the general case, and the two link to each other.
+- Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mcs/functions.html#def-function), gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.
 
 Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
@@ -358,7 +358,7 @@ This rule applies to every executed code chunk in teaching materials, in every c
 
 Set `#| code-fold:` on each chunk to `show` or `true`. Never set `false`: it removes the toggle and gains nothing, because `show` also keeps the code and its output together. The choice depends on one question: does the prose mention the code?
 
-- `#| code-fold: show` when the prose mentions the code. The choice of `show` holds whether the code produces output outside the chunk or not, and a chunk that defines [function](https://morrison-lab.github.io/mds/functions.html#def-function)s or objects that later chunks use counts as producing output. The code starts open, and a reader who wants to focus on the output can hide it.
+- `#| code-fold: show` when the prose mentions the code. The choice of `show` holds whether the code produces output outside the chunk or not, and a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use counts as producing output. The code starts open, and a reader who wants to focus on the output can hide it.
 - `#| code-fold: true` when the prose does not mention the code. The code starts hidden, and a reader who wants it can open it.
 
 For example:

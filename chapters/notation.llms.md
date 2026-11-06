@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 16:57:57 (PST)
+Last modified: 2026-11-05 18:06:41 (PST)
 
 > **NOTE:**
 >
@@ -23,7 +23,7 @@ Prefer interval notation instead: $x \in (a, b)$.
 Interval notation is easier to read for three reasons:
 
 - It states one relation instead of two, so the reader parses a single claim rather than combining a pair of them.
-- It names the set you actually mean, so the same expression can be reused as a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), a constraint, or the argument of a quantifier.
+- It names the set you actually mean, so the same expression can be reused as a [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain), a constraint, or the argument of a quantifier.
 - It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than $\le$ and $<$.
 
 > **NOTE:**
@@ -134,7 +134,7 @@ Splitting every step makes derivations longer. Keep them readable by breaking th
 
 #### Show why you need a result before you derive it
 
-Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite [function](https://morrison-lab.github.io/mds/functions.html#def-function):
+Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite [function](https://morrison-lab.github.io/mcs/functions.html#def-function):
 
 1.  Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.
 2.  Pause the main derivation, and derive the inner derivative in its own block.
@@ -193,7 +193,7 @@ Separate equations set side by side, such as $x = 1, \quad y = 2$, each have one
 
 # 4 Functions and their values
 
-A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” names a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
+A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” names a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
 
 > **NOTE:**
 >
@@ -221,7 +221,7 @@ Use the notation to match:
 
 > **NOTE:**
 >
-> **Definition 2 (Fitted value)** The **fitted value** of observation $i$ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $h$, it is $\hat{y}_i = h(x_i)$.
+> **Definition 2 (Fitted value)** The **fitted value** of observation $i$ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $h$, it is $\hat{y}_i = h(x_i)$.
 
 Define the [fitted value](#def-fitted-value) once, then print $\hat{y}_i$, not $h(x_i)$, wherever it appears in a loss, a residual or a risk sum. Keep $h(x)$ where $h$ itself is the subject, as in “the linear function $h(x) = \beta_0 + \beta_x x$”, and where the output is not a prediction of $y_i$, such as the decision score of a support vector machine or a vector of class probabilities.
 
@@ -229,10 +229,10 @@ In the source, a document that uses the shared macros writes the fitted value wi
 
 # 5 Types of functions and procedures
 
-Name the type of every [function](https://morrison-lab.github.io/mds/functions.html#def-function) and procedure when you define it:
+Name the type of every [function](https://morrison-lab.github.io/mcs/functions.html#def-function) and procedure when you define it:
 
-- the set it takes its argument from (its [domain](https://morrison-lab.github.io/mds/functions.html#def-domain))
-- the set its values lie in (its [codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain))
+- the set it takes its argument from (its [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain))
+- the set its values lie in (its [codomain](https://morrison-lab.github.io/mcs/functions.html#def-codomain))
 - for each input and output, what kind of mathematical object it is
 
 Say “function”, not “rule” or “map”.
@@ -552,7 +552,7 @@ Use the notation that best represents the concept being depicted. Choose the sym
 The rules that follow are cases of this principle:
 
 - The predictor matrix and the design matrix are different objects, so they get different symbols.
-- The mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) is a mean, so it is $\truemean$, not $\predfn$.
+- The mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is a mean, so it is $\truemean$, not $\predfn$.
 - The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.
 - A reference formula is a general statement, so it is written in its general form, not for one example.
 
@@ -597,7 +597,7 @@ Put a specific case on the sheet only as a labeled example next to the general f
 
 # 15 Writing the mean function and the prediction function
 
-Write the mean [function](https://morrison-lab.github.io/mds/functions.html#def-function) as $\truemean$, not as $\predfn$. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, $\truemeanf{x}$. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
+Write the mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function) as $\truemean$, not as $\predfn$. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, $\truemeanf{x}$. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
 Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it `\epredfnf{x}` (symbol $\epredfn$) for an estimated one, or `\predfnf{x}` (symbol $\predfn$) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function $\truemean$ itself.
 
@@ -613,13 +613,13 @@ Name the object you mean. When the text refers to the fitted prediction function
 
 # 16 Writing the log-odds
 
-Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
+Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
 > **NOTE:**
 >
 > **Example 27 (Argument of the logistic function)**  
 >
-> > ❌ The logistic [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
+> > ❌ The logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
 > >
 > > ✅ The logistic function is $\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}$, evaluated at the log-odds $\logodds$.
 >
@@ -631,7 +631,7 @@ A notational shorthand drops part of an expression that the writer expects the r
 
 The full form costs the writer a few characters and saves every reader a guess. A reader who sees $\sum_x$ has to work out which values of $x$ the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as $\sum_{x \in \mathbb{Z}}$ shows the wrong set at a glance, while $\sum_x$ hides the same mistake.
 
-Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands) catalogs common shorthands and their full forms.
+Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The [notation page of the *Math for Data Science* notes](https://morrison-lab.github.io/mds/algebra-sums.html#sec-notational-shorthands) catalogs common shorthands and their full forms.
 
 > **NOTE:**
 >

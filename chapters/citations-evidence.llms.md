@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 16:57:57 (PST)
+Last modified: 2026-11-05 18:06:41 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 

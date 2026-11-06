@@ -251,7 +251,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-05 16:57:57 (PST)</p>
+  <p class="date">Last modified: 2026-11-05 18:06:41 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -282,7 +282,7 @@
 <p>Interval notation is easier to read for three reasons:</p>
 <ul>
 <li>It states one relation instead of two, so the reader parses a single claim rather than combining a pair of them.</li>
-<li>It names the set you actually mean, so the same expression can be reused as a <a href="https://morrison-lab.github.io/mds/functions.html#def-domain">domain</a>, a constraint, or the argument of a quantifier.</li>
+<li>It names the set you actually mean, so the same expression can be reused as a <a href="https://morrison-lab.github.io/mcs/functions.html#def-domain">domain</a>, a constraint, or the argument of a quantifier.</li>
 <li>It marks inclusive and exclusive endpoints with brackets and parentheses, which are easier to distinguish at a glance than <span class="math inline">\(\le\)</span> and <span class="math inline">\(&lt;\)</span>.</li>
 </ul>
 <div id="exm-double-inequality" class="theorem example">
@@ -383,7 +383,7 @@
 <h4 id="long-derivations">Long derivations</h4>
 <p>Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing <span class="math inline">\(d_i\)</span> for <span class="math inline">\((y_i - \bar{y}) - \beta_x (x_i - \bar{x})\)</span>, can also keep each line short.</p>
 <h5 id="show-why-you-need-a-result-before-you-derive-it">Show why you need a result before you derive it</h5>
-<p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>:</p>
+<p>Derive an intermediate result only after the main derivation has shown that it needs that result. For example, to differentiate a composite <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>:</p>
 <ol type="1">
 <li>Start the main derivation, and apply the chain rule. The result is a product of an inner and an outer derivative, not yet known.</li>
 <li>Pause the main derivation, and derive the inner derivative in its own block.</li>
@@ -445,7 +445,7 @@
 </section>
 <section class="slide level2">
 
-<p>A <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> and its value at a point are different objects. In <span class="math inline">\(\mu_i = \mu(x_i)\)</span>, <span class="math inline">\(\mu\)</span> is a function, and <span class="math inline">\(\mu(x_i)\)</span> is a number: the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>. Written with its placeholder argument, <span class="math inline">\(\mu(x)\)</span> already denotes a value, so “the value of <span class="math inline">\(\mu(x)\)</span> at <span class="math inline">\(x_i\)</span>” names a value of a value. Either drop the placeholder and write “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, or keep the placeholder and name the substitution: “<span class="math inline">\(\mu(x)\)</span> evaluated at <span class="math inline">\(x_i\)</span>”.</p>
+<p>A <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> and its value at a point are different objects. In <span class="math inline">\(\mu_i = \mu(x_i)\)</span>, <span class="math inline">\(\mu\)</span> is a function, and <span class="math inline">\(\mu(x_i)\)</span> is a number: the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>. Written with its placeholder argument, <span class="math inline">\(\mu(x)\)</span> already denotes a value, so “the value of <span class="math inline">\(\mu(x)\)</span> at <span class="math inline">\(x_i\)</span>” names a value of a value. Either drop the placeholder and write “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, or keep the placeholder and name the substitution: “<span class="math inline">\(\mu(x)\)</span> evaluated at <span class="math inline">\(x_i\)</span>”.</p>
 <div id="exm-function-evaluated-at" class="theorem example">
 <p><span class="theorem-title"><strong>Example 7 (Saying where a function is evaluated)</strong></span> &nbsp;</p>
 <blockquote>
@@ -469,7 +469,7 @@
 <li>Write <span class="math inline">\(\mu(x_i)\)</span>, or “the value of <span class="math inline">\(\mu\)</span> at <span class="math inline">\(x_i\)</span>”, for a value.</li>
 </ul>
 <div id="def-fitted-value" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2 (Fitted value)</strong></span> The <strong>fitted value</strong> of observation <span class="math inline">\(i\)</span> is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> is <span class="math inline">\(h\)</span>, it is <span class="math inline">\(\hat{y}_i = h(x_i)\)</span>.</p>
+<p><span class="theorem-title"><strong>Definition 2 (Fitted value)</strong></span> The <strong>fitted value</strong> of observation <span class="math inline">\(i\)</span> is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> is <span class="math inline">\(h\)</span>, it is <span class="math inline">\(\hat{y}_i = h(x_i)\)</span>.</p>
 </div>
 <p>Define the <a href="#/def-fitted-value">fitted value</a> once, then print <span class="math inline">\(\hat{y}_i\)</span>, not <span class="math inline">\(h(x_i)\)</span>, wherever it appears in a loss, a residual or a risk sum. Keep <span class="math inline">\(h(x)\)</span> where <span class="math inline">\(h\)</span> itself is the subject, as in “the linear function <span class="math inline">\(h(x) = \beta_0 + \beta_x x\)</span>”, and where the output is not a prediction of <span class="math inline">\(y_i\)</span>, such as the decision score of a support vector machine or a vector of class probabilities.</p>
 <p>In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, <code>\eoutvar</code> (see <a href="#/using-shared-macros">Using shared macros</a>), and a document without them may write <code>\hat{y}</code>.</p>
@@ -479,10 +479,10 @@
 </section>
 <section class="slide level2">
 
-<p>Name the type of every <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> and procedure when you define it:</p>
+<p>Name the type of every <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> and procedure when you define it:</p>
 <ul>
-<li>the set it takes its argument from (its <a href="https://morrison-lab.github.io/mds/functions.html#def-domain">domain</a>)</li>
-<li>the set its values lie in (its <a href="https://morrison-lab.github.io/mds/functions.html#def-codomain">codomain</a>)</li>
+<li>the set it takes its argument from (its <a href="https://morrison-lab.github.io/mcs/functions.html#def-domain">domain</a>)</li>
+<li>the set its values lie in (its <a href="https://morrison-lab.github.io/mcs/functions.html#def-codomain">codomain</a>)</li>
 <li>for each input and output, what kind of mathematical object it is</li>
 </ul>
 <p>Say “function”, not “rule” or “map”.</p>
@@ -763,7 +763,7 @@
 <p>The rules that follow are cases of this principle:</p>
 <ul>
 <li>The predictor matrix and the design matrix are different objects, so they get different symbols.</li>
-<li>The mean <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(\predfn\)</span>.</li>
+<li>The mean <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> is a mean, so it is <span class="math inline">\(\truemean\)</span>, not <span class="math inline">\(\predfn\)</span>.</li>
 <li>The fitted prediction function is a prediction function, so it is named as one, not as a fitted mean function.</li>
 <li>A reference formula is a general statement, so it is written in its general form, not for one example.</li>
 </ul>
@@ -811,7 +811,7 @@
 </section>
 <section class="slide level2">
 
-<p>Write the mean <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(\predfn\)</span>. The mean function is the <a href="../chapters/defining-terms.html#def-population">population</a> mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
+<p>Write the mean <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> as <span class="math inline">\(\truemean\)</span>, not as <span class="math inline">\(\predfn\)</span>. The mean function is the <a href="../chapters/defining-terms.html#def-population">population</a> mean of the outcome given the inputs, <span class="math inline">\(\truemeanf{x}\)</span>. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\truemeanf{x}</code>.</p>
 <p>Name the object you mean. When the text refers to the fitted prediction function as a concept, the rule that turns an input into a predicted outcome, write the fitted prediction function, not the fitted mean function. Write it <code>\epredfnf{x}</code> (symbol <span class="math inline">\(\epredfn\)</span>) for an estimated one, or <code>\predfnf{x}</code> (symbol <span class="math inline">\(\predfn\)</span>) for any prediction function. Use the fitted or estimated mean function only where the text is about estimating the mean function <span class="math inline">\(\truemean\)</span> itself.</p>
 <div id="exm-mean-vs-prediction-function" class="theorem example">
 <p><span class="theorem-title"><strong>Example 26 (Mean function and fitted prediction function)</strong></span> &nbsp;</p>
@@ -827,11 +827,11 @@
 </section>
 <section class="slide level2">
 
-<p>Use <span class="math inline">\(\logodds\)</span> (the Greek letter eta) for the log-odds, not <span class="math inline">\(z\)</span> or another letter. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\logodds</code>. Use it wherever the quantity is the log-odds, including the argument of the logistic <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>, so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, <span class="math inline">\(\logodds\)</span>” (see <a href="../chapters/slides-posters-figures.html#sec-scientific-figures">Scientific figures</a>).</p>
+<p>Use <span class="math inline">\(\logodds\)</span> (the Greek letter eta) for the log-odds, not <span class="math inline">\(z\)</span> or another letter. In a group that uses shared macros (see <a href="#/using-shared-macros">Using shared macros</a>), write it <code>\logodds</code>. Use it wherever the quantity is the log-odds, including the argument of the logistic <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>, so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, <span class="math inline">\(\logodds\)</span>” (see <a href="../chapters/slides-posters-figures.html#sec-scientific-figures">Scientific figures</a>).</p>
 <div id="exm-log-odds-symbol" class="theorem example">
 <p><span class="theorem-title"><strong>Example 27 (Argument of the logistic function)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ The logistic <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> is <span class="math inline">\(\sigma(z) = 1 / (1 + e^{-z})\)</span>, evaluated at the log-odds <span class="math inline">\(z\)</span>.</p>
+<p>❌ The logistic <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> is <span class="math inline">\(\sigma(z) = 1 / (1 + e^{-z})\)</span>, evaluated at the log-odds <span class="math inline">\(z\)</span>.</p>
 <p>✅ The logistic function is <span class="math inline">\(\sigmoidf{\logodds} \eqdef \frac{1}{1 + \e{-\logodds}}\)</span>, evaluated at the log-odds <span class="math inline">\(\logodds\)</span>.</p>
 </blockquote>
 <p>The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen <span class="math inline">\(\logodds\)</span> elsewhere recognizes it here.</p>
@@ -844,7 +844,7 @@
 
 <p>A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in <span class="math inline">\(\sum_x f(x)\)</span>. In permanent writing (notes, papers, and published slides), write the full form instead: <span class="math inline">\(\sum_{x \in \mathcal{R}(X)} f(x)\)</span>, where <span class="math inline">\(\mathcal{R}(X)\)</span> is the set of values that <span class="math inline">\(X\)</span> can take.</p>
 <p>The full form costs the writer a few characters and saves every reader a guess. A reader who sees <span class="math inline">\(\sum_x\)</span> has to work out which values of <span class="math inline">\(x\)</span> the sum runs over, and readers who work out different answers will disagree about what the expression means. The full form also exposes mistakes. If a count variable takes only non-negative values, a sum written as <span class="math inline">\(\sum_{x \in \mathbb{Z}}\)</span> shows the wrong set at a glance, while <span class="math inline">\(\sum_x\)</span> hides the same mistake.</p>
-<p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/notation.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
+<p>Give the limits of every sum, product, and integral, and state the set that any other index runs over. Board work during a lecture is often less complete, but it should still aim for the full form. The <a href="https://morrison-lab.github.io/mds/algebra-sums.html#sec-notational-shorthands">notation page of the <em>Math for Data Science</em> notes</a> catalogs common shorthands and their full forms.</p>
 <div id="exm-notational-shorthand" class="theorem example">
 <p><span class="theorem-title"><strong>Example 28 (Writing out the limits of a sum and the range of an index)</strong></span> For a discrete random variable <span class="math inline">\(X\)</span>:</p>
 <blockquote>

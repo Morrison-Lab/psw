@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 16:57:57 (PST)
+Last modified: 2026-11-05 18:06:41 (PST)
 
 > **NOTE:**
 >
@@ -46,7 +46,7 @@ The precise alternative is not always shorter, but it tells the reader exactly w
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are [clichés](../chapters/avoid-cliches.llms.md#def-cliche), and [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more of them.
 
-Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term.
+Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) that the text defines as a term.
 
 > ❌ Nesting the cross-validation loop costs another factor of $K$ in computing time.
 >
@@ -74,9 +74,9 @@ Be as specific as feasible. When the text has a specific object, name it, and do
 
 > ❌ The mode is an element of the set A at which the density is largest.
 >
-> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mds/functions.html#def-range) of the random variable at which the density is largest.
+> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mcs/functions.html#def-range) of the random variable at which the density is largest.
 
-The `check-avoided-words` check in gha warns on a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), [codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain), range or sample space named by a bare capital letter or by “some”, such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.
+The `check-avoided-words` check in gha warns on a [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain), [codomain](https://morrison-lab.github.io/mcs/functions.html#def-codomain), range or sample space named by a bare capital letter or by “some”, such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.
 
 Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) says when those words are a problem and what to write instead.
 
@@ -116,7 +116,7 @@ A word that names a technical concept keeps that one meaning on every page. Two 
 
 Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.
 
-For example, *hypothesis* means a statistical hypothesis: a claim about a [population](../chapters/defining-terms.llms.md#def-population), such as a null hypothesis that a test examines. In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+For example, *hypothesis* means a statistical hypothesis: a claim about a [population](../chapters/defining-terms.llms.md#def-population), such as a null hypothesis that a test examines. In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function).
 
 > ❌ The learner picks one hypothesis from the hypothesis set.
 >
