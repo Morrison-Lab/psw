@@ -595,7 +595,7 @@ and the reader must guess that you meant only one.
 This applies Grice's maxims of Quality, because the sentence is not true as written,
 and of Manner, because it is ambiguous between one case and all of them [@grice1975].
 
-> ❌ A binary [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) classifier in two dimensions has parameter vector $[-2, 1, 0.5]'$.
+> ❌ A binary logistic regression classifier in two dimensions has parameter vector $[-2, 1, 0.5]'$. <!-- check-term-links: allow -->
 >
 > ✅ Consider a binary logistic regression classifier in two dimensions with parameter vector $[-2, 1, 0.5]'$.
 
