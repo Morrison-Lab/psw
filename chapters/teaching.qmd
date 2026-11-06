@@ -580,6 +580,25 @@ They label a step that has no condition and say when to do it:
 > If no port exists, draw your own data from the same model;
 > your numbers will differ slightly from the key's.
 
+# Introduce a specific case as a specific case
+
+A sentence with an indefinite subject and a bare verb states a general fact:
+"A [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) classifier has a decision boundary" holds for every such classifier.
+Used for one particular case, the same form claims something false,
+and the reader must guess that you meant only one.
+
+- Use "a" or "any" with a bare verb only for a statement that holds in every case.
+- Introduce a specific case with "Consider a ...", "Suppose a ...", or "Let ... be ...",
+  and give its particular values in the same sentence.
+- Refer back to it with "the" or "this", and not with "a" again.
+
+This applies Grice's maxims of Quality, because the sentence is not true as written,
+and of Manner, because it is ambiguous between one case and all of them [@grice1975].
+
+> ❌ A binary logistic regression classifier in two dimensions has parameter vector $[-2, 1, 0.5]'$. <!-- check-term-links: allow -->
+>
+> ✅ Consider a binary logistic regression classifier in two dimensions with parameter vector $[-2, 1, 0.5]'$.
+
 # Keep each step's code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials,
