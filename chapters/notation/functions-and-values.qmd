@@ -1,4 +1,4 @@
-A [function](https://morrison-lab.github.io/mds/functions.html#def-function) and its value at a point are different objects.
+A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) and its value at a point are different objects.
 In $\mu_i = \mu(x_i)$,
 $\mu$ is a function,
 and $\mu(x_i)$ is a number:
@@ -54,7 +54,7 @@ Use the notation to match:
 
 The **fitted value** of observation $i$ is the value that a fitted model predicts
 at that observation's input.
-In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function) is $h$,
+In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $h$,
 it is $\hat{y}_i = h(x_i)$.
 
 :::

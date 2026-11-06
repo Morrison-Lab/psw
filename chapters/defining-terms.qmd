@@ -141,7 +141,7 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Define a statistical model by its distribution, and derive its other forms:**
   Define a regression model by the distribution of the outcome
   conditional on the covariates,
-  centered on a named mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+  centered on a named mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function).
   For example, define simple linear regression as
   $Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)$, independently,
   with $\mu_i := \mu(x_i)$ and $\mu(x) := \beta_0 + \beta_x x$.
@@ -189,7 +189,7 @@ Follow these principles when introducing new [term](#def-term)s:
   and the right side expands that object's own definition.
   It does not describe the object in another way,
   because the step from one description to the other is a result.
-  For example, with the conditional expectation [function](https://morrison-lab.github.io/mds/functions.html#def-function) $\truemean$ and its prediction error $\prederrf{\truemean}$,
+  For example, with the conditional expectation [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\truemean$ and its prediction error $\prederrf{\truemean}$,
   define the residual risk as $\popriskf{\truemean} = \E{\sqf{\prederrf{\truemean}}}$,
   not as $\popriskf{\truemean} = \E{\sqf{\Outvar - \E{\Outvar \mid \Predvar}}}$.
   The second form spells the function $\truemean$ out on the right
@@ -202,7 +202,7 @@ Follow these principles when introducing new [term](#def-term)s:
   every later definition about it uses the same symbols and the same concept.
   Do not coin an alias symbol or a synonym [term](#def-term) for it.
   For example, a theorem that decomposes the squared-error risk
-  and names the minimizing [function](https://morrison-lab.github.io/mds/functions.html#def-function) $\truemean$
+  and names the minimizing [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\truemean$
   fixes the residual risk as the risk $\popriskf{\truemean}$ of that function.
   A definition that names the residual risk through a second symbol for the same function
   leaves the reader to check that the two symbols denote one object.
@@ -212,7 +212,7 @@ Follow these principles when introducing new [term](#def-term)s:
   Build on terms that are already defined, and link them,
   instead of spelling out again what they mean.
   For example, define a mode of a distribution as an element of the
-  [argmax](https://morrison-lab.github.io/mds/algebra-basics.html#def-argmax) of its density or mass [function](https://morrison-lab.github.io/mds/functions.html#def-function),
+  [argmax](https://morrison-lab.github.io/mds/algebra-basics.html#def-argmax) of its density or mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function),
   not by writing out the inequality that the argmax stands for.
   The inequality belongs in the definition of the argmax, which the reader can follow the link to.
   A definition that restates a linked term is longer to read and drifts from the original if either changes.
@@ -511,7 +511,7 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
   such as "linear regression" for a model with an intercept, <!-- check-term-links: allow -->
-  whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mds/functions.html#def-function) of the predictors,
+  whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors,
   not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one
   (Ezra, 2026-10-28).
   Wherever the wording is yours, use the precise word:
@@ -789,7 +789,7 @@ $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 
 For a straight line with intercept $\beta_0$ and slope $\beta_x$,
 the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\beta_0 + \beta_x x_i$,
-so the residual sum of squares (@def-rss) is a [function](https://morrison-lab.github.io/mds/functions.html#def-function) of the two coefficients:
+so the [residual sum of squares](#def-rss) is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the two coefficients:
 
 $$
 \text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2.
@@ -974,7 +974,7 @@ Examples serve several crucial purposes:
   say so once rather than switching silently.
   A bare "the mode" leaves the reader to guess the object,
   and a wrong guess misattributes the characteristic:
-  a mode is a mode of one [function](https://morrison-lab.github.io/mds/functions.html#def-function),
+  a mode is a mode of one [function](https://morrison-lab.github.io/mcs/functions.html#def-function),
   and the modes of a kernel and of its density coincide only by a theorem,
   not by definition.
 

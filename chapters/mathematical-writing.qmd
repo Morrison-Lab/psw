@@ -321,7 +321,7 @@ Delete the symbol, or use it in the statement that needs it.
 
 # Deleting a symbol that is named and never used
 
-> ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mds/functions.html#def-function) $f$ on a compact space is bounded.
+> ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $f$ on a compact space is bounded.
 >
 > ✅ Every continuous real-valued function on a compact space is bounded.
 
