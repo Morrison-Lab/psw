@@ -229,7 +229,7 @@ Follow these principles when introducing new [term](#def-term)s:
   $$H(X) \stackrel{\text{def}}{=} \E{-\log p(X)},$$
 
   not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$.
-  The expanded sum belongs in a result that follows from the definition of expectation.
+  The expanded sum belongs in a result that follows from the definition of [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
   Keep the sum or integral when no expectation expresses the quantity,
   or when the definition is the one that defines [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) itself.
 
