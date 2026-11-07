@@ -724,7 +724,7 @@ Each of these phrases tells the reader that a source exists and withholds it,
 so the reader can neither check the claim nor read further.
 
 When a claim has no source in your draft, find one.
-Search the books and papers the project already cites, then the literature,
+Search the books and papers that the project already cites, then the literature,
 and cite what you find with a locator.
 Do not delete the claim or [hedge](avoid-cliches.qmd#def-hedge) it to avoid the search:
 the claim was worth writing, so it is worth the work of sourcing it.
@@ -737,7 +737,7 @@ write it in your own voice ("I expect", "the example below shows") instead of at
 # Naming the author who uses a word
 
 > ❌ Some authors call the part of the error that no model can remove "irreducible".
-
+>
 > ✅ @james2021islr2 [p. 18] call the part of the error that no model can remove the "irreducible error".
 
 The ✅ sentence names the authors and gives a page,
