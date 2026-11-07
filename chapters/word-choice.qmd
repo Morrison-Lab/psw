@@ -280,7 +280,7 @@ It names the normal equations of least squares,
 a normal vector perpendicular to a surface,
 and a normal subgroup.
 In everyday use, it also means *typical*.
-The word *Gaussian* names one concept, so use it for the distribution.
+When the subject is the distribution, *Gaussian* has no such competing meaning in the same context, so use it.
 
 > ❌ The errors need not be normal.
 >
@@ -296,7 +296,7 @@ Use the same word in every phrase built on the distribution:
 Keep *normal* where it names a different concept,
 as in the *normal equations*.
 Keep *normal* in a quoted title or a cited name,
-such as the name of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) in software,
+such as `rnorm` in R,
 where you report what the source calls it.
 
 # Name a quantity for what it is
