@@ -217,10 +217,10 @@ Follow these principles when introducing new [term](#def-term)s:
   The inequality belongs in the definition of the argmax, which the reader can follow the link to.
   A definition that restates a linked term is longer to read and drifts from the original if either changes.
 
-- **Write a definition with an expectation operator where one fits:**
-  When a quantity is a probability-weighted sum or integral of a function of a random variable,
+- **Write a definition with an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) operator where one fits:**
+  When a quantity is a probability-weighted sum, or a probability-weighted integral, of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of a random variable,
   define it as the [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) of that function,
-  not as the sum or integral written out.
+  not as the sum, or the integral, written out.
   The expectation operator already stands for the sum when the variable is discrete
   and for the integral when it is continuous,
   so one definition covers both and need not repeat the support.
@@ -231,7 +231,7 @@ Follow these principles when introducing new [term](#def-term)s:
   not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$.
   The expanded sum belongs in a result that follows from the definition of expectation.
   Keep the sum or integral when no expectation expresses the quantity,
-  or when the definition is the one that defines expectation itself.
+  or when the definition is the one that defines [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) itself.
 
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
