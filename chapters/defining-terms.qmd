@@ -230,7 +230,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
   not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$.
   The values $x$ with $p(x) = 0$ have probability zero,
-  so they contribute nothing to the expectation.
+  so they contribute nothing to the [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
   Likewise, define the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of a random variable $X$, discrete or continuous, as
 
   $$\Var{X} \eqdef \E{(X - \E{X})^2},$$
