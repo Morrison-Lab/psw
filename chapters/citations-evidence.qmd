@@ -718,15 +718,15 @@ When you find an existing credit to your own work, remove it and add or keep a l
 
 # Name the source of every attribution {#name-the-source}
 
-Name the person, book, paper or site that makes a claim.
-Do not write "some authors", "some people", "many researchers", "studies have shown", "it is well known" or "experts agree".
-Each of these tells the reader that a source exists and withholds it,
+Name the person, book, paper, or site that makes a claim.
+Do not write "some authors", "some people", "many researchers", "studies have shown", "it is well known", or "experts agree".
+Each of these phrases tells the reader that a source exists and withholds it,
 so the reader can neither check the claim nor read further.
 
 When a claim has no source in your draft, find one.
 Search the books and papers the project already cites, then the literature,
 and cite what you find with a locator.
-Do not delete the claim or hedge it to avoid the search:
+Do not delete the claim or [hedge](avoid-cliches.qmd#def-hedge) it to avoid the search:
 the claim was worth writing, so it is worth the work of sourcing it.
 
 If, after searching, no source states the claim,
@@ -734,14 +734,14 @@ write it in your own voice ("I expect", "the example below shows") instead of at
 
 :::{#exm-name-the-source}
 
-# Naming the source of a term
+# Naming the author who uses a word
 
 > ❌ Some authors call the part of the error that no model can remove "irreducible".
 
 > ✅ @james2021islr2 [p. 18] call the part of the error that no model can remove the "irreducible error".
 
 The ✅ sentence names the authors and gives a page,
-so a reader can check the term and the claim against the book.
+so a reader can check the wording and the claim against the book.
 
 :::
 
