@@ -229,14 +229,15 @@ Follow these principles when introducing new [term](#def-term)s:
   $$\entropyf{X} \eqdef \E{-\log p(X)},$$
 
   not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$.
-  The values $x$ with $p(x) = 0$ have probability zero,
-  so they contribute nothing to the [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
+  The [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) sums over the possible values of $X$,
+  which are the values $x$ with $p(x) > 0$,
+  so $-\log p(x)$ is defined at each of them.
   Likewise, define the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of any random variable $X$ as
 
   $$\Var{X} \eqdef \E{(X - \E{X})^2},$$
 
   not as a sum for one case and an integral for the other.
-  The expanded sum belongs in a result that follows from the definition of [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
+  The expanded sum or integral belongs in a result that follows from the definition of [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
   Keep the sum or integral when no expectation expresses the quantity,
   or when the definition is the one that defines [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) itself.
 
