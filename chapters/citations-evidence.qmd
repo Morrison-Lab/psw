@@ -716,10 +716,39 @@ is a cross-reference, not an attribution, so it stays.
 
 When you find an existing credit to your own work, remove it and add or keep a link to it.
 
+# Name the source of every attribution {#name-the-source}
+
+Name the person, book, paper or site that makes a claim.
+Do not write "some authors", "some people", "many researchers", "studies have shown", "it is well known" or "experts agree".
+Each of these tells the reader that a source exists and withholds it,
+so the reader can neither check the claim nor read further.
+
+When a claim has no source in your draft, find one.
+Search the books and papers the project already cites, then the literature,
+and cite what you find with a locator.
+Do not delete the claim or hedge it to avoid the search:
+the claim was worth writing, so it is worth the work of sourcing it.
+
+If, after searching, no source states the claim,
+write it in your own voice ("I expect", "the example below shows") instead of attributing it to others.
+
+:::{#exm-name-the-source}
+
+# Naming the source of a term
+
+> ❌ Some authors call the part of the error that no model can remove "irreducible".
+
+> ✅ @james2021islr2 [p. 18] call the part of the error that no model can remove the "irreducible error".
+
+The ✅ sentence names the authors and gives a page,
+so a reader can check the term and the claim against the book.
+
+:::
+
 # Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
-- **Vague attribution**: Using phrases like "studies have shown" without citing specific studies
+- **Vague attribution**: Using phrases like "studies have shown" or "some authors" without naming the studies or authors (see [Name the source of every attribution](#name-the-source))
 - **Appeal to obviousness**: Using "obviously", "clearly", or "as everyone knows" in place of a derivation or a citation
 - **Circular citation**: Citing a paper that doesn't contain the claimed information but cites another paper that does (cite the original source)
 - **Redundant citation**: Citing the same source more than once in one div or passage (see [Cite a source once per passage](#cite-once-per-passage))
