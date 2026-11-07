@@ -476,6 +476,23 @@ Follow these principles when introducing new [term](#def-term)s:
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
 
+- **Link the defined term to its Wiktionary entry:**
+  In a `#def-` div, link the first instance of the bolded term being defined
+  to its entry in [Wiktionary](https://en.wiktionary.org/),
+  where an entry exists (Ezra, 2026-11-06).
+  For example, a definition of variance begins
+  "The **[variance](https://en.wiktionary.org/wiki/variance)** of a random variable is ...".
+  Link one word, such as "variance", not the whole phrase,
+  unless the phrase itself has an entry.
+  Link only the first bolded instance in the div,
+  and check that the entry exists before linking it.
+  A multiword technical term or a symbol usually has no entry,
+  so it gets no link; do not link a different word instead.
+  An alternative name in the div title
+  gets its own link where it first appears in bold.
+  The reader then sees the ordinary meaning of the word
+  before the technical one.
+
 - **Tell synonyms from hyponyms:**
   A *synonym* names the same concept as the primary term,
   so it belongs in the div title.
