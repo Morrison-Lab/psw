@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-07 01:13:00 (PST)
+Last modified: 2026-11-07 01:19:43 (PST)
 
 > **NOTE:**
 >
@@ -84,13 +84,37 @@ A sentence is either entirely in words or entirely in math. A single inline expr
 >
 > The ❌ version puts the first condition in words and the second in math. The ✅ version says the result once in words and once in math.
 
+## 1.8 Give every relationship stated in words a formal expression
+
+When a sentence states a mathematical relationship, also write that relationship as a formal expression. A relationship is any claim that links quantities, such as:
+
+- an equality or an inequality;
+- a limit;
+- a proportionality;
+- a bound or an ordering;
+- a “depends on”.
+
+Keep the sentence, because it tells the reader what the relationship means, and add the displayed formula, because it tells the reader exactly what the relationship is. Prose alone leaves the reader to guess the quantities, the direction, and the conditions. Put every condition of the prose in the formula too, and introduce its symbols in the sentence. Keep the sentence and the formula as two sentences, as the rule to [write each sentence in words or in math](#write-each-sentence-in-words-or-in-math-not-both) requires.
+
+> **NOTE:**
+>
+> **Example 5 (Adding the formula to a prose relationship)**  
+>
+> > ❌ If random variables $X$ and $Y$ are independent, the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of their sum is the sum of their variances.
+> >
+> > ✅ If random variables $X$ and $Y$ are independent, the variance of their sum is the sum of their variances. In symbols:
+> >
+> > $$X \ind Y \implies \Var{X + Y} = \Var{X} + \Var{Y}.$$
+>
+> The ❌ version leaves the reader to reconstruct the formula and its condition. The ✅ version keeps the sentence and adds the relationship in math, with the independence condition inside the formula.
+
 # 2 Introduce a theorem with a sentence
 
 The line before a theorem, lemma or algorithm should be a complete sentence, or end with a colon. Do not let a heading such as “Theorem” finish a sentence that began above it.
 
 > **NOTE:**
 >
-> **Example 5 (Introducing a theorem)**  
+> **Example 6 (Introducing a theorem)**  
 >
 > > ❌ This gives the following **Theorem.** $G(x)$ is increasing.
 > >
@@ -114,7 +138,7 @@ In a proof, a sentence such as “so $A = B$” or “this gives $A = B$” hide
 
 > **NOTE:**
 >
-> **Example 6 (Displaying the normal equations)**  
+> **Example 7 (Displaying the normal equations)**  
 >
 > > ❌ Setting the gradient to zero yields $\stprod{\design} \vcoef = \tp{\design} \vy$.
 > >
@@ -148,7 +172,7 @@ A proof, or any derivation that supports a result, never cites a solution to an 
 
 > **NOTE:**
 >
-> **Example 7 (Citing a result div)**  
+> **Example 8 (Citing a result div)**  
 >
 > > ❌ **Proof.** By Solution 9 and Solution 10, the claim holds.
 > >
@@ -168,7 +192,7 @@ Every result div states one result and every solution div answers one exercise, 
 
 > **NOTE:**
 >
-> **Example 8 (Citing a step instead of deriving it)**  
+> **Example 9 (Citing a step instead of deriving it)**  
 >
 > > ❌ **Proof.** By the chain rule, the gradient of each summand is $2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
 > >
@@ -186,7 +210,7 @@ Halmos advises “avoid the use of irrelevant symbols” and states the rule in 
 
 > **NOTE:**
 >
-> **Example 9 (Deleting a symbol that is named and never used)**  
+> **Example 10 (Deleting a symbol that is named and never used)**  
 >
 > > ❌ Every continuous real-valued [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $f$ on a compact space is bounded.
 > >
@@ -198,7 +222,7 @@ When you apply a displayed relation to a second object, name the relation or res
 
 > **NOTE:**
 >
-> **Example 10 (Naming the relation instead of tagging it)**  
+> **Example 11 (Naming the relation instead of tagging it)**  
 >
 > > ❌ The [sample mean](../chapters/defining-terms.llms.md#def-sample-mean) satisfies Equation 3, which says that the estimator’s expected value equals the parameter. The sample [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) also satisfies Equation 3.
 > >
@@ -214,7 +238,7 @@ When a later result treats a parallel or more general case, Halmos advises that 
 
 > **NOTE:**
 >
-> **Example 11 (Defining the lasso in the words of the ridge definition)**  
+> **Example 12 (Defining the lasso in the words of the ridge definition)**  
 >
 > > ❌ The ridge estimate minimizes the [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) plus a penalty on the size of the coefficients, which is the sum of their squares. The lasso estimate is the vector of coefficients with the smallest penalized fit, where the penalty adds up the absolute values.
 > >
@@ -232,7 +256,7 @@ Halmos advises that “the statement of the theorem should consist of one senten
 
 > **NOTE:**
 >
-> **Example 12 (Moving an aside out of a statement)**  
+> **Example 13 (Moving an aside out of a statement)**  
 >
 > > ❌ Without loss of generality, let $x > 0$. Moreover, the sequence converges.
 > >
