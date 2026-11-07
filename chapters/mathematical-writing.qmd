@@ -118,7 +118,7 @@ Prose alone leaves the reader to guess the quantities, the direction, and the co
 
 # Adding the formula to a prose relationship
 
-> ❌ The variance of a sum of independent random variables is the sum of their variances.
+> ❌ The [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of a sum of independent random variables is the sum of their variances.
 >
 > ✅ The variance of a sum of independent random variables is the sum of their variances:
 >
