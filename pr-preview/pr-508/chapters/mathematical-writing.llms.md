@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-06 18:00:29 (PST)
+Last modified: 2026-11-06 18:11:06 (PST)
 
 > **NOTE:**
 >
@@ -86,7 +86,15 @@ A sentence is either entirely in words or entirely in math. A single inline expr
 
 ## 1.8 Give every relationship stated in words a formal expression
 
-When a sentence states a mathematical relationship, also write that relationship as a formal expression. A relationship is any claim that links quantities, such as an equality, an inequality, a limit, a proportionality, a bound, an ordering, or a “depends on”. Keep the sentence, because it tells the reader what the relationship means, and add the displayed formula, because it tells the reader exactly what the relationship is. Prose alone leaves the reader to guess the quantities, the direction, and the conditions. Put every condition of the prose in the formula too, and introduce its symbols in the sentence. Keep the sentence and the formula as two sentences, as the rule to [write each sentence in words or in math](#write-each-sentence-in-words-or-in-math-not-both) requires.
+When a sentence states a mathematical relationship, also write that relationship as a formal expression. A relationship is any claim that links quantities, such as:
+
+- an equality or an inequality;
+- a limit;
+- a proportionality;
+- a bound or an ordering;
+- a “depends on”.
+
+Keep the sentence, because it tells the reader what the relationship means, and add the displayed formula, because it tells the reader exactly what the relationship is. Prose alone leaves the reader to guess the quantities, the direction, and the conditions. Put every condition of the prose in the formula too, and introduce its symbols in the sentence. Keep the sentence and the formula as two sentences, as the rule to [write each sentence in words or in math](#write-each-sentence-in-words-or-in-math-not-both) requires.
 
 > **NOTE:**
 >
