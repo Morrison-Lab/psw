@@ -273,6 +273,32 @@ In machine learning, *hypothesis* also names a candidate prediction [function](h
 The definition of the prediction function family can then say
 that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 
+# Call the distribution Gaussian
+
+The word *normal* names several unrelated concepts in mathematics and statistics.
+It names the normal equations of least squares,
+a normal vector perpendicular to a surface,
+and a normal subgroup.
+In everyday use, it also means *typical*.
+When the subject is the distribution, *Gaussian* has no such competing meaning in the same context, so use it.
+
+> ❌ The errors need not be normal.
+>
+> ✅ The errors need not be Gaussian.
+
+Use the same word in every phrase built on the distribution:
+
+- Write *Gaussian distribution*, not *normal distribution*.
+- Write *standard Gaussian*, not *standard normal*.
+- Write *multivariate Gaussian*, not *multivariate normal*.
+- Write *the errors are Gaussian*, not *the errors are normally distributed*.
+
+Keep *normal* where it names a different concept,
+as in the *normal equations*.
+Keep *normal* in a quoted title or a cited name,
+such as `rnorm` in R,
+where you report what the source calls it.
+
 # Name a quantity for what it is
 
 A name should say what kind of thing the quantity is.
