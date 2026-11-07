@@ -296,7 +296,7 @@ Use the same word in every phrase built on the distribution:
 Keep *normal* where it names a different concept,
 as in the *normal equations*.
 Keep *normal* in a quoted title or a cited name,
-such as the name of a function in software,
+such as the name of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) in software,
 where you report what the source calls it.
 
 # Name a quantity for what it is
