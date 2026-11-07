@@ -206,7 +206,7 @@ and an expression is written with the named pieces it is built from.
 - Never put a result in a `#rem-` div.
   A remark holds commentary: motivation, history, a warning, how to read a result.
   When a remark states something that is true, such as an equation with its conditions,
-  move the statement into a `#thm-`, `#lem-`, `#cor-` or `#prp-` div with its proof,
+  move the statement into a `#thm-`, `#lem-`, `#cor-`, or `#prp-` div with its proof,
   and leave the commentary in the remark, which links to the result
   (Ezra, 2026-11-07).
   An example pointer or a worked number is not a result: put it in an `#exm-` div.
