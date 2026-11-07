@@ -486,8 +486,10 @@ Follow these principles when introducing new [term](#def-term)s:
   not the words around it, such as "of a study".
   Link only the first bolded instance in the div,
   and check that the entry exists before linking it.
-  A multiword technical name or a symbol usually has no entry,
-  so it gets no link; do not link one of its words instead.
+  Look up the whole name, however many words it has:
+  "standard deviation" has an entry, so it gets the link.
+  When the whole name has no entry, it gets no link;
+  do not link one of its words instead.
   An alternative name in the div title
   gets its own link where it first appears in bold.
   The reader then sees the ordinary meaning of the word
