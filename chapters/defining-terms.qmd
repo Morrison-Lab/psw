@@ -226,7 +226,7 @@ Follow these principles when introducing new [term](#def-term)s:
   so one definition covers both and need not repeat the support.
   For example, define the entropy of a discrete random variable $X$ with mass function $p$ as
 
-  $$H(X) \stackrel{\text{def}}{=} \E{-\log p(X)},$$
+  $$\entropyf{X} \eqdef \E{-\log p(X)},$$
 
   not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$.
   The expanded sum belongs in a result that follows from the definition of [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
