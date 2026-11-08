@@ -252,7 +252,7 @@ Follow these principles when introducing new [term](#def-term)s:
   $$I(X; Y) \eqdef \entropyf{X} + \entropyf{Y} - \entropyf{X, Y},$$
 
   which is symmetric in $X$ and $Y$ at a glance,
-  and not as $\entropyf{Y} - \entropyf{Y \mid X}$ or as a sum over the joint mass function.
+  and not as $\entropyf{Y} - \entropyf{Y \mid X}$ or as a sum over the joint mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function).
   The other forms are results that follow from the definition.
 
 - **Define a probability distribution by its density or mass function:**
