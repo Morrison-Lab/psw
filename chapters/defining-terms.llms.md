@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-07 13:44:38 (PST)
+Last modified: 2026-11-07 17:57:45 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -79,6 +79,12 @@ Follow these principles when introducing new [term](#def-term)s:
   $${\operatorname{Var}\mathopen{}\left(X\right)\mathclose{}} \stackrel{\text{def}}{=}{\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}},$$
 
   not as a sum for one case and an integral for the other. The expanded sum or integral belongs in a result that follows from the definition of [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation). Keep the sum or integral when no expectation expresses the quantity, or when the definition is the one that defines [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) itself.
+
+- **Write the defining expression with the highest-level macros available:** Write each quantity in the defining expression with the [semantic macro](notation/shared-macros.qmd) of the highest-level concept that names it, such as `\entropyf{X}` for an entropy, not with the lower-level expression that the macro stands for. Among equivalent defining expressions, choose the one that makes the most important property visible. For example, define the [mutual information](https://morrison-lab.github.io/ids/entropy.html#def-mutual-information) of discrete random variables $X$ and $Y$ as
+
+  $$I(X; Y) \stackrel{\text{def}}{=}{H\mathopen{}\left(X\right)\mathclose{}} + {H\mathopen{}\left(Y\right)\mathclose{}} - {H\mathopen{}\left(X, Y\right)\mathclose{}},$$
+
+  which is symmetric in $X$ and $Y$ at a glance, and not as ${H\mathopen{}\left(Y\right)\mathclose{}} - {H\mathopen{}\left(Y \mid X\right)\mathclose{}}$ or as a sum over the joint mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function). The other forms are results that follow from the definition.
 
 - **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density function (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with $k$ degrees of freedom by its pdf
 
