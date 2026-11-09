@@ -9,9 +9,9 @@ Delimiters:
   Past that, name the sub-expression with a macro.
 
 The international standard for mathematical notation, ISO 80000-2:2019 [@iso80000_2_2019], agrees on these delimiters.
-It writes the argument of a function in parentheses (clause 4), the members of a set in curly braces (Table 2),
+It writes the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) in parentheses (clause 4), the members of a set in curly braces (Table 2),
 and an interval with a square bracket at a closed end and a parenthesis at an open end (Table 3).
-Its clauses on variables, functions, sets, and intervals say nothing about square brackets for an expectation or about subscripts and superscripts,
+Its clauses on variables, functions, sets, and intervals say nothing about square brackets for an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) or about subscripts and superscripts,
 so the rules for those rest on the lab's convention.
 
 Scripts:
