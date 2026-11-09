@@ -1,4 +1,5 @@
-Choose each delimiter and each script by what it says, so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](defining-terms.qmd#def-term)s, and an index from a power.
+Choose each delimiter and each script by what it says,
+so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](defining-terms.qmd#def-term)s, and an index from a power.
 
 Delimiters:
 
@@ -37,6 +38,6 @@ A letter followed by a parenthesis, such as $\precision(X)$, reads as a [functio
 >
 > ✅ The precision of $X$ is $\precision_X = 1 / \Var{X}$.
 
-The ✅ version writes the [precision](https://morrison-lab.github.io/pds/variance-covariance.html#def-precision) as a number with the random variable as a subscript, and writes the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) with its parenthesized argument.
+The ✅ version writes the precision as a number with the random variable as a subscript, and writes the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) with its parenthesized argument.
 
 :::
