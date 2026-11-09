@@ -332,16 +332,18 @@ Readers who are learning English, and readers who read literally, cannot always 
 Name what the object is a function of, and what it is conditional on.
 
 Name a function with the word "function": <!-- check-term-links: allow -->
-write "cost function", "loss function", "logit function", and "sigmoid function", <!-- check-serial-comma: allow -->
-not "the cost", "the loss", "the logit", or "the sigmoid", when the sentence is about the function itself.
+write "cost function", "loss function", "logit function", and "logistic function", <!-- check-serial-comma: allow -->
+not "the cost", "the loss", "the logit", or "the logistic", when the sentence is about the function itself.
 Use no shorthand for a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
 Write the full term at every use.
 The rule covers every named function.
 A bare name without "function" means the value of the function at a specific input,
 and "X function" means the function itself:
-the cost of a particular parameter vector is the value of the cost function there,
-the loss of one observation is the value of the loss function at that observation,
-and the logit of a particular probability is the value of the logit function at that probability.
+
+- **Cost:** the cost of a particular parameter vector is the value of the cost function there.
+- **Loss:** the loss of one observation is the value of the loss function at that observation.
+- **Logit:** the logit of a particular probability is the value of the logit function at that probability.
+
 Name the input in the sentence or its context,
 so the reader can tell a value from the function.
 
@@ -370,9 +372,9 @@ The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 >
 > ✅ Gradient descent decreases the cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) at every step.
 
-> ❌ The logit is the inverse of the sigmoid.
+> ❌ The logit is the inverse of the logistic.
 >
-> ✅ The logit function is the inverse of the sigmoid function.
+> ✅ The logit function is the inverse of the logistic function.
 
 > ✅ The cost of the initial parameter vector is 4.2, and each step lowers it.
 > (A value of the cost function at a specific input, so "function" is not needed.)

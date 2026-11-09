@@ -206,7 +206,7 @@ if you're referring to the same group"
 
 # Spell out abbreviations
 
-Write out every term in full, at every use, and use no abbreviation. <!-- check-term-links: allow -->
+Never abbreviate a term: [use no shorthand](#use-no-shorthand) covers abbreviations and clipped phrases alike. <!-- check-term-links: allow -->
 The plain language guidelines say abbreviations
 "constantly require the reader to look back to earlier pages"
 [@plainlanguage_gov, Minimize abbreviations].
