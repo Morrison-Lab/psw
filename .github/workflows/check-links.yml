@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  # Pinned at @v3: @v1 is frozen and gets no fixes (Morrison-Lab/gha#1740).
+  # Pinned at @v3: @v1 is frozen and gets no fixes (Morrison-Lab/gha#1739).
   check:
     permissions:
       contents: read
