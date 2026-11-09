@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 13:19:23 (PST)
+Last modified: 2026-11-09 10:43:45 (PST)
 
 > **NOTE:**
 >
@@ -46,7 +46,7 @@ The precise alternative is not always shorter, but it tells the reader exactly w
 
 Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are [clichés](../chapters/avoid-cliches.llms.md#def-cliche), and [Overused vocabulary](../chapters/avoid-cliches.llms.md#overused-vocabulary) lists more of them.
 
-Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term.
+Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) that the text defines as a term.
 
 > ❌ Nesting the cross-validation loop costs another factor of $K$ in computing time.
 >
@@ -74,9 +74,9 @@ Be as specific as feasible. When the text has a specific object, name it, and do
 
 > ❌ The mode is an element of the set A at which the density is largest.
 >
-> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mds/functions.html#def-range) of the random variable at which the density is largest.
+> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mcs/functions.html#def-range) of the random variable at which the density is largest.
 
-The `check-avoided-words` check in gha warns on a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), [codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain), range or sample space named by a bare capital letter or by “some”, such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.
+The `check-avoided-words` check in gha warns on a [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain), [codomain](https://morrison-lab.github.io/mcs/functions.html#def-codomain), range or sample space named by a bare capital letter or by “some”, such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.
 
 Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) says when those words are a problem and what to write instead.
 
@@ -116,7 +116,7 @@ A word that names a technical concept keeps that one meaning on every page. Two 
 
 Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.
 
-For example, *hypothesis* means a statistical hypothesis: a claim about a [population](../chapters/defining-terms.llms.md#def-population), such as a null hypothesis that a test examines. In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+For example, *hypothesis* means a statistical hypothesis: a claim about a [population](../chapters/defining-terms.llms.md#def-population), such as a null hypothesis that a test examines. In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function).
 
 > ❌ The learner picks one hypothesis from the hypothesis set.
 >
@@ -124,7 +124,24 @@ For example, *hypothesis* means a statistical hypothesis: a claim about a [popul
 
 The definition of the prediction function family can then say that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 
-# 5 Name a quantity for what it is
+# 5 Call the distribution Gaussian
+
+The word *normal* names several unrelated concepts in mathematics and statistics. It names the normal equations of least squares, a normal vector perpendicular to a surface, and a normal subgroup. In everyday use, it also means *typical*. When the subject is the distribution, *Gaussian* has no such competing meaning in the same context, so use it.
+
+> ❌ The errors need not be normal.
+>
+> ✅ The errors need not be Gaussian.
+
+Use the same word in every phrase built on the distribution:
+
+- Write *Gaussian distribution*, not *normal distribution*.
+- Write *standard Gaussian*, not *standard normal*.
+- Write *multivariate Gaussian*, not *multivariate normal*.
+- Write *the errors are Gaussian*, not *the errors are normally distributed*.
+
+Keep *normal* where it names a different concept, as in the *normal equations*. Keep *normal* in a quoted title or a cited name, such as `rnorm` in R, where you report what the source calls it.
+
+# 6 Name a quantity for what it is
 
 A name should say what kind of thing the quantity is. Each kind of quantity has its own name:
 
@@ -142,9 +159,17 @@ For example, the variance of the outcome given the inputs is the *residual varia
 
 Mention the common name once, as an alias in the definition, and use the accurate [term](../chapters/defining-terms.llms.md#def-term) everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.
 
-# 6 Write the full phrase
+# 7 Write the full phrase
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
+
+Name a function with the word “function”: write “cost function”, “loss function”, “logit function”, and “logistic function”, not “the cost”, “the loss”, “the logit”, or “the logistic”, when the sentence is about the function itself. Use no shorthand for a technical term, even one that the text has introduced. Write the full term at every use. The rule covers every named function. A bare name without “function” means the value of the function at a specific input, and “X function” means the function itself:
+
+- **Cost:** the cost of a particular parameter vector is the value of the cost function there.
+- **Loss:** the loss of one observation is the value of the loss function at that observation.
+- **Logit:** the logit of a particular probability is the value of the logit function at that probability.
+
+Name the input in the sentence or its context, so the reader can tell a value from the function.
 
 The same rule applies to symbols. Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.
 
@@ -156,7 +181,21 @@ The same rule applies to symbols. Write a function with its argument, such as $\
 > >
 > > ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
 
-# 7 Choose each preposition on purpose
+> **NOTE:**
+>
+> **Example 2 (Naming a function in full)**  
+>
+> > ❌ The cost is convex in the parameters.
+> >
+> > ✅ The cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is convex in the parameters.
+>
+> > ❌ The logit is the inverse of the logistic.
+> >
+> > ✅ The logit function is the inverse of the logistic function.
+>
+> > ✅ The cost of the initial parameter vector is 4.2, and each step lowers it. (A value of the cost function at a specific input, so “function” is not needed.)
+
+# 8 Choose each preposition on purpose
 
 A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
 
@@ -164,7 +203,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 > **NOTE:**
 >
-> **Example 2 (Naming the relationship)**  
+> **Example 3 (Naming the relationship)**  
 >
 > > ❌ The error of the prediction is large.
 > >
@@ -180,13 +219,13 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
-# 8 Refer to a place in the document by its label
+# 9 Refer to a place in the document by its label
 
 Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document ([Google, n.d.](#ref-google2025style), entry “above”; [Google, n.d.](#ref-google2025style), entry “below”). Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.
 
 > **NOTE:**
 >
-> **Example 3 (Replacing “above” with a label)**  
+> **Example 4 (Replacing “above” with a label)**  
 >
 > > ❌ The next figure draws the fits behind the table above.
 > >
@@ -194,13 +233,13 @@ Do not use “above” or “below” for a position in a document. The same sou
 >
 > The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders `@tbl-fits` as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.
 
-# 9 Leave out words that judge difficulty or add nothing
+# 10 Leave out words that judge difficulty or add nothing
 
 “Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them ([Google, n.d.](#ref-google2025style), entries “just” and “easy, easily”). “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) covers the same problem for “obvious” and “clearly”.
 
 Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.
 
-# 10 Give a date or a version instead of a time-relative word
+# 11 Give a date or a version instead of a time-relative word
 
 Do not write “now”, “new” or “currently” for a state that will change. The Google style guide says these words “can render such documentation inaccurate, outdated, or unmeaningful” ([Google, n.d.](#ref-google2025style), “Timeless documentation”) and says of “currently”: “Avoid because this word is implied” ([Google, n.d.](#ref-google2025style), entry “currently”). Say which date, version or release the statement holds for.
 
@@ -208,13 +247,13 @@ The guide does not list “recently”, but it fails the same way. In course not
 
 > **NOTE:**
 >
-> **Example 4 (Replacing “recently” with a pointer)**  
+> **Example 5 (Replacing “recently” with a pointer)**  
 >
 > > ❌ A missing *that* is a common cause of garden-path sentences, as we recently saw.
 > >
 > > ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) shows.
 
-# 11 Minimize unnecessary jargon
+# 12 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical [term](../chapters/defining-terms.llms.md#def-term) can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
@@ -222,7 +261,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 
 > **NOTE:**
 >
-> **Example 5 (Replacing unnecessary jargon)**  
+> **Example 6 (Replacing unnecessary jargon)**  
 >
 > > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 > >

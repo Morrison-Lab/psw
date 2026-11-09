@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-05 13:19:23 (PST)</p>
+  <p class="date">Last modified: 2026-11-09 10:43:45 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -364,7 +364,7 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>The precise alternative is not always shorter, but it tells the reader exactly which quantity you measured, which makes your claim verifiable. When a metaphor genuinely aids intuition, state the precise quantity first, then offer the metaphor as a secondary aid.</p>
 <p>Informal idioms are metaphors too. “Kicks in”, “the whole point” and “getting there” stand in for a literal claim; state the claim. <a href="../chapters/inclusive-writing.html#use-literal-language">Use literal language</a> explains why idioms exclude some readers, and gives more examples. Stock metaphors such as “pave the way” and “shed light on” are <a href="../chapters/avoid-cliches.html#def-cliche">clichés</a>, and <a href="../chapters/avoid-cliches.html#overused-vocabulary">Overused vocabulary</a> lists more of them.</p>
-<p>Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a> that the text defines as a term. <!-- check-term-links: allow --></p>
+<p>Money words are idioms too when no money is involved. “Costs us”, “buys us”, “at the price of”, “pays off”, “affordable”, “cheap” and “the whole bargain” borrow from commerce to describe a trade-off, and the reader must translate them back. A verb “trade” does the same: “that trade” and “we trade accuracy for speed” put a bargain where there is a relationship between two quantities. Say what is lost or gained, and which quantity changes with which. Keep a literal use: a computational cost, a monetary cost, or a cost <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> that the text defines as a term. <!-- check-term-links: allow --></p>
 <blockquote>
 <p>❌ Nesting the cross-validation loop costs another factor of <span class="math inline">\(K\)</span> in computing time.</p>
 <p>✅ Nesting the cross-validation loop multiplies the computing time by <span class="math inline">\(K\)</span>.</p>
@@ -389,9 +389,9 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 <p>Be as specific as feasible. When the text has a specific object, name it, and do not let a generic placeholder stand in for it, such as “some set”, “a set A” or “the object”. A placeholder makes the reader ask which set is meant, and the writer has already answered that question. Keep a placeholder only where the statement is abstract on purpose, such as a general definition that holds for any set. The same aim, stated from the other side: state a result at the generality it holds, no narrower than its argument needs. A fact that a proof proves only for one case, when the argument works for all cases, is a lemma left unextracted (<a href="../chapters/teaching.html">Extract a lemma wherever feasible</a>).</p>
 <blockquote>
 <p>❌ The mode is an element of the set A at which the density is largest.</p>
-<p>✅ The mode is an element of the <a href="https://morrison-lab.github.io/mds/functions.html#def-range">range</a> of the random variable at which the density is largest.</p>
+<p>✅ The mode is an element of the <a href="https://morrison-lab.github.io/mcs/functions.html#def-range">range</a> of the random variable at which the density is largest.</p>
 </blockquote>
-<p>The <code>check-avoided-words</code> check in gha warns on a <a href="https://morrison-lab.github.io/mds/functions.html#def-domain">domain</a>, <a href="https://morrison-lab.github.io/mds/functions.html#def-codomain">codomain</a>, range or sample space named by a bare capital letter or by “some”, <!-- check-term-links: allow --> such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.</p>
+<p>The <code>check-avoided-words</code> check in gha warns on a <a href="https://morrison-lab.github.io/mcs/functions.html#def-domain">domain</a>, <a href="https://morrison-lab.github.io/mcs/functions.html#def-codomain">codomain</a>, range or sample space named by a bare capital letter or by “some”, <!-- check-term-links: allow --> such as “domain A” or “some range”. It cannot tell whether a specific object exists, so a warning only asks you to check.</p>
 <p>Some single words cause a different problem. Words such as “obviously”, “clearly” and “trivially” can assert that a claim needs no support instead of supplying any. <a href="../chapters/citations-evidence.html#do-not-substitute-flippancy-for-support">Do not substitute flippancy for support</a> says when those words are a problem and what to write instead.</p>
 </section>
 <section id="follow-an-abstract-statement-with-an-example" class="slide level2" data-number="2">
@@ -434,15 +434,34 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 
 <p>A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader encounters the word in its second sense, they must stop and work out which concept the sentence means.</p>
 <p>Pick the word’s established meaning in the course sequence, and name the other concept with a different phrase. If the other field’s word is still useful, list it as a labeled alias in the definition of the concept it names.</p>
-<p>For example, <em>hypothesis</em> means a statistical hypothesis: a claim about a <a href="../chapters/defining-terms.html#def-population">population</a>, such as a null hypothesis that a test examines. In machine learning, <em>hypothesis</em> also names a candidate prediction <a href="https://morrison-lab.github.io/mds/functions.html#def-function">function</a>.</p>
+<p>For example, <em>hypothesis</em> means a statistical hypothesis: a claim about a <a href="../chapters/defining-terms.html#def-population">population</a>, such as a null hypothesis that a test examines. In machine learning, <em>hypothesis</em> also names a candidate prediction <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>.</p>
 <blockquote>
 <p>❌ The learner picks one hypothesis from the hypothesis set.</p>
 <p>✅ The learner picks one function from the prediction function family.</p>
 </blockquote>
 <p>The definition of the prediction function family can then say that machine-learning texts call it a <em>hypothesis class</em> or <em>hypothesis space</em>.</p>
 </section>
-<section id="name-a-quantity-for-what-it-is" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Name a quantity for what it is</h2>
+<section id="call-the-distribution-gaussian" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Call the distribution Gaussian</h2>
+</section>
+<section class="slide level2">
+
+<p>The word <em>normal</em> names several unrelated concepts in mathematics and statistics. It names the normal equations of least squares, a normal vector perpendicular to a surface, and a normal subgroup. In everyday use, it also means <em>typical</em>. When the subject is the distribution, <em>Gaussian</em> has no such competing meaning in the same context, so use it.</p>
+<blockquote>
+<p>❌ The errors need not be normal.</p>
+<p>✅ The errors need not be Gaussian.</p>
+</blockquote>
+<p>Use the same word in every phrase built on the distribution:</p>
+<ul>
+<li>Write <em>Gaussian distribution</em>, not <em>normal distribution</em>.</li>
+<li>Write <em>standard Gaussian</em>, not <em>standard normal</em>.</li>
+<li>Write <em>multivariate Gaussian</em>, not <em>multivariate normal</em>.</li>
+<li>Write <em>the errors are Gaussian</em>, not <em>the errors are normally distributed</em>.</li>
+</ul>
+<p>Keep <em>normal</em> where it names a different concept, as in the <em>normal equations</em>. Keep <em>normal</em> in a quoted title or a cited name, such as <code>rnorm</code> in R, where you report what the source calls it.</p>
+</section>
+<section id="name-a-quantity-for-what-it-is" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Name a quantity for what it is</h2>
 </section>
 <section class="slide level2">
 
@@ -460,12 +479,19 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 <p>Mention the common name once, as an alias in the definition, and use the accurate <a href="../chapters/defining-terms.html#def-term">term</a> everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.</p>
 </section>
-<section id="write-the-full-phrase" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Write the full phrase</h2>
+<section id="write-the-full-phrase" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Write the full phrase</h2>
 </section>
 <section class="slide level2">
 
 <p>Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, <!-- check-term-links: allow --> and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.</p>
+<p>Name a function with the word “function”: <!-- check-term-links: allow --> write “cost function”, “loss function”, “logit function”, and “logistic function”, <!-- check-serial-comma: allow --> not “the cost”, “the loss”, “the logit”, or “the logistic”, when the sentence is about the function itself. Use no shorthand for a technical term, even one that the text has introduced. <!-- check-term-links: allow --> Write the full term at every use. The rule covers every named function. A bare name without “function” means the value of the function at a specific input, and “X function” means the function itself:</p>
+<ul>
+<li><strong>Cost:</strong> the cost of a particular parameter vector is the value of the cost function there. <!-- check-term-links: allow --></li>
+<li><strong>Loss:</strong> the loss of one observation is the value of the loss function at that observation.</li>
+<li><strong>Logit:</strong> the logit of a particular probability is the value of the logit function at that probability.</li>
+</ul>
+<p>Name the input in the sentence or its context, so the reader can tell a value from the function. <!-- check-term-links: allow --></p>
 <p>The same rule applies to symbols. Write a function with its argument, such as <span class="math inline">\(\truemeanf{\predvar}\)</span>, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.</p>
 <div id="exm-full-phrase" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (Writing the full phrase and the argument)</strong></span> The display equation is <span class="math inline">\(\Outvar = \truemeanf{\predvar} + \noise\)</span>.</p>
@@ -474,16 +500,30 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 <p>✅ The outcome variable is the true mean function of the outcome variable given the input value <span class="math inline">\(\predvar\)</span>, namely <span class="math inline">\(\truemeanf{\predvar}\)</span>, plus noise.</p>
 </blockquote>
 </div>
+<div id="exm-function-named-in-full" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Naming a function in full)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The cost is convex in the parameters.</p>
+<p>✅ The cost <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> is convex in the parameters.</p>
+</blockquote>
+<blockquote>
+<p>❌ The logit is the inverse of the logistic.</p>
+<p>✅ The logit function is the inverse of the logistic function.</p>
+</blockquote>
+<blockquote>
+<p>✅ The cost of the initial parameter vector is 4.2, and each step lowers it. (A value of the cost function at a specific input, so “function” is not needed.)</p>
+</blockquote>
+</div>
 </section>
-<section id="choose-each-preposition-on-purpose" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Choose each preposition on purpose</h2>
+<section id="choose-each-preposition-on-purpose" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Choose each preposition on purpose</h2>
 </section>
 <section class="slide level2">
 
 <p>A preposition states a relationship between two things. Small words such as <em>of</em>, <em>for</em>, <em>with</em> and <em>using</em> are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.</p>
 <p>For each preposition, ask what relationship it states. If you cannot answer in one phrase, replace it with a verb that names the relationship.</p>
 <div id="exm-prepositions" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (Naming the relationship)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 3 (Naming the relationship)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The error of the prediction is large.</p>
 <p>✅ The prediction misses the observed outcome by a large amount.</p>
@@ -497,14 +537,14 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>Keep a plain preposition when it states the relationship exactly, such as <em>in</em> for location and <em>by</em> for the agent of a passive verb.</p>
 </section>
-<section id="refer-to-a-place-in-the-document-by-its-label" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Refer to a place in the document by its label</h2>
+<section id="refer-to-a-place-in-the-document-by-its-label" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Refer to a place in the document by its label</h2>
 </section>
 <section class="slide level2">
 
 <p>Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document <span class="citation" data-cites="google2025style google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entry “above”; <a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entry “below”)</span>. Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.</p>
 <div id="exm-position-words" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Replacing “above” with a label)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Replacing “above” with a label)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The next figure draws the fits behind the table above.</p>
 <p>✅ The next figure draws the fits behind <code>@tbl-fits</code>.</p>
@@ -512,38 +552,38 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 <p>The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders <code>@tbl-fits</code> as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.</p>
 </div>
 </section>
-<section id="leave-out-words-that-judge-difficulty-or-add-nothing" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Leave out words that judge difficulty or add nothing</h2>
+<section id="leave-out-words-that-judge-difficulty-or-add-nothing" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Leave out words that judge difficulty or add nothing</h2>
 </section>
 <section class="slide level2">
 
 <p>“Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entries “just” and “easy, easily”)</span>. “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. <a href="../chapters/citations-evidence.html#do-not-substitute-flippancy-for-support">Do not substitute flippancy for support</a> covers the same problem for “obvious” and “clearly”.</p>
 <p>Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.</p>
 </section>
-<section id="give-a-date-or-a-version-instead-of-a-time-relative-word" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Give a date or a version instead of a time-relative word</h2>
+<section id="give-a-date-or-a-version-instead-of-a-time-relative-word" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Give a date or a version instead of a time-relative word</h2>
 </section>
 <section class="slide level2">
 
 <p>Do not write “now”, “new” or “currently” for a state that will change. The Google style guide says these words “can render such documentation inaccurate, outdated, or unmeaningful” <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, “Timeless documentation”)</span> and says of “currently”: “Avoid because this word is implied” <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entry “currently”)</span>. Say which date, version or release the statement holds for.</p>
 <p>The guide does not list “recently”, but it fails the same way. In course notes it also fails when pages reorder, because “recently” assumed an order of lectures that the page does not fix.</p>
 <div id="exm-time-relative" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Replacing “recently” with a pointer)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Replacing “recently” with a pointer)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ A missing <em>that</em> is a common cause of garden-path sentences, as we recently saw.</p>
 <p>✅ A missing <em>that</em> is a common cause of garden-path sentences, as <a href="../chapters/grammar.html#avoid-garden-path-sentences">Avoid garden-path sentences</a> shows.</p>
 </blockquote>
 </div>
 </section>
-<section id="minimize-unnecessary-jargon" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Minimize unnecessary jargon</h2>
+<section id="minimize-unnecessary-jargon" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Minimize unnecessary jargon</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
 <p>Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical <a href="../chapters/defining-terms.html#def-term">term</a> can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.</p>
 <p>Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Name the synonyms</a>).</p>
 <div id="exm-jargon" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.</p>
 <p>✅ We wrote a custom program to combine data from several sources.</p>

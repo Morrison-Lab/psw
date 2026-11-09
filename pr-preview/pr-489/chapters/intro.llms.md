@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 13:19:23 (PST)
+Last modified: 2026-11-09 10:43:45 (PST)
 
 > **NOTE:**
 >
@@ -26,7 +26,33 @@ I wrote this book for students and mentees who are learning to write about their
 
 Many rules are stated as checks that a reader can apply to a single sentence, so a student and an AI assistant can apply them the same way. For example, the section on [demonstrative pronouns](../chapters/grammar.llms.md#demonstrative-pronouns) asks whether each “this” or “that” is followed by the noun that it refers to. A person or a program can answer that question without knowing what the paper is about.
 
-# 3 How the book is organized
+# 3 The principle behind the rules
+
+The rules in this book apply one idea from the philosopher Paul Grice. Grice observed that people in a conversation expect each contribution to serve the purpose of the exchange ([Grice 1975](#ref-grice1975)). He called this expectation the cooperative principle, and he divided it into four maxims ([Davis 2024](#ref-davis2024implicature)):
+
+- **Quantity:** be as informative as required.
+- **Quality:** say only what you believe true and can justify.
+- **Relation:** be relevant.
+- **Manner:** be clear, which includes avoiding obscurity and ambiguity, being brief, and being orderly.
+
+A reader of technical writing expects the same cooperation from the author. A sentence that breaks a maxim makes the reader stop and guess what the author meant. Most rules in this book name one way to break a maxim and the fix.
+
+The chapters serve the maxims as follows:
+
+- **Quantity:**
+  - “Not more than required”: [Conciseness](../chapters/conciseness.llms.md).
+  - “Not less than required”: [Defining terms clearly](../chapters/defining-terms.llms.md) and the sections of [Word choice](../chapters/word-choice.llms.md) on naming the object a sentence refers to and following an abstract statement with an example.
+- **Quality:** [Citations and evidence](../chapters/citations-evidence.llms.md), which asks for support for each claim and for checking each source, and [Avoiding clichés](../chapters/avoid-cliches.llms.md).
+- **Relation:** the sections of [Conciseness](../chapters/conciseness.llms.md) on writing about the ideas and not about the document, and the layout of the Results section in [Paper organization](../chapters/paper-organization.llms.md).
+- **Manner:**
+  - Obscurity: [Word choice](../chapters/word-choice.llms.md).
+  - Ambiguity: [Grammar](../chapters/grammar.llms.md).
+  - Brevity: [Conciseness](../chapters/conciseness.llms.md).
+  - Order: the sections on assumptions first in [Mathematical notation](../chapters/notation.llms.md), on forward references in [Paper organization](../chapters/paper-organization.llms.md), and on giving the general definition before examples in [Defining terms clearly](../chapters/defining-terms.llms.md).
+
+The maxims describe what a reader expects. They are not a checklist, because whether a sentence is relevant or informative enough depends on the reader and the purpose of the document. This book therefore states each rule as a check that does not depend on the reader, as the previous section describes, and uses the maxims to explain why each rule exists.
+
+# 4 How the book is organized
 
 The chapters fall into six groups:
 
@@ -52,7 +78,7 @@ The chapters fall into six groups:
 
 The [Summary](../chapters/summary.llms.md) lists the book’s main rules as a checklist for revising a draft.
 
-# 4 How to read the book
+# 5 How to read the book
 
 You can read the chapters in any order. Most sections state one rule and the reason for it, and then show the rule applied to an example. Many sections compare a weaker version of a passage with a stronger one. For example, the [Word choice](../chapters/word-choice.llms.md) chapter recommends “before” over “prior to”:
 
@@ -64,7 +90,7 @@ Definitions, examples, and exercises appear in numbered, colored boxes, so that 
 
 Use the book as a reference while you write, and use the [Summary](../chapters/summary.llms.md) checklist when you revise.
 
-# 5 Further reading
+# 6 Further reading
 
 These shorter guides cover some of the same ground:
 
@@ -81,13 +107,17 @@ For who counts as an author, see the ICMJE criteria in [Preparing a manuscript f
 
 For further reading, see the [Resources chapter](https://ucd-serg.github.io/lab-manual/resources.html) of the UCD-SERG lab manual.
 
-# 6 Contributing
+# 7 Contributing
 
 The book is a work in progress. If a rule is unclear, wrong, or missing, open an issue on the book’s [GitHub repository](https://github.com/Morrison-Lab/psw/issues).
 
 Back to top
 
 ## References
+
+Davis, Wayne. 2024. *Implicature*. The Stanford Encyclopedia of Philosophy, edited by Edward N. Zalta and Uri Nodelman. <https://plato.stanford.edu/entries/implicature/>.
+
+Grice, H. Paul. 1975. “Logic and Conversation.” In *Syntax and Semantics 3: Speech Acts*, edited by Peter Cole and Jerry L. Morgan. Academic Press.
 
 Luby, Stephen, and Dorothy L. Southern. 2022. *The Pathway to Publishing: A Guide to Quantitative Writing in the Health Sciences*. Springer International Publishing. <https://doi.org/10.1007/978-3-030-98175-4>.
 

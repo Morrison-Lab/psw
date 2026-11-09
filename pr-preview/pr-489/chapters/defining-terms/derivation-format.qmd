@@ -24,7 +24,7 @@ Follow these principles:
   not a second copy of their working.
   A proof that does no derivation of its own is one line citing the solution of the exercise that asks for the result,
   and every later argument cites the theorem, never the solution
-  (see [Cite results, not solutions](../mathematical-writing.qmd#cite-results-not-solutions)).
+  (see [Cite results, not solutions](mathematical-writing.qmd#cite-results-not-solutions)).
 - **Define notation first.**
   Introduce any notation the exercises use in its own definition before them,
   not inside the theorem that follows them.

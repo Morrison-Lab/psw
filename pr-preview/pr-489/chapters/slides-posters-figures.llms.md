@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-05 13:19:23 (PST)
+Last modified: 2026-11-09 10:43:45 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -78,13 +78,26 @@ For more:
 
 # 5 Three-dimensional graphs
 
-A [function](https://morrison-lab.github.io/mds/functions.html#def-function) of two variables, such as a loss or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
+A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss function or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
 
 - Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
+
 - Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points, placed right after the contour plot. The 3D plot may be a separate figure that cross-references the contour plot.
+
 - Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
+
 - Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.
+
 - An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
+
+- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the PDF and Word output, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
+
+  ``` python
+  print("```{=html}\n" + fig.to_html(full_html=False, include_plotlyjs="cdn") + "\n```")
+  ```
+
+  End each call that returns the figure, such as `add_trace` and `update_layout`, with `;` so that reticulate does not print the figure after every call, and add `plotly` to the page’s `reticulate::py_require` list.
+
 - Give a 3D plot alt text that states what the surface looks like, such as “a bowl with its lowest point at …”.
 
 > **NOTE:**
