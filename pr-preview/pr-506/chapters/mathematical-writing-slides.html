@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-06 17:26:04 (PST)</p>
+  <p class="date">Last modified: 2026-11-09 13:57:40 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -364,6 +364,28 @@
 </blockquote>
 <p>The ❌ version puts the first condition in words and the second in math. The ✅ version says the result once in words and once in math.</p>
 </div>
+<h3 data-number="1.8" id="give-every-relationship-stated-in-words-a-formal-expression"><span class="header-section-number">1.8</span> Give every relationship stated in words a formal expression</h3>
+</section>
+<section class="slide level2">
+
+<p>When a sentence states a mathematical relationship, also write that relationship as a formal expression. A relationship is any claim that links quantities, such as:</p>
+<ul>
+<li>an equality or an inequality;</li>
+<li>a limit;</li>
+<li>a proportionality;</li>
+<li>a bound or an ordering;</li>
+<li>a “depends on”.</li>
+</ul>
+<p>Keep the sentence, because it tells the reader what the relationship means, and add the displayed formula, because it tells the reader exactly what the relationship is. Prose alone leaves the reader to guess the quantities, the direction, and the conditions. Put every condition of the prose in the formula too, and introduce its symbols in the sentence. Keep the sentence and the formula separate, as the rule to <a href="#/write-each-sentence-in-words-or-in-math-not-both">write each sentence in words or in math</a> requires: the display may follow a lead-in such as “In symbols:”, and the formula is not part of the sentence in words.</p>
+<div id="exm-prose-relationship-formal" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Adding the formula to a prose relationship)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ If random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent, the <a href="https://morrison-lab.github.io/pds/variance-covariance.html#def-variance">variance</a> of their sum is the sum of their variances.</p>
+<p>✅ If random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent, the variance of their sum is the sum of their variances. In symbols:</p>
+<p><span class="math display">\[X \ind Y \implies \Var{X + Y} = \Var{X} + \Var{Y}.\]</span></p>
+</blockquote>
+<p>The ❌ version leaves the reader to reconstruct the formula and its condition. The ✅ version keeps the sentence and adds the relationship in math, with the independence condition inside the formula.</p>
+</div>
 </section>
 <section id="introduce-a-theorem-with-a-sentence" class="slide level2" data-number="2">
 <h2><span class="header-section-number">2</span> Introduce a theorem with a sentence</h2>
@@ -372,7 +394,7 @@
 
 <p>The line before a theorem, lemma or algorithm should be a complete sentence, or end with a colon. Do not let a heading such as “Theorem” finish a sentence that began above it.</p>
 <div id="exm-introduce-theorem" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Introducing a theorem)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Introducing a theorem)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ This gives the following <strong>Theorem.</strong> <span class="math inline">\(G(x)\)</span> is increasing.</p>
 <p>✅ Next we prove a result about monotonicity. <strong>Theorem.</strong> The function <span class="math inline">\(G(x)\)</span> defined in equation (3) is increasing. <!-- check-term-links: allow --></p>
@@ -395,7 +417,7 @@
 </ul>
 <p>In a proof, a sentence such as “so <span class="math inline">\(A = B\)</span>” or “this gives <span class="math inline">\(A = B\)</span>” hides the result in the middle of a line. Put the equation in a display and let the sentence introduce it. Use inline math for symbols and short expressions inside a sentence, not for the equation the reader is meant to remember.</p>
 <div id="exm-key-equation-displayed" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Displaying the normal equations)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Displaying the normal equations)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Setting the gradient to zero yields <span class="math inline">\(\stprod{\design} \vcoef = \tp{\design} \vy\)</span>.</p>
 <p>✅ Setting the gradient to zero yields the normal equations:</p>
@@ -440,7 +462,7 @@
 
 <p>A proof, or any derivation that supports a result, never cites a solution to an exercise. A solution answers an exercise for the reader who attempted the exercise, so the solution is not a result that other arguments can build on. Follow each solution that contains a reusable result with a result div (a theorem, lemma, corollary or proposition) that states the claim. The test is whether the solution contains a result that other arguments could use, not whether any later argument currently relies on it. Cite that result div in every argument that uses the claim.</p>
 <div id="exm-cite-results" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Citing a result div)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Citing a result div)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ <strong>Proof.</strong> By Solution 9 and Solution 10, the claim holds.</p>
 <p>✅ <strong>Proof.</strong> By Lemma 4 and Lemma 5, the claim holds.</p>
@@ -458,9 +480,9 @@
 
 <p>Every result div states one result and every solution div answers one exercise, and each does no more. When a proof or a solution needs a step that a reader could use elsewhere, state that step as its own result div, preceded by its exercise and solution, and cite that result div. Never derive the step inline. A solution decomposes the same way: each solution is the smallest argument that answers its exercise, and it cites result divs for the steps that other arguments also use.</p>
 <div id="exm-never-inline" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Citing a step instead of deriving it)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (Citing a step instead of deriving it)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ <strong>Proof.</strong> By the chain rule, the gradient of each summand is <span class="math inline">\(2 \resid_i \vfeatmap(\vx_i)\)</span>, where <span class="math inline">\(\resid_i\)</span> is the residual and <span class="math inline">\(\vfeatmap(\vx_i)\)</span> the design vector, and summing over <span class="math inline">\(i\)</span> gives the claim.</p>
+<p>❌ <strong>Proof.</strong> By the chain rule, <span class="math inline">\(\gradwrt{\vcoef}{\resid_i^2} = 2 \resid_i \vfeatmap(\vx_i)\)</span>, where <span class="math inline">\(\resid_i\)</span> is the residual and <span class="math inline">\(\vfeatmap(\vx_i)\)</span> the design vector, and summing over <span class="math inline">\(i\)</span> gives the claim.</p>
 <p>✅ <strong>Proof.</strong> Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of <span class="math inline">\(2 \resid_i \vfeatmap(\vx_i)\)</span> over <span class="math inline">\(i\)</span>.</p>
 </blockquote>
 <p>The ❌ proof derives inline the result that Lemma 4 states, so a reader who needs that step elsewhere has nowhere to cite.</p>
@@ -475,7 +497,7 @@
 
 <p>Halmos advises “avoid the use of irrelevant symbols” and states the rule in its showy form as “use no letter only once” <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 15</a>)</span>. A symbol that appears once, in the sentence that introduces it, adds a name for the reader to hold and nothing to use it for. Delete the symbol, or use it in the statement that needs it.</p>
 <div id="exm-superfluous-symbol" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Deleting a symbol that is named and never used)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Deleting a symbol that is named and never used)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Every continuous real-valued <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> <span class="math inline">\(f\)</span> on a compact space is bounded.</p>
 <p>✅ Every continuous real-valued function on a compact space is bounded.</p>
@@ -484,7 +506,7 @@
 </div>
 <p>When you apply a displayed relation to a second object, name the relation or restate it, rather than citing its tag. Halmos calls “<span class="math inline">\(g\)</span> also satisfies (<em>)” ”logical and alphabetical nonsense” and advises ”(</em>) remains satisfied if <span class="math inline">\(f\)</span> is replaced by <span class="math inline">\(g\)</span>”, or, better, giving the relation a name <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 15</a>)</span>. A named relation also lets the reader find it without hunting for a tag.</p>
 <div id="exm-name-the-relation" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Naming the relation instead of tagging it)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Naming the relation instead of tagging it)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The <a href="../chapters/defining-terms.html#def-sample-mean">sample mean</a> satisfies Equation 3, which says that the estimator’s expected value equals the parameter. The sample <a href="../chapters/defining-terms.html#def-variance-expression-and-prose">variance</a> also satisfies Equation 3.</p>
 <p>✅ The sample mean is an unbiased estimator of the <a href="../chapters/defining-terms.html#def-population">population</a> mean. The sample variance is an unbiased estimator of the population variance.</p>
@@ -500,7 +522,7 @@
 
 <p>When a later result treats a parallel or more general case, Halmos advises that “it is a big help to the reader if you use the same words in the same order for as long as possible, and then, with a proper roll of drums, emphasize the difference” <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 11</a>)</span>. He adds that listing the shared conditions and dropping one is not enough; say which condition changed <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 11</a>)</span>.</p>
 <div id="exm-parallel-wording" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Defining the lasso in the words of the ridge definition)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Defining the lasso in the words of the ridge definition)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The ridge estimate minimizes the <a href="../chapters/defining-terms.html#def-rss">residual sum of squares</a> plus a penalty on the size of the coefficients, which is the sum of their squares. The lasso estimate is the vector of coefficients with the smallest penalized fit, where the penalty adds up the absolute values.</p>
 <p>✅ The ridge estimate minimizes the residual sum of squares plus a penalty equal to the sum of the squared coefficients. The lasso estimate minimizes the residual sum of squares plus a penalty equal to the sum of the absolute values of the coefficients. The two definitions differ only in the penalty.</p>
@@ -517,7 +539,7 @@
 
 <p>Halmos advises that “the statement of the theorem should consist of one sentence whenever possible”, and that the sentence be a short one <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 10</a>)</span>. Put the introductory comments, preliminary definitions and motivation before the statement, and the proof after it. Leave asides out of the statement itself. Halmos says that phrases such as “without loss of generality we may assume …” and “moreover it follows from Theorem 1 that …” do not belong in the statement of a theorem <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 10</a>)</span>. A reasoning word in a statement (“so”, “because”) is a separate fault, and <a href="../chapters/teaching.html#build-every-unit-from-smaller-atomic-units">Build every unit from smaller atomic units</a> covers it.</p>
 <div id="exm-one-sentence-statement" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Moving an aside out of a statement)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 13 (Moving an aside out of a statement)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Without loss of generality, let <span class="math inline">\(x &gt; 0\)</span>. Moreover, the sequence converges.</p>
 <p>✅ If <span class="math inline">\(x &gt; 0\)</span>, then the sequence converges.</p>

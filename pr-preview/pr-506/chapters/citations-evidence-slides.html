@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-06 17:26:04 (PST)</p>
+  <p class="date">Last modified: 2026-11-09 13:57:40 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -795,14 +795,31 @@
 <p>A link to a sister site that sends the reader to further reading is a cross-reference, not an attribution, so it stays.</p>
 <p>When you find an existing credit to your own work, remove it and add or keep a link to it.</p>
 </section>
-<section id="common-citation-errors-to-avoid" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Common citation errors to avoid</h2>
+<section id="name-the-source" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Name the source of every attribution</h2>
+</section>
+<section class="slide level2">
+
+<p>Name the person, book, paper, or site that makes a claim. Do not write “some authors”, “some people”, “many researchers”, “studies have shown”, “it is well known”, or “experts agree”. Each of these phrases tells the reader that a source exists and withholds it, so the reader can neither check the claim nor read further.</p>
+<p>When a claim has no source in your draft, find one. Search the books and papers that the project already cites, then the literature, and cite what you find with a locator. Do not delete the claim or <a href="../chapters/avoid-cliches.html#def-hedge">hedge</a> it to avoid the search: the claim was worth writing, so it is worth the work of sourcing it.</p>
+<p>If, after searching, no source states the claim, write it in your own voice (“I expect”, “the example below shows”) instead of attributing it to others.</p>
+<div id="exm-name-the-source" class="theorem example">
+<p><span class="theorem-title"><strong>Example 9 (Naming the author who uses a word)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Some authors call the part of the error that no model can remove “irreducible”.</p>
+<p>✅ <span class="citation" data-cites="james2021islr2">James et al. (<a href="#/references" role="doc-biblioref" onclick="">2021, 18</a>)</span> call the part of the error that no model can remove the “irreducible error”.</p>
+</blockquote>
+<p>The ✅ sentence names the authors and gives a page, so a reader can check the wording and the claim against the book.</p>
+</div>
+</section>
+<section id="common-citation-errors-to-avoid" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Common citation errors to avoid</h2>
 </section>
 <section class="slide level2">
 
 <ul>
 <li><strong>Citation needed</strong>: Making claims without any supporting citation or evidence</li>
-<li><strong>Vague attribution</strong>: Using phrases like “studies have shown” without citing specific studies</li>
+<li><strong>Vague attribution</strong>: Using phrases like “studies have shown” or “some authors” without naming the studies or authors (see <a href="#/name-the-source">Name the source of every attribution</a>)</li>
 <li><strong>Appeal to obviousness</strong>: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation</li>
 <li><strong>Circular citation</strong>: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)</li>
 <li><strong>Redundant citation</strong>: Citing the same source more than once in one div or passage (see <a href="#/cite-once-per-passage">Cite a source once per passage</a>)</li>
@@ -811,12 +828,12 @@
 <li><strong>Ghost authorship</strong>: Failing to cite work that directly influenced your ideas</li>
 </ul>
 </section>
-<section id="examples" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Examples</h2>
+<section id="examples" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Examples</h2>
 </section>
 <section class="slide level2">
 
-<h3 data-number="23.1" id="poor-unsupported-claim"><span class="header-section-number">23.1</span> Poor (unsupported claim)</h3>
+<h3 data-number="24.1" id="poor-unsupported-claim"><span class="header-section-number">24.1</span> Poor (unsupported claim)</h3>
 </section>
 <section class="slide level2">
 
@@ -824,7 +841,7 @@
 <p>Machine learning models often perform poorly on small datasets.</p>
 </blockquote>
 <p><strong>Problem</strong>: This claim is stated as fact without any support.</p>
-<h3 data-number="23.2" id="better-citation-provided"><span class="header-section-number">23.2</span> Better (citation provided)</h3>
+<h3 data-number="24.2" id="better-citation-provided"><span class="header-section-number">24.2</span> Better (citation provided)</h3>
 </section>
 <section class="slide level2">
 
@@ -832,7 +849,7 @@
 <p>Machine learning models often perform poorly on small datasets <span class="citation" data-cites="vapnik1998 hawkins2004">(<a href="#/references" role="doc-biblioref" onclick="">Vapnik 1998</a>; <a href="#/references" role="doc-biblioref" onclick="">Hawkins 2004</a>)</span>.</p>
 </blockquote>
 <p><strong>Improvement</strong>: Citations provide evidence for the claim.</p>
-<h3 data-number="23.3" id="best-citation-with-context"><span class="header-section-number">23.3</span> Best (citation with context)</h3>
+<h3 data-number="24.3" id="best-citation-with-context"><span class="header-section-number">24.3</span> Best (citation with context)</h3>
 </section>
 <section class="slide level2">
 
@@ -840,7 +857,7 @@
 <p>Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data <span class="citation" data-cites="vapnik1998 hawkins2004">(<a href="#/references" role="doc-biblioref" onclick="">Vapnik 1998</a>; <a href="#/references" role="doc-biblioref" onclick="">Hawkins 2004</a>)</span>.</p>
 </blockquote>
 <p><strong>Improvement</strong>: The specific support each citation provides is explained.</p>
-<h3 data-number="23.4" id="poor-irrelevant-citation"><span class="header-section-number">23.4</span> Poor (irrelevant citation)</h3>
+<h3 data-number="24.4" id="poor-irrelevant-citation"><span class="header-section-number">24.4</span> Poor (irrelevant citation)</h3>
 </section>
 <section class="slide level2">
 
@@ -848,7 +865,7 @@
 <p>Python is the most popular programming language for data science <span class="citation" data-cites="knuth84">(<a href="#/references" role="doc-biblioref" onclick="">Knuth 1984</a>)</span>.</p>
 </blockquote>
 <p><strong>Problem</strong>: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.</p>
-<h3 data-number="23.5" id="better-relevant-citation"><span class="header-section-number">23.5</span> Better (relevant citation)</h3>
+<h3 data-number="24.5" id="better-relevant-citation"><span class="header-section-number">24.5</span> Better (relevant citation)</h3>
 </section>
 <section class="slide level2">
 
@@ -857,8 +874,8 @@
 </blockquote>
 <p><strong>Improvement</strong>: The citation is to a current survey of programming language usage.</p>
 </section>
-<section id="conclusion" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Conclusion</h2>
+<section id="conclusion" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Conclusion</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
@@ -1064,6 +1081,9 @@ Blitzstein, Joseph K., and Jessica Hwang. 2019. <em>Introduction to Probability<
 </div>
 <div id="ref-hawkins2004" class="csl-entry" role="listitem">
 Hawkins, Douglas M. 2004. <span>“The Problem of Overfitting.”</span> <em>Journal of Chemical Information and Computer Sciences</em> 44 (1): 1–12. <a href="https://doi.org/10.1021/ci0342472">https://doi.org/10.1021/ci0342472</a>.
+</div>
+<div id="ref-james2021islr2" class="csl-entry" role="listitem">
+James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. <em>An Introduction to Statistical Learning: With Applications in r</em>. 2nd ed. Springer. <a href="https://doi.org/10.1007/978-1-0716-1418-1">https://doi.org/10.1007/978-1-0716-1418-1</a>.
 </div>
 <div id="ref-knuth84" class="csl-entry" role="listitem">
 Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> (USA) 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.

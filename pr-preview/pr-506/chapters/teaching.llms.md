@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-06 17:26:04 (PST)
+Last modified: 2026-11-09 13:57:40 (PST)
 
 > **NOTE:**
 >
@@ -104,6 +104,7 @@ This is the compositional approach of [modular programming](https://en.wikipedia
 - A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
 - A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.
+- Never put a result in a `#rem-` div. A remark holds commentary: motivation, history, a warning, how to read a result. When a remark states something that is true, such as an equation with its conditions, move the statement into a `#thm-`, `#lem-`, `#cor-`, or `#prp-` div with its proof, and leave the commentary in the remark, which links to the result (Ezra, 2026-11-07). An example pointer or a worked number is not a result: put it in an `#exm-` div.
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
 - Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as $\E{Z^2} = \var{Z} + \sqf{\E{Z}}$ for any random variable $Z$, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
 - A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
@@ -184,9 +185,9 @@ Check the reference text itself before naming its datasets. Open the chapter and
 >
 > **Example 4 (Showing the data at first mention)**  
 >
-> > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance and the loss we will minimize. Slide 10 shows a table of the first rows.
+> > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance, and the loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) we will minimize. Slide 10 shows a table of the first rows.
 > >
-> > ✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance and the loss, and refer back to that table and plot.
+> > ✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function, and refer back to that table and plot.
 >
 > The ✅ version lets every later slide refer to something the reader has already seen.
 

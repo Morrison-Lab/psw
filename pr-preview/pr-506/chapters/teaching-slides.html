@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-06 17:26:04 (PST)</p>
+  <p class="date">Last modified: 2026-11-09 13:57:40 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -472,6 +472,7 @@
 <li>A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see <a href="../chapters/notation.html#making-expressions-concise">Making expressions concise</a>).</li>
 <li>A div holds one <a href="../chapters/defining-terms.html#def-term">term</a> or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
 <li>A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.</li>
+<li>Never put a result in a <code>#rem-</code> div. A remark holds commentary: motivation, history, a warning, how to read a result. When a remark states something that is true, such as an equation with its conditions, move the statement into a <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, or <code>#prp-</code> div with its proof, and leave the commentary in the remark, which links to the result (Ezra, 2026-11-07). An example pointer or a worked number is not a result: put it in an <code>#exm-</code> div.</li>
 <li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
 <li>Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as <span class="math inline">\(\E{Z^2} = \var{Z} + \sqf{\E{Z}}\)</span> for any random variable <span class="math inline">\(Z\)</span>, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic (<a href="https://morrison-lab.github.io/mds/">mds</a>, <a href="https://morrison-lab.github.io/pds/">pds</a> or <a href="https://morrison-lab.github.io/sds/">sds</a>), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.</li>
 <li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
@@ -571,8 +572,8 @@
 <div id="exm-show-data-first" class="theorem example">
 <p><span class="theorem-title"><strong>Example 4 (Showing the data at first mention)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance and the loss we will minimize. Slide 10 shows a table of the first rows.</p>
-<p>✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance and the loss, and refer back to that table and plot.</p>
+<p>❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance, and the loss <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> we will minimize. Slide 10 shows a table of the first rows.</p>
+<p>✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function, and refer back to that table and plot.</p>
 </blockquote>
 <p>The ✅ version lets every later slide refer to something the reader has already seen.</p>
 </div>
