@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 13:39:33 (PST)
+Last modified: 2026-11-09 14:45:14 (PST)
 
 > **NOTE:**
 >
@@ -23,9 +23,9 @@ See also <https://bark-fa.github.io/Anglish-Translator/>
 
 English has three layers of vocabulary because of its history ([Wikipedia contributors 2026](#ref-wikipedia_history_of_english)):
 
-- Old English came to Britain with Germanic-speaking settlers in the mid-5th to 7th centuries. Its words are the source of the Anglish alternatives above.
-- French and Norman words entered after the Norman Conquest of 1066, about 10,000 of them in Middle English, particularly [term](../chapters/defining-terms.llms.md#def-term)s for government, church, law, the military, fashion, and food.
-- Latin and Greek words entered in the Renaissance, as increased literacy and travel helped writers adopt many foreign words.
+- [Old English](https://en.wikipedia.org/wiki/Old_English) came to Britain with [Germanic-speaking](https://en.wikipedia.org/wiki/Germanic_languages) settlers in the [mid-5th to 7th centuries](https://en.wikipedia.org/wiki/Anglo-Saxon_settlement_of_Britain). Its words are the source of the Anglish alternatives above.
+- French and Norman words entered after the [Norman Conquest](https://en.wikipedia.org/wiki/Norman_Conquest) of 1066, about 10,000 of them in [Middle English](https://en.wikipedia.org/wiki/Middle_English), particularly [term](../chapters/defining-terms.llms.md#def-term)s for government, church, law, the military, fashion, and food.
+- [Latin and Greek words](https://en.wikipedia.org/wiki/Latin_influence_in_English) entered in the [Renaissance](https://en.wikipedia.org/wiki/Renaissance), as increased literacy and travel helped writers adopt many foreign words.
 
 Because the borrowed words came in through government, church, law, and learned writing, many of them still read as formal and learned. Their Old English counterparts read as plain and everyday. A reader does not notice this contrast in a single word, but across a paragraph it sets the tone: “commence” and “utilize” sound official, while “begin” and “use” sound direct. When you choose between two synonyms, choose the one whose tone matches your readers and your purpose.
 
