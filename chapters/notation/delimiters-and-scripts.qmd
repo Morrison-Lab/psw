@@ -1,9 +1,9 @@
-Choose each delimiter and each script by what it says, so a reader can tell a function's argument from a group of terms, and an index from a power.
+Choose each delimiter and each script by what it says, so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](defining-terms.qmd#def-term)s, and an index from a power.
 
 Delimiters:
 
 - Parentheses group terms and hold the argument of a function: $\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
-- Square brackets hold the argument of an expectation, $\E{X}$, and the closed end of an interval, $[a, b]$.
+- Square brackets hold the argument of an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation), $\E{X}$, and the closed end of an interval, $[a, b]$.
 - Curly braces hold the members of a set, $\set{x : x > 0}$, and an event inside an indicator.
 - Write no more than two levels of one kind of delimiter.
   Past that, change the kind or name the sub-expression with a macro.
@@ -30,6 +30,6 @@ A letter followed by a parenthesis, such as $\tau(X)$, reads as a function appli
 >
 > ✅ The precision of $X$ is $\tau_X = 1 / \Var{X}$.
 
-The ✅ version writes the precision as a number with the random variable as a subscript, and writes the variance with its parenthesized argument.
+The ✅ version writes the precision as a number with the random variable as a subscript, and writes the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) with its parenthesized argument.
 
 :::
