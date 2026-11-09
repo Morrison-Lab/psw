@@ -2,7 +2,7 @@ Choose each delimiter and each script by what it says, so a reader can tell the 
 
 Delimiters:
 
-- Parentheses group terms and hold the argument of a function: $\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
+- Parentheses group [term](defining-terms.qmd#def-term)s and hold the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function):$\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
 - Square brackets hold the argument of an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation), $\E{X}$, and the closed end of an interval, $[a, b]$.
 - Curly braces hold the members of a set, $\set{x : x > 0}$, and an event inside an indicator.
 - Write no more than two levels of one kind of delimiter.
@@ -20,7 +20,7 @@ Scripts:
   Name the sub-expression with a macro instead.
 
 Give the characteristic of a random variable a subscript when it has its own symbol, as in $\tau_X$, and keep the argument when it is an operator, as in $\Var{X}$.
-A letter followed by a parenthesis, such as $\tau(X)$, reads as a function applied to $X$, and so as a new random variable.
+A letter followed by a parenthesis, such as $\tau(X)$, reads as a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) applied to $X$, and so as a new random variable.
 
 ::: {#exm-delimiters-and-scripts}
 
