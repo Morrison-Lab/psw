@@ -1011,7 +1011,7 @@ and two graders reconstruct different items.
   and state that total in the line that introduces the checklist.
 - Write each item so that it is either met or not met.
   Name the answer or the evidence that meets the criterion, as in
-  "cites the gap between training and CV MSE".
+  "cites the gap between training and cross-validation mean squared error".
 - List an acceptable alternative answer as a sub-bullet without points
   under the item it also satisfies,
   so the items still sum to the question's points.

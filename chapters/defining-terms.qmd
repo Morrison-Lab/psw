@@ -136,7 +136,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
   $$R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},$$
 
-  not the two sums that RSS and TSS stand for.
+  not the residual and total sums of squares written out again.
 
 - **Define a statistical model by its distribution, and derive its other forms:**
   Define a regression model by the distribution of the outcome
