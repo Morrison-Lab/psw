@@ -1,0 +1,35 @@
+Choose each delimiter and each script by what it says, so a reader can tell a function's argument from a group of terms, and an index from a power.
+
+Delimiters:
+
+- Parentheses group terms and hold the argument of a function: $\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
+- Square brackets hold the argument of an expectation, $\E{X}$, and the closed end of an interval, $[a, b]$.
+- Curly braces hold the members of a set, $\set{x : x > 0}$, and an event inside an indicator.
+- Write no more than two levels of one kind of delimiter.
+  Past that, change the kind or name the sub-expression with a macro.
+
+Scripts:
+
+- A subscript says which one.
+  It is an index, as in $x_i$, or it names the random variable or variable that a quantity belongs to, as in $\mu_X$ and $\tau_X$.
+  Drop it when only one is in play.
+- A superscript is a power, as in $x^2$.
+  Wrap an iteration or sample index in parentheses, as in $\vx^{(t)}$, so that it is not mistaken for an exponent.
+- Write a transpose or an inverse through its macro, `\tp{}` or `\inv{}`, not as a typed $\top$ or $-1$.
+- Do not put a subscript on a subscript, or a superscript on a superscript.
+  Name the sub-expression with a macro instead.
+
+Give the characteristic of a random variable a subscript when it has its own symbol, as in $\tau_X$, and keep the argument when it is an operator, as in $\Var{X}$.
+A letter followed by a parenthesis, such as $\tau(X)$, reads as a function applied to $X$, and so as a new random variable.
+
+::: {#exm-delimiters-and-scripts}
+
+## A characteristic with its own symbol
+
+> ❌ The precision of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
+>
+> ✅ The precision of $X$ is $\tau_X = 1 / \Var{X}$.
+
+The ✅ version writes the precision as a number with the random variable as a subscript, and writes the variance with its parenthesized argument.
+
+:::
