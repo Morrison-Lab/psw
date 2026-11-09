@@ -156,6 +156,14 @@ Before you share a figure:
   A logarithmic axis is fine.
   Only the label format matters, so write 1, 10, 100 and 1,000, not 1e+00 through 1e+03.
   When the numbers are huge or tiny, rescale the units and say so in the axis title, such as "dollars (millions)".
+- Use a pseudo-log axis when the data include zero or negative values that a logarithmic axis cannot show.
+  A pseudo-log axis is linear near zero and logarithmic far from zero, so every real number has a position.
+  The `transform_pseudo_log()` function of the R package
+  [scales](https://scales.r-lib.org/reference/transform_log.html)
+  maps a value $x$ to $\operatorname{asinh}\paren{x / (2 \sigma)}$ divided by the natural logarithm of its `base`,
+  and the argument $\sigma$ (`sigma`) sets the width of the linear part around zero.
+  Pass it to a ggplot2 scale, as in `scale_y_continuous(transform = scales::transform_pseudo_log(sigma = 0.1))`.
+  Say in the axis title or the caption that the axis is pseudo-log.
 - Use font sizes that are easy to read without dominating the plot.
 - Use colorblind-friendly palettes
   (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)).
