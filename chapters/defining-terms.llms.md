@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-08 23:34:37 (PST)
+Last modified: 2026-11-09 00:14:20 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -86,11 +86,11 @@ Follow these principles when introducing new [term](#def-term)s:
 
   which is symmetric in $X$ and $Y$ at a glance, and not as ${H\mathopen{}\left(Y\right)\mathclose{}} - {H\mathopen{}\left(Y \mid X\right)\mathclose{}}$ or as a sum over the joint mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function). The other forms are results that follow from the definition.
 
-- **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density function (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with $k$ degrees of freedom by its pdf
+- **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density [function](https://morrison-lab.github.io/mcs/functions.html#def-function) (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with $k$ degrees of freedom by its pdf
 
   $$f(x) := \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2}\,\Gamma(k/2)}, \quad x \in (0, \infty),$$
 
-  and state as a theorem that, for a positive integer $k$, the sum of the squares of $k$ independent standard normal random variables has this distribution. The density is defined for every real $k > 0$; the theorem covers only integer $k$. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density that later calculations need.
+  and state as a theorem that, for a positive integer $k$, the sum of the squares of $k$ independent standard normal random variables has this distribution. The density is defined for every real $k > 0$; the theorem covers only integer $k$. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density function that later calculations need.
 
 - **Define a term directly, not as a modification of another term:** State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.
 
@@ -133,7 +133,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Tell synonyms from hyponyms:** A *synonym* names the same concept as the primary term, so it belongs in the div title. A *hyponym* names a special case of another term, such as “linear regression” for “regression model”, so it is a different concept. Give each hyponym its own `#def-` div, and never put it in the title of the general term or introduce it with “also called” (Ezra, 2026-10-23). When unsure, check both directions. Is every instance of the new term an instance of the old term? Is every instance of the old term an instance of the new term? If only the first holds, the new term is a hyponym.
 
-- **Tell synonyms from equivalent concepts:** Only true synonyms share a div title as aliases: names for one concept, which has one definition. Two concepts that happen to be equivalent are different concepts, however often they coincide. Give each its own definition, an example after each, and a theorem showing that they agree (see *Put only the defining equation in a definition, and state equivalences as results* above). A test: if each name has its own natural definition, they are two concepts. For example, a loss defined as the negative log of the predicted probability of the observed class and a loss defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy) between two distributions each have a natural definition, so give each its own div and state that they agree as a theorem, instead of titling one div with both names.
+- **Tell synonyms from equivalent concepts:** Only true synonyms share a div title as aliases: names for one concept, which has one definition. Two concepts that happen to be equivalent are different concepts, however often they coincide. Give each its own definition, an example after each, and a theorem showing that they agree (see *Put only the defining equation in a definition, and state equivalences as results* above). A test: if each name has its own natural definition, they are two concepts. For example, a loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) defined as the negative log of the predicted probability of the observed class and a loss function defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy) between two distributions each have a natural definition, so give each its own div and state that they agree as a theorem, instead of titling one div with both names.
 
 - **Keep an entrenched misnomer, and clarify it once:** Some names the literature has fixed are technically wrong, such as “linear regression” for a model with an intercept, whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors, not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one (Ezra, 2026-10-28). Wherever the wording is yours, use the precise word: write “affine in the predictors” for a function with an intercept, and “linear” only when the intercept is zero. Keep a name the reader will meet in other sources, such as linear regression, linear decay or linear approximation, because renaming it cuts the reader off from that literature. Clarify it once, in parentheses, at its definition or its first use on a page, as in “linear (strictly, affine) decay”, and use the established name unqualified after that.
 
@@ -279,11 +279,11 @@ Examples serve several crucial purposes:
 
   **Correct:** “A variable is a symbol representing a value that can take on different values.”
 
-- **A characteristic without its object:** A mode, kernel, support, maximum, or median belongs to one object, and the sentence names that object. Name the object whose definition the characteristic is stated for, such as the density, the distribution, the likelihood, or the kernel, and use “of the distribution” only when the definition is for distributions. Where a text moves from a distribution to its density, say so once rather than switching silently. A bare “the mode” leaves the reader to guess the object, and a wrong guess misattributes the characteristic: a mode is a mode of one [function](https://morrison-lab.github.io/mcs/functions.html#def-function), and the modes of a kernel and of its density coincide only by a theorem, not by definition.
+- **A characteristic without its object:** A mode, kernel, support, maximum, or median belongs to one object, and the sentence names that object. Name the object whose definition the characteristic is stated for, such as the density [function](https://morrison-lab.github.io/mcs/functions.html#def-function), the distribution, the likelihood function, or the kernel, and use “of the distribution” only when the definition is for distributions. Where a text moves from a distribution to its density function, say so once rather than switching silently. A bare “the mode” leaves the reader to guess the object, and a wrong guess misattributes the characteristic: a mode is a mode of one function, and the modes of a kernel and of its density function coincide only by a theorem, not by definition.
 
   **Incorrect:** “The gamma distribution has the kernel $x^{a-1} e^{-x}$, so maximizing it finds the mode.”
 
-  **Correct:** “The gamma density has the kernel $x^{a-1} e^{-x}$, so maximizing the kernel finds the mode of the density.” A kernel is defined for a density, not for a distribution.
+  **Correct:** “The gamma density function has the kernel $x^{a-1} e^{-x}$, so maximizing the kernel finds the mode of the density function.” A kernel is defined for a density, not for a distribution.
 
 - **Missing examples:** Never leave a definition without at least one example.
 
