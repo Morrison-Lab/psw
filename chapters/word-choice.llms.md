@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 00:14:20 (PST)
+Last modified: 2026-11-09 10:52:28 (PST)
 
 > **NOTE:**
 >
@@ -163,7 +163,7 @@ Mention the common name once, as an alias in the definition, and use the accurat
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
 
-Name a function with the word “function”: write “cost function”, “loss function”, “logit function”, and “logistic function”, not “the cost”, “the loss”, “the logit”, or “the logistic”, when the sentence is about the function itself. Use no shorthand for a technical term, even one that the text has introduced. Write the full term at every use. The rule covers every named function. A bare name without “function” means the value of the function at a specific input, and “X function” means the function itself:
+Name a function with the word “function”: write “cost function”, “loss function”, “logit function”, and “logistic function”, not “the cost”, “the loss”, “the logit”, or “the logistic”, when the sentence is about the function itself. Do not clip a technical term, even one that the text has introduced. Write the full term at every use. An acronym or initialism is neither clipped nor elliptical, and this rule allows it. The rule covers every named function. A bare name without “function” means the value of the function at a specific input, and “X function” means the function itself:
 
 - **Cost:** the cost of a particular parameter vector is the value of the cost function there.
 - **Loss:** the loss of one observation is the value of the loss function at that observation.
