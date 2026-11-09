@@ -311,6 +311,9 @@ Follow these principles when introducing new [term](#def-term)s:
   That it is the inverse of the covariance matrix is a theorem.
   Defining it as that inverse makes the reader define the covariance matrix first,
   and hides what its entries are.
+  The definition div then holds the definition and nothing else:
+  a sentence that says how the term extends or resembles another term is commentary, and goes in a remark after it,
+  and a relationship that can be proved is a result, and goes in a theorem after it.
 
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
