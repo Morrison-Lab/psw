@@ -119,7 +119,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
   or gives the instruction ("Show that ...", "Which model ...?").
   A reader scanning for the task then finds it without rereading the setup.
   A paragraph that runs from the scenario into the task hides the task.
-  The [`check-exercise-question-paragraph`](https://github.com/Morrison-Lab/gha/tree/main/check-exercise-question-paragraph) check
+  The [`check-exercise-question-paragraph`](https://morrison-lab.github.io/gha/reference/check-exercise-question-paragraph.html) check
   fails a pull request that adds such a paragraph.
   Put `<!-- question-paragraph-ok: reason -->` inside an exercise that it misreads.
 - On slides, put a slide break between an exercise and its solution,
