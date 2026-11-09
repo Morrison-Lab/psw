@@ -134,7 +134,7 @@ put a bargain where there is a relationship between two quantities.
 Say what is lost or gained, and which quantity changes with which.
 Keep a literal use:
 a computational cost, a monetary cost,
-or a cost [function](https://morrison-lab.github.io/mds/functions.html#def-function) that the text defines as a term. <!-- check-term-links: allow -->
+or a cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) that the text defines as a term. <!-- check-term-links: allow -->
 
 > ❌ Nesting the cross-validation loop costs another factor of $K$ in computing time.
 >
@@ -185,11 +185,11 @@ is a lemma left unextracted
 
 > ❌ The mode is an element of the set A at which the density is largest.
 >
-> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mds/functions.html#def-range) of the random variable at which the density is largest.
+> ✅ The mode is an element of the [range](https://morrison-lab.github.io/mcs/functions.html#def-range) of the random variable at which the density is largest.
 
 The `check-avoided-words` check in gha warns on
-a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain),
-[codomain](https://morrison-lab.github.io/mds/functions.html#def-codomain),
+a [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain),
+[codomain](https://morrison-lab.github.io/mcs/functions.html#def-codomain),
 range or sample space named by a bare capital letter or by "some", <!-- check-term-links: allow -->
 such as "domain A" or "some range".
 It cannot tell whether a specific object exists,
@@ -264,7 +264,7 @@ list it as a labeled alias in the definition of the concept it names.
 
 For example, *hypothesis* means a statistical hypothesis:
 a claim about a [population](defining-terms.qmd#def-population), such as a null hypothesis that a test examines.
-In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+In machine learning, *hypothesis* also names a candidate prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function).
 
 > ❌ The learner picks one hypothesis from the hypothesis set.
 >
@@ -272,6 +272,32 @@ In machine learning, *hypothesis* also names a candidate prediction [function](h
 
 The definition of the prediction function family can then say
 that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
+
+# Call the distribution Gaussian
+
+The word *normal* names several unrelated concepts in mathematics and statistics.
+It names the normal equations of least squares,
+a normal vector perpendicular to a surface,
+and a normal subgroup.
+In everyday use, it also means *typical*.
+When the subject is the distribution, *Gaussian* has no such competing meaning in the same context, so use it.
+
+> ❌ The errors need not be normal.
+>
+> ✅ The errors need not be Gaussian.
+
+Use the same word in every phrase built on the distribution:
+
+- Write *Gaussian distribution*, not *normal distribution*.
+- Write *standard Gaussian*, not *standard normal*.
+- Write *multivariate Gaussian*, not *multivariate normal*.
+- Write *the errors are Gaussian*, not *the errors are normally distributed*.
+
+Keep *normal* where it names a different concept,
+as in the *normal equations*.
+Keep *normal* in a quoted title or a cited name,
+such as `rnorm` in R,
+where you report what the source calls it.
 
 # Name a quantity for what it is
 
@@ -305,6 +331,22 @@ and the reader may supply different ones than you meant.
 Readers who are learning English, and readers who read literally, cannot always recover them.
 Name what the object is a function of, and what it is conditional on.
 
+Name a function with the word "function": <!-- check-term-links: allow -->
+write "cost function", "loss function", "logit function", and "logistic function", <!-- check-serial-comma: allow -->
+not "the cost", "the loss", "the logit", or "the logistic", when the sentence is about the function itself.
+Use no shorthand for a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
+Write the full term at every use.
+The rule covers every named function.
+A bare name without "function" means the value of the function at a specific input,
+and "X function" means the function itself:
+
+- **Cost:** the cost of a particular parameter vector is the value of the cost function there. <!-- check-term-links: allow -->
+- **Loss:** the loss of one observation is the value of the loss function at that observation.
+- **Logit:** the logit of a particular probability is the value of the logit function at that probability.
+
+Name the input in the sentence or its context,
+so the reader can tell a value from the function. <!-- check-term-links: allow -->
+
 The same rule applies to symbols.
 Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name,
 unless the sentence is about the function as a whole and the page has said so.
@@ -319,6 +361,23 @@ The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 > ❌ The outcome variable is the true mean function plus noise. <!-- check-term-links: allow -->
 >
 > ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
+
+:::
+
+:::{#exm-function-named-in-full}
+
+# Naming a function in full
+
+> ❌ The cost is convex in the parameters.
+>
+> ✅ The cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is convex in the parameters.
+
+> ❌ The logit is the inverse of the logistic.
+>
+> ✅ The logit function is the inverse of the logistic function.
+
+> ✅ The cost of the initial parameter vector is 4.2, and each step lowers it.
+> (A value of the cost function at a specific input, so "function" is not needed.)
 
 :::
 

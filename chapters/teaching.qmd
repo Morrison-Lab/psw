@@ -280,7 +280,7 @@ For teaching materials, four further rules keep definitions findable.
   so nothing can link to it.
 - Never nest one theorem-type div inside another.
   The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`.
-  A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mds/functions.html#def-function),
+  A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mcs/functions.html#def-function), <!-- check-term-links: allow -->
   gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div.
   Put the properties of the defined object, such as the symmetry and idempotence of a matrix,
@@ -364,13 +364,13 @@ Open the chapter and list the dataset each section uses, rather than recalling t
 
 # Showing the data at first mention
 
-> ❌ Slides 3 to 9 discuss the spam data's 57 predictors, its class imbalance
-> and the loss we will minimize.
+> ❌ Slides 3 to 9 discuss the spam data's 57 predictors, its class imbalance,
+> and the loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) we will minimize.
 > Slide 10 shows a table of the first rows.
 >
 > ✅ Slide 3 introduces the spam data and shows a table of its first rows
 > and a plot of one predictor by class.
-> Slides 4 to 10 discuss the predictors, the class imbalance and the loss,
+> Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function,
 > and refer back to that table and plot.
 
 The ✅ version lets every later slide refer to something the reader has already seen.
@@ -553,6 +553,52 @@ in every course and every teaching repository, not only to one course.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
 
+# Phrase optional steps as conditions
+
+An instruction that applies to only some readers reads as an order to all of them.
+Put the condition first, then the instruction,
+as in "If you use a language other than R or Python, ...".
+
+- State the condition at the start of the sentence, as "If you ..., do ...".
+  The reader who is not in that case can stop reading at the comma.
+- Do not open with a bare imperative that only some readers should follow.
+- Where a step can be skipped, say what the reader loses or what to do instead.
+- Give each case its own sentence.
+
+The labs in the reference text write optional work this way.
+They state the condition first and then the consequence:
+"If you have not installed ggplot2, then the code below will still run, but the plot will be less attractive" [@james2021islr2, section 10.9, p. 445].
+They give an alternative to the reader who is short of time:
+"If you are in a rush, then you could set B equal to a smaller value (e.g. B = 500)" [@james2021islr2, section 13.6, p. 587].
+They label a step that has no condition and say when to do it:
+"this step is optional and should be performed only if we want each gene to be on the same scale" [@james2021islr2, section 12.5, p. 543].
+
+> ❌ In another language, use a port of `SyncRNG` to get the same data;
+> without one, draw your own data from the same model.
+>
+> ✅ If you use a language other than R or Python, use a port of `SyncRNG` to get the same data.
+> If no port exists, draw your own data from the same model;
+> your numbers will differ slightly from the key's.
+
+# Introduce a specific case as a specific case
+
+A sentence with an indefinite subject and a bare verb states a general fact:
+"A [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) classifier has a decision boundary" holds for every such classifier.
+Used for one particular case, the same form claims something false,
+and the reader must guess that you meant only one.
+
+- Use "a" or "any" with a bare verb only for a statement that holds in every case.
+- Introduce a specific case with "Consider a ...", "Suppose a ...", or "Let ... be ...",
+  and give its particular values in the same sentence.
+- Refer back to it with "the" or "this", and not with "a" again.
+
+This applies Grice's maxims of Quality, because the sentence is not true as written,
+and of Manner, because it is ambiguous between one case and all of them [@grice1975].
+
+> ❌ A binary logistic regression classifier in two dimensions has parameter vector $[-2, 1, 0.5]'$. <!-- check-term-links: allow -->
+>
+> ✅ Consider a binary logistic regression classifier in two dimensions with parameter vector $[-2, 1, 0.5]'$.
+
 # Keep each step's code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials,
@@ -676,7 +722,7 @@ does the prose mention the code?
 
 - `#| code-fold: show` when the prose mentions the code.
   The choice of `show` holds whether the code produces output outside the chunk or not,
-  and a chunk that defines [function](https://morrison-lab.github.io/mds/functions.html#def-function)s or objects that later chunks use counts as producing output.
+  and a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use counts as producing output.
   The code starts open, and a reader who wants to focus on the output can hide it.
 - `#| code-fold: true` when the prose does not mention the code.
   The code starts hidden, and a reader who wants it can open it.

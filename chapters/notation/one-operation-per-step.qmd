@@ -158,7 +158,7 @@ can also keep each line short.
 
 Derive an intermediate result only after the main derivation
 has shown that it needs that result.
-For example, to differentiate a composite [function](https://morrison-lab.github.io/mds/functions.html#def-function):
+For example, to differentiate a composite [function](https://morrison-lab.github.io/mcs/functions.html#def-function):
 
 1. Start the main derivation, and apply the chain rule.
    The result is a product of an inner and an outer derivative, not yet known.

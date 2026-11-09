@@ -17,7 +17,7 @@ Interval notation is easier to read for three reasons:
   so the reader parses a single claim rather than combining a pair of them.
 - It names the set you actually mean,
   so the same expression can be reused
-  as a [domain](https://morrison-lab.github.io/mds/functions.html#def-domain), a constraint, or the argument of a quantifier.
+  as a [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain), a constraint, or the argument of a quantifier.
 - It marks inclusive and exclusive endpoints
   with brackets and parentheses,
   which are easier to distinguish at a glance
