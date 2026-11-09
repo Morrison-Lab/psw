@@ -206,7 +206,8 @@ if you're referring to the same group"
 
 # Spell out abbreviations
 
-Never abbreviate a term: [use no shorthand](#use-no-shorthand) covers abbreviations and clipped phrases alike. <!-- check-term-links: allow -->
+An acronym or initialism, such as "MSE", is allowed;
+[do not clip a term](#do-not-clip-a-term) covers shortened phrases. <!-- check-term-links: allow -->
 The plain language guidelines say abbreviations
 "constantly require the reader to look back to earlier pages"
 [@plainlanguage_gov, Minimize abbreviations].
@@ -222,12 +223,16 @@ Write "for example" or "that is".
 > usually have lower mean squared error
 > than a single regression tree.
 
-# Use no shorthand
+# Do not clip a term
 
-Do not shorten a [term](defining-terms.qmd#def-term), even after introducing the short form.
-This covers abbreviations and also shortened phrases,
+Do not shorten a [term](defining-terms.qmd#def-term) by dropping words, even after introducing the short form.
+This covers clipped phrases,
 such as "objective" for "objective function". <!-- check-term-links: allow -->
 Write the full term at every use.
+Do not leave out words that the reader must supply either,
+as in "the cost is convex", which leaves out "function" and what it is a function of.
+A leftover gap of this kind is a semantic ellipsis.
+An acronym or initialism, such as "MSE" for "mean squared error", is neither clipped nor elliptical, and this rule allows it.
 [Write the full phrase](word-choice.qmd#write-the-full-phrase) says when a clipped name is correct:
 only for the value of a function at a specific input.
 

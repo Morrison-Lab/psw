@@ -138,6 +138,18 @@ Follow these principles when introducing new [term](#def-term)s:
 
   not the two sums that RSS and TSS stand for.
 
+- **Open a definition with the bold [term](#def-term) as its subject:**
+  Start the sentence with the term, then state what it is,
+  and put the defining expression after that sentence.
+  For example, write "The **[variance](#def-variance-expression-and-prose)** of a random variable $X$
+  is the [population](#def-population) mean
+  of the squared deviation of $X$ from its population mean,"
+  followed by the equation $\Var{X} = \E{\paren{X - \E{X}}^2}$.
+  Do not open with the expression and name the term afterward,
+  as in "$\E{\paren{X - \E{X}}^2}$ is the variance of $X$."
+  A reader who looks up a term should find the term first,
+  and the definition then reads as one statement about that term.
+
 - **Define a statistical model by its distribution, and derive its other forms:**
   Define a regression model by the distribution of the outcome
   conditional on the covariates,
@@ -725,9 +737,9 @@ Follow these principles when introducing new [term](#def-term)s:
   and "sample mean" for the average of the observed values;
   write "population average" and "sample average" in the same way.
   Prefer "mean" with the qualifier to "average".
-  Write the full terms, with no abbreviation: <!-- check-term-links: allow -->
+  Keep the qualifier in each full term: <!-- check-term-links: allow -->
   "population mean squared error", "sample root mean squared error", "population mean absolute error"
-  ([use no shorthand](inclusive-writing.qmd#use-no-shorthand)).
+  ([do not clip a term](inclusive-writing.qmd#do-not-clip-a-term)).
   A term that already says which, such as "mean function" or "running mean", needs no extra word,
   and neither does expected value notation such as $\E{Y}$.
   For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",

@@ -1,0 +1,28 @@
+When you state the value of a quantity, write the quantity's symbol as the left-hand side of the expression.
+A sentence such as "its value is" followed by an expression gives the expression a name in words only,
+so the reader has no symbol to cite in the steps that follow.
+Writing the symbol, an equals sign, and the expression names the quantity and gives its value together.
+Give the equation its own display when later steps refer to it.
+
+The rule holds for any quantity that later steps use:
+
+- a gradient,
+- a Hessian,
+- a derivative, and
+- a mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+
+::: {#exm-symbol-on-the-left}
+
+## Writing the gradient with its symbol
+
+> ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
+>
+> ✅ The gradient of $f(\vx) = x_1^2 - x_2^2$ is
+>
+> $$
+> \gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.
+> $$
+
+The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
+
+:::

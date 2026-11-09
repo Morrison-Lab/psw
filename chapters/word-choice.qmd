@@ -334,8 +334,9 @@ Name what the object is a function of, and what it is conditional on.
 Name a function with the word "function": <!-- check-term-links: allow -->
 write "cost function", "loss function", "logit function", and "logistic function", <!-- check-serial-comma: allow -->
 not "the cost", "the loss", "the logit", or "the logistic", when the sentence is about the function itself.
-Use no shorthand for a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
+Do not clip a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
 Write the full term at every use.
+An acronym or initialism is neither clipped nor elliptical, and this rule allows it.
 The rule covers every named function.
 A bare name without "function" means the value of the function at a specific input,
 and "X function" means the function itself:
