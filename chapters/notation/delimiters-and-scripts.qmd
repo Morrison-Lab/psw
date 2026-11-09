@@ -6,7 +6,7 @@ Delimiters:
 - Square brackets hold the argument of an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation), $\E{X}$, and the closed end of an interval, $[a, b]$.
 - Curly braces hold the members of a set, $\set{x : x > 0}$, and an event inside an indicator.
 - Write no more than two levels of one kind of delimiter.
-  Past that, change the kind or name the sub-expression with a macro.
+  Past that, name the sub-expression with a macro.
 
 Scripts:
 
@@ -15,7 +15,8 @@ Scripts:
   Drop it when only one is in play.
 - A superscript is a power, as in $x^2$.
   Wrap an iteration or sample index in parentheses, as in $\vx^{(t)}$, so that it is not mistaken for an exponent.
-- Write a transpose or an inverse through its macro, `\tp{}` or `\inv{}`, not as a typed $\top$ or $-1$.
+- Write a transpose with the macro `\tp{}` and an inverse with the macro `\inv{}`.
+  Never type a $\top$ or a $-1$ as a superscript.
 - Do not put a subscript on a subscript, or a superscript on a superscript.
   Name the sub-expression with a macro instead.
 
