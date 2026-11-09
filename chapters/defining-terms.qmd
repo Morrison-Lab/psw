@@ -217,9 +217,47 @@ Follow these principles when introducing new [term](#def-term)s:
   The inequality belongs in the definition of the argmax, which the reader can follow the link to.
   A definition that restates a linked term is longer to read and drifts from the original if either changes.
 
+- **Write a definition with an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) operator where one fits:**
+  When a quantity is a probability-weighted sum, or a probability-weighted integral, of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of a random variable,
+  define it as the [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) of that function,
+  not as the sum, or the integral, written out.
+  The expectation operator already stands for the sum when the variable is discrete
+  and for the integral when it is continuous,
+  so one definition covers both and need not repeat the support.
+  For example, define the entropy of a discrete random variable $X$ with mass function $p$ as
+
+  $$\entropyf{X} \eqdef \E{-\log p(X)},$$
+
+  not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$.
+  The [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) sums over the possible values of $X$,
+  which are the values $x$ with $p(x) > 0$,
+  so $-\log p(x)$ is defined at each of them.
+  Likewise, define the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of any random variable $X$ as
+
+  $$\Var{X} \eqdef \E{\paren{X - \E{X}}^2},$$
+
+  not as a sum for one case and an integral for the other.
+  The expanded sum or integral belongs in a result that follows from the definition of [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation).
+  Keep the sum or integral when no expectation expresses the quantity,
+  or when the definition is the one that defines [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) itself.
+
+- **Write the defining expression with the highest-level macros available:**
+  Write each quantity in the defining expression with the [semantic macro](notation/shared-macros.qmd) of the highest-level concept that names it,
+  such as `\entropyf{X}` for an entropy,
+  not with the lower-level expression that the macro stands for.
+  Among equivalent defining expressions,
+  choose the one that makes the most important property visible.
+  For example, define the [mutual information](https://morrison-lab.github.io/ids/entropy.html#def-mutual-information) of discrete random variables $X$ and $Y$ as
+
+  $$I(X; Y) \eqdef \entropyf{X} + \entropyf{Y} - \entropyf{X, Y},$$
+
+  which is symmetric in $X$ and $Y$ at a glance,
+  and not as $\entropyf{Y} - \entropyf{Y \mid X}$ or as a sum over the joint mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function).
+  The other forms are results that follow from the definition.
+
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
-  by its probability density function (pdf) or probability mass function (pmf)
+  by its probability density [function](https://morrison-lab.github.io/mcs/functions.html#def-function) (pdf) or probability mass function (pmf)
   and its support.
   State any relationship to other distributions as a theorem
   proved from those definitions.
@@ -235,7 +273,7 @@ Follow these principles when introducing new [term](#def-term)s:
   the theorem covers only integer $k$.
   Defining the chi-square distribution as that sum
   turns a result into a definition,
-  and leaves the reader without the density
+  and leaves the reader without the density function <!-- check-term-links: allow -->
   that later calculations need.
 
 - **Define a term directly, not as a modification of another term:**
@@ -520,8 +558,8 @@ Follow these principles when introducing new [term](#def-term)s:
   (see *Put only the defining equation in a definition, and state equivalences as results* above).
   A test: if each name has its own natural definition,
   they are two concepts.
-  For example, a loss defined as the negative log of the predicted probability of the observed class
-  and a loss defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy)
+  For example, a loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) defined as the negative log of the predicted probability of the observed class
+  and a loss function defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy)
   between two distributions
   each have a natural definition,
   so give each its own div and state that they agree as a theorem,
@@ -680,20 +718,16 @@ Follow these principles when introducing new [term](#def-term)s:
   as for any new macro.
   A missing f form is never a reason to type the operator and the delimiter separately.
 
-- **Qualify "mean", "average" and their shorthands as population or sample:**
+- **Qualify "mean" and "average" as population or sample:** <!-- check-term-links: allow -->
   A bare "mean" or "average" does not say whether it is a quantity of the population
   or a value computed from one sample.
   Write "population mean" for the expected value of a distribution,
   and "sample mean" for the average of the observed values;
   write "population average" and "sample average" in the same way.
   Prefer "mean" with the qualifier to "average".
-  The same holds for shorthands:
-  write pMSE and sMSE, pRMSE and sRMSE, and pMAE and sMAE,
-  with a leading p for the population version and s for the sample version,
-  and never a bare MSE, RMSE or MAE.
-  Spelled out, the same words apply:
-  "population mean squared error", "sample root mean squared error", "population mean absolute error".
-  Define each shorthand once, at first use, as "population mean squared error (pMSE)".
+  Write the full terms, with no abbreviation: <!-- check-term-links: allow -->
+  "population mean squared error", "sample root mean squared error", "population mean absolute error"
+  ([use no shorthand](inclusive-writing.qmd#use-no-shorthand)).
   A term that already says which, such as "mean function" or "running mean", needs no extra word,
   and neither does expected value notation such as $\E{Y}$.
   For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",
@@ -987,14 +1021,14 @@ Examples serve several crucial purposes:
   A mode, kernel, support, maximum, or median belongs to one object,
   and the sentence names that object.
   Name the object whose definition the characteristic is stated for,
-  such as the density, the distribution, the likelihood, or the kernel,
+  such as the density [function](https://morrison-lab.github.io/mcs/functions.html#def-function), the distribution, the likelihood function, or the kernel,
   and use "of the distribution" only when the definition is for distributions.
-  Where a text moves from a distribution to its density,
+  Where a text moves from a distribution to its density function,
   say so once rather than switching silently.
   A bare "the mode" leaves the reader to guess the object,
   and a wrong guess misattributes the characteristic:
-  a mode is a mode of one [function](https://morrison-lab.github.io/mcs/functions.html#def-function),
-  and the modes of a kernel and of its density coincide only by a theorem,
+  a mode is a mode of one function,
+  and the modes of a kernel and of its density function coincide only by a theorem,
   not by definition.
 
   **Incorrect:**
@@ -1002,8 +1036,8 @@ Examples serve several crucial purposes:
   so maximizing it finds the mode."
 
   **Correct:**
-  "The gamma density has the kernel $x^{a-1} e^{-x}$,
-  so maximizing the kernel finds the mode of the density."
+  "The gamma density function has the kernel $x^{a-1} e^{-x}$, <!-- check-term-links: allow -->
+  so maximizing the kernel finds the mode of the density function."
   A kernel is defined for a density, not for a distribution.
 
 - **Missing examples:**
