@@ -336,7 +336,7 @@ write "cost function", "loss function", "logit function", and "logistic function
 not "the cost", "the loss", "the logit", or "the logistic", when the sentence is about the function itself.
 Do not clip a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
 Write the full term at every use.
-An acronym or initialism is not a clipped phrase, and this rule allows it.
+An acronym or initialism is neither clipped nor elliptical, and this rule allows it.
 The rule covers every named function.
 A bare name without "function" means the value of the function at a specific input,
 and "X function" means the function itself:

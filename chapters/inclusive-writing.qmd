@@ -229,7 +229,10 @@ Do not shorten a [term](defining-terms.qmd#def-term) by dropping words, even aft
 This covers clipped phrases,
 such as "objective" for "objective function". <!-- check-term-links: allow -->
 Write the full term at every use.
-An acronym or initialism, such as "MSE" for "mean squared error", is not a clipped phrase, and this rule allows it.
+Do not leave out words that the reader must supply either,
+as in "the cost is convex", which leaves out "function" and what it is a function of.
+A leftover gap of this kind is a semantic ellipsis.
+An acronym or initialism, such as "MSE" for "mean squared error", is neither clipped nor elliptical, and this rule allows it.
 [Write the full phrase](word-choice.qmd#write-the-full-phrase) says when a clipped name is correct:
 only for the value of a function at a specific input.
 
