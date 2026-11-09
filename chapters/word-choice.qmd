@@ -340,12 +340,12 @@ The rule covers every named function.
 A bare name without "function" means the value of the function at a specific input,
 and "X function" means the function itself:
 
-- **Cost:** the cost of a particular parameter vector is the value of the cost function there.
+- **Cost:** the cost of a particular parameter vector is the value of the cost function there. <!-- check-term-links: allow -->
 - **Loss:** the loss of one observation is the value of the loss function at that observation.
 - **Logit:** the logit of a particular probability is the value of the logit function at that probability.
 
 Name the input in the sentence or its context,
-so the reader can tell a value from the function.
+so the reader can tell a value from the function. <!-- check-term-links: allow -->
 
 The same rule applies to symbols.
 Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name,
