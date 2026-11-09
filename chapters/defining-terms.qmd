@@ -303,7 +303,7 @@ Follow these principles when introducing new [term](#def-term)s:
   and relate the two in an example or a remark after the definition.
 
 - **Define a term from its primary objects, and state relationships to other terms as results:** <!-- check-term-links: allow -->
-  A [term](#def-term) has primary objects, the things it is made of,
+  A [term](#def-term) has primary objects, the parts it is made of,
   and a definition says what the term is in those objects.
   A relationship to another term is a fact about the term, and it belongs in a result.
   For example, the precision matrix of a random vector is the matrix whose diagonal entries are the precisions of its elements
