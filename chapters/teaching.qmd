@@ -294,7 +294,7 @@ For teaching materials, four further rules keep definitions findable.
   in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known.
   Each abstract div then gets its own example, as the rule below requires.
 
-Every `#thm-`, `#lem-`, `#cor-`, and `#prp-` div links each defined [term](defining-terms.qmd#def-term) it uses
+Every `#thm-`, `#lem-`, `#cor-`, and `#prp-` div links each defined [term](defining-terms.qmd#def-term) that it uses
 to that term's definition (Ezra, 2026-11-09),
 with `@def-id` or a link to the `#def-id` anchor.
 A reader of the result can then reach the meaning of every term in it.
