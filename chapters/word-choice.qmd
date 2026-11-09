@@ -47,12 +47,12 @@ See also <https://bark-fa.github.io/Anglish-Translator/>
 
 English has two layers of vocabulary because of its history [@wikipedia_history_of_english]:
 
-- **Old English** came to Britain with Germanic-speaking settlers in the mid-5th to 7th centuries.
+- Old English came to Britain with Germanic-speaking settlers in the mid-5th to 7th centuries.
   Its words are the source of the Anglish alternatives above.
-- **French and Norman words** entered after the Norman Conquest of 1066,
+- French and Norman words entered after the Norman Conquest of 1066,
   about 10,000 of them in Middle English,
-  particularly terms for government, church, law, the military, fashion, and food.
-- **Latin and Greek words** entered in the Renaissance,
+  particularly [term](defining-terms.qmd#def-term)s for government, church, law, the military, fashion, and food.
+- Latin and Greek words entered in the Renaissance,
   as increased literacy and travel helped writers adopt many foreign words.
 
 Because the borrowed words came in through government, church, law, and learned writing,
