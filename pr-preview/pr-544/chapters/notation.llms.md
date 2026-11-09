@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 14:02:04 (PST)
+Last modified: 2026-11-09 14:14:20 (PST)
 
 > **NOTE:**
 >
@@ -812,7 +812,7 @@ Choose each delimiter and each script by what it says, so a reader can tell the 
 
 Delimiters:
 
-- Parentheses group [term](../chapters/defining-terms.llms.md#def-term)s and hold the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function):$\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
+- Parentheses group [term](../chapters/defining-terms.llms.md#def-term)s and hold the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function): $\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
 - Square brackets hold the argument of an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation), $\E{X}$, and the closed end of an interval, $[a, b]$.
 - Curly braces hold the members of a set, $\set{x : x > 0}$, and an event inside an indicator.
 - Write no more than two levels of one kind of delimiter. Past that, name the sub-expression with a macro.
@@ -821,20 +821,20 @@ The international standard for mathematical notation, ISO 80000-2:2019 ([Interna
 
 Scripts:
 
-- A subscript says which one. It is an index, as in $x_i$, or it names the random variable or variable that a quantity belongs to, as in $\mu_X$ and $\tau_X$. Drop it when only one is in play.
+- A subscript says which one. It is an index, as in $x_i$, or it names the random variable or variable that a quantity belongs to, as in $\mu_X$ and $\precision_X$. Drop it when only one is in play.
 - A superscript is a power, as in $x^2$. Wrap an iteration or sample index in parentheses, as in $\vx^{(t)}$, so that it is not mistaken for an exponent.
 - Write a transpose with the macro `\tp{}` and an inverse with the macro `\inv{}`. Never type a $\top$ or a $-1$ as a superscript.
 - Do not put a subscript on a subscript, or a superscript on a superscript. Name the sub-expression with a macro instead.
 
-Give the characteristic of a random variable a subscript when it has its own symbol, as in $\tau_X$, and keep the argument when it is an operator, as in $\Var{X}$. A letter followed by a parenthesis, such as $\tau(X)$, reads as a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) applied to $X$, and so as a new random variable.
+Give the characteristic of a random variable a subscript when it has its own symbol, as in $\precision_X$, and keep the argument when it is an operator, as in $\Var{X}$. A letter followed by a parenthesis, such as $\precision(X)$, reads as a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) applied to $X$, and so as a new random variable.
 
 > **NOTE:**
 >
 > **Example 36 (A characteristic with its own symbol)**  
 >
-> > ❌ The precision of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
+> > ❌ The [precision](https://morrison-lab.github.io/pds/variance-covariance.html#def-precision) of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
 > >
-> > ✅ The precision of $X$ is $\tau_X = 1 / \Var{X}$.
+> > ✅ The precision of $X$ is $\precision_X = 1 / \Var{X}$.
 >
 > The ✅ version writes the precision as a number with the random variable as a subscript, and writes the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) with its parenthesized argument.
 
