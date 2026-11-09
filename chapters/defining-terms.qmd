@@ -273,7 +273,7 @@ Follow these principles when introducing new [term](#def-term)s:
   the theorem covers only integer $k$.
   Defining the chi-square distribution as that sum
   turns a result into a definition,
-  and leaves the reader without the density function
+  and leaves the reader without the density [function](https://morrison-lab.github.io/mcs/functions.html#def-function)
   that later calculations need.
 
 - **Define a term directly, not as a modification of another term:**
@@ -539,7 +539,7 @@ Follow these principles when introducing new [term](#def-term)s:
   (see *Put only the defining equation in a definition, and state equivalences as results* above).
   A test: if each name has its own natural definition,
   they are two concepts.
-  For example, a loss function defined as the negative log of the predicted probability of the observed class
+  For example, a loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) defined as the negative log of the predicted probability of the observed class
   and a loss function defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy)
   between two distributions
   each have a natural definition,
@@ -1006,7 +1006,7 @@ Examples serve several crucial purposes:
   A mode, kernel, support, maximum, or median belongs to one object,
   and the sentence names that object.
   Name the object whose definition the characteristic is stated for,
-  such as the density function, the distribution, the likelihood function, or the kernel,
+  such as the density [function](https://morrison-lab.github.io/mcs/functions.html#def-function), the distribution, the likelihood function, or the kernel,
   and use "of the distribution" only when the definition is for distributions.
   Where a text moves from a distribution to its density function,
   say so once rather than switching silently.
@@ -1021,7 +1021,7 @@ Examples serve several crucial purposes:
   so maximizing it finds the mode."
 
   **Correct:**
-  "The gamma density function has the kernel $x^{a-1} e^{-x}$,
+  "The gamma density [function](https://morrison-lab.github.io/mcs/functions.html#def-function) has the kernel $x^{a-1} e^{-x}$,
   so maximizing the kernel finds the mode of the density function."
   A kernel is defined for a density, not for a distribution.
 

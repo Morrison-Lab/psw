@@ -365,7 +365,7 @@ Open the chapter and list the dataset each section uses, rather than recalling t
 # Showing the data at first mention
 
 > ❌ Slides 3 to 9 discuss the spam data's 57 predictors, its class imbalance
-> and the loss function we will minimize.
+> and the loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) we will minimize.
 > Slide 10 shows a table of the first rows.
 >
 > ✅ Slide 3 introduces the spam data and shows a table of its first rows
