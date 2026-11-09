@@ -112,7 +112,9 @@ Follow its link for the reasons and the exceptions.
 - [Use common words, and define technical ones](inclusive-writing.qmd#use-common-words-and-define-technical-ones).
 - [Say when a common word has a technical meaning](inclusive-writing.qmd#say-when-a-common-word-has-a-technical-meaning),
   such as "significant" or "bias".
-- [Spell out abbreviations](inclusive-writing.qmd#spell-out-abbreviations).
+- [Spell out abbreviations](inclusive-writing.qmd#spell-out-abbreviations),
+  and [use no shorthand](inclusive-writing.qmd#use-no-shorthand),
+  such as "cost" for "cost function". <!-- check-term-links: allow -->
 - [Write positive statements](inclusive-writing.qmd#write-positive-statements),
   and [avoid double negatives](conciseness.qmd#avoid-double-negatives).
 - [Rewrite noun strings and hidden verbs](inclusive-writing.qmd#rewrite-noun-strings-and-hidden-verbs).

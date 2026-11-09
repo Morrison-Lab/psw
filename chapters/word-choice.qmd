@@ -331,6 +331,22 @@ and the reader may supply different ones than you meant.
 Readers who are learning English, and readers who read literally, cannot always recover them.
 Name what the object is a function of, and what it is conditional on.
 
+Name a function with the word "function": <!-- check-term-links: allow -->
+write "cost function", "loss function", "logit function", and "logistic function", <!-- check-serial-comma: allow -->
+not "the cost", "the loss", "the logit", or "the logistic", when the sentence is about the function itself.
+Use no shorthand for a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
+Write the full term at every use.
+The rule covers every named function.
+A bare name without "function" means the value of the function at a specific input,
+and "X function" means the function itself:
+
+- **Cost:** the cost of a particular parameter vector is the value of the cost function there. <!-- check-term-links: allow -->
+- **Loss:** the loss of one observation is the value of the loss function at that observation.
+- **Logit:** the logit of a particular probability is the value of the logit function at that probability.
+
+Name the input in the sentence or its context,
+so the reader can tell a value from the function. <!-- check-term-links: allow -->
+
 The same rule applies to symbols.
 Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name,
 unless the sentence is about the function as a whole and the page has said so.
@@ -345,6 +361,23 @@ The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 > ❌ The outcome variable is the true mean function plus noise. <!-- check-term-links: allow -->
 >
 > ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
+
+:::
+
+:::{#exm-function-named-in-full}
+
+# Naming a function in full
+
+> ❌ The cost is convex in the parameters.
+>
+> ✅ The cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is convex in the parameters.
+
+> ❌ The logit is the inverse of the logistic.
+>
+> ✅ The logit function is the inverse of the logistic function.
+
+> ✅ The cost of the initial parameter vector is 4.2, and each step lowers it.
+> (A value of the cost function at a specific input, so "function" is not needed.)
 
 :::
 
