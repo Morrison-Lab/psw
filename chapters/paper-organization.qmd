@@ -299,7 +299,7 @@ Three cases are not forward references to fix:
   such as "Section 2 describes the data, and Section 3 gives the results".
   The reader is not meant to resolve the preview immediately.
 - An overview of a group of items,
-  such as "The next four exercises establish the properties of the sigmoid".
+  such as "The next four exercises establish the properties of the logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function)".
   Put it in its own paragraph before the first item,
   not inside the first item,
   because it describes the whole group

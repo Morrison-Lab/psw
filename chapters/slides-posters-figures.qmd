@@ -193,7 +193,7 @@ For more:
 
 # Three-dimensional graphs {#sec-3d-graphs}
 
-A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss or a [residual sum of squares](defining-terms.qmd#def-rss)
+A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss function or a [residual sum of squares](defining-terms.qmd#def-rss)
 as a function of a regression's intercept and slope,
 is a surface.
 A contour plot shows where the function takes given values and is easy to read values from.

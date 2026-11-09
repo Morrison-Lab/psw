@@ -70,6 +70,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/predictor-and-design-matrices.qmd >}}
 
+# Writing matrix elements
+
+{{< include notation/matrix-elements.qmd >}}
+
 # Stating formulas in their general form
 
 {{< include notation/general-form-formulas.qmd >}}
