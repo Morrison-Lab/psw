@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 00:39:51 (PST)
+Last modified: 2026-11-09 00:47:45 (PST)
 
 > **NOTE:**
 >
@@ -184,9 +184,9 @@ Check the reference text itself before naming its datasets. Open the chapter and
 >
 > **Example 4 (Showing the data at first mention)**  
 >
-> > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance and the loss we will minimize. Slide 10 shows a table of the first rows.
+> > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance, and the loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) we will minimize. Slide 10 shows a table of the first rows.
 > >
-> > ✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance and the loss, and refer back to that table and plot.
+> > ✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function, and refer back to that table and plot.
 >
 > The ✅ version lets every later slide refer to something the reader has already seen.
 
