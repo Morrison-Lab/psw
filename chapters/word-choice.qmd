@@ -45,7 +45,7 @@ Commonly used Latin words and phrases and Anglish alternatives
 
 See also <https://bark-fa.github.io/Anglish-Translator/>
 
-English has two layers of vocabulary because of its history [@wikipedia_history_of_english]:
+English has three layers of vocabulary because of its history [@wikipedia_history_of_english]:
 
 - Old English came to Britain with Germanic-speaking settlers in the mid-5th to 7th centuries.
   Its words are the source of the Anglish alternatives above.
