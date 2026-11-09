@@ -699,14 +699,14 @@ Follow these principles when introducing new [term](#def-term)s:
   as for any new macro.
   A missing f form is never a reason to type the operator and the delimiter separately.
 
-- **Qualify "mean" and "average" as population or sample:**
+- **Qualify "mean" and "average" as population or sample:** <!-- check-term-links: allow -->
   A bare "mean" or "average" does not say whether it is a quantity of the population
   or a value computed from one sample.
   Write "population mean" for the expected value of a distribution,
   and "sample mean" for the average of the observed values;
   write "population average" and "sample average" in the same way.
   Prefer "mean" with the qualifier to "average".
-  Write the full terms, with no abbreviation:
+  Write the full terms, with no abbreviation: <!-- check-term-links: allow -->
   "population mean squared error", "sample root mean squared error", "population mean absolute error"
   ([use no shorthand](inclusive-writing.qmd#use-no-shorthand)).
   A term that already says which, such as "mean function" or "running mean", needs no extra word,
