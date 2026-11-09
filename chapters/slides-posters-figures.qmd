@@ -157,8 +157,9 @@ Before you share a figure:
   Only the label format matters, so write 1, 10, 100 and 1,000, not 1e+00 through 1e+03.
   When the numbers are huge or tiny, rescale the units and say so in the axis title, such as "dollars (millions)".
 - Use a pseudo-log axis when the data include zero or negative values that a logarithmic axis cannot show.
-  A pseudo-log axis is linear near zero and logarithmic far from zero, so every real number has a position.
-  The `transform_pseudo_log()` function of the R package
+  A pseudo-log axis is [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) near zero
+  and logarithmic far from zero, so every real number has a position.
+  The `transform_pseudo_log()` [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the R package
   [scales](https://scales.r-lib.org/reference/transform_log.html)
   maps a value $x$ to $\operatorname{asinh}\paren{x / (2 \sigma)}$ divided by the natural logarithm of its `base`,
   and the argument $\sigma$ (`sigma`) sets the width of the linear part around zero.
