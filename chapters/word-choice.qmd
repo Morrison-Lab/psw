@@ -368,9 +368,9 @@ The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 
 # Naming a function in full
 
-> ❌ Gradient descent decreases the cost at every step.
+> ❌ The cost is convex in the parameters.
 >
-> ✅ Gradient descent decreases the cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) at every step.
+> ✅ The cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is convex in the parameters.
 
 > ❌ The logit is the inverse of the logistic.
 >
