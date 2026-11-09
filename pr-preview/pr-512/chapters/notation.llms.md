@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-07 01:25:07 (PST)
+Last modified: 2026-11-09 10:43:53 (PST)
 
 > **NOTE:**
 >
@@ -579,13 +579,31 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 >
 > The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.
 
-# 14 Stating formulas in their general form
+# 14 Writing matrix elements
+
+Write an element of a matrix in bold, with the matrix’s own letter and its subscripts: $\matr{W}_{ij}$, not $W_{ij}$. The bold letter then marks every symbol that stands for a matrix or a part of one, so the reader never has to look up whether a letter names a matrix or a number.
+
+This bold form is the lab’s convention. Some textbooks write the elements of a bold matrix in plain italics, for example $x_{ij}$ for an element of $\mX$ ([James et al. 2021, chap. 1](#ref-james2021islr2)), so a reader who knows those books will see a difference here. Keep the bold form in every file you edit: notes, assignments, solutions, slides, and note sheets.
+
+In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the element with the matrix macro: `\matr{W}_{ij}`. Write a row or a column of a matrix, or a slice of it, the same way, as in `\matr{U}_{1:L,\,:}`.
+
+> **NOTE:**
+>
+> **Example 25 (Writing a matrix element)**  
+>
+> > ❌ The hidden-layer weight $W_{ij}$ connects input $i$ to hidden unit $j$.
+> >
+> > ✅ The hidden-layer weight $\matr{W}_{ij}$ connects input $i$ to hidden unit $j$.
+>
+> The ✅ version uses the same bold letter as the weight matrix $\matr{W}$, so the element is visibly a part of that matrix.
+
+# 15 Stating formulas in their general form
 
 On a reference sheet, a formula sheet or a summary, state each formula in its general form. Do not state it only for a specific example. A reader looks a formula up to apply it to a new case, and an example shows only one case.
 
 > **NOTE:**
 >
-> **Example 25 (Stating the chain rule)**  
+> **Example 26 (Stating the chain rule)**  
 >
 > > ❌ $\frac{d(u^2)}{dw} = 2u \frac{du}{dw}$
 > >
@@ -595,7 +613,7 @@ On a reference sheet, a formula sheet or a summary, state each formula in its ge
 
 Put a specific case on the sheet only as a labeled example next to the general formula.
 
-# 15 Writing the mean function and the prediction function
+# 16 Writing the mean function and the prediction function
 
 Write the mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function) as $\truemean$, not as $\predfn$. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, $\truemeanf{x}$. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
@@ -603,7 +621,7 @@ Name the object you mean. When the text refers to the fitted prediction function
 
 > **NOTE:**
 >
-> **Example 26 (Mean function and fitted prediction function)**  
+> **Example 27 (Mean function and fitted prediction function)**  
 >
 > > ❌ The expected squared error of the fitted mean function at $x$ is $\E{(y - \hat{f}(x))^2}$.
 > >
@@ -611,13 +629,13 @@ Name the object you mean. When the text refers to the fitted prediction function
 >
 > The ✅ version names the fitted prediction function where the concept is a prediction, and keeps $\truemean$ for the mean it is compared with.
 
-# 16 Writing the log-odds
+# 17 Writing the log-odds
 
 Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
 > **NOTE:**
 >
-> **Example 27 (Argument of the logistic function)**  
+> **Example 28 (Argument of the logistic function)**  
 >
 > > ❌ The logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
 > >
@@ -625,7 +643,7 @@ Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another lette
 >
 > The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen $\logodds$ elsewhere recognizes it here.
 
-# 17 Writing out notational shorthands
+# 18 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in $\sum_x f(x)$. In permanent writing (notes, papers, and published slides), write the full form instead: $\sum_{x \in \mathcal{R}(X)} f(x)$, where $\mathcal{R}(X)$ is the set of values that $X$ can take.
 
@@ -635,13 +653,13 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 28 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
+> **Example 29 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
 >
 > > ❌ $\text{E}[X] = \sum_x x \Pr(X = x)$
 > >
 > > ✅ $\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)$
 >
-> For the likelihood of $n$ independent observations $x_1, \ldots, x_n$:
+> For the likelihood [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of $n$ independent observations $x_1, \ldots, x_n$:
 >
 > > ❌ $L(\theta) = \prod_i f(x_i; \theta)$
 > >
@@ -649,7 +667,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values $X$ can take, and the indices of the $n$ observations.
 
-# 18 Stating assumptions before using them
+# 19 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -673,7 +691,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 29 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
+> **Example 30 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
 >
 > > ❌ $$\begin{aligned}
 > > f(x) - f(2)
@@ -694,7 +712,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 30 (Writing several assumptions as one list)**  
+> **Example 31 (Writing several assumptions as one list)**  
 >
 > > ❌ Assume the sample size $n$ is larger than $30$. Assume the observations are independent. Assume the population variance $\sigma^2$ is finite.
 > >
@@ -708,7 +726,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 31 (Writing several names as one list)**  
+> **Example 32 (Writing several names as one list)**  
 >
 > > ❌ Let $n$ be the sample size. Let $\bar{y}$ be the sample mean. Let $s$ be the sample standard deviation.
 > >
@@ -722,7 +740,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 32 (Defining the noise is a parametrization, not an assumption)**  
+> **Example 33 (Defining the noise is a parametrization, not an assumption)**  
 >
 > > ❌ Assume:
 > >
@@ -739,3 +757,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 > In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
 Back to top
+
+## References
+
+James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. *An Introduction to Statistical Learning: With Applications in r*. 2nd ed. Springer. <https://doi.org/10.1007/978-1-0716-1418-1>.

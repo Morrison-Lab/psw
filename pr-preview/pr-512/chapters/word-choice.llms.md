@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-07 01:25:07 (PST)
+Last modified: 2026-11-09 10:43:53 (PST)
 
 > **NOTE:**
 >
@@ -163,6 +163,14 @@ Mention the common name once, as an alias in the definition, and use the accurat
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
 
+Name a function with the word “function”: write “cost function”, “loss function”, “logit function”, and “logistic function”, not “the cost”, “the loss”, “the logit”, or “the logistic”, when the sentence is about the function itself. Use no shorthand for a technical term, even one that the text has introduced. Write the full term at every use. The rule covers every named function. A bare name without “function” means the value of the function at a specific input, and “X function” means the function itself:
+
+- **Cost:** the cost of a particular parameter vector is the value of the cost function there.
+- **Loss:** the loss of one observation is the value of the loss function at that observation.
+- **Logit:** the logit of a particular probability is the value of the logit function at that probability.
+
+Name the input in the sentence or its context, so the reader can tell a value from the function.
+
 The same rule applies to symbols. Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name, unless the sentence is about the function as a whole and the page has said so. A symbol in a sentence should look like the same symbol in the display equation it refers to.
 
 > **NOTE:**
@@ -173,6 +181,20 @@ The same rule applies to symbols. Write a function with its argument, such as $\
 > >
 > > ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
 
+> **NOTE:**
+>
+> **Example 2 (Naming a function in full)**  
+>
+> > ❌ The cost is convex in the parameters.
+> >
+> > ✅ The cost [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is convex in the parameters.
+>
+> > ❌ The logit is the inverse of the logistic.
+> >
+> > ✅ The logit function is the inverse of the logistic function.
+>
+> > ✅ The cost of the initial parameter vector is 4.2, and each step lowers it. (A value of the cost function at a specific input, so “function” is not needed.)
+
 # 8 Choose each preposition on purpose
 
 A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
@@ -181,7 +203,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 > **NOTE:**
 >
-> **Example 2 (Naming the relationship)**  
+> **Example 3 (Naming the relationship)**  
 >
 > > ❌ The error of the prediction is large.
 > >
@@ -203,7 +225,7 @@ Do not use “above” or “below” for a position in a document. The same sou
 
 > **NOTE:**
 >
-> **Example 3 (Replacing “above” with a label)**  
+> **Example 4 (Replacing “above” with a label)**  
 >
 > > ❌ The next figure draws the fits behind the table above.
 > >
@@ -225,7 +247,7 @@ The guide does not list “recently”, but it fails the same way. In course not
 
 > **NOTE:**
 >
-> **Example 4 (Replacing “recently” with a pointer)**  
+> **Example 5 (Replacing “recently” with a pointer)**  
 >
 > > ❌ A missing *that* is a common cause of garden-path sentences, as we recently saw.
 > >
@@ -239,7 +261,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 
 > **NOTE:**
 >
-> **Example 5 (Replacing unnecessary jargon)**  
+> **Example 6 (Replacing unnecessary jargon)**  
 >
 > > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 > >
