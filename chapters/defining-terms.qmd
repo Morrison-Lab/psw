@@ -706,9 +706,9 @@ Follow these principles when introducing new [term](#def-term)s:
   and "sample mean" for the average of the observed values;
   write "population average" and "sample average" in the same way.
   Prefer "mean" with the qualifier to "average".
-  Write the full terms, with no abbreviation: <!-- check-term-links: allow -->
+  Keep the qualifier in each full term: <!-- check-term-links: allow -->
   "population mean squared error", "sample root mean squared error", "population mean absolute error"
-  ([use no shorthand](inclusive-writing.qmd#use-no-shorthand)).
+  ([do not clip a term](inclusive-writing.qmd#do-not-clip-a-term)).
   A term that already says which, such as "mean function" or "running mean", needs no extra word,
   and neither does expected value notation such as $\E{Y}$.
   For example, write "the sample mean of the training outcomes estimates the population mean of the outcome",
