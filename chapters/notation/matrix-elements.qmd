@@ -2,7 +2,7 @@ Write an element of a matrix in bold, with the matrix's own letter and its subsc
 The bold letter then marks every symbol that stands for a matrix or a part of one,
 so the reader never has to look up whether a letter names a matrix or a number.
 
-This is the lab's convention.
+This bold form is the lab's convention.
 Some textbooks write the elements of a bold matrix in plain italics,
 for example $x_{ij}$ for an element of $\matr{X}$ [@james2021islr2, §1],
 so a reader who knows those books will see a difference here.
