@@ -187,7 +187,8 @@ Before you share a figure:
 For more:
 
 - Ten Simple Rules for Better Figures [@rougier2014]
-- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus O. Wilke -
+- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
+  by Claus O. Wilke -
   a free online book on choosing the kind of figure, the colors, and the layout for a set of data
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) -
   style HTML articles like Edward Tufte's books and handouts,
