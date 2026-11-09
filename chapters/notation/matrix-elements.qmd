@@ -1,10 +1,12 @@
-Write an element of a matrix in bold, with the matrix's own letter and its subscripts: $\matr{W}_{ij}$, not $W_{ij}$.
+Write an element of a matrix in bold,
+with the matrix's own letter and its subscripts:
+$\matr{W}_{ij}$, not $W_{ij}$.
 The bold letter then marks every symbol that stands for a matrix or a part of one,
 so the reader never has to look up whether a letter names a matrix or a number.
 
 This bold form is the lab's convention.
 Some textbooks write the elements of a bold matrix in plain italics,
-for example $x_{ij}$ for an element of $\matr{X}$ [@james2021islr2, §1],
+for example $x_{ij}$ for an element of $\mX$ [@james2021islr2, sec. 1],
 so a reader who knows those books will see a difference here.
 Keep the bold form in every file you edit:
 notes, assignments, solutions, slides, and note sheets.
