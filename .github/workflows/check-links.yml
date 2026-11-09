@@ -17,6 +17,6 @@ jobs:
       contents: read
       issues: write
       pull-requests: read
-    uses: Morrison-Lab/gha/.github/workflows/check-links.yml@v1
+    uses: Morrison-Lab/gha/.github/workflows/check-links.yml@v3
     with:
       lychee-config: lychee.toml
