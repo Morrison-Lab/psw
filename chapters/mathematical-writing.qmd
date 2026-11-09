@@ -327,7 +327,7 @@ A solution decomposes the same way: each solution is the smallest argument that 
 # Citing a step instead of deriving it
 
 > ❌ **Proof.**
-> By the chain rule, the gradient of each summand is $2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
+> By the chain rule, $\gradwrt{\vcoef}{\resid_i^2} = 2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
 >
 > ✅ **Proof.**
 > Lemma 4 gives the gradient of each summand,
