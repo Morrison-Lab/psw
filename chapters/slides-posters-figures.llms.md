@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 10:52:28 (PST)
+Last modified: 2026-11-09 10:59:27 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -61,6 +61,7 @@ A clear figure lets a reader check a result without help from the text. Before y
 - Include enough tick marks and tick labels.
 - Put the ticks in the original measurement scale of each variable, however the model is parametrized and the axis is spaced. If a fit uses scaled or standardized values, place the ticks at round original values and label them with those, so a horsepower axis reads 50, 100, 150 and 200, not 0 to 1. Report numbers such as an error in the response’s units too.
 - Print tick labels as plain or comma-separated numbers, such as 0.001 or 10,000, not in scientific notation. A logarithmic axis is fine. Only the label format matters, so write 1, 10, 100 and 1,000, not 1e+00 through 1e+03. When the numbers are huge or tiny, rescale the units and say so in the axis title, such as “dollars (millions)”.
+- Use a pseudo-log axis when the data include zero or negative values that a logarithmic axis cannot show. A pseudo-log axis is [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) near zero and logarithmic far from zero, so every real number has a position. The `transform_pseudo_log()` [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the R package [scales](https://scales.r-lib.org/reference/transform_log.html) maps a value $x$ to $\operatorname{asinh}\paren{x / (2 \sigma)}$ divided by the natural logarithm of its `base`, and the argument $\sigma$ (`sigma`) sets the width of the linear part around zero. Pass it to a ggplot2 scale, as in `scale_y_continuous(transform = scales::transform_pseudo_log(sigma = 0.1))`. Say in the axis title or the caption that the axis is pseudo-log.
 - Use font sizes that are easy to read without dominating the plot.
 - Use colorblind-friendly palettes (see [ColorBrewer](http://colorbrewer2.org/) or [iwanthue](https://medialab.github.io/iwanthue/)). Pair color with shape or line type, so that color is never the only way to tell groups apart. This matters most with more than 3 or 4 groups, because even a colorblind-friendly palette then has pairs of colors that are close together.
 - Define colors, shapes, and line types in a legend.
@@ -74,7 +75,27 @@ A clear figure lets a reader check a result without help from the text. Before y
 For more:
 
 - Ten Simple Rules for Better Figures ([Rougier et al. 2014](#ref-rougier2014))
+- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus Wilke - a free online book on choosing the kind of figure, the colors, and the layout for a set of data
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text
+
+## 4.1 Combine several figures with patchwork
+
+The R package [patchwork](https://patchwork.data-imaginist.com/) combines several ggplot2 figures into one figure with panel labels. The `+` operator places plots side by side, and the `/` operator stacks them. In this demo, `p1`, `p2`, and `p3` stand for three ggplot2 plots that you have already made:
+
+``` r
+library(patchwork)
+
+(p1 + p2) / p3 +
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "A") &
+  theme(legend.position = "bottom")
+```
+
+The expression puts `p1` and `p2` side by side above `p3`:
+
+- `plot_layout(guides = "collect")` merges the plots’ legends into one.
+- `plot_annotation(tag_levels = "A")` labels the panels A, B, and C.
+- `&` applies the bottom legend position to every panel.
 
 # 5 Three-dimensional graphs
 

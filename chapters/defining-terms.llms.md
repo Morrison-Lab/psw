@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 10:52:28 (PST)
+Last modified: 2026-11-09 10:59:27 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -53,6 +53,8 @@ Follow these principles when introducing new [term](#def-term)s:
   $$R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},$$
 
   not the two sums that RSS and TSS stand for.
+
+- **Open a definition with the bold [term](#def-term) as its subject:** Start the sentence with the term, then state what it is, and put the defining expression after that sentence. For example, write “The **[variance](#def-variance-expression-and-prose)** of a random variable $X$ is the [population](#def-population) mean of the squared deviation of $X$ from its population mean,” followed by the equation ${\operatorname{Var}\mathopen{}\left(X\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$. Do not open with the expression and name the term afterward, as in “${\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$ is the variance of $X$.” A reader who looks up a term should find the term first, and the definition then reads as one statement about that term.
 
 - **Define a statistical model by its distribution, and derive its other forms:** Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function). For example, define simple linear regression as $Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)$, independently, with $\mu_i := \mu(x_i)$ and $\mu(x) := \beta_0 + \beta_x x$. Then define the deviation $\varepsilon_i := Y_i - \mu(x_i)$, and state $Y_i = \mu_i + \varepsilon_i$ with $\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)$ as a result proved from those definitions. Writing the model as “$Y_i = \beta_0 + \beta_x x_i + \varepsilon_i$ with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.
 

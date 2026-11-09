@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 10:52:28 (PST)
+Last modified: 2026-11-09 10:59:27 (PST)
 
 > **NOTE:**
 >
@@ -94,7 +94,7 @@ When a sentence states a mathematical relationship, also write that relationship
 - a bound or an ordering;
 - a “depends on”.
 
-Keep the sentence, because it tells the reader what the relationship means, and add the displayed formula, because it tells the reader exactly what the relationship is. Prose alone leaves the reader to guess the quantities, the direction, and the conditions. Put every condition of the prose in the formula too, and introduce its symbols in the sentence. Keep the sentence and the formula as two sentences, as the rule to [write each sentence in words or in math](#write-each-sentence-in-words-or-in-math-not-both) requires.
+Keep the sentence, because it tells the reader what the relationship means, and add the displayed formula, because it tells the reader exactly what the relationship is. Prose alone leaves the reader to guess the quantities, the direction, and the conditions. Put every condition of the prose in the formula too, and introduce its symbols in the sentence. Keep the sentence and the formula separate, as the rule to [write each sentence in words or in math](#write-each-sentence-in-words-or-in-math-not-both) requires: the display may follow a lead-in such as “In symbols:”, and the formula is not part of the sentence in words.
 
 > **NOTE:**
 >
@@ -194,7 +194,7 @@ Every result div states one result and every solution div answers one exercise, 
 >
 > **Example 9 (Citing a step instead of deriving it)**  
 >
-> > ❌ **Proof.** By the chain rule, the gradient of each summand is $2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
+> > ❌ **Proof.** By the chain rule, $\gradwrt{\vcoef}{\resid_i^2} = 2 \resid_i \vfeatmap(\vx_i)$, where $\resid_i$ is the residual and $\vfeatmap(\vx_i)$ the design vector, and summing over $i$ gives the claim.
 > >
 > > ✅ **Proof.** Lemma 4 gives the gradient of each summand, and Lemma 5 says that the gradient of a sum is the sum of the gradients, so the gradient of the total is the sum of $2 \resid_i \vfeatmap(\vx_i)$ over $i$.
 >
