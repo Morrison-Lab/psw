@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 10:59:27 (PST)
+Last modified: 2026-11-09 11:28:51 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -423,10 +423,28 @@ A link to a sister site that sends the reader to further reading is a cross-refe
 
 When you find an existing credit to your own work, remove it and add or keep a link to it.
 
-# 22 Common citation errors to avoid
+# 22 Name the source of every attribution
+
+Name the person, book, paper, or site that makes a claim. Do not write “some authors”, “some people”, “many researchers”, “studies have shown”, “it is well known”, or “experts agree”. Each of these phrases tells the reader that a source exists and withholds it, so the reader can neither check the claim nor read further.
+
+When a claim has no source in your draft, find one. Search the books and papers that the project already cites, then the literature, and cite what you find with a locator. Do not delete the claim or [hedge](../chapters/avoid-cliches.llms.md#def-hedge) it to avoid the search: the claim was worth writing, so it is worth the work of sourcing it.
+
+If, after searching, no source states the claim, write it in your own voice (“I expect”, “the example below shows”) instead of attributing it to others.
+
+> **NOTE:**
+>
+> **Example 9 (Naming the author who uses a word)**  
+>
+> > ❌ Some authors call the part of the error that no model can remove “irreducible”.
+> >
+> > ✅ James et al. ([2021, 18](#ref-james2021islr2)) call the part of the error that no model can remove the “irreducible error”.
+>
+> The ✅ sentence names the authors and gives a page, so a reader can check the wording and the claim against the book.
+
+# 23 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
-- **Vague attribution**: Using phrases like “studies have shown” without citing specific studies
+- **Vague attribution**: Using phrases like “studies have shown” or “some authors” without naming the studies or authors (see [Name the source of every attribution](#name-the-source))
 - **Appeal to obviousness**: Using “obviously”, “clearly”, or “as everyone knows” in place of a derivation or a citation
 - **Circular citation**: Citing a paper that doesn’t contain the claimed information but cites another paper that does (cite the original source)
 - **Redundant citation**: Citing the same source more than once in one div or passage (see [Cite a source once per passage](#cite-once-per-passage))
@@ -434,39 +452,39 @@ When you find an existing credit to your own work, remove it and add or keep a l
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-# 23 Examples
+# 24 Examples
 
-## 23.1 Poor (unsupported claim)
+## 24.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-## 23.2 Better (citation provided)
+## 24.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-## 23.3 Best (citation with context)
+## 24.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-## 23.4 Poor (irrelevant citation)
+## 24.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-## 23.5 Better (relevant citation)
+## 24.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-# 24 Conclusion
+# 25 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
@@ -479,6 +497,8 @@ Bienaymé, Irénée-Jules. 1853. “Considérations à l’appui de La Découver
 Blitzstein, Joseph K., and Jessica Hwang. 2019. *Introduction to Probability*. 2nd ed. Chapman; Hall/CRC. <https://doi.org/10.1201/9780429428357>.
 
 Hawkins, Douglas M. 2004. “The Problem of Overfitting.” *Journal of Chemical Information and Computer Sciences* 44 (1): 1–12. <https://doi.org/10.1021/ci0342472>.
+
+James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. *An Introduction to Statistical Learning: With Applications in r*. 2nd ed. Springer. <https://doi.org/10.1007/978-1-0716-1418-1>.
 
 Knuth, Donald E. 1984. “Literate Programming.” *Comput. J.* (USA) 27 (2): 97–111. <https://doi.org/10.1093/comjnl/27.2.97>.
 
