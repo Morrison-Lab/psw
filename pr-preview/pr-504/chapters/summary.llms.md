@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-06 16:37:16 (PST)
+Last modified: 2026-11-09 10:43:49 (PST)
 
 > **NOTE:**
 >
@@ -84,7 +84,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language).
 - [Use common words, and define technical ones](../chapters/inclusive-writing.llms.md#use-common-words-and-define-technical-ones).
 - [Say when a common word has a technical meaning](../chapters/inclusive-writing.llms.md#say-when-a-common-word-has-a-technical-meaning), such as “significant” or “bias”.
-- [Spell out abbreviations](../chapters/inclusive-writing.llms.md#spell-out-abbreviations).
+- [Spell out abbreviations](../chapters/inclusive-writing.llms.md#spell-out-abbreviations), and [use no shorthand](../chapters/inclusive-writing.llms.md#use-no-shorthand), such as “cost” for “cost function”.
 - [Write positive statements](../chapters/inclusive-writing.llms.md#write-positive-statements), and [avoid double negatives](../chapters/conciseness.llms.md#avoid-double-negatives).
 - [Rewrite noun strings and hidden verbs](../chapters/inclusive-writing.llms.md#rewrite-noun-strings-and-hidden-verbs).
 - [Put one idea in each sentence](../chapters/inclusive-writing.llms.md#put-one-idea-in-each-sentence).

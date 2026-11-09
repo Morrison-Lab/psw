@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-06 16:37:16 (PST)
+Last modified: 2026-11-09 10:43:49 (PST)
 
 > **NOTE:**
 >
@@ -110,19 +110,19 @@ Once you define the term, use the same word for the same idea every time. The pl
 
 # 4 Spell out abbreviations
 
-Write out an abbreviation the first time you use it, or replace it with a short name. The plain language guidelines say abbreviations “constantly require the reader to look back to earlier pages” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Minimize abbreviations). Do not use the Latin abbreviations *e.g.* and *i.e.*: “Few people know what they mean, and they often confuse the two” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Use examples). Write “for example” or “that is”.
+Never abbreviate a term: [use no shorthand](#use-no-shorthand) covers abbreviations and clipped phrases alike. The plain language guidelines say abbreviations “constantly require the reader to look back to earlier pages” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Minimize abbreviations). Do not use the Latin abbreviations *e.g.* and *i.e.*: “Few people know what they mean, and they often confuse the two” ([Plain Language Action and Information Network 2026](#ref-plainlanguage_gov), Use examples). Write “for example” or “that is”.
 
 > ❌ Tree ensembles, e.g. RF and GBM, usually reduce the MSE of a single CART.
 >
 > ✅ Ensembles of trees, for example random forests and boosted trees, usually have lower mean squared error than a single regression tree.
 
-# 5 Introduce shorthand before using it
+# 5 Use no shorthand
 
-Introduce every shorthand before its first use. This covers abbreviations and also shortened phrases, such as “objective” for “objective function”. Give the full [term](../chapters/defining-terms.llms.md#def-term) first and mark the short form, for example “an *objective function*, or *objective* for short”. Then use the short form consistently.
+Do not shorten a [term](../chapters/defining-terms.llms.md#def-term), even after introducing the short form. This covers abbreviations and also shortened phrases, such as “objective” for “objective function”. Write the full term at every use. [Write the full phrase](../chapters/word-choice.llms.md#write-the-full-phrase) says when a clipped name is correct: only for the value of a function at a specific input.
 
-> ❌ The objective as a function of the parameters is a paraboloid. An *objective function* is the quantity we minimize.
+> ❌ An *objective function*, or *objective* for short, is the quantity we minimize. The objective as a function of the parameters is a paraboloid.
 >
-> ✅ An *objective function*, or *objective* for short, is the quantity we minimize. The objective as a function of the parameters is a paraboloid.
+> ✅ An *objective function* is the quantity we minimize. The objective function of the parameters is a paraboloid.
 
 # 6 Write positive statements
 
