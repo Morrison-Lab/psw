@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-08 22:57:04 (PST)
+Last modified: 2026-11-08 23:05:39 (PST)
 
 > **NOTE:**
 >
@@ -583,7 +583,7 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 
 Write an element of a matrix in bold, with the matrix’s own letter and its subscripts: $\matr{W}_{ij}$, not $W_{ij}$. The bold letter then marks every symbol that stands for a matrix or a part of one, so the reader never has to look up whether a letter names a matrix or a number.
 
-This bold form is the lab’s convention. Some textbooks write the elements of a bold matrix in plain italics, for example $x_{ij}$ for an element of $\matr{X}$ ([James et al. 2021, sec. 1](#ref-james2021islr2)), so a reader who knows those books will see a difference here. Keep the bold form in every file you edit: notes, assignments, solutions, slides, and note sheets.
+This bold form is the lab’s convention. Some textbooks write the elements of a bold matrix in plain italics, for example $x_{ij}$ for an element of $\mX$ ([James et al. 2021, chap. 1](#ref-james2021islr2)), so a reader who knows those books will see a difference here. Keep the bold form in every file you edit: notes, assignments, solutions, slides, and note sheets.
 
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the element with the matrix macro: `\matr{W}_{ij}`. Write a row or a column of a matrix, or a slice of it, the same way, as in `\matr{U}_{1:L,\,:}`.
 
