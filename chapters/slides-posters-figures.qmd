@@ -187,9 +187,31 @@ Before you share a figure:
 For more:
 
 - Ten Simple Rules for Better Figures [@rougier2014]
+- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus O. Wilke -
+  a free online book on choosing the kind of figure, the colors, and the layout for a set of data
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) -
   style HTML articles like Edward Tufte's books and handouts,
   with sidenotes, typography, and tight integration of graphics with text
+
+## Combine several figures with patchwork
+
+The R package [patchwork](https://patchwork.data-imaginist.com/) combines several ggplot2 figures into one figure with panel labels.
+The `+` operator places plots side by side, and the `/` operator stacks them.
+In this demo, `p1`, `p2` and `p3` stand for three ggplot2 plots that you have already made:
+
+```r
+library(patchwork)
+
+(p1 + p2) / p3 +
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "A") &
+  theme(legend.position = "bottom")
+```
+
+The expression puts `p1` and `p2` side by side above `p3`.
+`plot_layout(guides = "collect")` merges the plots' legends into one,
+`plot_annotation(tag_levels = "A")` labels the panels A, B and C,
+and `&` applies the bottom legend position to every panel.
 
 # Three-dimensional graphs {#sec-3d-graphs}
 
