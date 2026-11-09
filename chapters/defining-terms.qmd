@@ -273,7 +273,7 @@ Follow these principles when introducing new [term](#def-term)s:
   the theorem covers only integer $k$.
   Defining the chi-square distribution as that sum
   turns a result into a definition,
-  and leaves the reader without the density function
+  and leaves the reader without the density function <!-- check-term-links: allow -->
   that later calculations need.
 
 - **Define a term directly, not as a modification of another term:**
