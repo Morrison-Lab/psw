@@ -138,10 +138,11 @@ Follow these principles when introducing new [term](#def-term)s:
 
   not the two sums that RSS and TSS stand for.
 
-- **Open a definition with the bold term as its subject:**
+- **Open a definition with the bold [term](#def-term) as its subject:**
   Start the sentence with the term, then state what it is,
   and put the defining expression after that sentence.
-  For example, write "The **variance** of a random variable $X$ is the population mean
+  For example, write "The **[variance](#def-variance-expression-and-prose)** of a random variable $X$
+  is the [population](#def-population) mean
   of the squared deviation of $X$ from its population mean,"
   followed by the display equation $\Var{X} = \E{\paren{X - \E{X}}^2}$.
   Do not open with the expression and name the term afterward,
