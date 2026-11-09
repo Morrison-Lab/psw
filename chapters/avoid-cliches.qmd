@@ -219,7 +219,7 @@ Other reflexes to watch for:
 - **Hollow summaries.** A closing paragraph that opens with "in conclusion" and
   only restates what you just said adds nothing. End on a real point.
 
-# Say what it is before what it is not
+### Say what it is before what it is not
 
 When a sentence needs both a positive claim and a denial,
 state the positive claim first.
