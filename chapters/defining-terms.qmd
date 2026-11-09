@@ -257,7 +257,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Define a probability distribution by its density or mass function:**
   Define a named distribution directly,
-  by its probability density function (pdf) or probability mass function (pmf)
+  by its probability density [function](https://morrison-lab.github.io/mcs/functions.html#def-function) (pdf) or probability mass function (pmf)
   and its support.
   State any relationship to other distributions as a theorem
   proved from those definitions.
@@ -273,7 +273,7 @@ Follow these principles when introducing new [term](#def-term)s:
   the theorem covers only integer $k$.
   Defining the chi-square distribution as that sum
   turns a result into a definition,
-  and leaves the reader without the density [function](https://morrison-lab.github.io/mcs/functions.html#def-function)
+  and leaves the reader without the density function
   that later calculations need.
 
 - **Define a term directly, not as a modification of another term:**
