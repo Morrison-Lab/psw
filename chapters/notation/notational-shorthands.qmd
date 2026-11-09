@@ -34,7 +34,7 @@ For a discrete random variable $X$:
 >
 > ✅ $\text{E}[X] = \sum_{x \in \mathcal{R}(X)} x \Pr(X = x)$
 
-For the likelihood of $n$ independent observations $x_1, \ldots, x_n$:
+For the likelihood function of $n$ independent observations $x_1, \ldots, x_n$:
 
 > ❌ $L(\theta) = \prod_i f(x_i; \theta)$
 >
