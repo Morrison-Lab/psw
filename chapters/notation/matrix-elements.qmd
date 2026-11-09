@@ -7,7 +7,7 @@ Some textbooks write the elements of a bold matrix in plain italics,
 for example $x_{ij}$ for an element of $\matr{X}$ [@james2021islr2, §1],
 so a reader who knows those books will see a difference here.
 Keep the bold form in every file you edit:
-notes, assignments, solutions, slides and note sheets.
+notes, assignments, solutions, slides, and note sheets.
 
 In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
 write the element with the matrix macro: `\matr{W}_{ij}`.
