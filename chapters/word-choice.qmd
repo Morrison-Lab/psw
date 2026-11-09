@@ -332,8 +332,8 @@ Readers who are learning English, and readers who read literally, cannot always 
 Name what the object is a function of, and what it is conditional on.
 
 Name a function with the word "function": <!-- check-term-links: allow -->
-write "cost function", "loss function", "logit function", and "sigmoid function",
-not "the cost", "the loss", "the logit" or "the sigmoid", when the sentence is about the function itself.
+write "cost function", "loss function", "logit function", and "sigmoid function", <!-- check-serial-comma: allow -->
+not "the cost", "the loss", "the logit", or "the sigmoid", when the sentence is about the function itself.
 Use no shorthand for a technical term, even one that the text has introduced. <!-- check-term-links: allow -->
 Write the full term at every use.
 The rule covers every named function.
