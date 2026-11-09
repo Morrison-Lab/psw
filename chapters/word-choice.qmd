@@ -331,6 +331,20 @@ and the reader may supply different ones than you meant.
 Readers who are learning English, and readers who read literally, cannot always recover them.
 Name what the object is a function of, and what it is conditional on.
 
+Name a function with the word "function":
+write "cost function", "loss function", "logit function" and "sigmoid function",
+not "the cost", "the loss", "the logit" or "the sigmoid", when the sentence is about the function itself.
+Use no shorthand for a technical term, even one that the text has introduced.
+Write the full term at every use.
+The rule covers every named function.
+A bare name without "function" means the value of the function at a specific input,
+and "X function" means the function itself:
+the cost of a particular parameter vector is the value of the cost function there,
+the loss of one observation is the value of the loss function at that observation,
+and the logit of a particular probability is the value of the logit function at that probability.
+Name the input in the sentence or its context,
+so the reader can tell a value from the function.
+
 The same rule applies to symbols.
 Write a function with its argument, such as $\truemeanf{\predvar}$, not the bare function name,
 unless the sentence is about the function as a whole and the page has said so.
@@ -345,6 +359,23 @@ The display equation is $\Outvar = \truemeanf{\predvar} + \noise$.
 > ❌ The outcome variable is the true mean function plus noise. <!-- check-term-links: allow -->
 >
 > ✅ The outcome variable is the true mean function of the outcome variable given the input value $\predvar$, namely $\truemeanf{\predvar}$, plus noise.
+
+:::
+
+:::{#exm-function-named-in-full}
+
+# Naming a function in full
+
+> ❌ Gradient descent decreases the cost at every step.
+>
+> ✅ Gradient descent decreases the cost function at every step.
+
+> ❌ The logit is the inverse of the sigmoid.
+>
+> ✅ The logit function is the inverse of the sigmoid function.
+
+> ✅ The cost of the initial parameter vector is 4.2, and each step lowers it.
+> (A value of the cost function at a specific input, so "function" is not needed.)
 
 :::
 

@@ -206,8 +206,7 @@ if you're referring to the same group"
 
 # Spell out abbreviations
 
-Write out an abbreviation the first time you use it,
-or replace it with a short name.
+Write out every term in full, at every use, and use no abbreviation.
 The plain language guidelines say abbreviations
 "constantly require the reader to look back to earlier pages"
 [@plainlanguage_gov, Minimize abbreviations].
@@ -223,20 +222,20 @@ Write "for example" or "that is".
 > usually have lower mean squared error
 > than a single regression tree.
 
-# Introduce shorthand before using it
+# Use no shorthand
 
-Introduce every shorthand before its first use.
+Do not shorten a [term](defining-terms.qmd#def-term), even after introducing the short form.
 This covers abbreviations and also shortened phrases,
 such as "objective" for "objective function". <!-- check-term-links: allow -->
-Give the full [term](defining-terms.qmd#def-term) first and mark the short form,
-for example "an *objective function*, or *objective* for short".
-Then use the short form consistently.
+Write the full term at every use.
+[Write the full phrase](word-choice.qmd#write-the-full-phrase) says when a clipped name is correct:
+only for the value of a function at a specific input.
 
-> ❌ The objective as a function of the parameters is a paraboloid.
-> An *objective function* is the quantity we minimize.
->
-> ✅ An *objective function*, or *objective* for short, is the quantity we minimize.
+> ❌ An *objective function*, or *objective* for short, is the quantity we minimize.
 > The objective as a function of the parameters is a paraboloid.
+>
+> ✅ An *objective function* is the quantity we minimize.
+> The objective function of the parameters is a paraboloid.
 
 # Write positive statements
 
