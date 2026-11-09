@@ -112,7 +112,11 @@ that states a general truth or verdict.
 
 :::
 
-# Overused vocabulary
+# Patterns to remove
+
+The patterns below are the most common [clichés](#def-cliche), grouped by kind.
+
+## Overused vocabulary
 
 Some words turn up more often than needed,
 in stock prose and especially in machine-generated text.
@@ -183,7 +187,7 @@ Two more families recur, and each member should give way to the literal claim:
   - "the key takeaway"
   - "more than just"
 
-# Rhetorical reflexes
+## Rhetorical reflexes
 
 Writers reach for a few sentence shapes by reflex,
 whether or not the content calls for them.
@@ -215,7 +219,7 @@ Other reflexes to watch for:
 - **Hollow summaries.** A closing paragraph that opens with "in conclusion" and
   only restates what you just said adds nothing. End on a real point.
 
-# Say what it is before what it is not
+### Say what it is before what it is not
 
 When a sentence needs both a positive claim and a denial,
 state the positive claim first.
@@ -255,7 +259,7 @@ A denial that rejects a view nobody holds is the reframe
 (see [Clichéd sentence shapes](#clichéd-sentence-shapes)) in miniature:
 cut it and keep the claim.
 
-# Clichéd sentence shapes
+## Clichéd sentence shapes
 
 Beyond the [antithesis](#def-antithesis),
 clichéd drafts lean on a set of sentence shapes
@@ -368,7 +372,7 @@ Other chapters cover each:
 - informal idioms
   ([Avoid vague and metaphorical language](word-choice.qmd#avoid-vague-and-metaphorical-language)).
 
-# Formatting habits
+## Formatting habits
 
 Some clichés are typographic rather than verbal.
 
@@ -384,7 +388,7 @@ Some clichés are typographic rather than verbal.
   or four sentences, seem monotonous.
   Let paragraph length follow the ideas.
 
-# Tone
+## Tone
 
 The last group of clichés is about [register](#def-register).
 
