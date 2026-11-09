@@ -1021,7 +1021,7 @@ Examples serve several crucial purposes:
   so maximizing it finds the mode."
 
   **Correct:**
-  "The gamma density [function](https://morrison-lab.github.io/mcs/functions.html#def-function) has the kernel $x^{a-1} e^{-x}$,
+  "The gamma density function has the kernel $x^{a-1} e^{-x}$, <!-- check-term-links: allow -->
   so maximizing the kernel finds the mode of the density function."
   A kernel is defined for a density, not for a distribution.
 
