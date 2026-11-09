@@ -138,6 +138,17 @@ Follow these principles when introducing new [term](#def-term)s:
 
   not the two sums that RSS and TSS stand for.
 
+- **Open a definition with the bold term as its subject:**
+  Start the sentence with the term, then state what it is,
+  and put the defining expression after that sentence.
+  For example, write "The **variance** of a random variable $X$ is the population mean
+  of the squared deviation of $X$ from its population mean,"
+  followed by the display equation $\Var{X} = \E{\paren{X - \E{X}}^2}$.
+  Do not open with the expression and name the term afterward,
+  as in "$\E{\paren{X - \E{X}}^2}$ is the variance of $X$."
+  A reader who looks up a term should find the term first,
+  and the definition then reads as one statement about that term.
+
 - **Define a statistical model by its distribution, and derive its other forms:**
   Define a regression model by the distribution of the outcome
   conditional on the covariates,
