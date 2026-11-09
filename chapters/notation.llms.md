@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 13:32:44 (PST)
+Last modified: 2026-11-09 13:40:06 (PST)
 
 > **NOTE:**
 >
@@ -755,6 +755,56 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 > > Then $\Outvar = \truemeanf{\predvar} + \noise$, and the population mean of $\noise$ given $\predvar$ is $0$.
 >
 > In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
+
+# 20 Separating the framing from the conclusions
+
+Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:
+
+- the definitions,
+- the given data,
+- the given [function](https://morrison-lab.github.io/mds/functions.html#def-function), and
+- the quantities computed from them, such as a gradient.
+
+A conclusion is a statement that the framing implies.
+
+A reader who meets a conclusion in the middle of the setup cannot tell which sentences define the problem and which ones report a result. A separate paragraph for each lets the reader take in the setup first, then see what follows from it.
+
+> **NOTE:**
+>
+> **Example 34 (Separating the function and its gradient from the stationary point)**  
+>
+> > ❌ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$, which is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
+> >
+> > ✅ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is
+> >
+> > $$\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.$$
+> >
+> > The gradient $\gradf{f}(\vx)$ is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
+>
+> In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is $f$ and its gradient, and the second holds the conclusion.
+
+# 21 Writing a quantity’s symbol on the left
+
+When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.
+
+The rule holds for any quantity that later steps use:
+
+- a gradient,
+- a Hessian,
+- a derivative, and
+- a mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+
+> **NOTE:**
+>
+> **Example 35 (Writing the gradient with its symbol)**  
+>
+> > ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
+> >
+> > ✅ The gradient of $f(\vx) = x_1^2 - x_2^2$ is
+> >
+> > $$\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.$$
+>
+> The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
 
 Back to top
 
