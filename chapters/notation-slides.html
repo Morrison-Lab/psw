@@ -270,7 +270,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 13:40:06 (PST)</p>
+  <p class="date">Last modified: 2026-11-09 16:47:54 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -1013,7 +1013,7 @@ f(x) - f(2)
 <section id="writing-a-quantitys-symbol-on-the-left" class="slide level2" data-number="21">
 <h2><span class="header-section-number">21</span> Writing a quantity’s symbol on the left</h2>
 </section>
-<section class="slide level2 smaller scrollable" id="references">
+<section class="slide level2">
 
 <p>When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.</p>
 <p>The rule holds for any quantity that later steps use:</p>
@@ -1033,6 +1033,37 @@ f(x) - f(2)
 \]</span></p>
 </blockquote>
 <p>The ✅ version supplies <span class="math inline">\(\gradf{f}(\vx)\)</span>, which a later line can set equal to <span class="math inline">\(\vzero_{2 \times 1}\)</span>.</p>
+</div>
+</section>
+<section id="choosing-delimiters-and-scripts" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Choosing delimiters and scripts</h2>
+</section>
+<section class="slide level2 smaller scrollable" id="references">
+
+<p>Choose each delimiter and each script by what it says, so a reader can tell the argument of a <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> from a group of <a href="../chapters/defining-terms.html#def-term">term</a>s, and an index from a power.</p>
+<p>Delimiters:</p>
+<ul>
+<li>Parentheses group <a href="../chapters/defining-terms.html#def-term">term</a>s and hold the argument of a <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>: <span class="math inline">\(\pf{x}\)</span>, <span class="math inline">\(\Var{X}\)</span>, <span class="math inline">\(\Prf{A}\)</span>, and <span class="math inline">\((a, b)\)</span> for an open interval.</li>
+<li>Square brackets hold the argument of an <a href="https://morrison-lab.github.io/pds/expectation.html#def-expectation">expectation</a>, <span class="math inline">\(\E{X}\)</span>, and the closed end of an interval, <span class="math inline">\([a, b]\)</span>.</li>
+<li>Curly braces hold the members of a set, <span class="math inline">\(\set{x : x &gt; 0}\)</span>, and an event inside an indicator.</li>
+<li>Write no more than two levels of one kind of delimiter. Past that, name the sub-expression with a macro.</li>
+</ul>
+<p>The international standard for mathematical notation, ISO 80000-2:2019 <span class="citation" data-cites="iso80000_2_2019">(<a href="#/references" role="doc-biblioref" onclick="">International Organization for Standardization 2019</a>)</span>, agrees on these delimiters. It writes the argument of a <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> in parentheses (clause 4), the members of a set in curly braces (Table 2), and an interval with a square bracket at a closed end and a parenthesis at an open end (Table 3). Its clauses on variables, functions, sets, and intervals say nothing about square brackets for an <a href="https://morrison-lab.github.io/pds/expectation.html#def-expectation">expectation</a> or about subscripts and superscripts, so the rules for those rest on the lab’s convention.</p>
+<p>Scripts:</p>
+<ul>
+<li>A subscript says which one. It is an index, as in <span class="math inline">\(x_i\)</span>, or it names the random variable or variable that a quantity belongs to, as in <span class="math inline">\(\mu_X\)</span> and <span class="math inline">\(\precision_X\)</span>. Drop it when only one is in play.</li>
+<li>A superscript is a power, as in <span class="math inline">\(x^2\)</span>. Wrap an iteration or sample index in parentheses, as in <span class="math inline">\(\vx^{(t)}\)</span>, so that it is not mistaken for an exponent.</li>
+<li>Write a transpose with the macro <code>\tp{}</code> and an inverse with the macro <code>\inv{}</code>. Never type a <span class="math inline">\(\top\)</span> or a <span class="math inline">\(-1\)</span> as a superscript.</li>
+<li>Do not put a subscript on a subscript, or a superscript on a superscript. Name the sub-expression with a macro instead.</li>
+</ul>
+<p>Give the characteristic of a random variable a subscript when it has its own symbol, as in <span class="math inline">\(\precision_X\)</span>, and keep the argument when it is an operator, as in <span class="math inline">\(\Var{X}\)</span>. A letter followed by a parenthesis, such as <span class="math inline">\(\precision(X)\)</span>, reads as a <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> applied to <span class="math inline">\(X\)</span>, and so as a new random variable.</p>
+<div id="exm-delimiters-and-scripts" class="theorem example">
+<p><span class="theorem-title"><strong>Example 36 (A characteristic with its own symbol)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The <a href="https://morrison-lab.github.io/pds/variance-covariance.html#def-precision">precision</a> of <span class="math inline">\(X\)</span> is <span class="math inline">\(\tau(X) = 1 / \operatorname{Var}[X]\)</span>.</p>
+<p>✅ The precision of <span class="math inline">\(X\)</span> is <span class="math inline">\(\precision_X = 1 / \Var{X}\)</span>.</p>
+</blockquote>
+<p>The ✅ version writes the precision as a number with the random variable as a subscript, and writes the <a href="https://morrison-lab.github.io/pds/variance-covariance.html#def-variance">variance</a> with its parenthesized argument.</p>
 </div>
 
 
@@ -1227,6 +1258,9 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-iso80000_2_2019" class="csl-entry" role="listitem">
+International Organization for Standardization. 2019. <em><span>ISO</span> 80000-2:2019 — Quantities and Units — Part 2: Mathematics</em>.
+</div>
 <div id="ref-james2021islr2" class="csl-entry" role="listitem">
 James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. <em>An Introduction to Statistical Learning: With Applications in r</em>. 2nd ed. Springer. <a href="https://doi.org/10.1007/978-1-0716-1418-1">https://doi.org/10.1007/978-1-0716-1418-1</a>.
 </div>
