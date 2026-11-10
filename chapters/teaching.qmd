@@ -130,9 +130,9 @@ Pose each task as an exercise, give students time to try it, and then show the s
   Say "Derive", "Express ... in terms of ...", "Prove ...", or "Compute ...", whichever the solution does.
   The [`check-write-idiom`](https://github.com/Morrison-Lab/gha/tree/main/check-write-idiom) check flags a line that opens this way.
 
-  > ❌ Write the total of 2, 4 and 6.
+  > ❌ Write the total of 2, 4, and 6.
   >
-  > ✅ Compute the total of 2, 4 and 6.
+  > ✅ Compute the total of 2, 4, and 6.
 - On slides, put a slide break between an exercise and its solution,
   so the prompt is on screen alone while students work.
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
