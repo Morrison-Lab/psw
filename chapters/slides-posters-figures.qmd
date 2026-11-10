@@ -255,7 +255,7 @@ Show both when the shape of the surface matters.
   and [Make figures accessible](teaching.qmd#make-figures-accessible)).
 - In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too,
   so the R and Python tabs of a figure look alike.
-  Keep the `matplotlib` version for the PDF and Word output,
+  Keep the `matplotlib` version for the static formats,
   where it is the static view at a fixed angle,
   and run it only in those outputs, the way the R tab runs its plotly code only in HTML output.
   In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`,
