@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 13:57:40 (PST)
+Last modified: 2026-11-09 17:01:35 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -95,6 +95,11 @@ Follow these principles when introducing new [term](#def-term)s:
   and state as a theorem that, for a positive integer $k$, the sum of the squares of $k$ independent standard normal random variables has this distribution. The density is defined for every real $k > 0$; the theorem covers only integer $k$. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density function that later calculations need.
 
 - **Define a term directly, not as a modification of another term:** State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.
+
+- **Define a concept from its primary objects, and state relationships to other concepts as results:** A concept has primary objects, the parts it is made of, and a definition says what the concept is in those objects. A relationship to another concept is a fact about the concept, and it belongs in a result. For example, the precision matrix of a random vector is the matrix whose diagonal entries are the precisions of its elements and whose off-diagonal entries are their coprecisions. That it is the inverse of the covariance matrix is a theorem. Defining it as that inverse makes the reader define the covariance matrix first, and hides what its entries are. The definition div then holds the definition and nothing else:
+
+  - **Commentary:** a sentence that says how the concept extends or resembles another concept goes in a remark after the definition.
+  - **A result:** a relationship that can be proved goes in a theorem after the definition.
 
 - **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader encounters. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
 
