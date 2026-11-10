@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 13:28:02 (PST)
+Last modified: 2026-11-10 03:10:52 (PST)
 
 > **NOTE:**
 >
@@ -20,6 +20,14 @@ I recommend trying to replace Latin-derived words and phrases with Old English-d
 Table 1: Commonly used Latin words and phrases and Anglish alternatives
 
 See also <https://bark-fa.github.io/Anglish-Translator/>
+
+English has three layers of vocabulary because of its history ([Wikipedia contributors 2026](#ref-wikipedia_history_of_english)):
+
+- [Old English](https://en.wikipedia.org/wiki/Old_English) came to Britain with [Germanic-speaking](https://en.wikipedia.org/wiki/Germanic_languages) settlers in the [mid-5th to 7th centuries](https://en.wikipedia.org/wiki/Anglo-Saxon_settlement_of_Britain). Its words are the source of the Anglish alternatives above.
+- French and Norman words entered after the [Norman Conquest](https://en.wikipedia.org/wiki/Norman_Conquest) of 1066, about 10,000 of them in [Middle English](https://en.wikipedia.org/wiki/Middle_English), particularly [term](../chapters/defining-terms.llms.md#def-term)s for government, church, law, the military, fashion, and food.
+- [Latin and Greek words](https://en.wikipedia.org/wiki/Latin_influence_in_English) entered in the [Renaissance](https://en.wikipedia.org/wiki/Renaissance), as increased literacy and travel helped writers adopt many foreign words.
+
+Because the borrowed words came in through government, church, law, and learned writing, many of them still read as formal and learned. Their Old English counterparts read as plain and everyday. A reader does not notice this contrast in a single word, but across a paragraph it sets the tone: “commence” and “utilize” sound official, while “begin” and “use” sound direct. When you choose between two synonyms, choose the one whose tone matches your readers and your purpose.
 
 To find a replacement for a word, look the word up on the [Open English Wordnet website](https://en-word.net/) ([source on GitHub](https://github.com/globalwordnet/english-wordnet)). Open English Wordnet groups English words into sets of synonyms, called synsets. A word with several meanings appears in several synsets, one for each meaning, so choose the synset that matches the meaning you intend. Then pick the word in that synset that your readers are most likely to understand easily.
 
@@ -276,3 +284,5 @@ Back to top
 ## References
 
 Google. n.d. *Google Developer Documentation Style Guide*. Web page. <https://developers.google.com/style>.
+
+Wikipedia contributors. 2026. *History of English — Wikipedia, the Free Encyclopedia*. <https://en.wikipedia.org/wiki/History_of_English>.

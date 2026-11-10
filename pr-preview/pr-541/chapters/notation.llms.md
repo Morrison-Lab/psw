@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 13:28:02 (PST)
+Last modified: 2026-11-10 03:10:52 (PST)
 
 > **NOTE:**
 >
@@ -756,8 +756,92 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
+# 20 Separating the framing from the conclusions
+
+Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:
+
+- the definitions,
+- the given data,
+- the given [function](https://morrison-lab.github.io/mds/functions.html#def-function), and
+- the quantities computed from them, such as a gradient.
+
+A conclusion is a statement that the framing implies.
+
+A reader who meets a conclusion in the middle of the setup cannot tell which sentences define the problem and which ones report a result. A separate paragraph for each lets the reader take in the setup first, then see what follows from it.
+
+> **NOTE:**
+>
+> **Example 34 (Separating the function and its gradient from the stationary point)**  
+>
+> > ❌ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$, which is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
+> >
+> > ✅ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is
+> >
+> > $$\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.$$
+> >
+> > The gradient $\gradf{f}(\vx)$ is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
+>
+> In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is $f$ and its gradient, and the second holds the conclusion.
+
+# 21 Writing a quantity’s symbol on the left
+
+When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.
+
+The rule holds for any quantity that later steps use:
+
+- a gradient,
+- a Hessian,
+- a derivative, and
+- a mean [function](https://morrison-lab.github.io/mds/functions.html#def-function).
+
+> **NOTE:**
+>
+> **Example 35 (Writing the gradient with its symbol)**  
+>
+> > ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
+> >
+> > ✅ The gradient of $f(\vx) = x_1^2 - x_2^2$ is
+> >
+> > $$\gradf{f}(\vx) = \tp{\paren{2 x_1,\ -2 x_2}}.$$
+>
+> The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
+
+# 22 Choosing delimiters and scripts
+
+Choose each delimiter and each script by what it says, so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](../chapters/defining-terms.llms.md#def-term)s, and an index from a power.
+
+Delimiters:
+
+- Parentheses group [term](../chapters/defining-terms.llms.md#def-term)s and hold the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function): $\pf{x}$, $\Var{X}$, $\Prf{A}$, and $(a, b)$ for an open interval.
+- Square brackets hold the argument of an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation), $\E{X}$, and the closed end of an interval, $[a, b]$.
+- Curly braces hold the members of a set, $\set{x : x > 0}$, and an event inside an indicator.
+- Write no more than two levels of one kind of delimiter. Past that, name the sub-expression with a macro.
+
+The international standard for mathematical notation, ISO 80000-2:2019 ([International Organization for Standardization 2019](#ref-iso80000_2_2019)), agrees on these delimiters. It writes the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) in parentheses (clause 4), the members of a set in curly braces (Table 2), and an interval with a square bracket at a closed end and a parenthesis at an open end (Table 3). Its clauses on variables, functions, sets, and intervals say nothing about square brackets for an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) or about subscripts and superscripts, so the rules for those rest on the lab’s convention.
+
+Scripts:
+
+- A subscript says which one. It is an index, as in $x_i$, or it names the random variable or variable that a quantity belongs to, as in $\mu_X$ and $\precision_X$. Drop it when only one is in play.
+- A superscript is a power, as in $x^2$. Wrap an iteration or sample index in parentheses, as in $\vx^{(t)}$, so that it is not mistaken for an exponent.
+- Write a transpose with the macro `\tp{}` and an inverse with the macro `\inv{}`. Never type a $\top$ or a $-1$ as a superscript.
+- Do not put a subscript on a subscript, or a superscript on a superscript. Name the sub-expression with a macro instead.
+
+Give the characteristic of a random variable a subscript when it has its own symbol, as in $\precision_X$, and keep the argument when it is an operator, as in $\Var{X}$. A letter followed by a parenthesis, such as $\precision(X)$, reads as a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) applied to $X$, and so as a new random variable.
+
+> **NOTE:**
+>
+> **Example 36 (A characteristic with its own symbol)**  
+>
+> > ❌ The [precision](https://morrison-lab.github.io/pds/variance-covariance.html#def-precision) of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
+> >
+> > ✅ The precision of $X$ is $\precision_X = 1 / \Var{X}$.
+>
+> The ✅ version writes the precision as a number with the random variable as a subscript, and writes the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) with its parenthesized argument.
+
 Back to top
 
 ## References
+
+International Organization for Standardization. 2019. *ISO 80000-2:2019 — Quantities and Units — Part 2: Mathematics*.
 
 James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. *An Introduction to Statistical Learning: With Applications in r*. 2nd ed. Springer. <https://doi.org/10.1007/978-1-0716-1418-1>.

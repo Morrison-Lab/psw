@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 13:28:02 (PST)
+Last modified: 2026-11-10 03:10:52 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -96,6 +96,11 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Define a term directly, not as a modification of another term:** State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.
 
+- **Define a concept from its primary objects, and state relationships to other concepts as results:** A concept has primary objects, the parts it is made of, and a definition says what the concept is in those objects. A relationship to another concept is a fact about the concept, and it belongs in a result. For example, the precision matrix of a random vector is the matrix whose diagonal entries are the precisions of its elements and whose off-diagonal entries are their coprecisions. That it is the inverse of the covariance matrix is a theorem. Defining it as that inverse makes the reader define the covariance matrix first, and hides what its entries are. The definition div then holds the definition and nothing else:
+
+  - **Commentary:** a sentence that says how the concept extends or resembles another concept goes in a remark after the definition.
+  - **A result:** a relationship that can be proved goes in a theorem after the definition.
+
 - **Define in the most general form the document needs:** State the concept at the level of generality the rest of the document relies on, not just for the first case the reader encounters. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.
 
 - **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
@@ -136,6 +141,12 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Tell synonyms from hyponyms:** A *synonym* names the same concept as the primary term, so it belongs in the div title. A *hyponym* names a special case of another term, such as “linear regression” for “regression model”, so it is a different concept. Give each hyponym its own `#def-` div, and never put it in the title of the general term or introduce it with “also called” (Ezra, 2026-10-23). When unsure, check both directions. Is every instance of the new term an instance of the old term? Is every instance of the old term an instance of the new term? If only the first holds, the new term is a hyponym.
 
 - **Tell synonyms from equivalent concepts:** Only true synonyms share a div title as aliases: names for one concept, which has one definition. Two concepts that happen to be equivalent are different concepts, however often they coincide. Give each its own definition, an example after each, and a theorem showing that they agree (see *Put only the defining equation in a definition, and state equivalences as results* above). A test: if each name has its own natural definition, they are two concepts. For example, a loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) defined as the negative log of the predicted probability of the observed class and a loss function defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy) between two distributions each have a natural definition, so give each its own div and state that they agree as a theorem, instead of titling one div with both names.
+
+- **Link an earlier site’s definition instead of defining a concept again:** The lab’s notes sites form a prerequisite sequence, so before defining a [term](#def-term), search the sites earlier in the sequence for it. When one defines it, link that definition, and define the term locally only to name a difference. Two definitions of one term on two sites drift apart in notation and scope, and a reader who meets both cannot tell which one the notes mean. The [`check-math-definitions`](https://github.com/Morrison-Lab/gha/tree/main/check-math-definitions) check flags colliding definitions across sibling repositories.
+
+  > ❌ A *function* assigns one output to each input. The mean of a regression model is a function of the predictors.
+  >
+  > ✅ The mean of a regression model is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors.
 
 - **Keep an entrenched misnomer, and clarify it once:** Some names the literature has fixed are technically wrong, such as “linear regression” for a model with an intercept, whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors, not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one (Ezra, 2026-10-28). Wherever the wording is yours, use the precise word: write “affine in the predictors” for a function with an intercept, and “linear” only when the intercept is zero. Keep a name the reader will meet in other sources, such as linear regression, linear decay or linear approximation, because renaming it cuts the reader off from that literature. Clarify it once, in parentheses, at its definition or its first use on a page, as in “linear (strictly, affine) decay”, and use the established name unqualified after that.
 
