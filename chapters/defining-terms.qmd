@@ -520,6 +520,27 @@ Follow these principles when introducing new [term](#def-term)s:
 
   :::
 
+- **Don't nest definitions:**
+  A definition whose statement names a further [term](#def-term),
+  such as a label on one of its conditions,
+  an italicized name in a list,
+  or "is called *X*",
+  defines that term inside itself.
+  Define each such term in its own sibling `#def-` div,
+  before the definition that uses it,
+  and state that definition in terms of it, linking it.
+  For example, a [definition of a linear map that labels its two conditions *additivity* and *homogeneity*](https://github.com/Morrison-Lab/mds/issues/710)
+  nests two definitions.
+  Define an additive function and a homogeneous function in their own divs,
+  then define a linear map as a function that is both.
+
+  > ❌ **Definition (linear map).**
+  > A function $f$ is a *linear map* if $f(\vx + \vy) = f(\vx) + f(\vy)$ (*additivity*)
+  > and $f(c\vx) = c f(\vx)$ (*homogeneity*).
+  >
+  > ✅ **Definition (linear map).**
+  > A function $f$ is a *linear map* if it is both additive and homogeneous.
+
 - **Name the synonyms:**
   When a field uses several words for one concept,
   such as *learning*, *training* and *fitting* a model,
