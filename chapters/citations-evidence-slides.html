@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 23:51:23 (PST)</p>
+  <p class="date">Last modified: 2026-11-10 03:13:31 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -608,7 +608,7 @@
 <section class="slide level2">
 
 <p>When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as [3] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as <code>(see the Wikipedia article)</code> has the same fault. A dataset reference follows the same rule (Ezra, 2026-11-04): link the dataset’s name to the dataset’s description, as in <code>Use the [`Smarket` data](#dat-smarket).</code>, not <code>Use the `Smarket` data (@dat-smarket).</code>, whose cross-reference renders as a parenthetical “(Dataset 1)” after the name.</p>
-<p>Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as <code>**[set](url)**</code>. Keep the numbered <code>[@key]</code> citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as <code>p. 5</code>. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.</p>
+<p>Link the longest phrase that names the thing, in the sentence that uses it. Choose a direct hyperlink over a pointer sentence wherever a phrase can carry the link (Ezra, 2026-11-10). A pointer sentence, such as “See the Wikipedia article for more.” or “See <code>@sec-x</code> for details.”, makes the reader leave the claim to find the link, and it names the target without saying what the target shows. Link the maximal phrase in the sentence that makes the claim, and drop the pointer. Keep a pointer sentence only where no phrase in the passage can carry the link, such as a pointer to a result as a whole. Inside a bolded name, put the link inside the bold, as <code>**[set](url)**</code>. Keep the numbered <code>[@key]</code> citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as <code>p. 5</code>. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.</p>
 <div id="exm-link-the-words" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Linking the defined term to its Wikipedia article)</strong></span> &nbsp;</p>
 <blockquote>
@@ -616,6 +616,14 @@
 <p>✅ A <a href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">graph</a> is a set of vertices joined by edges.</p>
 </blockquote>
 <p>The second version gives the reader the article from the word they were already reading.</p>
+</div>
+<div id="exm-link-not-pointer" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Linking the claim instead of pointing to it)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ <code>Bias and variance trade off against each other. See the Wikipedia article for more.</code></p>
+<p>✅ <a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff">Bias and variance trade off against each other</a>.</p>
+</blockquote>
+<p>The second version makes the claim itself the link, so it needs no second sentence.</p>
 </div>
 </section>
 <section id="number-bracketed-citations" class="slide level2" data-number="10">
@@ -632,7 +640,7 @@
 
 <p>Place citations immediately after the claim or claims they support. A citation at the end of a sentence reads as support for the whole sentence, so when it supports only one claim in it, put it beside that claim. When one source supports every claim in a sentence, the end of the sentence is right after the claims.</p>
 <div id="exm-place-citation" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Placing a citation after a definition)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Placing a citation after a definition)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ A <em>Poisson random variable</em> <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>, or <em>Poisson count</em>, counts events in a fixed interval.</p>
 <p>✅ A <em>Poisson random variable</em>, or <em>Poisson count</em>, counts events in a fixed interval <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>.</p>
@@ -647,7 +655,7 @@
 
 <p>Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as <code>[@key, p. 5]</code>. The rule to cite a Wikipedia article once, where its <a href="../chapters/defining-terms.html#def-term">term</a> is defined, is a case of this one.</p>
 <div id="exm-cite-once" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Citing one source once in a definition)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Citing one source once in a definition)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ A <em>Poisson random variable</em> counts events in a fixed interval <span class="citation" data-cites="wikipedia_poisson_distribution">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>. Source: <span class="citation" data-cites="wikipedia_poisson_distribution">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>.</p>
 <p>✅ A <em>Poisson random variable</em> counts events in a fixed interval. Source: <span class="citation" data-cites="wikipedia_poisson_distribution">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>.</p>
@@ -736,7 +744,7 @@
 </ul>
 <p>Never cite an unauthorized copy, and never fill in a title, volume, or page number from memory.</p>
 <div id="exm-cite-original" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Crediting Chebyshev’s inequality)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (Crediting Chebyshev’s inequality)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Chebyshev’s inequality bounds the probability that …</p>
 <p>✅ Chebyshev’s inequality bounds the probability that … Bienaymé derived the bound <span class="citation" data-cites="bienayme1853">(<a href="#/references" role="doc-biblioref" onclick="">Bienaymé 1853</a>)</span>, and Tchébychef proved a more general form <span class="citation" data-cites="tchebichef1867">(<a href="#/references" role="doc-biblioref" onclick="">Tchébychef 1867</a>)</span>. A modern treatment is in <span class="citation" data-cites="blitzstein2019introduction">Blitzstein and Hwang (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span>.</p>
@@ -804,7 +812,7 @@
 <p>When a claim has no source in your draft, find one. Search the books and papers that the project already cites, then the literature, and cite what you find with a locator. Do not delete the claim or <a href="../chapters/avoid-cliches.html#def-hedge">hedge</a> it to avoid the search: the claim was worth writing, so it is worth the work of sourcing it.</p>
 <p>If, after searching, no source states the claim, write it in your own voice (“I expect”, “the example below shows”) instead of attributing it to others.</p>
 <div id="exm-name-the-source" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Naming the author who uses a word)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Naming the author who uses a word)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Some authors call the part of the error that no model can remove “irreducible”.</p>
 <p>✅ <span class="citation" data-cites="james2021islr2">James et al. (<a href="#/references" role="doc-biblioref" onclick="">2021, 18</a>)</span> call the part of the error that no model can remove the “irreducible error”.</p>
