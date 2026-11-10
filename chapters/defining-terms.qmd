@@ -302,6 +302,20 @@ Follow these principles when introducing new [term](#def-term)s:
   Link a related term when it helps,
   and relate the two in an example or a remark after the definition.
 
+- **Define a concept from its primary objects, and state relationships to other concepts as results:**
+  A concept has primary objects, the parts it is made of,
+  and a definition says what the concept is in those objects.
+  A relationship to another concept is a fact about the concept, and it belongs in a result.
+  For example, the precision matrix of a random vector is the matrix whose diagonal entries are the precisions of its elements
+  and whose off-diagonal entries are their coprecisions.
+  That it is the inverse of the covariance matrix is a theorem.
+  Defining it as that inverse makes the reader define the covariance matrix first,
+  and hides what its entries are.
+  The definition div then holds the definition and nothing else:
+
+  - **Commentary:** a sentence that says how the concept extends or resembles another concept goes in a remark after the definition.
+  - **A result:** a relationship that can be proved goes in a theorem after the definition.
+
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
   the rest of the document relies on,
@@ -557,6 +571,20 @@ Follow these principles when introducing new [term](#def-term)s:
   each have a natural definition,
   so give each its own div and state that they agree as a theorem,
   instead of titling one div with both names.
+
+- **Link an earlier site's definition instead of defining a concept again:**
+  The lab's notes sites form a prerequisite sequence,
+  so before defining a [term](#def-term), search the sites earlier in the sequence for it.
+  When one defines it, link that definition,
+  and define the term locally only to name a difference.
+  Two definitions of one term on two sites drift apart in notation and scope,
+  and a reader who meets both cannot tell which one the notes mean.
+  The [`check-math-definitions`](https://github.com/Morrison-Lab/gha/tree/main/check-math-definitions) check flags colliding definitions across sibling repositories.
+
+  > ❌ A *function* assigns one output to each input.
+  > The mean of a regression model is a function of the predictors.
+  >
+  > ✅ The mean of a regression model is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors.
 
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
