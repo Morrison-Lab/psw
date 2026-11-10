@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 15:04:41 (PST)
+Last modified: 2026-11-10 15:12:07 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -43,7 +43,7 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 
 # 4 Scientific figures
 
-Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
+Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure, as a noninteractive version of it (Ezra, 2026-11-10). A note that sends readers to the HTML version does not replace the figure. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
 Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:
 
@@ -111,9 +111,9 @@ A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of 
 
 - Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10). When all three axes are in the same units, such as a surface in physical space, scale the axes equally in data units instead. In plotly, set the scene’s `aspectmode` to `"cube"` or to `"data"`. Do not leave it unset: plotly’s default, `"auto"`, then draws each axis in proportion to the span of its data unless one axis range is more than 4 times another, so a function whose values span a wider range than its inputs draws a tall, thin column.
 
-- An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
+- An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but static formats such as PDF, Word, and PowerPoint show no interactive plot, so render a static view at a fixed angle there (see [Scientific figures](#sec-scientific-figures) and [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
 
-- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the PDF and Word output, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
+- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the static formats, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
 
   ``` python
   print("```{=html}\n" + fig.to_html(full_html=False, include_plotlyjs="cdn") + "\n```")
