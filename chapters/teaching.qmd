@@ -127,7 +127,7 @@ Pose each task as an exercise, give students time to try it, and then show the s
   Put `<!-- question-paragraph-ok: reason -->` inside an exercise that it misreads.
 - Open an exercise's instruction with the verb for the task, never "Write the ...", "Write a ...", or "Write an ...".
   "Write" does not say whether the reader should derive a result, express a quantity in other terms, or show a claim holds, so two readers answer different questions.
-  Say "Derive", "Express ... in terms of ...", "Show that ...", or "Compute ...", whichever the solution does.
+  Say "Derive", "Express ... in terms of ...", "Prove ...", or "Compute ...", whichever the solution does.
   The [`check-write-idiom`](https://github.com/Morrison-Lab/gha/tree/main/check-write-idiom) check flags a line that opens this way.
   - **Do:** "Express the odds in terms of the probability."
   - **Don't:** "Write the odds in terms of the probability."
