@@ -101,3 +101,7 @@ that make quantitative writing easier to read.
 # Writing a quantity's symbol on the left
 
 {{< include notation/symbol-on-the-left.qmd >}}
+
+# Choosing delimiters and scripts
+
+{{< include notation/delimiters-and-scripts.qmd >}}

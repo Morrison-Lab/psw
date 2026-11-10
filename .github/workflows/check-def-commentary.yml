@@ -1,0 +1,22 @@
+# Flags commentary written inside a definition div (#def-) that a PR adds:
+# a sentence that opens "It is not", "Note that", "Unlike" and similar.
+# A definition div holds the definition only; commentary goes in a #rem- div.
+# `<!-- check-def-commentary: allow -->` exempts one line.
+# Fails the run on a finding: checks fail rather than warn (Ezra).
+# No push trigger: a push run has no base to diff against and would report
+# success having checked nothing. A manual run scans the whole tree.
+name: Check definition commentary
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-def-commentary.yml@v3
+    with:
+      fail: true
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
+      paths-ignore: '_extensions/**,**/outtakes/**,latex-macros/**'

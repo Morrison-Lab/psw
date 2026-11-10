@@ -302,6 +302,20 @@ Follow these principles when introducing new [term](#def-term)s:
   Link a related term when it helps,
   and relate the two in an example or a remark after the definition.
 
+- **Define a concept from its primary objects, and state relationships to other concepts as results:**
+  A concept has primary objects, the parts it is made of,
+  and a definition says what the concept is in those objects.
+  A relationship to another concept is a fact about the concept, and it belongs in a result.
+  For example, the precision matrix of a random vector is the matrix whose diagonal entries are the precisions of its elements
+  and whose off-diagonal entries are their coprecisions.
+  That it is the inverse of the covariance matrix is a theorem.
+  Defining it as that inverse makes the reader define the covariance matrix first,
+  and hides what its entries are.
+  The definition div then holds the definition and nothing else:
+
+  - **Commentary:** a sentence that says how the concept extends or resembles another concept goes in a remark after the definition.
+  - **A result:** a relationship that can be proved goes in a theorem after the definition.
+
 - **Define in the most general form the document needs:**
   State the concept at the level of generality
   the rest of the document relies on,
