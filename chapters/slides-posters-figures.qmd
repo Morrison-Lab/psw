@@ -104,7 +104,7 @@ Add figures to new work as you write it, and add them to existing chapters that 
 On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible,
 and as a 3D plotly figure where a third dimension shows the idea,
 such as a surface over two parameters.
-In static formats, such as PDF, Word and PowerPoint, still render every 3D plot and other interactive figure,
+In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure,
 as a noninteractive version of it (Ezra, 2026-11-10).
 A note that sends readers to the HTML version does not replace the figure.
 Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
@@ -249,7 +249,7 @@ Show both when the shape of the surface matters.
   and label all three axes.
 - An interactive plot that readers can rotate, such as one made with
   [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web,
-  but static formats such as PDF, Word and PowerPoint show no interactive plot,
+  but static formats such as PDF, Word, and PowerPoint show no interactive plot,
   so render a static view at a fixed angle there
   (see [Scientific figures](#sec-scientific-figures)
   and [Make figures accessible](teaching.qmd#make-figures-accessible)).
