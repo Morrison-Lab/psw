@@ -49,7 +49,7 @@ This chapter lists the general rules that matter most here and adds a few that b
 
 The repo maintainers make each writing-style decision explicitly and record it in this book.
 Take a writing-style choice from this book, not from the prose around your edit.
-A neighbouring page shows what someone wrote once, not what the maintainers decided.
+A neighboring page shows what someone wrote once, not what the maintainers decided.
 When this book does not say how to write something,
 raise the question as an [issue on psw](https://github.com/Morrison-Lab/psw/issues),
 with your recommendation,
