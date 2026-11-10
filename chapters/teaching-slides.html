@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-10 07:00:51 (PST)</p>
+  <p class="date">Last modified: 2026-11-10 09:26:31 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -526,6 +526,7 @@
 <li>Never nest one theorem-type div inside another. The rule covers <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, <code>#prp-</code>, <code>#cnj-</code>, <code>#exm-</code>, <code>#rem-</code>, <code>#exr-</code>, and <code>#sol-</code>. A special case, such as a linear evaluation <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>, <!-- check-term-links: allow --> gets its own div after the general case, and the two link to each other.</li>
 <li>Keep only the definition in a <code>#def-</code> div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate <code>#thm-</code>, <code>#lem-</code> or <code>#prp-</code> div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.</li>
 </ul>
+<p>Every <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, and <code>#prp-</code> div links each defined <a href="../chapters/defining-terms.html#def-term">term</a> that it uses to that term’s definition (Ezra, 2026-11-09), with <code>@def-id</code> or a link to the <code>#def-id</code> anchor. A reader of the result can then reach the meaning of every term in it. A result with no defined term to link, such as an identity between numbers, says so in an <code>&lt;!-- check-result-definition-links: allow: reason --&gt;</code> comment. The <code>check-result-definition-links</code> check warns on a result div a pull request edits that links no definition.</p>
 <p>Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.</p>
 </section>
 <section id="state-the-notation-and-its-alternatives" class="slide level2" data-number="7">

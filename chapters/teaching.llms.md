@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 07:00:51 (PST)
+Last modified: 2026-11-10 09:26:31 (PST)
 
 > **NOTE:**
 >
@@ -153,6 +153,8 @@ When a prompt asks several questions, answer each one in its own paragraph, or i
 - Define one term per `#def-` div. A term defined inside another term’s div, or two terms joined in one title (“Regression and classification”), has no identifier of its own, so nothing can link to it.
 - Never nest one theorem-type div inside another. The rule covers `#def-`, `#thm-`, `#lem-`, `#cor-`, `#prp-`, `#cnj-`, `#exm-`, `#rem-`, `#exr-`, and `#sol-`. A special case, such as a linear evaluation [function](https://morrison-lab.github.io/mcs/functions.html#def-function), gets its own div after the general case, and the two link to each other.
 - Keep only the definition in a `#def-` div. Put the properties of the defined object, such as the symmetry and idempotence of a matrix, in a separate `#thm-`, `#lem-` or `#prp-` div after it, with a proof where one is known. Each abstract div then gets its own example, as the rule below requires.
+
+Every `#thm-`, `#lem-`, `#cor-`, and `#prp-` div links each defined [term](../chapters/defining-terms.llms.md#def-term) that it uses to that term’s definition (Ezra, 2026-11-09), with `@def-id` or a link to the `#def-id` anchor. A reader of the result can then reach the meaning of every term in it. A result with no defined term to link, such as an identity between numbers, says so in an `<!-- check-result-definition-links: allow: reason -->` comment. The `check-result-definition-links` check warns on a result div a pull request edits that links no definition.
 
 Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
