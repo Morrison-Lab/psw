@@ -245,6 +245,14 @@ Show both when the shape of the surface matters.
   perspective makes lengths and areas harder to compare.
 - Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden,
   and label all three axes.
+- Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10).
+  When all three axes are in the same units, such as a surface in physical space,
+  scale the axes equally in data units instead.
+  In plotly, set the scene's `aspectmode` to `"cube"` or to `"data"`.
+  Do not leave it unset:
+  plotly's default, `"auto"`, then draws each axis in proportion to the span of its data
+  unless one axis range is more than 4 times another, <!-- check-term-links: allow: an axis range, not the range of a function -->
+  so a function whose values span a wider range than its inputs draws a tall, thin column.
 - An interactive plot that readers can rotate, such as one made with
   [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web,
   but PDF and Word output show no interactive plot,
