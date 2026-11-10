@@ -521,7 +521,7 @@ Follow these principles when introducing new [term](#def-term)s:
   :::
 
 - **Don't nest definitions:**
-  A definition whose statement names a further term,
+  A definition whose statement names a further [term](#def-term),
   such as a label on one of its conditions,
   an italicized name in a list,
   or "is called *X*",
