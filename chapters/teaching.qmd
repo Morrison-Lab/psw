@@ -381,6 +381,10 @@ Open the chapter and list the dataset each section uses, rather than recalling t
   while a reader who has not must hold an abstract description in mind until the data appears.
   If the data are too large to show, show a sample or a summary figure.
   Link later mentions of the dataset back to this first display.
+- Show a toy dataset, such as the few points of an exercise, as a table with one row per observation,
+  not as a sentence that lists its values.
+  A reader scans a table's rows and columns at a glance,
+  while a sentence makes the reader pair each input with its outcome in their head.
 - Never type or paste output.
   The page shows what the code printed when the page was rendered,
   and each number in the prose comes from inline code.
@@ -400,6 +404,25 @@ Open the chapter and list the dataset each section uses, rather than recalling t
 > and refer back to that table and plot.
 
 The ✅ version lets every later slide refer to something the reader has already seen.
+
+:::
+
+::: {#exm-toy-data-table}
+
+# Showing a toy dataset as a table
+
+> ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
+>
+> ✅ The dataset has one input:
+>
+> | $i$ | $\predvar_i$ | $\outvar_i$ |
+> |---:|---:|---:|
+> | 1 | 0 | 0 |
+> | 2 | 1 | 0 |
+> | 3 | 3 | 1 |
+> | 4 | 4 | 1 |
+
+The ✅ version puts each observation's input and outcome side by side in one row.
 
 :::
 
