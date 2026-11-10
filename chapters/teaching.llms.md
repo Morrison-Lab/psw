@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 14:33:27 (PST)
+Last modified: 2026-11-10 15:04:41 (PST)
 
 > **NOTE:**
 >
@@ -187,6 +187,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
 - Show the data where it is first mentioned. Put a table of a few rows, or a plot of the variables, directly after the sentence that names the dataset, before any discussion of its features, the methods to apply to it, or the questions it raises. A reader who has seen the data can picture what the next slides describe, while a reader who has not must hold an abstract description in mind until the data appears. If the data are too large to show, show a sample or a summary figure. Link later mentions of the dataset back to this first display.
+- Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head.
 - Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.
 
 > **NOTE:**
@@ -198,6 +199,23 @@ Check the reference text itself before naming its datasets. Open the chapter and
 > > ✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function, and refer back to that table and plot.
 >
 > The ✅ version lets every later slide refer to something the reader has already seen.
+
+> **NOTE:**
+>
+> **Example 5 (Showing a toy dataset as a table)**  
+>
+> > ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
+> >
+> > ✅ The dataset has one input:
+> >
+> > | $i$ | $\predvar_i$ | $\outvar_i$ |
+> > |----:|-------------:|------------:|
+> > |   1 |            0 |           0 |
+> > |   2 |            1 |           0 |
+> > |   3 |            3 |           1 |
+> > |   4 |            4 |           1 |
+>
+> The ✅ version puts each observation’s input and outcome side by side in one row.
 
 # 12 Store structured data in structured formats
 
@@ -242,7 +260,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 
 > **NOTE:**
 >
-> **Example 5 (An example followed by a practice exercise)**  
+> **Example 6 (An example followed by a practice exercise)**  
 >
 > > ✅
 > >
@@ -388,7 +406,7 @@ This rule applies to all teaching materials that name commands, in every course 
 
 > **NOTE:**
 >
-> **Example 6 (Moving an install command out of a sentence)**  
+> **Example 7 (Moving an install command out of a sentence)**  
 >
 > > ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
 > >
@@ -475,7 +493,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 > **NOTE:**
 >
-> **Example 7 (Splitting a merged row)**  
+> **Example 8 (Splitting a merged row)**  
 >
 > > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
 > >
@@ -515,7 +533,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 > **NOTE:**
 >
-> **Example 8 (A rubric as a checklist)**  
+> **Example 9 (A rubric as a checklist)**  
 >
 > > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >

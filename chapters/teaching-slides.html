@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-10 14:33:27 (PST)</p>
+  <p class="date">Last modified: 2026-11-10 15:04:41 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -573,6 +573,7 @@
 <li>Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.</li>
 <li>Show a dataset before analyzing it, with a printed look at its first rows and its structure.</li>
 <li>Show the data where it is first mentioned. Put a table of a few rows, or a plot of the variables, directly after the sentence that names the dataset, before any discussion of its features, the methods to apply to it, or the questions it raises. A reader who has seen the data can picture what the next slides describe, while a reader who has not must hold an abstract description in mind until the data appears. If the data are too large to show, show a sample or a summary figure. Link later mentions of the dataset back to this first display.</li>
+<li>Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head.</li>
 <li>Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.</li>
 </ul>
 <div id="exm-show-data-first" class="theorem example">
@@ -582,6 +583,45 @@
 <p>✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function, and refer back to that table and plot.</p>
 </blockquote>
 <p>The ✅ version lets every later slide refer to something the reader has already seen.</p>
+</div>
+<div id="exm-toy-data-table" class="theorem example">
+<p><span class="theorem-title"><strong>Example 5 (Showing a toy dataset as a table)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The dataset has one input: <span class="math inline">\(x = 0, 1\)</span> with <span class="math inline">\(y = 0\)</span>, and <span class="math inline">\(x = 3, 4\)</span> with <span class="math inline">\(y = 1\)</span>.</p>
+<p>✅ The dataset has one input:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(i\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\predvar_i\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\outvar_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>The ✅ version puts each observation’s input and outcome side by side in one row.</p>
 </div>
 </section>
 <section id="store-structured-data-in-structured-formats" class="slide level2" data-number="12">
@@ -645,7 +685,7 @@
 <li>Give the practice exercise its own slug and follow the numbering and slide-break rules above.</li>
 </ul>
 <div id="exm-practice-after-example" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
 <blockquote>
 <p>✅</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a>::: {#exm-sample-mean}</span>
@@ -826,7 +866,7 @@
 <li>Introduce the block with a sentence that ends in a colon. Do not follow a semicolon or a colon in the sentence with inline code that the reader has to select by hand.</li>
 </ul>
 <div id="exm-command-block" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>: <code>install.packages(c("readr", "dplyr", "ggplot2", "purrr"))</code>.</p>
 <p>✅ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>:</p>
@@ -934,7 +974,7 @@
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -988,7 +1028,7 @@
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
