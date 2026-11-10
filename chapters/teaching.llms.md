@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 21:08:50 (PST)
+Last modified: 2026-11-09 23:15:10 (PST)
 
 > **NOTE:**
 >
@@ -58,6 +58,12 @@ Active learning, in which students work through tasks themselves during class, i
 - Make each exercise ask for one thing (Ezra, 2026-10-27). A prompt that says “compute the slope, and compare it with the fitted value” asks for two things, so split it into two exercises, each with its own solution. Split a list item or step inside an exercise the same way, into separate exercises. Phrases such as “and then”, “and also”, and “and compare” mark a second ask.
 
 - Put the instruction or question of an exercise in its own paragraph, apart from the scenario information (Ezra, 2026-11-02). The scenario paragraphs give the data, the setting and the definitions that the exercise needs, and the last paragraph asks the question or gives the instruction (“Show that …”, “Which model …?”). Every exercise ends with that question or instruction (Ezra, 2026-11-09): a figure, table, or other scenario content goes before it, never after it, and the instruction does not wait in the solution. A reader scanning for the task then finds it without rereading the setup. A paragraph that runs from the scenario into the task hides the task. The [`check-exercise-question-paragraph`](https://github.com/Morrison-Lab/gha/tree/main/check-exercise-question-paragraph) check fails a pull request that adds such a paragraph. Put `<!-- question-paragraph-ok: reason -->` inside an exercise that it misreads.
+
+- Open an exercise’s instruction with the verb for the task, never “Write the …”, “Write a …”, or “Write an …”. “Write” does not say whether the reader should derive a result, express a quantity in other terms, or show a claim holds, so two readers answer different questions. Say “Derive”, “Express … in terms of …”, “Prove …”, or “Compute …”, whichever the solution does. The [`check-write-idiom`](https://github.com/Morrison-Lab/gha/tree/main/check-write-idiom) check flags a line that opens this way.
+
+  > ❌ Write the total of 2, 4, and 6.
+  >
+  > ✅ Compute the total of 2, 4, and 6.
 
 - On slides, put a slide break between an exercise and its solution, so the prompt is on screen alone while students work.
 
