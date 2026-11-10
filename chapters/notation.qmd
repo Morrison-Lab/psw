@@ -93,3 +93,15 @@ that make quantitative writing easier to read.
 # Stating assumptions before using them
 
 {{< include notation/assumptions-first.qmd >}}
+
+# Separating the framing from the conclusions
+
+{{< include notation/framing-apart-from-conclusions.qmd >}}
+
+# Writing a quantity's symbol on the left
+
+{{< include notation/symbol-on-the-left.qmd >}}
+
+# Choosing delimiters and scripts
+
+{{< include notation/delimiters-and-scripts.qmd >}}

@@ -13,6 +13,7 @@ cliché
 clichés
 ColorBrewer
 CONSORT
+coprecision
 COREQ
 Cormac
 Cowan
@@ -53,6 +54,7 @@ iDs
 IMRaD
 ISLP
 ISLR
+ISO
 iwanthue
 JAMA
 JSON
@@ -71,6 +73,7 @@ nominalizations
 Numdam
 ORCID
 overfit
+patchwork
 pdf
 plotly
 pMAE
@@ -120,5 +123,6 @@ Tufte's
 UCD
 WCGS
 Weinberger
+Wilke
 Wordnet
 YAML
