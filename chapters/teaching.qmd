@@ -125,6 +125,14 @@ Pose each task as an exercise, give students time to try it, and then show the s
   The [`check-exercise-question-paragraph`](https://github.com/Morrison-Lab/gha/tree/main/check-exercise-question-paragraph) check
   fails a pull request that adds such a paragraph.
   Put `<!-- question-paragraph-ok: reason -->` inside an exercise that it misreads.
+- Open an exercise's instruction with the verb for the task, never "Write the ...", "Write a ...", or "Write an ...".
+  "Write" does not say whether the reader should derive a result, express a quantity in other terms, or show a claim holds, so two readers answer different questions.
+  Say "Derive", "Express ... in terms of ...", "Prove ...", or "Compute ...", whichever the solution does.
+  The [`check-write-idiom`](https://github.com/Morrison-Lab/gha/tree/main/check-write-idiom) check flags a line that opens this way.
+
+  > ❌ Write the total of 2, 4, and 6.
+  >
+  > ✅ Compute the total of 2, 4, and 6.
 - On slides, put a slide break between an exercise and its solution,
   so the prompt is on screen alone while students work.
 - Give each solution the slug of its exercise, with `sol-` in place of `exr-`.
