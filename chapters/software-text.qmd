@@ -45,6 +45,17 @@ This chapter lists the general rules that matter most here and adds a few that b
 >
 > ✅ Label the y-axis in original units, so the figure no longer shows log-odds.
 
+# Decide writing style here, not by imitation
+
+The repo maintainers make each writing-style decision explicitly and record it in this book.
+Take a writing-style choice from this book, not from the prose around your edit.
+A neighboring page shows what someone wrote once, not what the maintainers decided.
+When this book does not say how to write something,
+raise the question as an [issue on psw](https://github.com/Morrison-Lab/psw/issues),
+with your recommendation,
+instead of copying a nearby page.
+Code style follows the same rule in [psc](https://morrison-lab.github.io/psc/).
+
 # Comment code sparingly
 
 - Write a comment that says why the code does what it does, and let the code say what it does.
