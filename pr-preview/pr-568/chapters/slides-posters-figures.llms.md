@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 13:47:16 (PST)
+Last modified: 2026-11-10 13:55:14 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -111,7 +111,7 @@ A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of 
 
 - An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but static formats such as PDF, Word, and PowerPoint show no interactive plot, so render a static view at a fixed angle there (see [Scientific figures](#sec-scientific-figures) and [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
 
-- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the PDF and Word output, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
+- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the static formats, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
 
   ``` python
   print("```{=html}\n" + fig.to_html(full_html=False, include_plotlyjs="cdn") + "\n```")
