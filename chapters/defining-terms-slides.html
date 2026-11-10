@@ -317,7 +317,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 16:47:54 (PST)</p>
+  <p class="date">Last modified: 2026-11-09 16:54:51 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -379,6 +379,11 @@
 <p><span class="math display">\[f(x) := \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2}\,\Gamma(k/2)}, \quad x \in (0, \infty),\]</span></p>
 <p>and state as a theorem that, for a positive integer <span class="math inline">\(k\)</span>, the sum of the squares of <span class="math inline">\(k\)</span> independent standard normal random variables has this distribution. The density is defined for every real <span class="math inline">\(k &gt; 0\)</span>; the theorem covers only integer <span class="math inline">\(k\)</span>. Defining the chi-square distribution as that sum turns a result into a definition, and leaves the reader without the density function <!-- check-term-links: allow --> that later calculations need.</p></li>
 <li><p><strong>Define a term directly, not as a modification of another term:</strong> State what the term is, in its own words and symbols. Do not make the reader recall a different term and then apply a list of changes to it. For example, define the expected prediction error as the population mean of the squared prediction error over training sets and new observations, rather than as “the sample mean squared error of predictions, with the average over observations replaced by an expectation”. The second wording makes the reader build a term that the definition then discards. Link a related term when it helps, and relate the two in an example or a remark after the definition.</p></li>
+<li><p><strong>Define a concept from its primary objects, and state relationships to other concepts as results:</strong> A concept has primary objects, the parts it is made of, and a definition says what the concept is in those objects. A relationship to another concept is a fact about the concept, and it belongs in a result. For example, the precision matrix of a random vector is the matrix whose diagonal entries are the precisions of its elements and whose off-diagonal entries are their coprecisions. That it is the inverse of the covariance matrix is a theorem. Defining it as that inverse makes the reader define the covariance matrix first, and hides what its entries are. The definition div then holds the definition and nothing else:</p>
+<ul>
+<li><strong>Commentary:</strong> a sentence that says how the concept extends or resembles another concept goes in a remark after the definition.</li>
+<li><strong>A result:</strong> a relationship that can be proved goes in a theorem after the definition.</li>
+</ul></li>
 <li><p><strong>Define in the most general form the document needs:</strong> State the concept at the level of generality the rest of the document relies on, not just for the first case the reader encounters. For example, define the residual sum of squares as the sum of squared residuals of any fitted model, not as a formula for a straight line. A definition tied to one special case has to be restated, or silently stretched, the first time the document needs the general case.</p></li>
 <li><p><strong>Follow the definition with examples, from general to specific:</strong> Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see <a href="#/order-general-definition-then-examples">Order: general definition, then examples</a>).</p></li>
 <li><p><strong>Define terms at first use:</strong> Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see <a href="../chapters/paper-organization.html#avoid-forward-references">Avoid forward references</a>). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first; do not remove the hyperlink to hide the forward reference.</p></li>
