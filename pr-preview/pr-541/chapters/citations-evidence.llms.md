@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 03:10:52 (PST)
+Last modified: 2026-11-10 03:34:56 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -241,7 +241,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 
 When a source backs the name of a defined concept or a named result, and the source has a stable web page, hyperlink the words themselves to that page. Do not write the words and then add a numbered citation or a parenthetical link after them. A trailing number such as \[3\] makes the reader leave the sentence to find out what it points to, and it separates the link from the words it supports. A parenthetical such as `(see the Wikipedia article)` has the same fault. A dataset reference follows the same rule (Ezra, 2026-11-04): link the dataset’s name to the dataset’s description, as in `` Use the [`Smarket` data](#dat-smarket). ``, not `` Use the `Smarket` data (@dat-smarket). ``, whose cross-reference renders as a parenthetical “(Dataset 1)” after the name.
 
-Link the longest phrase that names the thing, in the sentence that uses it. Inside a bolded name, put the link inside the bold, as `**[set](url)**`. Keep the numbered `[@key]` citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as `p. 5`. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.
+Link the longest phrase that names the thing, in the sentence that uses it. Choose a direct hyperlink over a pointer sentence wherever a phrase can carry the link (Ezra, 2026-11-10). A pointer sentence, such as “See the Wikipedia article for more.” or “See `@sec-x` for details.”, makes the reader leave the claim to find the link, and it names the target without saying what the target shows. Link the maximal phrase in the sentence that makes the claim, and drop the pointer. Keep a pointer sentence only where no phrase in the passage can carry the link, such as a pointer to a result as a whole. Inside a bolded name, put the link inside the bold, as `**[set](url)**`. Keep the numbered `[@key]` citation for a claim that no phrase names, for a source without a stable page, such as a book, and for a locator such as `p. 5`. Where a link replaces the citation, the link is the credit, so the page needs no bibliography entry.
 
 > **NOTE:**
 >
@@ -253,6 +253,16 @@ Link the longest phrase that names the thing, in the sentence that uses it. Insi
 >
 > The second version gives the reader the article from the word they were already reading.
 
+> **NOTE:**
+>
+> **Example 6 (Linking the claim instead of pointing to it)**  
+>
+> > ❌ `Bias and variance trade off against each other. See the Wikipedia article for more.`
+> >
+> > ✅ [Bias and variance trade off against each other](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff).
+>
+> The second version makes the claim itself the link, so it needs no second sentence.
+
 # 10 Number bracketed citations
 
 On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, such as \[1\] or \[1, p. 5\]. An in-text citation, `@key`, prints the author name and the number, such as “Hastie et al. \[2\]”. Write `[@key]` when the source supports a claim, and `@key` when the author is the subject of the sentence. Never start a sentence or a list item with a bare `@key` unless the author is its subject. The author list becomes the subject, so a list of such items prints the same author name, such as “Wikipedia contributors \[3\]”, again and again. Write the description first, and end the sentence with the bracketed `[@key]`. The sites get this from the shared citation style and filter in [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
@@ -263,7 +273,7 @@ Place citations immediately after the claim or claims they support. A citation a
 
 > **NOTE:**
 >
-> **Example 6 (Placing a citation after a definition)**  
+> **Example 7 (Placing a citation after a definition)**  
 >
 > > ❌ A *Poisson random variable* ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)), or *Poisson count*, counts events in a fixed interval.
 > >
@@ -277,7 +287,7 @@ Cite a source once in each div or passage, at the claim it supports. A second ci
 
 > **NOTE:**
 >
-> **Example 7 (Citing one source once in a definition)**  
+> **Example 8 (Citing one source once in a definition)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)). Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 > >
@@ -353,7 +363,7 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 > **NOTE:**
 >
-> **Example 8 (Crediting Chebyshev’s inequality)**  
+> **Example 9 (Crediting Chebyshev’s inequality)**  
 >
 > > ❌ Chebyshev’s inequality bounds the probability that …
 > >
@@ -433,7 +443,7 @@ If, after searching, no source states the claim, write it in your own voice (“
 
 > **NOTE:**
 >
-> **Example 9 (Naming the author who uses a word)**  
+> **Example 10 (Naming the author who uses a word)**  
 >
 > > ❌ Some authors call the part of the error that no model can remove “irreducible”.
 > >
