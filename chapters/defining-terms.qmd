@@ -572,6 +572,20 @@ Follow these principles when introducing new [term](#def-term)s:
   so give each its own div and state that they agree as a theorem,
   instead of titling one div with both names.
 
+- **Link an earlier site's definition instead of defining the term again:**
+  The lab's notes sites form a prerequisite sequence,
+  so before defining a term, search the sites earlier in the sequence for it.
+  When one defines it, link that definition,
+  and define the term locally only to name a difference.
+  Two definitions of one term on two sites drift apart in notation and scope,
+  and a reader who meets both cannot tell which one the notes mean.
+  The [`check-math-definitions`](https://github.com/Morrison-Lab/gha/tree/main/check-math-definitions) check flags colliding definitions across sibling repositories.
+
+  > ❌ A *function* assigns one output to each input.
+  > The mean of a regression model is a function of the predictors.
+  >
+  > ✅ The mean of a regression model is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors.
+
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
   such as "linear regression" for a model with an intercept, <!-- check-term-links: allow -->
