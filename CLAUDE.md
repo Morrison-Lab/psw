@@ -107,8 +107,9 @@ callouts (config + color palette live in `_quarto-website.yml`).
   (see "Define and link every technical term" in `chapters/defining-terms.qmd`).
   gha's `check-term-links` treats every blank-line paragraph as a passage,
   so on a changed line it can ask for a link the rule does not need;
-  answer that with `<!-- check-term-links: allow -->` on the line, not a second link
-  (psw#391, psw#392).
+  answer that with `<!-- check-term-links: allow: <reason> -->` on the line, not a second link;
+  the check rejects a pragma with no reason
+  (psw#391, psw#392, psw#586).
   Link a plural through its singular stem, as in `[term](...)s`:
   the checker learns a plural link text as a separate term.
 - **Re-running the Claude review**: a `/review` comment does not start one here.
