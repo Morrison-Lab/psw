@@ -185,6 +185,33 @@ so the reader can absorb each idea before moving on.
 
 :::
 
+# Do not interrupt a clause with an aside
+
+Do not put an aside between parts of a clause that belong together,
+whether the aside sits in parentheses or between commas.
+The reader has to hold the unfinished clause open until the aside ends.
+The parts that belong together include:
+
+- a subject and its verb;
+- a verb and its object;
+- two clauses joined by *and* or *so*.
+
+Give the aside a sentence of its own,
+or move it after the clause it explains.
+
+> ❌ The estimator, which assumes the errors are independent, is biased for these data.
+>
+> ✅ The estimator is biased for these data, because it assumes the errors are independent.
+
+A long aside widens the gap further.
+
+> ❌ The model has no minimizer (its second derivative is negative, so it decreases without limit as the step grows) and the theorem does not apply.
+>
+> ✅ The theorem does not apply, because it requires a positive second derivative.
+> Instead, the model decreases without limit as the step grows, so it has no minimizer.
+
+A short aside that only points to a source, such as "(Figure 2)", can stay where it is.
+
 # Do not rule out readings no reader would make
 
 A definition says what a [term](defining-terms.qmd#def-term) means.
