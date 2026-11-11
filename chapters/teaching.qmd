@@ -1124,9 +1124,11 @@ in its own dataset callout with a linkable id such as `#dat-wcgs`.
 Never describe a dataset in a definition div,
 because a dataset is not a [term](defining-terms.qmd#def-term) with a defining equation
 (Ezra, 2026-11-02).
-The callout gives the cited original source,
-the outcome and the predictors in words,
-and where readers can get a copy of the data.
+The callout gives:
+
+- the cited original source;
+- the outcome and the predictors, in words;
+- where readers can get a copy of the data.
 
 When the notes define a dataset in its own callout,
 link the dataset by that callout's id
