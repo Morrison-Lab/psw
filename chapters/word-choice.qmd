@@ -527,11 +527,12 @@ So avoid using "this" or "also" in two sentences in a row.
 > This fit also holds on the test set.
 >
 > ✅ The model also fits the training data well.
-> Its fit holds on the test set too.
+> Its fit carries over to the test set.
 
 The ❌ pair uses "this" and "also" in both sentences.
 The ✅ pair keeps both sentences and both claims,
-and uses "also" once and "this" not at all.
+and uses "also" once and "this" not at all,
+without a synonym such as "too" in the second sentence.
 
 :::
 
