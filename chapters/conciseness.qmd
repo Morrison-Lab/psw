@@ -207,7 +207,8 @@ A long aside widens the gap further.
 
 > ❌ The model has no minimizer (its second derivative is negative, so it decreases without limit as the step grows) and the theorem does not apply.
 >
-> ✅ The theorem does not apply, because it requires a positive second derivative. Instead, the model decreases without limit as the step grows, so it has no minimizer.
+> ✅ The theorem does not apply, because it requires a positive second derivative.
+> Instead, the model decreases without limit as the step grows, so it has no minimizer.
 
 A short aside that only points to a source, such as "(Figure 2)", can stay where it is.
 
