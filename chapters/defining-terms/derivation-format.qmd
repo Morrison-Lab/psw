@@ -72,7 +72,7 @@ $$\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.$$
 
 ## Deviations from the mean
 
-Let $\bar{x}$ be the sample mean (@def-sample-mean) of $x_1, \ldots, x_n$.
+Let $\bar{x}$ be the [sample mean](#def-sample-mean) of $x_1, \ldots, x_n$.
 Show that
 
 $$
