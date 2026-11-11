@@ -511,10 +511,9 @@ because "recently" assumed an order of lectures that the page does not fix.
 
 # Keep "this" and "also" out of consecutive sentences
 
-The Stanford course notes on mathematical writing
-say to "avoid words like 'this' or 'also' in consecutive sentences".
-They explain that such words, and "unusual or polysyllabic utterances",
-"tend to stick in a reader's mind longer than other words,
+The Stanford course notes on mathematical writing say to "avoid words like 'this' or 'also' in consecutive sentences".
+They explain
+that such words, and "unusual or polysyllabic utterances", "tend to stick in a reader's mind longer than other words,
 and good style will keep 'sticky' words spaced well apart"
 [@knuth1987mathematical, point 9].
 So avoid using "this" or "also" in two sentences in a row.
@@ -530,14 +529,13 @@ So avoid using "this" or "also" in two sentences in a row.
 > Its fit carries over to the test set.
 
 The ❌ pair uses "this" and "also" in both sentences.
-The ✅ pair keeps both sentences and both claims,
+The ✅ pair rewords the sentences but keeps both claims,
 and uses "also" once and "this" not at all,
 without a synonym such as "too" in the second sentence.
 
 :::
 
-The same point of the notes says to
-"use parallelism when parallel concepts are being discussed"
+The same point of the notes says to "use parallelism when parallel concepts are being discussed"
 [@knuth1987mathematical, point 9].
 A word repeated to make two statements parallel is repeated on purpose,
 so keep it,
