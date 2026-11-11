@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 01:19:03 (PST)
+Last modified: 2026-11-11 01:26:16 (PST)
 
 > **NOTE:**
 >
@@ -273,7 +273,7 @@ The Stanford course notes on mathematical writing say to “avoid words like ‘
 > >
 > > ✅ The model also fits the training data well. Its fit carries over to the test set.
 >
-> The ❌ pair uses “this” and “also” in both sentences. The ✅ pair keeps both sentences and both claims, and uses “also” once and “this” not at all, without a synonym such as “too” in the second sentence.
+> The ❌ pair uses “this” and “also” in both sentences. The ✅ pair rewords the sentences but keeps both claims, and uses “also” once and “this” not at all, without a synonym such as “too” in the second sentence.
 
 The same point of the notes says to “use parallelism when parallel concepts are being discussed” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). A word repeated to make two statements parallel is repeated on purpose, so keep it, as [Repeat the wording of parallel results, then point out the difference](../chapters/mathematical-writing.llms.md#repeat-the-wording-of-parallel-results-then-point-out-the-difference) describes.
 
