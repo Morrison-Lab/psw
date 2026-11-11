@@ -601,12 +601,12 @@ The reversal is called the *expertise reversal effect* [@kalyuga2003].
 >
 > ```markdown
 > ::: {#exm-mean-height}
-> (the sample mean of the heights, with every step worked)
+> (the average height, with every step worked)
 > :::
 >
 > ::: {#exr-mean-weight}
-> Compute the sample mean of the weights.
-> The sum of the weights is given; divide it by the sample size.
+> Compute the average weight.
+> The sum of the weights is given; divide it by the number of people.
 > :::
 >
 > ::: {#sol-mean-weight}
@@ -614,7 +614,7 @@ The reversal is called the *expertise reversal effect* [@kalyuga2003].
 > :::
 >
 > ::: {#exr-mean-age}
-> Compute the sample mean of the ages.
+> Compute the average age.
 > :::
 >
 > ::: {#sol-mean-age}
