@@ -1140,6 +1140,17 @@ not "the WCGS data (`@dat-wcgs`)"
 Prefer a self-contained sentence
 when the part needs only one or two of those objects.
 
+Describe each dataset once,
+in its own dataset callout with a linkable id (`#dat-<name>`),
+never in a definition div,
+because a dataset is not a term with a defining equation <!-- check-term-links: allow: "term" is linked earlier in this passage, at the top of the section -->
+(Ezra, 2026-11-02).
+The callout gives:
+
+- the cited original source;
+- the outcome and the predictors, described in words;
+- where to get a copy of the data.
+
 # Refute common misconceptions
 
 When a topic has a well-known misconception,
