@@ -27,7 +27,8 @@ jobs:
       # requests, and the run fails at startup with "startup_failure" before
       # any job is created (#43).
       actions: read
-    uses: Morrison-Lab/gha/.github/workflows/claude-code-review.yml@v2
+      checks: read  # required by the @v3 callee (gha#830)
+    uses: Morrison-Lab/gha/.github/workflows/claude-code-review.yml@v3
     secrets: inherit
     with:
       # Wires the workflow_dispatch input through so claude.yml can re-dispatch
@@ -36,8 +37,8 @@ jobs:
       # The reviewer checks added math against the semantic macros
       # (Morrison-Lab/ai-config#4673). It reads `latex-macros/`, a public
       # submodule, so it must be checked out; without it the reviewer can only
-      # report the macro check as not done. The callee's `@v2` tag may predate
-      # the default flip in gha#1158, so the input is set explicitly.
+      # report the macro check as not done. An older callee tag predated
+      # the default flip in gha#1158, so the input stays set explicitly.
       checkout-submodules: true
       check-latex-macros: true
       prompt-addendum: |
