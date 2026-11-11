@@ -24,7 +24,8 @@ output, CI workflows).
 - `docx-math-macros.lua` — expands the shared math macros in Word output,
   which has no MathJax or LaTeX preamble to define them
 - `references.bib` — BibTeX bibliography
-- `offwhite.scss`, `theme-picker.html` — the website's Light / Off-white / Parchment / Dark theme dropdown (saved under `lds-theme`, with `mln-theme` read as a legacy fallback, shared with the slides and the other sites on this origin)
+- `offwhite.scss` and `theme-picker.html` — the website's theme dropdown (Light, Off-white, Parchment, and Dark), saved under `lds-theme` with `mln-theme` read as a legacy fallback;
+  the slides and the other sites on this origin share the choice
 - `styles.css`, `styles-reveal.scss`, `qwt-reveal-toggle.html` — styling, including the slides' matching dropdown
 - `.github/workflows/`, `.github/scripts/` — CI workflows and helper scripts
 - `_site/`, `_freeze/`, `.quarto/` — build artifacts (do not edit by hand)
