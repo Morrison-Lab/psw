@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 17:01:35 (PST)
+Last modified: 2026-11-11 00:51:32 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -42,7 +42,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Provide explicit definitions:** State clearly what a term means, rather than assuming readers will understand from context.
 
-- **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
+- **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats. The one exception is the graph of a function of one or two inputs (see *Graph a function of one or two inputs in its definition*, below).
 
 - **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector $\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}$ as “the value of $\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}$ that minimizes the [residual sum of squares](#def-rss)” *and* as
 
@@ -53,6 +53,8 @@ Follow these principles when introducing new [term](#def-term)s:
   $$R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},$$
 
   not the two sums that RSS and TSS stand for.
+
+- **Graph a function of one or two inputs in its definition:** Every definition of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of one or two inputs includes a graph of that function, in 2D for one input and in 3D for two inputs (Ezra, 2026-11-10). Put the graph in the definition block, after the defining equation. Draw a 3D graph by the rules in [Three-dimensional graphs](../chapters/slides-posters-figures.llms.md#sec-3d-graphs).
 
 - **Open a definition with the bold [term](#def-term) as its subject:** Start the sentence with the term, then state what it is, and put the defining expression after that sentence. For example, write “The **[variance](#def-variance-expression-and-prose)** of a random variable $X$ is the [population](#def-population) mean of the squared deviation of $X$ from its population mean,” followed by the equation ${\operatorname{Var}\mathopen{}\left(X\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$. Do not open with the expression and name the term afterward, as in “${\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$ is the variance of $X$.” A reader who looks up a term should find the term first, and the definition then reads as one statement about that term.
 
@@ -136,6 +138,12 @@ Follow these principles when introducing new [term](#def-term)s:
   >
   > The first block cannot be linked to as “left distributivity” without also pointing at the other law, and one example cannot illustrate both. For numbers, right distributivity follows from left distributivity because multiplication commutes, so one example checks both. Matrix multiplication does not commute, so establishing one law does not establish the other, and each needs its own example.
 
+- **Don’t nest definitions:** A definition whose statement names a further [term](#def-term), such as a label on one of its conditions, an italicized name in a list, or “is called *X*”, defines that term inside itself. Define each such term in its own sibling `#def-` div, before the definition that uses it, and state that definition in terms of it, linking it. For example, a [definition of a linear map that labels its two conditions *additivity* and *homogeneity*](https://github.com/Morrison-Lab/mds/issues/710) nests two definitions. Define an additive function and a homogeneous function in their own divs, then define a linear map as a function that is both.
+
+  > ❌ **Definition (linear map).** A function $f$ is a *linear map* if $f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}+ \mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{y}}\vphantom{y}}) = f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}) + f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{y}}\vphantom{y}})$ (*additivity*) and $f(c\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}) = c f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}})$ (*homogeneity*).
+  >
+  > ✅ **Definition (linear map).** A function $f$ is a *linear map* if it is both additive and homogeneous.
+
 - **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title as a comma-separated list, with the primary name first, as in “Postulate, axiom”, and bold each where it first appears in the definition. Do not use parentheses or a phrase such as “also called” in the title. This covers the names other sources use, such as a textbook’s, which belong in the title and in bold too, as in “Risk, expected loss, population risk, true risk, generalization error, expected prediction error”. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who encounters the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
 
 - **Link the defined word to its Wiktionary entry:** In a `#def-` div, link the first instance of the bolded [term](#def-term) being defined to its entry in [Wiktionary](https://en.wiktionary.org/), where an entry exists (Ezra, 2026-11-06). For example, a definition of a [population](#def-population) begins “The **[population](https://en.wiktionary.org/wiki/population)** of a study is …”. Link only the defined name itself, not the words around it, such as “of a study”. Link only the first bolded instance in the div, and check that the entry exists before linking it. Look up the whole name, however many words it has: “standard deviation” has an entry, so it gets the link. When the whole name has no entry, it gets no link; do not link one of its words instead. An alternative name in the div title gets its own link where it first appears in bold. The reader then sees the ordinary meaning of the word before the technical one.
@@ -143,6 +151,12 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Tell synonyms from hyponyms:** A *synonym* names the same concept as the primary term, so it belongs in the div title. A *hyponym* names a special case of another term, such as “linear regression” for “regression model”, so it is a different concept. Give each hyponym its own `#def-` div, and never put it in the title of the general term or introduce it with “also called” (Ezra, 2026-10-23). When unsure, check both directions. Is every instance of the new term an instance of the old term? Is every instance of the old term an instance of the new term? If only the first holds, the new term is a hyponym.
 
 - **Tell synonyms from equivalent concepts:** Only true synonyms share a div title as aliases: names for one concept, which has one definition. Two concepts that happen to be equivalent are different concepts, however often they coincide. Give each its own definition, an example after each, and a theorem showing that they agree (see *Put only the defining equation in a definition, and state equivalences as results* above). A test: if each name has its own natural definition, they are two concepts. For example, a loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) defined as the negative log of the predicted probability of the observed class and a loss function defined as the [cross-entropy](https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy) between two distributions each have a natural definition, so give each its own div and state that they agree as a theorem, instead of titling one div with both names.
+
+- **Link an earlier site’s definition instead of defining a concept again:** The lab’s notes sites form a prerequisite sequence, so before defining a [term](#def-term), search the sites earlier in the sequence for it. When one defines it, link that definition, and define the term locally only to name a difference. Two definitions of one term on two sites drift apart in notation and scope, and a reader who meets both cannot tell which one the notes mean. The [`check-math-definitions`](https://github.com/Morrison-Lab/gha/tree/main/check-math-definitions) check flags colliding definitions across sibling repositories.
+
+  > ❌ A *function* assigns one output to each input. The mean of a regression model is a function of the predictors.
+  >
+  > ✅ The mean of a regression model is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors.
 
 - **Keep an entrenched misnomer, and clarify it once:** Some names the literature has fixed are technically wrong, such as “linear regression” for a model with an intercept, whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors, not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one (Ezra, 2026-10-28). Wherever the wording is yours, use the precise word: write “affine in the predictors” for a function with an intercept, and “linear” only when the intercept is zero. Keep a name the reader will meet in other sources, such as linear regression, linear decay or linear approximation, because renaming it cuts the reader off from that literature. Clarify it once, in parentheses, at its definition or its first use on a page, as in “linear (strictly, affine) decay”, and use the established name unqualified after that.
 
@@ -372,7 +386,7 @@ In teaching material, present a derivation as one or more exercises, each follow
 
 Follow these principles:
 
-- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.
+- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative. Title each exercise by the subgoal that it reaches, such as “Solving the score equation”, so that the titles alone outline the derivation. Labeling the subgoals of a worked example is one of the instructional principles of worked-examples research ([Atkinson et al. 2000](#ref-atkinson2000)).
 - **The solution follows its exercise.** Put each solution directly after its exercise, and give it an id named after the exercise (`#exr-foo` and `#sol-foo`), so a reader who wants to check one step can find its working.
 - **The theorem states the result; the proof cites results.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the results it rests on, not a second copy of their working. A proof that does no derivation of its own is one line citing the solution of the exercise that asks for the result, and every later argument cites the theorem, never the solution (see [Cite results, not solutions](../chapters/mathematical-writing.llms.md#cite-results-not-solutions)).
 - **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
@@ -465,3 +479,7 @@ Follow these principles:
 > The first result is algebra from the definition of $\varepsilon_i$; the second needs the model’s distribution. In separate blocks, each gets the proof it needs, and a later step that uses only the first can cite only the first.
 
 Back to top
+
+## References
+
+Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. “Learning from Examples: Instructional Principles from the Worked Examples Research.” *Review of Educational Research* 70 (2): 181–214. <https://doi.org/10.3102/00346543070002181>.

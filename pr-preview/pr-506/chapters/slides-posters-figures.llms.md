@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 17:01:35 (PST)
+Last modified: 2026-11-11 00:51:32 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -43,7 +43,16 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 
 # 4 Scientific figures
 
-Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
+Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure, as a noninteractive version of it (Ezra, 2026-11-10). A note that sends readers to the HTML version does not replace the figure.
+
+When a definition or example graphs a model whose parameters are chosen rather than fitted to data, such as a density with a given mean and covariance, make the graph interactive in HTML output, slide decks included (Ezra, 2026-11-10). Give each parameter a slider, a numeric entry box, or both, and redraw the graph as the reader changes them. Start each control at the value the text uses, so the prose about that value describes the graph as it first appears, and in static formats draw the graph at those starting values. A graph of a model fitted to data stays fixed, because its parameters come from the data. In Quarto, build the graph with [Observable JS](https://quarto.org/docs/interactive/ojs/) cells, which run in both the website and the slides:
+
+- Make a slider with a numeric box beside it with `Inputs.range`, and a numeric box alone with `Inputs.number`.
+- Draw a 2D graph with [Observable Plot](https://observablehq.com/plot/), and a 3D surface with [plotly.js](https://plotly.com/javascript/3d-surface-plots/).
+- Put the cells in a `.content-visible when-format="html"` div.
+- Draw the static version with an R chunk that runs only outside HTML output.
+
+Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
 Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:
 
@@ -78,7 +87,71 @@ For more:
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus Wilke - a free online book on choosing the kind of figure, the colors, and the layout for a set of data
 - [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text
 
-## 4.1 Combine several figures with patchwork
+## 4.1 Combine panels with Quarto layout or in code
+
+A figure or table with several panels can be put together in two places:
+
+- **Quarto layout**: each panel is a subfigure or subtable. A subfigure is a `#fig-` div nested in the parent figure’s div, and a subtable is a `#tbl-` div nested in the parent table’s div. The parent div arranges the panels with `layout-ncol`, `layout-nrow`, or `layout`.
+- **Code**: one plot or table object holds every panel, made with [patchwork](https://patchwork.data-imaginist.com/), ggplot2 facets, plotly’s `subplot()`, matplotlib’s `subplots()`, or one table with grouped columns.
+
+Use Quarto layout by default. Quarto gives each panel its own label, subcaption, and alt text, and those keep working in every output format:
+
+- A cross-reference names the panel, as in “Figure 3b”, so the text can point a reader at one panel without “left” or “right”.
+- Each panel’s subcaption says what that panel shows, so the panels need no hand-made titles that repeat it.
+- Each panel’s `fig-alt` describes that panel alone, so a screen reader user hears the panels one at a time.
+- Each panel keeps its own interactive widget in HTML and its own static version in PDF and Word, so a static fallback can be drawn panel by panel.
+
+Combine the panels in code instead when they share something that Quarto layout cannot give them:
+
+- **A shared axis**: the panels must line up on one scale, such as one y-axis across panels, so a reader can compare heights across them. Separate subfigures each get their own axis limits and plot margins, so their axes line up only by chance.
+- **A shared legend**: several panels use the same colors or line types, and one legend for all of them, collected with patchwork’s `guides = "collect"`, saves repeating it.
+- **One plot of subsets**: the panels are the same plot drawn for each level of a variable. Use a facet, whose strip labels name each level.
+- **Linked interaction**: the panels should respond together, such as a shared zoom or hover across plotly panels with `subplot(shareX = TRUE)`.
+
+A panel combined in code has no label of its own for a cross-reference. Tag the panels in the code, in the same style as Quarto’s subcaptions, with `plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")` in patchwork, and refer to them in the text as “panel (b) of `@fig-x`”. Write one alt text for the whole figure that describes each panel in turn, and give the panels in the caption by their tags. A combined interactive figure, such as one plotly widget with two 3D scenes, needs a static version that shows every panel too.
+
+Keep panels in separate subfigures when they share nothing. Two 3D surfaces from two models, each with its own rotation, are two subfigures, not one widget with two scenes.
+
+### 4.1.1 Subfigures with language tabsets
+
+Put a language tabset (`group="language"`) inside each subfigure, not the subfigures inside one tabset, when each panel has R and Python versions:
+
+```` markdown
+::: {#fig-surfaces layout-ncol=2}
+
+::: {#fig-surfaces-additive}
+::: {.panel-tabset group="language"}
+## R
+```r
+# draw the additive model's surface
+```
+## Python
+```python
+# draw the additive model's surface
+```
+:::
+The additive model.
+:::
+
+::: {#fig-surfaces-interaction}
+<!-- the same tabset for the interaction model -->
+The model with an interaction term.
+:::
+
+Fitted surfaces of the two models for fuel economy over weight and model year.
+:::
+````
+
+Each `r` or `python` block stands for an executed chunk, whose fence is `{r}` or `{python}` in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on.
+
+### 4.1.2 Subtables
+
+The same choice holds for tables:
+
+- Put tables that a reader compares side by side, but that have different rows or columns, in subtables of a `#tbl-` div with `layout-ncol`, each with its own subcaption.
+- Put tables that share their rows in one table, with a header over each group of columns, such as a `tab_spanner()` in the R package [gt](https://gt.rstudio.com/), so the rows line up and each row label appears once.
+
+## 4.2 Combine several figures with patchwork
 
 The R package [patchwork](https://patchwork.data-imaginist.com/) combines several ggplot2 figures into one figure with panel labels. The `+` operator places plots side by side, and the `/` operator stacks them. In this demo, `p1`, `p2`, and `p3` stand for three ggplot2 plots that you have already made:
 
@@ -87,14 +160,14 @@ library(patchwork)
 
 (p1 + p2) / p3 +
   plot_layout(guides = "collect") +
-  plot_annotation(tag_levels = "A") &
+  plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")") &
   theme(legend.position = "bottom")
 ```
 
 The expression puts `p1` and `p2` side by side above `p3`:
 
 - `plot_layout(guides = "collect")` merges the plots’ legends into one.
-- `plot_annotation(tag_levels = "A")` labels the panels A, B, and C.
+- `plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")` labels the panels (a), (b), and (c), the style of Quarto’s subcaptions.
 - `&` applies the bottom legend position to every panel.
 
 # 5 Three-dimensional graphs
@@ -109,9 +182,11 @@ A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of 
 
 - Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.
 
-- An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
+- Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10). When all three axes are in the same units, such as a surface in physical space, scale the axes equally in data units instead. In plotly, set the scene’s `aspectmode` to `"cube"` or to `"data"`. Do not leave it unset: plotly’s default, `"auto"`, then draws each axis in proportion to the span of its data unless one axis range is more than 4 times another, so a function whose values span a wider range than its inputs draws a tall, thin column.
 
-- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the PDF and Word output, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
+- An interactive plot that readers can rotate, such as one made with [plotly](https://plotly.com/r/3d-surface-plots/), helps on the web, but static formats such as PDF, Word, and PowerPoint show no interactive plot, so render a static view at a fixed angle there (see [Scientific figures](#sec-scientific-figures) and [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible)).
+
+- In a Python tab, draw the interactive 3D plot with [plotly](https://plotly.com/python/3d-charts/) too, so the R and Python tabs of a figure look alike. Keep the `matplotlib` version for the static formats, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a `knitr` chunk, print the figure as one raw HTML block under `results: asis`, because `fig.show()` needs `ipython` and several `print` calls split the chunk’s output:
 
   ``` python
   print("```{=html}\n" + fig.to_html(full_html=False, include_plotlyjs="cdn") + "\n```")

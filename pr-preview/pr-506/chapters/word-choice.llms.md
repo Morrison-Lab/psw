@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 17:01:35 (PST)
+Last modified: 2026-11-11 00:51:32 (PST)
 
 > **NOTE:**
 >
@@ -20,6 +20,14 @@ I recommend trying to replace Latin-derived words and phrases with Old English-d
 Table 1: Commonly used Latin words and phrases and Anglish alternatives
 
 See also <https://bark-fa.github.io/Anglish-Translator/>
+
+English has three layers of vocabulary because of its history ([Wikipedia contributors 2026](#ref-wikipedia_history_of_english)):
+
+- [Old English](https://en.wikipedia.org/wiki/Old_English) came to Britain with [Germanic-speaking](https://en.wikipedia.org/wiki/Germanic_languages) settlers in the [mid-5th to 7th centuries](https://en.wikipedia.org/wiki/Anglo-Saxon_settlement_of_Britain). Its words are the source of the Anglish alternatives above.
+- French and Norman words entered after the [Norman Conquest](https://en.wikipedia.org/wiki/Norman_Conquest) of 1066, about 10,000 of them in [Middle English](https://en.wikipedia.org/wiki/Middle_English), particularly [term](../chapters/defining-terms.llms.md#def-term)s for government, church, law, the military, fashion, and food.
+- [Latin and Greek words](https://en.wikipedia.org/wiki/Latin_influence_in_English) entered in the [Renaissance](https://en.wikipedia.org/wiki/Renaissance), as increased literacy and travel helped writers adopt many foreign words.
+
+Because the borrowed words came in through government, church, law, and learned writing, many of them still read as formal and learned. Their Old English counterparts read as plain and everyday. A reader does not notice this contrast in a single word, but across a paragraph it sets the tone: “commence” and “utilize” sound official, while “begin” and “use” sound direct. When you choose between two synonyms, choose the one whose tone matches your readers and your purpose.
 
 To find a replacement for a word, look the word up on the [Open English Wordnet website](https://en-word.net/) ([source on GitHub](https://github.com/globalwordnet/english-wordnet)). Open English Wordnet groups English words into sets of synonyms, called synsets. A word with several meanings appears in several synsets, one for each meaning, so choose the synset that matches the meaning you intend. Then pick the word in that synset that your readers are most likely to understand easily.
 
@@ -62,13 +70,13 @@ Money words are idioms too when no money is involved. “Costs us”, “buys us
 
 > ❌ That trade is the whole bargain of gradient descent.
 >
-> ✅ Gradient descent decreases the objective only when each step is small enough for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
+> ✅ Gradient descent decreases the objective function only when each step is small enough for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
 
 Do not give a mathematical object a mind. A derivative does not “recommend” a direction, a model does not “know” or “want” anything, and an approximation is not “trustworthy”. Each such phrase hides a precise claim, and the reader needs that claim stated plainly. State the condition under which the claim holds, with the inequality or the order of the error, and display it when it is a key equation.
 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
-> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
+> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, so the objective function decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Be as specific as feasible. When the text has a specific object, name it, and do not let a generic placeholder stand in for it, such as “some set”, “a set A” or “the object”. A placeholder makes the reader ask which set is meant, and the writer has already answered that question. Keep a placeholder only where the statement is abstract on purpose, such as a general definition that holds for any set. The same aim, stated from the other side: state a result at the generality it holds, no narrower than its argument needs. A fact that a proof proves only for one case, when the argument works for all cases, is a lemma left unextracted ([Extract a lemma wherever feasible](../chapters/teaching.llms.md)).
 
@@ -276,3 +284,5 @@ Back to top
 ## References
 
 Google. n.d. *Google Developer Documentation Style Guide*. Web page. <https://developers.google.com/style>.
+
+Wikipedia contributors. 2026. *History of English — Wikipedia, the Free Encyclopedia*. <https://en.wikipedia.org/wiki/History_of_English>.

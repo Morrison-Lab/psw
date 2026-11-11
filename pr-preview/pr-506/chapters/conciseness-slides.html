@@ -154,8 +154,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -190,7 +191,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -200,7 +202,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -270,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 17:01:35 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 00:51:32 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -335,6 +337,7 @@
 <li>“His brother, who is a member of the same firm” → “His brother, a member of the same firm”</li>
 </ul>
 <p>The same rule applies to statistical writing: “We conducted an analysis of the data to determine whether there is an association between smoking and lung cancer” becomes “We tested whether smoking is associated with lung cancer”.</p>
+<p>The rule covers sentences as well as words. An interesting aside that does not serve the point costs the reader more than space. In experiments on a science lesson, adding such <em>seductive details</em> reduced what students recalled of the main explanation and how well they applied it to new problems <span class="citation" data-cites="harp1998">(<a href="#/references" role="doc-biblioref" onclick="">Harp and Mayer 1998</a>)</span>.</p>
 </section>
 <section id="write-in-the-active-voice" class="slide level2" data-number="3">
 <h2><span class="header-section-number">3</span> Write in the active voice</h2>
@@ -392,14 +395,26 @@
 </section>
 <section class="slide level2">
 
-<p>The end of a sentence is the position the reader remembers. Strunk states the rule as “Place the emphatic words of a sentence at the end” <span class="citation" data-cites="strunk1920elements">(<a href="#/references" role="doc-biblioref" onclick="">Strunk 1920</a>, rule 18)</span>. Put the claim you want the reader to keep last, and put the qualifications, the citation and the filler before it.</p>
+<p>The end of a sentence is the position the reader remembers. Strunk states the rule as “Place the emphatic words of a sentence at the end” <span class="citation" data-cites="strunk1920elements">(<a href="#/references" role="doc-biblioref" onclick="">Strunk 1920</a>, rule 18)</span>. Put the claim you want the reader to keep last, and put the qualifications, the citation and the filler before it. Gopen and Swan call the end of a sentence its <em>stress position</em> <span class="citation" data-cites="gopen1990">(<a href="#/references" role="doc-biblioref" onclick="">Gopen and Swan 1990</a>)</span>.</p>
 <blockquote>
 <p>❌ The estimate becomes more precise as the sample size grows, in general.</p>
 <p>✅ In general, the estimate becomes more precise as the sample size grows.</p>
 </blockquote>
 </section>
-<section id="express-coordinate-ideas-in-parallel-form" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Express coordinate ideas in parallel form</h2>
+<section id="start-a-sentence-from-what-the-reader-already-knows" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Start a sentence from what the reader already knows</h2>
+</section>
+<section class="slide level2">
+
+<p>Open each sentence with information that the reader already has, and end it with the new information. Readers connect a sentence to the text before it through its opening words. They understand a sentence faster when its known part clearly matches something already said <span class="citation" data-cites="haviland1974">(<a href="#/references" role="doc-biblioref" onclick="">Haviland and Clark 1974</a>)</span>. Gopen and Swan call the start of a sentence its <em>topic position</em>, and they advise putting the old information there and the new information in the stress position <span class="citation" data-cites="gopen1990">(<a href="#/references" role="doc-biblioref" onclick="">Gopen and Swan 1990</a>)</span>. A sentence that opens with a new idea makes the reader hold that idea until the words that connect it to the previous sentence arrive.</p>
+<blockquote>
+<p>❌ The lasso sets some coefficients exactly to zero. Variable selection is the name for removing predictors from a model in this way.</p>
+<p>✅ The lasso sets some coefficients exactly to zero. Setting a coefficient to zero removes its predictor from the model, so the lasso also selects variables.</p>
+</blockquote>
+<p>In the ✅ version, the second sentence opens with the idea that the first sentence ended on, and ends with the new idea, variable selection. The subject of a sentence usually carries the known information, so this rule and <a href="#/lead-with-the-subject">Lead with the subject</a> work together. The new information is usually also the part to emphasize, so <a href="#/put-the-emphatic-words-at-the-end">Put the emphatic words at the end</a> applies too.</p>
+</section>
+<section id="express-coordinate-ideas-in-parallel-form" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Express coordinate ideas in parallel form</h2>
 </section>
 <section class="slide level2">
 
@@ -409,8 +424,8 @@
 <p>✅ The model is fast, accurate and validated.</p>
 </blockquote>
 </section>
-<section id="limit-complex-sentence-structures" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Limit complex sentence structures</h2>
+<section id="limit-complex-sentence-structures" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Limit complex sentence structures</h2>
 </section>
 <section class="slide level2">
 
@@ -425,8 +440,31 @@
 <p>The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.</p>
 </div>
 </section>
-<section id="do-not-rule-out-readings-no-reader-would-make" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Do not rule out readings no reader would make</h2>
+<section id="do-not-interrupt-a-clause-with-an-aside" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Do not interrupt a clause with an aside</h2>
+</section>
+<section class="slide level2">
+
+<p>Do not put an aside between parts of a clause that belong together, whether the aside sits in parentheses or between commas. The reader has to hold the unfinished clause open until the aside ends. The parts that belong together include:</p>
+<ul>
+<li>a subject and its verb;</li>
+<li>a verb and its object;</li>
+<li>two clauses joined by <em>and</em> or <em>so</em>.</li>
+</ul>
+<p>Give the aside a sentence of its own, or move it after the clause it explains.</p>
+<blockquote>
+<p>❌ The estimator, which assumes the errors are independent, is biased for these data.</p>
+<p>✅ The estimator is biased for these data, because it assumes the errors are independent.</p>
+</blockquote>
+<p>A long aside widens the gap further.</p>
+<blockquote>
+<p>❌ The model has no minimizer (its second derivative is negative, so it decreases without limit as the step grows) and the theorem does not apply.</p>
+<p>✅ The theorem does not apply, because it requires a positive second derivative. Instead, the model decreases without limit as the step grows, so it has no minimizer.</p>
+</blockquote>
+<p>A short aside that only points to a source, such as “(Figure 2)”, can stay where it is.</p>
+</section>
+<section id="do-not-rule-out-readings-no-reader-would-make" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Do not rule out readings no reader would make</h2>
 </section>
 <section class="slide level2">
 
@@ -451,8 +489,8 @@
 </div>
 <p>The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.</p>
 </section>
-<section id="avoid-double-negatives" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Avoid double negatives</h2>
+<section id="avoid-double-negatives" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Avoid double negatives</h2>
 </section>
 <section class="slide level2">
 
@@ -474,8 +512,8 @@
 <p>Writers usually choose “not inconsistent with” to <a href="../chapters/avoid-cliches.html#def-hedge">hedge</a> “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.</p>
 </div>
 </section>
-<section id="write-about-the-subject-not-about-the-text" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Write about the subject, not about the text</h2>
+<section id="write-about-the-subject-not-about-the-text" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Write about the subject, not about the text</h2>
 </section>
 <section class="slide level2">
 
@@ -499,8 +537,8 @@
 <p>In the third pair, the rewrite states what the detail changes instead of saying that it changes something.</p>
 </div>
 </section>
-<section id="let-a-self-describing-link-stand-alone" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Let a self-describing link stand alone</h2>
+<section id="let-a-self-describing-link-stand-alone" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Let a self-describing link stand alone</h2>
 </section>
 <section class="slide level2">
 
@@ -515,8 +553,8 @@
 </div>
 <p>Keep a descriptive label when the URL does not show what it points to, such as a DOI or a shortened link.</p>
 </section>
-<section id="keep-the-writer-out-of-the-way" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Keep the writer out of the way</h2>
+<section id="keep-the-writer-out-of-the-way" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Keep the writer out of the way</h2>
 </section>
 <section class="slide level2">
 
@@ -532,8 +570,8 @@
 <p>A request still needs its actor: “Could the space be increased, or would you allow me to register my own runner?” <!-- check-term-links: allow --> keeps “me” because the request is about the writer’s runner.</p>
 </div>
 </section>
-<section id="do-not-overexplain" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Do not overexplain</h2>
+<section id="do-not-overexplain" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Do not overexplain</h2>
 </section>
 <section class="slide level2">
 
@@ -547,8 +585,8 @@
 <p>The first version adds a clause that “the mean” already covers. The second is complete.</p>
 </div>
 </section>
-<section id="put-lists-in-bullet-points" class="slide level2" data-number="15">
-<h2><span class="header-section-number">15</span> Put lists in bullet points</h2>
+<section id="put-lists-in-bullet-points" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Put lists in bullet points</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -657,8 +695,8 @@
 <p>The first lead-in reads as exhaustive, yet a confusion matrix yields more metrics than the three listed. The second lead-in says that the four cells are the whole set, and the third says that its list is a sample.</p>
 </div>
 </section>
-<section id="write-to-communicate-not-to-impress" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Write to communicate, not to impress</h2>
+<section id="write-to-communicate-not-to-impress" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Write to communicate, not to impress</h2>
 </section>
 <section class="slide level2">
 
@@ -678,8 +716,8 @@
 <p>The ✅ version drops “It is imperative to acknowledge that”, which only says that the next claim matters. It replaces “notwithstanding” with “despite” and “are indicative of” with “suggest”, as <a href="../chapters/word-choice.html#exm-jargon">Replacing unnecessary jargon</a> does for single words. It puts the noun phrases in plainer words too: “methodological constraints” becomes “the limits of the study’s methods”, and “findings” becomes “results”. It also removes the relative clauses “that were encountered in the course of the study” and “that were obtained”, because a study’s constraints are ones it faced, and its findings are ones it obtained.</p>
 </div>
 </section>
-<section id="examples-of-concise-writing" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Examples of concise writing</h2>
+<section id="examples-of-concise-writing" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Examples of concise writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
@@ -879,8 +917,17 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-gopen1990" class="csl-entry" role="listitem">
+Gopen, George D., and Judith A. Swan. 1990. <span>“The Science of Scientific Writing.”</span> <em>American Scientist</em> 78 (6): 550–58. <a href="https://www.jstor.org/stable/29774235">https://www.jstor.org/stable/29774235</a>.
+</div>
+<div id="ref-harp1998" class="csl-entry" role="listitem">
+Harp, Shannon F., and Richard E. Mayer. 1998. <span>“How Seductive Details Do Their Damage: A Theory of Cognitive Interest in Science Learning.”</span> <em>Journal of Educational Psychology</em> 90 (3): 414–34. <a href="https://doi.org/10.1037/0022-0663.90.3.414">https://doi.org/10.1037/0022-0663.90.3.414</a>.
+</div>
 <div id="ref-hastie2009esl" class="csl-entry" role="listitem">
 Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. 2009. <em>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</em>. 2nd ed. Springer. <a href="https://hastie.su.domains/ElemStatLearn/">https://hastie.su.domains/ElemStatLearn/</a>.
+</div>
+<div id="ref-haviland1974" class="csl-entry" role="listitem">
+Haviland, Susan E., and Herbert H. Clark. 1974. <span>“What’s New? Acquiring New Information as a Process in Comprehension.”</span> <em>Journal of Verbal Learning and Verbal Behavior</em> 13 (5): 512–21. <a href="https://doi.org/10.1016/S0022-5371(74)80003-4">https://doi.org/10.1016/S0022-5371(74)80003-4</a>.
 </div>
 <div id="ref-strunk1920elements" class="csl-entry" role="listitem">
 Strunk, William, Jr. 1920. <em>The Elements of Style</em>. Harcourt, Brace; Howe. <a href="https://www.gutenberg.org/ebooks/37134">https://www.gutenberg.org/ebooks/37134</a>.

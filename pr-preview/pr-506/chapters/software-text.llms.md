@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 17:01:35 (PST)
+Last modified: 2026-11-11 00:51:32 (PST)
 
 Software projects depend on short documents:
 
@@ -36,13 +36,17 @@ Readers of these documents often arrive without context on the change, so the ru
 >
 > ✅ Label the y-axis in original units, so the figure no longer shows log-odds.
 
-# 3 Comment code sparingly
+# 3 Decide writing style here, not by imitation
+
+The repo maintainers make each writing-style decision explicitly and record it in this book. Take a writing-style choice from this book, not from the prose around your edit. A neighboring page shows what someone wrote once, not what the maintainers decided. When this book does not say how to write something, raise the question as an [issue on psw](https://github.com/Morrison-Lab/psw/issues), with your recommendation, instead of copying a nearby page. Code style follows the same rule in [psc](https://morrison-lab.github.io/psc/).
+
+# 4 Comment code sparingly
 
 - Write a comment that says why the code does what it does, and let the code say what it does.
 - Keep each comment as short as it can be while still giving the reason.
 - Update or delete a comment when the code changes.
 
-# 4 Check CRAN before you name an R package
+# 5 Check CRAN before you name an R package
 
 Before you propose a name for an R package, check that nobody already uses it. Search these places, and report the result with the name:
 
@@ -52,12 +56,12 @@ Before you propose a name for an R package, check that nobody already uses it. S
 
 A name that CRAN has used is usually unavailable for a new package and confuses users, so pick a different name.
 
-# 5 Write release notes for the user
+# 6 Write release notes for the user
 
 - Describe each change by its effect on the user, not by the file that changed.
 - Put breaking changes first, because the user must act on them.
 
-# 6 Nest document source files by heading level
+# 7 Nest document source files by heading level
 
 Split a long Quarto document into files that follow its headings:
 

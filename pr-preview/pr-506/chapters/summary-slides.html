@@ -135,8 +135,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -171,7 +172,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -181,7 +183,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -251,7 +253,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 17:01:35 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 00:51:32 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -375,6 +377,7 @@
 <li><a href="../chapters/grammar.html#avoid-garden-path-sentences">Avoid garden-path sentences</a>.</li>
 <li><a href="../chapters/grammar.html#name-the-object-of-a-relational-noun">Name the object of a relational noun</a>.</li>
 <li><a href="../chapters/conciseness.html#lead-with-the-subject">Lead with the subject</a>.</li>
+<li><a href="../chapters/conciseness.html#start-a-sentence-from-what-the-reader-already-knows">Start a sentence from what the reader already knows</a>, and end it with the new information.</li>
 <li><a href="../chapters/conciseness.html#make-every-word-tell">Make every word tell</a>: cut words that carry no meaning, but keep detail that does.</li>
 <li><a href="../chapters/conciseness.html#limit-complex-sentence-structures">Limit complex sentence structures</a>.</li>
 <li><a href="../chapters/conciseness.html#do-not-rule-out-readings-no-reader-would-make">Do not rule out readings that no reader would make</a>: when you keep a contrast, say who holds the other reading and cite a source.</li>
@@ -399,6 +402,10 @@
 <li><a href="../chapters/teaching.html#use-real-data-and-compute-every-number">Use real data and compute every number</a>.</li>
 <li><a href="../chapters/teaching.html#pair-exploratory-data-analysis-with-plots">Pair exploratory data analysis with plots</a>.</li>
 <li><a href="../chapters/teaching.html#show-each-idea-applied-and-in-a-figure">Show each idea applied and in a figure</a>.</li>
+<li><a href="../chapters/teaching.html#fade-worked-examples-into-exercises">Fade worked examples into exercises</a> within a unit.</li>
+<li><a href="../chapters/teaching.html#leave-a-step-to-the-reader-only-as-an-exercise">Leave a step to the reader only as an exercise</a>.</li>
+<li><a href="../chapters/teaching.html#refute-common-misconceptions">Refute common misconceptions</a> where the concept is defined or first used.</li>
+<li><a href="../chapters/teaching.html#revisit-earlier-units-in-later-exercises">Revisit earlier units in later exercises</a>.</li>
 <li><a href="../chapters/teaching.html#write-labs-for-both-languages-and-any-computer">Write labs in both R and Python</a> that run on any computer.</li>
 <li><a href="../chapters/teaching.html#make-figures-accessible">Make figures accessible</a>.</li>
 <li><a href="../chapters/teaching.html#structure-slides-for-the-reader">Structure slides for the reader</a>.</li>

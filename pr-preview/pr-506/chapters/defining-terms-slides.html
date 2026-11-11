@@ -99,7 +99,26 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2f864dea3a88ad6a30a035ab8c618cbd.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -201,8 +220,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -237,7 +257,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -247,7 +268,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -317,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 17:01:35 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 00:51:32 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -352,12 +373,13 @@
 <p>Follow these principles when introducing new <a href="#/def-term">term</a>s:</p>
 <ul>
 <li><p><strong>Provide explicit definitions:</strong> State clearly what a term means, rather than assuming readers will understand from context.</p></li>
-<li><p><strong>Be concise:</strong> Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.</p></li>
+<li><p><strong>Be concise:</strong> Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats. The one exception is the graph of a function of one or two inputs (see <em>Graph a function of one or two inputs in its definition</em>, below).</p></li>
 <li><p><strong>State technical definitions and results in both prose and a display equation:</strong> Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector <span class="math inline">\(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}\)</span> as “the value of <span class="math inline">\(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}\)</span> that minimizes the <a href="#/def-rss">residual sum of squares</a>” <em>and</em> as</p>
 <p><span class="math display">\[\hat{\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}} := \arg\min_{\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}} \text{RSS}(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}),\]</span></p>
 <p>not with only one of the two. Build the formula from terms already defined, rather than expanding them again: once the residual and total sums of squares are defined, write</p>
 <p><span class="math display">\[R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},\]</span></p>
 <p>not the two sums that RSS and TSS stand for.</p></li>
+<li><p><strong>Graph a function of one or two inputs in its definition:</strong> Every definition of a <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> of one or two inputs includes a graph of that function, in 2D for one input and in 3D for two inputs (Ezra, 2026-11-10). Put the graph in the definition block, after the defining equation. Draw a 3D graph by the rules in <a href="../chapters/slides-posters-figures.html#sec-3d-graphs">Three-dimensional graphs</a>.</p></li>
 <li><p><strong>Open a definition with the bold <a href="#/def-term">term</a> as its subject:</strong> Start the sentence with the term, then state what it is, and put the defining expression after that sentence. For example, write “The <strong><a href="#/def-variance-expression-and-prose">variance</a></strong> of a random variable <span class="math inline">\(X\)</span> is the <a href="#/def-population">population</a> mean of the squared deviation of <span class="math inline">\(X\)</span> from its population mean,” followed by the equation <span class="math inline">\({\operatorname{Var}\mathopen{}\left(X\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}\)</span>. Do not open with the expression and name the term afterward, as in “<span class="math inline">\({\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}\)</span> is the variance of <span class="math inline">\(X\)</span>.” A reader who looks up a term should find the term first, and the definition then reads as one statement about that term.</p></li>
 <li><p><strong>Define a statistical model by its distribution, and derive its other forms:</strong> Define a regression model by the distribution of the outcome conditional on the covariates, centered on a named mean <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>. For example, define simple linear regression as <span class="math inline">\(Y_i \mid X_i = x_i \sim \text{N}(\mu_i, \sigma^2)\)</span>, independently, with <span class="math inline">\(\mu_i := \mu(x_i)\)</span> and <span class="math inline">\(\mu(x) := \beta_0 + \beta_x x\)</span>. Then define the deviation <span class="math inline">\(\varepsilon_i := Y_i - \mu(x_i)\)</span>, and state <span class="math inline">\(Y_i = \mu_i + \varepsilon_i\)</span> with <span class="math inline">\(\varepsilon_i \mid X_i = x_i \sim \text{N}(0, \sigma^2)\)</span> as a result proved from those definitions. Writing the model as “<span class="math inline">\(Y_i = \beta_0 + \beta_x x_i + \varepsilon_i\)</span> with Gaussian errors” makes the definition rest on a quantity that has not been defined yet, and hides that the model is a statement about the outcome’s distribution.</p></li>
 <li><p><strong>Define a new symbol by its most direct, literal meaning, and derive its other forms:</strong> Define a shorthand symbol directly from the objects it summarizes, then prove any equivalent form as a result. For example, with deviations <span class="math inline">\(\delta_i := y_i - \mu\)</span> from the <a href="#/def-population">population</a> mean <span class="math inline">\(\mu\)</span>, define the <a href="#/def-sample-mean">sample mean</a> of the deviations as</p>
@@ -405,10 +427,20 @@
 </blockquote>
 <p>The first block cannot be linked to as “left distributivity” without also pointing at the other law, and one example cannot illustrate both. For numbers, right distributivity follows from left distributivity because multiplication commutes, so one example checks both. Matrix multiplication does not commute, so establishing one law does not establish the other, and each needs its own example.</p>
 </div></li>
+<li><p><strong>Don’t nest definitions:</strong> A definition whose statement names a further <a href="#/def-term">term</a>, such as a label on one of its conditions, an italicized name in a list, or “is called <em>X</em>”, defines that term inside itself. Define each such term in its own sibling <code>#def-</code> div, before the definition that uses it, and state that definition in terms of it, linking it. For example, a <a href="https://github.com/Morrison-Lab/mds/issues/710">definition of a linear map that labels its two conditions <em>additivity</em> and <em>homogeneity</em></a> nests two definitions. Define an additive function and a homogeneous function in their own divs, then define a linear map as a function that is both.</p>
+<blockquote>
+<p>❌ <strong>Definition (linear map).</strong> A function <span class="math inline">\(f\)</span> is a <em>linear map</em> if <span class="math inline">\(f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}+ \mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{y}}\vphantom{y}}) = f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}) + f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{y}}\vphantom{y}})\)</span> (<em>additivity</em>) and <span class="math inline">\(f(c\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}}) = c f(\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{x}}\vphantom{x}})\)</span> (<em>homogeneity</em>).</p>
+<p>✅ <strong>Definition (linear map).</strong> A function <span class="math inline">\(f\)</span> is a <em>linear map</em> if it is both additive and homogeneous.</p>
+</blockquote></li>
 <li><p><strong>Name the synonyms:</strong> When a field uses several words for one concept, such as <em>learning</em>, <em>training</em> and <em>fitting</em> a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title as a comma-separated list, with the primary name first, as in “Postulate, axiom”, <!-- check-term-links: allow --> and bold each where it first appears in the definition. Do not use parentheses or a phrase such as “also called” in the title. This covers the names other sources use, such as a textbook’s, which belong in the title and in bold too, as in “Risk, expected loss, population risk, true risk, generalization error, expected prediction error”. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who encounters the other words in another source can then connect them to the concept already learned (see <a href="../chapters/word-choice.html#minimize-unnecessary-jargon">Minimize unnecessary jargon</a>).</p></li>
 <li><p><strong>Link the defined word to its Wiktionary entry:</strong> In a <code>#def-</code> div, link the first instance of the bolded <a href="#/def-term">term</a> being defined to its entry in <a href="https://en.wiktionary.org/">Wiktionary</a>, where an entry exists (Ezra, 2026-11-06). For example, a definition of a <a href="#/def-population">population</a> begins “The <strong><a href="https://en.wiktionary.org/wiki/population">population</a></strong> of a study is …”. Link only the defined name itself, not the words around it, such as “of a study”. Link only the first bolded instance in the div, and check that the entry exists before linking it. Look up the whole name, however many words it has: “standard deviation” has an entry, so it gets the link. When the whole name has no entry, it gets no link; do not link one of its words instead. An alternative name in the div title gets its own link where it first appears in bold. The reader then sees the ordinary meaning of the word before the technical one.</p></li>
 <li><p><strong>Tell synonyms from hyponyms:</strong> A <em>synonym</em> names the same concept as the primary term, so it belongs in the div title. A <em>hyponym</em> names a special case of another term, such as “linear regression” for “regression model”, so it is a different concept. Give each hyponym its own <code>#def-</code> div, and never put it in the title of the general term or introduce it with “also called” (Ezra, 2026-10-23). When unsure, check both directions. Is every instance of the new term an instance of the old term? Is every instance of the old term an instance of the new term? If only the first holds, the new term is a hyponym.</p></li>
 <li><p><strong>Tell synonyms from equivalent concepts:</strong> Only true synonyms share a div title as aliases: names for one concept, which has one definition. Two concepts that happen to be equivalent are different concepts, however often they coincide. Give each its own definition, an example after each, and a theorem showing that they agree (see <em>Put only the defining equation in a definition, and state equivalences as results</em> above). A test: if each name has its own natural definition, they are two concepts. For example, a loss <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> defined as the negative log of the predicted probability of the observed class and a loss function defined as the <a href="https://morrison-lab.github.io/pds/expectation.html#def-cross-entropy">cross-entropy</a> between two distributions each have a natural definition, so give each its own div and state that they agree as a theorem, instead of titling one div with both names.</p></li>
+<li><p><strong>Link an earlier site’s definition instead of defining a concept again:</strong> The lab’s notes sites form a prerequisite sequence, so before defining a <a href="#/def-term">term</a>, search the sites earlier in the sequence for it. When one defines it, link that definition, and define the term locally only to name a difference. Two definitions of one term on two sites drift apart in notation and scope, and a reader who meets both cannot tell which one the notes mean. The <a href="https://github.com/Morrison-Lab/gha/tree/main/check-math-definitions"><code>check-math-definitions</code></a> check flags colliding definitions across sibling repositories.</p>
+<blockquote>
+<p>❌ A <em>function</em> assigns one output to each input. The mean of a regression model is a function of the predictors.</p>
+<p>✅ The mean of a regression model is a <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> of the predictors.</p>
+</blockquote></li>
 <li><p><strong>Keep an entrenched misnomer, and clarify it once:</strong> Some names the literature has fixed are technically wrong, such as “linear regression” for a model with an intercept, <!-- check-term-links: allow --> whose mean is an <a href="https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function">affine</a> <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> of the predictors, not a <a href="https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function">linear</a> one (Ezra, 2026-10-28). Wherever the wording is yours, use the precise word: write “affine in the predictors” for a function with an intercept, and “linear” only when the intercept is zero. Keep a name the reader will meet in other sources, such as linear regression, linear decay or linear approximation, because renaming it cuts the reader off from that literature. Clarify it once, in parentheses, at its definition or its first use on a page, as in “linear (strictly, affine) decay”, and use the established name unqualified after that.</p></li>
 <li><p><strong>Distinguish estimands from estimators:</strong> An <em>estimand</em> is the quantity a study is after, defined on the population or the data-generating distribution; an <em>estimator</em> is the rule that computes an estimate of it from a sample. Define a quantity first as its estimand, then give the estimator that targets it, and keep the two in separate notation (for example, <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\hat\theta\)</span>). A definition that gives only the sample formula hides what the formula estimates, and invites the reader to treat one sample’s value as the quantity itself. Keep that order across the whole document, not only within one definition: the estimand’s definition, with its exercise and example, comes before the estimator’s, and the estimator’s definition links back to it. For example, define the risk of a model, its expected loss on new data, before the empirical risk, its average loss on the training data; define the population mean before the sample mean, and a parameter before its maximum likelihood estimate. Reading the estimator first leaves the reader with a formula and no answer to the question of what it is for. When several related quantities are defined together, give a table with one row per quantity and a column each for its name, its estimand and its estimator. For a binary classifier with prediction <span class="math inline">\(\hat Y\)</span> of the true class <span class="math inline">\(Y\)</span>, and counts <span class="math inline">\(\text{TP}\)</span>, <span class="math inline">\(\text{FP}\)</span>, <span class="math inline">\(\text{FN}\)</span> and <span class="math inline">\(\text{TN}\)</span> from a test set of size <span class="math inline">\(n\)</span>:</p>
 <table class="caption-top">
@@ -636,12 +668,12 @@
 <section id="presenting-a-derivation-exercise-solution-theorem-proof" class="slide level2" data-number="9">
 <h2><span class="header-section-number">9</span> Presenting a derivation: exercise, solution, theorem, proof</h2>
 </section>
-<section class="slide level2">
+<section class="slide level2 smaller scrollable" id="references">
 
 <p>In teaching material, present a derivation as one or more exercises, each followed by its solution, then the theorem that records the result, with a short proof that cites the exercises. The reader encounters the question before the answer, can try each step before reading it, and can find the result itself without searching through the working.</p>
 <p>Follow these principles:</p>
 <ul>
-<li><strong>One exercise per step.</strong> Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.</li>
+<li><strong>One exercise per step.</strong> Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative. Title each exercise by the subgoal that it reaches, such as “Solving the score equation”, so that the titles alone outline the derivation. Labeling the subgoals of a worked example is one of the instructional principles of worked-examples research <span class="citation" data-cites="atkinson2000">(<a href="#/references" role="doc-biblioref" onclick="">Atkinson et al. 2000</a>)</span>.</li>
 <li><strong>The solution follows its exercise.</strong> Put each solution directly after its exercise, and give it an id named after the exercise (<code>#exr-foo</code> and <code>#sol-foo</code>), so a reader who wants to check one step can find its working.</li>
 <li><strong>The theorem states the result; the proof cites results.</strong> The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the results it rests on, not a second copy of their working. A proof that does no derivation of its own is one line citing the solution of the exercise that asks for the result, and every later argument cites the theorem, never the solution (see <a href="../chapters/mathematical-writing.html#cite-results-not-solutions">Cite results, not solutions</a>).</li>
 <li><strong>Define notation first.</strong> Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.</li>
@@ -919,6 +951,11 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 })();
 </script>
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-atkinson2000" class="csl-entry" role="listitem">
+Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. <span>“Learning from Examples: Instructional Principles from the Worked Examples Research.”</span> <em>Review of Educational Research</em> 70 (2): 181–214. <a href="https://doi.org/10.3102/00346543070002181">https://doi.org/10.3102/00346543070002181</a>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

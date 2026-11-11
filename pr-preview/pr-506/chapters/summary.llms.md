@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-09 17:01:35 (PST)
+Last modified: 2026-11-11 00:51:32 (PST)
 
 > **NOTE:**
 >
@@ -103,6 +103,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences).
 - [Name the object of a relational noun](../chapters/grammar.llms.md#name-the-object-of-a-relational-noun).
 - [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject).
+- [Start a sentence from what the reader already knows](../chapters/conciseness.llms.md#start-a-sentence-from-what-the-reader-already-knows), and end it with the new information.
 - [Make every word tell](../chapters/conciseness.llms.md#make-every-word-tell): cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](../chapters/conciseness.llms.md#limit-complex-sentence-structures).
 - [Do not rule out readings that no reader would make](../chapters/conciseness.llms.md#do-not-rule-out-readings-no-reader-would-make): when you keep a contrast, say who holds the other reading and cite a source.
@@ -122,6 +123,10 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Use real data and compute every number](../chapters/teaching.llms.md#use-real-data-and-compute-every-number).
 - [Pair exploratory data analysis with plots](../chapters/teaching.llms.md#pair-exploratory-data-analysis-with-plots).
 - [Show each idea applied and in a figure](../chapters/teaching.llms.md#show-each-idea-applied-and-in-a-figure).
+- [Fade worked examples into exercises](../chapters/teaching.llms.md#fade-worked-examples-into-exercises) within a unit.
+- [Leave a step to the reader only as an exercise](../chapters/teaching.llms.md#leave-a-step-to-the-reader-only-as-an-exercise).
+- [Refute common misconceptions](../chapters/teaching.llms.md#refute-common-misconceptions) where the concept is defined or first used.
+- [Revisit earlier units in later exercises](../chapters/teaching.llms.md#revisit-earlier-units-in-later-exercises).
 - [Write labs in both R and Python](../chapters/teaching.llms.md#write-labs-for-both-languages-and-any-computer) that run on any computer.
 - [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible).
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).

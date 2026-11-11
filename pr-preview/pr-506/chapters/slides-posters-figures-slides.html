@@ -220,8 +220,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -256,7 +257,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -266,7 +268,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -336,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-09 17:01:35 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 00:51:32 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -392,7 +394,15 @@
 </section>
 <section class="slide level2">
 
-<p>Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive <a href="https://plotly.com/r/">plotly</a> figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. Keep a static image for the PDF and Word outputs, which cannot show a widget. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.</p>
+<p>Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive <a href="https://plotly.com/r/">plotly</a> figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure, as a noninteractive version of it (Ezra, 2026-11-10). A note that sends readers to the HTML version does not replace the figure.</p>
+<p>When a definition or example graphs a model whose parameters are chosen rather than fitted to data, such as a density with a given mean and covariance, make the graph interactive in HTML output, slide decks included (Ezra, 2026-11-10). Give each parameter a slider, a numeric entry box, or both, and redraw the graph as the reader changes them. Start each control at the value the text uses, so the prose about that value describes the graph as it first appears, and in static formats draw the graph at those starting values. A graph of a model fitted to data stays fixed, because its parameters come from the data. In Quarto, build the graph with <a href="https://quarto.org/docs/interactive/ojs/">Observable JS</a> cells, which run in both the website and the slides:</p>
+<ul>
+<li>Make a slider with a numeric box beside it with <code>Inputs.range</code>, and a numeric box alone with <code>Inputs.number</code>.</li>
+<li>Draw a 2D graph with <a href="https://observablehq.com/plot/">Observable Plot</a>, and a 3D surface with <a href="https://plotly.com/javascript/3d-surface-plots/">plotly.js</a>.</li>
+<li>Put the cells in a <code>.content-visible when-format="html"</code> div.</li>
+<li>Draw the static version with an R chunk that runs only outside HTML output.</li>
+</ul>
+<p>Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.</p>
 <p>Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:</p>
 <ul>
 <li>Pointer only: “The symmetry of <code>@exm-x</code>.” The reader learns nothing until following the link.</li>
@@ -424,21 +434,78 @@
 <li><a href="https://clauswilke.com/dataviz/">Fundamentals of Data Visualization</a> by Claus Wilke - a free online book on choosing the kind of figure, the colors, and the layout for a set of data</li>
 <li><a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> - style HTML articles like Edward Tufte’s books and handouts, with sidenotes, typography, and tight integration of graphics with text</li>
 </ul>
-<h3 data-number="4.1" id="combine-several-figures-with-patchwork"><span class="header-section-number">4.1</span> Combine several figures with patchwork</h3>
+<h3 data-number="4.1" id="sec-combine-panels"><span class="header-section-number">4.1</span> Combine panels with Quarto layout or in code</h3>
+</section>
+<section class="slide level2">
+
+<p>A figure or table with several panels can be put together in two places:</p>
+<ul>
+<li><strong>Quarto layout</strong>: each panel is a subfigure or subtable. A subfigure is a <code>#fig-</code> div nested in the parent figure’s div, and a subtable is a <code>#tbl-</code> div nested in the parent table’s div. The parent div arranges the panels with <code>layout-ncol</code>, <code>layout-nrow</code>, or <code>layout</code>.</li>
+<li><strong>Code</strong>: one plot or table object holds every panel, made with <a href="https://patchwork.data-imaginist.com/">patchwork</a>, ggplot2 facets, plotly’s <code>subplot()</code>, matplotlib’s <code>subplots()</code>, or one table with grouped columns.</li>
+</ul>
+<p>Use Quarto layout by default. Quarto gives each panel its own label, subcaption, and alt text, and those keep working in every output format:</p>
+<ul>
+<li>A cross-reference names the panel, as in “Figure 3b”, so the text can point a reader at one panel without “left” or “right”.</li>
+<li>Each panel’s subcaption says what that panel shows, so the panels need no hand-made titles that repeat it.</li>
+<li>Each panel’s <code>fig-alt</code> describes that panel alone, so a screen reader user hears the panels one at a time.</li>
+<li>Each panel keeps its own interactive widget in HTML and its own static version in PDF and Word, so a static fallback can be drawn panel by panel.</li>
+</ul>
+<p>Combine the panels in code instead when they share something that Quarto layout cannot give them:</p>
+<ul>
+<li><strong>A shared axis</strong>: the panels must line up on one scale, such as one y-axis across panels, so a reader can compare heights across them. Separate subfigures each get their own axis limits and plot margins, so their axes line up only by chance.</li>
+<li><strong>A shared legend</strong>: several panels use the same colors or line types, and one legend for all of them, collected with patchwork’s <code>guides = "collect"</code>, saves repeating it.</li>
+<li><strong>One plot of subsets</strong>: the panels are the same plot drawn for each level of a variable. Use a facet, whose strip labels name each level.</li>
+<li><strong>Linked interaction</strong>: the panels should respond together, such as a shared zoom or hover across plotly panels with <code>subplot(shareX = TRUE)</code>.</li>
+</ul>
+<p>A panel combined in code has no label of its own for a cross-reference. Tag the panels in the code, in the same style as Quarto’s subcaptions, with <code>plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")</code> in patchwork, and refer to them in the text as “panel (b) of <code>@fig-x</code>”. Write one alt text for the whole figure that describes each panel in turn, and give the panels in the caption by their tags. A combined interactive figure, such as one plotly widget with two 3D scenes, needs a static version that shows every panel too.</p>
+<p>Keep panels in separate subfigures when they share nothing. Two 3D surfaces from two models, each with its own rotation, are two subfigures, not one widget with two scenes.</p>
+<h4 id="subfigures-with-language-tabsets">Subfigures with language tabsets</h4>
+<p>Put a language tabset (<code>group="language"</code>) inside each subfigure, not the subfigures inside one tabset, when each panel has R and Python versions:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a aria-label="1"></a>::: {#fig-surfaces layout-ncol=2}</span>
+<span id="cb1-2"><a aria-label="2"></a></span>
+<span id="cb1-3"><a aria-label="3"></a>::: {#fig-surfaces-additive}</span>
+<span id="cb1-4"><a aria-label="4"></a>::: {.panel-tabset group="language"}</span>
+<span id="cb1-5"><a aria-label="5"></a><span class="fu">## R</span></span>
+<span id="cb1-6"><a aria-label="6"></a><span class="in">```r</span></span>
+<span id="cb1-7"><a aria-label="7"></a><span class="co"># draw the additive model's surface</span></span>
+<span id="cb1-8"><a aria-label="8"></a><span class="in">```</span></span>
+<span id="cb1-9"><a aria-label="9"></a><span class="fu">## Python</span></span>
+<span id="cb1-10"><a aria-label="10"></a><span class="in">```python</span></span>
+<span id="cb1-11"><a aria-label="11"></a><span class="co"># draw the additive model's surface</span></span>
+<span id="cb1-12"><a aria-label="12"></a><span class="in">```</span></span>
+<span id="cb1-13"><a aria-label="13"></a>:::</span>
+<span id="cb1-14"><a aria-label="14"></a>The additive model.</span>
+<span id="cb1-15"><a aria-label="15"></a>:::</span>
+<span id="cb1-16"><a aria-label="16"></a></span>
+<span id="cb1-17"><a aria-label="17"></a>::: {#fig-surfaces-interaction}</span>
+<span id="cb1-18"><a aria-label="18"></a><span class="co">&lt;!-- the same tabset for the interaction model --&gt;</span></span>
+<span id="cb1-19"><a aria-label="19"></a>The model with an interaction term.</span>
+<span id="cb1-20"><a aria-label="20"></a>:::</span>
+<span id="cb1-21"><a aria-label="21"></a></span>
+<span id="cb1-22"><a aria-label="22"></a>Fitted surfaces of the two models for fuel economy over weight and model year.</span>
+<span id="cb1-23"><a aria-label="23"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Each <code>r</code> or <code>python</code> block stands for an executed chunk, whose fence is <code>{r}</code> or <code>{python}</code> in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on.</p>
+<h4 id="subtables">Subtables</h4>
+<p>The same choice holds for tables:</p>
+<ul>
+<li>Put tables that a reader compares side by side, but that have different rows or columns, in subtables of a <code>#tbl-</code> div with <code>layout-ncol</code>, each with its own subcaption.</li>
+<li>Put tables that share their rows in one table, with a header over each group of columns, such as a <code>tab_spanner()</code> in the R package <a href="https://gt.rstudio.com/">gt</a>, so the rows line up and each row label appears once.</li>
+</ul>
+<h3 data-number="4.2" id="combine-several-figures-with-patchwork"><span class="header-section-number">4.2</span> Combine several figures with patchwork</h3>
 </section>
 <section class="slide level2">
 
 <p>The R package <a href="https://patchwork.data-imaginist.com/">patchwork</a> combines several ggplot2 figures into one figure with panel labels. The <code>+</code> operator places plots side by side, and the <code>/</code> operator stacks them. In this demo, <code>p1</code>, <code>p2</code>, and <code>p3</code> stand for three ggplot2 plots that you have already made:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="fu">library</span>(patchwork)</span>
-<span id="cb1-2"><a aria-label="2"></a></span>
-<span id="cb1-3"><a aria-label="3"></a>(p1 <span class="sc">+</span> p2) <span class="sc">/</span> p3 <span class="sc">+</span></span>
-<span id="cb1-4"><a aria-label="4"></a>  <span class="fu">plot_layout</span>(<span class="at">guides =</span> <span class="st">"collect"</span>) <span class="sc">+</span></span>
-<span id="cb1-5"><a aria-label="5"></a>  <span class="fu">plot_annotation</span>(<span class="at">tag_levels =</span> <span class="st">"A"</span>) <span class="sc">&amp;</span></span>
-<span id="cb1-6"><a aria-label="6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb2-2"><a aria-label="2"></a></span>
+<span id="cb2-3"><a aria-label="3"></a>(p1 <span class="sc">+</span> p2) <span class="sc">/</span> p3 <span class="sc">+</span></span>
+<span id="cb2-4"><a aria-label="4"></a>  <span class="fu">plot_layout</span>(<span class="at">guides =</span> <span class="st">"collect"</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a aria-label="5"></a>  <span class="fu">plot_annotation</span>(<span class="at">tag_levels =</span> <span class="st">"a"</span>, <span class="at">tag_prefix =</span> <span class="st">"("</span>, <span class="at">tag_suffix =</span> <span class="st">")"</span>) <span class="sc">&amp;</span></span>
+<span id="cb2-6"><a aria-label="6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The expression puts <code>p1</code> and <code>p2</code> side by side above <code>p3</code>:</p>
 <ul>
 <li><code>plot_layout(guides = "collect")</code> merges the plots’ legends into one.</li>
-<li><code>plot_annotation(tag_levels = "A")</code> labels the panels A, B, and C.</li>
+<li><code>plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")</code> labels the panels (a), (b), and (c), the style of Quarto’s subcaptions.</li>
 <li><code>&amp;</code> applies the bottom legend position to every panel.</li>
 </ul>
 </section>
@@ -453,9 +520,10 @@
 <li><p>Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points, placed right after the contour plot. The 3D plot may be a separate figure that cross-references the contour plot.</p></li>
 <li><p>Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.</p></li>
 <li><p>Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.</p></li>
-<li><p>An interactive plot that readers can rotate, such as one made with <a href="https://plotly.com/r/3d-surface-plots/">plotly</a>, helps on the web, but PDF and Word output show no interactive plot, so also provide a static view at a fixed angle (see <a href="../chapters/teaching.html#make-figures-accessible">Make figures accessible</a>).</p></li>
-<li><p>In a Python tab, draw the interactive 3D plot with <a href="https://plotly.com/python/3d-charts/">plotly</a> too, so the R and Python tabs of a figure look alike. Keep the <code>matplotlib</code> version for the PDF and Word output, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a <code>knitr</code> chunk, print the figure as one raw HTML block under <code>results: asis</code>, because <code>fig.show()</code> needs <code>ipython</code> and several <code>print</code> calls split the chunk’s output:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-label="1"></a><span class="bu">print</span>(<span class="st">"```{=html}</span><span class="ch">\n</span><span class="st">"</span> <span class="op">+</span> fig.to_html(full_html<span class="op">=</span><span class="va">False</span>, include_plotlyjs<span class="op">=</span><span class="st">"cdn"</span>) <span class="op">+</span> <span class="st">"</span><span class="ch">\n</span><span class="st">```"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<li><p>Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10). When all three axes are in the same units, such as a surface in physical space, scale the axes equally in data units instead. In plotly, set the scene’s <code>aspectmode</code> to <code>"cube"</code> or to <code>"data"</code>. Do not leave it unset: plotly’s default, <code>"auto"</code>, then draws each axis in proportion to the span of its data unless one axis range is more than 4 times another, <!-- check-term-links: allow: an axis range, not the range of a function --> so a function whose values span a wider range than its inputs draws a tall, thin column.</p></li>
+<li><p>An interactive plot that readers can rotate, such as one made with <a href="https://plotly.com/r/3d-surface-plots/">plotly</a>, helps on the web, but static formats such as PDF, Word, and PowerPoint show no interactive plot, so render a static view at a fixed angle there (see <a href="#/sec-scientific-figures">Scientific figures</a> and <a href="../chapters/teaching.html#make-figures-accessible">Make figures accessible</a>).</p></li>
+<li><p>In a Python tab, draw the interactive 3D plot with <a href="https://plotly.com/python/3d-charts/">plotly</a> too, so the R and Python tabs of a figure look alike. Keep the <code>matplotlib</code> version for the static formats, where it is the static view at a fixed angle, and run it only in those outputs, the way the R tab runs its plotly code only in HTML output. In a <code>knitr</code> chunk, print the figure as one raw HTML block under <code>results: asis</code>, because <code>fig.show()</code> needs <code>ipython</code> and several <code>print</code> calls split the chunk’s output:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-label="1"></a><span class="bu">print</span>(<span class="st">"```{=html}</span><span class="ch">\n</span><span class="st">"</span> <span class="op">+</span> fig.to_html(full_html<span class="op">=</span><span class="va">False</span>, include_plotlyjs<span class="op">=</span><span class="st">"cdn"</span>) <span class="op">+</span> <span class="st">"</span><span class="ch">\n</span><span class="st">```"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>End each call that returns the figure, such as <code>add_trace</code> and <code>update_layout</code>, with <code>;</code> so that reticulate does not print the figure after every call, and add <code>plotly</code> to the page’s <code>reticulate::py_require</code> list.</p></li>
 <li><p>Give a 3D plot alt text that states what the surface looks like, such as “a bowl with its lowest point at …”.</p></li>
 </ul>
