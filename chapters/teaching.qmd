@@ -58,7 +58,7 @@ A practice guide from the Institute of Education Sciences
 rates the evidence as strong for two related practices:
 quizzes that bring students back to key content,
 and deep explanatory questions such as "why" and "how do you know"
-[@pashler2007, recommendations 5 and 7].
+[@pashler2007, recommendations 5b and 7].
 The exercise-first structure is this guide's own convention
 for putting that result into practice.
 Pose each task as an exercise, give students time to try it, and then show the solution.
@@ -1174,7 +1174,7 @@ and answering questions on earlier material helps more than rereading it.
 The practice guide from the Institute of Education Sciences
 rates the evidence for spacing as moderate
 and for quizzes that re-expose students to key content as strong
-[@pashler2007, recommendations 1 and 5].
+[@pashler2007, recommendations 1 and 5b].
 Of ten study techniques in one review,
 only practice testing and distributed practice earned the top rating of high utility [@dunlosky2013].
 
