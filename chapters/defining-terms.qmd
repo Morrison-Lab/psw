@@ -109,6 +109,8 @@ Follow these principles when introducing new [term](#def-term)s:
   using only the words necessary to convey the meaning.
   A definition block holds the defining statement and nothing else:
   no examples, special cases, motivation or caveats.
+  The one exception is the graph of a function of one or two inputs
+  (see *Graph a function of one or two inputs in its definition*, below).
 
 - **State technical definitions and results in both prose and a display equation:**
   Give a quantitative term, or a theorem or corollary,
@@ -137,6 +139,13 @@ Follow these principles when introducing new [term](#def-term)s:
   $$R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},$$
 
   not the two sums that RSS and TSS stand for.
+
+- **Graph a function of one or two inputs in its definition:**
+  Every definition of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of one or two inputs
+  includes a graph of that function,
+  in 2D for one input and in 3D for two inputs (Ezra, 2026-11-10).
+  Put the graph in the definition block, after the defining equation.
+  Draw a 3D graph by the rules in [Three-dimensional graphs](slides-posters-figures.qmd#sec-3d-graphs).
 
 - **Open a definition with the bold [term](#def-term) as its subject:**
   Start the sentence with the term, then state what it is,
