@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-11 01:18:27 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 01:36:35 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -584,15 +584,31 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 </div>
 </section>
-<section id="minimize-unnecessary-jargon" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Minimize unnecessary jargon</h2>
+<section id="keep-this-and-also-out-of-consecutive-sentences" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Keep “this” and “also” out of consecutive sentences</h2>
+</section>
+<section class="slide level2">
+
+<p>The Stanford course notes on mathematical writing say to “avoid words like ‘this’ or ‘also’ in consecutive sentences”. They explain that such words, and “unusual or polysyllabic utterances”, “tend to stick in a reader’s mind longer than other words, and good style will keep ‘sticky’ words spaced well apart” <span class="citation" data-cites="knuth1987mathematical">(<a href="#/references" role="doc-biblioref" onclick="">Knuth et al. 1987</a>, point 9)</span>. So avoid using “this” or “also” in two sentences in a row.</p>
+<div id="exm-sticky-words" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Spacing out “this” and “also”)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ This model also fits the training data well. This fit also holds on the test set.</p>
+<p>✅ The model also fits the training data well. Its fit carries over to the test set.</p>
+</blockquote>
+<p>The ❌ pair uses “this” and “also” in both sentences. The ✅ pair rewords the sentences but keeps both claims, and uses “also” once and “this” not at all, without a synonym such as “too” in the second sentence.</p>
+</div>
+<p>The same point of the notes says to “use parallelism when parallel concepts are being discussed” <span class="citation" data-cites="knuth1987mathematical">(<a href="#/references" role="doc-biblioref" onclick="">Knuth et al. 1987</a>, point 9)</span>. A word repeated to make two statements parallel is repeated on purpose, so keep it, as <a href="../chapters/mathematical-writing.html#repeat-the-wording-of-parallel-results-then-point-out-the-difference">Repeat the wording of parallel results, then point out the difference</a> describes.</p>
+</section>
+<section id="minimize-unnecessary-jargon" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Minimize unnecessary jargon</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
 <p>Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical <a href="../chapters/defining-terms.html#def-term">term</a> can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.</p>
 <p>Prefer normal words used in their usual sense. When you do need a technical term, define it clearly at first use, then keep using the same term rather than switching between synonyms. When the field itself uses several names for the concept, list them where you define it (see <a href="../chapters/defining-terms.html#guidelines-for-defining-terms">Name the synonyms</a>).</p>
 <div id="exm-jargon" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Replacing unnecessary jargon)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.</p>
 <p>✅ We wrote a custom program to combine data from several sources.</p>
@@ -795,6 +811,9 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-google2025style" class="csl-entry" role="listitem">
 Google. n.d. <em>Google Developer Documentation Style Guide</em>. Web page. <a href="https://developers.google.com/style">https://developers.google.com/style</a>.
+</div>
+<div id="ref-knuth1987mathematical" class="csl-entry" role="listitem">
+Knuth, Donald E., Tracy Larrabee, and Paul M. Roberts. 1987. <em>Mathematical Writing</em>. <a href="https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf">https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf</a>.
 </div>
 <div id="ref-wikipedia_history_of_english" class="csl-entry" role="listitem">
 Wikipedia contributors. 2026. <em>History of <span>English</span> — <span>Wikipedia</span><span>,</span> the Free Encyclopedia</em>. <a href="https://en.wikipedia.org/wiki/History_of_English">https://en.wikipedia.org/wiki/History_of_English</a>.

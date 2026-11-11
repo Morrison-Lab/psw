@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 01:18:27 (PST)
+Last modified: 2026-11-11 01:36:35 (PST)
 
 > **NOTE:**
 >
@@ -279,6 +279,7 @@ A warn-only check ([gha#1368](https://github.com/Morrison-Lab/gha/pull/1368)) fl
 | Motivate a result before you derive it | [Show why you need a result before you derive it](../chapters/notation.llms.md#show-why-you-need-a-result-before-you-derive-it) |
 | Avoid strings of nouns used as adjectives | [Rewrite noun strings and hidden verbs](../chapters/inclusive-writing.llms.md#rewrite-noun-strings-and-hidden-verbs) |
 | Avoid unnecessary jargon | [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon) |
+| Keep “this” and “also” out of consecutive sentences | [Keep “this” and “also” out of consecutive sentences](../chapters/word-choice.llms.md#keep-this-and-also-out-of-consecutive-sentences) |
 | Write sentences that can be read from left to right without ambiguity | [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) |
 | Use “that” instead of “which” in a [restrictive clause](../chapters/grammar.llms.md#def-restrictive-clause) | [Relative pronouns](../chapters/grammar.llms.md#relative-pronouns) |
 | Do not praise your own work | [Tone](../chapters/avoid-cliches.llms.md#tone) |
