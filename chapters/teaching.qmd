@@ -1122,7 +1122,7 @@ and add the names of the reused data, variables, parameters, or model.
 Describe each dataset once,
 in its own dataset callout with a linkable id such as `#dat-wcgs`.
 Never describe a dataset in a definition div,
-because a dataset is not a [term](defining-terms.qmd#def-term) with a defining equation
+because a dataset is not a term with a defining equation <!-- check-term-links: allow: already linked at the start of this passage -->
 (Ezra, 2026-11-02).
 The callout gives:
 
