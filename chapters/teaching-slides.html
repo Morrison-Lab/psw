@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-10 22:06:12 (PST)</p>
+  <p class="date">Last modified: 2026-11-10 23:59:59 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -416,7 +416,7 @@
 </section>
 <section class="slide level2">
 
-<p>Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone <span class="citation" data-cites="freeman2014active">(<a href="#/references" role="doc-biblioref" onclick="">Freeman et al. 2014</a>)</span>. The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.</p>
+<p>Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone <span class="citation" data-cites="freeman2014active">(<a href="#/references" role="doc-biblioref" onclick="">Freeman et al. 2014</a>)</span>. A practice guide from the Institute of Education Sciences rates the evidence as strong for two related practices: quizzes that bring students back to key content, and deep explanatory questions such as “why” and “how do you know” <span class="citation" data-cites="pashler2007">(<a href="#/references" role="doc-biblioref" onclick="">Pashler et al. 2007</a>, recommendations 5b and 7)</span>. The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.</p>
 <ul>
 <li><p>Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.</p></li>
 <li><p>Pose every calculation, derivation, or proof as an exercise, and put the worked steps in the solution.</p></li>
@@ -658,6 +658,7 @@
 </section>
 <section class="slide level2">
 
+<p>Connecting an abstract idea to a concrete case, and pairing words with a figure, both help students learn <span class="citation" data-cites="pashler2007">(<a href="#/references" role="doc-biblioref" onclick="">Pashler et al. 2007</a>, recommendations 3 and 4)</span>.</p>
 <ul>
 <li>Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.</li>
 <li>Follow every abstract div directly with a concrete <code>#exm-</code> div. The rule covers each <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code> and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The <a href="https://github.com/Morrison-Lab/ai-config/pull/4386">ai-config rule</a> links here.</li>
@@ -676,7 +677,7 @@
 </section>
 <section class="slide level2">
 
-<p>Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it.</p>
+<p>Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it. Worked-examples research supports this pairing: an example teaches most when a practice problem of the same kind sits next to it <span class="citation" data-cites="atkinson2000 pashler2007">(<a href="#/references" role="doc-biblioref" onclick="">Atkinson et al. 2000</a>; <a href="#/references" role="doc-biblioref" onclick="">Pashler et al. 2007</a>, recommendation 2)</span>.</p>
 <ul>
 <li>After every <code>#exm-</code> div, add an <code>#exr-</code> div that asks the reader to do the same thing for a different case, followed by its <code>#sol-</code> div. The exercise changes the data, the function or the question, <!-- check-term-links: allow --> so the solution is not a copy of the example.</li>
 <li>The full sequence for a new idea is therefore: the exercise that poses the question and its solution, the definition or theorem, an example, and a practice exercise with its solution.</li>
@@ -703,8 +704,59 @@
 <p>The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see <a href="#/use-real-data-and-compute-every-number">Use real data and compute every number</a>).</p>
 </div>
 </section>
-<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="16">
-<h2><span class="header-section-number">16</span> Write labs for both languages and any computer</h2>
+<section id="fade-worked-examples-into-exercises" class="slide level2" data-number="16">
+<h2><span class="header-section-number">16</span> Fade worked examples into exercises</h2>
+</section>
+<section class="slide level2">
+
+<p>Within a unit, give the reader less of each successive solution. A novice who solves a problem without guidance spends working memory on searching for a solution and has little left for learning the method <span class="citation" data-cites="sweller1988">(<a href="#/references" role="doc-biblioref" onclick="">Sweller 1988</a>)</span>, so worked examples teach a new method better than unguided practice <span class="citation" data-cites="atkinson2000">(<a href="#/references" role="doc-biblioref" onclick="">Atkinson et al. 2000</a>)</span>. As learners gain skill, the advantage reverses: a fully worked solution adds reading without adding learning, and can make learning worse. The reversal is called the <em>expertise reversal effect</em> <span class="citation" data-cites="kalyuga2003">(<a href="#/references" role="doc-biblioref" onclick="">Kalyuga et al. 2003</a>)</span>.</p>
+<ul>
+<li>Give the first example of a method as a fully worked solution.</li>
+<li>Leave one or more steps of the next example to the reader, as a short exercise.</li>
+<li>Give the last case as an exercise only, followed by its solution.</li>
+<li>In a later unit that uses the method again, link to the first worked example instead of working it again.</li>
+</ul>
+<div id="exm-faded-examples" class="theorem example">
+<p><span class="theorem-title"><strong>Example 7 (Fading three cases of one method)</strong></span> &nbsp;</p>
+<blockquote>
+<p>✅</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>::: {#exm-mean-height}</span>
+<span id="cb3-2"><a aria-label="2"></a>(the average height, with every step worked)</span>
+<span id="cb3-3"><a aria-label="3"></a>:::</span>
+<span id="cb3-4"><a aria-label="4"></a></span>
+<span id="cb3-5"><a aria-label="5"></a>::: {#exr-mean-weight}</span>
+<span id="cb3-6"><a aria-label="6"></a>Compute the average weight.</span>
+<span id="cb3-7"><a aria-label="7"></a>The sum of the weights is given; divide it by the number of people.</span>
+<span id="cb3-8"><a aria-label="8"></a>:::</span>
+<span id="cb3-9"><a aria-label="9"></a></span>
+<span id="cb3-10"><a aria-label="10"></a>::: {#sol-mean-weight}</span>
+<span id="cb3-11"><a aria-label="11"></a>(the division, computed by a code chunk)</span>
+<span id="cb3-12"><a aria-label="12"></a>:::</span>
+<span id="cb3-13"><a aria-label="13"></a></span>
+<span id="cb3-14"><a aria-label="14"></a>::: {#exr-mean-age}</span>
+<span id="cb3-15"><a aria-label="15"></a>Compute the average age.</span>
+<span id="cb3-16"><a aria-label="16"></a>:::</span>
+<span id="cb3-17"><a aria-label="17"></a></span>
+<span id="cb3-18"><a aria-label="18"></a>::: {#sol-mean-age}</span>
+<span id="cb3-19"><a aria-label="19"></a>(every step, computed by a code chunk)</span>
+<span id="cb3-20"><a aria-label="20"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<p>The reader sees the method once in full, then supplies one step, then does every step.</p>
+</div>
+</section>
+<section id="leave-a-step-to-the-reader-only-as-an-exercise" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Leave a step to the reader only as an exercise</h2>
+</section>
+<section class="slide level2">
+
+<p>Write every step in the exposition. When you want readers to work out a step for themselves, pose it as an exercise with a solution. A fully explicit text helps readers with little background on every measure, while readers who already know the topic can learn more from a text that makes them fill in gaps <span class="citation" data-cites="mcnamara1996">(<a href="#/references" role="doc-biblioref" onclick="">McNamara et al. 1996</a>)</span>. Guidance that helps novices can also hinder more experienced learners <span class="citation" data-cites="kalyuga2003">(<a href="#/references" role="doc-biblioref" onclick="">Kalyuga et al. 2003</a>)</span>. An exercise serves both readers: the experienced reader gets a gap to fill, and the novice gets a solution to check. A gap left silently in the exposition serves only the experienced reader.</p>
+<ul>
+<li><strong>Introductory course:</strong> work each step in the text, then add exercises after it.</li>
+<li><strong>Advanced course:</strong> a routine step of a derivation may go to the reader, posed as an <code>#exr-</code> div with its <code>#sol-</code> div. Do not write “the reader can verify” in place of the exercise.</li>
+</ul>
+</section>
+<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Write labs for both languages and any computer</h2>
 </section>
 <section class="slide level2">
 
@@ -720,8 +772,8 @@
 <li>Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.</li>
 </ul>
 </section>
-<section id="phrase-optional-steps-as-conditions" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Phrase optional steps as conditions</h2>
+<section id="phrase-optional-steps-as-conditions" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Phrase optional steps as conditions</h2>
 </section>
 <section class="slide level2">
 
@@ -738,8 +790,8 @@
 <p>✅ If you use a language other than R or Python, use a port of <code>SyncRNG</code> to get the same data. If no port exists, draw your own data from the same model; your numbers will differ slightly from the key’s.</p>
 </blockquote>
 </section>
-<section id="introduce-a-specific-case-as-a-specific-case" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Introduce a specific case as a specific case</h2>
+<section id="introduce-a-specific-case-as-a-specific-case" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Introduce a specific case as a specific case</h2>
 </section>
 <section class="slide level2">
 
@@ -755,8 +807,8 @@
 <p>✅ Consider a binary logistic regression classifier in two dimensions with parameter vector <span class="math inline">\([-2, 1, 0.5]'\)</span>.</p>
 </blockquote>
 </section>
-<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
+<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
 </section>
 <section class="slide level2">
 
@@ -775,8 +827,8 @@
 <li>Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than <code>None</code> and shows the chunk as one code block per printed value, such as a <code>&lt;matplotlib.lines.Line2D object at 0x...&gt;</code> line after every <code>ax.plot(...)</code>. End each such call with a semicolon, or assign its value.</li>
 </ul>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Present R results with modern packages</h2>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -790,8 +842,8 @@
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -808,8 +860,8 @@
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -821,8 +873,8 @@
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -834,8 +886,8 @@
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
+<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
 </section>
 <section class="slide level2">
 
@@ -853,8 +905,8 @@
 <li>A chunk that loads a package the text never mentions is <code>true</code>.</li>
 </ul>
 </section>
-<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Put a full command in a code block, not in inline code</h2>
+<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Put a full command in a code block, not in inline code</h2>
 </section>
 <section class="slide level2">
 
@@ -866,17 +918,17 @@
 <li>Introduce the block with a sentence that ends in a colon. Do not follow a semicolon or a colon in the sentence with inline code that the reader has to select by hand.</li>
 </ul>
 <div id="exm-command-block" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>: <code>install.packages(c("readr", "dplyr", "ggplot2", "purrr"))</code>.</p>
 <p>✅ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.</p>
 </div>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -888,8 +940,8 @@
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -900,8 +952,8 @@
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Split a page before it grows too long</h2>
+<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="30">
+<h2><span class="header-section-number">30</span> Split a page before it grows too long</h2>
 </section>
 <section class="slide level2">
 
@@ -915,8 +967,8 @@
 </ul>
 <p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="29">
-<h2><span class="header-section-number">29</span> Keep sibling headings to about five</h2>
+<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="31">
+<h2><span class="header-section-number">31</span> Keep sibling headings to about five</h2>
 </section>
 <section class="slide level2">
 
@@ -930,8 +982,8 @@
 </ul>
 <p>The <code>check-heading-siblings</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1390">gha#1390</a>) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="30">
-<h2><span class="header-section-number">30</span> Fold a one-paragraph section into its neighbor</h2>
+<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="32">
+<h2><span class="header-section-number">32</span> Fold a one-paragraph section into its neighbor</h2>
 </section>
 <section class="slide level2">
 
@@ -944,8 +996,8 @@
 <li>Do not delete the content: move it to the section it belongs to.</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="31">
-<h2><span class="header-section-number">31</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="33">
+<h2><span class="header-section-number">33</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -960,8 +1012,8 @@
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="32">
-<h2><span class="header-section-number">32</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="34">
+<h2><span class="header-section-number">34</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -974,7 +1026,7 @@
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -982,8 +1034,8 @@
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="33">
-<h2><span class="header-section-number">33</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="35">
+<h2><span class="header-section-number">35</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -1013,8 +1065,41 @@
 </div>
 <p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders <code>@dat-wcgs</code> as “Dataset 1” in the link text, so write the dataset name as the link text, as in <code>[WCGS data](#dat-wcgs)</code>, not “the WCGS data (<code>@dat-wcgs</code>)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in <code>chapters/citations-evidence.qmd</code>). Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="34">
-<h2><span class="header-section-number">34</span> Write grading rubrics as checklists</h2>
+<section id="refute-common-misconceptions" class="slide level2" data-number="36">
+<h2><span class="header-section-number">36</span> Refute common misconceptions</h2>
+</section>
+<section class="slide level2">
+
+<p>When a topic has a well-known misconception, state the misconception, say that it is wrong, and explain the correct idea. A text written this way is a <em>refutation text</em>. Across two decades of science-education studies, students who read refutation texts were more likely to give up a misconception than students who read an ordinary explanation of the correct idea <span class="citation" data-cites="tippett2010">(<a href="#/references" role="doc-biblioref" onclick="">Tippett 2010</a>)</span>. An explanation that never mentions the misconception lets the reader keep both ideas.</p>
+<ul>
+<li>Name the misconception in the words that students use.</li>
+<li>Say plainly that it is wrong.</li>
+<li>Show why it fails, with an example or a counterexample.</li>
+<li>Put the refutation where the concept is defined or first used, so the reader meets the correction together with the concept.</li>
+</ul>
+<div id="exm-refutation-text" class="theorem example">
+<p><span class="theorem-title"><strong>Example 10 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.</p>
+<p>✅ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed. A common misreading takes the p-value to be the probability that the null hypothesis is true. That misreading is wrong. The p-value is computed by assuming that the null hypothesis is true, so it cannot also be the probability that the null hypothesis is true.</p>
+</blockquote>
+<p>The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.</p>
+</div>
+</section>
+<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="37">
+<h2><span class="header-section-number">37</span> Revisit earlier units in later exercises</h2>
+</section>
+<section class="slide level2">
+
+<p>Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong <span class="citation" data-cites="pashler2007">(<a href="#/references" role="doc-biblioref" onclick="">Pashler et al. 2007</a>, recommendations 1 and 5b)</span>. Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility <span class="citation" data-cites="dunlosky2013">(<a href="#/references" role="doc-biblioref" onclick="">Dunlosky et al. 2013</a>)</span>.</p>
+<ul>
+<li>Give each problem set at least one exercise that needs a method from an earlier unit.</li>
+<li>Link that exercise’s hint to the earlier section, as for any other exercise.</li>
+<li>In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.</li>
+</ul>
+</section>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="38">
+<h2><span class="header-section-number">38</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -1028,24 +1113,24 @@
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
 <blockquote>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a aria-label="1"></a>Grading (6 points):</span>
-<span id="cb4-2"><a aria-label="2"></a></span>
-<span id="cb4-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
-<span id="cb4-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
-<span id="cb4-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
-<span id="cb4-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a aria-label="1"></a>Grading (6 points):</span>
+<span id="cb5-2"><a aria-label="2"></a></span>
+<span id="cb5-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
+<span id="cb5-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
+<span id="cb5-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
+<span id="cb5-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="35">
-<h2><span class="header-section-number">35</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="39">
+<h2><span class="header-section-number">39</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -1056,8 +1141,8 @@
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="36">
-<h2><span class="header-section-number">36</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="40">
+<h2><span class="header-section-number">40</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -1071,8 +1156,8 @@
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="37">
-<h2><span class="header-section-number">37</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="41">
+<h2><span class="header-section-number">41</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
@@ -1277,6 +1362,12 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 </script>
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-atkinson2000" class="csl-entry" role="listitem">
+Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. <span>“Learning from Examples: Instructional Principles from the Worked Examples Research.”</span> <em>Review of Educational Research</em> 70 (2): 181–214. <a href="https://doi.org/10.3102/00346543070002181">https://doi.org/10.3102/00346543070002181</a>.
+</div>
+<div id="ref-dunlosky2013" class="csl-entry" role="listitem">
+Dunlosky, John, Katherine A. Rawson, Elizabeth J. Marsh, Mitchell J. Nathan, and Daniel T. Willingham. 2013. <span>“Improving Students’ Learning with Effective Learning Techniques.”</span> <em>Psychological Science in the Public Interest</em> 14 (1): 4–58. <a href="https://doi.org/10.1177/1529100612453266">https://doi.org/10.1177/1529100612453266</a>.
+</div>
 <div id="ref-freeman2014active" class="csl-entry" role="listitem">
 Freeman, Scott, Sarah L. Eddy, Miles McDonough, et al. 2014. <span>“Active Learning Increases Student Performance in Science, Engineering, and Mathematics.”</span> <em>Proceedings of the National Academy of Sciences</em> 111 (23): 8410–15. <a href="https://doi.org/10.1073/pnas.1319030111">https://doi.org/10.1073/pnas.1319030111</a>.
 </div>
@@ -1285,6 +1376,21 @@ Grice, H. Paul. 1975. <span>“Logic and Conversation.”</span> In <em>Syntax a
 </div>
 <div id="ref-james2021islr2" class="csl-entry" role="listitem">
 James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. <em>An Introduction to Statistical Learning: With Applications in r</em>. 2nd ed. Springer. <a href="https://doi.org/10.1007/978-1-0716-1418-1">https://doi.org/10.1007/978-1-0716-1418-1</a>.
+</div>
+<div id="ref-kalyuga2003" class="csl-entry" role="listitem">
+Kalyuga, Slava, Paul Ayres, Paul Chandler, and John Sweller. 2003. <span>“The Expertise Reversal Effect.”</span> <em>Educational Psychologist</em> 38 (1): 23–31. <a href="https://doi.org/10.1207/S15326985EP3801_4">https://doi.org/10.1207/S15326985EP3801_4</a>.
+</div>
+<div id="ref-mcnamara1996" class="csl-entry" role="listitem">
+McNamara, Danielle S., Eileen Kintsch, Nancy Butler Songer, and Walter Kintsch. 1996. <span>“Are Good Texts Always Better? Interactions of Text Coherence, Background Knowledge, and Levels of Understanding in Learning from Text.”</span> <em>Cognition and Instruction</em> 14 (1): 1–43. <a href="https://doi.org/10.1207/s1532690xci1401_1">https://doi.org/10.1207/s1532690xci1401_1</a>.
+</div>
+<div id="ref-pashler2007" class="csl-entry" role="listitem">
+Pashler, Harold, Patrice M. Bain, Brian A. Bottge, et al. 2007. <em>Organizing Instruction and Study to Improve Student Learning</em>. {IES} Practice Guide NCER 2007-2004. National Center for Education Research, Institute of Education Sciences, U.S. Department of Education. <a href="https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf">https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf</a>.
+</div>
+<div id="ref-sweller1988" class="csl-entry" role="listitem">
+Sweller, John. 1988. <span>“Cognitive Load During Problem Solving: Effects on Learning.”</span> <em>Cognitive Science</em> 12 (2): 257–85. <a href="https://doi.org/10.1207/s15516709cog1202_4">https://doi.org/10.1207/s15516709cog1202_4</a>.
+</div>
+<div id="ref-tippett2010" class="csl-entry" role="listitem">
+Tippett, Christine D. 2010. <span>“Refutation Text in Science Education: A Review of Two Decades of Research.”</span> <em>International Journal of Science and Mathematics Education</em> 8 (6): 951–70. <a href="https://doi.org/10.1007/s10763-010-9203-x">https://doi.org/10.1007/s10763-010-9203-x</a>.
 </div>
 </div>
 </section>

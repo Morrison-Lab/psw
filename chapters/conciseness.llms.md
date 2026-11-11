@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 22:06:12 (PST)
+Last modified: 2026-11-10 23:59:59 (PST)
 
 > **NOTE:**
 >
@@ -44,6 +44,8 @@ Strunk’s examples of expressions that waste words:
 - “His brother, who is a member of the same firm” → “His brother, a member of the same firm”
 
 The same rule applies to statistical writing: “We conducted an analysis of the data to determine whether there is an association between smoking and lung cancer” becomes “We tested whether smoking is associated with lung cancer”.
+
+The rule covers sentences as well as words. An interesting aside that does not serve the point costs the reader more than space. In experiments on a science lesson, adding such *seductive details* reduced what students recalled of the main explanation and how well they applied it to new problems ([Harp and Mayer 1998](#ref-harp1998)).
 
 # 3 Write in the active voice
 
@@ -92,13 +94,23 @@ A fronted phrase delays the subject in the same way. Move a phrase such as “in
 
 # 6 Put the emphatic words at the end
 
-The end of a sentence is the position the reader remembers. Strunk states the rule as “Place the emphatic words of a sentence at the end” ([Strunk 1920](#ref-strunk1920elements), rule 18). Put the claim you want the reader to keep last, and put the qualifications, the citation and the filler before it.
+The end of a sentence is the position the reader remembers. Strunk states the rule as “Place the emphatic words of a sentence at the end” ([Strunk 1920](#ref-strunk1920elements), rule 18). Put the claim you want the reader to keep last, and put the qualifications, the citation and the filler before it. Gopen and Swan call the end of a sentence its *stress position* ([Gopen and Swan 1990](#ref-gopen1990)).
 
 > ❌ The estimate becomes more precise as the sample size grows, in general.
 >
 > ✅ In general, the estimate becomes more precise as the sample size grows.
 
-# 7 Express coordinate ideas in parallel form
+# 7 Start a sentence from what the reader already knows
+
+Open each sentence with information that the reader already has, and end it with the new information. Readers connect a sentence to the text before it through its opening words. They understand a sentence faster when its known part clearly matches something already said ([Haviland and Clark 1974](#ref-haviland1974)). Gopen and Swan call the start of a sentence its *topic position*, and they advise putting the old information there and the new information in the stress position ([Gopen and Swan 1990](#ref-gopen1990)). A sentence that opens with a new idea makes the reader hold that idea until the words that connect it to the previous sentence arrive.
+
+> ❌ The lasso sets some coefficients exactly to zero. Variable selection is the name for removing predictors from a model in this way.
+>
+> ✅ The lasso sets some coefficients exactly to zero. Setting a coefficient to zero removes its predictor from the model, so the lasso also selects variables.
+
+In the ✅ version, the second sentence opens with the idea that the first sentence ended on, and ends with the new idea, variable selection. The subject of a sentence usually carries the known information, so this rule and [Lead with the subject](#lead-with-the-subject) work together. The new information is usually also the part to emphasize, so [Put the emphatic words at the end](#put-the-emphatic-words-at-the-end) applies too.
+
+# 8 Express coordinate ideas in parallel form
 
 Items that play the same role in a sentence or a list take the same grammatical form. Strunk calls this parallel construction, and states the rule as “Express co-ordinate ideas in similar form” ([Strunk 1920](#ref-strunk1920elements), rule 15). [Put lists in bullet points](#put-lists-in-bullet-points) applies the rule to the items of a list. The rule also holds inside one sentence, where a series joins verbs, noun phrases or adjectives and each item should be the same kind of phrase.
 
@@ -106,7 +118,7 @@ Items that play the same role in a sentence or a list take the same grammatical 
 >
 > ✅ The model is fast, accurate and validated.
 
-# 8 Limit complex sentence structures
+# 9 Limit complex sentence structures
 
 A sentence with several nested dependent clauses forces the reader to hold each unfinished clause in mind until the sentence finally resolves. Compound sentences joined by coordinating conjunctions (*and*, *but*, *or*) are usually fine, and an occasional dependent clause is fine too; the problem is piling several of them into a single sentence.
 
@@ -122,7 +134,7 @@ When a sentence becomes hard to follow, split it into shorter sentences, each ca
 >
 > The revised version breaks one deeply nested sentence into two and restores the natural chronological order (validation, then results, then decision), so the reader can absorb each idea before moving on.
 
-# 9 Do not interrupt a clause with an aside
+# 10 Do not interrupt a clause with an aside
 
 Do not put an aside between parts of a clause that belong together, whether the aside sits in parentheses or between commas. The reader has to hold the unfinished clause open until the aside ends. The parts that belong together include:
 
@@ -144,7 +156,7 @@ A long aside widens the gap further.
 
 A short aside that only points to a source, such as “(Figure 2)”, can stay where it is.
 
-# 10 Do not rule out readings no reader would make
+# 11 Do not rule out readings no reader would make
 
 A definition says what a [term](../chapters/defining-terms.llms.md#def-term) means. It does not need to list the things the term does not mean, unless a reader is likely to confuse the two. A disclaimer against a reading nobody would make costs the reader a sentence and can plant the confusion it was meant to prevent.
 
@@ -174,7 +186,7 @@ A contrast you keep must not be a straw man. Say who holds the confusing reading
 
 The same test applies to explanations: explain what your intended readers do not already know, and leave out what they do. A methods section for statisticians does not need to define a p-value; a report for clinicians might.
 
-# 11 Avoid double negatives
+# 12 Avoid double negatives
 
 A double negative states a claim by denying its opposite, as in these phrases:
 
@@ -198,7 +210,7 @@ A single negative is fine. “We did not reject the null hypothesis” denies on
 >
 > Writers usually choose “not inconsistent with” to [hedge](../chapters/avoid-cliches.llms.md#def-hedge) “consistent with”. The first rewrite drops the hedge; the second says what the hedge was for. Choose the one you mean.
 
-# 12 Write about the subject, not about the text
+# 13 Write about the subject, not about the text
 
 Some sentences describe the document instead of its subject. They do one of these things:
 
@@ -226,7 +238,7 @@ Each one makes the reader read a sentence before reaching the content it promise
 >
 > In the third pair, the rewrite states what the detail changes instead of saying that it changes something.
 
-# 13 Let a self-describing link stand alone
+# 14 Let a self-describing link stand alone
 
 A URL often shows the name of what it points to and where that thing lives. When it does, do not also spell out that name or host around the link. The reader would read the same facts twice.
 
@@ -242,7 +254,7 @@ A URL often shows the name of what it points to and where that thing lives. When
 
 Keep a descriptive label when the URL does not show what it points to, such as a DOI or a shortened link.
 
-# 14 Keep the writer out of the way
+# 15 Keep the writer out of the way
 
 Mention yourself only where a sentence needs an actor, such as a request, an offer, or a decision you made. Elsewhere, make the subject of the sentence the thing the reader cares about. Extra references to the writer turn attention from the content to the person.
 
@@ -260,7 +272,7 @@ Mention yourself only where a sentence needs an actor, such as a request, an off
 >
 > A request still needs its actor: “Could the space be increased, or would you allow me to register my own runner?” keeps “me” because the request is about the writer’s runner.
 
-# 15 Do not overexplain
+# 16 Do not overexplain
 
 Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason that the words before it already imply.
 
@@ -274,7 +286,7 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 >
 > The first version adds a clause that “the mean” already covers. The second is complete.
 
-# 16 Put lists in bullet points
+# 17 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
@@ -391,7 +403,7 @@ A few mechanics to keep in mind when writing a bullet list:
 >
 > The first lead-in reads as exhaustive, yet a confusion matrix yields more metrics than the three listed. The second lead-in says that the four cells are the whole set, and the third says that its list is a sample.
 
-# 17 Write to communicate, not to impress
+# 18 Write to communicate, not to impress
 
 Many rules in this chapter serve one aim: the reader should reach your meaning without extra work. A long word, a nested sentence or a crowded paragraph can make a text sound more formal, but it can add work for the reader without adding to the meaning. So at each level of the text, choose the plainest form that still carries the full meaning:
 
@@ -410,7 +422,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 >
 > The ✅ version drops “It is imperative to acknowledge that”, which only says that the next claim matters. It replaces “notwithstanding” with “despite” and “are indicative of” with “suggest”, as [Replacing unnecessary jargon](../chapters/word-choice.llms.md#exm-jargon) does for single words. It puts the noun phrases in plainer words too: “methodological constraints” becomes “the limits of the study’s methods”, and “findings” becomes “results”. It also removes the relative clauses “that were encountered in the course of the study” and “that were obtained”, because a study’s constraints are ones it faced, and its findings are ones it obtained.
 
-# 18 Examples of concise writing
+# 19 Examples of concise writing
 
 Many effective writers throughout history have exemplified the principle of conciseness.
 
@@ -422,7 +434,13 @@ Back to top
 
 ## References
 
+Gopen, George D., and Judith A. Swan. 1990. “The Science of Scientific Writing.” *American Scientist* 78 (6): 550–58. <https://www.jstor.org/stable/29774235>.
+
+Harp, Shannon F., and Richard E. Mayer. 1998. “How Seductive Details Do Their Damage: A Theory of Cognitive Interest in Science Learning.” *Journal of Educational Psychology* 90 (3): 414–34. <https://doi.org/10.1037/0022-0663.90.3.414>.
+
 Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. 2009. *The Elements of Statistical Learning: Data Mining, Inference, and Prediction*. 2nd ed. Springer. <https://hastie.su.domains/ElemStatLearn/>.
+
+Haviland, Susan E., and Herbert H. Clark. 1974. “What’s New? Acquiring New Information as a Process in Comprehension.” *Journal of Verbal Learning and Verbal Behavior* 13 (5): 512–21. <https://doi.org/10.1016/S0022-5371(74)80003-4>.
 
 Strunk, William, Jr. 1920. *The Elements of Style*. Harcourt, Brace; Howe. <https://www.gutenberg.org/ebooks/37134>.
 

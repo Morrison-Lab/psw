@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 22:06:12 (PST)
+Last modified: 2026-11-10 23:59:59 (PST)
 
 > **NOTE:**
 >
@@ -36,7 +36,7 @@ The rest of this chapter gives the rules for teaching materials. The chapters on
 
 # 2 Build the lecture from exercises and solutions
 
-Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
+Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). A practice guide from the Institute of Education Sciences rates the evidence as strong for two related practices: quizzes that bring students back to key content, and deep explanatory questions such as “why” and “how do you know” ([Pashler et al. 2007](#ref-pashler2007), recommendations 5b and 7). The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
 
 - Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.
 
@@ -237,6 +237,8 @@ This rule applies to all teaching materials, in every course and every teaching 
 
 # 14 Show each idea applied and in a figure
 
+Connecting an abstract idea to a concrete case, and pairing words with a figure, both help students learn ([Pashler et al. 2007](#ref-pashler2007), recommendations 3 and 4).
+
 - Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
 - Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
 - Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in `_fig` inside the div. When an example has nothing to plot, such as a single number, add `<!-- no-figure: reason -->` inside the div, replacing `reason` with why there is nothing to plot. The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each example that has no figure and no `no-figure` comment ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
@@ -250,7 +252,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 
 # 15 Follow every example with an exercise and solution
 
-Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it.
+Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it. Worked-examples research supports this pairing: an example teaches most when a practice problem of the same kind sits next to it ([Atkinson et al. 2000](#ref-atkinson2000); [Pashler et al. 2007](#ref-pashler2007), recommendation 2).
 
 - After every `#exm-` div, add an `#exr-` div that asks the reader to do the same thing for a different case, followed by its `#sol-` div. The exercise changes the data, the function or the question, so the solution is not a copy of the example.
 - The full sequence for a new idea is therefore: the exercise that poses the question and its solution, the definition or theorem, an example, and a practice exercise with its solution.
@@ -280,7 +282,54 @@ Reading a worked example is passive. A reader who has just seen one method appli
 >
 > The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see [Use real data and compute every number](#use-real-data-and-compute-every-number)).
 
-# 16 Write labs for both languages and any computer
+# 16 Fade worked examples into exercises
+
+Within a unit, give the reader less of each successive solution. A novice who solves a problem without guidance spends working memory on searching for a solution and has little left for learning the method ([Sweller 1988](#ref-sweller1988)), so worked examples teach a new method better than unguided practice ([Atkinson et al. 2000](#ref-atkinson2000)). As learners gain skill, the advantage reverses: a fully worked solution adds reading without adding learning, and can make learning worse. The reversal is called the *expertise reversal effect* ([Kalyuga et al. 2003](#ref-kalyuga2003)).
+
+- Give the first example of a method as a fully worked solution.
+- Leave one or more steps of the next example to the reader, as a short exercise.
+- Give the last case as an exercise only, followed by its solution.
+- In a later unit that uses the method again, link to the first worked example instead of working it again.
+
+> **NOTE:**
+>
+> **Example 7 (Fading three cases of one method)**  
+>
+> > ✅
+> >
+> > ``` markdown
+> > ::: {#exm-mean-height}
+> > (the average height, with every step worked)
+> > :::
+> >
+> > ::: {#exr-mean-weight}
+> > Compute the average weight.
+> > The sum of the weights is given; divide it by the number of people.
+> > :::
+> >
+> > ::: {#sol-mean-weight}
+> > (the division, computed by a code chunk)
+> > :::
+> >
+> > ::: {#exr-mean-age}
+> > Compute the average age.
+> > :::
+> >
+> > ::: {#sol-mean-age}
+> > (every step, computed by a code chunk)
+> > :::
+> > ```
+>
+> The reader sees the method once in full, then supplies one step, then does every step.
+
+# 17 Leave a step to the reader only as an exercise
+
+Write every step in the exposition. When you want readers to work out a step for themselves, pose it as an exercise with a solution. A fully explicit text helps readers with little background on every measure, while readers who already know the topic can learn more from a text that makes them fill in gaps ([McNamara et al. 1996](#ref-mcnamara1996)). Guidance that helps novices can also hinder more experienced learners ([Kalyuga et al. 2003](#ref-kalyuga2003)). An exercise serves both readers: the experienced reader gets a gap to fill, and the novice gets a solution to check. A gap left silently in the exposition serves only the experienced reader.
+
+- **Introductory course:** work each step in the text, then add exercises after it.
+- **Advanced course:** a routine step of a derivation may go to the reader, posed as an `#exr-` div with its `#sol-` div. Do not write “the reader can verify” in place of the exercise.
+
+# 18 Write labs for both languages and any computer
 
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
@@ -293,7 +342,7 @@ These rules apply to all teaching materials, in every course and every teaching 
 - Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
-# 17 Phrase optional steps as conditions
+# 19 Phrase optional steps as conditions
 
 An instruction that applies to only some readers reads as an order to all of them. Put the condition first, then the instruction, as in “If you use a language other than R or Python, …”.
 
@@ -308,7 +357,7 @@ The labs in the reference text write optional work this way. They state the cond
 >
 > ✅ If you use a language other than R or Python, use a port of `SyncRNG` to get the same data. If no port exists, draw your own data from the same model; your numbers will differ slightly from the key’s.
 
-# 18 Introduce a specific case as a specific case
+# 20 Introduce a specific case as a specific case
 
 A sentence with an indefinite subject and a bare verb states a general fact: “A [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) classifier has a decision boundary” holds for every such classifier. Used for one particular case, the same form claims something false, and the reader must guess that you meant only one.
 
@@ -322,7 +371,7 @@ This applies Grice’s maxims of Quality, because the sentence is not true as wr
 >
 > ✅ Consider a binary logistic regression classifier in two dimensions with parameter vector $[-2, 1, 0.5]'$.
 
-# 19 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
+# 21 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
 
@@ -336,7 +385,7 @@ This rule applies to every executed code chunk in teaching materials, in every c
 - Give a chunk that only stores values for later code or inline code `#| include: false`. When the chunk that computes those values is already hidden, merge the storing code into that chunk.
 - Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than `None` and shows the chunk as one code block per printed value, such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`. End each such call with a semicolon, or assign its value.
 
-# 20 Present R results with modern packages
+# 22 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -347,7 +396,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-# 21 Manipulate data with dplyr, not base R
+# 23 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -361,7 +410,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-# 22 Include code from files instead of copying it
+# 24 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -370,7 +419,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-# 23 Comment every code chunk to say what and why
+# 25 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -379,7 +428,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-# 24 Set `code-fold` by what the code does and whether the prose mentions it
+# 26 Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
@@ -395,7 +444,7 @@ For example:
 - A chunk that defines the helper functions a section introduces is `show`.
 - A chunk that loads a package the text never mentions is `true`.
 
-# 25 Put a full command in a code block, not in inline code
+# 27 Put a full command in a code block, not in inline code
 
 This rule applies to all teaching materials that name commands, in every course and every teaching repository.
 
@@ -406,7 +455,7 @@ This rule applies to all teaching materials that name commands, in every course 
 
 > **NOTE:**
 >
-> **Example 7 (Moving an install command out of a sentence)**  
+> **Example 8 (Moving an install command out of a sentence)**  
 >
 > > ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
 > >
@@ -418,7 +467,7 @@ This rule applies to all teaching materials that name commands, in every course 
 >
 > The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.
 
-# 26 Introduce every function in a programming primer
+# 28 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -427,14 +476,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-# 27 Make figures accessible
+# 29 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-# 28 Split a page before it grows too long
+# 30 Split a page before it grows too long
 
 A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.
 
@@ -446,7 +495,7 @@ A page should load and finish rendering its math in under 5 seconds, and its scr
 
 The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
 
-# 29 Keep sibling headings to about five
+# 31 Keep sibling headings to about five
 
 Aim for at most about five sibling headings under one parent heading, and split or group the headings when there are more than seven (Ezra, 2026-11-02). Sibling headings are headings of the same level under the same parent. The top-level headings of a page or book chapter count as siblings under the page.
 
@@ -459,7 +508,7 @@ A reader who scans a list of headings holds the whole list in mind while choosin
 
 The `check-heading-siblings` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1390](https://github.com/Morrison-Lab/gha/pull/1390)) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.
 
-# 30 Fold a one-paragraph section into its neighbor
+# 32 Fold a one-paragraph section into its neighbor
 
 Give a heading to a point that can stand alone, and fold a section of a single short paragraph into the section it qualifies or follows (Ezra, 2026-11-02). A heading that opens a one-paragraph section adds an entry to the list of headings and gives the reader nothing to find there. This is a guideline, not a minimum length: a definition, a distinct step or a named result can be short.
 
@@ -469,7 +518,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - If a point is one of several parallel points, make it an item in the parent’s list.
 - Do not delete the content: move it to the section it belongs to.
 
-# 31 Structure slides for the reader
+# 33 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -480,7 +529,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-# 32 Give each concept in a note sheet its own row
+# 34 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -493,7 +542,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 > **NOTE:**
 >
-> **Example 8 (Splitting a merged row)**  
+> **Example 9 (Splitting a merged row)**  
 >
 > > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
 > >
@@ -501,7 +550,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-# 33 Talk about the ideas, not the notes
+# 35 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -520,7 +569,34 @@ The same holds inside a page. Focus on the content of the notes, not on their st
 
 Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model. When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders `@dat-wcgs` as “Dataset 1” in the link text, so write the dataset name as the link text, as in `[WCGS data](#dat-wcgs)`, not “the WCGS data (`@dat-wcgs`)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in `chapters/citations-evidence.qmd`). Prefer a self-contained sentence when the part needs only one or two of those objects.
 
-# 34 Write grading rubrics as checklists
+# 36 Refute common misconceptions
+
+When a topic has a well-known misconception, state the misconception, say that it is wrong, and explain the correct idea. A text written this way is a *refutation text*. Across two decades of science-education studies, students who read refutation texts were more likely to give up a misconception than students who read an ordinary explanation of the correct idea ([Tippett 2010](#ref-tippett2010)). An explanation that never mentions the misconception lets the reader keep both ideas.
+
+- Name the misconception in the words that students use.
+- Say plainly that it is wrong.
+- Show why it fails, with an example or a counterexample.
+- Put the refutation where the concept is defined or first used, so the reader meets the correction together with the concept.
+
+> **NOTE:**
+>
+> **Example 10 (Refuting a misreading of the p-value)**  
+>
+> > ❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.
+> >
+> > ✅ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed. A common misreading takes the p-value to be the probability that the null hypothesis is true. That misreading is wrong. The p-value is computed by assuming that the null hypothesis is true, so it cannot also be the probability that the null hypothesis is true.
+>
+> The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.
+
+# 37 Revisit earlier units in later exercises
+
+Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong ([Pashler et al. 2007](#ref-pashler2007), recommendations 1 and 5b). Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility ([Dunlosky et al. 2013](#ref-dunlosky2013)).
+
+- Give each problem set at least one exercise that needs a method from an earlier unit.
+- Link that exercise’s hint to the earlier section, as for any other exercise.
+- In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.
+
+# 38 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -533,7 +609,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 > **NOTE:**
 >
-> **Example 9 (A rubric as a checklist)**  
+> **Example 11 (A rubric as a checklist)**  
 >
 > > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >
@@ -550,14 +626,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-# 35 Credit other courses without summarizing them
+# 39 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-# 36 Finish each unit completely
+# 40 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -569,7 +645,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-# 37 Rules that apply to all writing
+# 41 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
@@ -583,8 +659,22 @@ Back to top
 
 ## References
 
+Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. “Learning from Examples: Instructional Principles from the Worked Examples Research.” *Review of Educational Research* 70 (2): 181–214. <https://doi.org/10.3102/00346543070002181>.
+
+Dunlosky, John, Katherine A. Rawson, Elizabeth J. Marsh, Mitchell J. Nathan, and Daniel T. Willingham. 2013. “Improving Students’ Learning with Effective Learning Techniques.” *Psychological Science in the Public Interest* 14 (1): 4–58. <https://doi.org/10.1177/1529100612453266>.
+
 Freeman, Scott, Sarah L. Eddy, Miles McDonough, et al. 2014. “Active Learning Increases Student Performance in Science, Engineering, and Mathematics.” *Proceedings of the National Academy of Sciences* 111 (23): 8410–15. <https://doi.org/10.1073/pnas.1319030111>.
 
 Grice, H. Paul. 1975. “Logic and Conversation.” In *Syntax and Semantics 3: Speech Acts*, edited by Peter Cole and Jerry L. Morgan. Academic Press.
 
 James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. *An Introduction to Statistical Learning: With Applications in r*. 2nd ed. Springer. <https://doi.org/10.1007/978-1-0716-1418-1>.
+
+Kalyuga, Slava, Paul Ayres, Paul Chandler, and John Sweller. 2003. “The Expertise Reversal Effect.” *Educational Psychologist* 38 (1): 23–31. <https://doi.org/10.1207/S15326985EP3801_4>.
+
+McNamara, Danielle S., Eileen Kintsch, Nancy Butler Songer, and Walter Kintsch. 1996. “Are Good Texts Always Better? Interactions of Text Coherence, Background Knowledge, and Levels of Understanding in Learning from Text.” *Cognition and Instruction* 14 (1): 1–43. <https://doi.org/10.1207/s1532690xci1401_1>.
+
+Pashler, Harold, Patrice M. Bain, Brian A. Bottge, et al. 2007. *Organizing Instruction and Study to Improve Student Learning*. {IES} Practice Guide NCER 2007-2004. National Center for Education Research, Institute of Education Sciences, U.S. Department of Education. <https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf>.
+
+Sweller, John. 1988. “Cognitive Load During Problem Solving: Effects on Learning.” *Cognitive Science* 12 (2): 257–85. <https://doi.org/10.1207/s15516709cog1202_4>.
+
+Tippett, Christine D. 2010. “Refutation Text in Science Education: A Review of Two Decades of Research.” *International Journal of Science and Mathematics Education* 8 (6): 951–70. <https://doi.org/10.1007/s10763-010-9203-x>.

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 22:06:12 (PST)
+Last modified: 2026-11-10 23:59:59 (PST)
 
 > **NOTE:**
 >
@@ -162,7 +162,7 @@ A sentence that states a result and then adds “which” and “and” clauses 
 
 # 9 State every step and every point
 
-Write every step of an argument or a procedure. Do not leave a step for the reader to fill in, and do not hint at a point you could state. The W3C guidance says readers may need “definitions or explanations for implied or ambiguous information” such as jokes, sarcasm and metaphors ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Explain Implied Content).
+Write every step of an argument or a procedure. Do not leave a step for the reader to fill in, and do not hint at a point you could state. The W3C guidance says readers may need “definitions or explanations for implied or ambiguous information” such as jokes, sarcasm and metaphors ([W3C Cognitive and Learning Disabilities Accessibility Task Force 2021](#ref-w3c_coga), Explain Implied Content). In an experiment, rewriting an instructional text to state each link that readers had to infer greatly improved what students recalled of it ([Britton and Gülgöz 1991](#ref-britton1991)).
 
 > ❌ Of course, nobody would use accuracy here.
 >
@@ -214,7 +214,7 @@ Readers find text easier to follow when each part has one purpose, and when part
 
 # 13 Present ideas in more than one form
 
-Readers differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” ([Cornell University Center for Teaching Innovation 2026](#ref-cornell_udl)). For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.
+Readers differ in what helps them understand. Universal Design for Learning (UDL) is a framework for teaching diverse learners. The Cornell Center for Teaching Innovation describes UDL as giving students several ways to “Deliver content (text, audio, visuals, notes)” ([Cornell University Center for Teaching Innovation 2026](#ref-cornell_udl)). Learners understand words and pictures together better than words alone ([Mayer 2020](#ref-mayer2020multimedia)), and a practice guide from the Institute of Education Sciences recommends combining graphics with verbal descriptions ([Pashler et al. 2007](#ref-pashler2007), recommendation 3). For a technical idea, give at least two of these forms: a sentence, a formula, a figure, a worked example with numbers, or code.
 
 > ❌ A slide that gives only the formula for $k$-fold cross-validation.
 >
@@ -234,6 +234,8 @@ Back to top
 
 ## References
 
+Britton, Bruce K., and Sami Gülgöz. 1991. “Using Kintsch’s Computational Model to Improve Instructional Text: Effects of Repairing Inference Calls on Recall and Cognitive Structures.” *Journal of Educational Psychology* 83 (3): 329–45. <https://doi.org/10.1037/0022-0663.83.3.329>.
+
 Centers for Disease Control and Prevention. 2026. *CDC Clear Communication Index*. <https://www.cdc.gov/ccindex/index.html>.
 
 Cornell University Center for Teaching Innovation. 2026. *Universal Design for Learning*. <https://teaching.cornell.edu/teaching-resources/building-inclusive-classrooms/universal-design-learning>.
@@ -241,6 +243,10 @@ Cornell University Center for Teaching Innovation. 2026. *Universal Design for L
 GitHub. 2026a. *Style Guide*. GitHub Docs. <https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide>.
 
 GitHub. 2026b. *Writing Content to Be Translated*. GitHub Docs. <https://docs.github.com/en/contributing/writing-for-github-docs/writing-content-to-be-translated>.
+
+Mayer, Richard E. 2020. *Multimedia Learning*. 3rd ed. Cambridge University Press. <https://doi.org/10.1017/9781316941355>.
+
+Pashler, Harold, Patrice M. Bain, Brian A. Bottge, et al. 2007. *Organizing Instruction and Study to Improve Student Learning*. {IES} Practice Guide NCER 2007-2004. National Center for Education Research, Institute of Education Sciences, U.S. Department of Education. <https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf>.
 
 Plain Language Action and Information Network. 2026. *Federal Plain Language Guidelines*. <https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines>.
 

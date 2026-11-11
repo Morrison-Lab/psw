@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 22:06:12 (PST)
+Last modified: 2026-11-10 23:59:59 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -384,7 +384,7 @@ In teaching material, present a derivation as one or more exercises, each follow
 
 Follow these principles:
 
-- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative.
+- **One exercise per step.** Split a long derivation into exercises a reader can attempt one at a time, such as each partial derivative, then solving the resulting equations, then checking the second derivative. Title each exercise by the subgoal that it reaches, such as “Solving the score equation”, so that the titles alone outline the derivation. Labeling the subgoals of a worked example is one of the instructional principles of worked-examples research ([Atkinson et al. 2000](#ref-atkinson2000)).
 - **The solution follows its exercise.** Put each solution directly after its exercise, and give it an id named after the exercise (`#exr-foo` and `#sol-foo`), so a reader who wants to check one step can find its working.
 - **The theorem states the result; the proof cites results.** The theorem gives the result in prose and as a display equation. Its proof is a few sentences that cite the results it rests on, not a second copy of their working. A proof that does no derivation of its own is one line citing the solution of the exercise that asks for the result, and every later argument cites the theorem, never the solution (see [Cite results, not solutions](../chapters/mathematical-writing.llms.md#cite-results-not-solutions)).
 - **Define notation first.** Introduce any notation the exercises use in its own definition before them, not inside the theorem that follows them.
@@ -477,3 +477,7 @@ Follow these principles:
 > The first result is algebra from the definition of $\varepsilon_i$; the second needs the model’s distribution. In separate blocks, each gets the proof it needs, and a later step that uses only the first can cite only the first.
 
 Back to top
+
+## References
+
+Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. “Learning from Examples: Instructional Principles from the Worked Examples Research.” *Review of Educational Research* 70 (2): 181–214. <https://doi.org/10.3102/00346543070002181>.
