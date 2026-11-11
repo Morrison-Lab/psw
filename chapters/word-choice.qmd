@@ -168,7 +168,7 @@ or a cost [function](https://morrison-lab.github.io/mcs/functions.html#def-funct
 
 > ❌ That trade is the whole bargain of gradient descent.
 >
-> ✅ Gradient descent decreases the objective only when each step is small enough
+> ✅ Gradient descent decreases the objective function only when each step is small enough
 > for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
 
 Do not give a mathematical object a mind.
@@ -183,7 +183,7 @@ and display it when it is a key equation.
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
 > ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, <!-- check-term-links: allow -->
-> so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
+> so the objective function decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Be as specific as feasible.
 When the text has a specific object, name it,

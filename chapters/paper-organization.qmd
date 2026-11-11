@@ -305,7 +305,7 @@ Three cases are not forward references to fix:
   because it describes the whole group
   and an item that carries it reads wrongly alone, or on its own slide.
   [Write about the subject, not about the text](conciseness.qmd#write-about-the-subject-not-about-the-text):
-  say "The negative gradient decreases the cost the most",
+  say "The negative gradient decreases the cost function the most",
   not "This exercise shows that the negative gradient is the best direction".
 - A sentence that names a figure or table placed beside it, such as "Table 2 shows the estimates".
   The reader encounters the table at once.
