@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-10 17:16:36 (PST)</p>
+  <p class="date">Last modified: 2026-11-10 17:28:15 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -393,7 +393,14 @@
 <section class="slide level2">
 
 <p>Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive <a href="https://plotly.com/r/">plotly</a> figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure, as a noninteractive version of it (Ezra, 2026-11-10). A note that sends readers to the HTML version does not replace the figure.</p>
-<p>When a definition or example graphs a model whose parameters are chosen rather than fitted to data, such as a density with a given mean and covariance, make the graph interactive in HTML output, slide decks included (Ezra, 2026-11-10). Give each parameter a slider, a numeric entry box, or both, and redraw the graph as the reader changes them. Start each control at the value the text uses, so the prose about that value describes the graph as it first appears, and in static formats draw the graph at those starting values. A graph of a model fitted to data stays fixed, because the data set its parameters. In Quarto, build the controls with <a href="https://quarto.org/docs/interactive/ojs/">Observable JS</a> cells, which run in both the website and the slides: <code>Inputs.range</code> draws a slider with a numeric box beside it, and <code>Inputs.number</code> draws a numeric box alone. Draw a 2D graph with <a href="https://observablehq.com/plot/">Observable Plot</a> and a 3D surface with <a href="https://plotly.com/javascript/3d-surface-plots/">plotly.js</a>, put the cells in a <code>.content-visible when-format="html"</code> div, and draw the static version with an R chunk that runs only outside HTML output. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.</p>
+<p>When a definition or example graphs a model whose parameters are chosen rather than fitted to data, such as a density with a given mean and covariance, make the graph interactive in HTML output, slide decks included (Ezra, 2026-11-10). Give each parameter a slider, a numeric entry box, or both, and redraw the graph as the reader changes them. Start each control at the value the text uses, so the prose about that value describes the graph as it first appears, and in static formats draw the graph at those starting values. A graph of a model fitted to data stays fixed, because its parameters come from the data. In Quarto, build the graph with <a href="https://quarto.org/docs/interactive/ojs/">Observable JS</a> cells, which run in both the website and the slides:</p>
+<ul>
+<li>Make a slider with a numeric box beside it with <code>Inputs.range</code>, and a numeric box alone with <code>Inputs.number</code>.</li>
+<li>Draw a 2D graph with <a href="https://observablehq.com/plot/">Observable Plot</a>, and a 3D surface with <a href="https://plotly.com/javascript/3d-surface-plots/">plotly.js</a>.</li>
+<li>Put the cells in a <code>.content-visible when-format="html"</code> div.</li>
+<li>Draw the static version with an R chunk that runs only outside HTML output.</li>
+</ul>
+<p>Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.</p>
 <p>Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:</p>
 <ul>
 <li>Pointer only: “The symmetry of <code>@exm-x</code>.” The reader learns nothing until following the link.</li>
