@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 00:44:45 (PST)
+Last modified: 2026-11-11 00:50:34 (PST)
 
 > **NOTE:**
 >
@@ -70,13 +70,13 @@ Money words are idioms too when no money is involved. “Costs us”, “buys us
 
 > ❌ That trade is the whole bargain of gradient descent.
 >
-> ✅ Gradient descent decreases the objective only when each step is small enough for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
+> ✅ Gradient descent decreases the objective function only when each step is small enough for the [linear approximation](https://morrison-lab.github.io/mds/calculus.html#def-linear-approximation) to hold.
 
 Do not give a mathematical object a mind. A derivative does not “recommend” a direction, a model does not “know” or “want” anything, and an approximation is not “trustworthy”. Each such phrase hides a precise claim, and the reader needs that claim stated plainly. State the condition under which the claim holds, with the inequality or the order of the error, and display it when it is a key equation.
 
 > ❌ The derivative recommends a step, and the recommendation is trustworthy only as far as the step is small.
 >
-> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, so the objective decreases along the negative gradient only for steps $\vh$ that are small enough.
+> ✅ The linear approximation has error $o(\norm{\vh})$ as $\vh \to \vzero$, so the objective function decreases along the negative gradient only for steps $\vh$ that are small enough.
 
 Be as specific as feasible. When the text has a specific object, name it, and do not let a generic placeholder stand in for it, such as “some set”, “a set A” or “the object”. A placeholder makes the reader ask which set is meant, and the writer has already answered that question. Keep a placeholder only where the statement is abstract on purpose, such as a general definition that holds for any set. The same aim, stated from the other side: state a result at the generality it holds, no narrower than its argument needs. A fact that a proof proves only for one case, when the argument works for all cases, is a lemma left unextracted ([Extract a lemma wherever feasible](../chapters/teaching.llms.md)).
 
