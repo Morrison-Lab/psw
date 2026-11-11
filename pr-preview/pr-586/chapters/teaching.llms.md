@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 00:42:03 (PST)
+Last modified: 2026-11-11 01:02:40 (PST)
 
 > **NOTE:**
 >
@@ -576,6 +576,12 @@ Describe each dataset once, in its own dataset callout with a linkable id such a
 - where readers can get a copy of the data.
 
 When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders `@dat-wcgs` as “Dataset 1” in the link text, so write the dataset name as the link text, as in `[WCGS data](#dat-wcgs)`, not “the WCGS data (`@dat-wcgs`)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in `chapters/citations-evidence.qmd`). Prefer a self-contained sentence when the part needs only one or two of those objects.
+
+Describe each dataset once, in its own dataset callout with a linkable id (`#dat-<name>`), never in a definition div, because a dataset is not a term with a defining equation (Ezra, 2026-11-02). The callout gives:
+
+- the cited original source;
+- the outcome and the predictors, described in words;
+- where to get a copy of the data.
 
 # 36 Refute common misconceptions
 

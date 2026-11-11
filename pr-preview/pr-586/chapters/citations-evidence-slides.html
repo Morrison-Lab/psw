@@ -220,8 +220,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -256,7 +257,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -266,7 +268,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -336,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-11 00:42:03 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 01:02:40 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -424,12 +426,12 @@
 <li><strong>A specific citation.</strong> Name the source that establishes the result, and give a chapter, section, page, or equation number whenever the source is long enough that a bare citation would leave the reader searching.</li>
 <li><strong>A cross-reference.</strong> When you established the result earlier in the same document, point to it by number (see <a href="../chapters/defining-terms.html">Defining terms clearly</a> for the Quarto cross-reference syntax).</li>
 </ul>
-<p>Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood is a sum of three terms” makes the same claim about the log-likelihood as “the log-likelihood is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.</p>
+<p>Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood function is a sum of three terms” <!-- check-term-links: allow: "terms" here are summands, not the defined term --> makes the same claim about the log-likelihood function as “the log-likelihood function is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.</p>
 <div id="exm-flippant-derivation" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1 (Replacing an appeal to familiarity)</strong></span> &nbsp;</p>
 <blockquote>
-<p>❌ Substituting the normal density into the likelihood gives the familiar three-term formula.</p>
-<p>✅ For an independent sample <span class="math inline">\(x_1, \ldots, x_n\)</span> from a normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, <!-- check-term-links: allow --> substituting the normal density into the likelihood and taking logarithms gives <span class="math display">\[
+<p>❌ Substituting the normal density function into the likelihood function gives the familiar three-term formula.</p>
+<p>✅ For an independent sample <span class="math inline">\(x_1, \ldots, x_n\)</span> from a normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, <!-- check-term-links: allow --> substituting the normal density function into the likelihood function and taking logarithms gives <span class="math display">\[
 \ell(\mu, \sigma^2) =
 -\frac{n}{2}\log(2\pi)
 - \frac{n}{2}\log\left(\sigma^2\right)

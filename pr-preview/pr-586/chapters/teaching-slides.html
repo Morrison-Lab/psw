@@ -220,8 +220,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -256,7 +257,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -266,7 +268,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -336,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-11 00:42:03 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 01:02:40 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -1064,13 +1066,19 @@
 </div>
 </div>
 <p>Keep the cross-reference so that the reader can look up the full statement, and add the names of the reused data, variables, parameters, or model.</p>
-<p>Describe each dataset once, in its own dataset callout with a linkable id such as <code>#dat-wcgs</code>. Never describe a dataset in a definition div, because a dataset is not a term with a defining equation <!-- check-term-links: allow: already linked at the start of this passage --> (Ezra, 2026-11-02). The callout gives:</p>
+<p>Describe each dataset once, in its own dataset callout with a linkable id such as <code>#dat-wcgs</code>. Never describe a dataset in a definition div, because a dataset is not a term with a defining equation (Ezra, 2026-11-02). <!-- check-term-links: allow: already linked at the start of this passage --> The callout gives:</p>
 <ul>
 <li>the cited original source;</li>
 <li>the outcome and the predictors, in words;</li>
 <li>where readers can get a copy of the data.</li>
 </ul>
 <p>When the notes define a dataset in its own callout, link the dataset by that callout’s id instead of describing it again, and put the link on the dataset’s name. Quarto renders <code>@dat-wcgs</code> as “Dataset 1” in the link text, so write the dataset name as the link text, as in <code>[WCGS data](#dat-wcgs)</code>, not “the WCGS data (<code>@dat-wcgs</code>)” (Ezra, 2026-11-04; see “Link the words, not a trailing citation” in <code>chapters/citations-evidence.qmd</code>). Prefer a self-contained sentence when the part needs only one or two of those objects.</p>
+<p>Describe each dataset once, in its own dataset callout with a linkable id (<code>#dat-&lt;name&gt;</code>), never in a definition div, because a dataset is not a term with a defining equation <!-- check-term-links: allow: "term" is linked earlier in this passage, at the top of the section --> (Ezra, 2026-11-02). The callout gives:</p>
+<ul>
+<li>the cited original source;</li>
+<li>the outcome and the predictors, described in words;</li>
+<li>where to get a copy of the data.</li>
+</ul>
 </section>
 <section id="refute-common-misconceptions" class="slide level2" data-number="36">
 <h2><span class="header-section-number">36</span> Refute common misconceptions</h2>

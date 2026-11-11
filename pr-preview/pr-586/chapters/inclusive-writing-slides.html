@@ -154,8 +154,9 @@
     reads those vars so it stays legible in every palette. Light is the
     default variable set, Off-white and Parchment are a data-palette attribute
     on <html>, and Dark is the body.qwt-dark class. The choice is saved under
-    "mln-theme", the key the website's theme dropdown (theme-picker.html) uses,
-    so it carries across the site and the decks. First-time visitors get
+    "lds-theme", the key the website's theme dropdown (theme-picker.html) and
+    lds use, so it carries across the site and the decks; a choice saved under
+    the older "mln-theme" key is still read. First-time visitors get
     Dark if their system prefers it, and Off-white otherwise.
   -->
   <style>
@@ -190,7 +191,8 @@
   <script>
   (function () {
     "use strict";
-    var KEY = "mln-theme";
+    var KEY = "lds-theme";
+    var LEGACY_KEY = "mln-theme";
     var DARK_CLASS = "qwt-dark";
     var OPTIONS = [["light", "Light"], ["offwhite", "Off-white"], ["parchment", "Parchment"], ["dark", "Dark"]];
     var root = document.documentElement;
@@ -200,7 +202,7 @@
     }
 
     function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      try { return localStorage.getItem(KEY) || localStorage.getItem(LEGACY_KEY); } catch (e) { return null; }
     }
 
     function initialTheme() {
@@ -270,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-11 00:42:03 (PST)</p>
+  <p class="date">Last modified: 2026-11-11 01:02:40 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -349,11 +351,11 @@ Table&nbsp;1: Idioms, clichés and slang, with literal alternatives
 </tr>
 <tr class="even">
 <td>that trade is the whole bargain of gradient descent</td>
-<td>gradient descent decreases the objective only when each step is small enough</td>
+<td>gradient descent decreases the objective function only when each step is small enough</td>
 </tr>
 <tr class="odd">
 <td>the recommendation is trustworthy only as far as the step is small</td>
-<td>the objective decreases only for steps that are small enough</td>
+<td>the objective function decreases only for steps that are small enough</td>
 </tr>
 <tr class="even">
 <td>Fix <span class="math inline">\(\varepsilon &gt; 0\)</span>.</td>

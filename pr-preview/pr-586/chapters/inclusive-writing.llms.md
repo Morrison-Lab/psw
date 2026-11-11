@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 00:42:03 (PST)
+Last modified: 2026-11-11 01:02:40 (PST)
 
 > **NOTE:**
 >
@@ -41,8 +41,8 @@ The word “lean” in the first version is an idiom. The second version asks th
 | flexibility buys lower bias | more flexible models tend to have lower bias |
 | this assumption costs nothing | this assumption loses no generality |
 | a mean of zero buys one identity | a mean of zero implies one identity |
-| that trade is the whole bargain of gradient descent | gradient descent decreases the objective only when each step is small enough |
-| the recommendation is trustworthy only as far as the step is small | the objective decreases only for steps that are small enough |
+| that trade is the whole bargain of gradient descent | gradient descent decreases the objective function only when each step is small enough |
+| the recommendation is trustworthy only as far as the step is small | the objective function decreases only for steps that are small enough |
 | Fix $\varepsilon > 0$. | Let $\varepsilon > 0$. |
 | Fix a value $t$. | Choose a value $t$. |
 | a ton of data | a large data set |
