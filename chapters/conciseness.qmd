@@ -70,6 +70,12 @@ The same rule applies to statistical writing:
 "We conducted an analysis of the data to determine whether there is an association between smoking and lung cancer"
 becomes "We tested whether smoking is associated with lung cancer".
 
+The rule covers sentences as well as words.
+An interesting aside that does not serve the point costs the reader more than space.
+In experiments on a science lesson,
+adding such *seductive details* reduced what students recalled of the main explanation
+and how well they applied it to new problems [@harp1998].
+
 # Write in the active voice
 
 Use the [active voice](defining-terms.qmd#def-active-voice) unless you have a specific reason to use the passive.
@@ -134,10 +140,40 @@ Strunk states the rule as "Place the emphatic words of a sentence at the end"
 [@strunk1920elements, rule 18].
 Put the claim you want the reader to keep last,
 and put the qualifications, the citation and the filler before it.
+Gopen and Swan call the end of a sentence its *stress position* [@gopen1990].
 
 > ❌ The estimate becomes more precise as the sample size grows, in general.
 >
 > ✅ In general, the estimate becomes more precise as the sample size grows.
+
+# Start a sentence from what the reader already knows
+
+Open each sentence with information that the reader already has,
+and end it with the new information.
+Readers connect a sentence to the text before it through its opening words.
+They understand a sentence faster
+when its known part clearly matches something already said [@haviland1974].
+Gopen and Swan call the start of a sentence its *topic position*,
+and they advise putting the old information there
+and the new information in the stress position [@gopen1990].
+A sentence that opens with a new idea
+makes the reader hold that idea
+until the words that connect it to the previous sentence arrive.
+
+> ❌ The lasso sets some coefficients exactly to zero.
+> Variable selection is the name for removing predictors from a model in this way.
+>
+> ✅ The lasso sets some coefficients exactly to zero.
+> Setting a coefficient to zero removes its predictor from the model,
+> so the lasso also selects variables.
+
+In the ✅ version,
+the second sentence opens with the idea that the first sentence ended on,
+and ends with the new idea, variable selection.
+The subject of a sentence usually carries the known information,
+so this rule and [Lead with the subject](#lead-with-the-subject) work together.
+The new information is usually also the part to emphasize,
+so [Put the emphatic words at the end](#put-the-emphatic-words-at-the-end) applies too.
 
 # Express coordinate ideas in parallel form
 
