@@ -125,9 +125,9 @@ Replace such phrases with one of the following:
 
 Deleting the phrase and keeping the claim
 is also usually an improvement:
-"the log-likelihood is a sum of three terms"
-makes the same claim about the log-likelihood as
-"the log-likelihood is obviously a sum of three terms",
+"the log-likelihood function is a sum of three terms" <!-- check-term-links: allow: "terms" here are summands, not the defined term -->
+makes the same claim about the log-likelihood function as
+"the log-likelihood function is obviously a sum of three terms",
 and it invites the reader to check the claim
 rather than to defer to it.
 
@@ -135,12 +135,12 @@ rather than to defer to it.
 
 # Replacing an appeal to familiarity
 
-> ❌ Substituting the normal density into the likelihood
+> ❌ Substituting the normal density function into the likelihood function
 > gives the familiar three-term formula.
 >
 > ✅ For an independent sample $x_1, \ldots, x_n$
 > from a normal distribution with mean $\mu$ and variance $\sigma^2$, <!-- check-term-links: allow -->
-> substituting the normal density into the likelihood
+> substituting the normal density function into the likelihood function
 > and taking logarithms gives
 > $$
 > \ell(\mu, \sigma^2) =
