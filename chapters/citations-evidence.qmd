@@ -125,7 +125,7 @@ Replace such phrases with one of the following:
 
 Deleting the phrase and keeping the claim
 is also usually an improvement:
-"the log-likelihood function is a sum of three terms"
+"the log-likelihood function is a sum of three terms" <!-- check-term-links: allow -->
 makes the same claim about the log-likelihood function as
 "the log-likelihood function is obviously a sum of three terms",
 and it invites the reader to check the claim
