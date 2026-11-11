@@ -63,6 +63,7 @@ Lamport
 lds
 lme4
 MAE
+matplotlib's
 mentees
 MeSH
 MSE
@@ -77,6 +78,7 @@ overfit
 patchwork
 pdf
 plotly
+plotly's
 pMAE
 pmf
 pMSE
@@ -107,8 +109,14 @@ SRQR
 STARD
 Starmer
 STEM
+subcaption
+subcaptions
+subfigure
+subfigures
 submodule
 submodules
+subtable
+subtables
 synset
 synsets
 tabset

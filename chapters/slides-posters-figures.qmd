@@ -224,6 +224,105 @@ For more:
   style HTML articles like Edward Tufte's books and handouts,
   with sidenotes, typography, and tight integration of graphics with text
 
+## Combine panels with Quarto layout or in code {#sec-combine-panels}
+
+A figure or table with several panels can be put together in two places:
+
+- **Quarto layout**: each panel is its own subfigure or subtable,
+  a nested `#fig-` or `#tbl-` div inside the parent div,
+  arranged with `layout-ncol`, `layout-nrow` or `layout`.
+- **Code**: one plot or table object holds every panel,
+  made with [patchwork](https://patchwork.data-imaginist.com/), ggplot2's `facet_wrap()` and `facet_grid()`,
+  plotly's `subplot()`, matplotlib's `subplots()`,
+  or one table with grouped columns.
+
+Use Quarto layout by default.
+Quarto gives each panel its own label, subcaption and alt text,
+and those keep working in every output format:
+
+- A cross-reference names the panel, as in "Figure 3b",
+  so the text can point a reader at one panel without "left" or "right".
+- Each panel's subcaption says what that panel shows,
+  so the panels need no hand-made titles that repeat it.
+- Each panel's `fig-alt` describes that panel alone,
+  so a screen reader user hears the panels one at a time.
+- Each panel keeps its own interactive widget in HTML and its own static version in PDF and Word,
+  so a static fallback can be drawn panel by panel.
+
+Combine the panels in code instead when they share something that Quarto layout cannot give them:
+
+- **A shared axis**: the panels must line up on one scale, such as one y-axis across panels,
+  so a reader can compare heights across them.
+  Separate subfigures each get their own axis limits and plot margins, so their axes line up only by chance.
+- **A shared legend**: several panels use the same colors or line types,
+  and one legend for all of them, collected with patchwork's `guides = "collect"`, saves repeating it.
+- **One plot of subsets**: the panels are the same plot drawn for each level of a variable.
+  Use a facet, whose strip labels name each level.
+- **Linked interaction**: the panels should respond together,
+  such as a shared zoom or hover across plotly panels with `subplot(shareX = TRUE)`.
+
+A panel combined in code has no label of its own for a cross-reference.
+Tag the panels in the code, in the same style as Quarto's subcaptions,
+with `plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")` in patchwork,
+and refer to them in the text as "panel (b) of `@fig-x`".
+Write one alt text for the whole figure that describes each panel in turn,
+and give the panels in the caption by their tags.
+A combined interactive figure, such as one plotly widget with two 3D scenes,
+needs a static version that shows every panel too.
+
+Keep panels in separate subfigures when they share nothing.
+Two 3D surfaces from two models, each with its own rotation,
+are two subfigures, not one widget with two scenes.
+
+### Subfigures with language tabsets
+
+Put a language tabset (`group="language"`) inside each subfigure,
+not the subfigures inside one tabset,
+when each panel has R and Python versions:
+
+````markdown
+::: {#fig-surfaces layout-ncol=2}
+
+::: {#fig-surfaces-additive}
+::: {.panel-tabset group="language"}
+## R
+```r
+# draw the additive model's surface
+```
+## Python
+```python
+# draw the additive model's surface
+```
+:::
+The additive model.
+:::
+
+::: {#fig-surfaces-interaction}
+<!-- the same tabset for the interaction model -->
+The model with an interaction term.
+:::
+
+Fitted surfaces of the two models for fuel economy over weight and model year.
+:::
+````
+
+Each `r` or `python` block stands for an executed chunk, whose fence is `{r}` or `{python}` in a real page.
+Quarto then labels the panels (a) and (b) whichever tab the reader picks.
+With the subfigures inside the tabset,
+the Python tab's panels become (c) and (d),
+and the R panels' cross-references point at a tab the reader may not be on.
+
+### Subtables
+
+The same choice holds for tables:
+
+- Put tables that a reader compares side by side, but that have different rows or columns,
+  in subtables of a `#tbl-` div with `layout-ncol`, each with its own subcaption.
+- Put tables that share their rows in one table,
+  with a header over each group of columns,
+  such as a `tab_spanner()` in the R package [gt](https://gt.rstudio.com/),
+  so the rows line up and each row label appears once.
+
 ## Combine several figures with patchwork
 
 The R package [patchwork](https://patchwork.data-imaginist.com/)
@@ -237,14 +336,14 @@ library(patchwork)
 
 (p1 + p2) / p3 +
   plot_layout(guides = "collect") +
-  plot_annotation(tag_levels = "A") &
+  plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")") &
   theme(legend.position = "bottom")
 ```
 
 The expression puts `p1` and `p2` side by side above `p3`:
 
 - `plot_layout(guides = "collect")` merges the plots' legends into one.
-- `plot_annotation(tag_levels = "A")` labels the panels A, B, and C.
+- `plot_annotation(tag_levels = "A")` labels the panels (a), (b), and (c), the style of Quarto's subcaptions.
 - `&` applies the bottom legend position to every panel.
 
 # Three-dimensional graphs {#sec-3d-graphs}
