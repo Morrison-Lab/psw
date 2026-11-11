@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 00:36:17 (PST)
+Last modified: 2026-11-11 00:49:11 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -76,15 +76,15 @@ Replace such phrases with one of the following:
 - **A specific citation.** Name the source that establishes the result, and give a chapter, section, page, or equation number whenever the source is long enough that a bare citation would leave the reader searching.
 - **A cross-reference.** When you established the result earlier in the same document, point to it by number (see [Defining terms clearly](../chapters/defining-terms.llms.md) for the Quarto cross-reference syntax).
 
-Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood is a sum of three terms” makes the same claim about the log-likelihood as “the log-likelihood is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.
+Deleting the phrase and keeping the claim is also usually an improvement: “the log-likelihood function is a sum of three terms” makes the same claim about the log-likelihood function as “the log-likelihood function is obviously a sum of three terms”, and it invites the reader to check the claim rather than to defer to it.
 
 > **NOTE:**
 >
 > **Example 1 (Replacing an appeal to familiarity)**  
 >
-> > ❌ Substituting the normal density into the likelihood gives the familiar three-term formula.
+> > ❌ Substituting the normal density function into the likelihood function gives the familiar three-term formula.
 > >
-> > ✅ For an independent sample $x_1, \ldots, x_n$ from a normal distribution with mean $\mu$ and variance $\sigma^2$, substituting the normal density into the likelihood and taking logarithms gives $$\ell(\mu, \sigma^2) =
+> > ✅ For an independent sample $x_1, \ldots, x_n$ from a normal distribution with mean $\mu$ and variance $\sigma^2$, substituting the normal density function into the likelihood function and taking logarithms gives $$\ell(\mu, \sigma^2) =
 > > -\frac{n}{2}\log(2\pi)
 > > - \frac{n}{2}\log\left(\sigma^2\right)
 > > - \frac{1}{2\sigma^2}\sum_{i=1}^{n}\left(x_i - \mu\right)^2.$$ The three terms are, in order:
