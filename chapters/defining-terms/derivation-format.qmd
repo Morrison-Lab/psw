@@ -64,7 +64,7 @@ Follow these principles:
 
 The **sample mean** of numbers $x_1, \ldots, x_n$ is their average:
 
-$$\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.$$
+$$\xbar := \frac{1}{n} \sum_{i=1}^n x_i.$$
 
 :::
 
@@ -72,11 +72,11 @@ $$\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.$$
 
 ## Deviations from the mean
 
-Let $\bar{x}$ be the [sample mean](#def-sample-mean) of $x_1, \ldots, x_n$.
+Let $\xbar$ be the [sample mean](#def-sample-mean) of $x_1, \ldots, x_n$.
 Show that
 
 $$
-\sum_{i=1}^n (x_i - \bar{x}) = 0.
+\sum_{i=1}^n (x_i - \xbar) = 0.
 $$
 
 :::
@@ -85,13 +85,13 @@ $$
 
 $$
 \begin{aligned}
-\sum_{i=1}^n (x_i - \bar{x})
-&= \sum_{i=1}^n x_i - \sum_{i=1}^n \bar{x}
+\sum_{i=1}^n (x_i - \xbar)
+&= \sum_{i=1}^n x_i - \sum_{i=1}^n \xbar
 && \text{(distribute the sum over the terms)}\\
-&= \sum_{i=1}^n x_i - n \bar{x}
+&= \sum_{i=1}^n x_i - n \xbar
 && \text{(sum of a constant)}\\
-&= n \bar{x} - n \bar{x}
-&& \text{(}\sum_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\
+&= n \xbar - n \xbar
+&& \text{(}\sum_{i} x_i = n \xbar\text{, by the definition of } \xbar\text{)}\\
 &= 0
 && \text{(subtract)}
 \end{aligned}
@@ -103,10 +103,10 @@ $$
 
 ## Deviations from the mean sum to zero
 
-The deviations of numbers $x_1, \ldots, x_n$ from their sample mean $\bar{x}$ (@def-sample-mean)
+The deviations of numbers $x_1, \ldots, x_n$ from their [sample mean](#def-sample-mean) $\xbar$
 sum to zero:
 
-$$\sum_{i=1}^n (x_i - \bar{x}) = 0.$$
+$$\sum_{i=1}^n (x_i - \xbar) = 0.$$
 
 :::
 

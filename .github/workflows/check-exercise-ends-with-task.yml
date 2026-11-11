@@ -18,4 +18,5 @@ jobs:
     uses: Morrison-Lab/gha/.github/workflows/check-exercise-ends-with-task.yml@v3
     with:
       fail: true
+      paths-ignore: '_extensions/**,latex-macros/**'
       whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
