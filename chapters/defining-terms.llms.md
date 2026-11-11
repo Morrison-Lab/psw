@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 15:12:07 (PST)
+Last modified: 2026-11-10 16:47:56 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -42,7 +42,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Provide explicit definitions:** State clearly what a term means, rather than assuming readers will understand from context.
 
-- **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats.
+- **Be concise:** Definitions should be brief and focused, using only the words necessary to convey the meaning. A definition block holds the defining statement and nothing else: no examples, special cases, motivation or caveats. The one exception is the graph of a function of one or two inputs (see *Graph a function of one or two inputs in its definition*, below).
 
 - **State technical definitions and results in both prose and a display equation:** Give a quantitative term, or a theorem or corollary, a one-sentence prose statement and the formula it stands for as a display equation, in the same definition or theorem block; together the sentence and the formula are the statement. A formula left inline in the sentence is easy to miss and hard for later derivations to point to. The prose tells the reader what the quantity means; the formula makes it exact and lets later derivations cite it. For example, define the ordinary least squares estimate of a parameter vector $\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}$ as “the value of $\mathord{\smash[b]{\underset{\raise.3ex\hbox{$\scriptstyle\sim$}}{\theta}}\vphantom{\theta}}$ that minimizes the [residual sum of squares](#def-rss)” *and* as
 
@@ -53,6 +53,8 @@ Follow these principles when introducing new [term](#def-term)s:
   $$R^2 := 1 - \frac{\text{RSS}}{\text{TSS}},$$
 
   not the two sums that RSS and TSS stand for.
+
+- **Graph a function of one or two inputs in its definition:** Every definition of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of one or two inputs includes a graph of that function, in 2D for one input and in 3D for two inputs (Ezra, 2026-11-10). Put the graph in the definition block, after the defining equation. Draw a 3D graph by the rules in [Three-dimensional graphs](../chapters/slides-posters-figures.llms.md#sec-3d-graphs).
 
 - **Open a definition with the bold [term](#def-term) as its subject:** Start the sentence with the term, then state what it is, and put the defining expression after that sentence. For example, write “The **[variance](#def-variance-expression-and-prose)** of a random variable $X$ is the [population](#def-population) mean of the squared deviation of $X$ from its population mean,” followed by the equation ${\operatorname{Var}\mathopen{}\left(X\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$. Do not open with the expression and name the term afterward, as in “${\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$ is the variance of $X$.” A reader who looks up a term should find the term first, and the definition then reads as one statement about that term.
 
