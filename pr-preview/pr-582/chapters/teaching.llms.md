@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 23:11:11 (PST)
+Last modified: 2026-11-10 23:22:00 (PST)
 
 > **NOTE:**
 >
@@ -36,7 +36,7 @@ The rest of this chapter gives the rules for teaching materials. The chapters on
 
 # 2 Build the lecture from exercises and solutions
 
-Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). A practice guide from the Institute of Education Sciences rates the evidence as strong for two related practices: quizzes that bring students back to key content, and deep explanatory questions such as “why” and “how do you know” ([Pashler et al. 2007](#ref-pashler2007), recommendations 5 and 7). The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
+Active learning, in which students work through tasks themselves during class, improves exam performance over lecture alone ([Freeman et al. 2014](#ref-freeman2014active)). A practice guide from the Institute of Education Sciences rates the evidence as strong for two related practices: quizzes that bring students back to key content, and deep explanatory questions such as “why” and “how do you know” ([Pashler et al. 2007](#ref-pashler2007), recommendations 5b and 7). The exercise-first structure is this guide’s own convention for putting that result into practice. Pose each task as an exercise, give students time to try it, and then show the solution.
 
 - Pose every data manipulation or analysis as an exercise, and show the code in the solution. Do not show the code first and explain it afterwards.
 
@@ -590,7 +590,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 
 # 37 Revisit earlier units in later exercises
 
-Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong ([Pashler et al. 2007](#ref-pashler2007), recommendations 1 and 5). Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility ([Dunlosky et al. 2013](#ref-dunlosky2013)).
+Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong ([Pashler et al. 2007](#ref-pashler2007), recommendations 1 and 5b). Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility ([Dunlosky et al. 2013](#ref-dunlosky2013)).
 
 - Give each problem set at least one exercise that needs a method from an earlier unit.
 - Link that exercise’s hint to the earlier section, as for any other exercise.
