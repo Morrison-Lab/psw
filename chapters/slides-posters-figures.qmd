@@ -228,9 +228,10 @@ For more:
 
 A figure or table with several panels can be put together in two places:
 
-- **Quarto layout**: each panel is its own subfigure or subtable,
-  a nested `#fig-` or `#tbl-` div inside the parent div,
-  arranged with `layout-ncol`, `layout-nrow`, or `layout`.
+- **Quarto layout**: each panel is a subfigure or subtable.
+  A subfigure is a `#fig-` div nested in the parent figure's div,
+  and a subtable is a `#tbl-` div nested in the parent table's div.
+  The parent div arranges the panels with `layout-ncol`, `layout-nrow`, or `layout`.
 - **Code**: one plot or table object holds every panel,
   made with [patchwork](https://patchwork.data-imaginist.com/), ggplot2 facets,
   plotly's `subplot()`, matplotlib's `subplots()`,
