@@ -344,7 +344,7 @@ library(patchwork)
 The expression puts `p1` and `p2` side by side above `p3`:
 
 - `plot_layout(guides = "collect")` merges the plots' legends into one.
-- `plot_annotation(tag_levels = "A")` labels the panels (a), (b), and (c), the style of Quarto's subcaptions.
+- `plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")` labels the panels (a), (b), and (c), the style of Quarto's subcaptions.
 - `&` applies the bottom legend position to every panel.
 
 # Three-dimensional graphs {#sec-3d-graphs}
