@@ -1,0 +1,22 @@
+# Flags an exercise div (#exr-) that a PR adds or edits when its last paragraph
+# holds no question or instruction, or when a figure, table, code block or
+# include follows its last task (psw#548, psw#549).
+# `<!-- ends-with-task-ok: reason -->` inside an exercise exempts it.
+# Fails the run on a finding: checks fail rather than warn (Ezra).
+# No push trigger: a push run has no base to diff against and would report
+# success having checked nothing. A manual run scans the whole tree.
+name: Check exercises end with a task
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-exercise-ends-with-task.yml@v3
+    with:
+      fail: true
+      paths-ignore: '_extensions/**,latex-macros/**'
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
