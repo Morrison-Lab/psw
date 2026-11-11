@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-10 16:47:56 (PST)
+Last modified: 2026-11-10 18:00:04 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -43,7 +43,16 @@ A figure often shows a pattern, an outlier or a comparison faster and more relia
 
 # 4 Scientific figures
 
-Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure, as a noninteractive version of it (Ezra, 2026-11-10). A note that sends readers to the HTML version does not replace the figure. Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
+Include a figure wherever one helps a reader see a definition, an example, or a result. Draw a graph for a relationship between quantities, a diagram for a structure or a process, and a plot of the data for a fitted model or an estimate. Add figures to new work as you write it, and add them to existing chapters that lack them. On a website or slide deck, draw a graph as an interactive [plotly](https://plotly.com/r/) figure where feasible, and as a 3D plotly figure where a third dimension shows the idea, such as a surface over two parameters. In static formats, such as PDF, Word, and PowerPoint, still render every 3D plot and other interactive figure, as a noninteractive version of it (Ezra, 2026-11-10). A note that sends readers to the HTML version does not replace the figure.
+
+When a definition or example graphs a model whose parameters are chosen rather than fitted to data, such as a density with a given mean and covariance, make the graph interactive in HTML output, slide decks included (Ezra, 2026-11-10). Give each parameter a slider, a numeric entry box, or both, and redraw the graph as the reader changes them. Start each control at the value the text uses, so the prose about that value describes the graph as it first appears, and in static formats draw the graph at those starting values. A graph of a model fitted to data stays fixed, because its parameters come from the data. In Quarto, build the graph with [Observable JS](https://quarto.org/docs/interactive/ojs/) cells, which run in both the website and the slides:
+
+- Make a slider with a numeric box beside it with `Inputs.range`, and a numeric box alone with `Inputs.number`.
+- Draw a 2D graph with [Observable Plot](https://observablehq.com/plot/), and a 3D surface with [plotly.js](https://plotly.com/javascript/3d-surface-plots/).
+- Put the cells in a `.content-visible when-format="html"` div.
+- Draw the static version with an R chunk that runs only outside HTML output.
+
+Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
 Open each caption with a sentence that says what the figure or table shows, so a reader who sees only the figure or table learns its point without following a link. A cross-reference to the example or section that the figure or table illustrates may support that sentence, either after the sentence or in parentheses within the sentence, but the cross-reference never replaces the sentence. Two captions for the same figure show the difference:
 
