@@ -13,6 +13,11 @@ Follow these principles:
   Split a long derivation into exercises a reader can attempt one at a time,
   such as each partial derivative, then solving the resulting equations,
   then checking the second derivative.
+  Title each exercise by the subgoal that it reaches,
+  such as "Solving the score equation",
+  so that the titles alone outline the derivation.
+  Labeling the subgoals of a worked example
+  is one of the instructional principles of worked-examples research [@atkinson2000].
 - **The solution follows its exercise.**
   Put each solution directly after its exercise,
   and give it an id named after the exercise

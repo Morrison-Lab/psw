@@ -304,8 +304,8 @@ check_bibliography_file <- function(filepath, verify_metadata = TRUE) {
   cat(sprintf("\nChecking %s...\n", filepath))
   
   # Exclusion list: BibTeX keys that don't have DOIs
-  # (e.g., older books where DOIs aren't available)
-  excluded_keys <- c("vapnik1998")
+  # (e.g., older books and articles where DOIs aren't available)
+  excluded_keys <- c("vapnik1998", "gopen1990")
   
   bib_df <- parse_bibtex_file(filepath)
   if (is.null(bib_df)) {
