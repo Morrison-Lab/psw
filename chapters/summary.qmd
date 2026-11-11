@@ -135,6 +135,8 @@ Follow its link for the reasons and the exceptions.
 - [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences).
 - [Name the object of a relational noun](grammar.qmd#name-the-object-of-a-relational-noun).
 - [Lead with the subject](conciseness.qmd#lead-with-the-subject).
+- [Start a sentence from what the reader already knows](conciseness.qmd#start-a-sentence-from-what-the-reader-already-knows),
+  and end it with the new information.
 - [Make every word tell](conciseness.qmd#make-every-word-tell):
   cut words that carry no meaning, but keep detail that does.
 - [Limit complex sentence structures](conciseness.qmd#limit-complex-sentence-structures).
@@ -158,6 +160,11 @@ Follow its link for the reasons and the exceptions.
 - [Use real data and compute every number](teaching.qmd#use-real-data-and-compute-every-number).
 - [Pair exploratory data analysis with plots](teaching.qmd#pair-exploratory-data-analysis-with-plots).
 - [Show each idea applied and in a figure](teaching.qmd#show-each-idea-applied-and-in-a-figure).
+- [Fade worked examples into exercises](teaching.qmd#fade-worked-examples-into-exercises) within a unit.
+- [Leave a step to the reader only as an exercise](teaching.qmd#leave-a-step-to-the-reader-only-as-an-exercise).
+- [Refute common misconceptions](teaching.qmd#refute-common-misconceptions)
+  where the concept is defined or first used.
+- [Revisit earlier units in later exercises](teaching.qmd#revisit-earlier-units-in-later-exercises).
 - [Write labs in both R and Python](teaching.qmd#write-labs-for-both-languages-and-any-computer)
   that run on any computer.
 - [Make figures accessible](teaching.qmd#make-figures-accessible).

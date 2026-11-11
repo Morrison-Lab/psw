@@ -41,6 +41,7 @@ ggeffects
 ggplot2
 ggview
 gha
+Gopen
 Grice
 gtsummary
 Halmos
@@ -63,6 +64,7 @@ Lamport
 lds
 lme4
 MAE
+matplotlib's
 mentees
 MeSH
 MSE
@@ -70,12 +72,14 @@ multifactorial
 neurodiverse
 nominalization
 nominalizations
+noninteractive
 Numdam
 ORCID
 overfit
 patchwork
 pdf
 plotly
+plotly's
 pMAE
 pmf
 pMSE
@@ -106,8 +110,14 @@ SRQR
 STARD
 Starmer
 STEM
+subcaption
+subcaptions
+subfigure
+subfigures
 submodule
 submodules
+subtable
+subtables
 synset
 synsets
 tabset

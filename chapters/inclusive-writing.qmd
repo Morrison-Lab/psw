@@ -85,8 +85,8 @@ the model is a black box | we cannot read the model's decision rule from its par
 flexibility buys lower bias | more flexible models tend to have lower bias
 this assumption costs nothing | this assumption loses no generality
 a mean of zero buys one identity | a mean of zero implies one identity
-that trade is the whole bargain of gradient descent | gradient descent decreases the objective only when each step is small enough
-the recommendation is trustworthy only as far as the step is small | the objective decreases only for steps that are small enough
+that trade is the whole bargain of gradient descent | gradient descent decreases the objective function only when each step is small enough
+the recommendation is trustworthy only as far as the step is small | the objective function decreases only for steps that are small enough
 Fix $\varepsilon > 0$. | Let $\varepsilon > 0$.
 Fix a value $t$. | Choose a value $t$.
 a ton of data | a large data set
@@ -333,6 +333,9 @@ The W3C guidance says readers may need
 "definitions or explanations for implied or ambiguous information"
 such as jokes, sarcasm and metaphors
 [@w3c_coga, Explain Implied Content].
+In an experiment,
+rewriting an instructional text to state each link that readers had to infer
+greatly improved what students recalled of it [@britton1991].
 
 > ❌ Of course, nobody would use accuracy here.
 >
@@ -444,6 +447,9 @@ is a framework for teaching diverse learners.
 The Cornell Center for Teaching Innovation
 describes UDL as giving students several ways to
 "Deliver content (text, audio, visuals, notes)" [@cornell_udl].
+Learners understand words and pictures together better than words alone [@mayer2020multimedia],
+and a practice guide from the Institute of Education Sciences
+recommends combining graphics with verbal descriptions [@pashler2007, recommendation 3].
 For a technical idea,
 give at least two of these forms:
 a sentence, a formula, a figure, a worked example with numbers,

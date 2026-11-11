@@ -125,9 +125,9 @@ Replace such phrases with one of the following:
 
 Deleting the phrase and keeping the claim
 is also usually an improvement:
-"the log-likelihood is a sum of three terms"
-makes the same claim about the log-likelihood as
-"the log-likelihood is obviously a sum of three terms",
+"the log-likelihood function is a sum of three terms" <!-- check-term-links: allow: "terms" here are summands, not the defined term -->
+makes the same claim about the log-likelihood function as
+"the log-likelihood function is obviously a sum of three terms",
 and it invites the reader to check the claim
 rather than to defer to it.
 
@@ -135,12 +135,12 @@ rather than to defer to it.
 
 # Replacing an appeal to familiarity
 
-> ❌ Substituting the normal density into the likelihood
+> ❌ Substituting the normal density function into the likelihood function
 > gives the familiar three-term formula.
 >
 > ✅ For an independent sample $x_1, \ldots, x_n$
 > from a normal distribution with mean $\mu$ and variance $\sigma^2$, <!-- check-term-links: allow -->
-> substituting the normal density into the likelihood
+> substituting the normal density function into the likelihood function
 > and taking logarithms gives
 > $$
 > \ell(\mu, \sigma^2) =
@@ -415,6 +415,14 @@ not ``Use the `Smarket` data (@dat-smarket).``,
 whose cross-reference renders as a parenthetical "(Dataset 1)" after the name.
 
 Link the longest phrase that names the thing, in the sentence that uses it.
+Choose a direct hyperlink over a pointer sentence wherever a phrase can carry the link (Ezra, 2026-11-10).
+A pointer sentence, such as "See the Wikipedia article for more." or "See `@sec-x` for details.",
+makes the reader leave the claim to find the link,
+and it names the target without saying what the target shows.
+Link the maximal phrase in the sentence that makes the claim,
+and drop the pointer.
+Keep a pointer sentence only where no phrase in the passage can carry the link,
+such as a pointer to a result as a whole.
 Inside a bolded name, put the link inside the bold, as `**[set](url)**`.
 Keep the numbered `[@key]` citation for a claim that no phrase names,
 for a source without a stable page, such as a book, and for a locator such as `p. 5`.
@@ -430,6 +438,19 @@ so the page needs no bibliography entry.
 > ✅ A [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is a set of vertices joined by edges.
 
 The second version gives the reader the article from the word they were already reading.
+
+:::
+
+::: {#exm-link-not-pointer}
+
+# Linking the claim instead of pointing to it
+
+> ❌ `Bias and variance trade off against each other. See the Wikipedia article for more.`
+>
+> ✅ [Bias and variance trade off against each other](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff).
+
+The second version makes the claim itself the link,
+so it needs no second sentence.
 
 :::
 
