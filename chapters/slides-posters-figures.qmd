@@ -230,14 +230,14 @@ A figure or table with several panels can be put together in two places:
 
 - **Quarto layout**: each panel is its own subfigure or subtable,
   a nested `#fig-` or `#tbl-` div inside the parent div,
-  arranged with `layout-ncol`, `layout-nrow` or `layout`.
+  arranged with `layout-ncol`, `layout-nrow`, or `layout`.
 - **Code**: one plot or table object holds every panel,
-  made with [patchwork](https://patchwork.data-imaginist.com/), ggplot2's `facet_wrap()` and `facet_grid()`,
+  made with [patchwork](https://patchwork.data-imaginist.com/), ggplot2 facets,
   plotly's `subplot()`, matplotlib's `subplots()`,
   or one table with grouped columns.
 
 Use Quarto layout by default.
-Quarto gives each panel its own label, subcaption and alt text,
+Quarto gives each panel its own label, subcaption, and alt text,
 and those keep working in every output format:
 
 - A cross-reference names the panel, as in "Figure 3b",
