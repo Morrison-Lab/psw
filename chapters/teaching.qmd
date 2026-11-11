@@ -1132,7 +1132,7 @@ when the part needs only one or two of those objects.
 Describe each dataset once,
 in its own dataset callout with a linkable id (`#dat-<name>`),
 never in a definition div,
-because a dataset is not a [term](defining-terms.qmd#def-term) with a defining equation
+because a dataset is not a term with a defining equation <!-- check-term-links: allow: "term" is linked earlier in this passage, at the top of the section -->
 (Ezra, 2026-11-02).
 The callout gives:
 
