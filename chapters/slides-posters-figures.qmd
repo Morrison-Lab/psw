@@ -116,15 +116,17 @@ and redraw the graph as the reader changes them.
 Start each control at the value the text uses,
 so the prose about that value describes the graph as it first appears,
 and in static formats draw the graph at those starting values.
-A graph of a model fitted to data stays fixed, because the data set its parameters.
-In Quarto, build the controls with [Observable JS](https://quarto.org/docs/interactive/ojs/) cells,
+A graph of a model fitted to data stays fixed, because its parameters come from the data.
+In Quarto, build the graph with [Observable JS](https://quarto.org/docs/interactive/ojs/) cells,
 which run in both the website and the slides:
-`Inputs.range` draws a slider with a numeric box beside it,
-and `Inputs.number` draws a numeric box alone.
-Draw a 2D graph with [Observable Plot](https://observablehq.com/plot/)
-and a 3D surface with [plotly.js](https://plotly.com/javascript/3d-surface-plots/),
-put the cells in a `.content-visible when-format="html"` div,
-and draw the static version with an R chunk that runs only outside HTML output.
+
+- Make a slider with a numeric box beside it with `Inputs.range`,
+  and a numeric box alone with `Inputs.number`.
+- Draw a 2D graph with [Observable Plot](https://observablehq.com/plot/),
+  and a 3D surface with [plotly.js](https://plotly.com/javascript/3d-surface-plots/).
+- Put the cells in a `.content-visible when-format="html"` div.
+- Draw the static version with an R chunk that runs only outside HTML output.
+
 Give every figure alt text, a numbered caption, and a code chunk that comments what the code does and why.
 
 Open each caption with a sentence that says what the figure or table shows,
