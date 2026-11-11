@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 00:50:34 (PST)
+Last modified: 2026-11-11 01:01:36 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -396,35 +396,33 @@ Follow these principles:
 >
 > **Definition 8 (Sample mean)** The **sample mean** of numbers $x_1, \ldots, x_n$ is their average:
 >
-> $$\bar{x} := \frac{1}{n} \sum_{i=1}^n x_i.$$
+> $${\bar{x}}:= \frac{1}{n} \sum_{i=1}^n x_i.$$
 
 > **NOTE:**
 >
-> **Exercise 1 (Deviations from the mean)** Show that
+> **Exercise 1 (Deviations from the mean)** Let ${\bar{x}}$ be the [sample mean](#def-sample-mean) of $x_1, \ldots, x_n$. Show that
 >
-> $$\sum_{i=1}^n (x_i - \bar{x}) = 0,$$
->
-> where $\bar{x}$ is the sample mean ([Definition 8](#def-sample-mean)).
+> $$\sum_{i=1}^n (x_i - {\bar{x}}) = 0.$$
 
 > **NOTE:**
 >
 > *Solution 1*. $$\begin{aligned}
-> \sum_{i=1}^n (x_i - \bar{x})
-> &= \sum_{i=1}^n x_i - \sum_{i=1}^n \bar{x}
+> \sum_{i=1}^n (x_i - {\bar{x}})
+> &= \sum_{i=1}^n x_i - \sum_{i=1}^n {\bar{x}}
 > && \text{(distribute the sum over the terms)}\\
-> &= \sum_{i=1}^n x_i - n \bar{x}
+> &= \sum_{i=1}^n x_i - n {\bar{x}}
 > && \text{(sum of a constant)}\\
-> &= n \bar{x} - n \bar{x}
-> && \text{(}\sum_{i} x_i = n \bar{x}\text{, by the definition of } \bar{x}\text{)}\\
+> &= n {\bar{x}}- n {\bar{x}}
+> && \text{(}\sum_{i} x_i = n {\bar{x}}\text{, by the definition of } {\bar{x}}\text{)}\\
 > &= 0
 > && \text{(subtract)}
 > \end{aligned}$$
 
 > **NOTE:**
 >
-> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers $x_1, \ldots, x_n$ from their sample mean $\bar{x}$ ([Definition 8](#def-sample-mean)) sum to zero:
+> **Theorem 2 (Deviations from the mean sum to zero)** The deviations of numbers $x_1, \ldots, x_n$ from their [sample mean](#def-sample-mean) ${\bar{x}}$ sum to zero:
 >
-> $$\sum_{i=1}^n (x_i - \bar{x}) = 0.$$
+> $$\sum_{i=1}^n (x_i - {\bar{x}}) = 0.$$
 
 > **NOTE:**
 >
