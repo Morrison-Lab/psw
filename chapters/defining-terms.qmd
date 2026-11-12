@@ -383,10 +383,12 @@ Follow these principles when introducing new [term](#def-term)s:
   needs no symbol.
   A term that recurs in formulas, such as a level set, needs one,
   so the reader sees the same object written the same way each time.
-  Ideally the symbol is a single glyph, not an expression built from other symbols
+  Give the term its own macro even when the macro prints an expression built from other symbols
   (Ezra, 2026-11-12).
-  For example, give the squared prediction error a glyph of its own,
-  rather than writing it as the prediction-error symbol squared.
+  For example, the squared prediction error gets its own macro,
+  which prints the prediction-error symbol squared.
+  Every use then goes through that macro,
+  so a single glyph can replace the expression later by editing one line.
   Define the symbol by the term's most literal meaning,
   such as the preimage of a single value for a level set.
   No check can decide this rule,
