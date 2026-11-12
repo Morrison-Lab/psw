@@ -422,7 +422,8 @@ The ✅ version lets every later slide refer to something the reader has already
 
 > ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
 >
-> ✅ @tbl-toy-dataset shows the dataset, which has one input.
+> ✅ @tbl-toy-dataset shows the toy dataset,
+> which has one input.
 >
 > ::: {#tbl-toy-dataset}
 >
