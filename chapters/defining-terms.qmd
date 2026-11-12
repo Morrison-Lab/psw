@@ -570,6 +570,25 @@ Follow these principles when introducing new [term](#def-term)s:
   can then connect them to the concept already learned
   (see [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)).
 
+- **Link the defined word to its Wiktionary entry:**
+  In a `#def-` div, link the first instance of the bolded [term](#def-term) being defined
+  to its entry in [Wiktionary](https://en.wiktionary.org/),
+  where an entry exists (Ezra, 2026-11-06).
+  For example, a definition of a [population](#def-population) begins
+  "The **[population](https://en.wiktionary.org/wiki/population)** of a study is ...".
+  Link only the defined name itself,
+  not the words around it, such as "of a study".
+  Link only the first bolded instance in the div,
+  and check that the entry exists before linking it.
+  Look up the whole name, however many words it has:
+  "standard deviation" has an entry, so it gets the link.
+  When the whole name has no entry, it gets no link;
+  do not link one of its words instead.
+  An alternative name in the div title
+  gets its own link where it first appears in bold.
+  The reader then sees the ordinary meaning of the word
+  before the technical one.
+
 - **Tell synonyms from hyponyms:**
   A *synonym* names the same concept as the primary term,
   so it belongs in the div title.
