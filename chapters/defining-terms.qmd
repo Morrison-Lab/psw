@@ -471,6 +471,15 @@ Follow these principles when introducing new [term](#def-term)s:
   For example, an exercise that says "Explain the labels" with no labels named in it
   has no antecedent, even if an earlier exercise names some.
   Name the labels in the exercise, or link them to where they are introduced.
+  A personal pronoun ("it", "its", "they", "them", or "their") follows the same rule,
+  and a link cannot repair it, so name the referent in the div.
+  For example, a solution that opens "It fails."
+  or that says "the relationship between them"
+  sends the reader back through earlier divs;
+  write "The step fails."
+  or "the relationship between the email and its label" instead.
+  The `check-definite-antecedents` check in
+  [gha](https://github.com/Morrison-Lab/gha/pull/1956) flags a div that opens with one of these pronouns.
 
 - **Provide examples and counterexamples:**
   Every definition should include at least one concrete example
