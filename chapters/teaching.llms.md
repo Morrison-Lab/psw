@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 00:52:28 (PST)
+Last modified: 2026-11-12 00:59:50 (PST)
 
 > **NOTE:**
 >
@@ -187,7 +187,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
 - Show the data where it is first mentioned. Put a table of a few rows, or a plot of the variables, directly after the sentence that names the dataset, before any discussion of its features, the methods to apply to it, or the questions it raises. A reader who has seen the data can picture what the next slides describe, while a reader who has not must hold an abstract description in mind until the data appears. If the data are too large to show, show a sample or a summary figure. Link later mentions of the dataset back to this first display.
-- Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head.
+- Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head. A toy dataset’s table still needs a `#tbl-` label and a caption, as [Captions are captions, not headings](../chapters/paper-organization.llms.md#captions-are-captions-not-headings) requires of every table, and the prose refers to it by its label. A table inside an exercise or a list item is not exempt either.
 - Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.
 
 > **NOTE:**
@@ -206,7 +206,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 >
 > > ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
 > >
-> > ✅ The dataset has one input:
+> > ✅ [Table 1](#tbl-toy-dataset) shows the toy dataset, which has one input.
 > >
 > > | $i$ | $\predvar_i$ | $\outvar_i$ |
 > > |----:|-------------:|------------:|
@@ -214,8 +214,10 @@ Check the reference text itself before naming its datasets. Open the chapter and
 > > |   2 |            1 |           0 |
 > > |   3 |            3 |           1 |
 > > |   4 |            4 |           1 |
+> >
+> > Table 1: A toy dataset with one input, one row per observation.
 >
-> The ✅ version puts each observation’s input and outcome side by side in one row.
+> The ✅ version puts each observation’s input and outcome side by side in one row, and gives the table a label and a caption, as every table needs.
 
 # 12 Store structured data in structured formats
 

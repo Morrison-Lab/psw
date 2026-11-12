@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-12 00:52:28 (PST)</p>
+  <p class="date">Last modified: 2026-11-12 00:59:50 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -575,7 +575,7 @@
 <li>Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.</li>
 <li>Show a dataset before analyzing it, with a printed look at its first rows and its structure.</li>
 <li>Show the data where it is first mentioned. Put a table of a few rows, or a plot of the variables, directly after the sentence that names the dataset, before any discussion of its features, the methods to apply to it, or the questions it raises. A reader who has seen the data can picture what the next slides describe, while a reader who has not must hold an abstract description in mind until the data appears. If the data are too large to show, show a sample or a summary figure. Link later mentions of the dataset back to this first display.</li>
-<li>Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head.</li>
+<li>Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head. A toy dataset’s table still needs a <code>#tbl-</code> label and a caption, as <a href="../chapters/paper-organization.html#captions-are-captions-not-headings">Captions are captions, not headings</a> requires of every table, and the prose refers to it by its label. A table inside an exercise or a list item is not exempt either.</li>
 <li>Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.</li>
 </ul>
 <div id="exm-show-data-first" class="theorem example">
@@ -590,7 +590,13 @@
 <p><span class="theorem-title"><strong>Example 5 (Showing a toy dataset as a table)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The dataset has one input: <span class="math inline">\(x = 0, 1\)</span> with <span class="math inline">\(y = 0\)</span>, and <span class="math inline">\(x = 3, 4\)</span> with <span class="math inline">\(y = 1\)</span>.</p>
-<p>✅ The dataset has one input:</p>
+<p>✅ <a href="#/tbl-toy-dataset" class="quarto-xref">Table&nbsp;1</a> shows the toy dataset, which has one input.</p>
+<div id="tbl-toy-dataset" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-toy-dataset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: A toy dataset with one input, one row per observation.
+</figcaption>
+<div aria-describedby="tbl-toy-dataset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -622,8 +628,11 @@
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </blockquote>
-<p>The ✅ version puts each observation’s input and outcome side by side in one row.</p>
+<p>The ✅ version puts each observation’s input and outcome side by side in one row, and gives the table a label and a caption, as every table needs.</p>
 </div>
 </section>
 <section id="store-structured-data-in-structured-formats" class="slide level2" data-number="12">
