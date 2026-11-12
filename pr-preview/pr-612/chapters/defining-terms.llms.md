@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 14:07:07 (PST)
+Last modified: 2026-11-12 14:18:16 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -70,11 +70,11 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Say in prose whether “is” defines or asserts:** In mathematics, $\stackrel{\text{def}}{=}$ marks a definition and $=$ marks a result, but the [copula](../chapters/avoid-cliches.llms.md#def-copula) “is” can mean either. Inside a definition div, the bold [term](#def-term) with “is” defines it, as $\stackrel{\text{def}}{=}$ does. Outside one, write “is defined as” when a sentence restates a definition, and link that definition. When two concepts that each have their own definition turn out to agree, write “equals” or “is the same as”, and link the result that proves it. A bare “is” between two defined concepts leaves the reader to guess whether the sentence is a definition or a claim that needs a proof.
 
-  > ❌ The Euclidean norm is the norm induced by the dot product.
+  > ❌ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) is [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
   >
-  > ✅ The Euclidean norm equals the norm induced by the dot product.
+  > ✅ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) [equals](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#thm-cross-entropy-loss-is-log-loss) [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
 
-  The word “equals” in a notes page links the theorem that proves the equality.
+  Each loss has its own definition, so the ✅ sentence links the theorem that proves they agree.
 
   Neither “is defined as” nor “equals” is an inflated copula such as “serves as”, so the rule keeps the plain verbs that [Avoiding clichés](../chapters/avoid-cliches.llms.md) asks for.
 
