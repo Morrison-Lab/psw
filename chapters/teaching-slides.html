@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-12 15:20:24 (PST)</p>
+  <p class="date">Last modified: 2026-11-12 15:45:48 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -1045,8 +1045,31 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="35">
-<h2><span class="header-section-number">35</span> Talk about the ideas, not the notes</h2>
+<section id="order-a-note-sheet-from-complex-sections-to-atomic-rows" class="slide level2" data-number="35">
+<h2><span class="header-section-number">35</span> Order a note sheet from complex sections to atomic rows</h2>
+</section>
+<section class="slide level2">
+
+<p>A note sheet’s sections and its rows run in opposite directions (Ezra, 2026-11-12):</p>
+<ul>
+<li><strong>Sections:</strong> put the most complex material first and the most atomic last. Follow, roughly, the order of the notes sites and of the chapters within each, read in reverse: course topics before statistics, then probability, then mathematics. A short table of constants, such as values of logarithms, goes last.</li>
+<li><strong>Rows within a table:</strong> put the most atomic row first, so each row uses only notation that a row above it defines.</li>
+<li><strong>Symbols:</strong> name a compound object once from its parts, then write its short symbol in every later row. For example, define the design matrix from the design function once, and write the design matrix alone in the predictions and the normal equations.</li>
+<li><strong>Layout:</strong> leave no blank space inside the sheet. Do not force a page break; let the sections flow, and keep only a guard that stops a section label from sitting alone at the foot of a page. Leftover space then falls at the end of the sheet.</li>
+<li><strong>Labels:</strong> put each table’s label closer to its own table than to the table above it.</li>
+</ul>
+<p>Atomic rows come first within a table because a reader scans a table from the top, and a row that uses a symbol defined below it sends the reader down the table to find it.</p>
+<div id="exm-note-sheet-order" class="theorem example">
+<p><span class="theorem-title"><strong>Example 10 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ Rows: <code>Gradient descent update</code>, <code>Step size</code>, <code>Gradient</code>, <code>Power rule</code>.</p>
+<p>✅ Rows: <code>Power rule</code>, <code>Gradient</code>, <code>Step size</code>, <code>Gradient descent update</code>.</p>
+</blockquote>
+<p>The ❌ table opens with an update rule that uses the step size and the gradient, which only the rows below it define. In the ✅ table, every row uses only the rows above it.</p>
+</div>
+</section>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="36">
+<h2><span class="header-section-number">36</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -1082,8 +1105,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>where to get a copy of the data.</li>
 </ul>
 </section>
-<section id="refute-common-misconceptions" class="slide level2" data-number="36">
-<h2><span class="header-section-number">36</span> Refute common misconceptions</h2>
+<section id="refute-common-misconceptions" class="slide level2" data-number="37">
+<h2><span class="header-section-number">37</span> Refute common misconceptions</h2>
 </section>
 <section class="slide level2">
 
@@ -1095,7 +1118,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Put the refutation where the concept is defined or first used, so the reader meets the correction together with the concept.</li>
 </ul>
 <div id="exm-refutation-text" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.</p>
 <p>✅ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed. A common misreading takes the p-value to be the probability that the null hypothesis is true. That misreading is wrong. The p-value is computed by assuming that the null hypothesis is true, so it cannot also be the probability that the null hypothesis is true.</p>
@@ -1103,8 +1126,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.</p>
 </div>
 </section>
-<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="37">
-<h2><span class="header-section-number">37</span> Revisit earlier units in later exercises</h2>
+<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="38">
+<h2><span class="header-section-number">38</span> Revisit earlier units in later exercises</h2>
 </section>
 <section class="slide level2">
 
@@ -1115,8 +1138,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.</li>
 </ul>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="38">
-<h2><span class="header-section-number">38</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="39">
+<h2><span class="header-section-number">39</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -1130,7 +1153,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
@@ -1146,8 +1169,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="39">
-<h2><span class="header-section-number">39</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="40">
+<h2><span class="header-section-number">40</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -1158,8 +1181,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="40">
-<h2><span class="header-section-number">40</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="41">
+<h2><span class="header-section-number">41</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -1173,8 +1196,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="41">
-<h2><span class="header-section-number">41</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="42">
+<h2><span class="header-section-number">42</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 

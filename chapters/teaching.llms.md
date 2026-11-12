@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 15:20:24 (PST)
+Last modified: 2026-11-12 15:45:48 (PST)
 
 > **NOTE:**
 >
@@ -552,7 +552,29 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-# 35 Talk about the ideas, not the notes
+# 35 Order a note sheet from complex sections to atomic rows
+
+A note sheet’s sections and its rows run in opposite directions (Ezra, 2026-11-12):
+
+- **Sections:** put the most complex material first and the most atomic last. Follow, roughly, the order of the notes sites and of the chapters within each, read in reverse: course topics before statistics, then probability, then mathematics. A short table of constants, such as values of logarithms, goes last.
+- **Rows within a table:** put the most atomic row first, so each row uses only notation that a row above it defines.
+- **Symbols:** name a compound object once from its parts, then write its short symbol in every later row. For example, define the design matrix from the design function once, and write the design matrix alone in the predictions and the normal equations.
+- **Layout:** leave no blank space inside the sheet. Do not force a page break; let the sections flow, and keep only a guard that stops a section label from sitting alone at the foot of a page. Leftover space then falls at the end of the sheet.
+- **Labels:** put each table’s label closer to its own table than to the table above it.
+
+Atomic rows come first within a table because a reader scans a table from the top, and a row that uses a symbol defined below it sends the reader down the table to find it.
+
+> **NOTE:**
+>
+> **Example 10 (Reordering a gradient descent table)**  
+>
+> > ❌ Rows: `Gradient descent update`, `Step size`, `Gradient`, `Power rule`.
+> >
+> > ✅ Rows: `Power rule`, `Gradient`, `Step size`, `Gradient descent update`.
+>
+> The ❌ table opens with an update rule that uses the step size and the gradient, which only the rows below it define. In the ✅ table, every row uses only the rows above it.
+
+# 36 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -577,7 +599,7 @@ Describe each dataset once, in its own dataset callout with a linkable id (`#dat
 - the outcome and the predictors, described in words;
 - where to get a copy of the data.
 
-# 36 Refute common misconceptions
+# 37 Refute common misconceptions
 
 When a topic has a well-known misconception, state the misconception, say that it is wrong, and explain the correct idea. A text written this way is a *refutation text*. Across two decades of science-education studies, students who read refutation texts were more likely to give up a misconception than students who read an ordinary explanation of the correct idea ([Tippett 2010](#ref-tippett2010)). An explanation that never mentions the misconception lets the reader keep both ideas.
 
@@ -588,7 +610,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 
 > **NOTE:**
 >
-> **Example 10 (Refuting a misreading of the p-value)**  
+> **Example 11 (Refuting a misreading of the p-value)**  
 >
 > > ❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.
 > >
@@ -596,7 +618,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 >
 > The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.
 
-# 37 Revisit earlier units in later exercises
+# 38 Revisit earlier units in later exercises
 
 Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong ([Pashler et al. 2007](#ref-pashler2007), recommendations 1 and 5b). Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility ([Dunlosky et al. 2013](#ref-dunlosky2013)).
 
@@ -604,7 +626,7 @@ Include in each problem set a few exercises that use methods from earlier units.
 - Link that exercise’s hint to the earlier section, as for any other exercise.
 - In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.
 
-# 38 Write grading rubrics as checklists
+# 39 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -617,7 +639,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 > **NOTE:**
 >
-> **Example 11 (A rubric as a checklist)**  
+> **Example 12 (A rubric as a checklist)**  
 >
 > > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >
@@ -634,14 +656,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-# 39 Credit other courses without summarizing them
+# 40 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-# 40 Finish each unit completely
+# 41 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -653,7 +675,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-# 41 Rules that apply to all writing
+# 42 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
