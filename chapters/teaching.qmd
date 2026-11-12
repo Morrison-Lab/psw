@@ -1092,6 +1092,44 @@ The ✅ rows let the reader find one formula by one label.
 
 :::
 
+# Order a note sheet from complex sections to atomic rows
+
+A note sheet's sections and its rows run in opposite directions (Ezra, 2026-11-12):
+
+- **Sections:** put the most complex material first and the most atomic last.
+  Follow, roughly, the order of the notes sites and of the chapters within each, read in reverse:
+  course topics before statistics, then probability, then mathematics.
+  A short table of constants, such as values of logarithms, goes last.
+- **Rows within a table:** put the most atomic row first,
+  so each row uses only notation that a row above it defines.
+- **Symbols:** name a compound object once from its parts,
+  then write its short symbol in every later row.
+  For example, define the design matrix from the design function once,
+  and write the design matrix alone in the predictions and the normal equations.
+- **Layout:** leave no blank space inside the sheet.
+  Do not force a page break;
+  let the sections flow,
+  and keep only a guard that stops a section label from sitting alone at the foot of a page.
+  Leftover space then falls at the end of the sheet.
+- **Labels:** put each table's label closer to its own table than to the table above it.
+
+Atomic rows come first within a table because a reader scans a table from the top,
+and a row that uses a symbol defined below it sends the reader down the table to find it.
+
+::: {#exm-note-sheet-order}
+
+# Reordering a gradient descent table
+
+> ❌ Rows: `Gradient descent update`, `Step size`, `Gradient`, `Power rule`.
+>
+> ✅ Rows: `Power rule`, `Gradient`, `Step size`, `Gradient descent update`.
+
+The ❌ table opens with an update rule that uses the step size and the gradient,
+which only the rows below it define.
+In the ✅ table, every row uses only the rows above it.
+
+:::
+
 # Talk about the ideas, not the notes
 
 When a [term](defining-terms.qmd#def-term) is defined on another page or in another site,
