@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 00:51:32 (PST)
+Last modified: 2026-11-12 00:23:17 (PST)
 
 > **NOTE:**
 >
@@ -261,7 +261,23 @@ The guide does not list “recently”, but it fails the same way. In course not
 > >
 > > ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) shows.
 
-# 12 Minimize unnecessary jargon
+# 12 Keep “this” and “also” out of consecutive sentences
+
+The Stanford course notes on mathematical writing say to “avoid words like ‘this’ or ‘also’ in consecutive sentences”. They explain that such words, and “unusual or polysyllabic utterances”, “tend to stick in a reader’s mind longer than other words, and good style will keep ‘sticky’ words spaced well apart” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). So avoid using “this” or “also” in two sentences in a row.
+
+> **NOTE:**
+>
+> **Example 6 (Spacing out “this” and “also”)**  
+>
+> > ❌ This model also fits the training data well. This fit also holds on the test set.
+> >
+> > ✅ The model also fits the training data well. Its fit carries over to the test set.
+>
+> The ❌ pair uses “this” and “also” in both sentences. The ✅ pair rewords the sentences but keeps both claims, and uses “also” once and “this” not at all, without a synonym such as “too” in the second sentence.
+
+The same point of the notes says to “use parallelism when parallel concepts are being discussed” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). A word repeated to make two statements parallel is repeated on purpose, so keep it, as [Repeat the wording of parallel results, then point out the difference](../chapters/mathematical-writing.llms.md#repeat-the-wording-of-parallel-results-then-point-out-the-difference) describes.
+
+# 13 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical [term](../chapters/defining-terms.llms.md#def-term) can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
@@ -269,7 +285,7 @@ Prefer normal words used in their usual sense. When you do need a technical term
 
 > **NOTE:**
 >
-> **Example 6 (Replacing unnecessary jargon)**  
+> **Example 7 (Replacing unnecessary jargon)**  
 >
 > > ❌ We leveraged a bespoke pipeline to operationalize the ingestion of heterogeneous data modalities.
 > >
@@ -284,5 +300,7 @@ Back to top
 ## References
 
 Google. n.d. *Google Developer Documentation Style Guide*. Web page. <https://developers.google.com/style>.
+
+Knuth, Donald E., Tracy Larrabee, and Paul M. Roberts. 1987. *Mathematical Writing*. <https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf>.
 
 Wikipedia contributors. 2026. *History of English — Wikipedia, the Free Encyclopedia*. <https://en.wikipedia.org/wiki/History_of_English>.
