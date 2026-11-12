@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 00:16:46 (PST)
+Last modified: 2026-11-12 00:24:44 (PST)
 
 > **NOTE:**
 >
@@ -206,7 +206,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 >
 > > ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
 > >
-> > ✅ [Table 1](#tbl-toy-dataset) shows the dataset, which has one input.
+> > ✅ [Table 1](#tbl-toy-dataset) shows the toy dataset, which has one input.
 > >
 > > | $i$ | $\predvar_i$ | $\outvar_i$ |
 > > |----:|-------------:|------------:|
