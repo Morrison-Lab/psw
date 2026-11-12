@@ -509,6 +509,38 @@ because "recently" assumed an order of lectures that the page does not fix.
 
 :::
 
+# Keep "this" and "also" out of consecutive sentences
+
+The Stanford course notes on mathematical writing say to "avoid words like 'this' or 'also' in consecutive sentences".
+They explain
+that such words, and "unusual or polysyllabic utterances", "tend to stick in a reader's mind longer than other words,
+and good style will keep 'sticky' words spaced well apart"
+[@knuth1987mathematical, point 9].
+So avoid using "this" or "also" in two sentences in a row.
+
+:::{#exm-sticky-words}
+
+# Spacing out "this" and "also"
+
+> ❌ This model also fits the training data well.
+> This fit also holds on the test set.
+>
+> ✅ The model also fits the training data well.
+> Its fit carries over to the test set.
+
+The ❌ pair uses "this" and "also" in both sentences.
+The ✅ pair rewords the sentences but keeps both claims,
+and uses "also" once and "this" not at all,
+without a synonym such as "too" in the second sentence.
+
+:::
+
+The same point of the notes says to "use parallelism when parallel concepts are being discussed"
+[@knuth1987mathematical, point 9].
+A word repeated to make two statements parallel is repeated on purpose,
+so keep it,
+as [Repeat the wording of parallel results, then point out the difference](mathematical-writing.qmd#repeat-the-wording-of-parallel-results-then-point-out-the-difference) describes.
+
 # Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field.

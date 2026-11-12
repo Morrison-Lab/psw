@@ -486,6 +486,7 @@ Use one notation for one thing, and one thing for each notation | [Mathematical 
 Motivate a result before you derive it | [Show why you need a result before you derive it](notation.qmd#show-why-you-need-a-result-before-you-derive-it)
 Avoid strings of nouns used as adjectives | [Rewrite noun strings and hidden verbs](inclusive-writing.qmd#rewrite-noun-strings-and-hidden-verbs)
 Avoid unnecessary jargon | [Minimize unnecessary jargon](word-choice.qmd#minimize-unnecessary-jargon)
+Keep "this" and "also" out of consecutive sentences | [Keep "this" and "also" out of consecutive sentences](word-choice.qmd#keep-this-and-also-out-of-consecutive-sentences)
 Write sentences that can be read from left to right without ambiguity | [Avoid garden-path sentences](grammar.qmd#avoid-garden-path-sentences)
 Use "that" instead of "which" in a [restrictive clause](grammar.qmd#def-restrictive-clause) | [Relative pronouns](grammar.qmd#relative-pronouns)
 Do not praise your own work | [Tone](avoid-cliches.qmd#tone)
