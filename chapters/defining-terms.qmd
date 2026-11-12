@@ -376,13 +376,19 @@ Follow these principles when introducing new [term](#def-term)s:
   The words tell the reader what the quantity means,
   and the symbol tells the reader which letters stand for it in the equations that follow.
 
-- **Give a definition a symbol only when the object recurs in formulas:**
+- **Give a definition a symbol when the object recurs in formulas:**
   Introduce a new symbol or macro for a defined term
   when the term appears in at least two formulas.
   A term that appears only in words, such as "pairwise disjoint",
   needs no symbol.
   A term that recurs in formulas, such as a level set, needs one,
   so the reader sees the same object written the same way each time.
+  Give the term its own macro even when the macro prints an expression built from other symbols
+  (Ezra, 2026-11-12).
+  For example, the squared prediction error gets its own macro,
+  which prints the prediction-error symbol squared.
+  Every use then goes through that macro,
+  so a single glyph can replace the expression later by editing one line.
   Define the symbol by the term's most literal meaning,
   such as the preimage of a single value for a level set.
   No check can decide this rule,
