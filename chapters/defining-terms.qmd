@@ -205,6 +205,29 @@ Follow these principles when introducing new [term](#def-term)s:
   a definition that adds "equivalently, the variance of the outcome given the covariates"
   states a result, so it belongs in one.
 
+- **Say in prose whether "is" defines or asserts:**
+  In mathematics, $\eqdef$ marks a definition and $=$ marks a result,
+  but the [copula](avoid-cliches.qmd#def-copula) "is" can mean either.
+  Inside a definition div,
+  the bold [term](#def-term) with "is" defines it, as $\eqdef$ does.
+  Outside one,
+  write "is defined as" when a sentence restates a definition,
+  and link that definition.
+  When two concepts that each have their own definition turn out to agree,
+  write "equals" or "is the same as",
+  and link the result that proves it.
+  A bare "is" between two defined concepts leaves the reader to guess
+  whether the sentence is a definition or a claim that needs a proof.
+
+  > ❌ The Euclidean norm is the norm induced by the dot product.
+  >
+  > ✅ The Euclidean norm equals the norm induced by the dot product.
+
+  The word "equals" in a notes page links the theorem that proves the equality.
+
+  Neither "is defined as" nor "equals" is an inflated copula such as "serves as",
+  so the rule keeps the plain verbs that [Avoiding clichés](avoid-cliches.qmd) asks for.
+
 - **Write both sides of a definition in the same notation:**
   The symbol on the left names an object,
   and the right side expands that object's own definition.
