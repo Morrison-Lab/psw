@@ -206,7 +206,8 @@ Follow these principles when introducing new [term](#def-term)s:
   states a result, so it belongs in one.
 
 - **Say in prose whether "is" defines or asserts:**
-  In mathematics, $\eqdef$ marks a definition and $=$ marks a result,
+  In mathematics, $\eqdef$ marks a definition
+  and $=$ marks a result,
   but the [copula](avoid-cliches.qmd#def-copula) "is" can mean either.
   Inside a definition div,
   the bold [term](#def-term) with "is" defines it, as $\eqdef$ does.
@@ -219,11 +220,12 @@ Follow these principles when introducing new [term](#def-term)s:
   A bare "is" between two defined concepts leaves the reader to guess
   whether the sentence is a definition or a claim that needs a proof.
 
-  > ❌ The Euclidean norm is the norm induced by the dot product.
+  > ❌ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) is [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
   >
-  > ✅ The Euclidean norm equals the norm induced by the dot product.
+  > ✅ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) [equals](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#thm-cross-entropy-loss-is-log-loss) [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
 
-  The word "equals" in a notes page links the theorem that proves the equality.
+  Each loss has its own definition,
+  so the ✅ sentence links the theorem that proves they agree.
 
   Neither "is defined as" nor "equals" is an inflated copula such as "serves as",
   so the rule keeps the plain verbs that [Avoiding clichés](avoid-cliches.qmd) asks for.
