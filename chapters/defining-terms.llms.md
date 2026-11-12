@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 11:11:47 (PST)
+Last modified: 2026-11-12 00:52:28 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -145,6 +145,8 @@ Follow these principles when introducing new [term](#def-term)s:
   > ✅ **Definition (linear map).** A function $f$ is a *linear map* if it is both additive and homogeneous.
 
 - **Name the synonyms:** When a field uses several words for one concept, such as *learning*, *training* and *fitting* a model, every word that names the concept is an alternative name, and each is treated exactly as the primary name: put all of them in the div title as a comma-separated list, with the primary name first, as in “Postulate, axiom”, and bold each where it first appears in the definition. Do not use parentheses or a phrase such as “also called” in the title. This covers the names other sources use, such as a textbook’s, which belong in the title and in bold too, as in “Risk, expected loss, population risk, true risk, generalization error, expected prediction error”. Say which one the document uses. Name near-synonyms in the definition block or in a callout beside it, and state how they differ. A reader who encounters the other words in another source can then connect them to the concept already learned (see [Minimize unnecessary jargon](../chapters/word-choice.llms.md#minimize-unnecessary-jargon)).
+
+- **Link the defined word to its Wiktionary entry:** In a `#def-` div, link the first instance of the bolded [term](#def-term) being defined to its entry in [Wiktionary](https://en.wiktionary.org/), where an entry exists (Ezra, 2026-11-06). For example, a definition of a [population](#def-population) begins “The **[population](https://en.wiktionary.org/wiki/population)** of a study is …”. Link only the defined name itself, not the words around it, such as “of a study”. Link only the first bolded instance in the div, and check that the entry exists before linking it. Look up the whole name, however many words it has: “standard deviation” has an entry, so it gets the link. When the whole name has no entry, it gets no link; do not link one of its words instead. An alternative name in the div title gets its own link where it first appears in bold. The reader then sees the ordinary meaning of the word before the technical one.
 
 - **Tell synonyms from hyponyms:** A *synonym* names the same concept as the primary term, so it belongs in the div title. A *hyponym* names a special case of another term, such as “linear regression” for “regression model”, so it is a different concept. Give each hyponym its own `#def-` div, and never put it in the title of the general term or introduce it with “also called” (Ezra, 2026-10-23). When unsure, check both directions. Is every instance of the new term an instance of the old term? Is every instance of the old term an instance of the new term? If only the first holds, the new term is a hyponym.
 

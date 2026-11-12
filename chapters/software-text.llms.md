@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-11 11:11:47 (PST)
+Last modified: 2026-11-12 00:52:28 (PST)
 
 Software projects depend on short documents:
 
