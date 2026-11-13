@@ -866,9 +866,8 @@ An undated claim reads as a fact that will not change,
 so readers repeat it
 long after it has stopped being true.
 
-Write an absolute date, not "currently", "now", "recently", or "still".
-A relative word goes stale
-as soon as someone reads the text later.
+Write the date itself, not a word relative to the time of writing,
+as [Give a date or a version instead of a time-relative word](word-choice.qmd#give-a-date-or-a-version-instead-of-a-time-relative-word) explains.
 
 A claim that cannot change needs no date.
 A mathematical identity, a definition, the fixed rules of a programming language,
