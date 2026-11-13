@@ -82,6 +82,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/mean-and-prediction-functions.qmd >}}
 
+# Naming covariates and their coefficients
+
+{{< include notation/covariate-symbols.qmd >}}
+
 # Writing the log-odds
 
 {{< include notation/log-odds-symbol.qmd >}}

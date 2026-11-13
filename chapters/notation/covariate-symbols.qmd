@@ -1,0 +1,31 @@
+Give each named covariate a letter that suggests what it measures,
+and subscript its regression coefficient with that same letter.
+A reader then knows which variable a coefficient multiplies without looking it up.
+In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
+write the coefficient of a covariate $A$ as `\coef{A}`, which prints $\coef{A}$.
+
+Keep the numbered form, a covariate $x_j$ with coefficient $\coef{j}$,
+for statements that hold for any covariate in a model with $p$ of them,
+where no particular variable is meant.
+Do not number the covariates of a worked example.
+A numbered coefficient such as $\coef{1}$ makes the reader count positions in the model,
+and the count changes when a covariate is added or dropped.
+
+::: {#exm-covariate-symbols}
+
+## Coefficients named by their covariates
+
+In the birthweight data [@dobson4e, Example 2.2.2],
+the outcome $Y$ is birthweight in grams,
+the covariate $M$ indicates a male infant,
+and the covariate $A$ is gestational age in weeks.
+
+> ❌ $\E{Y \mid X_1 = x_1, X_2 = x_2} = \intcoef + \coef{1} x_1 + \coef{2} x_2$, where $X_1$ is the male indicator and $X_2$ is gestational age.
+>
+> ✅ $\E{Y \mid M = m, A = a} = \intcoef + \coef{M} m + \coef{A} a$.
+
+In the ✅ version, the coefficient $\coef{A}$ multiplies the gestational age $a$,
+so a reader sees at once that $\coef{A}$ is the difference in mean birthweight per week of gestational age,
+for infants of the same sex.
+
+:::
