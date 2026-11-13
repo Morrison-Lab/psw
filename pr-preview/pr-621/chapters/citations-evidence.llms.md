@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 15:47:41 (PST)
+Last modified: 2026-11-12 22:05:20 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -225,7 +225,7 @@ Leave a link out only for a reason such as one of the following:
 > >
 > > ✅ Prerequisites: [MATH 341](https://morrison-lab.github.io/swc/course/MATH-341.html) and [MATH 342](https://morrison-lab.github.io/swc/course/MATH-342.html), or instructor permission.
 >
-> A student who has not taken the first course can see what it covers and when it is offered before deciding whether to enroll.
+> A student who has not taken a listed course can see what it covers and when it is offered before deciding whether to enroll.
 
 # 8 Cite Wikipedia, beside the primary source
 
