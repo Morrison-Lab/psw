@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 10:56:18 (PST)
+Last modified: 2026-11-13 11:27:53 (PST)
 
 > **NOTE:**
 >
@@ -65,6 +65,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Label variables in plain words](../chapters/paper-organization.llms.md#label-variables-in-plain-words) in figures and tables.
 - [Use descriptive subsection headings](../chapters/paper-organization.llms.md#subsection-headings).
 - [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references): move the content ahead of the sentence that uses it.
+- [Lead with what is true](../chapters/paper-organization.llms.md#lead-with-what-is-true): do not state a claim and then retract it.
 - [Put each link to a video next to the text that it supports](../chapters/paper-organization.llms.md#links-to-videos-and-other-media).
 - Follow the [journal’s conventions for a manuscript](../chapters/manuscript-submission.llms.md), and check the [submission checklist](../chapters/manuscript-submission.llms.md#submission-checklist) before you submit.
 
