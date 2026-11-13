@@ -863,10 +863,12 @@ as in "as of 2026-07-24" or "(checked July 2026)".
 A reader who meets the claim later can see how old it is
 and check it again before relying on it.
 An undated claim reads as a fact that will not change,
-so readers repeat it long after it has stopped being true.
+so readers repeat it
+long after it has stopped being true.
 
 Write an absolute date, not "currently", "now", "recently", or "still".
-A relative word goes stale as soon as someone reads the text later.
+A relative word goes stale
+as soon as someone reads the text later.
 
 A claim that cannot change needs no date.
 A mathematical identity, a definition, the fixed rules of a programming language,
@@ -883,7 +885,8 @@ the vendor can merge or rename the features in any release.
 > ✅ The package was not on CRAN as of 2026-03-01,
 > so install it from GitHub.
 
-A reader months later cannot tell from the ❌ sentence whether it is still true.
+A reader months later cannot tell from the ❌ sentence
+whether it is still true.
 The ✅ sentence shows when it was checked,
 so the reader knows to look at CRAN before following the advice.
 
