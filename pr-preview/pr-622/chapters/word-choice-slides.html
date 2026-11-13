@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-12 17:29:37 (PST)</p>
+  <p class="date">Last modified: 2026-11-12 17:38:41 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -474,7 +474,12 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </section>
 <section class="slide level2">
 
-<p>In a <a href="https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression">logistic regression</a> model, a change <span class="math inline">\(\diff \vpredvar\)</span> in the predictors multiplies the odds by <span class="math inline">\(\e{\dprod{\vcoef}{\diff \vpredvar}}\)</span>, and a one-unit increase in predictor <span class="math inline">\(j\)</span> multiplies them by <span class="math inline">\(\e{\coef{j}}\)</span>. Call that number the <em>odds multiplier</em> of the change, not the <em>odds factor</em> (Ezra, 2026-11-12). <em>Factor</em> already has other meanings in a statistics text, such as a categorical variable in R, a latent variable in factor analysis, and a number that divides another, while <em>multiplier</em> says what the number does to the odds.</p>
+<p>In a <a href="https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression">logistic regression</a> model, a change <span class="math inline">\(\diff \vpredvar\)</span> in the predictors multiplies the <a href="https://morrison-lab.github.io/pds/probability-basics.html#def-odds">odds</a> by <span class="math inline">\(\e{\dprod{\vcoef}{\diff \vpredvar}}\)</span>, and a one-unit increase in predictor <span class="math inline">\(j\)</span> multiplies them by <span class="math inline">\(\e{\coef{j}}\)</span>. Call that number the <em>odds multiplier</em> of the change, not the <em>odds factor</em> (Ezra, 2026-11-12). <em>Multiplier</em> says what the number does to the odds, while <em>factor</em> already has other meanings in these notes:</p>
+<ul>
+<li>a <a href="https://morrison-lab.github.io/sds/data.html#def-categorical-var">categorical variable</a> in R;</li>
+<li>a latent variable in factor analysis;</li>
+<li>a number that divides another.</li>
+</ul>
 <blockquote>
 <p>❌ The odds factor of a one-unit increase in age is <span class="math inline">\(\e{\coef{\text{age}}}\)</span>.</p>
 <p>✅ The odds multiplier of a one-unit increase in age is <span class="math inline">\(\e{\coef{\text{age}}}\)</span>.</p>

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 17:29:37 (PST)
+Last modified: 2026-11-12 17:38:41 (PST)
 
 > **NOTE:**
 >
@@ -151,7 +151,11 @@ Keep *normal* where it names a different concept, as in the *normal equations*. 
 
 # 6 Call the exponentiated coefficient an odds multiplier
 
-In a [logistic regression](https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression) model, a change $\diff \vpredvar$ in the predictors multiplies the odds by $\e{\dprod{\vcoef}{\diff \vpredvar}}$, and a one-unit increase in predictor $j$ multiplies them by $\e{\coef{j}}$. Call that number the *odds multiplier* of the change, not the *odds factor* (Ezra, 2026-11-12). *Factor* already has other meanings in a statistics text, such as a categorical variable in R, a latent variable in factor analysis, and a number that divides another, while *multiplier* says what the number does to the odds.
+In a [logistic regression](https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression) model, a change $\diff \vpredvar$ in the predictors multiplies the [odds](https://morrison-lab.github.io/pds/probability-basics.html#def-odds) by $\e{\dprod{\vcoef}{\diff \vpredvar}}$, and a one-unit increase in predictor $j$ multiplies them by $\e{\coef{j}}$. Call that number the *odds multiplier* of the change, not the *odds factor* (Ezra, 2026-11-12). *Multiplier* says what the number does to the odds, while *factor* already has other meanings in these notes:
+
+- a [categorical variable](https://morrison-lab.github.io/sds/data.html#def-categorical-var) in R;
+- a latent variable in factor analysis;
+- a number that divides another.
 
 > ❌ The odds factor of a one-unit increase in age is $\e{\coef{\text{age}}}$.
 >
