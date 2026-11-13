@@ -84,7 +84,7 @@ Common arbitrary choices include:
 - thresholds and cutoffs;
 - random seeds;
 - splits into training and test data;
-- subsets, exclusions and transformations;
+- subsets, exclusions, and transformations;
 - grids of tuning-parameter values.
 
 Each one is a claim that this value suits the analysis,
@@ -111,7 +111,7 @@ An earlier version grouped the ages into bins,
 and its caption listed the bins without saying why they were there:
 
 > ❌ ... with the proportion of men who had coronary heart disease in each age group ...
-> The groups are ages 39 to 41, 42 to 44, 45 to 47, 48 to 50, 51 to 53 and 54 to 59.
+> The groups are ages 39 to 41, 42 to 44, 45 to 47, 48 to 50, 51 to 53 and 54 to 59. <!-- check-serial-comma: allow: verbatim quote of the old lds caption -->
 
 The data did not force the bins.
 Each age from 39 to 59 has between 17 and 144 men in each behavior pattern,
