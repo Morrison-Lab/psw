@@ -322,6 +322,57 @@ link it instead of describing its position:
 write "Exercises `@exr-a` through `@exr-b` establish the properties",
 not "The next exercises establish the properties".
 
+# Lead with what is true
+
+Do not state a claim and then retract or replace it a sentence or two later.
+Each sentence in such a passage can be true and cited;
+the defect is in the order.
+The reader builds a picture from the first sentence
+and has to discard it on reading the second.
+Common forms are:
+
+- "X. However, in practice, Y."
+- "In principle X; in practice Y."
+- a sentence whose only job is to withdraw the one before it
+
+This order comes naturally when you learned the facts in it.
+You started from the simple version, found the correction,
+and the prose retraces your path.
+The reader did not take that path and does not need to.
+
+Fix the passage by reordering it, not by softening the retraction.
+State first, in full, what the method, program, or system does.
+Then present the simpler version, the earlier approach, or the planned work
+as an extension or as future work.
+
+::: {#exm-lead-with-what-is-true}
+
+# Stating what a script does first
+
+> ❌ The script reads every file in the data folder.
+> In practice, it skips files whose names start with an underscore.
+>
+> ✅ The script reads every file in the data folder
+> whose name does not start with an underscore.
+
+In the ❌ version, the reader learns that the script reads every file,
+and then has to drop that picture.
+In the ✅ version, one sentence says which files the script reads.
+
+:::
+
+Stating a wrong idea first is right when the reader already holds it
+and the passage exists to correct it,
+as in [Refute common misconceptions](teaching.qmd#refute-common-misconceptions).
+What matters is whose idea it was:
+the reader's, held before reading,
+or the writer's own first draft.
+
+The same rule applies to a review comment or reply that you revise.
+Where the platform allows replies, reply to the earlier comment instead of rewriting it.
+Where you can only edit the comment, replace its text with what is now true,
+and do not describe what it used to say.
+
 # Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material
