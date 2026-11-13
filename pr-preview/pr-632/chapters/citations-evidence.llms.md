@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 12:11:50 (PST)
+Last modified: 2026-11-13 12:24:54 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -507,7 +507,7 @@ Give each such claim the date on which it was true, as in “as of 2026-07-24”
 
 Write the date itself, not a word relative to the time of writing, as [Give a date or a version instead of a time-relative word](../chapters/word-choice.llms.md#give-a-date-or-a-version-instead-of-a-time-relative-word) explains.
 
-A claim that cannot change needs no date. A mathematical identity, a definition, the fixed rules of a programming language, and the date of a past event stay true. A vendor’s distinction between two of its own features is not in this group: the vendor can merge or rename the features in any release.
+A claim that cannot change needs no date. A mathematical identity, a definition, a statement about a named version of a language or package, and the date of a past event stay true. A vendor’s distinction between two of its own features is not in this group: the vendor can merge or rename the features in any release.
 
 > **NOTE:**
 >
