@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 00:15:54 (PST)
+Last modified: 2026-11-13 08:39:15 (PST)
 
 > **NOTE:**
 >
@@ -149,7 +149,21 @@ Use the same word in every phrase built on the distribution:
 
 Keep *normal* where it names a different concept, as in the *normal equations*. Keep *normal* in a quoted title or a cited name, such as `rnorm` in R, where you report what the source calls it.
 
-# 6 Name a quantity for what it is
+# 6 Call the exponentiated coefficient an odds multiplier
+
+In a [logistic regression](https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression) model, a change $\diff \vpredvar$ in the predictors multiplies the [odds](https://morrison-lab.github.io/pds/probability-basics.html#def-odds) by $\e{\dprod{\vcoef}{\diff \vpredvar}}$, and a one-unit increase in predictor $j$ multiplies them by $\e{\coef{j}}$. Call that number the *odds multiplier* of the change, not the *odds factor* (Ezra, 2026-11-12). *Multiplier* says what the number does to the odds, while *factor* already has other meanings in these notes:
+
+- a [categorical variable](https://morrison-lab.github.io/sds/data.html#def-categorical-var) in R;
+- a latent variable in factor analysis;
+- a number that divides another.
+
+> ❌ The odds factor of a one-unit increase in age is $\e{\coef{\text{age}}}$.
+>
+> ✅ The odds multiplier of a one-unit increase in age is $\e{\coef{\text{age}}}$.
+
+The symbol stays $\oddsfactor$, written with the shared `\oddsfactor` macro: the rule is about the word in the prose, not the macro’s name.
+
+# 7 Name a quantity for what it is
 
 A name should say what kind of thing the quantity is. Each kind of quantity has its own name:
 
@@ -167,7 +181,7 @@ For example, the variance of the outcome given the inputs is the *residual varia
 
 Mention the common name once, as an alias in the definition, and use the accurate [term](../chapters/defining-terms.llms.md#def-term) everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.
 
-# 7 Write the full phrase
+# 8 Write the full phrase
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
 
@@ -203,7 +217,7 @@ The same rule applies to symbols. Write a function with its argument, such as $\
 >
 > > ✅ The cost of the initial parameter vector is 4.2, and each step lowers it. (A value of the cost function at a specific input, so “function” is not needed.)
 
-# 8 Choose each preposition on purpose
+# 9 Choose each preposition on purpose
 
 A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
 
@@ -227,7 +241,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
-# 9 Refer to a place in the document by its label
+# 10 Refer to a place in the document by its label
 
 Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document ([Google, n.d.](#ref-google2025style), entry “above”; [Google, n.d.](#ref-google2025style), entry “below”). Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.
 
@@ -241,13 +255,13 @@ Do not use “above” or “below” for a position in a document. The same sou
 >
 > The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders `@tbl-fits` as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.
 
-# 10 Leave out words that judge difficulty or add nothing
+# 11 Leave out words that judge difficulty or add nothing
 
 “Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them ([Google, n.d.](#ref-google2025style), entries “just” and “easy, easily”). “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) covers the same problem for “obvious” and “clearly”.
 
 Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.
 
-# 11 Give a date or a version instead of a time-relative word
+# 12 Give a date or a version instead of a time-relative word
 
 Do not write “now”, “new” or “currently” for a state that will change. The Google style guide says these words “can render such documentation inaccurate, outdated, or unmeaningful” ([Google, n.d.](#ref-google2025style), “Timeless documentation”) and says of “currently”: “Avoid because this word is implied” ([Google, n.d.](#ref-google2025style), entry “currently”). Say which date, version or release the statement holds for.
 
@@ -261,7 +275,7 @@ The guide does not list “recently”, but it fails the same way. In course not
 > >
 > > ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) shows.
 
-# 12 Keep “this” and “also” out of consecutive sentences
+# 13 Keep “this” and “also” out of consecutive sentences
 
 The Stanford course notes on mathematical writing say to “avoid words like ‘this’ or ‘also’ in consecutive sentences”. They explain that such words, and “unusual or polysyllabic utterances”, “tend to stick in a reader’s mind longer than other words, and good style will keep ‘sticky’ words spaced well apart” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). So avoid using “this” or “also” in two sentences in a row.
 
@@ -277,7 +291,7 @@ The Stanford course notes on mathematical writing say to “avoid words like ‘
 
 The same point of the notes says to “use parallelism when parallel concepts are being discussed” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). A word repeated to make two statements parallel is repeated on purpose, so keep it, as [Repeat the wording of parallel results, then point out the difference](../chapters/mathematical-writing.llms.md#repeat-the-wording-of-parallel-results-then-point-out-the-difference) describes.
 
-# 13 Minimize unnecessary jargon
+# 14 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical [term](../chapters/defining-terms.llms.md#def-term) can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 
