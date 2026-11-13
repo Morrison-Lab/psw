@@ -91,7 +91,7 @@ Each one is a claim that this value suits the analysis,
 so it needs support like any other claim.
 Every time you make an arbitrary analysis choice,
 explain the decision in the prose next to it (Ezra, 2026-11-03).
-State three things:
+The explanation states:
 
 - what you chose;
 - what the alternatives were;
