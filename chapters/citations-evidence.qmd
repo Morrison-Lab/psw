@@ -846,6 +846,49 @@ so a reader can check the wording and the claim against the book.
 
 :::
 
+# Date a claim that can change {#date-volatile-claims}
+
+Some claims are true only for a while.
+The world can change and make the sentence false
+without anyone editing the sentence.
+Such claims include:
+
+- what a software package, tool, or service does, supports, or sets by default;
+- which version, release, or model is the latest;
+- counts, prices, and who maintains or owns something;
+- anything you checked by looking it up.
+
+Give each such claim the date on which it was true,
+as in "as of 2026-07-24" or "(checked July 2026)".
+A reader who meets the claim later can see how old it is
+and check it again before relying on it.
+An undated claim reads as a fact that will not change,
+so readers repeat it long after it has stopped being true.
+
+Write an absolute date, not "currently", "now", "recently", or "still".
+A relative word goes stale as soon as someone reads the text later.
+
+A claim that cannot change needs no date.
+A mathematical identity, a definition, the fixed rules of a programming language,
+and the date of a past event stay true.
+A vendor's distinction between two of its own features is not in this group:
+the vendor can merge or rename the features in any release.
+
+::: {#exm-date-volatile-claims}
+
+# Dating a claim about a package
+
+> ❌ The package is not on CRAN, so install it from GitHub.
+>
+> ✅ The package was not on CRAN as of 2026-03-01,
+> so install it from GitHub.
+
+A reader months later cannot tell from the ❌ sentence whether it is still true.
+The ✅ sentence shows when it was checked,
+so the reader knows to look at CRAN before following the advice.
+
+:::
+
 # Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence

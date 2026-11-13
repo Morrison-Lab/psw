@@ -73,6 +73,8 @@ Follow its link for the reasons and the exceptions.
   rather than a source that quotes it.
 - [Put the content first](citations-evidence.qmd#put-the-content-first):
   name the topic, not its author, in headings and sentences.
+- [Date a claim that can change](citations-evidence.qmd#date-volatile-claims),
+  such as what a software package supports.
 
 # Papers
 
