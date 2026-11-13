@@ -241,85 +241,85 @@
     "objectID": "chapters/citations-evidence.html#trivial-and-trivially",
     "href": "chapters/citations-evidence.html#trivial-and-trivially",
     "title": "Citations and evidence",
-    "section": "3.1 “Trivial” and “trivially”",
-    "text": "3.1 “Trivial” and “trivially”\n“Trivial” and “trivially” usually work the same way: they announce that a step is too small to write down, which relieves the writer of writing it down. Treat them as a prompt to check the step, and to write it out if it takes only a line.\nThe word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case. For example, a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries."
+    "section": "4.1 “Trivial” and “trivially”",
+    "text": "4.1 “Trivial” and “trivially”\n“Trivial” and “trivially” usually work the same way: they announce that a step is too small to write down, which relieves the writer of writing it down. Treat them as a prompt to check the step, and to write it out if it takes only a line.\nThe word has one defensible use, which is describing how a general expression reduces to a simpler one in a special case. For example, a weighted average reduces to an ordinary average when all of the weights are equal. Even in that use, “minimal case” or “degenerate case” names the situation more precisely, and avoids the dismissive tone that “trivial” carries."
   },
   {
     "objectID": "chapters/citations-evidence.html#peer-review",
     "href": "chapters/citations-evidence.html#peer-review",
     "title": "Citations and evidence",
-    "section": "5.1 Peer review",
-    "text": "5.1 Peer review\nPeer-reviewed publications in reputable journals have undergone expert scrutiny. This doesn’t guarantee correctness, but it provides a baseline level of quality control."
+    "section": "6.1 Peer review",
+    "text": "6.1 Peer review\nPeer-reviewed publications in reputable journals have undergone expert scrutiny. This doesn’t guarantee correctness, but it provides a baseline level of quality control."
   },
   {
     "objectID": "chapters/citations-evidence.html#reputation-of-authors-and-institutions",
     "href": "chapters/citations-evidence.html#reputation-of-authors-and-institutions",
     "title": "Citations and evidence",
-    "section": "5.2 Reputation of authors and institutions",
-    "text": "5.2 Reputation of authors and institutions\nWork from recognized experts and well-regarded institutions tends to be more reliable, though this should not be the sole criterion."
+    "section": "6.2 Reputation of authors and institutions",
+    "text": "6.2 Reputation of authors and institutions\nWork from recognized experts and well-regarded institutions tends to be more reliable, though this should not be the sole criterion."
   },
   {
     "objectID": "chapters/citations-evidence.html#replication-and-consensus",
     "href": "chapters/citations-evidence.html#replication-and-consensus",
     "title": "Citations and evidence",
-    "section": "5.3 Replication and consensus",
-    "text": "5.3 Replication and consensus\nFindings that have been replicated by independent groups or that represent scientific consensus are more trustworthy than isolated claims."
+    "section": "6.3 Replication and consensus",
+    "text": "6.3 Replication and consensus\nFindings that have been replicated by independent groups or that represent scientific consensus are more trustworthy than isolated claims."
   },
   {
     "objectID": "chapters/citations-evidence.html#transparency-and-reproducibility",
     "href": "chapters/citations-evidence.html#transparency-and-reproducibility",
     "title": "Citations and evidence",
-    "section": "5.4 Transparency and reproducibility",
-    "text": "5.4 Transparency and reproducibility\nStudies that:\n\nClearly describe their methods\nShare their data and code\nDisclose potential conflicts of interest\nHave been successfully reproduced by others\n\nare more trustworthy than those lacking these features."
+    "section": "6.4 Transparency and reproducibility",
+    "text": "6.4 Transparency and reproducibility\nStudies that:\n\nClearly describe their methods\nShare their data and code\nDisclose potential conflicts of interest\nHave been successfully reproduced by others\n\nare more trustworthy than those lacking these features."
   },
   {
     "objectID": "chapters/citations-evidence.html#preprints-and-non-peer-reviewed-sources",
     "href": "chapters/citations-evidence.html#preprints-and-non-peer-reviewed-sources",
     "title": "Citations and evidence",
-    "section": "5.5 Preprints and non-peer-reviewed sources",
-    "text": "5.5 Preprints and non-peer-reviewed sources\nPreprints can be valuable for accessing cutting-edge research, but they have not undergone peer review. When citing preprints:\n\nNote that they are preprints\nCheck whether a peer-reviewed version has since been published\nExercise extra scrutiny of the methods and conclusions"
+    "section": "6.5 Preprints and non-peer-reviewed sources",
+    "text": "6.5 Preprints and non-peer-reviewed sources\nPreprints can be valuable for accessing cutting-edge research, but they have not undergone peer review. When citing preprints:\n\nNote that they are preprints\nCheck whether a peer-reviewed version has since been published\nExercise extra scrutiny of the methods and conclusions"
   },
   {
     "objectID": "chapters/citations-evidence.html#sources-to-generally-avoid",
     "href": "chapters/citations-evidence.html#sources-to-generally-avoid",
     "title": "Citations and evidence",
-    "section": "5.6 Sources to generally avoid",
-    "text": "5.6 Sources to generally avoid\nSome sources typically lack the rigor needed for scientific writing:\n\nWikipedia and general encyclopedias as the only source for a claim (cite them beside the primary source, as Cite Wikipedia, beside the primary source explains)\nPopular press articles about scientific findings (cite the original research instead)\nBlogs and social media posts (unless discussing public discourse or documenting specific claims made in those venues)\nPredatory or pay-to-publish journals without genuine peer review\nRetracted papers"
+    "section": "6.6 Sources to generally avoid",
+    "text": "6.6 Sources to generally avoid\nSome sources typically lack the rigor needed for scientific writing:\n\nWikipedia and general encyclopedias as the only source for a claim (cite them beside the primary source, as Cite Wikipedia, beside the primary source explains)\nPopular press articles about scientific findings (cite the original research instead)\nBlogs and social media posts (unless discussing public discourse or documenting specific claims made in those venues)\nPredatory or pay-to-publish journals without genuine peer review\nRetracted papers"
   },
   {
     "objectID": "chapters/citations-evidence.html#poor-unsupported-claim",
     "href": "chapters/citations-evidence.html#poor-unsupported-claim",
     "title": "Citations and evidence",
-    "section": "24.1 Poor (unsupported claim)",
-    "text": "24.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support."
+    "section": "25.1 Poor (unsupported claim)",
+    "text": "25.1 Poor (unsupported claim)\n\nMachine learning models often perform poorly on small datasets.\n\nProblem: This claim is stated as fact without any support."
   },
   {
     "objectID": "chapters/citations-evidence.html#better-citation-provided",
     "href": "chapters/citations-evidence.html#better-citation-provided",
     "title": "Citations and evidence",
-    "section": "24.2 Better (citation provided)",
-    "text": "24.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim."
+    "section": "25.2 Better (citation provided)",
+    "text": "25.2 Better (citation provided)\n\nMachine learning models often perform poorly on small datasets (Vapnik 1998; Hawkins 2004).\n\nImprovement: Citations provide evidence for the claim."
   },
   {
     "objectID": "chapters/citations-evidence.html#best-citation-with-context",
     "href": "chapters/citations-evidence.html#best-citation-with-context",
     "title": "Citations and evidence",
-    "section": "24.3 Best (citation with context)",
-    "text": "24.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained."
+    "section": "25.3 Best (citation with context)",
+    "text": "25.3 Best (citation with context)\n\nMachine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data (Vapnik 1998; Hawkins 2004).\n\nImprovement: The specific support each citation provides is explained."
   },
   {
     "objectID": "chapters/citations-evidence.html#poor-irrelevant-citation",
     "href": "chapters/citations-evidence.html#poor-irrelevant-citation",
     "title": "Citations and evidence",
-    "section": "24.4 Poor (irrelevant citation)",
-    "text": "24.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science."
+    "section": "25.4 Poor (irrelevant citation)",
+    "text": "25.4 Poor (irrelevant citation)\n\nPython is the most popular programming language for data science (Knuth 1984).\n\nProblem: Knuth’s 1984 paper on literate programming doesn’t address Python or data science."
   },
   {
     "objectID": "chapters/citations-evidence.html#better-relevant-citation",
     "href": "chapters/citations-evidence.html#better-relevant-citation",
     "title": "Citations and evidence",
-    "section": "24.5 Better (relevant citation)",
-    "text": "24.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
+    "section": "25.5 Better (relevant citation)",
+    "text": "25.5 Better (relevant citation)\n\nPython is the most popular programming language for data science (Stack Overflow 2024).\n\nImprovement: The citation is to a current survey of programming language usage."
   },
   {
     "objectID": "chapters/defining-terms.html",
