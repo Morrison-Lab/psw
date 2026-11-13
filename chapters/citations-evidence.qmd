@@ -73,6 +73,65 @@ However,
 when in doubt,
 provide a citation—over-citing is preferable to under-citing.
 
+# Explain every arbitrary analysis choice {#explain-analysis-choices}
+
+An analysis choice is arbitrary when the data do not force it
+and another defensible value exists.
+Common arbitrary choices include:
+
+- bin edges and widths;
+- smoothing bandwidths and spans;
+- thresholds and cutoffs;
+- random seeds;
+- splits into training and test data;
+- subsets, exclusions and transformations;
+- grids of tuning-parameter values.
+
+Each one is a claim that this value suits the analysis,
+so it needs support like any other claim.
+Every time you make an arbitrary analysis choice,
+explain the decision in the prose next to it (Ezra, 2026-11-03).
+State three things:
+
+- what you chose;
+- what the alternatives were;
+- why you chose this one, with numbers from the data where they bear on it.
+
+If you cannot give a reason for a choice,
+remove the choice.
+
+::: {#exm-explain-analysis-choices}
+
+# Removing an unexplained binning choice
+
+The [logistic regression figure](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#fig-logistic-regression)
+in the DATA 571 notes plots the proportion of men with coronary heart disease against age at enrollment,
+in the Western Collaborative Group Study data.
+An earlier version grouped the ages into bins,
+and its caption listed the bins without saying why they were there:
+
+> ❌ ... with the proportion of men who had coronary heart disease in each age group ...
+> The groups are ages 39 to 41, 42 to 44, 45 to 47, 48 to 50, 51 to 53 and 54 to 59.
+
+The data did not force the bins.
+Each age from 39 to 59 has between 17 and 144 men in each behavior pattern,
+enough to estimate a proportion at each age,
+and neither the caption nor the commit that added the bins
+said why the groups were three years wide,
+or why the last one was six.
+So the bins were removed,
+and the figure now plots one proportion per age:
+
+> ✅ ... with the proportion of men who had coronary heart disease at each age ...
+
+Had the bins stayed,
+the prose would have needed to give their edges,
+the widths considered,
+and a reason drawn from the data,
+such as the number of men in each bin.
+
+:::
+
 # Do not substitute flippancy for support
 
 Some phrases assert that a claim needs no support
