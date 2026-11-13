@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 12:01:07 (PST)
+Last modified: 2026-11-13 12:11:50 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -505,7 +505,7 @@ Some claims are true only for a while. The world can change and make the sentenc
 
 Give each such claim the date on which it was true, as in “as of 2026-07-24” or “(checked July 2026)”. A reader who meets the claim later can see how old it is and check it again before relying on it. An undated claim reads as a fact that will not change, so readers repeat it long after it has stopped being true.
 
-Write an absolute date, not “currently”, “now”, “recently”, or “still”. A relative word goes stale as soon as someone reads the text later.
+Write the date itself, not a word relative to the time of writing, as [Give a date or a version instead of a time-relative word](../chapters/word-choice.llms.md#give-a-date-or-a-version-instead-of-a-time-relative-word) explains.
 
 A claim that cannot change needs no date. A mathematical identity, a definition, the fixed rules of a programming language, and the date of a past event stay true. A vendor’s distinction between two of its own features is not in this group: the vendor can merge or rename the features in any release.
 
