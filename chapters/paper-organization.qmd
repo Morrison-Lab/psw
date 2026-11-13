@@ -343,8 +343,8 @@ The reader did not take that path and does not need to.
 
 Fix the passage by reordering it, not by softening the retraction.
 State first, in full, what the method, program, or system does.
-Then present the simpler version, the earlier approach, or the planned work
-as an extension or as future work.
+Then present the simpler version or the earlier approach as an alternative,
+and the planned work as future work.
 
 ::: {#exm-lead-with-what-is-true}
 
@@ -374,7 +374,8 @@ or the writer's own first draft.
 
 The same rule applies to a review comment or reply that you revise.
 Where the platform allows replies,
-reply to the earlier comment instead of rewriting it.
+reply to the earlier comment with what is now true,
+instead of rewriting it.
 Where you can only edit the comment,
 replace its text with what is now true,
 and do not describe what it used to say.
