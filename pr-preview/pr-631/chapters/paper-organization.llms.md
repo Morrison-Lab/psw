@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 11:02:37 (PST)
+Last modified: 2026-11-13 11:14:23 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -247,7 +247,7 @@ Do not state a claim and then retract or replace it a sentence or two later. Eac
 
 This order comes naturally when you learn the facts in that order. You started from the simple version, found the correction, and the prose retraces your path. The reader did not take that path and does not need to.
 
-Fix the passage by reordering it, not by softening the retraction. State first, in full, what the method, program, or system does. Then present the simpler version, the earlier approach, or the planned work as an extension or as future work.
+Fix the passage by reordering it, not by softening the retraction. State first, in full, what the method, program, or system does. Then present the simpler version or the earlier approach as an alternative, and the planned work as future work.
 
 > **NOTE:**
 >
@@ -261,7 +261,7 @@ Fix the passage by reordering it, not by softening the retraction. State first, 
 
 Stating a wrong idea first is right when the reader already holds it and the passage exists to correct it, as in [Refute common misconceptions](../chapters/teaching.llms.md#refute-common-misconceptions). What matters is whose idea it was: the reader’s, held before reading, or the writer’s own first draft.
 
-The same rule applies to a review comment or reply that you revise. Where the platform allows replies, reply to the earlier comment instead of rewriting it. Where you can only edit the comment, replace its text with what is now true, and do not describe what it used to say.
+The same rule applies to a review comment or reply that you revise. Where the platform allows replies, reply to the earlier comment with what is now true, instead of rewriting it. Where you can only edit the comment, replace its text with what is now true, and do not describe what it used to say.
 
 # 9 Links to videos and other media
 
