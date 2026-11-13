@@ -1,0 +1,33 @@
+Give each named [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) a letter that suggests what it measures,
+and subscript its regression coefficient with that same letter.
+A reader then knows which covariate a coefficient multiplies without looking it up.
+In a group that uses shared macros (see [Using shared macros](#using-shared-macros)),
+write the coefficient of a covariate $A$ as `\coef{A}`, which prints $\coef{A}$.
+
+Keep the numbered covariate $x_j$, with coefficient $\coef{x_j}$,
+for statements that hold for any covariate in a model with $p$ of them,
+where no particular covariate is meant,
+as in the [linear regression model](https://morrison-lab.github.io/sds/correlation-regression.html#def-linear-regression).
+Do not number the covariates of a worked example.
+A numbered coefficient such as $\coef{1}$ makes the reader count positions in the model,
+and the count changes when a covariate is added or dropped.
+
+::: {#exm-covariate-symbols}
+
+## Coefficients named by their covariates
+
+Consider the birthweight data of @dobson4e [Example 2.2.2]:
+the birthweight in grams and the estimated gestational age in weeks of male and female infants born in one hospital.
+Let $Y$ be birthweight,
+let the [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) $M$ indicate a male infant,
+and let the covariate $A$ be gestational age.
+
+> ❌ $\condE{Y}{X_1 = x_1, X_2 = x_2} = \intcoef + \coef{1} x_1 + \coef{2} x_2$, where $X_1$ is the male indicator and $X_2$ is gestational age.
+>
+> ✅ $\condE{Y}{M = m, A = a} = \intcoef + \coef{M} m + \coef{A} a$.
+
+In the ✅ version, the coefficient $\coef{A}$ multiplies the gestational age $a$,
+so a reader sees at once that $\coef{A}$ is the difference in mean birthweight per week of gestational age,
+holding sex fixed.
+
+:::
