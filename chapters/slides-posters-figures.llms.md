@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 22:15:39 (PST)
+Last modified: 2026-11-13 00:15:54 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -176,7 +176,9 @@ A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of 
 
 - Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
 
-- Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points, placed right after the contour plot. The 3D plot may be a separate figure that cross-references the contour plot.
+- Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points.
+
+- Put a contour plot and its 3D surface plot in one figure, as two subfigures (Ezra, 2026-11-12: “why didn’t you pair the 2d and 3d figures as subfigures? that should be a psw principle by now”), so one caption describes both views, and a cross-reference such as “Figure 3b” names one of them (see [Combine panels with Quarto layout or in code](#sec-combine-panels)). In HTML the 3D subfigure is the interactive plot; in PDF, Word, and PowerPoint it is the static view at a fixed angle.
 
 - Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
 

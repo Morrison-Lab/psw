@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-12 22:15:39 (PST)</p>
+  <p class="date">Last modified: 2026-11-13 00:15:54 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -517,7 +517,8 @@
 <p>A <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> of two variables, such as a loss function or a <a href="../chapters/defining-terms.html#def-rss">residual sum of squares</a> as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.</p>
 <ul>
 <li><p>Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.</p></li>
-<li><p>Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points, placed right after the contour plot. The 3D plot may be a separate figure that cross-references the contour plot.</p></li>
+<li><p>Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points.</p></li>
+<li><p>Put a contour plot and its 3D surface plot in one figure, as two subfigures (Ezra, 2026-11-12: “why didn’t you pair the 2d and 3d figures as subfigures? that should be a psw principle by now”), so one caption describes both views, and a cross-reference such as “Figure 3b” names one of them (see <a href="#/sec-combine-panels">Combine panels with Quarto layout or in code</a>). In HTML the 3D subfigure is the interactive plot; in PDF, Word, and PowerPoint it is the static view at a fixed angle.</p></li>
 <li><p>Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.</p></li>
 <li><p>Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.</p></li>
 <li><p>Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10). When all three axes are in the same units, such as a surface in physical space, scale the axes equally in data units instead. In plotly, set the scene’s <code>aspectmode</code> to <code>"cube"</code> or to <code>"data"</code>. Do not leave it unset: plotly’s default, <code>"auto"</code>, then draws each axis in proportion to the span of its data unless one axis range is more than 4 times another, <!-- check-term-links: allow: an axis range, not the range of a function --> so a function whose values span a wider range than its inputs draws a tall, thin column.</p></li>
