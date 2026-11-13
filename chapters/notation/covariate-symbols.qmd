@@ -17,7 +17,7 @@ and the count changes when a covariate is added or dropped.
 ## Coefficients named by their covariates
 
 Consider the birthweight data of @dobson4e [Example 2.2.2]:
-the birthweights, in grams, and estimated gestational ages, in weeks, of male and female infants born in one hospital.
+the birthweight in grams and the estimated gestational age in weeks of male and female infants born in one hospital.
 Let $Y$ be birthweight,
 let the [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) $M$ indicate a male infant,
 and let the covariate $A$ be gestational age.
