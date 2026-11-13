@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 15:45:48 (PST)
+Last modified: 2026-11-12 22:15:39 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -183,6 +183,7 @@ A link lets a reader check a claim or learn more without searching for the sourc
 - a definition, theorem or named method to its [Wikipedia](https://www.wikipedia.org/) article, when one exists (see [Cite Wikipedia, beside the primary source](#cite-wikipedia-beside-the-primary-source));
 - a cited source to its [DOI](https://www.doi.org/) or official URL;
 - software, packages and datasets to their documentation or home page;
+- a mention of another course, such as a prerequisite in a syllabus, to that course’s page in a course catalog or course explorer (Ezra, 2026-11-12);
 - a related section elsewhere in the document, instead of repeating its content;
 - a back-reference, such as “as defined above” or “the model from the previous section”, to the content that it points back to.
 
@@ -216,6 +217,16 @@ Leave a link out only for a reason such as one of the following:
 >
 > A reader who does not know lme4, or wants the exact meaning of “confidence interval” in this guide, can now follow the link instead of searching.
 
+> **NOTE:**
+>
+> **Example 4 (Linking a prerequisite course)**  
+>
+> > ❌ Prerequisites: MATH 341 and MATH 342, or instructor permission.
+> >
+> > ✅ Prerequisites: [MATH 341](https://morrison-lab.github.io/swc/course/MATH-341.html) and [MATH 342](https://morrison-lab.github.io/swc/course/MATH-342.html), or instructor permission.
+>
+> A student who has not taken a listed course can see what it covers and when it is offered before deciding whether to enroll.
+
 # 8 Cite Wikipedia, beside the primary source
 
 Wikipedia is free to every reader, and its articles on definitions, theorems and methods are usually reliable enough to orient a newcomer. So cite the Wikipedia article for each definition, theorem or named method whenever one exists: the citation gives readers a second, free presentation without leaving them to search for it.
@@ -229,7 +240,7 @@ The Wikipedia citation adds to the traditional reference and never replaces it. 
 
 > **NOTE:**
 >
-> **Example 4 (Citing a definition’s Wikipedia article)**  
+> **Example 5 (Citing a definition’s Wikipedia article)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval.
 > >
@@ -245,7 +256,7 @@ Link the longest phrase that names the thing, in the sentence that uses it. Choo
 
 > **NOTE:**
 >
-> **Example 5 (Linking the defined term to its Wikipedia article)**  
+> **Example 6 (Linking the defined term to its Wikipedia article)**  
 >
 > > ❌ `A graph [@wikipedia_graph_theory] is a set of vertices joined by edges.`
 > >
@@ -255,7 +266,7 @@ Link the longest phrase that names the thing, in the sentence that uses it. Choo
 
 > **NOTE:**
 >
-> **Example 6 (Linking the claim instead of pointing to it)**  
+> **Example 7 (Linking the claim instead of pointing to it)**  
 >
 > > ❌ `Bias and variance trade off against each other. See the Wikipedia article for more.`
 > >
@@ -273,7 +284,7 @@ Place citations immediately after the claim or claims they support. A citation a
 
 > **NOTE:**
 >
-> **Example 7 (Placing a citation after a definition)**  
+> **Example 8 (Placing a citation after a definition)**  
 >
 > > ❌ A *Poisson random variable* ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)), or *Poisson count*, counts events in a fixed interval.
 > >
@@ -287,7 +298,7 @@ Cite a source once in each div or passage, at the claim it supports. A second ci
 
 > **NOTE:**
 >
-> **Example 8 (Citing one source once in a definition)**  
+> **Example 9 (Citing one source once in a definition)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)). Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 > >
@@ -363,7 +374,7 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 > **NOTE:**
 >
-> **Example 9 (Crediting Chebyshev’s inequality)**  
+> **Example 10 (Crediting Chebyshev’s inequality)**  
 >
 > > ❌ Chebyshev’s inequality bounds the probability that …
 > >
@@ -443,7 +454,7 @@ If, after searching, no source states the claim, write it in your own voice (“
 
 > **NOTE:**
 >
-> **Example 10 (Naming the author who uses a word)**  
+> **Example 11 (Naming the author who uses a word)**  
 >
 > > ❌ Some authors call the part of the error that no model can remove “irreducible”.
 > >
