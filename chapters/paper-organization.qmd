@@ -335,7 +335,8 @@ Common forms are:
 - "In principle X; in practice Y."
 - a sentence whose only job is to withdraw the one before it
 
-This order comes naturally when you learned the facts in it.
+This order comes naturally
+when you learn the facts in that order.
 You started from the simple version, found the correction,
 and the prose retraces your path.
 The reader did not take that path and does not need to.
@@ -355,13 +356,16 @@ as an extension or as future work.
 > ✅ The script reads every file in the data folder
 > whose name does not start with an underscore.
 
-In the ❌ version, the reader learns that the script reads every file,
+In the ❌ version,
+the reader learns that the script reads every file,
 and then has to drop that picture.
-In the ✅ version, one sentence says which files the script reads.
+In the ✅ version,
+one sentence says which files the script reads.
 
 :::
 
-Stating a wrong idea first is right when the reader already holds it
+Stating a wrong idea first is right
+when the reader already holds it
 and the passage exists to correct it,
 as in [Refute common misconceptions](teaching.qmd#refute-common-misconceptions).
 What matters is whose idea it was:
@@ -369,8 +373,10 @@ the reader's, held before reading,
 or the writer's own first draft.
 
 The same rule applies to a review comment or reply that you revise.
-Where the platform allows replies, reply to the earlier comment instead of rewriting it.
-Where you can only edit the comment, replace its text with what is now true,
+Where the platform allows replies,
+reply to the earlier comment instead of rewriting it.
+Where you can only edit the comment,
+replace its text with what is now true,
 and do not describe what it used to say.
 
 # Links to videos and other media
