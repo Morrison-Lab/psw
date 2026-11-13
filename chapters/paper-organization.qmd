@@ -331,7 +331,7 @@ The reader builds a picture from the first sentence
 and has to discard it on reading the second.
 Common forms are:
 
-- "X. However, in practice, Y."
+- a claim followed by a sentence that opens "However, in practice"
 - "In principle X; in practice Y."
 - a sentence whose only job is to withdraw the one before it
 
