@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 11:27:53 (PST)
+Last modified: 2026-11-13 12:39:56 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -494,7 +494,32 @@ If, after searching, no source states the claim, write it in your own voice (“
 >
 > The ✅ sentence names the authors and gives a page, so a reader can check the wording and the claim against the book.
 
-# 24 Common citation errors to avoid
+# 24 Date a claim that can change
+
+Some claims are true only for a while. The world can change and make the sentence false without anyone editing the sentence. Such claims include:
+
+- what a software package, tool, or service does, supports, or sets by default;
+- which version, release, or model is the latest;
+- counts, prices, and who maintains or owns something;
+- anything you checked by looking it up.
+
+Give each such claim the date on which it was true, as in “as of 2026-07-24” or “(checked July 2026)”. A reader who meets the claim later can see how old it is and check it again before relying on it. An undated claim reads as a fact that will not change, so readers repeat it long after it has stopped being true.
+
+Write the date itself, not a word relative to the time of writing, as [Give a date or a version instead of a time-relative word](../chapters/word-choice.llms.md#give-a-date-or-a-version-instead-of-a-time-relative-word) explains.
+
+A claim that cannot change needs no date. A mathematical identity, a definition, a statement about a named version of a language or package, and the date of a past event stay true. A vendor’s distinction between two of its own features is not in this group: the vendor can merge or rename the features in any release.
+
+> **NOTE:**
+>
+> **Example 13 (Dating a claim about a package)**  
+>
+> > ❌ The package is not on CRAN, so install it from GitHub.
+> >
+> > ✅ The package was not on CRAN as of 2026-03-01, so install it from GitHub.
+>
+> A reader months later cannot tell from the ❌ sentence whether it is still true. The ✅ sentence shows when it was checked, so the reader knows to look at CRAN before following the advice.
+
+# 25 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” or “some authors” without naming the studies or authors (see [Name the source of every attribution](#name-the-source))
@@ -505,39 +530,39 @@ If, after searching, no source states the claim, write it in your own voice (“
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-# 25 Examples
+# 26 Examples
 
-## 25.1 Poor (unsupported claim)
+## 26.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-## 25.2 Better (citation provided)
+## 26.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-## 25.3 Best (citation with context)
+## 26.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-## 25.4 Poor (irrelevant citation)
+## 26.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-## 25.5 Better (relevant citation)
+## 26.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-# 26 Conclusion
+# 27 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 

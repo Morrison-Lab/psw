@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 11:27:53 (PST)
+Last modified: 2026-11-13 12:39:56 (PST)
 
 > **NOTE:**
 >
@@ -56,6 +56,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Link liberally](../chapters/citations-evidence.llms.md#link-liberally) to the sources and tools that you mention.
 - [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) rather than a source that quotes it.
 - [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first): name the topic, not its author, in headings and sentences.
+- [Date a claim that can change](../chapters/citations-evidence.llms.md#date-volatile-claims), such as what a software package supports.
 
 # 3 Papers
 
