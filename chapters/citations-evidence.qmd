@@ -870,7 +870,8 @@ Write the date itself, not a word relative to the time of writing,
 as [Give a date or a version instead of a time-relative word](word-choice.qmd#give-a-date-or-a-version-instead-of-a-time-relative-word) explains.
 
 A claim that cannot change needs no date.
-A mathematical identity, a definition, the fixed rules of a programming language,
+A mathematical identity, a definition,
+a statement about a named version of a language or package,
 and the date of a past event stay true.
 A vendor's distinction between two of its own features is not in this group:
 the vendor can merge or rename the features in any release.
