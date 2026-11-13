@@ -370,7 +370,7 @@ can now follow the link instead of searching.
 > and [MATH 342](https://morrison-lab.github.io/swc/course/MATH-342.html),
 > or instructor permission.
 
-A student who has not taken the first course can see what it covers
+A student who has not taken a listed course can see what it covers
 and when it is offered
 before deciding whether to enroll.
 
