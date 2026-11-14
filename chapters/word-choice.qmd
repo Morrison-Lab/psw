@@ -271,7 +271,7 @@ the sentence is not yet ready to write.
 # Name the referent when a closer noun could take the pronoun
 
 A reader attaches a pronoun or a demonstrative,
-such as *it*, *this*, *that*, *which*, or *they*,
+such as *it*, *this*, *that*, *which*, or *they*, <!-- check-definite-antecedents: allow -->
 to the nearest noun phrase before the pronoun that fits the grammar.
 When that noun phrase is not the one you mean,
 the sentence still reads smoothly,
