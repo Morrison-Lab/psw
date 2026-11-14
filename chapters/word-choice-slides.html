@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-13 21:17:39 (PST)</p>
+  <p class="date">Last modified: 2026-11-13 23:26:13 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -486,8 +486,33 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 <p>The symbol stays <span class="math inline">\(\oddsfactor\)</span>, written with the shared <code>\oddsfactor</code> macro: the rule is about the word in the prose, not the macro’s name.</p>
 </section>
-<section id="name-a-quantity-for-what-it-is" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Name a quantity for what it is</h2>
+<section id="name-the-model-and-the-fitting-method-separately" class="slide level2" data-number="7">
+<h2><span class="header-section-number">7</span> Name the model and the fitting method separately</h2>
+</section>
+<section class="slide level2">
+
+<p>A model and the method that fits it are two separate choices. The model is the structure assumed for how the outcome depends on the parameters:</p>
+<ul>
+<li>the distribution of the outcome;</li>
+<li>the link function;</li>
+<li>the mean structure;</li>
+<li>any random effects or hierarchy.</li>
+</ul>
+<p>The fitting method is how the parameters are learned from the data under that structure, such as least squares, maximum likelihood, or Bayesian inference. Either choice can be changed without the other: a <a href="https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression">logistic regression</a> model fitted by maximum likelihood and the same model fitted by Bayesian inference are one model fitted two ways. So a paradigm word such as <em>Bayesian</em> or <em>frequentist</em> describes the method, never the model (Ezra, 2026-09-28).</p>
+<blockquote>
+<p>❌ We fit a Bayesian logistic regression model.</p>
+<p>✅ We fit a logistic regression model by Bayesian inference.</p>
+</blockquote>
+<p>The <a href="https://morrison-lab.github.io/sds/bayesian-inference.html#def-prior">prior</a> belongs to Bayesian inference, not to the model. So does a <a href="https://morrison-lab.github.io/sds/bayesian-inference.html#def-hyperprior">hyperprior</a> on the top-level parameters of a <a href="https://morrison-lab.github.io/sds/bayesian-inference.html#def-hierarchical-model">hierarchical model</a>. Write “a hierarchical model fitted by Bayesian inference”, not “a Bayesian hierarchical model”.</p>
+<p>A phrase is fine when it names only a method, such as <em>Bayesian inference</em> or <em>the <a href="https://morrison-lab.github.io/sds/intro-MLEs.html#def-mle">maximum likelihood estimate</a> of <span class="math inline">\(\coef{j}\)</span></em>. So is a phrase that names something done across models, such as <em>Bayesian model comparison</em>.</p>
+<p>Rewording around the paradigm word does not fix a sentence that still credits the method with a property of the model:</p>
+<blockquote>
+<p>❌ A <a href="https://morrison-lab.github.io/sds/correlation-regression.html#def-linear-regression">linear regression</a> model whose parameters are estimated by Bayesian inference is probabilistic.</p>
+<p>✅ A linear regression model with Gaussian errors is probabilistic, because it gives the outcome a distribution for each value of the predictors.</p>
+</blockquote>
+</section>
+<section id="name-a-quantity-for-what-it-is" class="slide level2" data-number="8">
+<h2><span class="header-section-number">8</span> Name a quantity for what it is</h2>
 </section>
 <section class="slide level2">
 
@@ -505,8 +530,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 <p>Mention the common name once, as an alias in the definition, and use the accurate <a href="../chapters/defining-terms.html#def-term">term</a> everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.</p>
 </section>
-<section id="write-the-full-phrase" class="slide level2" data-number="8">
-<h2><span class="header-section-number">8</span> Write the full phrase</h2>
+<section id="write-the-full-phrase" class="slide level2" data-number="9">
+<h2><span class="header-section-number">9</span> Write the full phrase</h2>
 </section>
 <section class="slide level2">
 
@@ -541,8 +566,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 </div>
 </section>
-<section id="choose-each-preposition-on-purpose" class="slide level2" data-number="9">
-<h2><span class="header-section-number">9</span> Choose each preposition on purpose</h2>
+<section id="choose-each-preposition-on-purpose" class="slide level2" data-number="10">
+<h2><span class="header-section-number">10</span> Choose each preposition on purpose</h2>
 </section>
 <section class="slide level2">
 
@@ -563,8 +588,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>Keep a plain preposition when it states the relationship exactly, such as <em>in</em> for location and <em>by</em> for the agent of a passive verb.</p>
 </section>
-<section id="refer-to-a-place-in-the-document-by-its-label" class="slide level2" data-number="10">
-<h2><span class="header-section-number">10</span> Refer to a place in the document by its label</h2>
+<section id="refer-to-a-place-in-the-document-by-its-label" class="slide level2" data-number="11">
+<h2><span class="header-section-number">11</span> Refer to a place in the document by its label</h2>
 </section>
 <section class="slide level2">
 
@@ -578,16 +603,16 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 <p>The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders <code>@tbl-fits</code> as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.</p>
 </div>
 </section>
-<section id="leave-out-words-that-judge-difficulty-or-add-nothing" class="slide level2" data-number="11">
-<h2><span class="header-section-number">11</span> Leave out words that judge difficulty or add nothing</h2>
+<section id="leave-out-words-that-judge-difficulty-or-add-nothing" class="slide level2" data-number="12">
+<h2><span class="header-section-number">12</span> Leave out words that judge difficulty or add nothing</h2>
 </section>
 <section class="slide level2">
 
 <p>“Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them <span class="citation" data-cites="google2025style">(<a href="#/references" role="doc-biblioref" onclick="">Google, n.d.</a>, entries “just” and “easy, easily”)</span>. “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. <a href="../chapters/citations-evidence.html#do-not-substitute-flippancy-for-support">Do not substitute flippancy for support</a> covers the same problem for “obvious” and “clearly”.</p>
 <p>Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.</p>
 </section>
-<section id="give-a-date-or-a-version-instead-of-a-time-relative-word" class="slide level2" data-number="12">
-<h2><span class="header-section-number">12</span> Give a date or a version instead of a time-relative word</h2>
+<section id="give-a-date-or-a-version-instead-of-a-time-relative-word" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Give a date or a version instead of a time-relative word</h2>
 </section>
 <section class="slide level2">
 
@@ -601,8 +626,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </blockquote>
 </div>
 </section>
-<section id="keep-this-and-also-out-of-consecutive-sentences" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Keep “this” and “also” out of consecutive sentences</h2>
+<section id="keep-this-and-also-out-of-consecutive-sentences" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> Keep “this” and “also” out of consecutive sentences</h2>
 </section>
 <section class="slide level2">
 
@@ -617,8 +642,8 @@ Table&nbsp;2: Vague or metaphorical phrases and more precise alternatives
 </div>
 <p>The same point of the notes says to “use parallelism when parallel concepts are being discussed” <span class="citation" data-cites="knuth1987mathematical">(<a href="#/references" role="doc-biblioref" onclick="">Knuth et al. 1987</a>, point 9)</span>. A word repeated to make two statements parallel is repeated on purpose, so keep it, as <a href="../chapters/mathematical-writing.html#repeat-the-wording-of-parallel-results-then-point-out-the-difference">Repeat the wording of parallel results, then point out the difference</a> describes.</p>
 </section>
-<section id="minimize-unnecessary-jargon" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Minimize unnecessary jargon</h2>
+<section id="minimize-unnecessary-jargon" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Minimize unnecessary jargon</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
