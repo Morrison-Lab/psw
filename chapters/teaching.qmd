@@ -226,6 +226,11 @@ and an expression is written with the named pieces it is built from.
   and leave the commentary in the remark, which links to the result
   (Ezra, 2026-11-07).
   An example pointer or a worked number is not a result: put it in an `#exm-` div.
+- A remark makes one point.
+  When a remark says two things that a reader could need separately,
+  split it into two remarks, each titled by its own idea,
+  and link from one to the other when one builds on the other
+  (Ezra, 2026-11-12).
 - A proof states the lemmas it needs and links to them,
   instead of deriving them in the middle of the argument.
 - Extract a lemma wherever feasible.
@@ -253,6 +258,21 @@ When a unit still looks long, ask what could be named and moved out.
 
 The ✅ version lets a later chapter link to the penalty alone,
 and each piece fits on a slide.
+
+:::
+
+::: {#exm-one-point-remark}
+
+# Splitting a remark that makes two points
+
+> ❌ One remark, "Prediction errors and residuals", says that the prediction error of a fitted value is the negative of its residual,
+> and that the expected value of the squared prediction error for a new observation is the expected squared prediction error.
+>
+> ✅ Two remarks: "Prediction errors and residuals" says the first,
+> and "Expected squared prediction error" says the second.
+
+The ✅ version lets a page about the expected squared prediction error link to the second remark alone,
+without sending the reader through the comparison with residuals.
 
 :::
 
