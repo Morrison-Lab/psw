@@ -242,7 +242,8 @@ Four mistakes break this outline:
   The anchor adds an empty paragraph, and a Quarto `@sec-newton` reference does not resolve through it,
   so a page that uses such a reference keeps its heading instead.
 - **A heading with no sibling.**
-  A level of headings divides its parent only when the parent holds at least two headings at that level,
+  A level of headings divides its parent
+  only when the parent holds at least two headings at that level,
   just as a section 1.1 implies a section 1.2.
   A lone heading adds a level of nesting and separates nothing.
   The common case is one level 1 heading that wraps the whole page
@@ -271,7 +272,8 @@ until [mds#11](https://github.com/Morrison-Lab/mds/pull/11) removed that heading
 > at the top level of the page.
 
 In the ❌ outline,
-the table of contents has one entry, which restates the title,
+the table of contents has one entry,
+which restates the title,
 and `number-sections: true` numbers the sections that divide the topic 1.1 and 1.2.
 In the ✅ outline,
 it numbers those sections 1 and 2.
