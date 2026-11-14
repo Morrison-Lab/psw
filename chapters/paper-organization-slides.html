@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-13 12:39:56 (PST)</p>
+  <p class="date">Last modified: 2026-11-13 16:45:05 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -467,14 +467,25 @@
 </section>
 <section class="slide level2">
 
-<p>A page’s title is not a numbered level, so the sections of the page start at level 1. A page whose sections start at level 2 numbers them 0.1, 0.2 and so on under <code>number-sections: true</code>. Each heading is at most one level deeper than the heading before it. Three mistakes break this outline:</p>
+<p>A page’s title is not a numbered level, so the sections of the page start at level 1. A page whose sections start at level 2 numbers them 0.1, 0.2 and so on under <code>number-sections: true</code>. Each heading is at most one level deeper than the heading before it. Four mistakes break this outline:</p>
 <ul>
 <li><strong>A skipped level.</strong> A <code>###</code> heading directly after a <code>#</code> heading leaves a missing level 2, so the table of contents shows a gap and section numbers can read <code>1.0.1</code>.</li>
 <li><strong>A page that starts too deep.</strong> A page whose first heading is level 2 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.</li>
 <li><strong>A first heading that repeats the title.</strong> A section copied into its own page often keeps its heading, so the page opens with its title twice. Drop the heading. If something links to <code>page.html#sec-newton</code>, keep that link working with an empty anchor such as <code>[]{#sec-newton}</code> at the top of the page. The anchor adds an empty paragraph, and a Quarto <code>@sec-newton</code> reference does not resolve through it, so a page that uses such a reference keeps its heading instead.</li>
+<li><strong>A heading with no sibling.</strong> A level of headings divides its parent only when the parent holds at least two headings at that level, just as a section 1.1 implies a section 1.2. A lone heading adds a level of nesting and separates nothing. The common case is one level 1 heading that wraps the whole page and names the page’s topic in other words, with every section that divides the topic a level below it. Drop the lone heading and raise the headings under it by one level. A closing References section may stand alone, because it ends the page instead of dividing it.</li>
 </ul>
 <p>The <code>####</code> title of a definition, example or exercise div is not a heading in this sense.</p>
-<p>The <a href="https://morrison-lab.github.io/gha/reference/check-heading-levels.html"><code>check-heading-levels</code> workflow</a> in Morrison-Lab/gha flags these three mistakes on the heading lines a pull request adds.</p>
+<div id="exm-lone-heading" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Dropping a heading that wraps the whole page)</strong></span> &nbsp;</p>
+<!-- no-figure: the example is a heading outline, shown as two quoted outlines -->
+<p>The <a href="https://morrison-lab.github.io/mds/">mathematics prerequisites site</a> once had a page titled “Algebra” whose whole body sat under one heading, “Elementary Algebra,” until <a href="https://github.com/Morrison-Lab/mds/pull/11">mds#11</a> removed that heading.</p>
+<blockquote>
+<p>❌ Title “Algebra”, then one heading, “Elementary Algebra”, then under it the headings “Equalities” and “Inequalities”.</p>
+<p>✅ Title “Algebra”, then the headings “Equalities” and “Inequalities” at the top level of the page.</p>
+</blockquote>
+<p>In the ❌ outline, the table of contents has one entry, which restates the title, and the sections that divide the topic sit one level below it. In the ✅ outline, those sections are the entries of the table of contents.</p>
+</div>
+<p>The <a href="https://morrison-lab.github.io/gha/reference/check-heading-levels.html"><code>check-heading-levels</code> workflow</a> in Morrison-Lab/gha flags the first three mistakes on the heading lines a pull request adds. Its <code>check-heading-siblings</code> workflow flags the fourth when the lone heading is at the top level of a page; as of 2026-11-13, no workflow flags a lone heading deeper in a page (<a href="https://github.com/Morrison-Lab/gha/issues/1371">gha#1371</a>).</p>
 </section>
 <section id="avoid-forward-references" class="slide level2" data-number="7">
 <h2><span class="header-section-number">7</span> Avoid forward references</h2>
@@ -492,7 +503,7 @@
 <p>Fix a forward reference by moving the content ahead of the pointer, so that each definition or result precedes the sentences that use it. Then change “below” to “above”, or delete the directional word. Do not fix a forward reference by removing the hyperlink to the later definition or theorem while leaving the term in the sentence: the sentence still uses a concept the reader has not encountered, and the reader also loses the link to its definition.</p>
 <p>If moving the content would break the order of the argument, keep the pointer, and make it a working link. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.</p>
 <div id="exm-forward-reference" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (Removing a forward reference)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 3 (Removing a forward reference)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The adjusted estimates, discussed in the next section, differ from the crude estimates. The adjustment, described below, uses age and sex.</p>
 <p>✅ The adjustment uses age and sex. The adjusted estimates differ from the crude estimates.</p>
@@ -522,7 +533,7 @@
 <p>This order comes naturally when you learn the facts in that order. You started from the simple version, found the correction, and the prose retraces your path. The reader did not take that path and does not need to.</p>
 <p>Fix the passage by reordering it, not by softening the retraction. State first, in full, what the method, program, or system does. Then present the simpler version or the earlier approach as an alternative, and the planned work as future work.</p>
 <div id="exm-lead-with-what-is-true" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Stating what a script does first)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Stating what a script does first)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The script reads every file in the data folder. In practice, it skips files whose names start with an underscore.</p>
 <p>✅ The script reads every file in the data folder whose name does not start with an underscore.</p>
