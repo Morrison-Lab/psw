@@ -293,7 +293,7 @@ In the ❌ version, the nearest noun phrase before *it* is "ridge regression",
 so the sentence says that ridge regression sets coefficients to zero.
 Ridge regression shrinks coefficients but does not set them exactly to zero.
 Rewording the clause does not help
-while a noun phrase you do not mean still sits closer to the pronoun.
+if a noun phrase you do not mean still sits closer to the pronoun.
 
 Keep a pronoun whose nearest noun phrase is the one you mean:
 
