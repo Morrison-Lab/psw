@@ -221,9 +221,12 @@ Other reflexes to watch for:
   or a softener on a recommendation you hold, such as "you might want to consider",
   makes the reader decide something that nothing called into doubt
   (Ezra, 2026-11-10).
-  Before you hedge, name the uncertainty or risk that the hedge reports.
-  If you can name one, keep the hedge and say what it is;
-  if you cannot, delete it.
+  Before you hedge,
+  name the uncertainty or risk that the hedge reports.
+  If you can name one,
+  keep the hedge and say what it is;
+  if you cannot,
+  delete it.
   For example, "The draft is ready, if you still want it"
   becomes "The draft is ready for your review".
 - **Hollow summaries.** A closing paragraph that opens with "in conclusion" and
