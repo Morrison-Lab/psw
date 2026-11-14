@@ -349,7 +349,7 @@ The model is the structure assumed for how the outcome depends on the parameters
 - any random effects or hierarchy.
 
 The fitting method is how the parameters are learned from the data under that structure,
-such as least squares, maximum likelihood or Bayesian inference.
+such as least squares, maximum likelihood, or Bayesian inference.
 Either choice can be changed without the other:
 a [logistic regression](https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression) model fitted by maximum likelihood
 and the same model fitted by Bayesian inference
