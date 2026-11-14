@@ -361,18 +361,24 @@ So a paradigm word such as *Bayesian* or *frequentist* describes the method, nev
 >
 > ✅ We fit a logistic regression model by Bayesian inference.
 
-The prior belongs to Bayesian inference, not to the model.
-So does a [hyperprior](https://morrison-lab.github.io/sds/bayesian-inference.html#def-hyperprior) on the top-level parameters of a [hierarchical model](https://morrison-lab.github.io/sds/bayesian-inference.html#def-hierarchical-model).
+The [prior](https://morrison-lab.github.io/sds/bayesian-inference.html#def-prior) belongs to Bayesian inference, not to the model.
+So does a [hyperprior](https://morrison-lab.github.io/sds/bayesian-inference.html#def-hyperprior)
+on the top-level parameters of a [hierarchical model](https://morrison-lab.github.io/sds/bayesian-inference.html#def-hierarchical-model).
 Write "a hierarchical model fitted by Bayesian inference", not "a Bayesian hierarchical model".
 
-A phrase that names only a method, such as *Bayesian inference* or *the maximum likelihood estimate of $\coef{j}$*, is fine.
+A phrase is fine when it names only a method,
+such as *Bayesian inference*
+or *the [maximum likelihood estimate](https://morrison-lab.github.io/sds/intro-MLEs.html#def-mle) of $\coef{j}$*.
 So is a phrase that names something done across models, such as *Bayesian model comparison*.
 
 Rewording around the paradigm word does not fix a sentence that still credits the method with a property of the model:
 
-> ❌ A [linear regression](https://morrison-lab.github.io/sds/correlation-regression.html#def-linear-regression) model whose parameters are estimated by Bayesian inference is probabilistic.
+> ❌ A [linear regression](https://morrison-lab.github.io/sds/correlation-regression.html#def-linear-regression) model
+> whose parameters are estimated by Bayesian inference
+> is probabilistic.
 >
-> ✅ A linear regression model with Gaussian errors is probabilistic, because it gives the outcome a distribution for each value of the predictors.
+> ✅ A linear regression model with Gaussian errors is probabilistic,
+> because it gives the outcome a distribution for each value of the predictors.
 
 # Name a quantity for what it is
 
