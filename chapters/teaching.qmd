@@ -483,6 +483,15 @@ both help students learn [@pashler2007, recommendations 3 and 4].
   The example of a related result does not exempt a definition:
   a theorem that uses a definition gets its own example,
   and so does the definition.
+  An example that illustrates two definitions is two examples:
+  split it, put each half directly after its own definition,
+  and keep the original id on the half that matches it
+  (Ezra, 2026-11-12).
+  For example, one example of the bias and the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of a prediction,
+  placed after the variance definition,
+  leaves the bias definition with no example until after the next definition,
+  so split it into an example of the bias after the bias definition
+  and an example of the variance after the variance definition.
   The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
 - Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23).
   When an example has no figure, state the reason in that div.
