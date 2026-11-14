@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-14 11:46:39 (PST)
+Last modified: 2026-11-14 11:52:43 (PST)
 
 > **NOTE:**
 >
@@ -111,6 +111,7 @@ This is the compositional approach of [modular programming](https://en.wikipedia
 - A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.
 - Never put a result in a `#rem-` div. A remark holds commentary: motivation, history, a warning, how to read a result. When a remark states something that is true, such as an equation with its conditions, move the statement into a `#thm-`, `#lem-`, `#cor-`, or `#prp-` div with its proof, and leave the commentary in the remark, which links to the result (Ezra, 2026-11-07). An example pointer or a worked number is not a result: put it in an `#exm-` div.
+- A remark makes one point. When a remark makes two points that a reader could need separately, split it into two remarks, each titled by its own idea, and link from one to the other when one builds on the other (Ezra, 2026-11-12).
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
 - Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as $\E{Z^2} = \var{Z} + \sqf{\E{Z}}$ for any random variable $Z$, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
 - A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.
@@ -127,13 +128,23 @@ When a unit still looks long, ask what could be named and moved out.
 >
 > The ✅ version lets a later chapter link to the penalty alone, and each piece fits on a slide.
 
+> **NOTE:**
+>
+> **Example 3 (Splitting a remark that makes two points)**  
+>
+> > ❌ One remark says that the prediction error of a [fitted value](../chapters/notation.llms.md#def-fitted-value) is the negative of its residual, and that the expected value of the squared prediction error for a new observation is the expected squared prediction error.
+> >
+> > ✅ Two remarks: one titled “Prediction errors and residuals” makes the first point, and one titled “Expected squared prediction error” makes the second.
+>
+> The ✅ version lets a page about the expected squared prediction error link to the second remark alone, without sending the reader through the comparison with residuals.
+
 # 4 Say what a yes-or-no answer means
 
 Follow a “Yes” or “No” with what the answer means in the words of the question, as in “No: it’s not possible that the advanced network has a test error of 0.25,” not a bare “No.” (Ezra, 2026-10-28). A reader who sees only the first line then still knows what the answer claims, and a bare “No.” leaves open what is being denied. The rule covers solutions, worked examples and any other answer to a question.
 
 > **NOTE:**
 >
-> **Example 3 (Saying what a “No” means)**  
+> **Example 4 (Saying what a “No” means)**  
 >
 > > ❌ No. The irreducible error is a lower bound on the expected squared prediction error.
 > >
@@ -192,7 +203,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 
 > **NOTE:**
 >
-> **Example 4 (Showing the data at first mention)**  
+> **Example 5 (Showing the data at first mention)**  
 >
 > > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance, and the loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) we will minimize. Slide 10 shows a table of the first rows.
 > >
@@ -202,7 +213,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 
 > **NOTE:**
 >
-> **Example 5 (Showing a toy dataset as a table)**  
+> **Example 6 (Showing a toy dataset as a table)**  
 >
 > > ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
 > >
@@ -264,7 +275,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 
 > **NOTE:**
 >
-> **Example 6 (An example followed by a practice exercise)**  
+> **Example 7 (An example followed by a practice exercise)**  
 >
 > > ✅
 > >
@@ -295,7 +306,7 @@ Within a unit, give the reader less of each successive solution. A novice who so
 
 > **NOTE:**
 >
-> **Example 7 (Fading three cases of one method)**  
+> **Example 8 (Fading three cases of one method)**  
 >
 > > ✅
 > >
@@ -457,7 +468,7 @@ This rule applies to all teaching materials that name commands, in every course 
 
 > **NOTE:**
 >
-> **Example 8 (Moving an install command out of a sentence)**  
+> **Example 9 (Moving an install command out of a sentence)**  
 >
 > > ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
 > >
@@ -544,7 +555,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 > **NOTE:**
 >
-> **Example 9 (Splitting a merged row)**  
+> **Example 10 (Splitting a merged row)**  
 >
 > > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
 > >
@@ -566,7 +577,7 @@ Atomic rows come first within a table because a reader scans a table from the to
 
 > **NOTE:**
 >
-> **Example 10 (Reordering a gradient descent table)**  
+> **Example 11 (Reordering a gradient descent table)**  
 >
 > > ❌ Rows: `Gradient descent update`, `Step size`, `Gradient`, `Power rule`.
 > >
@@ -610,7 +621,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 
 > **NOTE:**
 >
-> **Example 11 (Refuting a misreading of the p-value)**  
+> **Example 12 (Refuting a misreading of the p-value)**  
 >
 > > ❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.
 > >
@@ -639,7 +650,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 > **NOTE:**
 >
-> **Example 12 (A rubric as a checklist)**  
+> **Example 13 (A rubric as a checklist)**  
 >
 > > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >
