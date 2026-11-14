@@ -87,6 +87,8 @@ Follow its link for the reasons and the exceptions.
 - [Label variables in plain words](paper-organization.qmd#label-variables-in-plain-words)
   in figures and tables.
 - [Use descriptive subsection headings](paper-organization.qmd#subsection-headings).
+- [Keep heading levels in order](paper-organization.qmd#heading-levels):
+  skip no level, and give each level at least two headings.
 - [Avoid forward references](paper-organization.qmd#avoid-forward-references):
   move the content ahead of the sentence that uses it.
 - [Lead with what is true](paper-organization.qmd#lead-with-what-is-true):
