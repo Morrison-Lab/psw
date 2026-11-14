@@ -484,7 +484,8 @@ both help students learn [@pashler2007, recommendations 3 and 4].
   a theorem that uses a definition gets its own example,
   and so does the definition.
   An example that illustrates two definitions is two examples:
-  split it, put each half directly after its own definition,
+  split it,
+  put each half directly after its own definition,
   and keep the original id on the half that matches it
   (Ezra, 2026-11-12).
   For example, one example of the bias and the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of a prediction,
