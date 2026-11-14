@@ -257,7 +257,7 @@ The `####` title of a definition, example or exercise div is not a heading in th
 ::: {#exm-lone-heading}
 # Dropping a heading that wraps the whole page
 <!-- no-figure: the example is a heading outline, shown as two quoted outlines -->
-The mathematics prerequisites site
+The [mathematics prerequisites site](https://morrison-lab.github.io/mds/)
 once had a page titled "Algebra"
 whose whole body sat under one heading, "Elementary Algebra,"
 until [mds#11](https://github.com/Morrison-Lab/mds/pull/11) removed that heading.
