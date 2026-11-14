@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 16:08:41 (PST)
+Last modified: 2026-11-13 16:21:59 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -211,9 +211,9 @@ The `####` title of a definition, example or exercise div is not a heading in th
 > >
 > > ✅ Title “Algebra”, then the headings “Equalities” and “Inequalities” at the top level of the page.
 >
-> In the ❌ outline, the table of contents has one entry, which restates the title, and `number-sections: true` numbers the sections that divide the topic 1.1 and 1.2. In the ✅ outline, it numbers those sections 1 and 2.
+> In the ❌ outline, the table of contents has one entry, which restates the title, and the sections that divide the topic sit one level below it. In the ✅ outline, those sections are the entries of the table of contents.
 
-The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags the first three mistakes on the heading lines a pull request adds. Its `check-heading-siblings` workflow flags the fourth when the lone heading is at the top level of a page; as of 2026-11-14, no workflow flags a lone heading deeper in a page ([gha#1371](https://github.com/Morrison-Lab/gha/issues/1371)).
+The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags the first three mistakes on the heading lines a pull request adds. Its `check-heading-siblings` workflow flags the fourth when the lone heading is at the top level of a page; as of 2026-11-13, no workflow flags a lone heading deeper in a page ([gha#1371](https://github.com/Morrison-Lab/gha/issues/1371)).
 
 # 7 Avoid forward references
 
