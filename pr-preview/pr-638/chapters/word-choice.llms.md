@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 23:29:39 (PST)
+Last modified: 2026-11-13 23:45:32 (PST)
 
 > **NOTE:**
 >
@@ -126,7 +126,7 @@ A reader attaches a pronoun or a demonstrative, such as *it*, *this*, *that*, *w
 >
 > ✅ The lasso shrinks the coefficients toward zero, as ridge regression does, but the lasso sets some of them exactly to zero.
 
-In the ❌ version, the nearest noun phrase before *it* is “ridge regression”, so the sentence says that ridge regression sets coefficients to zero. Ridge regression shrinks coefficients but does not set them exactly to zero. Rewording the sentence around the pronoun does not help, because the pronoun is what leaves the reader a choice.
+In the ❌ version, the nearest noun phrase before *it* is “ridge regression”, so the sentence says that ridge regression sets coefficients to zero. Ridge regression shrinks coefficients but does not set them exactly to zero. Rewording the clause does not help if a noun phrase you do not mean still sits closer to the pronoun.
 
 Keep a pronoun whose nearest noun phrase is the one you mean:
 
