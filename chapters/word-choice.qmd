@@ -268,6 +268,38 @@ without saying what.
 If you cannot name the object, quantity, step or idea,
 the sentence is not yet ready to write.
 
+# Name the referent when a closer noun could take the pronoun
+
+A reader attaches a pronoun or a demonstrative,
+such as *it*, *this*, *that*, *which*, or *they*,
+to the nearest noun phrase before the pronoun that fits the grammar.
+When that noun phrase is not the one you mean,
+the sentence still reads smoothly,
+so the reader takes away the wrong fact without ever being unsure.
+Rereading your own draft rarely catches the mistake,
+because you already know the referent.
+Check the grammar instead of the sense:
+find the nearest noun phrase before each pronoun,
+and ask whether that noun phrase is the one you mean.
+If it is not, replace the pronoun with the noun.
+
+> ❌ The lasso shrinks the coefficients toward zero, as ridge regression does,
+> but it sets some of them exactly to zero.
+>
+> ✅ The lasso shrinks the coefficients toward zero, as ridge regression does,
+> but the lasso sets some of them exactly to zero.
+
+In the ❌ version, the nearest noun phrase before *it* is "ridge regression",
+so the sentence says that ridge regression sets coefficients to zero.
+Ridge regression shrinks coefficients but does not set them exactly to zero.
+Rewording the sentence around the pronoun does not help,
+because the pronoun is what leaves the reader a choice.
+
+Keep a pronoun whose nearest noun phrase is the one you mean:
+
+> ✅ The lasso sets some coefficients exactly to zero,
+> so it also selects variables.
+
 # Give a technical word one meaning
 
 A word that names a technical concept keeps that one meaning on every page.
