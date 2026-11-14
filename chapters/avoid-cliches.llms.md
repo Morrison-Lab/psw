@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-13 17:15:35 (PST)
+Last modified: 2026-11-13 21:17:39 (PST)
 
 > **NOTE:**
 >
@@ -134,6 +134,7 @@ Other reflexes to watch for:
 - **Mechanical lists of three.** Three parallel items appear whether or not three is the right count. Use the number of items the point actually needs.
 - **Signpost filler.** Phrases like “it is worth noting that” and “importantly” announce a point instead of making it. Cut them and state the point directly.
 - **Hedging stacks.** “May potentially suggest” and “could possibly indicate” pile up qualifiers. Keep one honest [hedge](#def-hedge); drop the rest.
+- **Hedges with no reason.** A softener on a recommendation you hold, such as “you might want to consider”, weakens a claim that you have no reason to doubt (Ezra, 2026-11-10). A conditional on the reader’s wishes, such as “if you still want it”, softens a statement in the same way, so this rule counts it as a hedge too: it makes the reader decide something that nothing called into doubt. Before you hedge, name the uncertainty or risk that the hedge reports. If you can name one, keep the hedge and say what it is; if you cannot, delete it. For example, deleting the conditional from “The draft is ready, if you still want it” leaves “The draft is ready”.
 - **Hollow summaries.** A closing paragraph that opens with “in conclusion” and only restates what you just said adds nothing. End on a real point.
 
 ### 2.2.1 Say what it is before what it is not
