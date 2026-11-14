@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-14 11:41:37 (PST)
+Last modified: 2026-11-14 11:46:39 (PST)
 
 > **NOTE:**
 >
@@ -242,7 +242,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 Connecting an abstract idea to a concrete case, and pairing words with a figure, both help students learn ([Pashler et al. 2007](#ref-pashler2007), recommendations 3 and 4).
 
 - Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.
-- Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
+- Follow every abstract div directly with a concrete `#exm-` div. The rule covers each `#def-`, `#thm-`, `#lem-`, `#cor-` and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. An example that illustrates two definitions is two examples: split it, put each half directly after its own definition, and keep the original id on the half that matches it (Ezra, 2026-11-12). For example, one example of the bias and the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of a prediction, placed after the variance definition, leaves the bias definition with no example until after the next definition, so split it into an example of the bias after the bias definition and an example of the variance after the variance definition. The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
 - Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in `_fig` inside the div. When an example has nothing to plot, such as a single number, add `<!-- no-figure: reason -->` inside the div, replacing `reason` with why there is nothing to plot. The `check-exm-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each example that has no figure and no `no-figure` comment ([gha#1193](https://github.com/Morrison-Lab/gha/issues/1193)).
 - Give every div whose title mentions visualization (*visualize*, *visualizing*, *visualization*) a corresponding figure (Ezra, 2026-10-26). For an exercise, the figure may sit in the exercise or in its solution. The rule also covers any div that asks for a picture: a title or an exercise prompt that says *plot*, *sketch*, *draw*, *diagram*, or *contour* (in any inflection, such as *plotting* or *sketching*), or that asks the reader to mark points on a surface. The `check-visualization-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each such div that has no figure in it or in its solution, and a `<!-- no-figure: reason -->` comment inside the div suppresses that report, as it does for an example ([gha#1262](https://github.com/Morrison-Lab/gha/pull/1262)).
 - Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.

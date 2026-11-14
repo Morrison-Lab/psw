@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-14 11:41:37 (PST)
+Last modified: 2026-11-14 11:46:39 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -73,6 +73,12 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Reuse the notation and the concept names of the result that introduces an object:** When an earlier theorem names an object, every later definition about it uses the same symbols and the same concept. Do not coin an alias symbol or a synonym [term](#def-term) for it. For example, a theorem that decomposes the squared-error risk and names the minimizing [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\mu$ fixes the residual risk as the risk ${R\mathopen{}\left(\mu\right)\mathclose{}}$ of that function. A definition that names the residual risk through a second symbol for the same function leaves the reader to check that the two symbols denote one object.
 
 - **Make a definition as concise as possible:** State the [term](#def-term) with the fewest words and symbols that fix it exactly. Build on terms that are already defined, and link them, instead of spelling out again what they mean. For example, define a mode of a distribution as an element of the [argmax](https://morrison-lab.github.io/mds/algebra-basics.html#def-argmax) of its density or mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function), not by writing out the inequality that the argmax stands for. The inequality belongs in the definition of the argmax, which the reader can follow the link to. A definition that restates a linked term is longer to read and drifts from the original if either changes.
+
+- **State only the conditions a definition uses:** An assumption that a later result needs belongs in that result’s hypotheses, not in the definition. For each condition in a definition, ask what breaks without it. If nothing breaks, remove the condition, along with any proof step that cites it (Ezra, 2026-11-12). For example, the bias of a prediction is the expected value of its prediction error, where the error compares the prediction with a new outcome. [Linearity of expectation](https://morrison-lab.github.io/pds/expectation.html#thm-linearity-expectation) splits that expected difference whatever the joint distribution of the training set and the new outcome, so the definition needs no independence between them. The bias-variance decomposition uses that independence, so its hypotheses state it.
+
+  > ❌ The bias is the expected value of the prediction error, where the new outcome is independent of the training set.
+  >
+  > ✅ The bias is the expected value of the prediction error.
 
 - **Write a definition with an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) operator where one fits:** When a quantity is a probability-weighted sum, or a probability-weighted integral, of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of a random variable, define it as the [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) of that function, not as the sum, or the integral, written out. The expectation operator already stands for the sum when the variable is discrete and for the integral when it is continuous, so one definition covers both and need not repeat the support. For example, define the entropy of a discrete random variable $X$ with mass function $p$ as
 
