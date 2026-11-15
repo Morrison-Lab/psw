@@ -291,14 +291,18 @@ or speaks to the reader about something else.
   - `.callout-tip` holds study or software advice, such as an R idiom.
   - `.callout-note` holds course logistics or a note about the document itself.
 
-A limit on what a result says is a remark, because it is about the math.
-A mistake that readers often make when they apply the result is a callout, because it speaks to the reader.
+A limit on what a result says is a remark,
+because it is about the math.
+A mistake that readers often make
+when they apply the result is a callout,
+because it speaks to the reader.
 
 ::: {#exm-remark-or-callout}
 
 # Moving a software tip out of a remark
 
-> ❌ After the definition of the [logistic function](https://morrison-lab.github.io/mcs/functions.html#def-logistic-function), a remark says: "R's `plogis()` computes this function."
+> ❌ After the definition of the [logistic function](https://morrison-lab.github.io/mcs/functions.html#def-logistic-function),
+> a remark says: "R's `plogis()` computes this function."
 >
 > ✅ That sentence goes in a `.callout-tip` after the definition.
 > A remark after the definition says that some texts call the function the sigmoid or the expit.
