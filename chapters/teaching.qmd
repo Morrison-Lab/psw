@@ -868,6 +868,64 @@ before any later chunk uses them.
 
 :::
 
+# Show output without warnings or messages
+
+This rule applies to every executed code chunk in teaching materials,
+in every course and every teaching repository, in every language.
+
+Rendered code shows its output and nothing else.
+A reader should never see a line such as "`geom_smooth()` using formula = 'y ~ x'",
+a package-loading banner, or a deprecation warning under a chunk.
+Fix the cause rather than the display:
+
+- **Name the argument whose default prints a message**:
+  give `geom_smooth()` both `method` and `formula`,
+  and give `geom_histogram()` one of `bins`, `binwidth`, or `breaks`.
+- **Fix the code that raises a warning**,
+  unless the warning is the expected result of what the page shows.
+- **Silence a message only when it cannot be avoided and tells the reader nothing**:
+  set `#| message: false` on the chunk that loads a package,
+  rather than wrapping `library()` in `suppressPackageStartupMessages()`,
+  so the code that readers see stays plain.
+  The option silences every message in its chunk,
+  so keep that chunk to the package load.
+- **Hide a warning only when it is expected and understood**:
+  set `#| warning: false` on the chunk,
+  and check the result that the warning concerns, such as `stopifnot(fit$converged)`,
+  in a chunk hidden with `#| include: false`.
+- **Never hide a message or warning that you have not read**,
+  whether by a chunk option or by a wrapper such as `suppressWarnings()`
+  or `warnings.filterwarnings("ignore")`,
+  because that hides a defect from the author as well as from the reader.
+
+::: {#exm-no-code-messages}
+
+# Removing the message under a fitted line
+
+> ❌
+>
+> ```r
+> # draw the data with its least-squares line
+> ggplot(hers, aes(x = age, y = glucose)) +
+>   geom_point() +
+>   geom_smooth(method = "lm")
+> ```
+>
+> ✅
+>
+> ```r
+> # draw the data with its least-squares line
+> ggplot(hers, aes(x = age, y = glucose)) +
+>   geom_point() +
+>   geom_smooth(method = "lm", formula = y ~ x)
+> ```
+
+The first chunk prints "`geom_smooth()` using formula = 'y ~ x'" above its figure.
+The second names the formula,
+so the chunk shows the figure alone.
+
+:::
+
 # Present R results with modern packages
 
 This rule applies to all R code in teaching materials,
