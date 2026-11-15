@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-14 18:07:16 (PST)
+Last modified: 2026-11-14 18:40:29 (PST)
 
 > **NOTE:**
 >
@@ -629,13 +629,29 @@ Name the object you mean. When the text refers to the fitted prediction function
 >
 > The ✅ version names the fitted prediction function where the concept is a prediction, and keeps $\truemean$ for the mean it is compared with.
 
-# 17 Writing the log-odds
+# 17 Naming covariates and their coefficients
+
+Give each named [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) a letter that suggests what it measures, and subscript its regression coefficient with that same letter. A reader then knows which covariate a coefficient multiplies without looking it up. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the coefficient of a covariate $A$ as `\coef{A}`, which prints $\coef{A}$.
+
+Keep the numbered covariate $x_j$, with coefficient $\coef{x_j}$, for statements that hold for any covariate in a model with $p$ of them, where no particular covariate is meant, as in the [linear regression model](https://morrison-lab.github.io/sds/correlation-regression.html#def-linear-regression). Do not number the covariates of a worked example. A numbered coefficient such as $\coef{1}$ makes the reader count positions in the model, and the count changes when a covariate is added or dropped.
+
+> **NOTE:**
+>
+> **Example 28 (Coefficients named by their covariates)** Consider the birthweight data of Dobson and Barnett ([2018](#ref-dobson4e), Example 2.2.2): the birthweight in grams and the estimated gestational age in weeks of male and female infants born in one hospital. Let $Y$ be birthweight, let the [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) $M$ indicate a male infant, and let the covariate $A$ be gestational age.
+>
+> > ❌ $\condE{Y}{X_1 = x_1, X_2 = x_2} = \intcoef + \coef{1} x_1 + \coef{2} x_2$, where $X_1$ is the male indicator and $X_2$ is gestational age.
+> >
+> > ✅ $\condE{Y}{M = m, A = a} = \intcoef + \coef{M} m + \coef{A} a$.
+>
+> In the ✅ version, the coefficient $\coef{A}$ multiplies the gestational age $a$, so a reader sees at once that $\coef{A}$ is the difference in mean birthweight per week of gestational age, holding sex fixed.
+
+# 18 Writing the log-odds
 
 Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
 > **NOTE:**
 >
-> **Example 28 (Argument of the logistic function)**  
+> **Example 29 (Argument of the logistic function)**  
 >
 > > ❌ The logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
 > >
@@ -643,7 +659,7 @@ Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another lette
 >
 > The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen $\logodds$ elsewhere recognizes it here.
 
-# 18 Writing out notational shorthands
+# 19 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in $\sum_x f(x)$. In permanent writing (notes, papers, and published slides), write the full form instead: $\sum_{x \in \mathcal{R}(X)} f(x)$, where $\mathcal{R}(X)$ is the set of values that $X$ can take.
 
@@ -653,7 +669,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 29 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
+> **Example 30 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
 >
 > > ❌ $\text{E}[X] = \sum_x x \Pr(X = x)$
 > >
@@ -667,7 +683,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values $X$ can take, and the indices of the $n$ observations.
 
-# 19 Stating assumptions before using them
+# 20 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -691,7 +707,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 30 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
+> **Example 31 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
 >
 > > ❌ $$\begin{aligned}
 > > f(x) - f(2)
@@ -712,7 +728,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 31 (Writing several assumptions as one list)**  
+> **Example 32 (Writing several assumptions as one list)**  
 >
 > > ❌ Assume the sample size $n$ is larger than $30$. Assume the observations are independent. Assume the population variance $\sigma^2$ is finite.
 > >
@@ -726,7 +742,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 32 (Writing several names as one list)**  
+> **Example 33 (Writing several names as one list)**  
 >
 > > ❌ Let $n$ be the sample size. Let $\bar{y}$ be the sample mean. Let $s$ be the sample standard deviation.
 > >
@@ -740,7 +756,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 33 (Defining the noise is a parametrization, not an assumption)**  
+> **Example 34 (Defining the noise is a parametrization, not an assumption)**  
 >
 > > ❌ Assume:
 > >
@@ -756,7 +772,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
-# 20 Separating the framing from the conclusions
+# 21 Separating the framing from the conclusions
 
 Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:
 
@@ -771,7 +787,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 
 > **NOTE:**
 >
-> **Example 34 (Separating the function and its gradient from the stationary point)**  
+> **Example 35 (Separating the function and its gradient from the stationary point)**  
 >
 > > ❌ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$, which is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
 > >
@@ -783,7 +799,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 >
 > In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is $f$ and its gradient, and the second holds the conclusion.
 
-# 21 Writing a quantity’s symbol on the left
+# 22 Writing a quantity’s symbol on the left
 
 When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.
 
@@ -796,7 +812,7 @@ The rule holds for any quantity that later steps use:
 
 > **NOTE:**
 >
-> **Example 35 (Writing the gradient with its symbol)**  
+> **Example 36 (Writing the gradient with its symbol)**  
 >
 > > ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
 > >
@@ -806,7 +822,7 @@ The rule holds for any quantity that later steps use:
 >
 > The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
 
-# 22 Choosing delimiters and scripts
+# 23 Choosing delimiters and scripts
 
 Choose each delimiter and each script by what it says, so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](../chapters/defining-terms.llms.md#def-term)s, and an index from a power.
 
@@ -830,7 +846,7 @@ Give the characteristic of a random variable a subscript when it has its own sym
 
 > **NOTE:**
 >
-> **Example 36 (A characteristic with its own symbol)**  
+> **Example 37 (A characteristic with its own symbol)**  
 >
 > > ❌ The [precision](https://morrison-lab.github.io/pds/variance-covariance.html#def-precision) of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
 > >
@@ -841,6 +857,8 @@ Give the characteristic of a random variable a subscript when it has its own sym
 Back to top
 
 ## References
+
+Dobson, Annette J., and Adrian G. Barnett. 2018. *An Introduction to Generalized Linear Models*. 4th ed. CRC Press. <https://doi.org/10.1201/9781315182780>.
 
 International Organization for Standardization. 2019. *ISO 80000-2:2019 — Quantities and Units — Part 2: Mathematics*.
 
