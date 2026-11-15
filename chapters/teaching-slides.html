@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-14 22:52:45 (PST)</p>
+  <p class="date">Last modified: 2026-11-15 06:00:31 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -850,8 +850,37 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than <code>None</code> and shows the chunk as one code block per printed value, such as a <code>&lt;matplotlib.lines.Line2D object at 0x...&gt;</code> line after every <code>ax.plot(...)</code>. End each such call with a semicolon, or assign its value.</li>
 </ul>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Present R results with modern packages</h2>
+<section id="make-every-visible-code-chunk-show-a-result" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Make every visible code chunk show a result</h2>
+</section>
+<section class="slide level2">
+
+<p>This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.</p>
+<p>A code chunk that readers can see should produce a visible result: a figure, a table, or console output. A chunk that only assigns shows code with nothing to connect it to, so the reader cannot check what the code made. End such a chunk with an expression that shows its result:</p>
+<ul>
+<li><strong>Loaded data</strong>: show its first rows, such as <code>hers |&gt; head()</code>, which stays short whether the object is a tibble or a data frame.</li>
+<li><strong>A computed value</strong>: print it.</li>
+<li><strong>A defined <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a></strong>: call it once on a small example. If the call draws random numbers, check that a later chunk sets its own seed before the next random draw, so that the extra call does not change later results.</li>
+<li><strong>Set-up code</strong>: show what it set up, such as a summary of the variables or settings that it created.</li>
+<li><strong>A result that the next chunk displays</strong>: merge the two chunks, rather than printing the result twice.</li>
+</ul>
+<p>A chunk hidden with <code>#| include: false</code> is exempt, because the reader never sees its code.</p>
+<div id="exm-visible-chunk-result" class="theorem example">
+<p><span class="theorem-title"><strong>Example 9 (Showing the data that a chunk loads)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="co"># load the HERS trial data, with labeled values as factors</span></span>
+<span id="cb4-2"><a aria-label="2"></a>hers <span class="ot">&lt;-</span> rmb<span class="sc">::</span>hers <span class="sc">|&gt;</span> haven<span class="sc">::</span><span class="fu">as_factor</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>✅</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="co"># load the HERS trial data, with labeled values as factors</span></span>
+<span id="cb5-2"><a aria-label="2"></a>hers <span class="ot">&lt;-</span> rmb<span class="sc">::</span>hers <span class="sc">|&gt;</span> haven<span class="sc">::</span><span class="fu">as_factor</span>()</span>
+<span id="cb5-3"><a aria-label="3"></a>hers <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<p>The first chunk renders as code alone. The second also prints the first six rows, so the reader sees the variables and their types before any later chunk uses them.</p>
+</div>
+</section>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -865,8 +894,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -883,8 +912,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -896,8 +925,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -909,15 +938,15 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
+<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
 </section>
 <section class="slide level2">
 
 <p>This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.</p>
 <p>Set <code>#| code-fold:</code> on each chunk to <code>show</code> or <code>true</code>. Never set <code>false</code>: it removes the toggle and gains nothing, because <code>show</code> also keeps the code and its output together. The choice depends on one question: does the prose mention the code?</p>
 <ul>
-<li><code>#| code-fold: show</code> when the prose mentions the code. The choice of <code>show</code> holds whether the code produces output outside the chunk or not, and a chunk that defines <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>s or objects that later chunks use counts as producing output. The code starts open, and a reader who wants to focus on the output can hide it.</li>
+<li><code>#| code-fold: show</code> when the prose mentions the code. The choice of <code>show</code> holds whether the code produces output outside the chunk or not, and it covers a chunk that defines <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a>s or objects that later chunks use. Such a chunk still ends by showing what it defined (see <a href="#/make-every-visible-code-chunk-show-a-result">Make every visible code chunk show a result</a>). The code starts open, and a reader who wants to focus on the output can hide it.</li>
 <li><code>#| code-fold: true</code> when the prose does not mention the code. The code starts hidden, and a reader who wants it can open it.</li>
 </ul>
 <p>For example:</p>
@@ -928,8 +957,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>A chunk that loads a package the text never mentions is <code>true</code>.</li>
 </ul>
 </section>
-<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Put a full command in a code block, not in inline code</h2>
+<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Put a full command in a code block, not in inline code</h2>
 </section>
 <section class="slide level2">
 
@@ -941,17 +970,17 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Introduce the block with a sentence that ends in a colon. Do not follow a semicolon or a colon in the sentence with inline code that the reader has to select by hand.</li>
 </ul>
 <div id="exm-command-block" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>: <code>install.packages(c("readr", "dplyr", "ggplot2", "purrr"))</code>.</p>
 <p>✅ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.</p>
 </div>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -963,8 +992,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="29">
-<h2><span class="header-section-number">29</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="30">
+<h2><span class="header-section-number">30</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -975,8 +1004,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="30">
-<h2><span class="header-section-number">30</span> Split a page before it grows too long</h2>
+<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="31">
+<h2><span class="header-section-number">31</span> Split a page before it grows too long</h2>
 </section>
 <section class="slide level2">
 
@@ -990,8 +1019,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="31">
-<h2><span class="header-section-number">31</span> Keep sibling headings to about five</h2>
+<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="32">
+<h2><span class="header-section-number">32</span> Keep sibling headings to about five</h2>
 </section>
 <section class="slide level2">
 
@@ -1005,8 +1034,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The <code>check-heading-siblings</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1390">gha#1390</a>) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="32">
-<h2><span class="header-section-number">32</span> Fold a one-paragraph section into its neighbor</h2>
+<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="33">
+<h2><span class="header-section-number">33</span> Fold a one-paragraph section into its neighbor</h2>
 </section>
 <section class="slide level2">
 
@@ -1019,8 +1048,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Do not delete the content: move it to the section it belongs to.</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="33">
-<h2><span class="header-section-number">33</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="34">
+<h2><span class="header-section-number">34</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -1035,8 +1064,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="34">
-<h2><span class="header-section-number">34</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="35">
+<h2><span class="header-section-number">35</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -1049,7 +1078,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -1057,8 +1086,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="order-a-note-sheet-from-complex-sections-to-atomic-rows" class="slide level2" data-number="35">
-<h2><span class="header-section-number">35</span> Order a note sheet from complex sections to atomic rows</h2>
+<section id="order-a-note-sheet-from-complex-sections-to-atomic-rows" class="slide level2" data-number="36">
+<h2><span class="header-section-number">36</span> Order a note sheet from complex sections to atomic rows</h2>
 </section>
 <section class="slide level2">
 
@@ -1072,7 +1101,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>Atomic rows come first within a table because a reader scans a table from the top, and a row that uses a symbol defined below it sends the reader down the table to find it.</p>
 <div id="exm-note-sheet-order" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Rows: <code>Gradient descent update</code>, <code>Step size</code>, <code>Gradient</code>, <code>Power rule</code>.</p>
 <p>✅ Rows: <code>Power rule</code>, <code>Gradient</code>, <code>Step size</code>, <code>Gradient descent update</code>.</p>
@@ -1080,8 +1109,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ table opens with an update rule that uses the step size and the gradient, which only the rows below it define. In the ✅ table, every row uses only the rows above it.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="36">
-<h2><span class="header-section-number">36</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="37">
+<h2><span class="header-section-number">37</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -1117,8 +1146,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>where to get a copy of the data.</li>
 </ul>
 </section>
-<section id="refute-common-misconceptions" class="slide level2" data-number="37">
-<h2><span class="header-section-number">37</span> Refute common misconceptions</h2>
+<section id="refute-common-misconceptions" class="slide level2" data-number="38">
+<h2><span class="header-section-number">38</span> Refute common misconceptions</h2>
 </section>
 <section class="slide level2">
 
@@ -1130,7 +1159,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Put the refutation where the concept is defined or first used, so the reader meets the correction together with the concept.</li>
 </ul>
 <div id="exm-refutation-text" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 13 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.</p>
 <p>✅ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed. A common misreading takes the p-value to be the probability that the null hypothesis is true. That misreading is wrong. The p-value is computed by assuming that the null hypothesis is true, so it cannot also be the probability that the null hypothesis is true.</p>
@@ -1138,8 +1167,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.</p>
 </div>
 </section>
-<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="38">
-<h2><span class="header-section-number">38</span> Revisit earlier units in later exercises</h2>
+<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="39">
+<h2><span class="header-section-number">39</span> Revisit earlier units in later exercises</h2>
 </section>
 <section class="slide level2">
 
@@ -1150,8 +1179,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.</li>
 </ul>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="39">
-<h2><span class="header-section-number">39</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="40">
+<h2><span class="header-section-number">40</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -1165,24 +1194,24 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 13 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 14 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
 <blockquote>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a aria-label="1"></a>Grading (6 points):</span>
-<span id="cb5-2"><a aria-label="2"></a></span>
-<span id="cb5-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
-<span id="cb5-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
-<span id="cb5-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
-<span id="cb5-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a aria-label="1"></a>Grading (6 points):</span>
+<span id="cb7-2"><a aria-label="2"></a></span>
+<span id="cb7-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
+<span id="cb7-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
+<span id="cb7-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
+<span id="cb7-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="40">
-<h2><span class="header-section-number">40</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="41">
+<h2><span class="header-section-number">41</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -1193,8 +1222,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="41">
-<h2><span class="header-section-number">41</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="42">
+<h2><span class="header-section-number">42</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -1208,8 +1237,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="42">
-<h2><span class="header-section-number">42</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="43">
+<h2><span class="header-section-number">43</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
