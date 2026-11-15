@@ -711,6 +711,13 @@ in every course and every teaching repository, not only to one course.
   so the reader sees one step's code in one language at a time.
   The shared group makes one choice of language apply to every tabset on the page,
   as long as the tab headings use identical text in every tabset, such as always "R" and "Python".
+- When the versions of an analysis in different languages draw random numbers,
+  draw them with [`SyncRNG`](https://github.com/GjjvdBurg/SyncRNG) from the same seed,
+  or synchronize them by a similar method,
+  so that every tab draws the same numbers (Ezra, 2026-11-15).
+  `SyncRNG` runs the same generator in R and in Python.
+  Each language's own generator draws different numbers from the same seed,
+  so R's `set.seed()` and the `random_state` argument in pandas would give the tabs different samples, splits and results.
 - Write the R code with [tidymodels](https://www.tidymodels.org/),
   or show tidymodels and base R side by side.
   Do not give base R alone.
