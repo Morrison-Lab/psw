@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-14 17:31:45 (PST)
+Last modified: 2026-11-14 17:45:25 (PST)
 
 > **NOTE:**
 >
@@ -189,7 +189,7 @@ Students can ask an AI assistant for a complete solution to any homework problem
 
 - Use as an in-class example the dataset that the reference texts and the other instructors of the course use for that topic. Depart from it only for a stated reason.
 - Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic, and use the same datasets they do.
-- When adapting an exercise, figure, or example from a source, analyze the dataset that the source uses, or follow the source’s own simulation recipe, and cite the source. Use a different dataset only when it is better for the point being taught, and say why in the pull request. Ezra (2026-11-15): “when we adapt material, we should use the same data sets from the source, unless we have a better one.”
+- When adapting an exercise, figure, or example from a source, analyze the dataset that the source uses, or follow the source’s own simulation recipe, and cite the source. Use a different dataset only when it is better for the point being taught, and say why in the pull request (Ezra, 2026-11-15).
 - Keep assessment that must be secure, such as an exam, in a setting the instructor controls, because a take-home problem cannot be.
 
 Check the reference text itself before naming its datasets. Open the chapter and list the dataset each section uses, rather than recalling them.
