@@ -101,7 +101,7 @@ callouts (config + color palette live in `_quarto-website.yml`).
   exceptions.
 - **Serial comma**: gha's `check-serial-comma` fails a changed line that lists three or more items
   without a comma before the final "and" or "or".
-  Write "samples, splits, and results", not "samples, splits and results".
+  Write "samples, splits, and results", not "samples, splits and results". <!-- check-serial-comma: allow -->
   Some older text in the chapters omits the comma,
   so do not copy their lists.
   Check each list you add before the first push (psw#647 cost a push, 2026-11-15).
