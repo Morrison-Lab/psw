@@ -717,7 +717,7 @@ in every course and every teaching repository, not only to one course.
   so that every tab draws the same numbers (Ezra, 2026-11-15).
   `SyncRNG` runs the same generator in R and in Python.
   Each language's own generator draws different numbers from the same seed,
-  so R's `set.seed()` and the `random_state` argument in pandas would give the tabs different samples, splits and results.
+  so R's `set.seed()` and the `random_state` argument in pandas would give the tabs different samples, splits, and results.
 - Write the R code with [tidymodels](https://www.tidymodels.org/),
   or show tidymodels and base R side by side.
   Do not give base R alone.
