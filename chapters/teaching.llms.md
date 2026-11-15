@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-14 18:40:29 (PST)
+Last modified: 2026-11-14 21:41:14 (PST)
 
 > **NOTE:**
 >
@@ -197,6 +197,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 # 11 Use real data and compute every number
 
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
+- Prefer real data to simulated data in data analysis examples and exercises, unless the example or exercise is a simulation study (Ezra, 2026-11-15). When adapting material from a source, [Match datasets and assignments to the reference texts](#match-datasets-and-assignments-to-the-reference-texts) says which dataset to use.
 - Show a dataset before analyzing it, with a printed look at its first rows and its structure.
 - Show the data where it is first mentioned. Put a table of a few rows, or a plot of the variables, directly after the sentence that names the dataset, before any discussion of its features, the methods to apply to it, or the questions it raises. A reader who has seen the data can picture what the next slides describe, while a reader who has not must hold an abstract description in mind until the data appears. If the data are too large to show, show a sample or a summary figure. Link later mentions of the dataset back to this first display.
 - Show a toy dataset, such as the few points of an exercise, as a table with one row per observation, not as a sentence that lists its values. A reader scans a table’s rows and columns at a glance, while a sentence makes the reader pair each input with its outcome in their head. A toy dataset’s table still needs a `#tbl-` label and a caption, as [Captions are captions, not headings](../chapters/paper-organization.llms.md#captions-are-captions-not-headings) requires of every table, and the prose refers to it by its label. A table inside an exercise or a list item is not exempt either.
