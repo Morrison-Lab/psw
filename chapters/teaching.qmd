@@ -391,8 +391,7 @@ Choose assignments for their fit with the course, not for novelty.
   or follow the source's own simulation recipe,
   and cite the source.
   Use a different dataset only when it is better for the point being taught,
-  and say why in the pull request.
-  Ezra (2026-11-15): "when we adapt material, we should use the same data sets from the source, unless we have a better one."
+  and say why in the pull request (Ezra, 2026-11-15).
 - Keep assessment that must be secure, such as an exam, in a setting the instructor controls,
   because a take-home problem cannot be.
 
