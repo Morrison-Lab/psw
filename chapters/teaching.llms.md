@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-15 06:00:31 (PST)
+Last modified: 2026-11-15 11:07:35 (PST)
 
 > **NOTE:**
 >
@@ -436,7 +436,43 @@ A chunk hidden with `#| include: false` is exempt, because the reader never sees
 >
 > The first chunk renders as code alone. The second also prints the first six rows, so the reader sees the variables and their types before any later chunk uses them.
 
-# 23 Present R results with modern packages
+# 23 Show output without warnings or messages
+
+This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
+
+Rendered code shows its output and nothing else. A reader should never see a line such as “`geom_smooth()` using formula = ‘y ~ x’”, a package-loading banner, or a deprecation warning under a chunk. Fix the cause rather than the display:
+
+- **Name the argument whose default prints a message**: give `geom_smooth()` both `method` and `formula`, and give `geom_histogram()` one of `bins`, `binwidth`, or `breaks`.
+- **Fix the code that raises a warning**, unless the warning is the expected result of what the page shows.
+- **Silence a message only when it cannot be avoided and tells the reader nothing**: set `#| message: false` on the chunk that loads a package, rather than wrapping `library()` in `suppressPackageStartupMessages()`, so the code that readers see stays plain. The option silences every message in its chunk, so keep that chunk to the package load.
+- **Hide a warning only when it is expected and understood**: set `#| warning: false` on the chunk, and check the result that the warning concerns, such as `stopifnot(fit$converged)`, in a chunk hidden with `#| include: false`.
+- **Never hide a message or warning that you have not read**, whether by a chunk option or by a wrapper such as `suppressWarnings()` or `warnings.filterwarnings("ignore")`, because that hides a defect from the author as well as from the reader.
+
+> **NOTE:**
+>
+> **Example 10 (Removing the message under a fitted line)**  
+>
+> > ❌
+> >
+> > ``` r
+> > # draw the data with its least-squares line
+> > ggplot(hers, aes(x = age, y = glucose)) +
+> >   geom_point() +
+> >   geom_smooth(method = "lm")
+> > ```
+> >
+> > ✅
+> >
+> > ``` r
+> > # draw the data with its least-squares line
+> > ggplot(hers, aes(x = age, y = glucose)) +
+> >   geom_point() +
+> >   geom_smooth(method = "lm", formula = y ~ x)
+> > ```
+>
+> The first chunk prints “`geom_smooth()` using formula = ‘y ~ x’” above its figure. The second names the formula, so the chunk shows the figure alone.
+
+# 24 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -447,7 +483,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-# 24 Manipulate data with dplyr, not base R
+# 25 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -461,7 +497,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-# 25 Include code from files instead of copying it
+# 26 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -470,7 +506,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-# 26 Comment every code chunk to say what and why
+# 27 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -479,7 +515,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-# 27 Set `code-fold` by what the code does and whether the prose mentions it
+# 28 Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
@@ -495,7 +531,7 @@ For example:
 - A chunk that defines the helper functions a section introduces is `show`.
 - A chunk that loads a package the text never mentions is `true`.
 
-# 28 Put a full command in a code block, not in inline code
+# 29 Put a full command in a code block, not in inline code
 
 This rule applies to all teaching materials that name commands, in every course and every teaching repository.
 
@@ -506,7 +542,7 @@ This rule applies to all teaching materials that name commands, in every course 
 
 > **NOTE:**
 >
-> **Example 10 (Moving an install command out of a sentence)**  
+> **Example 11 (Moving an install command out of a sentence)**  
 >
 > > ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
 > >
@@ -518,7 +554,7 @@ This rule applies to all teaching materials that name commands, in every course 
 >
 > The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.
 
-# 29 Introduce every function in a programming primer
+# 30 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -527,14 +563,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-# 30 Make figures accessible
+# 31 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-# 31 Split a page before it grows too long
+# 32 Split a page before it grows too long
 
 A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.
 
@@ -546,7 +582,7 @@ A page should load and finish rendering its math in under 5 seconds, and its scr
 
 The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
 
-# 32 Keep sibling headings to about five
+# 33 Keep sibling headings to about five
 
 Aim for at most about five sibling headings under one parent heading, and split or group the headings when there are more than seven (Ezra, 2026-11-02). Sibling headings are headings of the same level under the same parent. The top-level headings of a page or book chapter count as siblings under the page.
 
@@ -559,7 +595,7 @@ A reader who scans a list of headings holds the whole list in mind while choosin
 
 The `check-heading-siblings` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1390](https://github.com/Morrison-Lab/gha/pull/1390)) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.
 
-# 33 Fold a one-paragraph section into its neighbor
+# 34 Fold a one-paragraph section into its neighbor
 
 Give a heading to a point that can stand alone, and fold a section of a single short paragraph into the section it qualifies or follows (Ezra, 2026-11-02). A heading that opens a one-paragraph section adds an entry to the list of headings and gives the reader nothing to find there. This is a guideline, not a minimum length: a definition, a distinct step or a named result can be short.
 
@@ -569,7 +605,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - If a point is one of several parallel points, make it an item in the parent’s list.
 - Do not delete the content: move it to the section it belongs to.
 
-# 34 Structure slides for the reader
+# 35 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -580,7 +616,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-# 35 Give each concept in a note sheet its own row
+# 36 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -593,7 +629,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 > **NOTE:**
 >
-> **Example 11 (Splitting a merged row)**  
+> **Example 12 (Splitting a merged row)**  
 >
 > > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
 > >
@@ -601,7 +637,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-# 36 Order a note sheet from complex sections to atomic rows
+# 37 Order a note sheet from complex sections to atomic rows
 
 A note sheet’s sections and its rows run in opposite directions (Ezra, 2026-11-12):
 
@@ -615,7 +651,7 @@ Atomic rows come first within a table because a reader scans a table from the to
 
 > **NOTE:**
 >
-> **Example 12 (Reordering a gradient descent table)**  
+> **Example 13 (Reordering a gradient descent table)**  
 >
 > > ❌ Rows: `Gradient descent update`, `Step size`, `Gradient`, `Power rule`.
 > >
@@ -623,7 +659,7 @@ Atomic rows come first within a table because a reader scans a table from the to
 >
 > The ❌ table opens with an update rule that uses the step size and the gradient, which only the rows below it define. In the ✅ table, every row uses only the rows above it.
 
-# 37 Talk about the ideas, not the notes
+# 38 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -648,7 +684,7 @@ Describe each dataset once, in its own dataset callout with a linkable id (`#dat
 - the outcome and the predictors, described in words;
 - where to get a copy of the data.
 
-# 38 Refute common misconceptions
+# 39 Refute common misconceptions
 
 When a topic has a well-known misconception, state the misconception, say that it is wrong, and explain the correct idea. A text written this way is a *refutation text*. Across two decades of science-education studies, students who read refutation texts were more likely to give up a misconception than students who read an ordinary explanation of the correct idea ([Tippett 2010](#ref-tippett2010)). An explanation that never mentions the misconception lets the reader keep both ideas.
 
@@ -659,7 +695,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 
 > **NOTE:**
 >
-> **Example 13 (Refuting a misreading of the p-value)**  
+> **Example 14 (Refuting a misreading of the p-value)**  
 >
 > > ❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.
 > >
@@ -667,7 +703,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 >
 > The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.
 
-# 39 Revisit earlier units in later exercises
+# 40 Revisit earlier units in later exercises
 
 Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong ([Pashler et al. 2007](#ref-pashler2007), recommendations 1 and 5b). Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility ([Dunlosky et al. 2013](#ref-dunlosky2013)).
 
@@ -675,7 +711,7 @@ Include in each problem set a few exercises that use methods from earlier units.
 - Link that exercise’s hint to the earlier section, as for any other exercise.
 - In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.
 
-# 40 Write grading rubrics as checklists
+# 41 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -688,7 +724,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 > **NOTE:**
 >
-> **Example 14 (A rubric as a checklist)**  
+> **Example 15 (A rubric as a checklist)**  
 >
 > > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >
@@ -705,14 +741,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-# 41 Credit other courses without summarizing them
+# 42 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-# 42 Finish each unit completely
+# 43 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -724,7 +760,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-# 43 Rules that apply to all writing
+# 44 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
