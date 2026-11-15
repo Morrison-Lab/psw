@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-14 21:41:14 (PST)</p>
+  <p class="date">Last modified: 2026-11-14 22:27:01 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -786,6 +786,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <ul>
 <li>Give labs and code exercises in both R and Python, side by side.</li>
 <li>Put each step’s Python and R pair in its own tabset with <code>group="language"</code>. Start a new tabset whenever prose or a new step sits between code chunks, so the reader sees one step’s code in one language at a time. The shared group makes one choice of language apply to every tabset on the page, as long as the tab headings use identical text in every tabset, such as always “R” and “Python”.</li>
+<li>When the versions of an analysis in different languages draw random numbers, draw them with <a href="https://github.com/GjjvdBurg/SyncRNG"><code>SyncRNG</code></a> from the same seed, or synchronize them by a similar method, so that every tab draws the same numbers (Ezra, 2026-11-15). <code>SyncRNG</code> runs the same generator in R and in Python. Each language’s own generator draws different numbers from the same seed, so R’s <code>set.seed()</code> and the <code>random_state</code> argument in pandas would give the tabs different samples, splits, and results.</li>
 <li>Write the R code with <a href="https://www.tidymodels.org/">tidymodels</a>, or show tidymodels and base R side by side. Do not give base R alone. <a href="https://github.com/Morrison-Lab/ISLR-tidymodels-labs">ISLR-tidymodels-labs</a> shows the style.</li>
 <li>When a lab follows a textbook’s lab, use the book’s exercises, data and fitting functions, <!-- check-term-links: allow --> in the book’s order. For the ISL labs, fit Python models with <code>statsmodels</code>’ <code>sm.OLS</code>, as <a href="https://github.com/intro-stat-learning/ISLP_labs">ISLP_labs</a> does. If an exercise departs from the book, say why in the lab.</li>
 <li>Never throw away an exercise you replace. Either keep both exercises, or keep the replaced one as an outtake: leave its file in place and stop including it.</li>
