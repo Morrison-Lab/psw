@@ -276,6 +276,38 @@ without sending the reader through the comparison with residuals.
 
 :::
 
+# Choose a remark or a callout by what the block is about
+
+A remark and a callout look alike,
+so choose between them by what the block says.
+A reader should be able to tell from the box alone
+whether a block belongs to the mathematical development
+or speaks to the reader about something else.
+
+- A remark (`#rem-`) holds commentary on the definition, result, or example just before it,
+  such as a synonym or an alternative notation, the history of a name, a limit on the scope of a statement, or the motivation for it.
+- A callout (`.callout-*`) holds guidance to the reader that is not part of the mathematical development:
+  - `.callout-warning` holds a common mistake the reader might make.
+  - `.callout-tip` holds study or software advice, such as an R idiom.
+  - `.callout-note` holds course logistics or a note about the document itself.
+
+A limit on what a result says is a remark, because it is about the math.
+A mistake that readers often make when they apply the result is a callout, because it speaks to the reader.
+
+::: {#exm-remark-or-callout}
+
+# Moving a software tip out of a remark
+
+> ❌ After the definition of the [logistic function](https://morrison-lab.github.io/mcs/functions.html#def-logistic-function), a remark says: "R's `plogis()` computes this function."
+>
+> ✅ That sentence goes in a `.callout-tip` after the definition.
+> A remark after the definition says that some texts call the function the sigmoid or the expit.
+
+The ✅ version keeps the remark about the definition itself
+and puts the advice on using R where a reader looks for advice.
+
+:::
+
 # Say what a yes-or-no answer means
 
 Follow a "Yes" or "No" with what the answer means in the words of the question,
