@@ -403,6 +403,11 @@ Open the chapter and list the dataset each section uses, rather than recalling t
 - Where an example needs data, use a real dataset
   instead of invented round numbers.
   Name its original source, link to where it is published, and cite it.
+- Prefer real data to simulated data in data analysis examples and exercises,
+  unless the example or exercise is a simulation study (Ezra, 2026-11-15).
+  When adapting material from a source,
+  [Match datasets and assignments to the reference texts](#match-datasets-and-assignments-to-the-reference-texts)
+  says which dataset to use.
 - Show a dataset before analyzing it,
   with a printed look at its first rows and its structure.
 - Show the data where it is first mentioned.
