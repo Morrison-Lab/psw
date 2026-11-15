@@ -99,6 +99,12 @@ callouts (config + color palette live in `_quarto-website.yml`).
   Update any count in the prose that names the size of a list you extended, such as "four groups" for a four-item list.
 - **Link check**: tuned in `lychee.toml`; fix broken links rather than adding
   exceptions.
+- **Serial comma**: gha's `check-serial-comma` fails a changed line that lists three or more items
+  without a comma before the final "and" or "or".
+  Write "samples, splits, and results", not "samples, splits and results". <!-- check-serial-comma: allow -->
+  Some older text in the chapters omits the comma,
+  so do not copy their lists.
+  Check each list you add before the first push (psw#647 cost a push, 2026-11-15).
 - **PDF glyphs**: the PDF build fails on any character its fonts cannot print,
   instead of leaving a blank (psw#387).
   Write a Greek letter or other symbol as math through a shared macro,
