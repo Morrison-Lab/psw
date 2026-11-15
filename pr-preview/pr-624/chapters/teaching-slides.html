@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-12 23:00:17 (PST)</p>
+  <p class="date">Last modified: 2026-11-14 18:09:19 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -480,6 +480,7 @@
 <li>A div holds one <a href="../chapters/defining-terms.html#def-term">term</a> or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see <a href="#/give-each-defined-term-its-own-div">Give each defined term its own div</a>).</li>
 <li>A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.</li>
 <li>Never put a result in a <code>#rem-</code> div. A remark holds commentary: motivation, history, a warning, how to read a result. When a remark states something that is true, such as an equation with its conditions, move the statement into a <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, or <code>#prp-</code> div with its proof, and leave the commentary in the remark, which links to the result (Ezra, 2026-11-07). An example pointer or a worked number is not a result: put it in an <code>#exm-</code> div.</li>
+<li>A remark makes one point. When a remark makes two points that a reader could need separately, split it into two remarks, each titled by its own idea, and link from one to the other when one builds on the other (Ezra, 2026-11-12).</li>
 <li>A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.</li>
 <li>Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as <span class="math inline">\(\E{Z^2} = \var{Z} + \sqf{\E{Z}}\)</span> for any random variable <span class="math inline">\(Z\)</span>, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic (<a href="https://morrison-lab.github.io/mds/">mds</a>, <a href="https://morrison-lab.github.io/pds/">pds</a> or <a href="https://morrison-lab.github.io/sds/">sds</a>), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.</li>
 <li>A link replaces a repeated explanation. If a piece is already written, link to it instead of writing it a second time.</li>
@@ -493,6 +494,14 @@
 </blockquote>
 <p>The ✅ version lets a later chapter link to the penalty alone, and each piece fits on a slide.</p>
 </div>
+<div id="exm-one-point-remark" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Splitting a remark that makes two points)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ One remark says that the prediction error of a <a href="../chapters/notation.html#def-fitted-value">fitted value</a> is the negative of its residual, and that the expected value of the squared prediction error for a new observation is the expected squared prediction error.</p>
+<p>✅ Two remarks: one titled “Prediction errors and residuals” makes the first point, and one titled “Expected squared prediction error” makes the second.</p>
+</blockquote>
+<p>The ✅ version lets a page about the expected squared prediction error link to the second remark alone, without sending the reader through the comparison with residuals.</p>
+</div>
 </section>
 <section id="say-what-a-yes-or-no-answer-means" class="slide level2" data-number="4">
 <h2><span class="header-section-number">4</span> Say what a yes-or-no answer means</h2>
@@ -501,7 +510,7 @@
 
 <p>Follow a “Yes” or “No” with what the answer means in the words of the question, as in “No: it’s not possible that the advanced network has a test error of 0.25,” not a bare “No.” (Ezra, 2026-10-28). A reader who sees only the first line then still knows what the answer claims, and a bare “No.” leaves open what is being denied. The rule covers solutions, worked examples and any other answer to a question.</p>
 <div id="exm-yes-no-conclusion" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Saying what a “No” means)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Saying what a “No” means)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ No.&nbsp;The irreducible error is a lower bound on the expected squared prediction error.</p>
 <p>✅ No: it’s not possible that the advanced network has a test error of 0.25. The irreducible error is a lower bound on the expected squared prediction error.</p>
@@ -562,6 +571,7 @@
 <ul>
 <li>Use as an in-class example the dataset that the reference texts and the other instructors of the course use for that topic. Depart from it only for a stated reason.</li>
 <li>Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic, and use the same datasets they do.</li>
+<li>When adapting an exercise, figure, or example from a source, analyze the dataset that the source uses, or follow the source’s own simulation recipe, and cite the source. Use a different dataset only when it is better for the point being taught, and say why in the pull request (Ezra, 2026-11-15).</li>
 <li>Keep assessment that must be secure, such as an exam, in a setting the instructor controls, because a take-home problem cannot be.</li>
 </ul>
 <p>Check the reference text itself before naming its datasets. Open the chapter and list the dataset each section uses, rather than recalling them.</p>
@@ -579,7 +589,7 @@
 <li>Never type or paste output. The page shows what the code printed when the page was rendered, and each number in the prose comes from inline code. A number typed into prose goes stale when the data or the code changes.</li>
 </ul>
 <div id="exm-show-data-first" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Showing the data at first mention)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Showing the data at first mention)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance, and the loss <a href="https://morrison-lab.github.io/mcs/functions.html#def-function">function</a> we will minimize. Slide 10 shows a table of the first rows.</p>
 <p>✅ Slide 3 introduces the spam data and shows a table of its first rows and a plot of one predictor by class. Slides 4 to 10 discuss the predictors, the class imbalance, and the loss function, and refer back to that table and plot.</p>
@@ -587,7 +597,7 @@
 <p>The ✅ version lets every later slide refer to something the reader has already seen.</p>
 </div>
 <div id="exm-toy-data-table" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Showing a toy dataset as a table)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Showing a toy dataset as a table)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The dataset has one input: <span class="math inline">\(x = 0, 1\)</span> with <span class="math inline">\(y = 0\)</span>, and <span class="math inline">\(x = 3, 4\)</span> with <span class="math inline">\(y = 1\)</span>.</p>
 <p>✅ <a href="#/tbl-toy-dataset" class="quarto-xref">Table&nbsp;1</a> shows the toy dataset, which has one input.</p>
@@ -672,7 +682,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>Connecting an abstract idea to a concrete case, and pairing words with a figure, both help students learn <span class="citation" data-cites="pashler2007">(<a href="#/references" role="doc-biblioref" onclick="">Pashler et al. 2007</a>, recommendations 3 and 4)</span>.</p>
 <ul>
 <li>Give every definition, method and result at least one applied example that computes it on real data, so the reader sees what the idea does before or beside the algebra.</li>
-<li>Follow every abstract div directly with a concrete <code>#exm-</code> div. The rule covers each <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code> and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. The <a href="https://github.com/Morrison-Lab/ai-config/pull/4386">ai-config rule</a> links here.</li>
+<li>Follow every abstract div directly with a concrete <code>#exm-</code> div. The rule covers each <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code> and similar div. The example of a related result does not exempt a definition: a theorem that uses a definition gets its own example, and so does the definition. An example that illustrates two definitions is two examples: split it, put each half directly after its own definition, and keep the original id on the half that matches it (Ezra, 2026-11-12). For example, one example of the bias and the <a href="https://morrison-lab.github.io/pds/variance-covariance.html#def-variance">variance</a> of a prediction, placed after the variance definition, leaves the bias definition with no example until after the next definition, so split it into an example of the bias after the bias definition and an example of the variance after the variance definition. The <a href="https://github.com/Morrison-Lab/ai-config/pull/4386">ai-config rule</a> links here.</li>
 <li>Give nearly every <code>#exm-</code> div a figure of its data, model or results (Ezra, 2026-10-23). When an example has no figure, state the reason in that div. Put the figure inside the div, or include a subfile whose name ends in <code>_fig</code> inside the div. When an example has nothing to plot, such as a single number, add <code>&lt;!-- no-figure: reason --&gt;</code> inside the div, replacing <code>reason</code> with why there is nothing to plot. The <code>check-exm-figures</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> reports, in a pull request, each example that has no figure and no <code>no-figure</code> comment (<a href="https://github.com/Morrison-Lab/gha/issues/1193">gha#1193</a>).</li>
 <li>Give every div whose title mentions visualization (<em>visualize</em>, <em>visualizing</em>, <em>visualization</em>) a corresponding figure (Ezra, 2026-10-26). For an exercise, the figure may sit in the exercise or in its solution. The rule also covers any div that asks for a picture: a title or an exercise prompt that says <em>plot</em>, <em>sketch</em>, <em>draw</em>, <em>diagram</em>, or <em>contour</em> (in any inflection, such as <em>plotting</em> or <em>sketching</em>), or that asks the reader to mark points on a surface. The <code>check-visualization-figures</code> workflow in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> reports, in a pull request, each such div that has no figure in it or in its solution, and a <code>&lt;!-- no-figure: reason --&gt;</code> comment inside the div suppresses that report, as it does for an example (<a href="https://github.com/Morrison-Lab/gha/pull/1262">gha#1262</a>).</li>
 <li>Give every topic at least one figure that shows the idea, such as the data with a fitted curve, a distribution, or a diagram of the procedure. A page of definitions with no figure and no data is incomplete.</li>
@@ -697,7 +707,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Give the practice exercise its own slug and follow the numbering and slide-break rules above.</li>
 </ul>
 <div id="exm-practice-after-example" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (An example followed by a practice exercise)</strong></span> &nbsp;</p>
 <blockquote>
 <p>✅</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a>::: {#exm-sample-mean}</span>
@@ -728,7 +738,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>In a later unit that uses the method again, link to the first worked example instead of working it again.</li>
 </ul>
 <div id="exm-faded-examples" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Fading three cases of one method)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Fading three cases of one method)</strong></span> &nbsp;</p>
 <blockquote>
 <p>✅</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>::: {#exm-mean-height}</span>
@@ -929,7 +939,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Introduce the block with a sentence that ends in a colon. Do not follow a semicolon or a colon in the sentence with inline code that the reader has to select by hand.</li>
 </ul>
 <div id="exm-command-block" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>: <code>install.packages(c("readr", "dplyr", "ggplot2", "purrr"))</code>.</p>
 <p>✅ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>:</p>
@@ -1037,7 +1047,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -1060,7 +1070,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>Atomic rows come first within a table because a reader scans a table from the top, and a row that uses a symbol defined below it sends the reader down the table to find it.</p>
 <div id="exm-note-sheet-order" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Rows: <code>Gradient descent update</code>, <code>Step size</code>, <code>Gradient</code>, <code>Power rule</code>.</p>
 <p>✅ Rows: <code>Power rule</code>, <code>Gradient</code>, <code>Step size</code>, <code>Gradient descent update</code>.</p>
@@ -1118,7 +1128,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Put the refutation where the concept is defined or first used, so the reader meets the correction together with the concept.</li>
 </ul>
 <div id="exm-refutation-text" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.</p>
 <p>✅ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed. A common misreading takes the p-value to be the probability that the null hypothesis is true. That misreading is wrong. The p-value is computed by assuming that the null hypothesis is true, so it cannot also be the probability that the null hypothesis is true.</p>
@@ -1153,7 +1163,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 13 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>

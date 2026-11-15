@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 23:00:17 (PST)
+Last modified: 2026-11-14 18:09:19 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -192,15 +192,28 @@ Write each heading as a verb phrase that names what the section does, such as �
 
 # 6 Heading levels
 
-A page’s title is not a numbered level, so the sections of the page start at level 1. A page whose sections start at level 2 numbers them 0.1, 0.2 and so on under `number-sections: true`. Each heading is at most one level deeper than the heading before it. Three mistakes break this outline:
+A page’s title is not a numbered level, so the sections of the page start at level 1. A page whose sections start at level 2 numbers them 0.1, 0.2 and so on under `number-sections: true`. Each heading is at most one level deeper than the heading before it. Four mistakes break this outline:
 
 - **A skipped level.** A `###` heading directly after a `#` heading leaves a missing level 2, so the table of contents shows a gap and section numbers can read `1.0.1`.
 - **A page that starts too deep.** A page whose first heading is level 2 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.
 - **A first heading that repeats the title.** A section copied into its own page often keeps its heading, so the page opens with its title twice. Drop the heading. If something links to `page.html#sec-newton`, keep that link working with an empty anchor such as `[]{#sec-newton}` at the top of the page. The anchor adds an empty paragraph, and a Quarto `@sec-newton` reference does not resolve through it, so a page that uses such a reference keeps its heading instead.
+- **A heading with no sibling.** A level of headings divides its parent only when the parent holds at least two headings at that level, just as a section 1.1 implies a section 1.2. A lone heading adds a level of nesting and separates nothing. The common case is one level 1 heading that wraps the whole page and names the page’s topic in other words, with every section that divides the topic a level below it. Drop the lone heading and raise the headings under it by one level. A closing References section may stand alone, because it ends the page instead of dividing it.
 
 The `####` title of a definition, example or exercise div is not a heading in this sense.
 
-The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags these three mistakes on the heading lines a pull request adds.
+> **NOTE:**
+>
+> **Example 2 (Dropping a heading that wraps the whole page)**  
+>
+> The [mathematics prerequisites site](https://morrison-lab.github.io/mds/) once had a page titled “Algebra” whose whole body sat under one heading, “Elementary Algebra,” until [mds#11](https://github.com/Morrison-Lab/mds/pull/11) removed that heading.
+>
+> > ❌ Title “Algebra”, then one heading, “Elementary Algebra”, then under it the headings “Equalities” and “Inequalities”.
+> >
+> > ✅ Title “Algebra”, then the headings “Equalities” and “Inequalities” at the top level of the page.
+>
+> In the ❌ outline, the table of contents has one entry, which restates the title, and the sections that divide the topic sit one level below it. In the ✅ outline, those sections are the entries of the table of contents.
+
+The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags the first three mistakes on the heading lines a pull request adds. Its `check-heading-siblings` workflow flags the fourth when the lone heading is at the top level of a page; as of 2026-11-13, no workflow flags a lone heading deeper in a page ([gha#1371](https://github.com/Morrison-Lab/gha/issues/1371)).
 
 # 7 Avoid forward references
 
@@ -219,7 +232,7 @@ If moving the content would break the order of the argument, keep the pointer, a
 
 > **NOTE:**
 >
-> **Example 2 (Removing a forward reference)**  
+> **Example 3 (Removing a forward reference)**  
 >
 > > ❌ The adjusted estimates, discussed in the next section, differ from the crude estimates. The adjustment, described below, uses age and sex.
 > >
@@ -237,7 +250,33 @@ A word such as “below” in an ordinary comparison, as in “values below the 
 
 When you insert or move a section, check the references that name a position, such as “the two sections above”, “the previous section”, or “the next exercises”. Name the target instead, as in “the sections on mortality and morbidity”, so that a later insertion does not make the position wrong. When the target has a cross-reference label, link it instead of describing its position: write “Exercises `@exr-a` through `@exr-b` establish the properties”, not “The next exercises establish the properties”.
 
-# 8 Links to videos and other media
+# 8 Lead with what is true
+
+Do not state a claim and then retract or replace it a sentence or two later. Each sentence in such a passage can be true and cited; the defect is in the order. The reader builds a picture from the first sentence and has to discard it on reading the second. Common forms are:
+
+- a claim followed by a sentence that opens “However, in practice”
+- “In principle X; in practice Y.”
+- a sentence whose only job is to withdraw the one before it
+
+This order comes naturally when you learn the facts in that order. You started from the simple version, found the correction, and the prose retraces your path. The reader did not take that path and does not need to.
+
+Fix the passage by reordering it, not by softening the retraction. State first, in full, what the method, program, or system does. Then present the simpler version or the earlier approach as an alternative, and the planned work as future work.
+
+> **NOTE:**
+>
+> **Example 4 (Stating what a script does first)**  
+>
+> > ❌ The script reads every file in the data folder. In practice, it skips files whose names start with an underscore.
+> >
+> > ✅ The script reads every file in the data folder whose name does not start with an underscore.
+>
+> In the ❌ version, the reader learns that the script reads every file, and then has to drop that picture. In the ✅ version, one sentence says which files the script reads.
+
+Stating a wrong idea first is right when the reader already holds it and the passage exists to correct it, as in [Refute common misconceptions](../chapters/teaching.llms.md#refute-common-misconceptions). What matters is whose idea it was: the reader’s, held before reading, or the writer’s own first draft.
+
+The same rule applies to a review comment or reply that you revise. Where the platform allows replies, reply to the earlier comment with what is now true, instead of rewriting it. Where you can only edit the comment, replace its text with what is now true, and do not describe what it used to say.
+
+# 9 Links to videos and other media
 
 Put each link to a video, podcast, demo or other external material in a short note right after the text the material supports. Do not collect the links in a list at the end of the document. If the material covers several sections, put the note after the first section the material supports. If the text the note supports is a question followed by its answer, put the note after the answer, not between them.
 

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 23:00:17 (PST)
+Last modified: 2026-11-14 18:09:19 (PST)
 
 > **NOTE:**
 >
@@ -118,7 +118,21 @@ The plural and the filler phrases built on it (“a number of things”, “othe
 
 If you cannot name the object, quantity, step or idea, the sentence is not yet ready to write.
 
-# 4 Give a technical word one meaning
+# 4 Name the referent when a closer noun could take the pronoun
+
+A reader attaches a pronoun or a demonstrative, such as *it*, *this*, *that*, *which*, or *they*, to the nearest noun phrase before the pronoun that fits the grammar. When that noun phrase is not the one you mean, the sentence still reads smoothly, so the reader takes away the wrong fact without ever being unsure. Rereading your own draft rarely catches the mistake, because you already know the referent. Check the grammar instead of the sense: find the nearest noun phrase before each pronoun, and ask whether that noun phrase is the one you mean. If it is not, replace the pronoun with the noun.
+
+> ❌ The lasso shrinks the coefficients toward zero, as ridge regression does, but it sets some of them exactly to zero.
+>
+> ✅ The lasso shrinks the coefficients toward zero, as ridge regression does, but the lasso sets some of them exactly to zero.
+
+In the ❌ version, the nearest noun phrase before *it* is “ridge regression”, so the sentence says that ridge regression sets coefficients to zero. Ridge regression shrinks coefficients but does not set them exactly to zero. Rewording the clause does not help if a noun phrase you do not mean still sits closer to the pronoun.
+
+Keep a pronoun whose nearest noun phrase is the one you mean:
+
+> ✅ The lasso sets some coefficients exactly to zero, so it also selects variables.
+
+# 5 Give a technical word one meaning
 
 A word that names a technical concept keeps that one meaning on every page. Two fields often use the same word for different concepts. When a reader encounters the word in its second sense, they must stop and work out which concept the sentence means.
 
@@ -132,7 +146,7 @@ For example, *hypothesis* means a statistical hypothesis: a claim about a [popul
 
 The definition of the prediction function family can then say that machine-learning texts call it a *hypothesis class* or *hypothesis space*.
 
-# 5 Call the distribution Gaussian
+# 6 Call the distribution Gaussian
 
 The word *normal* names several unrelated concepts in mathematics and statistics. It names the normal equations of least squares, a normal vector perpendicular to a surface, and a normal subgroup. In everyday use, it also means *typical*. When the subject is the distribution, *Gaussian* has no such competing meaning in the same context, so use it.
 
@@ -149,7 +163,46 @@ Use the same word in every phrase built on the distribution:
 
 Keep *normal* where it names a different concept, as in the *normal equations*. Keep *normal* in a quoted title or a cited name, such as `rnorm` in R, where you report what the source calls it.
 
-# 6 Name a quantity for what it is
+# 7 Call the exponentiated coefficient an odds multiplier
+
+In a [logistic regression](https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression) model, a change $\diff \vpredvar$ in the predictors multiplies the [odds](https://morrison-lab.github.io/pds/probability-basics.html#def-odds) by $\e{\dprod{\vcoef}{\diff \vpredvar}}$, and a one-unit increase in predictor $j$ multiplies them by $\e{\coef{j}}$. Call that number the *odds multiplier* of the change, not the *odds factor* (Ezra, 2026-11-12). *Multiplier* says what the number does to the odds, while *factor* already has other meanings in these notes:
+
+- a [categorical variable](https://morrison-lab.github.io/sds/data.html#def-categorical-var) in R;
+- a latent variable in factor analysis;
+- a number that divides another.
+
+> ❌ The odds factor of a one-unit increase in age is $\e{\coef{\text{age}}}$.
+>
+> ✅ The odds multiplier of a one-unit increase in age is $\e{\coef{\text{age}}}$.
+
+The symbol stays $\oddsfactor$, written with the shared `\oddsfactor` macro: the rule is about the word in the prose, not the macro’s name.
+
+# 8 Name the model and the fitting method separately
+
+A model and the method that fits it are two separate choices. The model is the structure assumed for how the outcome depends on the parameters:
+
+- the distribution of the outcome;
+- the link function;
+- the mean structure;
+- any random effects or hierarchy.
+
+The fitting method is how the parameters are learned from the data under that structure, such as least squares, maximum likelihood, or Bayesian inference. Either choice can be changed without the other: a [logistic regression](https://morrison-lab.github.io/sds/logistic-inference.html#def-logistic-regression) model fitted by maximum likelihood and the same model fitted by Bayesian inference are one model fitted two ways. So a paradigm word such as *Bayesian* or *frequentist* describes the method, never the model (Ezra, 2026-09-28).
+
+> ❌ We fit a Bayesian logistic regression model.
+>
+> ✅ We fit a logistic regression model by Bayesian inference.
+
+The [prior](https://morrison-lab.github.io/sds/bayesian-inference.html#def-prior) belongs to Bayesian inference, not to the model. So does a [hyperprior](https://morrison-lab.github.io/sds/bayesian-inference.html#def-hyperprior) on the top-level parameters of a [hierarchical model](https://morrison-lab.github.io/sds/bayesian-inference.html#def-hierarchical-model). Write “a hierarchical model fitted by Bayesian inference”, not “a Bayesian hierarchical model”.
+
+A phrase is fine when it names only a method, such as *Bayesian inference* or *the [maximum likelihood estimate](https://morrison-lab.github.io/sds/intro-MLEs.html#def-mle) of* $\coef{j}$. So is a phrase that names something done across models, such as *Bayesian model comparison*.
+
+Rewording around the paradigm word does not fix a sentence that still credits the method with a property of the model:
+
+> ❌ A [linear regression](https://morrison-lab.github.io/sds/correlation-regression.html#def-linear-regression) model whose parameters are estimated by Bayesian inference is probabilistic.
+>
+> ✅ A linear regression model with Gaussian errors is probabilistic, because it gives the outcome a distribution for each value of the predictors.
+
+# 9 Name a quantity for what it is
 
 A name should say what kind of thing the quantity is. Each kind of quantity has its own name:
 
@@ -167,7 +220,7 @@ For example, the variance of the outcome given the inputs is the *residual varia
 
 Mention the common name once, as an alias in the definition, and use the accurate [term](../chapters/defining-terms.llms.md#def-term) everywhere else. No mechanical check can tell a misleading name from an accurate one, so this rule is enforced by review.
 
-# 7 Write the full phrase
+# 10 Write the full phrase
 
 Do not leave out words the phrase needs to be complete. A clipped phrase such as “the true mean function” asks the reader to supply the missing words, and the reader may supply different ones than you meant. Readers who are learning English, and readers who read literally, cannot always recover them. Name what the object is a function of, and what it is conditional on.
 
@@ -203,7 +256,7 @@ The same rule applies to symbols. Write a function with its argument, such as $\
 >
 > > ✅ The cost of the initial parameter vector is 4.2, and each step lowers it. (A value of the cost function at a specific input, so “function” is not needed.)
 
-# 8 Choose each preposition on purpose
+# 11 Choose each preposition on purpose
 
 A preposition states a relationship between two things. Small words such as *of*, *for*, *with* and *using* are easy to reach for by reflex, and each one can stand for many different relationships (ownership, purpose, cause, part and whole, tool, source). When the sentence does not say which relationship it means, the reader has to guess. Readers who are learning English, and readers who read literally, guess worst.
 
@@ -227,7 +280,7 @@ For each preposition, ask what relationship it states. If you cannot answer in o
 
 Keep a plain preposition when it states the relationship exactly, such as *in* for location and *by* for the agent of a passive verb.
 
-# 9 Refer to a place in the document by its label
+# 12 Refer to a place in the document by its label
 
 Do not use “above” or “below” for a position in a document. The same source renders as a web page, a slide deck and a handout, and each format orders and breaks the content differently, so “above” can point at nothing, or at the wrong thing. Style guides advise “earlier” or “preceding” and “later” or “following” for a position in a document ([Google, n.d.](#ref-google2025style), entry “above”; [Google, n.d.](#ref-google2025style), entry “below”). Prefer the label of the result, figure, table or section, because a label tells the reader what to find and survives a reordering.
 
@@ -241,13 +294,13 @@ Do not use “above” or “below” for a position in a document. The same sou
 >
 > The rewrite needs a label on the table, so labeling it is part of the fix. Quarto renders `@tbl-fits` as “Table 2”, and the number follows the table when the page changes. A comparison, such as “a value above the threshold”, does not refer to a position in the document and is fine.
 
-# 10 Leave out words that judge difficulty or add nothing
+# 13 Leave out words that judge difficulty or add nothing
 
 “Just” and “easy” (“easily”) rarely carry meaning. The Google style guide says “just” is “a filler word that you can delete without affecting your meaning” and says to try eliminating “easy” and “easily” “because usually the same meaning can be conveyed without” them ([Google, n.d.](#ref-google2025style), entries “just” and “easy, easily”). “Easy” also judges the reader: a reader who finds the step hard is told the difficulty is their own. [Do not substitute flippancy for support](../chapters/citations-evidence.llms.md#do-not-substitute-flippancy-for-support) covers the same problem for “obvious” and “clearly”.
 
 Keep the word when it carries meaning. “Just before the loop ends” states a position in time, and deleting “just” changes it.
 
-# 11 Give a date or a version instead of a time-relative word
+# 14 Give a date or a version instead of a time-relative word
 
 Do not write “now”, “new” or “currently” for a state that will change. The Google style guide says these words “can render such documentation inaccurate, outdated, or unmeaningful” ([Google, n.d.](#ref-google2025style), “Timeless documentation”) and says of “currently”: “Avoid because this word is implied” ([Google, n.d.](#ref-google2025style), entry “currently”). Say which date, version or release the statement holds for.
 
@@ -261,7 +314,7 @@ The guide does not list “recently”, but it fails the same way. In course not
 > >
 > > ✅ A missing *that* is a common cause of garden-path sentences, as [Avoid garden-path sentences](../chapters/grammar.llms.md#avoid-garden-path-sentences) shows.
 
-# 12 Keep “this” and “also” out of consecutive sentences
+# 15 Keep “this” and “also” out of consecutive sentences
 
 The Stanford course notes on mathematical writing say to “avoid words like ‘this’ or ‘also’ in consecutive sentences”. They explain that such words, and “unusual or polysyllabic utterances”, “tend to stick in a reader’s mind longer than other words, and good style will keep ‘sticky’ words spaced well apart” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). So avoid using “this” or “also” in two sentences in a row.
 
@@ -277,7 +330,7 @@ The Stanford course notes on mathematical writing say to “avoid words like ‘
 
 The same point of the notes says to “use parallelism when parallel concepts are being discussed” ([Knuth et al. 1987](#ref-knuth1987mathematical), point 9). A word repeated to make two statements parallel is repeated on purpose, so keep it, as [Repeat the wording of parallel results, then point out the difference](../chapters/mathematical-writing.llms.md#repeat-the-wording-of-parallel-results-then-point-out-the-difference) describes.
 
-# 13 Minimize unnecessary jargon
+# 16 Minimize unnecessary jargon
 
 Jargon is vocabulary specific to a field. Some jargon is necessary: a precise technical [term](../chapters/defining-terms.llms.md#def-term) can replace a long explanation, and readers in the field expect it. But jargon becomes a barrier when a normal word would work just as well, or when you use a common word with a special, field-specific meaning without defining it.
 

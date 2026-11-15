@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-12 23:00:17 (PST)
+Last modified: 2026-11-14 18:09:19 (PST)
 
 > **NOTE:**
 >
@@ -56,6 +56,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Link liberally](../chapters/citations-evidence.llms.md#link-liberally) to the sources and tools that you mention.
 - [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) rather than a source that quotes it.
 - [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first): name the topic, not its author, in headings and sentences.
+- [Date a claim that can change](../chapters/citations-evidence.llms.md#date-volatile-claims), such as what a software package supports.
 
 # 3 Papers
 
@@ -64,7 +65,9 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Organize the Results section](../chapters/paper-organization.llms.md#organizing-the-results-section) to fit the design of the study.
 - [Label variables in plain words](../chapters/paper-organization.llms.md#label-variables-in-plain-words) in figures and tables.
 - [Use descriptive subsection headings](../chapters/paper-organization.llms.md#subsection-headings).
+- [Keep heading levels in order](../chapters/paper-organization.llms.md#heading-levels): skip no level, and give each level at least two headings.
 - [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references): move the content ahead of the sentence that uses it.
+- [Lead with what is true](../chapters/paper-organization.llms.md#lead-with-what-is-true): do not state a claim and then retract it.
 - [Put each link to a video next to the text that it supports](../chapters/paper-organization.llms.md#links-to-videos-and-other-media).
 - Follow the [journal’s conventions for a manuscript](../chapters/manuscript-submission.llms.md), and check the [submission checklist](../chapters/manuscript-submission.llms.md#submission-checklist) before you submit.
 
