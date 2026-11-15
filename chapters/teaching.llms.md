@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-15 11:07:35 (PST)
+Last modified: 2026-11-15 11:54:59 (PST)
 
 > **NOTE:**
 >
@@ -110,7 +110,7 @@ This is the compositional approach of [modular programming](https://en.wikipedia
 - A display holds one idea. Name each meaningful sub-expression, give it a macro, and build the display from the names (see [Making expressions concise](../chapters/notation.llms.md#making-expressions-concise)).
 - A div holds one [term](../chapters/defining-terms.llms.md#def-term) or one result. Move a second term, a side property or a long argument into its own div, and link to it from the place that needs it (see [Give each defined term its own div](#give-each-defined-term-its-own-div)).
 - A theorem-type div states the result and its hypotheses, and no reasoning. Words that justify the claim (“so”, “because”, “hence”, “therefore”, “since”) belong in the proof.
-- Never put a result in a `#rem-` div. A remark holds commentary: motivation, history, a warning, how to read a result. When a remark states something that is true, such as an equation with its conditions, move the statement into a `#thm-`, `#lem-`, `#cor-`, or `#prp-` div with its proof, and leave the commentary in the remark, which links to the result (Ezra, 2026-11-07). An example pointer or a worked number is not a result: put it in an `#exm-` div.
+- Never put a result in a `#rem-` div. A remark holds commentary: motivation, history, a limit on the scope of a statement, how to read a result. When a remark states something that is true, such as an equation with its conditions, move the statement into a `#thm-`, `#lem-`, `#cor-`, or `#prp-` div with its proof, and leave the commentary in the remark, which links to the result (Ezra, 2026-11-07). An example pointer or a worked number is not a result: put it in an `#exm-` div.
 - A remark makes one point. When a remark makes two points that a reader could need separately, split it into two remarks, each titled by its own idea, and link from one to the other when one builds on the other (Ezra, 2026-11-12).
 - A proof states the lemmas it needs and links to them, instead of deriving them in the middle of the argument.
 - Extract a lemma wherever feasible. When a proof, solution or example states a general fact that does not depend on its setting, such as $\E{Z^2} = \var{Z} + \sqf{\E{Z}}$ for any random variable $Z$, give the fact its own lemma div before its first use, and link to it from each place that uses it. Put the lemma on the prerequisite site that owns the topic ([mds](https://morrison-lab.github.io/mds/), [pds](https://morrison-lab.github.io/pds/) or [sds](https://morrison-lab.github.io/sds/)), not in the course page that needs it. Extract a lemma from a passage when you edit that passage anyway, and do not sweep existing content.
@@ -138,13 +138,35 @@ When a unit still looks long, ask what could be named and moved out.
 >
 > The ✅ version lets a page about the expected squared prediction error link to the second remark alone, without sending the reader through the comparison with residuals.
 
-# 4 Say what a yes-or-no answer means
+# 4 Choose a remark or a callout by what the block is about
+
+A remark and a callout look alike, so choose between them by what the block says. A reader should be able to tell from the box alone whether a block belongs to the mathematical development or speaks to the reader about something else.
+
+- A remark (`#rem-`) holds commentary on the definition, result, or example just before it, such as a synonym or an alternative notation, the history of a name, a limit on the scope of a statement, or the motivation for it.
+- A callout (`.callout-*`) holds guidance to the reader that is not part of the mathematical development:
+  - `.callout-warning` holds a common mistake the reader might make.
+  - `.callout-tip` holds study or software advice, such as an R idiom.
+  - `.callout-note` holds course logistics or a note about the document itself.
+
+A limit on what a result says is a remark, because it is about the math. A mistake that readers often make when they apply the result is a callout, because it speaks to the reader.
+
+> **NOTE:**
+>
+> **Example 4 (Moving a software tip out of a remark)**  
+>
+> > ❌ After the definition of the [logistic function](https://morrison-lab.github.io/mcs/functions.html#def-logistic-function), a remark says: “R’s `plogis()` computes this function.”
+> >
+> > ✅ That sentence goes in a `.callout-tip` after the definition. A remark after the definition says that some texts call the function the sigmoid or the expit.
+>
+> The ✅ version keeps the remark about the definition itself and puts the advice on using R where a reader looks for advice.
+
+# 5 Say what a yes-or-no answer means
 
 Follow a “Yes” or “No” with what the answer means in the words of the question, as in “No: it’s not possible that the advanced network has a test error of 0.25,” not a bare “No.” (Ezra, 2026-10-28). A reader who sees only the first line then still knows what the answer claims, and a bare “No.” leaves open what is being denied. The rule covers solutions, worked examples and any other answer to a question.
 
 > **NOTE:**
 >
-> **Example 4 (Saying what a “No” means)**  
+> **Example 5 (Saying what a “No” means)**  
 >
 > > ❌ No. The irreducible error is a lower bound on the expected squared prediction error.
 > >
@@ -152,11 +174,11 @@ Follow a “Yes” or “No” with what the answer means in the words of the qu
 >
 > The ✅ version states the conclusion in the question’s own words, so the reasons that follow support a claim the reader has already seen.
 
-# 5 Give each question’s answer its own paragraph
+# 6 Give each question’s answer its own paragraph
 
 When a prompt asks several questions, answer each one in its own paragraph, or in several paragraphs if it needs them (Ezra, 2026-10-28). A solution to “Which model underfits, which overfits most, and which would you choose?” has one paragraph for the underfitting model, one for the overfitting model and one for the choice. A reader looking for one answer then finds it without reading the others. No automated check enforces this rule, because a script cannot tell how many questions a prompt asks.
 
-# 6 Give each defined term its own div
+# 7 Give each defined term its own div
 
 [Defining terms clearly](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) covers what a good definition contains. For teaching materials, four further rules keep definitions findable.
 
@@ -169,21 +191,21 @@ Every `#thm-`, `#lem-`, `#cor-`, and `#prp-` div links each defined [term](../ch
 
 Every alternative name for the same concept stays in the div of the term it names and is treated like the primary name: it appears in the div title and is bold where it first appears in the definition. Name synonyms and near-synonyms where the term is defined, and say which one the notes use. A student who encounters one name here and another in a textbook cannot tell whether the difference matters. For a near-synonym, name the seam: critical points include the stationary points and also the points where the derivative does not exist.
 
-# 7 State the notation and its alternatives
+# 8 State the notation and its alternatives
 
 When a symbol or convention has more than one common form, state the one the notes use and name the others a reader will encounter elsewhere. Put the alternatives in the definition div or in a callout beside it. For example, some sources include 0 in the natural numbers and others exclude it, so write $\mathbb{N}_0$ or $\mathbb{N}^+$ to make the choice explicit.
 
-# 8 Lead with the simplest correct form of a definition
+# 9 Lead with the simplest correct form of a definition
 
 Define a quantity in the form that needs the fewest symbols, and state the textbook form as a theorem that follows. For example, define [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) as the mean squared deviation $\operatorname{E}\left[\operatorname{devn}(X)^2\right]$, where $\operatorname{devn}(X) = X - \operatorname{E}[X]$, and then prove that it equals $\operatorname{E}[X^2] - (\operatorname{E}[X])^2$.
 
 Parsimony outranks convention when choosing a primary definition. The conventional form still appears in the notes, as a named result.
 
-# 9 Reuse one written version of each result
+# 10 Reuse one written version of each result
 
 When several courses or repositories have already written the same definition, theorem, or exercise, compare the versions on notation, decomposition, parsimony, and clarity. Use the best one, or merge them, and make it the single copy. Other places include or link to that copy instead of keeping a second wording that can drift.
 
-# 10 Match datasets and assignments to the reference texts
+# 11 Match datasets and assignments to the reference texts
 
 Students can ask an AI assistant for a complete solution to any homework problem, so a problem is no more secure for never having been published (Ezra, 2026-11-04). Choose assignments for their fit with the course, not for novelty.
 
@@ -194,7 +216,7 @@ Students can ask an AI assistant for a complete solution to any homework problem
 
 Check the reference text itself before naming its datasets. Open the chapter and list the dataset each section uses, rather than recalling them.
 
-# 11 Use real data and compute every number
+# 12 Use real data and compute every number
 
 - Where an example needs data, use a real dataset instead of invented round numbers. Name its original source, link to where it is published, and cite it.
 - Prefer real data to simulated data in data analysis examples and exercises, unless the example or exercise is a simulation study (Ezra, 2026-11-15). When adapting material from a source, [Match datasets and assignments to the reference texts](#match-datasets-and-assignments-to-the-reference-texts) says which dataset to use.
@@ -205,7 +227,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 
 > **NOTE:**
 >
-> **Example 5 (Showing the data at first mention)**  
+> **Example 6 (Showing the data at first mention)**  
 >
 > > ❌ Slides 3 to 9 discuss the spam data’s 57 predictors, its class imbalance, and the loss [function](https://morrison-lab.github.io/mcs/functions.html#def-function) we will minimize. Slide 10 shows a table of the first rows.
 > >
@@ -215,7 +237,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 
 > **NOTE:**
 >
-> **Example 6 (Showing a toy dataset as a table)**  
+> **Example 7 (Showing a toy dataset as a table)**  
 >
 > > ❌ The dataset has one input: $x = 0, 1$ with $y = 0$, and $x = 3, 4$ with $y = 1$.
 > >
@@ -232,7 +254,7 @@ Check the reference text itself before naming its datasets. Open the chapter and
 >
 > The ✅ version puts each observation’s input and outcome side by side in one row, and gives the table a label and a caption, as every table needs.
 
-# 12 Store structured data in structured formats
+# 13 Store structured data in structured formats
 
 This rule applies to all teaching materials, in every course and every teaching repository.
 
@@ -242,7 +264,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Convert an existing hand-written table in its own pull request, and render the page before and after to confirm that the output text is identical.
 - A short list that no other page reads can stay as prose.
 
-# 13 Pair exploratory data analysis with plots
+# 14 Pair exploratory data analysis with plots
 
 - Make each exploratory data analysis exercise or lab include graphical methods, not only numerical summaries (Ezra, 2026-11-04). Pair the summary with a plot of the same quantity:
   - **A distribution:** a histogram or boxplot.
@@ -250,7 +272,7 @@ This rule applies to all teaching materials, in every course and every teaching 
 - Do not limit an exploratory analysis to counts and correlations. A plot shows the shape, the outliers, and the trend that one number hides.
 - Give each plot the figure treatment in [Make figures accessible](#make-figures-accessible).
 
-# 14 Show each idea applied and in a figure
+# 15 Show each idea applied and in a figure
 
 Connecting an abstract idea to a concrete case, and pairing words with a figure, both help students learn ([Pashler et al. 2007](#ref-pashler2007), recommendations 3 and 4).
 
@@ -265,7 +287,7 @@ Connecting an abstract idea to a concrete case, and pairing words with a figure,
 - Discuss and cross-reference every figure in the prose (Ezra, 2026-11-02). Cite it with `@fig-id`, and say what the reader should see in it. A figure that no sentence cites or interprets is decoration.
 - Nest a figure that belongs to one example or exercise inside that `#exm-`, `#exr-` or `#sol-` div (Ezra, 2026-11-02). A figure outside the div leaves the example or exercise incomplete when the reader meets it alone, and moves with the wrong text when the page is reorganized. Leave a figure that several examples share outside every div, and cite it from each. The `check-figure-placement` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each figure on a changed line that no prose cites and each figure placed directly after an example, exercise or solution div without being inside it. A `<!-- figure-placement: allow -->` comment on the figure or inside its div suppresses the report for a shared figure ([gha#1378](https://github.com/Morrison-Lab/gha/pull/1378)).
 
-# 15 Follow every example with an exercise and solution
+# 16 Follow every example with an exercise and solution
 
 Reading a worked example is passive. A reader who has just seen one method applied learns more by applying it to a new case than by reading a second example. So each example gets a practice exercise, with its solution, right after it. Worked-examples research supports this pairing: an example teaches most when a practice problem of the same kind sits next to it ([Atkinson et al. 2000](#ref-atkinson2000); [Pashler et al. 2007](#ref-pashler2007), recommendation 2).
 
@@ -277,7 +299,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 
 > **NOTE:**
 >
-> **Example 7 (An example followed by a practice exercise)**  
+> **Example 8 (An example followed by a practice exercise)**  
 >
 > > ✅
 > >
@@ -297,7 +319,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 >
 > The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see [Use real data and compute every number](#use-real-data-and-compute-every-number)).
 
-# 16 Fade worked examples into exercises
+# 17 Fade worked examples into exercises
 
 Within a unit, give the reader less of each successive solution. A novice who solves a problem without guidance spends working memory on searching for a solution and has little left for learning the method ([Sweller 1988](#ref-sweller1988)), so worked examples teach a new method better than unguided practice ([Atkinson et al. 2000](#ref-atkinson2000)). As learners gain skill, the advantage reverses: a fully worked solution adds reading without adding learning, and can make learning worse. The reversal is called the *expertise reversal effect* ([Kalyuga et al. 2003](#ref-kalyuga2003)).
 
@@ -308,7 +330,7 @@ Within a unit, give the reader less of each successive solution. A novice who so
 
 > **NOTE:**
 >
-> **Example 8 (Fading three cases of one method)**  
+> **Example 9 (Fading three cases of one method)**  
 >
 > > ✅
 > >
@@ -337,14 +359,14 @@ Within a unit, give the reader less of each successive solution. A novice who so
 >
 > The reader sees the method once in full, then supplies one step, then does every step.
 
-# 17 Leave a step to the reader only as an exercise
+# 18 Leave a step to the reader only as an exercise
 
 Write every step in the exposition. When you want readers to work out a step for themselves, pose it as an exercise with a solution. A fully explicit text helps readers with little background on every measure, while readers who already know the topic can learn more from a text that makes them fill in gaps ([McNamara et al. 1996](#ref-mcnamara1996)). Guidance that helps novices can also hinder more experienced learners ([Kalyuga et al. 2003](#ref-kalyuga2003)). An exercise serves both readers: the experienced reader gets a gap to fill, and the novice gets a solution to check. A gap left silently in the exposition serves only the experienced reader.
 
 - **Introductory course:** work each step in the text, then add exercises after it.
 - **Advanced course:** a routine step of a derivation may go to the reader, posed as an `#exr-` div with its `#sol-` div. Do not write “the reader can verify” in place of the exercise.
 
-# 18 Write labs for both languages and any computer
+# 19 Write labs for both languages and any computer
 
 These rules apply to all teaching materials, in every course and every teaching repository, not only to one course.
 
@@ -358,7 +380,7 @@ These rules apply to all teaching materials, in every course and every teaching 
 - Point students only to places they can open. Students read a course’s published site, not its repository, which is often private. So never send them to a file in the repository, to a `github.com` link into a private repository, or to “the copy in this repository”. Link a data file from the published site, from a public repository or package, or from the data’s original public source.
 - Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.
 
-# 19 Phrase optional steps as conditions
+# 20 Phrase optional steps as conditions
 
 An instruction that applies to only some readers reads as an order to all of them. Put the condition first, then the instruction, as in “If you use a language other than R or Python, …”.
 
@@ -373,7 +395,7 @@ The labs in the reference text write optional work this way. They state the cond
 >
 > ✅ If you use a language other than R or Python, use a port of `SyncRNG` to get the same data. If no port exists, draw your own data from the same model; your numbers will differ slightly from the key’s.
 
-# 20 Introduce a specific case as a specific case
+# 21 Introduce a specific case as a specific case
 
 A sentence with an indefinite subject and a bare verb states a general fact: “A [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression) classifier has a decision boundary” holds for every such classifier. Used for one particular case, the same form claims something false, and the reader must guess that you meant only one.
 
@@ -387,7 +409,7 @@ This applies Grice’s maxims of Quality, because the sentence is not true as wr
 >
 > ✅ Consider a binary logistic regression classifier in two dimensions with parameter vector $[-2, 1, 0.5]'$.
 
-# 21 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
+# 22 Keep each step’s code in one chunk, and put parallel chunks in a language tabset
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
 
@@ -401,7 +423,7 @@ This rule applies to every executed code chunk in teaching materials, in every c
 - Give a chunk that only stores values for later code or inline code `#| include: false`. When the chunk that computes those values is already hidden, merge the storing code into that chunk.
 - Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than `None` and shows the chunk as one code block per printed value, such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`. End each such call with a semicolon, or assign its value.
 
-# 22 Make every visible code chunk show a result
+# 23 Make every visible code chunk show a result
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
 
@@ -417,7 +439,7 @@ A chunk hidden with `#| include: false` is exempt, because the reader never sees
 
 > **NOTE:**
 >
-> **Example 9 (Showing the data that a chunk loads)**  
+> **Example 10 (Showing the data that a chunk loads)**  
 >
 > > ❌
 > >
@@ -436,7 +458,7 @@ A chunk hidden with `#| include: false` is exempt, because the reader never sees
 >
 > The first chunk renders as code alone. The second also prints the first six rows, so the reader sees the variables and their types before any later chunk uses them.
 
-# 23 Show output without warnings or messages
+# 24 Show output without warnings or messages
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository, in every language.
 
@@ -450,7 +472,7 @@ Rendered code shows its output and nothing else. A reader should never see a lin
 
 > **NOTE:**
 >
-> **Example 10 (Removing the message under a fitted line)**  
+> **Example 11 (Removing the message under a fitted line)**  
 >
 > > ❌
 > >
@@ -472,7 +494,7 @@ Rendered code shows its output and nothing else. A reader should never see a lin
 >
 > The first chunk prints “`geom_smooth()` using formula = ‘y ~ x’” above its figure. The second names the formula, so the chunk shows the figure alone.
 
-# 24 Present R results with modern packages
+# 25 Present R results with modern packages
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -483,7 +505,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Show model fit statistics with performance’s `model_performance()` or [broom](https://cran.r-project.org/package=broom)’s `glance()`.
 - Ezra’s [rme](https://github.com/d-morrison/rme) notes show the style.
 
-# 25 Manipulate data with dplyr, not base R
+# 26 Manipulate data with dplyr, not base R
 
 This rule applies to all R code in teaching materials, in every course and every teaching repository.
 
@@ -497,7 +519,7 @@ This rule applies to all R code in teaching materials, in every course and every
 - Do not nest function calls. Write `tibble(x, y) |> pander()`, not `pander(tibble(x, y))`, and `sizes |> lapply(f) |> bind_rows()`, not `bind_rows(lapply(sizes, f))`. Give a call that would sit inside an argument, such as `data = filter(df, train)` in a model call, a name on its own line first.
 - Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.
 
-# 26 Include code from files instead of copying it
+# 27 Include code from files instead of copying it
 
 This rule applies to code that appears in more than one place in teaching materials.
 
@@ -506,7 +528,7 @@ This rule applies to code that appears in more than one place in teaching materi
 - The extension also takes `start-line` and `end-line`, to show part of a file. Prefer a range that names the lines you want over a copy of those lines.
 - The extension is a new dependency of the site: install it with `quarto add quarto-ext/include-code-files`, and commit the `_extensions` directory it creates.
 
-# 27 Comment every code chunk to say what and why
+# 28 Comment every code chunk to say what and why
 
 This rule applies to all reader-facing code in teaching materials, in every course and every teaching repository, in every language.
 
@@ -515,7 +537,7 @@ This rule applies to all reader-facing code in teaching materials, in every cour
 - A comment that only restates the code, such as `# add 1 to x` above `x <- x + 1`, gives the *what* without the *why*. Say what the step accomplishes and why the analysis needs it, for example `# center age so the intercept is the mean outcome at the average age`.
 - Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.
 
-# 28 Set `code-fold` by what the code does and whether the prose mentions it
+# 29 Set `code-fold` by what the code does and whether the prose mentions it
 
 This rule applies to every executed code chunk in teaching materials, in every course and every teaching repository.
 
@@ -531,7 +553,7 @@ For example:
 - A chunk that defines the helper functions a section introduces is `show`.
 - A chunk that loads a package the text never mentions is `true`.
 
-# 29 Put a full command in a code block, not in inline code
+# 30 Put a full command in a code block, not in inline code
 
 This rule applies to all teaching materials that name commands, in every course and every teaching repository.
 
@@ -542,7 +564,7 @@ This rule applies to all teaching materials that name commands, in every course 
 
 > **NOTE:**
 >
-> **Example 11 (Moving an install command out of a sentence)**  
+> **Example 12 (Moving an install command out of a sentence)**  
 >
 > > ❌ The R tabs need `readr`, `dplyr`, `ggplot2` and `purrr`: `install.packages(c("readr", "dplyr", "ggplot2", "purrr"))`.
 > >
@@ -554,7 +576,7 @@ This rule applies to all teaching materials that name commands, in every course 
 >
 > The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.
 
-# 30 Introduce every function in a programming primer
+# 31 Introduce every function in a programming primer
 
 This rule applies to all teaching materials that run code, in every course and every teaching repository.
 
@@ -563,14 +585,14 @@ This rule applies to all teaching materials that run code, in every course and e
 - Add the missing functions in separate pull requests, one per package. A pull request that adds a function to a chapter adds it to the primer too, or links the primer entry that already introduces it.
 - Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.
 
-# 31 Make figures accessible
+# 32 Make figures accessible
 
 - Wrap each figure, including an interactive one, in a `#fig-` div with a caption.
 - Give every plot alt text. For Observable Plot, set `ariaLabel`.
 - Show the code that makes each figure, and let readers fold it away. Code folding does nothing for a cell that does not echo its code, so do not set `echo: false` on a cell you want students to read.
 - Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).
 
-# 32 Split a page before it grows too long
+# 33 Split a page before it grows too long
 
 A page should load and finish rendering its math in under 5 seconds, and its scroll bar should not shrink to its smallest length (Ezra, 2026-10-31). The browser typesets every formula on a page, so a page with hundreds of formulas takes seconds to finish. A page tall enough to shrink the scroll bar to its minimum leaves the reader no way to see where they are in it.
 
@@ -582,7 +604,7 @@ A page should load and finish rendering its math in under 5 seconds, and its scr
 
 The `check-page-length` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1377](https://github.com/Morrison-Lab/gha/pull/1377)) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.
 
-# 33 Keep sibling headings to about five
+# 34 Keep sibling headings to about five
 
 Aim for at most about five sibling headings under one parent heading, and split or group the headings when there are more than seven (Ezra, 2026-11-02). Sibling headings are headings of the same level under the same parent. The top-level headings of a page or book chapter count as siblings under the page.
 
@@ -595,7 +617,7 @@ A reader who scans a list of headings holds the whole list in mind while choosin
 
 The `check-heading-siblings` check in [`gha`](https://github.com/Morrison-Lab/gha) ([gha#1390](https://github.com/Morrison-Lab/gha/pull/1390)) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.
 
-# 34 Fold a one-paragraph section into its neighbor
+# 35 Fold a one-paragraph section into its neighbor
 
 Give a heading to a point that can stand alone, and fold a section of a single short paragraph into the section it qualifies or follows (Ezra, 2026-11-02). A heading that opens a one-paragraph section adds an entry to the list of headings and gives the reader nothing to find there. This is a guideline, not a minimum length: a definition, a distinct step or a named result can be short.
 
@@ -605,7 +627,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - If a point is one of several parallel points, make it an item in the parent’s list.
 - Do not delete the content: move it to the section it belongs to.
 
-# 35 Structure slides for the reader
+# 36 Structure slides for the reader
 
 - Check the rendered slides, not only the web page. Slides need the same boxes and colors on theorem-type and callout divs that the web page has, so a reader can see where a definition ends and the commentary begins.
 - Put a list of three or more phrases in a bullet list, as [Put lists in bullet points](../chapters/conciseness.llms.md#put-lists-in-bullet-points) describes.
@@ -616,7 +638,7 @@ Give a heading to a point that can stand alone, and fold a section of a single s
 - Add structure only where content has a shape. Do not put a heading over a single item, or over the same topic as the heading just before it.
 - Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.
 
-# 36 Give each concept in a note sheet its own row
+# 37 Give each concept in a note sheet its own row
 
 A note sheet is a reference table of formulas with brief labels and no prose. This is one case of [building every unit from smaller atomic units](#build-every-unit-from-smaller-atomic-units). Give each concept its own row. A row holds one formula and one short label.
 
@@ -629,7 +651,7 @@ The same rule applies to every other reference table, such as a table of notatio
 
 > **NOTE:**
 >
-> **Example 12 (Splitting a merged row)**  
+> **Example 13 (Splitting a merged row)**  
 >
 > > ❌ Row: `Dot product, sample mean`, with both formulas in one cell.
 > >
@@ -637,7 +659,7 @@ The same rule applies to every other reference table, such as a table of notatio
 >
 > The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.
 
-# 37 Order a note sheet from complex sections to atomic rows
+# 38 Order a note sheet from complex sections to atomic rows
 
 A note sheet’s sections and its rows run in opposite directions (Ezra, 2026-11-12):
 
@@ -651,7 +673,7 @@ Atomic rows come first within a table because a reader scans a table from the to
 
 > **NOTE:**
 >
-> **Example 13 (Reordering a gradient descent table)**  
+> **Example 14 (Reordering a gradient descent table)**  
 >
 > > ❌ Rows: `Gradient descent update`, `Step size`, `Gradient`, `Power rule`.
 > >
@@ -659,7 +681,7 @@ Atomic rows come first within a table because a reader scans a table from the to
 >
 > The ❌ table opens with an update rule that uses the step size and the gradient, which only the rows below it define. In the ✅ table, every row uses only the rows above it.
 
-# 38 Talk about the ideas, not the notes
+# 39 Talk about the ideas, not the notes
 
 When a [term](../chapters/defining-terms.llms.md#def-term) is defined on another page or in another site, state the idea in the sentence and link the term. Do not write about where the definition lives.
 
@@ -684,7 +706,7 @@ Describe each dataset once, in its own dataset callout with a linkable id (`#dat
 - the outcome and the predictors, described in words;
 - where to get a copy of the data.
 
-# 39 Refute common misconceptions
+# 40 Refute common misconceptions
 
 When a topic has a well-known misconception, state the misconception, say that it is wrong, and explain the correct idea. A text written this way is a *refutation text*. Across two decades of science-education studies, students who read refutation texts were more likely to give up a misconception than students who read an ordinary explanation of the correct idea ([Tippett 2010](#ref-tippett2010)). An explanation that never mentions the misconception lets the reader keep both ideas.
 
@@ -695,7 +717,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 
 > **NOTE:**
 >
-> **Example 14 (Refuting a misreading of the p-value)**  
+> **Example 15 (Refuting a misreading of the p-value)**  
 >
 > > ❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.
 > >
@@ -703,7 +725,7 @@ When a topic has a well-known misconception, state the misconception, say that i
 >
 > The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.
 
-# 40 Revisit earlier units in later exercises
+# 41 Revisit earlier units in later exercises
 
 Include in each problem set a few exercises that use methods from earlier units. Students remember material longer when they meet it again after a delay, and answering questions on earlier material helps more than rereading it. The practice guide from the Institute of Education Sciences rates the evidence for spacing as moderate and for quizzes that re-expose students to key content as strong ([Pashler et al. 2007](#ref-pashler2007), recommendations 1 and 5b). Of ten study techniques in one review, only practice testing and distributed practice earned the top rating of high utility ([Dunlosky et al. 2013](#ref-dunlosky2013)).
 
@@ -711,7 +733,7 @@ Include in each problem set a few exercises that use methods from earlier units.
 - Link that exercise’s hint to the earlier section, as for any other exercise.
 - In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.
 
-# 41 Write grading rubrics as checklists
+# 42 Write grading rubrics as checklists
 
 Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). A grader then marks each item as earned or not, and the points are the sum of the earned items. A rubric written as a paragraph makes the grader reconstruct the items, and two graders reconstruct different items.
 
@@ -724,7 +746,7 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 
 > **NOTE:**
 >
-> **Example 15 (A rubric as a checklist)**  
+> **Example 16 (A rubric as a checklist)**  
 >
 > > ❌ Grading (6 points): two for $\vec r$, one for $\dprod{\vx}{\vec r} = 0$, three for “orthogonal” with its link to the normal equation.
 >
@@ -741,14 +763,14 @@ Structure the rubric for most STEM questions as a checklist (Ezra, 2026-10-26). 
 >
 > The checklist shows the grader each item to mark and lets a script check that the points sum to the total.
 
-# 42 Credit other courses without summarizing them
+# 43 Credit other courses without summarizing them
 
 - Write your own version of another course’s material, and credit the source in a collapsed `.callout-note` titled “Source”, not in running prose. [Adapting another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) gives the details, including when a `::: notes` div is a safe alternative.
 - Quote the primary source directly, and check the wording and page against the original. [Quote the original](../chapters/citations-evidence.llms.md#quote-the-original) explains why.
 - Title a section by its topic, not by its author or course. [Put the content first](../chapters/citations-evidence.llms.md#put-the-content-first) explains why.
 - Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.
 
-# 43 Finish each unit completely
+# 44 Finish each unit completely
 
 Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term), result and exercise, and do not leave part of it implied, merged into a neighbor, or half done. A reader should never have to finish a unit for you. Several rules in this guide are cases of this one:
 
@@ -760,7 +782,7 @@ Complete each sentence, step, [term](../chapters/defining-terms.llms.md#def-term
 
 When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.
 
-# 44 Rules that apply to all writing
+# 45 Rules that apply to all writing
 
 These rules from the other chapters apply to teaching materials as to any other writing:
 
