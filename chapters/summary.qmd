@@ -73,6 +73,8 @@ Follow its link for the reasons and the exceptions.
   rather than a source that quotes it.
 - [Put the content first](citations-evidence.qmd#put-the-content-first):
   name the topic, not its author, in headings and sentences.
+- [Date a claim that can change](citations-evidence.qmd#date-volatile-claims),
+  such as what a software package supports.
 
 # Papers
 
@@ -85,8 +87,12 @@ Follow its link for the reasons and the exceptions.
 - [Label variables in plain words](paper-organization.qmd#label-variables-in-plain-words)
   in figures and tables.
 - [Use descriptive subsection headings](paper-organization.qmd#subsection-headings).
+- [Keep heading levels in order](paper-organization.qmd#heading-levels):
+  skip no level, and give each level at least two headings.
 - [Avoid forward references](paper-organization.qmd#avoid-forward-references):
   move the content ahead of the sentence that uses it.
+- [Lead with what is true](paper-organization.qmd#lead-with-what-is-true):
+  do not state a claim and then retract it.
 - [Put each link to a video next to the text that it supports](paper-organization.qmd#links-to-videos-and-other-media).
 - Follow the [journal's conventions for a manuscript](manuscript-submission.qmd),
   and check the [submission checklist](manuscript-submission.qmd#submission-checklist)

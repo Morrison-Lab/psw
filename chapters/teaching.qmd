@@ -226,6 +226,11 @@ and an expression is written with the named pieces it is built from.
   and leave the commentary in the remark, which links to the result
   (Ezra, 2026-11-07).
   An example pointer or a worked number is not a result: put it in an `#exm-` div.
+- A remark makes one point.
+  When a remark makes two points that a reader could need separately,
+  split it into two remarks, each titled by its own idea,
+  and link from one to the other when one builds on the other
+  (Ezra, 2026-11-12).
 - A proof states the lemmas it needs and links to them,
   instead of deriving them in the middle of the argument.
 - Extract a lemma wherever feasible.
@@ -253,6 +258,21 @@ When a unit still looks long, ask what could be named and moved out.
 
 The ✅ version lets a later chapter link to the penalty alone,
 and each piece fits on a slide.
+
+:::
+
+::: {#exm-one-point-remark}
+
+# Splitting a remark that makes two points
+
+> ❌ One remark says that the prediction error of a [fitted value](notation.qmd#def-fitted-value) is the negative of its residual,
+> and that the expected value of the squared prediction error for a new observation is the expected squared prediction error.
+>
+> ✅ Two remarks: one titled "Prediction errors and residuals" makes the first point,
+> and one titled "Expected squared prediction error" makes the second.
+
+The ✅ version lets a page about the expected squared prediction error link to the second remark alone,
+without sending the reader through the comparison with residuals.
 
 :::
 
@@ -366,6 +386,12 @@ Choose assignments for their fit with the course, not for novelty.
   Depart from it only for a stated reason.
 - Assign as homework the kinds of exercise that the reference texts and the other instructors generally assign for that topic,
   and use the same datasets they do.
+- When adapting an exercise, figure, or example from a source,
+  analyze the dataset that the source uses,
+  or follow the source's own simulation recipe,
+  and cite the source.
+  Use a different dataset only when it is better for the point being taught,
+  and say why in the pull request (Ezra, 2026-11-15).
 - Keep assessment that must be secure, such as an exam, in a setting the instructor controls,
   because a take-home problem cannot be.
 
@@ -483,6 +509,16 @@ both help students learn [@pashler2007, recommendations 3 and 4].
   The example of a related result does not exempt a definition:
   a theorem that uses a definition gets its own example,
   and so does the definition.
+  An example that illustrates two definitions is two examples:
+  split it,
+  put each half directly after its own definition,
+  and keep the original id on the half that matches it
+  (Ezra, 2026-11-12).
+  For example, one example of the bias and the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of a prediction,
+  placed after the variance definition,
+  leaves the bias definition with no example until after the next definition,
+  so split it into an example of the bias after the bias definition
+  and an example of the variance after the variance definition.
   The [ai-config rule](https://github.com/Morrison-Lab/ai-config/pull/4386) links here.
 - Give nearly every `#exm-` div a figure of its data, model or results (Ezra, 2026-10-23).
   When an example has no figure, state the reason in that div.
