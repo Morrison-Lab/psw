@@ -967,7 +967,9 @@ does the prose mention the code?
 
 - `#| code-fold: show` when the prose mentions the code.
   The choice of `show` holds whether the code produces output outside the chunk or not,
-  and a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use counts as producing output.
+  and it covers a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use.
+  Such a chunk still ends by showing what it defined
+  (see [Make every visible code chunk show a result](#make-every-visible-code-chunk-show-a-result)).
   The code starts open, and a reader who wants to focus on the output can hide it.
 - `#| code-fold: true` when the prose does not mention the code.
   The code starts hidden, and a reader who wants it can open it.
