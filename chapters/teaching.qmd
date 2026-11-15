@@ -816,6 +816,58 @@ in every course and every teaching repository, in every language.
   such as a `<matplotlib.lines.Line2D object at 0x...>` line after every `ax.plot(...)`.
   End each such call with a semicolon, or assign its value.
 
+# Make every visible code chunk show a result
+
+This rule applies to every executed code chunk in teaching materials,
+in every course and every teaching repository, in every language.
+
+A code chunk that readers can see should produce a visible result:
+a figure, a table, or console output.
+A chunk that only assigns shows code with nothing to connect it to,
+so the reader cannot check what the code made.
+End such a chunk with an expression that shows its result:
+
+- **Loaded data**: show its first rows, such as `hers |> head()`,
+  which stays short whether the object is a tibble or a data frame.
+- **A computed value**: print it.
+- **A defined [function](https://morrison-lab.github.io/mcs/functions.html#def-function)**: call it once on a small example.
+  If the call draws random numbers,
+  check that a later chunk sets its own seed before the next random draw,
+  so that the extra call does not change later results.
+- **Set-up code**: show what it set up,
+  such as a summary of the variables or settings that it created.
+- **A result that the next chunk displays**: merge the two chunks,
+  rather than printing the result twice.
+
+A chunk hidden with `#| include: false` is exempt,
+because the reader never sees its code.
+
+::: {#exm-visible-chunk-result}
+
+# Showing the data that a chunk loads
+
+> ❌
+>
+> ```r
+> # load the HERS trial data, with labeled values as factors
+> hers <- rmb::hers |> haven::as_factor()
+> ```
+>
+> ✅
+>
+> ```r
+> # load the HERS trial data, with labeled values as factors
+> hers <- rmb::hers |> haven::as_factor()
+> hers |> head()
+> ```
+
+The first chunk renders as code alone.
+The second also prints the first six rows,
+so the reader sees the variables and their types
+before any later chunk uses them.
+
+:::
+
 # Present R results with modern packages
 
 This rule applies to all R code in teaching materials,
@@ -915,7 +967,9 @@ does the prose mention the code?
 
 - `#| code-fold: show` when the prose mentions the code.
   The choice of `show` holds whether the code produces output outside the chunk or not,
-  and a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use counts as producing output.
+  and it covers a chunk that defines [function](https://morrison-lab.github.io/mcs/functions.html#def-function)s or objects that later chunks use.
+  Such a chunk still ends by showing what it defined
+  (see [Make every visible code chunk show a result](#make-every-visible-code-chunk-show-a-result)).
   The code starts open, and a reader who wants to focus on the output can hide it.
 - `#| code-fold: true` when the prose does not mention the code.
   The code starts hidden, and a reader who wants it can open it.
