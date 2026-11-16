@@ -17,6 +17,36 @@ Quarto provides built-in theorem environments including:
 - `#sol-` for solutions, named after their exercise (`#exr-foo` and `#sol-foo`)
 - `#rem-` for remarks
 
+Choose the type of a result by the role the result plays,
+following the standard usage of the four names [@wikipedia_theorem]:
+
+- `#thm-`, a theorem: a central result of the page,
+  one that the reader should remember and that later results build on.
+- `#prp-`, a proposition: a result worth stating for its own sake,
+  but smaller or more elementary than a theorem.
+- `#lem-`, a lemma: a result stated mainly as a step in the proof of another result.
+  A general fact extracted from a proof,
+  as the section [Build every unit from smaller atomic units](teaching.qmd#build-every-unit-from-smaller-atomic-units) asks,
+  is a lemma while proofs are its only use,
+  and becomes a proposition once readers need it for its own sake.
+- `#cor-`, a corollary: a result that follows directly from one earlier result,
+  with little or no further proof,
+  such as a special case of that result.
+  Name that earlier result in the corollary's statement or its proof.
+
+When more than one name fits,
+test the names in the order corollary, lemma, theorem, proposition,
+and use the first one that fits.
+For example, on a page about [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression),
+the symmetry of the [logistic function](https://morrison-lab.github.io/mcs/functions.html#def-logistic-function),
+$\sigmoidf{-\logodds} = 1 - \sigmoidf{\logodds}$,
+is a proposition.
+The identity is elementary,
+but readers need it for its own sake,
+because it shows that the model treats the two classes alike.
+State each result once, with one type,
+and link to that div instead of restating the result under another type.
+
 See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) for complete details.
 
 **Example syntax:**
