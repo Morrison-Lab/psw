@@ -1,0 +1,69 @@
+Each verb that opens a mathematical statement tells the reader what kind of statement follows.
+Use each verb only for its own job:
+
+- "Let" introduces a new object,
+  as in "let $\predvar$ be an input value".
+  It can carry a constraint on that new object,
+  as in "let $x \neq 2$".
+- "Suppose" or "assume" states a condition on objects already introduced,
+  a condition that could fail and that the result depends on,
+  as in "assume that $\Sigma$ is positive definite".
+- "By", followed by its source, states a consequence of what is already established,
+  as in "by [linearity of expectation](https://morrison-lab.github.io/pds/expectation.html#thm-linearity-expectation), $\E{X + Y} = \E{X} + \E{Y}$".
+- "Denote" names notation for an object described in words,
+  as in "let $\predval$ denote the prediction"
+  or "$\predval$ denotes the prediction".
+
+A "let" in front of a consequence presents a fact as a choice.
+The reader then has to work out whether the equation is a definition, a new assumption,
+or a result that follows from earlier definitions.
+Name the source with "by" instead,
+so the reader can check the step.
+
+::: {#exm-by-not-let}
+
+## Stating a consequence with "by"
+
+> ❌ Choose an input value $\predvar$,
+> and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
+>
+> ✅ Choose an input value $\predvar$.
+> By the definition of the noise $\noise \eqdef \Outvar - \truemeanf{\predvar}$,
+> the output variable $\Outvar$ equals $\truemeanf{\predvar} + \noise$.
+
+The ❌ sentence appeared in an earlier version of this guide,
+in the [Random variables and their values](#random-variables-and-their-values) section.
+The "let" in the ❌ sentence suggests that the equation is an assumption about the output variable.
+The noise is defined as the output variable minus its mean,
+so the equation follows from that definition,
+as the [Guidelines for defining terms](defining-terms.qmd#guidelines-for-defining-terms) section asks of a statistical model.
+The ✅ sentence names that definition as the source.
+
+:::
+
+Use "denote", not "write", to name notation.
+"Write" names the physical act of putting marks on a page,
+and "write $X$ in terms of $Y$" already means "express", <!-- check-term-links: allow: quoted idiom, not the defined term -->
+as the [Use literal language](inclusive-writing.qmd#use-literal-language) section explains.
+"Denote" names the relation between a symbol and the object that the symbol stands for.
+
+::: {#exm-denote-not-write}
+
+## Naming notation with "denote"
+
+> ❌ Choose the number of features before fitting the network.
+> Write $L$ for that number.
+>
+> ✅ Choose the number of features before fitting the network.
+> Let $L$ denote that number.
+
+The ❌ sentence adapts a passage of the lab's notes on neural networks.
+The "write" in the ❌ sentence reads as an instruction to the reader,
+although the sentence only names a symbol.
+
+:::
+
+The `check-avoided-words` check in gha flags "write $X$ for", "writing $X$ for", and "is written $X$" on the lines that a pull request adds.
+No check can tell a consequence from an assumption,
+because the answer depends on what the text has already defined,
+so a reviewer reads for the "let" and "suppose" rules.

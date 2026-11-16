@@ -806,9 +806,9 @@ Follow these principles when introducing new [term](#def-term)s:
   Name the fitting procedure only when the sentence is about how a fitted model is built:
   the inputs that the procedure needs, what it costs,
   or an expectation over the training sets to which it is applied.
-  In math, write $\fitmodf{\trainset}$ for the fitted model,
+  In math, denote the fitted model by $\fitmodf{\trainset}$,
   the model that the procedure produces from the training set,
-  and $\fitproc$ only for the procedure itself.
+  and reserve $\fitproc$ for the procedure itself.
   Where the training set is not salient, write the fitted model as $\fitted$ instead,
   the symbol that the predicted-value bullet below builds on.
   For example, write
@@ -857,7 +857,7 @@ Follow these principles when introducing new [term](#def-term)s:
   Where a macro names a function, such as a fitting procedure,
   the macro with an `f` ending applies it to its argument,
   so write the application with that macro and not with a hand-typed `\paren`.
-  For example, write $\fitprocf{\trainset}$ for the fitted model that $\fitproc$ gives on the training set $\trainset$,
+  For example, the fitted model that $\fitproc$ gives on the training set $\trainset$ is $\fitprocf{\trainset}$,
   and never $\fitproc\paren{\trainset}$.
   The same holds for an operator and every delimiter macro
   (`\paren`, `\sb`, `\cb`, `\set`, `\abs`, `\norm` and `\angb`),

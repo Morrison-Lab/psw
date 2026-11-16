@@ -151,7 +151,7 @@ Keep them readable by breaking them into stages:
 derive an intermediate result in its own block,
 then plug that result back into the main derivation.
 Naming a part of an expression that recurs in every line,
-such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$,
+such as letting $d_i$ denote $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$,
 can also keep each line short.
 
 #### Show why you need a result before you derive it
