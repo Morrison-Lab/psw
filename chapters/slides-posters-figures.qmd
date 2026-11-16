@@ -355,13 +355,17 @@ is a surface.
 A contour plot shows where the function takes given values and is easy to read values from.
 A three-dimensional surface plot shows the same function as a landscape,
 so valleys, ridges and minima are visible at once.
-Show both when the shape of the surface matters.
+A contour plot needs its surface beside it, but a surface plot can stand alone.
 
-- Use a 3D plot for a surface, with the function's value on the vertical axis,
-  and pair it with a contour plot of the same function.
-- Pair the other way too: every contour plot or level-curve plot of a function of two variables
-  gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03),
+- Use a 3D plot for a surface, with the function's value on the vertical axis.
+- Give every contour plot or level-curve plot of a function of two variables
+  a corresponding 3D surface plot of the same function (Ezra, 2026-11-03),
   with the same colors and marked points.
+  The pairing runs one way only:
+  a 3D surface plot needs no contour plot beside it
+  (Ezra, 2026-11-16: "every contour plot should have a corresponding 3d plot;
+  not every 3d plot needs a corresponding contour plot").
+  Add the contour plot only when the reader needs to read values off the surface.
 - Put a contour plot and its 3D surface plot in one figure, as two subfigures
   (Ezra, 2026-11-12: "why didn't you pair the 2d and 3d figures as subfigures?
   that should be a psw principle by now"),
