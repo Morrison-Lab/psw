@@ -47,3 +47,8 @@ jobs:
         Quarto/Markdown syntax, working cross-references and citations, and the
         SERG lab manual's .qmd conventions (backticked `pkg::fn()`, Markdown
         links rather than raw HTML, US English spelling).
+        Check that every pronoun in added prose has one clear antecedent: a
+        relative pronoun (whose, which, that, who) must refer to the noun just
+        before it, a bare sentence-initial "this" or "it" must have an obvious
+        referent, and where the intended noun is further back the sentence
+        should repeat the noun (psw chapters/grammar/relative-pronouns.qmd).

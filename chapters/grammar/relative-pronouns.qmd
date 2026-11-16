@@ -67,6 +67,37 @@ if you can drop the clause without changing which thing you are describing,
 use *which* and commas;
 otherwise, use *that*.
 
+### Attach a relative pronoun to the nearest noun
+
+A relative pronoun refers to the noun just before it.
+When *whose*, *which*, *that* or *who* follows two or more nouns,
+the reader takes the closest one as the referent.
+If you mean an earlier noun,
+repeat it, and start a new sentence with it.
+This is the general rule for every pronoun:
+each one has a single antecedent
+that the reader can identify without guessing
+(see also [Demonstrative pronouns](#demonstrative-pronouns)).
+No automated check enforces the relative-pronoun case,
+because deciding what a pronoun refers to takes meaning, not pattern matching,
+so a reviewer reads for it.
+
+::: {#exm-relative-pronoun-antecedent}
+
+## Repeating the noun a relative pronoun should attach to
+
+> ❌ We place a normal distribution on each coefficient, **whose** variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example -->
+>
+> ✅ We place a normal distribution on each coefficient.
+> **The distribution's** variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example -->
+
+In the first sentence, "whose" can refer to "coefficient",
+the nearest noun,
+although the writer means the distribution.
+Naming "the distribution" removes the guess.
+
+:::
+
 ### Do not omit relative pronouns
 
 English lets you drop a relative pronoun in some sentences,
