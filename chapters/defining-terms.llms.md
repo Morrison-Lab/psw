@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 12:09:34 (PST)
+Last modified: 2026-11-16 15:02:18 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -143,7 +143,7 @@ Follow these principles when introducing new [term](#def-term)s:
   >
   > ✅ For the trade-offs, see the `[Practical considerations](#practical-considerations)` section.
 
-  The same holds off-site: write “the book *Title*” or “the article [Title](https://example.org)”, not the title alone. A `@sec-` crossref renders its own “Section n” label. It needs no type word. A `check-title-references` check for gha ([gha#2048](https://github.com/Morrison-Lab/gha/pull/2048), not yet merged) would flag a link whose text is the title of the heading or page it targets, with no type word beside it. It cannot see a book, article, or video. Their titles live off-site, so check those by hand.
+  The same holds off-site: write “the book *Title*” or “the article [Title](https://example.org)”, not the title alone. A `@sec-` crossref renders its own “Section n” label. It needs no type word. The `check-title-references` check in gha ([gha#2048](https://github.com/Morrison-Lab/gha/pull/2048)) flags a link whose text is the title of the heading or page it targets, written in the title’s case, with no type word beside it. It cannot see a book, article, or video. Their titles live off-site, so check those by hand.
 
 - **Do not presuppose what the reader has not encountered:** A definite noun phrase, one that starts with “the”, presupposes that the reader already knows what it refers to. “Fit a line to the synthetic data” is unjustified if no earlier sentence has said which data these are, or where they came from. Check each “the …” phrase for a referent the reader has already seen. If there is none, introduce the referent first, or write “a” or “some” in place of “the”. Then link each definite noun phrase to what it refers to, with a cross-reference such as `[the synthetic data](#exm-synthetic-data)`, so that a reader who has forgotten or skipped the referent can find it. Skip the link when the referent is introduced in the same div, or in the same prose passage, as the phrase. Inside a div, the antecedent has to be in that div: an earlier div does not count, because readers jump into the middle of a page. For example, an exercise that says “Explain the labels” with no labels named in it has no antecedent, even if an earlier exercise names some. Name the labels in the exercise, or link them to where they are introduced. A personal pronoun (“it”, “its”, “they”, “them”, or “their”) follows the same rule, and a link cannot repair it, so name the referent in the div. For example, a solution that opens “It fails.” or that says “the relationship between them” sends the reader back through earlier divs; write “The step fails.” or “the relationship between the email and its label” instead. The `check-definite-antecedents` check in [gha](https://github.com/Morrison-Lab/gha/pull/1956) flags a div that opens with one of these pronouns.
 
