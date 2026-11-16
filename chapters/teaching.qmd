@@ -616,7 +616,7 @@ both help students learn [@pashler2007, recommendations 3 and 4].
   and cite it with `@fig-id`.
   The `check-geometric-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
   reports, in a pull request, each added line that says contour, ellipse, circle, level set,
-  tangent line, hyperplane, decision boundary, perpendicular, "projects onto", "geometrically" or right angle
+  tangent line, hyperplane, decision boundary, perpendicular, "projects onto", "geometrically", or right angle
   and has no figure within 40 lines or in an enclosing div.
   A `<!-- no-figure: reason -->` comment nearby exempts a claim that no figure can show
   ([gha#2044](https://github.com/Morrison-Lab/gha/issues/2044)).
