@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 10:27:06 (PST)
+Last modified: 2026-11-16 10:57:06 (PST)
 
 > **NOTE:**
 >
@@ -54,13 +54,27 @@ Use *that* for a [restrictive clause](#def-restrictive-clause). Use *which*, set
 
 A quick test: if you can drop the clause without changing which thing you are describing, use *which* and commas; otherwise, use *that*.
 
-### 1.0.2 Do not omit relative pronouns
+### 1.0.2 Attach a relative pronoun to the nearest noun
+
+A relative pronoun refers to the noun just before it. When *whose*, *which*, *that*, or *who* follows two or more nouns, the reader takes the closest one as the referent. If you mean an earlier noun, repeat it, and start a new sentence with it. The nearest-noun rule is one case of the general rule for every pronoun: each one has a single antecedent that the reader can identify without guessing (see also [Demonstrative pronouns](#demonstrative-pronouns)). No automated check enforces the relative-pronoun case, because deciding what a pronoun refers to takes meaning, not pattern matching, so a reviewer reads for it.
+
+> **NOTE:**
+>
+> **Example 3 (Repeating the noun a relative pronoun should attach to)**  
+>
+> > ❌ We place a Gaussian distribution on each coefficient, **whose** variance is fixed in advance.
+> >
+> > ✅ We place a Gaussian distribution on each coefficient. **The distribution’s** variance is fixed in advance.
+>
+> In the first sentence, “whose” can refer to “coefficient”, the nearest noun, although the writer means the distribution. Naming “the distribution” removes the guess.
+
+### 1.0.3 Do not omit relative pronouns
 
 English lets you drop a relative pronoun in some sentences, but keeping it makes the structure of the sentence explicit and easier to parse on the first read. Prefer to keep *that*, *which*, or *who*, even when the grammar would let you drop it.
 
 > **NOTE:**
 >
-> **Example 3 (Restoring an omitted relative pronoun)**  
+> **Example 4 (Restoring an omitted relative pronoun)**  
 >
 > > ❌ This body of work laid the methodological groundwork I now apply to enteric fever.
 > >
@@ -79,13 +93,13 @@ There are four demonstrative words:
 
 They can serve two roles. As adjectives, they modify a noun: “**this** result”, “**those** samples”. As standalone pronouns, they replace a noun: “**This** shows…”, “**That** means…”.
 
-When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is.
+When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. [Relative pronouns](#relative-pronouns) follow the same rule: a clause that starts with *whose* or *which* attaches to the nearest noun before it. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is.
 
 A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final *this* or *that* always leaves its referent unnamed. End the sentence with the noun instead.
 
 > **NOTE:**
 >
-> **Example 4 (Naming the referent)**  
+> **Example 5 (Naming the referent)**  
 >
 > > ❌ The model overfit the training data. **This** poses a problem for deployment.
 > >
@@ -117,7 +131,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 
 > **NOTE:**
 >
-> **Example 5 (Naming what a quantifier refers to)**  
+> **Example 6 (Naming what a quantifier refers to)**  
 >
 > > ❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both** return the same fit.
 > >
@@ -135,7 +149,7 @@ When you reread a sentence and stumble, find the point where your first reading 
 
 > **NOTE:**
 >
-> **Example 6 (Rewriting a garden-path sentence)**  
+> **Example 7 (Rewriting a garden-path sentence)**  
 >
 > > ❌ Report only SHAs a command you ran printed in full.
 > >
@@ -157,7 +171,7 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 
 > **NOTE:**
 >
-> **Example 7 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
+> **Example 8 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
 >
 > > 1.  A common cause in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
 > > 2.  In technical writing, a common cause is a clause that describes a noun but has lost its opening *that* or *that were*.
@@ -190,7 +204,7 @@ Fronting is a stylistic choice, with costs and benefits.
 
 > **NOTE:**
 >
-> **Example 8 (Plain and fronted forms)**  
+> **Example 9 (Plain and fronted forms)**  
 >
 > > Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.
 > >
@@ -206,7 +220,7 @@ Write “the mean, the median, and the mode”, not “the mean, the median and 
 
 > **NOTE:**
 >
-> **Example 9 (Adding the serial comma)**  
+> **Example 10 (Adding the serial comma)**  
 >
 > > ❌ We compare the lasso, ridge regression and elastic net.
 > >

@@ -253,7 +253,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-16 10:27:06 (PST)</p>
+  <p class="date">Last modified: 2026-11-16 10:57:06 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -309,10 +309,20 @@
 <p>The clause “which contains 4,000 records” adds a detail, but the reader already knows which dataset we mean. The clause is non-restrictive, so it takes <em>which</em> and is set off by commas.</p>
 </div>
 <p>A quick test: if you can drop the clause without changing which thing you are describing, use <em>which</em> and commas; otherwise, use <em>that</em>.</p>
+<h4 id="attach-a-relative-pronoun-to-the-nearest-noun">Attach a relative pronoun to the nearest noun</h4>
+<p>A relative pronoun refers to the noun just before it. When <em>whose</em>, <em>which</em>, <em>that</em>, or <em>who</em> follows two or more nouns, the reader takes the closest one as the referent. If you mean an earlier noun, repeat it, and start a new sentence with it. The nearest-noun rule is one case of the general rule for every pronoun: each one has a single antecedent that the reader can identify without guessing (see also <a href="#/demonstrative-pronouns">Demonstrative pronouns</a>). No automated check enforces the relative-pronoun case, because deciding what a pronoun refers to takes meaning, not pattern matching, so a reviewer reads for it.</p>
+<div id="exm-relative-pronoun-antecedent" class="theorem example">
+<p><span class="theorem-title"><strong>Example 3 (Repeating the noun a relative pronoun should attach to)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ We place a Gaussian distribution on each coefficient, <strong>whose</strong> variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example --></p>
+<p>✅ We place a Gaussian distribution on each coefficient. <strong>The distribution’s</strong> variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example --></p>
+</blockquote>
+<p>In the first sentence, “whose” can refer to “coefficient”, the nearest noun, although the writer means the distribution. Naming “the distribution” removes the guess.</p>
+</div>
 <h4 id="do-not-omit-relative-pronouns">Do not omit relative pronouns</h4>
 <p>English lets you drop a relative pronoun in some sentences, but keeping it makes the structure of the sentence explicit and easier to parse on the first read. Prefer to keep <em>that</em>, <em>which</em>, or <em>who</em>, even when the grammar would let you drop it.</p>
 <div id="exm-omitted-relative-pronoun" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3 (Restoring an omitted relative pronoun)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 4 (Restoring an omitted relative pronoun)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ This body of work laid the methodological groundwork I now apply to enteric fever.</p>
 <p>✅ This body of work laid the methodological groundwork <strong>that</strong> I now apply to enteric fever. <!-- check-term-links: allow --></p>
@@ -333,10 +343,10 @@
 <li><em>those</em></li>
 </ul>
 <p>They can serve two roles. As adjectives, they modify a noun: “<strong>this</strong> result”, “<strong>those</strong> samples”. <!-- check-term-links: allow --> As standalone pronouns, they replace a noun: “<strong>This</strong> shows…”, “<strong>That</strong> means…”. <!-- check-term-links: allow --></p>
-<p>When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs <em>here</em> and <em>there</em> point the same way: “getting there” leaves the reader to guess where “there” is.</p>
+<p>When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. <a href="#/relative-pronouns">Relative pronouns</a> follow the same rule: a clause that starts with <em>whose</em> or <em>which</em> attaches to the nearest noun before it. The adverbs <em>here</em> and <em>there</em> point the same way: “getting there” leaves the reader to guess where “there” is.</p>
 <p>A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final <em>this</em> or <em>that</em> always leaves its referent unnamed. End the sentence with the noun instead.</p>
 <div id="exm-demonstrative-pronoun" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4 (Naming the referent)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 5 (Naming the referent)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The model overfit the training data. <strong>This</strong> poses a problem for deployment. <!-- check-term-links: allow --></p>
 <p>✅ The model overfit the training data. <strong>This overfitting</strong> poses a problem for deployment. <!-- check-term-links: allow --></p>
@@ -366,7 +376,7 @@
 <p><em>Every</em> belongs to the same family, but it cannot stand alone (“every” needs a noun, as in “every model”), so it never causes this problem.</p>
 <p>You do not need a complete list of quantifiers to apply the advice. Whenever a quantifier stands where a noun should be, the reader has to search backward to find out what it quantifies. Follow the quantifier with the noun: “<strong>both models</strong>”, “<strong>all three estimators</strong>”, “<strong>each interval</strong>”. <!-- check-term-links: allow --> An “of” phrase that names the noun works too: “<strong>none of the intervals</strong>”. <!-- check-term-links: allow --></p>
 <div id="exm-quantifier-pronoun" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5 (Naming what a quantifier refers to)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 6 (Naming what a quantifier refers to)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. <strong>Both</strong> return the same fit.</p>
 <p>✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. <strong>Both models</strong> return the same fit. <!-- check-term-links: allow --></p>
@@ -383,7 +393,7 @@
 <p>A common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening <em>that</em> or <em>that were</em>. Without the pronoun, the reader takes the noun and the start of the clause as one phrase and has to reattach the words that follow. <a href="#/do-not-omit-relative-pronouns">Do not omit relative pronouns</a> gives the general rule.</p>
 <p>When you reread a sentence and stumble, find the point where your first reading went wrong, and rewrite the sentence so that the first reading is the right one.</p>
 <div id="exm-garden-path" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Rewriting a garden-path sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Rewriting a garden-path sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Report only SHAs a command you ran printed in full.</p>
 <p>✅ Report only SHAs that appeared in full in the output of a command that you ran.</p>
@@ -406,7 +416,7 @@
 </ul>
 <p>When one of these nouns appears without its “of” or “for” phrase, the reader has to recover the missing object from context, just as with a pronoun that has no clear referent. Write the object next to the noun.</p>
 <div id="exm-relational-noun" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Comparing four versions of one sentence)</strong></span> Each version tries to say what usually causes garden-path sentences.</p>
+<p><span class="theorem-title"><strong>Example 8 (Comparing four versions of one sentence)</strong></span> Each version tries to say what usually causes garden-path sentences.</p>
 <ol type="1">
 <li class="fragment">A common cause in technical writing is a clause that describes a noun but has lost its opening <em>that</em> or <em>that were</em>.</li>
 <li class="fragment">In technical writing, a common cause is a clause that describes a noun but has lost its opening <em>that</em> or <em>that were</em>.</li>
@@ -439,7 +449,7 @@
 </ul>
 <p><strong>Guideline.</strong> Front an appositive when it is short, familiar to the reader, and describes the subject. Keep the plain “X is Y” form when the description is the new information the paper depends on, when it is long, or when the subject is a pronoun without a clear antecedent.</p>
 <div id="exm-appositive-fronting" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Plain and fronted forms)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 9 (Plain and fronted forms)</strong></span> &nbsp;</p>
 <blockquote>
 <p>Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.</p>
 <p>Fronted: A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in both preweaned calves and weaned cattle.</p>
@@ -455,7 +465,7 @@
 <p>In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the <em>serial comma</em>, or the <em>Oxford comma</em>. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.</p>
 <p>Write “the mean, the median, and the mode”, not “the mean, the median and the mode”. <!-- check-serial-comma: allow --> The same holds when the items are long, are split across source lines, or contain math.</p>
 <div id="exm-serial-comma" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Adding the serial comma)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Adding the serial comma)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We compare the lasso, ridge regression and elastic net. <!-- check-serial-comma: allow --></p>
 <p>✅ We compare the lasso, ridge regression, and elastic net.</p>
