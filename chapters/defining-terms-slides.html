@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-16 15:02:18 (PST)</p>
+  <p class="date">Last modified: 2026-11-16 15:31:05 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -644,6 +644,14 @@
 <li><code>#sol-</code> for solutions, named after their exercise (<code>#exr-foo</code> and <code>#sol-foo</code>)</li>
 <li><code>#rem-</code> for remarks</li>
 </ul>
+<p>Choose the type of a result by the role the result plays, following the standard usage of the four names <span class="citation" data-cites="wikipedia_theorem">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors 2026</a>)</span>:</p>
+<ul>
+<li><code>#thm-</code>, a theorem: a central result of the page, one that the reader should remember and that later results build on.</li>
+<li><code>#prp-</code>, a proposition: a result worth stating for its own sake, but smaller or more elementary than a theorem.</li>
+<li><code>#lem-</code>, a lemma: a result stated mainly as a step in the proof of another result. A general fact extracted from a proof, as the section <a href="../chapters/teaching.html#build-every-unit-from-smaller-atomic-units">Build every unit from smaller atomic units</a> asks, is a lemma while proofs are its only use, and becomes a proposition once readers need it for its own sake.</li>
+<li><code>#cor-</code>, a corollary: a result that follows directly from one earlier result, with little or no further proof, such as a special case of that result. Name that earlier result in the corollary’s statement or its proof.</li>
+</ul>
+<p>When more than one name fits, test the names in the order corollary, lemma, theorem, proposition, and use the first one that fits. For example, on a page about <a href="https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression">logistic regression</a>, the symmetry of the <a href="https://morrison-lab.github.io/mcs/functions.html#def-logistic-function">logistic function</a>, <span class="math inline">\({\operatorname{expit}\mathopen{}\left(-\eta\right)\mathclose{}} = 1 - {\operatorname{expit}\mathopen{}\left(\eta\right)\mathclose{}}\)</span>, is a proposition. The identity is elementary, but readers need it for its own sake, because it shows that the model treats the two classes alike. State each result once, with one type, and link to that div instead of restating the result under another type.</p>
 <p>See the <a href="https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs">Quarto documentation on theorems and proofs</a> for complete details.</p>
 <p><strong>Example syntax:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a aria-label="1"></a>::: {#thm-pythagorean}</span>
@@ -971,6 +979,9 @@ window.addEventListener("load", alignEquationAnchorsWithDefault);
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-atkinson2000" class="csl-entry" role="listitem">
 Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. <span>“Learning from Examples: Instructional Principles from the Worked Examples Research.”</span> <em>Review of Educational Research</em> 70 (2): 181–214. <a href="https://doi.org/10.3102/00346543070002181">https://doi.org/10.3102/00346543070002181</a>.
+</div>
+<div id="ref-wikipedia_theorem" class="csl-entry" role="listitem">
+Wikipedia contributors. 2026. <em>Theorem — <span>Wikipedia</span><span>,</span> the Free Encyclopedia</em>. <a href="https://en.wikipedia.org/wiki/Theorem#Terminology">https://en.wikipedia.org/wiki/Theorem#Terminology</a>.
 </div>
 </div>
 </section>

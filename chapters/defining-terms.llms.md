@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 15:02:18 (PST)
+Last modified: 2026-11-16 15:31:05 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -357,6 +357,15 @@ Quarto provides built-in theorem environments including:
 - `#sol-` for solutions, named after their exercise (`#exr-foo` and `#sol-foo`)
 - `#rem-` for remarks
 
+Choose the type of a result by the role the result plays, following the standard usage of the four names ([Wikipedia contributors 2026](#ref-wikipedia_theorem)):
+
+- `#thm-`, a theorem: a central result of the page, one that the reader should remember and that later results build on.
+- `#prp-`, a proposition: a result worth stating for its own sake, but smaller or more elementary than a theorem.
+- `#lem-`, a lemma: a result stated mainly as a step in the proof of another result. A general fact extracted from a proof, as the section [Build every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units) asks, is a lemma while proofs are its only use, and becomes a proposition once readers need it for its own sake.
+- `#cor-`, a corollary: a result that follows directly from one earlier result, with little or no further proof, such as a special case of that result. Name that earlier result in the corollary’s statement or its proof.
+
+When more than one name fits, test the names in the order corollary, lemma, theorem, proposition, and use the first one that fits. For example, on a page about [logistic regression](https://morrison-lab.github.io/lds/chapters/logistic-regression.html#def-logistic-regression), the symmetry of the [logistic function](https://morrison-lab.github.io/mcs/functions.html#def-logistic-function), ${\operatorname{expit}\mathopen{}\left(-\eta\right)\mathclose{}} = 1 - {\operatorname{expit}\mathopen{}\left(\eta\right)\mathclose{}}$, is a proposition. The identity is elementary, but readers need it for its own sake, because it shows that the model treats the two classes alike. State each result once, with one type, and link to that div instead of restating the result under another type.
+
 See the [Quarto documentation on theorems and proofs](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs) for complete details.
 
 **Example syntax:**
@@ -505,3 +514,5 @@ Back to top
 ## References
 
 Atkinson, Robert K., Sharon J. Derry, Alexander Renkl, and Donald Wortham. 2000. “Learning from Examples: Instructional Principles from the Worked Examples Research.” *Review of Educational Research* 70 (2): 181–214. <https://doi.org/10.3102/00346543070002181>.
+
+Wikipedia contributors. 2026. *Theorem — Wikipedia, the Free Encyclopedia*. <https://en.wikipedia.org/wiki/Theorem#Terminology>.
