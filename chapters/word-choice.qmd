@@ -274,7 +274,7 @@ A reader attaches a pronoun or a demonstrative,
 such as *it*, *this*, *that*, *which*, *whose*, or *they*, <!-- check-definite-antecedents: allow -->
 to the nearest noun phrase before the pronoun that fits the grammar.
 A relative clause that opens with *whose* or *which* after a comma attaches the same way (Ezra, 2026-11-16).
-In "a Laplace distribution prior on each coefficient, whose density is not differentiable at zero",
+In "a Laplace distribution prior on each coefficient, whose density is not differentiable at zero", <!-- check-term-links: allow: quoted sentence from lds, not a use of the term -->
 the nearest noun is "coefficient",
 so the sentence gives the coefficient a density.
 End the sentence after "coefficient",
