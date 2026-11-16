@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 10:22:45 (PST)
+Last modified: 2026-11-16 10:32:31 (PST)
 
 > **NOTE:**
 >
@@ -62,9 +62,9 @@ A relative pronoun refers to the noun just before it. When *whose*, *which*, *th
 >
 > **Example 3 (Repeating the noun a relative pronoun should attach to)**  
 >
-> > ❌ We place a normal distribution on each coefficient, **whose** variance is fixed in advance.
+> > ❌ We place a Gaussian distribution on each coefficient, **whose** variance is fixed in advance.
 > >
-> > ✅ We place a normal distribution on each coefficient. **The distribution’s** variance is fixed in advance.
+> > ✅ We place a Gaussian distribution on each coefficient. **The distribution’s** variance is fixed in advance.
 >
 > In the first sentence, “whose” can refer to “coefficient”, the nearest noun, although the writer means the distribution. Naming “the distribution” removes the guess.
 
