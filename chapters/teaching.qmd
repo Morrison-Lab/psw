@@ -614,12 +614,12 @@ both help students learn [@pashler2007, recommendations 3 and 4].
   asks the reader to see a shape,
   so show the shape in a plot or diagram within a few lines of the claim,
   and cite it with `@fig-id`.
-  The `check-geometric-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha)
-  reports, in a pull request, each added line that has no figure within 40 lines or in an enclosing div
+  The `check-geometric-figures` workflow proposed in [`gha`](https://github.com/Morrison-Lab/gha)
+  would report, in a pull request, each added line that has no figure within 40 lines or in an enclosing div
   and says one of these:
   contour, ellipse, circle, level set, tangent line, hyperplane, decision boundary,
   perpendicular, "projects onto", "geometrically", or right angle.
-  A `<!-- no-figure: reason -->` comment nearby exempts a claim that no figure can show
+  A `<!-- no-figure: reason -->` comment nearby would exempt a claim that no figure can show
   ([gha#2044](https://github.com/Morrison-Lab/gha/issues/2044)).
   A check sees only that some figure is near.
   It cannot see that the figure shows the claim,
