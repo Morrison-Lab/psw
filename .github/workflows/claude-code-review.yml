@@ -52,3 +52,8 @@ jobs:
         ("the Practical considerations section"), and only the title is the
         link text (psw#660). Read the diff for this; do not rely on a check,
         because a book, article or video title lives off-site.
+        Check that every pronoun in added prose has one clear antecedent: a
+        relative pronoun (whose, which, that, who) must refer to the noun just
+        before it, a bare sentence-initial "this" or "it" must have an obvious
+        referent, and where the intended noun is further back the sentence
+        should repeat the noun (psw chapters/grammar/relative-pronouns.qmd).
