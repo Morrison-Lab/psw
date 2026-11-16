@@ -47,3 +47,8 @@ jobs:
         Quarto/Markdown syntax, working cross-references and citations, and the
         SERG lab manual's .qmd conventions (backticked `pkg::fn()`, Markdown
         links rather than raw HTML, US English spelling).
+        Check each added reference to a section, chapter, page, book, article
+        or video by its title: the type of content is named beside the title
+        ("the Practical considerations section"), and only the title is the
+        link text (psw#660). Read the diff for this; do not rely on a check,
+        because a book, article or video title lives off-site.

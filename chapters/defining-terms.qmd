@@ -505,6 +505,26 @@ Follow these principles when introducing new [term](#def-term)s:
   and the `check-avoided-words` check flags a parenthetical that holds only a link
   ([gha#2034](https://github.com/Morrison-Lab/gha/issues/2034)).
 
+- **Name the content type when you refer to a title:**
+  When text refers to a section, subsection, chapter, page, book, article or video by its title,
+  name the type of content beside the title, and link only the title.
+  The type tells the reader what they will land on,
+  and a bare title reads as a term or a name, not as a place to go.
+  In the PDF, where a link is plain text, the type word still says what the title names.
+
+  > ❌ For the trade-offs, see `[Practical considerations](#practical-considerations)`.
+  >
+  > ✅ For the trade-offs, see the `[Practical considerations](#practical-considerations)` section.
+
+  The same holds off-site:
+  write "the book *Title*" or "the article [Title](https://example.org)", not the title alone.
+  A `@sec-` crossref renders its own "Section n" label, so it needs no type word.
+  The `check-title-references` check in gha
+  ([gha#2046](https://github.com/Morrison-Lab/gha/issues/2046))
+  flags a link whose text is the title of the heading or page it targets, with no type word beside it.
+  It cannot see a book, article or video, because their titles live off-site,
+  so check those by hand.
+
 - **Do not presuppose what the reader has not encountered:**
   A definite noun phrase, one that starts with "the",
   presupposes that the reader already knows what it refers to.
