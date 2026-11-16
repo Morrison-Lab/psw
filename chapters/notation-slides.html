@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-15 17:35:34 (PST)</p>
+  <p class="date">Last modified: 2026-11-15 19:29:58 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -653,7 +653,13 @@
 </blockquote>
 <p>Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of <code>\reals</code> changes.</p>
 </div>
-<p>Latin letters follow the same rule, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.</p>
+<p>The macro for a set picks its font by what the set holds:</p>
+<ul>
+<li>A standard number set, such as the real numbers or the natural numbers, prints in blackboard bold: <code>\reals</code> prints <span class="math inline">\(\reals\)</span>, and <code>\Nat</code> prints <span class="math inline">\(\Nat\)</span>.</li>
+<li>Any other named set, such as a data set, a model family, or the <a href="https://morrison-lab.github.io/mcs/functions.html#def-range">range</a> of a random variable, prints as a calligraphic capital: <code>\dataset</code> prints <span class="math inline">\(\dataset\)</span>, <code>\modelfam</code> prints <span class="math inline">\(\modelfam\)</span>, and <code>\range</code> prints <span class="math inline">\(\range\)</span>.</li>
+</ul>
+<p>Neither font is reserved for sets. Blackboard bold also prints the expectation operator <span class="math inline">\(\Expp\)</span> and the probability operator <span class="math inline">\(\P\)</span>, and a calligraphic capital also prints named functions such as the likelihood, <span class="math inline">\(\Lik\)</span>. The shared macros’ <a href="https://morrison-lab.github.io/macros/notation-choices.html">notation choices</a> explain several of these choices. When you add a macro for a new set, give its definition the font that this rule picks.</p>
+<p>Latin letters follow the semantic-macro rule too, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.</p>
 <p>Latin letters with a fixed role show the rule. In a regression or prediction model, use these macros:</p>
 <ul>
 <li><code>\outvar</code> for the outcome variable, instead of a bare <code>y</code>;</li>

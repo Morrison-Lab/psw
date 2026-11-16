@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-15 17:35:34 (PST)
+Last modified: 2026-11-15 19:29:58 (PST)
 
 > **NOTE:**
 >
@@ -411,7 +411,14 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 >
 > Both versions print the same symbol. If the group changes how it writes the real numbers, only the definition of `\reals` changes.
 
-Latin letters follow the same rule, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.
+The macro for a set picks its font by what the set holds:
+
+- A standard number set, such as the real numbers or the natural numbers, prints in blackboard bold: `\reals` prints $\reals$, and `\Nat` prints $\Nat$.
+- Any other named set, such as a data set, a model family, or the [range](https://morrison-lab.github.io/mcs/functions.html#def-range) of a random variable, prints as a calligraphic capital: `\dataset` prints $\dataset$, `\modelfam` prints $\modelfam$, and `\range` prints $\range$.
+
+Neither font is reserved for sets. Blackboard bold also prints the expectation operator $\Expp$ and the probability operator $\P$, and a calligraphic capital also prints named functions such as the likelihood, $\Lik$. The shared macros’ [notation choices](https://morrison-lab.github.io/macros/notation-choices.html) explain several of these choices. When you add a macro for a new set, give its definition the font that this rule picks.
+
+Latin letters follow the semantic-macro rule too, with the same single exception for letters of either alphabet. Outside a passage that discusses the notation itself, do not write a literal Latin or Greek letter in a math expression. The exception is a one-off symbol that fits no semantic category. The shared macros already name outcome variables, covariates and generic parameters, so a one-off should almost never be needed. When a symbol has a category but no macro, add the macro to the shared file first. New macros always go in the group’s shared macros repository, never in a repository that applies them, unless that repository explicitly overrides the default meaning of one specific macro.
 
 Latin letters with a fixed role show the rule. In a regression or prediction model, use these macros:
 
