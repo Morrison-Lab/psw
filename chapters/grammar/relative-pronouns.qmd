@@ -74,7 +74,7 @@ When *whose*, *which*, *that* or *who* follows two or more nouns,
 the reader takes the closest one as the referent.
 If you mean an earlier noun,
 repeat it, and start a new sentence with it.
-This is the general rule for every pronoun:
+The nearest-noun rule is one case of the general rule for every pronoun:
 each one has a single antecedent
 that the reader can identify without guessing
 (see also [Demonstrative pronouns](#demonstrative-pronouns)).
