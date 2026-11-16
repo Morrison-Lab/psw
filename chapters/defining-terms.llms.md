@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-15 11:54:59 (PST)
+Last modified: 2026-11-15 17:35:34 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -67,6 +67,16 @@ Follow these principles when introducing new [term](#def-term)s:
   then show that $\bar{\delta} = \bar{y} - \mu$. Defining $\bar{\delta}$ as $\bar{y} - \mu$ states a result in place of the meaning, and hides that the symbol is a mean of the deviations.
 
 - **Put only the defining equation in a definition, and state equivalences as results:** A definition div displays one equation, the one that links the symbol of the defined [term](#def-term) to its definitional expression. It does not display a chain of equal expressions, and it does not display an equivalent form. It does not state that the defined concept is the same as, or equivalent to, another concept either. State each equality between expressions, and each equivalence between concepts, in its own result (a theorem, lemma, corollary or proposition) after the definition. For example, define the residual [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) at $x$ as $\sigma^2\stackrel{\text{def}}{=}{{\operatorname{Var}\mathopen{}\left(\varepsilon \mid X= x\right)\mathclose{}}}$, then state $\sigma^2= {{\operatorname{Var}\mathopen{}\left(Y \mid X= x\right)\mathclose{}}}$ as a result. A definition that also shows $= {{\operatorname{Var}\mathopen{}\left(Y \mid X= x\right)\mathclose{}}}$ asserts a result without a statement or a proof, and the reader cannot tell which equality is the definition. The same holds for a sentence: a definition that adds “equivalently, the variance of the outcome given the covariates” states a result, so it belongs in one.
+
+- **Say in prose whether “is” defines or asserts:** In mathematics, $\stackrel{\text{def}}{=}$ marks a definition and $=$ marks a result, but the [copula](../chapters/avoid-cliches.llms.md#def-copula) “is” can mean either. Inside a definition div, the bold [term](#def-term) with “is” defines it, as $\stackrel{\text{def}}{=}$ does. Outside one, write “is defined as” when a sentence restates a definition, and link that definition. When two concepts that each have their own definition turn out to agree, write “equals” or “is the same as”, and link the result that proves it. A bare “is” between two defined concepts leaves the reader to guess whether the sentence is a definition or a claim that needs a proof.
+
+  > ❌ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) is [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
+  >
+  > ✅ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) [equals](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#thm-cross-entropy-loss-is-log-loss) [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
+
+  Each loss has its own definition, so the ✅ sentence links the theorem that proves they agree.
+
+  Neither “is defined as” nor “equals” is an inflated copula such as “serves as”, so the rule keeps the plain verbs that [Avoiding clichés](../chapters/avoid-cliches.llms.md) asks for.
 
 - **Write both sides of a definition in the same notation:** The symbol on the left names an object, and the right side expands that object’s own definition. It does not describe the object in another way, because the step from one description to the other is a result. For example, with the conditional expectation [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\mu$ and its prediction error ${{\varepsilon_{\text{pred}}}\mathopen{}\left(\mu\right)\mathclose{}}$, define the residual risk as ${R\mathopen{}\left(\mu\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[{\mathopen{}\left({{\varepsilon_{\text{pred}}}\mathopen{}\left(\mu\right)\mathclose{}}\right)\mathclose{}}^{2}\right]\mathclose{}}$, not as ${R\mathopen{}\left(\mu\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[{\mathopen{}\left(Y- {\mathbb{E}\mathopen{}\left[Y\mid X\right]\mathclose{}}\right)\mathclose{}}^{2}\right]\mathclose{}}$. The second form spells the function $\mu$ out on the right but names it on the left, so a reader cannot tell whether the two sides describe the same object. Derive the second form from the first in a proof.
 
