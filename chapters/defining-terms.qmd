@@ -506,7 +506,7 @@ Follow these principles when introducing new [term](#def-term)s:
   ([gha#2034](https://github.com/Morrison-Lab/gha/issues/2034)).
 
 - **Name the content type when you refer to a title:**
-  When text refers to a section, subsection, chapter, page, book, article or video by its title,
+  When text refers to a section, subsection, chapter, page, book, article, or video by its title,
   name the type of content beside the title, and link only the title.
   The type tells the reader what they will land on,
   and a bare title reads as a term or a name, not as a place to go.
@@ -522,7 +522,7 @@ Follow these principles when introducing new [term](#def-term)s:
   The `check-title-references` check in gha
   ([gha#2046](https://github.com/Morrison-Lab/gha/issues/2046))
   flags a link whose text is the title of the heading or page it targets, with no type word beside it.
-  It cannot see a book, article or video, because their titles live off-site,
+  It cannot see a book, article, or video, because their titles live off-site,
   so check those by hand.
 
 - **Do not presuppose what the reader has not encountered:**
