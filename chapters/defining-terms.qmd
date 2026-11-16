@@ -497,8 +497,13 @@ Follow these principles when introducing new [term](#def-term)s:
   and it separates the link from the place where the term does its work.
   If a term sits inside math, where a link cannot go,
   name the term in words in the sentence and link those words.
+  The same holds for a single term:
+  write `[gradient descent](gradient-descent.qmd)`,
+  not `gradient descent ([Gradient Descent](gradient-descent.qmd))`.
   The `check-quarto-prose` check in
-  [gha](https://github.com/Morrison-Lab/gha/pull/1271) flags a parenthetical that opens with `(definition:` or `(definitions:`.
+  [gha](https://github.com/Morrison-Lab/gha/pull/1271) flags a parenthetical that opens with `(definition:` or `(definitions:`,
+  and the `check-avoided-words` check flags a parenthetical that holds only a link
+  ([gha#2034](https://github.com/Morrison-Lab/gha/issues/2034)).
 
 - **Do not presuppose what the reader has not encountered:**
   A definite noun phrase, one that starts with "the",
