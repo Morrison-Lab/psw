@@ -57,3 +57,12 @@ jobs:
         before it, a bare sentence-initial "this" or "it" must have an obvious
         referent, and where the intended noun is further back the sentence
         should repeat the noun (psw chapters/grammar/relative-pronouns.qmd).
+        Check the verb that opens each added mathematical statement (psw
+        chapters/notation/verbs-for-each-step.qmd, psw#671): "let" only
+        introduces a new object, possibly with its constraint; "suppose" or
+        "assume" states a condition that could fail; a consequence of earlier
+        definitions or results opens with "by" and names its source; and
+        notation is named with "denote", not "write". Flag a "let" in front
+        of an equation that follows from definitions already given, such as
+        "let Y = mu(x) + epsilon" after the noise is defined. No check can
+        decide this, because it depends on what the text has defined.
