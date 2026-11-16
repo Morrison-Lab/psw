@@ -70,7 +70,7 @@ otherwise, use *that*.
 ### Attach a relative pronoun to the nearest noun
 
 A relative pronoun refers to the noun just before it.
-When *whose*, *which*, *that* or *who* follows two or more nouns,
+When *whose*, *which*, *that*, or *who* follows two or more nouns,
 the reader takes the closest one as the referent.
 If you mean an earlier noun,
 repeat it, and start a new sentence with it.
