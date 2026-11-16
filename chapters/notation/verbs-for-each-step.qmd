@@ -52,7 +52,7 @@ as the [Use literal language](inclusive-writing.qmd#use-literal-language) sectio
 ## Naming notation with "denote"
 
 > ❌ Choose the number of features before fitting the network.
-> Write $L$ for that number.
+> Write $L$ for that number. <!-- check-avoided-words: allow -->
 >
 > ✅ Choose the number of features before fitting the network.
 > Let $L$ denote that number.
@@ -63,7 +63,7 @@ although the sentence only names a symbol.
 
 :::
 
-The `check-avoided-words` check in gha flags "write $X$ for", "writing $X$ for", and "is written $X$" on the lines that a pull request adds.
+The `check-avoided-words` check in gha flags "write $X$ for", "writing $X$ for", and "is written $X$" on the lines that a pull request adds. <!-- check-avoided-words: allow -->
 No check can tell a consequence from an assumption,
 because the answer depends on what the text has already defined,
 so a reviewer reads for the "let" and "suppose" rules.
