@@ -86,9 +86,9 @@ so a reviewer reads for it.
 
 ## Repeating the noun a relative pronoun should attach to
 
-> ❌ We place a normal distribution on each coefficient, **whose** variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example -->
+> ❌ We place a Gaussian distribution on each coefficient, **whose** variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example -->
 >
-> ✅ We place a normal distribution on each coefficient.
+> ✅ We place a Gaussian distribution on each coefficient.
 > **The distribution's** variance is fixed in advance. <!-- check-term-links: allow: quoted counter-example -->
 
 In the first sentence, "whose" can refer to "coefficient",
