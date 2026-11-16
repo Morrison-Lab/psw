@@ -273,12 +273,6 @@ the sentence is not yet ready to write.
 A reader attaches a pronoun or a demonstrative,
 such as *it*, *this*, *that*, *which*, *whose*, or *they*, <!-- check-definite-antecedents: allow -->
 to the nearest noun phrase before the pronoun that fits the grammar.
-A relative clause that opens with *whose* or *which* after a comma attaches the same way (Ezra, 2026-11-16).
-In "a Laplace distribution prior on each coefficient, whose density is not differentiable at zero", <!-- check-term-links: allow: quoted sentence from lds, not a use of the term -->
-the nearest noun is "coefficient",
-so the sentence gives the coefficient a density.
-End the sentence after "coefficient",
-and start the next one with the noun you mean: "The prior's density is not differentiable at zero."
 When that noun phrase is not the one you mean,
 the sentence still reads smoothly,
 so the reader takes away the wrong fact without ever being unsure.
@@ -305,6 +299,19 @@ Keep a pronoun whose nearest noun phrase is the one you mean:
 
 > ✅ The lasso sets some coefficients exactly to zero,
 > so it also selects variables.
+
+A relative clause that opens with *whose* or *which* after a comma attaches the same way (Ezra, 2026-11-16).
+
+> ❌ The lasso penalty corresponds to a Laplace distribution prior on each coefficient, <!-- check-term-links: allow: quoted sentence from lds, not a use of the term -->
+> whose density is not differentiable at zero.
+>
+> ✅ The lasso penalty corresponds to a Laplace distribution prior on each coefficient. <!-- check-term-links: allow: quoted sentence from lds, not a use of the term -->
+> The prior's density is not differentiable at zero. <!-- check-term-links: allow: quoted sentence from lds, not a use of the term -->
+
+In the ❌ version, the nearest noun before *whose* is "coefficient",
+so the sentence gives the coefficient a density.
+The rewrite ends the sentence after "coefficient"
+and starts the next one with the noun it means.
 
 # Give a technical word one meaning
 
