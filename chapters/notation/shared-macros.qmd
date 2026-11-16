@@ -131,7 +131,7 @@ The macro for a set picks its font by what the set holds:
   `\dataset` prints $\dataset$, `\modelfam` prints $\modelfam$, and `\range` prints $\range$.
 
 Neither font is reserved for sets.
-Blackboard bold also prints the expectation and probability operators, $\Expp$ and $\P$,
+Blackboard bold also prints the expectation operator $\Expp$ and the probability operator $\P$,
 and a calligraphic capital also prints named functions such as the likelihood, $\Lik$.
 The shared macros' [notation choices](https://morrison-lab.github.io/macros/notation-choices.html)
 explain several of these choices.
