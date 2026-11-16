@@ -15,7 +15,8 @@ Use each verb only for its own job:
   or "$\predval$ denotes the prediction".
 
 A "let" in front of a consequence presents a fact as a choice.
-The reader then has to work out whether the equation is a definition, a new assumption,
+The reader then has to work out whether the equation is a definition,
+a new assumption,
 or a result that follows from earlier definitions.
 Name the source with "by" instead,
 so the reader can check the step.
@@ -31,13 +32,13 @@ so the reader can check the step.
 > By the definition of the noise $\noise \eqdef \Outvar - \truemeanf{\predvar}$,
 > the output variable $\Outvar$ equals $\truemeanf{\predvar} + \noise$.
 
-The ❌ sentence appeared in an earlier version of this guide,
-in the [Random variables and their values](#random-variables-and-their-values) section.
 The "let" in the ❌ sentence suggests that the equation is an assumption about the output variable.
 The noise is defined as the output variable minus its mean,
-so the equation follows from that definition,
-as the [Guidelines for defining terms](defining-terms.qmd#guidelines-for-defining-terms) section asks of a statistical model.
-The ✅ sentence names that definition as the source.
+so the equation follows from that definition.
+The [Guidelines for defining terms](defining-terms.qmd#guidelines-for-defining-terms) section asks for the same order:
+define a model by the distribution of its outcome,
+then derive the sum of the mean and the noise as a result.
+The ✅ sentence names the definition of the noise as the source.
 
 :::
 
@@ -63,7 +64,9 @@ although the sentence only names a symbol.
 
 :::
 
-The `check-avoided-words` check in gha flags "write $X$ for", "writing $X$ for", and "is written $X$" on the lines that a pull request adds. <!-- check-avoided-words: allow -->
+The [`check-avoided-words` workflow](https://morrison-lab.github.io/gha/reference/check-avoided-words.html)
+in Morrison-Lab/gha flags "write $X$ for", "writing $X$ for", and "is written $X$" <!-- check-avoided-words: allow -->
+on the lines that a pull request adds.
 No check can tell a consequence from an assumption,
 because the answer depends on what the text has already defined,
 so a reviewer reads for the "let" and "suppose" rules.

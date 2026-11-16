@@ -71,7 +71,7 @@ or "take the observed value $\outvar$ as given".
 > ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanf{\predvar} + \noise$.
 >
 > ✅ Choose an input value $\predvar$.
-> By the definition of the noise $\noise$,
+> By the definition of the noise $\noise \eqdef \Outvar - \truemeanf{\predvar}$,
 > the output variable $\Outvar$ equals $\truemeanf{\predvar} + \noise$.
 
 The ❌ version leaves the reader to work out
