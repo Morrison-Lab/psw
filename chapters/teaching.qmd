@@ -584,7 +584,7 @@ both help students learn [@pashler2007, recommendations 3 and 4].
   as it does for an example
   ([gha#1262](https://github.com/Morrison-Lab/gha/pull/1262)).
 - Pair every geometric claim with a figure that shows it (Ezra, 2026-11-16).
-  A geometric claim describes a shape, a direction or a movement,
+  A geometric claim describes a shape, a direction, or a movement,
   such as "the loss has elliptical contours",
   "the penalty has circular contours centered at zero",
   or "the slopes shrink toward zero as the penalty grows".
