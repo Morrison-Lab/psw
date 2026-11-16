@@ -271,8 +271,14 @@ the sentence is not yet ready to write.
 # Name the referent when a closer noun could take the pronoun
 
 A reader attaches a pronoun or a demonstrative,
-such as *it*, *this*, *that*, *which*, or *they*, <!-- check-definite-antecedents: allow -->
+such as *it*, *this*, *that*, *which*, *whose*, or *they*, <!-- check-definite-antecedents: allow -->
 to the nearest noun phrase before the pronoun that fits the grammar.
+A relative clause that opens with *whose* or *which* after a comma attaches the same way (Ezra, 2026-11-16).
+In "a Laplace distribution prior on each coefficient, whose density is not differentiable at zero",
+the nearest noun is "coefficient",
+so the sentence gives the coefficient a density.
+End the sentence after "coefficient",
+and start the next one with the noun you mean: "The prior's density is not differentiable at zero."
 When that noun phrase is not the one you mean,
 the sentence still reads smoothly,
 so the reader takes away the wrong fact without ever being unsure.
