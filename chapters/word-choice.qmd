@@ -564,6 +564,33 @@ does not refer to a position in the document and is fine.
 
 :::
 
+# Name the kind of content when you refer to it by its title
+
+When a sentence refers to a section, subsection, chapter, book or article by its title,
+say what kind of content the title names,
+and link only the title (Ezra, 2026-11-16).
+A bare title reads as part of the sentence.
+"See Practical considerations" leaves the reader to guess
+whether the words name a section, a book or a piece of advice.
+The kind of content tells the reader what to expect at the link,
+and it keeps the sentence grammatical
+when the title is a phrase rather than a noun.
+
+:::{#exm-name-content-type}
+
+# Naming a section referred to by its title
+
+> ❌ `The intercept is left unpenalized, as [Practical considerations](#practical-considerations) explains.`
+>
+> ✅ `The intercept is left unpenalized, as the [Practical considerations](#practical-considerations) section explains.`
+
+The link stays on the title,
+and "the" and "section" stay outside it.
+The same pattern names a book or an article:
+"the book [*An Introduction to Statistical Learning*](https://www.statlearning.com/)".
+
+:::
+
 # Leave out words that judge difficulty or add nothing
 
 "Just" and "easy" ("easily") rarely carry meaning.
