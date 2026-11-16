@@ -205,6 +205,31 @@ Follow these principles when introducing new [term](#def-term)s:
   a definition that adds "equivalently, the variance of the outcome given the covariates"
   states a result, so it belongs in one.
 
+- **Say in prose whether "is" defines or asserts:**
+  In mathematics, $\eqdef$ marks a definition
+  and $=$ marks a result,
+  but the [copula](avoid-cliches.qmd#def-copula) "is" can mean either.
+  Inside a definition div,
+  the bold [term](#def-term) with "is" defines it, as $\eqdef$ does.
+  Outside one,
+  write "is defined as" when a sentence restates a definition,
+  and link that definition.
+  When two concepts that each have their own definition turn out to agree,
+  write "equals" or "is the same as",
+  and link the result that proves it.
+  A bare "is" between two defined concepts leaves the reader to guess
+  whether the sentence is a definition or a claim that needs a proof.
+
+  > ❌ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) is [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
+  >
+  > ✅ [Cross-entropy loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-cross-entropy-loss) [equals](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#thm-cross-entropy-loss-is-log-loss) [log loss](https://morrison-lab.github.io/lds/chapters/logistic-regression-fitting.html#def-log-loss).
+
+  Each loss has its own definition,
+  so the ✅ sentence links the theorem that proves they agree.
+
+  Neither "is defined as" nor "equals" is an inflated copula such as "serves as",
+  so the rule keeps the plain verbs that [Avoiding clichés](avoid-cliches.qmd) asks for.
+
 - **Write both sides of a definition in the same notation:**
   The symbol on the left names an object,
   and the right side expands that object's own definition.
