@@ -520,9 +520,9 @@ Follow these principles when introducing new [term](#def-term)s:
   write "the book *Title*" or "the article [Title](https://example.org)", not the title alone.
   A `@sec-` crossref renders its own "Section n" label.
   It needs no type word.
-  A `check-title-references` check for gha
-  ([gha#2048](https://github.com/Morrison-Lab/gha/pull/2048), not yet merged)
-  would flag a link whose text is the title of the heading or page it targets, with no type word beside it.
+  The `check-title-references` check in gha
+  ([gha#2048](https://github.com/Morrison-Lab/gha/pull/2048))
+  flags a link whose text is the title of the heading or page it targets, written in the title's case, with no type word beside it.
   It cannot see a book, article, or video.
   Their titles live off-site,
   so check those by hand.
