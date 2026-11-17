@@ -98,6 +98,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/assumptions-first.qmd >}}
 
+# Choosing the verb for each step: let, suppose, by, and denote
+
+{{< include notation/verbs-for-each-step.qmd >}}
+
 # Separating the framing from the conclusions
 
 {{< include notation/framing-apart-from-conclusions.qmd >}}

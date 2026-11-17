@@ -42,12 +42,13 @@ The sample mean of the random variables, $\bar{Y}$, is itself a random variable.
 
 Match the notation to the claim:
 
-- Write $\Pr(Y \le y)$ for a probability,
+- Denote a probability by $\Pr(Y \le y)$,
   with the random variable on the left of the inequality
   and the value on the right.
-- Write $\text{E}[Y]$ and $\text{Var}(Y)$ for the mean and [variance](defining-terms.qmd#def-variance-expression-and-prose)
-  of a random variable,
-  never $\text{E}[y]$ or $\text{Var}(y)$ for an observed value.
+- Denote the mean of a random variable by $\E{Y}$.
+  Never write the mean as $\E{y}$ for an observed value.
+- Denote the [variance](defining-terms.qmd#def-variance-expression-and-prose) of a random variable by $\Var{Y}$.
+  Never write the variance as $\Var{y}$ for an observed value.
 - Write a statistic computed from observed values with lowercase letters,
   as in $\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i$,
   and the same statistic as a random variable with capitals,
@@ -69,8 +70,9 @@ or "take the observed value $\outvar$ as given".
 
 > ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanf{\predvar} + \noise$.
 >
-> ✅ Choose an input value $\predvar$,
-> and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
+> ✅ Choose an input value $\predvar$.
+> By the definition of the noise $\noise \eqdef \Outvar - \truemeanf{\predvar}$,
+> the output variable $\Outvar$ equals $\truemeanf{\predvar} + \noise$.
 
 The ❌ version leaves the reader to work out
 that $\predvar$ is a number you choose and $\Outvar$ is random.

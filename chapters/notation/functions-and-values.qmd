@@ -39,14 +39,14 @@ the nearest candidate is the mean function, not the outcome.
 
 Use the notation to match:
 
-- Write $\mu$, or "the mean function", for the function itself.
-- Write $\mu(x)$ with a placeholder argument
+- Denote the function itself by $\mu$, or call it "the mean function".
+- Include a placeholder argument, as in $\mu(x)$,
   where you introduce or define the function,
   to show what its argument is,
   as in "a mean function $\mu(x)$"
   or $\mu(x) := \beta_0 + \beta_x x$,
   and say "evaluated at" when you substitute a point into it.
-- Write $\mu(x_i)$, or "the value of $\mu$ at $x_i$", for a value.
+- Denote a value by $\mu(x_i)$, or call it "the value of $\mu$ at $x_i$".
 
 ::: {#def-fitted-value}
 
