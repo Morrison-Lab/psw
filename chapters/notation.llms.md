@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 18:16:08 (PST)
+Last modified: 2026-11-16 19:46:49 (PST)
 
 > **NOTE:**
 >
@@ -130,7 +130,7 @@ When a step relies on a fact the document has not yet shown, such as deviations 
 
 ### 2.0.4 Long derivations
 
-Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as writing $d_i$ for $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$, can also keep each line short.
+Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as letting $d_i$ denote $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$, can also keep each line short.
 
 #### Show why you need a result before you derive it
 
@@ -215,9 +215,9 @@ A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) and
 
 Use the notation to match:
 
-- Write $\mu$, or “the mean function”, for the function itself.
-- Write $\mu(x)$ with a placeholder argument where you introduce or define the function, to show what its argument is, as in “a mean function $\mu(x)$” or $\mu(x) := \beta_0 + \beta_x x$, and say “evaluated at” when you substitute a point into it.
-- Write $\mu(x_i)$, or “the value of $\mu$ at $x_i$”, for a value.
+- Denote the function itself by $\mu$, or call it “the mean function”.
+- Include a placeholder argument, as in $\mu(x)$, where you introduce or define the function, to show what its argument is, as in “a mean function $\mu(x)$” or $\mu(x) := \beta_0 + \beta_x x$, and say “evaluated at” when you substitute a point into it.
+- Denote a value by $\mu(x_i)$, or call it “the value of $\mu$ at $x_i$”.
 
 > **NOTE:**
 >
@@ -288,8 +288,9 @@ State the convention where you first use the symbols. Keep it in every later sec
 
 Match the notation to the claim:
 
-- Write $\Pr(Y \le y)$ for a probability, with the random variable on the left of the inequality and the value on the right.
-- Write $\text{E}[Y]$ and $\text{Var}(Y)$ for the mean and [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable, never $\text{E}[y]$ or $\text{Var}(y)$ for an observed value.
+- Denote a probability by $\Pr(Y \le y)$, with the random variable on the left of the inequality and the value on the right.
+- Denote the mean of a random variable by $\E{Y}$. Never write the mean as $\E{y}$ for an observed value.
+- Denote the [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable by $\Var{Y}$. Never write the variance as $\Var{y}$ for an observed value.
 - Write a statistic computed from observed values with lowercase letters, as in $\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i$, and the same statistic as a random variable with capitals, $\bar{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$. The first is a number, such as 2.4. The second has a sampling distribution.
 
 Name the kind of object in the words, too, not only in the symbol. Call a random variable a “variable”, such as “the output variable $\Outvar$”, and call a number a “value”, such as “the input value $\predvar$” or “the observed value $\outvar$”. Do not say “fix $\predvar$” or “let $\predvar$ be fixed”. It does not say whether $\predvar$ is a variable held constant or a value you chose. Say “choose an input value $\predvar$”, or “take the observed value $\outvar$ as given”.
@@ -300,7 +301,7 @@ Name the kind of object in the words, too, not only in the symbol. Call a random
 >
 > > ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanf{\predvar} + \noise$.
 > >
-> > ✅ Choose an input value $\predvar$, and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
+> > ✅ Choose an input value $\predvar$. By the definition of the noise $\noise \eqdef \Outvar - \truemeanf{\predvar}$, the output variable $\Outvar$ equals $\truemeanf{\predvar} + \noise$.
 >
 > The ❌ version leaves the reader to work out that $\predvar$ is a number you choose and $\Outvar$ is random. The ✅ version names the input as a value and the output as a variable, which is what the symbols say.
 
@@ -504,7 +505,7 @@ Replace each sub-expression that you are not manipulating with a symbol that sta
 
 This is one case of [making each expression as concise as possible](#making-expressions-concise). It also asks for the habit behind that advice: split a long expression into short named pieces, and give each piece the symbol or [shared macro](#using-shared-macros) that names its concept.
 
-Choose the symbol to match the thing it names. For the [population](../chapters/defining-terms.llms.md#def-population) mean $\E{X}$, write $\mu$. Add a subscript, such as $\mu_X$, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let $\mu = \E{X}$”, before the first line that uses the symbol.
+Choose the symbol to match the thing it names. Denote the [population](../chapters/defining-terms.llms.md#def-population) mean $\E{X}$ by $\mu$. Add a subscript, such as $\mu_X$, only when the context holds a second mean and the reader could confuse the two. State the abstraction once, in a sentence such as “Let $\mu = \E{X}$”, before the first line that uses the symbol.
 
 > **NOTE:**
 >
@@ -779,7 +780,42 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
-# 21 Separating the framing from the conclusions
+# 21 Choosing the verb for each step: let, suppose, by, and denote
+
+Each verb that opens a mathematical statement tells the reader what kind of statement follows. Use each verb only for its own job:
+
+- “Let” introduces a new object, as in “let $\predvar$ be an input value”. It can carry a constraint on that new object, as in “let $x \neq 2$”.
+- “Suppose” or “assume” states a condition on objects already introduced, a condition that could fail and that the result depends on, as in “assume that $\Sigma$ is positive definite”.
+- “By”, followed by its source, states a consequence of what is already established, as in “by [linearity of expectation](https://morrison-lab.github.io/pds/expectation.html#thm-linearity-expectation), $\E{X + Y} = \E{X} + \E{Y}$”.
+- “Denote” names notation for an object described in words, as in “let $\predval$ denote the prediction” or “$\predval$ denotes the prediction”.
+
+A “let” in front of a consequence presents a fact as a choice. The reader then has to work out whether the equation is a definition, a new assumption, or a result that follows from earlier definitions. Name the source with “by” instead, so the reader can check the step.
+
+> **NOTE:**
+>
+> **Example 35 (Stating a consequence with “by”)**  
+>
+> > ❌ Choose an input value $\predvar$, and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
+> >
+> > ✅ Choose an input value $\predvar$. By the definition of the noise $\noise \eqdef \Outvar - \truemeanf{\predvar}$, the output variable $\Outvar$ equals $\truemeanf{\predvar} + \noise$.
+>
+> The “let” in the ❌ sentence suggests that the equation is an assumption about the output variable. The noise is defined as the output variable minus its mean, so the equation follows from that definition. The [Guidelines for defining terms](../chapters/defining-terms.llms.md#guidelines-for-defining-terms) section asks for the same order: define a model by the distribution of its outcome, then derive the sum of the mean and the noise as a result. The ✅ sentence names the definition of the noise as the source.
+
+Use “denote”, not “write”, to name notation. “Write” names the physical act of putting marks on a page, and “write $X$ in terms of $Y$” already means “express”, as the [Use literal language](../chapters/inclusive-writing.llms.md#use-literal-language) section explains. “Denote” names the relation between a symbol and the object that the symbol stands for.
+
+> **NOTE:**
+>
+> **Example 36 (Naming notation with “denote”)**  
+>
+> > ❌ Choose the number of features before fitting the network. Write $L$ for that number.
+> >
+> > ✅ Choose the number of features before fitting the network. Let $L$ denote that number.
+>
+> The ❌ sentence adapts a passage of the lab’s notes on neural networks. The “write” in the ❌ sentence reads as an instruction to the reader, although the sentence only names a symbol.
+
+The [`check-avoided-words` workflow](https://morrison-lab.github.io/gha/reference/check-avoided-words.html) in Morrison-Lab/gha flags “write $X$ for”, “writing $X$ for”, and “is written $X$” on the lines that a pull request adds. No check can tell a consequence from an assumption, because the answer depends on what the text has already defined, so a reviewer reads for the “let” and “suppose” rules.
+
+# 22 Separating the framing from the conclusions
 
 Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:
 
@@ -794,7 +830,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 
 > **NOTE:**
 >
-> **Example 35 (Separating the function and its gradient from the stationary point)**  
+> **Example 37 (Separating the function and its gradient from the stationary point)**  
 >
 > > ❌ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$, which is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
 > >
@@ -806,7 +842,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 >
 > In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is $f$ and its gradient, and the second holds the conclusion.
 
-# 22 Writing a quantity’s symbol on the left
+# 23 Writing a quantity’s symbol on the left
 
 When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.
 
@@ -819,7 +855,7 @@ The rule holds for any quantity that later steps use:
 
 > **NOTE:**
 >
-> **Example 36 (Writing the gradient with its symbol)**  
+> **Example 38 (Writing the gradient with its symbol)**  
 >
 > > ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
 > >
@@ -829,7 +865,7 @@ The rule holds for any quantity that later steps use:
 >
 > The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
 
-# 23 Choosing delimiters and scripts
+# 24 Choosing delimiters and scripts
 
 Choose each delimiter and each script by what it says, so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](../chapters/defining-terms.llms.md#def-term)s, and an index from a power.
 
@@ -853,7 +889,7 @@ Give the characteristic of a random variable a subscript when it has its own sym
 
 > **NOTE:**
 >
-> **Example 37 (A characteristic with its own symbol)**  
+> **Example 39 (A characteristic with its own symbol)**  
 >
 > > ❌ The [precision](https://morrison-lab.github.io/pds/variance-covariance.html#def-precision) of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
 > >
