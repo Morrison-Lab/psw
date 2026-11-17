@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 19:52:57 (PST)
+Last modified: 2026-11-16 20:38:49 (PST)
 
 > **NOTE:**
 >
@@ -286,7 +286,7 @@ Connecting an abstract idea to a concrete case, and pairing words with a figure,
 - Make each figure follow the accessibility rules below.
 - Discuss and cross-reference every figure in the prose (Ezra, 2026-11-02). Cite it with `@fig-id`, and say what the reader should see in it. A figure that no sentence cites or interprets is decoration.
 - Nest a figure that belongs to one example or exercise inside that `#exm-`, `#exr-` or `#sol-` div (Ezra, 2026-11-02). A figure outside the div leaves the example or exercise incomplete when the reader meets it alone, and moves with the wrong text when the page is reorganized. Leave a figure that several examples share outside every div, and cite it from each. The `check-figure-placement` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each figure on a changed line that no prose cites and each figure placed directly after an example, exercise or solution div without being inside it. A `<!-- figure-placement: allow -->` comment on the figure or inside its div suppresses the report for a shared figure ([gha#1378](https://github.com/Morrison-Lab/gha/pull/1378)).
-- Pair every geometric claim with a figure nearby (Ezra, 2026-11-16). A claim such as “the loss has elliptical contours” or “the penalty has circular contours centered at the origin” asks the reader to see a shape, so show the shape in a plot or diagram within a few lines of the claim, and cite it with `@fig-id`. The `check-geometric-figures` workflow proposed in [`gha`](https://github.com/Morrison-Lab/gha) would report, in a pull request, each added line that has no figure within 40 lines or in an enclosing div and says one of these: contour, ellipse, circle, level set, tangent line, hyperplane, decision boundary, perpendicular, “projects onto”, “geometrically”, or right angle. A `<!-- no-figure: reason -->` comment nearby would exempt a claim that no figure can show ([gha#2044](https://github.com/Morrison-Lab/gha/issues/2044)). A check sees only that some figure is near. It cannot see that the figure shows the claim, so the Claude review checks that the figure draws the shapes the sentence names.
+- Pair every geometric claim with a figure nearby (Ezra, 2026-11-16). A claim such as “the loss has elliptical contours” or “the penalty has circular contours centered at the origin” asks the reader to see a shape, so show the shape in a plot or diagram within a few lines of the claim, and cite it with `@fig-id`. The `check-geometric-figures` workflow in [`gha`](https://github.com/Morrison-Lab/gha) reports, in a pull request, each added line that has no figure within 40 lines or in an enclosing div and says one of these: contour, ellipse, circle, level set, tangent line, hyperplane, decision boundary, perpendicular, “projects onto”, “geometrically”, or right angle. A `<!-- no-figure: reason -->` comment nearby exempts a claim that no figure can show ([gha#2044](https://github.com/Morrison-Lab/gha/issues/2044)). A check sees only that some figure is near. It cannot see that the figure shows the claim, so the Claude review checks that the figure draws the shapes the sentence names.
 
 # 16 Follow every example with an exercise and solution
 
