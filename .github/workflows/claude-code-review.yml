@@ -57,3 +57,7 @@ jobs:
         before it, a bare sentence-initial "this" or "it" must have an obvious
         referent, and where the intended noun is further back the sentence
         should repeat the noun (psw chapters/grammar/relative-pronouns.qmd).
+        Check that every geometric claim in added prose (contours, ellipses,
+        circles, level sets, tangents, hyperplanes, decision boundaries,
+        projections) has a figure nearby that draws the shapes the sentence
+        names; a figure that shows something else does not count.
