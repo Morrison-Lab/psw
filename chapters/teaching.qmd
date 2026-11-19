@@ -803,7 +803,8 @@ in every course and every teaching repository, not only to one course.
 A lab applies what the exposition pages teach,
 and teaches nothing new itself (Ezra, 2026-11-19).
 A definition or a result that first appears in a lab is missed by every reader who studies only the exposition page,
-and is hard to find again, because readers do not look for theory in a lab.
+and is hard to find again,
+because readers do not look for theory in a lab.
 
 - Put every definition, theorem, lemma, proposition, corollary, remark,
   and explanation of a concept on the exposition page for its topic.
@@ -816,9 +817,11 @@ and is hard to find again, because readers do not look for theory in a lab.
   and leave the lab with the applied exercises and their solutions.
 
 A check can see a definition or result div in a lab,
-so gha's `check-lab-exposition` fails a pull request that adds one to a lab page.
+so gha's `check-lab-exposition` check, proposed in [gha#2136](https://github.com/Morrison-Lab/gha/pull/2136),
+fails a pull request that adds one to a lab page in a repository that runs it.
+Until a repository runs it, a reviewer enforces the whole rule there.
 No check can tell an explanation from an instruction,
-so a reviewer enforces the rest of the rule.
+so a reviewer always enforces the rest of the rule.
 
 # Phrase optional steps as conditions
 
