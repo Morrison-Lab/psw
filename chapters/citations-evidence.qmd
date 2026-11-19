@@ -548,11 +548,13 @@ The sites get this from the shared citation style and filter in
 
 # Let the citation name the source {#let-citation-name-source}
 
-Keep a citation short, and let its markup print what it can.
+Keep a citation short,
+and let its markup print what it can.
 An in-text citation, `@key`, prints the author names,
 so do not also type them in the sentence around it,
 and do not add "a figure in" or "the book by" to point to the source.
-To point to a part of the source, put a locator in brackets after the key, such as `@key [Figure 6.7]` or `@key [p. 18]`.
+To point to a part of the source, put a locator in brackets after the key,
+such as `@key [Figure 6.7]` or `@key [p. 18]`.
 
 ::: {#exm-citation-names-source}
 
