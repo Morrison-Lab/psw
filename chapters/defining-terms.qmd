@@ -390,8 +390,11 @@ Follow these principles when introducing new [term](#def-term)s:
   so that every link to a definition points backward rather than forward
   (see [Avoid forward references](paper-organization.qmd#avoid-forward-references)).
   When a definition or theorem uses a term whose definition comes later in the document,
-  reorder the content so the definition comes first;
-  do not remove the hyperlink to hide the forward reference.
+  reorder the content so the definition comes first.
+  When there is no good way to reorder the content,
+  keep the forward reference and its hyperlink,
+  and say that the definition comes later.
+  Never remove the hyperlink to hide the forward reference.
 
 - **Give every key term a formal definition in a `#def-` div:**
   A term that the document relies on needs its own definition div,
