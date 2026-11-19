@@ -1,26 +1,39 @@
-Write parentheses that make operator precedence explicit,
-rather than leaving the reader to recall a precedence convention
-(Ezra, 2026-11-19).
+::: {#def-operator-precedence}
+
+## Operator precedence
+
+**Operator precedence** is the convention that decides
+which operator in an unparenthesized expression applies first,
+as when $2 + 3 \cdot 4$ means $2 + (3 \cdot 4)$.
+
+:::
+
+Write parentheses that make [operator precedence](#def-operator-precedence) explicit,
+rather than leaving the reader to recall the convention.
 A reader who is still learning the notation
-may not know whether $\lor$ binds more tightly than $\in$,
+may not know
+whether $\lor$ binds more tightly than $\in$,
 and a reader who knows the convention still has to stop and apply it.
 Parentheses answer the question on the page.
 
 Two cases come up most often:
 
-- **A relation beside a logical connective.**
+- **A relation beside a connective.**
   Parenthesize each comparison or membership
-  that is an operand of $\land$, $\lor$, $\Rightarrow$, or $\Leftrightarrow$.
+  that is an operand of a [logical connective](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-logical-connective)
+  such as $\land$, $\lor$, $\Rightarrow$, or $\Leftrightarrow$.
 - **Two kinds of connective together.**
-  Parenthesize whenever two different connectives share one level,
-  and whenever an implication or a biconditional repeats,
-  because neither is associative.
+  Parenthesize whenever two different connectives share one level.
+  Also parenthesize a repeated [implication](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-implies)
+  or a repeated [biconditional](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-iff),
+  because readers do not share a convention for how a chain of them groups,
+  and the two groupings of a chained implication mean different things.
   A repeated $\land$ or a repeated $\lor$ needs no parentheses,
   because every grouping of it has the same meaning.
 
-::: {#exm-precedence-parentheses}
+::: {#exm-precedence-parentheses-relations}
 
-## Parenthesizing a set builder and a compound proposition
+## Parenthesizing relations beside a connective
 
 > ❌ $\set{x : x \in A \lor x \in B}$ <!-- check-precedence-parens: allow -->
 >
@@ -30,6 +43,12 @@ Two cases come up most often:
 >
 > ✅ $(x > 0) \Rightarrow (x^2 > 0)$
 
+:::
+
+::: {#exm-precedence-parentheses-connectives}
+
+## Parenthesizing two kinds of connective
+
 > ❌ $P \land Q \lor R$ <!-- check-precedence-parens: allow -->
 >
 > ✅ $(P \land Q) \lor R$
@@ -38,12 +57,12 @@ Two cases come up most often:
 
 A separator already ends an operand,
 so it needs no parentheses of its own.
-The separators are the colon of a set builder,
-the comma that ends a quantifier, as in $\forall x \in A, P(x)$,
+The separators are the colon of a [set builder](https://morrison-lab.github.io/mcs/chapters/sets.html#def-set-builder),
+the comma that ends a [quantifier](https://morrison-lab.github.io/mcs/chapters/predicates-quantifiers.html#def-quantifier), as in $\forall x \in A, P(x)$,
 and a definition sign.
 
-The `check-precedence-parens` check in
-[gha](https://github.com/Morrison-Lab/gha)
+The `check-precedence-parens` check,
+which [gha#2118](https://github.com/Morrison-Lab/gha/pull/2118) adds to gha,
 fails a pull request that adds math breaking either rule.
 Mark a line that shows an ungrouped form on purpose,
 such as an exercise that asks which grouping is meant,
