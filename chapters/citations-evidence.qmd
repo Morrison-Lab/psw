@@ -546,6 +546,30 @@ Write the description first, and end the sentence with the bracketed `[@key]`.
 The sites get this from the shared citation style and filter in
 [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
+# Let the citation name the source {#let-citation-name-source}
+
+Keep a citation short, and let its markup print what it can.
+An in-text citation, `@key`, prints the author names,
+so do not also type them in the sentence around it,
+and do not add "a figure in" or "the book by" to point to the source.
+To point to a part of the source, put a locator in brackets after the key, such as `@key [Figure 6.7]` or `@key [p. 18]`.
+
+::: {#exm-citation-names-source}
+
+# Citing the figure that a layout follows
+
+> ❌ `The figure follows the layout of a figure in James et al. [@james2021islr2, Figure 6.7].`
+>
+> ✅ `The figure follows the layout of @james2021islr2 [Figure 6.7].`
+
+The first version types the author names by hand and adds "a figure in",
+so it spends six words on what the citation already says.
+Typed names can drift from the bibliography entry,
+and an author-year style prints them twice.
+On the notes sites, the second version prints as "The figure follows the layout of James et al. [2, Figure 6.7]."
+
+:::
+
 # Place a citation right after the claim it supports {#place-citation-after-claim}
 
 Place citations immediately after the claim or claims they support.
