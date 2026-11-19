@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-19 13:23:54 (PST)
+Last modified: 2026-11-19 14:14:58 (PST)
 
 > **NOTE:**
 >
@@ -133,7 +133,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Refute common misconceptions](../chapters/teaching.llms.md#refute-common-misconceptions) where the concept is defined or first used.
 - [Revisit earlier units in later exercises](../chapters/teaching.llms.md#revisit-earlier-units-in-later-exercises).
 - [Write labs in both R and Python](../chapters/teaching.llms.md#write-labs-for-both-languages-and-any-computer) that run on any computer.
-- [Keep expository content out of labs](../chapters/teaching.llms.md#keep-expository-content-out-of-labs): a lab links to the definitions and results that it uses.
+- Keep definitions and results out of labs: a lab links to the definitions and results that it uses, as the [Keep expository content out of labs](../chapters/teaching.llms.md#keep-expository-content-out-of-labs) section explains.
 - [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible).
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.
