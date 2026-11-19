@@ -27,7 +27,7 @@ Two cases come up most often:
   Also parenthesize a repeated [implication](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-implies)
   or a repeated [biconditional](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-iff),
   because readers do not share a convention for how a chain of them groups,
-  and the two groupings of a chained implication mean different things.
+  and the two groupings of a chained implication are different propositions.
   A repeated $\land$ or a repeated $\lor$ needs no parentheses,
   because every grouping of it has the same meaning.
 
