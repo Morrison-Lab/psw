@@ -22,6 +22,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/double-inequalities.qmd >}}
 
+# Parenthesizing to show precedence
+
+{{< include notation/precedence-parentheses.qmd >}}
+
 # One operation per step
 
 {{< include notation/one-operation-per-step.qmd >}}
