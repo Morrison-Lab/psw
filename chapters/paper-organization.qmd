@@ -308,8 +308,10 @@ while leaving the term in the sentence:
 the sentence still uses a concept the reader has not encountered,
 and the reader also loses the link to its definition.
 
-If moving the content would break the order of the argument,
-keep the pointer, and make it a working link.
+When there is no good way to reorder the material,
+because every order would break the argument or split a group the reader needs together,
+keep the forward reference, and make it a working link.
+A linked forward reference is better than no link at all.
 Say what the link points to and where it is,
 as in "Table 2 (later in this section)", with "Table 2" linked to the table.
 Do not delete the link and leave only the name.
