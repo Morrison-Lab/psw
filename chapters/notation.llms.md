@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 20:38:49 (PST)
+Last modified: 2026-11-18 22:07:37 (PST)
 
 > **NOTE:**
 >
@@ -52,7 +52,44 @@ Interval notation works best when the quantity being constrained is a single exp
 
 Finally, a chain that compares three *different* quantities — for example $\hat{\theta}_1 < \hat{\theta}_2 < \hat{\theta}_3$ — is not a constraint on a single quantity, so interval notation does not apply. Write such comparisons as separate statements ($\hat{\theta}_1 < \hat{\theta}_2$ and $\hat{\theta}_2 < \hat{\theta}_3$) unless the ordering of all three is the point you are making.
 
-# 2 One operation per step
+# 2 Parenthesizing to show precedence
+
+> **NOTE:**
+>
+> **Definition 2 (Operator precedence)** **Operator precedence** is the convention that decides which operator in an unparenthesized expression applies first, as when $2 + 3 \cdot 4$ means $2 + (3 \cdot 4)$.
+
+Write parentheses that make [operator precedence](#def-operator-precedence) explicit, rather than leaving the reader to recall the convention. A reader who is still learning the notation may not know whether $\lor$ binds more tightly than $\in$, and a reader who knows the convention still has to stop and apply it. Parentheses answer the question on the page.
+
+Two cases come up most often:
+
+- **A relation beside a connective.** Parenthesize each comparison or membership that is an operand of a [logical connective](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-logical-connective) such as $\land$, $\lor$, $\Rightarrow$, or $\Leftrightarrow$.
+- **Two kinds of connective together.** Parenthesize whenever two different connectives share one level. Also parenthesize a repeated [implication](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-implies) or a repeated [biconditional](https://morrison-lab.github.io/mcs/chapters/propositional-logic.html#def-iff), because readers do not share a convention for how a chain of them groups, and the two groupings of a chained implication are different propositions. A repeated $\land$ or a repeated $\lor$ needs no parentheses, because every grouping of it has the same meaning.
+
+> **NOTE:**
+>
+> **Example 3 (Parenthesizing relations beside a connective)**  
+>
+> > ❌ $\set{x : x \in A \lor x \in B}$
+> >
+> > ✅ $\set{x : (x \in A) \lor (x \in B)}$
+>
+> > ❌ $x > 0 \Rightarrow x^2 > 0$
+> >
+> > ✅ $(x > 0) \Rightarrow (x^2 > 0)$
+
+> **NOTE:**
+>
+> **Example 4 (Parenthesizing two kinds of connective)**  
+>
+> > ❌ $P \land Q \lor R$
+> >
+> > ✅ $(P \land Q) \lor R$
+
+A separator already ends an operand, so it needs no parentheses of its own. The separators are the colon of a [set builder](https://morrison-lab.github.io/mcs/chapters/sets.html#def-set-builder), the comma that ends a [quantifier](https://morrison-lab.github.io/mcs/chapters/predicates-quantifiers.html#def-quantifier), as in $\forall x \in A, P(x)$, and a definition sign.
+
+The `check-precedence-parens` check, which [gha#2118](https://github.com/Morrison-Lab/gha/pull/2118) adds to gha, fails a pull request that adds math breaking either rule. Mark a line that shows an ungrouped form on purpose, such as an exercise that asks which grouping is meant, with `<!-- check-precedence-parens: allow -->`.
+
+# 3 One operation per step
 
 Write a derivation so that each displayed line does exactly one thing to the line before it: apply one rule, substitute one result, or simplify one piece. Give each line its own justification.
 
@@ -60,7 +97,7 @@ Combining steps saves the writer a line and costs every reader a calculation. A 
 
 > **NOTE:**
 >
-> **Example 3 (Splitting a combined step)** Suppose a derivation has reached $-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
+> **Example 5 (Splitting a combined step)** Suppose a derivation has reached $-2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)$.
 >
 > > ❌ $$\begin{aligned}
 > > -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)
@@ -94,17 +131,17 @@ Common ways to combine steps without noticing:
 - canceling $n$ in $n \cdot \frac{b}{n}$ rewrites the division as multiplication by a reciprocal ($n \cdot (b \cdot \frac{1}{n})$), removes the parentheses ($n \cdot b \cdot \frac{1}{n}$), reorders the factors ($b \cdot n \cdot \frac{1}{n}$), groups the two that cancel ($b \cdot (n \cdot \frac{1}{n})$), replaces $n \cdot \frac{1}{n}$ with $1$ ($b \cdot 1$), and drops the $\cdot 1$;
 - writing “setting this to zero and dividing by $-2n$ gives”, which hides two operations in a sentence.
 
-### 2.0.1 Name a step by its standard rule
+### 3.0.1 Name a step by its standard rule
 
 Justify a line with the standard name of the rule it applies, not an informal description of what it does to the symbols. Write “distribute the sum over the terms” rather than “split the sum”, and “factor the constant out of the sum” rather than “pull out the constant”. A standard name tells the reader which rule to check the line against; an informal one only describes the change.
 
-### 2.0.2 Applying a definition is a step
+### 3.0.2 Applying a definition is a step
 
 Replacing a named quantity with its definition is one of the most important steps in a derivation. This replacement applies the general rules to the specific problem, so never skip it or merge it into the next step. Give it its own line, justified as “definition of …”. The same holds for a result from an earlier part of the same problem: substitute it on its own line, and cite the part.
 
 > **NOTE:**
 >
-> **Example 4 (Applying the definition of a vector before differentiating it)** Suppose the prediction error vector is defined as $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$, and a derivation needs its derivative with respect to $\tilde{\beta}$.
+> **Example 6 (Applying the definition of a vector before differentiating it)** Suppose the prediction error vector is defined as $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$, and a derivation needs its derivative with respect to $\tilde{\beta}$.
 >
 > > ❌ $$\begin{aligned}
 > > \frac{\partial}{\partial \tilde{\beta}} \tilde{e}
@@ -124,11 +161,11 @@ Replacing a named quantity with its definition is one of the most important step
 >
 > The ❌ version applies the definition of $\tilde{e}$ and the rule for a difference in one line, and its justification names only the rule. The ✅ version shows the definition on its own line.
 
-### 2.0.3 Using a fact the reader has not seen
+### 3.0.3 Using a fact the reader has not seen
 
 When a step relies on a fact the document has not yet shown, such as deviations from a mean summing to zero, prove that fact first, in its own short derivation or exercise, and cite that proof at the step that uses the fact. Don’t leave the fact as an unexplained justification.
 
-### 2.0.4 Long derivations
+### 3.0.4 Long derivations
 
 Splitting every step makes derivations longer. Keep them readable by breaking them into stages: derive an intermediate result in its own block, then plug that result back into the main derivation. Naming a part of an expression that recurs in every line, such as letting $d_i$ denote $(y_i - \bar{y}) - \beta_x (x_i - \bar{x})$, can also keep each line short.
 
@@ -155,7 +192,7 @@ State the color key in words at the start of the derivation, so the derivation i
 
 > **NOTE:**
 >
-> **Example 5 (Coloring the two factors of a chain rule)** Writing the mean squared error as $\frac{1}{n} \tilde{e} \cdot \tilde{e}$, with $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$, the chain rule gives
+> **Example 7 (Coloring the two factors of a chain rule)** Writing the mean squared error as $\frac{1}{n} \tilde{e} \cdot \tilde{e}$, with $\tilde{e} = \Phi \tilde{\beta} - \tilde{y}$, the chain rule gives
 >
 > $$\frac{\partial}{\partial \tilde{\beta}} \text{MSE}(\tilde{\beta})
 > = \textcolor{blue}{\left(\frac{\partial}{\partial \tilde{\beta}} \tilde{e}\right)}
@@ -163,7 +200,7 @@ State the color key in words at the start of the derivation, so the derivation i
 >
 > Separate blocks then find $\textcolor{blue}{\frac{\partial}{\partial \tilde{\beta}} \tilde{e}} = \textcolor{blue}{\Phi^\top}$ and $\textcolor{red}{\frac{\partial}{\partial \tilde{e}} \frac{1}{n} \tilde{e} \cdot \tilde{e}} = \textcolor{red}{\frac{2}{n} \tilde{e}}$, and the main derivation resumes with $\textcolor{blue}{\Phi^\top} \textcolor{red}{\left(\frac{2}{n} \tilde{e}\right)}$. The colors show at a glance which block each factor came from.
 
-# 3 One equals sign per line
+# 4 One equals sign per line
 
 Put at most one equals sign on each line of math. When a result takes two or more equalities, write them as an aligned display, with one equality per row, each row starting with `&=`.
 
@@ -171,7 +208,7 @@ A chain such as $a = b = c$ on one line asks the reader to find where each step 
 
 > **NOTE:**
 >
-> **Example 6 (Splitting a chain into rows)**  
+> **Example 8 (Splitting a chain into rows)**  
 >
 > > ❌ $$\hat{B} = \arg\min_B \|Y - X B\|_F^2 = \arg\min_B \sum_{k=1}^C \|Y_{*,k} - X B_{*,k}\|^2$$
 > >
@@ -191,13 +228,13 @@ The rule applies wherever an equals sign appears:
 
 Separate equations set side by side, such as $x = 1, \quad y = 2$, each have one equals sign, so they are not chains. They still read more easily as separate rows, or as separate statements in the text.
 
-# 4 Functions and their values
+# 5 Functions and their values
 
 A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) and its value at a point are different objects. In $\mu_i = \mu(x_i)$, $\mu$ is a function, and $\mu(x_i)$ is a number: the value of $\mu$ at $x_i$. Written with its placeholder argument, $\mu(x)$ already denotes a value, so “the value of $\mu(x)$ at $x_i$” names a value of a value. Either drop the placeholder and write “the value of $\mu$ at $x_i$”, or keep the placeholder and name the substitution: “$\mu(x)$ evaluated at $x_i$”.
 
 > **NOTE:**
 >
-> **Example 7 (Saying where a function is evaluated)**  
+> **Example 9 (Saying where a function is evaluated)**  
 >
 > > ❌ Each outcome is centered on the value of a mean function $\mu(x)$ at its own covariate values.
 > >
@@ -221,13 +258,13 @@ Use the notation to match:
 
 > **NOTE:**
 >
-> **Definition 2 (Fitted value)** The **fitted value** of observation $i$ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $h$, it is $\hat{y}_i = h(x_i)$.
+> **Definition 3 (Fitted value)** The **fitted value** of observation $i$ is the value that a fitted model predicts at that observation’s input. In machine learning notes, where the fitted prediction [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $h$, it is $\hat{y}_i = h(x_i)$.
 
 Define the [fitted value](#def-fitted-value) once, then print $\hat{y}_i$, not $h(x_i)$, wherever it appears in a loss, a residual or a risk sum. Keep $h(x)$ where $h$ itself is the subject, as in “the linear function $h(x) = \beta_0 + \beta_x x$”, and where the output is not a prediction of $y_i$, such as the decision score of a support vector machine or a vector of class probabilities.
 
 In the source, a document that uses the shared macros writes the fitted value with the macro for a predicted outcome, `\eoutvar` (see [Using shared macros](#using-shared-macros)), and a document without them may write `\hat{y}`.
 
-# 5 Types of functions and procedures
+# 6 Types of functions and procedures
 
 Name the type of every [function](https://morrison-lab.github.io/mcs/functions.html#def-function) and procedure when you define it:
 
@@ -243,7 +280,7 @@ A function’s argument is not part of what specifies the function. Give the arg
 
 > **NOTE:**
 >
-> **Example 8 (Typing a procedure’s inputs and output)**  
+> **Example 10 (Typing a procedure’s inputs and output)**  
 >
 > > ❌ A fitting procedure is a rule that takes data and produces a prediction.
 > >
@@ -259,7 +296,7 @@ A function’s argument is not part of what specifies the function. Give the arg
 
 Check each use against the stated types: a function applied to something outside its domain, or a value described with the wrong type, is an error even when the notation looks right.
 
-# 6 Random variables and their values
+# 7 Random variables and their values
 
 A random variable and a value that it takes are different objects. Before the data are collected, the outcome is a random variable; after, it is a number. Statements about the two have different meanings. Write them with different symbols.
 
@@ -274,7 +311,7 @@ State the convention where you first use the symbols. Keep it in every later sec
 
 > **NOTE:**
 >
-> **Example 9 (Writing a random variable and its value)**  
+> **Example 11 (Writing a random variable and its value)**  
 >
 > > ❌ The probability that $y_i$ exceeds 3 is $0.2$.
 > >
@@ -297,7 +334,7 @@ Name the kind of object in the words, too, not only in the symbol. Call a random
 
 > **NOTE:**
 >
-> **Example 10 (Naming a variable and its value in the words)**  
+> **Example 12 (Naming a variable and its value in the words)**  
 >
 > > ❌ Fix an input $\predvar$, and let $\Outvar = \truemeanf{\predvar} + \noise$.
 > >
@@ -307,7 +344,7 @@ Name the kind of object in the words, too, not only in the symbol. Call a random
 
 Some fields reserve capital letters for matrices, or use the same letter for a random variable and its value. In that case, say so where you introduce the symbols. Add a word that tells the reader which meaning applies, such as “the random variable $Y_i$” or “the observed value $y_i$”.
 
-# 7 Matching names and notation
+# 8 Matching names and notation
 
 A name and its notation must describe the same object. When you name a quantity in words and also show it in symbols, use the symbols that go with that name. A reader who sees the name “dot product” expects to see the notation for a dot product. If the symbols look like a different operation, the reader has to work out whether the name or the symbols is wrong.
 
@@ -315,7 +352,7 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 > **NOTE:**
 >
-> **Example 11 (Matching a name to its notation)**  
+> **Example 13 (Matching a name to its notation)**  
 >
 > > ❌ Compute the dot product $\tilde{a}' \tilde{b}$.
 > >
@@ -333,13 +370,13 @@ Keep the pairing the same everywhere the quantity appears. Notes, assignments, s
 
 Before you release a document that reuses a quantity from another one, search both for its name and its symbols, and make them agree.
 
-### 7.0.1 Label every inline symbol
+### 8.0.1 Label every inline symbol
 
 In prose, write a text label next to every inline math symbol. The label tells the reader what the symbol stands for without making them search for its definition. Put the label before the symbol, as in “the population noise variance, $\sigma^2$”.
 
 > **NOTE:**
 >
-> **Example 12 (Labeling a symbol in a list of quantities)**  
+> **Example 14 (Labeling a symbol in a list of quantities)**  
 >
 > > ❌ Which of the three quantities (squared bias, variance of $\hat{y}$, $\sigma^2$) can a better prediction method reduce?
 > >
@@ -347,7 +384,7 @@ In prose, write a text label next to every inline math symbol. The label tells t
 >
 > In the ❌ version, the reader sees $\sigma^2$ with no word for it. In the ✅ version, each quantity has a label, and the symbol that follows the label confirms which quantity is meant.
 
-# 8 Using shared macros
+# 9 Using shared macros
 
 Write each symbol through a shared macro file, and write the macro everywhere the symbol appears. A group that writes the same quantity in raw LaTeX in one document and with a macro in another ends up with two notations for one quantity. Changing a convention then means editing every document by hand.
 
@@ -355,7 +392,7 @@ Before you write any symbol, search the group’s shared macro file for the conc
 
 > **NOTE:**
 >
-> **Example 13 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
+> **Example 15 (Using a shared macro)** This example compares the source you type, so both versions appear as code.
 >
 > > ❌ Source: `Let $\beta_1$ be the slope and write the sum as $\sum_{i=1}^n$.`
 > >
@@ -378,7 +415,7 @@ Name a macro for what the symbol means, not for the letter it prints. A macro su
 
 > **NOTE:**
 >
-> **Example 14 (Naming a macro for its meaning)**  
+> **Example 16 (Naming a macro for its meaning)**  
 >
 > > ❌ Source: `The error at layer $\ell$ is $\vdelta^{(\ell)}$, and the step size is $\eta$.`
 > >
@@ -392,7 +429,7 @@ The same reasoning applies to decorators. A hat, a tilde or a bar says how a sym
 
 > **NOTE:**
 >
-> **Example 15 (Naming a decorator for its meaning)**  
+> **Example 17 (Naming a decorator for its meaning)**  
 >
 > > ❌ Source: `The estimate $\hat{\mean}$ is close to $\mean$.`
 > >
@@ -404,7 +441,7 @@ Font commands follow the same rule. `\mathscr`, `\mathcal`, `\mathbb` and `\math
 
 > **NOTE:**
 >
-> **Example 16 (Naming a set for its meaning)**  
+> **Example 18 (Naming a set for its meaning)**  
 >
 > > ❌ Source: `The function maps $\mathbb{R}$ to $\mathbb{R}$.`
 > >
@@ -433,7 +470,7 @@ For an observation used to fit the model, the residual is the negative of the pr
 
 > **NOTE:**
 >
-> **Example 17 (Naming a variable for its role)**  
+> **Example 19 (Naming a variable for its role)**  
 >
 > > ❌ Source: `The residual is $e_i = y_i - \hat{y}_i$.`
 > >
@@ -445,7 +482,7 @@ Once a quantity has a name and a macro, write the macro instead of the expressio
 
 > **NOTE:**
 >
-> **Example 18 (Writing a named quantity by its name)**  
+> **Example 20 (Writing a named quantity by its name)**  
 >
 > > ❌ Source: `The gradient of the mean squared error is $\frac{2}{n} \tp{\design} \paren{\design\vcoef - \vy}$.`
 > >
@@ -457,7 +494,7 @@ Delimiters follow the same rule. Manual sizing commands, such as `\big` and `\le
 
 > **NOTE:**
 >
-> **Example 19 (Letting the macro size the bracket)**  
+> **Example 21 (Letting the macro size the bracket)**  
 >
 > > ❌ Source: `The mean is $\E{\left( X - \mu \right)^2}$.`
 > >
@@ -469,7 +506,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 
 > **NOTE:**
 >
-> **Example 20 (Describing the symbol, not the macro)**  
+> **Example 22 (Describing the symbol, not the macro)**  
 >
 > > ❌ Source: `The macro \avgfitf prints the average fit, so write $\avgfitf{x}$ for it.`
 > >
@@ -477,7 +514,7 @@ Macros are for the author, not the reader. Reader-facing text, such as a lecture
 >
 > The ✅ version tells the reader what the symbol means. The reader never sees the macro name, and the symbol has its own row in the notation table.
 
-# 9 Making expressions concise
+# 10 Making expressions concise
 
 Make each expression as concise as possible. The less clutter an expression has, the easier it is to read. This is one case of [building every unit from smaller atomic units](../chapters/teaching.llms.md#build-every-unit-from-smaller-atomic-units).
 
@@ -485,7 +522,7 @@ Before you finish a definition, theorem or proof, scan it for a sub-expression t
 
 > **NOTE:**
 >
-> **Example 21 (Naming a repeated chunk)**  
+> **Example 23 (Naming a repeated chunk)**  
 >
 > > ❌ Source: `The loss is $\frac{1}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i}^2$, and its derivative is $\frac{2}{n} \sum_{i=1}^n \paren{\eoutvar_i - \outvar_i} \predvar_i$.`
 > >
@@ -499,7 +536,7 @@ Search the shared macros for the chunk before you write it by hand. A macro ofte
 
 Add the macro to the shared macro file before you use it, never as a local macro in one document (see [Using shared macros](#using-shared-macros)), and record its meaning in that file’s `interpretations.tsv`.
 
-# 10 Abstracting sub-expressions you are not manipulating
+# 11 Abstracting sub-expressions you are not manipulating
 
 Replace each sub-expression that you are not manipulating with a symbol that stands for it. Keep a sub-expression written out only on the line where you are about to apply its definition, a rule or a theorem to it. Every other line shows the symbol.
 
@@ -509,7 +546,7 @@ Choose the symbol to match the thing it names. Denote the [population](../chapte
 
 > **NOTE:**
 >
-> **Example 22 (Abstracting the population mean)** Suppose a derivation expands the [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable $X$.
+> **Example 24 (Abstracting the population mean)** Suppose a derivation expands the [variance](../chapters/defining-terms.llms.md#def-variance-expression-and-prose) of a random variable $X$.
 >
 > > ❌ $$\begin{aligned}
 > > \E{\paren{X - \E{X}}^2}
@@ -531,13 +568,13 @@ Choose the symbol to match the thing it names. Denote the [population](../chapte
 >
 > In the ❌ version, $\E{X}$ is a constant that no step manipulates until the last one, yet it clutters every line. In the ✅ version, only the line that uses the definition of $\mu$ needs to know what $\mu$ stands for.
 
-# 11 Writing dot products
+# 12 Writing dot products
 
 When two vectors multiply to give a number, write the product as a dot product, $\tilde{x} \cdot \tilde{\beta}$. Do not write it as a transpose product, $\tilde{x}' \tilde{\beta}$, or with inner-product brackets, $\langle \tilde{x}, \tilde{\beta} \rangle$. The dot shows one operation on two vectors. A transpose product asks the reader to picture a row vector times a column vector and to work out that the result is a single number.
 
 > **NOTE:**
 >
-> **Example 23 (Writing a dot product)**  
+> **Example 25 (Writing a dot product)**  
 >
 > > ❌ The model is $f(\tilde{x}) = \tilde{x}' \tilde{\beta}$.
 > >
@@ -553,7 +590,7 @@ Keep the transpose where the product is not a dot product of two vectors:
 
 Keep the inner-product brackets where the text means any inner product, such as a definition of an inner product space.
 
-# 12 Using the notation that best represents the concept
+# 13 Using the notation that best represents the concept
 
 Use the notation that best represents the concept being depicted. Choose the symbol, the macro and the name by asking what the object is, not by asking what is quicker to type or what the nearby text used. A symbol that fits a different concept sends the reader to the wrong idea.
 
@@ -566,7 +603,7 @@ The rules that follow are cases of this principle:
 
 When no rule covers a case, ask the same question: which symbol, name and form best represents the concept here? Then record the answer as a rule, with this principle as its reason.
 
-# 13 Writing the predictor and design matrices
+# 14 Writing the predictor and design matrices
 
 Write a matrix in matrix styling, not in the plain italic of a scalar. This holds for the predictor matrix $\mX$ in every file you edit: notes, assignments, solutions, slides and note sheets. A plain italic $X$ suggests a random variable or a single number. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the predictor matrix with the matrix macro `\mX`.
 
@@ -579,7 +616,7 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 
 > **NOTE:**
 >
-> **Example 24 (Predictor matrix and design matrix)**  
+> **Example 26 (Predictor matrix and design matrix)**  
 >
 > > ❌ Let $X$ be the design matrix, and fit $\hat{\beta} = (X'X)^{-1}X'y$.
 > >
@@ -587,7 +624,7 @@ The same split holds for one observation: the predictor vector is `\vx`, and the
 >
 > The ✅ version shows which matrix holds the raw inputs and which holds the columns the model uses.
 
-# 14 Writing matrix elements
+# 15 Writing matrix elements
 
 Write an element of a matrix in bold, with the matrix’s own letter and its subscripts: $\matr{W}_{ij}$, not $W_{ij}$. The bold letter then marks every symbol that stands for a matrix or a part of one, so the reader never has to look up whether a letter names a matrix or a number.
 
@@ -597,7 +634,7 @@ In a group that uses shared macros (see [Using shared macros](#using-shared-macr
 
 > **NOTE:**
 >
-> **Example 25 (Writing a matrix element)**  
+> **Example 27 (Writing a matrix element)**  
 >
 > > ❌ The hidden-layer weight $W_{ij}$ connects input $i$ to hidden unit $j$.
 > >
@@ -605,13 +642,13 @@ In a group that uses shared macros (see [Using shared macros](#using-shared-macr
 >
 > The ✅ version uses the same bold letter as the weight matrix $\matr{W}$, so the element is visibly a part of that matrix.
 
-# 15 Stating formulas in their general form
+# 16 Stating formulas in their general form
 
 On a reference sheet, a formula sheet or a summary, state each formula in its general form. Do not state it only for a specific example. A reader looks a formula up to apply it to a new case, and an example shows only one case.
 
 > **NOTE:**
 >
-> **Example 26 (Stating the chain rule)**  
+> **Example 28 (Stating the chain rule)**  
 >
 > > ❌ $\frac{d(u^2)}{dw} = 2u \frac{du}{dw}$
 > >
@@ -621,7 +658,7 @@ On a reference sheet, a formula sheet or a summary, state each formula in its ge
 
 Put a specific case on the sheet only as a labeled example next to the general formula.
 
-# 16 Writing the mean function and the prediction function
+# 17 Writing the mean function and the prediction function
 
 Write the mean [function](https://morrison-lab.github.io/mcs/functions.html#def-function) as $\truemean$, not as $\predfn$. The mean function is the [population](../chapters/defining-terms.llms.md#def-population) mean of the outcome given the inputs, $\truemeanf{x}$. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\truemeanf{x}`.
 
@@ -629,7 +666,7 @@ Name the object you mean. When the text refers to the fitted prediction function
 
 > **NOTE:**
 >
-> **Example 27 (Mean function and fitted prediction function)**  
+> **Example 29 (Mean function and fitted prediction function)**  
 >
 > > ❌ The expected squared error of the fitted mean function at $x$ is $\E{(y - \hat{f}(x))^2}$.
 > >
@@ -637,7 +674,7 @@ Name the object you mean. When the text refers to the fitted prediction function
 >
 > The ✅ version names the fitted prediction function where the concept is a prediction, and keeps $\truemean$ for the mean it is compared with.
 
-# 17 Naming covariates and their coefficients
+# 18 Naming covariates and their coefficients
 
 Give each named [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) a letter that suggests what it measures, and subscript its regression coefficient with that same letter. A reader then knows which covariate a coefficient multiplies without looking it up. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write the coefficient of a covariate $A$ as `\coef{A}`, which prints $\coef{A}$.
 
@@ -645,7 +682,7 @@ Keep the numbered covariate $x_j$, with coefficient $\coef{x_j}$, for statements
 
 > **NOTE:**
 >
-> **Example 28 (Coefficients named by their covariates)** Consider the birthweight data of Dobson and Barnett ([2018](#ref-dobson4e), Example 2.2.2): the birthweight in grams and the estimated gestational age in weeks of male and female infants born in one hospital. Let $Y$ be birthweight, let the [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) $M$ indicate a male infant, and let the covariate $A$ be gestational age.
+> **Example 30 (Coefficients named by their covariates)** Consider the birthweight data of Dobson and Barnett ([2018](#ref-dobson4e), Example 2.2.2): the birthweight in grams and the estimated gestational age in weeks of male and female infants born in one hospital. Let $Y$ be birthweight, let the [covariate](https://morrison-lab.github.io/sds/model-validation.html#def-covariate) $M$ indicate a male infant, and let the covariate $A$ be gestational age.
 >
 > > ❌ $\condE{Y}{X_1 = x_1, X_2 = x_2} = \intcoef + \coef{1} x_1 + \coef{2} x_2$, where $X_1$ is the male indicator and $X_2$ is gestational age.
 > >
@@ -653,13 +690,13 @@ Keep the numbered covariate $x_j$, with coefficient $\coef{x_j}$, for statements
 >
 > In the ✅ version, the coefficient $\coef{A}$ multiplies the gestational age $a$, so a reader sees at once that $\coef{A}$ is the difference in mean birthweight per week of gestational age, holding sex fixed.
 
-# 18 Writing the log-odds
+# 19 Writing the log-odds
 
 Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another letter. In a group that uses shared macros (see [Using shared macros](#using-shared-macros)), write it `\logodds`. Use it wherever the quantity is the log-odds, including the argument of the logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function), so that the same quantity has one symbol in every chapter and figure. Label a figure axis that shows it “Log-odds, $\logodds$” (see [Scientific figures](../chapters/slides-posters-figures.llms.md#sec-scientific-figures)).
 
 > **NOTE:**
 >
-> **Example 29 (Argument of the logistic function)**  
+> **Example 31 (Argument of the logistic function)**  
 >
 > > ❌ The logistic [function](https://morrison-lab.github.io/mcs/functions.html#def-function) is $\sigma(z) = 1 / (1 + e^{-z})$, evaluated at the log-odds $z$.
 > >
@@ -667,7 +704,7 @@ Use $\logodds$ (the Greek letter eta) for the log-odds, not $z$ or another lette
 >
 > The ✅ version uses the lab’s symbol for the log-odds, so a reader who has seen $\logodds$ elsewhere recognizes it here.
 
-# 19 Writing out notational shorthands
+# 20 Writing out notational shorthands
 
 A notational shorthand drops part of an expression that the writer expects the reader to fill in. The commonest case is leaving the limits off a sum, product, or integral, as in $\sum_x f(x)$. In permanent writing (notes, papers, and published slides), write the full form instead: $\sum_{x \in \mathcal{R}(X)} f(x)$, where $\mathcal{R}(X)$ is the set of values that $X$ can take.
 
@@ -677,7 +714,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 
 > **NOTE:**
 >
-> **Example 30 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
+> **Example 32 (Writing out the limits of a sum and the range of an index)** For a discrete random variable $X$:
 >
 > > ❌ $\text{E}[X] = \sum_x x \Pr(X = x)$
 > >
@@ -691,7 +728,7 @@ Give the limits of every sum, product, and integral, and state the set that any 
 >
 > Each full form tells the reader the set the operator runs over: the values $X$ can take, and the indices of the $n$ observations.
 
-# 20 Stating assumptions before using them
+# 21 Stating assumptions before using them
 
 State each assumption before the step that uses it. A reader processes a derivation line by line, and a condition that arrives after the line it governs forces them to go back and reread that line with the condition in mind. A first-time reader may not realize the line was incomplete, and may conclude that the step is wrong or unjustified.
 
@@ -715,7 +752,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 31 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
+> **Example 33 (Stating the restriction on** $x$ before using it) To show that $x = 2$ is a strict local minimizer of $f(x) = (x - 2)^2$, we show that $f(x) > f(2)$ for every $x$ near 2 other than 2 itself.
 >
 > > ❌ $$\begin{aligned}
 > > f(x) - f(2)
@@ -736,7 +773,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 32 (Writing several assumptions as one list)**  
+> **Example 34 (Writing several assumptions as one list)**  
 >
 > > ❌ Assume the sample size $n$ is larger than $30$. Assume the observations are independent. Assume the population variance $\sigma^2$ is finite.
 > >
@@ -750,7 +787,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 33 (Writing several names as one list)**  
+> **Example 35 (Writing several names as one list)**  
 >
 > > ❌ Let $n$ be the sample size. Let $\bar{y}$ be the sample mean. Let $s$ be the sample standard deviation.
 > >
@@ -764,7 +801,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 
 > **NOTE:**
 >
-> **Example 34 (Defining the noise is a parametrization, not an assumption)**  
+> **Example 36 (Defining the noise is a parametrization, not an assumption)**  
 >
 > > ❌ Assume:
 > >
@@ -780,7 +817,7 @@ Write the lead-in word once, before the list, and make each bullet complete the 
 >
 > In the ❌ version, the reader is told that the decomposition and the zero mean are conditions on the data. They are not. Defining $\noise = \Outvar - \truemeanf{\predvar}$ makes both statements true for every distribution of $\Outvar$ that has a finite population mean. The ✅ version puts the definitions under “Let:” and derives the zero mean. A real assumption, such as the noise variable being independent of the input value, can fail, so it belongs under “Assume:”.
 
-# 21 Choosing the verb for each step: let, suppose, by, and denote
+# 22 Choosing the verb for each step: let, suppose, by, and denote
 
 Each verb that opens a mathematical statement tells the reader what kind of statement follows. Use each verb only for its own job:
 
@@ -793,7 +830,7 @@ A “let” in front of a consequence presents a fact as a choice. The reader th
 
 > **NOTE:**
 >
-> **Example 35 (Stating a consequence with “by”)**  
+> **Example 37 (Stating a consequence with “by”)**  
 >
 > > ❌ Choose an input value $\predvar$, and let the output variable $\Outvar = \truemeanf{\predvar} + \noise$.
 > >
@@ -805,7 +842,7 @@ Use “denote”, not “write”, to name notation. “Write” names the physi
 
 > **NOTE:**
 >
-> **Example 36 (Naming notation with “denote”)**  
+> **Example 38 (Naming notation with “denote”)**  
 >
 > > ❌ Choose the number of features before fitting the network. Write $L$ for that number.
 > >
@@ -815,7 +852,7 @@ Use “denote”, not “write”, to name notation. “Write” names the physi
 
 The [`check-avoided-words` workflow](https://morrison-lab.github.io/gha/reference/check-avoided-words.html) in Morrison-Lab/gha flags “write $X$ for”, “writing $X$ for”, and “is written $X$” on the lines that a pull request adds. No check can tell a consequence from an assumption, because the answer depends on what the text has already defined, so a reviewer reads for the “let” and “suppose” rules.
 
-# 22 Separating the framing from the conclusions
+# 23 Separating the framing from the conclusions
 
 Put the framing in one paragraph and the conclusions drawn from it in the next. The framing is the setup that the conclusions rest on:
 
@@ -830,7 +867,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 
 > **NOTE:**
 >
-> **Example 37 (Separating the function and its gradient from the stationary point)**  
+> **Example 39 (Separating the function and its gradient from the stationary point)**  
 >
 > > ❌ Let $f(\vx) = x_1^2 - x_2^2$. Its gradient is $\gradf{f}(\vx) = \tp{(2 x_1,\ -2 x_2)}$, which is $\vzero_{2 \times 1}$ only at $\vx = \vzero_{2 \times 1}$, so $\vzero_{2 \times 1}$ is a stationary point.
 > >
@@ -842,7 +879,7 @@ A reader who meets a conclusion in the middle of the setup cannot tell which sen
 >
 > In the ❌ version, one sentence defines $f$, computes its gradient, locates its zero, and concludes. In the ✅ version, the first paragraph holds the framing, which is $f$ and its gradient, and the second holds the conclusion.
 
-# 23 Writing a quantity’s symbol on the left
+# 24 Writing a quantity’s symbol on the left
 
 When you state the value of a quantity, write the quantity’s symbol as the left-hand side of the expression. A sentence such as “its value is” followed by an expression gives the expression a name in words only, so the reader has no symbol to cite in the steps that follow. Writing the symbol, an equals sign, and the expression names the quantity and gives its value together. Give the equation its own display when later steps refer to it.
 
@@ -855,7 +892,7 @@ The rule holds for any quantity that later steps use:
 
 > **NOTE:**
 >
-> **Example 38 (Writing the gradient with its symbol)**  
+> **Example 40 (Writing the gradient with its symbol)**  
 >
 > > ❌ The gradient of $f(\vx) = x_1^2 - x_2^2$ is $\tp{(2 x_1,\ -2 x_2)}$.
 > >
@@ -865,7 +902,7 @@ The rule holds for any quantity that later steps use:
 >
 > The ✅ version supplies $\gradf{f}(\vx)$, which a later line can set equal to $\vzero_{2 \times 1}$.
 
-# 24 Choosing delimiters and scripts
+# 25 Choosing delimiters and scripts
 
 Choose each delimiter and each script by what it says, so a reader can tell the argument of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) from a group of [term](../chapters/defining-terms.llms.md#def-term)s, and an index from a power.
 
@@ -889,7 +926,7 @@ Give the characteristic of a random variable a subscript when it has its own sym
 
 > **NOTE:**
 >
-> **Example 39 (A characteristic with its own symbol)**  
+> **Example 41 (A characteristic with its own symbol)**  
 >
 > > ❌ The [precision](https://morrison-lab.github.io/pds/variance-covariance.html#def-precision) of $X$ is $\tau(X) = 1 / \operatorname{Var}[X]$.
 > >

@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 20:38:49 (PST)
+Last modified: 2026-11-18 22:07:37 (PST)
 
 > **NOTE:**
 >
@@ -19,6 +19,8 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
 
 - [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): $x \in (a, b)$ rather than $a < x < b$.
+
+- [Parenthesize to show precedence](../chapters/notation.llms.md#parenthesizing-to-show-precedence): $(x \in A) \lor (x \in B)$ rather than $x \in A \lor x \in B$.
 
 - [Abstract each sub-expression you are not manipulating](../chapters/notation.llms.md#abstract-unused-subexpressions) to a symbol, such as $\mu$ for $\E{X}$.
 
