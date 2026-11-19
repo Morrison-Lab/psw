@@ -175,6 +175,8 @@ Follow its link for the reasons and the exceptions.
 - [Revisit earlier units in later exercises](teaching.qmd#revisit-earlier-units-in-later-exercises).
 - [Write labs in both R and Python](teaching.qmd#write-labs-for-both-languages-and-any-computer)
   that run on any computer.
+- [Keep expository content out of labs](teaching.qmd#keep-expository-content-out-of-labs):
+  a lab links to the definitions and results that it uses.
 - [Make figures accessible](teaching.qmd#make-figures-accessible).
 - [Structure slides for the reader](teaching.qmd#structure-slides-for-the-reader).
 - [Credit another course's material](citations-evidence.qmd#adapting-another-courses-material)
