@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-19 12:54:13 (PST)
+Last modified: 2026-11-19 13:23:54 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -123,7 +123,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Follow the definition with examples, from general to specific:** Put each special case in its own example block right after the definition, ordered from the most general to the most specific, each linking back to the definition or to the example it specializes (see [Order: general definition, then examples](#order-general-definition-then-examples)).
 
-- **Define terms at first use:** Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first; do not remove the hyperlink to hide the forward reference.
+- **Define terms at first use:** Place the definition of a term before the first definition, theorem or passage that relies on it, so that every link to a definition points backward rather than forward (see [Avoid forward references](../chapters/paper-organization.llms.md#avoid-forward-references)). When a definition or theorem uses a term whose definition comes later in the document, reorder the content so the definition comes first. When there is no good way to reorder the content, keep the forward reference and its hyperlink, and say that the definition comes later. Never remove the hyperlink to hide the forward reference.
 
 - **Give every key term a formal definition in a `#def-` div:** A term that the document relies on needs its own definition div, even if an exercise, a solution, an example or a sentence of prose has already explained it. An explanation inside an exercise or solution cannot be linked to as a definition, and a student who skips the exercise never sees it. Find the gaps by listing the terms the document uses, such as the bolded phrases and the terms in section titles, and checking that each one has a `#def-` div, or a link to the page that has one. This extends *Give each term its own definition block* below from terms defined in passing to terms explained only in exercises. For example, if “loss function” first appears in an exercise that asks students to compute one, add a `#def-loss-function` div before the exercise, and link the exercise’s mentions to it.
 

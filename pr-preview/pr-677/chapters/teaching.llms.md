@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-19 12:54:13 (PST)
+Last modified: 2026-11-19 13:23:54 (PST)
 
 > **NOTE:**
 >
@@ -390,7 +390,7 @@ A lab applies what the exposition pages teach, and teaches nothing new itself (E
 - When a lab step needs a concept that no exposition page covers yet, add the concept to the exposition page first, and link it from the lab.
 - When a whole section of a lab page is exposition, move the section, with its examples and exercises, to an exposition page, and leave the lab with the applied exercises and their solutions.
 
-A check can see a definition or result div in a lab, so gha’s `check-lab-exposition` fails a pull request that adds one to a lab page. No check can tell an explanation from an instruction, so a reviewer enforces the rest of the rule.
+A check can see a definition or result div in a lab, so gha’s `check-lab-exposition` check, proposed in [gha#2136](https://github.com/Morrison-Lab/gha/pull/2136), fails a pull request that adds one to a lab page in a repository that runs it. Until a repository runs it, a reviewer enforces the whole rule there. No check can tell an explanation from an instruction, so a reviewer always enforces the rest of the rule.
 
 # 21 Phrase optional steps as conditions
 

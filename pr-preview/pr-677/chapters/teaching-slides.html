@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-19 12:54:13 (PST)</p>
+  <p class="date">Last modified: 2026-11-19 13:23:54 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -833,7 +833,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>When a lab step needs a concept that no exposition page covers yet, add the concept to the exposition page first, and link it from the lab.</li>
 <li>When a whole section of a lab page is exposition, move the section, with its examples and exercises, to an exposition page, and leave the lab with the applied exercises and their solutions.</li>
 </ul>
-<p>A check can see a definition or result div in a lab, so gha’s <code>check-lab-exposition</code> fails a pull request that adds one to a lab page. No check can tell an explanation from an instruction, so a reviewer enforces the rest of the rule.</p>
+<p>A check can see a definition or result div in a lab, so gha’s <code>check-lab-exposition</code> check, proposed in <a href="https://github.com/Morrison-Lab/gha/pull/2136">gha#2136</a>, fails a pull request that adds one to a lab page in a repository that runs it. Until a repository runs it, a reviewer enforces the whole rule there. No check can tell an explanation from an instruction, so a reviewer always enforces the rest of the rule.</p>
 </section>
 <section id="phrase-optional-steps-as-conditions" class="slide level2" data-number="21">
 <h2><span class="header-section-number">21</span> Phrase optional steps as conditions</h2>

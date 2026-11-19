@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-19 12:54:13 (PST)
+Last modified: 2026-11-19 13:23:54 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -228,7 +228,7 @@ The reader must hold an unresolved pointer while reading the sentence that depen
 
 Fix a forward reference by moving the content ahead of the pointer, so that each definition or result precedes the sentences that use it. Then change “below” to “above”, or delete the directional word. Do not fix a forward reference by removing the hyperlink to the later definition or theorem while leaving the term in the sentence: the sentence still uses a concept the reader has not encountered, and the reader also loses the link to its definition.
 
-If moving the content would break the order of the argument, keep the pointer, and make it a working link. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.
+When there is no good way to reorder the material, because every order would break the argument or split a group the reader needs together, keep the forward reference, and make it a working link. A linked forward reference is better than no link at all. Say what the link points to and where it is, as in “Table 2 (later in this section)”, with “Table 2” linked to the table. Do not delete the link and leave only the name. The reader then loses both the warning and the jump.
 
 > **NOTE:**
 >
