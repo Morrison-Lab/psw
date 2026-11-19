@@ -39,7 +39,7 @@ Two cases come up most often:
 A separator already ends an operand,
 so it needs no parentheses of its own.
 The separators are the colon of a set builder,
-the comma after a quantifier's domain, as in $\forall x \in A, P(x)$,
+the comma that ends a quantifier, as in $\forall x \in A, P(x)$,
 and a definition sign.
 
 The `check-precedence-parens` check in
