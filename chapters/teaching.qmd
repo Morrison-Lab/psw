@@ -798,6 +798,31 @@ in every course and every teaching repository, not only to one course.
   Assume only that they can use some computer,
   so setup steps must work on a shared or hosted machine.
 
+# Keep expository content out of labs
+
+A lab applies what the exposition pages teach,
+and teaches nothing new itself (Ezra, 2026-11-19).
+A definition or a result that first appears in a lab is missed by every reader who studies only the exposition page,
+and is hard to find again,
+because readers do not look for theory in a lab.
+
+- Put every definition, theorem, lemma, proposition, corollary, remark,
+  and explanation of a concept on the exposition page for its topic.
+- In the lab, link to that content where a step uses it,
+  as in `compute the [standard errors](linear-regression.qmd#def-standard-error)`.
+- When a lab step needs a concept that no exposition page covers yet,
+  add the concept to the exposition page first, and link it from the lab.
+- When a whole section of a lab page is exposition,
+  move the section, with its examples and exercises, to an exposition page,
+  and leave the lab with the applied exercises and their solutions.
+
+A check can see a definition or result div in a lab,
+so gha's `check-lab-exposition` check, proposed in [gha#2136](https://github.com/Morrison-Lab/gha/pull/2136),
+fails a pull request that adds one to a lab page in a repository that runs it.
+Until a repository runs it, a reviewer enforces the whole rule there.
+No check can tell an explanation from an instruction,
+so a reviewer always enforces the rest of the rule.
+
 # Phrase optional steps as conditions
 
 An instruction that applies to only some readers reads as an order to all of them.
