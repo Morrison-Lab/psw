@@ -245,12 +245,20 @@ Four mistakes break this outline:
   A level of headings divides its parent
   only when the parent holds at least two headings at that level,
   just as a section 1.1 implies a section 1.2.
-  A lone heading adds a level of nesting and separates nothing.
-  The common case is one level 1 heading that wraps the whole page
+  A lone heading adds a level of nesting and separates nothing,
+  so never leave a single numbered heading at a level under its parent
+  (Ezra, 2026-11-20).
+  The fix is usually to add another sibling heading,
+  or to promote a child of the lone heading to be its sibling,
+  not to remove the lone heading (Ezra, 2026-11-20):
+  a section that earned a heading usually has a neighbor
+  whose content sits untitled in the parent's body.
+  Remove the lone heading only when it names the same topic as its parent,
+  as when one level 1 heading wraps the whole page
   and names the page's topic in other words,
   with every section that divides the topic a level below it.
-  Drop the lone heading and raise the headings under it by one level.
-  A closing References section may stand alone,
+  Then drop the lone heading and raise the headings under it by one level.
+  An unnumbered heading, such as a closing References section, may stand alone,
   because it ends the page instead of dividing it.
 
 The `####` title of a definition, example or exercise div is not a heading in this sense.
@@ -279,13 +287,37 @@ In the ✅ outline,
 those sections are the entries of the table of contents.
 :::
 
+::: {#exm-lone-subsection}
+# Adding siblings beside a lone subsection
+<!-- no-figure: the example is a heading outline, shown as two quoted outlines -->
+The [bias-variance page](https://morrison-lab.github.io/lds/chapters/bias-variance.html)
+of the machine learning notes
+had one subsection, 1.1 "Reading the decomposition",
+under its section 1.
+The noise model, the definitions of bias and variance,
+and the decomposition itself sat untitled above it.
+
+> ❌ Section 1,
+> then under it only 1.1 "Reading the decomposition".
+>
+> ✅ Section 1,
+> then under it 1.1 "The noise in the outcome",
+> 1.2 "Bias and variance of a prediction",
+> 1.3 "The bias-variance decomposition",
+> and 1.4 "Reading the decomposition".
+
+The ✅ outline keeps the lone heading
+and gives its untitled neighbors headings of their own.
+:::
+
 The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html)
 in Morrison-Lab/gha flags the first three mistakes
 on the heading lines a pull request adds.
-Its `check-heading-siblings` workflow flags the fourth
-when the lone heading is at the top level of a page;
-as of 2026-11-13, no workflow flags a lone heading deeper in a page
-([gha#1371](https://github.com/Morrison-Lab/gha/issues/1371)).
+Its [`check-heading-siblings` workflow](https://morrison-lab.github.io/gha/reference/check-heading-siblings.html) flags the fourth
+when a pull request adds or changes the lone heading or its parent,
+at the top level of a page
+or, for a numbered heading, at any depth
+([gha#2170](https://github.com/Morrison-Lab/gha/pull/2170)).
 
 # Avoid forward references
 
