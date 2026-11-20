@@ -680,6 +680,65 @@ before moving on, and the solution's numbers still come from running code
 
 :::
 
+# Keep each question an exercise, and give examples to definitions and results
+
+A worked example shows what a definition or a result says in one concrete case.
+A question posed for the reader illustrates no single definition or result,
+so it stays an exercise with its solution
+(Ezra, 2026-11-20: "only definitions and results really need examples?").
+
+- Put an `#exm-` div only after a definition or result
+  (a `#def-`, `#thm-`, `#lem-`, `#cor-`, or `#prp-` div),
+  as [Show each idea applied and in a figure](#show-each-idea-applied-and-in-a-figure) requires.
+- Keep a small question that the reader can work by hand as an `#exr-` div with its `#sol-` div.
+  Do not turn it into an `#exm-` div because its answer is short.
+- Put any real-data version of the same question right after the hand-worked exercise's solution,
+  as a second exercise with its own solution.
+  The hand-worked version practices the method on numbers small enough to follow,
+  and the real-data version practices applying the method to data with code.
+- A hand-worked version and a real-data version of one question practice different skills,
+  so they do not count as repeats of each other.
+  Keep both in the notes,
+  even when other versions with different numbers or data move to an exercise bank.
+
+::: {#exm-toy-then-real-exercise}
+
+# A hand-worked exercise followed by its real-data version
+
+> ❌
+>
+> ```markdown
+> ::: {#exm-slope-three-points}
+> (the least-squares slope through three points, worked by hand)
+> :::
+> ```
+
+> ✅
+>
+> ```markdown
+> ::: {#exr-slope-three-points}
+> Compute the least-squares slope through the points (0, 1), (1, 2), and (2, 4).
+> :::
+>
+> ::: {#sol-slope-three-points}
+> (every step, worked by hand)
+> :::
+>
+> ::: {#exr-slope-real-data}
+> Fit the least-squares slope of the outcome on one predictor in a real dataset.
+> :::
+>
+> ::: {#sol-slope-real-data}
+> (the code chunk and its output)
+> :::
+> ```
+
+The three-point slope is a question, not an illustration of a definition,
+so it stays an exercise.
+The real-data exercise follows it and asks for the same quantity with code.
+
+:::
+
 # Fade worked examples into exercises
 
 Within a unit, give the reader less of each successive solution.
