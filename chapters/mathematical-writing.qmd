@@ -509,7 +509,7 @@ These titles come from the [machine learning notes](https://morrison-lab.github.
 >
 > ❌ Bias-variance decomposition
 >
-> ✅ Bias-variance decomposition: the expected squared prediction error is the squared bias plus the variance plus the noise variance <!-- check-term-links: allow: quoted title, not a use of the term -->
+> ✅ Bias-variance decomposition: the expected squared error of a prediction at an input is its squared bias plus its variance plus the noise variance <!-- check-term-links: allow: quoted title, not a use of the term -->
 
 Each ❌ title names what the result is about.
 Each ✅ title says what the result states,
@@ -524,6 +524,47 @@ It tests for verbs with a word list,
 so it can flag a sentence whose verb is missing from that list;
 such a line takes `<!-- check-result-titles: allow: <reason> -->`,
 or the verb goes into the list.
+
+# State the title's sentence again in the statement, in words and in symbols
+
+The statement of a result says what its title says twice more:
+once in words, as a sentence close to the title's,
+and once in full mathematical notation.
+The sentence in words lets a reader check that the statement is the result the title promises,
+and the formula is what a reader uses in a calculation or a proof.
+Put the sentence first, then the formula in a display.
+The sentence may add the hypotheses the title leaves out,
+and it names its symbols, so that the formula after it needs no further explanation.
+
+::: {#exm-result-statement-two-forms}
+
+# The logistic derivative in words and in symbols
+
+> ❌ **The derivative of the logistic function is its value times one minus its value** <!-- check-term-links: allow: quoted title, not a use of the term -->
+>
+> For every $\predvar$, $\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}$.
+>
+> ✅ **The derivative of the logistic function is its value times one minus its value** <!-- check-term-links: allow: quoted title, not a use of the term -->
+>
+> At every input $\predvar$, the derivative of the logistic function $\expit$ is the value of $\expit$ at $\predvar$ times one minus that value: <!-- check-term-links: allow: quoted statement, not a use of the term -->
+>
+> $$
+> \dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}.
+> $$
+
+The ❌ statement gives only the formula,
+so the reader has to translate it back into the title's words to see that the two agree.
+The ✅ statement says the title's sentence again with its symbols named,
+then gives the same claim as a displayed formula.
+
+:::
+
+The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168)
+also flags a result whose statement, the text of the div before its proof,
+has no display formula or no sentence in words.
+It cannot tell whether the sentence says what the title says,
+since that needs the meaning of both, not their words,
+so that part of the rule is applied in review.
 
 # Rules that other chapters cover
 
