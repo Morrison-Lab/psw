@@ -473,6 +473,58 @@ A warn-only check ([gha#1368](https://github.com/Morrison-Lab/gha/pull/1368)) fl
 No check can measure whether a statement is short or whether its hypotheses form a concept,
 so the length rule stays a writing rule that review enforces.
 
+# Title a result with the sentence it states
+
+The title of a theorem, lemma, proposition, corollary, or conjecture
+is a declarative sentence that states the result.
+A reader who scans titles,
+in a table of contents, a list of results, or a cross-reference,
+then learns what each result says without opening it.
+A noun phrase such as "Derivative of the logistic function" names a topic
+and leaves the reader to look up what the result says about it.
+
+When a result has a customary name,
+such as "Hoeffding's inequality" or "the bias-variance decomposition",
+put the name first, then a colon, then the sentence.
+The name lets a reader find the result under the name other sources use,
+and the sentence says what the result states.
+
+The title may leave out hypotheses that the statement gives,
+such as "if the step size is small enough".
+The statement itself still stands alone,
+as [State a theorem in one short sentence](#state-a-theorem-in-one-short-sentence) asks.
+This rule covers results only:
+a definition's title names the term it defines,
+and an example's title names what the example does.
+
+::: {#exm-result-title-sentence}
+
+# Turning result titles into sentences
+
+These titles come from the [machine learning notes](https://morrison-lab.github.io/lds/).
+
+> ❌ Derivative of the logistic function
+>
+> ✅ The derivative of the logistic function is the probability times its complement
+>
+> ❌ Bias-variance decomposition
+>
+> ✅ Bias-variance decomposition: the expected squared prediction error is the squared bias plus the variance plus the noise variance
+
+Each ❌ title names what the result is about.
+Each ✅ title says what the result states,
+and the second keeps the customary name in front of the sentence.
+
+:::
+
+A failing check, [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168),
+flags a result title on a line that a pull request adds
+when the title holds no verb and no math relation.
+It tests for verbs with a word list,
+so it can flag a sentence whose verb is missing from that list;
+such a line takes `<!-- check-result-titles: allow: <reason> -->`,
+or the verb goes into the list.
+
 # Rules that other chapters cover
 
 @tbl-knuth-elsewhere lists the course's other rules and where this book discusses them.
