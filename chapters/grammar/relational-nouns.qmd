@@ -55,13 +55,14 @@ an estimator, a prediction, or a fitted model.
 ## Naming what a bias describes
 
 > 1. The bias is the average fit minus the true mean function.
-> 2. The bias of a prediction at an input is the average fit there
->    minus the true mean function there.
+> 2. The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$
+>    minus the true mean function at $\predvar$.
 
 Version 1 never says what has the bias,
 so a reader who meets it as a theorem title cannot tell
 whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model.
-Version 2 names the class of objects, predictions at an input,
-and the place where the two functions are compared.
+Version 2 names the class of objects, predictions at an input $\predvar$,
+and names $\predvar$ again where the two functions are compared,
+instead of pointing back to it with "there".
 
 :::
