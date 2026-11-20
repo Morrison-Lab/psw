@@ -22,7 +22,7 @@ so the reference is explicit.
 a clause that starts with *whose* or *which* attaches to the nearest noun before it.
 The adverbs *here* and *there* point the same way:
 "getting there" leaves the reader to guess where "there" is.
-Use *here*, *there*, *then*, or a bare *this* only when its referent is proximal,
+Use *here*, *there*, *then*, or a bare *this* only when its referent is proximal, <!-- check-definite-antecedents: allow -->
 that is, named just before it in the same clause.
 When the referent is farther back, in an earlier clause, sentence, or heading,
 repeat its name instead.
