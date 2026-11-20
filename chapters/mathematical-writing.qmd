@@ -505,7 +505,7 @@ These titles come from the [machine learning notes](https://morrison-lab.github.
 
 > ❌ Derivative of the logistic function <!-- check-term-links: allow: quoted title, not a use of the term -->
 >
-> ✅ The derivative of the logistic function is its value times one minus its value
+> ✅ The derivative of the logistic function is its value times one minus its value <!-- check-term-links: allow: quoted title, not a use of the term -->
 >
 > ❌ Bias-variance decomposition
 >
