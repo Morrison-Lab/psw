@@ -480,7 +480,7 @@ is a declarative sentence that states the result.
 A reader who scans titles,
 in a table of contents, a list of results, or a cross-reference,
 then learns what each result says without opening it.
-A noun phrase such as "Derivative of the logistic function" names a topic
+A noun phrase such as "Derivative of the logistic function" names a topic <!-- check-term-links: allow: quoted title, not a use of the term -->
 and leaves the reader to look up what the result says about it.
 
 When a result has a customary name,
@@ -492,9 +492,9 @@ and the sentence says what the result states.
 The title may leave out hypotheses that the statement gives,
 such as "if the step size is small enough".
 The statement itself still stands alone,
-as [State a theorem in one short sentence](#state-a-theorem-in-one-short-sentence) asks.
+as the [State a theorem in one short sentence](#state-a-theorem-in-one-short-sentence) section asks.
 This rule covers results only:
-a definition's title names the term it defines,
+a definition's title names the [term](defining-terms.qmd#def-term) it defines,
 and an example's title names what the example does.
 
 ::: {#exm-result-title-sentence}
@@ -503,13 +503,13 @@ and an example's title names what the example does.
 
 These titles come from the [machine learning notes](https://morrison-lab.github.io/lds/).
 
-> ❌ Derivative of the logistic function
+> ❌ Derivative of the logistic function <!-- check-term-links: allow: quoted title, not a use of the term -->
 >
-> ✅ The derivative of the logistic function is the probability times its complement
+> ✅ The derivative of the logistic function is its value times one minus its value
 >
 > ❌ Bias-variance decomposition
 >
-> ✅ Bias-variance decomposition: the expected squared prediction error is the squared bias plus the variance plus the noise variance
+> ✅ Bias-variance decomposition: the expected squared prediction error is the squared bias plus the variance plus the noise variance <!-- check-term-links: allow: quoted title, not a use of the term -->
 
 Each ❌ title names what the result is about.
 Each ✅ title says what the result states,
