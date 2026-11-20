@@ -40,3 +40,28 @@ Version 4 names the object, uses the defined term,
 and starts with the subject.
 
 :::
+
+A noun that names a characteristic is relational too:
+a bias, a variance, an expected squared error, or a risk
+is always the bias, variance, error, or risk *of* something.
+Name the class of objects the characteristic describes,
+such as "the bias of an estimator" or "the expected squared error of a predictor",
+every time the characteristic is stated, in a title as well as in prose.
+"The bias" alone leaves the reader to guess whether it belongs to
+an estimator, a prediction, or a fitted model.
+
+::: {#exm-characteristic-object}
+
+## Naming what a bias describes
+
+> 1. The bias is the average fit minus the true mean function.
+> 2. The bias of a prediction at an input is the average fit there
+>    minus the true mean function there.
+
+Version 1 never says what has the bias,
+so a reader who meets it as a theorem title cannot tell
+whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model.
+Version 2 names the class of objects, predictions at an input,
+and the place where the two functions are compared.
+
+:::
