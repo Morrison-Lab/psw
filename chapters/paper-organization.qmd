@@ -294,7 +294,7 @@ The [bias-variance page](https://morrison-lab.github.io/lds/chapters/bias-varian
 of the machine learning notes
 had one subsection, 1.1 "Reading the decomposition",
 under its section 1.
-The noise model, the definitions of bias and variance,
+The noise model, the definitions of [bias](https://morrison-lab.github.io/lds/chapters/bias-variance.html#def-bias) and [variance](https://morrison-lab.github.io/lds/chapters/bias-variance.html#def-variance),
 and the decomposition itself sat untitled above it.
 
 > ❌ Section 1,
