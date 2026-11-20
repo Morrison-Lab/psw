@@ -1,0 +1,45 @@
+When a condition says that one point lies near another,
+write it as membership in a [ball](https://morrison-lab.github.io/mds/vector-calculus.html#def-ball):
+$\vx \in \ball{\vx^*}{\tolin}$,
+read "$\vx$ is in the ball of radius $\tolin$ around $\vx^*$".
+Do not write it as an inequality on the distance between the two points.
+
+Ezra Morrison asked for the rule on 2026-11-20,
+after rewriting the [local maximizer](https://morrison-lab.github.io/mds/optimization-critical-points.html#def-local-maximizer) definition in mds:
+
+> should we add a psw principle for writing this type of relationship using balls rather than inequalities?
+
+Ball notation is easier to read for three reasons:
+
+- It says what the condition means, "near $\vx^*$",
+  instead of a computation that the reader must interpret.
+- It names the set,
+  so the same symbol can serve as the set that a [quantifier](https://morrison-lab.github.io/mcs/chapters/predicates-quantifiers.html#def-quantifier) runs over,
+  the [domain](https://morrison-lab.github.io/mcs/functions.html#def-domain) of a function,
+  or a set to compare with another.
+- It extends the [double inequality](#def-double-inequality) rule.
+  On the real line,
+  a ball is an open interval,
+  and $x \in \ball{c}{\tolin}$ says the same as $x \in (c - \tolin, c + \tolin)$.
+
+::: {#exm-ball-neighborhood}
+
+## Rewriting a neighborhood condition
+
+<!-- check-ball-neighborhoods: allow: the counter-example shows the inequality form on purpose -->
+> ❌ $f(\vx^*) \ge f(\vx)$ for every $\vx$ with $\norm{\vx - \vx^*} < \tolin$.
+>
+> ✅ $f(\vx^*) \ge f(\vx)$ for every $\vx \in \ball{\vx^*}{\tolin}$.
+
+The ✅ version quantifies over a set,
+so the reader sees at once that the condition is about the points near $\vx^*$.
+
+:::
+
+Keep the inequality when the distance itself is the point,
+as in these cases:
+
+- the [definition of the ball](https://morrison-lab.github.io/mds/vector-calculus.html#def-ball);
+- the [triangle inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-triangle-inequality);
+- a bound on how far an estimate lies from its target;
+- a stopping rule for an algorithm.

@@ -22,6 +22,10 @@ that make quantitative writing easier to read.
 
 {{< include notation/double-inequalities.qmd >}}
 
+# Writing a neighborhood as a ball, not an inequality
+
+{{< include notation/balls-not-inequalities.qmd >}}
+
 # Parenthesizing to show precedence
 
 {{< include notation/precedence-parentheses.qmd >}}

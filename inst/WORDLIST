@@ -69,6 +69,7 @@ lds
 lme4
 MAE
 matplotlib's
+maximizer
 mds
 mentees
 MeSH
@@ -93,6 +94,7 @@ preprints
 preweaned
 PRISMA
 pRMSE
+psw
 qmd
 qwt
 README
