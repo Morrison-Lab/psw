@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 15:12:13 (PST)
+Last modified: 2026-11-20 15:49:09 (PST)
 
 > **NOTE:**
 >
@@ -268,7 +268,53 @@ A statement that lists many hypotheses and many conclusions is too long for one 
 
 A warn-only check ([gha#1368](https://github.com/Morrison-Lab/gha/pull/1368)) flags “without loss of generality”, “moreover” and “furthermore” on a line that a pull request adds to a theorem statement. No check can measure whether a statement is short or whether its hypotheses form a concept, so the length rule stays a writing rule that review enforces.
 
-# 13 Rules that other chapters cover
+# 13 Title a result with the sentence it states
+
+The title of a theorem, lemma, proposition, corollary, or conjecture is a declarative sentence that states the result. A reader who scans titles, in a table of contents, a list of results, or a cross-reference, then learns what each result says without opening it. A noun phrase such as “Derivative of the logistic function” names a topic and leaves the reader to look up what the result says about it.
+
+When a result has a customary name, such as “Hoeffding’s inequality” or “the bias-variance decomposition”, put the name first, then a colon, then the sentence. The name lets a reader find the result under the name other sources use, and the sentence says what the result states.
+
+The title may leave out hypotheses that the statement gives, such as “if the step size is small enough”. The statement itself still stands alone, as the [State a theorem in one short sentence](#state-a-theorem-in-one-short-sentence) section asks. This rule covers results only: a definition’s title names the [term](../chapters/defining-terms.llms.md#def-term) it defines, and an example’s title names what the example does.
+
+> **NOTE:**
+>
+> **Example 14 (Turning result titles into sentences)** These titles come from the [machine learning notes](https://morrison-lab.github.io/lds/).
+>
+> > ❌ Derivative of the logistic function
+> >
+> > ✅ The derivative of the logistic function is its value times one minus its value
+> >
+> > ❌ Bias-variance decomposition
+> >
+> > ✅ Bias-variance decomposition: the expected squared error of a prediction at an input is its squared bias plus its variance plus the noise variance
+>
+> Each ❌ title names what the result is about. Each ✅ title says what the result states, and the second keeps the customary name in front of the sentence.
+
+A failing check, [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168), flags a result title on a line that a pull request adds when the title holds no verb and no math relation. It tests for verbs with a word list, so it can flag a sentence whose verb is missing from that list; such a line takes `<!-- check-result-titles: allow: <reason> -->`, or the verb goes into the list.
+
+# 14 State the title’s sentence again in the statement, in words and in symbols
+
+The statement of a result says what its title says twice more: once in words, as a sentence close to the title’s, and once in full mathematical notation. The sentence in words lets a reader check that the statement is the result the title promises, and the formula is what a reader uses in a calculation or a proof. Put the sentence first, then the formula in a display. The sentence may add the hypotheses the title leaves out, and it names its symbols, so that the formula after it needs no further explanation.
+
+> **NOTE:**
+>
+> **Example 15 (The logistic derivative in words and in symbols)**  
+>
+> > ❌ **The derivative of the logistic function is its value times one minus its value**
+> >
+> > For every $\predvar$, $\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}$.
+> >
+> > ✅ **The derivative of the logistic function is its value times one minus its value**
+> >
+> > At every input $\predvar$, the derivative of the logistic function $\expit$ is the value of $\expit$ at $\predvar$ times one minus that value:
+> >
+> > $$\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}.$$
+>
+> The ❌ statement gives only the formula, so the reader has to translate it back into the title’s words to see that the two agree. The ✅ statement says the title’s sentence again with its symbols named, then gives the same claim as a displayed formula.
+
+The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168) also flags a result whose statement, the text of the div before its proof, has no display formula or no sentence in words. It cannot tell whether the sentence says what the title says, since that needs the meaning of both, not their words, so that part of the rule is applied in review.
+
+# 15 Rules that other chapters cover
 
 [Table 1](#tbl-knuth-elsewhere) lists the course’s other rules and where this book discusses them.
 

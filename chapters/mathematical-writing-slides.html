@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 15:12:13 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 15:49:09 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -551,8 +551,49 @@
 <p>A statement that lists many hypotheses and many conclusions is too long for one sentence. Halmos says that “a list of eight hypotheses … and a list of six conclusions do not a theorem make; they are a badly expounded theory”, and that the hypotheses “probably describe a general concept that deserves to be isolated, named, and studied” <span class="citation" data-cites="halmos1970write">(<a href="#/references" role="doc-biblioref" onclick="">Halmos 1970, sec. 10</a>)</span>. Name the shared concept in its own definition, and state each conclusion as its own result.</p>
 <p>A warn-only check (<a href="https://github.com/Morrison-Lab/gha/pull/1368">gha#1368</a>) flags “without loss of generality”, “moreover” and “furthermore” on a line that a pull request adds to a theorem statement. No check can measure whether a statement is short or whether its hypotheses form a concept, so the length rule stays a writing rule that review enforces.</p>
 </section>
-<section id="rules-that-other-chapters-cover" class="slide level2" data-number="13">
-<h2><span class="header-section-number">13</span> Rules that other chapters cover</h2>
+<section id="title-a-result-with-the-sentence-it-states" class="slide level2" data-number="13">
+<h2><span class="header-section-number">13</span> Title a result with the sentence it states</h2>
+</section>
+<section class="slide level2">
+
+<p>The title of a theorem, lemma, proposition, corollary, or conjecture is a declarative sentence that states the result. A reader who scans titles, in a table of contents, a list of results, or a cross-reference, then learns what each result says without opening it. A noun phrase such as “Derivative of the logistic function” names a topic <!-- check-term-links: allow: quoted title, not a use of the term --> and leaves the reader to look up what the result says about it.</p>
+<p>When a result has a customary name, such as “Hoeffding’s inequality” or “the bias-variance decomposition”, put the name first, then a colon, then the sentence. The name lets a reader find the result under the name other sources use, and the sentence says what the result states.</p>
+<p>The title may leave out hypotheses that the statement gives, such as “if the step size is small enough”. The statement itself still stands alone, as the <a href="#/state-a-theorem-in-one-short-sentence">State a theorem in one short sentence</a> section asks. This rule covers results only: a definition’s title names the <a href="../chapters/defining-terms.html#def-term">term</a> it defines, and an example’s title names what the example does.</p>
+<div id="exm-result-title-sentence" class="theorem example">
+<p><span class="theorem-title"><strong>Example 14 (Turning result titles into sentences)</strong></span> These titles come from the <a href="https://morrison-lab.github.io/lds/">machine learning notes</a>.</p>
+<blockquote>
+<p>❌ Derivative of the logistic function <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>✅ The derivative of the logistic function is its value times one minus its value <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>❌ Bias-variance decomposition</p>
+<p>✅ Bias-variance decomposition: the expected squared error of a prediction at an input is its squared bias plus its variance plus the noise variance <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+</blockquote>
+<p>Each ❌ title names what the result is about. Each ✅ title says what the result states, and the second keeps the customary name in front of the sentence.</p>
+</div>
+<p>A failing check, <a href="https://github.com/Morrison-Lab/gha/pull/2168"><code>check-result-titles</code></a>, flags a result title on a line that a pull request adds when the title holds no verb and no math relation. It tests for verbs with a word list, so it can flag a sentence whose verb is missing from that list; such a line takes <code>&lt;!-- check-result-titles: allow: &lt;reason&gt; --&gt;</code>, or the verb goes into the list.</p>
+</section>
+<section id="state-the-titles-sentence-again-in-the-statement-in-words-and-in-symbols" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> State the title’s sentence again in the statement, in words and in symbols</h2>
+</section>
+<section class="slide level2">
+
+<p>The statement of a result says what its title says twice more: once in words, as a sentence close to the title’s, and once in full mathematical notation. The sentence in words lets a reader check that the statement is the result the title promises, and the formula is what a reader uses in a calculation or a proof. Put the sentence first, then the formula in a display. The sentence may add the hypotheses the title leaves out, and it names its symbols, so that the formula after it needs no further explanation.</p>
+<div id="exm-result-statement-two-forms" class="theorem example">
+<p><span class="theorem-title"><strong>Example 15 (The logistic derivative in words and in symbols)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ <strong>The derivative of the logistic function is its value times one minus its value</strong> <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>For every <span class="math inline">\(\predvar\)</span>, <span class="math inline">\(\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}\)</span>.</p>
+<p>✅ <strong>The derivative of the logistic function is its value times one minus its value</strong> <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>At every input <span class="math inline">\(\predvar\)</span>, the derivative of the logistic function <span class="math inline">\(\expit\)</span> is the value of <span class="math inline">\(\expit\)</span> at <span class="math inline">\(\predvar\)</span> times one minus that value: <!-- check-term-links: allow: quoted statement, not a use of the term --></p>
+<p><span class="math display">\[
+\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}.
+\]</span></p>
+</blockquote>
+<p>The ❌ statement gives only the formula, so the reader has to translate it back into the title’s words to see that the two agree. The ✅ statement says the title’s sentence again with its symbols named, then gives the same claim as a displayed formula.</p>
+</div>
+<p>The check <a href="https://github.com/Morrison-Lab/gha/pull/2168"><code>check-result-titles</code></a> also flags a result whose statement, the text of the div before its proof, has no display formula or no sentence in words. It cannot tell whether the sentence says what the title says, since that needs the meaning of both, not their words, so that part of the rule is applied in review.</p>
+</section>
+<section id="rules-that-other-chapters-cover" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Rules that other chapters cover</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
