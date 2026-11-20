@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 14:44:02 (PST)
+Last modified: 2026-11-20 14:51:30 (PST)
 
 > **NOTE:**
 >
@@ -93,7 +93,7 @@ There are four demonstrative words:
 
 They can serve two roles. As adjectives, they modify a noun: “**this** result”, “**those** samples”. As standalone pronouns, they replace a noun: “**This** shows…”, “**That** means…”.
 
-When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. [Relative pronouns](#relative-pronouns) follow the same rule: a clause that starts with *whose* or *which* attaches to the nearest noun before it. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is.
+When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. [Relative pronouns](#relative-pronouns) follow the same rule: a clause that starts with *whose* or *which* attaches to the nearest noun before it. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is. Use *here*, *there*, *then*, or a bare *this* only when its referent is proximal, that is, named just before it in the same clause. When the referent is farther back, in an earlier clause, sentence, or heading, repeat its name instead.
 
 A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final *this* or *that* always leaves its referent unnamed. End the sentence with the noun instead.
 
@@ -110,6 +110,16 @@ A demonstrative at the end of a sentence has no room after it for a naming noun,
 > > ✅ The first model’s estimates were biased upward. The second model avoids **this bias**.
 >
 > Adding the nouns “overfitting” and “bias” states exactly what each “this” refers to, instead of leaving the reader to infer it. The second pair ends its sentence with the demonstrative, so the fix has to add the noun after it, at the very end.
+
+> **NOTE:**
+>
+> **Example 6 (Naming the place instead of saying “there”)**  
+>
+> > ❌ The bias of a prediction at an input is the average fit there minus the true mean function there.
+> >
+> > ✅ The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$ minus the true mean function at $\predvar$.
+>
+> In the first version, each “there” points back past a whole noun phrase to “an input”, so the reader has to work out that both functions are evaluated at that input. The second version names the input $\predvar$ and repeats it at each comparison.
 
 # 3 Quantifiers used as pronouns
 
@@ -131,7 +141,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 
 > **NOTE:**
 >
-> **Example 6 (Naming what a quantifier refers to)**  
+> **Example 7 (Naming what a quantifier refers to)**  
 >
 > > ❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both** return the same fit.
 > >
@@ -149,7 +159,7 @@ When you reread a sentence and stumble, find the point where your first reading 
 
 > **NOTE:**
 >
-> **Example 7 (Rewriting a garden-path sentence)**  
+> **Example 8 (Rewriting a garden-path sentence)**  
 >
 > > ❌ Report only SHAs a command you ran printed in full.
 > >
@@ -171,7 +181,7 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 
 > **NOTE:**
 >
-> **Example 8 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
+> **Example 9 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
 >
 > > 1.  A common cause in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
 > > 2.  In technical writing, a common cause is a clause that describes a noun but has lost its opening *that* or *that were*.
@@ -184,7 +194,7 @@ A noun that names a characteristic is relational too: a bias, a [variance](https
 
 > **NOTE:**
 >
-> **Example 9 (Naming what a bias describes)**  
+> **Example 10 (Naming what a bias describes)**  
 >
 > > 1.  The bias is the average fit minus the true mean function.
 > > 2.  The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$ minus the true mean function at $\predvar$.
@@ -215,7 +225,7 @@ Fronting is a stylistic choice, with costs and benefits.
 
 > **NOTE:**
 >
-> **Example 10 (Plain and fronted forms)**  
+> **Example 11 (Plain and fronted forms)**  
 >
 > > Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.
 > >
@@ -231,7 +241,7 @@ Write “the mean, the median, and the mode”, not “the mean, the median and 
 
 > **NOTE:**
 >
-> **Example 11 (Adding the serial comma)**  
+> **Example 12 (Adding the serial comma)**  
 >
 > > ❌ We compare the lasso, ridge regression and elastic net.
 > >

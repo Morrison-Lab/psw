@@ -253,7 +253,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 14:44:02 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 14:51:30 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -343,7 +343,7 @@
 <li><em>those</em></li>
 </ul>
 <p>They can serve two roles. As adjectives, they modify a noun: “<strong>this</strong> result”, “<strong>those</strong> samples”. <!-- check-term-links: allow --> As standalone pronouns, they replace a noun: “<strong>This</strong> shows…”, “<strong>That</strong> means…”. <!-- check-term-links: allow --></p>
-<p>When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. <a href="#/relative-pronouns">Relative pronouns</a> follow the same rule: a clause that starts with <em>whose</em> or <em>which</em> attaches to the nearest noun before it. The adverbs <em>here</em> and <em>there</em> point the same way: “getting there” leaves the reader to guess where “there” is.</p>
+<p>When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. <a href="#/relative-pronouns">Relative pronouns</a> follow the same rule: a clause that starts with <em>whose</em> or <em>which</em> attaches to the nearest noun before it. The adverbs <em>here</em> and <em>there</em> point the same way: “getting there” leaves the reader to guess where “there” is. Use <em>here</em>, <em>there</em>, <em>then</em>, or a bare <em>this</em> only when its referent is proximal, <!-- check-definite-antecedents: allow --> that is, named just before it in the same clause. When the referent is farther back, in an earlier clause, sentence, or heading, repeat its name instead.</p>
 <p>A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final <em>this</em> or <em>that</em> always leaves its referent unnamed. End the sentence with the noun instead.</p>
 <div id="exm-demonstrative-pronoun" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Naming the referent)</strong></span> &nbsp;</p>
@@ -354,6 +354,14 @@
 <p>✅ The first model’s estimates were biased upward. The second model avoids <strong>this bias</strong>. <!-- check-term-links: allow --></p>
 </blockquote>
 <p>Adding the nouns “overfitting” and “bias” states exactly what each “this” refers to, instead of leaving the reader to infer it. The second pair ends its sentence with the demonstrative, so the fix has to add the noun after it, at the very end.</p>
+</div>
+<div id="exm-indexical-referent" class="theorem example">
+<p><span class="theorem-title"><strong>Example 6 (Naming the place instead of saying “there”)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ The bias of a prediction at an input is the average fit there minus the true mean function there.</p>
+<p>✅ The bias of a prediction at an input <span class="math inline">\(\predvar\)</span> is the average fit at <span class="math inline">\(\predvar\)</span> minus the true mean function at <span class="math inline">\(\predvar\)</span>.</p>
+</blockquote>
+<p>In the first version, each “there” points back past a whole noun phrase to “an input”, so the reader has to work out that both functions are evaluated at that input. The second version names the input <span class="math inline">\(\predvar\)</span> and repeats it at each comparison.</p>
 </div>
 </section>
 <section id="quantifiers-used-as-pronouns" class="slide level2" data-number="3">
@@ -376,7 +384,7 @@
 <p><em>Every</em> belongs to the same family, but it cannot stand alone (“every” needs a noun, as in “every model”), so it never causes this problem.</p>
 <p>You do not need a complete list of quantifiers to apply the advice. Whenever a quantifier stands where a noun should be, the reader has to search backward to find out what it quantifies. Follow the quantifier with the noun: “<strong>both models</strong>”, “<strong>all three estimators</strong>”, “<strong>each interval</strong>”. <!-- check-term-links: allow --> An “of” phrase that names the noun works too: “<strong>none of the intervals</strong>”. <!-- check-term-links: allow --></p>
 <div id="exm-quantifier-pronoun" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6 (Naming what a quantifier refers to)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 7 (Naming what a quantifier refers to)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. <strong>Both</strong> return the same fit.</p>
 <p>✅ We fit a linear model and a spline model to the 2019 and 2020 surveys. <strong>Both models</strong> return the same fit. <!-- check-term-links: allow --></p>
@@ -393,7 +401,7 @@
 <p>A common cause of garden-path sentences in technical writing is a clause that describes a noun but has lost its opening <em>that</em> or <em>that were</em>. Without the pronoun, the reader takes the noun and the start of the clause as one phrase and has to reattach the words that follow. <a href="#/do-not-omit-relative-pronouns">Do not omit relative pronouns</a> gives the general rule.</p>
 <p>When you reread a sentence and stumble, find the point where your first reading went wrong, and rewrite the sentence so that the first reading is the right one.</p>
 <div id="exm-garden-path" class="theorem example">
-<p><span class="theorem-title"><strong>Example 7 (Rewriting a garden-path sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 8 (Rewriting a garden-path sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Report only SHAs a command you ran printed in full.</p>
 <p>✅ Report only SHAs that appeared in full in the output of a command that you ran.</p>
@@ -416,7 +424,7 @@
 </ul>
 <p>When one of these nouns appears without its “of” or “for” phrase, the reader has to recover the missing object from context, just as with a pronoun that has no clear referent. Write the object next to the noun.</p>
 <div id="exm-relational-noun" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Comparing four versions of one sentence)</strong></span> Each version tries to say what usually causes garden-path sentences.</p>
+<p><span class="theorem-title"><strong>Example 9 (Comparing four versions of one sentence)</strong></span> Each version tries to say what usually causes garden-path sentences.</p>
 <ol type="1">
 <li class="fragment">A common cause in technical writing is a clause that describes a noun but has lost its opening <em>that</em> or <em>that were</em>.</li>
 <li class="fragment">In technical writing, a common cause is a clause that describes a noun but has lost its opening <em>that</em> or <em>that were</em>.</li>
@@ -427,7 +435,7 @@
 </div>
 <p>A noun that names a characteristic is relational too: a bias, a <a href="https://morrison-lab.github.io/pds/variance-covariance.html#def-variance">variance</a>, an expected squared error, or a risk is always the bias, variance, error, or risk <em>of</em> something. Name the class of objects the characteristic describes, such as “the bias of an estimator” or “the expected squared error of a predictor”, every time the characteristic is stated, in a title as well as in prose. “The bias” alone leaves the reader to guess whether it belongs to an estimator, a prediction, or a fitted model.</p>
 <div id="exm-characteristic-object" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Naming what a bias describes)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Naming what a bias describes)</strong></span> &nbsp;</p>
 <ol type="1">
 <li class="fragment">The bias is the average fit minus the true mean function.</li>
 <li class="fragment">The bias of a prediction at an input <span class="math inline">\(\predvar\)</span> is the average fit at <span class="math inline">\(\predvar\)</span> minus the true mean function at <span class="math inline">\(\predvar\)</span>.</li>
@@ -458,7 +466,7 @@
 </ul>
 <p><strong>Guideline.</strong> Front an appositive when it is short, familiar to the reader, and describes the subject. Keep the plain “X is Y” form when the description is the new information the paper depends on, when it is long, or when the subject is a pronoun without a clear antecedent.</p>
 <div id="exm-appositive-fronting" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Plain and fronted forms)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Plain and fronted forms)</strong></span> &nbsp;</p>
 <blockquote>
 <p>Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.</p>
 <p>Fronted: A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in both preweaned calves and weaned cattle.</p>
@@ -474,7 +482,7 @@
 <p>In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the <em>serial comma</em>, or the <em>Oxford comma</em>. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.</p>
 <p>Write “the mean, the median, and the mode”, not “the mean, the median and the mode”. <!-- check-serial-comma: allow --> The same holds when the items are long, are split across source lines, or contain math.</p>
 <div id="exm-serial-comma" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Adding the serial comma)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Adding the serial comma)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We compare the lasso, ridge regression and elastic net. <!-- check-serial-comma: allow --></p>
 <p>✅ We compare the lasso, ridge regression, and elastic net.</p>

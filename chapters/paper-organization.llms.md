@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 14:44:02 (PST)
+Last modified: 2026-11-20 14:51:30 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
