@@ -22,6 +22,10 @@ so the reference is explicit.
 a clause that starts with *whose* or *which* attaches to the nearest noun before it.
 The adverbs *here* and *there* point the same way:
 "getting there" leaves the reader to guess where "there" is.
+Use *here*, *there*, *then*, or a bare *this* only when its referent is proximal,
+that is, named just before it in the same clause.
+When the referent is farther back, in an earlier clause, sentence, or heading,
+repeat its name instead.
 
 A demonstrative at the end of a sentence
 has no room after it for a naming noun,
@@ -49,5 +53,21 @@ states exactly what each "this" refers to,
 instead of leaving the reader to infer it.
 The second pair ends its sentence with the demonstrative,
 so the fix has to add the noun after it, at the very end.
+
+:::
+
+::: {#exm-indexical-referent}
+
+## Naming the place instead of saying "there"
+
+> ❌ The bias of a prediction at an input is the average fit there
+> minus the true mean function there.
+>
+> ✅ The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$
+> minus the true mean function at $\predvar$.
+
+In the first version, each "there" points back past a whole noun phrase to "an input",
+so the reader has to work out that both functions are evaluated at that input.
+The second version names the input $\predvar$ and repeats it at each comparison.
 
 :::
