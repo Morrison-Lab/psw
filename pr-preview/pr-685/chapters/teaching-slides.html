@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 01:43:12 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 02:09:08 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -752,8 +752,49 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The example shows the method once. The exercise asks the reader to repeat it on a new variable before moving on, and the solution’s numbers still come from running code (see <a href="#/use-real-data-and-compute-every-number">Use real data and compute every number</a>).</p>
 </div>
 </section>
-<section id="fade-worked-examples-into-exercises" class="slide level2" data-number="17">
-<h2><span class="header-section-number">17</span> Fade worked examples into exercises</h2>
+<section id="keep-each-question-an-exercise-and-give-examples-to-definitions-and-results" class="slide level2" data-number="17">
+<h2><span class="header-section-number">17</span> Keep each question an exercise, and give examples to definitions and results</h2>
+</section>
+<section class="slide level2">
+
+<p>A worked example shows what a definition or a result says in one concrete case. A question posed for the reader illustrates no single definition or result, so it stays an exercise with its solution (Ezra, 2026-11-20: “only definitions and results really need examples?”).</p>
+<ul>
+<li>Put an <code>#exm-</code> div only after a definition or result (a <code>#def-</code>, <code>#thm-</code>, <code>#lem-</code>, <code>#cor-</code>, or <code>#prp-</code> div), as the <a href="#/show-each-idea-applied-and-in-a-figure">Show each idea applied and in a figure</a> section requires.</li>
+<li>Keep a small question that the reader can work by hand as an <code>#exr-</code> div with its <code>#sol-</code> div. Do not turn it into an <code>#exm-</code> div because its answer is short.</li>
+<li>Put any real-data version of the same question right after the hand-worked exercise’s solution, as a second exercise with its own solution. The hand-worked version practices the method on numbers small enough to follow, and the real-data version practices applying the method to data with code.</li>
+<li>A hand-worked version and a real-data version of one question practice different skills, so they do not count as repeats of each other. Keep both in the notes, even when other versions with different numbers or data move to an exercise bank.</li>
+</ul>
+<div id="exm-toy-then-real-exercise" class="theorem example">
+<p><span class="theorem-title"><strong>Example 9 (A hand-worked exercise followed by its real-data version)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>::: {#exm-slope-three-points}</span>
+<span id="cb3-2"><a aria-label="2"></a>(the least-squares slope through three points, worked by hand)</span>
+<span id="cb3-3"><a aria-label="3"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<blockquote>
+<p>✅</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a aria-label="1"></a>::: {#exr-slope-three-points}</span>
+<span id="cb4-2"><a aria-label="2"></a>Compute the least-squares slope through the points (0, 1), (1, 2), and (2, 4).</span>
+<span id="cb4-3"><a aria-label="3"></a>:::</span>
+<span id="cb4-4"><a aria-label="4"></a></span>
+<span id="cb4-5"><a aria-label="5"></a>::: {#sol-slope-three-points}</span>
+<span id="cb4-6"><a aria-label="6"></a>(every step, worked by hand)</span>
+<span id="cb4-7"><a aria-label="7"></a>:::</span>
+<span id="cb4-8"><a aria-label="8"></a></span>
+<span id="cb4-9"><a aria-label="9"></a>::: {#exr-slope-real-data}</span>
+<span id="cb4-10"><a aria-label="10"></a>Fit the least-squares slope of the outcome on one predictor in a real dataset.</span>
+<span id="cb4-11"><a aria-label="11"></a>:::</span>
+<span id="cb4-12"><a aria-label="12"></a></span>
+<span id="cb4-13"><a aria-label="13"></a>::: {#sol-slope-real-data}</span>
+<span id="cb4-14"><a aria-label="14"></a>(the code chunk and its output)</span>
+<span id="cb4-15"><a aria-label="15"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</blockquote>
+<p>The three-point slope is a question, not an illustration of a definition, so it stays an exercise. The real-data exercise follows it and asks for the same quantity with code.</p>
+</div>
+</section>
+<section id="fade-worked-examples-into-exercises" class="slide level2" data-number="18">
+<h2><span class="header-section-number">18</span> Fade worked examples into exercises</h2>
 </section>
 <section class="slide level2">
 
@@ -765,35 +806,35 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>In a later unit that uses the method again, link to the first worked example instead of working it again.</li>
 </ul>
 <div id="exm-faded-examples" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Fading three cases of one method)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Fading three cases of one method)</strong></span> &nbsp;</p>
 <blockquote>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>::: {#exm-mean-height}</span>
-<span id="cb3-2"><a aria-label="2"></a>(the average height, with every step worked)</span>
-<span id="cb3-3"><a aria-label="3"></a>:::</span>
-<span id="cb3-4"><a aria-label="4"></a></span>
-<span id="cb3-5"><a aria-label="5"></a>::: {#exr-mean-weight}</span>
-<span id="cb3-6"><a aria-label="6"></a>Compute the average weight.</span>
-<span id="cb3-7"><a aria-label="7"></a>The sum of the weights is given; divide it by the number of people.</span>
-<span id="cb3-8"><a aria-label="8"></a>:::</span>
-<span id="cb3-9"><a aria-label="9"></a></span>
-<span id="cb3-10"><a aria-label="10"></a>::: {#sol-mean-weight}</span>
-<span id="cb3-11"><a aria-label="11"></a>(the division, computed by a code chunk)</span>
-<span id="cb3-12"><a aria-label="12"></a>:::</span>
-<span id="cb3-13"><a aria-label="13"></a></span>
-<span id="cb3-14"><a aria-label="14"></a>::: {#exr-mean-age}</span>
-<span id="cb3-15"><a aria-label="15"></a>Compute the average age.</span>
-<span id="cb3-16"><a aria-label="16"></a>:::</span>
-<span id="cb3-17"><a aria-label="17"></a></span>
-<span id="cb3-18"><a aria-label="18"></a>::: {#sol-mean-age}</span>
-<span id="cb3-19"><a aria-label="19"></a>(every step, computed by a code chunk)</span>
-<span id="cb3-20"><a aria-label="20"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a aria-label="1"></a>::: {#exm-mean-height}</span>
+<span id="cb5-2"><a aria-label="2"></a>(the average height, with every step worked)</span>
+<span id="cb5-3"><a aria-label="3"></a>:::</span>
+<span id="cb5-4"><a aria-label="4"></a></span>
+<span id="cb5-5"><a aria-label="5"></a>::: {#exr-mean-weight}</span>
+<span id="cb5-6"><a aria-label="6"></a>Compute the average weight.</span>
+<span id="cb5-7"><a aria-label="7"></a>The sum of the weights is given; divide it by the number of people.</span>
+<span id="cb5-8"><a aria-label="8"></a>:::</span>
+<span id="cb5-9"><a aria-label="9"></a></span>
+<span id="cb5-10"><a aria-label="10"></a>::: {#sol-mean-weight}</span>
+<span id="cb5-11"><a aria-label="11"></a>(the division, computed by a code chunk)</span>
+<span id="cb5-12"><a aria-label="12"></a>:::</span>
+<span id="cb5-13"><a aria-label="13"></a></span>
+<span id="cb5-14"><a aria-label="14"></a>::: {#exr-mean-age}</span>
+<span id="cb5-15"><a aria-label="15"></a>Compute the average age.</span>
+<span id="cb5-16"><a aria-label="16"></a>:::</span>
+<span id="cb5-17"><a aria-label="17"></a></span>
+<span id="cb5-18"><a aria-label="18"></a>::: {#sol-mean-age}</span>
+<span id="cb5-19"><a aria-label="19"></a>(every step, computed by a code chunk)</span>
+<span id="cb5-20"><a aria-label="20"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The reader sees the method once in full, then supplies one step, then does every step.</p>
 </div>
 </section>
-<section id="leave-a-step-to-the-reader-only-as-an-exercise" class="slide level2" data-number="18">
-<h2><span class="header-section-number">18</span> Leave a step to the reader only as an exercise</h2>
+<section id="leave-a-step-to-the-reader-only-as-an-exercise" class="slide level2" data-number="19">
+<h2><span class="header-section-number">19</span> Leave a step to the reader only as an exercise</h2>
 </section>
 <section class="slide level2">
 
@@ -803,8 +844,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li><strong>Advanced course:</strong> a routine step of a derivation may go to the reader, posed as an <code>#exr-</code> div with its <code>#sol-</code> div. Do not write “the reader can verify” in place of the exercise.</li>
 </ul>
 </section>
-<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="19">
-<h2><span class="header-section-number">19</span> Write labs for both languages and any computer</h2>
+<section id="write-labs-for-both-languages-and-any-computer" class="slide level2" data-number="20">
+<h2><span class="header-section-number">20</span> Write labs for both languages and any computer</h2>
 </section>
 <section class="slide level2">
 
@@ -821,8 +862,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Do not assume that students own a laptop. Assume only that they can use some computer, so setup steps must work on a shared or hosted machine.</li>
 </ul>
 </section>
-<section id="keep-expository-content-out-of-labs" class="slide level2" data-number="20">
-<h2><span class="header-section-number">20</span> Keep expository content out of labs</h2>
+<section id="keep-expository-content-out-of-labs" class="slide level2" data-number="21">
+<h2><span class="header-section-number">21</span> Keep expository content out of labs</h2>
 </section>
 <section class="slide level2">
 
@@ -835,8 +876,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>A check can see a definition or result div in a lab, so gha’s <code>check-lab-exposition</code> check, proposed in <a href="https://github.com/Morrison-Lab/gha/pull/2136">gha#2136</a>, fails a pull request that adds one to a lab page in a repository that runs it. Until a repository runs it, a reviewer enforces the whole rule there. No check can tell an explanation from an instruction, so a reviewer always enforces the rest of the rule.</p>
 </section>
-<section id="phrase-optional-steps-as-conditions" class="slide level2" data-number="21">
-<h2><span class="header-section-number">21</span> Phrase optional steps as conditions</h2>
+<section id="phrase-optional-steps-as-conditions" class="slide level2" data-number="22">
+<h2><span class="header-section-number">22</span> Phrase optional steps as conditions</h2>
 </section>
 <section class="slide level2">
 
@@ -853,8 +894,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>✅ If you use a language other than R or Python, use a port of <code>SyncRNG</code> to get the same data. If no port exists, draw your own data from the same model; your numbers will differ slightly from the key’s.</p>
 </blockquote>
 </section>
-<section id="introduce-a-specific-case-as-a-specific-case" class="slide level2" data-number="22">
-<h2><span class="header-section-number">22</span> Introduce a specific case as a specific case</h2>
+<section id="introduce-a-specific-case-as-a-specific-case" class="slide level2" data-number="23">
+<h2><span class="header-section-number">23</span> Introduce a specific case as a specific case</h2>
 </section>
 <section class="slide level2">
 
@@ -870,8 +911,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>✅ Consider a binary logistic regression classifier in two dimensions with parameter vector <span class="math inline">\([-2, 1, 0.5]'\)</span>.</p>
 </blockquote>
 </section>
-<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="23">
-<h2><span class="header-section-number">23</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
+<section id="keep-each-steps-code-in-one-chunk-and-put-parallel-chunks-in-a-language-tabset" class="slide level2" data-number="24">
+<h2><span class="header-section-number">24</span> Keep each step’s code in one chunk, and put parallel chunks in a language tabset</h2>
 </section>
 <section class="slide level2">
 
@@ -890,8 +931,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Check for output that splits a chunk without a reason. In Python, reticulate prints the value of each top-level call that returns something other than <code>None</code> and shows the chunk as one code block per printed value, such as a <code>&lt;matplotlib.lines.Line2D object at 0x...&gt;</code> line after every <code>ax.plot(...)</code>. End each such call with a semicolon, or assign its value.</li>
 </ul>
 </section>
-<section id="make-every-visible-code-chunk-show-a-result" class="slide level2" data-number="24">
-<h2><span class="header-section-number">24</span> Make every visible code chunk show a result</h2>
+<section id="make-every-visible-code-chunk-show-a-result" class="slide level2" data-number="25">
+<h2><span class="header-section-number">25</span> Make every visible code chunk show a result</h2>
 </section>
 <section class="slide level2">
 
@@ -906,21 +947,21 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>A chunk hidden with <code>#| include: false</code> is exempt, because the reader never sees its code.</p>
 <div id="exm-visible-chunk-result" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Showing the data that a chunk loads)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Showing the data that a chunk loads)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="co"># load the HERS trial data, with labeled values as factors</span></span>
-<span id="cb4-2"><a aria-label="2"></a>hers <span class="ot">&lt;-</span> rmb<span class="sc">::</span>hers <span class="sc">|&gt;</span> haven<span class="sc">::</span><span class="fu">as_factor</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="co"># load the HERS trial data, with labeled values as factors</span></span>
+<span id="cb6-2"><a aria-label="2"></a>hers <span class="ot">&lt;-</span> rmb<span class="sc">::</span>hers <span class="sc">|&gt;</span> haven<span class="sc">::</span><span class="fu">as_factor</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="co"># load the HERS trial data, with labeled values as factors</span></span>
-<span id="cb5-2"><a aria-label="2"></a>hers <span class="ot">&lt;-</span> rmb<span class="sc">::</span>hers <span class="sc">|&gt;</span> haven<span class="sc">::</span><span class="fu">as_factor</span>()</span>
-<span id="cb5-3"><a aria-label="3"></a>hers <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="co"># load the HERS trial data, with labeled values as factors</span></span>
+<span id="cb7-2"><a aria-label="2"></a>hers <span class="ot">&lt;-</span> rmb<span class="sc">::</span>hers <span class="sc">|&gt;</span> haven<span class="sc">::</span><span class="fu">as_factor</span>()</span>
+<span id="cb7-3"><a aria-label="3"></a>hers <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The first chunk renders as code alone. The second also prints the first six rows, so the reader sees the variables and their types before any later chunk uses them.</p>
 </div>
 </section>
-<section id="show-output-without-warnings-or-messages" class="slide level2" data-number="25">
-<h2><span class="header-section-number">25</span> Show output without warnings or messages</h2>
+<section id="show-output-without-warnings-or-messages" class="slide level2" data-number="26">
+<h2><span class="header-section-number">26</span> Show output without warnings or messages</h2>
 </section>
 <section class="slide level2">
 
@@ -934,24 +975,24 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li><strong>Never hide a message or warning that you have not read</strong>, whether by a chunk option or by a wrapper such as <code>suppressWarnings()</code> or <code>warnings.filterwarnings("ignore")</code>, because that hides a defect from the author as well as from the reader.</li>
 </ul>
 <div id="exm-no-code-messages" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Removing the message under a fitted line)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Removing the message under a fitted line)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="co"># draw the data with its least-squares line</span></span>
-<span id="cb6-2"><a aria-label="2"></a><span class="fu">ggplot</span>(hers, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> glucose)) <span class="sc">+</span></span>
-<span id="cb6-3"><a aria-label="3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb6-4"><a aria-label="4"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="co"># draw the data with its least-squares line</span></span>
+<span id="cb8-2"><a aria-label="2"></a><span class="fu">ggplot</span>(hers, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> glucose)) <span class="sc">+</span></span>
+<span id="cb8-3"><a aria-label="3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb8-4"><a aria-label="4"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="co"># draw the data with its least-squares line</span></span>
-<span id="cb7-2"><a aria-label="2"></a><span class="fu">ggplot</span>(hers, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> glucose)) <span class="sc">+</span></span>
-<span id="cb7-3"><a aria-label="3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb7-4"><a aria-label="4"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">formula =</span> y <span class="sc">~</span> x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a><span class="co"># draw the data with its least-squares line</span></span>
+<span id="cb9-2"><a aria-label="2"></a><span class="fu">ggplot</span>(hers, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> glucose)) <span class="sc">+</span></span>
+<span id="cb9-3"><a aria-label="3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-4"><a aria-label="4"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">formula =</span> y <span class="sc">~</span> x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The first chunk prints “<code>geom_smooth()</code> using formula = ‘y ~ x’” above its figure. The second names the formula, so the chunk shows the figure alone.</p>
 </div>
 </section>
-<section id="present-r-results-with-modern-packages" class="slide level2" data-number="26">
-<h2><span class="header-section-number">26</span> Present R results with modern packages</h2>
+<section id="present-r-results-with-modern-packages" class="slide level2" data-number="27">
+<h2><span class="header-section-number">27</span> Present R results with modern packages</h2>
 </section>
 <section class="slide level2">
 
@@ -965,8 +1006,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Ezra’s <a href="https://github.com/d-morrison/rme">rme</a> notes show the style.</li>
 </ul>
 </section>
-<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="27">
-<h2><span class="header-section-number">27</span> Manipulate data with dplyr, not base R</h2>
+<section id="manipulate-data-with-dplyr-not-base-r" class="slide level2" data-number="28">
+<h2><span class="header-section-number">28</span> Manipulate data with dplyr, not base R</h2>
 </section>
 <section class="slide level2">
 
@@ -983,8 +1024,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Reading one value out of a data frame for inline code is fine, as is indexing a matrix or a vector. The rule is about selecting, filtering and building data frames.</li>
 </ul>
 </section>
-<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="28">
-<h2><span class="header-section-number">28</span> Include code from files instead of copying it</h2>
+<section id="include-code-from-files-instead-of-copying-it" class="slide level2" data-number="29">
+<h2><span class="header-section-number">29</span> Include code from files instead of copying it</h2>
 </section>
 <section class="slide level2">
 
@@ -996,8 +1037,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>The extension is a new dependency of the site: install it with <code>quarto add quarto-ext/include-code-files</code>, and commit the <code>_extensions</code> directory it creates.</li>
 </ul>
 </section>
-<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="29">
-<h2><span class="header-section-number">29</span> Comment every code chunk to say what and why</h2>
+<section id="comment-every-code-chunk-to-say-what-and-why" class="slide level2" data-number="30">
+<h2><span class="header-section-number">30</span> Comment every code chunk to say what and why</h2>
 </section>
 <section class="slide level2">
 
@@ -1009,8 +1050,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Comment each step that a student could not reconstruct from its name, such as a transformation, a modeling choice, a tuning value or a random seed.</li>
 </ul>
 </section>
-<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="30">
-<h2><span class="header-section-number">30</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
+<section id="set-code-fold-by-what-the-code-does-and-whether-the-prose-mentions-it" class="slide level2" data-number="31">
+<h2><span class="header-section-number">31</span> Set <code>code-fold</code> by what the code does and whether the prose mentions it</h2>
 </section>
 <section class="slide level2">
 
@@ -1028,8 +1069,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>A chunk that loads a package the text never mentions is <code>true</code>.</li>
 </ul>
 </section>
-<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="31">
-<h2><span class="header-section-number">31</span> Put a full command in a code block, not in inline code</h2>
+<section id="put-a-full-command-in-a-code-block-not-in-inline-code" class="slide level2" data-number="32">
+<h2><span class="header-section-number">32</span> Put a full command in a code block, not in inline code</h2>
 </section>
 <section class="slide level2">
 
@@ -1041,17 +1082,17 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Introduce the block with a sentence that ends in a colon. Do not follow a semicolon or a colon in the sentence with inline code that the reader has to select by hand.</li>
 </ul>
 <div id="exm-command-block" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 13 (Moving an install command out of a sentence)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>: <code>install.packages(c("readr", "dplyr", "ggplot2", "purrr"))</code>.</p>
 <p>✅ The R tabs need <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code> and <code>purrr</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>, <span class="st">"purrr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The package names stay inline because they sit in the sentence. The install command moves to a block, so the reader copies it with one click.</p>
 </div>
 </section>
-<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="32">
-<h2><span class="header-section-number">32</span> Introduce every function in a programming primer</h2>
+<section id="introduce-every-function-in-a-programming-primer" class="slide level2" data-number="33">
+<h2><span class="header-section-number">33</span> Introduce every function in a programming primer</h2>
 </section>
 <section class="slide level2">
 
@@ -1063,8 +1104,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Functions that a chapter defines for itself are not package functions. A chapter introduces those where it defines them.</li>
 </ul>
 </section>
-<section id="make-figures-accessible" class="slide level2" data-number="33">
-<h2><span class="header-section-number">33</span> Make figures accessible</h2>
+<section id="make-figures-accessible" class="slide level2" data-number="34">
+<h2><span class="header-section-number">34</span> Make figures accessible</h2>
 </section>
 <section class="slide level2">
 
@@ -1075,8 +1116,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Do not cross-reference an interactive figure from prose, because the PDF format renders no figure for it, so the reference has no target there (observed when rendering lecture notes to PDF).</li>
 </ul>
 </section>
-<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="34">
-<h2><span class="header-section-number">34</span> Split a page before it grows too long</h2>
+<section id="split-a-page-before-it-grows-too-long" class="slide level2" data-number="35">
+<h2><span class="header-section-number">35</span> Split a page before it grows too long</h2>
 </section>
 <section class="slide level2">
 
@@ -1090,8 +1131,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The <code>check-page-length</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1377">gha#1377</a>) warns when a pull request adds to a page that, with its includes expanded, has more than 600 math expressions or 5000 source lines. Those limits are proxies, since the check does not run a browser. It warns only on pages a pull request touches, so split a long page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="35">
-<h2><span class="header-section-number">35</span> Keep sibling headings to about five</h2>
+<section id="keep-sibling-headings-to-about-five" class="slide level2" data-number="36">
+<h2><span class="header-section-number">36</span> Keep sibling headings to about five</h2>
 </section>
 <section class="slide level2">
 
@@ -1105,8 +1146,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The <code>check-heading-siblings</code> check in <a href="https://github.com/Morrison-Lab/gha"><code>gha</code></a> (<a href="https://github.com/Morrison-Lab/gha/pull/1390">gha#1390</a>) warns when a pull request adds a heading to a group of more than seven siblings. It warns only on pages a pull request touches, so regroup a page when you next edit it, and do not sweep the others.</p>
 </section>
-<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="36">
-<h2><span class="header-section-number">36</span> Fold a one-paragraph section into its neighbor</h2>
+<section id="fold-a-one-paragraph-section-into-its-neighbor" class="slide level2" data-number="37">
+<h2><span class="header-section-number">37</span> Fold a one-paragraph section into its neighbor</h2>
 </section>
 <section class="slide level2">
 
@@ -1119,8 +1160,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Do not delete the content: move it to the section it belongs to.</li>
 </ul>
 </section>
-<section id="structure-slides-for-the-reader" class="slide level2" data-number="37">
-<h2><span class="header-section-number">37</span> Structure slides for the reader</h2>
+<section id="structure-slides-for-the-reader" class="slide level2" data-number="38">
+<h2><span class="header-section-number">38</span> Structure slides for the reader</h2>
 </section>
 <section class="slide level2">
 
@@ -1135,8 +1176,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Keep body text off section and title slides. Reveal.js centers those slides vertically and does not scroll them, so long text is clipped at the top and bottom of the screen (observed in lecture slides rendered with Quarto). Put a slide break after the heading and move the text onto content slides.</li>
 </ul>
 </section>
-<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="38">
-<h2><span class="header-section-number">38</span> Give each concept in a note sheet its own row</h2>
+<section id="give-each-concept-in-a-note-sheet-its-own-row" class="slide level2" data-number="39">
+<h2><span class="header-section-number">39</span> Give each concept in a note sheet its own row</h2>
 </section>
 <section class="slide level2">
 
@@ -1149,7 +1190,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>The same rule applies to every other reference table, such as a table of notation.</p>
 <div id="exm-note-sheet-rows" class="theorem example">
-<p><span class="theorem-title"><strong>Example 13 (Splitting a merged row)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 14 (Splitting a merged row)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Row: <code>Dot product, sample mean</code>, with both formulas in one cell.</p>
 <p>✅ Rows: <code>Dot product</code> with its formula, then <code>Sample mean</code> with its formula.</p>
@@ -1157,8 +1198,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ row makes the reader find where one concept ends and the next begins. The ✅ rows let the reader find one formula by one label.</p>
 </div>
 </section>
-<section id="order-a-note-sheet-from-complex-sections-to-atomic-rows" class="slide level2" data-number="39">
-<h2><span class="header-section-number">39</span> Order a note sheet from complex sections to atomic rows</h2>
+<section id="order-a-note-sheet-from-complex-sections-to-atomic-rows" class="slide level2" data-number="40">
+<h2><span class="header-section-number">40</span> Order a note sheet from complex sections to atomic rows</h2>
 </section>
 <section class="slide level2">
 
@@ -1172,7 +1213,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>Atomic rows come first within a table because a reader scans a table from the top, and a row that uses a symbol defined below it sends the reader down the table to find it.</p>
 <div id="exm-note-sheet-order" class="theorem example">
-<p><span class="theorem-title"><strong>Example 14 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 15 (Reordering a gradient descent table)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Rows: <code>Gradient descent update</code>, <code>Step size</code>, <code>Gradient</code>, <code>Power rule</code>.</p>
 <p>✅ Rows: <code>Power rule</code>, <code>Gradient</code>, <code>Step size</code>, <code>Gradient descent update</code>.</p>
@@ -1180,8 +1221,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ table opens with an update rule that uses the step size and the gradient, which only the rows below it define. In the ✅ table, every row uses only the rows above it.</p>
 </div>
 </section>
-<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="40">
-<h2><span class="header-section-number">40</span> Talk about the ideas, not the notes</h2>
+<section id="talk-about-the-ideas-not-the-notes" class="slide level2" data-number="41">
+<h2><span class="header-section-number">41</span> Talk about the ideas, not the notes</h2>
 </section>
 <section class="slide level2">
 
@@ -1217,8 +1258,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>where to get a copy of the data.</li>
 </ul>
 </section>
-<section id="refute-common-misconceptions" class="slide level2" data-number="41">
-<h2><span class="header-section-number">41</span> Refute common misconceptions</h2>
+<section id="refute-common-misconceptions" class="slide level2" data-number="42">
+<h2><span class="header-section-number">42</span> Refute common misconceptions</h2>
 </section>
 <section class="slide level2">
 
@@ -1230,7 +1271,7 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Put the refutation where the concept is defined or first used, so the reader meets the correction together with the concept.</li>
 </ul>
 <div id="exm-refutation-text" class="theorem example">
-<p><span class="theorem-title"><strong>Example 15 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 16 (Refuting a misreading of the p-value)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed.</p>
 <p>✅ The p-value is the probability, computed under the null hypothesis, of a test statistic at least as extreme as the one observed. A common misreading takes the p-value to be the probability that the null hypothesis is true. That misreading is wrong. The p-value is computed by assuming that the null hypothesis is true, so it cannot also be the probability that the null hypothesis is true.</p>
@@ -1238,8 +1279,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <p>The ❌ version is correct, but a student who already holds the misreading can fit the definition to it without noticing the conflict.</p>
 </div>
 </section>
-<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="42">
-<h2><span class="header-section-number">42</span> Revisit earlier units in later exercises</h2>
+<section id="revisit-earlier-units-in-later-exercises" class="slide level2" data-number="43">
+<h2><span class="header-section-number">43</span> Revisit earlier units in later exercises</h2>
 </section>
 <section class="slide level2">
 
@@ -1250,8 +1291,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>In a review sheet or a quiz, mix questions from several units instead of grouping them by unit.</li>
 </ul>
 </section>
-<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="43">
-<h2><span class="header-section-number">43</span> Write grading rubrics as checklists</h2>
+<section id="write-grading-rubrics-as-checklists" class="slide level2" data-number="44">
+<h2><span class="header-section-number">44</span> Write grading rubrics as checklists</h2>
 </section>
 <section class="slide level2">
 
@@ -1265,24 +1306,24 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Use another structure when a question has no separable criteria, such as a single holistic judgment of a proof’s rigor.</li>
 </ul>
 <div id="exm-rubric-checklist" class="theorem example">
-<p><span class="theorem-title"><strong>Example 16 (A rubric as a checklist)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 17 (A rubric as a checklist)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ Grading (6 points): two for <span class="math inline">\(\vec r\)</span>, one for <span class="math inline">\(\dprod{\vx}{\vec r} = 0\)</span>, three for “orthogonal” with its link to the normal equation.</p>
 </blockquote>
 <blockquote>
 <p>✅</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a aria-label="1"></a>Grading (6 points):</span>
-<span id="cb9-2"><a aria-label="2"></a></span>
-<span id="cb9-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
-<span id="cb9-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
-<span id="cb9-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
-<span id="cb9-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a aria-label="1"></a>Grading (6 points):</span>
+<span id="cb11-2"><a aria-label="2"></a></span>
+<span id="cb11-3"><a aria-label="3"></a><span class="ss">- </span><span class="va">[ ]</span> 2 points: gives $\vresid = \tp{<span class="co">[</span><span class="ot">-1, -1, 1</span><span class="co">]</span>}$.</span>
+<span id="cb11-4"><a aria-label="4"></a><span class="ss">- </span><span class="va">[ ]</span> 1 point: computes $\dprod{\vx}{\vresid} = 0$.</span>
+<span id="cb11-5"><a aria-label="5"></a><span class="ss">- </span><span class="va">[ ]</span> 3 points: says $\vresid$ is orthogonal to $\vx$</span>
+<span id="cb11-6"><a aria-label="6"></a>  and links this orthogonality to the normal equation.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </blockquote>
 <p>The checklist shows the grader each item to mark and lets a script check that the points sum to the total.</p>
 </div>
 </section>
-<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="44">
-<h2><span class="header-section-number">44</span> Credit other courses without summarizing them</h2>
+<section id="credit-other-courses-without-summarizing-them" class="slide level2" data-number="45">
+<h2><span class="header-section-number">45</span> Credit other courses without summarizing them</h2>
 </section>
 <section class="slide level2">
 
@@ -1293,8 +1334,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 <li>Where the book is the subject rather than its authors, name the book by its title, because a bare citation key renders as the author list.</li>
 </ul>
 </section>
-<section id="finish-each-unit-completely" class="slide level2" data-number="45">
-<h2><span class="header-section-number">45</span> Finish each unit completely</h2>
+<section id="finish-each-unit-completely" class="slide level2" data-number="46">
+<h2><span class="header-section-number">46</span> Finish each unit completely</h2>
 </section>
 <section class="slide level2">
 
@@ -1308,8 +1349,8 @@ Table&nbsp;1: A toy dataset with one input, one row per observation.
 </ul>
 <p>When you catch yourself taking a shortcut, finish the unit instead. A shortcut saves the writer a few lines and costs every reader the work of rebuilding them.</p>
 </section>
-<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="46">
-<h2><span class="header-section-number">46</span> Rules that apply to all writing</h2>
+<section id="rules-that-apply-to-all-writing" class="slide level2" data-number="47">
+<h2><span class="header-section-number">47</span> Rules that apply to all writing</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
