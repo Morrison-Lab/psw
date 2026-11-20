@@ -1,0 +1,23 @@
+# Flags a neighborhood written as a norm inequality, such as
+# `\norm{\vx - \vx^*} < \delta`, on lines a PR adds,
+# and suggests membership in a ball, `\vx \in \ball{\vx^*}{\delta}` (psw#684).
+# Put `<!-- check-ball-neighborhoods: allow: <reason> -->` on a line
+# that is about the distance itself, such as the ball's own definition.
+# Blocks by default; existing pages never block, since only added lines count.
+# No push trigger: a push run has no base to diff against and would report
+# success having checked nothing. A manual run scans the whole tree.
+# Check: Morrison-Lab/gha#2158; wiring: Morrison-Lab/gha#2156.
+name: Check neighborhoods written as norm inequalities
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-ball-neighborhoods.yml@v3
+    with:
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
+      paths-ignore: '_extensions/**,**/outtakes/**,latex-macros/**'
