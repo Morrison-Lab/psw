@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 03:08:13 (PST)
+Last modified: 2026-11-20 09:17:11 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -92,7 +92,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Write a definition with an [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) operator where one fits:** When a quantity is a probability-weighted sum, or a probability-weighted integral, of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of a random variable, define it as the [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) of that function, not as the sum, or the integral, written out. The expectation operator already stands for the sum when the variable is discrete and for the integral when it is continuous, so one definition covers both and need not repeat the support. For example, define the entropy of a discrete random variable $X$ with mass function $p$ as
 
-  $${H\mathopen{}\left(X\right)\mathclose{}} \stackrel{\text{def}}{=}{\mathbb{E}\mathopen{}\left[-\log p(X)\right]\mathclose{}},$$
+  $${\mathbb{H}\mathopen{}\left(X\right)\mathclose{}} \stackrel{\text{def}}{=}{\mathbb{E}\mathopen{}\left[-\log p(X)\right]\mathclose{}},$$
 
   not as $-\sum_x p(x) \log p(x)$ with a note that the sum runs over the $x$ with $p(x) > 0$. The [expectation](https://morrison-lab.github.io/pds/expectation.html#def-expectation) sums over the possible values of $X$, which are the values $x$ with $p(x) > 0$, so $-\log p(x)$ is defined at each of them. Likewise, define the [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance) of any random variable $X$ as
 
@@ -102,9 +102,9 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Write the defining expression with the highest-level macros available:** Write each quantity in the defining expression with the [semantic macro](notation/shared-macros.qmd) of the highest-level concept that names it, such as `\entropyf{X}` for an entropy, not with the lower-level expression that the macro stands for. Among equivalent defining expressions, choose the one that makes the most important property visible. For example, define the [mutual information](https://morrison-lab.github.io/ids/entropy.html#def-mutual-information) of discrete random variables $X$ and $Y$ as
 
-  $$I(X; Y) \stackrel{\text{def}}{=}{H\mathopen{}\left(X\right)\mathclose{}} + {H\mathopen{}\left(Y\right)\mathclose{}} - {H\mathopen{}\left(X, Y\right)\mathclose{}},$$
+  $$I(X; Y) \stackrel{\text{def}}{=}{\mathbb{H}\mathopen{}\left(X\right)\mathclose{}} + {\mathbb{H}\mathopen{}\left(Y\right)\mathclose{}} - {\mathbb{H}\mathopen{}\left(X, Y\right)\mathclose{}},$$
 
-  which is symmetric in $X$ and $Y$ at a glance, and not as ${H\mathopen{}\left(Y\right)\mathclose{}} - {H\mathopen{}\left(Y \mid X\right)\mathclose{}}$ or as a sum over the joint mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function). The other forms are results that follow from the definition.
+  which is symmetric in $X$ and $Y$ at a glance, and not as ${\mathbb{H}\mathopen{}\left(Y\right)\mathclose{}} - {\mathbb{H}\mathopen{}\left(Y \mid X\right)\mathclose{}}$ or as a sum over the joint mass [function](https://morrison-lab.github.io/mcs/functions.html#def-function). The other forms are results that follow from the definition.
 
 - **Define a probability distribution by its density or mass function:** Define a named distribution directly, by its probability density [function](https://morrison-lab.github.io/mcs/functions.html#def-function) (pdf) or probability mass function (pmf) and its support. State any relationship to other distributions as a theorem proved from those definitions. For example, define the chi-square distribution with $k$ degrees of freedom by its pdf
 
