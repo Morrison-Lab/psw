@@ -492,8 +492,8 @@ Follow these principles when introducing new [term](#def-term)s:
   link the term to its definition,
   and write the definition first if none exists.
   Never delete the term, or replace it with a vaguer word, to quiet the check (Ezra, 2026-11-20).
-  For example, write "a `[finite](#def-finite-set)` set",
-  not "a set" because the check flagged "finite".
+  For example, write "a `[finite set](#def-finite-set)`",
+  not "a set" because the check flagged "finite set".
   The sentence needs the term,
   so deleting it passes the check and makes the sentence less precise.
 
