@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 14:51:30 (PST)
+Last modified: 2026-11-20 15:12:13 (PST)
 
 Effective organization helps readers navigate your scientific paper and understand your findings. The structure of your paper should guide readers logically from your research question through your methods to your results and conclusions.
 
@@ -197,7 +197,7 @@ A page’s title is not a numbered level, so the sections of the page start at l
 - **A skipped level.** A `###` heading directly after a `#` heading leaves a missing level 2, so the table of contents shows a gap and section numbers can read `1.0.1`.
 - **A page that starts too deep.** A page whose first heading is level 2 or deeper usually kept the headings of the larger page it was split out of. Raise the headings when you move a section into its own page, and when you write a shared include, remember that it takes its level from the page that includes it.
 - **A first heading that repeats the title.** A section copied into its own page often keeps its heading, so the page opens with its title twice. Drop the heading. If something links to `page.html#sec-newton`, keep that link working with an empty anchor such as `[]{#sec-newton}` at the top of the page. The anchor adds an empty paragraph, and a Quarto `@sec-newton` reference does not resolve through it, so a page that uses such a reference keeps its heading instead.
-- **A heading with no sibling.** A level of headings divides its parent only when the parent holds at least two headings at that level, just as a section 1.1 implies a section 1.2. A lone heading adds a level of nesting and separates nothing. The common case is one level 1 heading that wraps the whole page and names the page’s topic in other words, with every section that divides the topic a level below it. Drop the lone heading and raise the headings under it by one level. A closing References section may stand alone, because it ends the page instead of dividing it.
+- **A heading with no sibling.** A level of headings divides its parent only when the parent holds at least two headings at that level, just as a section 1.1 implies a section 1.2. A lone heading adds a level of nesting and separates nothing, so a parent never holds exactly one numbered child heading (Ezra, 2026-11-20). The fix is usually to add another sibling heading, or to promote a child of the lone heading to be its sibling, not to remove the lone heading: a section that earned a heading often has a neighbor whose content sits untitled in the parent’s body. Remove the lone heading only when it names the same topic as its parent, as when one level 1 heading wraps the whole page and names the page’s topic in other words, with every section that divides the topic a level below it. Then drop the lone heading and raise the headings under it by one level. An unnumbered heading, such as a closing References section, may stand alone, because it ends the page instead of dividing it.
 
 The `####` title of a definition, example or exercise div is not a heading in this sense.
 
@@ -213,7 +213,24 @@ The `####` title of a definition, example or exercise div is not a heading in th
 >
 > In the ❌ outline, the table of contents has one entry, which restates the title, and the sections that divide the topic sit one level below it. In the ✅ outline, those sections are the entries of the table of contents.
 
-The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags the first three mistakes on the heading lines a pull request adds. Its `check-heading-siblings` workflow flags the fourth when the lone heading is at the top level of a page; as of 2026-11-13, no workflow flags a lone heading deeper in a page ([gha#1371](https://github.com/Morrison-Lab/gha/issues/1371)).
+> **NOTE:**
+>
+> **Example 3 (Adding siblings beside a lone subsection)**  
+>
+> The [bias-variance page](https://morrison-lab.github.io/lds/chapters/bias-variance.html) of the machine learning notes had one subsection, 1.1 “Reading the decomposition”, under its section 1, until the fix shown in the ✅ outline. The noise model, the definitions of the [bias](https://morrison-lab.github.io/lds/chapters/bias-variance.html#def-bias) and [variance](https://morrison-lab.github.io/lds/chapters/bias-variance.html#def-variance) of a prediction, and the decomposition itself sat untitled above it.
+>
+> > ❌ Section 1, then under it only 1.1 “Reading the decomposition”.
+> >
+> > ✅ Section 1, then under it four subsections:
+> >
+> > - 1.1 “The noise in the outcome”
+> > - 1.2 “Bias and variance of a prediction”
+> > - 1.3 “The bias-variance decomposition”
+> > - 1.4 “Reading the decomposition”
+>
+> The ✅ outline keeps the lone heading and gives its untitled neighbors headings of their own.
+
+The [`check-heading-levels` workflow](https://morrison-lab.github.io/gha/reference/check-heading-levels.html) in Morrison-Lab/gha flags the first three mistakes on the heading lines a pull request adds. Its [`check-heading-siblings` workflow](https://morrison-lab.github.io/gha/reference/check-heading-siblings.html) flags the fourth when a pull request adds or changes the lone heading or its parent, at the top level of a page or, for a numbered heading, at any depth ([gha#2170](https://github.com/Morrison-Lab/gha/pull/2170)).
 
 # 7 Avoid forward references
 
@@ -232,7 +249,7 @@ When there is no good way to reorder the material, because every order would bre
 
 > **NOTE:**
 >
-> **Example 3 (Removing a forward reference)**  
+> **Example 4 (Removing a forward reference)**  
 >
 > > ❌ The adjusted estimates, discussed in the next section, differ from the crude estimates. The adjustment, described below, uses age and sex.
 > >
@@ -264,7 +281,7 @@ Fix the passage by reordering it, not by softening the retraction. State first, 
 
 > **NOTE:**
 >
-> **Example 4 (Stating what a script does first)**  
+> **Example 5 (Stating what a script does first)**  
 >
 > > ❌ The script reads every file in the data folder. In practice, it skips files whose names start with an underscore.
 > >
