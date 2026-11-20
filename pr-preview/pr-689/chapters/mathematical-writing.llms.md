@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 12:00:07 (PST)
+Last modified: 2026-11-20 14:35:08 (PST)
 
 > **NOTE:**
 >
@@ -286,13 +286,35 @@ The title may leave out hypotheses that the statement gives, such as “if the s
 > >
 > > ❌ Bias-variance decomposition
 > >
-> > ✅ Bias-variance decomposition: the expected squared prediction error is the squared bias plus the variance plus the noise variance
+> > ✅ Bias-variance decomposition: the expected squared error of a prediction at an input is its squared bias plus its variance plus the noise variance
 >
 > Each ❌ title names what the result is about. Each ✅ title says what the result states, and the second keeps the customary name in front of the sentence.
 
 A failing check, [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168), flags a result title on a line that a pull request adds when the title holds no verb and no math relation. It tests for verbs with a word list, so it can flag a sentence whose verb is missing from that list; such a line takes `<!-- check-result-titles: allow: <reason> -->`, or the verb goes into the list.
 
-# 14 Rules that other chapters cover
+# 14 State the title’s sentence again in the statement, in words and in symbols
+
+The statement of a result says what its title says twice more: once in words, as a sentence close to the title’s, and once in full mathematical notation. The sentence in words lets a reader check that the statement is the result the title promises, and the formula is what a reader uses in a calculation or a proof. Put the sentence first, then the formula in a display. The sentence may add the hypotheses the title leaves out, and it names its symbols, so that the formula after it needs no further explanation.
+
+> **NOTE:**
+>
+> **Example 15 (The logistic derivative in words and in symbols)**  
+>
+> > ❌ **The derivative of the logistic function is its value times one minus its value**
+> >
+> > For every $\predvar$, $\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}$.
+> >
+> > ✅ **The derivative of the logistic function is its value times one minus its value**
+> >
+> > At every input $\predvar$, the derivative of the logistic function $\expit$ is the value of $\expit$ at $\predvar$ times one minus that value:
+> >
+> > $$\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}.$$
+>
+> The ❌ statement gives only the formula, so the reader has to translate it back into the title’s words to see that the two agree. The ✅ statement says the title’s sentence again with its symbols named, then gives the same claim as a displayed formula.
+
+The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168) also flags a result whose statement, the text of the div before its proof, has no display formula or no sentence in words. It cannot tell whether the sentence says what the title says, since that needs the meaning of both, not their words, so that part of the rule is applied in review.
+
+# 15 Rules that other chapters cover
 
 [Table 1](#tbl-knuth-elsewhere) lists the course’s other rules and where this book discusses them.
 

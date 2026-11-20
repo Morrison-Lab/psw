@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 12:00:07 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 14:35:08 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -565,14 +565,35 @@
 <p>❌ Derivative of the logistic function <!-- check-term-links: allow: quoted title, not a use of the term --></p>
 <p>✅ The derivative of the logistic function is its value times one minus its value <!-- check-term-links: allow: quoted title, not a use of the term --></p>
 <p>❌ Bias-variance decomposition</p>
-<p>✅ Bias-variance decomposition: the expected squared prediction error is the squared bias plus the variance plus the noise variance <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>✅ Bias-variance decomposition: the expected squared error of a prediction at an input is its squared bias plus its variance plus the noise variance <!-- check-term-links: allow: quoted title, not a use of the term --></p>
 </blockquote>
 <p>Each ❌ title names what the result is about. Each ✅ title says what the result states, and the second keeps the customary name in front of the sentence.</p>
 </div>
 <p>A failing check, <a href="https://github.com/Morrison-Lab/gha/pull/2168"><code>check-result-titles</code></a>, flags a result title on a line that a pull request adds when the title holds no verb and no math relation. It tests for verbs with a word list, so it can flag a sentence whose verb is missing from that list; such a line takes <code>&lt;!-- check-result-titles: allow: &lt;reason&gt; --&gt;</code>, or the verb goes into the list.</p>
 </section>
-<section id="rules-that-other-chapters-cover" class="slide level2" data-number="14">
-<h2><span class="header-section-number">14</span> Rules that other chapters cover</h2>
+<section id="state-the-titles-sentence-again-in-the-statement-in-words-and-in-symbols" class="slide level2" data-number="14">
+<h2><span class="header-section-number">14</span> State the title’s sentence again in the statement, in words and in symbols</h2>
+</section>
+<section class="slide level2">
+
+<p>The statement of a result says what its title says twice more: once in words, as a sentence close to the title’s, and once in full mathematical notation. The sentence in words lets a reader check that the statement is the result the title promises, and the formula is what a reader uses in a calculation or a proof. Put the sentence first, then the formula in a display. The sentence may add the hypotheses the title leaves out, and it names its symbols, so that the formula after it needs no further explanation.</p>
+<div id="exm-result-statement-two-forms" class="theorem example">
+<p><span class="theorem-title"><strong>Example 15 (The logistic derivative in words and in symbols)</strong></span> &nbsp;</p>
+<blockquote>
+<p>❌ <strong>The derivative of the logistic function is its value times one minus its value</strong> <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>For every <span class="math inline">\(\predvar\)</span>, <span class="math inline">\(\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}\)</span>.</p>
+<p>✅ <strong>The derivative of the logistic function is its value times one minus its value</strong> <!-- check-term-links: allow: quoted title, not a use of the term --></p>
+<p>At every input <span class="math inline">\(\predvar\)</span>, the derivative of the logistic function <span class="math inline">\(\expit\)</span> is the value of <span class="math inline">\(\expit\)</span> at <span class="math inline">\(\predvar\)</span> times one minus that value: <!-- check-term-links: allow: quoted statement, not a use of the term --></p>
+<p><span class="math display">\[
+\dexpitf{\predvar} = \expitf{\predvar}\paren{1 - \expitf{\predvar}}.
+\]</span></p>
+</blockquote>
+<p>The ❌ statement gives only the formula, so the reader has to translate it back into the title’s words to see that the two agree. The ✅ statement says the title’s sentence again with its symbols named, then gives the same claim as a displayed formula.</p>
+</div>
+<p>The check <a href="https://github.com/Morrison-Lab/gha/pull/2168"><code>check-result-titles</code></a> also flags a result whose statement, the text of the div before its proof, has no display formula or no sentence in words. It cannot tell whether the sentence says what the title says, since that needs the meaning of both, not their words, so that part of the rule is applied in review.</p>
+</section>
+<section id="rules-that-other-chapters-cover" class="slide level2" data-number="15">
+<h2><span class="header-section-number">15</span> Rules that other chapters cover</h2>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
