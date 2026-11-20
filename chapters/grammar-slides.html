@@ -253,7 +253,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 09:17:11 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 14:44:02 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -425,6 +425,15 @@
 </ol>
 <p>Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see <a href="../chapters/conciseness.html#lead-with-the-subject">Lead with the subject</a>), and “garden-path parsing” introduces a second <a href="../chapters/defining-terms.html#def-term">term</a> for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.</p>
 </div>
+<p>A noun that names a characteristic is relational too: a bias, a <a href="https://morrison-lab.github.io/pds/variance-covariance.html#def-variance">variance</a>, an expected squared error, or a risk is always the bias, variance, error, or risk <em>of</em> something. Name the class of objects the characteristic describes, such as “the bias of an estimator” or “the expected squared error of a predictor”, every time the characteristic is stated, in a title as well as in prose. “The bias” alone leaves the reader to guess whether it belongs to an estimator, a prediction, or a fitted model.</p>
+<div id="exm-characteristic-object" class="theorem example">
+<p><span class="theorem-title"><strong>Example 9 (Naming what a bias describes)</strong></span> &nbsp;</p>
+<ol type="1">
+<li class="fragment">The bias is the average fit minus the true mean function.</li>
+<li class="fragment">The bias of a prediction at an input <span class="math inline">\(\predvar\)</span> is the average fit at <span class="math inline">\(\predvar\)</span> minus the true mean function at <span class="math inline">\(\predvar\)</span>.</li>
+</ol>
+<p>Version 1 never says what has the bias, so a reader who meets it as a theorem title cannot tell whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model. Version 2 names the class of objects, predictions at an input <span class="math inline">\(\predvar\)</span>, and names <span class="math inline">\(\predvar\)</span> again where the two functions are compared, instead of pointing back to it with “there”.</p>
+</div>
 </section>
 <section id="appositive-fronting" class="slide level2" data-number="6">
 <h2><span class="header-section-number">6</span> Appositive fronting</h2>
@@ -449,7 +458,7 @@
 </ul>
 <p><strong>Guideline.</strong> Front an appositive when it is short, familiar to the reader, and describes the subject. Keep the plain “X is Y” form when the description is the new information the paper depends on, when it is long, or when the subject is a pronoun without a clear antecedent.</p>
 <div id="exm-appositive-fronting" class="theorem example">
-<p><span class="theorem-title"><strong>Example 9 (Plain and fronted forms)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 10 (Plain and fronted forms)</strong></span> &nbsp;</p>
 <blockquote>
 <p>Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.</p>
 <p>Fronted: A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in both preweaned calves and weaned cattle.</p>
@@ -465,7 +474,7 @@
 <p>In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the <em>serial comma</em>, or the <em>Oxford comma</em>. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.</p>
 <p>Write “the mean, the median, and the mode”, not “the mean, the median and the mode”. <!-- check-serial-comma: allow --> The same holds when the items are long, are split across source lines, or contain math.</p>
 <div id="exm-serial-comma" class="theorem example">
-<p><span class="theorem-title"><strong>Example 10 (Adding the serial comma)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 11 (Adding the serial comma)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We compare the lasso, ridge regression and elastic net. <!-- check-serial-comma: allow --></p>
 <p>✅ We compare the lasso, ridge regression, and elastic net.</p>

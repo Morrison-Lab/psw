@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 09:17:11 (PST)
+Last modified: 2026-11-20 14:44:02 (PST)
 
 > **NOTE:**
 >
@@ -180,6 +180,17 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 >
 > Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second [term](../chapters/defining-terms.llms.md#def-term) for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
 
+A noun that names a characteristic is relational too: a bias, a [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance), an expected squared error, or a risk is always the bias, variance, error, or risk *of* something. Name the class of objects the characteristic describes, such as “the bias of an estimator” or “the expected squared error of a predictor”, every time the characteristic is stated, in a title as well as in prose. “The bias” alone leaves the reader to guess whether it belongs to an estimator, a prediction, or a fitted model.
+
+> **NOTE:**
+>
+> **Example 9 (Naming what a bias describes)**  
+>
+> > 1.  The bias is the average fit minus the true mean function.
+> > 2.  The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$ minus the true mean function at $\predvar$.
+>
+> Version 1 never says what has the bias, so a reader who meets it as a theorem title cannot tell whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model. Version 2 names the class of objects, predictions at an input $\predvar$, and names $\predvar$ again where the two functions are compared, instead of pointing back to it with “there”.
+
 # 6 Appositive fronting
 
 An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which then follows as the subject: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.” Often the subject becomes a pronoun, as in “A disease complex with a multifactorial etiology, it is a leading cause of mortality in calves”, which needs an antecedent for “it” in the sentence before.
@@ -204,7 +215,7 @@ Fronting is a stylistic choice, with costs and benefits.
 
 > **NOTE:**
 >
-> **Example 9 (Plain and fronted forms)**  
+> **Example 10 (Plain and fronted forms)**  
 >
 > > Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.
 > >
@@ -220,7 +231,7 @@ Write “the mean, the median, and the mode”, not “the mean, the median and 
 
 > **NOTE:**
 >
-> **Example 10 (Adding the serial comma)**  
+> **Example 11 (Adding the serial comma)**  
 >
 > > ❌ We compare the lasso, ridge regression and elastic net.
 > >
