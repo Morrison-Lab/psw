@@ -1,0 +1,25 @@
+# Principles of Scientific Writing
+
+> A style guide for writing in science, technology, engineering, and mathematics, focused on writing about statistical data analysis.
+
+## Pages
+
+- [References](https://morrison-lab.github.io/psw/references.llms.md)
+- [Writing to clarify your thinking](https://morrison-lab.github.io/psw/chapters/writing-to-think.llms.md)
+- [Writing for teaching](https://morrison-lab.github.io/psw/chapters/teaching.llms.md)
+- [Writing for code review and software](https://morrison-lab.github.io/psw/chapters/software-text.llms.md)
+- [Paper organization](https://morrison-lab.github.io/psw/chapters/paper-organization.llms.md)
+- [Writing mathematics in sentences](https://morrison-lab.github.io/psw/chapters/mathematical-writing.llms.md)
+- [Introduction](https://morrison-lab.github.io/psw/chapters/intro.llms.md)
+- [Grammar](https://morrison-lab.github.io/psw/chapters/grammar.llms.md)
+- [Conciseness](https://morrison-lab.github.io/psw/chapters/conciseness.llms.md)
+- [Avoiding clichés](https://morrison-lab.github.io/psw/chapters/avoid-cliches.llms.md)
+- [Citations and evidence](https://morrison-lab.github.io/psw/chapters/citations-evidence.llms.md)
+- [Defining terms clearly](https://morrison-lab.github.io/psw/chapters/defining-terms.llms.md)
+- [Writing for every reader](https://morrison-lab.github.io/psw/chapters/inclusive-writing.llms.md)
+- [Preparing a manuscript for submission](https://morrison-lab.github.io/psw/chapters/manuscript-submission.llms.md)
+- [Mathematical notation](https://morrison-lab.github.io/psw/chapters/notation.llms.md)
+- [Slides, posters, and figures](https://morrison-lab.github.io/psw/chapters/slides-posters-figures.llms.md)
+- [Summary](https://morrison-lab.github.io/psw/chapters/summary.llms.md)
+- [Word choice](https://morrison-lab.github.io/psw/chapters/word-choice.llms.md)
+- [Principles of Scientific Writing](https://morrison-lab.github.io/psw/index.llms.md)
