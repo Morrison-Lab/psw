@@ -42,7 +42,7 @@ and starts with the subject.
 :::
 
 A noun that names a characteristic is relational too:
-a bias, a variance, an expected squared error, or a risk
+a bias, a [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance), an expected squared error, or a risk
 is always the bias, variance, error, or risk *of* something.
 Name the class of objects the characteristic describes,
 such as "the bias of an estimator" or "the expected squared error of a predictor",
