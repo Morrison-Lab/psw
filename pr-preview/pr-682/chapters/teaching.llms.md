@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 00:31:07 (PST)
+Last modified: 2026-11-20 00:42:22 (PST)
 
 > **NOTE:**
 >
@@ -324,7 +324,7 @@ Reading a worked example is passive. A reader who has just seen one method appli
 
 A worked example shows what a definition or a result says in one concrete case. A question posed for the reader illustrates no single definition or result, so it stays an exercise with its solution (Ezra, 2026-11-20: “only definitions and results really need examples?”).
 
-- Put an `#exm-` div only after a definition or result (a `#def-`, `#thm-`, `#lem-`, `#cor-`, or `#prp-` div), as [Show each idea applied and in a figure](#show-each-idea-applied-and-in-a-figure) requires.
+- Put an `#exm-` div only after a definition or result (a `#def-`, `#thm-`, `#lem-`, `#cor-`, or `#prp-` div), as the [Show each idea applied and in a figure](#show-each-idea-applied-and-in-a-figure) section requires.
 - Keep a small question that the reader can work by hand as an `#exr-` div with its `#sol-` div. Do not turn it into an `#exm-` div because its answer is short.
 - Put any real-data version of the same question right after the hand-worked exercise’s solution, as a second exercise with its own solution. The hand-worked version practices the method on numbers small enough to follow, and the real-data version practices applying the method to data with code.
 - A hand-worked version and a real-data version of one question practice different skills, so they do not count as repeats of each other. Keep both in the notes, even when other versions with different numbers or data move to an exercise bank.
