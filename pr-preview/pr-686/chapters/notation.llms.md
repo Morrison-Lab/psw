@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 01:00:42 (PST)
+Last modified: 2026-11-20 01:06:43 (PST)
 
 > **NOTE:**
 >
@@ -78,8 +78,8 @@ Ball notation is easier to read for three reasons:
 
 Keep the inequality when the distance itself is the point, as in these cases:
 
-- the definition of the ball;
-- the triangle inequality;
+- the [definition of the ball](https://morrison-lab.github.io/mds/vector-calculus.html#def-ball);
+- the [triangle inequality](https://morrison-lab.github.io/mds/linear-algebra-inner-products.html#thm-triangle-inequality);
 - a bound on how far an estimate lies from its target;
 - a stopping rule for an algorithm.
 
