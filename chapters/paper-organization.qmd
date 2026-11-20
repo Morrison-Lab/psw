@@ -246,12 +246,12 @@ Four mistakes break this outline:
   only when the parent holds at least two headings at that level,
   just as a section 1.1 implies a section 1.2.
   A lone heading adds a level of nesting and separates nothing,
-  so never leave a single numbered heading at a level under its parent
+  so a parent never holds exactly one numbered child heading
   (Ezra, 2026-11-20).
   The fix is usually to add another sibling heading,
   or to promote a child of the lone heading to be its sibling,
-  not to remove the lone heading (Ezra, 2026-11-20):
-  a section that earned a heading usually has a neighbor
+  not to remove the lone heading:
+  a section that earned a heading often has a neighbor
   whose content sits untitled in the parent's body.
   Remove the lone heading only when it names the same topic as its parent,
   as when one level 1 heading wraps the whole page
@@ -293,18 +293,19 @@ those sections are the entries of the table of contents.
 The [bias-variance page](https://morrison-lab.github.io/lds/chapters/bias-variance.html)
 of the machine learning notes
 had one subsection, 1.1 "Reading the decomposition",
-under its section 1.
+under its section 1, until the fix shown in the ✅ outline.
 The noise model, the definitions of the [bias](https://morrison-lab.github.io/lds/chapters/bias-variance.html#def-bias) and [variance](https://morrison-lab.github.io/lds/chapters/bias-variance.html#def-variance) of a prediction,
 and the decomposition itself sat untitled above it.
 
 > ❌ Section 1,
 > then under it only 1.1 "Reading the decomposition".
 >
-> ✅ Section 1,
-> then under it 1.1 "The noise in the outcome",
-> 1.2 "Bias and variance of a prediction",
-> 1.3 "The bias-variance decomposition",
-> and 1.4 "Reading the decomposition".
+> ✅ Section 1, then under it four subsections:
+>
+> - 1.1 "The noise in the outcome"
+> - 1.2 "Bias and variance of a prediction"
+> - 1.3 "The bias-variance decomposition"
+> - 1.4 "Reading the decomposition"
 
 The ✅ outline keeps the lone heading
 and gives its untitled neighbors headings of their own.
