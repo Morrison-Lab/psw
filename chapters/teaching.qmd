@@ -689,7 +689,7 @@ so it stays an exercise with its solution
 
 - Put an `#exm-` div only after a definition or result
   (a `#def-`, `#thm-`, `#lem-`, `#cor-`, or `#prp-` div),
-  as [Show each idea applied and in a figure](#show-each-idea-applied-and-in-a-figure) requires.
+  as the [Show each idea applied and in a figure](#show-each-idea-applied-and-in-a-figure) section requires.
 - Keep a small question that the reader can work by hand as an `#exr-` div with its `#sol-` div.
   Do not turn it into an `#exm-` div because its answer is short.
 - Put any real-data version of the same question right after the hand-worked exercise's solution,
