@@ -1,7 +1,7 @@
 Give every clause its own verb.
 Do not leave a verb out of a clause and let the reader copy it from the clause before.
 Linguists call this omission *gapping*, a kind of *ellipsis*: <!-- no-figure: grammatical ellipsis, not the conic -->
-in "statistics calls it the intercept, and machine learning the bias", <!-- check-term-links: allow: a quoted example; "bias" here names an intercept, not the estimator bias that def-bias defines -->
+in "statistics calls it the intercept, and machine learning the bias", <!-- check-term-links: allow: a quoted example, where "bias" names an intercept, not the estimator bias that def-bias defines -->
 the second clause has lost "calls it".
 A clause that has lost its verb and everything after it,
 as in "statistics calls it the intercept, and machine learning too",
@@ -9,7 +9,7 @@ has the same problem.
 
 A reader has to notice the gap, find the verb it stands for, and carry it over.
 A reader who is learning English may not see the gap at all,
-and may read "machine learning the bias" as a phrase about learning. <!-- check-term-links: allow: quotes the example above; "bias" here names an intercept, not the estimator bias -->
+and may read "machine learning the bias" as a phrase about learning. <!-- check-term-links: allow: quotes the example above, where "bias" names an intercept, not the estimator bias -->
 Writing the verb out costs a word or two.
 
 ::: {#exm-dropped-verb}
@@ -19,11 +19,10 @@ Writing the verb out costs a word or two.
 From a definition of the offset of an [affine map](https://morrison-lab.github.io/mds/linear-algebra-linear-maps.html#def-affine-map), in the mds notes:
 
 > ❌ In the definition of an affine map, the vector $\vec{b}$ is called the offset of $f$
-> (statistics also calls it the intercept, and machine learning the bias). <!-- check-term-links: allow: quoted ❌ example; "bias" here names an intercept, not the estimator bias -->
-
+> (statistics also calls it the intercept, and machine learning the bias). <!-- check-term-links: allow: quoted ❌ example, where "bias" names an intercept, not the estimator bias -->
 >
 > ✅ In the definition of an affine map, the vector $\vb$ is called the offset of $f$.
-> Statistics also calls it the intercept, and machine learning calls it the bias. <!-- check-term-links: allow: quoted ✅ example; "bias" here names an intercept, not the estimator bias -->
+> Statistics also calls it the intercept, and machine learning calls it the bias. <!-- check-term-links: allow: quoted ✅ example, where "bias" names an intercept, not the estimator bias -->
 
 From a proof about chains of inequalities, in the mcs notes:
 
