@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 22:16:09 (PST)
+Last modified: 2026-11-20 22:54:39 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -112,7 +112,19 @@ A panel combined in code has no label of its own for a cross-reference. Tag the 
 
 Keep panels in separate subfigures when they share nothing. Two 3D surfaces from two models, each with its own rotation, are two subfigures, not one widget with two scenes.
 
-### 4.1.1 Subfigures with language tabsets
+### 4.1.1 A figure with one panel has no subfigures
+
+A subfigure exists to be compared with the other subfigures of its figure, so a figure has no subfigures or at least two in every view a reader can pick, and a table has no subtables or at least two (Ezra, 2026-11-20). A lone subfigure labels the only panel “(a)”, splits one caption into a caption and an empty subcaption, and gives one picture two ids to cross-reference. It is the figure’s version of a heading with no sibling (see the [Heading levels](../chapters/paper-organization.llms.md#heading-levels) section of the Paper organization chapter).
+
+A lone subfigure is usually made by accident, in one of three ways:
+
+- **A language tabset with labeled chunks.** A `#fig-` div wraps a language tabset, and the R and Python chunks in the tabs keep `fig-` labels. Quarto makes each chunk a subfigure and numbers them across the tabs, so the R tab shows a lone “(a)” and the Python tab a lone “(b)”. Give the chunks in the tabs plain labels, without the `fig-` prefix, and keep their `fig-alt`, so the tabs are two versions of one figure.
+- **One labeled panel.** A `#fig-` div holds one chunk, image, or div with a `fig-` label or id of its own. Drop the inner label or id, keep the panel’s `fig-alt`, move its subcaption into the figure’s caption, and point any cross-reference to the panel at the figure instead, so the panel is the figure itself.
+- **One subcaption.** A chunk’s `fig-subcap` lists one entry. Give that text as `fig-cap` instead.
+
+Tables follow the same rule with `#tbl-`, `tbl-` labels, and `tbl-subcap`. A gha check for lone subfigures, `check-lone-subfloats`, is proposed in [gha#2173](https://github.com/Morrison-Lab/gha/issues/2173).
+
+### 4.1.2 Subfigures with language tabsets
 
 Put a language tabset (`group="language"`) inside each subfigure, not the subfigures inside one tabset, when each panel has R and Python versions:
 
@@ -142,9 +154,9 @@ Fitted surfaces of the two models for fuel economy over weight and model year.
 :::
 ````
 
-Each `r` or `python` block stands for an executed chunk, whose fence is `{r}` or `{python}` in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on.
+Each `r` or `python` block stands for an executed chunk, whose fence is `{r}` or `{python}` in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on. The chunks in the tabs take plain labels, not `fig-` labels, since a `fig-` label would make each chunk a subfigure of its panel, one per tab ([Section 4.1.1](#sec-no-lone-subfigure)).
 
-### 4.1.2 Subtables
+### 4.1.3 Subtables
 
 The same choice holds for tables:
 

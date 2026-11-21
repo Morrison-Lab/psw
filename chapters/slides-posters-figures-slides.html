@@ -338,7 +338,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 22:16:09 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 22:54:39 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -459,6 +459,15 @@
 </ul>
 <p>A panel combined in code has no label of its own for a cross-reference. Tag the panels in the code, in the same style as Quarto’s subcaptions, with <code>plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")")</code> in patchwork, and refer to them in the text as “panel (b) of <code>@fig-x</code>”. Write one alt text for the whole figure that describes each panel in turn, and give the panels in the caption by their tags. A combined interactive figure, such as one plotly widget with two 3D scenes, needs a static version that shows every panel too.</p>
 <p>Keep panels in separate subfigures when they share nothing. Two 3D surfaces from two models, each with its own rotation, are two subfigures, not one widget with two scenes.</p>
+<h4 id="sec-no-lone-subfigure">A figure with one panel has no subfigures</h4>
+<p>A subfigure exists to be compared with the other subfigures of its figure, so a figure has no subfigures or at least two in every view a reader can pick, and a table has no subtables or at least two (Ezra, 2026-11-20). A lone subfigure labels the only panel “(a)”, splits one caption into a caption and an empty subcaption, and gives one picture two ids to cross-reference. It is the figure’s version of a heading with no sibling (see the <a href="../chapters/paper-organization.html#heading-levels">Heading levels</a> section of the Paper organization chapter).</p>
+<p>A lone subfigure is usually made by accident, in one of three ways:</p>
+<ul>
+<li><strong>A language tabset with labeled chunks.</strong> A <code>#fig-</code> div wraps a language tabset, and the R and Python chunks in the tabs keep <code>fig-</code> labels. Quarto makes each chunk a subfigure and numbers them across the tabs, so the R tab shows a lone “(a)” and the Python tab a lone “(b)”. Give the chunks in the tabs plain labels, without the <code>fig-</code> prefix, and keep their <code>fig-alt</code>, so the tabs are two versions of one figure.</li>
+<li><strong>One labeled panel.</strong> A <code>#fig-</code> div holds one chunk, image, or div with a <code>fig-</code> label or id of its own. Drop the inner label or id, keep the panel’s <code>fig-alt</code>, move its subcaption into the figure’s caption, and point any cross-reference to the panel at the figure instead, so the panel is the figure itself.</li>
+<li><strong>One subcaption.</strong> A chunk’s <code>fig-subcap</code> lists one entry. Give that text as <code>fig-cap</code> instead.</li>
+</ul>
+<p>Tables follow the same rule with <code>#tbl-</code>, <code>tbl-</code> labels, and <code>tbl-subcap</code>. A gha check for lone subfigures, <code>check-lone-subfloats</code>, is proposed in <a href="https://github.com/Morrison-Lab/gha/issues/2173">gha#2173</a>.</p>
 <h4 id="subfigures-with-language-tabsets">Subfigures with language tabsets</h4>
 <p>Put a language tabset (<code>group="language"</code>) inside each subfigure, not the subfigures inside one tabset, when each panel has R and Python versions:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a aria-label="1"></a>::: {#fig-surfaces layout-ncol=2}</span>
@@ -484,7 +493,7 @@
 <span id="cb1-21"><a aria-label="21"></a></span>
 <span id="cb1-22"><a aria-label="22"></a>Fitted surfaces of the two models for fuel economy over weight and model year.</span>
 <span id="cb1-23"><a aria-label="23"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Each <code>r</code> or <code>python</code> block stands for an executed chunk, whose fence is <code>{r}</code> or <code>{python}</code> in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on.</p>
+<p>Each <code>r</code> or <code>python</code> block stands for an executed chunk, whose fence is <code>{r}</code> or <code>{python}</code> in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on. The chunks in the tabs take plain labels, not <code>fig-</code> labels, since a <code>fig-</code> label would make each chunk a subfigure of its panel, one per tab (<a href="#/sec-no-lone-subfigure" class="quarto-xref">Section&nbsp;4.1.1</a>).</p>
 <h4 id="subtables">Subtables</h4>
 <p>The same choice holds for tables:</p>
 <ul>
