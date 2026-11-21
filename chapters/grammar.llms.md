@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-20 17:09:40 (PST)
+Last modified: 2026-11-20 19:55:44 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,11 @@ Last modified: 2026-11-20 17:09:40 (PST)
 
 Clear grammar removes friction between your ideas and your reader. This chapter collects a few grammatical habits that consistently make scientific writing easier to read.
 
-# 1 Relative pronouns
+# 1 Pronouns
+
+A pronoun stands for a noun that the reader must find. These three sections cover the kinds of pronouns that most often leave the reader searching.
+
+## 1.1 Relative pronouns
 
 Relative pronouns introduce a clause that describes a preceding noun. The relative pronouns are:
 
@@ -24,7 +28,7 @@ Relative pronouns introduce a clause that describes a preceding noun. The relati
 
 Two habits make these clauses easier to read: choosing between *that* and *which* correctly, and keeping the relative pronoun rather than dropping it.
 
-### 1.0.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
+### 1.1.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
 
 > **NOTE:**
 >
@@ -54,7 +58,7 @@ Use *that* for a [restrictive clause](#def-restrictive-clause). Use *which*, set
 
 A quick test: if you can drop the clause without changing which thing you are describing, use *which* and commas; otherwise, use *that*.
 
-### 1.0.2 Attach a relative pronoun to the nearest noun
+### 1.1.2 Attach a relative pronoun to the nearest noun
 
 A relative pronoun refers to the noun just before it. When *whose*, *which*, *that*, or *who* follows two or more nouns, the reader takes the closest one as the referent. If you mean an earlier noun, repeat it, and start a new sentence with it. The nearest-noun rule is one case of the general rule for every pronoun: each one has a single antecedent that the reader can identify without guessing (see also [Demonstrative pronouns](#demonstrative-pronouns)). No automated check enforces the relative-pronoun case, because deciding what a pronoun refers to takes meaning, not pattern matching, so a reviewer reads for it.
 
@@ -68,7 +72,7 @@ A relative pronoun refers to the noun just before it. When *whose*, *which*, *th
 >
 > In the first sentence, “whose” can refer to “coefficient”, the nearest noun, although the writer means the distribution. Naming “the distribution” removes the guess.
 
-### 1.0.3 Do not omit relative pronouns
+### 1.1.3 Do not omit relative pronouns
 
 English lets you drop a relative pronoun in some sentences, but keeping it makes the structure of the sentence explicit and easier to parse on the first read. Prefer to keep *that*, *which*, or *who*, even when the grammar would let you drop it.
 
@@ -82,7 +86,7 @@ English lets you drop a relative pronoun in some sentences, but keeping it makes
 >
 > The word “that” signals immediately that a describing clause is beginning, so the reader does not briefly misread “the methodological groundwork I” as a single phrase and then have to backtrack.
 
-# 2 Demonstrative pronouns
+## 1.2 Demonstrative pronouns
 
 There are four demonstrative words:
 
@@ -121,7 +125,7 @@ A demonstrative at the end of a sentence has no room after it for a naming noun,
 >
 > In the first version, each “there” points back past a whole noun phrase to “an input”, so the reader has to work out that both functions are evaluated at that input. The second version names the input $\predvar$ and repeats it at each comparison.
 
-# 3 Quantifiers used as pronouns
+## 1.3 Quantifiers used as pronouns
 
 Words that say how many, or how much, of something cause the same problem as demonstratives when they stand alone in place of a noun. Grammars call these words *quantifiers*, and call a quantifier that stands alone an *indefinite pronoun*. The common ones are:
 
@@ -149,7 +153,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 >
 > In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.
 
-# 4 Avoid garden-path sentences
+# 2 Avoid garden-path sentences
 
 A *garden-path sentence* leads the reader into one reading and then forces them to go back and reread when the rest of the sentence does not fit ([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)). The sentence may be grammatical, but the reader parses it twice.
 
@@ -167,7 +171,7 @@ When you reread a sentence and stumble, find the point where your first reading 
 >
 > In the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject.
 
-# 5 Name the object of a relational noun
+# 3 Name the object of a relational noun
 
 Some nouns name a relation, so they are incomplete without the thing they relate to. Relational nouns include:
 
@@ -201,7 +205,33 @@ A noun that names a characteristic is relational too: a bias, a [variance](https
 >
 > Version 1 never says what has the bias, so a reader who meets it as a theorem title cannot tell whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model. Version 2 names the class of objects, predictions at an input $\predvar$, and names $\predvar$ again where the two functions are compared, instead of pointing back to it with “there”.
 
-# 6 Appositive fronting
+# 4 Give every clause its own verb
+
+Give every clause its own verb. Do not leave a verb out of a clause and let the reader copy it from the clause before. Linguists call this omission *gapping*, a kind of *ellipsis*: in “statistics calls it the intercept, and machine learning the bias”, the second clause has lost “calls it”. A clause that has lost its verb and everything after it, as in “statistics calls it the intercept, and machine learning too”, has the same problem.
+
+A reader has to notice the gap, find the verb it stands for, and carry it over. A reader who is learning English may not see the gap at all, and may read “machine learning the bias” as a phrase about learning. Writing the verb out costs a word or two.
+
+> **NOTE:**
+>
+> **Example 11 (Restoring a dropped verb)** From a definition of the offset of an [affine map](https://morrison-lab.github.io/mds/linear-algebra-linear-maps.html#def-affine-map), in the mds notes:
+>
+> > ❌ In the definition of an affine map, the vector $\vec{b}$ is called the offset of $f$ (statistics also calls it the intercept, and machine learning the bias).
+> >
+> > ✅ In the definition of an affine map, the vector $\vb$ is called the offset of $f$. Statistics also calls it the intercept, and machine learning calls it the bias.
+>
+> From a proof about chains of inequalities, in the mcs notes:
+>
+> > ❌ So two steps that are each $\le$ or $<$ give $<$ if either is $<$, and otherwise $\le$.
+> >
+> > ✅ So two steps that are each $\le$ or $<$ give $<$ if either is $<$, and they give $\le$ otherwise.
+>
+> In each ✅ version, every clause has its own verb, so the reader does not have to copy one across.
+
+The rule is about clauses, not about lists. One verb can take several subjects or several objects in a single clause: “Statistics and machine learning both use the [term](../chapters/defining-terms.llms.md#def-term)” has one clause and one verb. One subject can also take several verbs, each written out: “The lasso shrinks the coefficients and sets some of them to zero.” A short verb such as “does” can stand in for a verb phrase in the same sentence, as in “Ridge regression shrinks the coefficients, and the lasso does too”, because the reader still sees a verb in each clause.
+
+This rule covers words left out of a sentence. The ellipsis mark for the omitted terms of a sequence belongs in math, as in $x_1, \ldots, x_n$. The section [Do not clip a term](../chapters/inclusive-writing.llms.md#do-not-clip-a-term) in the inclusive-writing chapter covers words left out of a technical term.
+
+# 5 Appositive fronting
 
 An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which then follows as the subject: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.” Often the subject becomes a pronoun, as in “A disease complex with a multifactorial etiology, it is a leading cause of mortality in calves”, which needs an antecedent for “it” in the sentence before.
 
@@ -225,7 +255,7 @@ Fronting is a stylistic choice, with costs and benefits.
 
 > **NOTE:**
 >
-> **Example 11 (Plain and fronted forms)**  
+> **Example 12 (Plain and fronted forms)**  
 >
 > > Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.
 > >
@@ -233,7 +263,7 @@ Fronting is a stylistic choice, with costs and benefits.
 >
 > The fronted version is shorter and puts the category first. It works here because “a disease complex with a multifactorial etiology” describes BRD, the subject that follows it, and the subject is named, not a pronoun. If the multifactorial etiology is what the paper is about, the plain form states it as a claim the reader can challenge, and is the better choice.
 
-# 7 Put a comma before the last item of a list
+# 6 Put a comma before the last item of a list
 
 In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the *serial comma*, or the *Oxford comma*. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.
 
@@ -241,7 +271,7 @@ Write “the mean, the median, and the mode”, not “the mean, the median and 
 
 > **NOTE:**
 >
-> **Example 12 (Adding the serial comma)**  
+> **Example 13 (Adding the serial comma)**  
 >
 > > ❌ We compare the lasso, ridge regression and elastic net.
 > >

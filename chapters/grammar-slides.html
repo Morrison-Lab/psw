@@ -253,7 +253,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-20 17:09:40 (PST)</p>
+  <p class="date">Last modified: 2026-11-20 19:55:44 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -272,8 +272,13 @@
 </div>
 <p>Clear grammar removes friction between your ideas and your reader. This chapter collects a few grammatical habits that consistently make scientific writing easier to read.</p>
 </section>
-<section id="relative-pronouns" class="slide level2" data-number="1">
-<h2><span class="header-section-number">1</span> Relative pronouns</h2>
+<section id="pronouns" class="slide level2" data-number="1">
+<h2><span class="header-section-number">1</span> Pronouns</h2>
+</section>
+<section class="slide level2">
+
+<p>A pronoun stands for a noun that the reader must find. These three sections cover the kinds of pronouns that most often leave the reader searching.</p>
+<h3 data-number="1.1" id="relative-pronouns"><span class="header-section-number">1.1</span> Relative pronouns</h3>
 </section>
 <section class="slide level2">
 
@@ -329,9 +334,7 @@
 </blockquote>
 <p>The word “that” signals immediately that a describing clause is beginning, so the reader does not briefly misread “the methodological groundwork I” as a single phrase and then have to backtrack.</p>
 </div>
-</section>
-<section id="demonstrative-pronouns" class="slide level2" data-number="2">
-<h2><span class="header-section-number">2</span> Demonstrative pronouns</h2>
+<h3 data-number="1.2" id="demonstrative-pronouns"><span class="header-section-number">1.2</span> Demonstrative pronouns</h3>
 </section>
 <section class="slide level2">
 
@@ -363,9 +366,7 @@
 </blockquote>
 <p>In the first version, each “there” points back past a whole noun phrase to “an input”, so the reader has to work out that both functions are evaluated at that input. The second version names the input <span class="math inline">\(\predvar\)</span> and repeats it at each comparison.</p>
 </div>
-</section>
-<section id="quantifiers-used-as-pronouns" class="slide level2" data-number="3">
-<h2><span class="header-section-number">3</span> Quantifiers used as pronouns</h2>
+<h3 data-number="1.3" id="quantifiers-used-as-pronouns"><span class="header-section-number">1.3</span> Quantifiers used as pronouns</h3>
 </section>
 <section class="slide level2">
 
@@ -392,8 +393,8 @@
 <p>In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.</p>
 </div>
 </section>
-<section id="avoid-garden-path-sentences" class="slide level2" data-number="4">
-<h2><span class="header-section-number">4</span> Avoid garden-path sentences</h2>
+<section id="avoid-garden-path-sentences" class="slide level2" data-number="2">
+<h2><span class="header-section-number">2</span> Avoid garden-path sentences</h2>
 </section>
 <section class="slide level2">
 
@@ -409,8 +410,8 @@
 <p>In the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject.</p>
 </div>
 </section>
-<section id="name-the-object-of-a-relational-noun" class="slide level2" data-number="5">
-<h2><span class="header-section-number">5</span> Name the object of a relational noun</h2>
+<section id="name-the-object-of-a-relational-noun" class="slide level2" data-number="3">
+<h2><span class="header-section-number">3</span> Name the object of a relational noun</h2>
 </section>
 <section class="slide level2 scrollable">
 
@@ -443,8 +444,31 @@
 <p>Version 1 never says what has the bias, so a reader who meets it as a theorem title cannot tell whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model. Version 2 names the class of objects, predictions at an input <span class="math inline">\(\predvar\)</span>, and names <span class="math inline">\(\predvar\)</span> again where the two functions are compared, instead of pointing back to it with “there”.</p>
 </div>
 </section>
-<section id="appositive-fronting" class="slide level2" data-number="6">
-<h2><span class="header-section-number">6</span> Appositive fronting</h2>
+<section id="give-every-clause-its-own-verb" class="slide level2" data-number="4">
+<h2><span class="header-section-number">4</span> Give every clause its own verb</h2>
+</section>
+<section class="slide level2">
+
+<p>Give every clause its own verb. Do not leave a verb out of a clause and let the reader copy it from the clause before. Linguists call this omission <em>gapping</em>, a kind of <em>ellipsis</em>: <!-- no-figure: grammatical ellipsis, not the conic --> in “statistics calls it the intercept, and machine learning the bias”, <!-- check-term-links: allow: a quoted example, where "bias" names an intercept, not the estimator bias that def-bias defines --> the second clause has lost “calls it”. A clause that has lost its verb and everything after it, as in “statistics calls it the intercept, and machine learning too”, has the same problem.</p>
+<p>A reader has to notice the gap, find the verb it stands for, and carry it over. A reader who is learning English may not see the gap at all, and may read “machine learning the bias” as a phrase about learning. <!-- check-term-links: allow: quotes the example above, where "bias" names an intercept, not the estimator bias --> Writing the verb out costs a word or two.</p>
+<div id="exm-dropped-verb" class="theorem example">
+<p><span class="theorem-title"><strong>Example 11 (Restoring a dropped verb)</strong></span> From a definition of the offset of an <a href="https://morrison-lab.github.io/mds/linear-algebra-linear-maps.html#def-affine-map">affine map</a>, in the mds notes:</p>
+<blockquote>
+<p>❌ In the definition of an affine map, the vector <span class="math inline">\(\vec{b}\)</span> is called the offset of <span class="math inline">\(f\)</span> (statistics also calls it the intercept, and machine learning the bias). <!-- check-term-links: allow: quoted ❌ example, where "bias" names an intercept, not the estimator bias --></p>
+<p>✅ In the definition of an affine map, the vector <span class="math inline">\(\vb\)</span> is called the offset of <span class="math inline">\(f\)</span>. Statistics also calls it the intercept, and machine learning calls it the bias. <!-- check-term-links: allow: quoted ✅ example, where "bias" names an intercept, not the estimator bias --></p>
+</blockquote>
+<p>From a proof about chains of inequalities, in the mcs notes:</p>
+<blockquote>
+<p>❌ So two steps that are each <span class="math inline">\(\le\)</span> or <span class="math inline">\(&lt;\)</span> give <span class="math inline">\(&lt;\)</span> if either is <span class="math inline">\(&lt;\)</span>, and otherwise <span class="math inline">\(\le\)</span>.</p>
+<p>✅ So two steps that are each <span class="math inline">\(\le\)</span> or <span class="math inline">\(&lt;\)</span> give <span class="math inline">\(&lt;\)</span> if either is <span class="math inline">\(&lt;\)</span>, and they give <span class="math inline">\(\le\)</span> otherwise.</p>
+</blockquote>
+<p>In each ✅ version, every clause has its own verb, so the reader does not have to copy one across.</p>
+</div>
+<p>The rule is about clauses, not about lists. One verb can take several subjects or several objects in a single clause: “Statistics and machine learning both use the <a href="../chapters/defining-terms.html#def-term">term</a>” has one clause and one verb. One subject can also take several verbs, each written out: “The lasso shrinks the coefficients and sets some of them to zero.” A short verb such as “does” can stand in for a verb phrase in the same sentence, as in “Ridge regression shrinks the coefficients, and the lasso does too”, because the reader still sees a verb in each clause.</p>
+<p>This rule covers words left out of a sentence. The ellipsis mark for the omitted terms of a sequence belongs in math, as in <span class="math inline">\(x_1, \ldots, x_n\)</span>. <!-- no-figure: the punctuation mark, not the conic --> The section <a href="../chapters/inclusive-writing.html#do-not-clip-a-term">Do not clip a term</a> in the inclusive-writing chapter covers words left out of a technical term.</p>
+</section>
+<section id="appositive-fronting" class="slide level2" data-number="5">
+<h2><span class="header-section-number">5</span> Appositive fronting</h2>
 </section>
 <section class="slide level2">
 
@@ -466,7 +490,7 @@
 </ul>
 <p><strong>Guideline.</strong> Front an appositive when it is short, familiar to the reader, and describes the subject. Keep the plain “X is Y” form when the description is the new information the paper depends on, when it is long, or when the subject is a pronoun without a clear antecedent.</p>
 <div id="exm-appositive-fronting" class="theorem example">
-<p><span class="theorem-title"><strong>Example 11 (Plain and fronted forms)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 12 (Plain and fronted forms)</strong></span> &nbsp;</p>
 <blockquote>
 <p>Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.</p>
 <p>Fronted: A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in both preweaned calves and weaned cattle.</p>
@@ -474,15 +498,15 @@
 <p>The fronted version is shorter and puts the category first. It works here because “a disease complex with a multifactorial etiology” describes BRD, the subject that follows it, and the subject is named, not a pronoun. If the multifactorial etiology is what the paper is about, the plain form states it as a claim the reader can challenge, and is the better choice.</p>
 </div>
 </section>
-<section id="put-a-comma-before-the-last-item-of-a-list" class="slide level2" data-number="7">
-<h2><span class="header-section-number">7</span> Put a comma before the last item of a list</h2>
+<section id="put-a-comma-before-the-last-item-of-a-list" class="slide level2" data-number="6">
+<h2><span class="header-section-number">6</span> Put a comma before the last item of a list</h2>
 </section>
 <section class="slide level2">
 
 <p>In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the <em>serial comma</em>, or the <em>Oxford comma</em>. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.</p>
 <p>Write “the mean, the median, and the mode”, not “the mean, the median and the mode”. <!-- check-serial-comma: allow --> The same holds when the items are long, are split across source lines, or contain math.</p>
 <div id="exm-serial-comma" class="theorem example">
-<p><span class="theorem-title"><strong>Example 12 (Adding the serial comma)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 13 (Adding the serial comma)</strong></span> &nbsp;</p>
 <blockquote>
 <p>❌ We compare the lasso, ridge regression and elastic net. <!-- check-serial-comma: allow --></p>
 <p>✅ We compare the lasso, ridge regression, and elastic net.</p>
