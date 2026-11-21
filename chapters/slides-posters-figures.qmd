@@ -284,21 +284,25 @@ and a table has no subtables or at least two
 A lone subfigure labels the only panel "(a)",
 splits one caption into a caption and an empty subcaption,
 and gives one picture two ids to cross-reference.
-It is the figure's version of [a heading with no sibling](paper-organization.qmd#heading-levels).
+It is the figure's version of a heading with no sibling
+(see the [Heading levels](paper-organization.qmd#heading-levels) section of the Paper organization chapter).
 
 A lone subfigure is usually made by accident, in one of three ways:
 
 - **A language tabset with labeled chunks.**
   A `#fig-` div wraps a language tabset,
   and the R and Python chunks in the tabs keep `fig-` labels.
-  Quarto makes each chunk a subfigure and numbers them across the tabs,
-  so the R tab shows a lone "(a)" and the Python tab a lone "(b)".
+  Quarto makes each chunk a subfigure
+  and numbers them across the tabs,
+  so the R tab shows a lone "(a)"
+  and the Python tab a lone "(b)".
   Give the chunks in the tabs plain labels, without the `fig-` prefix,
   and keep their `fig-alt`,
   so the tabs are two versions of one figure.
 - **One labeled panel.**
   A `#fig-` div holds one chunk, image, or div with a `fig-` label or id of its own.
-  Drop the inner label or id, keep the panel's `fig-alt`,
+  Drop the inner label or id,
+  keep the panel's `fig-alt`,
   move its subcaption into the figure's caption,
   and point any cross-reference to the panel at the figure instead,
   so the panel is the figure itself.
@@ -307,8 +311,8 @@ A lone subfigure is usually made by accident, in one of three ways:
   Give that text as `fig-cap` instead.
 
 Tables follow the same rule with `#tbl-`, `tbl-` labels, and `tbl-subcap`.
-gha's [`check-lone-subfloats`](https://github.com/Morrison-Lab/gha/issues/2173)
-fails a pull request that adds or edits such a figure or table.
+A gha check for this, `check-lone-subfloats`, is proposed in
+[gha#2173](https://github.com/Morrison-Lab/gha/issues/2173).
 
 ### Subfigures with language tabsets
 
