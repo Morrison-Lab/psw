@@ -1,0 +1,49 @@
+Give every clause its own verb.
+Do not leave a verb out of a clause and let the reader copy it from the clause before.
+Linguists call this omission *gapping*, a kind of *ellipsis*:
+in "statistics calls it the intercept, and machine learning the bias",
+the second clause has lost "calls it".
+A clause that has lost its verb and everything after it,
+as in "statistics calls it the intercept, and machine learning too",
+has the same problem.
+
+A reader has to notice the gap, find the verb it stands for, and carry it over.
+A reader who is learning English may not see the gap at all,
+and may read "machine learning the bias" as a phrase about learning.
+Writing the verb out costs a word or two.
+
+::: {#exm-dropped-verb}
+
+## Restoring a dropped verb
+
+From a definition of the offset of an affine map, in the mds notes:
+
+> ❌ In the definition of an affine map, the vector $\vec{b}$ is called the **offset** of $f$
+> (statistics also calls it the **intercept**, and machine learning the **bias**).
+>
+> ✅ In the definition of an affine map, the vector $\vb$ is called the **offset** of $f$.
+> Statistics also calls it the **intercept**, and machine learning calls it the **bias**.
+
+From a proof about chains of inequalities, in the mcs notes:
+
+> ❌ So two steps that are each $\le$ or $<$ give $<$ if either is $<$, and otherwise $\le$.
+>
+> ✅ So two steps that are each $\le$ or $<$ give $<$ if either is $<$, and they give $\le$ otherwise.
+
+In each ✅ version, every clause has its own verb,
+so the reader does not have to copy one across.
+
+:::
+
+The rule is about clauses, not about lists.
+One verb can take several subjects or several objects in a single clause:
+"Statistics and machine learning both use the term" has one clause and one verb.
+One subject can also take several verbs, each written out:
+"The lasso shrinks the coefficients and sets some of them to zero."
+A short verb such as "does" can stand in for a verb phrase in the same sentence,
+as in "Ridge regression shrinks the coefficients, and the lasso does too",
+because the reader still sees a verb in each clause.
+
+This rule covers words left out of a sentence.
+The ellipsis mark for the omitted terms of a sequence belongs in math, as in $x_1, \ldots, x_n$.
+[Do not clip a term](inclusive-writing.qmd#do-not-clip-a-term) covers words left out of a technical term.

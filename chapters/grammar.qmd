@@ -37,6 +37,10 @@ that consistently make scientific writing easier to read.
 
 {{< include grammar/relational-nouns.qmd >}}
 
+# Give every clause its own verb
+
+{{< include grammar/dropped-verbs.qmd >}}
+
 # Appositive fronting
 
 {{< include grammar/appositive-fronting.qmd >}}
