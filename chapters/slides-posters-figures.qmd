@@ -278,12 +278,12 @@ are two subfigures, not one widget with two scenes.
 ### A figure with one panel has no subfigures {#sec-no-lone-subfigure}
 
 A subfigure exists to be compared with the other subfigures of its figure,
-so a reader never sees a figure with exactly one subfigure,
-and never a table with exactly one subtable
+so a figure has no subfigures or at least two in every view a reader can pick,
+and a table has no subtables or at least two
 (Ezra, 2026-11-20).
 A lone subfigure labels the only panel "(a)",
 splits one caption into a caption and an empty subcaption,
-and gives a cross-reference two targets for one picture.
+and gives one picture two ids to cross-reference.
 It is the figure's version of [a heading with no sibling](paper-organization.qmd#heading-levels).
 
 A lone subfigure is usually made by accident, in one of three ways:
@@ -297,8 +297,11 @@ A lone subfigure is usually made by accident, in one of three ways:
   and keep their `fig-alt`,
   so the tabs are two versions of one figure.
 - **One labeled panel.**
-  A `#fig-` div holds one chunk, image, or div with a `fig-` label of its own.
-  Drop the inner label, so the panel is the figure itself.
+  A `#fig-` div holds one chunk, image, or div with a `fig-` label or id of its own.
+  Drop the inner label or id, keep the panel's `fig-alt`,
+  move its subcaption into the figure's caption,
+  and point any cross-reference to the panel at the figure instead,
+  so the panel is the figure itself.
 - **One subcaption.**
   A chunk's `fig-subcap` lists one entry.
   Give that text as `fig-cap` instead.
