@@ -17,15 +17,20 @@ Clear grammar removes friction between your ideas and your reader.
 This chapter collects a few grammatical habits
 that consistently make scientific writing easier to read.
 
-# Relative pronouns
+# Pronouns
+
+A pronoun stands for a noun that the reader must find.
+These three sections cover the kinds of pronouns that most often leave the reader searching.
+
+## Relative pronouns
 
 {{< include grammar/relative-pronouns.qmd >}}
 
-# Demonstrative pronouns
+## Demonstrative pronouns
 
 {{< include grammar/demonstrative-pronouns.qmd >}}
 
-# Quantifiers used as pronouns
+## Quantifiers used as pronouns
 
 {{< include grammar/quantifier-pronouns.qmd >}}
 
