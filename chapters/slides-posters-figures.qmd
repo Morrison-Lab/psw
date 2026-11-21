@@ -311,7 +311,7 @@ A lone subfigure is usually made by accident, in one of three ways:
   Give that text as `fig-cap` instead.
 
 Tables follow the same rule with `#tbl-`, `tbl-` labels, and `tbl-subcap`.
-A gha check for this, `check-lone-subfloats`, is proposed in
+A gha check for lone subfigures, `check-lone-subfloats`, is proposed in
 [gha#2173](https://github.com/Morrison-Lab/gha/issues/2173).
 
 ### Subfigures with language tabsets
