@@ -1047,9 +1047,9 @@ $$
 
 # Residual sum of squares of a line through three points
 
-For the points $(0, 1)$, $(1, 2)$, $(2, 2)$
-and the line with $\intcoef = 1$ and $\coef{\predvar} = 0.5$ (@exm-rss-line),
-the residuals are $0$, $0.5$ and $0$,
+Take the line with $\intcoef = 1$ and $\coef{\predvar} = 0.5$ (@exm-rss-line)
+and the points $(0, 1)$, $(1, 2)$, and $(2, 2)$.
+The residuals are $0$, $0.5$, and $0$,
 so $\RSS\paren{1, 0.5} = 0.25$.
 
 :::
