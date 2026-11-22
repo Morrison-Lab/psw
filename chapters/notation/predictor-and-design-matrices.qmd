@@ -10,13 +10,13 @@ Keep two objects apart, because they are not the same matrix:
 - The *predictor matrix* holds the raw inputs.
   Its rows are the predictor vectors $\vx_i$ of the $n$ observations.
   Write it `\mX`.
-- The *design matrix* holds the inputs after any feature map and the intercept trick.
+- The *design matrix* holds the inputs after any feature map and the column of ones for the [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term).
   Its rows are the design vectors $\vfeatmap(\vx_i)$.
   Write it `\design(\mX)`, or `\design` for short.
 
 The same split holds for one observation:
 the predictor vector is `\vx`, and the design vector is `\vfeatmap(\vx)`.
-Without a feature map or an intercept column,
+Without a feature map or a column of ones for the intercept term,
 the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.
 
 ::: {#exm-predictor-vs-design-matrix}

@@ -746,13 +746,13 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
-  such as "linear regression" for a model with an intercept, <!-- check-term-links: allow -->
+  such as "linear regression" for a model with an [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term),
   whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors,
   not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one
   (Ezra, 2026-10-28).
   Wherever the wording is yours, use the precise word:
-  write "affine in the predictors" for a function with an intercept,
-  and "linear" only when the intercept is zero.
+  write "affine in the predictors" for a function with an intercept term,
+  and "linear" only when the intercept term is zero.
   Keep a name the reader will meet in other sources,
   such as linear regression, linear decay or linear approximation,
   because renaming it cuts the reader off from that literature.
@@ -820,6 +820,32 @@ Follow these principles when introducing new [term](#def-term)s:
   or "the expected squared prediction error",
   and never "the error" or "the smallest error".
   A term that already carries all three, such as the generalization error, can stand alone after its definition.
+
+- **Tell the [intercept](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept) of a function from the [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) of an expression:**
+  The two are different objects
+  (Ezra, 2026-11-22).
+  The intercept of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\truemeanfn$ is one of its values:
+  the number $\truemeanfnf{0}$, where the graph of $\truemeanfn$ crosses the vertical axis.
+  The intercept term of an expression is one of its terms:
+  the constant term, such as $\intcoef$ in $\intcoef + \coef{\predvar} \predvar$.
+  The two are equal only when every other term is zero at zero input.
+  With age centered at 40, as in $\truemeanfnf{\predvar} \eqdef \intcoef + \coef{\predvar} \paren{\predvar - 40}$,
+  the intercept term $\intcoef$ is the mean outcome at age 40,
+  and the intercept of $\truemeanfn$ is $\truemeanfnf{0} = \intcoef - 40 \coef{\predvar}$, the mean outcome at age 0.
+  So never write a bare "intercept":
+  write "the intercept term", or "the intercept term $\intcoef$", for the term or its parameter,
+  including the constant parameter of a neural network unit;
+  write "the intercept of $\truemeanfn$", "$\truemeanfnf{0}$", or "the y-intercept" for the value.
+
+  > ❌ Center age at 40, so that the intercept is the mean outcome at age 40.
+  >
+  > ✅ Center age at 40, so that the intercept term $\intcoef$ is the mean outcome at age 40.
+
+  The ❌ sentence is true of the intercept term and false of the intercept of $\truemeanfn$,
+  so a reader who takes the second meaning reads a false claim.
+  The [`check-avoided-words`](https://github.com/Morrison-Lab/gha/tree/main/check-avoided-words) check
+  warns on a bare "intercept" in a line that a pull request adds
+  ([gha#2181](https://github.com/Morrison-Lab/gha/pull/2181)).
 
 - **Make the fitted model the subject, not the fitting procedure:**
   A prediction, an error, a bias and a [variance](#def-variance-expression-and-prose)
@@ -1019,13 +1045,13 @@ $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 
 # Residual sum of squares of a straight line
 
-For a straight line with intercept $\beta_0$ and slope $\beta_x$,
-the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\beta_0 + \beta_x x_i$,
+For a straight line with [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) $\intcoef$ and slope $\coef{\predvar}$,
+the [fitted value](notation.qmd#def-fitted-value) of observation $\iobs$ is $\intcoef + \coef{\predvar} \predvar_{\iobs}$,
 so the [residual sum of squares](#def-rss) is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the two coefficients:
 
 $$
-\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2.
-$$
+\RSS\paren{\intcoef, \coef{\predvar}} = \sum_{\iobs=1}^{\nobs} \paren{\outvar_{\iobs} - \intcoef - \coef{\predvar} \predvar_{\iobs}}^2.
+$$ {#eq-rss-line}
 
 :::
 
@@ -1033,10 +1059,10 @@ $$
 
 # Residual sum of squares of a line through three points
 
-For the points $(0, 1)$, $(1, 2)$, $(2, 2)$
-and the line with $\beta_0 = 1$ and $\beta_x = 0.5$ (@exm-rss-line),
-the residuals are $0$, $0.5$ and $0$,
-so $\text{RSS}(1, 0.5) = 0.25$.
+Take the line with $\intcoef = 1$ and $\coef{\predvar} = 0.5$ (@exm-rss-line)
+and the points $(0, 1)$, $(1, 2)$, and $(2, 2)$.
+The residuals are $0$, $0.5$, and $0$,
+so $\RSS\paren{1, 0.5} = 0.25$.
 
 :::
 
