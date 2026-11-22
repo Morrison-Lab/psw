@@ -1039,7 +1039,7 @@ so the [residual sum of squares](#def-rss) is a [function](https://morrison-lab.
 
 $$
 \RSS\paren{\intcoef, \coef{\predvar}} = \sum_{\iobs=1}^{\nobs} \paren{\outvar_{\iobs} - \intcoef - \coef{\predvar} \predvar_{\iobs}}^2.
-$$
+$$ {#eq-rss-line}
 
 :::
 
