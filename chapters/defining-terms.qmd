@@ -809,12 +809,12 @@ Follow these principles when introducing new [term](#def-term)s:
   and never "the error" or "the smallest error".
   A term that already carries all three, such as the generalization error, can stand alone after its definition.
 
-- **Tell the intercept of a function from the intercept term of an expression:**
+- **Tell the [intercept](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept) of a function from the [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) of an expression:**
   The two are different objects
   (Ezra, 2026-11-22).
-  The [intercept](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept) of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\mu$ is one of its values:
+  The intercept of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\mu$ is one of its values:
   the number $\mu(0)$, where the graph of $\mu$ crosses the vertical axis.
-  The [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) of an expression is one of its terms:
+  The intercept term of an expression is one of its terms:
   the constant term, such as $\beta_0$ in $\beta_0 + \beta_x x$.
   The two are equal only when every other term is zero at zero input.
   With age centered at 40, as in $\mu(x) := \beta_0 + \beta_x (x - 40)$,
