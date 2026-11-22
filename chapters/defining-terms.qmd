@@ -812,24 +812,24 @@ Follow these principles when introducing new [term](#def-term)s:
 - **Tell the [intercept](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept) of a function from the [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) of an expression:**
   The two are different objects
   (Ezra, 2026-11-22).
-  The intercept of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\mu$ is one of its values:
-  the number $\mu(0)$, where the graph of $\mu$ crosses the vertical axis.
+  The intercept of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) $\truemeanfn$ is one of its values:
+  the number $\truemeanfnf{0}$, where the graph of $\truemeanfn$ crosses the vertical axis.
   The intercept term of an expression is one of its terms:
-  the constant term, such as $\beta_0$ in $\beta_0 + \beta_x x$.
+  the constant term, such as $\intcoef$ in $\intcoef + \coef{\predvar} \predvar$.
   The two are equal only when every other term is zero at zero input.
-  With age centered at 40, as in $\mu(x) := \beta_0 + \beta_x (x - 40)$,
-  the intercept term $\beta_0$ is the mean outcome at age 40,
-  and the intercept of $\mu$ is $\mu(0) = \beta_0 - 40 \beta_x$, the mean outcome at age 0.
+  With age centered at 40, as in $\truemeanfnf{\predvar} \eqdef \intcoef + \coef{\predvar} \paren{\predvar - 40}$,
+  the intercept term $\intcoef$ is the mean outcome at age 40,
+  and the intercept of $\truemeanfn$ is $\truemeanfnf{0} = \intcoef - 40 \coef{\predvar}$, the mean outcome at age 0.
   So never write a bare "intercept":
-  write "the intercept term", or "the intercept term $\beta_0$", for the term or its parameter,
+  write "the intercept term", or "the intercept term $\intcoef$", for the term or its parameter,
   including the constant parameter of a neural network unit;
-  write "the intercept of $\mu$", "$\mu(0)$", or "the y-intercept" for the value.
+  write "the intercept of $\truemeanfn$", "$\truemeanfnf{0}$", or "the y-intercept" for the value.
 
   > ❌ Center age at 40, so that the intercept is the mean outcome at age 40.
   >
-  > ✅ Center age at 40, so that the intercept term $\beta_0$ is the mean outcome at age 40.
+  > ✅ Center age at 40, so that the intercept term $\intcoef$ is the mean outcome at age 40.
 
-  The ❌ sentence is true of the intercept term and false of the intercept of $\mu$,
+  The ❌ sentence is true of the intercept term and false of the intercept of $\truemeanfn$,
   so a reader who takes the second meaning reads a false claim.
   The [`check-avoided-words`](https://github.com/Morrison-Lab/gha/tree/main/check-avoided-words) check
   warns on a bare "intercept" in a line that a pull request adds
