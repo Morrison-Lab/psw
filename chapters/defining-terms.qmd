@@ -734,7 +734,7 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
-  such as "linear regression" for a model with an [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term), <!-- check-term-links: allow: "linear regression" is quoted as the misnomer under discussion -->
+  such as "linear regression" for a model with an [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term),
   whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors,
   not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one
   (Ezra, 2026-10-28).
