@@ -1033,7 +1033,7 @@ $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 
 # Residual sum of squares of a straight line
 
-For a straight line with intercept term $\beta_0$ and slope $\beta_x$,
+For a straight line with intercept term $\intcoef$ and slope $\coef{\predvar}$,
 the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\beta_0 + \beta_x x_i$,
 so the [residual sum of squares](#def-rss) is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the two coefficients:
 
