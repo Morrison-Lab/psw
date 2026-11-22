@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-22 00:47:05 (PST)
+Last modified: 2026-11-22 01:13:21 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -184,7 +184,7 @@ The expression puts `p1` and `p2` side by side above `p3`:
 
 # 5 Three-dimensional graphs
 
-A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss function or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. A contour plot needs its surface beside it, but a surface plot can stand alone.
+A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss function or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. A contour plot needs its surface beside it, but a surface plot can stand alone.
 
 - Use a 3D plot for a surface, with the function’s value on the vertical axis.
 

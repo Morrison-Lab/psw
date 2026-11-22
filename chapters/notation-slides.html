@@ -272,7 +272,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">Last modified: 2026-11-22 00:47:05 (PST)</p>
+  <p class="date">Last modified: 2026-11-22 01:13:21 (PST)</p>
 </section>
 <section class="slide level2">
 
@@ -874,9 +874,9 @@
 <p>Keep two objects apart, because they are not the same matrix:</p>
 <ul>
 <li>The <em>predictor matrix</em> holds the raw inputs. Its rows are the predictor vectors <span class="math inline">\(\vx_i\)</span> of the <span class="math inline">\(n\)</span> observations. Write it <code>\mX</code>.</li>
-<li>The <em>design matrix</em> holds the inputs after any feature map and the intercept trick. Its rows are the design vectors <span class="math inline">\(\vfeatmap(\vx_i)\)</span>. Write it <code>\design(\mX)</code>, or <code>\design</code> for short.</li>
+<li>The <em>design matrix</em> holds the inputs after any feature map and the column of ones for the <a href="https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term">intercept term</a>. Its rows are the design vectors <span class="math inline">\(\vfeatmap(\vx_i)\)</span>. Write it <code>\design(\mX)</code>, or <code>\design</code> for short.</li>
 </ul>
-<p>The same split holds for one observation: the predictor vector is <code>\vx</code>, and the design vector is <code>\vfeatmap(\vx)</code>. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.</p>
+<p>The same split holds for one observation: the predictor vector is <code>\vx</code>, and the design vector is <code>\vfeatmap(\vx)</code>. Without a feature map or a column of ones for the intercept term, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.</p>
 <div id="exm-predictor-vs-design-matrix" class="theorem example">
 <p><span class="theorem-title"><strong>Example 27 (Predictor matrix and design matrix)</strong></span> &nbsp;</p>
 <blockquote>

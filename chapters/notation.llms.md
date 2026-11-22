@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-22 00:47:05 (PST)
+Last modified: 2026-11-22 01:13:21 (PST)
 
 > **NOTE:**
 >
@@ -641,9 +641,9 @@ Write a matrix in matrix styling, not in the plain italic of a scalar. This hold
 Keep two objects apart, because they are not the same matrix:
 
 - The *predictor matrix* holds the raw inputs. Its rows are the predictor vectors $\vx_i$ of the $n$ observations. Write it `\mX`.
-- The *design matrix* holds the inputs after any feature map and the intercept trick. Its rows are the design vectors $\vfeatmap(\vx_i)$. Write it `\design(\mX)`, or `\design` for short.
+- The *design matrix* holds the inputs after any feature map and the column of ones for the [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term). Its rows are the design vectors $\vfeatmap(\vx_i)$. Write it `\design(\mX)`, or `\design` for short.
 
-The same split holds for one observation: the predictor vector is `\vx`, and the design vector is `\vfeatmap(\vx)`. Without a feature map or an intercept column, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.
+The same split holds for one observation: the predictor vector is `\vx`, and the design vector is `\vfeatmap(\vx)`. Without a feature map or a column of ones for the intercept term, the design matrix equals the predictor matrix, but say so rather than reuse one symbol for both.
 
 > **NOTE:**
 >
