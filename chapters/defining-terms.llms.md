@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-21 13:36:46 (PST)
+Last modified: 2026-11-22 00:47:05 (PST)
 
 Clear definitions are essential to effective scientific writing. Every specialized [term](#def-term) should have an explicit, concise definition before its first use. Readers should not need to search for the meaning of a term or infer it from context alone. For example:
 
@@ -55,6 +55,8 @@ Follow these principles when introducing new [term](#def-term)s:
   not the two sums that RSS and TSS stand for.
 
 - **Graph a function of one or two inputs in its definition:** Every definition of a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of one or two inputs includes a graph of that function, in 2D for one input and in 3D for two inputs (Ezra, 2026-11-10). Put the graph in the definition block, after the defining equation. Draw a 3D graph by the rules in [Three-dimensional graphs](../chapters/slides-posters-figures.llms.md#sec-3d-graphs).
+
+- **Follow the definition of a geometric term with an example that has a figure:** When a [term](#def-term) names a geometric object, such as a curve, a plane, a distance, a margin, a boundary, or a region, the first example after its definition includes a figure that draws the object (Ezra, 2026-11-22). For example, the [precision-recall curve](https://morrison-lab.github.io/lds/chapters/metrics.html#def-precision-recall-curve) of a score is followed by an example that plots the curve for one score on real data, not only a table of the curve’s points. The definition says what the object is, and the figure shows the reader its shape. The `check-geometric-figures` check in gha flags a geometric definition whose next example has no figure.
 
 - **Open a definition with the bold [term](#def-term) as its subject:** Start the sentence with the term, then state what it is, and put the defining expression after that sentence. For example, write “The **[variance](#def-variance-expression-and-prose)** of a random variable $X$ is the [population](#def-population) mean of the squared deviation of $X$ from its population mean,” followed by the equation ${\operatorname{Var}\mathopen{}\left(X\right)\mathclose{}} = {\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$. Do not open with the expression and name the term afterward, as in “${\mathbb{E}\mathopen{}\left[\mathopen{}\left(X - {\mathbb{E}\mathopen{}\left[X\right]\mathclose{}}\right)\mathclose{}^2\right]\mathclose{}}$ is the variance of $X$.” A reader who looks up a term should find the term first, and the definition then reads as one statement about that term.
 
