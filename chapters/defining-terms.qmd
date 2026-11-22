@@ -734,13 +734,13 @@ Follow these principles when introducing new [term](#def-term)s:
 
 - **Keep an entrenched misnomer, and clarify it once:**
   Some names the literature has fixed are technically wrong,
-  such as "linear regression" for a model with an intercept, <!-- check-term-links: allow -->
+  such as "linear regression" for a model with an intercept term, <!-- check-term-links: allow -->
   whose mean is an [affine](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-affine-function) [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the predictors,
   not a [linear](https://morrison-lab.github.io/mds/algebra-exponentials.html#def-linear-function) one
   (Ezra, 2026-10-28).
   Wherever the wording is yours, use the precise word:
-  write "affine in the predictors" for a function with an intercept,
-  and "linear" only when the intercept is zero.
+  write "affine in the predictors" for a function with an intercept term,
+  and "linear" only when the intercept term is zero.
   Keep a name the reader will meet in other sources,
   such as linear regression, linear decay or linear approximation,
   because renaming it cuts the reader off from that literature.
@@ -1033,7 +1033,7 @@ $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 
 # Residual sum of squares of a straight line
 
-For a straight line with intercept $\beta_0$ and slope $\beta_x$,
+For a straight line with intercept term $\beta_0$ and slope $\beta_x$,
 the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\beta_0 + \beta_x x_i$,
 so the [residual sum of squares](#def-rss) is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the two coefficients:
 
