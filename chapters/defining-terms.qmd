@@ -147,6 +147,18 @@ Follow these principles when introducing new [term](#def-term)s:
   Put the graph in the definition block, after the defining equation.
   Draw a 3D graph by the rules in [Three-dimensional graphs](slides-posters-figures.qmd#sec-3d-graphs).
 
+- **Follow the definition of a geometric term with an example that has a figure:**
+  When a [term](#def-term) names a geometric object,
+  such as a curve, a plane, a distance, a margin, a boundary, or a region,
+  the first example after its definition includes a figure that draws the object
+  (Ezra, 2026-11-22).
+  For example, the [precision-recall curve](https://morrison-lab.github.io/lds/chapters/metrics.html#def-precision-recall-curve) of a score
+  is followed by an example that plots the curve for one score on real data,
+  not only a table of the curve's points.
+  The definition says what the object is,
+  and the figure shows the reader its shape.
+  The `check-geometric-figures` check in gha flags a geometric definition whose next example has no figure.
+
 - **Open a definition with the bold [term](#def-term) as its subject:**
   Start the sentence with the term, then state what it is,
   and put the defining expression after that sentence.
