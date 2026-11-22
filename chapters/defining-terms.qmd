@@ -1034,11 +1034,11 @@ $$\text{RSS} = \sum_{i=1}^n r_i^2.$$
 # Residual sum of squares of a straight line
 
 For a straight line with [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) $\intcoef$ and slope $\coef{\predvar}$,
-the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\beta_0 + \beta_x x_i$,
+the [fitted value](notation.qmd#def-fitted-value) of observation $i$ is $\intcoef + \coef{\predvar} \predvar_i$,
 so the [residual sum of squares](#def-rss) is a [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of the two coefficients:
 
 $$
-\text{RSS}(\beta_0, \beta_x) = \sum_{i=1}^n (y_i - \beta_0 - \beta_x x_i)^2.
+\text{RSS}\paren{\intcoef, \coef{\predvar}} = \sum_{i=1}^n \paren{\outvar_i - \intcoef - \coef{\predvar} \predvar_i}^2.
 $$
 
 :::
@@ -1048,7 +1048,7 @@ $$
 # Residual sum of squares of a line through three points
 
 For the points $(0, 1)$, $(1, 2)$, $(2, 2)$
-and the line with $\beta_0 = 1$ and $\beta_x = 0.5$ (@exm-rss-line),
+and the line with $\intcoef = 1$ and $\coef{\predvar} = 0.5$ (@exm-rss-line),
 the residuals are $0$, $0.5$ and $0$,
 so $\text{RSS}(1, 0.5) = 0.25$.
 
