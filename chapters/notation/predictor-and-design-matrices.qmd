@@ -10,7 +10,7 @@ Keep two objects apart, because they are not the same matrix:
 - The *predictor matrix* holds the raw inputs.
   Its rows are the predictor vectors $\vx_i$ of the $n$ observations.
   Write it `\mX`.
-- The *design matrix* holds the inputs after any feature map and the column of ones for the intercept term.
+- The *design matrix* holds the inputs after any feature map and the column of ones for the [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term).
   Its rows are the design vectors $\vfeatmap(\vx_i)$.
   Write it `\design(\mX)`, or `\design` for short.
 
