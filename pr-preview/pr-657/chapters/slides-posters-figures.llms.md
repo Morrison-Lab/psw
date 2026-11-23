@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 08:41:37 (PST)
+Last modified: 2026-11-23 10:55:38 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -112,7 +112,19 @@ A panel combined in code has no label of its own for a cross-reference. Tag the 
 
 Keep panels in separate subfigures when they share nothing. Two 3D surfaces from two models, each with its own rotation, are two subfigures, not one widget with two scenes.
 
-### 4.1.1 Subfigures with language tabsets
+### 4.1.1 A figure with one panel has no subfigures
+
+A subfigure exists to be compared with the other subfigures of its figure, so a figure has no subfigures or at least two in every view a reader can pick, and a table has no subtables or at least two (Ezra, 2026-11-20). A lone subfigure labels the only panel “(a)”, splits one caption into a caption and an empty subcaption, and gives one picture two ids to cross-reference. It is the figure’s version of a heading with no sibling (see the [Heading levels](../chapters/paper-organization.llms.md#heading-levels) section of the Paper organization chapter).
+
+A lone subfigure is usually made by accident, in one of three ways:
+
+- **A language tabset with labeled chunks.** A `#fig-` div wraps a language tabset, and the R and Python chunks in the tabs keep `fig-` labels. Quarto makes each chunk a subfigure and numbers them across the tabs, so the R tab shows a lone “(a)” and the Python tab a lone “(b)”. Give the chunks in the tabs plain labels, without the `fig-` prefix, and keep their `fig-alt`, so the tabs are two versions of one figure.
+- **One labeled panel.** A `#fig-` div holds one chunk, image, or div with a `fig-` label or id of its own. Drop the inner label or id, keep the panel’s `fig-alt`, move its subcaption into the figure’s caption, and point any cross-reference to the panel at the figure instead, so the panel is the figure itself.
+- **One subcaption.** A chunk’s `fig-subcap` lists one entry. Give that text as `fig-cap` instead.
+
+Tables follow the same rule with `#tbl-`, `tbl-` labels, and `tbl-subcap`. A gha check for lone subfigures, `check-lone-subfloats`, is proposed in [gha#2173](https://github.com/Morrison-Lab/gha/issues/2173).
+
+### 4.1.2 Subfigures with language tabsets
 
 Put a language tabset (`group="language"`) inside each subfigure, not the subfigures inside one tabset, when each panel has R and Python versions:
 
@@ -142,9 +154,9 @@ Fitted surfaces of the two models for fuel economy over weight and model year.
 :::
 ````
 
-Each `r` or `python` block stands for an executed chunk, whose fence is `{r}` or `{python}` in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on.
+Each `r` or `python` block stands for an executed chunk, whose fence is `{r}` or `{python}` in a real page. Quarto then labels the panels (a) and (b) whichever tab the reader picks. With the subfigures inside the tabset, the Python tab’s panels become (c) and (d), and the R panels’ cross-references point at a tab the reader may not be on. The chunks in the tabs take plain labels, not `fig-` labels, since a `fig-` label would make each chunk a subfigure of its panel, one per tab ([Section 4.1.1](#sec-no-lone-subfigure)).
 
-### 4.1.2 Subtables
+### 4.1.3 Subtables
 
 The same choice holds for tables:
 
@@ -172,11 +184,11 @@ The expression puts `p1` and `p2` side by side above `p3`:
 
 # 5 Three-dimensional graphs
 
-A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss function or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s intercept and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. Show both when the shape of the surface matters.
+A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of two variables, such as a loss function or a [residual sum of squares](../chapters/defining-terms.llms.md#def-rss) as a function of a regression’s [intercept term](https://morrison-lab.github.io/mds/algebra-polynomials.html#def-intercept-term) and slope, is a surface. A contour plot shows where the function takes given values and is easy to read values from. A three-dimensional surface plot shows the same function as a landscape, so valleys, ridges and minima are visible at once. A contour plot needs its surface beside it, but a surface plot can stand alone.
 
-- Use a 3D plot for a surface, with the function’s value on the vertical axis, and pair it with a contour plot of the same function.
+- Use a 3D plot for a surface, with the function’s value on the vertical axis.
 
-- Pair the other way too: every contour plot or level-curve plot of a function of two variables gets a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points.
+- Give every contour plot or level-curve plot of a function of two variables a corresponding 3D surface plot of the same function (Ezra, 2026-11-03), with the same colors and marked points. The pairing runs one way only: a 3D surface plot needs no contour plot beside it (Ezra, 2026-11-16: “every contour plot should have a corresponding 3d plot; not every 3d plot needs a corresponding contour plot”). Add the contour plot only when the reader needs to read values off the surface.
 
 - Put a contour plot and its 3D surface plot in one figure, as two subfigures (Ezra, 2026-11-12: “why didn’t you pair the 2d and 3d figures as subfigures? that should be a psw principle by now”), so one caption describes both views, and a cross-reference such as “Figure 3b” names one of them (see [Combine panels with Quarto layout or in code](#sec-combine-panels)). In HTML the 3D subfigure is the interactive plot; in PDF, Word, and PowerPoint it is the static view at a fixed angle.
 

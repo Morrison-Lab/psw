@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 08:41:37 (PST)
+Last modified: 2026-11-23 10:55:38 (PST)
 
 > **NOTE:**
 >
@@ -12,7 +12,11 @@ Last modified: 2026-11-16 08:41:37 (PST)
 
 Clear grammar removes friction between your ideas and your reader. This chapter collects a few grammatical habits that consistently make scientific writing easier to read.
 
-# 1 Relative pronouns
+# 1 Pronouns
+
+A pronoun stands for a noun that the reader must find. These three sections cover the kinds of pronouns that most often leave the reader searching.
+
+## 1.1 Relative pronouns
 
 Relative pronouns introduce a clause that describes a preceding noun. The relative pronouns are:
 
@@ -24,7 +28,7 @@ Relative pronouns introduce a clause that describes a preceding noun. The relati
 
 Two habits make these clauses easier to read: choosing between *that* and *which* correctly, and keeping the relative pronoun rather than dropping it.
 
-### 1.0.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
+### 1.1.1 Restrictive vs. non-restrictive clauses: *that* vs. *which*
 
 > **NOTE:**
 >
@@ -54,13 +58,27 @@ Use *that* for a [restrictive clause](#def-restrictive-clause). Use *which*, set
 
 A quick test: if you can drop the clause without changing which thing you are describing, use *which* and commas; otherwise, use *that*.
 
-### 1.0.2 Do not omit relative pronouns
+### 1.1.2 Attach a relative pronoun to the nearest noun
+
+A relative pronoun refers to the noun just before it. When *whose*, *which*, *that*, or *who* follows two or more nouns, the reader takes the closest one as the referent. If you mean an earlier noun, repeat it, and start a new sentence with it. The nearest-noun rule is one case of the general rule for every pronoun: each one has a single antecedent that the reader can identify without guessing (see also [Demonstrative pronouns](#demonstrative-pronouns)). No automated check enforces the relative-pronoun case, because deciding what a pronoun refers to takes meaning, not pattern matching, so a reviewer reads for it.
+
+> **NOTE:**
+>
+> **Example 3 (Repeating the noun a relative pronoun should attach to)**  
+>
+> > ❌ We place a Gaussian distribution on each coefficient, **whose** variance is fixed in advance.
+> >
+> > ✅ We place a Gaussian distribution on each coefficient. **The distribution’s** variance is fixed in advance.
+>
+> In the first sentence, “whose” can refer to “coefficient”, the nearest noun, although the writer means the distribution. Naming “the distribution” removes the guess.
+
+### 1.1.3 Do not omit relative pronouns
 
 English lets you drop a relative pronoun in some sentences, but keeping it makes the structure of the sentence explicit and easier to parse on the first read. Prefer to keep *that*, *which*, or *who*, even when the grammar would let you drop it.
 
 > **NOTE:**
 >
-> **Example 3 (Restoring an omitted relative pronoun)**  
+> **Example 4 (Restoring an omitted relative pronoun)**  
 >
 > > ❌ This body of work laid the methodological groundwork I now apply to enteric fever.
 > >
@@ -68,7 +86,7 @@ English lets you drop a relative pronoun in some sentences, but keeping it makes
 >
 > The word “that” signals immediately that a describing clause is beginning, so the reader does not briefly misread “the methodological groundwork I” as a single phrase and then have to backtrack.
 
-# 2 Demonstrative pronouns
+## 1.2 Demonstrative pronouns
 
 There are four demonstrative words:
 
@@ -79,13 +97,13 @@ There are four demonstrative words:
 
 They can serve two roles. As adjectives, they modify a noun: “**this** result”, “**those** samples”. As standalone pronouns, they replace a noun: “**This** shows…”, “**That** means…”.
 
-When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is.
+When a demonstrative stands alone as a pronoun, the reader has to search backward for its referent — and often the referent is a whole preceding clause rather than a single noun, which leaves the reference ambiguous. Prefer to follow a demonstrative with the noun it points to, so the reference is explicit. [Relative pronouns](#relative-pronouns) follow the same rule: a clause that starts with *whose* or *which* attaches to the nearest noun before it. The adverbs *here* and *there* point the same way: “getting there” leaves the reader to guess where “there” is. Use *here*, *there*, *then*, or a bare *this* only when its referent is proximal, that is, named just before it in the same clause. When the referent is farther back, in an earlier clause, sentence, or heading, repeat its name instead.
 
 A demonstrative at the end of a sentence has no room after it for a naming noun, so a bare sentence-final *this* or *that* always leaves its referent unnamed. End the sentence with the noun instead.
 
 > **NOTE:**
 >
-> **Example 4 (Naming the referent)**  
+> **Example 5 (Naming the referent)**  
 >
 > > ❌ The model overfit the training data. **This** poses a problem for deployment.
 > >
@@ -97,7 +115,17 @@ A demonstrative at the end of a sentence has no room after it for a naming noun,
 >
 > Adding the nouns “overfitting” and “bias” states exactly what each “this” refers to, instead of leaving the reader to infer it. The second pair ends its sentence with the demonstrative, so the fix has to add the noun after it, at the very end.
 
-# 3 Quantifiers used as pronouns
+> **NOTE:**
+>
+> **Example 6 (Naming the place instead of saying “there”)**  
+>
+> > ❌ The bias of a prediction at an input is the average fit there minus the true mean function there.
+> >
+> > ✅ The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$ minus the true mean function at $\predvar$.
+>
+> In the first version, each “there” points back past a whole noun phrase to “an input”, so the reader has to work out that both functions are evaluated at that input. The second version names the input $\predvar$ and repeats it at each comparison.
+
+## 1.3 Quantifiers used as pronouns
 
 Words that say how many, or how much, of something cause the same problem as demonstratives when they stand alone in place of a noun. Grammars call these words *quantifiers*, and call a quantifier that stands alone an *indefinite pronoun*. The common ones are:
 
@@ -117,7 +145,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 
 > **NOTE:**
 >
-> **Example 5 (Naming what a quantifier refers to)**  
+> **Example 7 (Naming what a quantifier refers to)**  
 >
 > > ❌ We fit a linear model and a spline model to the 2019 and 2020 surveys. **Both** return the same fit.
 > >
@@ -125,7 +153,7 @@ You do not need a complete list of quantifiers to apply the advice. Whenever a q
 >
 > In the first version, “both” could mean the two models or the two surveys. Adding “models” settles which pair the sentence is about.
 
-# 4 Avoid garden-path sentences
+# 2 Avoid garden-path sentences
 
 A *garden-path sentence* leads the reader into one reading and then forces them to go back and reread when the rest of the sentence does not fit ([Wikipedia: Garden-path sentence](https://en.wikipedia.org/wiki/Garden-path_sentence)). The sentence may be grammatical, but the reader parses it twice.
 
@@ -135,7 +163,7 @@ When you reread a sentence and stumble, find the point where your first reading 
 
 > **NOTE:**
 >
-> **Example 6 (Rewriting a garden-path sentence)**  
+> **Example 8 (Rewriting a garden-path sentence)**  
 >
 > > ❌ Report only SHAs a command you ran printed in full.
 > >
@@ -143,7 +171,7 @@ When you reread a sentence and stumble, find the point where your first reading 
 >
 > In the first version, the reader takes “SHAs a command you ran” as one phrase, then reaches “printed” and has to work out that “a command you ran printed in full” is a clause describing the SHAs. The rewrite marks the clause with “that” and keeps each verb next to its own subject.
 
-# 5 Name the object of a relational noun
+# 3 Name the object of a relational noun
 
 Some nouns name a relation, so they are incomplete without the thing they relate to. Relational nouns include:
 
@@ -157,7 +185,7 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 
 > **NOTE:**
 >
-> **Example 7 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
+> **Example 9 (Comparing four versions of one sentence)** Each version tries to say what usually causes garden-path sentences.
 >
 > > 1.  A common cause in technical writing is a clause that describes a noun but has lost its opening *that* or *that were*.
 > > 2.  In technical writing, a common cause is a clause that describes a noun but has lost its opening *that* or *that were*.
@@ -166,7 +194,44 @@ When one of these nouns appears without its “of” or “for” phrase, the re
 >
 > Versions 1 and 2 never say what the clause causes, so the reader has to look back to find what “cause” refers to. Version 3 names the object, “garden-path parsing”, but its fronted phrase delays the subject (see [Lead with the subject](../chapters/conciseness.llms.md#lead-with-the-subject)), and “garden-path parsing” introduces a second [term](../chapters/defining-terms.llms.md#def-term) for the “garden-path sentences” that the section defines. Version 4 names the object, uses the defined term, and starts with the subject.
 
-# 6 Appositive fronting
+A noun that names a characteristic is relational too: a bias, a [variance](https://morrison-lab.github.io/pds/variance-covariance.html#def-variance), an expected squared error, or a risk is always the bias, variance, error, or risk *of* something. Name the class of objects the characteristic describes, such as “the bias of an estimator” or “the expected squared error of a predictor”, every time the characteristic is stated, in a title as well as in prose. “The bias” alone leaves the reader to guess whether it belongs to an estimator, a prediction, or a fitted model.
+
+> **NOTE:**
+>
+> **Example 10 (Naming what a bias describes)**  
+>
+> > 1.  The bias is the average fit minus the true mean function.
+> > 2.  The bias of a prediction at an input $\predvar$ is the average fit at $\predvar$ minus the true mean function at $\predvar$.
+>
+> Version 1 never says what has the bias, so a reader who meets it as a theorem title cannot tell whether it is the bias of a coefficient estimate, a prediction, or a whole fitted model. Version 2 names the class of objects, predictions at an input $\predvar$, and names $\predvar$ again where the two functions are compared, instead of pointing back to it with “there”.
+
+# 4 Give every clause its own verb
+
+Give every clause its own verb. Do not leave a verb out of a clause and let the reader copy it from the clause before. Linguists call this omission *gapping*, a kind of *ellipsis*: in “statistics calls it the intercept, and machine learning the bias”, the second clause has lost “calls it”. A clause that has lost its verb and everything after it, as in “statistics calls it the intercept, and machine learning too”, has the same problem.
+
+A reader has to notice the gap, find the verb it stands for, and carry it over. A reader who is learning English may not see the gap at all, and may read “machine learning the bias” as a phrase about learning. Writing the verb out costs a word or two.
+
+> **NOTE:**
+>
+> **Example 11 (Restoring a dropped verb)** From a definition of the offset of an [affine map](https://morrison-lab.github.io/mds/linear-algebra-linear-maps.html#def-affine-map), in the mds notes:
+>
+> > ❌ In the definition of an affine map, the vector $\vec{b}$ is called the offset of $f$ (statistics also calls it the intercept, and machine learning the bias).
+> >
+> > ✅ In the definition of an affine map, the vector $\vb$ is called the offset of $f$. Statistics also calls it the intercept, and machine learning calls it the bias.
+>
+> From a proof about chains of inequalities, in the mcs notes:
+>
+> > ❌ So two steps that are each $\le$ or $<$ give $<$ if either is $<$, and otherwise $\le$.
+> >
+> > ✅ So two steps that are each $\le$ or $<$ give $<$ if either is $<$, and they give $\le$ otherwise.
+>
+> In each ✅ version, every clause has its own verb, so the reader does not have to copy one across.
+
+The rule is about clauses, not about lists. One verb can take several subjects or several objects in a single clause: “Statistics and machine learning both use the [term](../chapters/defining-terms.llms.md#def-term)” has one clause and one verb. One subject can also take several verbs, each written out: “The lasso shrinks the coefficients and sets some of them to zero.” A short verb such as “does” can stand in for a verb phrase in the same sentence, as in “Ridge regression shrinks the coefficients, and the lasso does too”, because the reader still sees a verb in each clause.
+
+This rule covers words left out of a sentence. The ellipsis mark for the omitted terms of a sequence belongs in math, as in $x_1, \ldots, x_n$. The section [Do not clip a term](../chapters/inclusive-writing.llms.md#do-not-clip-a-term) in the inclusive-writing chapter covers words left out of a technical term.
+
+# 5 Appositive fronting
 
 An *appositive* is a noun phrase that renames or describes the noun beside it. In “Bovine respiratory disease (BRD), a disease complex with a multifactorial etiology, kills calves”, “a disease complex with a multifactorial etiology” is an appositive of “BRD”. *Appositive fronting* moves the appositive to the start of the sentence, before the noun it describes, which then follows as the subject: “A disease complex with a multifactorial etiology, BRD is a leading cause of mortality in calves.” Often the subject becomes a pronoun, as in “A disease complex with a multifactorial etiology, it is a leading cause of mortality in calves”, which needs an antecedent for “it” in the sentence before.
 
@@ -190,7 +255,7 @@ Fronting is a stylistic choice, with costs and benefits.
 
 > **NOTE:**
 >
-> **Example 8 (Plain and fronted forms)**  
+> **Example 12 (Plain and fronted forms)**  
 >
 > > Plain: Bovine respiratory disease (BRD) is a disease complex with a multifactorial etiology and serves as a significant cause of mortality among preweaned calves and weaned cattle alike.
 > >
@@ -198,7 +263,7 @@ Fronting is a stylistic choice, with costs and benefits.
 >
 > The fronted version is shorter and puts the category first. It works here because “a disease complex with a multifactorial etiology” describes BRD, the subject that follows it, and the subject is named, not a pronoun. If the multifactorial etiology is what the paper is about, the plain form states it as a claim the reader can challenge, and is the better choice.
 
-# 7 Put a comma before the last item of a list
+# 6 Put a comma before the last item of a list
 
 In a list of three or more items, put a comma before the “and” or “or” that closes the list. This comma is called the *serial comma*, or the *Oxford comma*. With it, the reader sees where each item ends, and does not have to guess whether the last two items form a pair.
 
@@ -206,7 +271,7 @@ Write “the mean, the median, and the mode”, not “the mean, the median and 
 
 > **NOTE:**
 >
-> **Example 9 (Adding the serial comma)**  
+> **Example 13 (Adding the serial comma)**  
 >
 > > ❌ We compare the lasso, ridge regression and elastic net.
 > >

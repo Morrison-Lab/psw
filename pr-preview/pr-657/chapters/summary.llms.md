@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 08:41:37 (PST)
+Last modified: 2026-11-23 10:55:38 (PST)
 
 > **NOTE:**
 >
@@ -19,6 +19,8 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Give each mathematical statement an example](../chapters/defining-terms.llms.md#mathematical-statements-require-examples) that applies it.
 
 - [Prefer interval notation to a double inequality](../chapters/notation.llms.md#avoiding-double-inequalities): $x \in (a, b)$ rather than $a < x < b$.
+
+- [Parenthesize to show precedence](../chapters/notation.llms.md#parenthesizing-to-show-precedence): $(x \in A) \lor (x \in B)$ rather than $x \in A \lor x \in B$.
 
 - [Abstract each sub-expression you are not manipulating](../chapters/notation.llms.md#abstract-unused-subexpressions) to a symbol, such as $\mu$ for $\E{X}$.
 
@@ -131,6 +133,7 @@ This chapter lists the book’s main rules as a checklist. Use the checklist whe
 - [Refute common misconceptions](../chapters/teaching.llms.md#refute-common-misconceptions) where the concept is defined or first used.
 - [Revisit earlier units in later exercises](../chapters/teaching.llms.md#revisit-earlier-units-in-later-exercises).
 - [Write labs in both R and Python](../chapters/teaching.llms.md#write-labs-for-both-languages-and-any-computer) that run on any computer.
+- Keep definitions and results out of labs: a lab links to the definitions and results that it uses, as the [Keep expository content out of labs](../chapters/teaching.llms.md#keep-expository-content-out-of-labs) section explains.
 - [Make figures accessible](../chapters/teaching.llms.md#make-figures-accessible).
 - [Structure slides for the reader](../chapters/teaching.llms.md#structure-slides-for-the-reader).
 - [Credit another course’s material](../chapters/citations-evidence.llms.md#adapting-another-courses-material) in a collapsed “Source” callout, not in running prose.

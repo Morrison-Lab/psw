@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-16 08:41:37 (PST)
+Last modified: 2026-11-23 10:55:38 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -310,13 +310,27 @@ Link the longest phrase that names the thing, in the sentence that uses it. Choo
 
 On the lab’s notes sites, a bracketed citation, `[@key]`, prints as a number, such as \[1\] or \[1, p. 5\]. An in-text citation, `@key`, prints the author name and the number, such as “Hastie et al. \[2\]”. Write `[@key]` when the source supports a claim, and `@key` when the author is the subject of the sentence. Never start a sentence or a list item with a bare `@key` unless the author is its subject. The author list becomes the subject, so a list of such items prints the same author name, such as “Wikipedia contributors \[3\]”, again and again. Write the description first, and end the sentence with the bracketed `[@key]`. The sites get this from the shared citation style and filter in [Morrison-Lab/macros](https://github.com/Morrison-Lab/macros/blob/main/citations/README.md).
 
-# 12 Place a citation right after the claim it supports
+# 12 Let the citation name the source
+
+Keep a citation short, and let its markup print what it can. An in-text citation, `@key`, prints the author names, so do not also type them in the sentence around it, and do not add “a figure in” or “the book by” to point to the source. To point to a part of the source, put a locator in brackets after the key, such as `@key [Figure 6.7]` or `@key [p. 18]`.
+
+> **NOTE:**
+>
+> **Example 9 (Citing the figure that a layout follows)**  
+>
+> > ❌ `The figure follows the layout of a figure in James et al. [@james2021islr2, Figure 6.7].`
+> >
+> > ✅ `The figure follows the layout of @james2021islr2 [Figure 6.7].`
+>
+> The first version types the author names by hand and adds “a figure in”, so it spends six words on what the citation already says. Typed names can drift from the bibliography entry, and an author-year style prints them twice. On the notes sites, the second version prints as “The figure follows the layout of James et al. \[2, Figure 6.7\].”
+
+# 13 Place a citation right after the claim it supports
 
 Place citations immediately after the claim or claims they support. A citation at the end of a sentence reads as support for the whole sentence, so when it supports only one claim in it, put it beside that claim. When one source supports every claim in a sentence, the end of the sentence is right after the claims.
 
 > **NOTE:**
 >
-> **Example 9 (Placing a citation after a definition)**  
+> **Example 10 (Placing a citation after a definition)**  
 >
 > > ❌ A *Poisson random variable* ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)), or *Poisson count*, counts events in a fixed interval.
 > >
@@ -324,13 +338,13 @@ Place citations immediately after the claim or claims they support. A citation a
 >
 > The article presents the definition, and the definition is the claim, so the citation follows the definition rather than interrupting it after the [term](../chapters/defining-terms.llms.md#def-term).
 
-# 13 Cite a source once per passage
+# 14 Cite a source once per passage
 
 Cite a source once in each div or passage, at the claim it supports. A second citation of the same source in the same div adds a number that the reader must look up again and tells them nothing new. Cite again only when the second claim rests on a different part of the source, and then give a locator, such as `[@key, p. 5]`. The rule to cite a Wikipedia article once, where its [term](../chapters/defining-terms.llms.md#def-term) is defined, is a case of this one.
 
 > **NOTE:**
 >
-> **Example 10 (Citing one source once in a definition)**  
+> **Example 11 (Citing one source once in a definition)**  
 >
 > > ❌ A *Poisson random variable* counts events in a fixed interval ([Wikipedia contributors 2026](#ref-wikipedia_poisson_distribution)). Source: Wikipedia contributors ([2026](#ref-wikipedia_poisson_distribution)).
 > >
@@ -338,7 +352,7 @@ Cite a source once in each div or passage, at the claim it supports. A second ci
 >
 > Both versions credit the same article. The second one does it once, in the source line that closes the div.
 
-# 14 Best practices
+# 15 Best practices
 
 To effectively support your claims:
 
@@ -350,7 +364,7 @@ To effectively support your claims:
 6.  **Stay current**: Supplement foundational older references with recent work showing the current state of knowledge
 7.  **Cite diverse sources**: When possible, include work from different research groups and perspectives
 
-# 15 Quote the original
+# 16 Quote the original
 
 Quote and cite the source that said it, not a later source that quotes it. Check the wording and the page against the original.
 
@@ -360,15 +374,15 @@ Quote and cite the source that said it, not a later source that quotes it. Check
 
 Credit a quotation to whoever speaks it in the primary source, even when the speaker is quoting someone else. When attribution is in doubt, read the primary source (a transcript, the original page) first. Uncertainty about who said a line is not evidence about who said it.
 
-# 16 Copy organization names from their source
+# 17 Copy organization names from their source
 
 When a bibliography entry names an organization, copy the name from the organization’s own page (its about page, README or footer) rather than expanding an acronym from memory.
 
-# 17 Verify each bibliography entry
+# 18 Verify each bibliography entry
 
 Check each detail of a bibliography entry against an official source. Look the work up through [Crossref search](https://search.crossref.org/) or its [REST API](https://api.crossref.org/), check the title, volume, issue and pages against the record, and add the DOI. Check a constant in a cited theorem, such as the factors in an inequality, against a second free, official source, and say in the pull request what you checked against what.
 
-# 18 Cite an alias directly
+# 19 Cite an alias directly
 
 When a source uses another name for a defined [term](../chapters/defining-terms.llms.md#def-term), write the alias in bold and cite the source after it, as in `also called the **alias** [@key, section]`. The citation already says that the source uses the name, so do not add a sentence such as “The source uses that name”.
 
@@ -376,7 +390,7 @@ When a source uses another name for a defined [term](../chapters/defining-terms.
 >
 > ✅ `also called the **alias** [@key, section]`
 
-# 19 Cite the original for named results
+# 20 Cite the original for named results
 
 When you present a result that carries a person’s name, or whose first appearance is well documented, cite the publication where it first appeared alongside a modern textbook that teaches it. The original shows readers where the result comes from and credits its authors. The textbook is where a student will actually learn it.
 
@@ -406,17 +420,17 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 > **NOTE:**
 >
-> **Example 11 (Crediting Chebyshev’s inequality)**  
+> **Example 12 (Crediting Chebyshev’s inequality)**  
 >
 > > ❌ Chebyshev’s inequality bounds the probability that …
 > >
 > > ✅ Chebyshev’s inequality bounds the probability that … Bienaymé derived the bound ([Bienaymé 1853](#ref-bienayme1853)), and Tchébychef proved a more general form ([Tchébychef 1867](#ref-tchebichef1867)). A modern treatment is in Blitzstein and Hwang ([2019](#ref-blitzstein2019introduction)).
 
-# 20 Put the content first
+# 21 Put the content first
 
 Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
 
-# 21 Adapting another course’s material
+# 22 Adapting another course’s material
 
 When teaching material draws on another course, write your own version of the content rather than summarizing how that course presents it. Credit the source in a note at the start or end of the adapted section.
 
@@ -440,7 +454,7 @@ This section is adapted from @zhou2024, used under the MIT License.
 :::
 ```
 
-# 22 Material from your own work
+# 23 Material from your own work
 
 Do not formally acknowledge material you borrow from yourself or your own group. “Your group” means you and the other members of the labs that maintain the work, such as the Morrison Lab and UCD-SERG. Link to it, but do not credit it, except for the credits and citations listed below. This covers:
 
@@ -476,7 +490,7 @@ A link to a sister site that sends the reader to further reading is a cross-refe
 
 When you find an existing credit to your own work, remove it and add or keep a link to it.
 
-# 23 Name the source of every attribution
+# 24 Name the source of every attribution
 
 Name the person, book, paper, or site that makes a claim. Do not write “some authors”, “some people”, “many researchers”, “studies have shown”, “it is well known”, or “experts agree”. Each of these phrases tells the reader that a source exists and withholds it, so the reader can neither check the claim nor read further.
 
@@ -486,7 +500,7 @@ If, after searching, no source states the claim, write it in your own voice (“
 
 > **NOTE:**
 >
-> **Example 12 (Naming the author who uses a word)**  
+> **Example 13 (Naming the author who uses a word)**  
 >
 > > ❌ Some authors call the part of the error that no model can remove “irreducible”.
 > >
@@ -494,7 +508,7 @@ If, after searching, no source states the claim, write it in your own voice (“
 >
 > The ✅ sentence names the authors and gives a page, so a reader can check the wording and the claim against the book.
 
-# 24 Date a claim that can change
+# 25 Date a claim that can change
 
 Some claims are true only for a while. The world can change and make the sentence false without anyone editing the sentence. Such claims include:
 
@@ -511,7 +525,7 @@ A claim that cannot change needs no date. A mathematical identity, a definition,
 
 > **NOTE:**
 >
-> **Example 13 (Dating a claim about a package)**  
+> **Example 14 (Dating a claim about a package)**  
 >
 > > ❌ The package is not on CRAN, so install it from GitHub.
 > >
@@ -519,7 +533,7 @@ A claim that cannot change needs no date. A mathematical identity, a definition,
 >
 > A reader months later cannot tell from the ❌ sentence whether it is still true. The ✅ sentence shows when it was checked, so the reader knows to look at CRAN before following the advice.
 
-# 25 Common citation errors to avoid
+# 26 Common citation errors to avoid
 
 - **Citation needed**: Making claims without any supporting citation or evidence
 - **Vague attribution**: Using phrases like “studies have shown” or “some authors” without naming the studies or authors (see [Name the source of every attribution](#name-the-source))
@@ -530,39 +544,39 @@ A claim that cannot change needs no date. A mathematical identity, a definition,
 - **Selective citation**: Only citing work that supports your position while ignoring contradictory evidence
 - **Ghost authorship**: Failing to cite work that directly influenced your ideas
 
-# 26 Examples
+# 27 Examples
 
-## 26.1 Poor (unsupported claim)
+## 27.1 Poor (unsupported claim)
 
 > Machine learning models often perform poorly on small datasets.
 
 **Problem**: This claim is stated as fact without any support.
 
-## 26.2 Better (citation provided)
+## 27.2 Better (citation provided)
 
 > Machine learning models often perform poorly on small datasets ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: Citations provide evidence for the claim.
 
-## 26.3 Best (citation with context)
+## 27.3 Best (citation with context)
 
 > Machine learning models often perform poorly on small datasets. Vapnik (1998) showed that the generalization error of learning algorithms typically decreases as training set size increases, and Hawkins (2004) demonstrated that complex models are particularly prone to overfitting when trained on limited data ([Vapnik 1998](#ref-vapnik1998); [Hawkins 2004](#ref-hawkins2004)).
 
 **Improvement**: The specific support each citation provides is explained.
 
-## 26.4 Poor (irrelevant citation)
+## 27.4 Poor (irrelevant citation)
 
 > Python is the most popular programming language for data science ([Knuth 1984](#ref-knuth84)).
 
 **Problem**: Knuth’s 1984 paper on literate programming doesn’t address Python or data science.
 
-## 26.5 Better (relevant citation)
+## 27.5 Better (relevant citation)
 
 > Python is the most popular programming language for data science ([Stack Overflow 2024](#ref-stackoverflow2024)).
 
 **Improvement**: The citation is to a current survey of programming language usage.
 
-# 27 Conclusion
+# 28 Conclusion
 
 Supporting claims with appropriate citations and evidence is not optional—it is essential to scientific communication. It allows readers to verify your claims, understand the foundation of your arguments, and locate resources for further learning. Always ask yourself: “How does my reader know this is true?” If your text does not answer that question, add a citation or present direct evidence.
 
