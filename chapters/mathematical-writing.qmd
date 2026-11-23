@@ -534,7 +534,7 @@ The sentence in words lets a reader check that the statement is the result the t
 and the formula is what a reader uses in a calculation or a proof.
 Put the sentence first, then the formula in a display.
 The sentence adds the hypotheses the title leaves out,
-each named in words as the [Name each hypothesis in words](#name-each-hypothesis-in-words) section asks,
+each named in words,
 and it names its symbols, so that the formula after it needs no further explanation.
 
 ::: {#exm-result-statement-two-forms}
@@ -566,8 +566,6 @@ has no display formula or no sentence in words.
 It cannot tell whether the sentence says what the title says,
 since that needs the meaning of both, not their words,
 so that part of the rule is applied in review.
-
-## Name each hypothesis in words
 
 Name every hypothesis of a result in words, with its symbol beside it.
 The same holds for every condition in a definition.
