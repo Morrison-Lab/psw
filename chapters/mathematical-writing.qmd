@@ -575,7 +575,8 @@ A reader who meets a result first asks when it applies.
 A condition written only as an inequality answers that question in symbols,
 which the reader has to translate before reading on.
 The word ("nonnegative", "finite", "nonzero") also names a property
-that the reader can recognize in other results, and look up when it is new.
+that the reader can recognize in other results,
+and look up when it is new.
 The formula for a condition may follow its words
 where a proof or a later step uses the formula.
 
@@ -606,13 +607,6 @@ with its symbol beside it,
 and says the conclusion in words before the formula.
 
 :::
-
-The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/blob/main/website/reference/check-result-titles.qmd)
-flags a result statement that gives a hypothesis as an inline inequality
-right after a word such as "with", "where", "if", "let", or "for every".
-It cannot tell whether a condition is named in words elsewhere in the sentence,
-and it does not read definitions,
-so those parts of the rule are applied in review.
 
 # Rules that other chapters cover
 
