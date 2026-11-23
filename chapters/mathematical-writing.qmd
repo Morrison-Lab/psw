@@ -533,7 +533,8 @@ and once in full mathematical notation.
 The sentence in words lets a reader check that the statement is the result the title promises,
 and the formula is what a reader uses in a calculation or a proof.
 Put the sentence first, then the formula in a display.
-The sentence may add the hypotheses the title leaves out,
+The sentence adds the hypotheses the title leaves out,
+each named in words as the [Name each hypothesis in words](#name-each-hypothesis-in-words) section asks,
 and it names its symbols, so that the formula after it needs no further explanation.
 
 ::: {#exm-result-statement-two-forms}
@@ -565,6 +566,55 @@ has no display formula or no sentence in words.
 It cannot tell whether the sentence says what the title says,
 since that needs the meaning of both, not their words,
 so that part of the rule is applied in review.
+
+# Name each hypothesis in words
+
+Name every hypothesis of a result in words, with its symbol beside it.
+The same holds for every condition in a definition.
+Write "a nonnegative random variable $X$" and "a positive number $a$",
+not "a random variable $X$ with $X \ge 0$" and "for every $a > 0$".
+A reader who meets a result first asks when it applies.
+A condition written only as an inequality answers that question in symbols,
+which the reader has to translate before reading on.
+The word ("nonnegative", "finite", "nonzero") also names a property
+that the reader can recognize in other results, and look up when it is new.
+The formula for a condition may follow its words
+where a proof or a later step uses the formula.
+
+::: {#exm-hypotheses-in-words}
+
+# Markov's inequality with its hypotheses in words
+
+> ❌ Let $X$ be a random variable with $X \ge 0$ and $\E{X} < \infty$. <!-- check-term-links: allow: quoted statement, not a use of the term -->
+> Then for every $a > 0$:
+>
+> $$
+> \Prf{X \ge a} \le \frac{\E{X}}{a}.
+> $$
+>
+> ✅ Let $X$ be a nonnegative random variable with a finite expected value $\E{X}$, <!-- check-term-links: allow: quoted statement, not a use of the term -->
+> and let $a$ be a positive number.
+> Then the probability that $X$ is at least $a$ is at most $\E{X}$ divided by $a$:
+>
+> $$
+> \Prf{X \ge a} \le \frac{\E{X}}{a}.
+> $$
+
+The ❌ statement gives all three hypotheses as inequalities,
+so the reader has to translate each one to learn what the result needs:
+a nonnegative random variable, a finite expected value, and a positive threshold.
+The ✅ statement names each condition in words,
+with its symbol beside it,
+and says the conclusion in words before the formula.
+
+:::
+
+The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/blob/main/website/reference/check-result-titles.qmd)
+flags a result statement that gives a hypothesis as an inline inequality
+right after a word such as "with", "where", "if", "let", or "for every".
+It cannot tell whether a condition is named in words elsewhere in the sentence,
+and it does not read definitions,
+so those parts of the rule are applied in review.
 
 # Rules that other chapters cover
 
