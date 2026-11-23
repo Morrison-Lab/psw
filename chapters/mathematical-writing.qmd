@@ -567,7 +567,7 @@ It cannot tell whether the sentence says what the title says,
 since that needs the meaning of both, not their words,
 so that part of the rule is applied in review.
 
-# Name each hypothesis in words
+## Name each hypothesis in words
 
 Name every hypothesis of a result in words, with its symbol beside it.
 The same holds for every condition in a definition.
@@ -585,20 +585,20 @@ where a proof or a later step uses the formula.
 
 # Markov's inequality with its hypotheses in words
 
-> ❌ Let $X$ be a random variable with $X \ge 0$ and $\E{X} < \infty$. <!-- check-term-links: allow: quoted statement, not a use of the term -->
+> ❌ Let $X$ be a random variable with $X \ge 0$ and $\E{X} < \infty$.
 > Then for every $a > 0$:
 >
 > $$
 > \Prf{X \ge a} \le \frac{\E{X}}{a}.
-> $$
+> $$ {#eq-markov-hypotheses-symbols}
 >
-> ✅ Let $X$ be a nonnegative random variable with a finite expected value $\E{X}$, <!-- check-term-links: allow: quoted statement, not a use of the term -->
+> ✅ Let $X$ be a nonnegative random variable with a finite expected value $\E{X}$,
 > and let $a$ be a positive number.
 > Then the probability that $X$ is at least $a$ is at most $\E{X}$ divided by $a$:
 >
 > $$
 > \Prf{X \ge a} \le \frac{\E{X}}{a}.
-> $$
+> $$ {#eq-markov-hypotheses-words}
 
 The ❌ statement gives all three hypotheses as inequalities,
 so the reader has to translate each one to learn what the result needs:
