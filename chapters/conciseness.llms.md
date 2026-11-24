@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-24 01:41:51 (PST)
+Last modified: 2026-11-24 14:22:08 (PST)
 
 > **NOTE:**
 >
@@ -286,13 +286,25 @@ Say what the reader needs, and stop. Cut a qualifier, a restatement or a reason 
 >
 > The first version adds a clause that “the mean” already covers. The second is complete.
 
+A sentence that announces what a page covers is overexplaining too, when the page’s title, headings, and first content already show it (Ezra, 2026-11-24).
+
+> **NOTE:**
+>
+> **Example 9 (Cutting a sentence that announces a page’s scope)**  
+>
+> > ❌ This page treats one input; the additive models page treats several. The examples on this page fit the wages of workers against their ages.
+> >
+> > ✅ *(Cut.)*
+>
+> The ❌ lines come from a splines page whose list of methods, in the paragraph before them, already says that additive models handle several inputs, and whose next block is the wage dataset.
+
 # 17 Put lists in bullet points
 
 A list of three or more phrases, written inline and separated by commas, makes the reader count commas to find where each item ends. Write it as a bullet list instead, introduced by a sentence ending in a colon. Use a numbered list when the items are steps done in order.
 
 A run of parallel sentences is a list too, even with only two items. The common case is a set of resources, such as videos or readings, where each sentence names one resource and links to it. Put each sentence in its own bullet, so the reader sees how many resources there are and where each one starts.
 
-A series introduced by a colon is a list too, even with only two items, when the items hold math or links. Write each item as a bullet, and display any equation the reader must remember (see [Example 13](#exm-colon-series)).
+A series introduced by a colon is a list too, even with only two items, when the items hold math or links. Write each item as a bullet, and display any equation the reader must remember (see [Example 14](#exm-colon-series)).
 
 A case analysis is a parallel run too. Write one bullet per case, and begin each with a bold label that names the case.
 
@@ -300,7 +312,7 @@ Say whether a list is exhaustive or exemplary. Ezra Morrison stated the rule on 
 
 > always specify whether a list is exhaustive (with a lead-in like “X consists of the following categories:”) versus exemplary (lead in with “for example:”, “including:”, end with “etc”, or similar).
 
-Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see [Example 14](#exm-exhaustive-exemplary)).
+Without a marker, the reader cannot tell whether an item left off the list is missing from the topic or only from the list (see [Example 15](#exm-exhaustive-exemplary)).
 
 Bullet lists matter most on slides, where a reader scans a list rather than reading it as a sentence. The rule is one case of a broader preference for more structure: when content has a shape, show that shape in the markup.
 
@@ -312,7 +324,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 9 (Turning an inline list into bullet points)**  
+> **Example 10 (Turning an inline list into bullet points)**  
 >
 > > ❌ Machine learning combines data to learn from, statistics to say what a finite sample of data supports, and optimization to find the model that fits the data best.
 > >
@@ -326,7 +338,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 10 (Turning a run of resource sentences into bullet points)**  
+> **Example 11 (Turning a run of resource sentences into bullet points)**  
 >
 > > ❌ Hastie and Tibshirani [extend least squares to several predictors](https://www.youtube.com/watch?v=o9hoLdylWKo). Starmer explains [multiple regression](https://www.youtube.com/watch?v=zITIFTsivN8).
 > >
@@ -339,7 +351,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 11 (Turning inline steps into a numbered list)**  
+> **Example 12 (Turning inline steps into a numbered list)**  
 >
 > > ❌ k-means starts with $k$ group centers, assigns each point to its nearest center, moves each center to the mean of its points, and repeats until the assignments stop changing.
 > >
@@ -352,7 +364,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 12 (Turning a paragraph of cases into bullet points)**  
+> **Example 13 (Turning a paragraph of cases into bullet points)**  
 >
 > > ❌ At $z = 0$ the slope is $\dexpitf{0} = 1/4$. At $z = 2$ it is $\dexpitf{2} \approx 0.105$. At $z = -2$ it is $\dexpitf{-2} \approx 0.105$.
 > >
@@ -366,7 +378,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 13 (Turning a colon series with math into bullet points)**  
+> **Example 14 (Turning a colon series with math into bullet points)**  
 >
 > > ❌ Derive the other two formulations: minimizing the negative log-likelihood $\argmin_{\vcoef}\ \sb{-\llik(\vcoef)}$, and empirical risk minimization $\argmin_{\vcoef}\empriskf{\vcoef}$ with $\emprisk = \tfrac1\nobs\sum_i \lossf{\outvar_i, \prob_i}$.
 > >
@@ -379,7 +391,7 @@ A few mechanics to keep in mind when writing a bullet list:
 
 > **NOTE:**
 >
-> **Example 14 (Marking a list as exhaustive or exemplary)**  
+> **Example 15 (Marking a list as exhaustive or exemplary)**  
 >
 > > ❌ The metrics computed from a confusion matrix are:
 > >
@@ -414,7 +426,7 @@ Many rules in this chapter serve one aim: the reader should reach your meaning w
 
 > **NOTE:**
 >
-> **Example 15 (Rewriting a sentence written to sound formal)**  
+> **Example 16 (Rewriting a sentence written to sound formal)**  
 >
 > > ❌ It is imperative to acknowledge that, notwithstanding the methodological constraints that were encountered in the course of the study, the findings that were obtained are indicative of a substantial association between the exposure and the outcome.
 > >

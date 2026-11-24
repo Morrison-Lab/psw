@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-24 01:41:51 (PST)
+Last modified: 2026-11-24 14:22:08 (PST)
 
 Every claim in scientific writing should be supported by either citations to relevant sources or direct evidence from data or experiments. This principle is fundamental to maintaining credibility, enabling verification, and building on the accumulated knowledge of the scientific community.
 
@@ -428,7 +428,13 @@ Never cite an unauthorized copy, and never fill in a title, volume, or page numb
 
 # 21 Put the content first
 
-Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated.
+Headings and sentences should name the topic, not its author: “A formal definition of machine learning”, not “Mitchell’s definition”. Follow a quotation with its citation alone, without commentary on who said it or where it was repeated. Do not narrate the source’s materials either, such as which slides or chapter the words open: set the quotation off as a block quote, end it with the citation, and go on with the content (Ezra, 2026-11-24). The citation already says who wrote the words and where.
+
+> ❌ Hastie and Tibshirani open their slides on this topic with “The truth is never linear!” \[3\].
+>
+> ✅
+>
+> > The truth is never linear! \[3\]
 
 # 22 Adapting another course’s material
 
