@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-24 00:21:45 (PST)
+Last modified: 2026-11-24 01:00:07 (PST)
 
 > **NOTE:**
 >
@@ -115,6 +115,19 @@ An acronym or initialism, such as “MSE”, is allowed; [do not clip a term](#d
 > ❌ Tree ensembles, e.g. RF and GBM, usually reduce the MSE of a single CART.
 >
 > ✅ Ensembles of trees, for example random forests and boosted trees, usually have lower mean squared error than a single regression tree.
+
+Introduce a new acronym for a defined [term](../chapters/defining-terms.llms.md#def-term) only when both conditions hold:
+
+- the field already uses that acronym, so the reader will meet it in other sources, as with “MSE” for mean squared error;
+- the term recurs across several pages, not only near its definition.
+
+Otherwise, write the full term at every use. A reader who follows a link into the middle of a page never saw the sentence that introduced the acronym.
+
+> ❌ A *symmetric bilinear form* (SBF) is a bilinear form whose matrix is symmetric. An SBF gives the same value when its two arguments are swapped.
+>
+> ✅ A *symmetric bilinear form* is a bilinear form whose matrix is symmetric. A symmetric bilinear form gives the same value when its two arguments are swapped.
+
+The term “symmetric bilinear form” appears only near its definition, so the acronym saves a few words and costs the reader a lookup at every use.
 
 # 5 Do not clip a term
 
