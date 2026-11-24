@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-23 16:26:19 (PST)
+Last modified: 2026-11-24 00:10:33 (PST)
 
 > **NOTE:**
 >
@@ -294,7 +294,7 @@ A failing check, [`check-result-titles`](https://github.com/Morrison-Lab/gha/pul
 
 # 14 State the title’s sentence again in the statement, in words and in symbols
 
-The statement of a result says what its title says twice more: once in words, as a sentence close to the title’s, and once in full mathematical notation. The sentence in words lets a reader check that the statement is the result the title promises, and the formula is what a reader uses in a calculation or a proof. Put the sentence first, then the formula in a display. The sentence adds the hypotheses the title leaves out, each named in words, and it names its symbols, so that the formula after it needs no further explanation.
+The statement of a result says what its title says twice more: once in words, as a sentence close to the title’s, and once in full mathematical notation. The sentence in words lets a reader check that the statement is the result the title promises, and the formula is what a reader uses in a calculation or a proof. Put the sentence first, then the formula in a display. The sentence adds the hypotheses the title leaves out, in words and in math. It also names its symbols, so that the formula after it needs no further explanation.
 
 > **NOTE:**
 >
@@ -314,7 +314,7 @@ The statement of a result says what its title says twice more: once in words, as
 
 The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/pull/2168) also flags a result whose statement, the text of the div before its proof, has no display formula or no sentence in words. It cannot tell whether the sentence says what the title says, since that needs the meaning of both, not their words, so that part of the rule is applied in review.
 
-Name every hypothesis of a result in words, with its symbol beside it. The same holds for every condition in a definition. Write “a nonnegative random variable $X$” and “a positive number $a$”, not “a random variable $X$ with $X \ge 0$” and “for every $a > 0$”. A reader who meets a result first asks when it applies. A condition written only as an inequality answers that question in symbols, which the reader has to translate before reading on. The word (“nonnegative”, “finite”, “nonzero”) also names a property that the reader can recognize in other results, and look up when it is new. The formula for a condition may follow its words where a proof or a later step uses the formula.
+Name every hypothesis of a result in words, and write the condition in math beside the words. The same holds for every condition in a definition. Write “a nonnegative random variable $X$ ($X \ge 0$)” and “a positive number $a$ ($a > 0$)”, not “a random variable $X$ with $X \ge 0$” and “for every $a > 0$”. A reader who meets a result first asks when it applies. A condition written only as an inequality answers that question in symbols, which the reader has to translate before reading on. The word (“nonnegative”, “finite”, “nonzero”) also names a property that the reader can recognize in other results, and look up when it is new. The formula for a condition must follow its words, because it states the condition exactly and gives a proof or a later step the inequality it uses.
 
 > **NOTE:**
 >
@@ -325,12 +325,12 @@ Name every hypothesis of a result in words, with its symbol beside it. The same 
 > > $$\Prf{X \ge a} \le \frac{\E{X}}{a}.
 > > \tag{1}$$
 > >
-> > ✅ Let $X$ be a nonnegative random variable with a finite expected value $\E{X}$, and let $a$ be a positive number. Then the probability that $X$ is at least $a$ is at most $\E{X}$ divided by $a$:
+> > ✅ Let $X$ be a nonnegative random variable ($X \ge 0$) with a finite expected value ($\E{X} < \infty$), and let $a$ be a positive number ($a > 0$). Then the probability that $X$ is at least $a$ is at most $\E{X}$ divided by $a$:
 > >
 > > $$\Prf{X \ge a} \le \frac{\E{X}}{a}.
 > > \tag{2}$$
 >
-> The ❌ statement gives all three hypotheses as inequalities, so the reader has to translate each one to learn what the result needs: a nonnegative random variable, a finite expected value, and a positive threshold. The ✅ statement names each condition in words, with its symbol beside it, and says the conclusion in words before the formula.
+> The ❌ statement gives all three hypotheses as inequalities, so the reader has to translate each one to learn what the result needs: a nonnegative random variable, a finite expected value, and a positive threshold. The ✅ statement names each condition in words, writes the same condition in math beside the words, and says the conclusion in words before the formula.
 
 The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/blob/main/website/reference/check-result-titles.qmd) flags a result statement that gives a hypothesis as an inline inequality right after a word such as “with”, “where”, “if”, “let”, or “for every”. It cannot tell whether a condition is named in words elsewhere in the sentence, and it does not read definitions, so those parts of the rule are applied in review.
 
