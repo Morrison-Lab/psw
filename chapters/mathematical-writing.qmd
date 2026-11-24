@@ -534,8 +534,8 @@ The sentence in words lets a reader check that the statement is the result the t
 and the formula is what a reader uses in a calculation or a proof.
 Put the sentence first, then the formula in a display.
 The sentence adds the hypotheses the title leaves out,
-each named in words,
-and it names its symbols, so that the formula after it needs no further explanation.
+in words and in math.
+It also names its symbols, so that the formula after it needs no further explanation.
 
 ::: {#exm-result-statement-two-forms}
 
@@ -567,9 +567,11 @@ It cannot tell whether the sentence says what the title says,
 since that needs the meaning of both, not their words,
 so that part of the rule is applied in review.
 
-Name every hypothesis of a result in words, with its symbol beside it.
+Name every hypothesis of a result in words,
+and write the condition in math beside the words.
 The same holds for every condition in a definition.
-Write "a nonnegative random variable $X$" and "a positive number $a$",
+Write "a nonnegative random variable $X$ ($X \ge 0$)"
+and "a positive number $a$ ($a > 0$)",
 not "a random variable $X$ with $X \ge 0$" and "for every $a > 0$".
 A reader who meets a result first asks when it applies.
 A condition written only as an inequality answers that question in symbols,
@@ -577,8 +579,9 @@ which the reader has to translate before reading on.
 The word ("nonnegative", "finite", "nonzero") also names a property
 that the reader can recognize in other results,
 and look up when it is new.
-The formula for a condition may follow its words
-where a proof or a later step uses the formula.
+The formula for a condition must follow its words,
+because it states the condition exactly
+and gives a proof or a later step the inequality it uses.
 
 ::: {#exm-hypotheses-in-words}
 
@@ -591,8 +594,9 @@ where a proof or a later step uses the formula.
 > \Prf{X \ge a} \le \frac{\E{X}}{a}.
 > $$ {#eq-markov-hypotheses-symbols}
 >
-> ✅ Let $X$ be a nonnegative random variable with a finite expected value $\E{X}$,
-> and let $a$ be a positive number.
+> ✅ Let $X$ be a nonnegative random variable ($X \ge 0$)
+> with a finite expected value ($\E{X} < \infty$),
+> and let $a$ be a positive number ($a > 0$).
 > Then the probability that $X$ is at least $a$ is at most $\E{X}$ divided by $a$:
 >
 > $$
@@ -603,7 +607,7 @@ The ❌ statement gives all three hypotheses as inequalities,
 so the reader has to translate each one to learn what the result needs:
 a nonnegative random variable, a finite expected value, and a positive threshold.
 The ✅ statement names each condition in words,
-with its symbol beside it,
+writes the same condition in math beside the words,
 and says the conclusion in words before the formula.
 
 :::
