@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-24 01:00:07 (PST)
+Last modified: 2026-11-24 01:34:40 (PST)
 
 > **NOTE:**
 >
@@ -331,6 +331,8 @@ Name every hypothesis of a result in words, and write the condition in math besi
 > > \tag{2}$$
 >
 > The ❌ statement gives all three hypotheses as inequalities, so the reader has to translate each one to learn what the result needs: a nonnegative random variable, a finite expected value, and a positive threshold. The ✅ statement names each condition in words, writes the same condition in math beside the words, and says the conclusion in words before the formula.
+
+The check [`check-result-titles`](https://github.com/Morrison-Lab/gha/blob/main/website/reference/check-result-titles.qmd) flags a result statement that gives a hypothesis as an inline inequality right after a word such as “with”, “where”, “if”, “let”, or “for every”. It cannot tell whether a condition is named in words elsewhere in the sentence, and it does not read definitions, so those parts of the rule are applied in review.
 
 # 15 Rules that other chapters cover
 
