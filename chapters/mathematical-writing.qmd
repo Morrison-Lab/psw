@@ -579,7 +579,8 @@ which the reader has to translate before reading on.
 The word ("nonnegative", "finite", "nonzero") also names a property
 that the reader can recognize in other results,
 and look up when it is new.
-The formula beside the words states the condition exactly,
+The formula for a condition must follow its words,
+because it states the condition exactly
 and gives a proof or a later step the inequality it uses.
 
 ::: {#exm-hypotheses-in-words}
