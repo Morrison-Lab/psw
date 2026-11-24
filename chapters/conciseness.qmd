@@ -457,7 +457,7 @@ The second is complete.
 
 :::
 
-A sentence that announces what a page covers is the same kind of overexplaining
+A sentence that announces what a page covers is overexplaining too,
 when the page's title, headings, and first content already show it
 (Ezra, 2026-11-24).
 
@@ -471,8 +471,9 @@ when the page's title, headings, and first content already show it
 >
 > ✅ *(Cut.)*
 
-The page's list of methods already says that additive models handle several inputs,
-and the wage dataset comes next on the page.
+The ❌ lines come from a splines page whose list of methods, just above them,
+already says that additive models handle several inputs,
+and whose next block is the wage dataset.
 
 :::
 
