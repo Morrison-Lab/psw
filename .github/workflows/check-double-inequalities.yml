@@ -1,0 +1,24 @@
+# Flags a double inequality in math on lines a PR adds,
+# such as `a < x < b` or `0 \le p \le 1`,
+# and suggests interval membership, `x \in (a, b)` or `p \in [0, 1]`
+# ("Avoiding double inequalities" in chapters/notation).
+# Put `<!-- check-double-inequalities: allow: <reason> -->` on a line
+# that needs the chain form, such as a counter-example on the rule's own page.
+# Blocks by default; existing pages never block, since only added lines count.
+# No push trigger: a push run has no base to diff against and would report
+# success having checked nothing. A manual run scans the whole tree.
+# Check: Morrison-Lab/gha#2189; wiring: Morrison-Lab/gha#2190.
+name: Check math for double inequalities
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    permissions:
+      contents: read
+    uses: Morrison-Lab/gha/.github/workflows/check-double-inequalities.yml@v3
+    with:
+      whole-tree: ${{ github.event_name == 'workflow_dispatch' }}
+      paths-ignore: '_extensions/**,**/outtakes/**,latex-macros/**'
