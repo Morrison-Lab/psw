@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-24 00:10:33 (PST)
+Last modified: 2026-11-24 00:21:26 (PST)
 
 Talks, posters, and figures carry the same research as a paper, but the reader sees them for less time and cannot reread them. This chapter gives practical rules for each.
 
@@ -195,6 +195,8 @@ A [function](https://morrison-lab.github.io/mcs/functions.html#def-function) of 
 - Do not use 3D for data that are not a surface, such as bars or pie charts: perspective makes lengths and areas harder to compare.
 
 - Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden, and label all three axes.
+
+- Write a subscript in a plotly axis title with HTML, as in `"Feature 1, x<sub>1</sub>"`, not with a Unicode subscript character such as subscript one (U+2081). An R session whose locale is not UTF-8 writes that character as the literal text `<U+2081>`, so the axis label on the page shows the escape code (measured on lds#3129, in a private repository). `matplotlib` does not read HTML, so write the static version’s label in mathtext, as in `"Feature 1, $x_1$"`.
 
 - Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10). When all three axes are in the same units, such as a surface in physical space, scale the axes equally in data units instead. In plotly, set the scene’s `aspectmode` to `"cube"` or to `"data"`. Do not leave it unset: plotly’s default, `"auto"`, then draws each axis in proportion to the span of its data unless one axis range is more than 4 times another, so a function whose values span a wider range than its inputs draws a tall, thin column.
 
