@@ -457,6 +457,25 @@ The second is complete.
 
 :::
 
+A sentence that announces what a page covers is the same kind of overexplaining
+when the page's title, headings, and first content already show it
+(Ezra, 2026-11-24).
+
+::: {#exm-overexplain-page-scope}
+
+# Cutting a sentence that announces a page's scope
+
+> ❌ This page treats one input;
+> the additive models page treats several.
+> The examples on this page fit the wages of workers against their ages.
+>
+> ✅ *(Cut.)*
+
+The page's list of methods already says that additive models handle several inputs,
+and the wage dataset comes next on the page.
+
+:::
+
 # Put lists in bullet points
 
 {{< include conciseness/bullet-lists.qmd >}}
