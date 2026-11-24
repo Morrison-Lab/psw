@@ -4,7 +4,7 @@ Code
 
 Published
 
-Last modified: 2026-11-24 12:03:23 (PST)
+Last modified: 2026-11-24 12:17:19 (PST)
 
 > **NOTE:**
 >
@@ -296,7 +296,7 @@ A sentence that announces what a page covers is overexplaining too, when the pag
 > >
 > > ✅ *(Cut.)*
 >
-> The ❌ lines come from a splines page whose list of methods, just above them, already says that additive models handle several inputs, and whose next block is the wage dataset.
+> The ❌ lines come from a splines page whose list of methods, in the paragraph before them, already says that additive models handle several inputs, and whose next block is the wage dataset.
 
 # 17 Put lists in bullet points
 
