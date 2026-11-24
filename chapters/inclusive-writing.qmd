@@ -223,6 +223,25 @@ Write "for example" or "that is".
 > usually have lower mean squared error
 > than a single regression tree.
 
+Introduce a new acronym for a defined [term](defining-terms.qmd#def-term) only when both of these hold:
+
+- the field already uses that acronym, so the reader will meet it in other sources, as with "MSE" for mean squared error;
+- the term recurs across several pages, not only near its definition.
+
+Otherwise, write the full term at every use.
+A reader who follows a link into the middle of a page
+never saw the sentence that introduced the acronym.
+
+> ❌ A *symmetric bilinear form* (SBF) is a bilinear form whose matrix is symmetric.
+> An SBF gives the same value when its two arguments are swapped.
+>
+> ✅ A *symmetric bilinear form* is a bilinear form whose matrix is symmetric.
+> A symmetric bilinear form gives the same value when its two arguments are swapped.
+
+The term appears only near its definition,
+so the acronym saves a few words
+and costs the reader a lookup at every use.
+
 # Do not clip a term
 
 Do not shorten a [term](defining-terms.qmd#def-term) by dropping words, even after introducing the short form.
