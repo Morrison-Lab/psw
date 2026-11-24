@@ -424,7 +424,7 @@ A contour plot needs its surface beside it, but a surface plot can stand alone.
   not with a Unicode subscript character such as subscript one (U+2081).
   An R session whose locale is not UTF-8 writes that character as the literal text `<U+2081>`,
   so the axis label on the page shows the escape code
-  (measured on [lds#3129](https://github.com/Morrison-Lab/lds/pull/3129)).
+  (measured on lds#3129, in a private repository).
   `matplotlib` does not read HTML,
   so write the static version's label in mathtext, as in `"Feature 1, $x_1$"`.
 - Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10).
