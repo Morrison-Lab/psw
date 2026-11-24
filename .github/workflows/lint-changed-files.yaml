@@ -29,6 +29,12 @@ jobs:
         with:
           use-public-rspm: true
 
+      # Posit Package Manager has no Ubuntu 26.04 binary of every package
+      # (curl 8.2.0 in 2026-11), so install.packages() falls back to a source
+      # build, which needs libcurl's headers; the runner image lacks them.
+      - name: Install libcurl headers
+        run: sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev
+
       - name: Install lintr and dependencies
         run: install.packages(c("lintr", "gh", "purrr", "withr"))
         shell: Rscript {0}
