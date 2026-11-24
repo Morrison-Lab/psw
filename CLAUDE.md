@@ -105,6 +105,12 @@ callouts (config + color palette live in `_quarto-website.yml`).
   Some older text in the chapters omits the comma,
   so do not copy their lists.
   Check each list you add before the first push (psw#647 cost a push, 2026-11-15).
+- **Warnings fail the PR**: the `annotation-gate` check fails a PR on any warning annotation,
+  so a warn-only check such as gha's `check-avoided-words` blocks a merge too.
+  Before the first push of a prose change, run it from a gha checkout beside this one:
+  `CAW_BASE_REF=origin/main CAW_GLOBS='*.qmd *.md' python3 ../gha/check-avoided-words/check-avoided-words.py`
+  (psw#709 cost two pushes on one filler word, 2026-11-24).
+  Quoting a flagged word, even in a note about the check, trips it too.
 - **PDF glyphs**: the PDF build fails on any character its fonts cannot print,
   instead of leaving a blank (psw#387).
   Write a Greek letter or other symbol as math through a shared macro,

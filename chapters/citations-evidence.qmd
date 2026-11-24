@@ -739,6 +739,21 @@ Headings and sentences should name the topic, not its author:
 not "Mitchell's definition".
 Follow a quotation with its citation alone,
 without commentary on who said it or where it was repeated.
+Do not narrate the source's materials either,
+such as which slides or chapter the words open:
+set the quotation off as a block quote,
+end it with the citation,
+and go on with the content (Ezra, 2026-11-24).
+The citation already says who wrote the words and where.
+
+> ❌ Hastie and Tibshirani open their slides on this topic with
+> "The truth is never linear!"
+> \[3\].
+>
+> ✅
+>
+> > The truth is never linear!
+> > \[3\]
 
 # Adapting another course's material
 
