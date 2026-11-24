@@ -421,9 +421,10 @@ A contour plot needs its surface beside it, but a surface plot can stand alone.
 - Choose the viewing angle so that the feature you discuss, such as the minimum, is not hidden,
   and label all three axes.
 - Write a subscript in a plotly axis title with HTML, as in `"Feature 1, x<sub>1</sub>"`,
-  not with a Unicode subscript character such as `x₁`.
-  An R session whose locale is not UTF-8 writes `x₁` as the literal text `x<U+2081>`,
-  so the axis label on the page shows the escape code (measured on lds#3129).
+  not with a Unicode subscript character such as subscript one (U+2081).
+  An R session whose locale is not UTF-8 writes that character as the literal text `<U+2081>`,
+  so the axis label on the page shows the escape code
+  (measured on [lds#3129](https://github.com/Morrison-Lab/lds/pull/3129)).
   `matplotlib` does not read HTML,
   so write the static version's label in mathtext, as in `"Feature 1, $x_1$"`.
 - Give the plot a cube-shaped box, with every axis the same length on screen (Ezra, 2026-11-10).
