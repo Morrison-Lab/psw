@@ -117,6 +117,10 @@ Pose each task as an exercise, give students time to try it, and then show the s
   Split a list item or step inside an exercise the same way,
   into separate exercises.
   Phrases such as "and then", "and also", and "and compare" mark a second ask.
+  So does a yes-or-no question followed by "Explain why or why not."
+  A review of a question-bank exercise flagged that form on 2026-11-20.
+  Ask for the answer and its reason in one instruction instead,
+  such as "Explain whether the new total could be smaller than the old one."
 - Put the instruction or question of an exercise in its own paragraph,
   apart from the scenario information (Ezra, 2026-11-02).
   The scenario paragraphs give the data, the setting and the definitions that the exercise needs,
